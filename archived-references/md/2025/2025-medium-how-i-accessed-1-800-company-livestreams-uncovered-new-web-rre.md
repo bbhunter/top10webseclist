@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "How I Accessed 1,800 Company Livestreams and Uncovered a New Web Exploit Class: RRE"
+description: Recursive Request Exploits trace a chain of dependent API calls backwards from a sensitive value such as a stream identifier to the first request that introduces it, then abuse the earliest hop that enforces no authentication. The method reached 1,800 private corporate livestreams without logging in; a proxy extension ranks candidate tokens by entropy to automate the trace.
 resource: "https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, auth-bypass, rest-api, idor, info-leak, tooling, novel-technique, attack-chain, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:01+00:00"

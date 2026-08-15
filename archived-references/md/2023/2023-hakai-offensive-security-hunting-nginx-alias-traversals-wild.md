@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hunting for Nginx Alias Traversals in the wild
+description: "An Nginx location prefix without a trailing slash combined with an alias directive that ends in one concatenates everything after the matched prefix onto the alias path, so a request to /img../ escapes the served directory. Code search across public repositories found it exposing Bitwarden's self-hosted vault database and Google HPC Toolkit's Django secret key and cloud credentials."
 resource: "https://labs.hakaioffsec.com/nginx-alias-traversal/"
-tags: [article, webseclist-reference, en, hakai-offensive-security]
+tags: [article, webseclist-reference, en, hakai-offensive-security, path-traversal, reverse-proxy, info-leak, tooling, github, case-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T16:23:42+00:00"

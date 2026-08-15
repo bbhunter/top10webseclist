@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How to Create a GIFAR
+description: "A short writeup of the GIFAR, the GIF-plus-JAR polyglot Billy Rios and Nathan McFeters showed at Black Hat 2008. Because GIF headers sit at the front of a file and ZIP central directories at the end, one file passes as an image on upload and still loads as a signed applet, running in the hosting site's origin and defeating the same-origin policy."
 resource: "http://riosec.com/how-to-create-a-gifar"
-tags: [article, webseclist-reference, en, riosec-com]
+tags: [article, webseclist-reference, en, riosec-com, file-upload, java, sop-bypass, parser-differential, content-type, mime]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:15+00:00"

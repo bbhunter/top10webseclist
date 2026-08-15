@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Let Me Github That For You
+description: "Rails keeps sessions in a client-side cookie signed with an HMAC whose secret lives in config/initializers/secret_token.rb, a file developers routinely commit to GitHub. With the secret a session can be forged: authenticated_system falls to user_id=>1, and authlogic falls to a find_by_id hash injecting a :select of \"* from users limit 1 --\"."
 resource: "https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
-tags: [article, webseclist-reference, en, phenoelit-org]
+tags: [article, webseclist-reference, en, phenoelit-org, ruby, rails, cookie, auth-bypass, sqli, deserialization, github]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:36:03+00:00"

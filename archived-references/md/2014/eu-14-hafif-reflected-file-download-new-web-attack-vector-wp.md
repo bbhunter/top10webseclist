@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: eu 14 Hafif Reflected File Download A New Web Attack Vector wp
+description: "Reflected File Download turns a trusted site's JSON or JSONP endpoint into a file download by reflecting attacker input into the response body while path segments and path parameters control the saved filename and extension. A victim clicking a link on a trusted domain saves and can run a batch file, giving the attacker shell command execution."
 resource: "https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, command-injection, content-type, mime, url-parsing, rest-api, http, injection, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:43+00:00"

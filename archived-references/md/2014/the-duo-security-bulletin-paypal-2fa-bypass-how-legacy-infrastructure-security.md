@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security"
+description: "PayPal's servers issued fully authenticated session tokens once a username and password were accepted, before the second factor was checked, and the mobile app enforced the logout only on the client. Switching the phone to airplane mode at the right instant stopped that logout and gave complete account access without the security key."
 resource: "https://web.archive.org/web/20160403035045/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
-tags: [article, webseclist-reference, en, the-duo-security-bulletin]
+tags: [article, webseclist-reference, en, the-duo-security-bulletin, auth-bypass, rest-api, ios, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:03+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

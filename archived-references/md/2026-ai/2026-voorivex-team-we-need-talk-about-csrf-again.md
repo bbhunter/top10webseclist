@@ -1,8 +1,9 @@
 ---
 type: Article
 title: We Need to Talk About CSRF Again
+description: Two ways a cross-origin POST skips the CORS preflight while the server still parses the body as JSON. Sending it as a Blob with no type leaves no Content-Type header, which FastAPI read as implicit JSON; and Chromium safelists a fourth type, message/ad-auction-trusted-signals-request, absent from every three-entry blocklist. On Apollo, GET plus persisted queries stores a huge aliased query and response timing read from performance entries leaks a secret character by character.
 resource: "https://blog.voorivex.team/we-need-to-talk-about-csrf-again"
-tags: [article, webseclist-reference, en, voorivex-team]
+tags: [article, webseclist-reference, en, voorivex-team, csrf, cors, xsleak, graphql, timing-attack, content-type, express, filter-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:27:21+00:00"
@@ -19,7 +20,7 @@ authors:
   - Amirmohammad Safari
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:69"
+  - "2026-ai.md:45"
 commit: ""
 content_sha256: 658530674e2264d9a372d64ed1bcf5fcada4ed8850b39f2738613f2b6882b66e
 depth: full

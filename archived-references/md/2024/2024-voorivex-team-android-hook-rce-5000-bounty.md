@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "From an Android Hook to RCE: $5000 Bounty"
+description: "Frida hooks on Conscrypt's checkTrustedRecursive and on Java's Cipher strip TLS pinning and a second app-layer AES whose key exchange rides in an X-Cookie header (seed, key length, two IVs, HMAC). The decrypted body reads wgt:[FILE_PATH]:FUNC(ARGS), which a server-side headless browser opens and executes, so appended JavaScript runs on the server. With no outbound HTTP, the payload builds a hostname from location.pathname and exfiltrates over DNS."
 resource: "https://blog.voorivex.team/from-an-android-hook-to-rce-5000-bounty"
-tags: [article, webseclist-reference, en, voorivex-team]
+tags: [article, webseclist-reference, en, voorivex-team, android, rce, javascript, dns, injection, bug-bounty, attack-chain, tls]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:38+00:00"

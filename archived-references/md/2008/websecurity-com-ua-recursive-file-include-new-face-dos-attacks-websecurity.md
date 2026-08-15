@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Recursive File Include - new face of DoS attacks - Websecurity
+description: "Recursive File Include: a local file include whose parameter propagates into every included file, so page.php?include=page.php makes the application include itself without bound and exhausts the server. The author's own English version of his Ukrainian post; names three live 2007 examples and notes full automatic recursion works only in PHP, with a manual variant for ASP."
 resource: "http://websecurity.com.ua/2047/"
-tags: [article, webseclist-reference, websecurity-com-ua]
+tags: [article, webseclist-reference, websecurity-com-ua, dos, lfi, php, abuse-of-functionality, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:13+00:00"

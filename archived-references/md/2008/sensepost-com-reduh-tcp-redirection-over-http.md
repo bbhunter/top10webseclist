@@ -1,12 +1,13 @@
 ---
 type: Article
 title: reDuh - TCP Redirection over HTTP
+description: "reDuh builds a TCP circuit out of ordinary HTTP requests: upload reDuh.jsp (PHP and ASPX ports exist) to a web server, run reDuhClient locally, and [createTunnel]1234:host:3389 forwards a local port to anything the web server can reach. Several tunnels run at once, so RDP and SSH work together through a firewall that permits only HTTP. Black Hat USA 2008."
 resource: "https://www.sensepost.com/research/reDuh/"
-tags: [article, webseclist-reference, sensepost-com]
+tags: [article, webseclist-reference, sensepost-com, tooling, http, proxy, file-upload, java, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:23+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

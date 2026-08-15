@@ -1,8 +1,9 @@
 ---
 type: Article
 title: From Markdown to RCE in Atom
+description: "The Atom editor's Markdown preview rendered arbitrary HTML behind a weak attribute-stripping sanitiser, so an iframe could load a bundled local HTML file that passed the URL query string to eval. Because Electron runs that file under the same file:// origin, the chain reaches window.top.require('child_process') and executes local code from a package README."
 resource: "https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/"
-tags: [article, webseclist-reference, statuscode-ch]
+tags: [article, webseclist-reference, statuscode-ch, xss, rce, electron, sanitizer-bypass, csp, iframe, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:59+00:00"

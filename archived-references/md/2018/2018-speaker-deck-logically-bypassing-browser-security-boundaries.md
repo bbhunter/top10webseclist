@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: Logically Bypassing Browser Security Boundaries
+description: "Origin checks fall when what a resource is changes after it is checked: a CSP-sandboxed frame fools the password manager, HTTP redirects and service workers swap sub-resources past the check, and HLS playlists leak cross-origin audio and video. A blob URL minted in a compromised renderer also escapes Chrome Site Isolation and reaches another site's cookies."
 resource: "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, sop-bypass, same-origin-policy, service-worker, info-leak, toctou, csp, iframe, cookie, bug-bounty, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:50+00:00"

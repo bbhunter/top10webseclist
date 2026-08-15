@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "mTLS: When certificate authentication is done wrong"
+description: "Implementation flaws in mutual-TLS client authentication: servers that scan the whole certificate chain instead of only the first entry let an attacker impersonate another user with a self-signed certificate (Keycloak); certificate stores build LDAP filters from the unverified Subject field (Bouncy Castle); and revocation URLs read from certificate extensions give SSRF and leak the server's LDAP credentials (Apereo CAS)."
 resource: "https://github.blog/2023-08-17-mtls-when-certificate-authentication-is-done-wrong/"
-tags: [article, webseclist-reference, en, the-github-blog]
+tags: [article, webseclist-reference, en, the-github-blog, auth-bypass, injection, ssrf, tls, sso, java, info-leak, reverse-proxy, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:25:52+00:00"

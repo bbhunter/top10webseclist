@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Kostas Drakonakis / xdriver3-open
+description: "XDriver is the Selenium wrapper built for the Cookie Hunter study, made to keep large automated crawls alive: cross-browser configuration, stale-element and crash recovery, a crawler and form filler, and an internal proxy for redirection tracing and cookie forcing. It also scores deployed security headers such as HSTS, CSP and CORS."
 resource: "https://gitlab.com/kostasdrk/xdriver3-open"
-tags: [article, webseclist-reference, en, gitlab]
+tags: [article, webseclist-reference, en, gitlab, tooling, dynamic-analysis, cookie, csp, cors, https, python, large-scale-scan, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:25+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:82"
+  - "2020.md:78"
 commit: ""
 content_sha256: f15926c7e3dba15eca658533372c4b6f245218f3d4d0208fbdf4129f71bb3d46
 depth: full

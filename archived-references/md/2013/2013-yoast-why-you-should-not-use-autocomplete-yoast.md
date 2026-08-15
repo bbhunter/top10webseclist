@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Why you should not use autocomplete • Yoast
+description: "Chrome's autocompletetype form filling populates fields the page has hidden with CSS, so a signup form that visibly asks only for an email can silently harvest a full postal address and card details. A live test page demonstrates it, and the advice is to switch browser autofill off until the controls improve."
 resource: "https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/"
-tags: [article, webseclist-reference, en, yoast]
+tags: [article, webseclist-reference, en, yoast, info-leak, css, ui-redress, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:02+00:00"

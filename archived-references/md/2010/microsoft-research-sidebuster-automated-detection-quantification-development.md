@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Sidebuster: Automated Detection and Quantification of Side-Channel Leaks in Web Application Development"
+description: Sidebuster analyses web application source code to locate places where request and response sizes or timings vary with sensitive state, then reruns the application to measure how much entropy each such side channel leaks. It handles event-driven AJAX widgets and was prototyped for GWT applications, identifying leaks and grading their severity at low overhead even when traffic is fully encrypted.
 resource: "https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/"
-tags: [article, webseclist-reference, en, microsoft-research]
+tags: [article, webseclist-reference, en, microsoft-research, side-channel, info-leak, static-analysis, dynamic-analysis, tooling, https, tls, measurement-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:03+00:00"

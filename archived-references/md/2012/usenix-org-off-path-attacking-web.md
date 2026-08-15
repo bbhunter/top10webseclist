@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Off-Path Attacking the Web
+description: "A spoofing-only attacker with a puppet script in the victim's browser can learn both TCP sequence numbers of an existing connection by abusing the global IP-ID counter used by Windows as a side channel. With the sequence numbers known, injected packets yield XSS, CSRF and site spoofing without any browser or server bug. Firewall-level defences are proposed."
 resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, xss, csrf, novel-technique, info-leak, defence, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:44+00:00"

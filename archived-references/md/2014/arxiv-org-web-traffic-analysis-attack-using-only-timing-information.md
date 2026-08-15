@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A Web Traffic Analysis Attack Using Only Timing Information
+description: An attack that identifies which web page a user fetched over an encrypted tunnel from uplink packet timing alone, using no packet sizes. Because it ignores size, padding defences do not stop it, and it needs no knowledge of where a fetch starts or ends, reaching over 90 percent accuracy on wired and wireless traffic.
 resource: "https://arxiv.org/abs/1410.2087"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, timing-attack, side-channel, https, tls, info-leak, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

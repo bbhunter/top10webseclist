@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Extending a Hand to Attackers: Browser Privilege Escalation Attacks via Extensions"
+description: Shows the browser extension architecture imposes security requirements developers struggle to meet, so the boundary between a privileged extension component and its page-facing content script can be crossed. Fifty-nine flaws across forty extensions allowed universal cross-site scripting and theft of passwords or cryptocurrency. A process-isolation redesign is proposed as the fix.
 resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, browser-extension, privilege-escalation, xss, sandbox-escape, measurement-study, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:18+00:00"

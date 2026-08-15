@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "#HackerKast 11 Bonus Round: The Latest with Clickjacking!"
+description: "A clickjacking demo against Flash camera and microphone permissions: opacity still hides the Flash prompt in Chrome, and a user-initiated popup later sent to a data: URL whose declared charset is padded with a fake google.com string makes the address bar read like Google. The victim then clicks through a permission dialog they believe belongs to a trusted site."
 resource: "https://web.archive.org/web/20141231141714/http://blog.whitehatsec.com/hackerkast-11-bonus-round/"
-tags: [article, webseclist-reference, en-US, blog-whitehatsec-com]
+tags: [article, webseclist-reference, en-US, blog-whitehatsec-com, clickjacking, ui-redress, flash, charset, url-parsing, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:53+00:00"

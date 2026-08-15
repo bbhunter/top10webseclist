@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Composition Kills: A Case Study of Email Sender Authentication"
+description: "Inconsistent message parsing between the components of email systems lets attackers bypass SPF, DKIM, and DMARC to impersonate arbitrary senders and forge DKIM-signed mail with a legitimate site's signature. Manual analysis plus black-box fuzzing found 18 evasion techniques that worked against 10 email providers and 19 clients, all vulnerable."
 resource: "https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, email, smtp, parser-differential, auth-bypass, injection, fuzzing, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:32+00:00"

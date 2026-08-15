@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Black Hat USA 2014
+description: "Capture of the full Black Hat USA 2014 Briefings programme; the cited talk within it, Call To Arms, reports 17 flaws in Chrome's XSS Auditor that let an attacker rewrite an injection so the client-side filter passes it through. The authors automate bypass generation and measure it against thousands of real DOM-based XSS bugs."
 resource: "https://web.archive.org/web/20160403035045/https://www.blackhat.com/us-14/briefings.html#call-to-arms-a-tale-of-the-weaknesses-of-current-client-side-xss-filtering"
-tags: [article, webseclist-reference, blackhat-com]
+tags: [article, webseclist-reference, blackhat-com, xss, filter-bypass, sanitizer-bypass, dom, javascript, measurement-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:54+00:00"

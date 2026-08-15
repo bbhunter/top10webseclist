@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Smuggling HTTP headers through reverse proxies
+description: "Reverse proxies and back-end frameworks normalize header names differently, so a header Apache unsets as CLIENT_VERIFIED can be resent with a hyphen and still reach Django, Flask or PHP as the same value. Combined with path parsing differentials such as Tomcat's semicolon parameters, this smuggles trusted mTLS headers past the proxy and bypasses authentication."
 resource: "https://github.security.telekom.com/2020/05/smuggling-http-headers-through-reverse-proxies.html"
-tags: [article, webseclist-reference, en, telekom-security]
+tags: [article, webseclist-reference, en, telekom-security, header-injection, parser-differential, auth-bypass, smuggling, reverse-proxy, proxy, http, python, php, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:13:42+00:00"

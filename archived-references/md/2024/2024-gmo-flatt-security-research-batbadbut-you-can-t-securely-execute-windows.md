@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "BatBadBut: You can't securely execute commands on Windows"
+description: On Windows, process creation implicitly launches the command interpreter for batch files, and that interpreter ignores the backslash escaping language runtimes apply to arguments. A user-controlled argument passed to a batch file, or to any command named without an extension, breaks out of the quoting and runs attacker commands across many language runtimes.
 resource: "https://flatt.tech/research/posts/batbadbut-you-cant-securely-execute-commands-on-windows/"
-tags: [article, webseclist-reference, en, gmo-flatt-security-research]
+tags: [article, webseclist-reference, en, gmo-flatt-security-research, command-injection, parser-differential, sanitizer-bypass, rce, nodejs, rust, php, go, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:33+00:00"

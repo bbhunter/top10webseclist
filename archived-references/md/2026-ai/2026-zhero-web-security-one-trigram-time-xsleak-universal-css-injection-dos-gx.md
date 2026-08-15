@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)"
+description: "Opera GX installs GX Mods - CRX packages carrying CSS but no JavaScript and no permissions - automatically when a page links or frames the file, giving attacker-controlled CSS on every site the victim visits; in Incognito mode the same primitive crashes the browser. With @import chaining unavailable, the authors encode one static stylesheet that leaks a target value as overlapping trigrams and reassemble it, recovering a victim's Gmail address with no user interaction."
 resource: "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)"
-tags: [article, webseclist-reference, en-US, zhero-web-security]
+tags: [article, webseclist-reference, en-US, zhero-web-security, xsleak, css-injection, browser-extension, info-leak, dos, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:13+00:00"

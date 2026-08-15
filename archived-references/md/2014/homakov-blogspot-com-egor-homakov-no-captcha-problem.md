@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Egor Homakov: The No CAPTCHA problem"
+description: "Google's No CAPTCHA reCAPTCHA is really a cookie-based whitelist: trusted users get a token, everyone else still solves the old OCR-breakable challenge. The widget can be loaded with another site's sitekey, its referrer check defeated by a meta referrer tag, so an attacker can clickjack trusted visitors into minting tokens to spend on the victim."
 resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
-tags: [article, webseclist-reference, homakov-blogspot-com]
+tags: [article, webseclist-reference, homakov-blogspot-com, clickjacking, ui-redress, auth-bypass, iframe, cookie, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:27:23+00:00"

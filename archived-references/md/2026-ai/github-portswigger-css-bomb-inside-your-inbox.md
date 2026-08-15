@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: Code
+description: "Proof-of-concept code from a talk on CSS injected into HTML email and web apps. Generated CSS rules match parts of a value and fire a request per match, stealing a token's start, middle and end even when CSP blocks external resources or the CSS has been sanitised; one payload is encoded so it mutates into the working vector only when read back through the CSSOM. Others keylog in pure HTML or via Chrome interest invokers, spoof the Outlook login screen, and prompt-inject ChatGPT Atlas by email."
 resource: "https://github.com/portswigger/css-the-bomb-inside-your-inbox"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, css-injection, css, info-leak, email, ui-redress, sanitizer-bypass, csp, prompt-injection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:58+00:00"
@@ -20,7 +21,7 @@ authors:
   - portswigger
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:62"
+  - "2026-ai.md:39"
 commit: 2aa5850e95c842b0c0f1f670c872a677bdf5520e
 content_sha256: ef7ea92711080ce37ac65223d105e674b39140af58c716a839b21e1113c15a12
 depth: full

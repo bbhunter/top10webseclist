@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Backdooring Flash Objects (the walkthrough)
+description: "pdp's narrative walkthrough of backdooring a SWF entirely from the command line: compile an ActionScript class whose main calls getURL(\"javascript:...\") with MTASC, then bind it in front of an untouched movie using swfcombine so the original animation still plays. Covers the swfmill library route and why attaching through attachMovie breaks preloaders."
 resource: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, flash, xss, javascript, tooling, file-upload, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:42+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Telegram anonymity fails in desktop
+description: "Telegram's desktop and Windows Phone clients forced peer-to-peer calls with no setting to refuse them, so placing or answering a call exposed both parties' public and private IP addresses to each other. Anyone able to ring a user could therefore locate them; fixed in tdesktop 1.3.17 and tracked as CVE-2018-17780."
 resource: "https://www.inputzero.io/2018/09/bug-bounty-telegram-cve-2018-17780.html"
-tags: [article, webseclist-reference, en-US, inputzero-io]
+tags: [article, webseclist-reference, en-US, inputzero-io, info-leak, cve, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:07+00:00"

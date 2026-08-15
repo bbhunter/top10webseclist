@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks"
+description: "Browser extensions give themselves away: a page can probe web-accessible resources by URL, and an extension that injects a WAR reference into the page reveals Firefox per-profile random UUID. Combining revelation with probing uniquely identifies about 90 percent of content-injecting extensions and yields a stable per-browser tracking identifier."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, browser-extension, info-leak, dom, javascript, large-scale-scan, measurement-study, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:42+00:00"

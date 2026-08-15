@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Ruby 3.4 Universal RCE Deserialization Gadget Chain / nastystereo.com
+description: "Refits the universal Ruby deserialisation gadget chain for Ruby 3.4: reaches the URI class through RubyGems' vendored copy via an autoload, swaps the zip sink for tools that ship in official Ruby images, and hides the trailing exception behind an error whose string conversion satisfies the version regex. One deserialisation of attacker data gives command execution."
 resource: "https://nastystereo.com/security/ruby-3.4-deserialization.html"
-tags: [article, webseclist-reference, en-AU, nastystereo-com]
+tags: [article, webseclist-reference, en-AU, nastystereo-com, gadget-chain, deserialization, rce, command-injection, ruby, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:10+00:00"

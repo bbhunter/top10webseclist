@@ -1,8 +1,9 @@
 ---
 type: Article
 title: O Single Sign-Off, Where Art Thou? An Empirical Analysis of Single Sign-On Account Hijacking and Session Management on the Web
+description: "An empirical study of single sign-on account hijacking: a Facebook cookie hijacking attack gives full account takeover, and further attacks retain long-term control of the relying-party accounts it unlocks, measured across 95 services. Most offer no way to revoke those sessions after a compromise, so the authors propose Single Sign-Off, an OpenID Connect revocation extension."
 resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, sso, openid, oauth, cookie, auth-bypass, attack-chain, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:54+00:00"

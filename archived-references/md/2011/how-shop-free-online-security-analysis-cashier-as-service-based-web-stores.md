@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "How to Shop for Free Online: Security Analysis of Cashier-as-a-Service Based Web Stores"
+description: "Researchers broke real cashier-as-a-service checkouts (PayPal, Amazon Payments, Google Checkout) as integrated by NopCommerce, Interspire, Buy.com and JR.com: a shopper calling merchant and cashier web APIs out of order can set his own price, reuse one payment, or avoid paying entirely. Re-checking Interspire's logic with the Poirot verifier found every manual flaw plus a shorter attack."
 resource: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, novel-technique, formal-analysis, case-study, auth-bypass, attack-chain, rest-api]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:01:13+00:00"

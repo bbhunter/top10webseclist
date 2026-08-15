@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Anyone can Access Deleted and Private Repository Data on GitHub ◆ Truffle Security Co.
+description: Commits pushed to a GitHub fork or upstream repository stay reachable from every repository in the fork network forever, surviving fork deletion, repository deletion and private-to-public transitions. Anyone who guesses a four-character short commit hash or reads the public events archive can retrieve deleted and private commit data, including leaked API keys.
 resource: "https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github"
-tags: [article, webseclist-reference, en-US, trufflesecurity-com]
+tags: [article, webseclist-reference, en-US, trufflesecurity-com, idor, info-leak, github, auth-bypass, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:18+00:00"

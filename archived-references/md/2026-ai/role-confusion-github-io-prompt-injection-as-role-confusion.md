@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Prompt Injection as Role Confusion
+description: Language models receive system, user, tool and reasoning content as one token stream distinguished only by role tags. Using linear probes trained on identical text wrapped in each tag, this work shows models infer role largely from writing style, which overrides the true tag, and that the measured role attribution of injected text predicts attack success. It recasts prompt injection as role confusion and demonstrates forged-reasoning and role-claiming attacks that follow.
 resource: "https://role-confusion.github.io/"
-tags: [article, webseclist-reference, en, role-confusion-github-io]
+tags: [article, webseclist-reference, en, role-confusion-github-io, prompt-injection, llm, ai-agent, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:10+00:00"
@@ -22,7 +23,7 @@ authors:
   - Dylan Hadfield-Menell
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:77"
+  - "2026-ai.md:80"
 commit: ""
 content_sha256: 29f25259aeceb53524c9aa38025b25b183736b18da0135530d673c1358f8c37b
 depth: full

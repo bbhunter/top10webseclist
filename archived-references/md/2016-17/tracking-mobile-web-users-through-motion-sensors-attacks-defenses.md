@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Tracking Mobile Web Users Through Motion Sensors: Attacks and Defenses"
+description: "Manufacturing imperfections make each phone's accelerometer and gyroscope respond slightly differently, and any web page can read those sensors from JavaScript. Combining sensor features, optionally exciting them with inaudible sound, fingerprints a specific handset in seconds and tracks the user across sites and sessions; calibration and added noise are evaluated as defences."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/tracking-mobile-web-users-through-motion-sensors-attacks-defenses.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, info-leak, javascript, android, ios, measurement-study, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:35:46+00:00"

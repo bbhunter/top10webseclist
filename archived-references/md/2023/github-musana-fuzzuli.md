@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: fuzzuli
+description: "fuzzuli builds its wordlist from the target's own domain instead of a static list, generating variants with dots removed, vowels stripped and subdomains reversed or shuffled, then probing for backup archives; it finds exposed source and database dumps named after the site that generic wordlists never guess."
 resource: "https://github.com/musana/fuzzuli"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, info-leak, fuzzing, tooling, go, http, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:13:23+00:00"

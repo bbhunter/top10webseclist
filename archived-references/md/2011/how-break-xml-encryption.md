@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: How to Break XML Encryption
+description: "XML Encryption's CBC mode combined with the character encoding of the plaintext yields an oracle: a Web Service that rejects a message it cannot parse leaks whether a modified ciphertext decrypts to valid UTF-8. Jager and Somorovsky generalise padding-oracle attacks to recover plaintext at roughly 14 requests per byte, decrypting 160 bytes from Apache Axis2 in 10 seconds."
 resource: "https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, info-leak, soap, java, encoding, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:54+00:00"

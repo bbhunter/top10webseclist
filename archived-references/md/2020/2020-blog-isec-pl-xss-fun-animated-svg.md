@@ -1,8 +1,9 @@
 ---
 type: Article
 title: XSS fun with animated SVG
+description: The SVG animate element takes a semicolon separated values list, so a javascript URL hidden after a harmless one escapes WAFs that inspect the attribute as a whole. Setting keyTimes to skip the first frame, or fill=freeze with a 1ms duration to land on the last, makes that value the one applied to href, giving a click-triggered XSS.
 resource: "https://blog.isec.pl/xss-fun-with-animated-svg/"
-tags: [article, webseclist-reference, en, blog-isec-pl]
+tags: [article, webseclist-reference, en, blog-isec-pl, xss, waf-bypass, filter-bypass, encoding, url-parsing, javascript, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:04:37+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: ScriptAccenting
+description: "Chen, Ross and Wang analyse four real IE frame-isolation bypasses: the file:javascript: relay through Windows Explorer, location.assign aliasing, ambiguous navigation initiators, and setCapture merging DOMs via event.srcElement. Their defence XORs scripts and object names with a per-origin accent key at the mshtml/jscript boundary, for 3.16% worst-case overhead."
 resource: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, same-origin-policy, sop-bypass, iframe, dom, javascript, mitigation, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:03+00:00"
@@ -249,8 +250,16 @@ Copyright 2007 ACM 978-1-59593-703-2/07/0010...$5.00.
 --- page 9 ---
 
 *b1-b.-':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U
+¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´
+
+U	¸ÿà´U	¸ÿØ@U	
+
+
+U
+U
+¸ÿþ´U¸ÿì´
+
+U¸ÿÜ´U¸ÿØ@	U
 
 --- page 10 ---
 

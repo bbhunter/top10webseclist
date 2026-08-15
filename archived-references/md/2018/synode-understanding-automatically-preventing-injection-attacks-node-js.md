@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js"
+description: "A study of 235,850 npm modules shows exec and eval sinks are widespread and almost never sanitised, so attacker-controlled strings reach the shell or the JavaScript engine and run arbitrary commands. Synode statically infers a string template per sink and rewrites the module so a runtime value is rejected unless it merely fills the template's holes with safe literal nodes."
 resource: "https://www.software-lab.org/publications/ndss2018.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, command-injection, injection, rce, sanitizer-bypass, nodejs, javascript, measurement-study, static-analysis, dynamic-analysis, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:07+00:00"

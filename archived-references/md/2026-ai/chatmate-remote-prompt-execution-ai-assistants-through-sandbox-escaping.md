@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping"
+description: "A malicious document tells Microsoft Copilot to run gzip-packed Python in its analysis sandbox, which then reaches an unauthenticated internal service on the host network; its /config endpoint takes a name that traverses out of the config directory, so files land anywhere on the host. Writing a containerd hosts.toml plus an ld.so.preload symlink plants a root backdoor, escaping the sandbox and giving the attacker an interactive prompt channel into the victim's Copilot."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, prompt-injection, sandbox-escape, llm, ai-agent, path-traversal, privilege-escalation, rce, azure]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:12+00:00"
@@ -18,7 +19,7 @@ authors:
   - Ori Lahav
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:80"
+  - "2026-ai.md:83"
 commit: ""
 content_sha256: e9a0108ac4f883db5fa0196e3940db42d518101701fdac41be1d3a306a13ef10
 depth: full

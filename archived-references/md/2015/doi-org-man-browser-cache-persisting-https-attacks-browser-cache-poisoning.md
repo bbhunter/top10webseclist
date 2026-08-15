@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Man-in-the-Browser-Cache: Persisting HTTPS Attacks via Browser Cache Poisoning"
+description: Clicking through a single invalid-certificate warning lets a one-time man-in-the-middle replace cached scripts, images or an HTML5 AppCache manifest with long-lived malicious copies. The poisoned resources keep running in later, correctly secured HTTPS sessions until the cache is cleared, and extension-injected scripts spread the poisoning to every site visited.
 resource: "https://doi.org/10.1016/j.cose.2015.07.004"
-tags: [article, webseclist-reference, doi-org]
+tags: [article, webseclist-reference, doi-org, cache-poisoning, https, tls, cache, browser-extension, same-origin-policy, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T15:50:14+00:00"

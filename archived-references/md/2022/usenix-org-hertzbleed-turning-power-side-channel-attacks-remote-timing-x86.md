@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Hertzbleed: Turning Power Side-Channel Attacks Into Remote Timing Attacks on x86"
+description: On modern Intel and AMD x86 CPUs, dynamic voltage and frequency scaling makes clock frequency depend on the data being processed, so power side-channel leakage becomes wall-clock timing leakage observable remotely with no power interface. A chosen-ciphertext attack amplifies one key-bit guess into thousands of high or low power operations, extracting a full SIKE key.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/wang-yingchen"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, timing-attack, side-channel, info-leak, measurement-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:04+00:00"

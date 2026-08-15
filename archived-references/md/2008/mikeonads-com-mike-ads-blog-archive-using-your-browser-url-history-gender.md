@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Mike On Ads » Blog Archive » Using your browser URL history to estimate gender
+description: "An ad technologist adapts the CSS :visited history-sniffing trick to profile visitors rather than to show share buttons. The script tests the Quantcast top 10,000 sites for visited styling, then multiplies each hit site's published male-to-female audience ratio to estimate the reader's gender. Link-colour leakage yields demographic inference, not just a yes/no per site."
 resource: "http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/"
-tags: [article, webseclist-reference, mikeonads-com]
+tags: [article, webseclist-reference, mikeonads-com, side-channel, css, info-leak, browser-fingerprinting, deanonymization, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:43+00:00"

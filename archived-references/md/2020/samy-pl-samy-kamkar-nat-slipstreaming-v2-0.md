@@ -1,8 +1,9 @@
 ---
 type: Article
 title: samy kamkar - NAT Slipstreaming v2.0
+description: "A malicious web page measures the victim's MTU and internal IP, then pads an HTTP POST or a WebRTC TURN username so attacker-chosen bytes begin a fresh TCP segment or IP fragment, which the router's SIP or H.323 application level gateway reads as call signalling. The NAT then forwards arbitrary ports back to any host on the victim's network."
 resource: "https://samy.pl/slipstream/"
-tags: [article, webseclist-reference, samy-pl]
+tags: [article, webseclist-reference, samy-pl, webrtc, smuggling, timing-attack, http, javascript, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:11+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross-Browser Proxy Unmasking
+description: "ma1 (Giorgio Maone) answers RSnake's LiveConnect Tor deanonymiser with a plugin-agnostic version: Flash's XMLSocket ignores the browser's proxy settings and connects straight to a Perl server on port 9999 that echoes the client IP. Works in any browser with Flash, no JavaScript needed. Lesson: turn plugins off to stay anonymous."
 resource: "https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/"
-tags: [article, webseclist-reference, en-US, hackademix-net]
+tags: [article, webseclist-reference, en-US, hackademix-net, flash, deanonymization, proxy, info-leak, sop-bypass, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:29+00:00"

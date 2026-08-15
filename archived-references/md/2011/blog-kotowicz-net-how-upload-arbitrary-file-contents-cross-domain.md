@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How to upload arbitrary file contents cross-domain
+description: CORS lets a plain XMLHttpRequest POST cross-domain without preflight, so an attacker page can hand-build a multipart/form-data body and upload a file of chosen name and content to another site with no user interaction. It needs an upload endpoint that does not authenticate, and it exploits a specification quirk rather than a browser bug, so vendors will not patch it.
 resource: "http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-contents.html"
-tags: [article, webseclist-reference, blog-kotowicz-net]
+tags: [article, webseclist-reference, blog-kotowicz-net, csrf, cors, file-upload, javascript, sop-bypass, novel-technique, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:30+00:00"

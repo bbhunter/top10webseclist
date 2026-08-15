@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "The Security Lottery: Measuring Client-Side Web Security Inconsistencies"
+description: "A measurement of inconsistency in client-side security policies: the same site can ship different security headers depending on User-Agent, network access method, language or region, so some visitors silently get weaker protection. It formalises four such mechanisms and measures how widespread these inconsistencies are across top sites, including exploitable cases."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, csp, https, http, formal-analysis, measurement-study, large-scale-scan, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:35+00:00"

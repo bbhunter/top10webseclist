@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "BingBang: AAD misconfiguration led to Bing.com results manipulation and account takeover"
+description: "Azure AD multi-tenant applications that switch on built-in authentication but never check the tenant claim let any Azure account sign in, and about 25 percent of scanned multi-tenant apps were affected. Wiz used it against Microsoft's own Bing Trivia CMS to edit live Bing.com search results and land stored XSS on bing.com, stealing Office 365 tokens for victims' Outlook mail and SharePoint files."
 resource: "https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration"
-tags: [article, webseclist-reference, en-us, wiz-io]
+tags: [article, webseclist-reference, en-us, wiz-io, auth-bypass, xss, oauth, sso, azure, jwt, info-leak, large-scale-scan, case-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:07:09+00:00"

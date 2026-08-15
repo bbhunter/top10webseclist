@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Top 10 Web Hacking Techniques of 2017
+description: "PortSwigger's post reviving the annual Top 10 Web Hacking Techniques vote and opening nominations for 2017, setting out the nomination, community vote and expert panel stages and listing the research nominated so far. It is an announcement and index rather than a technique of its own."
 resource: "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:01+00:00"

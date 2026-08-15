@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How I found a $5,000 Google Maps XSS (by fiddling with Protobuf)
+description: Google Maps encodes its URL and AJAX parameters in an undocumented text form of Protobuf. Reverse-engineering it with a Chrome debugger script and a Qt request editor exposed a tile format served as Content-Type text/html with encryption and compression switchable off, so attacker-chosen marker text executed as script on www.google.com; base64 field encoding evaded browser XSS filters.
 resource: "https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, xss, filter-bypass, content-type, mime, url-parsing, bug-bounty, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:13+00:00"

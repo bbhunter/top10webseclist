@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Danger of Falling to System Role in AWS SDK Client
+description: "The AWS SDK credential provider chain silently falls back to the host machine's own IAM role when a client is initialised with nil credentials. A web application whose import-from-S3 feature set credentials to nil in its error handler therefore retried the request as the privileged system role, letting any user read the platform's internal private buckets by naming them."
 resource: "https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, privilege-escalation, info-leak, aws, auth-bypass, go, case-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:47+00:00"

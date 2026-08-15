@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Remote Code Execution in Three Acts: Chaining Exposed Actuators and H2 Database Aliases in Spring Boot 2"
+description: An exposed Spring Boot 2 actuator env endpoint lets an attacker set the HikariCP connection test query, which the pool runs as SQL on the next database connection. Against an H2 database that query can CREATE ALIAS a Java function and call it, giving remote code execution, with CONCAT and HEXTORAW string tricks to evade WAF filters.
 resource: "https://spaceraccoon.dev/remote-code-execution-in-three-acts-chaining-exposed-actuators-and-h2-database"
-tags: [article, webseclist-reference, en-us, spaceraccoon-dev]
+tags: [article, webseclist-reference, en-us, spaceraccoon-dev, rce, command-injection, injection, waf-bypass, attack-chain, spring, java, database, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:44:00+00:00"

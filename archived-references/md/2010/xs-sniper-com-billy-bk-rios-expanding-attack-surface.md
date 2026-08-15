@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Billy (BK) Rios » Expanding the Attack Surface
+description: Switching browsers during an unpatched IE bug does not isolate users. A PDF opened in Firefox is rendered by Adobe Reader, and one line of Reader JavaScript calling app.launchURL() hands a chosen URL to the system default browser, bouncing the victim into Internet Explorer. Safari and Opera behave the same way.
 resource: "http://xs-sniper.com/blog/2010/12/22/expanding-the-attack-surface/"
-tags: [article, webseclist-reference, xs-sniper-com]
+tags: [article, webseclist-reference, xs-sniper-com, pdf, attack-chain, novel-technique, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:50+00:00"

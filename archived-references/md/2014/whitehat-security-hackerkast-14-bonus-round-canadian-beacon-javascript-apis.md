@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "#HackerKast 14 Bonus Round: Canadian Beacon - JavaScript Beacon and Performance APIs"
+description: "Demonstrates JavaScript port scanning of a visitor's internal network from an ordinary web page, using the Beacon and performance timing APIs against hidden iframes in place of the old iframe onload trick. A hostile page can enumerate live hosts and open ports on RFC1918 addresses behind the browser."
 resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/"
-tags: [article, webseclist-reference, en, whitehat-security]
+tags: [article, webseclist-reference, en, whitehat-security, timing-attack, side-channel, javascript, iframe, info-leak, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:30+00:00"

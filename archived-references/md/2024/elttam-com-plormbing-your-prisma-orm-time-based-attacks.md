@@ -1,8 +1,9 @@
 ---
 type: Article
 title: plORMbing your Prisma ORM with Time-based Attacks
+description: "In Prisma a controlled where clause picks field and operator, and nested some objects loop a many-to-many back on itself to reach users and unpublished rows the endpoint never exposes. With no visible response difference, the payload puts the negated leak filter first in an OR with a thousand contains terms: PostgreSQL flattens the OR and stops at the first true term, so a matching character costs about 400 ms. plormber decides each character by paired concurrent requests and t-tests."
 resource: "https://www.elttam.com/blog/plorming-your-primsa-orm/"
-tags: [article, webseclist-reference, en, elttam-com]
+tags: [article, webseclist-reference, en, elttam-com, timing-attack, info-leak, nodejs, database, postgres, tooling, dos]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:05+00:00"

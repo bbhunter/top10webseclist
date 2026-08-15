@@ -1,8 +1,9 @@
 ---
 type: Article
 title: wtf.ninja
+description: A Linksys E4200 v2 running firmware 2.0.37 serves the same administration interface on TCP port 8083 with HTTP authentication skipped entirely, so anyone who can reach the device gets full admin control. The firmware updater also wrongly reports the shipped version as current, leaving owners unaware that a fix exists.
 resource: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
-tags: [article, webseclist-reference, phra-gs]
+tags: [article, webseclist-reference, phra-gs, auth-bypass, privilege-escalation, cve, http, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:07+00:00"

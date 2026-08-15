@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Blended Threats and JavaScript
+description: A one-paragraph announcement for the Black Hat USA 2012 talk Blended Threats and JavaScript, pointing at slides carrying three extra slides beyond the conference version, a video, and a ddwrt-install-tool demo on GitHub that chains web-borne JavaScript into attacks on local network devices. The post links the material rather than describing the technique.
 resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/blended-threats-and-javascript/"
-tags: [article, webseclist-reference, en-US, superevr]
+tags: [article, webseclist-reference, en-US, superevr, xss, attack-chain, csrf, command-injection, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:27+00:00"

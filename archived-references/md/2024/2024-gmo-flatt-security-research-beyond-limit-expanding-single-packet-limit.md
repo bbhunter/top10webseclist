@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Beyond the Limit: Expanding single-packet race condition with a first sequence sync for breaking the 65,535 byte limit"
+description: Extends the single-packet attack past its roughly 1,500-byte ceiling by splitting a large TCP segment across IP fragments and sending them out of order, withholding the one carrying the first sequence number. The server queues everything until it arrives, so about 10,000 requests land in 166 milliseconds, making limit-overrun races exploitable.
 resource: "https://flatt.tech/research/posts/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/"
-tags: [article, webseclist-reference, en, gmo-flatt-security-research]
+tags: [article, webseclist-reference, en, gmo-flatt-security-research, race-condition, http2, auth-bypass, http, tooling, novel-technique, prior-art-extension, nodejs]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:34+00:00"

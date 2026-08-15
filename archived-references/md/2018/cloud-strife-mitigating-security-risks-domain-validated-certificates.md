@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates"
+description: "Stale DNS records that still point at cloud IP addresses their owner has released let an attacker re-allocate the same address and pass automated domain validation, obtaining a browser-trusted certificate for someone else's domain. Over 700,000 exposed domains were found, with takeover practical in under 70 seconds for under a dollar; a trust-based ACME challenge is proposed."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, dns, tls, auth-bypass, https, aws, azure, large-scale-scan, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:10+00:00"

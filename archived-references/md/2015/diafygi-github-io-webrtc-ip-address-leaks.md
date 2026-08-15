@@ -1,8 +1,9 @@
 ---
 type: Article
 title: WebRTC IP Address Leaks
+description: "A live demonstration that any web page can use WebRTC to issue STUN requests from JavaScript and read back the visitor's local, public and IPv6 addresses without permission. The requests never appear in developer tools and cannot be blocked by extensions such as AdBlock or Ghostery, so the page deanonymises users behind NAT, VPNs and proxies."
 resource: "https://diafygi.github.io/webrtc-ips/"
-tags: [article, webseclist-reference, diafygi-github-io]
+tags: [article, webseclist-reference, diafygi-github-io, webrtc, info-leak, javascript, filter-bypass, browser-extension, novel-technique, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T13:16:34+00:00"
@@ -18,7 +19,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:79"
+  - "2015.md:76"
 commit: ""
 content_sha256: ed67fa025404d7254c782a650ad1a4068421a134d1c4c754520c0372d2429322
 depth: full

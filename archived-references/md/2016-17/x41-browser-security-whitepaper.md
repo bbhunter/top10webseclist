@@ -1,8 +1,9 @@
 ---
 type: Code
 title: X41 Browser Security Whitepaper
+description: A comparative security assessment of Google Chrome, Microsoft Edge and Internet Explorer covering attack surface, sandboxing, process and origin isolation, exploit mitigations, extensions, peripheral APIs and TLS. It records concrete weaknesses, including forcing a downgrade from Edge to IE via an expired compatibility-list domain and leaking local IP addresses via Edge ORTC.
 resource: "https://github.com/x41sec/browser-security-whitepaper-2017/blob/master/X41-Browser-Security-White-Paper.pdf"
-tags: [code, webseclist-reference]
+tags: [code, webseclist-reference, browser-extension, sandbox-escape, same-origin-policy, webrtc, info-leak, csp, tls, measurement-study, survey, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T13:27:13+00:00"

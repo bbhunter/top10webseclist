@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Java Zero-Day Procession Continues
+description: "A Java zero-day found exploited in the wild against Java 6u41 and 7u15. Instead of the usual sandbox-permission tricks it targets the JVM's internal data structures for arbitrary memory read and write, zeroing memory to fetch a McRAT payload. It is unreliable and often crashes the JVM; Oracle assigned CVE-2013-1493."
 resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/java-zero-day-procession-continues-030113/77575"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, java, rce, cve, sandbox-escape, vendor-advisory, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:03+00:00"

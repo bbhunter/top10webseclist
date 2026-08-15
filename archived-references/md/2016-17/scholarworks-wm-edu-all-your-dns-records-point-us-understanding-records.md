@@ -1,8 +1,9 @@
 ---
 type: Article
 title: All Your DNS Records Point to Us Understanding the Security Threats of Dangling DNS Records
+description: A dangling DNS record points at a resource that no longer exists but was never purged. The paper identifies three vectors by which an attacker can claim the abandoned resource and take over the domain or subdomain, including having a certificate authority issue a certificate for it, finds 467 exploitable records across 277 of the Alexa top 10,000 and 52 edu zones, and proposes three defences.
 resource: "https://scholarworks.wm.edu/aspubs/823/"
-tags: [article, webseclist-reference, en, w-m-scholarworks]
+tags: [article, webseclist-reference, en, w-m-scholarworks, dns, large-scale-scan, measurement-study, https, tls, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:00+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SSRF Cross Protocol Redirect Bypass
+description: The Node.js request library deletes the custom HTTP agent whenever a redirect switches protocol, which silently discards the anti-SSRF filter attached to that agent. An attacker-controlled open redirect from HTTPS to HTTP therefore defeats ssrf-req-filter and reaches internal services (CVE-2023-28155); axios is exposed the same way when only one of its two agents is overridden.
 resource: "https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, ssrf, open-redirect, filter-bypass, nodejs, https, http, cve, static-analysis]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:45+00:00"

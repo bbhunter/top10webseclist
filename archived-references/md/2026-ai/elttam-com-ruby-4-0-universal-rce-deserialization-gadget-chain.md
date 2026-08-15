@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Ruby 4.0 Universal RCE Deserialization Gadget Chain
+description: "A universal Marshal.load chain for Ruby 4.0.6, built from RubyGems classes that naming Gem::SpecFetcher autoloads. Time._load validates its zone inside rb_rescue, discarding the exception, and calls to_str, which Gem::URI::Generic aliases to to_s to drive a download that writes attacker-hosted Ruby to disk by directory traversal. A Gem::StubSpecification used as a Hash key gets hash called while Marshal rebuilds the hash, reaching Gem::Specification.load, which evals that file."
 resource: "https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain"
-tags: [article, webseclist-reference, en, elttam-com]
+tags: [article, webseclist-reference, en, elttam-com, gadget-chain, deserialization, ruby, rce, path-traversal]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:24:46+00:00"

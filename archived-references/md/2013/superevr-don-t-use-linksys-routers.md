@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Don't Use Linksys Routers"
+description: "Five Linksys flaws disclosed after Cisco's patch fixed only an unrelated XSS: the WRT54GL still accepts cross-site firmware upload, and the EA2700 has XSS on apply.cgi, unauthenticated path traversal reading /etc/passwd, a CSRF that enables remote management and resets the admin password, and source disclosure by appending a slash to any admin URL."
 resource: "http://web.archive.org/web/20160507023636/https://superevr.com/blog/2013/dont-use-linksys-routers/"
-tags: [article, webseclist-reference, en-US, superevr]
+tags: [article, webseclist-reference, en-US, superevr, csrf, xss, path-traversal, file-upload, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:14+00:00"

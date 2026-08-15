@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Verizon Wireless Customer Portal Exposed Text Message History
+description: "Verizon Wireless's customer portal let a user edit the phone number in the text-message-history URL and read another subscriber's SMS records, including the numbers they messaged. Only the target's mobile number was needed. Cody Collier reported it to Verizon, which says it has mitigated the flaw."
 resource: "https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/"
-tags: [article, webseclist-reference, en, the-state-of-security]
+tags: [article, webseclist-reference, en, the-state-of-security, idor, info-leak, auth-bypass, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:44+00:00"

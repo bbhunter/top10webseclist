@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: DEFCON 27 Ben Sadeghipour Owning the clout through SSRF and PDF generators
+description: "Server-side HTML to PDF generators render attacker markup in the server's own context, so an injected iframe or an escape from a style tag turns the export feature into server-side request forgery that reaches cloud metadata. WeasyPrint's attachment link embeds local files into the output PDF, and DNS rebinding defeats same-origin checks under headless Chrome, yielding cloud keys."
 resource: "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, ssrf, dns-rebinding, xss, pdf, info-leak, aws, tooling, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:47+00:00"

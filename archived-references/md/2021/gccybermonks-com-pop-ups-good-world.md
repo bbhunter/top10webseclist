@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Pop-Ups in a good-world
+description: "Popup windows, popunders and drag or clipboard events are chained to upgrade a self-XSS into an attacker-triggered one. Writing a payload into the victim's clipboard or drag data and then opening the vulnerable page auto-focuses the input, while frame counting and Same Origin Method Execution extend the attack past X-Frame-Options."
 resource: "https://gccybermonks.com/posts/popups/"
-tags: [article, webseclist-reference, gccybermonks-com]
+tags: [article, webseclist-reference, gccybermonks-com, xss, ui-redress, xsleak, sop-bypass, clickjacking, iframe, timing-attack, css, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:19+00:00"

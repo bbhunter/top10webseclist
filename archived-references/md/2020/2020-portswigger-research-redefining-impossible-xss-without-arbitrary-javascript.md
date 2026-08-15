@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Redefining Impossible: XSS without arbitrary JavaScript"
+description: An injection restricted to letters, digits, quote, plus, dot and backticks can still call methods through tagged templates, building an oracle that reveals whether a character of document.cookie matches a guess. Execution time, and later window.stop plus location.assign observed through an iframe load event, leak the cookie character by character.
 resource: "https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, xsleak, side-channel, timing-attack, xss, info-leak, filter-bypass, iframe, cookie, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:59+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Lenovo PCs ship with man-in-the-middle adware that breaks HTTPS connections [Updated]"
+description: Lenovo consumer laptops shipped with Superfish ad-injection software that installs its own root certificate and proxies HTTPS, and the accompanying private key is identical on every machine and protected by the password komodia. Anyone who extracts it can present forged certificates for any site to affected PCs, and Chrome key pinning does not warn because the anchor is locally installed.
 resource: "http://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/"
-tags: [article, webseclist-reference, en, ars-technica]
+tags: [article, webseclist-reference, en, ars-technica, https, tls, supply-chain, proxy, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:21+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Crashing servers with digits: floating-point numbers DoS vulnerabilities"
+description: Submitting a number with millions of digits after the decimal point, or the same compactly in exponent notation, makes a server spend tens of seconds parsing a single request, so a handful of requests exhaust CPU and take the application down. Typically reachable through JSON money fields that accept unbounded decimal precision.
 resource: "https://www.securitum.com/crashing_servers_with_digits.html"
-tags: [article, webseclist-reference, en, securitum-com]
+tags: [article, webseclist-reference, en, securitum-com, dos, algorithmic-complexity, http, case-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:27+00:00"

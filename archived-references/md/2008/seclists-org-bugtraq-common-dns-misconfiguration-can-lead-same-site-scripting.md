@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Bugtraq: common dns misconfiguration can lead to \"same site\" scripting"
+description: "Dropping the trailing dot from a 'localhost IN A 127.0.0.1' zone record makes localhost.example.com resolve to loopback, so anything listening on a shared machine receives that domain's cookies. Ormandy names it Same-Site Scripting, gives a CUPS javascript: job_printer_uri click-exploit, and lists microsoft.com, ebay.com, yahoo.com and fbi.gov as affected."
 resource: "http://seclists.org/bugtraq/2008/Jan/0270.html"
-tags: [article, webseclist-reference, en, seclists-org]
+tags: [article, webseclist-reference, en, seclists-org, dns, cookie, xss, same-origin-policy, info-leak, mitigation, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:40:31+00:00"

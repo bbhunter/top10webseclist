@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "WorstFit: Unveiling Hidden Transformers in Windows ANSI!"
+description: "Windows converts UTF-16 to the ANSI code page with Best-Fit mappings: fullwidth quote U+FF02 becomes \", yen U+00A5 becomes \\, soft hyphen becomes -. GetCommandLineA and the CRT behind plain main() apply this after escapeshellarg or list2cmdline have escaped, so the escaping is undone and extra arguments split out (tar --use-compress-program, wget --use-askpass). The same conversion smuggles path separators into filenames and CGI PATH_INFO, giving traversal, WAF bypass and LFI."
 resource: "https://blog.orange.tw/posts/2025-01-worstfit-unveiling-hidden-transformers-in-windows-ansi/"
-tags: [article, webseclist-reference, en, orange-tsai]
+tags: [article, webseclist-reference, en, orange-tsai, charset, unicode, filter-bypass, command-injection, rce, path-traversal, waf-bypass, lfi]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:24+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Abusing HTTP hop-by-hop request headers
+description: Naming arbitrary headers in the HTTP Connection header marks them hop-by-hop, and proxies that forward that list instead of consuming it let an attacker delete headers a downstream hop added. Removing X-Forwarded-For can make an application treat the request as internal, and the trick also fingerprints caches, bypasses WAF rules that require a header, and can poison caches with error responses.
 resource: "https://nathandavison.com/blog/abusing-http-hop-by-hop-request-headers"
-tags: [article, webseclist-reference, en, nathandavison-com]
+tags: [article, webseclist-reference, en, nathandavison-com, cache-poisoning, waf-bypass, auth-bypass, dos, info-leak, http, proxy, reverse-proxy, cache, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:36:29+00:00"

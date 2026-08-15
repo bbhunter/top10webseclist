@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Why eve and mallory love android: an analysis of android SSL (in)security"
+description: "A static analysis of 13,500 free Google Play apps with the authors' MalloDroid tool found 1,074 containing SSL/TLS code open to man-in-the-middle attack. A manual audit of 100 of them yielded working MITM against 41 apps and a wide range of captured credentials, and a survey of 754 users showed half could not tell whether a session was protected."
 resource: "https://teamusec.de/publications/conf-ccs-fahlhmsbf12/"
-tags: [article, webseclist-reference, en, teamusec-de]
+tags: [article, webseclist-reference, en, teamusec-de, android, tls, https, large-scale-scan, measurement-study, static-analysis, tooling, survey, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:19+00:00"

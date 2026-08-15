@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Joomla: PHP Bug Introduces Multiple XSS Vulnerabilities"
+description: "Multiple cross-site scripting vulnerabilities in Joomla (CVE-2024-21726) are traced to divergent handling of invalid UTF-8 by two PHP mbstring functions: mb_strpos restarts parsing at an invalid byte while mb_substr skips continuation bytes, so the index and the extraction disagree. Joomla's tag-stripping filter uses both, and inserted invalid sequences shift the offset past an opening angle bracket, leaving arbitrary HTML in the output."
 resource: "https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/"
-tags: [article, webseclist-reference, en, sonar]
+tags: [article, webseclist-reference, en, sonar, joomla, xss, php, sanitizer-bypass, unicode, parser-differential, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:33+00:00"

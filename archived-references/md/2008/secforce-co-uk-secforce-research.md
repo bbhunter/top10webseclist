@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "SECFORCE :: Research"
+description: "Landing page for SECFORCE's PHP Socket Hijacking demo: a screencast of attacks abusing PHP's socket functions, showing victim and attacker browsers side by side. The video is Flash and was not preserved, so what remains is the two-sentence description plus links to the socket_attack tool ZIP and the OWASP 'Abusing PHP Sockets' presentation."
 resource: "http://www.secforce.co.uk/media/demos/PHP_socket_hijacking_demo.html"
-tags: [article, webseclist-reference, secforce-co-uk]
+tags: [article, webseclist-reference, secforce-co-uk, php, ssrf, proxy, tooling, abuse-of-functionality]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:18+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

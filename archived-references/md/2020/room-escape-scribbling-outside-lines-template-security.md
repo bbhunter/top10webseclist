@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Room for Escape: Scribbling Outside the Lines of Template Security"
+description: "Templates that untrusted users may edit break out of their sandboxes: SharePoint's safe-mode page parser is fooled by delayed data binding into parsing a user site page as a trusted application page, and Java engines such as FreeMarker, Velocity and Jinjava are escaped through objects left reachable in the template context. The result is remote code execution as an unprivileged CMS user."
 resource: "https://i.blackhat.com/USA-20/Wednesday/us-20-Munoz-Room-For-Escape-Scribbling-Outside-The-Lines-Of-Template-Security-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, ssti, sandbox-escape, rce, gadget-chain, filter-bypass, java, aspnet, dotnet, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:55+00:00"

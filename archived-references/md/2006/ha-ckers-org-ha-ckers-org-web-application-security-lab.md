@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Commentary on Digger's self-digging story, used to explain cross-site request forgery: a third-party page redirects an authenticated user into a site function, which then executes as that user. Argues that requiring POST instead of GET is a common but ineffective fix, easily defeated by injected HTML or by frameworks that ignore the method."
 resource: "http://ha.ckers.org/blog/20060615/a-story-that-diggs-itself/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, csrf, case-study, abuse-of-functionality, mitigation, http, filter-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:43:18+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: CESA-2008-010
+description: "Firefox's E4X support makes inline XML valid JavaScript, so a remote site can pull a victim's private XML feed in via <script src>. An XML injection bug in E4X parsing lets `default xml namespace = '\\''` break the parse of the included document, leaking limited structure about it. CVE-2008-5024, fixed in Firefox 2.0.0.18 and 3.0.4."
 resource: "http://scary.beasts.org/security/CESA-2008-010.html"
-tags: [article, webseclist-reference, scary-beasts-org]
+tags: [article, webseclist-reference, scary-beasts-org, sop-bypass, same-origin-policy, info-leak, javascript, injection, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:59+00:00"

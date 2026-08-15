@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "UI Redressing: Attacks and Countermeasures Revisited"
+description: "A seminar work surveying UI redressing end to end: basic clickjacking, strokejacking and likejacking, then new eventjacking and classjacking variants chaining clickjacking with reflected XSS and jQuery class selectors, plus drag-and-drop text injection, view-source content extraction and SVG masking. It then tests frame busting, X-Frame-Options and NoScript and shows seven ways to bust them."
 resource: "http://ui-redressing.mniemietz.de/"
-tags: [article, webseclist-reference, ui-redressing-mniemietz-de]
+tags: [article, webseclist-reference, ui-redressing-mniemietz-de, ui-redress, clickjacking, iframe, xss, csrf, css, same-origin-policy, mitigation, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T12:54:16+00:00"

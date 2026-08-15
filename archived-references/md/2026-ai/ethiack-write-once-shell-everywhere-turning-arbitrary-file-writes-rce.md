@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE"
+description: "A graded catalogue of arbitrary-file-write to RCE sinks, plus new ones. Path resolution stops at the first failing component, so the errno of a failed write - read through status code, body length or latency - fingerprints OS, container, distro and runtime version. Guess-free targets follow: PID 1's still-open entrypoint script at /proc/1/fd/255 or /proc/1/fd/10, a worker pool's fixed worker.js, and Rails db/schema_cache.yml, unsafe_load'd into a RubyGems hash-key gadget chain."
 resource: "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce"
-tags: [article, webseclist-reference, en, ethiack]
+tags: [article, webseclist-reference, en, ethiack, rce, side-channel, gadget-chain, deserialization, docker, nodejs, ruby, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:43+00:00"

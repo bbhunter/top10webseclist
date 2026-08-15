@@ -1,8 +1,9 @@
 ---
 type: Article
 title: itms Decloaking ha.ckers.org web application security lab
+description: "An iframe pointing at itms:www.apple.com:80@ha.ckers.org bypasses the iTunes handler's restriction on which domain it may contact. Because the handler follows the operating system's network settings rather than the browser's proxy, the request leaves the user's real external IP, decloaking someone browsing through a proxy. It was added to HD Moore's decloak.net."
 resource: "http://ha.ckers.org/blog/20090819/itms-decloaking/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, url-parsing, iframe, proxy, side-channel, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:48+00:00"

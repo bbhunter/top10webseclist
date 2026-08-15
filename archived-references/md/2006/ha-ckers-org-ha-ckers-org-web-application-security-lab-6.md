@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Michael Daw's CSRF-from-Word technique extended: instead of a remote image, embed CSS references that Word fetches when the document is opened. That works where images failed, leaves no visible cue to the victim, and one .doc can carry many requests, making it a quiet web bug and a CSRF platform."
 resource: "http://ha.ckers.org/blog/20061215/csrf-with-word-part-ii/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, csrf, css, abuse-of-functionality, prior-art-extension, info-leak, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:36+00:00"

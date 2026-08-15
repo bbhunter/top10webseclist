@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Refresh: Compromising F5 BIG-IP With Request Smuggling"
+description: "F5 BIG-IP fronts its Tomcat TMUI backend with a custom Apache httpd vulnerable to AJP request smuggling: a Transfer-Encoding of chunked, chunked makes httpd drop Content-Length and emit the POST body as a second AJP packet, which Tomcat reads as a fresh request."
 resource: "https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/"
-tags: [article, webseclist-reference, en, praetorian]
+tags: [article, webseclist-reference, en, praetorian, request-smuggling, auth-bypass, parser-differential, privilege-escalation, rce, proxy, http, java, cve, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:37:03+00:00"

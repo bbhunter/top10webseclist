@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: Scanner
+description: "A Burp/BulkScan extension that detects CRLF-powered request and response desync, the scanner behind the 'CRLF-Powered Desync Attacks' research. A request-header-injection probe sends a benign then a mutated request and flags an issue when the response matches a canary or diverges from the baseline; a response-header-injection probe reflects a canary header from the path, then injects Content-Length to test whether the response splits, with an auto-exploit for Response Queue Poisoning."
 resource: "https://github.com/t0xodile/crlf-powered-desync-scanner"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, tooling, desync, request-smuggling, header-injection, response-splitting, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:59+00:00"
@@ -20,7 +21,7 @@ authors:
   - t0xodile
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:57"
+  - "2026-ai.md:33"
 commit: 8b21e786dfe46784bad389a9ebf8dd0f877eabb4
 content_sha256: a8a0cfbd51d23808c4ea9f87857b466ff85c8991329bc7634f88bbd651b6cdd5
 depth: full

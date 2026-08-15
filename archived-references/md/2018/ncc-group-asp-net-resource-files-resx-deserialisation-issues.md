@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ASP.NET resource files (.RESX) and deserialisation issues
+description: ASP.NET resource files embed serialized objects that System.Resources deserializes with BinaryFormatter, SoapFormatter or TypeConverters without restricting the type, so a supplied .resx or .resources file yields code execution. The same file references can point at UNC paths for file enumeration and SMB hash theft, and uploading one into App_LocalResources on IIS turns a file upload into RCE.
 resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/"
-tags: [article, webseclist-reference, en-GB, ncc-group]
+tags: [article, webseclist-reference, en-GB, ncc-group, deserialization, rce, file-upload, gadget-chain, dotnet, aspnet, info-leak, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:09+00:00"

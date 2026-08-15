@@ -1,8 +1,9 @@
 ---
 type: Article
 title: iSecLab - A Practical Attack to De-anonymize Social Network Users
+description: Group membership on a social network is enough to identify a person. The attack crawls group rosters, then a malicious page uses browser history stealing to learn which group URLs the visitor has seen, and intersects that fingerprint with the roster data to name an otherwise anonymous visitor. Demonstrated against Xing at scale.
 resource: "https://iseclab.org/publications/wondracek2010a_practical/"
-tags: [article, webseclist-reference, iseclab-org]
+tags: [article, webseclist-reference, iseclab-org, info-leak, side-channel, xsleak, measurement-study, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:40+00:00"

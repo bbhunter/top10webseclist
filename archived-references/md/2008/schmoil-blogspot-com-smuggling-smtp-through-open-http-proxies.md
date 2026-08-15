@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Smuggling SMTP through open HTTP proxies
+description: An open HTTP proxy in a web app can be aimed at port 25, where the SMTP server reads each CRLF-terminated HTTP header as a command. IIS SMTP and sendmail logs show an injected QUIT executing. Full hijack is blocked only by the header validation built into XMLHTTP, PHP include and Java HttpUrlConnection.
 resource: "https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html"
-tags: [article, webseclist-reference, schmoil-blogspot-com]
+tags: [article, webseclist-reference, schmoil-blogspot-com, ssrf, smtp, proxy, smuggling, header-injection, response-splitting, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:43+00:00"

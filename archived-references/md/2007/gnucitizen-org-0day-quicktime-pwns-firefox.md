@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "0DAY: QuickTime pwns Firefox"
+description: "A QuickTime media-link (QTL) file whose qtnext attribute carries a javascript: URI executes in Firefox, and with the -chrome switch runs with chrome privileges. pdp shows the payload launching calc.exe via nsILocalFile and nsIProcess, and notes the XML can be saved under any of ~60 QuickTime extensions (mp3, mov, avi, png) to mislead the victim. Cross-platform; iTunes ships QuickTime."
 resource: "https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/"
-tags: [article, webseclist-reference, en-US, gnucitizen-org]
+tags: [article, webseclist-reference, en-US, gnucitizen-org, rce, sandbox-escape, privilege-escalation, abuse-of-functionality, content-type, javascript, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:42:53+00:00"

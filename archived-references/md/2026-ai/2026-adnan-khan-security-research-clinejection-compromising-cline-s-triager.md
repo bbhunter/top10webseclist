@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Clinejection — Compromising Cline's Production Releases just by Prompting an Issue Triager"
+description: "Cline's issue-triage workflow interpolated the issue title into Claude's prompt and allowed Bash for any GitHub user, so a title telling the agent to npm install an attacker's imposter commit ran a preinstall script inside a default-branch workflow. From there the cache was flooded past 10 GB to evict and reclaim the node_modules keys the nightly publish job restores, stealing marketplace and npm publishing tokens that are scoped per publisher, not per release channel."
 resource: "https://adnanthekhan.com/posts/clinejection/"
-tags: [article, webseclist-reference, en, adnan-khan-security-research]
+tags: [article, webseclist-reference, en, adnan-khan-security-research, prompt-injection, ai-agent, llm, github-actions, cache-poisoning, supply-chain, ci-cd, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:15+00:00"
@@ -20,7 +21,7 @@ authors:
   - adnanthekhan
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:90"
+  - "2026-ai.md:93"
 commit: ""
 content_sha256: ddc5aa5add582494ae16f0409c856d6e33f269b255c07323292ba5aecda732bf
 depth: full

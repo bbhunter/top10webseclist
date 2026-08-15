@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The great SameSite confusion
+description: SameSite cookies are scoped to the site, meaning the registrable domain or eTLD+1, and not to the origin, so a request from a sibling host or subdomain is same-site and still carries the cookies. A subdomain takeover, XSS or HTML injection anywhere on the same site therefore defeats SameSite, including the Strict value, which the post argues is also unfairly avoided.
 resource: "https://jub0bs.com/posts/2021-01-29-great-samesite-confusion/"
-tags: [article, webseclist-reference, en, jub0bs-com]
+tags: [article, webseclist-reference, en, jub0bs-com, cookie, csrf, same-origin-policy, http, mitigation, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:31:45+00:00"

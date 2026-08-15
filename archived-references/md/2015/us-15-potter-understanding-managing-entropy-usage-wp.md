@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: us 15 Potter Understanding And Managing Entropy Usage wp
+description: Measures how little entropy Linux servers actually accumulate, roughly two to six bits per second, and shows OpenSSL seeds its PRNG only once per process without checking pool quality. Apache mod_ssl reseeds with a PID, a coarse timestamp and a stack value that changes only about eight percent of the time, and nginx never reseeds at all, so long-lived servers generate keys and nonces from near-static state.
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Potter-Understanding-And-Managing-Entropy-Usage-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, tls, https, measurement-study, tooling, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:24+00:00"

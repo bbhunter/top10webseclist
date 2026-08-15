@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Stripping Referrer for fun and profit
+description: "Kotowicz strips the Referer header from cross-origin GET and POST requests using client-side code only, with no server involved. Chrome loses it through a data: URI, IE through window.open, Firefox and WebKit need a data: URI plus a meta refresh, and POST adds a nested data: URI with an auto-submitting form. That defeats referrer-based CSRF defences."
 resource: "http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profit.html"
-tags: [article, webseclist-reference, blog-kotowicz-net]
+tags: [article, webseclist-reference, blog-kotowicz-net, csrf, http, auth-bypass, filter-bypass, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:33+00:00"

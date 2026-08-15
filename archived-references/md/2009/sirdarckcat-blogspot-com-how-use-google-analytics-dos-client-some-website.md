@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How to use Google Analytics to DoS a client from some website.
+description: "Oversized cookies push a request past Apache's header-size limit, so a victim gets HTTP 400 and is locked out of a site. Google Analytics is abused to plant them: a host named google.* fools its organic-referer detection into storing a long search term, and a #gaso= fragment sets a second cookie, together exceeding the per-cookie limit."
 resource: "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html"
-tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
+tags: [article, webseclist-reference, sirdarckcat-blogspot-com, dos, cookie, http, header-injection, novel-technique, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:20+00:00"

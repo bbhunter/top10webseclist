@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Caching the Un-cacheables - Abusing URL Parser Confusions (Web Cache Poisoning Technique)
+description: "URL parser confusion between a CDN and its origin: the caching front end normalises dot segments in a path while the backend does not, so a request to /Job/../Award/x is served by the vulnerable /Job/ handler but cached under the cacheable /Award/ prefix. This converts a cookie and header only self-XSS into stored XSS served to every visitor."
 resource: "https://nokline.github.io/bugbounty/2022/09/02/Glassdoor-Cache-Poisoning.html"
-tags: [article, webseclist-reference, en, harel-security-research]
+tags: [article, webseclist-reference, en, harel-security-research, cache-poisoning, parser-differential, xss, url-parsing, waf-bypass, cdn, cache, attack-chain, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:08+00:00"

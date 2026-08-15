@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design"
+description: "Seven AI workflow platforms assume that whoever edits a workflow may run code on the host, while the actual caller is an unauthenticated webhook or a member account. Nocobase's SES compartment has lockdown() commented out and a Proxy that leaks the Koa context, so one template reaches sequelize and COPY TO PROGRAM; Flowise blocklists 'import' while pandas and numpy are pre-imported; Langflow eval()s anything starting with 'lambda'; Dify's preload runs as uid 0 before seccomp is applied."
 resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rce, sandbox-escape, filter-bypass, command-injection, ssti, llm, sqli, nodejs, python, prompt-injection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:05:25+00:00"
@@ -18,7 +19,7 @@ authors:
   - Peyton Kennedy
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:83"
+  - "2026-ai.md:86"
 commit: ""
 content_sha256: 0c05c8ae87d52bb853da9b1db9b0c84bbd5f73fa521852e98bc1148e34e0bba6
 depth: full

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: New Evasions for Web Application Firewalls
+description: A test of the cross-site scripting rule sets of eight web application firewalls, among them F5 Big-IP, Imperva Incapsula, WebKnight, PHP-IDS, ModSecurity, Sucuri, QuickDefense and Barracuda. Every product was evaded with crafted XSS payloads, showing that filtering in front of an application does not substitute for fixing the underlying flaw.
 resource: "https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, waf-bypass, xss, filter-bypass, sanitizer-bypass, waf, http, measurement-study, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:03+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Remote Code Execution with Spring Properties
+description: "A restricted upload that can only write allow-listed extensions into a Spring Boot application's working directory becomes remote code execution by dropping a configuration file there: Spring loads it, an attacker-set logging property makes the logging framework fetch a remote configuration, and its JNDI element triggers a lookup that executes code on restart."
 resource: "https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html"
-tags: [article, webseclist-reference, en, srcincite-io]
+tags: [article, webseclist-reference, en, srcincite-io, rce, file-upload, spring, gadget-chain, java, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:56+00:00"

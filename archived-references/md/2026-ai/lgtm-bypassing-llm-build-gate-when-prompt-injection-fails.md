@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails"
+description: OpenSearch guards pull_request_target CI with a step that curls the PR diff into a Claude prompt, failing the build at medium severity or above. The gate sees about three lines of context, cannot open implementation files kept in another repository, and never sees the author. Base64-wrapped payloads were blocked in 24 of 25 runs, and the diff arrives as user text with no system-prompt boundary, so both evasions are re-rollable coin flips.
 resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, llm, prompt-injection, ci-cd, github-actions, supply-chain, filter-bypass, rce]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:06:57+00:00"
@@ -18,7 +19,7 @@ authors:
   - Aviv Donenfeld
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:85"
+  - "2026-ai.md:88"
 commit: ""
 content_sha256: c5fa8e2e40f6937ec28efe205ee16f746f60071510f564b4b9a724f16e431d54
 depth: full

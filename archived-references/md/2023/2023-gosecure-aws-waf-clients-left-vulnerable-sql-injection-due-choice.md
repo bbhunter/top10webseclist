@@ -1,8 +1,9 @@
 ---
 type: Article
 title: AWS WAF Clients Left Vulnerable to SQL Injection Due to Unorthodox MSSQL Design Choice
+description: "MSSQL accepts stacked statements with no semicolon and no whitespace between them, which AWS WAF's SQL parser treated as invalid and let through. Appending an exec() payload to an injectable parameter bypassed the WAF for UNION-based login bypass, password rewrites and enabling xp_cmdshell for remote code execution. Microsoft called the parsing by design; AWS fixed the WAF."
 resource: "https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/"
-tags: [article, webseclist-reference, en, gosecure]
+tags: [article, webseclist-reference, en, gosecure, sqli, waf-bypass, mssql, parser-differential, filter-bypass, rce, auth-bypass, aws, waf]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:23:24+00:00"

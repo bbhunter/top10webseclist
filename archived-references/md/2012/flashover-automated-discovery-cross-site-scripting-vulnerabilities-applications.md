@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "FlashOver: Automated Discovery of Cross-site Scripting Vulnerabilities in Rich Internet Applications"
+description: FlashOver decompiles SWF files, regex-matches ActionScript variables reaching sinks like getURL and loadMovie, then builds attack URLs from ten injection templates and clicks 10,000 random points in a real Firefox to confirm execution. Run over 14,897 SWFs from the Alexa top 1,000, it found 286 exploitable files across 64 domains, six in the top 50, with no false positives.
 resource: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, flash, xss, large-scale-scan, static-analysis, dynamic-analysis, tooling, measurement-study, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:10+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "RøB: Ransomware over Modern Web Browsers"
+description: "Demonstrates that the browser File System Access API combined with WebAssembly is enough to build ransomware that runs as an ordinary web application, encrypting a visitor's local files including cloud-synced directories, external drives and network shares, while existing anti-ransomware defences fall short. Three layered mitigations are proposed."
 resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/oz"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, webassembly, javascript, novel-technique, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:20+00:00"

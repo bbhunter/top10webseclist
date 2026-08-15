@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Break the Wall from Bottom: Automated Discovery of Protocol-Level Evasion Vulnerabilities in Web Application Firewalls"
+description: "WAF Manis fuzzes grammar-derived malformed HTTP requests to find parsing disagreements between a web application firewall and the backend framework: duplicate Content-Type headers, malformed multipart boundaries, encoded parameters, and transfer-encoding tricks. The 311 cases found let an attacker hide any payload from 14 WAFs."
 resource: "https://www.jianjunchen.com/p/wafmanis.sp24.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, waf-bypass, parser-differential, content-type, mime, charset, waf, http, fuzzing, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:45+00:00"

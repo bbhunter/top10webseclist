@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Adultspace XSS Worm ha.ckers.org web application security lab
+description: "Report of an XSS worm on Adultspace.com spreading through the site's forums and bulletin boards via XMLHTTPRequest, adding victims as friends so the attacker can view private photos. It uses no filter evasion and is easy to detect. The source was supplied as a zip by the finder, Luny."
 resource: "http://ha.ckers.org/blog/20061214/adultspace-xss-worm/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, xss, case-study, javascript, abuse-of-functionality, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:36+00:00"

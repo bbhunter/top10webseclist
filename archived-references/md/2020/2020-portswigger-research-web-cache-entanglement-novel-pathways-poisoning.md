@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Web Cache Entanglement: Novel Pathways to Poisoning"
+description: Cache keys are parsed, normalised and transformed before they are stored, and those transformations let two semantically different requests collide on one key. Cache oracles, unkeyed query strings, parameter cloaking, fat GET requests and key injection turn that into persistent page poisoning, broken redirects and single-request denial of service.
 resource: "https://portswigger.net/research/web-cache-entanglement"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, cache-poisoning, cache, parser-differential, http, dos, xss, cdn, novel-technique, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:09+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: I Know the Shortened URLs You Clicked on Twitter
+description: Public click analytics from goo.gl and bit.ly are correlated with Twitter metadata - the source field of a tweet, the profile location - to tell whether a named user clicked a given link, without touching the victim. Monitoring accounts followed everyone the target follows, tracking over 55,000 shortened URLs. Simulated precision averaged 0.94.
 resource: "https://archives.iw3c2.org/www2013/proceedings/p1191.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, info-leak, side-channel]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:01:03+00:00"

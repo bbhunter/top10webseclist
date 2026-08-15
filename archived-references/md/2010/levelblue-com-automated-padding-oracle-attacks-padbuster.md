@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Automated Padding Oracle Attacks with PadBuster
+description: Recovers CBC plaintext a byte at a time by brute-forcing an IV byte until the application stops reporting a padding error, then XORing the intermediary value out. PadBuster automates this, learns the error signature from the first 256 responses, and also forges arbitrary ciphertext block by block working backwards from the last.
 resource: "http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/"
-tags: [article, webseclist-reference, en, gdssecurity-com]
+tags: [article, webseclist-reference, en, gdssecurity-com, tooling, side-channel, auth-bypass, http, perl]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:22+00:00"

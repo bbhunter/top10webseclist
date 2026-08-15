@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bypassing Web-Application Firewalls by abusing SSL/TLS
+description: "A web application firewall can only inspect traffic in the cipher suites it is able to decrypt. Comparing the vendor's supported cipher list against an sslscan of the origin server reveals ciphers the backend accepts but the WAF does not, and forcing one of them with curl --ciphers makes the request opaque, so blocked paths and payloads pass straight through."
 resource: "https://0x09al.github.io/waf/bypass/ssl/2018/07/02/web-application-firewall-bypass.html"
-tags: [article, webseclist-reference, en, 0x09al-security-blog]
+tags: [article, webseclist-reference, en, 0x09al-security-blog, waf-bypass, tls, waf, filter-bypass, https, proxy, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T00:58:39+00:00"

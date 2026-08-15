@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Firefox uXSS and CSS XSS
+description: A Firefox regression let a javascript URI run from a CSS background-image through the View background image context-menu item. Because an open context menu still acts on whatever page the window has navigated to, calling history.back() from oncontextmenu makes the script run in a cross-origin page, giving universal XSS that also sidesteps CSP and NoScript.
 resource: "https://leucosite.com/Firefox-uXSS-and-CSS-XSS/"
-tags: [article, webseclist-reference, leucosite-com]
+tags: [article, webseclist-reference, leucosite-com, xss, css-injection, sop-bypass, csp, filter-bypass, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:26+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Rise of Inspectron: Automated Black-box Auditing of Cross-platform Electron Apps"
+description: "Presents Inspectron, an automated black-box dynamic analysis framework that audits packaged Electron applications for deviations from the framework's recommended security configuration. The work shows that bundling a stripped-down browser engine with system-facing APIs exposes cross-platform desktop apps to threats browsers already mitigate, and an ecosystem-wide study of shipped apps reveals widespread insecure practices and problematic trends."
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/ali"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, electron, javascript, dynamic-analysis, tooling, measurement-study, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:23+00:00"

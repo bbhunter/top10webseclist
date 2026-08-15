@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Securing Frame Communication in Browsers
+description: "Shows permissive and window frame-navigation policies allow cross-window and gadget-hijacking attacks (Google AdSense login, iGoogle), and gets the descendant policy shipped in Firefox 3 and Safari. Then breaks both inter-frame channels: fragment-identifier messaging in Microsoft.Live.Channels and SMash falls to a Needham-Schroeder/Lowe impersonation, and postMessage leaks messages to a frame navigated away first — fixed by targetOrigin."
 resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html"
-tags: [article, webseclist-reference, usenix-org]
+tags: [article, webseclist-reference, usenix-org, iframe, same-origin-policy, sop-bypass, postmessage, formal-analysis, mitigation, novel-technique, phishing]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:54+00:00"

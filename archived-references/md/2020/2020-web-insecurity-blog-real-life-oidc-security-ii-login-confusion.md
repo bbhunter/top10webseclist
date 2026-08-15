@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Real-life OIDC Security (II): Login Confusion"
+description: "Describes Login Confusion: where a service provider honours a post-login redirect parameter and also exposes an unprotected login-initiation endpoint, the victim can be pushed into a silent OpenID Connect flow immediately after typing credentials, ending up logged in as their linked identity provider account instead. Shown on Bitbucket Server."
 resource: "https://security.lauritz-holtmann.de/post/sso-security-login-confusion/"
-tags: [article, webseclist-reference, en, web-insecurity-blog]
+tags: [article, webseclist-reference, en, web-insecurity-blog, sso, openid, oauth, csrf, session-fixation, auth-bypass, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:10+00:00"

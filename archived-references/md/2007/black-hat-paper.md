@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Black Hat paper
+description: A timing attack that reads back a private, indexed database column using only INSERT permission on it. B-tree page splits in MySQL InnoDB take measurably longer, and a 90th-percentile threshold over recent insert times detects them; a base-b interval search then narrows to each key, an existing value announcing itself as a duplicate-key error.
 resource: "https://www.blackhat.com/presentations/bh-usa-07/Waissbein_Futoransky_and_Saura/Whitepaper/bh-usa-07-waissbein_futoransky_and_saura-WP.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, mysql, database, info-leak, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:35:25+00:00"

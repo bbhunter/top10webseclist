@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "XSS-FP: Browser Fingerprinting using HTML Parser Quirks"
+description: Proposes fingerprinting a browser by the quirks of its HTML parser, probed through XSS injection points. Feeding malformed markup and observing how each engine repairs it identifies the exact browser type and version with 71% accuracy, and only six tests suffice to place a browser in its family.
 resource: "https://arxiv.org/abs/1211.4812"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, parser-differential, xss, info-leak, detection, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:04+00:00"

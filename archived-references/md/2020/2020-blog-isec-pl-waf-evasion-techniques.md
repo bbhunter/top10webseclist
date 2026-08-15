@@ -1,8 +1,9 @@
 ---
 type: Article
 title: WAF evasion techniques
+description: Imperva normalises a payload before matching it, so mixing a tab with a space inside an svg onload attribute, obfuscating alert through array constructors, or using the rare union distinct select syntax slips XSS and SQL injection past it. A chunked body whose declared chunk length is shorter than the data is skipped by the WAF but processed by the server.
 resource: "https://blog.isec.pl/waf-evasion-techniques/"
-tags: [article, webseclist-reference, en, blog-isec-pl]
+tags: [article, webseclist-reference, en, blog-isec-pl, waf-bypass, filter-bypass, xss, sqli, request-smuggling, parser-differential, http, mysql]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:04:36+00:00"

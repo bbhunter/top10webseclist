@@ -1,8 +1,9 @@
 ---
 type: Article
 title: reCAPTCHA bypass via HTTP Parameter Pollution
+description: "Applications that build the reCAPTCHA siteverify URL by string concatenation let an attacker smuggle a second secret parameter through the response field. Because the API honoured the first secret, supplying Google's documented always-pass test key made every verification return success, defeating the CAPTCHA entirely."
 resource: "https://andresriancho.com/recaptcha-bypass-via-http-parameter-pollution/"
-tags: [article, webseclist-reference, en-US, andres-riancho]
+tags: [article, webseclist-reference, en-US, andres-riancho, auth-bypass, injection, rest-api, http, java, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:25+00:00"

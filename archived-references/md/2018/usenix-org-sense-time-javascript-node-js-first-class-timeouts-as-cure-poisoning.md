@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "A Sense of Time for JavaScript and Node.js: First-Class Timeouts as a Cure for Event Handler Poisoning"
+description: Event-driven servers such as Node.js multiplex many clients onto few threads, so a single request that blocks one thread, through an expensive regular expression or a synchronous API call, leaves the whole server unresponsive to everyone. The paper shows such event handler poisoning bugs are common in the Node.js ecosystem and adds first-class timeouts that abort runaway callbacks.
 resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/davis"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, dos, algorithmic-complexity, nodejs, javascript-runtime, defence, mitigation, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:51+00:00"

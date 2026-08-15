@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "DRAWN APART : A Device Identification Technique based on Remote GPU Fingerprinting"
+description: DrawnApart fingerprints a device by timing the individual execution units inside its GPU from unprivileged JavaScript; manufacturing variation makes some units consistently faster, producing a signature stable enough to separate machines with identical hardware and software. Added to a state-of-the-art tracker it extended median tracking duration by up to 67 percent.
 resource: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
-tags: [article, webseclist-reference, en, oren-lab-implementation-security-and-sid]
+tags: [article, webseclist-reference, en, oren-lab-implementation-security-and-sid, side-channel, timing-attack, javascript, info-leak, novel-technique, measurement-study, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:45+00:00"

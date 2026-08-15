@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Upcoming Talk: Pass-the-Passkey Family of Attacks at Black Hat USA 26"
+description: "An announcement for a Black Hat USA 26 briefing, not the research itself. It previews a family of attacks the authors liken to Pass-the-Hash and NTLM relay: a major cloud service's passkey implementation vulnerable to what passkeys prevent, past YubiKey signatures stored in cleartext and readable by unprivileged remote users, and impersonation of privileged identities that bypasses phishing-resistant MFA, blamed on mistakes in WebAuthn's 22-step validation."
 resource: "https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/"
-tags: [article, webseclist-reference, en, dsinternals]
+tags: [article, webseclist-reference, en, dsinternals, passkeys, webauthn, auth-bypass, phishing, info-leak, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:13+00:00"
@@ -20,7 +21,7 @@ authors:
   - @MGrafnetter
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:64"
+  - "2026-ai.md:66"
 commit: ""
 content_sha256: 6a0c1e246c3fddf91b60c7bc7a9ea0c12f75b5bf5c1b7dfff510a3957df92a82
 depth: full

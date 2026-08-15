@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Google Cloud Account Takeover via URL Parsing Confusion
+description: "Google's OAuth backend and Chrome disagree about URLs carrying two at-signs and IPv6 loopback literals, so a redirect target passes Google's loopback allow-list while the browser navigates to the attacker's host. An attacker can impersonate first-party clients such as the cloud CLI and collect the victim's grant for stealthy account takeover."
 resource: "https://infosecwriteups.com/google-cloud-account-takeover-via-url-parsing-confusion-c5e47389b7c7"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, url-parsing, parser-differential, oauth, auth-bypass, gcp, open-redirect, info-leak, fuzzing, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:56+00:00"

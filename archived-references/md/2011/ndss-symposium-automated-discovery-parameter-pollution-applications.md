@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications
+description: "PAPAS, a Firefox-driven black-box scanner, injects an encoded query delimiter into each existing parameter and checks whether it reappears inside the page's links and form actions. A 13-day crawl of 5,016 popular sites found about 30% with injectable parameters and confirmed 46.8% of those exploitable, including Google, PayPal, Symantec and Microsoft."
 resource: "https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/"
-tags: [article, webseclist-reference, ndss-symposium]
+tags: [article, webseclist-reference, ndss-symposium, large-scale-scan, measurement-study, dynamic-analysis, http, csrf, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:07:35+00:00"

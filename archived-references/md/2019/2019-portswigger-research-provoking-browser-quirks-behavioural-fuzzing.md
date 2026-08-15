@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Provoking browser quirks with behavioural fuzzing
+description: Behavioural fuzzing drives every Unicode code point into a chosen HTML or JavaScript position and diffs the parse result to expose browser quirks. In Firefox it shows a newline closing an HTML comment after an incomplete terminator, a null byte opening one, and certain code points being ignored by the JavaScript parser, each yielding a new filter-bypass XSS vector.
 resource: "https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, xss, filter-bypass, fuzzing, parser-differential, unicode, javascript, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:38+00:00"

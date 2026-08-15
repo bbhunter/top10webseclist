@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Breaking AJAX Web Applications: Vulns 2.0 in Web 2.0"
+description: "Stamos and Lackey's Black Hat Japan 2006 deck on the AJAX attack surface: enumerating server-side methods from downstream JavaScript, manipulating parameters no browser ever sent, XSS through eval'd JSON responses, and CSRF against XHR endpoints. Includes a framework-by-framework review of Microsoft ATLAS, Google GWT and Java DWR, and crossdomain.xml wildcard abuse."
 resource: "https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, csrf, javascript, same-origin-policy, dom, flash, filter-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:38:50+00:00"

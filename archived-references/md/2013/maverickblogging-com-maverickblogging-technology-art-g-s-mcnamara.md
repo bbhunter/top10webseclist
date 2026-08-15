@@ -1,8 +1,9 @@
 ---
 type: Article
 title: MaverickBlogging | technology & art by G. S. McNamara
+description: "Rails' default CookieStore holds the whole session in the client cookie, so no server-side record exists to delete at logout. Logging out only issues a replacement cookie and the old one stays valid indefinitely, letting anyone holding a captured cookie re-authenticate later. Rails 2.0 to 4.0 are affected and Rails 4's cookie encryption does not fix it; ActiveRecordStore does."
 resource: "http://web.archive.org/web/20160507023636/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
-tags: [article, webseclist-reference, en-US, maverickblogging-com]
+tags: [article, webseclist-reference, en-US, maverickblogging-com, rails, ruby, cookie, auth-bypass, session-fixation, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:24+00:00"

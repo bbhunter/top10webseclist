@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SMBEnum ha.ckers.org web application security lab
+description: "SMBEnum, from a DefCon talk with Jabra, enumerates files on a Windows machine from inside Internet Explorer by requesting local images, CSS and scripts over SMB. It is the same cross-zone leak as Gregory Panakkal's 2004 sysimage disclosure by another transport, and pairs with res: timing attacks to detect non-image files and fingerprint installed programs."
 resource: "http://ha.ckers.org/blog/20090809/smbenum/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, detection, timing-attack, side-channel, tooling, prior-art-extension, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:08:16+00:00"

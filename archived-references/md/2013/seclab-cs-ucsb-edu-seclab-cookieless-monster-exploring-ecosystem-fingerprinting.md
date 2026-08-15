@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "SecLab - Cookieless monster: Exploring the ecosystem of web-based device fingerprinting"
+description: "A study of commercial web-based device fingerprinting: the scripts then sold by fingerprinting firms were analysed for what they collect beyond documented browser APIs and how widely sites deployed them. It also showed that user-agent spoofers and anti-fingerprinting extensions frequently make a browser more distinctive rather than less. IEEE S&P 2013."
 resource: "https://seclab.cs.ucsb.edu/publications/nikiforakis2013cookieless_monster/"
-tags: [article, webseclist-reference, en, seclab-cs-ucsb-edu]
+tags: [article, webseclist-reference, en, seclab-cs-ucsb-edu, info-leak, javascript, flash, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:01+00:00"

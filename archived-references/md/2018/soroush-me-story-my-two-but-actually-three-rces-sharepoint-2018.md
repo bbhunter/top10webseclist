@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Story of my two (but actually three) RCEs in SharePoint in 2018
+description: "SharePoint workflow protection mechanisms fell two ways: a logic flaw in the workflow checks, and deserialisation of untrusted data when compiling XOML workflow definitions. Both yield remote code execution on SharePoint Online and on-premises, and a third RCE came from deserialisation of ASP.NET .RESX resource files."
 resource: "https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, deserialization, gadget-chain, rce, aspnet, dotnet, cve, vendor-advisory, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:27+00:00"

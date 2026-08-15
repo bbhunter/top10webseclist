@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Kindle Touch (5.0) Jailbreak/Root and SSH
+description: "Much of the Kindle Touch interface is HTML and JavaScript backed by a native bridge, and one exposed function, nativeBridge.dbgCmd(), runs any shell command as root. Injecting HTML and script through an MP3's ID3 tags reached it, so a single crafted MP3, carrying the shell payload in the comment field and a splash image appended raw, installs a developer key and SSH."
 resource: "http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/"
-tags: [article, webseclist-reference, en, yifan-lu]
+tags: [article, webseclist-reference, en, yifan-lu, javascript, rce, injection, privilege-escalation, sandbox-escape, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:44+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Clock Around the Clock: Time-Based Device Fingerprinting"
+description: Timing how long ordinary API functions take to run reveals a device clock crystal variation, giving a hardware fingerprint. The CryptoFP tool measures HTML5 Crypto API calls from JavaScript, letting a site re-identify a visitor and tell apart machines with identical hardware and software, with nothing stored on the client.
 resource: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, info-leak, javascript, measurement-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:33:17+00:00"

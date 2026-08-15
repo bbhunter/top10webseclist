@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Farfromr00tin: uTorrent Pwn3d"
+description: "Chained CSRFs against uTorrent's local Web UI: setsetting points 'move completed downloads to' at the All Users Startup folder, then add-url makes uTorrent fetch an attacker torrent, so the payload lands where Windows runs it at boot. Settings are stored unescaped too, giving persistent XSS on getsettings; from localhost it runs in IE's Local Intranet zone, where WScript.Shell runs the file."
 resource: "https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html"
-tags: [article, webseclist-reference, en, r00tin-blogspot-com]
+tags: [article, webseclist-reference, en, r00tin-blogspot-com, csrf, xss, rce, attack-chain, activex, javascript, privilege-escalation, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:04+00:00"

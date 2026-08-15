@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Penetrating Intranets through Adobe Flex Applications
+description: BlazeDS proxy services let a Flex client have the server fetch remote URLs on its behalf, sidestepping crossdomain.xml. Sample configurations ship with a wildcard soap property, so the proxy will reach any host it can see from the server. The released tool Blazentoo drives such a destination to browse intranet sites behind the firewall.
 resource: "http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/"
-tags: [article, webseclist-reference, en, gdssecurity-com]
+tags: [article, webseclist-reference, en, gdssecurity-com, ssrf, flash, proxy, java, tooling, soap, same-origin-policy]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:22+00:00"

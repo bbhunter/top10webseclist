@@ -1,8 +1,9 @@
 ---
 type: Article
 title: cat ~/footstep.ninja/blog.txt
+description: A help desk product returned the password reset token in the JSON body of the reset request itself, instead of only by email. Requesting a reset for an agent account handed the attacker that token, which could be pasted into the reset URL for any team name to take the account over; the user endpoint was not affected.
 resource: "https://footstep.ninja/posts/password-reset/"
-tags: [article, webseclist-reference, footstep-ninja]
+tags: [article, webseclist-reference, footstep-ninja, auth-bypass, idor, info-leak, privilege-escalation, rest-api, case-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:35+00:00"

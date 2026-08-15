@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Introducing the HTML5 Hard Disk Filler™ API » Feross.org
+description: The Web Storage spec asks browsers to stop affiliated sites pooling localStorage quota, but Chrome, Safari and IE enforced the limit strictly per origin. Writing from many subdomains of one domain therefore gave a page unbounded disk use; the filldisk.com demo wrote about 1 GB every 16 seconds. Firefox capped storage per domain and was unaffected.
 resource: "http://web.archive.org/web/20160507023636/http://feross.org/fill-disk/"
-tags: [article, webseclist-reference, feross-org]
+tags: [article, webseclist-reference, feross-org, dos, javascript, same-origin-policy, case-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:57+00:00"

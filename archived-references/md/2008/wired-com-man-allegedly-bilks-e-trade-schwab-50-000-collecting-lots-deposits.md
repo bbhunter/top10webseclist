@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'"
+description: Threat Level report on Michael Largent, indicted for scripting 58,000 brokerage accounts at E-trade and Schwab under cartoon-character names, then harvesting the two-cent-to-one-dollar micro-deposits both firms send to verify a linked bank account. Around $50,000 in six months, plus $8,225 from Google Checkout, until Patriot Act identity checks flagged the accounts.
 resource: "https://blog.wired.com/27bstroke6/2008/05/man-allegedly-b.html"
-tags: [article, webseclist-reference, blog-wired-com]
+tags: [article, webseclist-reference, blog-wired-com, abuse-of-functionality, case-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:09+00:00"

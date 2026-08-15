@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: HotPics 2021
+description: "Server-side image conversion turned into an attack surface: uploading a crafted image makes ImageMagick, Pillow or Ghostscript on the server leak uninitialised memory, read local files, issue requests to internal hosts, or execute commands. Includes a Ghostscript SAFER-mode bypass and bounty cases against AirBNB, Dropbox and Yandex."
 resource: "https://www.slideshare.net/neexemil/hotpics-2021"
-tags: [slides, webseclist-reference, slideshare]
+tags: [slides, webseclist-reference, slideshare, file-upload, rce, ssrf, lfi, info-leak, sandbox-escape, python, bug-bounty, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:21+00:00"

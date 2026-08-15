@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Fingerprinting in Style: Detecting Browser Extensions via Injected Style Sheets"
+description: "Browser extensions that inject their own style sheets into every page can be identified by the site being visited. A pipeline extracts each extension's injected CSS rules and builds trigger elements whose computed style changes only when that extension is present, uniquely fingerprinting 4,446 Chrome extensions, 1,074 of them undetectable by earlier methods."
 resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, browser-extension, css, info-leak, dom, novel-technique, static-analysis, dynamic-analysis, large-scale-scan, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:19+00:00"

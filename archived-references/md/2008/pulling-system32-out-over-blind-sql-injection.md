@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Pulling system32 out over blind SQL Injection
+description: "A route out of a blind SQL injection where xp_cmdshell also gives no feedback, no outbound traffic is allowed and the webroot path is unknown. Echo a VBS file line by line through xp_cmdshell, run it with cscript, and it creates an IIS virtual directory 'secret' mapped to %windir% with execute permission; /secret/system32/cmd.exe then runs commands over HTTP. Metasploit sketch included."
 resource: "http://blueinfy.com/wp/blindsql.pdf"
-tags: [whitepaper, webseclist-reference, en, blueinfy-com]
+tags: [whitepaper, webseclist-reference, en, blueinfy-com, sqli, mssql, rce, command-injection, database, aspnet, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:32+00:00"

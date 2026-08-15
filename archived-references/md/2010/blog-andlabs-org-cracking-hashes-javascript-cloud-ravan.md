@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cracking hashes in the JavaScript cloud with Ravan
+description: "HTML5 WebWorkers remove the freezing problem that made JavaScript useless for password cracking, and modern engines reach roughly 100,000 MD5 hashes per second. Since visiting a link is enough to enlist a browser, the work distributes freely: about 110 browsers match one machine of native code. Ravan is the resulting distributed cracker for MD5, SHA1, SHA256 and SHA512."
 resource: "http://blog.andlabs.org/2010/12/cracking-hashes-in-javascript-cloud.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org]
+tags: [article, webseclist-reference, en, blog-andlabs-org, javascript, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:05+00:00"

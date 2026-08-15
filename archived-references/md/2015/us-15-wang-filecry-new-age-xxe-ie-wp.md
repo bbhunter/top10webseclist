@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: us 15 Wang FileCry The New Age Of XXE ie wp
+description: Internet Explorer up to version 11 can be pushed back onto the vulnerable MSXML3 parser via a compatibility-mode meta tag, and its XML external entity resolution does not re-check the same-origin policy after a redirect. A malicious page can therefore read cross-origin JSON endpoints authenticated by cookies, and arbitrary local files, with no user prompt.
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-ie-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xxe, sop-bypass, same-origin-policy, info-leak, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:58+00:00"

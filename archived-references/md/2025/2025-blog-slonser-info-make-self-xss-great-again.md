@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Make Self-XSS Great Again
+description: "Credentialless iframes share an origin with ordinary iframes, so one page can hold a frame logged into the attacker's account and another in the victim's session and script across them. With login CSRF or clickjacking this turns stored self-XSS into real stored XSS, and fetchLater fires queued requests with the victim's cookies long after the page closes."
 resource: "https://blog.slonser.info/posts/make-self-xss-great-again/"
-tags: [article, webseclist-reference, blog-slonser-info]
+tags: [article, webseclist-reference, blog-slonser-info, xss, iframe, csrf, sop-bypass, clickjacking, same-origin-policy, cookie, bug-bounty, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:09+00:00"

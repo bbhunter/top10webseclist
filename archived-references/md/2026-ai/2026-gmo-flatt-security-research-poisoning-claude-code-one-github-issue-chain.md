@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Poisoning Claude Code: One GitHub Issue to Break the Supply Chain"
+description: "Claude Code's GitHub Action treated any actor ending in [bot] as having write access, and agent mode never checked the actor was human, so an attacker's own GitHub App, able to open issues on any public repo, feeds it untrusted text. A prompt injection disguised as a read error makes Claude read /proc/self/environ and post it back with mcp__github__update_issue, exposing the OIDC request token, which exchanges for the Claude App installation token and pushes to the action's own repo."
 resource: "https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/"
-tags: [article, webseclist-reference, en, gmo-flatt-security-research]
+tags: [article, webseclist-reference, en, gmo-flatt-security-research, prompt-injection, ai-agent, github-actions, supply-chain, auth-bypass, info-leak, attack-chain, github]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:06+00:00"
@@ -19,7 +20,7 @@ authors:
   - RyotaK
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:79"
+  - "2026-ai.md:82"
 commit: ""
 content_sha256: ca0b8e616a0d6b882b548303cc8907c2126e0ae1f5c657ef968520bc01068d83
 depth: full

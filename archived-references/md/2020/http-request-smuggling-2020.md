@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: HTTP Request Smuggling in 2020
+description: Five new request smuggling variants make a proxy and a web server disagree on where a request ends, using header names like Content-Length abcde, a bare CR in a header name, a text/plain body and HTTP/1.2 to slip past the ModSecurity Core Rule Set, yielding cache poisoning against Squid and Abyss. A function-hooking Request Smuggling Firewall is offered as a defence.
 resource: "https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, request-smuggling, cache-poisoning, desync, waf-bypass, http, proxy, waf, cve, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:02:01+00:00"

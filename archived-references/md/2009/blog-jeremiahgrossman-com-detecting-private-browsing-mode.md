@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Detecting Private Browsing Mode
+description: "Send a visitor to a unique, never-before-seen URL, then use the CSS visited-link colour history hack to test whether that URL now counts as visited. If it does not, a privacy feature is actively blocking history: Safari or Firefox Private Browsing, Chrome Incognito, or IE8 InPrivate. Concept by the author, proof-of-concept code by Collin Jackson."
 resource: "https://jeremiahgrossman.blogspot.com/2009/03/detecting-private-browsing-mode.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, css, side-channel, info-leak, detection, xsleak, javascript, browser-fingerprinting]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:02+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "LEXSS: Bypassing Lexical Parsing Security Controls"
+description: "HTML sanitisers that re-parse markup can be desynchronised from the browser's own parser. Nesting tags that switch tokenizer state, such as an iframe wrapping a textarea, or entering the MathML namespace, makes the sanitiser treat active content as harmless text, so the final parse executes it. Shown against TinyMCE and Froala."
 resource: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls"
-tags: [article, webseclist-reference, en, bishop-fox]
+tags: [article, webseclist-reference, en, bishop-fox, sanitizer-bypass, mutation-xss, parser-differential, xss, filter-bypass, dom, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:07+00:00"

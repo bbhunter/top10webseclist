@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: JavaScript Hijacking
+description: "Chess, Tsipenyuk O'Neil and West show a script tag can pull a site's JSON responses cross-origin while the victim's cookies ride along, and redefining the Object or Array constructor captures the data. Of the 12 most popular AJAX frameworks only DWR 2.0 defends. Recommended: an unguessable request parameter plus a while(1); prefix."
 resource: "https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, javascript, sop-bypass, same-origin-policy, csrf, info-leak, cookie, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:38+00:00"

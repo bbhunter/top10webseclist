@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Sleeper Squats: How a Hyphen (Almost) Unraveled GitHub's Immutable OIDC Subject Claim"
+description: "GitHub's new immutable OIDC subject claim joined name and ID with a hyphen, a character legal in organisation names, so during the opt-in window anyone could register an org literally named victim-orgid whose legacy sub string is byte-identical to the victim's future one. Relying parties compare sub as a literal string, so once the victim pastes the new prefix into an AWS trust policy the squatter's workflow assumes the role. PyPI is immune by keying on the numeric owner id."
 resource: "https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim"
-tags: [article, webseclist-reference, en, boost-security-labs]
+tags: [article, webseclist-reference, en, boost-security-labs, jwt, openid, github-actions, ci-cd, supply-chain, auth-bypass, aws]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:41+00:00"
@@ -20,7 +21,7 @@ authors:
   - Boost Security Labs
 canonical_url: "https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim/"
 cited_by:
-  - "2026-ai.md:65"
+  - "2026-ai.md:67"
 commit: ""
 content_sha256: b940849a2e41dc0e440cb6952fe0ab8c65a9e399126045ab60dea49d7bb5b13b
 depth: full

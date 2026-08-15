@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Regular Expressions Considered Harmful in Client-Side XSS Filters
+description: "The authors show that IE8, NoScript and noXSS block reflected XSS by running regular expressions over the raw response, so they are either slow or evadable, and their mangling can disable a victim site's own security scripts. Their XSSAuditor instead sits between the HTML parser and the JavaScript engine, blocking scripts after parsing. It ships enabled in Chrome."
 resource: "https://www.adambarth.com/papers/2010/bates-barth-jackson.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, filter-bypass, parser-differential, charset, mitigation, defence, javascript, novel-technique, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:33:59+00:00"
@@ -267,13 +268,132 @@ of letting the attacker’s script co-mingle with the target web          API to
 site’s script, these filters prevent the attacker from injecting        altering the parsing of subsequent bytes.
 malicious script in the first place. Typically, these filters
                                                                                                                                                              head
-     00000000:	  3c	  68	  74	  6d	  6c	  3e	  0a	  3c	  68	  65	  61	  64	  3e	  0a	  3c	  2f	  <html>.<head>.</
-     00000010:	  68	  65	  61	  64	  3e	  0a	  3c	  62	  6f	  64	  79	  3e	  0a	  2b	  41	  44	  head>.<body>.+AD
-     00000020:	  77	  41	  63	  77	  42	  6a	  41	  48	  49	  41	  61	  51	  42	  77	  41	  48	  wAcwBjAHIAaQBwAH
-     00000030:	  51	  41	  50	  67	  42	  68	  41	  47	  77	  41	  5a	  51	  42	  79	  41	  48	  QAPgBhAGwAZQByAH                html
-     00000040:	  51	  41	  4b	  41	  41	  78	  41	  43	  6b	  41	  50	  41	  41	  76	  41	  48	  QAKAAxACkAPAAvAH
-     00000050:	  4d	  41	  59	  77	  42	  79	  41	  47	  6b	  41	  63	  41	  42	  30	  41	  44	  MAYwByAGkAcAB0AD
-     00000060:	  34	  2d	  3c	  2f	  62	  6f	  64	  79	  3e	  0a	  3c	  2f	  68	  74	  6d	  6c	  4-­‐</body></html>                         body        script     alert(1)
+     00000000:	
+  3c	
+  68	
+  74	
+  6d	
+  6c	
+  3e	
+  0a	
+  3c	
+  68	
+  65	
+  61	
+  64	
+  3e	
+  0a	
+  3c	
+  2f	
+  <html>.<head>.</
+     00000010:	
+  68	
+  65	
+  61	
+  64	
+  3e	
+  0a	
+  3c	
+  62	
+  6f	
+  64	
+  79	
+  3e	
+  0a	
+  2b	
+  41	
+  44	
+  head>.<body>.+AD
+     00000020:	
+  77	
+  41	
+  63	
+  77	
+  42	
+  6a	
+  41	
+  48	
+  49	
+  41	
+  61	
+  51	
+  42	
+  77	
+  41	
+  48	
+  wAcwBjAHIAaQBwAH
+     00000030:	
+  51	
+  41	
+  50	
+  67	
+  42	
+  68	
+  41	
+  47	
+  77	
+  41	
+  5a	
+  51	
+  42	
+  79	
+  41	
+  48	
+  QAPgBhAGwAZQByAH                html
+     00000040:	
+  51	
+  41	
+  4b	
+  41	
+  41	
+  78	
+  41	
+  43	
+  6b	
+  41	
+  50	
+  41	
+  41	
+  76	
+  41	
+  48	
+  QAKAAxACkAPAAvAH
+     00000050:	
+  4d	
+  41	
+  59	
+  77	
+  42	
+  79	
+  41	
+  47	
+  6b	
+  41	
+  63	
+  41	
+  42	
+  30	
+  41	
+  44	
+  MAYwByAGkAcAB0AD
+     00000060:	
+  34	
+  2d	
+  3c	
+  2f	
+  62	
+  6f	
+  64	
+  79	
+  3e	
+  0a	
+  3c	
+  2f	
+  68	
+  74	
+  6d	
+  6c	
+  4-­‐</body></html>                         body        script     alert(1)
 
 
 
@@ -481,22 +601,35 @@ transformations: Magic Quotes and Unicode normalization.           tacker cannot
      quest parameters. This transformation attempts to             1
                                                                      The version of the filter that we deployed in Google
      mitigate SQL injection by adding \ characters before          Chrome 4 does not implement the 7 character limit.
-5.    EVALUATION                                                                                  A/ribute	  escape,	  38.6%	  
+5.    EVALUATION                                                                                  A/ribute	
+  escape,	
+  38.6%	
+  
    In this section, we evaluate the correctness and the per-
 formance of our client-side XSS filter. By way of correct-
 ness, we evaluate what percentage of “naturally occurring”
 XSS vulnerabilities are mitigated by the filter, the filter’s
 false positive rate, and our assurance regarding the filter’s
 false negative rate. By way of performance, we measure the
-performance overhead of running the filter on a number of                                                           JavaScript	  URL,	  2.1%	  
+performance overhead of running the filter on a number of                                                           JavaScript	
+  URL,	
+  2.1%	
+  
 JavaScript and page-loading benchmarks.
 
-5.1    Correctness                                                                                                  Inside	  of	  script	  tag,	  3.5%	  
+5.1    Correctness                                                                                                  Inside	
+  of	
+  script	
+  tag,	
+  3.5%	
+  
    Client-side XSS filters do not require perfect correctness
 to be useful. However, the usefulness of a filter depends
 what percent of vulnerabilities the filter covers and the rate
 of false positives and false negatives.
-                                                                      Intertag,	  55.9%	  
+                                                                      Intertag,	
+  55.9%	
+  
 Vulnerability Coverage. To estimate the percent of re-
 flected XSS vulnerabilities covered by the filter, we analyzed
 330 randomly selected, publicly disclosed XSS vulnerabili-
@@ -566,36 +699,60 @@ ogous to http://example.com/foo/bar. The filter blocked           bility by addi
 these <base> elements because the base URL occurred in the        ever, it is unclear how the filter could distinguish between
 page’s URL. We removed these false positives by whitelisting      the vulnerable and the non-vulnerable cases.
 base URLs from the same origin as the page.
-                                   350	                                                                                   several techniques for disabling frame busting already exist,
+                                   350	
+                                                                                   several techniques for disabling frame busting already exist,
                                                                                                                            we recommend that sites replace their circumventable frame
-                                   300	  
+                                   300	
+  
                                                                                                                            busting scripts with the X-Frame-Options HTTP response
                                                                                                                            header [12], which was designed to help mitigate clickjack-
                                                                                                                            ing. To protect users with legacy browsers that do not sup-
-                                   250	                                                                                   port this header, a web site operator should use a frame
+                                   250	
+                                                                                   port this header, a web site operator should use a frame
                                                                                                                            busting script that is robust to being disabled. For exam-
- Page	  load	  )me	  (ms)	  
+ Page	
+  load	
+  )me	
+  (ms)	
+  
 
 
 
 
                                                                                                                            ple, Twitter hides its pages by default and reveals them only
-                                   200	  
+                                   200	
+  
                                                                                                                            if a script detects that the page is not in a frame.
-                                                                                                            Disabled	        Some web applications might wish that the XSS filter
-                                   150	                                                                                   blocked the entire page when the filter detects an XSS at-
-                                                                                                            Enabled	  
+                                                                                                            Disabled	
+        Some web applications might wish that the XSS filter
+                                   150	
+                                                                                   blocked the entire page when the filter detects an XSS at-
+                                                                                                            Enabled	
+  
                                                                                                                            tack, especially if an induced false positive might endanger
                                                                                                                            the page’s security. We let web developers enable full page
-                                   100	  
+                                   100	
+  
                                                                                                                            blocking by sending the following HTTP header:
                                                                                                                            X-XSS-Protection: 1; mode=block
-                                     50	  
+                                     50	
+  
                                                                                                                            When the page includes this header, our filter will stop all
                                                                                                                            script execution and display a blank page if the filter detects
-                                       0	                                                                                 an XSS attack.
-                                               XSSAuditor	        XSS	  Filter	       noXSS	  
-                                               (Chrome	  4)	       (IE	  8)	       (Firefox	  3)	                    5.2    Performance
+                                       0	
+                                                                                 an XSS attack.
+                                               XSSAuditor	
+        XSS	
+  Filter	
+       noXSS	
+  
+                                               (Chrome	
+  4)	
+       (IE	
+  8)	
+       (Firefox	
+  3)	
+                    5.2    Performance
                                                                                                                              Performance is an essential factor in assessing the useful-
 Figure 8: Score on the Mozilla page-load benchmark                                                                         ness of a client-side XSS filter. Browser vendors are reluctant
 with 10 samples. Smaller is better. Error bars show                                                                        to deploy features that slow down key browser benchmarks,

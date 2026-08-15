@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "FP-STALKER: Tracking Browser Fingerprint Evolutions"
+description: FP-STALKER links successive browser fingerprints from the same browser as they drift, using a rule-based matcher and a random-forest hybrid to decide whether two fingerprints share an origin. Over 98,598 fingerprints from 1,905 browsers it follows a browser for 54 days on average and a quarter of them past 100 days, so fingerprint churn does not defeat stateless tracking.
 resource: "https://hal.inria.fr/hal-01652021"
-tags: [article, webseclist-reference, en, hal-inria-fr]
+tags: [article, webseclist-reference, en, hal-inria-fr, info-leak, javascript, measurement-study, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:14:36+00:00"

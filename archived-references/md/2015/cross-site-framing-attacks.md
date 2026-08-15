@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross-Site Framing Attacks
+description: Cross-site framing plants false incriminating evidence about a victim without any access to their computer. CSRF against operations treated as benign poisons search and account histories at Google, Bing, Yahoo, YouTube, Facebook, Amazon, eBay and Craigslist, while browser cache and NTFS download tricks plant files that forensic software cannot tell from deliberate user action.
 resource: "https://dl.acm.org/doi/10.1145/2818000.2818029"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, csrf, iframe, cache, case-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:05:26+00:00"

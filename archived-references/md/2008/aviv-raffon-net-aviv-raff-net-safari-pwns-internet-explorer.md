@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Aviv Raff On .NET - Safari pwns Internet Explorer
+description: "Chains Nitesh Dhanjani's Safari-for-Windows Carpet Bomb — silent drive-by download of arbitrary files to the desktop, which Apple declined to treat as a bug — with an older unpatched IE file-loading flaw to reach code execution on Windows. Microsoft issued advisory 953818; details withheld pending a patch. Changing Safari's download folder is explicitly not sufficient."
 resource: "https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx"
-tags: [article, webseclist-reference, aviv-raffon-net]
+tags: [article, webseclist-reference, aviv-raffon-net, attack-chain, rce, vendor-advisory, mitigation, case-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:54+00:00"

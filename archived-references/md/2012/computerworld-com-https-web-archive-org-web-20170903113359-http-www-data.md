@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Attackers can abuse Yahoo developer feature to steal user emails, other data
+description: "A news report on Sergiu Dragos Bogdan's DefCamp talk: the Yahoo Developer Network YQL console can be framed, showing the victim a session-bound \"crumb\" token. Same-origin rules stop the attacker reading the frame, so he dressed the crumb up as a CAPTCHA challenge; typing it back authorised YQL queries against the victim's own mail and contacts."
 resource: "https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/article/9234282/Attackers_can_abuse_Yahoo_developer_feature_to_steal_user_emails_other_data"
-tags: [article, webseclist-reference, computerworld]
+tags: [article, webseclist-reference, computerworld, csrf, iframe, same-origin-policy, ui-redress, info-leak, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:07:42+00:00"

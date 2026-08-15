@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SMTP Smuggling - Spoofing E-Mails Worldwide
+description: "Outbound and inbound SMTP servers disagree on which byte sequence ends message data, so a sequence such as LF dot CRLF passes one server unfiltered and is read as end-of-data by the next. An attacker with any account at an affected provider can smuggle a second, entirely forged message that inherits the provider's IP and so passes SPF, DKIM alignment and DMARC."
 resource: "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/"
-tags: [article, webseclist-reference, en, sec-consult]
+tags: [article, webseclist-reference, en, sec-consult, smuggling, parser-differential, smtp, email, filter-bypass, novel-technique, cve, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:14+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning"
+description: A convolutional neural network classifies encrypted Tor traffic traces by the site that produced them, so a local eavesdropper learns which website a user visited without breaking the encryption. It reaches over 98 percent accuracy on undefended traffic and over 90 percent against WTF-PAD, defeating the lightweight defences that had blunted earlier fingerprinting attacks.
 resource: "https://arxiv.org/abs/1801.02265"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, side-channel, info-leak, tls, https, novel-technique, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

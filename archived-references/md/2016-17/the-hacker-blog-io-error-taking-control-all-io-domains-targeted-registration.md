@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The .io Error – Taking Control of All .io Domains With a Targeted Registration
+description: "Four of the seven authoritative nameserver domains for the .io top-level domain had lapsed and were purchasable for 90 dollars. Registering one made the researcher authoritative for the entire .io zone, so DNS for every .io domain could have been forged or redirected. The write-up also covers a dead registry abuse mailbox and the registry's clumsy remediation."
 resource: "https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html"
-tags: [article, webseclist-reference, en, the-hacker-blog]
+tags: [article, webseclist-reference, en, the-hacker-blog, dns, cache-poisoning, tooling, dos, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:24+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Top Content on LinkedIn
+description: "The archived document is not the cited research. It is LinkedIn's article-not-found landing page, opening with a notice that the page cannot be found and continuing into topic and editor's-pick link lists. The cited write-up on using Google dorks to find zero-days is entirely absent, so nothing about the technique can be read from this copy."
 resource: "https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-suraj-khetani/"
-tags: [article, webseclist-reference, en, linkedin-com]
+tags: [article, webseclist-reference, en, linkedin-com, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:09+00:00"

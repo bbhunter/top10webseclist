@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities
+description: First large-scale scan for CBC padding oracle flaws in TLS, using a reduced probe set and automatic classification of server response fingerprints. It found 1.83 percent of the Alexa Top Million vulnerable across nearly 100 distinct behaviours, many exploitable simply by observing differing responses rather than by precise timing measurement.
 resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/merget"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, tls, https, timing-attack, large-scale-scan, measurement-study, detection, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:13+00:00"

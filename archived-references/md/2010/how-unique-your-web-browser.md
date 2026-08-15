@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: How Unique Is Your Web Browser?
+description: Fingerprints from 470,161 browsers visiting panopticlick.eff.org were built from eight passively and actively collected attributes, including plugin lists and Flash/Java font enumeration. The distribution held at least 18.1 bits of entropy and 83.6% of browsers were unique, rising to 94.2% with Flash or Java. A simple heuristic re-linked 99.1% of changed fingerprints to their predecessors.
 resource: "https://coveryourtracks.eff.org/static/browser-uniqueness.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, info-leak, measurement-study, large-scale-scan, novel-technique, cookie, flash, java]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:34:36+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: 38468 new methods in automated xss detection
+description: "A scanner method that stops firing static payloads and instead injects a unique slug, parses where it lands in the HTML, JavaScript or DOM, and builds a table of which characters survive the application's filters and transformations. From that context and character table it composes a dynamic exploit per injection point, finding stored and hard-to-reach XSS with fewer false positives."
 resource: "https://www.exploit-db.com/docs/english/38468-new-methods-in-automated-xss-detection.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, filter-bypass, sanitizer-bypass, detection, tooling, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:13+00:00"

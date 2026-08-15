@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Transformers: Dark Side of the Type — Weaponizing the Conversion Layer (Slides)"
+description: "Reframes attacker-chosen type resolution during a plain string-to-object conversion as its own bug class, separate from insecure deserialization: TypeConverter.ConvertFrom, static Parse, new T(string), property setters and custom logic each resolve a named type and then run its code. Gadgets include ResXFileRef pulling a remote .resources file into BinaryFormatter and XamlServices.Parse; five SharePoint CVEs reach RCE, and the fix is an allowlist checked before the type resolves."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, deserialization, dotnet, gadget-chain, rce, aspnet, cve, filter-bypass, static-analysis, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:25+00:00"
@@ -18,7 +19,7 @@ authors:
   - Oleksandr Mirosh
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:49"
+  - "2026-ai.md:50"
 commit: ""
 content_sha256: 8ad60df1a89bb38e9cdedc2515021fe9b72e569209940829d3af383295e0b923
 depth: full

@@ -1,12 +1,13 @@
 ---
 type: Whitepaper
 title: "T-Reqs: HTTP Request Smuggling with Differential Fuzzing"
+description: A grammar-based differential fuzzer generates HTTP requests and mutates the request line, headers and body, then compares how ten servers, proxies and CDNs parse each one to find pairs that disagree on where a message ends. Those disagreements let an attacker smuggle a hidden second request past the front server, enabling cache poisoning, request hijacking and control bypass.
 resource: "https://bahruz.me/papers/ccs2021treqs.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, request-smuggling, desync, parser-differential, fuzzing, http, proxy, cdn, cache-poisoning, tooling, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:38:02+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache"
+description: Profiling PHP web applications under fuzzing shows roughly half of execution time is spent fetching data from databases and the network, and that identical data is fetched repeatedly across trials. This work adds a query-keyed software data cache held in inter-process shared memory, with lazy connection, prefetching and dirty-bit invalidation, plus just-in-time compilation of PHP. Bolted onto a black-box and a grey-box fuzzer it raises throughput three- to fourfold and coverage by about 25%.
 resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, fuzzing, php, database, cache, tooling, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:46+00:00"

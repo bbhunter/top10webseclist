@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs"
+description: "Pre-auth remote code execution chains against Fortigate and Pulse Secure SSL VPNs: traversal file reads, a heap overflow in the web proxy, an undocumented password-reset key, and command injection through a flaw in Pulse's Perl I/O redirection guard. Stolen session databases defeat two-factor auth, and the logon-script feature turns the VPN into a way to compromise every connected client."
 resource: "https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rce, path-traversal, command-injection, auth-bypass, info-leak, attack-chain, cve, perl]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:54+00:00"

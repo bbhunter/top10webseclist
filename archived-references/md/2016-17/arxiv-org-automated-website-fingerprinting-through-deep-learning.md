@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Automated Website Fingerprinting through Deep Learning
+description: Deep neural networks learn traffic features directly from raw Tor traces, removing the hand-engineered feature sets that earlier website fingerprinting relied on and that network changes easily break. Trained on over three million traces, the models identify the visited site with more than 96 percent accuracy in a closed world.
 resource: "https://arxiv.org/abs/1708.06376"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, side-channel, info-leak, tls, measurement-study, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

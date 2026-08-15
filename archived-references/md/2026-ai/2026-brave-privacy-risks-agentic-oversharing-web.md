@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Privacy risks of agentic oversharing on the Web
+description: "SPILLAGE measures what LLM web agents disclose while shopping on Amazon and eBay, along two axes: explicit versus implicit disclosure, and content versus behaviour. 180 tasks over Browser-Use and AutoGen with GPT-4o, o3 and o4-mini, 1,080 runs. Task-irrelevant facts leak into search strings and into clicks and form choices, with behavioural oversharing dominating; prompt-level instructions to be private do not stop it, and stripping irrelevant input raised task success by up to 17.9%."
 resource: "https://brave.com/blog/agentic-oversharing/"
-tags: [article, webseclist-reference, en, brave]
+tags: [article, webseclist-reference, en, brave, ai-agent, llm, measurement-study, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:59+00:00"

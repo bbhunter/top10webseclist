@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Novel SQL Injection Technique in PDO Prepared Statements
+description: "PDO emulates prepared statements by default and parses the SQL with its own scanner. A null byte makes that scanner abandon a backtick-quoted identifier, so an attacker's question mark inside a column name becomes a bound parameter and a second user-controlled value is substituted unescaped, giving SQL injection where escaping looked correct."
 resource: "https://slcyber.io/research-center/a-novel-technique-for-sql-injection-in-pdos-prepared-statements/"
-tags: [article, webseclist-reference, en, searchlight-cyber]
+tags: [article, webseclist-reference, en, searchlight-cyber, sqli, php, parser-differential, mysql, postgres, database, injection, filter-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:27+00:00"

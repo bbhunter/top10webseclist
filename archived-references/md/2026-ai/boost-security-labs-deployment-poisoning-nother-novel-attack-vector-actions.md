@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Deployment Poisoning: A(nother) Novel Attack Vector for GitHub Actions"
+description: "A workflow in a fork pull request can name an environment that does not exist; GitHub creates it and emits a deployment_status event that runs the default branch's workflow with secrets. The environment name is attacker-chosen, so a ${{ }} expression in a run step executes it, and even after that is fixed the environment_url is attacker-set, sending API keys to their server. 38 public apps produce deployments; Argos CI and Checkly shipped vulnerable example workflows."
 resource: "https://labs.boostsecurity.io/articles/deployment_poisoning"
-tags: [article, webseclist-reference, en, boost-security-labs]
+tags: [article, webseclist-reference, en, boost-security-labs, github-actions, ci-cd, command-injection, supply-chain, info-leak, ssrf, abuse-of-functionality]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:39+00:00"
@@ -20,7 +21,7 @@ authors:
   - Boost Security Labs
 canonical_url: "https://labs.boostsecurity.io/articles/deployment_poisoning/"
 cited_by:
-  - "2026-ai.md:92"
+  - "2026-ai.md:95"
 commit: ""
 content_sha256: f56ed590474d646733267d3f6d6fd1049a73c453bec7ccfbfd72c14e42a1a05d
 depth: full

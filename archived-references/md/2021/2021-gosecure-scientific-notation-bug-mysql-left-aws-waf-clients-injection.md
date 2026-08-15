@@ -1,8 +1,9 @@
 ---
 type: Article
 title: 24/7 managed detection, response, and expert cybersecurity services
+description: MySQL and MariaDB silently discard a malformed scientific-notation token such as 1.e when no digit follows the e, so the query stays valid while looking like nonsense to anything else parsing it. Injecting that token made SQL injection payloads unrecognisable to AWS WAF and to ModSecurity with libinjection, restoring injection against protected sites.
 resource: "https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/"
-tags: [article, webseclist-reference, en, gosecure]
+tags: [article, webseclist-reference, en, gosecure, sqli, waf-bypass, filter-bypass, parser-differential, mysql, database, waf, aws, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:28+00:00"

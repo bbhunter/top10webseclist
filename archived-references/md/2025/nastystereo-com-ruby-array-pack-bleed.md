@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Ruby Array Pack Bleed
+description: "A signed and unsigned mismatch in the repeat-count parsing of Ruby's Array pack makes a huge count negative, so the back-up-a-byte directive grows the packed string instead of shrinking it. The result discloses heap memory past the string buffer, including pointers, or crashes the interpreter."
 resource: "https://nastystereo.com/security/ruby-pack.html"
-tags: [article, webseclist-reference, en-AU, nastystereo-com]
+tags: [article, webseclist-reference, en-AU, nastystereo-com, ruby, info-leak, dos, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:39+00:00"

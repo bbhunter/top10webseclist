@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Forwarding-Loop Attacks in Content Delivery Networks
+description: A malicious CDN customer can point its origin back into the CDN so that one request loops inside a single CDN or between several, being processed over and over and consuming edge and origin resources. Header-filtering features offered by some CDNs strip the markers others use to detect loops, so existing defences are bypassable; all 16 commercial CDNs tested were vulnerable.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/forwarding-loop-attacks-content-delivery-networks.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, cdn, dos, http, reverse-proxy, cache, filter-bypass, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:35:35+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Misconfigurations in Java XML Parsers
+description: Partial hardening of Java XML parsers still leaves XXE and SSRF reachable, because disabling entity expansion or external entities does not stop DTD processing and PUBLIC identifiers still fetch remote URLs. The author also shows the file protocol handler will open an FTP connection to a host taken from a file URL, so blind XXE exfiltration survives a policy permitting only file.
 resource: "http://immunityservices.blogspot.com/2021/02/misconfigurations-in-java-xml-parsers.html"
-tags: [article, webseclist-reference, immunityservices-blogspot-com]
+tags: [article, webseclist-reference, immunityservices-blogspot-com, xxe, ssrf, info-leak, filter-bypass, java, ftp, url-parsing, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:39+00:00"

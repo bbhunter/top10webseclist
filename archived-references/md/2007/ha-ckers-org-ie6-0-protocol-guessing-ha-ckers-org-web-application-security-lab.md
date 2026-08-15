@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "SirDarckCat's report that IE6 guesses protocols: a four-character prefix before 'script:' resolves to javascript:, three or fewer to vbscript:, so MYscript:msgbox() and somescript:alert() execute. Anti-XSS filters matching the literal scheme names miss every variant. IE7 is not affected."
 resource: "http://ha.ckers.org/blog/20070702/ie60-protocol-guessing/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, sanitizer-bypass, url-parsing, parser-differential, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:40+00:00"

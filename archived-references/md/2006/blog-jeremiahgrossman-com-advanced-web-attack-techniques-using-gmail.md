@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Advanced Web Attack Techniques using GMail
+description: "A fixed GMail flaw: a predictable URL returned the victim's contact list as an unreferenced JavaScript array constant, loadable cross-domain with a script tag and the session cookie. Overriding the built-in Array constructor with a setter-based one captures the constant as it is parsed, with no XSS. Advice: never serve sensitive data as bare JavaScript."
 resource: "http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, javascript, sop-bypass, same-origin-policy, info-leak, csrf, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:48+00:00"

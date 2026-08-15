@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "PDF Mirage: Content Masking Attack Against Information-Based Online Services"
+description: "Rigging a PDF's font glyph mapping makes the text a human reads differ completely from the text an extractor recovers. This subverts conference reviewer-assignment systems so authors can steer papers to colluding reviewers, evades Turnitin at a chosen plagiarism score, and plants hidden keywords in the Bing, Yahoo and DuckDuckGo indexes."
 resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/markwood"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, pdf, parser-differential, filter-bypass, detection, mitigation, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:49+00:00"

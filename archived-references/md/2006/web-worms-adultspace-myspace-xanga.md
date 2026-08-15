@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Web Worms (AdultSpace, MySpace, Xanga)
+description: "Grossman's WhiteHat whitepaper on cross-site scripting worms and viruses. It analyses the Samy, AdultSpace and Xanga worms line by line, showing how a persistent XSS on a social network lets injected script republish itself through the site's own editor and spread between profiles without a server compromise, and compares their propagation rates against conventional malware."
 resource: "http://www.whitehatsec.com/downloads/WHXSSThreats.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, javascript, survey, case-study, mitigation, dom]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:00:21+00:00"

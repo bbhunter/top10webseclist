@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Severe XSS in Google and Others Due To The JAR Protocol Issues
+description: "Following the jar: origin disclosure, beford showed Google's many open redirects can point a jar: URL at an attacker-hosted archive while keeping google.com as the origin, giving domain-wide XSS across Google services. pdp names the class Web-wide Cross-site Scripting: any site with an open redirect and a Firefox user is exposed until Mozilla patches."
 resource: "https://www.gnucitizen.org/blog/severe-xss-in-google-and-others-due-to-the-jar-protocol-issues"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, xss, open-redirect, sop-bypass, same-origin-policy, java, url-parsing, case-study, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:55+00:00"

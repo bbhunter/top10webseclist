@@ -1,8 +1,9 @@
 ---
 type: Article
 title: My hacking adventures with Safari reader mode
+description: "Safari Reader mode strips scripts but renders an SVG anchor pointing at a javascript: URI, giving script execution, and a title/child-frame quirk lets a cross-origin child frame read the top frame's content, breaking the same-origin policy."
 resource: "https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safari-reader-mode"
-tags: [article, webseclist-reference, en, payatu]
+tags: [article, webseclist-reference, en, payatu, sop-bypass, xss, sanitizer-bypass, same-origin-policy, iframe, javascript, ios, csp]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:56+00:00"

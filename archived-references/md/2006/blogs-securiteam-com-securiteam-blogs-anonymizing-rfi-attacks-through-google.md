@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SecuriTeam Blogs » Anonymizing RFI Attacks Through Google
+description: "Noam Rathaus turns Googlebot into an attack proxy: publish a URL that combines a victim's remote-file-inclusion parameter with an attacker-hosted PHP shell, and Google's crawler fetches it, exploiting the third party on the attacker's behalf and leaving the crawler's address in the logs. Shown live via inurl:cmd.gif, and generalisable to any spider or as a covert channel."
 resource: "https://blogs.securiteam.com/index.php/archives/746"
-tags: [article, webseclist-reference, en, blogs-securiteam-com]
+tags: [article, webseclist-reference, en, blogs-securiteam-com, lfi, php, abuse-of-functionality, proxy, rce, attack-chain, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:31+00:00"

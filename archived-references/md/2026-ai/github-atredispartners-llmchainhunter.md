@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: Tool
+description: "A repository of design documents and a runbook rather than a finished scanner: it directs Claude Code to build its own tooling and then hunt Java deserialization gadget chains with it. The 00-* files are the component implementation plan, CLAUDE-CODE-INSTRUCTIONS.MVP briefs the agent on what it is building, and RUNBOOK.md tells it how to drive the built tools to look for gadgets. The author frames it as an initial proof that an LLM can find novel gadgets."
 resource: "https://github.com/atredispartners/llmchainhunter"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, deserialization, gadget-chain, java, llm, ai-agent, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:58+00:00"
@@ -20,7 +21,7 @@ authors:
   - atredispartners
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:75"
+  - "2026-ai.md:54"
 commit: 264d91f1ee4ef65ea6f84280531dd4f8e810fc7d
 content_sha256: 1dc55236d433d69595324e49fc2d5093d7fdd9a8fb1fe6ad5b5d0c102eb19942
 depth: full

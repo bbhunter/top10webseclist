@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hacking Salesforce-backed WebApps
+description: Attacks on custom web apps that use Salesforce as their backend. Salesforce record IDs are partly sequential so they can be enumerated for IDOR, user-controlled field and filter parameters allow SoQL injection to pull related records, blind-extract values or void the WHERE restriction, and record creation is often open to mass assignment.
 resource: "https://www.hypn.za.net/blog/2022/11/12/Hacking-Salesforce-backed-WebApps/"
-tags: [article, webseclist-reference, blog-hypn-za-net]
+tags: [article, webseclist-reference, blog-hypn-za-net, idor, sqli, injection, mass-assignment, info-leak, rest-api, soap]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:27:24+00:00"

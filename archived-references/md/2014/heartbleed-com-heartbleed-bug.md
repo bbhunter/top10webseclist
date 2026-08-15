@@ -1,12 +1,13 @@
 ---
 type: Article
 title: Heartbleed Bug
+description: "A missing bounds check in OpenSSL's TLS heartbeat extension lets any peer ask for more bytes than it supplied and receive up to 64KB of adjacent process memory, repeatable without limit. It leaks private keys, user credentials, session cookies and plaintext traffic, and leaves no trace in server logs."
 resource: "https://web.archive.org/web/20160403035045/http://heartbleed.com/"
-tags: [article, webseclist-reference, en, heartbleed-com]
+tags: [article, webseclist-reference, en, heartbleed-com, info-leak, tls, https, cve, vendor-advisory, mitigation, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:27:12+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original

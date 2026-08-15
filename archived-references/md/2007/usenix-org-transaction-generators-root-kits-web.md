@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Transaction Generators: Root Kits for Web"
+description: "Jackson, Boneh and Mitchell define the Transaction Generator: malware that steals no credentials but waits inside the browser for the user to authenticate, then issues transactions on the live session. Stronger authentication and behavioural analytics are useless against it, so defence must move to transaction integrity and confirmation, which CardSpace and OpenID must also address."
 resource: "https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, browser-extension, csrf, cookie, phishing, mitigation, openid, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:09+00:00"

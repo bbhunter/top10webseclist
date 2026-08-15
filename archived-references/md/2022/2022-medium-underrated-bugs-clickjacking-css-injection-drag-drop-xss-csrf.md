@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Underrated Bugs, Clickjacking, CSS Injection, Drag-Drop XSS, Cookie Bomb, Login+Logout CSRF…
+description: "Three bug-bounty chains built from bugs usually dismissed as low severity: CSS injection that hides a page and relabels a button so a clickjacked victim confirms an attacker's email; a dragged image whose data is rewritten and passed to jQuery html() for XSS, with a cookie bomb to stop an OAuth code being consumed; and login-logout CSRF that turns self-XSS into takeover."
 resource: "https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, clickjacking, css-injection, xss, csrf, ui-redress, cookie, oauth, attack-chain, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:20+00:00"

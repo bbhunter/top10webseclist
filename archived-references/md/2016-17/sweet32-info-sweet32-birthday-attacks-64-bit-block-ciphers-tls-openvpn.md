@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "SWEET32: Birthday attacks on 64-bit block ciphers in TLS and OpenVPN"
+description: "Ciphers with 64-bit blocks such as Triple-DES and Blowfish hit the birthday bound after only about 32 GB under one key, so colliding CBC ciphertext blocks leak the XOR of two plaintexts. An attacker running JavaScript in the victim's browser and watching the wire can recover an HTTP cookie or Basic Auth token from a long-lived TLS or OpenVPN connection."
 resource: "https://sweet32.info/"
-tags: [article, webseclist-reference, en, sweet32-info]
+tags: [article, webseclist-reference, en, sweet32-info, tls, cookie, https, info-leak, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:14+00:00"

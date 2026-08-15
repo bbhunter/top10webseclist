@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Request encoding to bypass web application firewalls
+description: A request body and query string can be sent in an unusual charset such as the EBCDIC code page IBM037, declared in the Content-Type header, which signature-based web application firewalls do not decode. The application server decodes it normally, so an SQL injection or similar payload passes the filter and reaches the application intact.
 resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/"
-tags: [article, webseclist-reference, en-GB, ncc-group]
+tags: [article, webseclist-reference, en-GB, ncc-group, waf-bypass, charset, content-type, encoding, sqli, http, waf, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:08+00:00"

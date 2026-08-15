@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications"
+description: A crawler that hooks client-side JavaScript APIs at runtime instead of parsing HTML with regular expressions, so registered event handlers, network calls and dynamically built URLs and forms are all discovered. Driving a scanner from the resulting navigation graph reached 86 percent more of the attack surface than four existing scanners across 13 applications.
 resource: "https://publications.cispa.saarland/538/"
-tags: [article, webseclist-reference, en, publications-cispa-saarland]
+tags: [article, webseclist-reference, en, publications-cispa-saarland, dynamic-analysis, tooling, dom, javascript, detection, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:05:38+00:00"

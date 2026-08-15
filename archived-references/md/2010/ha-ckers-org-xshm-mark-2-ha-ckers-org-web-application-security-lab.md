@@ -1,8 +1,9 @@
 ---
 type: Article
 title: XSHM Mark 2 ha.ckers.org web application security lab
+description: A popup stays navigable by the script that opened it, so an attacker can repeatedly point it at a URL that reads history.length and steps back. Polling that count reveals how many pages the victim has visited since leaving the tab, and it keeps working for as long as both windows stay open.
 resource: "http://ha.ckers.org/blog/20100901/xshm-mark-2/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, side-channel, xsleak, javascript, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:52+00:00"

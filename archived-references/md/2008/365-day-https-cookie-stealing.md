@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "365-Day: https Cookie Stealing"
+description: "Session cookies set over HTTPS but lacking the Secure bit are handed out on any plaintext request. Inject an <img src=\"http://mail.google.com/mail\"> into any HTTP page the victim loads on a shared network and the gmail cookie arrives in the clear, days after they last logged in."
 resource: "https://fscked.org/talks/ActiveHTTPSCookieStealing.pdf"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, cookie, https, tls, auth-bypass, info-leak, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T20:44:24+00:00"

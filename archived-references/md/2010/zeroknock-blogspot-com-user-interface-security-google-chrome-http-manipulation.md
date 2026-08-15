@@ -1,8 +1,9 @@
 ---
 type: Article
 title: User Interface Security - Google Chrome HTTP AUTH Dialog Spoofing through Realm Manipulation
+description: Chrome through 5.0.375.127 does not scrutinise the realm value of a WWW-Authenticate header, so quotes placed inside it let an attacker control what the HTTP auth dialog displays and spoof which site is asking for credentials. Combined with Chrome not showing the real domain for obfuscated redirects, it supports credential phishing.
 resource: "https://zeroknock.blogspot.com/2010/08/google-chrome-http-auth-dialog-through.html"
-tags: [article, webseclist-reference, zeroknock-blogspot-com]
+tags: [article, webseclist-reference, zeroknock-blogspot-com, ui-redress, http, header-injection, filter-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:11+00:00"

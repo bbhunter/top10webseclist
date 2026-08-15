@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Attack on PHP Sessions and Random Numbers
+description: PHP 5.3.1 and earlier seed their linear congruential generator weakly enough that the 64-bit seed reduces to 35 bits, or under 20 bits given code execution, recoverable in seconds. That makes session IDs and lcg_value() output predictable. The page runs a live demo against the visitor and ships C tools to solve the LCG forwards and backwards and to derive session IDs.
 resource: "http://samy.pl/phpwn/"
-tags: [article, webseclist-reference, samy-pl]
+tags: [article, webseclist-reference, samy-pl, php, auth-bypass, cookie, tooling, novel-technique, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:15+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Fast and Precise Sanitizer Analysis with BEK
+description: "USENIX Security '11 presentation page carrying only the title, the five authors and links to the paper PDF, audio and video. The work itself introduces BEK, a language for writing string sanitizers that compiles to symbolic finite state transducers, making equivalence, idempotence and commutativity of two sanitizers decidable so real deployed sanitizers can be checked."
 resource: "https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, sanitizer-bypass, static-analysis, formal-analysis, xss, tooling, detection, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:06+00:00"

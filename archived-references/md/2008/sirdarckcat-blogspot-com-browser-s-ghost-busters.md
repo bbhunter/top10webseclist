@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Browser's Ghost Busters"
+description: "Reverse-engineers Manuel Caballero's then-undisclosed 'A Resident in My Domain' bug. document.getElementsByTagName is blocked cross-domain but window.frames[] is not, so a window reference from open() or window.opener lets an attacker retarget a foreign window's iframes on IE6 and IE7 and capture keystrokes there. A follow-up post covers IE8."
 resource: "https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html"
-tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
+tags: [article, webseclist-reference, sirdarckcat-blogspot-com, iframe, sop-bypass, same-origin-policy, dom, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:17+00:00"

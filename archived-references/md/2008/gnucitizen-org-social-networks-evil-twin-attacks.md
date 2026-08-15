@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Social Networks Evil Twin Attacks
+description: "pdp argues the evil twin idea transfers from rogue wireless access points to professional social networks: register as a plausible named security expert at a known employer on LinkedIn and the trust graph does the rest, trapping both the impersonated person's contacts and strangers who approach the fake. A short concept piece with no code, aimed at recruitment-pretext information gathering."
 resource: "https://www.gnucitizen.org/blog/social-networks-evil-twin-attacks/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, phishing, abuse-of-functionality, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:27+00:00"

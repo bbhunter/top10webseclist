@@ -1,8 +1,9 @@
 ---
 type: Article
 title: One Fake Bug Report Hijacked a $250B Company’s AI Agent
+description: "Describes an indirect prompt injection reaching AI coding agents through error telemetry: anyone holding a public Sentry DSN can post a crafted event, and an MCP integration returns it to the agent as trusted tool output, formatted to imitate the platform's own remediation guidance, and the agent runs it. A controlled campaign found 2,388 organisations with injectable DSNs and observed more than 100 agents executing the payload, exposing cloud and repository credentials."
 resource: "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/"
-tags: [article, webseclist-reference, en, tenet-security]
+tags: [article, webseclist-reference, en, tenet-security, prompt-injection, ai-agent, llm, rce, supply-chain, ci-cd, measurement-study, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:19+00:00"
@@ -17,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:82"
+  - "2026-ai.md:85"
 commit: ""
 content_sha256: 580e8ed08e8bd886035cc86af7623ef71de49eeeab9549794af6996e4cb2f1b8
 depth: full

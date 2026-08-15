@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Source Code Disclosure in ASP.NET apps
+description: "Reports that ASP.NET cookieless session tokens embedded inside a URL path let a request reach files IIS otherwise refuses, because the token is stripped after request filtering has run. On servers configured with runAllManagedModulesForAllRequests, inserting the token inside a path segment retrieves compiled assemblies from the application's bin directory, disclosing source code and, in the case studied, an exploitable flaw. Short-name enumeration recovers the file names needed."
 resource: "https://swarm.ptsecurity.com/source-code-disclosure-in-asp-net-apps/"
-tags: [article, webseclist-reference, en-US, pt-swarm]
+tags: [article, webseclist-reference, en-US, pt-swarm, aspnet, dotnet, info-leak, filter-bypass, url-parsing, waf-bypass, abuse-of-functionality]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:32+00:00"

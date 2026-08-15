@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking
+description: QED compiles a PQL taint specification into a static analysis that prunes candidate URL sequences, then hands the survivors to the Java PathFinder model checker, which returns a concrete multi-request attack plus an execution trace and no false positives. Session data-flow dependence and non-repetition cut the space. Found 10 SQL injections and 13 XSS bugs in 130k lines of Struts apps.
 resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html"
-tags: [article, webseclist-reference, usenix-org]
+tags: [article, webseclist-reference, usenix-org, static-analysis, dynamic-analysis, formal-analysis, java, xss, sqli, detection, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:55+00:00"

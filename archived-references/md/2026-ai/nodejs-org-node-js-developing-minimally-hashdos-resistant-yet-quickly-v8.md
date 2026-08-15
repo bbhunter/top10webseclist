@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Node.js — Developing a minimally HashDoS resistant, yet quickly reversible integer hash for V8
+description: V8 packs the length and numeric value of array-index strings - decimal strings under 24 bits - straight into the hash field, with no random seed, so an attacker can predict string-table slots and flood a quadratic probing chain from a JSON body, stalling the Node.js event loop (CVE-2026-21717). The post derives a seeded integer hash that is unpredictable yet invertible, so V8 keeps its optimisations, and evaluates it statistically.
 resource: "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos"
-tags: [article, webseclist-reference, en-GB, nodejs-org]
+tags: [article, webseclist-reference, en-GB, nodejs-org, dos, algorithmic-complexity, hash-collision, nodejs, javascript-runtime, cve, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:40+00:00"

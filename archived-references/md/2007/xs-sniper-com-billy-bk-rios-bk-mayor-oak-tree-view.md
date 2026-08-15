@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Billy (BK) Rios » BK for Mayor of Oak Tree View
+description: "Following a link shown in Google's own Google Docs promo video, Rios opened the 'Article For Oak Tree View' demo document, then clicked Edit this page, entered his own credentials and gained full write access to a stranger's newsletter. A short screenshot-led account of broken access control on shared Google Docs."
 resource: "http://xs-sniper.com/blog/2007/09/20/bk-for-mayor-of-oak-tree-view/"
-tags: [article, webseclist-reference, xs-sniper-com]
+tags: [article, webseclist-reference, xs-sniper-com, auth-bypass, idor, info-leak, privilege-escalation, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:47+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Wormable XSS www.bing.com
+description: "Bing's /maps/configurable endpoint takes a ?config= URL and loads that JSON from any host, and the config's addLayerFromURL then fetches an attacker-hosted KML file whose placemark description carries raw HTML. The KML blacklist regex that is supposed to stop this misses mixed case, so a link href of jAvAsCriPt:(confirm)(1337) survives and runs script in the www.bing.com origin - the origin other Microsoft services accept requests from."
 resource: "https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, xss, filter-bypass, cors, bug-bounty, abuse-of-functionality]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:16+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: HTTP Request Smuggling via higher HTTP versions
+description: Request smuggling against front ends that terminate HTTP/2 or HTTP/3 and forward HTTP/1.1. Because HTTP/2 header names and values are binary strings that may contain newlines and colons, and content-length and transfer-encoding are not revalidated on downgrade, an attacker can inject a second request into the backend stream. Includes detection methods and a tool.
 resource: "https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions"
-tags: [slides, webseclist-reference, slideshare]
+tags: [slides, webseclist-reference, slideshare, request-smuggling, desync, http2, http3, header-injection, parser-differential, reverse-proxy, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:24+00:00"

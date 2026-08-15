@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Listen to the whispers: web timing attacks that actually work"
+description: Web timing attacks have historically been lab-bound; this research reduces the reliably exploitable differential to roughly 200 microseconds and validates its techniques against a test bed of 30,000 live sites. It shows timing alone can reveal hidden attack surface such as unlinked parameters and routes, confirm blind server-side injection into SQL, JSON and parameter-parsing sinks, and expose reverse-proxy misconfiguration including scoped SSRF and front-end rule bypass.
 resource: "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, timing-attack, side-channel, reverse-proxy, ssrf, injection, sqli, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:55+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution
+description: "A form with no action attribute submits to the current URL, so framing it with attacker parameters already in the query string produces a request carrying the value twice. JSP returns the query-string copy from request.parameter, so one clickjacked click updates the victim's email while the genuine CSRF token rides along untouched. ASP.NET is affected too, joining duplicates with a comma."
 resource: "http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org]
+tags: [article, webseclist-reference, en, blog-andlabs-org, csrf, clickjacking, ui-redress, aspnet, java, filter-bypass, iframe, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:59+00:00"

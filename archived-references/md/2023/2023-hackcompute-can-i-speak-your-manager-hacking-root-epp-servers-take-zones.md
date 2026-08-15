@@ -1,8 +1,9 @@
 ---
 type: Article
 title: can I speak to your manager? hacking root EPP servers to take control of zones
+description: EPP servers used by domain registries, most of them running CoCCA registry software, parsed XML with external entities enabled, giving unauthenticated file read on port 700. Chained with a path traversal in an unauthenticated cities servlet it yielded SSH keys, database backups and a shared cloud backup credential, giving control of the DNS zones of 19 ccTLDs.
 resource: "https://hackcompute.com/hacking-epp-servers/"
-tags: [article, webseclist-reference, en, hackcompute]
+tags: [article, webseclist-reference, en, hackcompute, xxe, path-traversal, dns, lfi, java, info-leak, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:29:37+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks"
+description: "LLM serving frameworks share prefix caches and semantic caches between requests, and this work attacks the cache rather than the model. Six vectors fall in two groups: fraud on the user, where a colliding prefix or a loosely matched semantic entry makes the cache serve attacker-planted content; and integrity attacks, where block-wise or multimodal collisions let a request inherit a cached verdict and skip moderation. Confirmed on vLLM, SGLang, GPTCache, AIBrix, rtp-llm and LMDeploy."
 resource: "https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, llm, cache-poisoning, cache, hash-collision, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:58+00:00"
@@ -23,7 +24,7 @@ authors:
   - Haipeng Qu
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:73"
+  - "2026-ai.md:76"
 commit: ""
 content_sha256: c8f52f7051834f1accffeb8327327f7fe1c27fa3cf899cda952aae071be16842
 depth: full

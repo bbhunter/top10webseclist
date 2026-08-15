@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Securitum. Leading european penetration testing company
+description: Client-side HTML sanitizers read their allow-lists from configuration objects, so a prototype pollution primitive can add tags and attributes back in. DOMPurify, sanitize-html, js-xss and Google Closure are each bypassed this way, turning pollution into XSS, and Closure can additionally be pointed at an attacker-hosted script path.
 resource: "https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html"
-tags: [article, webseclist-reference, en, securitum-com]
+tags: [article, webseclist-reference, en, securitum-com, prototype-pollution, sanitizer-bypass, xss, gadget-chain, filter-bypass, javascript, nodejs, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:31+00:00"

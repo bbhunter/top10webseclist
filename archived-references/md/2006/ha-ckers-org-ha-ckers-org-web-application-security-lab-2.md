@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Proof, found by Ghozt, that Google indexes XSS URLs: a search result contained a reflected cross-site scripting link picked up from blog posts by Nitesh Dhanjani. A working exploit would have been indexed the same way, so persistent XSS on trusted, high-ranking domains such as .edu TLDs gains extra reach."
 resource: "http://ha.ckers.org/blog/20060928/google-indexes-xss/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, xss, detection, case-study, info-leak, abuse-of-functionality, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:52:15+00:00"

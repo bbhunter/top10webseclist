@@ -1,8 +1,9 @@
 ---
 type: Article
 title: WAF bypasses via 0days
+description: Content-Type parsing differences between ModSecurity CRS and the backend let an attacker present a form-urlencoded body as XML or JSON, hiding the injection inside an XML comment that the firewall skips. Multipart quirks, an empty part and a bare newline body terminator, plus a second charset parameter selecting UTF-7, give further complete rule bypasses.
 resource: "https://terjanq.medium.com/waf-bypasses-via-0days-d4ef1f212ec"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, waf-bypass, parser-differential, content-type, charset, sqli, cve, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:32+00:00"

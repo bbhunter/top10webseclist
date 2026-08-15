@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Cast Attack: A New Threat Posed by Ghost Bits in Java"
+description: "The Cast Attack exploits Java narrowing a 16-bit char to a byte (via (byte) ch and ch & 0xFF), dropping the high 8 bits ('ghost bits'). An attacker submits a Unicode character whose low byte equals a forbidden ASCII byte, so a WAF or validator sees harmless Unicode while the sink decodes the real payload. It demonstrates bypasses reaching SQLi, fastjson/Jackson deserialization, path traversal and auth bypass, SMTP injection, and HTTP CRLF request smuggling across many Java libraries."
 resource: "https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, java, waf-bypass, unicode, encoding, filter-bypass, sqli, deserialization, path-traversal, smtp, request-smuggling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:10+00:00"
@@ -19,7 +20,7 @@ authors:
   - Zhihui Chen
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:56"
+  - "2026-ai.md:57"
 commit: ""
 content_sha256: 5a786294da66e41ec951879ae824482cb1145e53b84d08912c31a800e3f0c401
 depth: full

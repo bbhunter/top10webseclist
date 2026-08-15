@@ -1,8 +1,9 @@
 ---
 type: Article
 title: 1-Click GitHub Token Stealing via a VSCode Bug
+description: "VSCode webviews are cross-origin iframes, but to keep shortcuts working they forward their own keydown events to the host over postMessage, and the host cannot tell a synthetic event from a real keypress. Javascript in a notebook cell sends Ctrl+Shift+A to accept the recommended-extension prompt, installing a local workspace extension whose keybinding calls installExtension with skipPublisherTrust, and that extension reads github.dev's unscoped GitHub token."
 resource: "https://blog.ammaraskar.com/github-token-stealing/"
-tags: [article, webseclist-reference, en, ammar-s-blog]
+tags: [article, webseclist-reference, en, ammar-s-blog, postmessage, iframe, sandbox-escape, javascript, github, info-leak, attack-chain, electron]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:03+00:00"
@@ -18,7 +19,7 @@ authors:
   - Ammar Askar
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:41"
+  - "2026-ai.md:42"
 commit: ""
 content_sha256: ff03c89709fed2ae795f3b1f9e33f02ff5572212b33d591d1e83db780afa4ac2
 depth: full

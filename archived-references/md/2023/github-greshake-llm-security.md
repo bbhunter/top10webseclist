@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: New ways of breaking app-integrated LLMs
+description: "Demonstrates indirect prompt injection against application-integrated LLMs: instructions hidden in a web page, email or source file that the model retrieves become commands, letting an attacker remote-control the assistant, exfiltrate or alter user data, persist across sessions through the agent's memory, spread to other agents, and poison code completion."
 resource: "https://github.com/greshake/llm-security"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, prompt-injection, llm, ai-agent, rag, info-leak, email, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:13:06+00:00"

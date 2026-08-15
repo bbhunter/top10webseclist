@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU"
+description: "Integrated mobile GPUs, reachable from JavaScript through WebGL, supply the primitives for microarchitectural attacks: precise timers, a side channel over the GPU cache, and control over physical memory. The authors reverse engineer the Adreno 330 cache and mount the first reliable Rowhammer bit flips from a mobile browser, compromising a phone in under two minutes."
 resource: "https://download.vusec.net/papers/glitch_sp18.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, timing-attack, javascript, android, sandbox-escape, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:01:49+00:00"

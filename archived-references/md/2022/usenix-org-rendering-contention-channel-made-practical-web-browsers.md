@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Rendering Contention Channel Made Practical in Web Browsers
+description: "A rendering contention side channel: a page applies stable, self-adjusting pressure to the browser rendering pipeline and times a sequence of frames to detect co-rendering events elsewhere. The SIDER prototype uses it for cross-browser and cross-mode cookie synchronisation, history sniffing, website fingerprinting and keystroke logging."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, timing-attack, xsleak, info-leak, cookie, sop-bypass, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:01+00:00"

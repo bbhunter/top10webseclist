@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: Code
+description: Test websites for the Agentic Browsers and the Same-Origin Policy experiments. Pages pair an outer page with a same-origin or cross-origin framed page carrying distinct marker text, and add hidden elements, cookie-personalised content and off-screen text to see what the browser agent reads; others hold password inputs and text that instructs the agent. The poc files demonstrate cross-origin data theft in both frame directions and a JavaScript injection, posting to summary.php.
 resource: "https://github.com/UWCSESecurityLab/agentic-browser-sop"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, same-origin-policy, sop-bypass, prompt-injection, ai-agent, iframe, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:57+00:00"

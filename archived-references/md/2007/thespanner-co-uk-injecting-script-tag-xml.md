@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Injecting the script tag into XML
+description: Gareth Heyes shows that Firefox XML entities can be abused to assemble a script tag that a tag-based HTML filter never sees, so a filtered HTML upload service can still be made to execute script. It follows earlier work with Ronald on reading sensitive Firefox chrome entities via XHR. The published capture contains none of the article, only a sidebar of later post links.
 resource: "http://www.thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml/"
-tags: [article, webseclist-reference, en, thespanner-co-uk]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, sanitizer-bypass, xxe, file-upload, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:36+00:00"

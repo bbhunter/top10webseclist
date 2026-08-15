@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Cross Domain Basic Auth Phishing Tactics
+description: "Basic-auth phishing needs no clicked link: an embedded image on a protected domain pops the credential dialog on the page you want to phish. Alex supplies two dialog-spoofing bugs that hide the real host: Opera truncates the hostname after 34 characters and appends an ellipsis, and IE7 shows the Punycode form, so a Cyrillic o in microsoft.de passes."
 resource: "http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, phishing, url-spoofing, unicode, ui-redress, abuse-of-functionality]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:41+00:00"

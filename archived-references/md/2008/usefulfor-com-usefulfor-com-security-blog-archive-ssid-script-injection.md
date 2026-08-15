@@ -1,12 +1,13 @@
 ---
 type: Article
 title: usefulfor.com/security » Blog Archive » SSID Script Injection
+description: "A rogue access point beaconing a malicious SSID gets its payload rendered and executed in the neighbouring-networks scan page of another AP's web admin interface. Two fake APs beat the 32-character SSID limit by joining the payload across both with JavaScript comment markers. The loaded script then CSRFs apply.cgi to switch off WPA. Demonstrated on DD-WRT."
 resource: "http://usefulfor.com/security/2008/08/04/ssid-script-injection/"
-tags: [article, webseclist-reference, usefulfor-com]
+tags: [article, webseclist-reference, usefulfor-com, xss, injection, csrf, attack-chain, filter-bypass, novel-technique, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:36+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

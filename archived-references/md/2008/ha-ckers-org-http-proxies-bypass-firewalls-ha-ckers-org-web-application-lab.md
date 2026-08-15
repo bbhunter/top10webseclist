@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: An open HTTP proxy does not have to be pointed at the internet. Aim it inward at RFC1918 space and it becomes a foothold for scanning and exploiting the internal network behind the firewall, including the firewall itself. Notes that compromised hosts already carry attacker-planted proxies suitable for this, that the author found it in the wild, and that IPv6 makes such enumeration harder.
 resource: "http://ha.ckers.org/blog/20080520/http-proxies-bypass-firewalls/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, proxy, ssrf, http, info-leak, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:46+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Web Cache Deception Escalates!
+description: "Web cache deception tricks a caching proxy into storing pages that hold another user's secrets by requesting them with a fake static-file suffix. Replacing injected markers with page-identicality and cache-header heuristics lets any site be tested; 1188 of the Alexa Top 10K were vulnerable, leaking CSRF tokens and CSP nonces from pages behind no login at all."
 resource: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, cache-deception, cache, cdn, url-parsing, info-leak, http, proxy, large-scale-scan, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:18+00:00"

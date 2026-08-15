@@ -1,8 +1,9 @@
 ---
 type: Article
 title: LocalRodeo Detection ha.ckers.org web application security lab
+description: "RSnake shows Martin Johns's LocalRodeo Firefox extension can be fingerprinted: because it blocks connections to localhost, neither onload nor onerror fires on an image pointed there, while the DOM is left unmodified. Detection is framed as recon - knowing what security software a target runs tells an attacker what not to attempt."
 resource: "http://ha.ckers.org/blog/20070403/localrodeo-detection/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, detection, browser-extension, dns-rebinding, javascript, mitigation, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:38+00:00"

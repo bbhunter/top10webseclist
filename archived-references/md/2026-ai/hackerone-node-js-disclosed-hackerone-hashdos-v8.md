@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Node.js disclosed on HackerOne: HashDoS in V8"
+description: "A HackerOne report for CVE-2026-21717, a HashDoS in V8 affecting Node.js 20/22/24/25. V8's string hashing maps integer-like strings to their numeric value, so hash collisions are trivially predictable. A request that packs many colliding integer-like strings into V8's internal string table degrades the Node.js process's performance; the most common trigger is any endpoint that calls JSON.parse on attacker-controlled input, since JSON parsing internalizes short strings into that table."
 resource: "https://hackerone.com/reports/3511792"
-tags: [article, webseclist-reference, en, hackerone]
+tags: [article, webseclist-reference, en, hackerone, dos, nodejs, javascript-runtime, hash-collision, algorithmic-complexity, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:32+00:00"
@@ -18,7 +19,7 @@ authors:
   - sharp_edged
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:52"
+  - "2026-ai.md:53"
 commit: ""
 content_sha256: 96867e3142ab37bf8fdbb8b52c3f7233a8b28f0d1ddbbd8f21a97e56e2002244
 depth: full

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hacking The Interwebs
+description: "pdp and Adrian Pastor drop the XSS requirement from UPnP router attacks. Flash's URLRequest can set POST content type application/xml and add a SOAPAction header, so a plain malicious SWF sends a UPnP SOAP control message straight to the LAN router, adding port forwards or changing the primary DNS server. No same-origin bypass needed, and most consumer routers of the day ship UPnP on."
 resource: "https://www.gnucitizen.org/blog/hacking-the-interwebs/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, csrf, flash, soap, dns, sop-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:26+00:00"

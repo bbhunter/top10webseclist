@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: A self-inflicted denial of service against a server-side URL fetcher. Chaining url= parameters yields only a few iterations, but where the request key is predictable, a counter or timestamp rather than a hash, you can point request N at the URL carrying key N+1. The server then connects back to itself repeatedly, holding sockets and resources until they time out.
 resource: "http://ha.ckers.org/blog/20070901/recursive-request-dos/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, dos, ssrf, abuse-of-functionality, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:59:43+00:00"

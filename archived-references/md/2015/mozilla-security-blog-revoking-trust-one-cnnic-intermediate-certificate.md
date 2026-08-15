@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Revoking Trust in one CNNIC Intermediate Certificate
+description: An unconstrained intermediate certificate issued by CNNIC was installed in a customer traffic-inspecting firewall, which then generated certificates for domains that operator did not own; browsers accepted them without warning, so any site could be impersonated. Mozilla revoked the intermediate through OneCRL in Firefox 37.
 resource: "https://blog.mozilla.org/security/2015/03/23/revoking-trust-in-one-cnnic-intermediate-certificate/"
-tags: [article, webseclist-reference, en-US, mozilla-security-blog]
+tags: [article, webseclist-reference, en-US, mozilla-security-blog, tls, https, vendor-advisory, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:18+00:00"

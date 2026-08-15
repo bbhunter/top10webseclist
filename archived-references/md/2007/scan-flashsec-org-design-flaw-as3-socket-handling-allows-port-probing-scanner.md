@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Design flaw in AS3 socket handling allows port probing: Description and PoC of a Flash 9/AS 3 port scanner"
+description: CVE-2007-4324. ActionScript 3 raises SecurityErrorEvent immediately for a closed TCP port but waits for a reply to its policy-file request on an open one, so the two-second delay reveals port state. A SWF scans any reachable host without DNS rebinding, one player instance per port. Fixed in Flash Player 10.
 resource: "http://scan.flashsec.org/"
-tags: [article, webseclist-reference, en, scan-flashsec-org]
+tags: [article, webseclist-reference, en, scan-flashsec-org, flash, timing-attack, side-channel, sandbox-escape, cve, info-leak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:11+00:00"

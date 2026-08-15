@@ -1,8 +1,9 @@
 ---
 type: Article
 title: CSP Is Dead, Long Live CSP! On the Insecurity of Whitelists and the Future of Content Security Policy
+description: Internet-scale measurement of Content Security Policy across 1.6 million hosts and 26,011 distinct policies finds 94.72 percent of policies bypassable, chiefly because whitelisted script hosts serve endpoints that hand back attacker-controlled script. Proposes the strict-dynamic keyword so nonce-based policies can replace host whitelists.
 resource: "https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/"
-tags: [article, webseclist-reference, en, research-google]
+tags: [article, webseclist-reference, en, research-google, csp, filter-bypass, xss, large-scale-scan, measurement-study, mitigation, defence, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:54+00:00"

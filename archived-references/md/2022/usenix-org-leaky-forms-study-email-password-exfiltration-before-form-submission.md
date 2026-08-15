@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission"
+description: A crawl of the top 100,000 sites measuring third-party scripts that read email addresses and passwords out of forms before the user submits them. Emails leaked to trackers on 1,844 EU and 2,950 US sites without consent, 41 leaking domains appeared on no blocklist, and session-replay scripts incidentally collected passwords on 52 sites.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/senol"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, info-leak, javascript, dom, large-scale-scan, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:02+00:00"

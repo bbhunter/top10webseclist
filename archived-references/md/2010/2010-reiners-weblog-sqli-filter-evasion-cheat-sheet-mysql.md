@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SQLi filter evasion cheat sheet (MySQL)
+description: "A reference sheet distilled from three years of evading PHPIDS, presented at CONFidence 2.0. It collects MySQL syntax that survives filters: comment and whitespace variants, quoteless strings, backtick aliases, typecasting tricks, strings and integers built from gadgets such as pi(), version() and collation(), and rewrites that drop OR, UNION, LIMIT, WHERE and SELECT in turn."
 resource: "https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/"
-tags: [article, webseclist-reference, en, reiners-weblog]
+tags: [article, webseclist-reference, en, reiners-weblog, sqli, mysql, filter-bypass, waf-bypass, database, injection, encoding, auth-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:12+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How I hacked hundreds of companies through their helpdesk
+description: "Slack, Yammer and Workplace admit anyone holding a @company address, and helpdesks and issue trackers hand out exactly that: an address whose incoming mail becomes a ticket you can read. Register for the chat tool as support@company.com or as GitLab's issue-by-email address and the verification link arrives as your own ticket, since most portals never verified the address you signed up with. Password-reset mail to support@ took over Twitter accounts the same way."
 resource: "https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, abuse-of-functionality, email, auth-bypass, sso, bug-bounty, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:35:43+00:00"

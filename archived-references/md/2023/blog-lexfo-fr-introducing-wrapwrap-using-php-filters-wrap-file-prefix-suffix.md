@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Introducing wrapwrap: using PHP filters to wrap a file with a prefix and suffix"
+description: PHP filter chains could already prepend arbitrary bytes to a resource; by padding the base64, swapping quartets with UCS-4 to UCS-4LE conversions and truncating with the dechunk filter, wrapwrap also appends an arbitrary suffix. Any file_get_contents sink that demands structurally valid JSON, XML or INI can then be turned into an in-band arbitrary file read.
 resource: "https://www.ambionics.io/blog/wrapwrap-php-filters-suffix"
-tags: [article, webseclist-reference, en, blog-lexfo-fr]
+tags: [article, webseclist-reference, en, blog-lexfo-fr, lfi, php, encoding, charset, filter-bypass, info-leak, ssrf, tooling, novel-technique, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:38+00:00"

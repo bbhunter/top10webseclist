@@ -1,8 +1,9 @@
 ---
 type: Article
 title: HTML5 XSS - The Spanner
+description: The new HTML5 audio and video tags carry event handlers that fire automatically on an invalid source, giving XSS without user interaction. The vectors <video src=1 onerror=alert(1)> and <audio src=1 onerror=alert(1)> evade filters that blacklist known HTML tags, with further handlers such as onloadedmetadata and ontimeupdate also usable.
 resource: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
-tags: [article, webseclist-reference, en, thespanner-co-uk]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, waf-bypass, javascript, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:58+00:00"

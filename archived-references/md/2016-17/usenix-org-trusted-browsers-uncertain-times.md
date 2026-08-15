@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Trusted Browsers for Uncertain Times
+description: "Degrading clock resolution does not close browser timing channels: the authors recover fine timing by amplifying coarse clocks and by building implicit clocks that measure duration without reading any clock at all. They propose fuzzy time for browsers and ship Fuzzyfox, a Firefox fork that mediates every timing source while staying usable."
 resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, timing-attack, side-channel, xsleak, javascript, same-origin-policy, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:07+00:00"

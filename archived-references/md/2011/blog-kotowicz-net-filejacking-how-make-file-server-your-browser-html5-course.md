@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Filejacking: How to make a file server from your browser (with HTML5 of course)"
+description: "WebKit's directory upload control lets a page read a whole folder, and users get no warning that a folder picker is not a save dialog. Kotowicz hid a transparent directory input over a fake download button, then opened a second window that survived the first being closed, uploaded the file listing and a sample image, and polled a control panel for further file requests."
 resource: "http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.html"
-tags: [article, webseclist-reference, blog-kotowicz-net]
+tags: [article, webseclist-reference, blog-kotowicz-net, ui-redress, clickjacking, file-upload, javascript, info-leak, novel-technique, xss, dom]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:29+00:00"

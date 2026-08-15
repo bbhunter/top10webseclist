@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Browser Event Hijacking
+description: "Calling preventDefault on the ctrl+f and cmd+f keydown lets a page suppress the browser's own find bar and draw a pixel-accurate replica instead. Anything the user types into that fake bar is readable by the site. Toews demonstrates it against Chrome on OSX and notes ctrl+s and ctrl+o could be hijacked the same way; Chrome rated it low priority."
 resource: "https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
-tags: [article, webseclist-reference, en, neohapsis-labs]
+tags: [article, webseclist-reference, en, neohapsis-labs, javascript, ui-redress, dom, info-leak, mitigation, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:59+00:00"

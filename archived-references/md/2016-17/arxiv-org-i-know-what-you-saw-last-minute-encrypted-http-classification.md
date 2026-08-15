@@ -1,8 +1,9 @@
 ---
 type: Article
 title: I Know What You Saw Last Minute - Encrypted HTTP Adaptive Video Streaming Title Classification
+description: A passive eavesdropper can identify which video a user is watching on an HTTP adaptive streaming site such as YouTube purely from the encrypted traffic pattern, because bitrate adaptation leaves a title-specific fingerprint. Classifiers trained on 10,000 captured streams of 100 titles exceeded 95 percent accuracy and stayed robust under delay and packet loss.
 resource: "https://arxiv.org/abs/1602.00490"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, side-channel, info-leak, https, tls, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

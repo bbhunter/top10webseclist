@@ -1,8 +1,9 @@
 ---
 type: Article
 title: x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!
+description: When the User-Agent starts with UP, ASP.NET takes the request body charset from the non-standard x-up-devcap-post-charset header instead of the Content-Type charset directive. An attacker encodes a POST payload in an exotic codepage such as ibm500, so a WAF that only whitelists Content-Type charsets sees nothing while the application decodes the attack.
 resource: "https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, waf-bypass, charset, encoding, aspnet, dotnet, content-type, filter-bypass, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:30+00:00"

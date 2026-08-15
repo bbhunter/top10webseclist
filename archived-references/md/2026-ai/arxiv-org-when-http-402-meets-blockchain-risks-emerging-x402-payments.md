@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments"
+description: The x402 protocol answers HTTP 402 with a payment negotiation flow and hands proof verification and on-chain settlement to third-party facilitators shared by many merchants, so one verification flaw affects every seller behind it. Checking 15 facilitators against eight authorization rules with a black-box prober found violations in all of them, giving free goods without paying, theft of facilitator-held assets, denial of the payment service, and unbounded sponsor-paid gas.
 resource: "https://arxiv.org/abs/2607.19545"
-tags: [article, webseclist-reference, en, arxiv]
+tags: [article, webseclist-reference, en, arxiv, http, auth-bypass, dos, measurement-study, large-scale-scan, rest-api, ai-agent]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:00:55+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "“You Might Also Like:” Privacy Risks of Collaborative Filtering"
+description: "Public recommender output - item-similarity lists and item-to-item covariances - shifts measurably when a single user acts. The authors monitor those shifts over time and combine them with a little known auxiliary history for a target, inferring that user's non-public purchases and ratings. Evaluated passively against Hunch, LibraryThing, Last.fm and Amazon."
 resource: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, info-leak, side-channel, measurement-study, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:07+00:00"

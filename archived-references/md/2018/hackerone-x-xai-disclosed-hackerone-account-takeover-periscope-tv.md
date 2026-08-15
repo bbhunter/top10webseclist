@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "X / xAI disclosed on HackerOne: Account Takeover in Periscope TV"
+description: "Periscope's Twitter OAuth login echoed the Host header into its redirect target, so a request carrying Host set to attacker.com/www.periscope.tv sent the OAuth callback to the attacker. A victim who authorises the resulting link hands over their oauth verifier, letting the attacker finish the flow and take over the Periscope account."
 resource: "https://hackerone.com/reports/317476"
-tags: [article, webseclist-reference, en, hackerone]
+tags: [article, webseclist-reference, en, hackerone, oauth, header-injection, open-redirect, auth-bypass, http, info-leak, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:30+00:00"

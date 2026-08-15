@@ -1,8 +1,9 @@
 ---
 type: Article
 title: About CSS Attacks
+description: "Releases the clickjacking proofs of concept held back from Bluehat v8. Ghost Mirror clones the target page's HTML and hides everything but the button, giving a size-independent cross-browser overlay; Frame Cropping uses two iframes with negative offsets, overflow:hidden and no border. Also covers Flash webcam overlays and a CSS attribute reader, dubbed Cross Site Styling."
 resource: "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html"
-tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
+tags: [article, webseclist-reference, sirdarckcat-blogspot-com, clickjacking, ui-redress, css, css-injection, iframe, flash, info-leak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:19+00:00"

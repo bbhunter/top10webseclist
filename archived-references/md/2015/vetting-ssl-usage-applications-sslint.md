@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Vetting SSL Usage in Applications with SSLINT
+description: SSLINT models correct SSL/TLS API usage as program dependence graph signatures and runs graph queries over C and C++ source, so an application that never validates a certificate or a hostname fails to match and is flagged. Applied to 381 Ubuntu packages it found 27 previously unknown flaws in mail, IRC, HTTP and database clients, all exploitable by a man in the middle.
 resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, tls, static-analysis, tooling, large-scale-scan, https, auth-bypass, info-leak, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:27+00:00"

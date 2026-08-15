@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Additional Image Bypass on Windows ha.ckers.org web application security lab
+description: "Michael Schramm's finding, relayed by ha.ckers.org: NTFS alternate data streams let a filename carry \"::$DATA\", which Windows strips when the file is written. Appending it to \"foobar.php\" slipped past FCKeditor's denied-extension blacklist and landed on disk as foobar.php. It works on any Windows web server on NTFS, not only IIS."
 resource: "http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, file-upload, filter-bypass, php, parser-differential, abuse-of-functionality, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:41+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "All Your Clicks Belong to Me: Investigating Click Interception on the Web"
+description: A measurement study of how third-party scripts steal user clicks. An instrumented browser framework called Observer analysed the Alexa top 250K sites and identified three interception techniques, finding 437 scripts that intercepted clicks on 613 sites. Most diverted clicks into advertising revenue and some delivered scamware.
 resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/zhang"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, clickjacking, ui-redress, measurement-study, large-scale-scan, javascript, iframe, dom, supply-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:10+00:00"

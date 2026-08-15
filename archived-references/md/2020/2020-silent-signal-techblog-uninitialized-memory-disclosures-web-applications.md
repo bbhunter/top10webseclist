@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Uninitialized Memory Disclosures in Web Applications
+description: Image libraries and similar parsers can pad their output with uninitialised heap memory when fed malformed input, so a picture processed and returned by a web application carries fragments of server memory such as credentials or pointers. The post introduces a paper on detecting the bug class and releases test images and tooling for it.
 resource: "https://blog.silentsignal.eu/2020/04/20/uninitialized-memory-disclosures-in-web-applications/"
-tags: [article, webseclist-reference, en, silent-signal-techblog]
+tags: [article, webseclist-reference, en, silent-signal-techblog, info-leak, file-upload, detection, tooling, dynamic-analysis, cve, php, nodejs]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:50+00:00"

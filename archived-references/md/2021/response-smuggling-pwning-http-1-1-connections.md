@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Response Smuggling- Pwning HTTP-1.1 Connections
+description: "Instead of desynchronising requests, the attacker desynchronises the response queue: smuggled requests leave orphan responses that can be claimed to steal another user's response and session cookies. A smuggled HEAD request makes a proxy misjudge body length, concatenating or splitting later responses so headers become HTML body."
 resource: "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, response-splitting, request-smuggling, desync, cache-poisoning, http, proxy, info-leak, xss, dos]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:34+00:00"

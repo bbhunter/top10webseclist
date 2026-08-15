@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hostile subdomain takeover using Heroku/Github/Desk + more
+description: "Organisations point subdomains at hosted services such as Heroku, GitHub, Desk, Shopify or Squarespace, then stop using the service without removing the DNS record. Anyone can claim that hostname at the provider and serve their own content from the victim's subdomain, enabling convincing phishing, cookie theft and inherited wildcard certificates."
 resource: "https://labs.detectify.com/writeups/hostile-subdomain-takeover-using-heroku-github-desk-more/"
-tags: [article, webseclist-reference, en, labs-detectify]
+tags: [article, webseclist-reference, en, labs-detectify, dns, supply-chain, github, cookie, tls, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:42:58+00:00"
@@ -52,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

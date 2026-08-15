@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Bug Bounty Guest Post: Local File Read via Stored XSS in The Opera Browser"
+description: Opera Pinboards accepted a javascript URI as a saved pin, which then ran inside the privileged opera scheme when the link was middle-clicked. From there the researcher called native APIs to open a local file in a tab and capture its thumbnail, exfiltrating a screenshot of that file to a remote server.
 resource: "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/"
-tags: [article, webseclist-reference, en, opera-security]
+tags: [article, webseclist-reference, en, opera-security, xss, lfi, privilege-escalation, sop-bypass, url-parsing, filter-bypass, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:55+00:00"

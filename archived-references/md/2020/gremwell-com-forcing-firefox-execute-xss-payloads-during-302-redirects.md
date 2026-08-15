@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Forcing Firefox to Execute XSS Payloads during 302 Redirects
+description: An open redirect that reflects a parameter into the Location header allows CRLF header injection and body injection, but browsers normally ignore the body of a 302 response. Setting the Location to a ws or wss URI (Firefox), an empty value (Chrome), or a resource URI forces the browser to render the injected body, turning the redirect into reflected XSS.
 resource: "https://www.gremwell.com/firefox-xss-302"
-tags: [article, webseclist-reference, en, gremwell-com]
+tags: [article, webseclist-reference, en, gremwell-com, xss, open-redirect, header-injection, response-splitting, filter-bypass, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:14:12+00:00"

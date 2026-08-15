@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over"
+description: "A Flash file served with a permissive crossdomain.xml can set arbitrary headers and POST body, then follow a 307 redirect to the victim host; Flash keeps the attacker's policy instead of re-checking the target's, so the POST arrives with custom headers and cookies. That defeats CSRF defences that trust a custom header alone, as Rails did. Tested across Chrome, Safari and Firefox."
 resource: "http://lists.webappsec.org/pipermail/websecurity_lists.webappsec.org/2011-February/007533.html"
-tags: [article, webseclist-reference, lists-webappsec-org]
+tags: [article, webseclist-reference, lists-webappsec-org, csrf, flash, http, header-injection, sop-bypass, novel-technique, rails]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:01+00:00"

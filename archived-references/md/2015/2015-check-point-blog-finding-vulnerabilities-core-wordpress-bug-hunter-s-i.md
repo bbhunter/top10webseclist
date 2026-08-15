@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Finding Vulnerabilities in Core WordPress: A Bug Hunter's Trilogy, Part I"
+description: "Chained flaws in WordPress core let a read-only Subscriber edit posts: a missing post ID makes the capability check return an empty privilege array, a quick-draft handler hands out a valid CSRF token, and a 16MB list of taxonomy terms stalls one request long enough to win a race that makes the invented post ID real. CVE-2015-5623 and four related identifiers."
 resource: "http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/"
-tags: [article, webseclist-reference, en, check-point-blog]
+tags: [article, webseclist-reference, en, check-point-blog, privilege-escalation, race-condition, toctou, auth-bypass, csrf, wordpress, php, cve, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:14+00:00"

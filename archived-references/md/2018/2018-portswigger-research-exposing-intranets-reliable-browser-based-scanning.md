@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Exposing Intranets with reliable Browser-based Port scanning
+description: "A browser-based port scanner that is reliable rather than timing-based: a hidden iframe loads a target host and port, then the same URL is clicked again with a hash appended and onload events are counted. A refused port makes Chrome rewrite the URL to chrome-error, giving a second onload, so any web page can enumerate intranet services; Firefox and Edge variants are given."
 resource: "https://portswigger.net/blog/exposing-intranets-with-reliable-browser-based-port-scanning"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, info-leak, iframe, side-channel, sop-bypass, javascript, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:48+00:00"

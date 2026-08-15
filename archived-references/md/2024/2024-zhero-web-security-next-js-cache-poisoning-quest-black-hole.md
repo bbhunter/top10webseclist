@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Next.js and cache poisoning: a quest for the black hole"
+description: "Three cache-poisoning issues in Next.js, each storing a useless response under a normal cache key and so denying service: the x-middleware-prefetch header returning an empty JSON body for server-rendered pages (CVE-2023-46298); the Rsc header returning a React Server Component payload, since CDNs such as Cloudflare, CloudFront and Akamai ignore or strip Vary; and the internal x-invoke-status header, supplied by a client, overriding the status and returning the error page."
 resource: "https://zhero-web-sec.github.io/research-and-things/nextjs-and-cache-poisoning-a-quest-for-the-black-hole"
-tags: [article, webseclist-reference, en-US, zhero-web-security]
+tags: [article, webseclist-reference, en-US, zhero-web-security, cache-poisoning, nextjs, cdn, dos, http, bug-bounty, react]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:27+00:00"

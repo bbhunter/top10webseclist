@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "The ND2DB Attack: Database Content Extraction Using Timing Attacks on the Indexing Algorithms"
+description: "Ordinary INSERT privileges are enough to read indexed private columns. B-tree node splits take measurably longer than plain inserts, so a divide-and-conquer search over the key space recovers neighbouring values. Demonstrated against MySQL-InnoDB: a 64-bit key in about ten minutes and ten thousand inserts."
 resource: "https://www.usenix.org/legacy/event/woot07/tech/full_papers/futoransky/futoransky.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, database, mysql, info-leak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:36:09+00:00"

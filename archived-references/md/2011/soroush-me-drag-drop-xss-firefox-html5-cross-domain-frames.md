@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Drag and Drop XSS in Firefox by HTML5 (Cross Domain in frames)
+description: "Dalili bypasses Firefox's block on dragged javascript: URLs by capitalising the scheme (jAvAscript:) or wrapping it in the feed: protocol. Dropping such a string on an HTML5 drop target inside an iframe redirects the framing page, so the script runs in the parent site's origin. A hidden textarea keeps the payload invisible during selection."
 resource: "https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, xss, sop-bypass, filter-bypass, iframe, ui-redress, url-parsing, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:22+00:00"

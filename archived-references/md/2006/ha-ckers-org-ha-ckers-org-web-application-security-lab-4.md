@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Commentary on SecuriTeam's finding that search-engine crawlers can be made to attack on the attacker's behalf: links planted on the open web cause Google to fetch PHP remote-include payloads into third-party sites. The same follow-every-link behaviour triggers auto-delete functions and reflected XSS, and pre-fetching browsers share the flaw."
 resource: "http://ha.ckers.org/blog/20061123/google-hacks-on-your-behalf/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, php, abuse-of-functionality, ssrf, proxy, case-study, rce, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:52:23+00:00"

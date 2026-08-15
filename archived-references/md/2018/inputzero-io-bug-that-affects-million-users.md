@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A bug that affects million users
+description: "Kaspersky VPN for Android up to 1.4.0.216 left DNS queries outside the tunnel, so the user's real DNS resolver still saw every domain requested while connected to a virtual server. The traffic a VPN user expects to hide stayed visible to their ISP resolver; Kaspersky fixed it without a bounty."
 resource: "https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html"
-tags: [article, webseclist-reference, en-US, inputzero-io]
+tags: [article, webseclist-reference, en-US, inputzero-io, info-leak, dns, android, case-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:58+00:00"

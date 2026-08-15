@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Researchers Uncover Interesting Browser-Based Botnet
+description: "Incapsula traced a DDoS to stored XSS on a major video site: script hidden in a commenter's profile image ran for every viewer and opened a hidden iframe to the attacker's control domain, making each browser issue a request per second at a target. Comments on hundreds of long, popular videos turned visitors into a browser botnet."
 resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, xss, dos, iframe, javascript, injection, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:47:17+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Abusing Hidden Properties to Attack the Node.js Ecosystem
+description: Hidden property abusing exploits the gap between how client-supplied objects are serialised and how server code reads them, letting a remote attacker inject internal object properties the developer never meant to expose.
 resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/xiao"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, prototype-pollution, mass-assignment, injection, auth-bypass, info-leak, dos, nodejs, javascript, static-analysis, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:56+00:00"

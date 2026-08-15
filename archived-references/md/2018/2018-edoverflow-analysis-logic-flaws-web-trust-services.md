@@ -1,8 +1,9 @@
 ---
 type: Article
 title: An analysis of logic flaws in web-of-trust services
+description: "Web-of-trust services such as Keybase verify identity by scraping a token from a page the user controls. Three logic flaws break that: a gist the victim forks carries the attacker's token under the victim's name, a site allowing dots in usernames lets an attacker publish keybase.txt at its root, and a redirect-following scraper credits the wrong domain, each giving identity takeover."
 resource: "https://edoverflow.com/2018/logic-flaws-in-wot-services/"
-tags: [article, webseclist-reference, en, edoverflow]
+tags: [article, webseclist-reference, en, edoverflow, auth-bypass, open-redirect, github, browser-extension, novel-technique, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:01+00:00"

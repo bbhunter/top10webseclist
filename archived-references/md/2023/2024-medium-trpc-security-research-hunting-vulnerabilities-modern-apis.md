@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "tRPC Security Research: Hunting for Vulnerabilities in Modern APIs"
+description: "A testing methodology for tRPC APIs: fingerprint the style from its GET-query and POST-mutation procedure paths, batch parameter and error shapes; locate exposed trpc-panel documentation by dorking and fuzzing to read every procedure; then, where no documentation exists, map logged calls and guess sibling procedure names to reach hidden endpoints and broken function-level authorization."
 resource: "https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, rest-api, nodejs, auth-bypass, idor, info-leak, fuzzing, tooling, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:55+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "What You Didn't Know About XML External Entity Attacks"
+description: "Morgan's AppSec USA 2013 deck pushes XXE past 'unexploitable'. Parameter entities plus a remote DTD wrap unreadable files in CDATA or exfiltrate them out-of-band through a dynamically built URL. He catalogues the URL schemes each parser enables by default and shows Java's jar: handler uploading files by stalling a download and racing the temp file, ending in Tomcat RCE."
 resource: "https://web.archive.org/web/20150122082148/http://2013.appsecusa.org/2013/wp-content/uploads/2013/12/WhatYouDidntKnowAboutXXEAttacks.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xxe, ssrf, rce, java, file-upload, race-condition, url-parsing, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:33:48+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!
+description: "Google Docs' publish-to-your-blog feature POSTs to /MiscCommands with a docID the server never checked against the caller. Swapping in another document's docID made Google send that document to the attacker's own WordPress blog; Rios demonstrates it on Google's Oak Tree View demo doc. Google fixed it and raised DocID entropy."
 resource: "http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/"
-tags: [article, webseclist-reference, xs-sniper-com]
+tags: [article, webseclist-reference, xs-sniper-com, idor, auth-bypass, info-leak, wordpress, case-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:49+00:00"

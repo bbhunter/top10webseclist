@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "[WEB SECURITY] Netflix.com XSRF vuln"
+description: "Dave Ferguson's October 2006 disclosure of CSRF on Netflix.com. A single hidden image tag adds a DVD to a logged-in visitor's queue; a little JavaScript moves it to the top so it ships before the victim notices. The same class of request could change the account name, address, email and password, or cancel the account outright."
 resource: "http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html"
-tags: [article, webseclist-reference, webappsec-org]
+tags: [article, webseclist-reference, webappsec-org, csrf, case-study, auth-bypass, abuse-of-functionality, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:40+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

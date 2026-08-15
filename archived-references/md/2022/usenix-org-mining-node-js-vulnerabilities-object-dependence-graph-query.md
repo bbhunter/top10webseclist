@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Mining Node.js Vulnerabilities via Object Dependence Graph and Query
+description: The Object Dependence Graph is a flow- and context-sensitive graph of JavaScript objects and their relations, built by abstract interpretation and queried the way a code property graph is, so one engine finds many Node.js bug classes instead of one. The ODGEN prototype models 13 of 16 vulnerability types and reported 180 zero-days, 70 of which received CVEs.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/li-song"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, prototype-pollution, command-injection, static-analysis, nodejs, javascript-runtime, tooling, detection, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:11+00:00"

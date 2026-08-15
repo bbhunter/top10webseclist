@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Bypassing CAPTCHAs by Impersonating CAPTCHA Providers
+description: "CAPTCHA provider verification APIs, including reCAPTCHA's .NET and Rails plugins, validated solutions over plaintext HTTP without authenticating the provider. Because responses are a small predictable set, an attacker on path can impersonate the provider outright."
 resource: "https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-bypassing-captchas.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, tooling, auth-bypass, http, tls, proxy, novel-technique, ruby]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:36:24+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications"
+description: Dynamic scanners miss vulnerable code in database-backed PHP applications because those paths are only reachable when the database holds the right data. SynthDB uses concolic execution to learn the constraints linking PHP code to its SQL queries and synthesizes a database satisfying them, lifting Burp Suite detection to 76.8 percent and uncovering 33 previously unknown vulnerabilities.
 resource: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, php, database, dynamic-analysis, static-analysis, tooling, fuzzing, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:34+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A deep dive into AWS S3 access controls
+description: Walks every layer of AWS S3 access control, bucket ACL, object ACL and ACP and the AllUsers and AuthenticatedUsers groups, and gives a non-destructive test for each permission. WRITE or WRITE_ACP granted to those groups lets any AWS user overwrite or take ownership of objects, including scripts high-profile sites load from third-party buckets, giving code execution on the victim domain.
 resource: "https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/"
-tags: [article, webseclist-reference, en, labs-detectify]
+tags: [article, webseclist-reference, en, labs-detectify, aws, supply-chain, privilege-escalation, file-upload, cdn, xss, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:03+00:00"

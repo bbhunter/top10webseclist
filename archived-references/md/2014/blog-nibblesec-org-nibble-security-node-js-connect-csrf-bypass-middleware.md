@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "Nibble Security: Node.js Connect CSRF bypass abusing methodOverride middleware"
+description: In Node.js Connect and Express, middleware runs in declaration order, so registering csrf before methodOverride lets an attacker send a GET request carrying _method=POST or an x-http-method-override header. The CSRF middleware skips token checks on idempotent verbs, then methodOverride upgrades the request to POST, executing a state-changing action with no token.
 resource: "https://web.archive.org/web/20160403035045/http://blog.nibblesec.org/2014/05/nodejs-connect-csrf-bypass-abusing.html"
-tags: [article, webseclist-reference, blog-nibblesec-org]
+tags: [article, webseclist-reference, blog-nibblesec-org, csrf, header-injection, auth-bypass, http, nodejs, express, javascript, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:02+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

@@ -509,6 +509,12 @@ vocabulary file to get past that defeats the only control there is. Hold the
 proposal, report it, and let a maintainer promote it once a second document has
 asked for the same word.
 
+**The tags MUST name the techniques the document actually uses** - that is the
+rule, and no count can check it. You have just read the document, so this is the
+one moment you can tell a technique the research USES from one it merely cites.
+There is no minimum: two true tags beat four that include two which do not
+apply.
+
 A review that changes no document still owes its collection a digest: a
 correctly archived reference nobody can find is not much better than a broken
 one.

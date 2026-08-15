@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross-Site WebSocket Hijacking Exploitation in 2025
+description: "Cross-Site WebSocket Hijacking lets a malicious page open an authenticated WebSocket to a server that skips the handshake Origin check, then send and read messages as the victim. Re-tested against current browsers: Chrome's SameSite default forces the cookie to SameSite=None, Firefox Total Cookie Protection blocks it, and Private Network Access does not stop it on private addresses."
 resource: "https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacking-exploitation-in-2025/"
-tags: [article, webseclist-reference, en, include-security-research-blog]
+tags: [article, webseclist-reference, en, include-security-research-blog, websocket, csrf, cookie, sop-bypass, same-origin-policy, auth-bypass, case-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:18+00:00"

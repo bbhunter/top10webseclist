@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bypassing WAFs with the phantom $Version cookie
+description: "A leading $Version=1 makes Tomcat and Spring fall back to RFC2109 cookie parsing, where values may be quoted and backslash escapes are unescaped, and Python's SimpleCookie decodes octal escapes inside quotes. Writing eval('test') as \\e\\v\\a\\l\\('\\t\\e\\s\\t'\\) or \\145\\166\\141\\154 therefore slips past AWS WAF signatures and reaches the app decoded. Commas also separate cookies, and duplicate Cookie headers are joined with a comma, hiding a cookie name inside a value."
 resource: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, waf-bypass, cookie, parser-differential, encoding, filter-bypass, http, python, php, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:57+00:00"

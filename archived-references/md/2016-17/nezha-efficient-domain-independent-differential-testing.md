@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "NEZHA: Efficient Domain-Independent Differential Testing"
+description: NEZHA guides differential testing by delta-diversity, a measure of how differently several programs behave on the same input, instead of code coverage, so mutation heads for inputs that make implementations disagree. It found semantic bugs in X.509 validation across SSL/TLS libraries, in ClamAV versus the Linux ELF loader and in XZ parsing, where one program accepts what another rejects.
 resource: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, parser-differential, fuzzing, tls, filter-bypass, tooling, dynamic-analysis, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:13+00:00"

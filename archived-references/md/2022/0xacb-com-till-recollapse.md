@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Till REcollapse
+description: REcollapse fuzzes single bytes at regex pivot positions - the start and end of an input, either side of separators, and characters that normalisation folds - to get past validation and sanitisation that a later transformation undoes. Bypasses found this way include open redirects, web application firewall evasion and zero-interaction account takeover through normalised email addresses.
 resource: "https://0xacb.com/2022/11/21/recollapse/"
-tags: [article, webseclist-reference, 0xacb-com]
+tags: [article, webseclist-reference, 0xacb-com, filter-bypass, waf-bypass, unicode, encoding, auth-bypass, open-redirect, fuzzing, tooling, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:00:52+00:00"

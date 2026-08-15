@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Full Disclosure: Cross Site Cooking"
+description: "Michal Zalewski's Full Disclosure posting naming three cookie-domain flaws. Browsers accept two-period ccTLD cookies such as *.com.pl; trailing and empty periods let a cookie be set for '.com.' and relayed to victim.com.; and an attacker-controlled DNS A record makes visitors relay forged cookies to a third-party server, enabling session fixation and preference corruption."
 resource: "https://seclists.org/fulldisclosure/2006/Jan/943"
-tags: [article, webseclist-reference, en, seclists-org]
+tags: [article, webseclist-reference, en, seclists-org, cookie, novel-technique, session-fixation, auth-bypass, dns, url-parsing, parser-differential]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:40:32+00:00"
@@ -18,7 +19,7 @@ authors:
   - Michal Zalewski
 canonical_url: ""
 cited_by:
-  - "2006.md:90"
+  - "2006.md:86"
 commit: ""
 content_sha256: 78219d6442e1e450d19166868678a754d7f850dfeb609b9d554cbce0794f1183
 depth: full

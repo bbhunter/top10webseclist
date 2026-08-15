@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "ForceHTTPS: Protecting High-Security Web Sites from Network Attacks"
+description: "Jackson and Barth's WWW2008 proposal, the direct ancestor of HSTS. A site sets a ForceHTTPS cookie over clean TLS and the browser then upgrades HTTP to HTTPS, treats certificate errors as fatal, and refuses mixed content for that host."
 resource: "https://archives.iw3c2.org/www2008/papers/pdf/p525-jacksonA.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, https, tls, cookie, mitigation, defence, browser-extension, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:34:24+00:00"

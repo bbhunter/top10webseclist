@@ -1,12 +1,13 @@
 ---
 type: Article
 title: Databricks JDBC Attack via JAAS
+description: "The Databricks JDBC driver accepts a JAAS config property pointing at a remote URL, so a victim using an attacker-supplied connection string fetches a config naming a JNDI login module with an attacker LDAP provider URL, turning the connection into JNDI injection and remote code execution in the driver's process."
 resource: "https://blog.pyn3rd.com/2024/12/13/Databricks-JDBC-Attack-via-JAAS/"
-tags: [article, webseclist-reference, en, blog-pyn3rd-com]
+tags: [article, webseclist-reference, en, blog-pyn3rd-com, rce, injection, gadget-chain, java, database, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:05+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Stopping Redirects
+description: "Ways to cancel or pause a browser redirect: unredirectable protocols, dangling-markup URL blocking, overlong URLs and cookie bombing that force error pages, WAF triggering, the navigation rate limit, and sandboxing a window without allow-forms. Stopping a redirect lets an attacker leak an OAuth code or hold a victim on a vulnerable page long enough to click."
 resource: "https://lab.ctbb.show/research/stopping-redirects"
-tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast]
+tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, oauth, xsleak, info-leak, iframe, cookie, url-parsing, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:57+00:00"

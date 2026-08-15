@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets"
+description: Web servers that share one TLS session ticket encryption key across their virtual hosts let a ticket issued by one host be resumed against another, confusing which host and which client a session belongs to. That bypasses client authentication on four widely used servers and server authentication at six clusters of hosting providers.
 resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, auth-bypass, tls, https, cdn, large-scale-scan, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:39+00:00"

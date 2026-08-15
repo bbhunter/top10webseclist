@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Smashing the ServiceNow Sandbox – Pre Authentication RCE
+description: "An unauthenticated remote code execution flaw in ServiceNow (CVE-2026-6875). User input reaching GlideRecord query builders is evaluated as JavaScript when prefixed with javascript:, and although such expressions run under a restrictive script sandbox, the script-include mechanism evaluates library code outside it. Redefining the global helpers those libraries call turns an include into a Function constructor invocation, escaping the sandbox and yielding full instance and proxy-server access."
 resource: "https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/"
-tags: [article, webseclist-reference, en, searchlight-cyber]
+tags: [article, webseclist-reference, en, searchlight-cyber, sandbox-escape, rce, javascript, injection, gadget-chain, cve, java]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:51+00:00"
@@ -22,7 +23,7 @@ authors:
   - @searchlightsec
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:59"
+  - "2026-ai.md:60"
 commit: ""
 content_sha256: c0c23cefa6bd097b0e521838628c19238b3f07534377ca1bfba94260414c3653
 depth: full

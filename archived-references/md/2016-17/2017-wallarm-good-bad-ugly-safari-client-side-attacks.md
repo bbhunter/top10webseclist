@@ -1,8 +1,9 @@
 ---
 type: Article
 title: 👉The Good, The Bad and The Ugly of Safari in Client-Side Attacks
+description: Safari resolves and requests hostnames containing characters no other browser accepts, including quotes, angle brackets and control characters, and then URL-decodes them. With a wildcard DNS record the Host and Referer headers become injection points, giving XSS on pages that echo the host, cookie injection through semicolons and commas, and Origin checks that can be bypassed with a backquote.
 resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a"
-tags: [article, webseclist-reference, en, wallarm]
+tags: [article, webseclist-reference, en, wallarm, xss, header-injection, cookie, url-parsing, dns, cors, filter-bypass, sop-bypass, encoding]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:38+00:00"

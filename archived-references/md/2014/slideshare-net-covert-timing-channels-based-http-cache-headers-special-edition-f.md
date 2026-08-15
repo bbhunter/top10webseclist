@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: Covert Timing Channels based on HTTP Cache Headers (Special Edition f…
+description: "Covert channels built from HTTP cache validation headers: two parties encode bits by whether Last-Modified or ETag changes within a timed window, read back through If-Modified-Since, If-Unmodified-Since, If-Match and If-None-Match."
 resource: "https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014"
-tags: [slides, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net, side-channel, timing-attack, cache, http, info-leak, javascript, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:57+00:00"

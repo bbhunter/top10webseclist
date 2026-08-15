@@ -1,8 +1,9 @@
 ---
 type: Article
 title: An untold story of skype by microsoft
+description: Sharing a file during a Skype for Linux call crashes the client with a glibc malloc() memory corruption abort, reached through the GTK file chooser dialog of the Electron application. The write-up documents a heap corruption denial of service; Microsoft declined to service it and it was fixed in Skype 8.29.0.41.
 resource: "https://www.inputzero.io/2018/09/buggy-skype.html"
-tags: [article, webseclist-reference, en-US, inputzero-io]
+tags: [article, webseclist-reference, en-US, inputzero-io, dos, electron, case-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:08+00:00"

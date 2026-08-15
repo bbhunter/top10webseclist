@@ -1,8 +1,9 @@
 ---
 type: Article
 title: WebBlaze - Preventing Capability leaks in Secure JavaScript Subsets
+description: Project page for the NDSS 2010 paper on capability leaks in statically verified JavaScript subsets. Blacklist-based sandboxes such as ADsafe still let an advertisement reach methods the hosting page adds to built-in prototypes; a third of the Alexa US Top 100 would be exploitable. The fix is a whitelist of known-safe properties via namespaces, released as Blancura.
 resource: "https://webblaze.cs.berkeley.edu/blancura.html"
-tags: [article, webseclist-reference, webblaze-cs-berkeley-edu]
+tags: [article, webseclist-reference, webblaze-cs-berkeley-edu, javascript, sandbox-escape, static-analysis, mitigation, defence, measurement-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:39+00:00"

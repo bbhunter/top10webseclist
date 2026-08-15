@@ -2557,15 +2557,16 @@ def _accept_byline(url, reading, known, accept="high"):
 DIGEST_WANT = 400
 DIGEST_MAX = 500
 _SENTENCE_END = re.compile(r'[.!?](?=\s+["“(]?[A-Z0-9]|\s*$)')
-# 4 to 10 is the GUIDANCE, and a review that comes back under it is worth
-# looking at. It is not the rule, because 20 documents in this archive are
-# honestly served by fewer: the annual list page is `survey` and nothing else,
-# and the DNS-rebinding paper is `dns-rebinding, same-origin-policy` - complete
-# at two. Refusing those would buy a threshold by padding the vocabulary with
-# tags that do not apply, which is the one thing a controlled vocabulary cannot
-# afford. So: warn below WANT, refuse only an empty or overstuffed set.
-DIGEST_TAGS_WANT = 4
-DIGEST_TAGS_MIN = 1
+# THERE IS NO FLOOR, BY DECISION. 20 documents here are honestly served by
+# fewer than four tags - the annual list page is `survey` and nothing else, the
+# DNS-rebinding paper is complete at two - and any floor buys itself by padding
+# a document with tags that do not apply, which is the one thing a controlled
+# vocabulary cannot afford. The cap stays, because a 30-tag document is not
+# categorised, it is decorated.
+#
+# What the tags MUST do is a matter of content, not count: they have to name the
+# techniques the research actually uses. That is what the reader searches for,
+# and no threshold can check it.
 DIGEST_TAGS_MAX = 10
 
 
@@ -2663,13 +2664,18 @@ def _trim_to_sentence(text, limit=DIGEST_MAX):
     return text[:cut + 1].strip()
 
 
-def _accept_digest(url, reading, known, vocabulary):
+def _accept_digest(url, reading, known, vocabulary, promoted=()):
     """(refusal reason, text, tags, proposals) for one reviewed summary.
 
     Refuses an unknown tag outright. That is the guard that keeps the vocabulary
     controlled: a reviewer who needs a word the archive does not have writes it
     with a `?` prefix, and it is reported as a PROPOSAL and stripped, so a tag
     only ever enters by a maintainer promoting it.
+
+    `promoted` is that promotion, and it has to exist: the vocabulary is counted
+    from the tags already in use, so a newly promoted word is by definition not
+    in it yet and would be refused forever. Naming it on the command line is the
+    maintainer's deliberate act, which is exactly where governance wants it.
     """
     if url not in known:
         return "no such reference in the manifest", "", [], []
@@ -2682,16 +2688,16 @@ def _accept_digest(url, reading, known, vocabulary):
     for tag in raw:
         if tag.startswith("?"):
             continue
-        if tag not in vocabulary:
+        if tag not in vocabulary and tag not in promoted:
             unknown.append(tag)
         elif tag not in tags:
             tags.append(tag)
     if unknown:
         return ("not in the vocabulary, and not marked as a proposal: "
                 + ", ".join(sorted(unknown)[:4]), "", [], proposals)
-    if not DIGEST_TAGS_MIN <= len(tags) <= DIGEST_TAGS_MAX:
-        return ("%d tag(s) after stripping proposals; need %d to %d"
-                % (len(tags), DIGEST_TAGS_MIN, DIGEST_TAGS_MAX), "", [], proposals)
+    if len(tags) > DIGEST_TAGS_MAX:
+        return ("%d tag(s) after stripping proposals; at most %d"
+                % (len(tags), DIGEST_TAGS_MAX), "", [], proposals)
     return "", text, tags, proposals
 
 
@@ -2710,6 +2716,11 @@ def command_digest(args):
     config = paths.config()
     manifest = check_module.open_manifest(root, config)
     vocabulary = tag_vocabulary(manifest)
+
+    if args.publish:
+        publish_digests(manifest, root, config, only=args.only,
+                        collection=args.collection)
+        return 0
 
     if args.vocabulary:
         written = write_tag_vocabulary(root, config, manifest)
@@ -2735,6 +2746,10 @@ def command_digest(args):
               "`refs.py digest --apply <file>`.")
         return 0
 
+    promoted = {tag.strip() for tag in (args.promote or "").split(",") if tag.strip()}
+    for tag in sorted(promoted):
+        print("  PROMOTED %s%s" % (tag, "" if tag not in vocabulary
+                                   else " (already in the vocabulary)"))
     reviewed = json.loads(Path(args.apply).read_text(encoding="utf-8"))
     readings = reviewed.get("digests") if isinstance(reviewed, dict) else None
     if readings is None:
@@ -2742,11 +2757,12 @@ def command_digest(args):
     known = manifest.data["urls"]
 
     taken = refused = 0
-    trimmed, proposed, thin, longer = [], {}, [], []
+    trimmed, proposed, longer = [], {}, []
     for url, reading in sorted(readings.items()):
         before = len(" ".join(str((reading or {}).get("text") or "").split()))
         reason, text, tags, proposals = _accept_digest(url, reading or {},
-                                                       known, vocabulary)
+                                                       known, vocabulary,
+                                                       promoted)
         for tag in proposals:
             proposed[tag] = proposed.get(tag, 0) + 1
         if reason:
@@ -2755,8 +2771,6 @@ def command_digest(args):
             continue
         if before > len(text):
             trimmed.append((known[url].get("slug") or url, before, len(text)))
-        if len(tags) < DIGEST_TAGS_WANT:
-            thin.append((known[url].get("slug") or url, len(tags)))
         if len(text) > DIGEST_WANT:
             longer.append((known[url].get("slug") or url, len(text)))
         if not args.check:
@@ -2771,10 +2785,6 @@ def command_digest(args):
 
     for slug, before, after in trimmed:
         print("  TRIMMED  %-52s %d -> %d" % (str(slug)[:52], before, after))
-    for slug, count in thin:
-        print("  THIN     %-52s %d tag(s), under the %d we aim for - fine if "
-              "the document really is that narrow"
-              % (str(slug)[:52], count, DIGEST_TAGS_WANT))
     for slug, size in longer:
         print("  LONG     %-52s %d characters, over the %d we aim for"
               % (str(slug)[:52], size, DIGEST_WANT))
@@ -2913,6 +2923,91 @@ def _republish_byline(path, entry, config):
         return str(error)
     path.write_text(rebuilt, encoding="utf-8", newline="\n")
     return ""
+
+
+def _published_description(text):
+    """The description a published file states, or "" when it states none."""
+    return _frontmatter_scalars(text).get("description") or ""
+
+
+def _republish_digest(path, entry, config):
+    """Carry the summary and tags into one published document, in place.
+
+    Same route and same proof as `_republish_byline`, for the same reason: a
+    re-render needs the source bytes, which a hand import never had and 286
+    references have lost. The renderer must first reproduce the file EXACTLY as
+    it stands - rendered from a record with the digest withheld - before the
+    version carrying the digest replaces it. A file an older renderer wrote is
+    reported and left alone rather than rewritten into something subtly
+    different.
+    """
+    from refslib import render as render_module
+    text = path.read_text(encoding="utf-8")
+    body = _published_body(text)
+    if body is None:
+        return "no untrusted-source banner: not a rendered reference"
+    record = dict(entry)
+    record.update(_frontmatter_scalars(text))
+    depth = entry.get("depth") or record.get("depth") or "full"
+    # The file wins for everything it states, so drop the description it does
+    # NOT state before proving reproduction, and re-add it from the digest after.
+    was = dict(record)
+    was.pop("digest", None)
+    was.pop("description", None)
+    if _published_description(text):
+        was["description"] = _published_description(text)
+    try:
+        if not _same_but_for_generated(render_module.render(was, body, depth), text):
+            return "the renderer does not reproduce this file; left as published"
+        corrected = dict(was, digest=entry.get("digest") or {})
+        corrected.pop("description", None)
+        rebuilt = render_module.render(corrected, body, depth)
+    except render_module.MissingAttribution as error:
+        return str(error)
+    if rebuilt == text:
+        return ""
+    path.write_text(rebuilt, encoding="utf-8", newline="\n")
+    return ""
+
+
+def publish_digests(manifest, root, config, only="", collection=""):
+    """Carry every recorded summary and tag set into the published files.
+
+    Idempotent: a file already stating the digest's description is skipped, so
+    this picks up a summary written by an earlier run as readily as one written
+    a moment ago.
+    """
+    from refslib import collections as collections_module
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    rewritten, refused, seen = 0, 0, 0
+    for key, entry in sorted(manifest.data["urls"].items()):
+        digest = entry.get("digest") or {}
+        if not digest.get("text") or not entry.get("slug"):
+            continue
+        if only and only.lower() not in key.lower():
+            continue
+        relpath = collections_module.md_relpath(entry, config, entry["slug"])
+        if collection and ("/%s/" % collection) not in ("/%s" % str(relpath).replace("\\", "/")):
+            continue
+        path = archive_dir / relpath
+        if not path.exists():
+            continue
+        if _published_description(path.read_text(encoding="utf-8")) == digest["text"]:
+            continue
+        seen += 1
+        reason = _republish_digest(path, entry, config)
+        if reason:
+            refused += 1
+            print("  KEPT     %-52s %s" % (key[:52], reason[:70]))
+        else:
+            rewritten += 1
+    if not seen:
+        print("Every published document already states the summary the manifest holds.")
+        return rewritten, refused
+    print("Re-published %d document(s) in place; %d left as they were."
+          % (rewritten, refused))
+    print("Refresh their PDFs with `refs.py pdf --stale`, then run `index`.")
+    return rewritten, refused
 
 
 def command_bylines(args):
@@ -3649,6 +3744,10 @@ def build_parser():
     digest_group.add_argument("--apply", metavar="FILE",
                               help="validate a completed review and record it "
                                    "in the manifest")
+    digest_group.add_argument("--publish", action="store_true",
+                              help="carry recorded summaries and tags into the "
+                                   "published Markdown in place, without "
+                                   "re-acquiring (offline; needs no store)")
     digest_group.add_argument("--vocabulary", action="store_true",
                               help="regenerate tag-vocabulary.md from the tags "
                                    "actually in use")
@@ -3660,6 +3759,12 @@ def build_parser():
                                help="stop the queue after this many references")
     digest_parser.add_argument("--check", action="store_true",
                                help="report what --apply would record, and write nothing")
+    digest_parser.add_argument("--promote", default="",
+                               help="comma-separated tags a maintainer is adding "
+                                    "to the vocabulary with this run; without "
+                                    "this a newly promoted word is refused as "
+                                    "unknown, since the vocabulary is counted "
+                                    "from the tags already in use")
     digest_parser.add_argument("--by", default="webseclist-review/1",
                                help="what to record as the reviewer (default: "
                                     "webseclist-review/1)")

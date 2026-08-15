@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "WPSE: Fortifying Web Protocols via Browser-Side Security Monitoring"
+description: "WPSE is a browser-side monitor that enforces the intended message flow plus confidentiality and integrity of a web protocol run, formally proved expressive enough to stop a range of implementation bugs and web attacks. Formalising SAML 2.0 in it exposed a new attack on Google's implementation, and an OAuth 2.0 study found flaws in 55 of 90 sites, some introduced by tracking libraries."
 resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, oauth, saml, sso, auth-bypass, formal-analysis, defence, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:18+00:00"

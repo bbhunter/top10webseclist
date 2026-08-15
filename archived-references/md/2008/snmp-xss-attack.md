@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: SNMP XSS Attack
+description: "ProCheckUp's ZyXEL Prestige gateway research. SNMP write is on by default with community string 'public', so snmpset into system.sysName.0 stores a 32-character persistent XSS that fires in the admin web interface. Also covers guest-to-admin URL privilege escalation, IP-only session management, unsalted MD5 replay, cleartext WEP/PPPoE/DDNS credentials and remote wardriving."
 resource: "https://web.archive.org/web/20130102183427/http://www.procheckup.com/media/41602/hacking_zyxel_gateways.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, privilege-escalation, auth-bypass, info-leak, case-study, snmp, embedded-device]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:56+00:00"

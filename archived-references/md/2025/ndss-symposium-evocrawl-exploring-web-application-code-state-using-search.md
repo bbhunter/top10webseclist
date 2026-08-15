@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "EvoCrawl: Exploring Web Application Code and State using Evolutionary Search"
+description: "EvoCrawl crawls web applications using evolutionary search over sequences of interactions, so it satisfies field and format constraints and reaches server states earlier scanners miss: 59 percent more code coverage and five times more successful form submissions. With IDOR and XSS scanners it found eight zero-days in widely used applications."
 resource: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, idor, xss, tooling, fuzzing, dynamic-analysis, wordpress, gitlab, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:26+00:00"

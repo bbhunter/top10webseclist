@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Securing XML implementations across the web
+description: "Several XML implementations do not round-trip documents faithfully: parsing and re-serialising a crafted document changes its structure, because mismatched quotes in a notation declaration let a system identifier swallow following markup. SAML libraries read the identity before validating the signature but validate after a round-trip, so one signed document logs an attacker in as anyone."
 resource: "https://mattermost.com/blog/securing-xml-implementations-across-the-web/"
-tags: [article, webseclist-reference, en, mattermost-com]
+tags: [article, webseclist-reference, en, mattermost-com, parser-differential, auth-bypass, saml, sso, ruby, nodejs, java, dotnet, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:18+00:00"

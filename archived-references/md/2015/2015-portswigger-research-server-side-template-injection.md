@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Server-Side Template Injection
+description: Unsafely embedding user input in a server-side template engine lets an attacker run template syntax on the server, usually escalating to arbitrary file read and write and remote code execution. The paper gives a detect, identify and exploit methodology plus generic escapes for FreeMarker, Velocity, Smarty, Twig and Jade, with sandbox escapes and zerodays in Alfresco and XWiki.
 resource: "http://blog.portswigger.net/2015/08/server-side-template-injection.html"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, ssti, sandbox-escape, rce, injection, java, php, nodejs, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:11+00:00"

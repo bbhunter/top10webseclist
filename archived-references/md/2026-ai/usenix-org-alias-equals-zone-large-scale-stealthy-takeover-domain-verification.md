@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification
+description: Shows that domain hosting providers misread CNAME semantics during domain-ownership verification, accepting a challenge token found after CNAME redirection as proof of control over the aliasing domain, which itself configures no token. The resulting takeover attack, ALIASLEAP, affects four email and seven web hosting providers and over two million domains, 200K of them in the Tranco Top 1M, and is stealthy because the vulnerable CNAME chains are legitimate and long-lived.
 resource: "https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, dns, auth-bypass, email, large-scale-scan, measurement-study, domain-takeover]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:42+00:00"

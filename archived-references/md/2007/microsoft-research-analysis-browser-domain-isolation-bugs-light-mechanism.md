@@ -1,8 +1,9 @@
 ---
 type: Article
 title: An Analysis of Browser Domain-Isolation Bugs and A Light-Weight Transparent Defense Mechanism
+description: "Microsoft Research landing page for the CCS 2007 script-accenting paper. Carries the abstract only: browser domain isolation is too complex to audit exhaustively, so give each origin a random 'accent' key that scripts and HTML object names are XORed with, making cross-origin interference fail by construction."
 resource: "https://www.microsoft.com/en-us/research/?p=153771"
-tags: [article, webseclist-reference, en, microsoft-research]
+tags: [article, webseclist-reference, en, microsoft-research, same-origin-policy, sop-bypass, mitigation, defence, iframe, dom, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:03+00:00"

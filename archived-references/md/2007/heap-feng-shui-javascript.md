@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Heap Feng Shui in JavaScript
+description: "Alexander Sotirov's method for putting the Windows heap into a chosen state from JavaScript: BSTR string allocation, CollectGarbage(), and a plunger that flushes the OLEAUT32 cache so every alloc and free reaches the system heap. The HeapLib library defragments, seeds the free list and builds fake vtables on the lookaside, demonstrated against CVE-2006-4777."
 resource: "https://www.blackhat.com/presentations/bh-europe-07/Sotirov/Whitepaper/bh-eu-07-sotirov-WP.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, javascript, rce, activex, javascript-runtime, tooling, cve, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T12:53:30+00:00"

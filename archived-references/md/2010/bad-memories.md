@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Bad Memories
+description: Four attacks on where secure protocols put their data. A web page fingerprints, logs into and XSSes home routers across eight brands to steal the WPA key and geolocate it; cached JavaScript injected on open Wi-Fi compromises later HTTPS sessions; a frame leak reads scrollbar position to extract Facebook profile facts through its dark-div defence; and tapjacking abuses mobile zoom and URL-bar hiding.
 resource: "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, xss, csrf, https, cache-poisoning, info-leak, novel-technique, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:26+00:00"

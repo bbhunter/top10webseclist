@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content"
+description: Presents Arcanum, a dynamic taint-tracking system for Chrome extensions that follows user content out of web pages, defining taint sources and sinks researchers can attach to page elements at runtime under current extension and JavaScript APIs. Deployed against every functional extension in the Chrome Web Store across seven sensitive sites, it observed hundreds of extensions automatically extracting user content from within pages, affecting millions of users.
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, browser-extension, info-leak, dynamic-analysis, measurement-study, large-scale-scan, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:35+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Slack disclosed on HackerOne: TURN server allows TCP and UDP..."
+description: "Slack's TURN relay accepted ChannelBind and CreatePermission requests for private and special-use addresses, letting anyone with relay credentials proxy TCP connections and UDP packets into the internal network, to localhost and to the AWS metadata service. The reach is SSRF-like but not limited to HTTP, so internal DNS and other UDP services could be scanned and queried."
 resource: "https://hackerone.com/reports/333419"
-tags: [article, webseclist-reference, en, hackerone]
+tags: [article, webseclist-reference, en, hackerone, ssrf, webrtc, proxy, dns, aws, info-leak, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:31+00:00"

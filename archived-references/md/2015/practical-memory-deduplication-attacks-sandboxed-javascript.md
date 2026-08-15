@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Practical Memory Deduplication Attacks in Sandboxed JavaScript
+description: Operating systems and hypervisors merge identical physical memory pages, and the merge is observable as a slow write to a page that was deduplicated. Timing writes from ordinary sandboxed JavaScript in a visited web page discloses which programs, program versions and websites the victim currently has open, across virtual machine boundaries and on Windows and Android.
 resource: "https://gruss.cc/files/dedup.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, timing-attack, info-leak, javascript, android, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:27+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Port Scanning with HTML5 and JS-Recon
+description: Cross-Origin Requests and WebSockets both expose readyState, and how long a given readyState lasts varies with whether the target port is open, closed or filtered. Timing readyState 1 for CORS and readyState 0 for WebSockets therefore distinguishes port states from JavaScript, extending to network sweeps and internal IP discovery. Released as the JS-Recon tool.
 resource: "http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org]
+tags: [article, webseclist-reference, en, blog-andlabs-org, cors, websocket, timing-attack, side-channel, tooling, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:07+00:00"

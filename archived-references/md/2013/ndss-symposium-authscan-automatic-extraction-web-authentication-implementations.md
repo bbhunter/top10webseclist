@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations"
+description: AUTHSCAN records browser HTTP traces and JavaScript execution, then infers an authentication protocol spec in an intermediate language (TML) via dynamic symbolic analysis plus blackbox differential fuzzing. The spec becomes applied pi-calculus checked by ProVerif and counterexamples are replayed to confirm attacks. It found 7 flaws in BrowserID, Facebook Connect, Windows Live ID and two sites.
 resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-automatic-extraction-web-authentication-protocols-implementations/"
-tags: [article, webseclist-reference, ndss-symposium]
+tags: [article, webseclist-reference, ndss-symposium, sso, oauth, formal-analysis, dynamic-analysis, fuzzing, auth-bypass, tooling, postmessage, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:22+00:00"

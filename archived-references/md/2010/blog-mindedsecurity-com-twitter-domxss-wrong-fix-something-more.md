@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A Twitter DomXss, a wrong fix and something more
+description: "Twitter's new site assigned the URL fragment after '#!' straight to window.location, giving DOM XSS via twitter.com/#!javascript:alert(document.domain). Two successive patches failed: String.replace with a string argument strips only the first match, so '::' survived, and IE8 re-decoded the HTML entity form of the colon."
 resource: "http://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, dom, xss, javascript, filter-bypass, sanitizer-bypass, encoding, case-study, open-redirect]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:15+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Owning a system through a Chrome extension
+description: Chains two bugs in the cr-gpg Chrome extension into OS-level compromise. A DOM XSS fires when decrypted PGP content is injected into Gmail, and the bundled NPAPI plugin builds its gpg command line by string concatenation, so attacker-controlled recipients inject shell commands outside the sandbox. The exploit exports PGP secret keys and launches a meterpreter shell.
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
-tags: [article, webseclist-reference, blog-kotowicz-net]
+tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, xss, command-injection, rce, sandbox-escape, attack-chain, javascript, dom]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:30+00:00"

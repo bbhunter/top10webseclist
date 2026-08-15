@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A story of leaking uninitialized memory from Fastly
+description: "A bug in the H2O web server's HTTP/3 handling: a RESET_STREAM frame makes the Quicly library forget which byte ranges of a request body actually arrived, so H2O forwards the uninitialised remainder of its receive buffer to the upstream. A crafted QUIC datagram thus reads other users' requests and responses out of a Fastly node's memory."
 resource: "https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, info-leak, http3, cdn, reverse-proxy, proxy, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:10+00:00"

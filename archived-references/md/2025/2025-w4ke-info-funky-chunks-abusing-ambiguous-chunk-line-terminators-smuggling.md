@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Funky chunks: abusing ambiguous chunk line terminators for request smuggling"
+description: "HTTP implementations disagree over what ends a line in a chunked body: some read a bare newline inside a chunk extension as a terminator, others swallow it, and some accept any two bytes after an oversized chunk body. Pairing a proxy and server with complementary leniencies desynchronises them and smuggles a request past front-end controls."
 resource: "https://w4ke.info/2025/06/18/funky-chunks.html"
-tags: [article, webseclist-reference, en, w4ke-info]
+tags: [article, webseclist-reference, en, w4ke-info, request-smuggling, parser-differential, desync, http, reverse-proxy, load-balancer, filter-bypass, cve, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:48:15+00:00"

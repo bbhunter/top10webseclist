@@ -1,8 +1,9 @@
 ---
 type: Article
 title: State of DNS Rebinding in 2023
+description: "A 2023 status report on DNS rebinding: Chrome's Local Network Access protection is bypassed by targeting 0.0.0.0, which reaches localhost services on Linux and macOS in about three seconds, or by reaching a router's admin interface through its public IP. It also covers the closing of WebRTC local-IP leaks and DNS 0x20 randomisation breaking rebinding servers."
 resource: "https://research.nccgroup.com/2023/04/27/state-of-dns-rebinding-in-2023/"
-tags: [article, webseclist-reference, en, nccgroup-com]
+tags: [article, webseclist-reference, en, nccgroup-com, dns-rebinding, sop-bypass, dns, webrtc, filter-bypass, ssrf, info-leak, tooling, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:06:53+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Server-Side JavaScript Injection: Attacking NoSQL and Node.js"
+description: "Bryan Sullivan's Black Hat USA 2011 whitepaper shows that eval of untrusted input in Node.js servers and MongoDB $where queries executes attacker JavaScript on the server. Payloads run from an eight-byte while(1) denial of service to file read and write via require('fs') and binary execution via child_process.spawn, plus blind extraction of a whole NoSQL database."
 resource: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, nodejs, nosqli, mongodb, rce, injection, javascript, dos, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:23+00:00"
@@ -97,7 +98,8 @@ Once the collection names have been extracted, the next step is to get the colle
 --- page 9 ---
 
 
-V1üìôäüÄä999991]/ììäüìîî99990]!"&=#"5432#"&546;232#32654&#"“<´i½ÿËg¤;5W3 d{9ÉAH'*$''ú÷ÿ+"û2"#,2/936	R#W/W*'S[6RY:üäìäü<ääþä9999999991/<î2îþîî99907#"&546;2>3232#!"&546;4&#"32#!"&5463îD3 ýy‡0/ !,%g,g,0ÔÄäÔÄæ9äü<ì2î290KSXAE EE!E/ EEììììììY1]32#!"&546;"&5463!2+	#"&546;2+I48&2C%'E4&9÷
+V1üìôäüÄä999991]/ììäüìîî99990]!"&=#"5432#"&546;232#32654&#"“<´i½ÿËg¤;5W3 d{9ÉAH
+'*$''ú÷ÿ+"û2"#,2/936	R#W/W*'S[6RY:üäìäü<ääþä9999999991/<î2îþîî99907#"&546;2>3232#!"&546;4&#"32#!"&5463îD3 ýy‡0/ !,%g,g,0ÔÄäÔÄæ9äü<ì2î290KSXAE EE!E/ EEììììììY1]32#!"&546;"&5463!2+	#"&546;2+I48&2C%'E4&9÷
 
 --- page 10 ---
 

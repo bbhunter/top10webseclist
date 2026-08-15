@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Attack of the Alerts and the Zombie Script
+description: In IE11 an ActiveXObject htmlFile yields a second window object whose alert ignores the user choice to suppress further dialogs, so a page can throw dialogs with no way out. Saving a self-reference on that object and calling window.open with _self stops IE destroying it, leaving setInterval code running after the victim has navigated away to another site.
 resource: "https://www.brokenbrowser.com/zombie-alert/"
-tags: [article, webseclist-reference, en-US, broken-browser]
+tags: [article, webseclist-reference, en-US, broken-browser, activex, javascript, ui-redress, dos, sop-bypass, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:29:38+00:00"

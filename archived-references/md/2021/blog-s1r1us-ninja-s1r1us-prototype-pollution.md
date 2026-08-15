@@ -1,8 +1,9 @@
 ---
 type: Article
 title: s1r1us - Prototype Pollution
+description: "Client-side prototype pollution hunted at scale: query and hash parsers that write attacker-controlled keys onto Object.prototype, plus script gadgets in common libraries that turn a polluted property into JavaScript execution. The team automated detection with a Selenium bot, a Chrome extension and CodeQL, reporting around 80 bugs including reflected XSS on Apple, Jira and HubSpot."
 resource: "https://blog.s1r1us.ninja/research/PP"
-tags: [article, webseclist-reference, en-US, blog-s1r1us-ninja]
+tags: [article, webseclist-reference, en-US, blog-s1r1us-ninja, prototype-pollution, gadget-chain, xss, filter-bypass, javascript, dom, tooling, large-scale-scan, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:32+00:00"

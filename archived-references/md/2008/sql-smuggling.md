@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: SQL Smuggling
+description: "Defines SQL Smuggling: injection that survives validation because the database reinterprets input after the check. The new vector is Unicode homoglyph best-fit folding — U+02BC (%CA%BC) passes a quote filter or WAF, then SQL Server 2005 folds it to a real apostrophe inside a varchar parameter, breaking out of a dynamic-SQL stored procedure. Also covers MySQL backslash escaping."
 resource: "http://www.comsecglobal.com/FrameWork/Upload/SQL_Smuggling.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, sqli, filter-bypass, waf-bypass, unicode, charset, mssql, mysql, database, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:36+00:00"

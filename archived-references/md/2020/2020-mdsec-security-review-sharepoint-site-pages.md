@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A Security Review of SharePoint Site Pages
+description: "SharePoint parses customised site pages with CompilationMode.Never so inline code never runs, but where an administrator allows compilation with server-side script still disabled, the namespace value of an import or register directive is copied verbatim into the generated C# and can be closed and reopened to define a class. That yields code execution on the server."
 resource: "https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/"
-tags: [article, webseclist-reference, en, mdsec]
+tags: [article, webseclist-reference, en, mdsec, rce, injection, aspnet, dotnet, filter-bypass, file-upload, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:25:26+00:00"

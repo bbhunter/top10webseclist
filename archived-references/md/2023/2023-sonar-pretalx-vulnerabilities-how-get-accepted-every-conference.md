@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Pretalx Vulnerabilities: How to get accepted at every conference"
+description: The HTML schedule export in the pretalx conference system builds filesystem paths straight from URLs found in user-uploaded content, giving an arbitrary file read (CVE-2023-28459) and, through a URL-encoding difference between the Django test client and the path written to disk, a file write outside the destination folder (CVE-2023-28458).
 resource: "https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/"
-tags: [article, webseclist-reference, en, sonar]
+tags: [article, webseclist-reference, en, sonar, path-traversal, lfi, rce, file-upload, python, django, cve, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:34+00:00"

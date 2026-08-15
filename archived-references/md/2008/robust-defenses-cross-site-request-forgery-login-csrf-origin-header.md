@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)
+description: "CCS 2008 paper introducing login CSRF, where a forged request to the login form signs the victim in as the attacker so their activity accrues to the attacker's account. It dissects secret-token, Referer and custom-header defences, and measures Referer suppression over 283,945 ad impressions: heavy on HTTP, negligible on HTTPS. Proposes the Origin header, with browser and Apache patches."
 resource: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, csrf, auth-bypass, defence, mitigation, measurement-study, http, https, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:04:46+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Attack of the TINY URLs
+description: "pdp turns TinyURL into remote storage for a self-contained AJAX worm: split the payload, base64 each segment, shrink every segment and the index with TinyURL, and 26 characters expand back into a large file. Retrieval loads each short URL in an iframe that writes its segment into the parent's fragment identifier, so the worm needs no server a defender can take down."
 resource: "https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, javascript, iframe, abuse-of-functionality, same-origin-policy, dom, encoding]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:56+00:00"

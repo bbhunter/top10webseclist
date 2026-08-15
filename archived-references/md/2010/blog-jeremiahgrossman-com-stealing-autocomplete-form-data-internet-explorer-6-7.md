@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Stealing AutoComplete form data in Internet Explorer 6 & 7
+description: Internet Explorer 6 and 7 share remembered form values across sites by input name, and the drop-down can be opened without user action. Firing synthetic down-arrow and enter keystrokes via fireEvent pulls the stored value into a field JavaScript can read, harvesting names, addresses and card numbers from dozens of field names in seconds.
 resource: "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, info-leak, javascript, dom, case-study, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:14+00:00"

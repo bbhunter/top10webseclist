@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "SSRF Protocol Smuggling in Plaintext Credential Handlers : LDAP"
+description: LDAP client libraries pass CRLF through in the username and password of a plaintext simple bind, so an application letting a user set the LDAP server, port and credentials becomes an SSRF that can speak other plaintext TCP protocols. The example smuggles a whole Redis command sequence in the password field to write a PHP web shell into the web root.
 resource: "https://www.silentrobots.com/blog/2019/02/06/ssrf-protocol-smuggling-in-plaintext-credential-handlers-ldap/"
-tags: [article, webseclist-reference, en, silentrobots-com]
+tags: [article, webseclist-reference, en, silentrobots-com, ssrf, smuggling, rce, injection, redis, php, python, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:23+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

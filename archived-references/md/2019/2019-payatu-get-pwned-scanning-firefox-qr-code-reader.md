@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Get Pwned By Scanning Firefox QR Code Reader
+description: "Firefox for iOS executed javascript URIs supplied by its built-in QR code scanner, so scanning a crafted code ran script in the context of the page the user was already viewing and could read its contents and cookies. It also worked in reader mode, on local files and internal pages, and ignored the site's content security policy. Opera Mini for iOS was affected too."
 resource: "https://payatu.com/blog/nikhil-mittal/firefox-ios-qr-code-reader-xss-(cve-2019-17003"
-tags: [article, webseclist-reference, en, payatu]
+tags: [article, webseclist-reference, en, payatu, xss, url-parsing, csp, ios, sop-bypass, cve, bug-bounty, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:55+00:00"

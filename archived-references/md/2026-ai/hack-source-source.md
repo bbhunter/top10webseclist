@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Hack the Source, Of the Source
+description: "A talk on hacking package registries by chaining parser differentials with injection. A LuaJIT-vs-Lua integer differential makes server and client resolve different versions; Julia's Registrator falls to command and argument injection via git rev-parse and clone --upload-pack, reached via a backslash API path traversal returning a controlled clone_url for RCE; a NuGet nuspec-selection inconsistency poisons the registration blob; and CocoaPods session tokens fall to a birthday attack."
 resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, supply-chain, parser-differential, command-injection, path-traversal, rce, ssrf, dotnet, go, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:27+00:00"
@@ -18,7 +19,7 @@ authors:
   - Tsi-Lin Ng
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:91"
+  - "2026-ai.md:94"
 commit: ""
 content_sha256: e8f0ed1b202dcc530e1d17202617c7355d83187d7f0c834548e4cba421232037
 depth: full

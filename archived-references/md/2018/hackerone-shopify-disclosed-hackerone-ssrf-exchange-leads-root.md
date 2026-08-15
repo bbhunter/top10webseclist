@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Shopify disclosed on HackerOne: SSRF in Exchange leads to ROOT..."
+description: A store template on Shopify Exchange made the screenshot renderer fetch Google Cloud metadata, and the v1beta1 endpoint returned the instance service-account token without the usual Metadata-Flavor header. The leaked kube-env attribute yielded Kubelet certificates, which gave pod secrets and a root shell in any container of that infrastructure subset.
 resource: "https://hackerone.com/reports/341876"
-tags: [article, webseclist-reference, en, hackerone]
+tags: [article, webseclist-reference, en, hackerone, ssrf, rce, privilege-escalation, info-leak, kubernetes, gcp, docker, attack-chain, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:32+00:00"

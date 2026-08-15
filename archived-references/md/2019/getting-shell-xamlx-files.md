@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Getting Shell with XAMLX Files
+description: "Uploading a .XAMLX workflow-service file to an IIS application runs code, either through XAML deserialisation gadgets wrapped in an Array element at compile time or through inline C# and expression activities evaluated when the file is requested. A payload can break out of the generated method into the class body, and a web.config can register the handler where it is missing."
 resource: "https://soroush.me/downloadable/getting_shell_with_xamlx_files.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rce, file-upload, deserialization, gadget-chain, injection, aspnet, dotnet, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:40+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: S2-020 - Apache Struts 2 Documentation
+description: "The Struts S2-020 bulletin covers two issues fixed in 2.3.16.1: Commons FileUpload 1.3 allows denial of service, and ParametersInterceptor accepts a class parameter mapped to getClass(), letting a remote attacker manipulate the ClassLoader. The advised remedies are upgrading the library and excluding class from request parameters."
 resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020"
-tags: [article, webseclist-reference, cwiki-apache-org]
+tags: [article, webseclist-reference, cwiki-apache-org, class-pollution, rce, dos, mass-assignment, struts, java, cve, vendor-advisory, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:48+00:00"

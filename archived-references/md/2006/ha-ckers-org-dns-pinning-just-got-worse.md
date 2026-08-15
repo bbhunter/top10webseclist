@@ -1,8 +1,9 @@
 ---
 type: Article
 title: DNS Pinning Just Got Worse
+description: "Amit Klein's defeat of anti-anti-DNS-pinning, Host: header checks bypassed via XMLHttpRequest or Flash-forged headers, combined with Martin Johns' pinning circumvention. Together they let any external site read whole intranet pages. The post lists two dozen real corporate intranet hostnames found in referrer logs, paired with Grossman's port scanner for discovery."
 resource: "http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, dns-rebinding, dns, sop-bypass, ssrf, header-injection, info-leak, flash, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:13:58+00:00"

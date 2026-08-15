@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Adobe Product Security Incident Response Team (PSIRT): Clipboard attack update"
+description: "Adobe PSIRT's short notice that Flash Player's clipboard interaction will change to blunt the 2008 clipboard-hijacking attacks, with the mitigation shipping in the final Flash Player 10 release. Points at the Flash Player 10 security-changes article for detail; it states the response, not the attack."
 resource: "https://blogs.adobe.com/psirt/2008/09/clipboard_attack_update.html"
-tags: [article, webseclist-reference, blogs-adobe-com]
+tags: [article, webseclist-reference, blogs-adobe-com, flash, vendor-advisory, mitigation, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:10+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: Piloting Edge Copilot
+description: "An attack chain against Edge's Copilot sidebar, whose internal WebUI holds privileged extension APIs and camera and microphone access while framing Bing. A postMessage listener assigning attacker data to an iframe src, and a pass-through Trusted Types policy rendering the page title as HTML, give script execution in the trusted frame; permission delegation then reaches the microphone. A hashchange command listener lets any page prompt Copilot and leak its memory via markdown links."
 resource: "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, xss, postmessage, csp, iframe, prompt-injection, llm, info-leak, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:51+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: IIS Application vs. Folder Detection During Blackbox Testing
+description: Requesting a built-in ASP.NET service endpoint such as profile_json_appservice.axd/jsdebug under any path reveals whether that path is an IIS application, which answers with 200 and JavaScript, or merely a folder, which answers 500. Knowing which decides whether an upload can become code execution via web.config and supplies the application path needed to forge ViewState payloads.
 resource: "https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, info-leak, aspnet, dotnet, file-upload, rce]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:24+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too
+description: "News coverage extending the FREAK attack: Microsoft confirmed every supported Windows release was affected through its Secure Channel package, not just Safari and Android as first believed. FREAK lets a man in the middle force a TLS client and server down to export-grade 512-bit RSA, then factor that key in hours and read the supposedly protected traffic."
 resource: "http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380"
-tags: [article, webseclist-reference, en, dark-reading]
+tags: [article, webseclist-reference, en, dark-reading, tls, https, vendor-advisory, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:36+00:00"

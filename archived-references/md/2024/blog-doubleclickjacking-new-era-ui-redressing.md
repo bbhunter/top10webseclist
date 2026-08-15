@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "DoubleClickjacking: A New Era of UI Redressing"
+description: "The attacker's page opens a window asking for a double-click. That window uses window.opener.location to swap the parent to a sensitive page such as an OAuth consent prompt, then closes itself on the first click's mousedown, so the second click lands on the authorize button now exposed underneath. No framing is involved, so X-Frame-Options, frame-ancestors and SameSite cookies do not apply; the same trick hits browser extensions and mobile double-taps."
 resource: "http://paulosyibelo.com/2024/12/doubleclickjacking-what.html"
-tags: [article, webseclist-reference, en, blog]
+tags: [article, webseclist-reference, en, blog, clickjacking, ui-redress, oauth, abuse-of-functionality, novel-technique, browser-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T12:59:42+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Signing Me onto Your Accounts through Facebook and Google
+description: "A black-box field study of deployed web SSO: the authors capture browser-relayed messages between relying party and identity provider, label each element's semantics and what an adversary can read or write, then follow the openings to working exploits. Eight logic flaws let an attacker sign in as the victim on Google ID/OpenID RPs, Facebook Connect, JanRain, Freelancer, Sears and FarmVille."
 resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, sso, openid, oauth, auth-bypass, measurement-study, flash, same-origin-policy, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:01:07+00:00"

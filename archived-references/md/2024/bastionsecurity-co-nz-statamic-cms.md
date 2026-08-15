@@ -1,8 +1,9 @@
 ---
 type: Advisory
 title: Statamic CMS
+description: Statamic CMS below 5.17.0 does not sanitise the filename supplied with an assets field on a front-end form, and it derives the storage path from that filename, so an unauthenticated uploader can put ../ sequences in the name and write outside the configured directory, overwriting configuration or dropping scripts wherever the extension allow list permits (CVE-2024-52600).
 resource: "https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html"
-tags: [advisory, webseclist-reference, en-AU, bastion-security]
+tags: [advisory, webseclist-reference, en-AU, bastion-security, path-traversal, file-upload, php, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:02:23+00:00"

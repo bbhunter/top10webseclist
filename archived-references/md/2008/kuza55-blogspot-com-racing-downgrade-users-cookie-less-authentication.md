@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Racing to downgrade users to cookie-less authentication
+description: "Applications that fall back to URL-borne session tokens decide by setting a probe cookie and checking it comes back. Saturating Firefox's per-domain cookie jar from 20 iframed subdomains evicts that probe in about 100ms, winning the race so the app downgrades to cookie-less auth; the token then leaks through Referer to any persistent image. Working PHP/JavaScript included."
 resource: "https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html"
-tags: [article, webseclist-reference, kuza55-blogspot-com]
+tags: [article, webseclist-reference, kuza55-blogspot-com, cookie, race-condition, session-fixation, info-leak, iframe, javascript, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:34+00:00"

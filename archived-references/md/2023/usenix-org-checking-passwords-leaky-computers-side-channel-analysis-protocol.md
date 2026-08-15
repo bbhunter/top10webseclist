@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol"
+description: "Analyses Chrome's password leak detection protocol and shows the implementation leaks through microarchitectural side channels in its scrypt hashing, hash-to-elliptic-curve step and modular inversion, letting an observer recover a user's password with a single dictionary guess and letting a malicious server learn information about it."
 resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, timing-attack, info-leak, novel-technique, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:19+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Abusing HTML 5 Structured Client-side Storage
+description: "Session, global, local and Database Storage have no HTTPOnly, no path scoping and no port scoping, so one XSS anywhere on a host reads all of it. Enumerate keys with for(i in sessionStorage), find databases by testing window[i]==\"[object Database]\", pull schema from sqlite_master, then exfiltrate with the HTML5CSdump script given in full. Covers cross-directory, cross-domain and client-side SQLi."
 resource: "http://trivero.secdiscover.com/html5whitepaper.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, sqli, info-leak, javascript, dom, same-origin-policy, database, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:52+00:00"

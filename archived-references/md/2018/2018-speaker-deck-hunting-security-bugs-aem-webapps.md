@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: Hunting for security bugs in AEM webapps
+description: "A survey of attacks on Adobe Experience Manager: dispatcher filter bypasses using extra slashes and appended extensions, exposed Sling servlets that dump JCR nodes and run arbitrary searches, user enumeration and unthrottled basic-auth brute force. Several servlet SSRFs are escalated to code execution by joining the replication topology, plus SVG XSS, DoS and the aem-hacker toolkit."
 resource: "https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, ssrf, filter-bypass, rce, info-leak, auth-bypass, xss, reverse-proxy, java, bug-bounty, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:38+00:00"

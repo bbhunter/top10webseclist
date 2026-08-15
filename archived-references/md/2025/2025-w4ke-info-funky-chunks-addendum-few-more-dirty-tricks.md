@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Funky chunks – addendum: a few more dirty tricks"
+description: Extends the chunked-body smuggling family. If one parser blindly skips two bytes as the chunk-body terminator while the other accepts a bare newline, a byte of the next chunk size is consumed and the two disagree on its length. A bare newline in the trailer section gives the same split.
 resource: "https://w4ke.info/2025/10/29/funky-chunks-2.html"
-tags: [article, webseclist-reference, en, w4ke-info]
+tags: [article, webseclist-reference, en, w4ke-info, request-smuggling, parser-differential, desync, http, reverse-proxy, load-balancer, prior-art-extension, cve, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:48:16+00:00"

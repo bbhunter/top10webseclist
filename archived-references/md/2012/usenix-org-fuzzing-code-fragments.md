@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Fuzzing with Code Fragments
+description: "LangFuzz resolves the tension between inputs valid enough to parse and odd enough to crash by generating programs from a language grammar while splicing in code fragments mined from tests that previously triggered defects. Run against Mozilla's JavaScript interpreter it found 105 new severe vulnerabilities in three months, and 18 crash defects in the PHP interpreter."
 resource: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, fuzzing, javascript-runtime, php, tooling, javascript, dynamic-analysis, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:01+00:00"

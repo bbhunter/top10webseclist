@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Detecting and Defending Against Third-Party Tracking on the Web
+description: "A client-side detector classifies third-party trackers by how they manipulate browser state, finding over 500 distinct trackers in the wild and most commercial pages tracked by several parties at once. Using AOL search traces the authors estimate single trackers observe over 20% of a user's browsing, and show existing defences fail for social widgets, motivating a new one."
 resource: "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, measurement-study, large-scale-scan, info-leak, cookie, detection, defence, browser-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:21+00:00"

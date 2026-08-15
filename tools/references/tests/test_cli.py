@@ -442,8 +442,14 @@ class DigestAcceptTests(unittest.TestCase):
         self.assertEqual(reason, "")
         self.assertEqual(tags, ["xss"])
 
-    def test_refuses_no_tags_at_all(self):
-        self.assertIn("tag(s)", self.accept(text="A finding.", tags=[])[0])
+    def test_has_no_tag_floor(self):
+        # By decision: any floor buys itself by padding a document with tags
+        # that do not apply. A narrow document keeps its one honest tag, and a
+        # summary that genuinely warrants none is still recorded.
+        for tags in ([], ["xss"], ["xss", "csrf"]):
+            reason, _, kept, _ = self.accept(text="A finding.", tags=tags)
+            self.assertEqual(reason, "", tags)
+            self.assertEqual(kept, tags)
 
     def test_refuses_an_overstuffed_tag_set(self):
         many = sorted(self.VOCAB)[:refs.DIGEST_TAGS_MAX + 1]

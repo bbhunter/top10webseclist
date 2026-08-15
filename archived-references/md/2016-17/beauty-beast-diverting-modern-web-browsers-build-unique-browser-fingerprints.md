@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints"
+description: A study of browser fingerprinting built on 118,934 real fingerprints gathered through AmIUnique, covering 17 attributes reachable from modern web APIs. It shows HTML5 canvas and WebGL rendering differences are highly discriminating, and that mobile devices are as identifiable as desktops, letting a site re-identify and track visitors without setting any cookie.
 resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, info-leak, javascript, measurement-study, large-scale-scan, dom, http, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:46+00:00"

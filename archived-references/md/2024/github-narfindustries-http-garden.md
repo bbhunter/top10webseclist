@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: "http-garden: Differential fuzzing REPL for HTTP implementations."
+description: "A REPL that runs dozens of HTTP servers and proxies in containers and compares them directly: a payload is transduced through a proxy, fanned out to the origin servers, and their parsed requests are shown in an agreement grid, with benign quirks probed beforehand so only real disagreements surface. Such discrepancies are smuggling and desync bugs; the sample shows a bare LF chunk terminator that nginx accepts while Gunicorn answers 400 and Hyper drops the connection."
 resource: "https://github.com/narfindustries/http-garden"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, request-smuggling, parser-differential, fuzzing, http, desync, proxy, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:13:29+00:00"

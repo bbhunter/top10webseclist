@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Game of Registrars: An Empirical Analysis of Post-Expiration Domain Name Takeovers"
+description: "An empirical study of domain ownership change after expiration, covering the drop-catch race to re-register deleted names and registrars selling customers' expired domains pre-release. It finds 10% of com domains re-registered on deletion day, most same-day org re-registrations occurring within 30 seconds, and drop-catch services controlling over 75% of accredited registrars while winning under a tenth of creations. Such changes can circumvent established security mechanisms."
 resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/lauinger"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, measurement-study, dns, domain-takeover]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:15+00:00"

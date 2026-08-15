@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs"
+description: "Deemon records a web application's network traffic, server execution and database queries into a single property graph, then uses graph traversals to find state-changing requests that lack anti-CSRF protection and auto-generates tests to confirm them. It found 14 unknown CSRF flaws allowing account and site takeover."
 resource: "https://acmccs.github.io/papers/p1757-pellegrinoA.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, csrf, detection, dynamic-analysis, tooling, php, mysql]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:52+00:00"

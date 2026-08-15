@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Powerful HTTP Request Smuggling 💪
+description: "HTTP request smuggling on a mobile device management provider's front end let the author inject a redirect into other users' responses. Because MDM clients follow redirects without user interaction, enrolled devices were steered to an attacker-controlled server and made to execute MDM commands, up to a full device wipe."
 resource: "https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, request-smuggling, desync, open-redirect, http, proxy, ios, bug-bounty, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:24+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: CSS History Hack In Firefox Without JavaScript for Intranet Portscanning ha.ckers.org web application security lab
+description: The CSS visited-link history hack is combined with forced browsing to portscan an intranet with JavaScript disabled. Because the visited test is instant and needs no reload, styled links to candidate internal hosts reveal which ones the browser reached. It worked only in Firefox, was slow, and was noisy when auth prompts fired.
 resource: "http://ha.ckers.org/blog/20100125/css-history-hack-in-firefox-without-javascript-for-intranet-portscanning/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, css, info-leak, side-channel, xsleak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:49+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Server-Side Spreadsheet Injection - Formula Injection to Remote Code…
+description: Formula injection becomes a server side problem when an application builds or converts spreadsheets itself. A payload in an exported Google Sheet exfiltrates the whole sheet live through IMPORTDATA, and on servers that render uploaded XLS or CSV files with real Excel a DDE formula gives command execution, chained over DNS when outbound TCP is blocked.
 resource: "https://www.bishopfox.com/blog/2018/06/server-side-spreadsheet-injections/"
-tags: [article, webseclist-reference, en, bishop-fox]
+tags: [article, webseclist-reference, en, bishop-fox, command-injection, rce, injection, file-upload, ssrf, info-leak, attack-chain, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:05+00:00"

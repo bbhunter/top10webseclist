@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Top-Level Universal XSS
+description: "Internet Explorer's PlainHostName rule maps any dotless hostname to the Local Intranet Zone, so sites served at a bare TLD such as http://ac/ load with reduced origin checks and no XSS filter. An XSS on such a host therefore becomes universal XSS able to read cross-domain responses. A working proof of concept reads reddit.com response headers."
 resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/"
-tags: [article, webseclist-reference, en-US, superevr]
+tags: [article, webseclist-reference, en-US, superevr, xss, sop-bypass, url-parsing, filter-bypass, dns, iframe, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:09+00:00"

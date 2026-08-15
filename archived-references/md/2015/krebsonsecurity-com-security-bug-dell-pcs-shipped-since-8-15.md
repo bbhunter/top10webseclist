@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Security Bug in Dell PCs Shipped Since 8/15
+description: "Dell shipped consumer and commercial PCs from August 2015 carrying a root certificate, eDellRoot, whose private key was left on the machine. Anyone can extract that key, sign certificates for any HTTPS site and intercept or alter a Dell owner's traffic on a shared network, repeating Lenovo's Superfish failure."
 resource: "http://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/#more-33044"
-tags: [article, webseclist-reference, en-US, krebsonsecurity-com]
+tags: [article, webseclist-reference, en-US, krebsonsecurity-com, tls, https, supply-chain, auth-bypass, info-leak, vendor-advisory, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:29+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Wisec - The WIse SECurity
+description: "Stefano Di Paola's advisory on Digest authentication request splitting in IE 7, Firefox 2.0.0.3 and Safari. A CRLF or %0d%0a embedded in the username of a URL, an img src, a redirect or an XMLHttpRequest open() call splits the browser's Authorization header into a second attacker-controlled request, poisoning a shared proxy's cache."
 resource: "http://www.wisec.it/vulns.php?id=11"
-tags: [article, webseclist-reference, wisec-it]
+tags: [article, webseclist-reference, wisec-it, request-smuggling, header-injection, response-splitting, proxy, cache-poisoning, vendor-advisory, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:42+00:00"

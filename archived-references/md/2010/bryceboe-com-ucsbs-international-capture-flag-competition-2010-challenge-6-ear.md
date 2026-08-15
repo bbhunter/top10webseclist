@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "UCSB’s International Capture The Flag Competition 2010 Challenge 6: Fear The EAR"
+description: A walkthrough of an iCTF 2010 challenge built to publicise Execution After Redirect, where server code keeps running past an intended termination point and leaks the response body alongside a 302. Browsers and tools such as wget and curl follow the redirect and hide the leaked page, so the flaw is hard to spot; only 12 of 34 exposed teams noticed it.
 resource: "https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/"
-tags: [article, webseclist-reference, bryceboe-com]
+tags: [article, webseclist-reference, bryceboe-com, auth-bypass, http, info-leak, sqli, case-study, novel-technique, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:07:00+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:90"
+  - "2010.md:91"
 commit: ""
 content_sha256: 9a73cdda4d120f5973e82f26fc7d0988880537b2dcfdc274210d33631dcdccbe
 depth: full

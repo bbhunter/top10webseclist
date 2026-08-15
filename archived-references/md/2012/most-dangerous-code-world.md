@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: The Most Dangerous Code in the World
+description: "Black-box fuzzing with self-signed and mismatched-name certificates, plus source and decompiler review, showed SSL certificate validation is broken across non-browser software: Amazon and PayPal merchant SDKs, EC2 and Rackspace cloud clients, Chase mobile banking, Apache Axis and XFire middleware, and shopping carts."
 resource: "https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, tls, https, java, php, python, android, measurement-study, fuzzing, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:33+00:00"

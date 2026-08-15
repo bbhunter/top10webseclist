@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SSRF vulnerabilities caused by SNI proxy misconfigurations
+description: SSRF against load balancers that route by the TLS SNI field. When a proxy such as nginx with ssl_preread passes the client-supplied server name straight into proxy_pass, or matches it with a loose regex, an attacker puts an arbitrary host or IP in the ClientHello and reaches backends behind the proxy.
 resource: "https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations/"
-tags: [article, webseclist-reference, en, invicti-com]
+tags: [article, webseclist-reference, en, invicti-com, ssrf, tls, load-balancer, reverse-proxy, proxy, https, filter-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:27+00:00"

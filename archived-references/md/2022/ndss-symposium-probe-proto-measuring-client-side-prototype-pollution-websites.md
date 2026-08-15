@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites"
+description: ProbeTheProto instruments a browser to follow joint taint flows, where a property lookup and an assignment meet on a prototype object, then generates inputs that drive a polluted property into a sink. A scan of one million sites found 2,738 vulnerable, with pollution reaching XSS, cookie manipulation and URL manipulation.
 resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, prototype-pollution, xss, large-scale-scan, measurement-study, dynamic-analysis, javascript, dom, cookie, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:21+00:00"

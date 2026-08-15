@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hacking Jenkins Part 2 - Abusing Meta Programming for Unauthenticated RCE!
+description: Jenkins validated pipeline scripts by handing them to the Groovy parser, but Groovy compile-time meta-programming executes code while parsing. An unauthenticated attacker uses @GrabResolver and @Grab so Grape fetches a JAR from their own server whose service Runner runs on load, giving remote code execution the script-security sandbox never sees.
 resource: "https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html"
-tags: [article, webseclist-reference, en, orange-tsai]
+tags: [article, webseclist-reference, en, orange-tsai, rce, sandbox-escape, jenkins, ci-cd, java, supply-chain, auth-bypass, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:18+00:00"

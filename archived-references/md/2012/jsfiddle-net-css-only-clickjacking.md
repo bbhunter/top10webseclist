@@ -1,8 +1,9 @@
 ---
 type: Article
 title: CSS-Only Clickjacking
+description: "A JSFiddle proof of concept for clickjacking with CSS alone: a visible link is positioned over a Facebook Like or Twitter Follow iframe and given pointer-events: none, so the click passes through to the hidden button. The archived copy is the fiddle's HTML and CSS panels, including a second row that tints the overlays red to show the trick."
 resource: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
-tags: [article, webseclist-reference, jsfiddle-net]
+tags: [article, webseclist-reference, jsfiddle-net, clickjacking, ui-redress, css, iframe, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:56:25+00:00"

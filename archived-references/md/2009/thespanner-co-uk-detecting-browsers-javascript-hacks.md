@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Detecting browsers javascript hacks
+description: "A collection of very short JavaScript browser-detection expressions that a page cannot redefine, exploiting engine quirks: /a/[-1]=='a' for Firefox, (function x(){})[-5]=='x' for Firefox 3, '\\v'=='v' for IE, /a/.__proto__=='//' for Safari, and regex tests on toString and Array.sort for Chrome and Opera. Ends with all of them chained into a single expression."
 resource: "http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks/"
-tags: [article, webseclist-reference, en, thespanner-co-uk]
+tags: [article, webseclist-reference, en, thespanner-co-uk, javascript, detection, parser-differential, tooling, browser-fingerprinting]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:52+00:00"

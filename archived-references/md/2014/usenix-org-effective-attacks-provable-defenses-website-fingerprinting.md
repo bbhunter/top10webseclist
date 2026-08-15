@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Effective Attacks and Provable Defenses for Website Fingerprinting
+description: A k-nearest-neighbour classifier over a large weighted feature set lets a passive local eavesdropper tell which of 100 monitored pages a Tor user is loading, at 85 percent true positive and 0.6 percent false positive in an open world. The paper then builds provably private simulatable defences from supersequences over anonymity sets.
 resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao"
-tags: [article, webseclist-reference, usenix-org]
+tags: [article, webseclist-reference, usenix-org, side-channel, info-leak, https, tls, proxy, defence, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:45+00:00"

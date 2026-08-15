@@ -1,8 +1,9 @@
 ---
 type: Article
 title: 12 Million Home Routers Vulnerable to Takeover
+description: More than 12 million home routers and residential gateways run the RomPager embedded webserver, where a single crafted HTTP cookie corrupts memory and hands an attacker remote administrative control from the internet side. Check Point named it Misfortune Cookie; the 2002 code was fixed in 2005 but still shipped in 2014 firmware.
 resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, cookie, rce, http, auth-bypass, supply-chain, large-scale-scan, vendor-advisory]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:30+00:00"

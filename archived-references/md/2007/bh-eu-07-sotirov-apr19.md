@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: bh eu 07 sotirov apr19
+description: "Heap Feng Shui turns browser heap exploitation from a spray-and-pray into a deterministic technique. JScript string allocation and CollectGarbage give arbitrary-size alloc and free; the plunger sequence drains OLEAUT32's four cache bins so requests reach the system heap, then defragmentation, controlled FreeList placement and lookaside seeding put a fake vtable at a known address."
 resource: "https://www.blackhat.com/presentations/bh-europe-07/Sotirov/Presentation/bh-eu-07-sotirov-apr19.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, javascript, javascript-runtime, rce, tooling, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:35:05+00:00"

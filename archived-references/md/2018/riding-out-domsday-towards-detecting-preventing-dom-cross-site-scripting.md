@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Riding out DOMsday: Towards Detecting and Preventing DOM Cross-Site Scripting"
+description: A browser with taint tracking in its JavaScript engine crawled the Alexa top 10,000 to measure DOM XSS, with a better test for whether a source-to-sink flow is truly exploitable, finding 83 percent more bugs than the prior method. It traces the causes, shows custom HTML templating can itself be buggy, and finds three static analysers miss 90 percent of the confirmed bugs.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, dom, javascript, dynamic-analysis, static-analysis, measurement-study, large-scale-scan, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:07+00:00"

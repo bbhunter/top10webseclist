@@ -1,8 +1,9 @@
 ---
 type: Article
 title: VPN Extensions are not for privacy
+description: "Browser VPN extensions are really proxy extensions driven by a PAC script, and the usual mistakes in those scripts leak the user's real address. Calling dnsResolve hands every hostname to the ISP, while misused helpers such as shExpMatch, dnsDomainIs and isPlainHostName, substring host whitelists, non-HTTP schemes and Chrome DNS prefetching let any site force a request that skips the proxy."
 resource: "https://blog.innerht.ml/vpn-extensions-are-not-for-privacy/"
-tags: [article, webseclist-reference, xss-jigsaw]
+tags: [article, webseclist-reference, xss-jigsaw, browser-extension, proxy, dns, info-leak, filter-bypass, url-parsing, javascript, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:01+00:00"

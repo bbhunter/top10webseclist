@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Advanced SQL injection to operating system full control
+description: Black Hat Europe 2009 slides mapping SQL injection to full OS control. File access uses LOAD_FILE/DUMPFILE, COPY/lo_export and BULK INSERT/debug.exe; command execution uses custom UDF shared libraries and xp_cmdshell. It then builds a Metasploit out-of-band channel, relays SMB credentials via UNC paths, exploits MS09-004, and escalates with access-token abuse.
 resource: "https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-slides.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, sqli, database, mysql, postgres, mssql, rce, privilege-escalation, tooling, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:26+00:00"

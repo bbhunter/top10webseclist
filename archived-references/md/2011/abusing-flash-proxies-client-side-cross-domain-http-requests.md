@@ -1,12 +1,13 @@
 ---
 type: Whitepaper
 title: Abusing Flash-Proxies for client-side cross-domain HTTP requests
+description: "A cross-domain Flash applet keeps the origin of its SWF, not of the embedding page, so any page embedding someone else's Flash HTTP proxy can issue requests under that proxy's origin. A survey of five published proxies found three exploitable through allowDomain(\"*\"). Proposed fixes: nonce-gated SWF delivery, a config-file domain list, and a fragment-redirect check of the caller's URL."
 resource: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, flash, same-origin-policy, sop-bypass, cors, csrf, javascript, mitigation, novel-technique, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:08+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-14
 sources:
   - id: original

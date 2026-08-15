@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "nOAuth: How Microsoft OAuth Misconfiguration Can Lead to Full Account Takeover"
+description: "Azure AD lets a tenant admin set an arbitrary, unverified email address on a user, and that value is emitted as the email claim in the OpenID Connect token. Any application that identifies users by the email claim instead of the sub claim, or that merges accounts on a matching email, can be fully taken over: the attacker sets a victim's address in their own tenant and signs in with Log in with Microsoft."
 resource: "https://www.descope.com/blog/post/noauth"
-tags: [article, webseclist-reference, en, descope]
+tags: [article, webseclist-reference, en, descope, oauth, openid, sso, auth-bypass, jwt, azure, bug-bounty, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:49+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Our Favorite XSS Filters and how to Attack them
+description: "A recap of the Black Hat USA 2009 talk on breaking XSS filters, pointing at the slides and a co-presenter's write-up. It records a fixed Google imgres same-origin exception, a PHP 4/5/6 utf8_decode flaw enabling filter bypasses, a NoScript denial of service, a PHPIDS bypass, and the author's client-side Active Content Signatures proposal."
 resource: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
-tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
+tags: [article, webseclist-reference, sirdarckcat-blogspot-com, xss, filter-bypass, waf-bypass, browser-extension, sanitizer-bypass, javascript, php, unicode]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:20+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross-domain search timing
+description: "Demonstrates cross-domain data theft using only request timing. An attacker page loads a victim's search URL and times img onerror/onload or an iframe onload, giving a one-bit fast/slow oracle. Against Yahoo! Mail this reveals login state and, because indexed terms answer slower than unindexed ones, answers yes/no questions about inbox contents."
 resource: "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, timing-attack, xsleak, side-channel, info-leak, csrf, same-origin-policy, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:30+00:00"

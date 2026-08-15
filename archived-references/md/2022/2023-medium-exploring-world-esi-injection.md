@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Exploring the World of ESI Injection
+description: Edge Side Include injection, where ESI tags reflected into a page are executed by the edge cache rather than the browser. ESI variables and functions such as HTTP_COOKIE, add_header and url_decode let an attacker read HttpOnly cookies, rewrite a JSON response Content-Type to text/html, bypass the WAF and take over accounts.
 resource: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, xss, waf-bypass, cdn, cache, cookie, header-injection, filter-bypass, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:56:21+00:00"

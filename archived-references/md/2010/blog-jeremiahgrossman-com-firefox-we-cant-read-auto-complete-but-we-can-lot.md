@@ -1,8 +1,9 @@
 ---
 type: Article
 title: In Firefox we can’t read auto-complete, but we can write to it (a lot)!
+description: Firefox would not let a site read auto-complete data, so the author writes to it instead. A form posting into a hidden iframe, resubmitted every 2ms by setTimeout, floods the store with entries. Firefox keeps 200 characters per entry over 100 fields per form, enough to bury real entries such as email in junk or to fake a search the user never made. Safari and Chrome limit it.
 resource: "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, javascript, iframe, dom, novel-technique, dos]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:11+00:00"

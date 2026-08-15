@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: us 15 Park Winning The Online Banking War wp
+description: "Banking trojans steal money through JavaScript injected into the victim's browser rather than through the malware binary. The paper dissects how these injects hook the DOM to alter transactions and defeat two-factor authentication, catalogues evasion tricks such as obfuscation, control-flow randomisation and DOM rootkits, and proposes a DOM-integrity whitelist defence called MIPS."
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Park-Winning-The-Online-Banking-War-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, injection, dom, javascript, auth-bypass, detection, defence, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:57+00:00"

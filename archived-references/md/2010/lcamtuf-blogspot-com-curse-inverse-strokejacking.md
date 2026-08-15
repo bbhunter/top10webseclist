@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The curse of inverse strokejacking
+description: "Strokejacking reversed: a framed third-party gadget or advertisement grabs focus from the top-level document, which the same-origin policy does not govern. By surrendering focus at timed intervals it keeps the caret blinking where the user expects, reading every character through onkeydown while onkeypress still reaches the real document."
 resource: "https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.html"
-tags: [article, webseclist-reference, lcamtuf-blogspot-com]
+tags: [article, webseclist-reference, lcamtuf-blogspot-com, ui-redress, clickjacking, iframe, side-channel, info-leak, same-origin-policy, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:00+00:00"

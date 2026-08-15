@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: The Unexpected Dangers of Dynamic JavaScript
+description: Scripts generated per user session can be pulled in cross origin because script tags escape the same origin policy, so an attacker page can recover the data through global variables, overwritten global functions or tampered prototypes. A study of 150 top sites found 49 leaking login state, and others leaking emails, session tokens and CSRF secrets up to full account takeover.
 resource: "https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, info-leak, sop-bypass, same-origin-policy, javascript, xsleak, cookie, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:33:57+00:00"

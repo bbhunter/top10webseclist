@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Crouching Tiger Hidden Payload: Security Risks of Scalable Vector Graphics (The Image That Called Me)"
+description: HTML5 requires browsers to render SVG embedded via img tags, CSS or inline, and SVG files are fully functional one-file web applications rather than passive images. The paper shows such images can execute arbitrary JavaScript, that current filtering of uploaded or embedded SVG is circumventable, and measures the impact on Firefox 4, IE9 and Opera 11.
 resource: "https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, filter-bypass, sanitizer-bypass, file-upload, css, parser-differential, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:11+00:00"
@@ -173,7 +174,8 @@ to be parsed and rendered before they can be displayed by
 a browser, it comes as no surprise that the images have se-
 curity implications. To give an example, there were sev-
 eral cases in the past where the validation routine of im-
-age libraries contained security aws leading to vulnerabil
+age libraries contained security 
+aws leading to vulnerabil
 i-
 ties [1,2,4]. For this reason, we need to consider the risk of
 images as the attack vectors.

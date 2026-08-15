@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Server-side prototype pollution: Black-box detection without the DoS"
+description: Server-side prototype pollution in Node and Express can be found black box without the usual denial of service, by polluting properties that cause safe, reversible response changes such as JSON spacing, CORS exposed headers, status codes and OPTIONS output, plus an out-of-band payload setting NODE_OPTIONS --inspect that both confirms pollution and leads to remote code execution.
 resource: "https://portswigger.net/research/server-side-prototype-pollution"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, prototype-pollution, nodejs, express, detection, rce, cors, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:01+00:00"

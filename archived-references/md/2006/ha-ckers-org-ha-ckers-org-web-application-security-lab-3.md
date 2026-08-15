@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Stephen de Vries' Google Code Search dorks for XSS and SQL injection in Java applications, quoted in full: <%=.*getParameter for unescaped output, executeQuery.*getParameter for query construction, and a package filter aimed at book publishers' sample code. Searching all public source approximates a poor man's static analysis at internet scale."
 resource: "http://ha.ckers.org/blog/20061005/google-dorks-strike-again/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, large-scale-scan, static-analysis, xss, sqli, java, info-leak, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:52:19+00:00"

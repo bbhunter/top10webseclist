@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Flash Cookie Object Tracking
+description: "pdp reimplements Thom Shannon's cross-browser tracking demo by releasing the ActionScript for a Flash SharedObject cookie manager, compiled with MTASC. Because Flash local shared objects are stored outside the browser and are almost never cleared, they persist across browsers and make a durable store for tracking codes or hidden malware."
 resource: "https://www.gnucitizen.org/blog/flash-cookie-object-tracking/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, flash, cookie, browser-fingerprinting, deanonymization, tooling, abuse-of-functionality]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:48+00:00"

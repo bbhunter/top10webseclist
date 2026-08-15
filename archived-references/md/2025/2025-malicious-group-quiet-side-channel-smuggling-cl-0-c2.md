@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Quiet Side Channel... Smuggling with CL.0 for C2
+description: Shows how a CL.0 request-smuggling desync against CDN-fronted sites can poison the shared cache so a chosen string is stored in a 3xx Location redirect header. Reading and writing encoded data through that poisoned redirect turns trusted, whitelisted domains into a stealthy command-and-control channel.
 resource: "https://blog.malicious.group/the-quiet-side-channel-smuggling-with-cl-0-for-c2/"
-tags: [article, webseclist-reference, en, malicious-group]
+tags: [article, webseclist-reference, en, malicious-group, request-smuggling, cache-poisoning, desync, smuggling, side-channel, cdn, http, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:09:22+00:00"

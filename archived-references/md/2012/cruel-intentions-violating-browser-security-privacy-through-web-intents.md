@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Cruel Intentions: Violating Browser Security and Privacy Through Web Intents"
+description: "Security analysis of Web Intents, the browser framework for delegating actions such as sharing between sites. Four attacks are found against the prototype implementations: cross-session user tracking, denial of service on intent storage, overwriting benign intents with malicious ones, and a login CSRF avenue. Origin-isolated intent storage and registration prompts are proposed."
 resource: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, same-origin-policy, csrf, dos, info-leak, novel-technique, mitigation, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:31+00:00"

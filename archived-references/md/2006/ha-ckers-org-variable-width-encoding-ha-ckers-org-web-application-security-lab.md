@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Variable Width Encoding ha.ckers.org web application security lab
+description: "Reports Cheng Peng Su's variable-width encoding filter evasion: a lead byte in the range 192-253 or 255 combines with a following double quote into a single multibyte character, so the quote stops terminating an attribute and the attacker stays inside the tag. Affects UTF-8, GB2312, GB18030, BIG5, EUC-KR, EUC-JP and SHIFT_JIS in Internet Explorer."
 resource: "http://ha.ckers.org/blog/20060817/variable-width-encoding/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, charset, encoding, unicode, filter-bypass, xss, sanitizer-bypass, parser-differential, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:27+00:00"

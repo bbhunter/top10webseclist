@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Modern Alchemy: Turning XSS into RCE"
+description: "Electron's nodeIntegration flag should keep untrusted pages away from Node, but window.open returns a proxy object that bypasses the same-origin policy, and evaluating script inside the privileged chrome-devtools window restores require. Any cross-site scripting in an Electron app therefore becomes code execution on the desktop."
 resource: "https://blog.doyensec.com/2017/08/03/electron-framework-security.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, sandbox-escape, rce, sop-bypass, xss, electron, nodejs, same-origin-policy, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:44+00:00"

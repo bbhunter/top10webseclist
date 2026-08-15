@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "I know what you've got (Firefox Extensions)"
+description: "Building on RSnake's chrome: protocol finding, Grossman ships working detection for installed Firefox extensions: create an IMG object per signature pointing at a chrome:// icon unique to that extension, and an onload handler names the ones present. Includes a table of roughly 47 extension-to-URL signatures and live proof-of-concept code."
 resource: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-firefox.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, browser-extension, detection, browser-fingerprinting, javascript, dom, info-leak, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:51+00:00"

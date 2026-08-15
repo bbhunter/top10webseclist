@@ -2120,7 +2120,7 @@ or fix the route and re-run.
 
 - Outcome: `broken-capture` (no bytes stored)
 - Kind: article
-- Reason: faulty capture: WRONG PAGE - the body is the Sonar blog INDEX (Sonars latest blog posts, Welcoming Gitar to Sonar, a newsletter pitch and cookie boilerplate); Shopware, XXE and object instantiation appear nowhere. The manifest ALREADY HELD THE EVIDENCE and it was never acted on: steps.check records status redirect-root with the evidence redirected to a site root or section index /blog/ and a 301, yet acquire published the index and content_gap stayed empty. Store bytes are absent so acquire --force would follow the same 301 and republish the same page; recapture from a Wayback snapshot (reported 2026-08-15)
+- Reason: faulty capture: THE ARCHIVED PAGE IS THE PUBLISHER'S BLOG FRONT PAGE, NOT THE CITED ANALYSIS. It holds a featured post announcing the vendor's acquisition of another company, a newsletter sign-up form and privacy links; the Shopware 5.3.3 write-up the citation names - a PHP object instantiation sink reached and used to trigger a blind XXE - appears nowhere on it. The vendor renamed itself between capture and citation, so the article has almost certainly moved rather than gone: look for it under the new brand before treating it as lost. (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:45`
 

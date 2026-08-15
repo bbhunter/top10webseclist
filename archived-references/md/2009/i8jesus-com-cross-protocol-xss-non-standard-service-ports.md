@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross-protocol XSS with non-standard service ports
+description: "Browsers render non-HTTP responses without requiring HTTP headers, and IE ignores the port when deciding DOM origin. A multipart form POST drives an FTP or SMTP server on a non-standard port into reflecting attacker input; the reflected script then executes in the site's origin, giving XSS on hosts that merely run another service alongside the website."
 resource: "http://i8jesus.com/?p=75"
-tags: [article, webseclist-reference, en-US, i8jesus-com]
+tags: [article, webseclist-reference, en-US, i8jesus-com, ftp, smtp, xss, same-origin-policy, parser-differential, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:31:45+00:00"

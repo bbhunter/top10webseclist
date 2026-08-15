@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "GET /out: Automated Discovery of Application-Layer Censorship Evasion Strategies"
+description: Automated search for censorship evasion strategies in application-layer messages rather than TCP/IP headers, so the resulting evasions need no elevated socket privileges to deploy. Applied to HTTP and DNS censorship in China, India and Kazakhstan it found 77 HTTP and 9 DNS strategies, many of which work because censors follow the RFCs more strictly than real servers do.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/harrity"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, filter-bypass, parser-differential, http, dns, fuzzing, novel-technique, measurement-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:20+00:00"

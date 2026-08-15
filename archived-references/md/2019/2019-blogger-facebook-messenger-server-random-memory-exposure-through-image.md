@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Facebook Messenger server random memory exposure through corrupted GIF image
+description: Uploading a GIF whose header declares a canvas size but carries no image data made the Facebook Messenger server-side renderer return a picture filled with uninitialised memory. Repeated uploads of the same file returned different pictures, leaking fragments of server memory left by other activity; the bug paid 10,000 dollars.
 resource: "https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html"
-tags: [article, webseclist-reference, en, blogger]
+tags: [article, webseclist-reference, en, blogger, info-leak, file-upload, bug-bounty, dos, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:59+00:00"

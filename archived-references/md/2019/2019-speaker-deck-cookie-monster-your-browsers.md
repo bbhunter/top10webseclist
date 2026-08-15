@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: The Cookie Monster in Your Browsers
+description: "A tour of how browsers and servers disagree about cookies: a subdomain can force a cookie onto its parent (cookie tossing), oversized cookies make a server reject requests (cookie bomb), and servers that still split on commas accept injected cookies. The result is CSRF token fixation, an HttpOnly bypass, and stealing OAuth authorization codes via a bombed redirect."
 resource: "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, cookie, csrf, session-fixation, parser-differential, oauth, xss, header-injection, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:42+00:00"

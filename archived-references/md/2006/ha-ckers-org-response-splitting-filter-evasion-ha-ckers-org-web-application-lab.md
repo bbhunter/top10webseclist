@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Response Splitting Filter Evasion ha.ckers.org web application security lab
+description: "A redirector stripped any injection containing a forward slash, blocking both closing HTML tags and the usual Content-Type: text/html header needed to escalate response splitting into HTML injection. Shortening the header to Content-Type: html removes the slash and still gets the browser to parse the split response as markup."
 resource: "http://ha.ckers.org/blog/20060827/response-splitting-filter-evasion/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, response-splitting, filter-bypass, header-injection, xss, open-redirect, encoding, waf-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:32+00:00"

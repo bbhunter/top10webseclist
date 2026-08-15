@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "XSS-Leak: Leaking Cross-Origin Redirects"
+description: "Chrome schedules equal-priority pending requests by port, then scheme, then host, so with the socket pool exhausted an attacker can race their own request against a victim page's cross-origin request and learn whether their hostname sorts before or after the target's. Binary searching that oracle leaks the subdomain of a cross-origin fetch or where a redirect lands."
 resource: "https://blog.babelo.xyz/posts/cross-site-subdomain-leak/"
-tags: [article, webseclist-reference, salvatore-abello-s-blog]
+tags: [article, webseclist-reference, salvatore-abello-s-blog, xsleak, timing-attack, side-channel, info-leak, csp, http, sop-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:07+00:00"

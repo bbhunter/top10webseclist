@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Using POST method to bypass IE-browser protected XSS
+description: "A short note testing browser XSS filters against POST-delivered payloads. Chrome and Safari block both GET and POST reflected XSS, but Internet Explorer's XSS Filter only inspects GET, so the same payload posted in a form body is reflected unfiltered. Two screenshots contrast the filtered and unfiltered cases."
 resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html"
-tags: [article, webseclist-reference, seckb-yehg-net]
+tags: [article, webseclist-reference, seckb-yehg-net, xss, filter-bypass, http, sanitizer-bypass, detection, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:56+00:00"

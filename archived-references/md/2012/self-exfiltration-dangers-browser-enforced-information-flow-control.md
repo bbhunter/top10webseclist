@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control"
+description: "A W2SP paper arguing that restricting outgoing data by destination is inherently unsound. An attacker who cannot send stolen data to their own domain can instead stash it in a whitelisted site's own database, then fetch it independently later. The authors name eight browser mechanisms defeated this way and found at least one such channel on every one of the Alexa top 100 sites."
 resource: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, info-leak, xss, csp, same-origin-policy, measurement-study, large-scale-scan, defence, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:32+00:00"

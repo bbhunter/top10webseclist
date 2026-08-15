@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Bypassing CSP via URL Parser Confusions : XSS on Netlify’s Image CDN"
+description: "A stored cross-site scripting finding on Netlify's image CDN endpoint. An upload allowlist that trusted the declared Content-Type let arbitrary HTML be hosted on a whitelisted CDN origin, and the image proxy served it back verbatim; the strict script-src 'none' policy applied to that path was shed by requesting an encoded or doubled-slash variant that the edge did not match but the backend normalised. The resulting script stole an OAuth authorization response."
 resource: "https://sudistark.github.io/2024/08/31/bypassing-csp-via-url-parser-confusions-xss-on-netlify-s-image-cdn.html"
-tags: [article, webseclist-reference, en, sudi-s-blog]
+tags: [article, webseclist-reference, en, sudi-s-blog, csp, xss, url-parsing, parser-differential, file-upload, cdn, reverse-proxy, oauth, content-type, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:44:37+00:00"

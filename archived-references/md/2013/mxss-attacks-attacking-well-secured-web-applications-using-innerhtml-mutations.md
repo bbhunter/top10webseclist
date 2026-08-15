@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations"
+description: Reading innerHTML makes browsers rewrite markup, so a string that passes every server- and client-side XSS filter can be mutated into a live vector. Seven mutations are named - backticks as attribute delimiters, XML namespaces on unknown elements, CSS escapes, entity handling in XML modes - and broke Yahoo! Mail, Roundcube, HTML Purifier and Caja. An 820-byte XMLSerializer shim blocks them.
 resource: "https://cure53.de/fp170.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, mutation-xss, xss, filter-bypass, sanitizer-bypass, novel-technique, dom, encoding, css, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:47+00:00"

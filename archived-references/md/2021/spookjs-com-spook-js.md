@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Spook.js
+description: A Spectre-style transient execution attack that defeats Chrome Strict Site Isolation. Because Chrome groups pages by eTLD+1, an attacker-controlled subdomain can share a process with a sensitive page, and a type confusion then escapes the 32-bit sandbox to read the whole address space, recovering open tabs, autofilled passwords and credential-manager extension data.
 resource: "https://www.spookjs.com/"
-tags: [article, webseclist-reference, en, spookjs-com]
+tags: [article, webseclist-reference, en, spookjs-com, side-channel, sandbox-escape, timing-attack, info-leak, javascript, browser-extension, same-origin-policy, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:54+00:00"

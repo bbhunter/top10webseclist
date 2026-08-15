@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Tricks for Reliable Split-Second DNS Rebinding in Chrome and Safari
+description: "Delaying the A response makes Safari load an attacker's public IPv6 host first and then switch to the private IPv4 target; Chrome's preference for public IPv6 over private IPv4 plus a connection reset does the same, so rebinding completes in seconds. An iframe under the rebound origin bypasses Chrome's Private Network Access checks, exposing internal services and cloud metadata."
 resource: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari"
-tags: [article, webseclist-reference, en, intruder-io]
+tags: [article, webseclist-reference, en, intruder-io, dns-rebinding, sop-bypass, dns, same-origin-policy, iframe, ssrf, info-leak, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:25:52+00:00"

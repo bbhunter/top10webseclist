@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Effects of DNS Rebinding On IE’s Trust Zones
+description: "An email from natron chaining DNS rebinding into NTLM theft. Windows XP's NBNS transaction IDs start at 0x8000 and step by one to four, so a Java applet can spam predictable spoofed responses; Active Directory DNS also accepts unauthenticated update records. Either route places an attacker host in IE's Intranet or Trusted zone, where NTLM-over-HTTP authenticates automatically."
 resource: "http://ha.ckers.org/blog/20071112/effects-of-dns-rebinding-on-ies-trust-zones/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, dns-rebinding, dns, sso, auth-bypass, java, privilege-escalation, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:59:48+00:00"

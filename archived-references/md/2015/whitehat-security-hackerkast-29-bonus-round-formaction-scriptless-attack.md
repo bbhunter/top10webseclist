@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "#HackerKast 29 Bonus Round: Formaction Scriptless Attack"
+description: "Even with a strict Content Security Policy blocking script, an HTML injection can add an input element that joins an existing form by id and overrides its target with formaction, aiming the submission at the attacker. Framing the page and steering the victim into clicking the button hands over the form's CSRF nonce, letting the attacker forge the request without any JavaScript."
 resource: "https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/"
-tags: [article, webseclist-reference, en, whitehat-security]
+tags: [article, webseclist-reference, en, whitehat-security, clickjacking, csrf, csp, ui-redress, xss, info-leak, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:35+00:00"

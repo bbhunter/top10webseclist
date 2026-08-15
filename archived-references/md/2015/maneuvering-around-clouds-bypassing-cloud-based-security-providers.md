@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Maneuvering Around Clouds: Bypassing Cloud-based Security Providers"
+description: "Cloud-based DDoS protection that reroutes traffic purely by changing DNS records is circumvented once a site's real origin IP leaks. The paper gathers eight origin-exposing vectors, including historical DNS data, subdomains and TLS certificates, into an automated tool called Cloudpiercer, and shows that most of 17,877 protected domains expose their origin."
 resource: "https://dl.acm.org/doi/10.1145/2810103.2813633"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, dos, dns, cdn, info-leak, large-scale-scan, tooling, measurement-study, tls]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T23:08:19+00:00"

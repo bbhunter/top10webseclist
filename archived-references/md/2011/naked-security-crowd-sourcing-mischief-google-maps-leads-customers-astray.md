@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Crowd-sourcing mischief on Google Maps leads customers astray
+description: "Google Places let any passer-by flag a business as permanently closed with no verification, so spammers or rivals could shutter a shop's listing. The post walks through the New York Times report, a Help forum thread showing Google's shrugged-off first reply, and Google's promise of a fix, then sketches how organised abuse could target a chain."
 resource: "https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/"
-tags: [article, webseclist-reference, en, naked-security]
+tags: [article, webseclist-reference, en, naked-security, case-study, dos]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:09+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out"
+description: Servers, frameworks and reverse proxies normalise URL paths differently, so a segment such as /..;/ or an encoded traversal is read one way by the front proxy and another by the Java backend. The mismatch bypasses proxy ACLs and context mapping to reach management consoles and chain into remote code execution, and produced 0days in Spring, Rails, Spark and Jenkins.
 resource: "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, path-traversal, parser-differential, reverse-proxy, url-parsing, auth-bypass, rce, java, spring, rails, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:33:57+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Hacking the Cloud With SAML
+description: A SAML service provider must run attacker-supplied XMLDsig transforms before it knows the signature can be trusted, putting XML canonicalisation, XSLT and their parsers on the pre-authentication attack surface. The talk turns that into .NET external entity injection, a libxml2 heap overflow and a constant-pool truncation bug in the JVM XSLT compiler that yields arbitrary bytecode.
 resource: "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf"
-tags: [whitepaper, webseclist-reference, hexacon-2022]
+tags: [whitepaper, webseclist-reference, hexacon-2022, saml, xxe, rce, sso, java, dotnet, cve, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:02:08+00:00"

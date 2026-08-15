@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: At Home Among Strangers
+description: "Reverse proxies append the real client IP to X-Forwarded-For, so a spoofed value is normally harmless. Placing a bare carriage return in the header makes some back ends stop parsing at the CR and trust the attacker's value instead, defeating IP allowlists that guard admin interfaces."
 resource: "https://speakerdeck.com/bo0om/at-home-among-strangers?slide=9"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, parser-differential, header-injection, auth-bypass, reverse-proxy, proxy, filter-bypass, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:40+00:00"

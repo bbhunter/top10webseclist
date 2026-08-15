@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Quick Proxy Detection ha.ckers.org web application security lab
+description: "Firefox accepts bracketed IPv6 notation around an IPv4 literal, so http://[123.123.123.123]/img.jpg loads fine in the browser. Apache's proxy does not understand that syntax and will not fetch it, so an embedded image tag with a unique id reveals whether the visitor is behind a proxy. False positives come from cross-domain blockers and same-domain robots."
 resource: "http://ha.ckers.org/blog/20100820/quick-proxy-detection/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, proxy, detection, url-parsing, info-leak, parser-differential, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:11:24+00:00"

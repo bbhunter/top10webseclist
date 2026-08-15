@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Fontleak: exfiltrating text using CSS and Ligatures"
+description: An attacker who can inject CSS loads a custom font whose ligature rules collapse a known prefix plus the next character into a single glyph of a distinct width, so a container query on a sibling element measures that width and fires a different image request per character. Chained imports and animations advance the index, exfiltrating page text at roughly a thousand characters a minute.
 resource: "https://adragos.ro/fontleak/"
-tags: [article, webseclist-reference, en, adragos-ro]
+tags: [article, webseclist-reference, en, adragos-ro, css-injection, info-leak, side-channel, css, sanitizer-bypass, csp, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:17+00:00"
@@ -159,7 +160,8 @@ And the accompanying SVG font:
 " horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
-      <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
+      <glyph glyph-name="u0" unicode="
+" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>

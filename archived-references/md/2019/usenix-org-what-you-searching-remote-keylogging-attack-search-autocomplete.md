@@ -1,8 +1,9 @@
 ---
 type: Article
 title: What Are You Searching For? A Remote Keylogging Attack on Search Engine Autocomplete
+description: Search autocomplete fires a request per keystroke, so an eavesdropper on encrypted traffic can combine packet inter-arrival timing, the percent-encoded Space character in the query URL, and HTTP/2 HPACK static Huffman code lengths to reconstruct what was typed. Up to 15 percent of queries were identified from a 12,000-word dictionary.
 resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/monaco"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, timing-attack, info-leak, http2, encoding, url-parsing, tls, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:39+00:00"

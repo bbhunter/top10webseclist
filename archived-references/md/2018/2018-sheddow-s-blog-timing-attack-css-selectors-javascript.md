@@ -1,12 +1,13 @@
 ---
 type: Article
 title: A timing attack with CSS selectors and Javascript
+description: A page that passes location.hash to jQuery lets an attacker choose the CSS selector it evaluates. Deliberately expensive pseudo-class chains plus right-to-left short-circuiting make matching slow only when a guessed attribute prefix is correct, and because both pages share one thread the attacker frame times the delay and binary-searches a CSRF token out character by character.
 resource: "https://blog.sheddow.xyz/css-timing-attack/"
-tags: [article, webseclist-reference, en, sheddow-s-blog]
+tags: [article, webseclist-reference, en, sheddow-s-blog, timing-attack, xsleak, side-channel, css, info-leak, javascript, iframe, csrf, algorithmic-complexity]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:06+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

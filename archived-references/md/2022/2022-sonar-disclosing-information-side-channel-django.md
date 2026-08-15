@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Disclosing information with a side-channel in Django
+description: "Django's dictsort template filter resolved a user-supplied sort key through the full variable-lookup machinery, so an attacker could sort a list of users by an individual character of a field never shown, such as a password hash. Comparing orderings across requests turns the sort into an oracle extracting every user's hash in requests linear in hash length."
 resource: "https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/"
-tags: [article, webseclist-reference, en, sonar]
+tags: [article, webseclist-reference, en, sonar, side-channel, info-leak, django, python, cve, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:30+00:00"

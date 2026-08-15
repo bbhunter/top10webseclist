@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Total surveillance made easy with VoIP phones
+description: ".mario takes apart the Snom 32x VoIP phone's web interface: CSRF places calls, a persistent XSS in the address book (the number field is unencoded) runs a worm through XHR, call logs are stealable, and the killer step is silently dialling the attacker so the room is bugged with no ring tone, at the victim's expense. No CSRF tokens anywhere, default password 0000."
 resource: "https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/"
-tags: [article, webseclist-reference, en-US, gnucitizen-org]
+tags: [article, webseclist-reference, en-US, gnucitizen-org, csrf, xss, info-leak, case-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:42:58+00:00"

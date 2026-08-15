@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: The world of Site Isolation and compromised renderer
+description: "Shows what an attacker who has already compromised a Chrome renderer process can still reach despite Site Isolation: spoofed-origin postMessage steals PDF text, registerProtocolHandler and Reader mode enforce their checks only in the renderer, and extension message listeners answer content scripts. Chained, these read cross-site data, open arbitrary file URLs and bypass CSP."
 resource: "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, sandbox-escape, sop-bypass, browser-extension, postmessage, info-leak, csp, same-origin-policy, pdf, attack-chain, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:52+00:00"

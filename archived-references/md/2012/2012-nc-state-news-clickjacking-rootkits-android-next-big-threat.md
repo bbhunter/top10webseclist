@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Clickjacking Rootkits for Android: The Next Big Threat?"
+description: "An NC State press release on work by Xuxian Jiang's team. They built a proof-of-concept rootkit attacking the Android application framework rather than the operating system kernel, so an infected app can hide and replace any installed app. The demonstration swaps the browser for a look-alike that harvests banking and card details, and no mobile security product detected it."
 resource: "https://news.ncsu.edu/2012/07/wms-jiang-clickjack/"
-tags: [article, webseclist-reference, en-US, nc-state-news]
+tags: [article, webseclist-reference, en-US, nc-state-news, android, clickjacking, ui-redress, case-study, privilege-escalation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:43:14+00:00"

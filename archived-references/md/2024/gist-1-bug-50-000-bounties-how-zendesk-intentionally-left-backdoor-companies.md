@@ -1,8 +1,9 @@
 ---
 type: Article
 title: 1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies
+description: "Zendesk threads replies to support+id{id}@company.com and adds any CC'd address to that ticket without authenticating the sender, so a spoofed mail from the requester's address CCing the attacker yields the whole ticket history; ticket IDs are incremental, so the range is guessable. Chained on: register an Apple ID as support@company.com, spoof appleid@id.apple.com across that range to read the verification code Zendesk filed as a ticket, then Sign in with Apple to the firm's Slack."
 resource: "https://gist.github.com/hackermondev/68ec8ed145fcee49d2f5e2b9d2cf2e52"
-tags: [article, webseclist-reference, en, gist]
+tags: [article, webseclist-reference, en, gist, email, sso, oauth, attack-chain, auth-bypass, abuse-of-functionality, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:16+00:00"

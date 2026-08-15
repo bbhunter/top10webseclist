@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: "SSRF attacks and sockets: smorgasbord of vulnerabilities"
+description: "A ZeroNights deck treating SSRF as a general socket-forging class rather than a URL bug. It walks gopher, dict and tftp schemes through cURL, OpenOffice DDE and xlink:href, reuse of already-open file descriptors via /proc and fd://, memcached key rewriting for sniffer injection and privilege escalation, and PHP FastCGI header overwrite for RCE."
 resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
-tags: [slides, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net, ssrf, php, rce, url-parsing, request-smuggling, novel-technique, filter-bypass, privilege-escalation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:52+00:00"

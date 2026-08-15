@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Me and Facebook (A C4utionary Tale)
+description: A Facebook privacy setting left phone numbers searchable by default, and the mobile endpoint m.facebook.com/search applied no rate limit. The author generated number ranges in a spreadsheet and ran a macro that harvested name-to-number pairs for four days without being blocked, then published the mail thread in which Facebook dismissed the report.
 resource: "https://web.archive.org/web/20170903113359/http://suriya.me/me-and-facebook-a-cautionary-tale/"
-tags: [article, webseclist-reference, en-US, suriya-s-blog]
+tags: [article, webseclist-reference, en-US, suriya-s-blog, info-leak, large-scale-scan, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:28+00:00"

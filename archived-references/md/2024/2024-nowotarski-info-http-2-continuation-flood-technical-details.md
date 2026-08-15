@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "HTTP/2 `CONTINUATION` Flood: Technical Details"
+description: "HTTP/2 splits oversized header blocks across CONTINUATION frames terminated by the END_HEADERS flag. Withholding that flag leaves many implementations parsing and storing headers indefinitely: the article documents CPU exhaustion, out-of-memory crashes from one or many connections, and crashes after a handful of frames in servers including Apache httpd, Envoy and Go's HTTP/2 stack. The requests never complete, so they leave no trace in access logs."
 resource: "https://nowotarski.info/http2-continuation-flood-technical-details/"
-tags: [article, webseclist-reference, nowotarski-info]
+tags: [article, webseclist-reference, nowotarski-info, http2, dos, http, novel-technique, cve, go]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:43+00:00"

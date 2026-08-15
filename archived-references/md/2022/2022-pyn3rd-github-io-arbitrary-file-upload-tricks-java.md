@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Arbitrary File Upload Tricks In Java
+description: "Filename normalisation differs across Java upload paths: getSubmittedFileName drops backslashes, Spring StringUtils.cleanPath collapses slash-dot sequences, and commons-io FilenameUtils.getName treats a trailing slash or space specially. A filename that passes an extension or WAF check is therefore written to disk as an executable JSP."
 resource: "https://pyn3rd.github.io/2022/05/07/Arbitrary-File-Upload-Tricks-In-Java/"
-tags: [article, webseclist-reference, en, pyn3rd-github-io]
+tags: [article, webseclist-reference, en, pyn3rd-github-io, file-upload, filter-bypass, parser-differential, waf-bypass, path-traversal, java, spring, rce]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:38:53+00:00"

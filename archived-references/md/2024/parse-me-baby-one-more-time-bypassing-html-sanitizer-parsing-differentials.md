@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials"
+description: Generates 12 million mutation-prone HTML fragments, sanitizes each with 11 server-side sanitizers, then renders the output in three browsers in both document and fragment mode, comparing parse trees by a bag-of-XPaths score. Text-content tags such as iframe and noscript, SVG/MathML namespace switches, CDATA and the --!> comment close are mishandled everywhere; with unencoded text nodes they bypass 9 of 11, and 19,843 payloads only turned dangerous after sanitizing.
 resource: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, sanitizer-bypass, parser-differential, mutation-xss, xss, fuzzing, measurement-study, encoding]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:05+00:00"

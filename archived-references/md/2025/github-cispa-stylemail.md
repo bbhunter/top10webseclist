@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: Artifact
+description: "CSS alone can read text out of a rendered page: custom font ligatures make each unknown character change the element's width, container queries turn that width into a distinct network request, and lazy-loaded fonts driven by animations repeat this character by character. The artifact recovers decrypted email text in Thunderbird, with no JavaScript."
 resource: "https://github.com/cispa/stylemail"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, css-injection, side-channel, info-leak, xsleak, sanitizer-bypass, css, email, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T09:17:58+00:00"

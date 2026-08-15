@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Unauthorized Google Maps API Key Usage Cases, and Why You Need to Care
+description: "Explains what an unrestricted Google Maps API key left in client-side code allows: anyone can bill the owner's quota through the Maps endpoints, or exhaust a capped budget to deny the service, and careless referrer wildcards can be side-stepped with lookalike domains. Includes a scanner that tests every Maps endpoint for a supplied key."
 resource: "https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, info-leak, dos, filter-bypass, rest-api, tooling, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:47+00:00"

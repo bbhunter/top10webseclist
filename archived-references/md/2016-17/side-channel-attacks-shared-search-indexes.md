@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Side-Channel Attacks on Shared Search Indexes
+description: "Multi-tenant search indexes leak document frequency through relevance scores, so one tenant learns about other tenants' private documents. The attack maps shards, lands attacker documents beside a victim's, then brute-forces terms or counts private documents containing a word, demonstrated on GitHub, Orchestrate.io and Xen.do."
 resource: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, info-leak, elasticsearch, mysql, database, github, measurement-study, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:10+00:00"

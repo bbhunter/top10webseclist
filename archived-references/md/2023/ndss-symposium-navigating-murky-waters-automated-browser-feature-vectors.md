@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors"
+description: "CanITrack automatically exercises browser storage, cache, access-control and policy mechanisms by writing and reading state across different browsing contexts to see what persists. Testing 21 mechanisms uncovered tracking vectors including 13 usable for third-party tracking, two that survive private browsing and two in Google's Privacy Sandbox."
 resource: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, info-leak, cache, dynamic-analysis, measurement-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:33+00:00"

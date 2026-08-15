@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Netcraft: PayPal Security Flaw allows Identity Theft"
+description: Netcraft reports fraudsters actively exploiting XSS on paypal.com itself. The victim reaches a genuine PayPal URL under a valid 256-bit SSL certificate, but injected content claims the account is disabled and redirects to a fake login on a hex-encoded IP in Korea, which then harvests password, SSN, card number and ATM PIN.
 resource: "http://news.netcraft.com/archives/2006/06/16/paypal_security_flaw_allows_identity_theft.html"
-tags: [article, webseclist-reference, en, news-netcraft-com]
+tags: [article, webseclist-reference, en, news-netcraft-com, case-study, xss, phishing, https, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:30+00:00"

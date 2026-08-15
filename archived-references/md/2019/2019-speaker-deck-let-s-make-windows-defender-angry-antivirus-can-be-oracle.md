@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: "Let's Make Windows Defender Angry: Antivirus can be an oracle!"
+description: "AVOracle turns antivirus into a side channel: when a file holds both attacker-controlled data and a secret, a JScript or HTML payload split around the secret makes Windows Defender flag the file only for the right guess, leaking the secret byte by byte. Because Defender also blanks the matched bytes, the same trick deletes log entries and corrupts structured files."
 resource: "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, side-channel, info-leak, xsleak, dos, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:47+00:00"

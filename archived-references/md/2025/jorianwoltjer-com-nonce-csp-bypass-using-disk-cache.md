@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Nonce CSP bypass using Disk Cache
+description: "Turns an HTML injection into XSS under a nonce-based policy. CSS injection leaks the nonce from the meta policy tag, then forcing a fall back to disk cache replays the page with its old nonce while login CSRF and cache partitioning refresh only the separately fetched injected payload, so the attacker's script carries a nonce the page still trusts."
 resource: "https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache"
-tags: [article, webseclist-reference, en, jorianwoltjer-com]
+tags: [article, webseclist-reference, en, jorianwoltjer-com, csp, css-injection, xss, cache, csrf, info-leak, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:02+00:00"

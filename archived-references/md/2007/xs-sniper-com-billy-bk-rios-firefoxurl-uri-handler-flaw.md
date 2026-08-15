@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Billy (BK) Rios » Firefoxurl URI Handler Flaw
+description: "Installing Firefox registers the firefoxurl: handler in the Windows registry, and IE passes unsanitised parameters to it, letting a web page run arbitrary commands. Rios argues the fault belongs to both products and shows the same pattern in Netscape Navigator and Trillian, crediting Larholm's original Safari exploit."
 resource: "http://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw/"
-tags: [article, webseclist-reference, xs-sniper-com]
+tags: [article, webseclist-reference, xs-sniper-com, rce, url-parsing, command-injection, filter-bypass, attack-chain, prior-art-extension, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:46+00:00"

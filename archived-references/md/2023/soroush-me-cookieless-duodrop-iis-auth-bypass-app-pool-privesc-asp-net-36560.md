@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)"
+description: Repeating the ASP.NET cookieless session token inside a URL path, or appending it after the file extension as PathInfo, makes the framework strip path segments after IIS has already applied its rules. That reaches directories IIS protects with authentication or blocks outright, and runs a page under its parent application pool, which is a privilege escalation.
 resource: "https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, auth-bypass, privilege-escalation, path-traversal, url-parsing, aspnet, dotnet, waf-bypass, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:20+00:00"

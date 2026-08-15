@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "SAML roulette: the hacker always wins"
+description: Ruby-SAML validates with one XML parser and reads attributes with another, so a round-trip mutation in a system identifier, and namespace confusion built from duplicate declarations the first parser wrongly permits, make the two see different signature and digest nodes. Paired with a signature lifted from public federation metadata this yields unauthenticated admin access to GitLab Enterprise.
 resource: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, saml, auth-bypass, parser-differential, privilege-escalation, sso, ruby, xxe, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:11+00:00"

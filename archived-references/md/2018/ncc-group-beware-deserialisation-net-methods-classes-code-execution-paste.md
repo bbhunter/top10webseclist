@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Beware of Deserialisation in .NET Methods and Classes + Code Execution via Paste!
+description: "A survey of .NET Framework methods and classes that deserialise input, whose stand-out case is the clipboard: DataObject runs BinaryFormatter over several clipboard formats on paste. A crafted clipboard object therefore executes code in any WPF application with a text box, including PowerShell ISE and Visual Studio, which Microsoft treats as intended behaviour."
 resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/december/beware-of-deserialisation-in-.net-methods-and-classes-code-execution-via-paste/"
-tags: [article, webseclist-reference, en-GB, ncc-group]
+tags: [article, webseclist-reference, en-GB, ncc-group, deserialization, rce, gadget-chain, dotnet, sandbox-escape, privilege-escalation, survey, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:09+00:00"

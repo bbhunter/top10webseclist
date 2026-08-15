@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How I Hacked Facebook Again! Unauthenticated RCE on MobileIron MDM
+description: "Chains flaws in MobileIron MDM into unauthenticated remote code execution: an Apache rewrite ACL is stepped around with a path-normalisation trick to reach a Hessian deserialization endpoint, and a new Groovy MethodClosure gadget replaces the blocked JNDI route on hosts with no outbound access. Used to get a shell on an unpatched Facebook server."
 resource: "https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html"
-tags: [article, webseclist-reference, en, orange-tsai]
+tags: [article, webseclist-reference, en, orange-tsai, deserialization, gadget-chain, rce, parser-differential, auth-bypass, java, reverse-proxy, cve, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:19+00:00"

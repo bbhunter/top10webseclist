@@ -1,12 +1,13 @@
 ---
 type: Article
 title: Practical Client Side Path Traversal Attacks
+description: "Client side path traversal: JavaScript builds a resource URL by concatenating a user-controlled query parameter into the path, so encoded traversal sequences point the request at a different endpoint. Chained with an open redirect, whose Location a stylesheet load follows, it loads attacker CSS and exfiltrates data from the DOM."
 resource: "https://mr-medi.github.io/research/2022/11/04/practical-client-side-path-traversal-attacks.html"
-tags: [article, webseclist-reference, en, mr-medi-github-io]
+tags: [article, webseclist-reference, en, mr-medi-github-io, path-traversal, css-injection, open-redirect, info-leak, dom, javascript, css, attack-chain, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:07+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

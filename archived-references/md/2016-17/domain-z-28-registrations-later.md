@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Domain-Z: 28 Registrations Later"
+description: Re-registering an expired domain inherits its residual trust. Six years of zone diffs, passive DNS, malware feeds and blacklists show 27,758 domains blacklisted only after expiring and 238,279 expired domains later resolved by malware. Cases include an expired secondary nameserver diverting ben.edu traffic to an SEO wildcard, RIR contact emails allowing CIDR takeover by password reset, and expired domains used by browser plugins. Alembic ranks likely ownership changes from passive DNS alone.
 resource: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, dns, measurement-study, abuse-of-functionality, detection, supply-chain, email, browser-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:20+00:00"

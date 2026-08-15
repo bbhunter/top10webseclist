@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "$8,000 Bug Bounty Highlight: XSS to RCE in the Opera Browser"
+description: "Opera's My Flow page assigned dropped drag-and-drop HTML data to innerHTML, giving script execution on a page privileged to message a hidden Opera Touch Background extension. Its SEND_FILE and OPEN_FILE calls write an arbitrary file to the user's Downloads folder and then open it, turning a single drag gesture into remote code execution."
 resource: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/"
-tags: [article, webseclist-reference, en, opera-security]
+tags: [article, webseclist-reference, en, opera-security, xss, rce, browser-extension, privilege-escalation, attack-chain, postmessage, dom, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:54+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: “ASPXErrorPath in URL” Technique in Scanning a .Net Web Application
+description: When a .NET site redirects every failure to one custom error page, 404 and 500 become indistinguishable to a crawler. Adding ?aspxerrorpath=/ to the request makes ASP.NET surface the real status code, so a scanner can tell a missing file from a broken one. The defence offered is rewriting any request carrying aspxerrorpath outside the error page.
 resource: "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, aspnet, dotnet, info-leak, detection, tooling, mitigation, http, url-parsing]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:18+00:00"

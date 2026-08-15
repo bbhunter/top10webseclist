@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross domain arbitrary file upload Redux
+description: An earlier cross-domain file upload trick sent no credentials, so target applications discarded the request. Setting xhr.withCredentials on the XMLHttpRequest makes the browser attach cookies and HTTP auth, and because a multipart/form-data POST stays a CORS simple request there is no preflight, so the victim app processes an authenticated upload.
 resource: "http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html"
-tags: [article, webseclist-reference, blog-kotowicz-net]
+tags: [article, webseclist-reference, blog-kotowicz-net, cors, csrf, file-upload, cookie, same-origin-policy, javascript, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:31+00:00"

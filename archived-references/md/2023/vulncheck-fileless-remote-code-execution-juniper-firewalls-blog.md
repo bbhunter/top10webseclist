@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Fileless Remote Code Execution on Juniper Firewalls | Blog
+description: "A single environment-variable manipulation flaw in Juniper SRX and EX J-Web devices is turned into unauthenticated remote code execution that writes nothing to disk: PHP is made to read its configuration from the CGI process's own standard input, so the HTTP request body supplies both the config and, via an inline data URL, the attacker's code. It also leaks arbitrary files."
 resource: "https://vulncheck.com/blog/juniper-cve-2023-36845"
-tags: [article, webseclist-reference, en, vulncheck]
+tags: [article, webseclist-reference, en, vulncheck, rce, php, info-leak, cve, attack-chain, novel-technique, http, tooling, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:00+00:00"

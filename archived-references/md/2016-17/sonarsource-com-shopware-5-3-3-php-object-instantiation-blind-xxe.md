@@ -1,6 +1,7 @@
 ---
 type: Article
 title: Sonar blog
+description: "The front page of Sonar's research blog, formerly RIPS Technologies: a featured post announcing Sonar's acquisition of Gitar, a newsletter sign-up form and privacy links. The cited analysis of Shopware 5.3.3, reaching a PHP object instantiation sink and using it to trigger a blind XXE, does not appear on it."
 resource: "https://blog.ripstech.com/2017/shopware-php-object-instantiation-to-blind-xxe/"
 tags: [article, webseclist-reference, en, blog-ripstech-com]
 generated:

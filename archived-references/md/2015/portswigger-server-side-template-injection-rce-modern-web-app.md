@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Server-Side Template Injection: RCE for the Modern Web App"
+description: User input concatenated into a server-side template is executed by the template engine, not just reflected, so it looks like XSS while actually running code on the server. The paper gives a detect-identify-exploit methodology and working sandbox escapes to remote code execution for FreeMarker, Velocity, Smarty, Twig and Jade, plus zerodays in Alfresco and XWiki.
 resource: "https://portswigger.net/kb/papers/serversidetemplateinjection.pdf"
-tags: [whitepaper, webseclist-reference, portswigger]
+tags: [whitepaper, webseclist-reference, portswigger, ssti, rce, sandbox-escape, java, php, nodejs, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:08:18+00:00"

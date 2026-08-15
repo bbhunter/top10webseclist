@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Tracking users that block cookies with a http redirect
+description: "A 301 redirect can carry a per-visitor identifier the way a cookie does: the tracking page redirects a new visitor to a unique URL, and the browser's permanent-redirect cache replays that id on every later visit. It needs no JavaScript, plugin or storage API, survives browser restarts, and worked on Firefox 5, IE 9 and Chrome but not newer Safari."
 resource: "https://elie.im/blog/security/tracking-users-that-block-cookies-with-a-http-redirect/"
-tags: [article, webseclist-reference, en, elie-net]
+tags: [article, webseclist-reference, en, elie-net, cache, http, info-leak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:22+00:00"

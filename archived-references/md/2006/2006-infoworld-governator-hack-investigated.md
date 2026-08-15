@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Governator hack investigated
+description: "A short news item: the California Highway Patrol opened a criminal investigation into intrusions on Governor Schwarzenegger's office computers, after a taped conversation stored there leaked to the Los Angeles Times. Quotes the SF Chronicle's suspicion of a hack and Bev Harris of Black Box Voting on how routinely government systems are penetrated."
 resource: "https://www.infoworld.com/article/2322705/governator-hack-investigated.html"
-tags: [article, webseclist-reference, en, infoworld]
+tags: [article, webseclist-reference, en, infoworld, case-study, info-leak, data-breach]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:06+00:00"

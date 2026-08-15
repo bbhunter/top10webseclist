@@ -1,8 +1,9 @@
 ---
 type: Article
 title: IEEE Symposium on Security and Privacy 2017
+description: Systematic study of network printer attacks with an open-source exploitation toolkit, finding all 20 tested printer models vulnerable to at least one attack, from denial of service to extracting print jobs and system files. Advanced cross-site printing with printer CORS spoofing reaches those printers from an ordinary web page.
 resource: "https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-exploiting-network-printers"
-tags: [article, webseclist-reference, en, ieee-security-org]
+tags: [article, webseclist-reference, en, ieee-security-org, info-leak, path-traversal, dos, cors, csrf, survey, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:28:43+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:108"
+  - "2016-17.md:109"
 commit: ""
 content_sha256: be217fbeba556751e8dbef3b9363edf7076996a15f76e44e529e58bae301a2d0
 depth: full

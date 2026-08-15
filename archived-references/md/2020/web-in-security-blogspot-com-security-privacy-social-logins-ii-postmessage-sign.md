@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Security and Privacy of Social Logins (II): PostMessage Security in Single Sign-On"
+description: Examines how real-world single sign-on uses postMessage to hand tokens from an OAuth popup back to the parent window, and what breaks when the destination or origin is unchecked. A New York Times listener whose origin check always returned true gave DOM XSS, and unvalidated proxy origins at CBS Interactive and SAP Gigya gave account takeover.
 resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part2.html"
-tags: [article, webseclist-reference, en, web-in-security-blogspot-com]
+tags: [article, webseclist-reference, en, web-in-security-blogspot-com, postmessage, sso, oauth, openid, xss, auth-bypass, same-origin-policy, measurement-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:07+00:00"

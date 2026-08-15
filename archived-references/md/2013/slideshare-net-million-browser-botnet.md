@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: Million Browser Botnet
+description: Grossman and Johansen show that buying ordinary display-ad impressions is enough to run JavaScript in a million browsers at once. The ad-delivered code performs CSRF, login detection, intranet probing, distributed hash cracking and application-level DDoS, bypassing the six-connections-per-host limit with image loops. They tested it live for cents per thousand impressions.
 resource: "http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
-tags: [slides, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net, csrf, javascript, dos, clickjacking, info-leak, iframe, novel-technique, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:18+00:00"

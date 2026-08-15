@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Absurdly Underestimated Dangers of CSV Injection
+description: A cell that an ordinary user plants in an application, beginning with an equals, plus, minus or at sign, is evaluated as a formula when an administrator opens the CSV export. Excel DDE payloads run commands on the administrator machine, and a Google Sheets IMPORTXML formula silently posts their rows, and other spreadsheets they can read, to the attacker server.
 resource: "http://georgemauer.net/2017/10/07/csv-injection.html"
-tags: [article, webseclist-reference, georgemauer-net]
+tags: [article, webseclist-reference, georgemauer-net, injection, rce, command-injection, info-leak, prior-art-extension, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:12:16+00:00"

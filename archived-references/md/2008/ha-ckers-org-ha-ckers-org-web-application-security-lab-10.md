@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: RSnake wraps up the Diminutive Worm Contest, won jointly by Giorgio Maone and Sirdarckcat with a 161-byte cross-site scripting worm; cross-browser and Apache-interoperability rules narrowed the field. Announces a follow-up paper claiming a way to slow worm propagation, plus planned work on propagation analytics and worm tracking. The winning code itself sits in the linked sla.ckers forum thread.
 resource: "http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, xss, javascript, defence, mitigation, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:41+00:00"

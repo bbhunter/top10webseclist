@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Weird Vulnerabilities Happening on Load Balancers, Shallow Copies and Caches
+description: "Four bug bounty cases where one user's data reached another: a load balancer returning a stranger's email when a cookie was absent, a whitelist of 17 addresses left in a script block, a shallow-copied object cached with other customers' data, and a CDN caching a JavaScript file holding the victim's Authorization header under an attacker-chosen parameter."
 resource: "https://medium.com/dataseries/weird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, info-leak, cache-deception, cdn, load-balancer, cache, cookie, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:28+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications"
+description: "FLAX names client-side validation bugs: untrusted data reaching JavaScript sinks such as eval, innerHTML, document.cookie and XHR URLs without adequate checking. It lowers JavaScript to an intermediate form, JASIL, tracks taint at character level, extracts a small executable acceptor slice per sink and fuzzes it with sink-aware attack vectors. It found 11 unknown bugs in 40 real applications."
 resource: "https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, novel-technique, dynamic-analysis, fuzzing, javascript, dom, xss, postmessage, tooling, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:39+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cache Key Normalization DoS
+description: A cache that normalises part of the key while forwarding the request untouched can be poisoned with one request. Capitalising the Host header, or altering a path segment the cache collapses, makes the origin return a 404 that is stored under the legitimate key and served to everyone, taking a site assets host offline; an unkeyed Accept-Version header does the same.
 resource: "https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/"
-tags: [article, webseclist-reference, en, iustin24-github-io]
+tags: [article, webseclist-reference, en, iustin24-github-io, cache-poisoning, dos, cache, url-parsing, http, nodejs, cve, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:33+00:00"

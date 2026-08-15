@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Ajax (in)security
+description: "Billy Hoffman's Black Hat USA 2006 deck. Ajax pushes control logic to the client, exposing the server-side function API as attack surface; XmlHttpRequest traffic is indistinguishable from browser traffic, so requests cannot be repudiated; Ajax turns XSS self-propagating, analysed through the Samy MySpace worm. Ajax bridges are unauthenticated open proxies for laundering attacks at third parties."
 resource: "https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, xss, javascript, ssrf, proxy, sop-bypass, rest-api, injection, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:31+00:00"

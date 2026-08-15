@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Black Ops 2008: It's The End Of The Cache As We Know It"
+description: "Kaminsky's Black Hat Japan keynote on the 2008 DNS cache-poisoning bug: birthday-race spoofing across sibling names, plus in-bailiwick NS/CNAME referrals that let a won race for 83.foo.com steal www.foo.com. Extends it to poisoning com itself, MX intercept, forgot-my-password takeover, CA domain validation, SSL VPNs and autoupdate."
 resource: "https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, dns, cache-poisoning, https, tls, openid, email, supply-chain, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:38:12+00:00"

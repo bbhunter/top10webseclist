@@ -1,8 +1,9 @@
 ---
 type: Article
 title: FireFart/WordpressPingbackPortScanner
+description: "A Ruby tool that turns WordPress blogs into port scanners. The Pingback API, exposed over XML-RPC, makes the blog server fetch an attacker-supplied URL, so responses reveal whether a host and port are open behind the firewall. It scans a target through one blog or spreads a single target's scan across many blogs; WordPress 3.5.1 fixed the issue."
 resource: "https://web.archive.org/web/20170903113359/https://github.com/FireFart/WordpressPingbackPortScanner"
-tags: [article, webseclist-reference, en, github]
+tags: [article, webseclist-reference, en, github, ssrf, wordpress, tooling, ruby, php, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:12:39+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Pivoting from blind SSRF to RCE with HashiCorp Consul
+description: A SOAP feature that fetched a user-supplied URL gave blind SSRF with no response returned. The Ruby HTTP client did not reject CRLF sequences in the URL, letting a second attacker-written request be appended to the hardcoded POST. That was used to send an HTTP PUT to a localhost HashiCorp Consul agent, whose check-register endpoint is unauthenticated by default and runs shell commands.
 resource: "http://www.kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html"
-tags: [article, webseclist-reference, kernelpicnic-net]
+tags: [article, webseclist-reference, kernelpicnic-net, ssrf, rce, header-injection, request-smuggling, url-parsing, ruby, attack-chain, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:22+00:00"

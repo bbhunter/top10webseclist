@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "UI Redressing Mayhem: HttpOnly bypass PayPwn style"
+description: CVE-2012-0053 makes Apache echo request headers into a 400 error page, so an overlong cookie forces HttpOnly session cookies into readable HTML. On PayPal a history.paypal.com endpoint set an attacker-controlled monster cookie for .paypal.com in a single request, and framing the affected b.stats.paypal.com lifted the session cookies cross-domain.
 resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html"
-tags: [article, webseclist-reference, blog-nibblesec-org]
+tags: [article, webseclist-reference, blog-nibblesec-org, ui-redress, cookie, info-leak, iframe, cve, sop-bypass, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:46+00:00"

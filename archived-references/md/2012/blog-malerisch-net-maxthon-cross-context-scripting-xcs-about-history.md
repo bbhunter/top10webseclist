@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "malerisch.net: Maxthon - Cross Context Scripting (XCS) - about:history"
+description: "Maxthon's about:history page renders visited-URL text unescaped, so a location.hash payload on any attacker page lands inside the privileged mx://res zone. From there the maxthon.io and maxthon.program DOM objects give file read and write and command execution; a Metasploit module overwrites j2plauncher.exe to get code running on Windows 7."
 resource: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
-tags: [article, webseclist-reference, blog-malerisch-net]
+tags: [article, webseclist-reference, blog-malerisch-net, xss, rce, sop-bypass, cve, novel-technique, sandbox-escape, javascript, privilege-escalation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:09+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

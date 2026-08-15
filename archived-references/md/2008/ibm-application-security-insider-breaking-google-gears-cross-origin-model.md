@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Breaking Google Gears' Cross-Origin Communication Model"
+description: "Google Gears' worker loader ignored the Content-Type of the files it loaded, so any user-uploadable file, even one served as innocent.jpg, could be loaded as a cross-origin Gears worker running in the hosting site's origin. Worker code contains no angle brackets, so upload filters rarely catch it; from there it reads authenticated pages via Gears HttpRequest and messages the results back."
 resource: "http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html"
-tags: [article, webseclist-reference, ibm-application-security-insider]
+tags: [article, webseclist-reference, ibm-application-security-insider, sop-bypass, same-origin-policy, content-type, mime, file-upload, browser-extension, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:08+00:00"

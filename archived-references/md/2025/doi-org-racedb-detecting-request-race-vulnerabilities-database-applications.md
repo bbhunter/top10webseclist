@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications"
+description: RaceDB finds request race conditions in PHP database-backed applications by tracking data dependencies through the application code as well as the SQL, building a race graph, then replaying candidate request pairs both serialized and concurrently to confirm a divergence. Across 14 applications it found 21 known and 18 new races, including coupon reuse and duplicated credits.
 resource: "https://doi.org/10.1109/SP61157.2025.00029"
-tags: [article, webseclist-reference, doi-org]
+tags: [article, webseclist-reference, doi-org, race-condition, toctou, database, php, mysql, dynamic-analysis, detection, tooling, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:31+00:00"

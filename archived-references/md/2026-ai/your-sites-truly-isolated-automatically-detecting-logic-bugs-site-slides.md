@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations (Slides)
+description: "Conference presentation on automatically detecting Site Isolation logic bugs. The deck explains the browser process's site bookkeeping for renderer processes and frames, surveys past bypass CVEs and their classes, and describes a leak-sanitiser oracle plus a scripted IPC fuzzer simulating a compromised renderer. It reports rediscovery of known Chrome bugs in minutes to hours and a new Firefox history-confusion URL spoof (CVE-2024-9392)."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/f0902-drescher-slides.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, sop-bypass, same-origin-policy, info-leak, fuzzing, cve, url-spoofing, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:41+00:00"
@@ -20,7 +21,7 @@ authors:
   - Martin Johns
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:40"
+  - "2026-ai.md:41"
 commit: ""
 content_sha256: 55cde3437cf86e5a3a08a7760ba494e5e75a2be51f685c622c90c779d1c4bd95
 depth: full

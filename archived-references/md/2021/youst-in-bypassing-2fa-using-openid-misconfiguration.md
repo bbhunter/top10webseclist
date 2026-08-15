@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bypassing 2FA using OpenID Misconfiguration
+description: An OpenID relying party asks for authentication methods through the acr_values parameter, and the identity provider honours any method the client has enabled. Changing the request from one-time password to SMS let an attacker satisfy two-factor authentication with a throwaway SMS number, skipping the authenticator app step entirely.
 resource: "https://youst.in/posts/bypassing-2fa-using-openid-misconfiguration/"
-tags: [article, webseclist-reference, en, youst-in]
+tags: [article, webseclist-reference, en, youst-in, auth-bypass, openid, oauth, sso, jwt, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:06+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Common Security Issues in Financially-Oriented Web Applications
+description: "An NCC Group guideline cataloguing business-logic flaws specific to e-commerce and financial web applications: TOCTOU and race conditions on balance checks, parameter and currency manipulation, rounding and numeric overflow abuse, voucher, points and refund abuse, hidden backend APIs and test data left in production. The attacker gains money rather than code execution."
 resource: "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, race-condition, toctou, mass-assignment, info-leak, rest-api, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:01:58+00:00"

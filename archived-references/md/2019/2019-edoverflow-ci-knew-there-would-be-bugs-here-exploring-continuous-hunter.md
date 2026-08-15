@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "\"CI Knew There Would Be Bugs Here\" — Exploring Continuous Integration Services as a Bug Bounty Hunter"
+description: Public continuous-integration build logs on Travis CI, Circle CI and GitLab CI expose secrets belonging to bug bounty targets and their organisation members. The authors automated pulling logs through the vendor APIs and grepping them at scale, recovering GitHub access tokens with write access to company repositories and deployment SSH keys.
 resource: "https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/"
-tags: [article, webseclist-reference, en, edoverflow]
+tags: [article, webseclist-reference, en, edoverflow, info-leak, ci-cd, github, gitlab, bug-bounty, tooling, large-scale-scan, rest-api]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:02+00:00"

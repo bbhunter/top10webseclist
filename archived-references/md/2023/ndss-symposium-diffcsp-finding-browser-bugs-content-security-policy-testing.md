@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing"
+description: A differential testing framework generates policies together with every known way of executing JavaScript in HTML, runs each combination across browsers, and uses a decision tree to explain the inconsistencies. It found 29 security and eight functional bugs, including CSP inheritance and hash-handling errors that let script run despite a policy that should stop it.
 resource: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, csp, xss, filter-bypass, parser-differential, javascript, dynamic-analysis, fuzzing, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:35+00:00"

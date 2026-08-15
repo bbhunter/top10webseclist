@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land
+description: When a Java application performs a JNDI lookup on an attacker-controlled name, the attacker serves a naming reference over RMI, CORBA or LDAP that makes the victim fetch and instantiate a remote factory class, giving code execution. A poisoned LDAP directory entry achieves the same against applications that merely search it.
 resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rce, deserialization, injection, java, gadget-chain, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:20+00:00"

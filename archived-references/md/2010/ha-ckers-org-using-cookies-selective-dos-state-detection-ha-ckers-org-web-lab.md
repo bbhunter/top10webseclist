@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Using Cookies For Selective DoS and State Detection ha.ckers.org web application security lab
+description: "If a site's session cookie changes length between logged-in and logged-out states, an attacker can set an oversized cookie scoped by path to a single image so that the total header just exceeds the server's limit in one state only. A JavaScript onerror handler on that image then reports whether the request failed, revealing login state. A follow-up to using cookies for selective denial of service."
 resource: "http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, cookie, info-leak, side-channel, xsleak, dos, detection, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:11:28+00:00"

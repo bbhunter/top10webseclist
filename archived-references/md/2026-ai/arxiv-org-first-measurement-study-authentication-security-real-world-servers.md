@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A First Measurement Study on Authentication Security in Real-World Remote MCP Servers
+description: A scan of 7,973 live remote MCP servers found 40.55% exposing their tools with no authentication at all. Among OAuth-protected ones, the combination of open client environments, dynamic client registration and delegated authorization creates flaws absent from ordinary OAuth deployments; passive traffic inspection plus active probing of 119 servers found 325 flaws across nine types, every server affected and registration flaws in 96.6%, yielding nine CVEs.
 resource: "https://arxiv.org/abs/2605.22333"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, measurement-study, large-scale-scan, oauth, auth-bypass, ai-agent, llm, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:06+00:00"
@@ -23,7 +24,7 @@ authors:
   - Min Yang
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:86"
+  - "2026-ai.md:89"
 commit: ""
 content_sha256: 9205211d6b1ba2cbbad8957249128b5760695f344276ae692878edc81dfa1b9e
 depth: full

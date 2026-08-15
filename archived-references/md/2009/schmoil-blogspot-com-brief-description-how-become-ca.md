@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A brief description of how to become a CA
+description: "A short note separating two questions about certificate authorities: anyone can create a CA, and OpenSSL walkthroughs show how. Becoming a trusted CA is a policy matter instead, so the post assembles the root-programme policies of Microsoft, Apple, Mozilla and Opera as the reference set."
 resource: "https://schmoil.blogspot.com/2009/01/brief-description-of-how-to-become-ca.html"
-tags: [article, webseclist-reference, schmoil-blogspot-com]
+tags: [article, webseclist-reference, schmoil-blogspot-com, tls, https, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:45+00:00"

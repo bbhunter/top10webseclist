@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Adobe Patches AIR, Pwn2Own Vulnerability in Flash
+description: Adobe shipped fixes for four critical Flash Player and AIR flaws, among them the use-after-free Vupen used at Pwn2Own. That bug was chained with a JIT spray and a sandbox escape to execute code through Flash inside Internet Explorer 11; the same update covers a buffer overflow, a security bypass and a cross-site scripting issue.
 resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, rce, sandbox-escape, flash, cve, vendor-advisory, xss]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:35+00:00"

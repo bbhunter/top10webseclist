@@ -1,12 +1,13 @@
 ---
 type: Article
 title: Write-up of DOMPurify 2.0.0 bypass using mutation XSS
+description: A Chrome and Safari parsing quirk re-serializes markup so content nested inside an svg element jumps out of it when innerHTML is assigned to itself. Markup that DOMPurify judges harmless on first parse therefore mutates into an img carrying an onerror handler and executes script; math and br variants work the same way.
 resource: "https://research.securitum.com/dompurify-bypass-using-mxss/"
-tags: [article, webseclist-reference, en, research-securitum-com]
+tags: [article, webseclist-reference, en, research-securitum-com, mutation-xss, sanitizer-bypass, xss, parser-differential, dom, javascript, filter-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:11+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original

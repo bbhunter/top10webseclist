@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Case of an Unconventional CSRF Attack in Firefox
+description: "Firefox 21 and earlier ignored the XHR rule that a HEAD request must have its body set to null, so send(data) after open(\"HEAD\") still transmitted the body cross-origin with cookies attached. Against an application that accepts verb tampering this yields a CSRF that POST-shaped defences never see. Fixed in Firefox 22 as CVE-2013-1692."
 resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
-tags: [article, webseclist-reference, en, whitehat-security]
+tags: [article, webseclist-reference, en, whitehat-security, csrf, http, javascript, cve, vendor-advisory, novel-technique, cookie]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:49+00:00"

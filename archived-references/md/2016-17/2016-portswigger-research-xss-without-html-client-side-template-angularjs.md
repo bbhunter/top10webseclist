@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "XSS without HTML: Client-Side Template Injection with AngularJS"
+description: "Pages that reflect user input into an AngularJS template can be attacked with double-curly expressions even when the input is HTML-encoded, because Angular evaluates them after encoding. Overwriting a native function such as charAt with Array join corrupts Angular's own parser, escaping the expression sandbox and running arbitrary JavaScript."
 resource: "https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, csti, sandbox-escape, xss, filter-bypass, angular, javascript, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:50+00:00"

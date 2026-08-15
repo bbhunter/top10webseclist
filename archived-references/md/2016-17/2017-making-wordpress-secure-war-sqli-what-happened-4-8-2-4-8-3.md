@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The War on SQLi, or What Happened in 4.8.2 and 4.8.3
+description: "WordPress's prepare function accepted an array of replacements and undocumented placeholders such as %c and numbered ones, so user input shaped like a placeholder, or a string prepared twice, could break out of the query and inject SQL. Version 4.8.2 restricted placeholders and broke plugins; 4.8.3 landed the balanced fix."
 resource: "https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/"
-tags: [article, webseclist-reference, en, making-wordpress-secure]
+tags: [article, webseclist-reference, en, making-wordpress-secure, sqli, injection, wordpress, php, database, mysql, mitigation, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:17+00:00"

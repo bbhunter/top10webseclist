@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Res Timing File Enumeration Without JavaScript in IE7.0
+description: "Combines David Byrne's res:// timing trick with Jeremiah Grossman's META-refresh blocking via link tags to enumerate local files in Internet Explorer 7 with no JavaScript at all. Present and absent files differ by five to fifteen seconds, visible to the naked eye; the catch is keeping it running while the browser appears locked up. Working demo linked (IE7 only)."
 resource: "http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, timing-attack, side-channel, xsleak, info-leak, browser-fingerprinting, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:45+00:00"

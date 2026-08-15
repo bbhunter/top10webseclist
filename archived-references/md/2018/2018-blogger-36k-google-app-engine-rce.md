@@ -1,8 +1,9 @@
 ---
 type: Article
 title: $36k Google App Engine RCE
+description: "From inside a Google App Engine app the author reached the runtime's internal RPC endpoint and an undocumented gRPC service, then recovered hidden API names from the Java launcher's arguments and leaked proto files. In non-production environments this allowed calling stubby.Send to reach arbitrary internal Google services and app_config_service to grant his own app privileged settings."
 resource: "https://www.ezequiel.tech/p/36k-google-app-engine-rce.html"
-tags: [article, webseclist-reference, en, blogger]
+tags: [article, webseclist-reference, en, blogger, privilege-escalation, rce, auth-bypass, info-leak, gcp, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:49+00:00"

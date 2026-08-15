@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Backdooring Images
+description: "pdp on making image files execute script: IE's content sniffing runs HTML appended after a GIF89 header, and .jpg or .gif files whose bodies are HTML execute on view, so an avatar or a linked image on a forum can take the viewer's session. On Firefox an .htaccess line AddType text/html .jpg reproduces it. He argues the fix belongs server-side."
 resource: "https://www.gnucitizen.org/blog/backdooring-images/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, file-upload, mime, content-type, xss, filter-bypass, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:43+00:00"

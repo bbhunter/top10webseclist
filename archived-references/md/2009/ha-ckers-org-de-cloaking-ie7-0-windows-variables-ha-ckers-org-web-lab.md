@@ -1,8 +1,9 @@
 ---
 type: Article
 title: De-cloaking in IE7.0 Via Windows Variables ha.ckers.org web application security lab
+description: "IE7 expands Windows environment variables written as %name% when a URL is pasted into the address bar, so a link containing %computername% or %appdata% returns the machine name and the user's home path to the logging server. An update notes it also works in IE8 when placed in a path; no way was found to fire it without user interaction."
 resource: "http://ha.ckers.org/blog/20090810/de-cloaking-in-ie70-via-windows-variables/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, detection, url-parsing, novel-technique, deanonymization]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:46+00:00"

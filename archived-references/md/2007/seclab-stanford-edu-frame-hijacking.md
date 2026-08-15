@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Frame Hijacking
+description: "Stanford Web Security project index for frame hijacking: descendant-frame navigation lets any page overwrite an unrelated site's login iframe, which carries no address bar or security indicator. The page frames the problem and links three outputs; it does not carry the research itself."
 resource: "https://seclab.stanford.edu/websec/frames/"
-tags: [article, webseclist-reference, seclab-stanford-edu]
+tags: [article, webseclist-reference, seclab-stanford-edu, iframe, same-origin-policy, sop-bypass, postmessage, phishing, mitigation, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:15+00:00"

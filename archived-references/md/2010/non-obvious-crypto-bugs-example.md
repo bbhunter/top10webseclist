@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Non-Obvious (Crypto) Bugs by Example
+description: "Two CMS bugs found by reading code. Typo3 truncated an MD5 MAC to 5 bytes and compared it with PHP's ==, so a hash of the form 0e... equals 0 and grants arbitrary file read in about 5,498 tries. Joomla seeded Mersenne Twister with CRC32 of microtime; CRC's additivity lets an attacker derive future seeds from his own reset tokens and take the admin account."
 resource: "https://web.archive.org/web/20110102233032/http://gregorkopf.de/slides_berlinsides_2010.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, php, joomla, auth-bypass, path-traversal, lfi, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:54+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Gravatar Email Enumeration in JavaScript
+description: "Gravatar serves avatars keyed by the MD5 of an email address and can be told to return no image, so a page can load candidate hashes and read back the rendered image size cross-origin. A script builds addresses from a first name, last name and company domain plus common webmail hosts, confirming valid ones in the visitor's browser without any request from the attacker."
 resource: "https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/"
-tags: [article, webseclist-reference, en-US, blog-whitehatsec-com]
+tags: [article, webseclist-reference, en-US, blog-whitehatsec-com, info-leak, xsleak, javascript, email, same-origin-policy, sop-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:50+00:00"

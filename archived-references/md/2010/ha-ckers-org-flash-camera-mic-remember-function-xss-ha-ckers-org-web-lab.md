@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Flash Camera and Mic Remember Function and XSS ha.ckers.org web application security lab
+description: Points out that Flash Player scopes its camera and microphone permissions to the domain rather than the application, so once a user ticks Remember, any XSS on that origin inherits the granted access. Because a failed attempt raises no modal dialog, it can be chained with CSS history detection and hidden iframes to spy silently.
 resource: "http://ha.ckers.org/blog/20100718/flash-camera-and-mic-remember-funtion-and-xss/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, flash, xss, attack-chain, info-leak, case-study, iframe, side-channel]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:51+00:00"

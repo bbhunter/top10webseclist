@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: X402SCOPE
+description: Artifact for a study of the x402 HTTP 402 payment protocol, in which a facilitator first verifies and then settles a signed on-chain payment. It ingests Base and Solana history to measure real facilitator transactions and runs rule checks against live facilitators, covering ERC-1271 and ERC-6492 signature validation behaviour and a free-shopping case where the authorisation window is shortened so verify succeeds while the later settle fails, leaving the merchant unpaid.
 resource: "https://github.com/HexHive/x402scope"
-tags: [repo, webseclist-reference, hexhive-epfl]
+tags: [repo, webseclist-reference, hexhive-epfl, measurement-study, tooling, toctou, http, blockchain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:00:56+00:00"

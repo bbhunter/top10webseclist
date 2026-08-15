@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "I still know where you've been, without JavaScript"
+description: "Points at RSnake's rework of CSS history stealing that needs no JavaScript: rather than reading link colour from script, the a:visited rule drives a display: property so the browser itself requests a per-link resource, leaking the visit to the server. Notes SafeHistory as partial mitigation and pdp's improved proof of concept."
 resource: "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youve-been-without.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, css, xsleak, info-leak, side-channel, deanonymization, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:01+00:00"

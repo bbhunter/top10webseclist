@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Re-visiting JAVA De-serialization: It can't get any simpler than this !!"
+description: "Extends the DSer Burp plugin so a captured Java serialized object is converted to XML with XStream, opened in any text editor, and converted back. A tester can edit nested HashMaps and String arrays without knowing the application's classes, and the plugin re-serializes and fixes Content-Length automatically."
 resource: "http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org]
+tags: [article, webseclist-reference, en, blog-andlabs-org, java, deserialization, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:04+00:00"

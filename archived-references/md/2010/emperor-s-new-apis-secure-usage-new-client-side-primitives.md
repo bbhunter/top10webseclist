@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "The Emperor's New APIs: On the (In)Secure Usage of New Client-side Primitives"
+description: "Facebook Connect and Google Friend Connect were reverse engineered from their JavaScript and checked with the Kudzu symbolic execution engine. Neither validated postMessage sender origins and both used targetOrigin '*', giving message injection, arbitrary code execution and man-in-the-middle data theft."
 resource: "https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, postmessage, sop-bypass, xss, javascript, same-origin-policy, dynamic-analysis, measurement-study, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:16+00:00"

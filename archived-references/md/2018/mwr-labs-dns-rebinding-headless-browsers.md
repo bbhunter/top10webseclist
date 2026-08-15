@@ -1,12 +1,13 @@
 ---
 type: Article
 title: DNS Rebinding Headless Browsers
+description: Analytics backends that fetch back submitted Referer URLs do so with headless Chrome running on AWS. An image served with a Content-Length larger than the file stops the load event firing so the browser stays for minutes, long enough to DNS-rebind the attacker domain onto 169.254.169.254, read the instance metadata endpoint and exfiltrate temporary IAM credentials.
 resource: "https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/"
-tags: [article, webseclist-reference, en, mwr-labs]
+tags: [article, webseclist-reference, en, mwr-labs, dns-rebinding, ssrf, sop-bypass, info-leak, dns, aws, tooling, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:50+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

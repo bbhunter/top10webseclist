@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SD-PWN Part 2 — Citrix SD-WAN Center — Another Network Takeover
+description: Citrix SD-WAN Center runs CakePHP2, whose URL parser drops everything before a scheme separator that precedes a question mark, so Apache and the framework disagree about the path and the client-certificate restriction on the collector endpoint is bypassed. Chained with an unsanitised path traversal into shell_exec, that yields pre-authentication remote code execution.
 resource: "https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, parser-differential, rce, auth-bypass, command-injection, path-traversal, url-parsing, php, cve, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:30+00:00"

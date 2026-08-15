@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Finding and Preventing Bugs in JavaScript Bindings
+description: JavaScript runtimes reach native code through C++ binding layers that must translate types, state and failure between the two languages. Static checkers for crash-, type- and memory-safety violations in Node.js, Blink, the Chrome extension system and PDFium produced 81 working exploits, including out-of-bounds access and use-after-free, plus a safe wrapper API for V8.
 resource: "https://mlfbrown.com/malicious.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rce, sandbox-escape, info-leak, javascript-runtime, nodejs, static-analysis, tooling, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:09+00:00"

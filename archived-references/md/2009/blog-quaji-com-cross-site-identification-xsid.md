@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cross-Site Identification (XSid)
+description: "Names Cross-Site Identification (CSID/XSid): a social network is made an involuntary identifying service. An image link on any third-party site silently drives the logged-in victim's browser to the attacker's SN application, which returns the victim's public name and photo out of context. Demonstrated on Facebook, Bebo and Orkut, including OpenSocial signed requests leaking a stable viewer id."
 resource: "http://blog.quaji.com/2009/12/out-of-context-information-disclosure.html"
-tags: [article, webseclist-reference, blog-quaji-com]
+tags: [article, webseclist-reference, blog-quaji-com, info-leak, csrf, cookie, iframe, novel-technique, case-study, deanonymization]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:05+00:00"

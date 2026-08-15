@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bypass SameSite Cookies Default to Lax and get CSRF
+description: "Chrome's Lax-by-default cookies keep a two-minute Lax+POST exemption, so a session cookie set or changed within the last two minutes is still sent on a cross-site top-level POST. An attacker who forces a fresh session, through a GET logout, an OAuth re-login or a new-session endpoint, reopens CSRF against sites relying on the default."
 resource: "https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, csrf, cookie, oauth, sso, http, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:18+00:00"

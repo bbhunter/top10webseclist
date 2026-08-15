@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Attack Surface for Project Spartan's EdgeHTML Rendering Engine"
+description: "Maps the reachable attack surface of Microsoft's new EdgeHTML engine by diffing it against MSHTML, covering markup and style parsing, image, audio and video decoding, font rendering, DOM APIs and the Flash and PDF renderers. It then assesses which exploit mitigations, including AppContainer, CFG, VTGuard and MemGC, actually blunt those vectors and which known bypasses still work."
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, dom, css, javascript, flash, pdf, mime, sandbox-escape, mitigation, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:38:23+00:00"

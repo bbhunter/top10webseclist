@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: us 15 Gavrichenkov Breaking HTTPS With BGP Hijacking wp
+description: "BGP prefix hijacks can be kept local to a few autonomous systems, so the victim sees no latency change and public looking glasses show nothing. An attacker hijacks the victim's prefix near a certificate authority for the few minutes of domain validation, passes the WHOIS, HTTP or DNS check and walks away with a globally valid TLS certificate for machine-in-the-middle use."
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, tls, https, auth-bypass, dns, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:40+00:00"

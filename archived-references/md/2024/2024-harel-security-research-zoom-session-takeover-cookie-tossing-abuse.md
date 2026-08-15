@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF abuse
+description: An XSS in a nonce cookie reflects into every CSP nonce on the domain; an XSS on a neglected subdomain tosses that cookie across the domain, giving persistent XSS nearly everywhere. The chain steals a Google authorization code by OAuth dirty dancing, reuses granted camera and microphone permissions, and tosses a script-tagged cookie so the WAF locks the victim out.
 resource: "https://nokline.github.io/bugbounty/2024/06/07/Zoom-ATO.html"
-tags: [article, webseclist-reference, en, harel-security-research]
+tags: [article, webseclist-reference, en, harel-security-research, xss, cookie, oauth, csp, auth-bypass, waf, dos, attack-chain, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:10+00:00"

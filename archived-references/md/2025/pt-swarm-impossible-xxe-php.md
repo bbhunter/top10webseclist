@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Impossible XXE in PHP
+description: "Exploits XXE in PHP code that looks safe: external entity loading off, network access disabled, and DOCTYPE nodes rejected after parsing. Parameter entities expanded while parsing, a system identifier on the DOCTYPE itself, and php filter chains let an attacker read arbitrary server files and exfiltrate them over HTTP or DNS."
 resource: "https://swarm.ptsecurity.com/impossible-xxe-in-php/"
-tags: [article, webseclist-reference, en-US, pt-swarm]
+tags: [article, webseclist-reference, en-US, pt-swarm, xxe, filter-bypass, parser-differential, info-leak, dns, php, novel-technique, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:31+00:00"

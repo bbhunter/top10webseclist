@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "wp2shell: Pre Authentication RCE in WordPress Core"
+description: A short disclosure notice announcing a pre-authentication remote code execution vulnerability in WordPress core, exploitable by an anonymous user against a stock installation with no plugins. Technical details are deliberately withheld; the page lists the affected release ranges, names the fixed versions, and recommends blocking anonymous access to the REST batch API endpoint as a temporary measure. It is an advisory page rather than the research write-up itself.
 resource: "https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/"
-tags: [article, webseclist-reference, en, slcyber-io]
+tags: [article, webseclist-reference, en, slcyber-io, wordpress, rce, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:50+00:00"
@@ -21,7 +22,7 @@ authors:
   - @searchlightsec
 canonical_url: "https://www.slcyber.io/research/wp2shell-pre-authentication-rce-in-wordpress-core"
 cited_by:
-  - "2026-ai.md:58"
+  - "2026-ai.md:59"
 commit: ""
 content_sha256: 31dc1a37a8bfb336b12710f0555dbc395aa5b592a4d98551d574b4aaf318f7ae
 depth: full

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Uploading web.config for Fun and Profit 2
+description: Uploading a web.config file into an IIS application root or a subfolder to reach code execution. Managed handlers run the file itself as an ASPX page, AspNetCoreModule sets a process path, machineKey and JSON_AppService reach .NET deserialisation, and compilerOptions writes a web shell from an SMB share. Handler and mimeMap tricks also give stored XSS.
 resource: "https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, file-upload, rce, aspnet, dotnet, deserialization, xss, mime, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:29+00:00"

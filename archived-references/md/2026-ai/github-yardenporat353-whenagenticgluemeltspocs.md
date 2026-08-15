@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: PoCs
+description: "A proof-of-concept repository from Check Point Research for five memory-corruption and logic bugs in Cloudflare's workerd runtime behind Cloudflare Workers: a use-after-free in node:zlib deflateParams yielding a read/write primitive, a use-after-free in the HTMLRewriter AttributesIterator, out-of-bounds reads in the URLPattern Ada parser and in workerd's exec(), and a Durable Objects KV SQL-authorizer bypass via unsafe deserialization. Each PoC drives workerd into the vulnerable state."
 resource: "https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, cloudflare, javascript-runtime, sandbox-escape, deserialization, url-parsing]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:47:00+00:00"

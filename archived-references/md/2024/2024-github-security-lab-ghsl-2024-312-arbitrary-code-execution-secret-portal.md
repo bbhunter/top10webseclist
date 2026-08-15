@@ -1,8 +1,9 @@
 ---
 type: Advisory
 title: "GHSL-2024-312: Arbitrary code execution and secret exfiltration in Azure API Management Developer Portal"
+description: A GitHub Actions workflow echoed the JSON of every open issue into a file through Bash interpolation. Anyone who opens an issue whose title or body contains backticks breaks out of the quoting and runs commands on the runner, capturing the workflow token and its secrets.
 resource: "https://securitylab.github.com/advisories/GHSL-2024-312_Azure_API_Management_Developer_Portal/"
-tags: [advisory, webseclist-reference, en, github-security-lab]
+tags: [advisory, webseclist-reference, en, github-security-lab, command-injection, github-actions, ci-cd, rce, info-leak, supply-chain, github, azure, vendor-advisory]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:17+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Protecting Browsers from Extension Vulnerabilities
+description: Manual review of 25 popular Firefox extensions found only 3 needed full privileges while 19 used interfaces more powerful than their features required. A Datalog deduction over 613 labelled XPCOM interfaces mapped 147 upward edges where privilege escalation is reachable.
 resource: "https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, browser-extension, measurement-study, privilege-escalation, sandbox-escape, javascript, static-analysis, mitigation, defence, same-origin-policy]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:05+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Username Enumeration Vulnerabilities
+description: "pagvac surveys username enumeration from pentest practice, splitting it into bruteforcable and dumpable, and ranks four probes: login errors, password-recovery errors, signup collisions and existing-URI probing. Signup facilities are best because they always work, are silent and dodge lockout; a real PCI test enumerated 600+ accounts and cracked about 40. CAPTCHA is the only real defence."
 resource: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, user-enumeration, info-leak, side-channel, case-study, mitigation, email, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:57+00:00"

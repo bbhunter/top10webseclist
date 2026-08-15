@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "The Single-Packet Shovel: Digging for Desync-Powered Request Tunnelling"
+description: HTTP/2 to HTTP/1.1 downgrade request tunnelling is widely dismissed as a smuggling false positive; sending a deliberately invalid tunnelled request exposes it, and firing a group of requests as a single packet turns a roughly one-in-two-thousand race into a hit about eighty percent of the time. Because the tunnelled request rides inside the body, front-end access rules and WAF checks do not apply.
 resource: "https://www.assured.se/posts/the-single-packet-shovel-desync-powered-request-tunnelling"
-tags: [article, webseclist-reference, en, assured-ab]
+tags: [article, webseclist-reference, en, assured-ab, request-smuggling, desync, http2, race-condition, auth-bypass, waf-bypass, load-balancer, reverse-proxy, tooling, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:39+00:00"

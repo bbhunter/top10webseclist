@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Cashing Out the Great Cannon? On Browser-Based DDoS Attacks and Economics
+description: "Ordinary visitors' browsers can be conscripted into a DDoS botnet by JavaScript delivered through malicious ads, typosquatted domains or an in-path injector like the Great Cannon, with three JavaScript techniques each driving thousands of HTTP requests per second per client. Costing the approach out shows it is about as expensive as a conventional botnet while giving the attacker less control."
 resource: "https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, dos, typosquatting, javascript, http, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:49+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: How I Hacked Microsoft Teams and got $150,000 in Pwn2Own
+description: "Three Microsoft Teams (Electron 1.x) bugs chained into zero-click remote code execution: a wildcard-allowed CSS class smuggles an AngularJS ng-init expression into a chat message for XSS, the main window's missing contextIsolation hands over a reference to ipcRenderer, and the unsandboxed PluginHost's unchecked remote-object property walk reaches Function() to run OS commands on the victim's machine."
 resource: "https://speakerdeck.com/masatokinugawa/how-i-hacked-microsoft-teams-and-got-150000-dollars-in-pwn2own"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, xss, csti, sanitizer-bypass, sandbox-escape, rce, gadget-chain, electron, angular, javascript, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:50+00:00"

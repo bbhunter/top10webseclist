@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Jumping out of Touch Screen Kiosks
+description: Touch-screen kiosks in restaurants and telco shops run Adobe Flash with no keyboard, so keyboard-driven kiosk escapes such as iKat do not apply. A long press raises the Flash context menu; choosing Global Settings opens the Flash settings help page in a browser window, dropping the user out of the kiosk onto the Windows desktop.
 resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html"
-tags: [article, webseclist-reference, seckb-yehg-net]
+tags: [article, webseclist-reference, seckb-yehg-net, flash, sandbox-escape, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:13+00:00"

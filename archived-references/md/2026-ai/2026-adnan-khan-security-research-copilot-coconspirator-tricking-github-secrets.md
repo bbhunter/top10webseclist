@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Copilot or Coconspirator - Tricking GitHub Copilot and Stealing all Your Secrets
+description: After a maintainer assigns a GitHub issue to Copilot, the issue body can be edited in the seconds before the agent reads it, so the injected instructions are never visible to the human, and the edit is then reverted and its revision history deleted. Hidden in a URL query parameter, the instructions tell Copilot to commit a pull_request_target workflow that passes toJSON(secrets) to an attacker-owned action, which anyone can then trigger with a fork pull request.
 resource: "https://adnanthekhan.com/posts/copilot-or-co-conspirator/"
-tags: [article, webseclist-reference, en, adnan-khan-security-research]
+tags: [article, webseclist-reference, en, adnan-khan-security-research, prompt-injection, toctou, ai-agent, llm, github-actions, ci-cd, attack-chain, supply-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:16+00:00"
@@ -20,7 +21,7 @@ authors:
   - adnanthekhan
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:90"
+  - "2026-ai.md:93"
 commit: ""
 content_sha256: a679f33c33775f679f299e6b9fc0f0b13e542150c2145c1c3ead07a9bad510e2
 depth: full

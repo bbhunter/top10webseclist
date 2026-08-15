@@ -1,8 +1,9 @@
 ---
 type: Article
 title: HTML/CSS Injections - Primitive Malicious Code
+description: "Three ways to attack with pure HTML and CSS after all JavaScript is stripped: an absolutely positioned div overlaying the page with a fake login form; div hijacking, where reusing a legitimate id repaints the real element; and base href hijacking, which repoints every later relative script to the attacker's host."
 resource: "http://i8jesus.com/?p=10"
-tags: [article, webseclist-reference, en-US, i8jesus-com]
+tags: [article, webseclist-reference, en-US, i8jesus-com, css-injection, sanitizer-bypass, dom-clobbering, ui-redress, phishing, filter-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:31:45+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Pass-the-Passkey Family of Attacks
+description: "The white paper details the Pass-the-Passkey family. Two zero-days chain into a replay: Windows logs FIDO2/WebAuthn assertions to an event log readable by unprivileged remote users, and Entra ID skips WebAuthn's single-use-challenge and counter checks, letting a mined assertion be replayed to impersonate privileged identities and bypass phishing-resistant MFA. It adds an unfixed Credential UI window-handle spoof for prompt-flooding phishing, plus API-hooking relay and passkey-to-token attacks."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, passkeys, webauthn, auth-bypass, phishing, azure, cve, openid, ui-redress, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:09:27+00:00"
@@ -18,7 +19,7 @@ authors:
   - Michael Grafnetter
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:64"
+  - "2026-ai.md:66"
 commit: ""
 content_sha256: a9f95f034e2180cf2fec102e74a7dab72ab6a926464d26af484d722cee86ba4f
 depth: full

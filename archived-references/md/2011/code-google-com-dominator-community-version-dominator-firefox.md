@@ -1,8 +1,9 @@
 ---
 type: Article
 title: dominator - Community version of the DOMinator for Firefox
+description: "The Google Code home of DOMinator, Minded Security's instrumented Firefox build that finds DOM-based XSS by propagating dynamic runtime taint through JavaScript string operations. The 2010 community release targets Firefox 3.6, warns it will not run on vanilla Firefox, and points at the commercial DOMinator Pro 2012."
 resource: "https://code.google.com/p/dominator/"
-tags: [article, webseclist-reference, en, code-google-com]
+tags: [article, webseclist-reference, en, code-google-com, tooling, dom, xss, dynamic-analysis, javascript, browser-extension, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:39:59+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+description: Unsafe Ruby reflection or Marshal deserialisation in a Rails app becomes remote code execution by constructing a SQLite3 database object whose extensions option loads an attacker-supplied shared library. The file is planted by abusing multipart temporary files and reached through a process file-descriptor path, and it works on a default minimal Rails install.
 resource: "https://www.elttam.com/blog/rails-sqlite-gadget-rce"
-tags: [article, webseclist-reference, en, elttam-com]
+tags: [article, webseclist-reference, en, elttam-com, gadget-chain, deserialization, rce, file-upload, ruby, rails, database, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:24:45+00:00"

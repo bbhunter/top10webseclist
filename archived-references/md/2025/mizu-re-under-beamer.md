@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Under the Beamer. Tags:Writeup - Writeup - ASIS_QUALS_2025 - Web"
+description: DOM clobbering gadget in a widget library. Because named items of an HTML collection are not writable, injected elements sharing an identifier stop the library assigning its own escaping function; a second gadget removes the clobbering node so escaping is skipped, and a clobbered domain option reaches an iframe source unescaped, giving XSS past DOMPurify.
 resource: "https://mizu.re/post/under-the-beamer"
-tags: [article, webseclist-reference, en, mizu-re]
+tags: [article, webseclist-reference, en, mizu-re, dom-clobbering, sanitizer-bypass, xss, gadget-chain, dom, javascript, novel-technique, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:17:49+00:00"

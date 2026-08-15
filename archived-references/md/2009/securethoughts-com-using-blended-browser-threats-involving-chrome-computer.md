@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Using Blended Browser Threats involving Chrome to steal files on your computer
+description: CVE-2009-3931. Chrome auto-downloads files sent with Content-Disposition attachment and warns only on blacklisted extensions; .mht, .mhtml and .svg were absent from that list. Clicking the downloaded file opens it in IE6 or Safari from a local origin, where its script reads arbitrary local files. Google fixed it by extending the blacklist in v3.0.195.32.
 resource: "http://securethoughts.com/2009/11/using-blended-browser-threats-involving-chrome-to-steal-files-on-your-computer/"
-tags: [article, webseclist-reference, en-US, securethoughts-com]
+tags: [article, webseclist-reference, en-US, securethoughts-com, cve, mime, content-type, same-origin-policy, sop-bypass, xss, attack-chain, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:05+00:00"

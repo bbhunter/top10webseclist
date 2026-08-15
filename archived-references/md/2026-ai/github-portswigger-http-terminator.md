@@ -1,8 +1,9 @@
 ---
 type: Repository
 title: Tool
+description: "An AI-assisted research pipeline (a tool, not a writeup) for HTTP request-smuggling and response-desync discovery. A 'seeker' stage uses an LLM to extract desync vectors from RFCs and docs, a 'flamer' stage generates malformed HTTP test-cases from them, a Burp 'validator' extension fires those requests at a target, and an 'investigator' stage replicates, confirms, cascades and reports the findings."
 resource: "https://github.com/portswigger/http-terminator"
-tags: [repo, webseclist-reference, github]
+tags: [repo, webseclist-reference, github, tooling, request-smuggling, desync, http, llm]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:59+00:00"
@@ -20,7 +21,7 @@ authors:
   - portswigger
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:54"
+  - "2026-ai.md:30"
 commit: 874682cdbdd176099f5a1ddadd647fe1e66b5940
 content_sha256: 9d227a562852ccade782cee555661c0843dc2421ec7a1d346e5b4827afd7bfa1
 depth: full

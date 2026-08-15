@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Jetty Features for Hacking Web Apps
+description: "A survey of Jetty behaviours useful against apps deployed on it: an error path that lists every deployed context, RCE by dropping a JSP shell, a WAR or a Jetty XML context file into the hot-deploy directory, XSS from uploads with extensions Jetty serves without a Content-Type, and WAF bypasses via path parameters, multipart charset encoding and boundary parsing quirks."
 resource: "https://swarm.ptsecurity.com/jetty-features-for-hacking-web-apps/"
-tags: [article, webseclist-reference, en-US, pt-swarm]
+tags: [article, webseclist-reference, en-US, pt-swarm, rce, file-upload, waf-bypass, xss, mime, java, reverse-proxy, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:31+00:00"

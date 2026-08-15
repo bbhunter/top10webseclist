@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Bypassing Chrome's Anti-XSS filter"
+description: "Chrome's static anti-XSS filter inspected each reflected parameter on its own, so a script tag in one parameter was stripped. Splitting the payload across two reflected parameters and opening a JavaScript multi-line comment in the first, closing it in the second, hides the intervening HTML from the parser and the alert fires. Google declined to treat it as in scope."
 resource: "http://blog.securitee.org/?p=37"
-tags: [article, webseclist-reference, en-US, blog-securitee-org]
+tags: [article, webseclist-reference, en-US, blog-securitee-org, xss, filter-bypass, sanitizer-bypass, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:07:12+00:00"

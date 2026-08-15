@@ -1,8 +1,9 @@
 ---
 type: Article
 title: OAuth Non-Happy Path to ATO
+description: "Switching response_type from code to id_token derails the callback into an error branch that redirects to the Referer with no parameters, while the tokens sit in the fragment, which server-side 3xx redirects preserve. window.open plus a 3xx chain keeps the attacker page as the Referer, prompt=none skips Google's account picker, and Google accepts response_type=code,id_token, so the fragment handed to the attacker carries the authorization code."
 resource: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
-tags: [article, webseclist-reference, en, voorivex-team]
+tags: [article, webseclist-reference, en, voorivex-team, oauth, open-redirect, sso, auth-bypass, attack-chain, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:39+00:00"

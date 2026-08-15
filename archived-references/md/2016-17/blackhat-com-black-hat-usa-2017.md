@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Black Hat USA 2017
+description: "Malware on an endpoint with no direct internet access hides data in a file that the host's cloud antivirus uploads to its own internet-connected analysis sandbox, where the sample runs and beacons the data out. The AV product itself becomes the egress channel, defeating strict outbound filtering and network segregation, and the researchers released a tool implementing it."
 resource: "https://blackhat.com/us-17/briefings.html#the-adventures-of-av-and-the-leaky-sandbox"
-tags: [article, webseclist-reference, blackhat-com]
+tags: [article, webseclist-reference, blackhat-com, sandbox-escape, info-leak, filter-bypass, novel-technique, tooling, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:56+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:110"
+  - "2016-17.md:111"
 commit: ""
 content_sha256: 664b8f7f5f19b07cf9b443a3caaeeab57f0f64835d32fe97f2fd0b243b876ec4
 depth: full

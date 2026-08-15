@@ -1,8 +1,9 @@
 ---
 type: Article
 title: RCE by uploading a web.config
+description: Where an IIS upload filter blocks executable extensions such as .asp and .aspx, uploading a web.config instead is allowed. That file registers an ISAPI handler for .config and removes the request-filtering entries that hide it, so the uploaded config executes the ASP embedded in its own comments, yielding remote code execution as nt authority system.
 resource: "https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/"
-tags: [article, webseclist-reference, en, 003random-s-blog]
+tags: [article, webseclist-reference, en, 003random-s-blog, file-upload, rce, filter-bypass, aspnet, dotnet, case-study, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:07+00:00"

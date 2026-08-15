@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bamboozling Certificate Authorities with BGP
+description: An autonomous system can hijack BGP routes to a victim domain just long enough to answer a certificate authority domain validation check and obtain a valid certificate for a domain it does not control. The authors demonstrate this against real top CAs, measure 1.8 million certificates, and propose multiple vantage point validation and BGP monitoring.
 resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, tls, https, auth-bypass, dns, measurement-study, large-scale-scan, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:30+00:00"

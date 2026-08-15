@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Binary Webshell Through OPcache in PHP 7
+description: "A PHP 7 exploitation technique: OPcache's file cache stores compiled bytecode under a folder writable by the web user. Given an unrestricted file upload and the target's system_id (an md5 fingerprint computable from phpinfo()), an attacker overwrites a cached .bin file with a compiled webshell that runs when the matching PHP script is requested, bypassing hardened read-only web roots. Variants defeat memory-cache priority and timestamp validation using WordPress's known-static file timestamps."
 resource: "https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/"
-tags: [article, webseclist-reference, en, gosecure]
+tags: [article, webseclist-reference, en, gosecure, php, rce, file-upload, cache, wordpress]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:03+00:00"

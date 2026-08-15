@@ -1,8 +1,9 @@
 ---
 type: Advisory
 title: Uncovering a crazy privilege escalation from Chrome extensions
+description: "On ChromeOS a Chrome extension holding only the downloads permission can save an HTML file and open it through a filesystem:chrome://file-manager/external URL, running script on the privileged File Manager origin."
 resource: "https://0x44.xyz/blog/cve-2023-4369/index.html"
-tags: [advisory, webseclist-reference, en, derineryilmaz-com]
+tags: [advisory, webseclist-reference, en, derineryilmaz-com, sandbox-escape, privilege-escalation, browser-extension, xss, same-origin-policy, info-leak, cve, bug-bounty, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T00:58:40+00:00"

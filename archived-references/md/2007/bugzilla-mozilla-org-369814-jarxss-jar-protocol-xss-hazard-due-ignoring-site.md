@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Full Text Bug Listing
+description: "Gecko's jar: protocol opened any ZIP regardless of its MIME type and treated the contents as same-origin with the hosting site, so an uploaded avatar or archive became stored XSS on that domain. The 149-comment thread runs from Ruderman's report through pdp's independent disclosure, Zalewski's finding that a 302 redirector removes the upload requirement, Guninski's meta-refresh, applet and retargeted javascript: escapes, to blocking unsafe content types outright."
 resource: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
-tags: [article, webseclist-reference, bugzilla-mozilla-org]
+tags: [article, webseclist-reference, bugzilla-mozilla-org, sop-bypass, xss, mime, content-type, file-upload, open-redirect, same-origin-policy, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:10:57+00:00"

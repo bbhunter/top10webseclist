@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Shreeraj's security blog: Password extraction from Ajax/DOM/HTML5 routine"
+description: "A short note on sloppy Ajax login code: variables such as the crafted request URL are declared without scope and stay global on the DOM for the life of the page. Given a DOM XSS foothold, iterating over window and printing every string property recovers login.do?user=foo&pwd=foobar, leaking the typed username and password."
 resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
-tags: [article, webseclist-reference, shreeraj-blogspot-com]
+tags: [article, webseclist-reference, shreeraj-blogspot-com, dom, javascript, xss, info-leak, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:08+00:00"

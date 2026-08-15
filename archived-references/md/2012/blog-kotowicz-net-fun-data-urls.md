@@ -1,12 +1,13 @@
 ---
 type: Article
 title: "Fun with data: URLs"
+description: "Notes that data: URLs bypass anti-XSS filters, and in Firefox and Opera a document opened from one keeps access to the opening page, so a single link yields XSS. Fuzzing the data: URI syntax found parsers that accept junk after the base64 token, a stray colon, embedded whitespace or a doubled comma. A table records which ASCII bytes each of four browsers tolerates."
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html"
-tags: [article, webseclist-reference, blog-kotowicz-net]
+tags: [article, webseclist-reference, blog-kotowicz-net, xss, filter-bypass, url-parsing, parser-differential, sop-bypass, fuzzing, encoding, sanitizer-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:51+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original

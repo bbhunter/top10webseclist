@@ -1,8 +1,9 @@
 ---
 type: Advisory
 title: "Internet Explorer 7 \"mhtml:\" Redirection Information Disclosure"
+description: "Secunia advisory SA22477 (2006-10-19, Less critical, unpatched at publication) on Internet Explorer 7. Mishandling of redirections for URLs using the mhtml: URI handler lets a remote site read documents served from another origin. Confirmed on a fully patched IE 7.0 on Windows XP SP2; the only offered mitigation is disabling active scripting."
 resource: "https://secunia.com/advisories/22477/"
-tags: [advisory, webseclist-reference, secunia-com]
+tags: [advisory, webseclist-reference, secunia-com, vendor-advisory, info-leak, sop-bypass, same-origin-policy, url-parsing, mime]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:16:12+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Mystique: Uncovering Information Leakage from Browser Extensions"
+description: A taint-tracking build of Chromium, combined with static data-flow analysis of extension source code, follows privacy-sensitive data from extension APIs out to the network. Run over 178,893 Chrome extensions and 2,790 Opera ones, it flagged 3,868 as leaking browsing history, page content and form input, some with tens of millions of users.
 resource: "https://www.kapravelos.com/publications/mystique-CCS18.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, browser-extension, info-leak, dynamic-analysis, static-analysis, large-scale-scan, measurement-study, javascript, tooling, detection]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:46+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Practical New Developments in the BREACH Attack
+description: "Extends the BREACH compression side channel to modern deployments: statistical methods defeat the noise introduced by AES block ciphers and dynamic pages, and a command-and-control channel injected into plain HTTP keeps the victim browser issuing the needed requests. The Rupture framework parallelises the attack and recovers secrets from Facebook Chat and Gmail endpoints over HTTPS."
 resource: "https://www.blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, tls, https, info-leak, http, tooling, prior-art-extension, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:36+00:00"

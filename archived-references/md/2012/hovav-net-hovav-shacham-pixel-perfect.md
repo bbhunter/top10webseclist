@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Hovav Shacham: Pixel Perfect"
+description: Rendering text and WebGL scenes into an HTML5 canvas element and reading back the pixels yields a browser fingerprint, because font rasterisation and GPU output vary with the operating system, drivers and hardware beneath the browser. The authors report the resulting signal is consistent, high-entropy, orthogonal to existing fingerprints, and obtainable without the user noticing.
 resource: "https://hovav.net/ucsd/papers/ms12.html"
-tags: [article, webseclist-reference, en, hovav-net]
+tags: [article, webseclist-reference, en, hovav-net, side-channel, info-leak, javascript, dom, novel-technique, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:27:23+00:00"

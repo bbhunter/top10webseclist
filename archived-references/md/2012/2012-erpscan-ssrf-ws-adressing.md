@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SSRF via WS-Adressing
+description: Short disclosure showing SSRF is not confined to XXE. The WS-Addressing To and ReplyTo headers of a SOAP message accept arbitrary URLs, so a service can be made to fetch attacker-chosen internal hosts and ports. With gopher available this becomes near-arbitrary TCP delivery inside the network, and example XML is given.
 resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
-tags: [article, webseclist-reference, en, erpscan]
+tags: [article, webseclist-reference, en, erpscan, ssrf, soap, url-parsing, novel-technique, java]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:30+00:00"

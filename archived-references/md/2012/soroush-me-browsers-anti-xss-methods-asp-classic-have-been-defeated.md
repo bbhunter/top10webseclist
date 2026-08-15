@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Browsers Anti-XSS methods in ASP (classic) have been defeated!
+description: "Classic ASP accepts request parameters in ways browser XSS filters never modelled: parameter pollution, certain UTF-8 characters folded to ASCII equivalents, case-insensitive names, truncation at null bytes, stray percent signs and ampersand quirks. Combining these bypasses the IE8/9 filter and Chrome's auditor, and bypassed NoScript before it was patched."
 resource: "https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, xss, filter-bypass, sanitizer-bypass, unicode, encoding, parser-differential, charset]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:19+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Adventures in Video Conferencing Part 1: The Wild World of WebRTC"
+description: "Project Zero fuzzed WebRTC end to end, first by patching Chrome's libsrtp to corrupt outgoing RTP packets, then by extending the video replay tool to replay fuzzed RTP dumps. It found seven memory-safety bugs, including a forward error correction buffer overflow, use-after-free in the VP8 and VP9 codecs, and a type confusion feeding VP8 packets to the H264 parser."
 resource: "https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html"
-tags: [article, webseclist-reference, en, projectzero-google]
+tags: [article, webseclist-reference, en, projectzero-google, webrtc, fuzzing, info-leak, cve, dos, tooling, dynamic-analysis]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:01+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:82"
+  - "2018.md:83"
 commit: ""
 content_sha256: 953697984a50367b1c03c6c6c25210a371b44592e1eb0679565b727c32a6fcaa
 depth: full

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Patching auto-complete vulnerabilities not enough, Cookie Eviction to the rescue
+description: "Identities harvested through browser auto-complete bugs can be pinned into a cookie before the bug is patched, then resold through a JSONP-style widget that any site can embed. As a counter, browsers cap total stored cookies (3,000 in Firefox, 3,500 in Chrome and Safari) and evict the oldest; 70 wildcard subdomains each setting 50 cookies hits the cap in seconds and wipes every domain's cookies."
 resource: "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, cookie, info-leak, javascript, session-fixation, dos, mitigation, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:12+00:00"

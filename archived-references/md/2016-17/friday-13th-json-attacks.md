@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Friday the 13th: JSON Attacks"
+description: "Shows that switching from Java or .NET binary serialization to JSON does not remove deserialization risk: libraries that embed type discriminators will instantiate attacker-chosen types and call their setters, constructors and type converters. The paper catalogues vulnerable Java and .NET JSON libraries and supplies gadget chains that reach remote code execution."
 resource: "https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, deserialization, gadget-chain, rce, dotnet, java, cve, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:04:10+00:00"

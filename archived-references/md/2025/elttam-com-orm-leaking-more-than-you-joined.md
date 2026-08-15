@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ORM Leaking More Than You Joined For
+description: "ORM Leak attacks let a user who controls a filter expression search sensitive columns such as password hashes or reset tokens character by character. This instalment bypasses Harbor's patches via an expression-parsing quirk, turns Prisma type confusion into an authentication bypass, and shows Entity Framework and OData filtering leaking the same way."
 resource: "https://www.elttam.com/blog/leaking-more-than-you-joined-for/"
-tags: [article, webseclist-reference, en, elttam-com]
+tags: [article, webseclist-reference, en, elttam-com, info-leak, filter-bypass, auth-bypass, database, rest-api, go, nodejs, dotnet, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:05+00:00"

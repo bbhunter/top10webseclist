@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Tales of Favicons and Caches: Persistent Tracking in Modern Browsers"
+description: "A tracking identifier is stored as a set of entries in the browser's favicon cache, one per subdomain, and read back by redirecting the visitor through those subdomains and observing which favicon requests occur. The cache survives clearing browsing data and incognito mode, so with stable fingerprint attributes a 32-bit identifier is reconstructed in about two seconds."
 resource: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, side-channel, cache, info-leak, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:23+00:00"

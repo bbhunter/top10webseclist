@@ -1,12 +1,13 @@
 ---
 type: Advisory
 title: .Net Cross Site Scripting - Request Validation Bypassing
+description: "ASP.NET Request Validation rejects a tag in a parameter value, but not the same tag written with a leading percent sign, which Internet Explorer still parses as valid markup. Reflecting that value with a style attribute carrying an xss:expression executes script through the filter. Microsoft declined to fix, calling the feature basic input validation."
 resource: "https://web.archive.org/web/20170903113359/http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php"
-tags: [advisory, webseclist-reference, quotium-com]
+tags: [advisory, webseclist-reference, quotium-com, aspnet, dotnet, xss, filter-bypass, sanitizer-bypass, parser-differential, vendor-advisory]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:49+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

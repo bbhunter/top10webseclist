@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Flash Parameter Injection
+description: "Announces Flash Parameter Injection, presented at OWASP NYC AppSec 2008. The archived PDF is the advisory itself: five ways to inject global Flash parameters into the HTML that embeds a movie, rather than reaching the movie directly by URI."
 resource: "http://blog.watchfire.com/wfblog/2008/10/flash-parameter.html"
-tags: [article, webseclist-reference, ibm-application-security-insider]
+tags: [article, webseclist-reference, ibm-application-security-insider, flash, injection, xss, dom, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:08+00:00"

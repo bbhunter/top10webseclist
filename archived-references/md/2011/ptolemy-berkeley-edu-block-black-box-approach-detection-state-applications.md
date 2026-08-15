@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "BLOCK: a black-box approach for detection of state violation attacks towards web applications"
+description: "BLOCK infers a web application's intended behaviour model from attack-free traffic alone, extracting invariants over request/response sequences and their associated session variable values. At runtime any request or response violating its invariants is flagged as a state violation attack. Built on the WebScarab proxy, it needs no source code and was evaluated on real applications."
 resource: "https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html"
-tags: [article, webseclist-reference, en, ptolemy-berkeley-edu]
+tags: [article, webseclist-reference, en, ptolemy-berkeley-edu, detection, dynamic-analysis, proxy, defence, auth-bypass, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:48+00:00"

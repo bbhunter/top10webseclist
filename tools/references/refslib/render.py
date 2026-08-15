@@ -351,15 +351,26 @@ def _frontmatter(record, depth):
     # -- OKF v0.2 --------------------------------------------------------
     lines.append("type: %s" % _scalar(okf_type(record.get("kind"))))
     lines.append("title: %s" % _scalar(record.get("title", "")))
-    if record.get("description"):
-        lines.append("description: %s" % _scalar(record["description"]))
+    # OKF RECOMMENDS `description` AND `tags`, AND THE ARCHIVE HOLDS BOTH. They
+    # live on the manifest entry as `digest`, written by a reviewer who read the
+    # document; for a long time they stayed there, so 1,671 of 1,672 published
+    # files stated no description at all and carried only the two format labels
+    # below as their tags. A reader of the file, and any OKF consumer, saw none
+    # of what the archive knew the document was about.
+    digest = record.get("digest") or {}
+    description = record.get("description") or digest.get("text") or ""
+    if description:
+        lines.append("description: %s" % _scalar(description))
     lines.append("resource: %s" % _scalar(record.get("original_url", "")))
 
+    # Format labels first, so a consumer filtering on them keeps working, then
+    # the research tags in the reviewer's order.
     tags = [record.get("kind") or "article", "webseclist-reference"]
     if record.get("language"):
         tags.append(record["language"])
     if record.get("publisher"):
         tags.append(_slug_tag(record["publisher"]))
+    tags.extend(digest.get("tags") or [])
     lines.append("tags: [%s]" % ", ".join(dict.fromkeys(tags)))
 
     lines.append("generated:")

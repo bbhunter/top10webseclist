@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: advisory gmail google docs pdf repurposing attack
+description: PDF repurposing against Gmail and Google Docs. A crafted PDF viewed in the Google Docs viewer is converted to a safe format, but choosing print renders the original PDF back inside the browser, where Acro JS runs in the Google origin and reads the session cookie shared with Gmail. Disclosed to Google on 5 May 2009 and fixed by 9 May.
 resource: "http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, pdf, cookie, xss, sop-bypass, same-origin-policy, novel-technique, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:00:24+00:00"

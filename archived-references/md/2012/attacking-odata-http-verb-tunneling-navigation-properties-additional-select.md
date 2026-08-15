@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Attacking OData: HTTP Verb Tunneling, Navigation Properties for Additional Data Access, System Query Options ($select)"
+description: "A penetration tester's guide to the Open Data Protocol, walking through service documents, $metadata and the four RESTful operations. It shows how to enumerate feeds and service operations from metadata, then abuse X-HTTP-Method verb tunnelling to reach DELETE and PUT where direct calls are blocked, follow navigation properties to related data, and use $select=* to reveal hidden properties."
 resource: "https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-pentesters-guide-to-hacking-odata.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rest-api, http, auth-bypass, info-leak, idor, dotnet, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:33:56+00:00"

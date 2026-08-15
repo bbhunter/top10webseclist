@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications
+description: Encrypted web traffic still leaks application state through packet sizes and timing. The authors build a black-box tool that crawls an application repeatedly, treats the adversary as a multi-dimensional classifier, and scores leakage with a Fisher-criterion metric rather than entropy. Evaluated on deployed applications with proposed client and server defences in place.
 resource: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
-tags: [article, webseclist-reference, cs-virginia-edu]
+tags: [article, webseclist-reference, cs-virginia-edu, side-channel, https, tls, info-leak, measurement-study, detection, dynamic-analysis, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:41+00:00"

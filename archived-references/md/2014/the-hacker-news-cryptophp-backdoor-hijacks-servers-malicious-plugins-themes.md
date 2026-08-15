@@ -1,8 +1,9 @@
 ---
 type: Article
 title: CryptoPHP Backdoor Hijacks Servers with Malicious Plugins & Themes
+description: CryptoPHP is a backdoor hidden inside pirated WordPress, Joomla and Drupal plugins and themes that administrators install for free. Once running on the server it gives its operators public-key encrypted command and control, email fallback, remote list updates and self-update, and is used mainly to inject black hat SEO content into the compromised sites.
 resource: "https://web.archive.org/web/20160403035045/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html"
-tags: [article, webseclist-reference, en, the-hacker-news]
+tags: [article, webseclist-reference, en, the-hacker-news, supply-chain, wordpress, joomla, drupal, php, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:29+00:00"

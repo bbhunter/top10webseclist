@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Bug Hunter Finds 'Blended Threat' Targeting Yahoo Web Site"
+description: "News report of Sergiu Dragos Bogdan's attack on Yahoo's YQL developer console: a URL loaded in an iframe returns the visitor's session-specific crumb code, which the same-origin policy stops the attacker page from reading. He dressed the iframe up as a CAPTCHA challenge so the victim typed the crumb in, authorising YQL queries against her own mail and profile."
 resource: "https://web.archive.org/web/20170903113359/http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312"
-tags: [article, webseclist-reference, en, threatpost-com]
+tags: [article, webseclist-reference, en, threatpost-com, csrf, iframe, ui-redress, sop-bypass, info-leak, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:45+00:00"

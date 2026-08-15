@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "The Betrayal At Cloud City: An Empirical Analysis Of Cloud-Based Mobile Backends"
+description: An automated pipeline called SkyWalker extracts the backend URLs an Android app contacts and remotely vets those cloud services. Across the top 5,000 free Play Store apps it found 983 N-day and 655 0-day vulnerabilities in backend operating systems, services and web apps, exposing users of apps with 1M to 500M installs, often through third-party SDKs the developer never chose.
 resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, android, supply-chain, rest-api, tooling, static-analysis, measurement-study, large-scale-scan, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:48+00:00"

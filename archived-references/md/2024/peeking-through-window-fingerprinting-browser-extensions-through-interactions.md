@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Peeking through the window: Fingerprinting Browser Extensions through Page-Visible Execution Traces and Interactions"
+description: "An attacker page overwrites 571 global JavaScript APIs and 51 property accessors before an extension's injected script runs, logging each call's name, arguments, caller source and stack trace. It also enumerates globals the script sets, polls cookies, localStorage and IndexedDB, and listens for extension postMessages. Traces seen in all nine visits uniquely identify 2,747 Chrome and 572 Firefox extensions, and normalised stack traces still work against randomised extension URLs."
 resource: "https://doi.org/10.1145/3658644.3670339"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, browser-extension, browser-fingerprinting, javascript, dynamic-analysis, info-leak, postmessage, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:48:20+00:00"

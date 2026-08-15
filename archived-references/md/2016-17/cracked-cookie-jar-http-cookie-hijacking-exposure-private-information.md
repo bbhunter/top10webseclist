@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "The Cracked Cookie Jar: HTTP Cookie Hijacking and the Exposure of Private Information"
+description: Sites that still serve some pages over HTTP leak their non-session cookies to any network eavesdropper. An audit of 25 major services shows those stolen cookies expose search history, home and work addresses, purchase history and contact lists, and can even send mail from the account; a month of campus traffic found 282,000 exposed accounts, and Tor users are deanonymisable the same way.
 resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, cookie, info-leak, https, http, auth-bypass, measurement-study, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:54+00:00"

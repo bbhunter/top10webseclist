@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Security and Privacy of Social Logins (III): Privacy in Single Sign-On Protocols"
+description: "A cross-site leak against single sign-on: an attacker page uses fetch with manual redirect handling to tell whether an OpenID Connect prompt=none request returns a redirect or a consent page, revealing whether the visitor has an account on a given service. Adding login_hint turns this into deanonymisation of a specific identity."
 resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html"
-tags: [article, webseclist-reference, en, web-in-security-blogspot-com]
+tags: [article, webseclist-reference, en, web-in-security-blogspot-com, xsleak, side-channel, info-leak, openid, sso, oauth, cors, cookie, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:08+00:00"

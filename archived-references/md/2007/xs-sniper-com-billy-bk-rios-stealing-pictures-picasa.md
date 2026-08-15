@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Billy (BK) Rios
+description: "A short release note pointing at the Picasa exploit write-up and its source code. Google's Picasa registers the picasa:// URI in the Windows registry, and a cross-site scripting exposure can drive that registered handler to steal a victim's images. Published by McFeters to mark the authors' Black Hat Japan acceptance."
 resource: "http://xs-sniper.com/blog/2007/09/24/stealing-pictures-with-picasa/"
-tags: [article, webseclist-reference, xs-sniper-com]
+tags: [article, webseclist-reference, xs-sniper-com, xss, url-parsing, info-leak, csrf, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:46+00:00"

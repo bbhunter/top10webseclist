@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The ROBOT Attack
+description: "ROBOT revives Bleichenbacher's 1998 adaptive chosen-ciphertext attack on RSA PKCS #1 v1.5 by using new oracle signals such as timeouts, connection resets and duplicate alerts, and by truncating the TLS handshake. A vulnerable server can be used to decrypt recorded RSA-key-exchange traffic or to sign messages with its private key, as demonstrated against Facebook and PayPal."
 resource: "https://robotattack.org/"
-tags: [article, webseclist-reference, en, robotattack-org]
+tags: [article, webseclist-reference, en, robotattack-org, tls, https, info-leak, cve, vendor-advisory, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:55+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Improving HTTPS Side Channel Attacks ha.ckers.org web application security lab
+description: Proposes reducing the noise in HTTPS traffic-analysis attacks by pre-caching. From a man-in-the-middled HTTP page the attacker iframes the target site to force images, CSS, JavaScript and favicons into cache, so later requests shrink to 304 responses and the remaining encrypted sizes isolate the pages the victim actually visits.
 resource: "http://ha.ckers.org/blog/20100622/improving-https-side-channel-attacks/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, https, side-channel, tls, cache, info-leak, iframe, timing-attack]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:51+00:00"

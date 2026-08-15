@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "HEIST: HTTP Encrypted Information can be Stolen Through TCP-Windows"
+description: Browser timing APIs expose when a response arrives relative to TCP window boundaries, letting a malicious page measure the exact byte length of any cross-origin HTTPS response. Because TLS does not hide length, compression oracles like CRIME and BREACH become exploitable from JavaScript alone with no man-in-the-middle position, and HTTP/2 makes the attack stronger still.
 resource: "https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, timing-attack, xsleak, https, tls, http2, info-leak, cors, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:38:20+00:00"

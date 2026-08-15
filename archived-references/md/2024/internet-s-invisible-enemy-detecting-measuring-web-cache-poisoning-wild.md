@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Internet's Invisible Enemy: Detecting and Measuring Web Cache Poisoning in the Wild"
+description: "HCache mutates the request line, headers and body to find fields the cache omits from its key but the origin still reacts to, then sends normal, attack and validation requests behind a cache buster to confirm the error response is cached and served. Across Tranco top 1,000 domains and subdomains, 1,354 sites were poisonable through 14 vector families, 7 of them new: CDN internal-route headers, Authorization, If-*, X-Forwarded-Proto and Range. Caches are shared between HTTP/1.1 and HTTP/2."
 resource: "https://doi.org/10.1145/3658644.3690361"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, cache-poisoning, http, measurement-study, large-scale-scan, cdn, dos, http2, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:05:37+00:00"

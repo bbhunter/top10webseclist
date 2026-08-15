@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Marginwidth/marginheight - the unexpected cross-origin communication channel
+description: "The HTML rendering spec lets a framed document take its body margin from the parent frame's marginwidth and marginheight attributes, and browsers honour this across origins. Chromium and Safari reflect the value into the child's body attribute and Firefox exposes it via getComputedStyle, giving a parent a byte-by-byte channel into a cross-origin frame, and here XSS."
 resource: "https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
-tags: [article, webseclist-reference, en, research-securitum-com]
+tags: [article, webseclist-reference, en, research-securitum-com, sop-bypass, iframe, xss, dom, css, same-origin-policy, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:12+00:00"

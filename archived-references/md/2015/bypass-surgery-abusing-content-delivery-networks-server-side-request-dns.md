@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS"
+description: "Chains DNS reconnaissance, server-side request forgery in CDN edge nodes and remote SWF plugin loading to make a trusted CDN fetch and serve attacker content. Three parser bypasses in FlowPlayer's plugin URL check let a remote SWF load with the victim site's origin, so one CDN flaw reaches every site behind it."
 resource: "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, ssrf, cdn, flash, dns, sop-bypass, filter-bypass, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:43+00:00"

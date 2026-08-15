@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Scriptless Attacks: Stealing the Pie Without Touching the Sill"
+description: A CCS 2012 paper asking what an attacker can still steal once JavaScript is blocked by CSP, NoScript or sandboxed iframes. It builds side channels from CSS, inactive SVG images and crafted attack fonts to measure and exfiltrate displayed data, and adds a browser patch letting a page tell it was loaded in a detached view or pop-up.
 resource: "https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, css, css-injection, side-channel, info-leak, csp, novel-technique, xss, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:53+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions
+description: "A guide to how Chrome extensions divide privilege between content scripts, background pages and isolated worlds, and to the anti-patterns that let a hostile web page cross that boundary: weak postMessage origin checks, DOM XSS reaching privileged APIs, loose externally_connectable rules and clickjackable web-accessible pages. It also releases tarnish, an automated extension auditor."
 resource: "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/"
-tags: [article, webseclist-reference, en, the-hacker-blog]
+tags: [article, webseclist-reference, en, the-hacker-blog, browser-extension, xss, postmessage, clickjacking, csp, sop-bypass, filter-bypass, javascript, tooling, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:45:32+00:00"

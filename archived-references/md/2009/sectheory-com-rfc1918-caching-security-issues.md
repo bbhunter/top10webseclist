@@ -1,8 +1,9 @@
 ---
 type: Article
 title: RFC1918 Caching Security Issues
+description: "Because everyone reuses the same RFC1918 ranges, a hostile VPN peer or cafe MITM can route a victim to its own 10.x/192.168.x hosts and leave cached JavaScript behind. When the tunnel drops, the cache is served again from the victim's real intranet address, giving a persistent backdoor without breaking the same-origin policy. Defences: TLS, internal FQDNs, static routes."
 resource: "http://www.sectheory.com/rfc1918-security-issues.htm"
-tags: [article, webseclist-reference, sectheory-com]
+tags: [article, webseclist-reference, sectheory-com, cache, dns, dns-rebinding, same-origin-policy, javascript, mitigation, https]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:03+00:00"

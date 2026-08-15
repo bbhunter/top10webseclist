@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Ruby on Rails _json Juggling Attack
+description: Rails wraps a non-hash JSON body into params under a reserved key but never blocks a request that supplies that key itself, so one body can carry both the single-item hash form and the multi-item array form at once. Where authorisation code and action code read different forms of the same request, the mismatch gives an authorisation bypass.
 resource: "https://nastystereo.com/security/rails-_json-juggling-attack.html"
-tags: [article, webseclist-reference, en-AU, nastystereo-com]
+tags: [article, webseclist-reference, en-AU, nastystereo-com, parser-differential, auth-bypass, injection, rails, ruby, rest-api, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:31+00:00"

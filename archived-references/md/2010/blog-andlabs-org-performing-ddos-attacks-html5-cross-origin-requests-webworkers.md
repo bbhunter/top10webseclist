@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Performing DDoS attacks with HTML5 Cross Origin Requests & WebWorkers
+description: "A WebWorker firing cross-origin GET requests pushes more than 10,000 requests a minute from one Chrome or Safari tab, because CORS only restricts reading the response, not sending it. A changing dummy query parameter defeats the browser's refusal to repeat requests to a URL that returned no Access-Control-Allow-Origin header."
 resource: "http://blog.andlabs.org/2010/12/performing-ddos-attacks-with-html5.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org]
+tags: [article, webseclist-reference, en, blog-andlabs-org, dos, cors, javascript, http, novel-technique, waf]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:06+00:00"

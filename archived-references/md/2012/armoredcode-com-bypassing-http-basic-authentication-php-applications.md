@@ -1,12 +1,13 @@
 ---
 type: Article
 title: Bypassing HTTP Basic Authentication in PHP applications
+description: "An assessment of a PHP site whose admin area was protected only by Apache HTTP Basic auth. Because PHP passes unrecognised WebDAV-style verbs through to the script, a request using an invented method such as DAMMI reaches /backend with no credentials; a short Ruby Net::HTTPRequest subclass automates it. Recommends LimitExcept and real session checks."
 resource: "https://web.archive.org/web/20170903113359/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/"
-tags: [article, webseclist-reference, en, armoredcode-com]
+tags: [article, webseclist-reference, en, armoredcode-com, auth-bypass, php, http, parser-differential, filter-bypass, case-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:00+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original

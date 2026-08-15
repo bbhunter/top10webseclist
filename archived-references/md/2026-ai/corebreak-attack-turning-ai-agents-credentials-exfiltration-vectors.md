@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors"
+description: "Managed agent tools keep the cloud instance metadata endpoint reachable from inside them, so JavaScript in AWS Bedrock AgentCore's browser or Python in its code interpreter can fetch the microVM's IAM role credentials; a hidden div on a page the agent visits is enough to make it do so and exfiltrate them. The harnesses give up more: a tool-call block sent as the last message makes Strands run that tool with no model call, and Google ADK accepts a forged approval event."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, prompt-injection, ai-agent, llm, aws, gcp, info-leak, auth-bypass, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:38+00:00"
@@ -19,7 +20,7 @@ authors:
   - Hedi Ingber
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:78"
+  - "2026-ai.md:81"
 commit: ""
 content_sha256: de69eac73a00875414cabfe85fcbec02e5d128a5af1efcafe84937b0ede62494
 depth: full

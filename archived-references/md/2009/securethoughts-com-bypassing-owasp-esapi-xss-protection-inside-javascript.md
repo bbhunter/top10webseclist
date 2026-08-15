@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Bypassing OWASP ESAPI XSS Protection inside Javascript
+description: "OWASP ESAPI's encodeForJavaScript() hex-escapes untrusted input, but document.write() and eval() decode those escapes back at execution time, so escaped data still fires XSS once it lands in an HTML-body or eval context. A JSP proof of concept shows one string safely contained in a variable and two others executing. The fix is context-appropriate encoding, not an ESAPI code change."
 resource: "http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/"
-tags: [article, webseclist-reference, en-US, securethoughts-com]
+tags: [article, webseclist-reference, en-US, securethoughts-com, xss, filter-bypass, sanitizer-bypass, javascript, java, encoding, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:01+00:00"

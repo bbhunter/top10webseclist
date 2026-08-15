@@ -1,8 +1,9 @@
 ---
 type: Article
 title: MadeYouReset Technical Details
+description: MadeYouReset makes an HTTP/2 server reset a stream itself, using primitives such as a zero-increment window update or a frame sent after the client closed the stream. The reset frees the concurrency slot at once while backend work continues, so an attacker beats the concurrent-stream limit and floods a server with unbounded in-flight requests.
 resource: "https://galbarnahum.com/posts/made-you-reset-technical-details"
-tags: [article, webseclist-reference, en, galbarnahum-com]
+tags: [article, webseclist-reference, en, galbarnahum-com, dos, http2, proxy, reverse-proxy, http, novel-technique, prior-art-extension, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:11:34+00:00"

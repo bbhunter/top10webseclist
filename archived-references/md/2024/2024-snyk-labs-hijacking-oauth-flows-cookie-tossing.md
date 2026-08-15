@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hijacking OAUTH flows via Cookie Tossing
+description: "Extends the little-documented cookie tossing technique, in which control of a subdomain permits setting cookies scoped to the parent domain with a narrow Path so they take precedence on chosen endpoints. Applied to a cloud development environment, tossing the attacker's session cookie onto the OAuth callback paths caused the victim's Git provider account to be linked to the attacker's account (CVE-2024-21583). SameSite offers no protection here; the __Host- cookie prefix does."
 resource: "https://snyk.io/articles/hijacking-oauth-flows-via-cookie-tossing/"
-tags: [article, webseclist-reference, en-US, snyk-labs]
+tags: [article, webseclist-reference, en-US, snyk-labs, cookie, oauth, session-fixation, csrf, cve, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:43:32+00:00"

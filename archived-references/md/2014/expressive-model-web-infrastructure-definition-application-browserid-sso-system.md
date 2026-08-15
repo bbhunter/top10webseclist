@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "An Expressive Model for the Web Infrastructure: Definition and Application to the BrowserID SSO System"
+description: "A Dolev-Yao style formal model of the web infrastructure covering HTTP, DNS, browsers, cookies, web storage and cross-document messaging, precise enough to analyse real applications. Applied to Mozilla's BrowserID single sign-on it exposed critical flaws letting an attacker obtain an identity assertion and log in as a victim; the fixes were adopted by Mozilla."
 resource: "https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, formal-analysis, sso, auth-bypass, openid, postmessage, same-origin-policy, cookie, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:36+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: "Revisiting ReDoS: A Rough Idea of Data Exfiltration by ReDoS and Side-channel Techniques"
+description: "Shows that timing out a runaway regular expression turns denial of service into a leak oracle: an injected regexp that backtracks catastrophically only when a proposition about a secret holds encodes one bit into response time. Repeating that with length and character predicates, and binary search over the alphabet, reconstructs the secret."
 resource: "https://speakerdeck.com/lmt_swallow/revisiting-redos-a-rough-idea-of-data-exfiltration-by-redos-and-side-channel-techniques"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, algorithmic-complexity, timing-attack, side-channel, injection, info-leak, dos, novel-technique, nodejs, python]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:48+00:00"

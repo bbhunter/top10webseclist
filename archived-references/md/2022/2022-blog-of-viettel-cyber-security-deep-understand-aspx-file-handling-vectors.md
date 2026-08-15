@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Deep understand ASPX file handling and some related attack vectors
+description: Reverse-engineers how IIS compiles ASPX pages into cached DLLs under Temporary ASP.NET Files, including the code generation directory and the eight-character cache key algorithms. An attacker able to write there plants a backdoor DLL that hijacks a page without touching webroot, tampers across application pools that share one identity group, or reaches filtered URLs by cache key collision.
 resource: "https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/"
-tags: [article, webseclist-reference, en, blog-of-viettel-cyber-security]
+tags: [article, webseclist-reference, en, blog-of-viettel-cyber-security, aspnet, dotnet, file-upload, waf-bypass, privilege-escalation, sandbox-escape, cve, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:20+00:00"

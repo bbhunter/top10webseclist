@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Hacking Intranets Via Brute Force
+description: "Scrapes the Alexa 500 for intranet.* and internal.* hostnames and finds 162 live split-horizon DNS entries exposing internal IPs. Because intranet logins are the NT domain names that match public email addresses, the listed hosts can be brute-forced directly. RSnake's own follow-up, lost with the comment thread, confirmed seven returning 401."
 resource: "http://ha.ckers.org/blog/20061228/hacking-intranets-via-brute-force/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, dns, info-leak, large-scale-scan, auth-bypass, user-enumeration, measurement-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:07+00:00"

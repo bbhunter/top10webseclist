@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Ping'ing XMLSec"
+description: Apache Santuario dereferences URIs in KeyInfoReference and RetrievalMethod elements before any signature check, and fails to pass its secureValidation flag down, so an unauthenticated attacker can make it read local files and then apply XPath or XSLT transforms to them.
 resource: "https://blog.tint0.com/2021/09/pinging-xmlsec.html"
-tags: [article, webseclist-reference, en, blog-tint0-com]
+tags: [article, webseclist-reference, en, blog-tint0-com, xxe, info-leak, auth-bypass, side-channel, timing-attack, saml, sso, soap, java, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:33+00:00"

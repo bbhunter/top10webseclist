@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript"
+description: Browsers coarsened performance.now to stop JavaScript cache attacks; this work recovers nanosecond resolution anyway from implicit clocks such as postMessage, MessageChannel, Broadcast Channel, CSS animations and a SharedArrayBuffer counting thread, plus interpolation and edge thresholding. The revived timers restore cache side channels and drive a DRAM covert channel out of an isolated VM.
 resource: "https://misc0110.net/files/timers.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, javascript, postmessage, css, novel-technique, measurement-study, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:08+00:00"

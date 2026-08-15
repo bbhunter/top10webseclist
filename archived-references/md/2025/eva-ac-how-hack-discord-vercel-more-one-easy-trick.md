@@ -1,8 +1,9 @@
 ---
 type: Article
 title: how to hack discord, vercel and more with one easy trick
+description: "A documentation platform rendered customer pages server side, so an expression in a docs page ran code on its server, exposing environment secrets and a cache shared by every customer. A separate static-asset route also served one organisation's files from another company's domain, giving one-click XSS on major sites."
 resource: "https://kibty.town/blog/mintlify"
-tags: [article, webseclist-reference, eva-ac]
+tags: [article, webseclist-reference, eva-ac, rce, xss, cache-poisoning, path-traversal, supply-chain, idor, nextjs, cve, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:24+00:00"

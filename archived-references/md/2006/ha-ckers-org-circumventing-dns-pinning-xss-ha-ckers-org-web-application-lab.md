@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Circumventing DNS Pinning for XSS ha.ckers.org web application security lab
+description: "Write-up of Martin Johns' finding that a browser drops its pinned DNS entry when the origin server stops answering. Change the record, then firewall or shut the host, and the browser re-resolves, letting script read and write internal RFC1918 hosts across the same-origin boundary. It is limited to IP-addressable hosts, not virtual hosts."
 resource: "http://ha.ckers.org/blog/20060815/circumventing-dns-pinning-for-xss/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, dns-rebinding, dns, sop-bypass, same-origin-policy, xss, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:26+00:00"

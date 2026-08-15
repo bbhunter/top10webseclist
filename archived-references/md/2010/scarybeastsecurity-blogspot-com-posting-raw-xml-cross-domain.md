@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Posting raw XML cross-domain
+description: "Sending arbitrary XML to another origin normally needs XHR, which the same-origin policy blocks. A plain form using enctype text/plain does no percent-encoding, and because XML is full of '=' characters a single name/value pair can carry a whole element, splitting at the first '='. It works on Opera, IE and Firefox; WebKit browsers still encode and convert spaces to '+'."
 resource: "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, csrf, sop-bypass, content-type, parser-differential, http, filter-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:32+00:00"

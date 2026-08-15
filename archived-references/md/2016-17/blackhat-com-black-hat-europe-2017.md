@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Black Hat Europe 2017
+description: Firefox, IE/Edge and Chrome store HSTS and HPKP state in ways an attacker can remotely overwrite, so a site that should be locked to HTTPS can be pushed back to plaintext. A sniffing or man-in-the-middle attacker on the same network then reads credentials from sites that had enforced HTTPS.
 resource: "https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts"
-tags: [article, webseclist-reference, blackhat-com]
+tags: [article, webseclist-reference, blackhat-com, https, tls, info-leak, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:08+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:112"
+  - "2016-17.md:113"
 commit: ""
 content_sha256: 41fcaef1c1ac79899a50f2fae1bd23e65a4ac37ee2f2fec3e3d9d5ff2154b4da
 depth: full

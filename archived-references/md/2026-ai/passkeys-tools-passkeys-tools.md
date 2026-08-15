@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Passkeys.Tools
+description: This is the landing page for Passkeys.Tools, a WebAuthn testing toolkit rather than a research paper. It documents three modes - offline decoding and re-encoding of attestations and assertions, a browser extension that intercepts navigator.credentials calls before they reach the relying party, and a shared backend letting two profiles exchange challenges and credentials - aimed at testing relying-party challenge binding, signature verification and origin validation.
 resource: "https://passkeys.tools"
-tags: [article, webseclist-reference, en, ruhr-university-bochum-rub-nds]
+tags: [article, webseclist-reference, en, ruhr-university-bochum-rub-nds, passkeys, webauthn, tooling, browser-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:01:16+00:00"
@@ -23,7 +24,7 @@ authors:
   - Jörg Schwenk
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:71"
+  - "2026-ai.md:72"
 commit: ""
 content_sha256: 04cfe5e59a580ee39c444ad89b3cdf0a4eaf20bd1c340cb5d63a2980839acdd8
 depth: full

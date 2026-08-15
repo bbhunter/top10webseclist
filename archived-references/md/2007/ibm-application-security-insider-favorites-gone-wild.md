@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Watchfire Application Security Insider: Favorites Gone Wild"
+description: "Yair Amit finds an IE Favorite stored at the root of the tree can be named as a URL, and typing that URL into the address bar then loads the Favorite's target instead. A single planted Favorite gives persistent phishing against users taught to type addresses rather than click links. How to plant it is left as an open question."
 resource: "http://blog.watchfire.com/wfblog/2007/10/favorites-gone.html"
-tags: [article, webseclist-reference, blog-watchfire-com]
+tags: [article, webseclist-reference, blog-watchfire-com, phishing, url-spoofing, abuse-of-functionality, case-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:25:51+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Spy in the Sandbox -- Practical Cache Attacks in Javascript
+description: A last-level cache side-channel attack that runs purely in JavaScript on a visited web page, needing no installed software on the victim machine. Timing its own memory accesses lets the page recover activity belonging to other processes, other users and co-resident virtual machines, demonstrated as a high bandwidth covert channel and a system-wide mouse and network activity logger.
 resource: "https://arxiv.org/abs/1502.07373"
-tags: [article, webseclist-reference, en, arxiv-org]
+tags: [article, webseclist-reference, en, arxiv-org, side-channel, timing-attack, javascript, info-leak, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

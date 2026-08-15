@@ -1,8 +1,9 @@
 ---
 type: Article
 title: I <i>used to</i> know what you watched, on YouTube
+description: "YouTube's crossdomain.xml trusted *.google.com, so a SWF hosted anywhere on google.com could act as the victim on YouTube. Grossman mailed a SWF to a Gmail account he controlled, then used the Stanford login-CSRF/identity-misbinding trick to force the victim into that Gmail session so the attachment URL would load, giving read/write access to their account."
 resource: "https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what-you-watched-on.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, flash, csrf, sop-bypass, file-upload, session-fixation, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:01+00:00"

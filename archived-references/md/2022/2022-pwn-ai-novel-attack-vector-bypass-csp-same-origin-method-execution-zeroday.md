@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Novel Attack Vector to Bypass CSP Via Same Origin Method Execution (Wordpress Zeroday)
+description: "Every WordPress install exposes a REST endpoint whose _jsonp callback is reflected into a same-origin script response, restricted to word characters and dots. Same Origin Method Execution turns that into script execution under the site's own CSP, chaining window.opener DOM navigation to click admin buttons and install a plugin for code execution."
 resource: "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/"
-tags: [article, webseclist-reference, en, pwn-ai]
+tags: [article, webseclist-reference, en, pwn-ai, csp, xss, filter-bypass, wordpress, rce, attack-chain, php]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:44+00:00"

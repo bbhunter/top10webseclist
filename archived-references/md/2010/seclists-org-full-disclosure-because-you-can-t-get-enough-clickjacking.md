@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Full Disclosure: ...because you can't get enough of clickjacking"
+description: The original disclosure of strokejacking. Clickjacking was assumed to be limited to single-click actions, but JavaScript focus semantics let a page shift focus between a hidden frame and the document a user is typing into, routing chosen keystrokes to the hidden target.
 resource: "http://seclists.org/fulldisclosure/2010/Mar/232"
-tags: [article, webseclist-reference, en, seclists-org]
+tags: [article, webseclist-reference, en, seclists-org, ui-redress, clickjacking, iframe, side-channel, info-leak, same-origin-policy, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:40:34+00:00"

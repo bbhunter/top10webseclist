@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "GitHub's post-CSP journey"
+description: "Once CSP stops script execution, attackers steal page secrets with dangling markup: an unclosed img src swallows the CSRF token, and permitted image hosts such as Google Analytics and Gravatar become exfiltration endpoints. GitHub answers with a stricter img-src, markup-closing prefixes before forms, per-form CSRF tokens and a SameSite session cookie."
 resource: "https://githubengineering.com/githubs-post-csp-journey/"
-tags: [article, webseclist-reference, en, the-github-blog]
+tags: [article, webseclist-reference, en, the-github-blog, csp, csrf, info-leak, cookie, injection, mitigation, defence, github, rails]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:25+00:00"

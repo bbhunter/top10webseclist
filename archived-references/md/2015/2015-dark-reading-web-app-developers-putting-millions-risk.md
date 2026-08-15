@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Web App Developers Putting Millions At Risk
+description: Developers embed backend-as-a-service secret keys for Facebook Parse and Amazon AWS directly in shipped mobile and web apps instead of configuring access control lists. A scan of about 750,000 Play Store and App Store apps found thousands where decompiling the binary yields the key and hands an attacker the same full read and write access to the cloud database as the real app.
 resource: "http://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk/d/d-id/1320720"
-tags: [article, webseclist-reference, en, dark-reading]
+tags: [article, webseclist-reference, en, dark-reading, info-leak, auth-bypass, rest-api, aws, database, android, ios, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:08:26+00:00"

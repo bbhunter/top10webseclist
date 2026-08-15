@@ -1,8 +1,9 @@
 ---
 type: Article
 title: How script kiddies can hijack your browser to steal your password
+description: "News coverage of two 2012 proofs of concept that hijack the browser's find command. A few lines of jQuery catch ctrl+F or command+F, call preventDefault, and slide up a fake search box, so whatever the visitor types goes to the site operator rather than the browser. The demo pages pose as leaked-credential lists to bait people into typing passwords or card numbers."
 resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
-tags: [article, webseclist-reference, en-us, ars-technica]
+tags: [article, webseclist-reference, en-us, ars-technica, ui-redress, javascript, dom, case-study, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:14+00:00"

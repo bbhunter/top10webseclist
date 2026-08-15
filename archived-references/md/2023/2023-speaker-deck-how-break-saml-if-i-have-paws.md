@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: How to break SAML if I have paws?
+description: A practical attack methodology for SAML single sign-on. It fingerprints an implementation from the SAMLRequest and metadata, forges a SAMLResponse from scratch, and defeats signature validation through missing Signature tags, self-signed certificates trusted from KeyInfo, and .NET dupe key confusion. XML DSig reference dereferencing and transforms such as base64, XPath and XSLT then yield SSRF, XXE and remote code execution, before ACS spoofing and multi-tenant IdP confusion.
 resource: "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws"
-tags: [slides, webseclist-reference, en, speaker-deck]
+tags: [slides, webseclist-reference, en, speaker-deck, saml, sso, auth-bypass, xxe, ssrf, xss, injection, rce, java, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:45+00:00"

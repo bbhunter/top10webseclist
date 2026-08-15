@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: A Simple Generic Attack on Text Captchas
+description: A single pipeline built on Log-Gabor filters segments and recognises the characters of text CAPTCHAs whatever anti-segmentation trick a scheme uses. It broke schemes from Google, Microsoft, Yahoo and Amazon at 5 to 77 percent success in under 15 seconds on an ordinary desktop, letting an attacker automate account creation and other bulk abuse.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, filter-bypass, novel-technique, measurement-study, defence, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:35+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "XSS: Gaining access to HttpOnly Cookie in 2012"
+description: "Revisits HttpOnly after XST died, testing Silverlight, Flash and Java for a way to read Set-Cookie. Java is the winner: an applet calling URLConnection.getHeaderField reads the HttpOnly Set-Cookie header and hands it back to JavaScript, also as a one-liner via java.net.URL. Chaining a logout page first makes the cookie reissue during the XSS."
 resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
-tags: [article, webseclist-reference, seckb-yehg-net]
+tags: [article, webseclist-reference, seckb-yehg-net, cookie, xss, java, flash, info-leak, session-fixation, filter-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:06+00:00"

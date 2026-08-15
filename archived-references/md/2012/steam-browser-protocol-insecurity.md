@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Steam Browser Protocol Insecurity
+description: "ReVuln turns local Steam bugs remote through the steam:// URL handler, which most browsers invoke with no warning or a truncated one, and which Steam's own browser can be made to follow via a YouTube link bounce. The paper reports an integer overflow in the retailinstall TGA splash loader plus command-line injection into Source, Unreal, APB Reloaded and MicroVolts."
 resource: "https://web.archive.org/web/20170903113359/http://revuln.com/files/ReVuln_Steam_Browser_Protocol_Insecurity.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, rce, command-injection, path-traversal, attack-chain, novel-technique, case-study, url-parsing]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:20+00:00"

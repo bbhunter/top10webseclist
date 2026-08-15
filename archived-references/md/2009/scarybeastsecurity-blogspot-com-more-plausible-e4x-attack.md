@@ -1,8 +1,9 @@
 ---
 type: Article
 title: A more plausible E4X attack
+description: "Firefox's E4X made raw XML valid JavaScript, so an XML inbox feed pulled cross-domain via a script tag parsed in the attacker's origin. Because E4X evaluates curly braces inside XML values, mail subjects of '{ x =' and a closing quote-brace capture the intervening messages into an attacker variable. Constraints are listed; Mozilla broke the attack in Firefox 3.5."
 resource: "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, sop-bypass, same-origin-policy, javascript, parser-differential, info-leak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:26+00:00"

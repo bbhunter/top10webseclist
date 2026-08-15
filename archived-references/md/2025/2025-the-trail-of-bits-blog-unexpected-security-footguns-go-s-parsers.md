@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Unexpected security footguns in Go's parsers"
+description: "Go's JSON, XML and YAML parsers are surprisingly lenient: a dash struct tag with omitempty leaves the field settable, JSON matching is case-insensitive and keeps the last duplicate key, and the XML parser accepts garbage around the document. This lets an attacker set fields meant to be private, or send one body that a proxy and an authorization service read differently."
 resource: "https://blog.trailofbits.com/2025/06/17/unexpected-security-footguns-in-gos-parsers/"
-tags: [article, webseclist-reference, en, the-trail-of-bits-blog]
+tags: [article, webseclist-reference, en, the-trail-of-bits-blog, parser-differential, mass-assignment, auth-bypass, privilege-escalation, go, static-analysis, mitigation, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:07:12+00:00"

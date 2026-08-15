@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions"
+description: Browser extensions can be identified by page changes they make only once a user interacts with them, so this work derives user-action templates from static analysis and replays them dynamically to trigger otherwise hidden behaviour. It fingerprints 4,971 extensions, 36 percent invisible to prior methods, and finds about 67 percent accept JavaScript-simulated events from any page.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/solomos"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, browser-extension, info-leak, dom, javascript, static-analysis, dynamic-analysis, measurement-study, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:27+00:00"

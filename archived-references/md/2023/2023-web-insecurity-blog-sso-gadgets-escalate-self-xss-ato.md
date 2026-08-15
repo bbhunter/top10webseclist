@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "SSO Gadgets: Escalate (Self-)XSS to ATO"
+description: "OAuth2/OIDC clients that still permit the implicit flow, omit PKCE, or run as public single-page apps give an attacker with script execution on the app's origin a way to mint a fresh access_token through a prompt=none popup window. That turns any XSS, including a Self-XSS combined with Login CSRF, into full account takeover; Google's web-application clients could not disable implicit at the time."
 resource: "https://security.lauritz-holtmann.de/post/xss-ato-gadgets/"
-tags: [article, webseclist-reference, en, web-insecurity-blog]
+tags: [article, webseclist-reference, en, web-insecurity-blog, oauth, sso, xss, csrf, openid, auth-bypass, gadget-chain, session-fixation, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:12+00:00"

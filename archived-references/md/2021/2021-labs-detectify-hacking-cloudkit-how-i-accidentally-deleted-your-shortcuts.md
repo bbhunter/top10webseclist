@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Hacking CloudKit - How I accidentally deleted your Apple Shortcuts
+description: "Apple's CloudKit datastore exposes public-scope containers whose access controls Apple's own apps misconfigured, and because several CloudKit API endpoints authenticate differently, an ordinary iCloud user could reach those containers through a different endpoint and create or delete records."
 resource: "https://labs.detectify.com/2021/09/13/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts/"
-tags: [article, webseclist-reference, en, labs-detectify]
+tags: [article, webseclist-reference, en, labs-detectify, auth-bypass, idor, privilege-escalation, rest-api, ios, dos, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:06+00:00"

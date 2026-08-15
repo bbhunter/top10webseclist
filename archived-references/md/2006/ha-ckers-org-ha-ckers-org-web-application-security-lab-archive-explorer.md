@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Malformed URL in Image Tag Fingerprints Internet Explorer
+description: IE refuses to fetch an image whose URL contains a malformed percent escape such as %--, while Firefox and Opera fetch it normally. Loading such an image and observing whether the request arrives fingerprints the real browser without JavaScript, catching User-Agent spoofing. A dropped comment thread narrows the behaviour to IE7 only.
 resource: "http://ha.ckers.org/blog/20061206/malformed-url-in-image-tag-fingerprints-internet-explorer/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, browser-fingerprinting, detection, url-parsing, info-leak, side-channel, parser-differential]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:52:28+00:00"

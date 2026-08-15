@@ -1,8 +1,9 @@
 ---
 type: Article
 title: You Are Not Where You Think You Are, Opera Browsers Address Bar Spoofing Vulnerabilities
+description: "Seven address bar spoofs in Opera desktop and mobile: intent:// and opera-mini:// handlers that display an attacker-chosen URL over attacker content, a GX Mod that silently updates itself into a full extension and opens a chrome-less window carrying a fake URL bar, a stored XSS in play.gx.games reaching a privileged extension, and fullscreen entered with no notice."
 resource: "https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8"
-tags: [article, webseclist-reference, en, medium]
+tags: [article, webseclist-reference, en, medium, ui-redress, browser-extension, url-parsing, xss, open-redirect, android, unicode, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:21+00:00"

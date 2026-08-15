@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem"
+description: A crawl of the Alexa top 10k plus 90,816 dependency and sub-domain hosts maps still-exploitable TLS flaws such as ROBOT, DROWN, POODLE-TLS and Heartbleed onto attack trees, then measures the web-application damage. 898 sites become fully compromisable, 412 can have every session cookie stolen and 543 accept forced cookies, usually via a vulnerable related domain or script host.
 resource: "https://ieeexplore.ieee.org/document/8835223"
-tags: [article, webseclist-reference, ieeexplore-ieee-org]
+tags: [article, webseclist-reference, ieeexplore-ieee-org, tls, https, cookie, info-leak, side-channel, session-fixation, large-scale-scan, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:02+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Flash | OpnSec
+description: "Series on Flash flaws in YouTube's player: an information leak, arbitrary Flash execution on youtube.com through the app loader, cross-site flashing by redefining loaderInfo.url so the main movie loads an attacker-supplied module, and three Flash-based cross-site scripting bugs in the iframe API's Flash fallback."
 resource: "https://opnsec.com/category/flash/"
-tags: [article, webseclist-reference, en-US, opnsec-com]
+tags: [article, webseclist-reference, en-US, opnsec-com, flash, xss, sop-bypass, info-leak, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:20+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: samy kamkar - evercookie - virtually irrevocable persistent cookies
+description: Evercookie stores one identifier redundantly across every browser persistence mechanism at once, from HTTP cookies and Flash LSOs to RGB values in force-cached PNGs read back through a canvas, visited-link history, ETags and each HTML5 store.
 resource: "http://samy.pl/evercookie/"
-tags: [article, webseclist-reference, sa-my]
+tags: [article, webseclist-reference, sa-my, cookie, javascript, tooling, flash, java, info-leak, side-channel, novel-technique, cache]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:15+00:00"

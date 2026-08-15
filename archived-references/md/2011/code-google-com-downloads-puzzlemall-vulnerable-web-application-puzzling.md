@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Google Code Archive - Long-term storage for Google Code Project Hosting.
+description: "The Google Code download index for PuzzleMall, Shay Chen's deliberately vulnerable Java web application for practising session puzzling and temporal session race conditions. It lists the session puzzling whitepaper and both conference decks, the SessionKeepAlive connection-pool exhaustion tool, and Derby and MySQL builds of the app."
 resource: "https://code.google.com/p/puzzlemall/downloads/list"
-tags: [article, webseclist-reference, en, code-google-com]
+tags: [article, webseclist-reference, en, code-google-com, tooling, race-condition, session-fixation, auth-bypass, java, dos]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:23+00:00"

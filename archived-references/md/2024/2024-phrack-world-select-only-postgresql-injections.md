@@ -1,8 +1,9 @@
 ---
 type: Article
 title: World of SELECT-only PostgreSQL Injections
+description: "A Go app's SELECT-only injection cannot stack queries because the pgx driver prepares every statement, but the database user holds lo_import/lo_export. Those read the pg_authid filenode off disk; a custom filenode editor flips the rol* superuser bytes offline, lo_export writes it back, and creating a 128MB large object evicts the table from shared buffers so the edit takes effect. As superuser, rewriting postgresql.conf to preload an attacker .so yields a reverse shell."
 resource: "https://phrack.org/issues/71/8#article"
-tags: [article, webseclist-reference, en, phrack]
+tags: [article, webseclist-reference, en, phrack, sqli, postgres, database, privilege-escalation, rce, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:38:05+00:00"

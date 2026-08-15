@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Site plagiarizes blog posts, then files DMCA takedown on originals
+description: "Ars Technica reports a DMCA takedown that ran backwards: an Indian site, NewsBulet.In, copied Retraction Watch's posts about disgraced Duke cancer researcher Anil Potti, then filed a copyright claim that made WordPress pull the ten originals. WHOIS showed the copying site postdated most of the posts, and its other pages reproduce wire stories verbatim."
 resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
-tags: [article, webseclist-reference, en-us, ars-technica]
+tags: [article, webseclist-reference, en-us, ars-technica, case-study, wordpress]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:03+00:00"

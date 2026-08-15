@@ -1,8 +1,9 @@
 ---
 type: Advisory
 title: "Zero Day Initiative — SolarWinds Access Rights Manager: One Vulnerability to LPE Them All"
+description: Six pre-authentication arbitrary file read and delete flaws in SolarWinds Access Rights Manager, reachable through an unauthenticated service on port 55555/tcp whose file-name argument is never validated. Because the deletion runs while impersonating the configured Active Directory account, often a Domain Admin, and accepts UNC paths, it converts into local privilege escalation on any domain-joined Windows machine via the known file-deletion-to-LPE technique.
 resource: "https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all"
-tags: [advisory, webseclist-reference, en, zero-day-initiative]
+tags: [advisory, webseclist-reference, en, zero-day-initiative, cve, privilege-escalation, path-traversal, dotnet, abuse-of-functionality, vendor-advisory]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:06+00:00"

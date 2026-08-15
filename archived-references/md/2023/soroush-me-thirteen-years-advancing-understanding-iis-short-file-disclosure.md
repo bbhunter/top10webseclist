@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Thirteen Years On: Advancing the Understanding of IIS Short File Name (SFN) Disclosure!"
+description: "Extends the IIS 8.3 short-file-name disclosure technique: response differences to crafted tilde and wildcard requests confirm hidden files and folders, and extra question-mark padding also reveals full long file names containing a tilde-digit pattern. Adds a probe that tells an IIS application apart from a directory or virtual directory."
 resource: "https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure"
-tags: [article, webseclist-reference, en, soroush-me]
+tags: [article, webseclist-reference, en, soroush-me, info-leak, url-parsing, aspnet, dotnet, side-channel, tooling, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:28+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "WOOT '18 Workshop Program"
+description: "The USENIX WOOT 18 programme page, carrying one-paragraph abstracts for every workshop paper. The cited one analyses eIDAS: 7 of 15 European electronic identity services were open to XML attacks giving denial of service and server-side request forgery, and 5 let an attacker read local files and send them to an arbitrary domain."
 resource: "https://www.usenix.org/conference/woot18/workshop-program"
-tags: [article, webseclist-reference, en, usenix]
+tags: [article, webseclist-reference, en, usenix, xxe, ssrf, dos, saml, sso, info-leak, measurement-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:52+00:00"
@@ -17,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:89"
+  - "2018.md:90"
 commit: ""
 content_sha256: d87e15e24ca412986e68b1e01b83184431afc1d25faebb5f3107a2d6afe8ca63
 depth: full

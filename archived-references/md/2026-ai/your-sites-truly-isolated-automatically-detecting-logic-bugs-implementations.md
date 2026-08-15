@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations
+description: "Site Isolation confines each site to its own renderer process, leaving the browser process to track which process may act for which site; errors in that bookkeeping are Site Isolation bypasses. This work presents the first automatic detector: a leak sanitiser flagging cross-process data leaks, a process sanitiser for process-reuse bugs, and an IPC fuzzer simulating a compromised renderer. Four vulnerabilities were found in Chrome and Firefox, one giving full control of a victim site."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, sop-bypass, same-origin-policy, info-leak, fuzzing, cve, dynamic-analysis, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:40+00:00"

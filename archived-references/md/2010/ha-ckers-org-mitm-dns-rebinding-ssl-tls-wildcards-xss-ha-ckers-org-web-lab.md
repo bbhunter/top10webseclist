@@ -1,8 +1,9 @@
 ---
 type: Article
 title: MitM DNS Rebinding SSL/TLS Wildcards and XSS ha.ckers.org web application security lab
+description: "A network attacker chains DNS rebinding with a wildcard TLS certificate: after the victim logs into a hardened subdomain, the attacker firewalls its IP and rebinds the name to a sibling subdomain that carries an XSS and ignores the Host header. The wildcard cert validates, the XSS runs in the hardened origin, then a second rebind returns to the real host so session cookies apply."
 resource: "http://ha.ckers.org/blog/20100822/mitm-dns-rebinding-ssltls-wildcards-and-xss/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, dns-rebinding, tls, https, xss, same-origin-policy, attack-chain, cookie, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:52+00:00"

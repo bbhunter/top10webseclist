@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Top 3 Proxy Issues That No One Ever Told You
+description: "Behind an inline caching proxy or cloud WAF the origin only ever sees the proxy's IP, so it trusts X-Forwarded-For. A null byte in that header name makes Apache answer 400 and rpaf log no client IP at all. TRACE sent through the proxy echoes what the proxy actually forwards, exposing any secret header the pair used to obfuscate the real client address."
 resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
-tags: [article, webseclist-reference, en, whitehat-security]
+tags: [article, webseclist-reference, en, whitehat-security, http, proxy, waf-bypass, header-injection, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:55+00:00"

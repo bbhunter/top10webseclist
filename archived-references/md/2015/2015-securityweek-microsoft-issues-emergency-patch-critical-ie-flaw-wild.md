@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Microsoft Issues Emergency Patch for Critical IE Flaw Exploited in the Wild
+description: "Microsoft shipped the out-of-band bulletin MS15-093 for CVE-2015-2502, a memory-corruption flaw in how Internet Explorer 7 to 11 handles objects in memory. A crafted or compromised web page, ad or HTML email runs attacker code with the current user's rights, was already being exploited in the wild, and can be chained with other bugs to reach administrator."
 resource: "http://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild"
-tags: [article, webseclist-reference, en, securityweek]
+tags: [article, webseclist-reference, en, securityweek, rce, cve, vendor-advisory, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:54+00:00"

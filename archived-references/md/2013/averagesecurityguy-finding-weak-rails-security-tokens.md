@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Finding Weak Rails Security Tokens
+description: Rails signs session cookies with a secret token, and tokens committed to public GitHub repositories stay usable. Cookies were gathered from roughly 20,000 Shodan-found Rails servers and 40,000 Alexa sites, then matched against the harvested tokens by recomputing the HMAC-SHA1 digest. Seven servers used a leaked token; none of the 303 matching Alexa sites did.
 resource: "http://web.archive.org/web/20160507023636/http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/"
-tags: [article, webseclist-reference, en, averagesecurityguy]
+tags: [article, webseclist-reference, en, averagesecurityguy, rails, session-fixation, cookie, info-leak, deserialization, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:12+00:00"

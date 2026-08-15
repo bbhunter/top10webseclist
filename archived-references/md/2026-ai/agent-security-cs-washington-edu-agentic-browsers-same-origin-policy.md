@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Agentic Browsers and the Same-Origin Policy
+description: "Across seven agentic browsers, the embedded agent can read page content that the same-origin policy would deny to script, including cross-origin iframes and masked password fields. A malicious page that frames a sensitive site and hides an instruction in its text can therefore have the agent summarise the framed content into an auto-submitting form, reducing the same-origin policy to the agent's prompt-injection defences; demonstrated end to end on ChatGPT Atlas Agent Mode."
 resource: "https://agent-security.cs.washington.edu/agentic_browsers_sop.html"
-tags: [article, webseclist-reference, en, agent-security-cs-washington-edu]
+tags: [article, webseclist-reference, en, agent-security-cs-washington-edu, prompt-injection, same-origin-policy, sop-bypass, ai-agent, llm, iframe, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:33:59+00:00"
@@ -19,7 +20,7 @@ authors:
   - David Kohlbrenner
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:81"
+  - "2026-ai.md:84"
 commit: ""
 content_sha256: 02a25f98165e76415a16c4b74f880855af6f39f98f73c7873db07f0a513a0fd5
 depth: full

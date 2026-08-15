@@ -1,8 +1,9 @@
 ---
 type: Code
 title: "browser: v1.10.8, fixes to url matchers and dep upgrade (#10277)"
+description: "The Keybase browser extension fix for a query-string parsing differential: its parser now rejects duplicate parameter keys instead of silently keeping one, so a crafted link can no longer make the extension open a chat with a different user than the host page displays. The same commit escapes the dots in the regexes that decide which site a page belongs to."
 resource: "https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc"
-tags: [code, webseclist-reference, en, github]
+tags: [code, webseclist-reference, en, github, parser-differential, url-parsing, browser-extension, filter-bypass, javascript, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:20+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Old new email attacks
+description: "Email address parsers disagree about the bracketed domain-literal form: several permit CR LF inside the brackets, letting an attacker inject SMTP commands through an application's recipient field and send arbitrary mail from its own domain. Gmail and Outlook also parse group and multi-address From headers differently, enabling sender spoofing."
 resource: "https://blog.slonser.info/posts/email-attacks/"
-tags: [article, webseclist-reference, blog-slonser-info]
+tags: [article, webseclist-reference, blog-slonser-info, header-injection, parser-differential, smtp, email, injection, filter-bypass, dotnet, python, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:52+00:00"

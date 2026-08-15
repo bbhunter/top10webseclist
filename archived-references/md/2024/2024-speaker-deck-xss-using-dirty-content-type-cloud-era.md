@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: XSS using dirty Content Type in cloud era
+description: "Examines how HTTP Content-Type is parsed differently by RFC 9110 and the WHATWG Fetch standard, which splits the field on commas and takes the last media type, so values such as image/png,text/html defeat prefix, suffix, regex and substring allowlists. Cloud object storage makes this reachable: all three upload paths let the client set the stored Content-Type metadata, which the browser then honours. Two carrierwave advisories are traced, and exact-match validation is recommended."
 resource: "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21"
-tags: [slides, webseclist-reference, speaker-deck]
+tags: [slides, webseclist-reference, speaker-deck, xss, content-type, parser-differential, file-upload, mime, aws, ruby, cve, filter-bypass]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T20:33:25+00:00"

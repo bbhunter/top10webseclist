@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation
+description: "Because Chromium's site isolation gives each site its own renderer process, load timing leaks cross-site state: an attacker page can learn which of a chosen set of sites are already loaded in the browser and which one the user is interacting with. On Alexa Top 3000, 95 to 99 percent of sites were vulnerable by the paper's three metrics."
 resource: "https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/"
-tags: [article, webseclist-reference, en, microsoft-research]
+tags: [article, webseclist-reference, en, microsoft-research, xsleak, timing-attack, side-channel, info-leak, iframe, same-origin-policy, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:03+00:00"

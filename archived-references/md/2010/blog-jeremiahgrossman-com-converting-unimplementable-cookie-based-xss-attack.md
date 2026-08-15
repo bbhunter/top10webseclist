@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Converting unimplementable Cookie-based XSS to a persistent attack
+description: "XSS reachable only through a Cookie header is usually written off as unexploitable because no page can make a browser send a modified cookie. Chaining fixes that: a common reflected XSS sets the poisoned cookie value through document.cookie, and the cookie-based flaw then fires on every subsequent login. Two lower-severity bugs combine into a persistent attack that survives across sessions."
 resource: "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, xss, cookie, attack-chain, novel-technique, javascript, case-study, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:08+00:00"

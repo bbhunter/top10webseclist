@@ -1,8 +1,9 @@
 ---
 type: Article
 title: New Timing Attack Could De-Anonymize Google Users
+description: "Andrew Cantino's timing attack de-anonymises a chosen Google user: silently share a Google document with the target's address, then load it as an image and time the onerror callback. Loading averaged 891 ms when the document was accessible against 573 ms when it was not, revealing that account's presence with no cookie set."
 resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, timing-attack, xsleak, side-channel, info-leak, dom, javascript, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:16+00:00"

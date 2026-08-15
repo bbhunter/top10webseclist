@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands"
+description: A Rowhammer attack written in JavaScript that alternates bursts of intense hammering with long idle windows, so the memory controller postpones and batches the refresh commands that would otherwise trigger in-memory defences. A lane abstraction lets a subset of addresses be hit more often, flipping bits from a web page on 86 percent of 28 devices tested.
 resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, javascript, side-channel, novel-technique, measurement-study, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:37+00:00"

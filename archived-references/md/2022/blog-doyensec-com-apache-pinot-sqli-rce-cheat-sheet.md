@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Apache Pinot SQLi and RCE Cheat Sheet
+description: A cheat sheet for injecting into Apache Pinot, an OLAP database whose Calcite-based SQL lacks UNION, stacked queries and information schema. Its OPTION(...) clause is stripped from anywhere in a query, even inside strings, giving filter and WAF bypasses, and an injected GROOVY() call runs shell commands as root on Pinot servers, then pivots to Zookeeper and brokers.
 resource: "https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, sqli, rce, filter-bypass, waf-bypass, injection, database, java, attack-chain]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:46+00:00"

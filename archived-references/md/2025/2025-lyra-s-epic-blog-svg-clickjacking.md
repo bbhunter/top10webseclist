@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SVG clickjacking
+description: "SVG filters still apply to cross-origin iframes, and tiling, blending and compositing primitives can crop single pixels of the framed page and combine them into logic gates. An overlay can then read the framed application's state and react to it, making multi-step clickjacking with fake dialogs practical, and exfiltrating read pixels as a scannable code."
 resource: "https://lyra.horse/blog/2025/12/svg-clickjacking/"
-tags: [article, webseclist-reference, en-us, lyra-s-epic-blog]
+tags: [article, webseclist-reference, en-us, lyra-s-epic-blog, clickjacking, ui-redress, sop-bypass, info-leak, side-channel, iframe, css, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:17:48+00:00"

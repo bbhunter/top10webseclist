@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Save Your Cloud: DoS on VMs in OpenNebula 4.6.1"
+description: "Renaming an OpenNebula virtual machine to a name holding an unclosed XML tag makes the backend auto-close it in the wrong place, producing a record that no longer matches the expected schema. The core then fails to parse that machine's entry, so it can no longer be controlled from the Sunstone web interface, and version 4.6.1 has no CSRF protection to stop a forced rename."
 resource: "https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html"
-tags: [article, webseclist-reference, en, web-in-security-blogspot-com]
+tags: [article, webseclist-reference, en, web-in-security-blogspot-com, dos, csrf, injection, parser-differential, sanitizer-bypass, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:05+00:00"

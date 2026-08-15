@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Frame Injection Fun
+description: "pagvac separates frame injection from XSS: an unfiltered URL parameter feeding a frameset or iframe needs no angle brackets, so HTML and script filters never fire, and an absolute URL loads attacker content while the trusted domain stays in the address bar. Demonstrated live against mail.google.com's imgres endpoint as a Gmail credential-phishing page."
 resource: "https://www.gnucitizen.org/blog/frame-injection-fun/"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, iframe, phishing, filter-bypass, open-redirect, url-spoofing, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:49+00:00"

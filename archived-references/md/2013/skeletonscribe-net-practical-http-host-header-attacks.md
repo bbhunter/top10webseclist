@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Practical HTTP Host header attacks
+description: "Applications build absolute URLs from the attacker-controlled HTTP Host header. Poisoning it redirects password-reset links to the attacker (Gallery, Django, Piwik, Joomla), while duplicate Host headers or an absolute request URI split what the cache sees from what the application sees, poisoning Varnish and Joomla. Django's port and blacklist patches are each bypassed."
 resource: "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html"
-tags: [article, webseclist-reference, en-GB, skeletonscribe-net]
+tags: [article, webseclist-reference, en-GB, skeletonscribe-net, cache-poisoning, header-injection, http, django, joomla, xss, email, novel-technique, mitigation, reverse-proxy]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:24+00:00"

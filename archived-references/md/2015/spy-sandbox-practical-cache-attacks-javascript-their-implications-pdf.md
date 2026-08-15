@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "The Spy in the Sandbox: Practical Cache Attacks in JavaScript and their Implications (PDF)"
+description: "A last-level cache PRIME+PROBE side-channel attack written entirely in JavaScript, needing no installed code: the victim only loads a page or an ad. It builds eviction sets without large-page support and uses high-resolution timers to recover memory access patterns, tracking which sites a user visits with over 80% accuracy, across processes, browsers, private browsing and VMs."
 resource: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, side-channel, timing-attack, info-leak, javascript, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:46:05+00:00"

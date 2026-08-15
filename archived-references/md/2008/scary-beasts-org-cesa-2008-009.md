@@ -1,8 +1,9 @@
 ---
 type: Article
 title: CESA-2008-009
+description: "Firefox 2 before 2.0.0.18 and WebKit nightlies could be fooled about an image's origin by loading it via a same-origin URL that 302-redirects to the remote target. The browser treats the result as local, so canvas getImageData reads its pixels and the page steals authenticated images cross-domain. The same trick enumerates installed applications. CVE-2008-5012, MFSA 2008-48."
 resource: "http://scary.beasts.org/security/CESA-2008-009.html"
-tags: [article, webseclist-reference, scary-beasts-org]
+tags: [article, webseclist-reference, scary-beasts-org, sop-bypass, same-origin-policy, info-leak, browser-fingerprinting, cve, vendor-advisory, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:59+00:00"

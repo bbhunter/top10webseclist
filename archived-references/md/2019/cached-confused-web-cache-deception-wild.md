@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Cached and Confused: Web Cache Deception in the Wild"
+description: "Web cache deception exploits path confusion: a URL such as /account.php/nonexistent.jpg looks static to a caching proxy but resolves to a private page at the origin, so the cache stores it for any attacker to fetch. A measurement of 340 top sites found leaked personal data, session and CSRF tokens, plus five path-confusion variants that widen the attack."
 resource: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, cache-deception, cache, cdn, url-parsing, info-leak, http, proxy, large-scale-scan, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:21+00:00"

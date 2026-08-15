@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms"
+description: "Measures how 20 social networks and messengers build link previews from a page's own metadata. Four render previews that hide the real destination even from a careful user, all of them can be given misleading previews by an attacker who registers a domain, 18 apply no malicious-link checks, and the checks that exist fall to redirects."
 resource: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/"
-tags: [article, webseclist-reference, en, ndss-symposium]
+tags: [article, webseclist-reference, en, ndss-symposium, measurement-study, filter-bypass, open-redirect, url-parsing, large-scale-scan, http]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:19+00:00"

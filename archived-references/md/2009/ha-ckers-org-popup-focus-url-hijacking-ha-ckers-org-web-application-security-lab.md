@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Popup & Focus URL Hijacking ha.ckers.org web application security lab
+description: A snippet replaces the page shortly after load, so the address bar a user checked no longer matches what they see. Applied to a download prompt, a page posing as addons.mozilla.org triggers a Firefox add-on install dialog that names ha.ckers.org as the source, and blocks the legitimate download until the user acts.
 resource: "http://ha.ckers.org/blog/20091228/popup-focus-url-hijacking/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, ui-redress, javascript, browser-extension, attack-chain, url-spoofing]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:42+00:00"

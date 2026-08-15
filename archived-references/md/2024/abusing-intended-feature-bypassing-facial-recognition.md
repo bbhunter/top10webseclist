@@ -1,8 +1,9 @@
 ---
 type: Slides
 title: Abusing Intended Feature And Bypassing Facial Recognition
+description: "An app's signup requires a live face-detection step, with only two criteria: the face must be human and looking straight ahead. Testing shows a physical photograph held to the camera blurs and is rejected, but a deepfake image supplied through the app's own intended gallery-import feature satisfies both criteria and passes, so anyone can verify as the account holder without ever being in front of the camera."
 resource: "https://docs.google.com/presentation/d/16mvSEvpnNYrYcJe4XA_Nwd9OwEuf4UTE/edit?usp=sharing&ouid=101230982661442785272&rtpof=true&sd=true"
-tags: [slides, webseclist-reference]
+tags: [slides, webseclist-reference, abuse-of-functionality, auth-bypass, bug-bounty, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:11:54+00:00"

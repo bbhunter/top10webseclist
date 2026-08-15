@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Magic Hashes - WhiteHat Security
+description: "PHP's == operator compares two hash strings numerically when both look like 0e followed only by digits, so both become the float zero and match. Submitting a precomputed magic value as a password, token or cookie therefore makes the comparison return true without knowing the secret, and the post tabulates such inputs for md5, sha1, ripemd, tiger, haval and others."
 resource: "https://www.whitehatsec.com/blog/magic-hashes/"
-tags: [article, webseclist-reference, en, whitehat-security]
+tags: [article, webseclist-reference, en, whitehat-security, auth-bypass, php, prior-art-extension, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T12:25:56+00:00"
@@ -52,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

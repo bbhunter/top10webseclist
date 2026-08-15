@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Exponential XSS Attacks
+description: "Maluc's idea developed: one XSS foothold is used to exploit XSS on other domains, cascading across every site a user is authenticated to. Grossman's CSS history hack picks which domains to try, and XMLHttpRequest with an XSS proxy, IE's Expect/Flash trick and the mhtml cross-domain leak keep the shell alive as the user navigates away."
 resource: "http://ha.ckers.org/blog/20061211/exponential-xss-attacks/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, xss, attack-chain, javascript, sop-bypass, side-channel, mime, flash, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:13:57+00:00"

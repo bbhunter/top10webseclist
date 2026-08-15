@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Black Hat USA 2013
+description: "The Black Hat USA 2013 briefings programme, holding the abstract of every talk, workshop and turbo talk. The cited anchor is Grossman and Johansen's Million Browser Botnet: paid ad-network impressions push arbitrary JavaScript into a million browsers, which then run CSRF requests, DDoS, spam and hash cracking, leaving no trace once the page closes."
 resource: "http://web.archive.org/web/20160507023636/http://blackhat.com/us-13/briefings.html#Grossman"
-tags: [article, webseclist-reference, blackhat-com]
+tags: [article, webseclist-reference, blackhat-com, javascript, csrf, dos, xss, tls, timing-attack, clickjacking]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:48+00:00"

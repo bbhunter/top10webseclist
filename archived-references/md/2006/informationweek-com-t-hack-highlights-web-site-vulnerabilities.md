@@ -1,8 +1,9 @@
 ---
 type: Article
 title: AT&T Hack Highlights Web Site Vulnerabilities
+description: "News report on the August 2006 breach of an AT&T DSL equipment store that exposed card data for nearly 19,000 customers. Jeremiah Grossman is quoted on the methods behind such attacks: JavaScript malware embedded in pages, XSS, site worms, and Bugtraq-driven search for unpatched deployments of known web applications."
 resource: "http://www.informationweek.com/news/showArticle.jhtml?articleID=192500500&subSection=Breaking+News"
-tags: [article, webseclist-reference, en, informationweek-com]
+tags: [article, webseclist-reference, en, informationweek-com, case-study, xss, javascript, info-leak, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:28+00:00"

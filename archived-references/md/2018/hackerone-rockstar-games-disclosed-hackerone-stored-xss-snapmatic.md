@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Rockstar Games disclosed on HackerOne: Stored XSS in Snapmatic +..."
+description: Six months of stored XSS against Rockstar Games Social Club, Snapmatic and Rockstar Editor comments, each round defeating a stricter web application firewall. The bypasses used control characters inside tag names, a stray percent sign that desynchronised the escaper, and full-width, small-form and CJK angle brackets that a later layer best-fit mapped back to a less-than sign.
 resource: "https://hackerone.com/reports/309531"
-tags: [article, webseclist-reference, en, hackerone]
+tags: [article, webseclist-reference, en, hackerone, waf-bypass, xss, filter-bypass, unicode, charset, encoding, parser-differential, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:30+00:00"

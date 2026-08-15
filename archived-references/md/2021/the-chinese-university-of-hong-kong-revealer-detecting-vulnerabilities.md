@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Revealer: Detecting and exploiting regular expression denial-of-service vulnerabilities"
+description: Regular expression denial of service exploits regexes whose matching time blows up on crafted input. Revealer models the vulnerable structures of regexes that use extended features, locates them statically, verifies them dynamically by triggering recursive backtracking, and generates attack strings, finding 213 vulnerabilities beyond existing tools.
 resource: "https://research.cuhk.edu.hk/en/publications/revealer-detecting-and-exploiting-regular-expression-denial-of-se-2/"
-tags: [article, webseclist-reference, en, the-chinese-university-of-hong-kong]
+tags: [article, webseclist-reference, en, the-chinese-university-of-hong-kong, algorithmic-complexity, dos, static-analysis, dynamic-analysis, detection, tooling, java, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T23:55:01+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:69"
+  - "2021.md:65"
 commit: ""
 content_sha256: 29096d96b2537c841477706a45632f1d3571ee8b8353b0bbfacd96080462b61c
 depth: full

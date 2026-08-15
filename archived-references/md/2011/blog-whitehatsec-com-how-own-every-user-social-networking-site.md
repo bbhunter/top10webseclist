@@ -1,12 +1,13 @@
 ---
 type: Article
 title: How To Own Every User On A Social Networking Site
+description: "Matt Johansen chains a DOM-based persistent XSS in a social network's profile tag field with missing authorization on the id parameter of the AddTag request. Because every user's id is public in their profile URL, a short injection calling an external script could be written into every profile's DOM, making the flaw wormable."
 resource: "https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/"
-tags: [article, webseclist-reference, en-US, blog-whitehatsec-com]
+tags: [article, webseclist-reference, en-US, blog-whitehatsec-com, xss, dom, idor, auth-bypass, attack-chain, case-study, aspnet]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:52+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original

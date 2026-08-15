@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Turbo Intruder: Embracing the billion-request attack"
+description: A Burp extension built on a hand-written HTTP stack that sends requests far faster than normal tooling, reaching about 30,000 requests per second and sustaining multi-day attacks at flat memory. Python-scripted attacks, response filtering and a gate that releases requests simultaneously make large brute force and race-condition hunting practical.
 resource: "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, tooling, race-condition, http, http2, timing-attack, python, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:58+00:00"

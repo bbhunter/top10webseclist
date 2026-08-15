@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "Unraveling Unicode: A Bag of Tricks for Bug Hunting"
+description: "A Black Hat USA 2009 deck cataloguing how Unicode handling breaks security boundaries: best-fit mapping, NFKC/NFKD normalisation, overlong UTF-8, over-consumption of ill-formed MBCS bytes, character deletion and casing. Each root cause is shown turning filtered input into live markup, with case studies against a social network, Safari/Firefox BOM handling and Opera."
 resource: "https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, unicode, encoding, charset, filter-bypass, xss, url-parsing, tooling, survey]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:01+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser"
+description: "Shows that site isolation, by giving web content its own operating system processes, hands a mere web attacker OS-level resources to exhaust: a visited page can fork-bomb the machine and occupy every UDP socket, and that socket exhaustion is then chained into a working DNS cache poisoning attack that defeats a major DNS defence."
 resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, dos, cache-poisoning, dns, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:17+00:00"

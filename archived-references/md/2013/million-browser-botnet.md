@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Million Browser Botnet
+description: "Grossman and Johansen show ad networks will run arbitrary attacker JavaScript, so a $0.15 CPM buy rents a million browsers with no exploit or malware. The rented browsers do CSRF, login detection, deanonymisation, intranet scanning, hash cracking and application-level DDoS; a connection-limit bypass using ftp:// image URLs lifts 6 requests per host to about 300."
 resource: "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, csrf, xss, clickjacking, dos, javascript, info-leak, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:21+00:00"

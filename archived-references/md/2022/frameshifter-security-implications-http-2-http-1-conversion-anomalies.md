@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies"
+description: A grammar-based fuzzer for HTTP/2 that mutates frame sequences and frame contents to find anomalies in how CDNs and reverse proxies convert HTTP/2 requests into HTTP/1 for the origin. Testing 12 proxy technologies produced request blackholing, denial of service, query-of-death and request smuggling attacks against the servers behind them.
 resource: "https://bahruz.me/publications/11844.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, request-smuggling, http2, desync, dos, cdn, reverse-proxy, proxy, http, fuzzing, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:07:57+00:00"

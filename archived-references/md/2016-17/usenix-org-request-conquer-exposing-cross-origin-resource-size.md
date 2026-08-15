@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Request and Conquer: Exposing Cross-Origin Resource Size"
+description: "TLS conceals content but not message size. Design flaws in browser storage and quota mechanisms let a cross-origin page measure the exact byte size of any resource fetched with the victim's cookies within seconds, and a further technique does the same against Wi-Fi traffic. The size of a personalised page reveals private facts about the user; a safer storage design is proposed."
 resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, xsleak, side-channel, info-leak, cache, same-origin-policy, tls, https, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:28+00:00"

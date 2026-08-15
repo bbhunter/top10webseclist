@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Counting in Regexes Considered Harmful: Exposing ReDoS Vulnerability of Nonbacktracking Matchers"
+description: "Nonbacktracking regex engines are assumed immune to ReDoS, but bounded repetition such as (ab){100} forces them into costly simulation of a counting automaton. The authors generate inputs that maximise that cost, slowing real matchers including Hyperscan, .NET and a hardware engine enough to deny service in applications such as SNORT."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/turonova"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, algorithmic-complexity, dos, formal-analysis, measurement-study, dotnet, tooling, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:06+00:00"

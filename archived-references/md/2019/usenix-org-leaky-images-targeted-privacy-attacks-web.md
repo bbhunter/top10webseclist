@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Leaky Images: Targeted Privacy Attacks in the Web"
+description: An image shared privately with one user is requested by an attacker-controlled page, and the load succeeds only for that logged-in user, revealing that a specific person is visiting the site. It needs neither JavaScript nor CSS, extends to tracking groups and linking identities across sites, and affected eight of the thirty most popular image-sharing sites including Facebook and Twitter.
 resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/staicu"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, info-leak, xsleak, side-channel, cookie, same-origin-policy, measurement-study, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:57+00:00"

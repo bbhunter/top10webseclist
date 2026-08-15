@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: "CRLF-Powered Desync Attacks: Beheading HTTP Streams (Slides)"
+description: "nginx's proxy_pass with $uri decodes %0d%0a, so an encoded path injects headers upstream: a second request splits the stream for response queue poisoning, and an injected Transfer-Encoding turns it into a CL.TE desync that captures victim requests, fixes sessions and poisons caches. fetch and window.open reach both from a browser, and CDN-Cache-Control: private=Location makes the edge drop Location so an injected body renders as XSS."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, request-smuggling, desync, header-injection, response-splitting, http, xss, cache-poisoning, waf-bypass, reverse-proxy, cookie]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:31+00:00"

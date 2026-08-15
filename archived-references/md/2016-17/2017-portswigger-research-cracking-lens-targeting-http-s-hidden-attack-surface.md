@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Cracking the lens: targeting HTTP's hidden attack-surface"
+description: Malformed Host headers and esoteric request headers make reverse proxies and other transparent intermediaries reveal themselves and misroute requests into internal networks. The same tricks reach intercepting middleboxes and caching proxies, yielding server-side request forgery, internal service access and poisoned caches at bug bounty scale.
 resource: "https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden-attack-surface"
-tags: [article, webseclist-reference, portswigger-research]
+tags: [article, webseclist-reference, portswigger-research, ssrf, reverse-proxy, http, header-injection, cache-poisoning, proxy, bug-bounty, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:06+00:00"

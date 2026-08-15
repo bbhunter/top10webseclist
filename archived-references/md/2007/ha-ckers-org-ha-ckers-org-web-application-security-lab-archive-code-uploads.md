@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Code Execution Through Filenames in Uploads
+description: "Uploading a file whose NAME is a shell command turns a sloppy reader into code execution. RSnake creates a file called \"|ls -al\"; Perl's two-argument open treats the leading pipe as a command, so the script runs the filename instead of reading it. He pairs it with his arbitrary image-name generator to reach the upload path."
 resource: "http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, file-upload, command-injection, perl, rce, filter-bypass, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:42+00:00"

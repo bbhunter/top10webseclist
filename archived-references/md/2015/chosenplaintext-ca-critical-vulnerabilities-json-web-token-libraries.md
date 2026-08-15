@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Critical vulnerabilities in JSON Web Token libraries
+description: "JWT lets the token itself name the algorithm used to verify it, so an attacker chooses the verification method. Many libraries accepted alg none as a validly signed token, and when handed an HS256 token treated the server's RSA public key as the HMAC secret, letting anyone with the public key forge tokens and authenticate as any user."
 resource: "https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html"
-tags: [article, webseclist-reference, chosenplaintext-ca]
+tags: [article, webseclist-reference, chosenplaintext-ca, auth-bypass, jwt, privilege-escalation, novel-technique, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:07:10+00:00"
@@ -16,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:53"
+  - "2015.md:54"
 commit: ""
 content_sha256: d59344c733e348a8a2514a79e1145fc4d3898770af9bc26e2a73cceb5d8a910d
 depth: full

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: New Phishing Campaign Leverages Google Drive
+description: Phishing pages were hosted on Google Drive so the link and its HTTPS certificate look like Google own infrastructure, and the page JavaScript was obfuscated so scanners could not read the HTML or rely on IP blacklists. Harvested Google single sign-on credentials were sent to a separate third-party domain.
 resource: "http://www.darkreading.com/cloud/new-phishing-campaign-leverages-google-drive-/d/d-id/1321485"
-tags: [article, webseclist-reference, en, dark-reading]
+tags: [article, webseclist-reference, en, dark-reading, sso, filter-bypass, javascript, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:35+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Argus: All your (PHP) Injection-sinks are belong to us."
+description: Argues that injection-vulnerability detection built on hand-curated sink lists misses sinks the language interpreter itself provides, and derives the sink set automatically from PHP interpreter internals instead. Applied to three major PHP versions it identified 284 deserialization sinks and 22 XSS sinks, far beyond prior lists; feeding these to two static taint analyses and an exploit generator surfaced 13 previously unknown flaws in WordPress and its plugins, 11 assigned CVE IDs.
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, php, injection, deserialization, xss, command-injection, static-analysis, wordpress, cve, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:30+00:00"

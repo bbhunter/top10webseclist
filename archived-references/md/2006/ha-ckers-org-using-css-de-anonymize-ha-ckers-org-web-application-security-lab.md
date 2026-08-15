@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Applies Grossman's CSS history hack to internal hostnames such as intranet.company.com to identify which organisation a visitor belongs to, defeating network-level anonymisers and referrer stripping. If the history is clear, the victim's browser can be forced to the intranet URL first to seed it. Enables organisation-targeted attacks."
 resource: "http://ha.ckers.org/blog/20060911/using-css-to-de-anonymize/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, css, deanonymization, info-leak, side-channel, browser-fingerprinting, proxy, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:48:38+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: The Secret Parameter, LFR, and Potential RCE in NodeJS Apps
+description: Express passes the whole render options object to the hbs view engine, which reads its layout property as a template path. A request body carrying a layout key therefore makes the server read and render an arbitrary file, giving local file read and, on old Handlebars versions, remote code execution. Prototype pollution can inject layout even when the app wraps its object.
 resource: "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/"
-tags: [article, webseclist-reference, en, captainfreak]
+tags: [article, webseclist-reference, en, captainfreak, lfi, prototype-pollution, ssti, rce, path-traversal, nodejs, express, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:12+00:00"

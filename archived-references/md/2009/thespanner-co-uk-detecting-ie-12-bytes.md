@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Detecting IE in 12 bytes
+description: "A twelve-byte Internet Explorer detection, IE='\\v'=='v', improving on Andrea Giammarchi's thirty-two-byte version. JScript does not implement the \\v vertical tab escape and leaves the literal v, so the comparison is true only in Internet Explorer and false in every other engine."
 resource: "http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/"
-tags: [article, webseclist-reference, en, thespanner-co-uk]
+tags: [article, webseclist-reference, en, thespanner-co-uk, javascript, javascript-runtime, detection, parser-differential, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:49+00:00"

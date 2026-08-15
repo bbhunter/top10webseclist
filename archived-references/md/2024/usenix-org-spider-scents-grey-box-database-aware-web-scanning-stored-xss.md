@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Spider-Scents: Grey-box Database-aware Web Scanning for Stored XSS"
+description: "Approaches stored XSS detection from the storage side: rather than driving payloads through an application's input paths, Spider-Scents writes marker values directly into the database and maps them to the pages that render them, exposing outputs that lack escaping. Across 12 applications it reached 79-100% database coverage against 2-60% for three black-box scanners, and found 85 stored XSS vulnerabilities where the union of those tools found 32."
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/olsson"
-tags: [article, webseclist-reference, en, usenix-org]
+tags: [article, webseclist-reference, en, usenix-org, xss, database, detection, tooling, dynamic-analysis]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:34+00:00"

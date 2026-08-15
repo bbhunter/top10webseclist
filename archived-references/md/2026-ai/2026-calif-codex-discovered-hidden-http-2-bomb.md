@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Codex Discovered a Hidden HTTP/2 Bomb
+description: HPACK lets a client seed the dynamic table once and then send thousands of one-byte indexed references; the per-entry bookkeeping a server allocates around a nearly empty header (about 70 bytes on nginx and IIS, 4,000 on Apache httpd and Envoy) never trips the decoded-size cap, and splitting Cookie into crumbs evades header-count caps. A zero flow-control window with 1-byte WINDOW_UPDATE drips pins it all, holding about 32GB in seconds from a single client.
 resource: "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
-tags: [article, webseclist-reference, en, calif]
+tags: [article, webseclist-reference, en, calif, dos, http2, algorithmic-complexity, cookie, cve, llm, ai-agent, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:10+00:00"

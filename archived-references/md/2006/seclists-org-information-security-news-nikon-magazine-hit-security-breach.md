@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Information Security News: Nikon magazine hit with security breach"
+description: "CNET's Dawn Kawamoto reports, via the InfoSec News list, that Nikon World magazine's online registration site exposed 3,235 subscribers' addresses, contact details and credit card data for nine hours. Nine new subscribers could read other registrants' records back to January 1; Nikon blamed an outside vendor's system failure."
 resource: "https://seclists.org/isn/2006/Sep/67"
-tags: [article, webseclist-reference, en, seclists-org]
+tags: [article, webseclist-reference, en, seclists-org, case-study, info-leak, auth-bypass, data-breach]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:43:30+00:00"

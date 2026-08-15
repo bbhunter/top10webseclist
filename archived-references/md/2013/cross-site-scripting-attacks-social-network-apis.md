@@ -1,8 +1,9 @@
 ---
 type: Whitepaper
 title: Cross-Site Scripting Attacks in Social Network APIs
+description: "The authors name Cross-API Scripting: XSS carried through RESTful social-network APIs, where the network and its third-party apps each assume the other escapes user data. A fuzzer injected test vectors into configured API endpoints and flagged responses that echoed them or came back ill-formed, finding flaws in eleven social networks and in 107 of 143 apps examined."
 resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, XSS, Injection, fuzzing, oauth, browser-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:00:32+00:00"

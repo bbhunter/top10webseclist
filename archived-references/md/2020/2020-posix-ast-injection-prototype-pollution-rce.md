@@ -1,12 +1,13 @@
 ---
 type: Article
 title: AST Injection, Prototype Pollution to RCE
+description: Prototype pollution in a Node.js application can insert nodes into the abstract syntax tree that a template engine passes from parser to compiler. Handlebars and Pug then compile attacker-supplied AST fragments without revalidating them, so the polluted properties become arbitrary code in the generated template function and give remote code execution.
 resource: "https://blog.p6.is/AST-Injection/"
-tags: [article, webseclist-reference, en, posix]
+tags: [article, webseclist-reference, en, posix, prototype-pollution, rce, ssti, gadget-chain, injection, nodejs, javascript, attack-chain, novel-technique]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:03+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
