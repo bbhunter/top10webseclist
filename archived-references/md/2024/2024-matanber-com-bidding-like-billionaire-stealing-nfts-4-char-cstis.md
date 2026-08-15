@@ -12,11 +12,11 @@ sources:
   - id: original
     resource: "https://matanber.com/blog/4-char-csti"
     title: Bidding Like a Billionaire - Stealing NFTs With 4-Char CSTIs
-    author: @MtnBer
+    author: Matan Berson
     last_modified: 2024-07-11
 also_at: []
 authors:
-  - @MtnBer
+  - Matan Berson
 canonical_url: ""
 cited_by:
   - "2024.md:93"
@@ -44,7 +44,7 @@ translation_of: ""
 
 # Bidding Like a Billionaire - Stealing NFTs With 4-Char CSTIs
 
-**Bidding Like a Billionaire - Stealing NFTs With 4-Char CSTIs** - @MtnBer, matanber.com.
+**Bidding Like a Billionaire - Stealing NFTs With 4-Char CSTIs** - Matan Berson, matanber.com.
 
 - Published: 2024-07-11
 - Original: <https://matanber.com/blog/4-char-csti>

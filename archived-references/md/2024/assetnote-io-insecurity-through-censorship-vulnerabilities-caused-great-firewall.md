@@ -466,37 +466,3 @@ Do you have any domains that are being routed through China that you want to tes
 Enter in the domain you would like to test, i.e. `domain.cn`, and we will let you know if it's vulnerable to the attack vectors in this blog post.
 
  Enter domain:  Lookup
-
-Written by:
-
-Shubham Shah
-
-  Your subscription could not be saved. Please try again.
-
-  Your subscription has been successful.
-
-Get updates on our research
-
-Subscribe to our newsletter and stay updated on the newest research, security advisories, and more!
-
- Enter your email address to subscribe
-
-    Provide your email address to subscribe. For e.g abc@xyz.com
-
-  SUBSCRIBE
-
-### More Like This
-
-[Security Research ### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927) Read on ASN Blog](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
-
-[Security Research ### How an obscure PHP footgun led to RCE in Craft CMS Read on ASN Blog](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms)
-
-[Security Research ### Citrix Denial of Service: Analysis of CVE-2024-8534 Read on ASN Blog](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
-
-[Security Research ### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108) Read on ASN Blog](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
-
-[Security Research ### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x Read on ASN Blog](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
-
-[Security Research ### Chaining Three Bugs to Access All Your ServiceNow Data Read on ASN Blog](https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data)
-
-[Back to All](https://www.assetnote.io/resources/research)

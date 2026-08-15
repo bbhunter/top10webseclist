@@ -412,5 +412,3 @@ Our deep dive into Lucee, an alternative CFML server, yielded insightful results
 Furthermore, our exploration of Lucee's CFML expression interpretation, cookies, and sessions uncovered vulnerabilities that could lead to remote code execution. Exploiting functions like sessionInvalidate(), sessionRotate(), StructGet() and IsDefined(), we identified pathways to remote code execution, particularly within Mura/Masa CMS, a CMS deployed on top of Lucee by Apple.
 
 Promptly following our responsible disclosure to both Apple and the Lucee team, swift action ensued. Apple responded and implemented a fix within 48 hours, swiftly addressing the reported issues, while Lucee swiftly implemented fixes to shore up the vulnerabilities. This collaborative effort highlights the importance of responsible disclosures and bug bounty programs.
-
-[View all ](https://projectdiscovery.io/blog/category/vulnerability-research/1)

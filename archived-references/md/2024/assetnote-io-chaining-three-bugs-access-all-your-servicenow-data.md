@@ -581,37 +581,3 @@ We disclosed this chain of vulnerabilities to ServiceNow on the 14th of May, 202
 While ServiceNow implemented several mitigations to address the risk of double evaluation in the templating system, we found a way to achieve code execution. Even with more mitigations in place, it only takes a single unescaped injection point to risk code execution.
 
 As always, customers of our [Attack Surface Management platform](https://assetnote.io/) were the first to know when this vulnerability affected them. We continue to perform original security research in an effort to inform our customers about zero-day vulnerabilities in their attack surface.
-
-Written by:
-
-Adam Kues
-
-  Your subscription could not be saved. Please try again.
-
-  Your subscription has been successful.
-
-Get updates on our research
-
-Subscribe to our newsletter and stay updated on the newest research, security advisories, and more!
-
- Enter your email address to subscribe
-
-    Provide your email address to subscribe. For e.g abc@xyz.com
-
-  SUBSCRIBE
-
-### More Like This
-
-[Security Research ### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927) Read on ASN Blog](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
-
-[Security Research ### How an obscure PHP footgun led to RCE in Craft CMS Read on ASN Blog](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms)
-
-[Security Research ### Citrix Denial of Service: Analysis of CVE-2024-8534 Read on ASN Blog](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
-
-[Security Research ### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108) Read on ASN Blog](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
-
-[Security Research ### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x Read on ASN Blog](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
-
-[Security Research ### Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall Read on ASN Blog](https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall)
-
-[Back to All](https://www.assetnote.io/resources/research)

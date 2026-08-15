@@ -254,5 +254,3 @@ This article was based on the following materials:
 - [Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc](https://soroush.me/blog/2023/08/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899/), August 2023, Soroush Dalili
 - [CVE-2023-36560](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36560), 2023, Markus Wulftange ([@mwulftange](https://twitter.com/mwulftange))
 - [CVE-2023-36899](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36899), 2023, Soroush Dalili
-
-Feel free to write your thoughts about the article [on our X page](https://twitter.com/ptswarm). Follow [@ptswarm](https://twitter.com/ptswarm) or [@_mohemiv](https://twitter.com/_mohemiv) so you don’t miss our future research and other publications.

@@ -367,19 +367,3 @@ The “*Everything is a file”* philosophy on Unix-based systems opens up uncom
 The generic approach is even applicable without Node.js and libuv. Whenever an application uses pipes as a communication mechanism, attackers may leverage a File Write vulnerability to target the pipe file descriptors exposed via procfs. As this example has shown, this might not be considered in a common threat model but can give remote attackers the ability to execute arbitrary code.
 
 From a defensive perspective, this example highlights that infrastructure hardening can only be seen as an additional defense layer and cannot replace fundamental code security. Determined attackers can exploit vulnerabilities in the source code even though hardening measures have been employed. This greatly demonstrates why code security, as implied by [Code Quality](https://www.sonarsource.com/), is so important and why vulnerabilities should be fixed at their origin: the source code.
-
-- [Pretalx Vulnerabilities: How to get accepted at every conference](https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/)
-- [Parallel Code Security: The Challenge of Concurrency](https://www.sonarsource.com/blog/avocado-nightmare-2/)
-- [Patches, Collisions, and Root Shells: A Pwn2Own Adventure](https://www.sonarsource.com/blog/patches-collisions-and-root-shells-a-pwn2own-adventure/)
-
-![Icon](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/2b3c9e42-d8a1-44fd-9ee4-2be7d86d1949/Paper%20Airplane.svg)
-
-## Get new blogs delivered directly to your inbox!
-
-Stay up-to-date with the latest Sonar content. Subscribe now to receive the latest blog articles.
-
- Email
-
-Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

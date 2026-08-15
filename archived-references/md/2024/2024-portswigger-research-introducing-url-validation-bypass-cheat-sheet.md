@@ -152,7 +152,3 @@ These techniques can be used to bypass Web Application Firewalls (WAFs).
  We published all payloads at our GitHub account[https://github.com/PortSwigger/url-cheatsheet-data](https://github.com/PortSwigger/url-cheatsheet-data), so you can contribute to this cheat sheet by creating a [new issue](https://github.com/PortSwigger/url-cheatsheet-data/issues) or updating the JSON files and submitting a [pull request](https://github.com/PortSwigger/url-cheatsheet-data/pulls).
 
  We look forward to your interesting discoveries using our new [URL validation bypass cheat sheet](https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet)!
-
- [ SSRF ](https://portswigger.net/research/ssrf) [ CORS ](https://portswigger.net/research/cors) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin)
-
-[Back to all articles](https://portswigger.net/research/articles)

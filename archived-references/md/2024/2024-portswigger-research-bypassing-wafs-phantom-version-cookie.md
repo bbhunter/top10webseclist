@@ -196,7 +196,3 @@ This blog post is just the first part of our exploration into cookie parsing log
  If you're interested in learning more about quoted cookies, take a look at my earlier research on [the Memcached Command Injections at Pylibmc](https://btlfry.gitlab.io/notes/posts/memcached-command-injections-at-pylibmc/)
 
 If you're curious about invalid characters in cookie headers,I recommend April King's [Handling Cookies is a Minefield](https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/) research.
-
- [ Cookies ](https://portswigger.net/research/cookies) [ WAF ](https://portswigger.net/research/waf) [ SQL Injection ](https://portswigger.net/research/sql-injection) [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin) [ cookie chaos ](https://portswigger.net/research/cookie-chaos)
-
-[Back to all articles](https://portswigger.net/research/articles)

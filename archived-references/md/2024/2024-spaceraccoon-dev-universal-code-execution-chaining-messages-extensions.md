@@ -450,5 +450,3 @@ setTimeout(downloadPayload, 2000);
 ## Conclusion 🔗
 
 In this paper, I demonstrate how to extend browser extension messaging chains with native messaging to achieve “universal code execution”. With large datasets and static code analysis automation, it’s possible to find large numbers of exploitable extensions with large userbases. The nature of some extensions using this pattern makes it difficult to secure at the source and must thus be carefully handled at every link in the chain.
-
- [web](https://spaceraccoon.dev/tags/web) [desktop](https://spaceraccoon.dev/tags/desktop) [reverse engineering](https://spaceraccoon.dev/tags/reverse-engineering)

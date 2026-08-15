@@ -87,11 +87,3 @@ Click the *Cite* button above to demo the feature to enable visitors to import p
 Create your slides in Markdown - click the *Slides* button to check out the example.
 
 Add the publication’s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
-
-[![Tamjid Al Rahat](https://ucla-sec-lab.netlify.app/author/tamjid-al-rahat/avatar_hu8391702962556693153.jpg)](https://ucla-sec-lab.netlify.app/author/tamjid-al-rahat/)
-
-##### [Tamjid Al Rahat](https://ucla-sec-lab.netlify.app/author/tamjid-al-rahat/)
-
-###### PhD grad in 2024, now Applied Scientist at AWS
-
-I am an Applied Scientist at Amazon Web Services (AWS) where I work on innovating automated technologies to proactively detect and mitigate security issues across AWS services and applications. I completed my Ph.D. from the University of California Los Angeles (UCLA) in 2024, where I was advised by Prof. Yuan Tian, and also mentored by Prof. Yu Feng from UC Santa Barbara. I finished my M.S in Computer Science from the University of Virginia and B.S in Computer Science and Engineering from the Bangladesh University of Engineering and Technology (BUET).

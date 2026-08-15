@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://security.lauritz-holtmann.de/post/sso-security-redirect-uri-iii/"
     title: "POST to XSS: Leveraging Pseudo Protocols to Gain JavaScript Evaluation in SSO Flows"
+    author: Lauritz Holtmann
     last_modified: 2024-05-10
 also_at: []
-authors: []
+authors:
+  - Lauritz Holtmann
 canonical_url: ""
 cited_by:
   - "2024.md:60"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # POST to XSS: Leveraging Pseudo Protocols to Gain JavaScript Evaluation in SSO Flows
 
-**POST to XSS: Leveraging Pseudo Protocols to Gain JavaScript Evaluation in SSO Flows** - Author not stated, (Web-)Insecurity Blog.
+**POST to XSS: Leveraging Pseudo Protocols to Gain JavaScript Evaluation in SSO Flows** - Lauritz Holtmann, (Web-)Insecurity Blog.
 
 - Published: 2024-05-10
 - Original: <https://security.lauritz-holtmann.de/post/sso-security-redirect-uri-iii/>
@@ -668,9 +670,3 @@ You can directly tweet about this post using [this link](https://twitter.com/int
 -
 
 [OpenID Foundation: OpenID Connect Discovery 1.0, OpenID Provider Configuration](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig)↩︎
-
-- [OpenID Connect](https://security.lauritz-holtmann.de/tags/openid-connect)
-- [OAuth](https://security.lauritz-holtmann.de/tags/oauth)
-- [SAML](https://security.lauritz-holtmann.de/tags/saml)
-- [OIDC](https://security.lauritz-holtmann.de/tags/oidc)
-- [Keycloak](https://security.lauritz-holtmann.de/tags/keycloak)

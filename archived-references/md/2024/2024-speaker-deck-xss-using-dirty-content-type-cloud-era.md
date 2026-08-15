@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21"
     title: XSS using dirty Content Type in cloud era
-    author: @flatt_security, GMO Flatt Security
+    author: Norihide Saito, Eiji Mori
 also_at:
   - "https://files.speakerdeck.com/presentations/eda5985e545a4ce09425758c6e727e09/BsidesTokyo_XSS_in_cloud_v3.pdf"
   - "https://bsides.tokyo/2024/#xss-using-dirty-content-type-in-cloud-era"
 authors:
-  - @flatt_security
-  - GMO Flatt Security
+  - Norihide Saito
+  - Eiji Mori
 canonical_url: ""
 cited_by:
   - "2024.md:100"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # XSS using dirty Content Type in cloud era
 
-**XSS using dirty Content Type in cloud era** - @flatt_security, GMO Flatt Security, Speaker Deck.
+**XSS using dirty Content Type in cloud era** - Norihide Saito, Eiji Mori, Speaker Deck.
 
 - Published: date not stated
 - Original: <https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21>

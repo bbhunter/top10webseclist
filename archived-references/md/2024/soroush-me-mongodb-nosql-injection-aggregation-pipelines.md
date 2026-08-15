@@ -603,13 +603,3 @@ I have not found a method to delete a document from a collection using aggregate
 In the MongoDB Aggregation Framework, the “`$function`” and “`$accumulator`” operators can run JavaScript, which may be useful in certain cases.
 
 There are many other MongoDB [methods](https://www.mongodb.com/docs/manual/reference/method/) that could be exposed by mistake and then exploited by NoSQL injection attacks. For instance, I haven’t seen much research on methods such as “`updateMany`” or “`updateOne`” (NoSQLi when updating documents). It would be interesting to see what happens when these methods are exposed and how they can be abused to increase the impact.
-
-This entry was posted in [Normal Posts](https://soroush.me/blog/category/normalposts)
-
-Creation date: June 24, 2024
-
-[Previous Incorrect solution to disable script execution by .htaccess](https://soroush.me/blog/incorrect-solution-to-disable-script-execution-by-htaccess)[
-
-Next
-
-Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)

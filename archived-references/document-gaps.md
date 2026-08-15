@@ -42,7 +42,23 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-26 reference(s) unresolved. 22 of them already have their raw bytes stored.
+39 reference(s) unresolved. 31 of them already have their raw bytes stored.
+
+## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: of 12 fenced blocks only 4 hold code - three are empty and four hold nothing but the widget's language label - and one holds the control "Show 10 more lines", showing the fuzzer listing is truncated; the surviving listings also carry the line-number gutter fused into each line; re-extract (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:43`
+
+## https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: roughly 60 of the deck's 100 slides yield only the template footer and a slide number, because the substance is in slide images with no text layer. Verified 2026-08-15 by running poppler against the stored object, which returns the same 3,703 characters - so a re-render cannot help; needs pdf-pages and a reader, or OCR (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:84`
 
 ## https://acmccs.github.io/papers/p957-vissersA.pdf
 
@@ -51,6 +67,14 @@ or fix the route and re-run.
 - Reason: faulty capture: 250 ligature glyphs read as U+FFFD inside words ("Certi<?>cate", "Cloud<?>are", "WHOIS<?>eld"); the 2026-08-14 poppler re-read recovered 59KB of previously missing text but maps this font's fi/ff ligature to a replacement character; needs a different extractor or OCR (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:88`
+
+## https://blog.pspaul.de/posts/bench-press-leaking-text-nodes-with-css/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the publisher's code-block line-number gutter is published as content - bare numbers in their own fenced blocks, or fused into each code line - so listings as published are wrong to copy ("1POST /product/lookup_agg HTTP/1.1", one run of 206 consecutive numbers); re-extract with the gutter excluded (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:27`
 
 ## https://blog.voorivex.team/cloudflare-image-proxy-as-a-cspt-gadget-a-cross-origin-cspt-exploit
 
@@ -67,6 +91,22 @@ or fix the route and re-run.
 - Reason: faulty capture: the opening paragraphs are missing, so the body starts mid-argument on a back-reference with no antecedent ("That is why a small postMessage challenge on Twitter caught my eye ... the exact confusion I had been abusing in the wild"); re-acquire (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2026-ai.md:46`
+
+## https://blog.voorivex.team/oauth-non-happy-path-to-ato
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the proof of concept's key line is mangled - the onclick handler was replaced by highlighter markup, so the published exploit button does nothing ("<input type=button value=exploit  class=s>"); re-extract or repair from the source (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:12`
+
+## https://blog.xss.am/2023/08/cve-2023-39968-jupyter-token-leak/
+
+- Outcome: `broken-capture`
+- Kind: advisory
+- Reason: faulty capture: all 17 images point at the site's lazy-loading placeholder svg rather than the figures; the real paths survive in the alt text, so a re-extract that reads the alt attribute or the wrapping link target should recover them (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:96`
 
 ## https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md
 
@@ -123,6 +163,14 @@ or fix the route and re-run.
 - Reason: faulty capture: every figure is missing while the prose keeps handing off to one ("the process would look like this:" and "as you see from the above screenshot" with nothing after them); the argument is carried by diagrams and screenshots that did not come through, so re-acquire with an extraction that keeps them (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:64`
+
+## https://gist.github.com/hackermondev/68ec8ed145fcee49d2f5e2b9d2cf2e52
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: all eight screenshots point at GitHub signed private-user-image URLs carrying a five-minute expiry, so they were dead five minutes after capture and resolve to nothing now; the path segments keep the object names, so rewriting to the durable user-images host may recover them (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:90`
 
 ## https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs
 
@@ -188,6 +236,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:23`
 
+## https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the publisher's code-block line-number gutter is published as content - bare numbers in their own fenced blocks, or fused into each code line - so listings as published are wrong to copy ("1POST /product/lookup_agg HTTP/1.1", one run of 206 consecutive numbers); re-extract with the gutter excluded (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:114`
+
+## https://speakerdeck.com/shhnjk/piloting-edge-copilot
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: slides
+- Reason: faulty capture: 6,926 characters - 28 percent of the file - are two Speaker Deck carousels advertising other people's decks, sitting between the header and the transcript; re-extract without the recommendation rails (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:59`
+
 ## https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/
 
 - Outcome: `broken-capture`
@@ -196,6 +260,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2026-ai.md:33`
 
+## https://ucla-sec-lab.netlify.app/publication/2024-authsaber/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the archived page is the publication landing stub, not the paper - its Abstract heading is followed only by an ellipsis and three lines are the site theme's unedited demo placeholders, leaving 1,859 characters of which 866 is an author-bio card; re-acquire from the CCS 2024 paper (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:149`
+
+## https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: every figure is missing while the prose keeps introducing one ("consider the following code:", "This is what the patch looks like:", captions Figure 1 through Figure 10 with nothing above them), so the screenshots carrying the evidence are absent; re-acquire with an extraction that keeps them (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:76`
+
 ## https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups
 
 - Outcome: `broken-capture`
@@ -203,6 +283,14 @@ or fix the route and re-run.
 - Reason: faulty capture: raw <img> tags inside the code listings were parsed away, truncating the exploit payloads mid-string ("document.execCommand(\"insertHTML\", false, \"<img src=x" with the onerror body gone); re-extract keeping HTML inside listings (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2026-ai.md:58`
+
+## https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: four click-to-expand blocks were captured as their labels only ("Show Fastly Proof-of-Concept Code", "Show Known IPs"), so both proofs of concept and the poisoned-IP and keyword lists the article twice says are attached are absent, leaving a four-word appendix; re-acquire with the disclosures expanded (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:23`
 
 ## https://www.blackhat.com/docs/eu-14/materials/eu-14-Hayak-Same-Origin-Method-Execution-Exploiting-A-Callback-For-Same-Origin-Policy-Bypass-wp.pdf
 
@@ -251,3 +339,19 @@ or fix the route and re-run.
 - Reason: faulty capture: all 17 code listings have the site's line-number gutter merged into the code, so the payloads as published are wrong ("1file://127.0.0.1/<pathToFile>", "2%:include <stdio.h>", "1anyBodyParam=@/tmp/../etc/passwd"); re-extract with the gutter excluded (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:73`
+
+## https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: advisory
+- Reason: faulty capture: every figure is missing while the prose keeps introducing one ("consider the following code:", "This is what the patch looks like:", captions Figure 1 through Figure 10 with nothing above them), so the screenshots carrying the evidence are absent; re-acquire with an extraction that keeps them (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:122`
+
+## https://www.zerodayinitiative.com/blog/2024/9/4/exploiting-exchange-powershell-after-proxynotshell-part-1-multivaluedproperty
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: advisory
+- Reason: faulty capture: every figure is missing while the prose keeps introducing one ("consider the following code:", "This is what the patch looks like:", captions Figure 1 through Figure 10 with nothing above them), so the screenshots carrying the evidence are absent; re-acquire with an extraction that keeps them (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2024.md:127`

@@ -12,12 +12,10 @@ sources:
   - id: original
     resource: "http://paulosyibelo.com/2024/12/doubleclickjacking-what.html"
     title: "DoubleClickjacking: A New Era of UI Redressing"
-    author: xxxxx
   - id: capture
     resource: "https://web.archive.org/web/20250522194316/http://paulosyibelo.com/2024/12/doubleclickjacking-what.html"
 also_at: []
-authors:
-  - xxxxx
+authors: []
 canonical_url: ""
 cited_by:
   - "2024.md:10"
@@ -45,7 +43,7 @@ translation_of: ""
 
 # DoubleClickjacking: A New Era of UI Redressing
 
-**DoubleClickjacking: A New Era of UI Redressing** - xxxxx, Blog.
+**DoubleClickjacking: A New Era of UI Redressing** - Author not stated, Blog.
 
 - Published: date not stated
 - Original: <http://paulosyibelo.com/2024/12/doubleclickjacking-what.html>
@@ -191,9 +189,3 @@ Any page handling OAuth scope verification, payment confirmations, or other high
 DoubleClickjacking is a sleight of hand around on a well-known attack class. By exploiting the event timing between clicks, attackers can seamlessly swap out benign UI elements for sensitive ones in the blink of an eye.
 
 Until next time, good luck!
-
-### Share This Story
-
-****Tags:**
-
-  [ Older Post ](https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html)

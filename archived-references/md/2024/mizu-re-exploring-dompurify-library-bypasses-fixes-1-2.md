@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
     title: "Exploring the DOMPurify library: Bypasses and Fixes (1/2)"
+    author: kevin_mizu
 also_at: []
-authors: []
+authors:
+  - kevin_mizu
 canonical_url: ""
 cited_by:
   - "2024.md:9"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Exploring the DOMPurify library: Bypasses and Fixes (1/2)
 
-**Exploring the DOMPurify library: Bypasses and Fixes (1/2)** - Author not stated, mizu.re.
+**Exploring the DOMPurify library: Bypasses and Fixes (1/2)** - kevin_mizu, mizu.re.
 
 - Published: date not stated
 - Original: <https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes>

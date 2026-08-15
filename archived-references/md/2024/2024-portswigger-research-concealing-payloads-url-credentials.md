@@ -132,9 +132,3 @@ In conclusion, discovering the discrepancies between location and document.URL a
 The ability to conceal payloads through credentials, manipulate the username and password properties within anchor elements, and potentially combine this with DOM clobbering can be used for more advanced exploitation.
 
 **Note:** Safari discards URL credentials. All the examples shown only work on Chrome and Firefox. Also Chrome blocks sub-resources from using URL credentials.
-
- [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ DOM Clobbering ](https://portswigger.net/research/dom-clobbering) [ DOM ](https://portswigger.net/research/dom)
-
-[Back to all articles](https://portswigger.net/research/articles)
-
- `

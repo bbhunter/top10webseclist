@@ -634,13 +634,17 @@
       "outcome": "archive",
       "class": "research",
       "title": "Exploring the DOMPurify library: Bypasses and Fixes (1/2)",
-      "reason": "Reviewed 2026-08-10: the recorded title was the title with the page's tag list appended rather than the document's own title. The document itself is the one cited."
+      "reason": "Reviewed 2026-08-10: the recorded title was the title with the page's tag list appended rather than the document's own title. The document itself is the one cited. Reviewed 2026-08-15: the entry had no author. The article is first person and identifies its writer in its own prior-art table, where the row for this researcher reads \"[Me](https://x.com/kevin_mizu)\". That is the handle he publishes under; no fuller name appears in the document. @IcesFont, @hash_kitten and @ryotkak are credited as bug finders, not as writers.",
+      "authors": [
+        "kevin_mizu"
+      ]
     },
     "https://paulosyibelo.com/2024/12/doubleclickjacking-what.html": {
       "outcome": "archive",
       "class": "research",
       "title": "DoubleClickjacking: A New Era of UI Redressing",
-      "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited."
+      "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited. Reviewed 2026-08-15: the recorded author was the literal placeholder \"xxxxx\", which the published byline printed as though it were a researcher's name. The document names nobody - it is first person throughout (\"I have made proof of concepts\", \"I've reported this issue\") - so the honest value is no author at all. A missing byline says the archive does not know; a placeholder says something false.",
+      "authors": []
     },
     "https://blog.malicious.group/from-akamai-to-f5-to-ntlm": {
       "outcome": "archive",
@@ -1500,7 +1504,11 @@
       "outcome": "archive",
       "class": "research",
       "title": "Ruby-SAML / GitLab Authentication Bypass (CVE-2024-45409)",
-      "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" — ProjectDiscovery Blog\". The capture is the right article and its own heading reads \"Ruby-SAML / GitLab Authentication Bypass (CVE-2024-45409)\"."
+      "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" — ProjectDiscovery Blog\". The capture is the right article and its own heading reads \"Ruby-SAML / GitLab Authentication Bypass (CVE-2024-45409)\". Reviewed 2026-08-15: the page carries its own \"#### Authors\" cards naming Harsh Jaiswal and Rahul Maini, and the sibling ProjectDiscovery reference in this same collection already records the pair. The entry had no author.",
+      "authors": [
+        "Harsh Jaiswal",
+        "Rahul Maini"
+      ]
     },
     "https://code-white.com/blog/teaching-the-old-net-remoting-new-exploitation-tricks": {
       "outcome": "archive",
@@ -1887,6 +1895,104 @@
       "class": "research",
       "title": "Temenos OFS Field Injection: Revealing a Hidden Financial Attack Vector",
       "reason": "Reviewed 2026-08-15: the recorded title said \"String Injection\" where three independent witnesses say \"Field Injection\" - the document's own H1, its body (\"I named it **\\\"Temenos OFS Field Injection\\\"**\"), the citing line at 2025.md:69, and the source URL slug itself (temenos-ofs-field-injection-...). The health probe recorded a third variant at capture time (\"Temenos OFS Injection: Revealing a Hidden Attack Vector\"), so the page appears to have been retitled more than once; the document and the citation are the two witnesses that agree."
+    },
+    "https://outpost24.com/blog/exploiting-permissive-cors-configurations": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Thomas Stacey"
+      ],
+      "reason": "Reviewed 2026-08-15: the article names its writer twice - \"Written By / [Thomas Stacey](...) Application Security Auditor, Outpost24\" and again in the closing bio card. The archive recorded only the vendor handle \"@outpost24\". Jimmy Bergqvist is named in the body as a colleague who supplied an insight, not as a writer, so he is not recorded."
+    },
+    "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Norihide Saito",
+        "Eiji Mori"
+      ],
+      "reason": "Reviewed 2026-08-15: the deck names both presenters on its title slide and again on the self-introduction slide - \"Norihide Saito / azara\" and \"Eiji Mori / ei\", with the handles @a_zara_n and @ei01241. The archive recorded \"@flatt_security\" and \"GMO Flatt Security\", a site handle and the employer."
+    },
+    "https://security.lauritz-holtmann.de/post/sso-security-redirect-uri-iii": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Lauritz Holtmann"
+      ],
+      "reason": "Reviewed 2026-08-15: the post is first person throughout and signs off \"feel free to reach out via [Mastodon](https://ruhr.social/@lauritz), [Twitter](https://twitter.com/_lauritz_) or [LinkedIn](https://linkedin.com/in/lauritz-holtmann)\", giving the author’s full name in the LinkedIn path. The entry had no author at all."
+    },
+    "https://osec.io/blog/2024-06-10-supply-chain-attacks-a-new-era": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Bruno Halltari",
+        "Caue Obici"
+      ],
+      "reason": "Reviewed 2026-08-15: the recorded value was [\"Bruno Halltari\", \"Bruno Halltari, Caue Obici\"] - one name duplicated and the second entry an unsplit pair - so the published byline read the first name twice. Split into the two people it names. This is the same malformed shape already corrected on the 2025 OtterSec reference."
+    },
+    "https://blog.slonser.info/posts/cve-2023-5480": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Vsevolod Kokorin"
+      ],
+      "reason": "Reviewed 2026-08-15: the entry had no author. The document signs itself inside the author’s own proof of concept - \"<title>Vsevolod Kokorin (Slonser) of Solidlab</title>\" - and is written in the first person throughout (\"The video I submitted to Google\"). Slonser is the handle the blog publishes under."
+    },
+    "https://bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Paolo Arnolfo",
+        "Guillermo Gregorio"
+      ],
+      "reason": "Reviewed 2026-08-15: the recorded value was [\"Guest Post\", \"@Bugcrowd\"]. \"Guest Post\" is Bugcrowd’s placeholder byline - it links to an author query string rather than a person - so the archive was crediting a CMS placeholder. The article names its writers: \"This blog post is a written collaborative effort by Paolo Arnolfo (@sw33tLie) ... Guillermo Gregorio (@bsysop) ... and [name redacted by the authors] (@_medusa_1_)\". The third researcher redacted their own name in the source, so only the handle exists and it is not recorded as a name."
+    },
+    "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "David Cash",
+        "Richard Warren"
+      ],
+      "reason": "Reviewed 2026-08-15: the advisory bylines two researchers at the head and again in two \"Written By\" cards - \"[David Cash](https://blog.amberwolf.com/author/david-cash/) Red Team Operator @ AmberWolf\" and the same for Richard Warren. The archive recorded the company name \"AmberWolf\"."
+    },
+    "https://matanber.com/blog/4-char-csti": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Matan Berson"
+      ],
+      "reason": "Reviewed 2026-08-15: the page title line names the author - \"Bidding Like a Billionaire - Stealing NFTs With 4-Char CSTIs - Matan Berson\" - while the archive recorded only the handle \"@MtnBer\"."
+    },
+    "https://matanber.com/blog/cspt-levels": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Matan Berson"
+      ],
+      "reason": "Reviewed 2026-08-15: the page title line names the author - \"Bypassing WAFs to Exploit CSPT Using Encoding Levels - Matan Berson\" - while the archive recorded only the handle \"@MtnBer\"."
+    },
+    "https://gitlab-com.gitlab.io/gl-security/security-tech-notes/security-research-tech-notes/devfile": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "joern"
+      ],
+      "reason": "Reviewed 2026-08-15: the entry had no author. The write-up is first person and links \"Back then\" to the author’s own earlier post under the handle @joern, corroborated by his shell prompts throughout (\"joern@host2:~/projects/...\"). JUDGEMENT: a shell prompt alone would not be enough, but the self-referential link to his own prior work under that handle is the author identifying himself."
+    },
+    "https://gist.github.com/hackermondev/68ec8ed145fcee49d2f5e2b9d2cf2e52": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "hackermondev"
+      ],
+      "reason": "Reviewed 2026-08-15: the recorded author was \"262588213843476\", GitHub's numeric Open-Graph id for the gist - a machine value, not a person. The document identifies its writer in the first person, \"hi, i'm daniel. i'm a 15-year-old with some programming experience\", and signs off \"follow me on Twitter/X [@hackermondev]\", which is also the gist owner. Recorded as the handle he publishes under; the given name appears only as \"daniel\" with no surname, so it is not recorded as a full name."
+    },
+    "https://paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [],
+      "reason": "Reviewed 2026-08-15: the recorded author was the literal placeholder \"xxxxx\", the same value found on this author's DoubleClickjacking article, so the published byline printed a placeholder as though it were a researcher's name. The honest value is no author at all: a missing byline says the archive does not know, whereas a placeholder asserts something false. The site is paulosyibelo.com, but a hostname is not a credit."
     }
   }
 }

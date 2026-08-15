@@ -307,5 +307,3 @@ Marshal.dump(Foo.new)[2..-1] +
 puts payload.inspect
 
 ```
-
- [« Back to homepage](https://nastystereo.com/)

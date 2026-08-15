@@ -12,12 +12,10 @@ sources:
   - id: original
     resource: "http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html"
     title: "Paulos Yibelo - Hacking Research: Why CSP Should be carefully crafted: Twitter XSS & CSP Bypass"
-    author: xxxxx
   - id: canonical
     resource: "https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html"
 also_at: []
-authors:
-  - xxxxx
+authors: []
 canonical_url: "https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html"
 cited_by:
   - "2016-17.md:39"
@@ -45,7 +43,7 @@ translation_of: ""
 
 # Paulos Yibelo - Hacking Research: Why CSP Should be carefully crafted: Twitter XSS & CSP Bypass
 
-**Paulos Yibelo - Hacking Research: Why CSP Should be carefully crafted: Twitter XSS & CSP Bypass** - xxxxx, Paulos Yibelo - Hacking Research.
+**Paulos Yibelo - Hacking Research: Why CSP Should be carefully crafted: Twitter XSS & CSP Bypass** - Author not stated, Paulos Yibelo - Hacking Research.
 
 - Published: date not stated
 - Original: <http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html>

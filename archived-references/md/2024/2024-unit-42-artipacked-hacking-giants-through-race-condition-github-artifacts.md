@@ -269,12 +269,3 @@ Palo Alto Networks has shared these findings with our fellow Cyber Threat Allian
 
 - [Third-Party GitHub Actions: Effects of an Opt-Out Permission Model](https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-opt-out-permissions-model/) – Blog, Palo Alto Networks
 - [Demo: Discover if GitHub tokens are uploaded within workflow artifacts](https://interactive.prismacloud.io/share/7we0zyp62ykf) – Prisma Cloud
-
-### Tags
-
-- [Artifacts](https://unit42.paloaltonetworks.com/tag/artifacts/)
-- [AWS](https://unit42.paloaltonetworks.com/tag/aws/)
-- [GitHub](https://unit42.paloaltonetworks.com/tag/github/)
-- [Open source](https://unit42.paloaltonetworks.com/tag/open-source/)
-- [Red Hat](https://unit42.paloaltonetworks.com/tag/red-hat/)
-- [Ubuntu](https://unit42.paloaltonetworks.com/tag/ubuntu/)

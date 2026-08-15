@@ -282,5 +282,3 @@ puts rce_gadget_chain.inspect
 ### # Future Improvements
 
 The biggest remaining improvement is to move away from using the `popen` sink from `Gem::Source::Git` in the gadget chain. Achieving this would hopefully mean the gadget chain no longer issues outbound network requests or modifies the filesystem.
-
- [« Back to homepage](https://nastystereo.com/)

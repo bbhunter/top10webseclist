@@ -93,5 +93,3 @@ In this paper, we present the first GPU cache side-channel attack from within th
 }
 
 ```
-
-Copy BibTeX

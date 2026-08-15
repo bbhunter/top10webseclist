@@ -247,9 +247,3 @@ This bypass still works you can try playing with the endpoint here
 The url is pointing to an old uploaded html file, Netlify fixed the issue by disallowing the upload of arbitrary files on their CDN Domain and left the url parser bug as it is. As you no longer have a way to upload arbitrary file which can lead to xss they consider this issue to be fixed ¯\_(ツ)_/¯
 
 I hope you liked the writeup, next time you had to deal with a strict csp maybe try playing with the path and see if you can make the server return a relaxed csp or something which might be easier to bypass than the original one and you can get lucky like me :)
-
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=755a27065fd9)
-
----
-
-[Bypassing CSP via URL Parser Confusions : XSS on Netlify’s Image CDN](https://infosecwriteups.com/bypassing-csp-via-url-parser-confusions-xss-on-netlifys-image-cdn-755a27065fd9) was originally published in [InfoSec Write-ups](https://infosecwriteups.com) on Medium, where people are continuing the conversation by highlighting and responding to this story.

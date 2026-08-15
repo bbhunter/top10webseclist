@@ -584,7 +584,3 @@ With the single-packet attack, web timing attacks have become 'local', portable,
  Timing oracles are everywhere. Whatever you're testing, timing murmurs are always present, waiting for you to listen.
 
  Enjoy!
-
- [ Black Hat ](https://portswigger.net/research/black-hat) [ SSRF ](https://portswigger.net/research/ssrf) [ Timing attacks ](https://portswigger.net/research/timing-attacks) [ timing ](https://portswigger.net/research/timing)
-
-[Back to all articles](https://portswigger.net/research/articles)

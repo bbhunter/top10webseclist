@@ -303,11 +303,3 @@ Fortunately, there exists a simple solution for addressing Cookie Tossing issues
  Final thoughts
 
 Cookie Tossing is a unique and often overlooked vulnerability that affects applications not explicitly using the `__Host__` cookie prefix. We have demonstrated how this weakness can be exploited to force sensitive requests to execute under an attacker’s session context, potentially exposing sensitive data. In complex workflows, such as those leveraging the OAuth protocol, this can inadvertently grant an attacker access to resources on third-party services. Our previous research indicates that the use of the `__Host__` prefix is rare, leaving many organizations—particularly those hosting applications on subdomains—vulnerable. Whenever state-changing requests meet the conditions described in this post, they can be susceptible to hijacking.
-
-## Keep Exploring
-
-[GitFlops: The dangers of terraform automation platforms](https://labs.snyk.io/resources/gitflops-dangers-of-terraform-automation-platforms/)
-
-[Proxmox VE CVE-2024-21545 - Tricking the API into giving you the keys](https://labs.snyk.io/resources/proxmox-ve-cve-2024-21545-tricking-the-api/)
-
-[Abusing Ubuntu 24.04 features for root privilege escalation](https://labs.snyk.io/resources/abusing-ubuntu-root-privilege-escalation/)

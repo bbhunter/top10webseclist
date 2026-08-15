@@ -282,19 +282,3 @@ In this blog, we uncovered two vulnerabilities on Jenkins, the first one leverag
 At Sonar, we emphasize the importance of Code Quality principles. Doing so creates software characterized by clarity, maintainability, and comprehensibility. These attributes not only help the identification and resolution of vulnerabilities throughout the development process but also lower the likelihood of introducing security weaknesses that malicious actors might exploit.
 
 Lastly, we would like to give huge kudos to the Jenkins team, who quickly and professionally assessed our findings, maintained great communication throughout the disclosure process, and provided a comprehensive fix. Thank you!
-
-- [Source Code at Risk: Critical Code Vulnerability in CI/CD Platform TeamCity](https://www.sonarsource.com/blog/teamcity-vulnerability/)
-- [Agent 007: Pre-Auth Takeover of Build Pipelines in GoCD](https://www.sonarsource.com/blog/gocd-pre-auth-pipeline-takeover/)
-- [Agent 008: Chaining Vulnerabilities to Compromise GoCD](https://www.sonarsource.com/blog/gocd-vulnerability-chain/)
-
-![Icon](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/2b3c9e42-d8a1-44fd-9ee4-2be7d86d1949/Paper%20Airplane.svg)
-
-## Get new blogs delivered directly to your inbox!
-
-Stay up-to-date with the latest Sonar content. Subscribe now to receive the latest blog articles.
-
- Email
-
-Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

@@ -282,19 +282,3 @@ In this blog post, we highlighted the importance of providing charset informatio
 We detailed how a browser determines the character set used to decode an HTTP response body and explained two different techniques that attackers may use to inject arbitrary JavaScript code into a website leveraging the ISO-2022-JP character encoding.
 
 Although we consider a missing character set the actual vulnerability, a browser’s auto-detection greatly increases its impact. Because of this, we hope that browsers will disable the auto-detection mechanism according to our suggestion - at least for the ISO-2022-JP character encoding.
-
-- [mXSS: The Vulnerability Hiding in Your Code](https://www.sonarsource.com/blog/mxss-the-vulnerability-hiding-in-your-code/)
-- [Joomla: PHP Bug Introduces Multiple XSS Vulnerabilities](https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/)
-- [Code Interoperability: The Hazards of Technological Variety](https://www.sonarsource.com/blog/avocado-nightmare-1/)
-
-![Icon](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/2b3c9e42-d8a1-44fd-9ee4-2be7d86d1949/Paper%20Airplane.svg)
-
-## Get new blogs delivered directly to your inbox!
-
-Stay up-to-date with the latest Sonar content. Subscribe now to receive the latest blog articles.
-
- Email
-
-Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

@@ -12,10 +12,11 @@ sources:
   - id: original
     resource: "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/"
     title: Delinea Protocol Handler - Remote Code Execution via Update Process (CVE-2024-12908)
-    author: AmberWolf
+    author: David Cash, Richard Warren
 also_at: []
 authors:
-  - AmberWolf
+  - David Cash
+  - Richard Warren
 canonical_url: ""
 cited_by:
   - "2024.md:115"
@@ -43,7 +44,7 @@ translation_of: ""
 
 # Delinea Protocol Handler - Remote Code Execution via Update Process (CVE-2024-12908)
 
-**Delinea Protocol Handler - Remote Code Execution via Update Process (CVE-2024-12908)** - AmberWolf, blog.amberwolf.com.
+**Delinea Protocol Handler - Remote Code Execution via Update Process (CVE-2024-12908)** - David Cash, Richard Warren, blog.amberwolf.com.
 
 - Published: date not stated
 - Original: <https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/>
@@ -612,52 +613,3 @@ As a result, if an attacker was able to construct a URL with the punycode bypass
 Delinea have released a patched version of the Protocol Handler (6.0.3.31) that prevents transforms from being loaded. This is detailed in the release notes for Secret Server version 11.7.000049:
 
 [https://docs.delinea.com/online-help/secret-server/release-notes/ss-rn-11-7-000049.htm#SecretServer117000049ReleaseNotes](https://docs.delinea.com/online-help/secret-server/release-notes/ss-rn-11-7-000049.htm#SecretServer117000049ReleaseNotes)
-
-- [Vulnerability](https://blog.amberwolf.com/tags/vulnerability)
-- [Disclosure](https://blog.amberwolf.com/tags/disclosure)
-- [PAM](https://blog.amberwolf.com/tags/pam)
-
-[ ![David Cash](https://blog.amberwolf.com/images/author/david-cash_huc44cc0bdaa36d141a2cd1065530b9a4e_104845_150x150_fill_q100_h2_lanczos_smart1.webp)](https://blog.amberwolf.com/author/david-cash/)
-
-Written By
-
-#### [David Cash](https://blog.amberwolf.com/author/david-cash/)
-
-Red Team Operator @ AmberWolf
-
-[ ![Richard Warren](https://blog.amberwolf.com/images/author/richard-warren_huc44cc0bdaa36d141a2cd1065530b9a4e_101278_150x150_fill_q100_h2_lanczos_smart1.webp)](https://blog.amberwolf.com/author/richard-warren/)
-
-Written By
-
-#### [Richard Warren](https://blog.amberwolf.com/author/richard-warren/)
-
-Red Team Operator @ AmberWolf
-
-### You May Also Like
-
-- [ ![Richard Warren](https://blog.amberwolf.com/images/author/richard-warren_huc44cc0bdaa36d141a2cd1065530b9a4e_101278_52x52_fill_q100_h2_lanczos_smart1.webp) Richard Warren](https://blog.amberwolf.com/author/richard-warren/)
-- [ ![David Cash](https://blog.amberwolf.com/images/author/david-cash_huc44cc0bdaa36d141a2cd1065530b9a4e_104845_52x52_fill_q100_h2_lanczos_smart1.webp) David Cash](https://blog.amberwolf.com/author/david-cash/)
-- 26 Nov, 2024
--
-
-- [Vulnerability](https://blog.amberwolf.com/tags/vulnerability)
-- [Disclosure](https://blog.amberwolf.com/tags/disclosure)
-
-### [Introducing NachoVPN: One VPN Server to Pwn Them All](https://blog.amberwolf.com/blog/2024/november/introducing-nachovpn---one-vpn-server-to-pwn-them-all/)
-
-Is Your Corporate VPN Client Providing Access to More Than Just Your Employees?
-
-[Read Article **](https://blog.amberwolf.com/blog/2024/november/introducing-nachovpn---one-vpn-server-to-pwn-them-all/)
-
-- [ ![Richard Warren](https://blog.amberwolf.com/images/author/richard-warren_huc44cc0bdaa36d141a2cd1065530b9a4e_101278_52x52_fill_q100_h2_lanczos_smart1.webp) Richard Warren](https://blog.amberwolf.com/author/richard-warren/)
-- 08 Oct, 2024
--
-
-- [Vulnerability](https://blog.amberwolf.com/tags/vulnerability)
-- [Disclosure](https://blog.amberwolf.com/tags/disclosure)
-
-### [Ivanti Connect Secure - Authenticated RCE via OpenSSL CRLF Injection (CVE-2024-37404)](https://blog.amberwolf.com/blog/2024/october/cve-2024-37404-ivanti-connect-secure-authenticated-rce-via-openssl-crlf-injection/)
-
-Today, we are releasing the details of CVE-2024-37404, a zero-day vulnerability in the Ivanti Connect Secure product. This vulnerability allows an …
-
-[Read Article **](https://blog.amberwolf.com/blog/2024/october/cve-2024-37404-ivanti-connect-secure-authenticated-rce-via-openssl-crlf-injection/)

@@ -189,7 +189,3 @@ This short GIF demonstrates how to find the unknown secret key of a Flask test a
 ## Final note
 
 You can try the extension in action on a self hosted lab available at Github [repository](https://github.com/PortSwigger/research-labs). Good luck and have fun!
-
- [ session tokens ](https://portswigger.net/research/session-tokens) [ research tools ](https://portswigger.net/research/research-tools) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin)
-
-[Back to all articles](https://portswigger.net/research/articles)

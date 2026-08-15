@@ -322,5 +322,3 @@ So what’s so dangerous about a client-side redirect or XSS? Microsoft Whiteboa
 # Not your usual XSS 🔗
 
 As simple web vulnerability classes get eradicated by [safe coding appsec strategies](https://bughunters.google.com/blog/5896512897417216/a-recipe-for-scaling-security), it’s interesting to find edge cases like the Excalidraw and Microsoft Whiteboard issues. In both cases, I suspect it may be due to relatively rare sinks that may not get picked up by static analysis tools. In addition, Excalidraw is a third-party dependency that may have fallen out of Meta’s appsec scope. On my end, I’ll be digging deep whenever I see a rich text editor or whiteboard.
-
- [web](https://spaceraccoon.dev/tags/web) [code review](https://spaceraccoon.dev/tags/code-review) [desktop](https://spaceraccoon.dev/tags/desktop)

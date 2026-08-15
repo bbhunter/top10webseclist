@@ -1948,7 +1948,3 @@ EOF
 |=[ EOF ]=---------------------------------------------------------------=|
 
 ```
-
- [ [News](https://phrack.org/news.html) ] [ [Issues](https://phrack.org/issues/72/1.html) ] [ [Authors](https://phrack.org/authors.html) ] [ [Archives](https://phrack.org/archives/) ] [ [Contact](https://phrack.org/contact.html) ]
-
-© Copyleft 1985-2026, Phrack Magazine.

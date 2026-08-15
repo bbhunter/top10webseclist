@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://osec.io/blog/2024-06-10-supply-chain-attacks-a-new-era"
     title: "Supply chain attacks: a new era"
-    author: Bruno Halltari, Bruno Halltari, Caue Obici
+    author: Bruno Halltari, Caue Obici
     last_modified: 2024-06-10
   - id: canonical
     resource: "https://osec.io/blog/supply-chain-attacks-a-new-era/"
 also_at: []
 authors:
   - Bruno Halltari
-  - Bruno Halltari, Caue Obici
+  - Caue Obici
 canonical_url: "https://osec.io/blog/supply-chain-attacks-a-new-era/"
 cited_by:
   - "2024.md:38"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # Supply chain attacks: a new era
 
-**Supply chain attacks: a new era** - Bruno Halltari, Bruno Halltari, Caue Obici, OtterSec.
+**Supply chain attacks: a new era** - Bruno Halltari, Caue Obici, OtterSec.
 
 - Published: 2024-06-10
 - Original: <https://osec.io/blog/2024-06-10-supply-chain-attacks-a-new-era>
@@ -485,25 +485,3 @@ The vulnerability within the Lavapack module sandboxing, along with the issues w
 -
 
 Excluding SES, which was covered [in our last article](https://osec.io/blog/metamask-snaps). ↩
-
-## Read more from our blog
-
- [See all ](https://osec.io/blog)
-
-###  [Introducing rCTF v2](https://osec.io/blog/rctf-v2)
-
- We’re releasing rCTF v2, an open-source platform for hosting cybersecurity capture-the-flag competitions.     ![](https://osec.io/_astro/avatar.bUCHtgRj_1hV026.webp) ![](https://osec.io/_astro/avatar.si06Dpr__TikIE.webp) ![](https://osec.io/_astro/avatar.B-0iHZ_F_Z25INzk.webp)  Arsenii, Jason T., Stepan  Jul 14, 2026
-
-###  [Announcing the Save CTFs Fund](https://osec.io/blog/save-ctfs-fund)
-
- OtterSec is committing $100,000 to keep CTFs competitive in the age of AI. We break down why Jeopardy scoring is breaking down, what better formats might look like, and how to apply for sponsorship.     ![](https://osec.io/_astro/avatar.CkKEOL9r_Z1sL2S6.webp)  Michael Debono  Jul 7, 2026
-
-###  [Auto reverse-engineering the Hyperliquid risk engine, with some agentic help](https://osec.io/blog/hyperliquid-risk-engine)
-
- Perps allow traders to leverage beyond their collateral, until the market turns abruptly and losses are clawed back. We auto-reverse engineer Hyperliquid’s risk engine to show how it ranks and deleverages winning users under the solvency–fairness–revenue trilemma.     ![](https://osec.io/_astro/avatar.FiKLou5J_Czbcr.webp)  Renato Marziano  Jun 22, 2026
-
-## Subscribe to the blog
-
- New posts from the OtterSec team, straight to your inbox. One email per post, unsubscribe any time.
-
-      Subscribe

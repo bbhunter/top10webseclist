@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://gist.github.com/hackermondev/68ec8ed145fcee49d2f5e2b9d2cf2e52"
     title: 1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies
-    author: 262588213843476
+    author: hackermondev
 also_at: []
 authors:
-  - 262588213843476
+  - hackermondev
 canonical_url: ""
 cited_by:
   - "2024.md:90"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # 1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies
 
-**1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies** - 262588213843476, Gist.
+**1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies** - hackermondev, Gist.
 
 - Published: date not stated
 - Original: <https://gist.github.com/hackermondev/68ec8ed145fcee49d2f5e2b9d2cf2e52>

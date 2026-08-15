@@ -831,9 +831,3 @@ You might think this block is due to `--` being a SQL comment sequence, but that
 If there’s one thing I've learned from diving into the world of `multipart/form-data` parsers, it’s that they **really** struggle to get things right. Whether it's failing to properly handle boundaries, missing key details in file uploads, or just letting malicious payload pass through, these parsers often feel like they’re held together with duct tape and hope.
 
 The takeaway? We should always keep in mind that, for web applications, `x-www-form-urlencoded` and `multipart/form-data` are interchangeables and weaknesses on one of these two parsers can lead to security issues.
-
-💬
-
-****Share your thoughts about this article with me on:****
-LinkedIn: [https://www.linkedin.com/in/andreamenin/](https://www.linkedin.com/in/andreamenin/?ref=blog.sicuranext.com)
-X: [https://x.com/AndreaTheMiddle](https://x.com/AndreaTheMiddle?ref=blog.sicuranext.com)

@@ -190,18 +190,3 @@ Still, there is a huge chance that this account may have administrative access t
 In this blog post, I’ve shown you how an inconspicuous file deletion vulnerability may have an impact on the security of the entire Active Directory domain. Depending on the domain account used by SolarWinds ARM, it could even allow escalating privileges on any Windows domain-joined machine, even those on which SolarWinds ARM is not installed. SolarWinds has resolved these vulnerabilities related to [*ARM 2024.3*](https://documentation.solarwinds.com/en/success_center/arm/content/release_notes/arm_2024-3_release_notes.htm). It is recommended that all users of SolarWinds ARM test and deploy this update as soon as possible.
 
 You can follow me at [@chudypb](https://twitter.com/chudyPB) and follow the team on [Twitter](https://www.twitter.com/thezdi), [Mastodon](https://infosec.exchange/@thezdi), [LinkedIn](https://www.linkedin.com/company/zerodayinitiative), or [Bluesky](https://bsky.app/profile/thezdi.bsky.social) for the latest in exploit techniques and security patches.
-
-- [SolarWinds](https://www.zerodayinitiative.com/blog/tag/SolarWinds)
-- [Research](https://www.zerodayinitiative.com/blog/tag/Research)
-- [LPE](https://www.zerodayinitiative.com/blog/tag/LPE)
-
-    ![Hero Background](https://www.zerodayinitiative.com/images/hero-banner-bg.jpg)
-
-##  Stand at the front line of proactive security
-
- TrendAI™ ZDI connects the experts who discover, remediate, and defend.
-Add your voice to the work that pushes attackers back.
-
- [
-
-#### RESEARCHERS

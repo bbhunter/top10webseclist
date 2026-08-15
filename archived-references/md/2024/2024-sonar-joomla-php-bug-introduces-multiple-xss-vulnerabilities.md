@@ -229,20 +229,3 @@ In this article, we explained how SonarQube Cloud led us to an interesting XSS f
 Finally, we would like to thank the Joomla! Security Strike Team for quickly responding to our notification, collaborating on a corresponding patch, and informing all users.
 
 Also, thanks a lot to [Alex Dowad](https://github.com/alexdowad) for quickly addressing the issue from the PHP side!
-
-- [WordPress Core - Unauthenticated Blind SSRF](https://www.sonarsource.com/blog/wordpress-core-unauthenticated-blind-ssrf/)
-- [WordPress < 5.8.3 - Object Injection Vulnerability](https://www.sonarsource.com/blog/wordpress-object-injection-vulnerability/)
-- [Grav CMS 1.7.10 - Code Execution Vulnerabilities](https://www.sonarsource.com/blog/grav-cms-code-execution-vulnerabilities/)
-- [Ghost CMS 4.3.2 - Cross-Origin Admin Takeover](https://www.sonarsource.com/blog/ghost-admin-takeover/)
-
-![Icon](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/2b3c9e42-d8a1-44fd-9ee4-2be7d86d1949/Paper%20Airplane.svg)
-
-## Get new blogs delivered directly to your inbox!
-
-Stay up-to-date with the latest Sonar content. Subscribe now to receive the latest blog articles.
-
- Email
-
-Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

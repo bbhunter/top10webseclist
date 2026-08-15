@@ -168,5 +168,3 @@ Q: Can you clobber the values of `controller` or `action` that are included in `
 
 Q: Are there any query strings that cannot be parsed into `params`?
  A: Yes, examples can be found in Rack's [test code](https://github.com/rack/rack/blob/c52c1b6428b4841e7a634b80d73f28e1cffd8c12/test/spec_utils.rb#L230-L240), such as `x[y]=1&x[y]z=2` and `x[y]=1&x[y][][w]=2`. These can be useful to fingerprint the usage of Rack. It used to be possible to use `a&a[]`, as covered in [blog post](https://web.archive.org/web/20121031231234/http://bjeanes.com/2010/10/rails-bug-in-versions-1-2-and-3) by bjeanes in 2010.
-
- [« Back to homepage](https://nastystereo.com/)

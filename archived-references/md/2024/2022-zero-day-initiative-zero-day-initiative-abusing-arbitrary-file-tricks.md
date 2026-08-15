@@ -198,19 +198,3 @@ The techniques we’ve presented here show how some rather weak exploit primitiv
 • An arbitrary file delete or overwrite, as `SYSTEM` or admin, even if there is no control of contents, can be used for a permanent system denial-of-service.
 
 We would like to thank researcher Abdelhamid Naceri for his great work in developing these exploit techniques, as well as for the vulnerabilities he has been reporting to our program. We look forward to seeing more from him in the future. Until then, follow the team on [Twitter](https://www.twitter.com/thezdi), [Mastodon](https://infosec.exchange/@thezdi), [LinkedIn](https://www.linkedin.com/company/zerodayinitiative), or [Instagram](https://www.instagram.com/thezdi) for the latest in exploit techniques and security patches.
-
-- [Windows](https://www.zerodayinitiative.com/blog/tag/Windows)
-- [LPE](https://www.zerodayinitiative.com/blog/tag/LPE)
-- [Research](https://www.zerodayinitiative.com/blog/tag/Research)
-- [Exploit](https://www.zerodayinitiative.com/blog/tag/Exploit)
-
-    ![Hero Background](https://www.zerodayinitiative.com/images/hero-banner-bg.jpg)
-
-##  Stand at the front line of proactive security
-
- TrendAI™ ZDI connects the experts who discover, remediate, and defend.
-Add your voice to the work that pushes attackers back.
-
- [
-
-#### RESEARCHERS
