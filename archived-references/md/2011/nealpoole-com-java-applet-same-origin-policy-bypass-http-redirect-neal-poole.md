@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/"
     title: Java Applet Same-Origin Policy Bypass via HTTP Redirect » Neal Poole
+    author: Neal Poole
 also_at: []
-authors: []
+authors:
+  - Neal Poole
 canonical_url: ""
 cited_by:
   - "2011.md:11"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Java Applet Same-Origin Policy Bypass via HTTP Redirect » Neal Poole
 
-**Java Applet Same-Origin Policy Bypass via HTTP Redirect » Neal Poole** - Author not stated, nealpoole.com.
+**Java Applet Same-Origin Policy Bypass via HTTP Redirect » Neal Poole** - Neal Poole, nealpoole.com.
 
 - Published: date not stated
 - Original: <https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/>

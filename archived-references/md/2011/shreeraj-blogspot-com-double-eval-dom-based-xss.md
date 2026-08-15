@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html"
     title: Double eval() for DOM based XSS
+    author: shreeraj
 also_at: []
-authors: []
+authors:
+  - shreeraj
 canonical_url: ""
 cited_by:
   - "2011.md:28"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Double eval() for DOM based XSS
 
-**Double eval() for DOM based XSS** - Author not stated, shreeraj.blogspot.com.
+**Double eval() for DOM based XSS** - shreeraj, shreeraj.blogspot.com.
 
 - Published: date not stated
 - Original: <https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html>

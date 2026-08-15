@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox/"
     title: NULLs in entities in Firefox
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox"
 cited_by:
   - "2011.md:25"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # NULLs in entities in Firefox
 
-**NULLs in entities in Firefox** - Author not stated, thespanner.co.uk.
+**NULLs in entities in Firefox** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox/>

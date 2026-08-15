@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, lists-webappsec-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:01+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://lists.webappsec.org/pipermail/websecurity_lists.webappsec.org/2011-February/007533.html"
     title: "[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over"
+    author: Phillip Purviance
   - id: capture
     resource: "https://web.archive.org/web/20110212030623/http://lists.webappsec.org/pipermail/websecurity_lists.webappsec.org/2011-February/007533.html"
 also_at: []
-authors: []
+authors:
+  - Phillip Purviance
 canonical_url: ""
 cited_by:
   - "2011.md:14"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # [WEB SECURITY] CSRF: Flash + 307 redirect = Game Over
 
-**[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over** - Author not stated, lists.webappsec.org.
+**[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over** - Phillip Purviance, lists.webappsec.org.
 
 - Published: date not stated
 - Original: <http://lists.webappsec.org/pipermail/websecurity_lists.webappsec.org/2011-February/007533.html>

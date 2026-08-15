@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information"
     title: Abusing HTTP Status Codes to Expose Private Information
+    author: Mike Cardwell
     last_modified: 2011-01-21
   - id: canonical
     resource: "https://www.grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information"
 also_at: []
-authors: []
+authors:
+  - Mike Cardwell
 canonical_url: "https://www.grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information"
 cited_by:
   - "2011.md:19"
@@ -44,7 +46,7 @@ translation_of: ""
 
 # Abusing HTTP Status Codes to Expose Private Information
 
-**Abusing HTTP Status Codes to Expose Private Information** - Author not stated, grepular.com.
+**Abusing HTTP Status Codes to Expose Private Information** - Mike Cardwell, grepular.com.
 
 - Published: 2011-01-21
 - Original: <https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information>

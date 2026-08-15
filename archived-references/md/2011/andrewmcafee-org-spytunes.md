@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, en-US, andrewmcafee-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:07:49+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://andrewmcafee.org/2011/02/mcafee-apple-itunes-privacy-hole-violation/"
     title: SpyTunes
+    author: Andrew McAfee
   - id: capture
     resource: "https://web.archive.org/web/20110520071751/http://andrewmcafee.org/2011/02/mcafee-apple-itunes-privacy-hole-violation/"
 also_at: []
-authors: []
+authors:
+  - Andrew McAfee
 canonical_url: ""
 cited_by:
   - "2011.md:20"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # SpyTunes
 
-**SpyTunes** - Author not stated, andrewmcafee.org.
+**SpyTunes** - Andrew McAfee, andrewmcafee.org.
 
 - Published: date not stated
 - Original: <http://andrewmcafee.org/2011/02/mcafee-apple-itunes-privacy-hole-violation/>

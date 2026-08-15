@@ -12,12 +12,17 @@ sources:
   - id: original
     resource: "https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas"
     title: The failure of noise-based non-continuous audio captchas
-    author: @elie
+    author: Elie Bursztein, Romain Bauxis, Hristo Paskov, Daniele Perito, Celine Fabry, John C. Mitchell
   - id: canonical
     resource: "https://elie.net/publication/the-failure-of-noise-based-non-continuous-audio-captchas"
 also_at: []
 authors:
-  - @elie
+  - Elie Bursztein
+  - Romain Bauxis
+  - Hristo Paskov
+  - Daniele Perito
+  - Celine Fabry
+  - John C. Mitchell
 canonical_url: "https://elie.net/publication/the-failure-of-noise-based-non-continuous-audio-captchas"
 cited_by:
   - "2011.md:23"
@@ -45,7 +50,7 @@ translation_of: ""
 
 # The failure of noise-based non-continuous audio captchas
 
-**The failure of noise-based non-continuous audio captchas** - @elie, elie.net.
+**The failure of noise-based non-continuous audio captchas** - Elie Bursztein, Romain Bauxis, Hristo Paskov, Daniele Perito, Celine Fabry, John C. Mitchell, elie.net.
 
 - Published: date not stated
 - Original: <https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas>

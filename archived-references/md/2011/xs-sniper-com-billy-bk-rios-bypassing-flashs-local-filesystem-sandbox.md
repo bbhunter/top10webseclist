@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2011/01/04/bypassing-flash%E2%80%99s-local-with-filesystem-sandbox/"
     title: Billy (BK) Rios » Bypassing Flash’s local-with-filesystem Sandbox
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20150911221312/http://xs-sniper.com/blog/2011/01/04/bypassing-flash%E2%80%99s-local-with-filesystem-sandbox/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2011.md:18"
@@ -44,7 +46,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Bypassing Flash’s local-with-filesystem Sandbox
 
-**Billy (BK) Rios » Bypassing Flash’s local-with-filesystem Sandbox** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Bypassing Flash’s local-with-filesystem Sandbox** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2011/01/04/bypassing-flash%E2%80%99s-local-with-filesystem-sandbox/>

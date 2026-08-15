@@ -6,16 +6,19 @@ tags: [article, webseclist-reference, dsecrg-blogspot-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:13+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html"
     title: "Digital Security Research Group: Excel formula injection in Google Docs"
+    author: @_chipik, @asintsov
   - id: capture
     resource: "https://web.archive.org/web/20120530173011/https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html"
 also_at: []
-authors: []
+authors:
+  - @_chipik
+  - @asintsov
 canonical_url: ""
 cited_by:
   - "2011.md:56"
@@ -43,7 +46,7 @@ translation_of: ""
 
 # Digital Security Research Group: Excel formula injection in Google Docs
 
-**Digital Security Research Group: Excel formula injection in Google Docs** - Author not stated, dsecrg.blogspot.com.
+**Digital Security Research Group: Excel formula injection in Google Docs** - @_chipik, @asintsov, dsecrg.blogspot.com.
 
 - Published: date not stated
 - Original: <https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html>

@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, schemehostport-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:49+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://www.schemehostport.com/2011/12/timing-attacks-on-css-shaders.html"
     title: "Scheme/Host/Port: Timing Attacks on CSS Shaders"
+    author: Adam Barth
   - id: capture
     resource: "https://web.archive.org/web/20120529015444/http://www.schemehostport.com/2011/12/timing-attacks-on-css-shaders.html"
 also_at: []
-authors: []
+authors:
+  - Adam Barth
 canonical_url: ""
 cited_by:
   - "2011.md:26"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Scheme/Host/Port: Timing Attacks on CSS Shaders
 
-**Scheme/Host/Port: Timing Attacks on CSS Shaders** - Author not stated, schemehostport.com.
+**Scheme/Host/Port: Timing Attacks on CSS Shaders** - Adam Barth, schemehostport.com.
 
 - Published: date not stated
 - Original: <http://www.schemehostport.com/2011/12/timing-attacks-on-css-shaders.html>

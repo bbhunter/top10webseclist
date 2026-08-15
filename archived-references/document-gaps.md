@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-148 reference(s) unresolved. 118 of them already have their raw bytes stored.
+189 reference(s) unresolved. 149 of them already have their raw bytes stored.
 
 ## http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/
 
@@ -51,6 +51,126 @@ or fix the route and re-run.
 - Reason: faulty capture: every code excerpt the article argues from is absent - the prose introduces listings that are simply not there (Let us observe an excerpt from the map_meta_cap() code, which uses the following code, Note the highlighted code) and the file contains zero code fences and zero images, so the original screenshots are lost; the article then stops on an empty POC section with Admin token retrieval and Race Condition headings and nothing under either (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2015.md:28`
+
+## http://blog.kotowicz.net/2011/03/exploiting-unexploitable-xss-with.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the demonstration was dropped, leaving a dangling lead-in. The body ends a sentence with "See for yourself:" and nothing follows; the stored source carries a YouTube iframe at that point. The one artefact showing the drag-and-drop attack actually working is gone. Everything else is sound - the single escaped payload survived intact inside its fence, and the published file has no deleted event handlers (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:34`
+
+## http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The body is 165 lines of which ZERO are prose paragraphs - it is the blog tag-cloud sidebar, 164 label links, plus the masthead. Identical signature to the 2011 sibling on this blog, where the article was confirmed present in the stored source and the extraction chooser preferred the raw candidate for having the most words, every one a label name. Remedy: re-extract from the stored raw object (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2010.md:39`
+
+## http://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The body is 165 lines of which ZERO are prose paragraphs - it is the blog tag-cloud sidebar, 164 label links, plus the masthead. Identical signature to the 2011 sibling on this blog, where the article was confirmed present in the stored source and the extraction chooser preferred the raw candidate for having the most words, every one a label name. Remedy: re-extract from the stored raw object (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2010.md:40`
+
+## http://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The body is 165 lines of which ZERO are prose paragraphs - it is the blog tag-cloud sidebar, 164 label links, plus the masthead. Identical signature to the 2011 sibling on this blog, where the article was confirmed present in the stored source and the extraction chooser preferred the raw candidate for having the most words, every one a label name. Remedy: re-extract from the stored raw object (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2010.md:35`
+
+## http://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The body is 165 lines of which ZERO are prose paragraphs - it is the blog tag-cloud sidebar, 164 label links, plus the masthead. Identical signature to the 2011 sibling on this blog, where the article was confirmed present in the stored source and the extraction chooser preferred the raw candidate for having the most words, every one a label name. Remedy: re-extract from the stored raw object (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2010.md:42`
+
+## http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The body is 165 lines of which ZERO are prose paragraphs - it is the blog tag-cloud sidebar, 164 label links, plus the masthead. Identical signature to the 2011 sibling on this blog, where the article was confirmed present in the stored source and the extraction chooser preferred the raw candidate for having the most words, every one a label name. Remedy: re-extract from the stored raw object (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2010.md:43`
+
+## http://blog.mindedsecurity.com/2011/10/autocompleteagain.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The published body is one masthead line plus 164 tag-cloud sidebar links - 14,057 characters, 164 list items, ZERO headings and ZERO prose paragraphs. The article is in the store and was dropped: the post-body element holds about 2,031 characters of prose beginning "This is a short post about autocomplete feature in browsers", two figures and the link to the greasemonkey checker. Note HOW it happened - steps.acquire.extraction chose the raw candidate with the reason "raw kept the most code blocks and text", scoring 164 links and 0 code blocks highest, so the chooser measured link soup and preferred it. The rel=author byline naming Stefano Di Paola was dropped with the article. Remedy: re-extract from the stored raw object (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:38`
+
+## http://blog.securitee.org/?p=37
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: all nine image references point at a host that now redirects to its site root, and the manifest records UnidentifiedImageError for all eight distinct images - nothing was preserved. That kills the four screenshots the argument is built on. Publisher furniture also remains at the end: the category and permalink line, three pingback teasers, a Leave a Reply block, a CAPTCHA image and the allowed-tags list, 1,145 characters. The 14 real reader comments were correctly dropped; only the pingbacks leaked (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:13`
+
+## http://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the byline was dropped although the PUBLISHED BODY ITSELF signs off "-Roee Hay and Yair Amit", and the stored source carries a rel=author byline naming Roee Hay with the date. The recorded title is the blog title tag, masthead plus post title, reaching both the frontmatter and the body H1, where the source own post heading is just "DNS poisoning via Port Exhaustion" and cited_title already says so. Half the file is navigation: 4,398 characters of trackback listing, monthly archives, categories, recent posts and blogroll against 1,867 characters of article, and the extraction chooser picked the raw candidate for keeping the most text. The cited post is an ANNOUNCEMENT - the actual whitepaper sits behind a bit.ly link in the body and was never resolved (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:7`
+
+## http://blog.watchfire.com/wfblog/2011/10/json-based-xss-exploitation.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: ALL THREE PAYLOADS DESTROYED, and the document no longer demonstrates its own technique. The stored source holds three event handlers inside the article body, escaped by the author so readers could see them; the published file holds zero. The headline example, a JSON value carrying an img whose onerror alerts, publishes as "name":"Foo <img src=x >" - the exact stray-space signature - and it also lost the trailing >Bar" that closed the injection. The other two lose onerror=alert(1) the same way. What survives is three LIVE img tags in the Markdown, so they render as broken images rather than as visible payload text, in an article whose entire point is injecting HTML into a JSON response. Separately, all 26 list items publish as EMPTY bullets with their text detached, and both ordered lists lost their numbering (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:39`
+
+## http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the 28C3 programme entry stands in for the talk. The pointer-page grading is sound on an intact extract - the page description element really is empty - but the SLIDES are linked inside the captured page as a 6 MB PDF (2007_28C3_Effective_DoS_on_web_application_platforms.pdf) and were never resolved; also_at is empty. The year list cites this for HashDoS and the technique lives in that deck, not in the 2,380-character abstract. authors also names only Alexander Klink where the page names a SECOND speaker, Julian Waelde. A literal pipe inside his name as the publisher renders it splits the Markdown table row and breaks the link (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:58`
+
+## http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: BOTH EMBEDS WERE LOST and the document is now an announcement stub. The body promises "Slides are below, and video is after the break" and the stored source holds a SlideShare embed and a YouTube embed at that point; neither reached the document, and the entire technique lives in them. The byline was also dropped although it is PUBLISHED IN THE BODY as "Posted by Kos" and the source marks it rel=author. The recorded title carries a leading guillemet from the WordPress breadcrumb and reaches the body H1 too; the document's own heading ends "- Slides & Video" (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:29`
+
+## http://lists.webappsec.org/pipermail/websecurity_lists.webappsec.org/2011-February/007533.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the ENTIRE PROSE ARTICLE is wrapped in a code fence, and the extractor emitted seven Markdown links inside it, so they will display raw as bracket-and-parenthesis text. The byline was dropped although the body names the writer, Phillip Purviance, and the source marks it in bold. Mailman navigation is also duplicated at the end, 991 characters (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:14`
+
+## http://pauldotcom.com/2011/05/stealth-cookie-stealing-new-xs.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the recorded title is pure SITE CHROME - "PaulDotCom: Archives", the Movable Type archive-template title - in both the frontmatter and the body H1, while the captured page carries the document own title explicitly: "Stealth Cookie Stealing (new XSS technique)". The SLUG is built from a failed live probe that hit a browser error page (chrome-error://chromewebdata/), so it will change when the title is corrected. The byline was dropped although the source carries a full vcard, "By John Strand", and the body first line credits the technique to LanMaSteR53; the publication date was dropped from the same block. The single figure is unretrievable, 0 of 1 preserved, 0 bytes, and the Markdown still points at it (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:45`
+
+## http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: all five code listings are mangled by the extraction path. The publish used pdfminer, which injects spaces into every token, so a script tag publishes as "< script src = \" http :// b . net / somescript . js \" / >" and a PHP header call as "header ( \" Content - type : application /x - shockwave - flash \" );". pdftotext on the SAME stored bytes renders all five correctly, so this is repairable offline by re-extracting through the other path. The recorded title is also the citation's wording, which occurs ZERO times in the paper - the document's own title is "Biting the hand that serves you: A closer look at client-side Flash proxies for cross-domain requests". Six figures additionally publish as garbage tokens, but that is source-side: the figure fonts carry no usable ToUnicode (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:9`
 
 ## http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf
 
@@ -132,6 +252,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:39`
 
+## http://www.thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox/
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. The body is 3,321 characters in two lines - one unbroken run of 40 concatenated navigation links, including posts published a decade after 2011, plus the page title chrome. Not one word of the article is present, and the two entity strings that ARE the technique appear zero times. The rule:pointer-page decision must not be believed: it measured 379 words of prose against 40 links on the broken extract and recorded "points at research rather than carrying it" as a deliberate downgrade. The source is a Next.js RSC flight payload and the extractor parsed only the server-rendered anchor shell; the complete article sits in the markdownContent prop of the stored object, ALREADY CARRYING ITS OWN javascript fence. Byline dropped with it: the same prop names Gareth Heyes. Second document on this blog lost this way. REPAIRABLE OFFLINE (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:25`
+
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
 - Outcome: `broken-capture` (no bytes stored)
@@ -163,6 +291,14 @@ or fix the route and re-run.
 - Reason: faulty capture: 250 ligature glyphs read as U+FFFD inside words ("Certi<?>cate", "Cloud<?>are", "WHOIS<?>eld"); the 2026-08-14 poppler re-read recovered 59KB of previously missing text but maps this font's fi/ff ligature to a replacement character; needs a different extractor or OCR (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:88`
+
+## https://amolnaik4.blogspot.com/2011/03/exploitation-of-self-only-cross-site.html
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: BOTH RESEARCH PAYLOADS WERE DELETED, and the article is 7.4 percent of the file. The stored source holds two ondragstart handlers; the published file holds zero. The climax payload - a div whose ondragstart sets the drag data to a script tag posting document.cookie to the attacker - publishes as <div draggable="true" ><h3>DRAG ME!!</h3></div>, with the telltale stray space before the closing bracket, so the sentence "By changing the Evil Data ... pointed to the attacker cookie grabbing script" is followed by a tag with nothing in it. The first payload additionally merged into a following Blogger separator div and lost its heading. Escaped markup was unescaped into live HTML and nothing is fenced, leaving unbalanced script tags. Separately the capture is CONTAMINATED: the Blogger Dynamic Views theme loads the whole blog into the DOM, so 17 unrelated posts came in - 7,652 characters of cited article inside a 102,872-character body - including a 2016 CTF walkthrough that dumps a wp-config.php with live salts. steps.wayback already holds a SINGLE-POST capture, so the remedy is available offline (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:49`
 
 ## https://archives.iw3c2.org/www2013/proceedings/p1191.pdf
 
@@ -219,6 +355,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the document is truncated mid-listing, stopping at " const svgReg = /" right after "As long as the SVG file matches the following regex", so the SVG payload, the Next.js material and the disclosure are absent; re-acquire the article (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:50`
+
+## https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: THE ARTICLE IS ABSENT. Of 17,871 published characters, 17,453 - 97.7 percent - are the blog label sidebar: 229 list items from $200K to "yerba beuna center for the arts". Published counts of CORS, crossOrigin, texture and origin-clean are all ZERO, while the stored raw HTML holds CORS x20, crossOrigin x10, texture x10 and the complete ~2,300-character post. Same cause as the mindedsecurity autocomplete entry: the extraction chooser preferred the raw candidate because it counted 1,348 words, every one a label name. The byline was dropped with the article - the store carries "Posted by Eric Bidelman, Developer Advocate" TWICE - and authors instead records the platform handle @ChromiumDev. Note for the re-render: the missing article contains img.onload handlers, exactly what the handler-stripping defect eats (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:47`
 
 ## https://blog.isec.pl/xss-fun-with-animated-svg/
 
@@ -292,6 +436,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:52`
 
+## https://code.google.com/p/dominator/
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: A GOOD DOCUMENT WAS OVERWRITTEN BY A JAVASCRIPT APP SHELL - the documented --force trap, actually happening. The published body is ONE LINE of 72 characters, "Google Code Archive - Long-term storage for Google Code Project Hosting.", which is the shell of a JS-driven page. The manifest still records the good render (content_sha256 748ab6c6, 1,594 characters, result ok, 2026-08-10T13:07:12) and THAT OBJECT IS STILL IN THE STORE; the published file records a different content_sha256 of 73 bytes, retrieved live at 2026-08-10T15:39:59 - a re-render 32 minutes later followed the redirect, got the shell and published it, and the manifest was never brought into line. The lost 1,594-character extraction holds the project description, the DOMinatorPro 2012 and Firefox 3.6 warnings, the install link, the sponsor image the manifest still lists, and the Project Information block. The title survives correct in the frontmatter but the phrase now appears NOWHERE in the body. REMEDY IS OFFLINE: re-render from the stored 748ab6c6 object. Do NOT re-acquire - the manifest raw_sha256 is missing from the store and the URL redirects to the shell (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:8`
+
+## https://code.google.com/p/puzzlemall/downloads/list
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the title is generic SITE CHROME - "Google Code Archive - Long-term storage for Google Code Project Hosting." is identical for every project on that host and is carried by both the frontmatter and the body H1, with no retitle step on this entry although its sibling got one. Three of the ten link destinations are also broken Markdown, containing literal spaces so a parser truncates at the first one - and those three are exactly the research artefacts (the TSRC presentation, the Session Puzzles whitepaper and its presentation). The year list itself uses the percent-encoded forms (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:53`
+
 ## https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf
 
 - Outcome: `broken-capture`
@@ -307,6 +467,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the paper's HEADLINE FINDING is the text that renders wrong. Listing 4's attack vector contains two two-backtick runs, on the lines carrying alt="``onload=xss()", and lines 266 to 279 hold no blank line, so they form one paragraph and CommonMark pairs those runs into a single inline code span that swallows 302 characters of interleaved prose and listing - including the sentence defining mXSS. The backtick mutation is precisely what the paper is about. Fix by fencing or separating the listing. Separately, one glyph is source-inherent and NOT repairable by re-render: line 341 reads \20AC for the inverted-question-mark glyph where the euro sign belongs, and an independent pdftotext of the stored object fails the same way because the PDF embeds it with no usable ToUnicode entry (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2013.md:5`
+
+## https://dinaburg.org/data/DC19_Dinaburg_Presentation.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: a broken ToUnicode CMap in the deck maps ft to m, so in a talk ABOUT lookalike domains the text reads microsom.com, Microsom BITS, mic2osom.com and iicrosom.com - 13 occurrences - while the SAME domains appear correctly spelled earlier in the experiment list as microsmft.com, iicrosoft.com and mic2osoft.com. One document spells one domain two ways and a reader cannot tell an artefact from a deliberate bitsquat. Also ti mapped to Y in 27 places (OperaYng, MiYgaYons, IdenYficaYon) and tt to w, giving hwp:// nine times. Separately and ARCHIVE-INTRODUCED, where poppler returns clean ASCII: 13 precomposed ligature codepoints, so traffic, office, staff and identification all return zero on an ASCII search; 186 soft hyphens; and 1,285 bare carriage returns embedded mid-line. Figures lost their numbers, leaving "There are [blank] daily DNS requests per person" (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:72`
 
 ## https://dl.acm.org/doi/10.1145/2810103.2813633
 
@@ -355,6 +523,30 @@ or fix the route and re-run.
 - Reason: faulty capture: the Markdown extraction stops after page 1 of a 16-page IEEE S&P paper - page 2 holds only figure axis labels and page 3 is the fragment DEFG - and the surviving page carries heavy dropped-ligature damage (rst, signicantly, insufcient, ips, efcient) with no precomposed glyphs; the published PDF is byte-identical to the stored 728,105-byte raw object whose page tree reads /Count 16, so an offline re-extract from the store is the safe remedy (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2018.md:73`
+
+## https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: ALL TEN FIGURES ARE THE SAME PLACEHOLDER, and the run reported success. Every screenshot resolves to one object - 1,678 bytes, 200x200, JPEG despite .png URLs - which is Google's grey warning-triangle 'image unavailable' graphic, while steps.images records "10 of 10 image(s) preserved". The post is screenshot-driven, ten of about fourteen content blocks, so the visual evidence is entirely gone. The byline was also dropped although the body states "Here is a short story from @_chipik and @asintsov", and the recorded title carries the blog masthead where the post's own title is just "Excel formula injection in Google Docs" (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:56`
+
+## https://elie.im/publication/text-based-captcha-strengths-and-weaknesses
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the publication landing page stands in for the CCS 2011 paper. Of 3,264 body characters only about 760 are research prose - an obsolescence warning and a four-sentence abstract - and the paper and slides are both linked INSIDE the captured page as CDN PDFs, neither acquired: also_at is empty and there is no linked_document_url. The archived PDF is a six-page render of the landing page, not the paper. authors records the site handle @elie where the page names three people: Elie Bursztein, Matthieu Martin and John C. Mitchell. The title carries pipe-suffixed site chrome, one figure is an explicit placeholder, the hero image is emitted twice on one line, and a link opened after the related-post carousel never closes (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:52`
+
+## https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the publication landing page stands in for the paper. The only research prose is a 644-character abstract; the rest is a theme image, share widgets, tag lists, a metadata table and related-post teasers. Both the paper and the slides are linked INSIDE the captured page as CDN PDFs and neither was acquired - also_at is empty and there is no linked_document_url. authors also records the site handle @elie where the page own metadata table names six people: Elie Bursztein, Romain Bauxis, Hristo Paskov, Daniele Perito, Celine Fabry and John C. Mitchell. Six image references include a placeholder, the same cover emitted twice on one line, and a link whose label spans blank lines and never closes (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:23`
 
 ## https://eprint.iacr.org/2026/058
 
@@ -476,6 +668,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2018.md:72`
 
+## https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the byline was dropped although the stored source carries the full Blogger vcard with rel=author and schema.org markup naming Jeremiah Grossman, so the file prints "Author not stated" on the author's own blog (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:50`
+
 ## https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf
 
 - Outcome: `broken-capture`
@@ -483,6 +683,22 @@ or fix the route and re-run.
 - Reason: faulty capture: the ENTIRE BODY is scrambled font-encoding output - only 23 of 2,495 alphabetic tokens are recognisable English, so line 70 reads ouble UDbRRDLoE and line 104 URoLEnulcddlibg. REPAIRABLE OFFLINE: the stored source raw_sha256 c38f62eb (19 pages) extracts perfectly with pdftotext -layout, returning EVADING ALL WEB-APPLICATION FIREWALLS XSS FILTERS and clean prose - the archive extractor ignored the PDF ToUnicode mapping. The author is also unrecorded because his name survives only in scrambled form: the cover reads MAZIN AHMED \| MAZIN@MAZINAHMED.NET \| @MAZEN160 and every page footer repeats Mazin Ahmed (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2015.md:38`
+
+## https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the published text is materially worse than the stored bytes, and pdftotext on the same PDF is clean, so the damage is EXTRACTOR-INTRODUCED. Thorn stands for fi five times (the Thorn-le manifest.json, identiThorn-ed) so ASCII file returns 0 against 4 in the source; sharp-s stands for fl; and a bare exclamation mark stands for an apostrophe 38 times (Google!s, isn!t) including every indent in the JavaScript listing. All five pages publish as five run-on lines with 33 word-joins (OSTaking, InsideKyle, IntroductionGoogle, manifest.jsonWhen), both JavaScript examples inlined into prose with zero backticks in the file, and page 5 publishes binary fragments where the stored page extracts to nothing. The recorded title is the citation's wording; the paper's own title is "Hacking Google Chrome OS - Taking Down the Browser from the Inside" (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:55`
+
+## https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: pages 8 to 11 publish decoded FONT STREAMS as prose and the document ends on binary noise, the last non-empty line being "..!". The page count is fabricated: the stored PDF has exactly 7 pages and 11 embedded font files, and each font was counted as a page. Six section headings are destroyed outright by subset fonts with no ToUnicode map, emitting raw glyph codes from 0x21 - the headings for Denial of Service, File System Access, Execution of Binary Files, NoSQL Injection, Blind NoSQL Injection and Conclusions and Mitigations are all unreadable. 45 further substitutions come from MacRoman bytes decoded as CP1252 (curly quotes as O-acute and O-grave, ellipsis as E-acute, JaegerMonkey as JS-caron), and 17 apostrophes publish as exclamation marks (user!s, doesn!t, attacker!s). Every code listing is unfenced. This is the defect commit e7ed20f targeted, still live here (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:67`
 
 ## https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf
 
@@ -548,6 +764,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2020.md:31`
 
+## https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the Pygments LINE-NUMBER GUTTER publishes as a fenced code block containing only "1 2 3 4 5", with three orphan pipe rows around it, debris from the source's highlight table. Two block quotations also lost their quoting - a bare angle bracket then the quoted text as an ordinary paragraph - so the Wikipedia same-origin definition and the Mozilla advisory read as the author's own words. The recorded title carries the site masthead in both the frontmatter and the body H1. The byline was dropped although the sidebar states "My name is Neal Poole" and the post is first person throughout (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:11`
+
 ## https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/
 
 - Outcome: `broken-capture`
@@ -572,6 +796,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2019.md:81`
 
+## https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: a bibliography record stands in for the ACSAC 2011 paper - title, authors, abstract and the same citation rendered three times as HTML, plain text and BibTeX. also_at is empty and the tooling did not resolve it; the only document link on the page is an ACM paywall URL, so this one cannot be fixed by following a link and needs another source. Aggravating: the entry is graded research with the reason "carries technique", where a sibling in the same collection was correctly graded records by rule:pointer-page. Publisher furniture also remains at the end - a repository clerk's byline, a webmaster pointer and a site-wide copyright notice, 498 characters (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:78`
+
 ## https://pure.york.ac.uk/portal/en/publications/stealing-pins-via-mobile-sensors-actual-risk-versus-user-percepti/
 
 - Outcome: `broken-capture`
@@ -579,6 +811,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the archived document is the York PURE RESEARCH-DATABASE RECORD, 4,777 characters with no full text, no PDF link and no author list at all, which is why it prints Author not stated; the archived PDF is a render of the record; 2016-17.md:112 cites the record, so the citation must move to the open-access article behind the DOI (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:112`
+
+## https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: SECTION 5, "Open Source Examples", IS MISSING - 996 characters present in the archived PDF but absent from the Markdown, and it carries the paper only in-the-wild evidence, the CAS logout JSP and the GBIF login JSP. The phrase survives only inside the table of contents. Page labels are shifted by two as a result. Page 20 publishes a decoded stream fragment as prose, and it is the last line of the document. Headings are welded to the following paragraph throughout ("1. IntroductionThis paper", "2. Related WorkMeder") and tables flatten into unreadable strings; a fresh pdftotext of the stored raw shows none of this, so it is introduced by the extractor. There are ZERO code fences in a paper of Java, JSP, EL and a 40-line JavaScript exploit, so a script tag, a closing script tag, a body onload and an iframe pointing at the victim host all sit live and inline mid-paragraph (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:10`
 
 ## https://research.securitum.com/dompurify-bypass-using-mxss/
 
@@ -636,6 +876,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2024.md:59`
 
+## https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the title is the PDF FILE STEM with its hyphens spaced, reaching both the frontmatter and the body H1, where the document's own cover reads "Session Puzzles" over "Indirect Application Attack Vectors". It has a same-title sibling in this collection, the PuzzleMall project page, so a correction wants the (Whitepaper) disambiguator. Eight captioned diagrams publish with NO images at all although the source PDF holds 17 image XObjects, nine of them JPEG - and this is a diagram-driven whitepaper. Three page-number footers also publish wrong, 10, 20 and 30 rendering as 11, 21 and 31 (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:53`
+
 ## https://teamusec.de/publications/conf-ccs-fahlhmsbf12/
 
 - Outcome: `broken-capture`
@@ -660,6 +908,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2026-ai.md:33`
 
+## https://tinyurl.com/5w6koqj
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: authors is empty although the document has an explicit "About the authors" section naming FIVE writers - Ory Segal, Omri Weisman, Adi Sharabani, Yair Amit and Lotem Guy - so the file prints "Author not stated". Seven superscript footnote markers were also flattened into the base text, and one of them changes a number: the source reads "AppScan Standard Edition software v8.0" followed by footnote 6, and it publishes as v8.0.6. The paper's central vulnerable example is published unfenced at column 0, so a renderer swallows the one code sample the argument is built on, and Figure 4's taint-trace screenshot is absent although its caption remains (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:21`
+
 ## https://trinhmt.github.io/home/S3/ccs14-trinh.pdf
 
 - Outcome: `broken-capture`
@@ -683,6 +939,14 @@ or fix the route and re-run.
 - Reason: faulty capture: every figure is missing while the prose keeps introducing one ("consider the following code:", "This is what the patch looks like:", captions Figure 1 through Figure 10 with nothing above them), so the screenshots carrying the evidence are absent; re-acquire with an extraction that keeps them (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2024.md:76`
+
+## https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: advisory
+- Reason: faulty capture: THE EXPLOIT IS INERT. The stored source has the proof of concept as <input type=button value="Launch" onclick="DoIt()">; the published file has <input type=button value="Launch" > - one event handler in the source listing, zero published, with the documented stray space before the bracket. The consequence is that function DoIt() is defined and then NEVER INVOKED anywhere in the published PoC, while the prose still tells the reader "you can run or launch anything you can access by using the method in the html provided below". The method is gone. Mechanism confirmed: the author escaped the whole PoC inside a pre block, extraction decoded the entities into live markup and the handler was deleted - and the damage is already baked into the stored CONTENT object, so a plain re-render reproduces it. The byline was dropped too, although the body states "Found By: Aaron Sigel" and the source carries a Blogger byline naming aaron (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:41`
 
 ## https://web.archive.org/web/20140516030049/http://www.securatary.com/Portals/0/Vulnerabilities/PayPal/Paypal%20Manager%20Account%20Hijack.pdf
 
@@ -796,6 +1060,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2012.md:62`, `2012.md:62`
 
+## https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com/2012/08/not-so-random-numbers-take-two.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: all four figures resolve to ONE object of 1,678 bytes at 200x200 - Google's 'image unavailable' placeholder - despite three of the four URLs being 640 pixels wide. The same placeholder stands in for ten figures on the DSecRG Excel-formula entry, so this is a class, not an accident (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2012.md:8`
+
 ## https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html
 
 - Outcome: `broken-capture`
@@ -908,6 +1180,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2018.md:91`
 
+## https://www.feross.org/webcam-spy/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the byline was dropped although the stored source carries it directly under the post heading - "By Feross Aboukhadijeh" with an October 18, 2011 time element and an article:author meta - and the recorded title carries the site masthead in both the frontmatter and the body H1. Six list items publish as EMPTY bullets with their text detached into following paragraphs, two blockquote markers are empty so the quoted text escapes the quote, and the YouTube demo embed was dropped, leaving the "Video demo of the attack" heading nearly bare (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:40`
+
+## https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: 5 of the 16 pages carry no text at all. Pages 9, 10, 11, 13 and 14 publish as bare page numbers because in the stored PDF each has an empty content stream and a single 2550x3300 image - they are RASTER SCANS, so the loss is source-side and needs OCR or an author-hosted text PDF. What is missing is the Last.fm and LibraryThing case studies, the third Amazon study, ALL of the Netflix-Prize simulation carrying the headline result, and most of the mitigation section. The body jumps straight into dangling continuations - "For a setting at which 5 users had a minimum of 100 correct inferences" - with no indication anything is absent (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:68`
+
 ## https://www.ieee-security.org/TC/SP2014/papers/AllYourScreensareBelongtoUs_c_AttacksExploitingtheHTML5ScreenSharingAPI.pdf
 
 - Outcome: `broken-capture`
@@ -979,6 +1267,22 @@ or fix the route and re-run.
 - Reason: faulty capture: 11 of the 12 pages are missing - the file carries one page marker and stops at "disables the aforementioned protection mechanism", so every case study, the attack fonts, the mitigations and the references are absent. Every ligature on the one surviving page is dropped: {rstname.lastname}@rub.de, eective, eects, font les, exltrate, prot, rst page, specic, Specically, dierent. The stored PDF carries NO ToUnicode map on any of its subset fonts, which is the cause. About 20 mid-word line breaks with no hyphen as well (Thorste/n Holz, attac/ks, informati/on). Store bytes present, so a re-extract is safe (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2012.md:81`
+
+## https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: TRUNCATED TO PAGE 1 OF 10. One page marker and 6,084 characters, where pypdf extracts 51,959 across ten pages from the very PDF the archive publishes - about 88 percent missing, including the CBC construction, both algorithms, the Axis2 timing evaluation and the whole reference list. It ends mid-argument on "alternate XML frameworks and possibly even other systems". The ligatures were DELETED rather than transliterated - nancial, specication, condential, dierent, prot, rst - and there are no precomposed ligature codepoints anywhere in the file, so ASCII different, first, efficient and specific all return zero for real. A TeX font-encoding table also substituted a pipe for the em dash and a backslash for the opening double quote, giving \"an \\oracle\" telling us\". REPAIRABLE OFFLINE: the stored raw is present and the published PDF is byte-identical to it (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:73`
+
+## https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: 92 PERCENT OF THE PAPER IS MISSING. The published body is 4,546 characters - page 1 only - ending mid-sentence on "port provided by major browsers was not consistent and only", where the stored PDF is 12 pages and 70,523 characters. Every attack technique, the browser results, the filter-circumvention analysis, the mitigation and all 43 references are gone, and the file carries a single page marker for a 12-page paper. The ligature damage is ARCHIVE-INTRODUCED, not source-inherent: pdftotext on the same stored bytes returns correct ASCII with specific x28, files x100 and filtering x14, while the published text has ZERO of each and 21 damaged tokens in 4,546 characters (les, specic, rst, ltering, dierent, prot, aws). The glyphs were deleted, not preserved as ligature codepoints - the entire non-ASCII census of the body is two en-dashes. REPAIRABLE OFFLINE (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:80`
 
 ## https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks/
 
@@ -1067,6 +1371,30 @@ or fix the route and re-run.
 - Reason: faulty capture: the NSDI 12 presentation landing page stands in for a 14-page paper (pages 155 to 168). The paper's PDF is linked inside the captured page (nsdi12-final17.pdf) and no manifest entry exists for it. The abstract is also published twice verbatim, and the BibTeX ends in live HTML with a root-relative href (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2012.md:79`
+
+## https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the USENIX Security 11 programme record stands in for the paper, which is linked INSIDE the captured page as full_papers/Mulazzani6-24-11.pdf and is still live; slides, audio and video are linked and unfollowed too. also_at is empty and there is no linked_document_url. The pointer-page grading is CORRECT here - the source page really carries no abstract, only 1,005 characters of visible text - but the citation still has no research document behind it. The manifest raw_sha256 is also absent from the store while the file's is present (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:74`
+
+## https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: a bare CMS stub stands in for the paper. The 17,344-byte source contains NO ABSTRACT at all - the word appears zero times - so the published 913 characters are title, date, five author-affiliation lines and link rows, carrying zero prose about the research. The paper PDF is linked inside the captured page (full_papers/Hooimeijer.pdf) and was never resolved: also_at is empty and there is no linked_document_url. The year list cites this for the BEK technique, none of which is here. Manifest raw_sha256 is also absent from the store while the file records one that is present (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:69`
+
+## https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the USENIX Security 11 session page stands in for the paper, whose PDF is linked INSIDE the captured page along with the slides; also_at is empty and there is no linked_document_url, although a sibling NDSS landing page in this same collection WAS resolved correctly, so the tooling can do it. The real prose is the abstract alone. Separately, neither frontmatter hash appears anywhere in the manifest: both frontmatter objects are in the store while the manifest's raw is absent, and the manifest's content object holds one line the published file lacks - the presentation video link - which is why that heading is empty (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2011.md:71`
 
 ## https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/doupe
 

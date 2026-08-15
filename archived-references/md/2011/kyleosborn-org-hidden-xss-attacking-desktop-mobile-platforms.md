@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, en-US, kyleosborn-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:00+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/"
     title: » The Hidden XSS Attacking the Desktop & Mobile Platforms
+    author: Kos
   - id: capture
     resource: "https://web.archive.org/web/20131008025746/http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/"
 also_at: []
-authors: []
+authors:
+  - Kos
 canonical_url: ""
 cited_by:
   - "2011.md:29"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # » The Hidden XSS Attacking the Desktop & Mobile Platforms
 
-**» The Hidden XSS Attacking the Desktop & Mobile Platforms** - Author not stated, kyleosborn.org.
+**» The Hidden XSS Attacking the Desktop & Mobile Platforms** - Kos, kyleosborn.org.
 
 - Published: date not stated
 - Original: <http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/>

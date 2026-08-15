@@ -6,16 +6,19 @@ tags: [article, webseclist-reference, blog-watchfire-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:29:36+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html"
     title: "IBM Application Security Insider: DNS poisoning via Port Exhaustion"
+    author: Roee Hay, Yair Amit
   - id: capture
     resource: "https://web.archive.org/web/20120406111208/http://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html"
 also_at: []
-authors: []
+authors:
+  - Roee Hay
+  - Yair Amit
 canonical_url: ""
 cited_by:
   - "2011.md:7"
@@ -43,7 +46,7 @@ translation_of: ""
 
 # IBM Application Security Insider: DNS poisoning via Port Exhaustion
 
-**IBM Application Security Insider: DNS poisoning via Port Exhaustion** - Author not stated, blog.watchfire.com.
+**IBM Application Security Insider: DNS poisoning via Port Exhaustion** - Roee Hay, Yair Amit, blog.watchfire.com.
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html>

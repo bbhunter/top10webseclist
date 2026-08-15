@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html"
     title: Robert “RSnake” Hansen, age 34, has passed away, on Facebook
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html"
 cited_by:
   - "2011.md:50"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Robert “RSnake” Hansen, age 34, has passed away, on Facebook
 
-**Robert “RSnake” Hansen, age 34, has passed away, on Facebook** - Author not stated, blog.jeremiahgrossman.com.
+**Robert “RSnake” Hansen, age 34, has passed away, on Facebook** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html>

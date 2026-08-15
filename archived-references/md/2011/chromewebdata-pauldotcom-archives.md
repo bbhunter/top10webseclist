@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://pauldotcom.com/2011/05/stealth-cookie-stealing-new-xs.html"
     title: "PaulDotCom: Archives"
+    author: John Strand
   - id: capture
     resource: "https://web.archive.org/web/20111011230624/http://pauldotcom.com/2011/05/stealth-cookie-stealing-new-xs.html"
 also_at: []
-authors: []
+authors:
+  - John Strand
 canonical_url: ""
 cited_by:
   - "2011.md:45"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # PaulDotCom: Archives
 
-**PaulDotCom: Archives** - Author not stated, pauldotcom.com.
+**PaulDotCom: Archives** - John Strand, pauldotcom.com.
 
 - Published: date not stated
 - Original: <http://pauldotcom.com/2011/05/stealth-cookie-stealing-new-xs.html>

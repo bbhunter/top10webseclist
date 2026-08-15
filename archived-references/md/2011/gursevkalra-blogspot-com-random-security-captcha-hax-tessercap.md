@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html"
     title: CAPTCHA Hax With TesserCap
+    author: Gursev Singh Kalra
 also_at: []
-authors: []
+authors:
+  - Gursev Singh Kalra
 canonical_url: ""
 cited_by:
   - "2011.md:12"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # CAPTCHA Hax With TesserCap
 
-**CAPTCHA Hax With TesserCap** - Author not stated, gursevkalra.blogspot.com.
+**CAPTCHA Hax With TesserCap** - Gursev Singh Kalra, gursevkalra.blogspot.com.
 
 - Published: date not stated
 - Original: <https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html>

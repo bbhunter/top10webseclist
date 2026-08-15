@@ -12,9 +12,15 @@ sources:
   - id: original
     resource: "https://tinyurl.com/5w6koqj"
     title: "Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities"
+    author: Ory Segal, Omri Weisman, Adi Sharabani, Yair Amit, Lotem Guy
 also_at:
   - "http://public.dhe.ibm.com/common/ssi/ecm/en/raw14252usen/RAW14252USEN.PDF"
-authors: []
+authors:
+  - Ory Segal
+  - Omri Weisman
+  - Adi Sharabani
+  - Yair Amit
+  - Lotem Guy
 canonical_url: ""
 cited_by:
   - "2011.md:21"
@@ -42,7 +48,7 @@ translation_of: ""
 
 # Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities
 
-**Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities** - Author not stated, ibm.com.
+**Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities** - Ory Segal, Omri Weisman, Adi Sharabani, Yair Amit, Lotem Guy, ibm.com.
 
 - Published: date not stated
 - Original: <https://tinyurl.com/5w6koqj>

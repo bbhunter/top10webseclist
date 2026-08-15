@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://www.feross.org/webcam-spy/"
     title: "HOW TO: Spy on the Webcams of Your Website Visitors » Feross.org"
+    author: Feross Aboukhadijeh
   - id: canonical
     resource: "https://feross.org/webcam-spy/"
 also_at: []
-authors: []
+authors:
+  - Feross Aboukhadijeh
 canonical_url: "https://feross.org/webcam-spy/"
 cited_by:
   - "2011.md:40"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # HOW TO: Spy on the Webcams of Your Website Visitors » Feross.org
 
-**HOW TO: Spy on the Webcams of Your Website Visitors » Feross.org** - Author not stated, Feross.org.
+**HOW TO: Spy on the Webcams of Your Website Visitors » Feross.org** - Feross Aboukhadijeh, Feross.org.
 
 - Published: date not stated
 - Original: <https://www.feross.org/webcam-spy/>

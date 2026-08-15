@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://elie.im/publication/text-based-captcha-strengths-and-weaknesses"
     title: Text-based captcha strengths and weaknesses | Computer and Communications Security publication
-    author: @elie
+    author: Elie Bursztein, Matthieu Martin, John C. Mitchell
   - id: canonical
     resource: "https://elie.net/publication/text-based-captcha-strengths-and-weaknesses"
 also_at: []
 authors:
-  - @elie
+  - Elie Bursztein
+  - Matthieu Martin
+  - John C. Mitchell
 canonical_url: "https://elie.net/publication/text-based-captcha-strengths-and-weaknesses"
 cited_by:
   - "2011.md:52"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Text-based captcha strengths and weaknesses | Computer and Communications Security publication
 
-**Text-based captcha strengths and weaknesses | Computer and Communications Security publication** - @elie, elie.net.
+**Text-based captcha strengths and weaknesses | Computer and Communications Security publication** - Elie Bursztein, Matthieu Martin, John C. Mitchell, elie.net.
 
 - Published: date not stated
 - Original: <https://elie.im/publication/text-based-captcha-strengths-and-weaknesses>

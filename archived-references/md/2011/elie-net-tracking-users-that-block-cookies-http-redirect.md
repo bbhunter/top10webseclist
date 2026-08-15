@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://elie.im/blog/security/tracking-users-that-block-cookies-with-a-http-redirect/"
     title: Tracking users that block cookies with a http redirect
-    author: @elie
+    author: Elie Bursztein
   - id: canonical
     resource: "https://elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect"
 also_at: []
 authors:
-  - @elie
+  - Elie Bursztein
 canonical_url: "https://elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect"
 cited_by:
   - "2011.md:22"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Tracking users that block cookies with a http redirect
 
-**Tracking users that block cookies with a http redirect** - @elie, elie.net.
+**Tracking users that block cookies with a http redirect** - Elie Bursztein, elie.net.
 
 - Published: date not stated
 - Original: <https://elie.im/blog/security/tracking-users-that-block-cookies-with-a-http-redirect/>

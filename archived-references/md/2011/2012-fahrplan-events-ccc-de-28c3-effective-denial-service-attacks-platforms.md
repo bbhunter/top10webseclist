@@ -12,13 +12,14 @@ sources:
   - id: original
     resource: "http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
     title: "28C3: Effective Denial of Service attacks against web application platforms"
-    author: Alexander Klink
+    author: Alexander Klink, Julian Wälde
     last_modified: 2012-01-07
   - id: canonical
     resource: "https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
 also_at: []
 authors:
   - Alexander Klink
+  - Julian Wälde
 canonical_url: "https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
 cited_by:
   - "2011.md:58"
@@ -46,7 +47,7 @@ translation_of: ""
 
 # 28C3: Effective Denial of Service attacks against web application platforms
 
-**28C3: Effective Denial of Service attacks against web application platforms** - Alexander Klink, fahrplan.events.ccc.de.
+**28C3: Effective Denial of Service attacks against web application platforms** - Alexander Klink, Julian Wälde, fahrplan.events.ccc.de.
 
 - Published: 2012-01-07
 - Original: <http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html>

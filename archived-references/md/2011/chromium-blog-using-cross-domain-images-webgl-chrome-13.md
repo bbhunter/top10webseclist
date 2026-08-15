@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html"
     title: Using Cross-domain images in WebGL and Chrome 13
-    author: @ChromiumDev
+    author: Eric Bidelman
 also_at: []
 authors:
-  - @ChromiumDev
+  - Eric Bidelman
 canonical_url: ""
 cited_by:
   - "2011.md:47"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # Using Cross-domain images in WebGL and Chrome 13
 
-**Using Cross-domain images in WebGL and Chrome 13** - @ChromiumDev, Chromium Blog.
+**Using Cross-domain images in WebGL and Chrome 13** - Eric Bidelman, Chromium Blog.
 
 - Published: date not stated
 - Original: <https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html>

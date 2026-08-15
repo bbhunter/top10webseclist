@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
     title: Autocomplete..again?!
+    author: Stefano Di Paola
   - id: canonical
     resource: "https://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: "https://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
 cited_by:
   - "2011.md:38"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Autocomplete..again?!
 
-**Autocomplete..again?!** - Author not stated, blog.mindedsecurity.com.
+**Autocomplete..again?!** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2011/10/autocompleteagain.html>
