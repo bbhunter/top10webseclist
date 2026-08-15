@@ -266,16 +266,3 @@ It has been 14 years since the DNS rebinding attack was discovered and made know
 [https://bluec0re.blogspot.com/2018/03/cve-2018-7160-pwning-nodejs-developers.html](https://bluec0re.blogspot.com/2018/03/cve-2018-7160-pwning-nodejs-developers.html)
 
 [https://bugs.chromium.org/p/project-zero/issues/detail?id=1471](https://bugs.chromium.org/p/project-zero/issues/detail?id=1471)
-
-## Latest
-
-- [The Cat Escaped from the Chrome Sandbox](https://starlabs.sg/blog/2022/01/the-cat-escaped-from-the-chrome-sandbox/)
-- [Diving into Open-source LMS Codebases](https://starlabs.sg/blog/2021/11/diving-into-open-source-lms-codebases/)
-- [Diving into Open-source LMS Codebases](https://starlabs.sg/blog/2021/11/diving-into-open-source-lms-codebases/)
-- [Analysis of CVE-2021-1758 (CoreText Out-Of-Bounds Read)](https://starlabs.sg/blog/2021/09/analysis-of-cve-2021-1758-coretext-out-of-bounds-read/)
-- [Identifying Bugs in Router Firmware at Scale with Taint Analysis](https://starlabs.sg/blog/2021/08/identifying-bugs-in-router-firmware-at-scale-with-taint-analysis/)
-- [Simple Vulnerability Regression Monitoring with V8Harvest](https://starlabs.sg/blog/2021/06/simple-vulnerability-regression-monitoring-with-v8harvest/)
-- [You Talking To Me?](https://starlabs.sg/blog/2021/04/you-talking-to-me/)
-- [Chrome 1-Day Hunting - Uncovering and Exploiting CVE-2020-15999](https://starlabs.sg/blog/2021/01/chrome-1-day-hunting-uncovering-and-exploiting-cve-2020-15999/)
-- [Instrumenting Adobe Reader with Frida](https://starlabs.sg/blog/2020/11/instrumenting-adobe-reader-with-frida/)
-- [Analysis & Exploitation of a Recent TP-Link Archer A7 Vulnerability](https://starlabs.sg/blog/2020/10/analysis-exploitation-of-a-recent-tp-link-archer-a7-vulnerability/)

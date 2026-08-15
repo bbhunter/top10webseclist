@@ -433,13 +433,3 @@ In internal security assessments, it is common practice to exploit the "Forgot p
 [13] [https://www.dns-oarc.net/oarc/services/dnsentropy](https://www.dns-oarc.net/oarc/services/dnsentropy)
 
 [14] T. Longin, DNS-Schwachstellen in Webapplikationen: Eine Untersuchung der Sicherheit der DNS-Namensauflösung von Webapplikationen, 2020.
-
-####  About the author
-
-Timo Longin
-SEC Consult
-Associate Security Consultant
-
-In addition to customer projects, certifications and everyday life, Timo is always looking for new challenges and opportunities to make the IT world a bit safer.
-
-[ Back ](https://sec-consult.com/blog/)

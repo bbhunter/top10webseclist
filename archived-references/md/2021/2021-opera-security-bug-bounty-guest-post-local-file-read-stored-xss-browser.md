@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/"
     title: "Bug Bounty Guest Post: Local File Read via Stored XSS in The Opera Browser"
+    author: Renwa
     last_modified: 2021-09-08
 also_at: []
-authors: []
+authors:
+  - Renwa
 canonical_url: ""
 cited_by:
   - "2021.md:36"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Bug Bounty Guest Post: Local File Read via Stored XSS in The Opera Browser
 
-**Bug Bounty Guest Post: Local File Read via Stored XSS in The Opera Browser** - Author not stated, Opera Security.
+**Bug Bounty Guest Post: Local File Read via Stored XSS in The Opera Browser** - Renwa, Opera Security.
 
 - Published: 2021-09-08
 - Original: <https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/>
@@ -105,17 +107,3 @@ Thanks For Reading!
 — [Renwa](https://twitter.com/RenwaX23)
 
 Bounty: $4,000 USD.
-
- [ ![](https://secure.gravatar.com/avatar/1bc5da9caf0d55cabcd2a1b02829c7e38d344f0eb5a29824736d5da7a2f71adb?s=120&d=mm&r=g)
-
-# Opera Team
-
- ](https://blogs.opera.com/security/author/operateam/)
-
- [bug bounty](https://blogs.opera.com/security/tag/bug-bounty/)
-
----
-
----
-
----

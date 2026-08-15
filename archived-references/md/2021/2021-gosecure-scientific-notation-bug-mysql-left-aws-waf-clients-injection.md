@@ -364,11 +364,3 @@ This security issue is unlike many others since it could be easily downplayed to
 Hopefully, in the long run, MySQL and MariaDB will fix the bug and 10 years from now we will be able to remove this strange parser behavior from our WAFs.
 
 *Special thanks to Philippe Arteau who did the additional testing on ModSecurity/libinjection.*
-
- Back to Blog
-
-## Ready to Strengthen Your Security?
-
-Let's discuss how GoSecure can help protect your organization from emerging threats.
-
-Contact UsMore Articles

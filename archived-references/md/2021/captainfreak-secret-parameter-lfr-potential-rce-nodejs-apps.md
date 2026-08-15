@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/"
     title: The Secret Parameter, LFR, and Potential RCE in NodeJS Apps
+    author: CaptainFreak
 also_at: []
-authors: []
+authors:
+  - CaptainFreak
 canonical_url: ""
 cited_by:
   - "2021.md:19"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # The Secret Parameter, LFR, and Potential RCE in NodeJS Apps
 
-**The Secret Parameter, LFR, and Potential RCE in NodeJS Apps** - Author not stated, CaptainFreak.
+**The Secret Parameter, LFR, and Potential RCE in NodeJS Apps** - CaptainFreak, CaptainFreak.
 
 - Published: date not stated
 - Original: <https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/>

@@ -72,23 +72,3 @@ The privacy threats of online tracking have garnered considerable attention in r
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1C-5_24202_paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=Pm9md32t7Oo&list=PLfUWWM-POgQvKZJ8cob4yB3XYzlh1qQN_&index=4)
-
-## View More Papers
-
-### [ Location Data and COVID-19 Contact Tracing: How Data Privacy... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-177/)
-
- Callie Monroe, Faiza Tazi, Sanchari Das (university of Denver)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-177/)
-
-### [ Panel – Experiment Artifact Sharing: Challenges and Solutions ](https://www.ndss-symposium.org/ndss-paper/auto-draft-138/)
-
- Moderator: Laura Tinnel (SRI International) Panelists: Clémentine Maurice (CNRS, IRIS); Martin Rosso (Eindhoven University of Technology); Eric Eide (U. Utah)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-138/)
-
-### [ icLibFuzzer: Isolated-context libFuzzer for Improving Fuzzer Comparability ](https://www.ndss-symposium.org/ndss-paper/auto-draft-155/)
-
- Yu-Chuan Liang, Hsu-Chun Hsiao (National Taiwan University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-155/)

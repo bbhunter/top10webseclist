@@ -721,11 +721,3 @@ I would like to thank the AWS security team, and in particular Dan Urson, for th
 2. Some scanning with zgrab suggests that this risk can be minimised, though not completely eliminated, by making the body a CRLF which most web servers will discard from the start of a request.
 
 3. You may notice that this logic can be used to make timeout-based detections safe for CL.CL request smuggling. As some vulnerable setups, including the Squid and Abyss setup, will not produce a timeout, I chose to use the purely error-based approach presented here.
-
-![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/61851f4e1f99a164ff8e6fc8_headshot%20(002).jpg)
-
-**Author: **
-
-Daniel Thatcher
-
-Daniel Thatcher is a researcher and penetration tester at Intruder. His research focuses on discovering new techniques in application security.

@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://labs.detectify.com/2021/09/13/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts/"
     title: Hacking CloudKit - How I accidentally deleted your Apple Shortcuts
-    author: Detectify
+    author: Frans Rosén
     last_modified: 2021-09-13
   - id: canonical
     resource: "https://labs.detectify.com/writeups/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts/"
 also_at: []
 authors:
-  - Detectify
+  - Frans Rosén
 canonical_url: "https://labs.detectify.com/writeups/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts/"
 cited_by:
   - "2021.md:46"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Hacking CloudKit - How I accidentally deleted your Apple Shortcuts
 
-**Hacking CloudKit - How I accidentally deleted your Apple Shortcuts** - Detectify, Labs Detectify.
+**Hacking CloudKit - How I accidentally deleted your Apple Shortcuts** - Frans Rosén, Labs Detectify.
 
 - Published: 2021-09-13
 - Original: <https://labs.detectify.com/2021/09/13/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts/>
@@ -845,27 +845,3 @@ Approaching CloudKit for bugs turned out to be a lot of fun, a bit scary, and a 
 Even though the last bug caused an incident, I really tried to explain all my steps to prevent that from happening.
 
 The Apple Security Bounty program decided to award **$12,000**, **$24,000** and **$28,000**, respectively, for the bugs mentioned in this post.
-
-[Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
-
-**Frans Rosén**
-
-Security Advisor, Detectify
-
-## Check out more content
-
-The Detectify AI Agent Alfred fully automates the creation of security tests for new vulnerabilities, from research to a merge request. In its first six …
-
-September 25, 2025
-
-Combining response-type switching, invalid state and redirect-uri quirks using OAuth, with third-party javascript-inclusions has multiple vulnerable scenarios where authorization codes or tokens could leak to …
-
-July 06, 2022
-
-Security researchers in the Detectify Crowdsource community, Ai Ho (@j3ssiejjj) and Bao Bui (@Jok3rDb), found an undocumented security issue in Adobe Experience Manager (AEM) that bypassed authentication, and left the application open to information disclosure attacks
-
-June 28, 2021
-
-Here’s how I (@Almroot) bought the domain name used in the NS delegations for the ccTLD of the Democratic Republic of Congo (.cd) and temporarily took over 50% of all DNS traffic for the TLD
-
-January 15, 2021

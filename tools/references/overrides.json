@@ -149,6 +149,21 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the recorded authors were [\"Alberto Fernandez-de-Retana\", \"@wowchemy\"]. \"@wowchemy\" is the Wowchemy/Hugo Blox site builder, harvested from the page’s generator metadata - it appears nowhere in the document and is not a person. Removed, leaving the one real author. This is the inverse of a missing byline: an invented one, and it had been printing in the published document as though a second researcher."
   },
+  "https://alpaca-attack.com/": {
+   "authors": [
+    "Marcus Brinkmann",
+    "Christian Dresen",
+    "Robert Merget",
+    "Damian Poddebniak",
+    "Jens Müller",
+    "Juraj Somorovsky",
+    "Jörg Schwenk",
+    "Sebastian Schinzel"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" for a paper that names all eight at line 94 - \"Marcus Brinkmann, Christian Dresen, Robert Merget, Damian Poddebniak, Jens Müller, Juraj Somorovsky, Jörg Schwenk, Sebastian Schinzel.\" - and then writes in the first person, \"You can reach us via mail or twitter:\", each with an affiliation and handle."
+  },
   "https://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html": {
    "class": "research",
    "outcome": "archive",
@@ -323,6 +338,14 @@
    "reason": "Reviewed 2026-08-10: the recorded title was \"Nick Nikiforakis\", the author's faculty homepage the blog now redirects to rather than the document's own title. The document itself is the one cited.",
    "title": "Bypassing Chrome's Anti-XSS filter"
   },
+  "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps": {
+   "authors": [
+    "CaptainFreak"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "The right value was in the wrong slot: CaptainFreak was recorded as the PUBLISHER while authors sat empty, so the file printed \"Author not stated\". The document signs off \"Best,\" / \"CF\" and embeds the author's own tweet as @0xCaptainFreak. @avlidienbrunn, further up, is credited for a payload and is not the author."
+  },
   "https://blog.slonser.info/posts/cve-2023-5480": {
    "authors": [
     "Vsevolod Kokorin"
@@ -368,6 +391,22 @@
    "outcome": "archive",
    "reason": "This is the complete 20-page paper linked by David Ross's original Microsoft blog announcement, recovered from its publication-era capture and converted with Dockerized Poppler.",
    "title": "Hyperlink Spoofing and the Modern Web"
+  },
+  "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser": {
+   "authors": [
+    "Renwa"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. Same guest-post shape as its sibling: \"Bug Bounty Hunter [Renwa](https://twitter.com/RenwaX23) writes about the second vulnerability he submitted... What follows is his write-up and experience\", signed off \"– [Renwa]\"."
+  },
+  "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser": {
+   "authors": [
+    "Renwa"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The post states that \"Opera's Security Team has invited Bug Bounty Hunter [Renwa](https://twitter.com/RenwaX23) to write about a recent vulnerability that he reported... What follows is his write-up and experience\", and signs off \"— [Renwa]\". The \"# Opera Team\" bio card in the removed tail is the publisher's posting account, not the author."
   },
   "https://blogs.securiteam.com/index.php/archives/166": {
    "class": "research",
@@ -1068,6 +1107,14 @@
    "outcome": "archive",
    "reason": "Verified against the live article: this is the complete, intentionally short disclosure. It states the IIS path-normalization technique, affected browsers, example URL, and security implications."
   },
+  "https://labs.detectify.com/2021/09/13/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts": {
+   "authors": [
+    "Frans Rosén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Detectify\", the publisher, exactly as on the 2022 Detectify reference corrected in the previous commit - the publisher name taken as the byline. The post is Frans Rosén's, written first person throughout. Detectify remains the publisher."
+  },
   "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows": {
    "authors": [
     "Frans Rosén"
@@ -1140,6 +1187,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the page title line names the author - \"Bypassing WAFs to Exploit CSPT Using Encoding Levels - Matan Berson\" - while the archive recorded only the handle \"@MtnBer\"."
+  },
+  "https://mattermost.com/blog/securing-xml-implementations-across-the-web": {
+   "authors": [
+    "Juho Forsén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors held \"@Mattermost\" alongside the real byline. That handle is the publisher's, not a person; Mattermost is already recorded as publisher."
   },
   "https://mcafee.com/us/resources/white-papers/foundstone/wp-bypassing-captchas.pdf": {
    "class": "research",
@@ -1230,6 +1285,14 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "The PoC page is retained beside the complete ProCheckup disclosure in the 2007 list. Its nearest capture is only a short list of exploit links, so the disclosure is the archival source and the PoC is derivative."
+  },
+  "https://microsoftedge.github.io/edgevr/posts/attacking-the-devtools": {
+   "authors": [
+    "David Erceg"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors held BOTH \"David Erceg\" and \"@David Erceg\". The second is a fabricated handle - invented by capitalising the display name - where the document links him as [David Erceg](https://twitter.com/david_erceg), so the real handle is @david_erceg. Reduced to the name the document gives."
   },
   "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes": {
    "authors": [
@@ -1605,6 +1668,22 @@
    "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\".",
    "title": "wp2shell: Pre Authentication RCE in WordPress Core"
   },
+  "https://slideshare.net/neexemil/hotpics-2021": {
+   "authors": [
+    "Emil Lerner"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the SlideShare account name \"neexemil\". The deck names the researcher on its own slides - \"Emil Lerner\", \"independent security researcher\", \"CTO at WunderFund.io\", with the handles @emil_lerner and @neex."
+  },
+  "https://slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions": {
+   "authors": [
+    "Emil Lerner"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the SlideShare account name \"neexemil\"; slides 1 and 2 name Emil Lerner, with @emil_lerner and @neex. Second deck by the same researcher filed under the account name."
+  },
   "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application": {
    "authors": [
     "Soroush Dalili"
@@ -1750,6 +1829,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the deck names both presenters on its title slide and again on the self-introduction slide - \"Norihide Saito / azara\" and \"Eiji Mori / ei\", with the handles @a_zara_n and @ei01241. The archive recorded \"@flatt_security\" and \"GMO Flatt Security\", a site handle and the employer."
   },
+  "https://speakerdeck.com/greendog/2-and-a-bit-of-magic": {
+   "authors": [
+    "GreenDog"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck's byline is GreenDog, and its About-me slide gives github.com/GrrrDog and twitter.com/antyurin. Same platform-account fault as the 14 @speakerdeck entries found in 2023."
+  },
   "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws": {
    "authors": [
     "Aleksei \"GreenDog\" Tiurin"
@@ -1757,6 +1844,20 @@
    "class": "research",
    "outcome": "archive",
    "reason": "The deck recorded the handle GreenDog, which is valid since he publishes under it, alongside \"@speakerdeck\" - the hosting platform's own account, not a person, and the same machine-placeholder class as @wowchemy, Guest Post and the GitHub numeric id. Slide 0 gives the full name: \"How to hack SAML if I have paws? Aleksei \\\"GreenDog\\\" Tiurin\", confirmed on slide 1."
+  },
+  "https://spookjs.com/": {
+   "authors": [
+    "Ayush Agarwal",
+    "Sioli O'Connell",
+    "Jason Kim",
+    "Shaked Yehezkel",
+    "Daniel Genkin",
+    "Eyal Ronen",
+    "Yuval Yarom"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The site answers the question itself under the heading \"Who are the people behind Spook.js?\", naming all seven."
   },
   "https://synacktiv.com/publications/persistent-php-payloads-in-pngs-how-to-inject-php-code-in-an-image-and-keep-it-there.html": {
    "authors": [

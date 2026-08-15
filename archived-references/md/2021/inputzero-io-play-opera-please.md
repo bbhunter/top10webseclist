@@ -85,5 +85,3 @@ Having said that, after countless assessment on the subscription process via ope
 Injecting MSISDN headers in this request with the victims MSISDN, the session was established by victims number with opera turbo server and now you can impersonate victim and subscribe for any VAS service to deduct his/her digital money. With a successful subscription using the above steps and server log it was concluded that opera turbo servers don’t validate/filter certain injected HTTP headers which leads to activation of VAS services.
 
 **Patch:** Opera turbo stops forwarding such injected HTTP headers and CVE-2018-19825 was assigned to this which states “Lack of filtering of certain HTTP headers could lead to fraudulent VAS activation."
-
-  [Older Post](https://www.inputzero.io/2020/12/telegram-privacy-fails-again.html)  [Home](https://www.inputzero.io/)

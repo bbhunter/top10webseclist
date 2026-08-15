@@ -12,12 +12,20 @@ sources:
   - id: original
     resource: "https://www.spookjs.com/"
     title: Spook.js
+    author: "Ayush Agarwal, Sioli O'Connell, Jason Kim, Shaked Yehezkel, Daniel Genkin, Eyal Ronen, Yuval Yarom"
 also_at:
   - "https://www.spookjs.com/files/spook-js.pdf"
-authors: []
+authors:
+  - Ayush Agarwal
+  - "Sioli O'Connell"
+  - Jason Kim
+  - Shaked Yehezkel
+  - Daniel Genkin
+  - Eyal Ronen
+  - Yuval Yarom
 canonical_url: ""
 cited_by:
-  - "2021.md:54"
+  - "2021.md:55"
 commit: ""
 content_sha256: 9fc382bf7a8f6d3ee1b4e936f0394158e412706fa496dab80549455a684a92e0
 depth: full
@@ -42,7 +50,7 @@ translation_of: ""
 
 # Spook.js
 
-**Spook.js** - Author not stated, spookjs.com.
+**Spook.js** - Ayush Agarwal, Sioli O'Connell, Jason Kim, Shaked Yehezkel, Daniel Genkin, Eyal Ronen, Yuval Yarom, spookjs.com.
 
 - Published: date not stated
 - Original: <https://www.spookjs.com/>

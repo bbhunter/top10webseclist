@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://www.slideshare.net/neexemil/hotpics-2021"
     title: HotPics 2021
-    author: neexemil
+    author: Emil Lerner
     last_modified: 2021-08-25
   - id: canonical
     resource: "https://www.slideshare.net/slideshow/hotpics-2021/250047486"
 also_at: []
 authors:
-  - neexemil
+  - Emil Lerner
 canonical_url: "https://www.slideshare.net/slideshow/hotpics-2021/250047486"
 cited_by:
   - "2021.md:41"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # HotPics 2021
 
-**HotPics 2021** - neexemil, Slideshare.
+**HotPics 2021** - Emil Lerner, Slideshare.
 
 - Published: 2021-08-25
 - Original: <https://www.slideshare.net/neexemil/hotpics-2021>

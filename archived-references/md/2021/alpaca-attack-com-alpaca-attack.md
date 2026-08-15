@@ -12,11 +12,20 @@ sources:
   - id: original
     resource: "https://alpaca-attack.com/"
     title: ALPACA Attack
+    author: Marcus Brinkmann, Christian Dresen, Robert Merget, Damian Poddebniak, Jens Müller, Juraj Somorovsky, Jörg Schwenk, Sebastian Schinzel
 also_at: []
-authors: []
+authors:
+  - Marcus Brinkmann
+  - Christian Dresen
+  - Robert Merget
+  - Damian Poddebniak
+  - Jens Müller
+  - Juraj Somorovsky
+  - Jörg Schwenk
+  - Sebastian Schinzel
 canonical_url: ""
 cited_by:
-  - "2021.md:61"
+  - "2021.md:62"
 commit: ""
 content_sha256: 8adcb18e80110cbd0baad75238dcf637abd5f517d8e9aba9cd0053b0301b831f
 depth: full
@@ -41,7 +50,7 @@ translation_of: ""
 
 # ALPACA Attack
 
-**ALPACA Attack** - Author not stated, alpaca-attack.com.
+**ALPACA Attack** - Marcus Brinkmann, Christian Dresen, Robert Merget, Damian Poddebniak, Jens Müller, Juraj Somorovsky, Jörg Schwenk, Sebastian Schinzel, alpaca-attack.com.
 
 - Published: date not stated
 - Original: <https://alpaca-attack.com/>

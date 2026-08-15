@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/greendog/2-and-a-bit-of-magic"
     title: Weird proxies/2 and a bit of magic
-    author: @speakerdeck, GreenDog
+    author: GreenDog
     last_modified: 2021-09-01
 also_at: []
 authors:
-  - @speakerdeck
   - GreenDog
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Weird proxies/2 and a bit of magic
 
-**Weird proxies/2 and a bit of magic** - @speakerdeck, GreenDog, Speaker Deck.
+**Weird proxies/2 and a bit of magic** - GreenDog, Speaker Deck.
 
 - Published: 2021-09-01
 - Original: <https://speakerdeck.com/greendog/2-and-a-bit-of-magic>

@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://mattermost.com/blog/securing-xml-implementations-across-the-web/"
     title: Securing XML implementations across the web
-    author: Juho Forsén, @Mattermost
+    author: Juho Forsén
     last_modified: 2021-07-28
 also_at: []
 authors:
   - Juho Forsén
-  - @Mattermost
 canonical_url: ""
 cited_by:
   - "2021.md:40"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Securing XML implementations across the web
 
-**Securing XML implementations across the web** - Juho Forsén, @Mattermost, Mattermost.com.
+**Securing XML implementations across the web** - Juho Forsén, Mattermost.com.
 
 - Published: 2021-07-28
 - Original: <https://mattermost.com/blog/securing-xml-implementations-across-the-web/>

@@ -75,23 +75,3 @@ In this paper, we show that the techniques used by such services to recognize UR
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-4_24322_paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=a9NSGEpS2p8&list=PLfUWWM-POgQtcueMu_QOh87jWB6r5MeRm&index=4)
-
-## View More Papers
-
-### [ The Nuts and Bolts of Building FlowLens ](https://www.ndss-symposium.org/ndss-paper/auto-draft-135/)
-
- Diogo Barradas (Instituto Superior Técnico, Universidade de Lisboa)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-135/)
-
-### [ Taking a Closer Look at the Alexa Skill Ecosystem ](https://www.ndss-symposium.org/ndss-paper/auto-draft-133/)
-
- Christopher Lentzsch (Ruhr-Universität Bochum), Anupam Das (North Carolina State University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-133/)
-
-### [ NetPlier: Probabilistic Network Protocol Reverse Engineering from Message Traces ](https://www.ndss-symposium.org/ndss-paper/netplier-probabilistic-network-protocol-reverse-engineering-from-message-traces/)
-
- Yapeng Ye (Purdue University), Zhuo Zhang (Purdue University), Fei Wang (Purdue University), Xiangyu Zhang (Purdue University), Dongyan Xu (Purdue University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/netplier-probabilistic-network-protocol-reverse-engineering-from-message-traces/)

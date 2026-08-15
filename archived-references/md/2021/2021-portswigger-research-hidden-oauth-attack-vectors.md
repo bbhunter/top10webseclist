@@ -338,5 +338,3 @@ String sfilter = MessageFormat.format(FILTER_PATTERN_ORG, (Object[]) objs);
  The OAuth and OpenID Connect protocols are complex, with many moving parts and extensions. If you test an OAuth authorization flow on a website, you probably see just a small subset of supported parameters and available endpoints. While Facebook, Google, and Apple can write their own implementations of these protocols, smaller companies often use open source implementations or commercial products you can download by yourself. Dig into documentation and RFCs, google errors, try to find the source code on Github and examine Docker containers to identify all the functionality you can reach: you'll be amazed how many unique bugs you can find.
 
 [ActiveScan++ v1.0.22](https://github.com/PortSwigger/active-scan-plus-plus/commit/9432e0a09c3bf728b9e9b5534da9e2064f9c2847) now detects the presense of OpenId and OAuth configuration endpoints and can help you to discover them. We also have them in the "Interesting files and directories" list in Burp Intruder.
-
-[Back to all articles](https://portswigger.net/research/articles)

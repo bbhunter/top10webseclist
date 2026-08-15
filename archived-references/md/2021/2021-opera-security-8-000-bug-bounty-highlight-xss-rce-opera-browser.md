@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/"
     title: "$8,000 Bug Bounty Highlight: XSS to RCE in the Opera Browser"
+    author: Renwa
     last_modified: 2021-09-24
 also_at: []
-authors: []
+authors:
+  - Renwa
 canonical_url: ""
 cited_by:
   - "2021.md:32"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # $8,000 Bug Bounty Highlight: XSS to RCE in the Opera Browser
 
-**$8,000 Bug Bounty Highlight: XSS to RCE in the Opera Browser** - Author not stated, Opera Security.
+**$8,000 Bug Bounty Highlight: XSS to RCE in the Opera Browser** - Renwa, Opera Security.
 
 - Published: 2021-09-24
 - Original: <https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/>
@@ -118,17 +120,3 @@ Thanks for reading!
 – [Renwa](https://twitter.com/RenwaX23)
 
 Bounty: $8,000 USD.
-
- [ ![](https://secure.gravatar.com/avatar/1bc5da9caf0d55cabcd2a1b02829c7e38d344f0eb5a29824736d5da7a2f71adb?s=120&d=mm&r=g)
-
-# Opera Team
-
- ](https://blogs.opera.com/security/author/operateam/)
-
- [bug bounty](https://blogs.opera.com/security/tag/bug-bounty/)
-
----
-
----
-
----

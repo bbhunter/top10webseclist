@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions"
     title: HTTP Request Smuggling via higher HTTP versions
-    author: neexemil
+    author: Emil Lerner
     last_modified: 2021-05-21
   - id: canonical
     resource: "https://www.slideshare.net/slideshow/http-request-smuggling-via-higher-http-versions/248407775"
 also_at: []
 authors:
-  - neexemil
+  - Emil Lerner
 canonical_url: "https://www.slideshare.net/slideshow/http-request-smuggling-via-higher-http-versions/248407775"
 cited_by:
   - "2021.md:13"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # HTTP Request Smuggling via higher HTTP versions
 
-**HTTP Request Smuggling via higher HTTP versions** - neexemil, Slideshare.
+**HTTP Request Smuggling via higher HTTP versions** - Emil Lerner, Slideshare.
 
 - Published: 2021-05-21
 - Original: <https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions>

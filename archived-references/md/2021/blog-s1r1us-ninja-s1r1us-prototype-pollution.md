@@ -658,15 +658,3 @@ It seems in the future, there will be a [Document Policy](https://github.com/WIC
 Thanks for reading, I hope this article helps you to make internet pollution free 😎.
 
 See you in the next blog/talk? 👋(spoiler: I already have cool research to show)
-
-Page updated
-
-Google Sites
-
-Report abuse
-
-This site uses cookies from Google to deliver its services and to analyze traffic. Information about your use of this site is shared with Google. By clicking "accept", you agree to its use of cookies. [Cookie Policy](https://www.google.com/policies/technologies/cookies/)
-
-Reject
-
-Accept

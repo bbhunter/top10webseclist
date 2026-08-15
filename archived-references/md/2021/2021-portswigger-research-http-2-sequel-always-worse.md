@@ -820,7 +820,3 @@ We've seen that HTTP/2's complexity has contributed to server implementation sho
 Through novel tooling and research, I've shown that many websites suffer from serious HTTP/2 request smuggling vulnerabilities thanks to widespread HTTP/2 downgrading. I've also shown that, aside from request smuggling, HTTP/2's power and flexibility enable a broad range of other attacks not possible with HTTP/1.
 
 Finally, I've introduced techniques that make request tunneling practical to detect and exploit, particularly in the presence of HTTP/2.
-
- [ James Favourites ](https://portswigger.net/research/james-kettle) [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)

@@ -72,23 +72,3 @@ This paper presents the first systematic approach for detecting and exploiting O
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-5_24550_paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=s55zxjEIvE4&list=PLfUWWM-POgQtcueMu_QOh87jWB6r5MeRm&index=5)
-
-## View More Papers
-
-### [ Data Analytics and Expert Judgment in Time of Crisis:... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-169/)
-
- Igor Linkov, PhD Senior Science and Technology Manager, US Army Engineer Research and Development Center; Senior Data Analyst (on detail), FEMA/HHS R1 COVID Task Force; Adjunct Professor, Carnegie Mellon University
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-169/)
-
-### [ Tales of Favicons and Caches: Persistent Tracking in Modern... ](https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/)
-
- Konstantinos Solomos (University of Illinois at Chicago), John Kristoff (University of Illinois at Chicago), Chris Kanich (University of Illinois at Chicago), Jason Polakis (University of Illinois at Chicago)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/)
-
-### [ Demo #10: Security of Deep Learning based Automated Lane... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-116/)
-
- Takami Sato, Junjie Shen, Ningfei Wang (UC Irvine), Yunhan Jia (ByteDance), Xue Lin (Northeastern University), and Qi Alfred Chen (UC Irvine)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-116/)
