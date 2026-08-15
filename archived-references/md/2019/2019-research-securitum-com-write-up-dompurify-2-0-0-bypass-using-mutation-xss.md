@@ -188,5 +188,3 @@ DOMPurify.sanitize(input, {
  });
 
  |   |
-
-Tagged: [dompurify](https://research.securitum.com/tag/dompurify/), [mxss](https://research.securitum.com/tag/mxss/), [XSS](https://research.securitum.com/tag/xss/)

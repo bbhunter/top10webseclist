@@ -12,12 +12,13 @@ sources:
   - id: original
     resource: "https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/"
     title: "\"CI Knew There Would Be Bugs Here\" — Exploring Continuous Integration Services as a Bug Bounty Hunter"
-    author: EdOverflow, @EdOverflow
+    author: EdOverflow, Justin Gardner, Corben Leo
     last_modified: 2019-04-26
 also_at: []
 authors:
   - EdOverflow
-  - @EdOverflow
+  - Justin Gardner
+  - Corben Leo
 canonical_url: ""
 cited_by:
   - "2019.md:11"
@@ -45,7 +46,7 @@ translation_of: ""
 
 # "CI Knew There Would Be Bugs Here" — Exploring Continuous Integration Services as a Bug Bounty Hunter
 
-**"CI Knew There Would Be Bugs Here" — Exploring Continuous Integration Services as a Bug Bounty Hunter** - EdOverflow, @EdOverflow, EdOverflow.
+**"CI Knew There Would Be Bugs Here" — Exploring Continuous Integration Services as a Bug Bounty Hunter** - EdOverflow, Justin Gardner, Corben Leo, EdOverflow.
 
 - Published: 2019-04-26
 - Original: <https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/>

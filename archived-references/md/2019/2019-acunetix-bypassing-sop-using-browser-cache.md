@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/"
     title: Bypassing SOP using the browser cache
-    author: Aleksei Tiurin, @acunetix
+    author: Aleksei Tiurin
     last_modified: 2019-04-30
 also_at: []
 authors:
   - Aleksei Tiurin
-  - @acunetix
 canonical_url: ""
 cited_by:
   - "2019.md:57"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Bypassing SOP using the browser cache
 
-**Bypassing SOP using the browser cache** - Aleksei Tiurin, @acunetix, Acunetix.
+**Bypassing SOP using the browser cache** - Aleksei Tiurin, Acunetix.
 
 - Published: 2019-04-30
 - Original: <https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/>
@@ -119,17 +118,3 @@ The described SOP bypass vulnerability is caused by misconfiguration. In the cas
 Browser vendors are now considering or implementing a stricter approach to caching. Hopefully, this change will prevent such cross-origin leaks.
 
 **Note** – The tricks invented for the purposes of this article were inspired by the HTTP Cache Cross-Site Leaks article by Eduardo Vela.
-
-Get the latest content on web security
- in your inbox each week.
-
- We respect your [privacy](https://www.acunetix.com/company/privacy)
-
-###### THE AUTHOR
-
- ![Aleksei Tiurin](https://cdn.acunetix.com/wp-content/uploads/2020/02/11111253/T8UCPFEGP-UHA293LQN-7b513c8e3fc6-512-150x150.jpg)
-
- **Aleksei Tiurin**
- Senior Security Researcher
-
- Aleksei is a security researcher and pentester with broad experience in offensive security. He is also an active member of the global security community, participating in events and giving lectures.

@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency"
     title: Reverse proxies & Inconsistency
-    author: @speakerdeck, GreenDog
+    author: "Aleksei \"GreenDog\" Tiurin"
     last_modified: 2018-11-21
 also_at: []
 authors:
-  - @speakerdeck
-  - GreenDog
+  - "Aleksei \"GreenDog\" Tiurin"
 canonical_url: ""
 cited_by:
   - "2019.md:58"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Reverse proxies & Inconsistency
 
-**Reverse proxies & Inconsistency** - @speakerdeck, GreenDog, Speaker Deck.
+**Reverse proxies & Inconsistency** - Aleksei "GreenDog" Tiurin, Speaker Deck.
 
 - Published: 2018-11-21
 - Original: <https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency>

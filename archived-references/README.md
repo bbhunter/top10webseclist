@@ -679,7 +679,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Bypassing SOP using the browser cache](md/2019/2019-acunetix-bypassing-sop-using-browser-cache.md) | article | Acunetix | 2019 | research | 1 |
 | [Cache Poisoned Denial of Service](md/2019/cpdos-org-cache-poisoned-denial-service.md) · [English](md/2019/cpdos-org-cache-poisoned-denial-service_translate.md) | article | cpdos.org |  | research | 1 |
 | [Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States through XS-Leaks](md/2019/arxiv-org-cross-origin-state-inference-cosi-attacks-leaking-web-site-leaks.md) | article | arXiv.org |  | research | 1 |
-| [Exploiting Deserialisation in ASP.NET via ViewState](md/2019/soroush-me-exploiting-deserialisation-asp-net-viewstate.md) | article | soroush.me |  | research | 1 |
+| [Exploiting Deserialisation in ASP.NET via ViewState](md/2019/soroush-me-exploiting-deserialisation-asp-net-viewstate.md) | article | soroush.me | 2019 | research | 1 |
 | [Exploiting JNDI Injections in Java](md/2019/veracode-exploiting-jndi-injections-java.md) | article | Veracode |  | research | 1 |
 | [Exploiting padding oracles with fixed IVs](md/2019/2019-teddy-katzs-blog-exploiting-padding-oracles-fixed-ivs.md) | article | Teddy Katz’s Blog | 2019 | research | 1 |
 | [Exploiting prototype pollution - RCE in Kibana (CVE-2019-7609)](md/2019/2019-research-securitum-com-exploiting-prototype-pollution-rce-kibana-cve-7609.md) | article | research.securitum.com | 2019 | research | 1 |
@@ -687,12 +687,12 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Exploiting SSRF in AWS Elastic Beanstalk](md/2019/2019-notsosecure-exploiting-ssrf-aws-elastic-beanstalk.md) | article | NotSoSecure | 2019 | research | 1 |
 | [Facebook Messenger server random memory exposure through corrupted GIF image](md/2019/2019-blogger-facebook-messenger-server-random-memory-exposure-through-image.md) | article | Blogger | 2019 | research | 1 |
 | [Filling in the Blanks: Exploiting Null Byte Buffer Overflow for a $40,000 Bounty](md/2019/2019-samcurry-net-filling-blanks-exploiting-null-byte-buffer-overflow-40-bounty.md) | article | samcurry.net | 2019 | research | 1 |
-| [Finding and Exploiting .NET Remoting over HTTP using Deserialisation](md/2019/ncc-group-finding-exploiting-net-remoting-over-http-using-deserialisation.md) | article | NCC Group |  | research | 1 |
+| [Finding and Exploiting .NET Remoting over HTTP using Deserialisation](md/2019/ncc-group-finding-exploiting-net-remoting-over-http-using-deserialisation.md) | article | NCC Group | 2019 | research | 1 |
 | [Get Pwned By Scanning Firefox QR Code Reader](md/2019/2019-payatu-get-pwned-scanning-firefox-qr-code-reader.md) | article | Payatu | 2019 | research | 1 |
 | [Hacking Jenkins Part 2 - Abusing Meta Programming for Unauthenticated RCE!](md/2019/2019-orange-tsai-hacking-jenkins-part-2-abusing-meta-programming-rce.md) | article | Orange Tsai | 2019 | research | 1 |
 | [HTTP Desync Attacks: Request Smuggling Reborn](md/2019/2019-portswigger-research-http-desync-attacks-request-smuggling-reborn.md) | article | PortSwigger Research | 2019 | research | 1 |
 | [Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities](md/2019/usenix-org-iframes-popups-dangerous-mobile-webview-studying-vulnerabilities.md) | article | usenix.org |  | research | 1 |
-| [IIS Application vs. Folder Detection During Blackbox Testing](md/2019/soroush-me-iis-application-vs-folder-detection-during-blackbox-testing.md) | article | soroush.me |  | research | 1 |
+| [IIS Application vs. Folder Detection During Blackbox Testing](md/2019/soroush-me-iis-application-vs-folder-detection-during-blackbox-testing.md) | article | soroush.me | 2019 | research | 1 |
 | [Leaky Images: Targeted Privacy Attacks in the Web](md/2019/usenix-org-leaky-images-targeted-privacy-attacks-web.md) | article | usenix.org |  | research | 1 |
 | [Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions](md/2019/doi-org-measuring-analyzing-search-engine-poisoning-linguistic-collisions.md) | article | doi.org |  | research | 1 |
 | [Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution](md/2019/leucosite-com-microsoft-edge-chromium-elevation-privilege-potential-execution.md) | article | leucosite.com |  | research | 1 |
@@ -703,15 +703,15 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Reusing Cookies](md/2019/2019-medium-reusing-cookies.md) | article | Medium | 2019 | research | 1 |
 | [Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities](md/2019/usenix-org-scalable-scanning-automatic-classification-tls-vulnerabilities.md) | article | usenix.org |  | research | 1 |
 | [Security analysis of <portal> element](md/2019/2019-research-securitum-com-security-analysis-portal-element.md) | article | research.securitum.com | 2019 | research | 1 |
-| [Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …](md/2019/shielder-shielder-dont-open-that-xml-xxe-rce-xml-plugins-vs-code-eclipse-theia.md) | article | Shielder |  | research | 1 |
+| [Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …](md/2019/shielder-shielder-dont-open-that-xml-xxe-rce-xml-plugins-vs-code-eclipse-theia.md) | article | Shielder | 2019 | research | 1 |
 | [SSRF Protocol Smuggling in Plaintext Credential Handlers : LDAP](md/2019/silentrobots-com-ssrf-protocol-smuggling-plaintext-credential-handlers-ldap.md) | article | silentrobots.com |  | research | 1 |
 | [Telerik Revisited](md/2019/telerik-revisited.md) | article | Code White |  | research | 1 |
 | [The Betrayal At Cloud City: An Empirical Analysis Of Cloud-Based Mobile Backends](md/2019/usenix-org-betrayal-cloud-city-empirical-analysis-cloud-based-mobile-backends.md) | article | usenix.org |  | research | 1 |
 | [Turbo Intruder: Embracing the billion-request attack](md/2019/2019-portswigger-research-turbo-intruder-embracing-billion-request-attack.md) | article | PortSwigger Research | 2019 | research | 1 |
-| [Uploading web.config for Fun and Profit 2](md/2019/soroush-me-uploading-web-config-fun-profit-2.md) | article | soroush.me |  | research | 1 |
+| [Uploading web.config for Fun and Profit 2](md/2019/soroush-me-uploading-web-config-fun-profit-2.md) | article | soroush.me | 2019 | research | 1 |
 | [What Are You Searching For? A Remote Keylogging Attack on Search Engine Autocomplete](md/2019/usenix-org-what-you-searching-remote-keylogging-attack-search-autocomplete.md) | article | usenix.org |  | research | 1 |
 | [Write-up of DOMPurify 2.0.0 bypass using mutation XSS](md/2019/2019-research-securitum-com-write-up-dompurify-2-0-0-bypass-using-mutation-xss.md) | article | research.securitum.com | 2019 | research | 1 |
-| [x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!](md/2019/soroush-me-x-up-devcap-post-charset-header-asp-net-bypass-wafs-again.md) | article | soroush.me |  | research | 1 |
+| [x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!](md/2019/soroush-me-x-up-devcap-post-charset-header-asp-net-bypass-wafs-again.md) | article | soroush.me | 2019 | research | 1 |
 | [XSS in GMail's AMP4Email via DOM Clobbering](md/2019/2019-research-securitum-com-xss-gmail-s-amp4email-dom-clobbering.md) | article | research.securitum.com | 2019 | research | 1 |
 | [XSS-Auditor — the protector of unprotected](md/2019/2023-medium-xss-auditor-protector-unprotected.md) | article | Medium | 2023 | research | 1 |
 | [Apache Solr Injection Research](md/2019/github-veracode-research-solr-injection.md) | repo | GitHub |  | research | 1 |

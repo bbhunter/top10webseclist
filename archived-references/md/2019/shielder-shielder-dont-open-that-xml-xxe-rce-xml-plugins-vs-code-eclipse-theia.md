@@ -12,12 +12,13 @@ sources:
   - id: original
     resource: "https://www.shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/"
     title: "Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …"
-    author: @ShielderSec
+    author: thezero, zi0black
   - id: canonical
     resource: "https://www.shielder.com/blog/2019/10/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/"
 also_at: []
 authors:
-  - @ShielderSec
+  - thezero
+  - zi0black
 canonical_url: "https://www.shielder.com/blog/2019/10/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/"
 cited_by:
   - "2019.md:37"
@@ -45,7 +46,7 @@ translation_of: ""
 
 # Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …
 
-**Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …** - @ShielderSec, Shielder.
+**Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …** - thezero, zi0black, Shielder.
 
 - Published: date not stated
 - Original: <https://www.shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/>
@@ -253,36 +254,3 @@ Timeline:
 - 17/10/2019 – Version 0.9.1 released
 
 We would like to thank [Fred Bricon](https://twitter.com/fbricon) and [Angelo Zerr](https://twitter.com/angelozerr) from [RedHat](https://developers.redhat.com/) for triaging and patching the vulnerabilities in a fast and professional way.
-
-** 6 min
-
-Date
-
-24 October 2019
-
-** [RCE](https://www.shielder.com/tags/rce) [XXE](https://www.shielder.com/tags/xxe) [Exploit](https://www.shielder.com/tags/exploit) [Writeup](https://www.shielder.com/tags/writeup)
-
-Author
-
-[thezero](https://www.shielder.com/authors/thezero)
-
-[**](https://github.com/TheZ3ro)
-
-Security Researcher and Senior Penetration Tester at Shielder.
-In the office I’m the one with the soldering iron.
-
-Author
-
-[zi0black](https://www.shielder.com/authors/zi0black)
-
-[**](https://twitter.com/zi0black) [**](https://github.com/zi0black)
-
-I’m zi0black, Security Researcher and Penetration Tester at Shielder. I love to turn IoT devices in expensive paperweights.
-
-Previous post
-
-[Exploiting an old noVNC XSS (CVE-2017-18635) in OpenStack](https://www.shielder.com/blog/2019/10/exploiting-an-old-novnc-xss-cve-2017-18635-in-openstack/)
-
-Next post
-
-[NotSoSmartConfig: broadcasting WiFi credentials Over-The-Air](https://www.shielder.com/blog/2020/04/notsosmartconfig-broadcasting-wifi-credentials-over-the-air/)

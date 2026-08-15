@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle"
     title: "Let's Make Windows Defender Angry: Antivirus can be an oracle!"
-    author: @speakerdeck, icchy
+    author: Ryo Ichikawa
     last_modified: 2019-10-29
 also_at: []
 authors:
-  - @speakerdeck
-  - icchy
+  - Ryo Ichikawa
 canonical_url: ""
 cited_by:
   - "2019.md:22"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Let's Make Windows Defender Angry: Antivirus can be an oracle!
 
-**Let's Make Windows Defender Angry: Antivirus can be an oracle!** - @speakerdeck, icchy, Speaker Deck.
+**Let's Make Windows Defender Angry: Antivirus can be an oracle!** - Ryo Ichikawa, Speaker Deck.
 
 - Published: 2019-10-29
 - Original: <https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle>

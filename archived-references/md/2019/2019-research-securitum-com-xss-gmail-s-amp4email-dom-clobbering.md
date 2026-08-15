@@ -6,19 +6,19 @@ tags: [article, webseclist-reference, en, research-securitum-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:14+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://research.securitum.com/xss-in-amp4email-dom-clobbering/"
     title: "XSS in GMail's AMP4Email via DOM Clobbering"
-    author: mibe
+    author: @SecurityMB
     last_modified: 2019-11-18
   - id: capture
     resource: "https://web.archive.org/web/20250415050251/https://research.securitum.com/xss-in-amp4email-dom-clobbering/"
 also_at: []
 authors:
-  - mibe
+  - @SecurityMB
 canonical_url: ""
 cited_by:
   - "2019.md:25"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # XSS in GMail's AMP4Email via DOM Clobbering
 
-**XSS in GMail's AMP4Email via DOM Clobbering** - mibe, research.securitum.com.
+**XSS in GMail's AMP4Email via DOM Clobbering** - @SecurityMB, research.securitum.com.
 
 - Published: 2019-11-18
 - Original: <https://research.securitum.com/xss-in-amp4email-dom-clobbering/>
@@ -690,5 +690,3 @@ In the post, I’ve shown how DOM Clobbering could be used to perform an XSS if 
 - 10th Sep 2019 – response from Google: “the bug is awesome, thanks for reporting!”,
 - 12th Oct 2019 – confirmation from Google that the bug is fixed (although in reality it happened way earlier),
 - 18th Nov 2019 – publication.
-
-Tagged: [amp4email](https://research.securitum.com/tag/amp4email/), [Bug Bounty](https://research.securitum.com/tag/bug-bounty/), [XSS](https://research.securitum.com/tag/xss/)

@@ -253,7 +253,3 @@ You can customise some editor settings like line-numbers and font size via the s
 As ever, I've got many plans for future improvements to Turbo Intruder. We also look forward to eventually introducing some features from Turbo Intruder's network stack into core Burp Suite tools.
 
 Good luck, have fun, and try not to take anything down.
-
- [ research tools ](https://portswigger.net/research/research-tools) [ race condition ](https://portswigger.net/research/race-condition) [ turbo intruder ](https://portswigger.net/research/turbo-intruder) [ Presentations ](https://portswigger.net/research/presentations)
-
-[Back to all articles](https://portswigger.net/research/articles)

@@ -680,7 +680,3 @@ Building on research that has been overlooked for years, I've introduced new tec
 This topic is still under-researched, and as such I hope this publication will help inspire new desynchronization techniques and exploits over the next few years. If you're interested in tackling it yourself, you might want to read my [guide on breaking into web security research](https://portswigger.net/blog/so-you-want-to-become-a-web-security-researcher).
 
 You may also be interested in the followup posts [HTTP Desync Attacks: what happened next](https://portswigger.net/research/http-desync-attacks-what-happened-next), [Breaking the chains on HTTP Request Smuggler](https://portswigger.net/research/breaking-the-chains-on-http-request-smuggler), and [HTTP/2: The sequel is always worse](https://portswigger.net/research/http2).
-
- [ James Favourites ](https://portswigger.net/research/james-kettle) [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)

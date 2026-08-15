@@ -1243,13 +1243,3 @@ We can create files there, we should be able to replace existing files of that a
 [10] [https://weblogs.asp.net/jongalloway/10-things-asp-net-developers-should-know-about-web-config-inheritance-and-overrides](https://weblogs.asp.net/jongalloway/10-things-asp-net-developers-should-know-about-web-config-inheritance-and-overrides)
 
 [11] [https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228167(v=vs.100)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228167(v=vs.100))
-
-This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
-
-Creation date: August 16, 2019
-
-[Previous File Upload Attack using XAMLX Files](https://soroush.me/blog/file-upload-attack-using-xamlx-files)[
-
-Next
-
-IIS Application vs. Folder Detection During Blackbox Testing

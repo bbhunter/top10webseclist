@@ -160,13 +160,3 @@ I should admit that the original technique still works on most of the WAFs out t
 [https://soroush.secproject.com/blog/2018/08/waf-bypass-techniques-using-http-standard-and-web-servers-behaviour/](https://soroush.secproject.com/blog/2018/08/waf-bypass-techniques-using-http-standard-and-web-servers-behaviour/)
 [https://soroush.me/downloadable/Rare_ASP.NET_Request_Validation_Bypass_Using_Request_Encoding.pdf](https://soroush.me/downloadable/Rare_ASP.NET_Request_Validation_Bypass_Using_Request_Encoding.pdf)
 [https://github.com/nccgroup/BurpSuiteHTTPSmuggler/](https://github.com/nccgroup/BurpSuiteHTTPSmuggler/)
-
-This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
-
-Creation date: May 4, 2019
-
-[Previous Danger of Stealing Auto Generated .NET Machine Keys](https://soroush.me/blog/danger-of-stealing-auto-generated-net-machine-keys)[
-
-Next
-
-Exploiting Deserialisation in ASP.NET via ViewState

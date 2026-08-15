@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis"
     title: What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.
-    author: @speakerdeck, Mikhail Egorov
+    author: Mikhail Egorov
     last_modified: 2019-10-25
 also_at: []
 authors:
-  - @speakerdeck
   - Mikhail Egorov
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.
 
-**What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.** - @speakerdeck, Mikhail Egorov, Speaker Deck.
+**What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.** - Mikhail Egorov, Speaker Deck.
 
 - Published: 2019-10-25
 - Original: <https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis>

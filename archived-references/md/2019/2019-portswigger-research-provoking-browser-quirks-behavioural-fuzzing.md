@@ -152,7 +152,3 @@ If you run this code with "Execute JS" it produces a ton of results! Firefox is 
 You can also represent it inside a SVG script:
 
 `<svg><script>alert(1)</script></svg>`
-
- [ Fuzzing ](https://portswigger.net/research/fuzzing) [ HTML ](https://portswigger.net/research/html) [ JavaScript ](https://portswigger.net/research/javascript)
-
-[Back to all articles](https://portswigger.net/research/articles)

@@ -130,13 +130,3 @@ Copy
 6{"userName":"guest","password":"guest","createPersistentCookie":true}
 
 ```
-
-This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
-
-Creation date: July 10, 2019
-
-[Previous Uploading web.config for Fun and Profit 2](https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2)[
-
-Next
-
-Danger of Stealing Auto Generated .NET Machine Keys

@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/bo0om/at-home-among-strangers?slide=9"
     title: At Home Among Strangers
-    author: @speakerdeck, Bo0oM
+    author: Bo0oM
     last_modified: 2019-12-06
 also_at: []
 authors:
-  - @speakerdeck
   - Bo0oM
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # At Home Among Strangers
 
-**At Home Among Strangers** - @speakerdeck, Bo0oM, Speaker Deck.
+**At Home Among Strangers** - Bo0oM, Speaker Deck.
 
 - Published: 2019-12-06
 - Original: <https://speakerdeck.com/bo0om/at-home-among-strangers?slide=9>

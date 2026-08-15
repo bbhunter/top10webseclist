@@ -513,6 +513,16 @@
    "reason": "Reviewed 2026-08-10: the recorded title was \"Google Code Archive\", the hosting service's own page title rather than the document's own title. The document itself is the one cited.",
    "title": "dominator - Community version of the DOMinator for Firefox"
   },
+  "https://cpdos.org/": {
+   "authors": [
+    "Hoai Viet Nguyen",
+    "Luigi Lo Iacono",
+    "Hannes Federrath"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The page carries the paper byline \"*Hoai Viet Nguyen, Luigi Lo Iacono, and Hannes Federrath*\" and its own \"# Contact\" section names Nguyen and Lo Iacono with th-koeln.de addresses."
+  },
   "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -634,6 +644,16 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (cisco-duo-duo-blog-discover-security-insights-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
    "title": "Duo Finds SAML Vulnerabilities Affecting Multiple Implementations"
+  },
+  "https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here": {
+   "authors": [
+    "EdOverflow",
+    "Justin Gardner",
+    "Corben Leo"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded EdOverflow twice, as name and handle, so the byline rendered \"EdOverflow, @EdOverflow, EdOverflow.\" - and omitted two co-authors. Line 71 names the team: \"The team that worked on this research includes Justin Gardner ([@Rhynorater]), Corben Leo ([@hacker_]), and EdOverflow\", and line 87 confirms \"All the authors of this write-up\". Karim Rahal is credited for DISCOVERING a token, which is not authorship."
   },
   "https://elttam.com/blog/cracking-randomness-in-java": {
    "authors": [
@@ -845,6 +865,14 @@
    "outcome": "archive",
    "reason": "authors held only the GitHub account name \"greshake\". The repository's own LICENSE line states \"Copyright (c) 2023 Kai Greshake\". The BibTeX block further down names five co-authors, but that is the arXiv paper's byline rather than this README's, so it is not taken."
   },
+  "https://github.com/veracode-research/solr-injection": {
+   "authors": [
+    "Michael Stepankin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"veracode-research\", the GitHub ORG slug, which is not a byline. The README names the person in its own \"### Authors\" section: \"[Michael Stepankin](https://twitter.com/artsploit), Veracode Research\". The \"### Special Thanks\" names - including a CVE discoverer - are not added."
+  },
   "https://github.com/vladko312/Research_Successful_Errors": {
    "authors": [
     "Vladislav Korchagin"
@@ -876,6 +904,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the entry had no author. The write-up is first person and links \"Back then\" to the author’s own earlier post under the handle @joern, corroborated by his shell prompts throughout (\"joern@host2:~/projects/...\"). JUDGEMENT: a shell prompt alone would not be enough, but the self-referential link to his own prior work under that handle is the author identifying himself."
+  },
+  "https://gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations": {
+   "authors": [
+    "Philippe Arteau"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors carried \"@GoSecure_Inc\", the company account, beside the real author. Benoit Cote-Jodoin found one vulnerability and Louis Dion-Marcil spoke about the discovery; neither wrote this post, so neither is added."
   },
   "https://gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice": {
    "class": "research",
@@ -1385,6 +1421,14 @@
    "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" / nastystereo.com\". The capture is the right article and its own heading reads \"Gem::SafeMarshal escape\", above \"Luke Jahnke\" and \"3 December 2024\".",
    "title": "Gem::SafeMarshal escape"
   },
+  "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2019/march/finding-and-exploiting-.net-remoting-over-http-using-deserialisation": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"NCCGroupplc\", the company account. Line 321 is an explicit byline: \"**Written by:** Soroush Dalili\", corroborated by \"During a recent security assessment at NCC Group I found...\". Fourth publisher-as-author fault for this author, after the three MDSec references."
+  },
   "https://ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -1496,6 +1540,14 @@
    "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited. Reviewed 2026-08-15: the recorded author was the literal placeholder \"xxxxx\", which the published byline printed as though it were a researcher's name. The document names nobody - it is first person throughout (\"I have made proof of concepts\", \"I've reported this issue\") - so the honest value is no author at all. A missing byline says the archive does not know; a placeholder says something false.",
    "title": "DoubleClickjacking: A New Era of UI Redressing"
   },
+  "https://portswigger-labs.net/fmnt.php?x=acunetix.com%2Fblog%2Fweb-security-zone%2Fbypassing-sop-using-the-browser-cache%2F": {
+   "authors": [
+    "Aleksei Tiurin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors carried \"@acunetix\", the vendor's own handle, beside the real author. The document's byline is \"###### THE AUTHOR / **Aleksei Tiurin** / Senior Security Researcher\". Eduardo Vela is credited for inspiring the work and is correctly not an author."
+  },
   "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -1585,6 +1637,30 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"mibe\", a CMS username. The document writes in the first person and points at the handle the author publishes under: \"On 6th July 2020 I've announced [a XSS challenge on my Twitter](https://twitter.com/SecurityMB/status/1280256162152296449)\"."
+  },
+  "https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609": {
+   "authors": [
+    "@SecurityMB"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. Line 67 names the author's own account: \"The content is also released as [a presentation](https://slides.com/securitymb/...)\". Bartlomiej Pokrzywinski is named as a TRAINING ATTENDEE who \"asked for some support\" - a CVE co-discoverer, not the write-up's author - and is deliberately not added."
+  },
+  "https://research.securitum.com/security-analysis-of-portal-element": {
+   "authors": [
+    "@SecurityMB"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The author self-identifies in the first person at line 114: \"I [tweeted about it](https://twitter.com/SecurityMB/status/...) during my research\". Frederik Braun is thanked for the tweet that motivated the work; Mario Heiderich and Michal Zalewski are cited papers."
+  },
+  "https://research.securitum.com/xss-in-amp4email-dom-clobbering": {
+   "authors": [
+    "@SecurityMB"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"mibe\", a securitum WordPress account slug. The author self-identifies twice in the first person - \"I found an interesting way of bypassing dir-based CSP and [I tweeted about it](.../SecurityMB/...)\" and \"have a look at my [XSS Challenge](https://securitymb.github.io/xss/1/)\"."
   },
   "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts": {
    "authors": [
@@ -1696,6 +1772,23 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "This malformed companion URL is retained beside the complete Code Execution via XSS disclosure in the 2008 list. It has no Wayback captures and is not an independently recoverable document."
+  },
+  "https://shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia": {
+   "authors": [
+    "thezero",
+    "zi0black"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the corporate account \"@ShielderSec\". The page names two researchers with their own author pages - thezero (\"Security Researcher and Senior Penetration Tester at Shielder\") and zi0black (\"I'm zi0black, Security Researcher and Penetration Tester at Shielder\") - and the prose corroborates: \"while I was trying to exploit a blind XXE with [zi0black]\"."
+  },
+  "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html": {
+   "authors": [
+    "@sirdarckcat"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The collaborator list in the body ends \"...[kkotowicz], and **[me](http://twitter.com/sirdarckcat)**)\" - a first-person self-identification read from the body text, NOT inferred from the blogspot hostname. The nine other names are prior art or wiki collaborators."
   },
   "https://sites.google.com/site/tentacoloviola/": {
    "class": "derivative",
@@ -1884,6 +1977,30 @@
    "outcome": "archive",
    "reason": "The report states its own byline: \"Found by: Soroush Dalili (Irsdl {4t] yahoo [d0t} com)\". This is the document the 2009 Top 10 announcement cites at #6, where it is credited to Soroush Dalili; the list previously cited the MSRC advisory that the nomination round had linked, which carries Microsoft's byline instead. The report's PDF metadata names no author, so the credit is stated here."
   },
+  "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis": {
+   "authors": [
+    "Mikhail Egorov"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names only Egorov: \"APIs Mikhail Egorov / @0ang3el #HACKTIVITY2019\", the heading \"## [Mikhail Egorov]\", and the closing slide \"Thank you! @0ang3el\"."
+  },
+  "https://speakerdeck.com/bo0om/at-home-among-strangers?slide=9": {
+   "authors": [
+    "Bo0oM"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names its author: \"## [Bo0oM]\" and the closing slide, \"Twi: @i_bo0om Site: bo0om.ru Telegram: @webpwn\"."
+  },
+  "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers": {
+   "authors": [
+    "filedescriptor"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names its author: \"## [filedescriptor]\" and slide 1, \"@filedescriptor - From Hong Kong - Pentester for Cure53\"."
+  },
   "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21": {
    "authors": [
     "Norihide Saito",
@@ -1909,6 +2026,22 @@
    "outcome": "archive",
    "reason": "The deck recorded the handle GreenDog, which is valid since he publishes under it, alongside \"@speakerdeck\" - the hosting platform's own account, not a person, and the same machine-placeholder class as @wowchemy, Guest Post and the GitHub numeric id. Slide 0 gives the full name: \"How to hack SAML if I have paws? Aleksei \\\"GreenDog\\\" Tiurin\", confirmed on slide 1."
   },
+  "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency": {
+   "authors": [
+    "Aleksei \"GreenDog\" Tiurin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. Slide 0 gives the full name - \"Reverse proxies & Inconsistency Aleksei \\\"GreenDog\\\" Tiurin\" - and slide 1 the handle @antyurin. Same researcher already corrected on the 2023 SAML deck."
+  },
+  "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle": {
+   "authors": [
+    "Ryo Ichikawa"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. Slide 0 gives the real name the archive did not record - \"Ryo Ichikawa (icchy) CODE BLUE 2019, 10/29\" - and slide 1 \"Who am I - icchy (a.k.a. t0nk42)\". The handle alone was recorded; the name was not."
+  },
   "https://speakerdeck.com/lmt_swallow/revisiting-redos-a-rough-idea-of-data-exfiltration-by-redos-and-side-channel-techniques": {
    "authors": [
     "Takashi Yoneuchi"
@@ -1916,6 +2049,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names Takashi Yoneuchi (@y0n3uchy). Same platform-account fault as the @speakerdeck entries corrected in 2021 and 2023."
+  },
+  "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer": {
+   "authors": [
+    "Jun Kokatsu"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names only Kokatsu: \"## [Jun Kokatsu]\" and slide 0, \"The world of Site Isolation and compromised renderer Jun Kokatsu\"."
   },
   "https://spookjs.com/": {
    "authors": [
@@ -1999,9 +2140,12 @@
    "title": "Practical Padding Oracle Attacks"
   },
   "https://veracode.com/blog/research/exploiting-spring-boot-actuators": {
+   "authors": [
+    "Michael Stepankin"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (veracode-blog-veracode). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty and the file printed \"Author not stated, Veracode\". The body byline reads \"By [Michael Stepankin]\", repeated at the foot as \"Michael Stepankin is a Security Researcher at Veracode\".",
    "title": "Exploiting Spring Boot Actuators"
   },
   "https://vimeo.com/ondemand/44conlondon2015/142249673": {

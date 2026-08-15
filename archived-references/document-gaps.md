@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-48 reference(s) unresolved. 39 of them already have their raw bytes stored.
+54 reference(s) unresolved. 45 of them already have their raw bytes stored.
 
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
@@ -92,6 +92,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2024.md:27`
 
+## https://blog.teddykatz.com/2019/11/23/json-padding-oracles.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: both code listings are absent - the file ends on "Exploit code (prints out the flag after a couple minutes):" with nothing after it, and refers to a server.js that was never published; the stored source shows both were GitHub gist embeds that the capture route dropped, and a superscript exponent was also lost (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2019.md:24`
+
 ## https://blog.voorivex.team/cloudflare-image-proxy-as-a-cspt-gadget-a-cross-origin-cspt-exploit
 
 - Outcome: `broken-capture`
@@ -139,6 +147,14 @@ or fix the route and re-run.
 - Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "denition", "dierent"); pdf-text refused on 2026-08-14 because the stored raw object is the ACM DOI landing page rather than a PDF; needs the paper obtained by hand, then import --redo (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2015.md:61`
+
+## https://doi.org/10.1109/SP.2019.00049
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the extraction stops after page 1 of a 15-page IEEE S&P paper - there is one page marker and the file ends mid-word on "signif-" - and the surviving fragment also carries dropped ligatures (lters, ndings, nancials, veried) and a glyph mapping that renders the authors email braces as the letters f and g; re-acquire from either mirror already recorded in also_at (sefcom.asu.edu or docs.apwg.org) (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2019.md:75`
 
 ## https://doi.org/10.1109/SP46214.2022.00064
 
@@ -284,6 +300,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:53`
 
+## https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: three of the four exploit vectors are broken, verified byte-for-byte against the stored source - two lost their onerror handler (one also truncated), and the third publishes <svg><script>alert(1)</script></svg> where the source has three U+10FFFE characters around the call, which ARE the finding; the prose still promises an alert box from a payload that cannot fire; re-extract from the stored source (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2019.md:81`
+
+## https://research.securitum.com/dompurify-bypass-using-mxss/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the headline mutation-XSS bypass publishes inert - <img src=1 > - where the raw copy on the same line reads <img src=1 onerror=alert(1)>, and the rest of the article including its Summary and Afterthoughts headings is trapped inside one 10,061-character raw-HTML line with Crayon toolbar labels published as prose (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2019.md:44`
+
 ## https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/
 
 - Outcome: `broken-capture`
@@ -291,6 +323,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the WordPress Crayon highlighter raw DOM was captured instead of the code (the string crayon occurs 137 times, with toolbar labels such as Toggle Line Numbers and Copy published as content), and whole stretches of the ARTICLE are trapped inside those HTML lines rather than existing as prose, including the Usage of DOMPurify and Summary sections; the headline payload survives complete only inside the embedded markup; re-acquire (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2020.md:25`
+
+## https://research.securitum.com/security-analysis-of-portal-element/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: a single 5,915-character raw-HTML line swallows two whole sections as HTML rather than Markdown, so the article headline finding RISK 1: Accepting unsafe URI schemes has no heading at all and the heading structure jumps from What is portal to RISK 2; the same line strips onclick=portal.activate() from the visible example, which is the technique itself; the WordPress Crayon highlighter is also extracted twice per listing and never fenced (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2019.md:29`
 
 ## https://research.securitum.com/the-curious-case-of-copy-paste/
 
@@ -411,6 +451,14 @@ or fix the route and re-run.
 - Reason: faulty capture: all 17 code listings have the site's line-number gutter merged into the code, so the payloads as published are wrong ("1file://127.0.0.1/<pathToFile>", "2%:include <stdio.h>", "1anyBodyParam=@/tmp/../etc/passwd"); re-extract with the gutter excluded (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:73`
+
+## https://www.youtube.com/watch?v=gVrdE6g_fa8
+
+- Outcome: `broken-capture`
+- Kind: video
+- Reason: faulty capture: an unclosed inline <noscript> tag at line 75 makes a browser treat the remaining 6,209 characters - over half the file - as raw text rather than content, and <noscript> parsing is the subject of the talk; escape the tag or wrap it in a code span (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2019.md:9`
 
 ## https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all
 

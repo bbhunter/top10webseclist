@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations"
     title: 24/7 managed detection, response, and expert cybersecurity services
-    author: Philippe Arteau, @GoSecure_Inc
+    author: Philippe Arteau
 also_at: []
 authors:
   - Philippe Arteau
-  - @GoSecure_Inc
 canonical_url: ""
 cited_by:
   - "2019.md:31"
@@ -44,7 +43,7 @@ translation_of: ""
 
 # 24/7 managed detection, response, and expert cybersecurity services
 
-**24/7 managed detection, response, and expert cybersecurity services** - Philippe Arteau, @GoSecure_Inc, GoSecure.
+**24/7 managed detection, response, and expert cybersecurity services** - Philippe Arteau, GoSecure.
 
 - Published: date not stated
 - Original: <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations>
@@ -234,11 +233,3 @@ Finally, in this blog post, we have included one vulnerability found by Benoit C
 
 	- [Oracle Application Server Web Cache: Administrator's Guide](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046.pdf)
 ```
-
- Back to Blog
-
-## Ready to Strengthen Your Security?
-
-Let's discuss how GoSecure can help protect your organization from emerging threats.
-
-Contact UsMore Articles

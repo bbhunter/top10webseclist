@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://github.com/veracode-research/solr-injection"
     title: Apache Solr Injection Research
-    author: veracode-research
+    author: Michael Stepankin
   - id: commit
     resource: "https://github.com/veracode-research/solr-injection"
 also_at: []
 authors:
-  - veracode-research
+  - Michael Stepankin
 canonical_url: ""
 cited_by:
   - "2019.md:55"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Apache Solr Injection Research
 
-**Apache Solr Injection Research** - veracode-research, GitHub.
+**Apache Solr Injection Research** - Michael Stepankin, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/veracode-research/solr-injection>

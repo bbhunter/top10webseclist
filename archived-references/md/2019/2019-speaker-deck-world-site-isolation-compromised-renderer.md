@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
     title: The world of Site Isolation and compromised renderer
-    author: @speakerdeck, Jun Kokatsu
+    author: Jun Kokatsu
     last_modified: 2019-11-01
 also_at: []
 authors:
-  - @speakerdeck
   - Jun Kokatsu
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # The world of Site Isolation and compromised renderer
 
-**The world of Site Isolation and compromised renderer** - @speakerdeck, Jun Kokatsu, Speaker Deck.
+**The world of Site Isolation and compromised renderer** - Jun Kokatsu, Speaker Deck.
 
 - Published: 2019-11-01
 - Original: <https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer>

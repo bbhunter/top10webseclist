@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html"
     title: "[🌐💧💥] HTTP Cache Cross-Site Leaks"
+    author: @sirdarckcat
 also_at: []
-authors: []
+authors:
+  - @sirdarckcat
 canonical_url: ""
 cited_by:
   - "2019.md:6"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # [🌐💧💥] HTTP Cache Cross-Site Leaks
 
-**[🌐💧💥] HTTP Cache Cross-Site Leaks** - Author not stated, sirdarckcat.blogspot.com.
+**[🌐💧💥] HTTP Cache Cross-Site Leaks** - @sirdarckcat, sirdarckcat.blogspot.com.
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html>

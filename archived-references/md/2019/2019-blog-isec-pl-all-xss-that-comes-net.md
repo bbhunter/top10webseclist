@@ -365,7 +365,3 @@ Web Control and HTML Control omitted cookieless part of the URL while resolving 
 We gained some knowledge about old ASP.NET feature – a cookieless session – which, for backward compatibility, still exists in contemporary web applications. Moreover, we found out how the Cross-Site Scripting vulnerability can be exploited and we learned some JS tricks to make our XSS payloads more handy – even though some character are blacklisted.
 
  
-
-####  [Paweł Hałdrzyński](https://blog.isec.pl/author/ph/)
-
--  

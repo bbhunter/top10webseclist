@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers"
     title: The Cookie Monster in Your Browsers
-    author: @speakerdeck, filedescriptor
+    author: filedescriptor
     last_modified: 2019-08-23
 also_at: []
 authors:
-  - @speakerdeck
   - filedescriptor
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # The Cookie Monster in Your Browsers
 
-**The Cookie Monster in Your Browsers** - @speakerdeck, filedescriptor, Speaker Deck.
+**The Cookie Monster in Your Browsers** - filedescriptor, Speaker Deck.
 
 - Published: 2019-08-23
 - Original: <https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers>

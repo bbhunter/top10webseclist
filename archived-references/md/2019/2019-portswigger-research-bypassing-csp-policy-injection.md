@@ -115,7 +115,3 @@ The interesting thing about this directive is that it will overwrite existing sc
 PayPal awarded me $900 for this bug which I thought was quite generous for a mitigation bypass.
 
 Visit our Web Security Academy to [learn more about cross-site scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting)
-
- [ csp ](https://portswigger.net/research/csp)
-
-[Back to all articles](https://portswigger.net/research/articles)

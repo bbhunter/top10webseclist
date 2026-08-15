@@ -6,17 +6,19 @@ tags: [article, webseclist-reference, en, research-securitum-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:13+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://research.securitum.com/security-analysis-of-portal-element/"
     title: Security analysis of <portal> element
+    author: @SecurityMB
     last_modified: 2019-09-03
   - id: capture
     resource: "https://web.archive.org/web/20191114091030/https://research.securitum.com/security-analysis-of-portal-element/"
 also_at: []
-authors: []
+authors:
+  - @SecurityMB
 canonical_url: ""
 cited_by:
   - "2019.md:29"
@@ -44,7 +46,7 @@ translation_of: ""
 
 # Security analysis of <portal> element
 
-**Security analysis of <portal> element** - Author not stated, research.securitum.com.
+**Security analysis of <portal> element** - @SecurityMB, research.securitum.com.
 
 - Published: 2019-09-03
 - Original: <https://research.securitum.com/security-analysis-of-portal-element/>
@@ -311,5 +313,3 @@ As of Chrome 78, the attack still works.
 In this write-up I have described the new [<portal> element](https://wicg.github.io/portals/) currently supported only in Chrome Canary. Being inspired by the fact that currently the specification lacks any security considerations, I have covered various security issues that might arise from using portals, showing that currently there’s still a lot to improve.
 
 The list of issues described in this write-up are probably not exhaustive. Hence I’m very curious about your thoughts and other security issues you might think of when analysing portals 🙂
-
-Tagged: [Bug Bounty](https://research.securitum.com/tag/bug-bounty/), [Google](https://research.securitum.com/tag/google/)
