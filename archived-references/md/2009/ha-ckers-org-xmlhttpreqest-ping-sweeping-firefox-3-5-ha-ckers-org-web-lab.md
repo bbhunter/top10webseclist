@@ -76,15 +76,3 @@ Anyway, I was poking around with it and I noticed that it had one fairly strange
 You can read the page for the details, like the fact that basic and digest authentication popups are suppressed which makes this technique ideal for Intranets where those are common and would normally alert a user to the fact that something was wrong in the browser. It also doesn’t matter whether you do or don’t have port 80 open for this to work, I should note that there is a IE8.0 version of Firefox’s XMLHTTPRequest called [XDomainRequest](http://msdn.microsoft.com/en-us/library/cc288060%28VS.85%29.aspx), but I didn’t have much time this weekend to try to get it working in both browsers so I have no idea if it has the same issue or not.
 
 Incidentally, Jeremiah and I both gave the thumbs up to the idea of a cross domain XHR several years ago when the Mozilla team first asked us about the concept. Because there are so many other things wrong with the browser Jeremiah and I told them that it wouldn’t change much - the browser is already so broken from a security perspective that it really didn’t matter - a sad commentary thinking back. Of course, it really is all about the implementation.
-
-  This entry was posted on Monday, July 20th, 2009 at 8:01 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

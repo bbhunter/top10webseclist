@@ -172,26 +172,3 @@ I would like to thank Apple Security Team for their timely responses, understand
 Both Chrome and Opera browsers offer similar features, but are not impacted by this vulnerability. Chrome only allows manually typed urls in the address bar to go into the “Most Visited” start page, whereas Opera requires a user to explicitly add his or her favorite web page as a speed dial entry. IE does not have this feature, so is unaffected by this.
 
 I met several interesting people at BlackHat and Defcon this year from Apple, Microsoft, WhiteHat, SecTheory, McAfee, Paypal, etc. One of the folks i met was [Daniel Herrera](http://www.sectheory.com/bio.htm) from [SecTheory](http://www.sectheory.com/). He told me some of the research he had been doing, one of which was a similar anomaly in Top Sites. He was very happy to know that Apple is fixing this issue. In the near future, he will share with us his cool ideas. This includes some of the vulnerabilities he is working on for Opera.
-
-Share:
-
-[![[del.icio.us]](https://securethoughts.com/wp-content/plugins/bookmarkify/delicious.png)](http://del.icio.us/post?url=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&title=Hijacking Safari 4 Top Sites with Phish Bombs) [![[Digg]](https://securethoughts.com/wp-content/plugins/bookmarkify/digg.png)](http://digg.com/submit?phase=2&url=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&title=Hijacking Safari 4 Top Sites with Phish Bombs) [![[Facebook]](https://securethoughts.com/wp-content/plugins/bookmarkify/facebook.png)](https://www.facebook.com/share.php?u=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/) [![[Google]](https://securethoughts.com/wp-content/plugins/bookmarkify/google.png)](https://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&title=Hijacking Safari 4 Top Sites with Phish Bombs) [![[LinkedIn]](https://securethoughts.com/wp-content/plugins/bookmarkify/linkedin.png)](http://www.linkedin.com/shareArticle?mini=true&url=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&title=Hijacking Safari 4 Top Sites with Phish Bombs) [![[Reddit]](https://securethoughts.com/wp-content/plugins/bookmarkify/reddit.png)](http://reddit.com/submit?url=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&title=Hijacking Safari 4 Top Sites with Phish Bombs) [![[StumbleUpon]](https://securethoughts.com/wp-content/plugins/bookmarkify/stumbleupon.png)](http://www.stumbleupon.com/submit?url=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&title=Hijacking Safari 4 Top Sites with Phish Bombs) [![[Technorati]](https://securethoughts.com/wp-content/plugins/bookmarkify/technorati.png)](http://technorati.com/faves?add=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/) [![[Twitter]](https://securethoughts.com/wp-content/plugins/bookmarkify/twitter.png)](https://twitter.com/home/?status=Hijacking Safari 4 Top Sites with Phish Bombs+http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/) [![[Yahoo!]](https://securethoughts.com/wp-content/plugins/bookmarkify/yahoo.png)](http://bookmarks.yahoo.com/toolbar/savebm?opener=tb&u=http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/&t=Hijacking Safari 4 Top Sites with Phish Bombs) [More »](https://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/#bookmarkify)
-
-Tags: [Apple](https://securethoughts.com/tag/apple/), [Javascript](https://securethoughts.com/tag/javascript/), [Phishing](https://securethoughts.com/tag/phishing/), [Safari](https://securethoughts.com/tag/safari/), [Top Sites](https://securethoughts.com/tag/top-sites/)
-
-  This entry was posted on Tuesday, August 11th, 2009 at 4:48 pm and is filed under [Browsers](https://securethoughts.com/category/browsers/), [Exploits](https://securethoughts.com/category/exploits/), [Phishing](https://securethoughts.com/category/phishing/). You can follow any responses to this entry through the [RSS 2.0](https://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/feed/) feed. You can leave a response, or [trackback](https://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/trackback/) from your own site.
-
-### Leave a Reply
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
- CAPTCHA Code
-
-![CAPTCHA Image](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show_medium.php?si_form_id=com&sid=3c10b1bc2e95603ae462a9f960aff6eb)[ ![CAPTCHA Audio](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/audio_icon.gif)](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_play.php?si_form_id=com)
-[ ![Refresh Image](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/refresh.gif)]()
-
----

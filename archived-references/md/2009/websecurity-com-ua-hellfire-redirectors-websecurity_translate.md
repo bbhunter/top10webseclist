@@ -88,11 +88,3 @@ Thus, any redirector on any website can be used to carry out a Looped DoS attack
 Different clients behave differently: Mozilla automatically stops a looping redirect (displaying a Redirect Loop Error), while IE does not. If the client accessing these websites does not stop the redirect itself—for example, a search engine bot—this will place a heavy load on the servers.
 
 Note that Mozilla’s restriction will work only for redirectors that return the appropriate server headers (Location or Refresh). If the redirector uses tags for redirection (meta-refresh or JS), this browser restriction will not work.
-
-This entry was posted on 22:48 05.02.2009 and is filed under [Articles](http://websecurity.com.ua/category/articles/), [Research](http://websecurity.com.ua/category/researches/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2854/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2854/) to post a comment.
-
----

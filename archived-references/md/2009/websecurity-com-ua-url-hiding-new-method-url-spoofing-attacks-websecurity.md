@@ -79,11 +79,3 @@ In case when URL Hiding is using together with URL Spoofing methods, which I wro
 As I thought first, when using of underscore (like in case of http://_-lilit-_.photosight.ru), Google will not show address in serp at all. But there is no such effect in case of http://ane4ka-_.shalala.ru. Potentially it works only in case, if first char of domain is underscore.
 
 I made a lot of researches when I was looking for sites with underscores, which hasn’t URL in serp, but didn’t find any such sites (but found one interesting bug in Google). So method of attack on Google for hiding of address of sites in serp can use this (with underscore at the beginning of domain), or other approach. But in any case URL Hiding attack is dangerous, because it allows to use search engines (Google in particular) for conducting of fishing and other attacks.
-
-This entry was posted on 22:48 03.08.2009 and is filed under [Статті](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/3383/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/3383/) to post a comment.
-
----

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
     title: HTML5 new XSS vectors
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors"
 cited_by:
   - "2009.md:47"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # HTML5 new XSS vectors
 
-**HTML5 new XSS vectors** - Author not stated, thespanner.co.uk.
+**HTML5 new XSS vectors** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/>

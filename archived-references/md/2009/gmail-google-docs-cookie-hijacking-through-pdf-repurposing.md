@@ -5,15 +5,17 @@ resource: "http://secniche.org/gmd_hijack/gc_hijack.xhtml"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-06T09:54:29+00:00"
+  at: "2026-08-15T09:35:43+00:00"
 status: stable
-stale_after: 2027-08-06
+stale_after: 2027-08-15
 sources:
   - id: original
     resource: "http://secniche.org/gmd_hijack/gc_hijack.xhtml"
     title: Gmail - Google Docs Cookie Hijacking through PDF Repurposing
+    author: Aditya K Sood
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: ""
 cited_by:
   - "2009.md:71"
@@ -31,23 +33,25 @@ publisher_english: ""
 raw_sha256: ""
 retrieved_from: "http://secniche.org/gmd_hijack/gc_hijack.xhtml"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-06T09:54:29+00:00"
+retrieved_utc: "2026-08-15T09:35:43+00:00"
 slug: gmail-google-docs-cookie-hijacking-through-pdf-repurposing
 snapshot: ""
 title_english: ""
+translation_file: ""
+translation_of: ""
 ---
 
 # Gmail - Google Docs Cookie Hijacking through PDF Repurposing
 
-**Gmail - Google Docs Cookie Hijacking through PDF Repurposing** - Author not stated, Publisher not stated.
+**Gmail - Google Docs Cookie Hijacking through PDF Repurposing** - Aditya K Sood, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://secniche.org/gmd_hijack/gc_hijack.xhtml>
-- Preserved from: http://secniche.org/gmd_hijack/gc_hijack.xhtml (manual-import) on 2026-08-06
+- Preserved from: http://secniche.org/gmd_hijack/gc_hijack.xhtml (manual-import) on 2026-08-15
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content
@@ -92,6 +96,8 @@ Advisory: Gmail - Google Docs Cookie Hijacking
  Number of applications are still vulnerable to these type of inherent attacks.**
 
  **[Advisory in PDF (advisory_gmail_google_docs_pdf_repurposing_attack.pdf)](advisory_gmail_google_docs_pdf_repurposing_attack.pdf)
+
+**
 
 ---
 

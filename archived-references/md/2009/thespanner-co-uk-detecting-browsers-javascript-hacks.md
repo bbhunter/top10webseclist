@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks/"
     title: Detecting browsers javascript hacks
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks"
 cited_by:
   - "2009.md:39"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Detecting browsers javascript hacks
 
-**Detecting browsers javascript hacks** - Author not stated, thespanner.co.uk.
+**Detecting browsers javascript hacks** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks/>

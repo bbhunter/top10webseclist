@@ -78,15 +78,3 @@ So I handed it back to HD Moore and he added it as a feature to [decloak](http:/
 I talked with Microsoft, Apple and Firefox about this and we had a very hard time talking about who owns this bug. Let’s say for a second Apple had no bug there, and it was working as intended. Who’s bug would it be? Apple for not following the proxy model? Firefox for not forcing the proxy model on all of it’s sub components OR for having it’s own unique proxy model? Or is it Microsoft who runs the entire operating system. I don’t think we ever came to a conclusion, but I’m more and more thinking it’s Firefox’s fault. They did go down the path of creating their own proxy model a long time ago (out of necessity). Now the question is, should they fix it? I for one would hate it if it got fixed. Sure, it’s horrible from a privacy perspective, but it’s great for usability. I’m constantly stuck on weird networks with weird proxy settings in the OS, and I need to get out for some reason. I think there are a lot of other people in the same boat too. So I doubt this is getting fixed any time soon.
 
 This brought up one last conversation that I thought was worth sharing. The private browsing initiative that several browsers are undertaking at the moment really was never meant to protect users from this sort of privacy leak. It was intended to prevent wives from seeing what presents their husbands are buying them for their birthday. *cough* But maybe future versions should do a better job of this sort of privacy leaks - better integrate with Tor or something of that nature. I dunno, but it was an interesting conversation with the browser/OS/plugin guys.
-
-  This entry was posted on Wednesday, August 19th, 2009 at 9:43 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
     title: HTML5 XSS - The Spanner
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/03/20/html5-xss"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/03/20/html5-xss"
 cited_by:
   - "2009.md:41"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # HTML5 XSS - The Spanner
 
-**HTML5 XSS - The Spanner** - Author not stated, thespanner.co.uk.
+**HTML5 XSS - The Spanner** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/03/20/html5-xss/>

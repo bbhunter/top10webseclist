@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
     title: Inline UTF-7 E4X javascript hijacking
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking"
 cited_by:
   - "2009.md:40"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Inline UTF-7 E4X javascript hijacking
 
-**Inline UTF-7 E4X javascript hijacking** - Author not stated, thespanner.co.uk.
+**Inline UTF-7 E4X javascript hijacking** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/>

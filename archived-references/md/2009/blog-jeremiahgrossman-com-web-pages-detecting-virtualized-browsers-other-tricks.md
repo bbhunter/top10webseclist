@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-virtualized.html"
     title: Web pages Detecting Virtualized Browsers and other tricks
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2009/08/web-pages-detecting-virtualized.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2009/08/web-pages-detecting-virtualized.html"
 cited_by:
   - "2009.md:49"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Web pages Detecting Virtualized Browsers and other tricks
 
-**Web pages Detecting Virtualized Browsers and other tricks** - Author not stated, blog.jeremiahgrossman.com.
+**Web pages Detecting Virtualized Browsers and other tricks** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-virtualized.html>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html"
     title: Cross-domain search timing
+    author: Chris Evans
 also_at: []
-authors: []
+authors:
+  - Chris Evans
 canonical_url: ""
 cited_by:
   - "2009.md:8"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Cross-domain search timing
 
-**Cross-domain search timing** - Author not stated, scarybeastsecurity.blogspot.com.
+**Cross-domain search timing** - Chris Evans, scarybeastsecurity.blogspot.com.
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html>

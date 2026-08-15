@@ -94,7 +94,3 @@ filetype:pdf file c (htm OR html OR mhtml)
 So, out of [280 million pdfs](https://www.google.com/search?hl=en&source=hp&fkt=265&fsdt=593&q=filetype%3Apdf&aq=f&oq=&aqi=g10) accessible on the internet, more than 20% look to be exposing internal disk paths which is a huge number. I have contacted the Microsoft and Adobe Security Teams about this issue. Microsoft has plans to fix this in IE9, while Adobe has opened the case but hasn’t planned the timelines yet.
 
 Special thanks goes to Terem Technologies for their help identifying this bug.
-
-** Category: [Uncategorized](https://securethoughts.com/uncategorized/)
-
-** Tagged:

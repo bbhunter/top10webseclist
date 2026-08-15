@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/05/08/opera-xss-vectors/"
     title: Opera XSS vectors
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/05/08/opera-xss-vectors"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/05/08/opera-xss-vectors"
 cited_by:
   - "2009.md:42"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Opera XSS vectors
 
-**Opera XSS vectors** - Author not stated, thespanner.co.uk.
+**Opera XSS vectors** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/05/08/opera-xss-vectors/>

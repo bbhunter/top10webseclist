@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html"
     title: Google Translate - Google User Content - File Uploading Cross - XSS and Design Stringency
+    author: Aditya K Sood
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: ""
 cited_by:
   - "2009.md:75"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Google Translate - Google User Content - File Uploading Cross - XSS and Design Stringency
 
-**Google Translate - Google User Content - File Uploading Cross - XSS and Design Stringency** - Author not stated, zeroknock.blogspot.com.
+**Google Translate - Google User Content - File Uploading Cross - XSS and Design Stringency** - Aditya K Sood, zeroknock.blogspot.com.
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html>

@@ -74,15 +74,3 @@ I’m going to do a small series of posts about a bunch of the topics Jabra and 
 If you’ve got Internet Explorer you can check out [an example here](http://ha.ckers.org/weird/smbenum.html). Jabra has since ported it into Wade’s BeEF as well. This isn’t extremely good at enumerating the entire system because it can only find images, CSS, JavaScript and the like. Other types of files don’t have cross zone information leakage - or no well known way to do that anyway. The point being you can get somewhat granular, and then use another more granular method like [David Byrne’s res timing attack](http://ha.ckers.org/blog/20070725/res-timing-attack/) or my version [without JavaScript](http://ha.ckers.org/weird/res-timing2.cgi) to get non-image file detection. You can’t reliably use res timing for much though because it’s too slow. But by combining the two an attacker can pretty quickly enumerate programs on a system. Why is that useful? Well the attacker can launch highly targeted attacks once you know the user has certain programs installed.
 
 Anyway, it’s my opinion that if sysimage needed to be fixed SMBenum too needs to be fixed since they provide virtually the same insights into a computer, using the same basic technique. Either way, it seemed bad enough to me that I thought it was worth writing up a tool to do it. You’ll note that it works differently on different systems, and there may be a way to optimize it, but I didn’t bother. There’s also a lot of images associated with lots of programs that I didn’t add in, but you get the basic idea.
-
-  This entry was posted on Sunday, August 9th, 2009 at 11:12 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

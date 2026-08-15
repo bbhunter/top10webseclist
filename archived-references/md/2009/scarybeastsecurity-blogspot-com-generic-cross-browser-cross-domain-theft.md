@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html"
     title: Generic cross-browser cross-domain theft
+    author: Chris Evans
 also_at: []
-authors: []
+authors:
+  - Chris Evans
 canonical_url: ""
 cited_by:
   - "2009.md:79"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Generic cross-browser cross-domain theft
 
-**Generic cross-browser cross-domain theft** - Author not stated, scarybeastsecurity.blogspot.com.
+**Generic cross-browser cross-domain theft** - Chris Evans, scarybeastsecurity.blogspot.com.
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html>

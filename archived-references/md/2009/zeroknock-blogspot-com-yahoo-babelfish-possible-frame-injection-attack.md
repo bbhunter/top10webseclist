@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html"
     title: Yahoo Babelfish - Possible Frame Injection Attack
+    author: Aditya K Sood
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: ""
 cited_by:
   - "2009.md:70"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Yahoo Babelfish - Possible Frame Injection Attack
 
-**Yahoo Babelfish - Possible Frame Injection Attack** - Author not stated, zeroknock.blogspot.com.
+**Yahoo Babelfish - Possible Frame Injection Attack** - Aditya K Sood, zeroknock.blogspot.com.
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html>

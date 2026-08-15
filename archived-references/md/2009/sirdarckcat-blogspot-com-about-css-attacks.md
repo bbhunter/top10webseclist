@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html"
     title: About CSS Attacks
+    author: sirdarckcat
 also_at: []
-authors: []
+authors:
+  - sirdarckcat
 canonical_url: ""
 cited_by:
   - "2009.md:48"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # About CSS Attacks
 
-**About CSS Attacks** - Author not stated, sirdarckcat.blogspot.com.
+**About CSS Attacks** - sirdarckcat, sirdarckcat.blogspot.com.
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html>

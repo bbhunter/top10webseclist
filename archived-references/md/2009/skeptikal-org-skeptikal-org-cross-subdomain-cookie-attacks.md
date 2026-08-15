@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, en, skeptikal-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:24+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://skeptikal.org/2009/11/cross-subdomain-cookie-attacks.html"
     title: "Skeptikal.org: Cross-subdomain Cookie Attacks"
+    author: Mike Bailey
   - id: capture
     resource: "https://web.archive.org/web/20091111042501/http://skeptikal.org/2009/11/cross-subdomain-cookie-attacks.html"
 also_at: []
-authors: []
+authors:
+  - Mike Bailey
 canonical_url: ""
 cited_by:
   - "2009.md:33"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Skeptikal.org: Cross-subdomain Cookie Attacks
 
-**Skeptikal.org: Cross-subdomain Cookie Attacks** - Author not stated, skeptikal.org.
+**Skeptikal.org: Cross-subdomain Cookie Attacks** - Mike Bailey, skeptikal.org.
 
 - Published: date not stated
 - Original: <http://skeptikal.org/2009/11/cross-subdomain-cookie-attacks.html>
@@ -72,7 +74,3 @@ Last night, I put together a [quick paper](http://skeptikal.org/repository/one_i
 I'm still looking into the ways that other client-side technologies (Flash, Java, etc) handle these issues, so expect a version 2.0 in the future. Also, I'm looking forward to some relevant [new tools](http://www.owasp.org/index.php/Synergy%21_A_world_where_the_tools_communicate) that will be released at AppSec DC next week.
 
 Note: All the attacks outlined in this paper were responsibly disclosed, and the Google and Expedia ones, specifically, have been fixed for several weeks.
-
-Labels: [Cookies](http://skeptikal.org/labels/Cookies.html), [Exploits](http://skeptikal.org/labels/Exploits.html), [Whitepapers](http://skeptikal.org/labels/Whitepapers.html)
-
----

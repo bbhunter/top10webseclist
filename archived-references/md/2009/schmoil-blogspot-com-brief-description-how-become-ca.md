@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://schmoil.blogspot.com/2009/01/brief-description-of-how-to-become-ca.html"
     title: A brief description of how to become a CA
+    author: Mike Zusman
 also_at: []
-authors: []
+authors:
+  - Mike Zusman
 canonical_url: ""
 cited_by:
   - "2009.md:56"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # A brief description of how to become a CA
 
-**A brief description of how to become a CA** - Author not stated, schmoil.blogspot.com.
+**A brief description of how to become a CA** - Mike Zusman, schmoil.blogspot.com.
 
 - Published: date not stated
 - Original: <https://schmoil.blogspot.com/2009/01/brief-description-of-how-to-become-ca.html>

@@ -87,11 +87,3 @@ http://regex.info/exif.cgi?url=http://site/big_file
 `http://www.slideshare.net/main/bulkweb?fromsource=webupload&url=http://site/big_file&title=test&dwnld_chk=on`
 
 It is also interesting that bidirectional DoS attacks can be conducted in this way. If such a service is instructed to download several large files from one website (this can be the same file started as several parallel downloads), it will overload both servers.
-
-This entry was posted on 22:44 20.03.2009 and is filed under [Articles](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2981/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2981/) to post a comment.
-
----

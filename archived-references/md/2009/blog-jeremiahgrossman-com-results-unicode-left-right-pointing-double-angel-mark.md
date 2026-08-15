@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2009/06/results-unicode-leftright-pointing.html"
     title: Results, Unicode Left/Right Pointing Double Angel Quotation Mark
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2009/06/results-unicode-leftright-pointing.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2009/06/results-unicode-leftright-pointing.html"
 cited_by:
   - "2009.md:50"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Results, Unicode Left/Right Pointing Double Angel Quotation Mark
 
-**Results, Unicode Left/Right Pointing Double Angel Quotation Mark** - Author not stated, blog.jeremiahgrossman.com.
+**Results, Unicode Left/Right Pointing Double Angel Quotation Mark** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2009/06/results-unicode-leftright-pointing.html>

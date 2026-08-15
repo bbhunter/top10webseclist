@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
     title: Our Favorite XSS Filters and how to Attack them
+    author: sirdarckcat
 also_at: []
-authors: []
+authors:
+  - sirdarckcat
 canonical_url: ""
 cited_by:
   - "2009.md:12"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Our Favorite XSS Filters and how to Attack them
 
-**Our Favorite XSS Filters and how to Attack them** - Author not stated, sirdarckcat.blogspot.com.
+**Our Favorite XSS Filters and how to Attack them** - sirdarckcat, sirdarckcat.blogspot.com.
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
     title: Ping pong obfuscation
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation"
 cited_by:
   - "2009.md:46"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Ping pong obfuscation
 
-**Ping pong obfuscation** - Author not stated, thespanner.co.uk.
+**Ping pong obfuscation** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks/"
     title: Location based XSS attacks
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2008/12/01/location-based-xss-attacks"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2008/12/01/location-based-xss-attacks"
 cited_by:
   - "2009.md:35"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Location based XSS attacks
 
-**Location based XSS attacks** - Author not stated, thespanner.co.uk.
+**Location based XSS attacks** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks/>

@@ -90,15 +90,3 @@ Yes, that was the entire response. So, while RTFM is a perfectly valid response 
 The reason this works is because **the web server will patiently wait well beyond what is reasonable, allowing an attacker to consume all of the available threads of which there are a finite amount**. That makes it a web server problem, not a OS or networking problem, although there may be OS or network solutions to Apache’s default configuration issues. This is further evidenced by the fact that IIS isn’t vulnerable to Slowloris in it’s current incarnation. Even if Apache and IIS are on the same physical box, Apache will be affected but IIS will not. That would lead me to believe it’s a architectural flaw in Apache’s default web server’s design. Though this isn’t just Apache’s problem, to be fair. Other web servers are vulnerable as well, although none come close to the size of Apache in terms of market share. You can find more information on the Slowloris page.
 
 Anyway, I hope this gets people thinking about better web server architecture. That’s especially true if this is “expected” behavior of their web server, and at least offer a default configuration that can protect from this sort of attack, instead of having to jump through a bunch of convoluted hoops. I thought it would be better to open this up for discussion, so I encourage you to try out the tool in QA or staging and see how your web server handles it. The software is very beta though, so do not use this against anything in production - I make no warranties about its ability to do anything outside of a lab environment!
-
-  This entry was posted on Wednesday, June 17th, 2009 at 8:32 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

@@ -463,6 +463,14 @@
    "outcome": "skip",
    "reason": "The short announcement is retained in the 2015 list, while the complete Evading All Web Application Firewalls XSS Filters paper is archived from https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf."
   },
+  "https://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a byline reading \"Posted by Stefano Di Paola\", the same byline element this author's 2010 entries were credited from."
+  },
   "https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html": {
    "authors": [
     "Stefano Di Paola"
@@ -624,6 +632,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors held the SAME person twice, as \"@rskvp93\" and \"rskvp93\", so the credit line named him twice over. Reduced to the single handle. Q5Ca and nxhoang99, named under \"# Credits\", are discovery credit rather than authorship and are deliberately not added."
+  },
+  "https://blog.watchfire.com/wfblog/2009/02/active-man-in-the-middle-attacks.html": {
+   "authors": [
+    "Ory Segal"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post byline \"Posted by Ory Segal on February 27, 2009\". Roi Saltzman and Nathan appear in the same page as COMMENTERS and were not taken; Adi Sharabani is the keynote subject, also not taken."
   },
   "https://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html": {
    "authors": [
@@ -1594,7 +1610,7 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here.",
+   "reason": "The recorded credit is right, but the earlier reason - that the 2009-era captures declare no author - is disproved by the stored capture, which carries the same rel=\"author\" element naming arshan dabirsiaghi, with a postDate of May 6, 2009. The byline was dropped at extraction, not absent from the source.",
    "title": "Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking"
   },
   "https://i8jesus.com/?p=75": {
@@ -1603,7 +1619,7 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2009 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here.",
+   "reason": "The recorded credit is right, but the earlier reason - that the 2009-era captures declare no author - is disproved by the stored capture, which carries <span class=\"postAuthor\"><a rel=\"author\" title=\"Posts by arshan dabirsiaghi\">arshan dabirsiaghi</a></span> alongside a postDate of August 30, 2009. The byline was dropped at extraction, not absent from the source.",
    "title": "Cross-protocol XSS with non-standard service ports"
   },
   "https://ieeexplore.ieee.org/document/8418635/": {
@@ -1667,6 +1683,22 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty and the header read \"Author not stated\". The document names all five in its own prose: \"The team behind this research comprises Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering and Jacob Schuldt.\" Read from the body, not from metadata."
+  },
+  "https://jeremiahgrossman.blogspot.com/2009/06/results-unicode-leftright-pointing.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The stored source carries a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-virtualized.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The stored source carries a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
   },
   "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html": {
    "authors": [
@@ -2527,6 +2559,54 @@
    "reason": "Recovered and verified from the 24 December 2010 publication-era capture. It contains the full disclosure, proof-of-concept URL, history.pushState explanation, affected browser versions, and mitigation discussion.",
    "title": "How to Conceal XSS Injection in HTML5"
   },
+  "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html": {
+   "authors": [
+    "Chris Evans"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". Both stored captures carry the byline the extraction dropped: the live one a post-author vcard marked rel=author and schema.org author naming Chris Evans, the Wayback one \"Posted by Chris\". The blog's own description reads \"Hacking everything, by Chris Evans\". "
+  },
+  "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html": {
+   "authors": [
+    "Chris Evans"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". Both stored captures carry the byline the extraction dropped: the live one a post-author vcard marked rel=author and schema.org author naming Chris Evans, the Wayback one \"Posted by Chris\". The blog's own description reads \"Hacking everything, by Chris Evans\". "
+  },
+  "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html": {
+   "authors": [
+    "Chris Evans"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". Both stored captures carry the byline the extraction dropped: the live one a post-author vcard marked rel=author and schema.org author naming Chris Evans, the Wayback one \"Posted by Chris\". The blog's own description reads \"Hacking everything, by Chris Evans\". "
+  },
+  "https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html": {
+   "authors": [
+    "Chris Evans"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". Both stored captures carry the byline the extraction dropped: the live one a post-author vcard marked rel=author and schema.org author naming Chris Evans, the Wayback one \"Posted by Chris\". The blog's own description reads \"Hacking everything, by Chris Evans\". "
+  },
+  "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html": {
+   "authors": [
+    "Chris Evans"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". Both stored captures carry the byline the extraction dropped: the live one a post-author vcard marked rel=author and schema.org author naming Chris Evans, the Wayback one \"Posted by Chris\". The blog's own description reads \"Hacking everything, by Chris Evans\". "
+  },
+  "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html": {
+   "authors": [
+    "Chris Evans"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". Both stored captures carry the byline the extraction dropped: the live one a post-author vcard marked rel=author and schema.org author naming Chris Evans, the Wayback one \"Posted by Chris\". The blog's own description reads \"Hacking everything, by Chris Evans\". "
+  },
   "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html": {
    "authors": [
     "Chris"
@@ -2543,6 +2623,14 @@
    "outcome": "archive",
    "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source post footer carries both a \"Posted by\" and a rel=author byline naming Adam Barth, and the date was dropped from the same block."
   },
+  "https://schmoil.blogspot.com/2009/01/brief-description-of-how-to-become-ca.html": {
+   "authors": [
+    "Mike Zusman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a Blogger byline reading \"Posted by Mike Zusman\", corroborated by a rel=author profile link with the same name."
+  },
   "https://seclab.nu/static/publications/acsac23oauth.pdf": {
    "authors": [
     "Tommaso Innocenti",
@@ -2556,6 +2644,14 @@
    "outcome": "archive",
    "publisher": "ACSAC '23",
    "reason": "Reviewed 2026-08-14: a conference paper carries its byline in body text, which extraction cannot read, so the archive credited nobody. The first page prints, under the title, \"Tommaso Innocenti / Northeastern University\", \"Matteo Golinelli / University of Trento\", \"Kaan Onarlioglu / Akamai Technologies and Northeastern University\", \"Ali Mirheidari / Independent Researcher\", \"Bruno Crispo / University of Trento\" and \"Engin Kirda / Northeastern University\". The running footer reads \"ACSAC '23, December 04-08, 2023, Austin, TX, USA\", so the venue is recorded as the publisher, following the archive's existing \"USENIX Security '26\" and \"DEF CON\" entries."
+  },
+  "https://secniche.org/gmd_hijack/gc_hijack.xhtml": {
+   "authors": [
+    "Aditya K Sood"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED DOCUMENT ITSELF names him: the advisory's own byline line reads \"Aditya K Sood, (C) SecNiche Security\" with the address adi_ks [at] secniche.org directly beneath. Nothing had to be fetched to establish this."
   },
   "https://sectheory.com/file-sharing.htm": {
    "class": "research",
@@ -2580,6 +2676,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the live advisory URL 301s into Flexera's corporate site, so the capture and its file name were the \"About Secunia Research\" page. Recaptured from a 2006 snapshot; the file is renamed after the advisory (Secunia SA22477).",
    "title": "Internet Explorer 7 \"mhtml:\" Redirection Information Disclosure"
+  },
+  "https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven": {
+   "authors": [
+    "Inferno"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The article's OWN TITLE names the author - \"Pwning Opera Unite with Inferno's Eleven\" - and the blog describes itself as \"Inferno's Blog on Application Security\". A handle counts, and a sibling advisory in this same collection is already credited Inferno from its own CREDITS section. The other six posts on this blog carry no name in the document and were deliberately left uncredited."
   },
   "https://securitum.com/crashing_servers_with_digits.html": {
    "class": "research",
@@ -2689,6 +2793,30 @@
    "outcome": "archive",
    "reason": "authors was empty and the file printed \"Author not stated\". the extraction dropped the byline the stored source carries. The source names \"Posted by <span class='fn'>shreeraj</span>\", with itemprop=\"author\" on the second capture."
   },
+  "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html": {
+   "authors": [
+    "sirdarckcat"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored Wayback object - the one the manifest itself records as raw_sha256 - carries a Blogger byline reading \"Posted by sirdarckcat\", while the 2026 live object the render actually used has that span EMPTY, which is how the credit was lost. A handle counts. "
+  },
+  "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html": {
+   "authors": [
+    "sirdarckcat"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored Wayback object - the one the manifest itself records as raw_sha256 - carries a Blogger byline reading \"Posted by sirdarckcat\", while the 2026 live object the render actually used has that span EMPTY, which is how the credit was lost. A handle counts. "
+  },
+  "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html": {
+   "authors": [
+    "sirdarckcat"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. This capture's Blogger byline reads \"Posted by sdc\", and the post body gives the author's own address, \"send me an email at sird@rckc.at\"; the page title element names sirdarckcat, which is the handle he publishes under and the byline both siblings on this blog carry. A handle counts. "
+  },
   "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html": {
    "authors": [
     "@sirdarckcat"
@@ -2717,6 +2845,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty and the file printed \"Author not stated\". the extraction dropped the byline the stored source carries. The stored object carries \"Posted by ... itemprop='author' rel='author'\" naming James Kettle, plus a sidebar \"Who ... James Kettle\" and a Contact block giving @albinowax."
+  },
+  "https://skeptikal.org/2009/11/cross-subdomain-cookie-attacks.html": {
+   "authors": [
+    "Mike Bailey"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own footer, \"posted by mckt at 9:32 AM\", and the Blogger profile widget on the same page gives the name behind that handle, \"Name: Mike Bailey\", with the line \"Mike Bailey is a security researcher and application security specialist.\" Recorded under the real name because another 2009 entry credits the same person that way."
   },
   "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops": {
    "class": "research",
@@ -3133,6 +3269,118 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded the author's name AND her own handle \"@Swati_THN\" as a second entry. Not a wrong credit - the handle is hers and is linked in the body - but redundant, and the unquoted \"@\" made the frontmatter unparseable as YAML. Dropping the duplicate fixes the parse."
+  },
+  "https://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report": {
+   "authors": [
+    "theharmonyguy"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a rel=author element naming theharmonyguy. A handle counts."
+  },
+  "https://thespanner.co.uk/2008/12/01/location-based-xss-attacks": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/01/04/phpids-bypass": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. This capture is the 2026 Next.js rebuild, in which the post header byline no longer appears; the credit rests on the site footer, \"Made by Gareth Heyes\", with the handle @garethheyes, on what is his personal research blog - the same author whose post-header byline is present in ten sibling captures on this blog and who is already credited for a 2010 entry here. Recorded with that caveat. "
+  },
+  "https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/03/20/html5-xss": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/05/08/opera-xss-vectors": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/06/01/new-phpids-vector": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/11/23/bypassing-csp-for-fun-no-profit": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries the post's own byline in the header, immediately after the post date: an HTML comment reading \"by Gareth Heyes\". The site footer independently reads \"Made by Gareth Heyes\" with the handle @garethheyes, and a sibling entry on this blog in the 2010 collection is credited from the same byline. "
+  },
+  "https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. This capture is the 2026 Next.js rebuild, in which the post header byline no longer appears; the credit rests on the site footer, \"Made by Gareth Heyes\", with the handle @garethheyes, on what is his personal research blog - the same author whose post-header byline is present in ten sibling captures on this blog and who is already credited for a 2010 entry here. Recorded with that caveat. "
+  },
+  "https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. This capture is the 2026 Next.js rebuild, in which the post header byline no longer appears; the credit rests on the site footer, \"Made by Gareth Heyes\", with the handle @garethheyes, on what is his personal research blog - the same author whose post-header byline is present in ten sibling captures on this blog and who is already credited for a 2010 entry here. Recorded with that caveat. "
   },
   "https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all": {
    "authors": [
@@ -3691,6 +3939,30 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the recorded title carried the site masthead, \"Zero Day Initiative — \", and dropped the subtitle. The capture is the right article and its own heading reads \"Exploiting Exchange PowerShell After ProxyNotShell: Part 1 - MultiValuedProperty\", above \"September 05, 2024\" and \"Piotr Bazydło\".",
    "title": "Exploiting Exchange PowerShell After ProxyNotShell: Part 1 - MultiValuedProperty"
+  },
+  "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html": {
+   "authors": [
+    "Aditya K Sood"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a Blogger byline reading \"Posted by Aditya K Sood\". "
+  },
+  "https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html": {
+   "authors": [
+    "Aditya K Sood"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a Blogger byline reading \"Posted by Aditya K Sood\". "
+  },
+  "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html": {
+   "authors": [
+    "Aditya K Sood"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a Blogger byline reading \"Posted by Aditya K Sood\". "
   },
   "https://zeroknock.blogspot.com/2010/08/google-chrome-http-auth-dialog-through.html": {
    "authors": [

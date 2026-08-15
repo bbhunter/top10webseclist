@@ -84,26 +84,3 @@ So, in order to make their page really reflect all the necessary information, I 
 Happy nowruz!
 
  [Comment RSS](http://i8jesus.com/?feed=rss2&p=37) · [TrackBack URI](http://i8jesus.com/wp-trackback.php?p=37)
-
-## recent posts
-
-- [AntiSamy 1.4.1 (finally) released!](http://i8jesus.com/?p=112)
-- [Interesting JForum vulnerabilties and the ESAPI WAF](http://i8jesus.com/?p=102)
-- [ESAPI Web Application Firewall released!](http://i8jesus.com/?p=96)
-- [Projects](http://i8jesus.com/?page_id=93)
-- [Cross-protocol XSS with non-standard service ports](http://i8jesus.com/?p=75)
-- [Slightly improving the “Veiled” darknet](http://i8jesus.com/?p=72)
-- [Content-Disposition is not a security mechanism](http://i8jesus.com/?p=64)
-- [Two SiteMinder Flaws and Painful Disclosure](http://i8jesus.com/?p=55)
-- [Forget sidejacking, clickjacking, and carjacking: enter “Formjacking”](http://i8jesus.com/?p=48)
-- [Browser scheme/slash quirks](http://i8jesus.com/?p=37)
-
-## Showroom
-
-- [OWASP](http://www.owasp.org)
-- [Aspect Security](http://www.aspectsecurity.com)
-- [Bugtraq](http://www.securityfocus.com/archive/1)
-- [gnucitizen](http://gnucitizen.org/)
-- [ha.ckers.org](http://ha.ckers.org/)
-- [jeremiah](http://jeremiahgrossman.blogspot.com/)
-- [tssci](http://tssci-security.com)

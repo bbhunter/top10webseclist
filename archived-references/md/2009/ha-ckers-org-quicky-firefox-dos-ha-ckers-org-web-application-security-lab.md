@@ -77,15 +77,3 @@ Well, it turns out I am speaking at Blackhat after all - plus I have an OWASP pr
  }
 
 I let this run for 10 minutes on a decent sized test machine and it never finished - I had to kill the process. Yeah, I know there are a million ways to DoS browsers, this one was just surprising because I honestly didn’t think it could. Anyway, if I don’t post before then, see you in Vegas!
-
-  This entry was posted on Monday, July 27th, 2009 at 3:43 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

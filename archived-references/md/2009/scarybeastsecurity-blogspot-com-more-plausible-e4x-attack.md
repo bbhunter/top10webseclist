@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html"
     title: A more plausible E4X attack
+    author: Chris Evans
 also_at: []
-authors: []
+authors:
+  - Chris Evans
 canonical_url: ""
 cited_by:
   - "2009.md:55"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # A more plausible E4X attack
 
-**A more plausible E4X attack** - Author not stated, scarybeastsecurity.blogspot.com.
+**A more plausible E4X attack** - Chris Evans, scarybeastsecurity.blogspot.com.
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html>

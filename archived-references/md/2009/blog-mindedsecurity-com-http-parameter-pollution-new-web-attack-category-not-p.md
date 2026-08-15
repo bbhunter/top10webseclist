@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html"
     title: "Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)"
+    author: Stefano Di Paola
   - id: capture
     resource: "https://web.archive.org/web/20090525233937/http://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: ""
 cited_by:
   - "2009.md:6"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)
 
-**Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)** - Author not stated, blog.mindedsecurity.com.
+**Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html>

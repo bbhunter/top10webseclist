@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/06/01/new-phpids-vector/"
     title: New PHPIDS vector
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/06/01/new-phpids-vector"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/06/01/new-phpids-vector"
 cited_by:
   - "2009.md:43"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # New PHPIDS vector
 
-**New PHPIDS vector** - Author not stated, thespanner.co.uk.
+**New PHPIDS vector** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/06/01/new-phpids-vector/>

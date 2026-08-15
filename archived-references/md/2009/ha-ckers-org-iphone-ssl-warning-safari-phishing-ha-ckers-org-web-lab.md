@@ -78,15 +78,3 @@ What you’re seeing is a 1×1 pixel iframe (doesn’t need to be visible, but i
 ![](http://ha.ckers.org/images/safari-ssl-warning.png)
 
 Compare that to the desktop version of Safari, where it at least tells you that it’s related to www.bofa.com. Still not the greatest visual cue but it’s something. Incidentally, during this testing I messed around with some of the old tricks and found out that that Safari still suffers from the old URL obfuscation tricks of ages past. Eg: [http://www.bofa.com@ha.ckers.org/](http://www.bofa.com@ha.ckers.org/). *sigh*
-
-  This entry was posted on Sunday, March 29th, 2009 at 9:33 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

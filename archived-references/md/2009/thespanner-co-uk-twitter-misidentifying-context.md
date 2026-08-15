@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/"
     title: Twitter misidentifying context
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context"
 cited_by:
   - "2009.md:45"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Twitter misidentifying context
 
-**Twitter misidentifying context** - Author not stated, thespanner.co.uk.
+**Twitter misidentifying context** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/>

@@ -86,11 +86,3 @@ http://regex.info/exif.cgi?url=http://site/big_file
 `http://www.slideshare.net/main/bulkweb?fromsource=webupload&url=http://site/big_file&title=test&dwnld_chk=on`
 
 Також цікаве й те, що таким чином можна проводити двонаправлені DoS атаки (bidirectional DoS attacks). Якщо задати викачку таким сервісом декількох великих файлів з одного сайта (це може бути один і той же файл, запущений для паралельної викачки), то це перенавантажить обидва сервери.
-
-This entry was posted on 22:44 20.03.2009 and is filed under [Статті](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2981/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2981/) to post a comment.
-
----

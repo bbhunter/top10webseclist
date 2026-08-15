@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/"
     title: Detecting IE in 12 bytes
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes"
 cited_by:
   - "2009.md:38"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Detecting IE in 12 bytes
 
-**Detecting IE in 12 bytes** - Author not stated, thespanner.co.uk.
+**Detecting IE in 12 bytes** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/>

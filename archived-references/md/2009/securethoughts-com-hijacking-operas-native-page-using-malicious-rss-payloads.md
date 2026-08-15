@@ -83,7 +83,3 @@ If you had tried the simple xss attacks like **<img src=”x:x” javascript”/
 So, here is an example PoC exploit code which executes the **opera.feeds.subscribeNative** function to automatically register a feed in Opera browser without user consent.
 
 **NOTE:** The owners of SecureThoughts.com did not produce this content, nor own the copyright to this content. This content has been reproduced in it’s original form to preserve the knowledge contained within. If you are the original owner of this content and want it attributed to your website or it altered in any way, please complete the contact form and we will edit it immediately.
-
-** Category: [Latest Articles](https://securethoughts.com/latest-articles/)
-
-** Tagged:

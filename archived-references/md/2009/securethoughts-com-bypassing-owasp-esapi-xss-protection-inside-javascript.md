@@ -130,26 +130,3 @@ But, if you are currently using esapi functions inside your javascript code, it 
  If you use the esapi function encodeForJavaScript() inside document.write, it is advised that you change them with other appropriate esapi functions depending on the context where the data is ultimately landing. For example, if you have document.write(“<script>alert(‘XSS’)</script>”), you know the data is landing in html body context, so it is appropriate to use encodeForHTML() wrapper. Using user input inside eval is less common, but more disastrous. The reason for this is you can still begin another command context using , and (space) char and it won’t be encoded by function encodeForHTML(). So, it is better to avoid putting user input inside eval.
 
 Any more suggestions or discussion on fixes is highly welcome.
-
-Share:
-
-[![[del.icio.us]](https://securethoughts.com/wp-content/plugins/bookmarkify/delicious.png)](http://del.icio.us/post?url=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&title=Bypassing OWASP ESAPI XSS Protection inside Javascript) [![[Digg]](https://securethoughts.com/wp-content/plugins/bookmarkify/digg.png)](http://digg.com/submit?phase=2&url=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&title=Bypassing OWASP ESAPI XSS Protection inside Javascript) [![[Facebook]](https://securethoughts.com/wp-content/plugins/bookmarkify/facebook.png)](https://www.facebook.com/share.php?u=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/) [![[Google]](https://securethoughts.com/wp-content/plugins/bookmarkify/google.png)](https://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&title=Bypassing OWASP ESAPI XSS Protection inside Javascript) [![[LinkedIn]](https://securethoughts.com/wp-content/plugins/bookmarkify/linkedin.png)](http://www.linkedin.com/shareArticle?mini=true&url=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&title=Bypassing OWASP ESAPI XSS Protection inside Javascript) [![[Reddit]](https://securethoughts.com/wp-content/plugins/bookmarkify/reddit.png)](http://reddit.com/submit?url=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&title=Bypassing OWASP ESAPI XSS Protection inside Javascript) [![[StumbleUpon]](https://securethoughts.com/wp-content/plugins/bookmarkify/stumbleupon.png)](http://www.stumbleupon.com/submit?url=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&title=Bypassing OWASP ESAPI XSS Protection inside Javascript) [![[Technorati]](https://securethoughts.com/wp-content/plugins/bookmarkify/technorati.png)](http://technorati.com/faves?add=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/) [![[Twitter]](https://securethoughts.com/wp-content/plugins/bookmarkify/twitter.png)](https://twitter.com/home/?status=Bypassing OWASP ESAPI XSS Protection inside Javascript+http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/) [![[Yahoo!]](https://securethoughts.com/wp-content/plugins/bookmarkify/yahoo.png)](http://bookmarks.yahoo.com/toolbar/savebm?opener=tb&u=http://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/&t=Bypassing OWASP ESAPI XSS Protection inside Javascript) [More »](https://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/#bookmarkify)
-
-Tags: [esapi](https://securethoughts.com/tag/esapi/), [Javascript](https://securethoughts.com/tag/javascript/), [owasp](https://securethoughts.com/tag/owasp/), [XSS](https://securethoughts.com/tag/xss/), [xss prevention cheatsheet](https://securethoughts.com/tag/xss-prevention-cheatsheet/)
-
-  This entry was posted on Thursday, August 20th, 2009 at 1:08 am and is filed under [Exploits](https://securethoughts.com/category/exploits/), [Solutions](https://securethoughts.com/category/solutions/), [WebAppSec](https://securethoughts.com/category/webappsec/), [XSS](https://securethoughts.com/category/xss/). You can follow any responses to this entry through the [RSS 2.0](https://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/feed/) feed. You can leave a response, or [trackback](https://securethoughts.com/2009/08/bypassing-owasp-esapi-xss-protection-inside-javascript/trackback/) from your own site.
-
-### Leave a Reply
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
- CAPTCHA Code
-
-![CAPTCHA Image](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show_medium.php?si_form_id=com&sid=30ff265ca8370b31d844368507b11730)[ ![CAPTCHA Audio](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/audio_icon.gif)](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_play.php?si_form_id=com)
-[ ![Refresh Image](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/refresh.gif)]()
-
----

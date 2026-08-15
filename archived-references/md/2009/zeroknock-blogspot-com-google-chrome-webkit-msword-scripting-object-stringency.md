@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html"
     title: Google Chrome/ WebKit - MSWord Scripting Object XSS Payload Execution Bug and Random CLSID Stringency
+    author: Aditya K Sood
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: ""
 cited_by:
   - "2009.md:78"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Google Chrome/ WebKit - MSWord Scripting Object XSS Payload Execution Bug and Random CLSID Stringency
 
-**Google Chrome/ WebKit - MSWord Scripting Object XSS Payload Execution Bug and Random CLSID Stringency** - Author not stated, zeroknock.blogspot.com.
+**Google Chrome/ WebKit - MSWord Scripting Object XSS Payload Execution Bug and Random CLSID Stringency** - Aditya K Sood, zeroknock.blogspot.com.
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html>

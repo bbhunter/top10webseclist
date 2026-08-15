@@ -87,11 +87,3 @@ http://tinyurl.com/hellfire-url
 Існують різні клієнти: Mozilla автоматично зупиняє зациклений редирект (видає Redirect Loop Error), а IE - не зупиняє. Якщо клієнт, що звертається до даних сайтів, сам не зупинить редирект, наприклад бот пошукових систем, то це спричинить велике навантаження на сервери.
 
 Зазначу, що обмеження Mozilla спрацює лише для редиректорів, що видають відповідні серверні заголовки (Location або Refresh). Якщо ж редиректор використовує теги для перенаправлення (meta-refresh або JS), то це обмеження браузера не спрацює.
-
-This entry was posted on 22:48 05.02.2009 and is filed under [Статті](http://websecurity.com.ua/category/articles/), [Дослідження](http://websecurity.com.ua/category/researches/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2854/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2854/) to post a comment.
-
----

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report/"
     title: The Month of Facebook Bugs Report
+    author: theharmonyguy
   - id: canonical
     resource: "https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebook-bugs-report/"
 also_at: []
-authors: []
+authors:
+  - theharmonyguy
 canonical_url: "https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebook-bugs-report/"
 cited_by:
   - "2009.md:89"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # The Month of Facebook Bugs Report
 
-**The Month of Facebook Bugs Report** - Author not stated, theharmonyguy.com.
+**The Month of Facebook Bugs Report** - theharmonyguy, theharmonyguy.com.
 
 - Published: date not stated
 - Original: <http://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report/>

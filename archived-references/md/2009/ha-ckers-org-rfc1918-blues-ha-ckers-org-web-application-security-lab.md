@@ -92,13 +92,3 @@ also, has the feasibility of altering routes in the middle of a VPN session been
 but anyway, how can the evil admin use those stolen credentials if they are firewalled out? forcing a collision in the other direction and having him act as your confused deputy?
 
 it always seemed to me that accepting routes from someone indicates complete trust, and i think everything here validates that. i don’t think you’d disagree - i’d stick with some browser exploit after some enticing the corporate employee with pictures of anna faris.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

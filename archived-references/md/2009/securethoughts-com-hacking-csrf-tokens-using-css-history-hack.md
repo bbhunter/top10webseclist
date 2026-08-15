@@ -111,7 +111,3 @@ For making this attack unfeasible,
 And last, but not the least, XSS obliterates all the CSRF protections possible. So, get rid of XSS first.
 
 I would like to thank [Jeremiah](https://jeremiahgrossman.blogspot.com/) for providing his insightful feedback on this post.
-
-** Category: [Latest Articles](https://securethoughts.com/latest-articles/)
-
-** Tagged:

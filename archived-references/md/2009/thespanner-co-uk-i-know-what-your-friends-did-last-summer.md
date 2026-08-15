@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer/"
     title: I know what your friends did last summer
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer"
 cited_by:
   - "2009.md:37"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # I know what your friends did last summer
 
-**I know what your friends did last summer** - Author not stated, thespanner.co.uk.
+**I know what your friends did last summer** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer/>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/bypassing-csp-for-fun-no-profit/"
     title: Bypassing CSP for fun, no profit
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/11/23/bypassing-csp-for-fun-no-profit"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/11/23/bypassing-csp-for-fun-no-profit"
 cited_by:
   - "2009.md:44"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Bypassing CSP for fun, no profit
 
-**Bypassing CSP for fun, no profit** - Author not stated, thespanner.co.uk.
+**Bypassing CSP for fun, no profit** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/bypassing-csp-for-fun-no-profit/>

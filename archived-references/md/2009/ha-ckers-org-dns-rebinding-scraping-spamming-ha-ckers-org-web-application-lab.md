@@ -74,15 +74,3 @@ Okay, last post about DNS Rebinding and then I’ll (probably) shut up about it 
 [David Ross had a good post](http://blogs.msdn.com/dross/archive/2009/11/17/current-thoughts-on-dns-rebinding.aspx) about how another practical defense against DNS Rebinding is using SSL/TLS, but since Google has opted not to secure their search engine, it becomes possible to use DNS Rebinding for its next logical use. Google hasn’t even fixed [their other SSL/TLS woes](http://www.wired.com/threatlevel/2009/06/google_ssl/) so there’s pretty much no chance they’re going to secure the search engine any time soon. So **DNS Rebinding gives the attacker IP diversity**. An attacker can use DNS Rebinding to get other people to rip tons of information from Google without Google being able to block the real attacker. Since sites like Google do not respect the host header and they don’t use SSL/TLS an attacker can scrape information from these sites all they want - all the while using other people’s browsers. Now think comment spamming, polling fraud, brute force, and on and on… All of these become extremely easy and practical by burning other people’s IP addresses, instead of the attacker’s/spammer’s. Yes, DNS Rebinding is nasty, and unless the browser companies do something or every attacked web server on earth starts respecting the host header and/or using SSL/TLS it’s a problem that’s here to stay.
 
 I know a lot of people think this is a complicated technique, but it’s really not that hard. It just requires some JavaScript (similar to [BeEF](http://www.bindshell.net/tools/beef/) or [XSS Shell](http://ferruh.mavituna.com/article/?1338)), a place to log data to log whatever the user saw when the attacker forced them to perform the action, a hacked up DNS server (like the [simple DNS Rebinding server sample](http://ha.ckers.org/blog/20090706/sample-dns-rebinding-code/)), a domain, a Firewall that is somehow linked to the attacker/spammer application and some Internet traffic to abuse. None of these things are out of reach for a decently skilled attacker. Anyway, I doubt it’s getting fixed anytime soon, which means DNS Rebinding essentially allows nearly free reign for attackers and spammers for the foreseeable future - and no one appears to be doing anything about it.
-
-  This entry was posted on Wednesday, November 18th, 2009 at 9:18 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [CAPTCHA](http://ha.ckers.org/blog/category/webappsec/captcha/), [SEO/SEM](http://ha.ckers.org/blog/category/seo-sem/), [spam](http://ha.ckers.org/blog/category/spam/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

@@ -80,11 +80,3 @@ _The source's own words. An English translation of this document is archived bes
 Тобто потрібно буде перевірити перелік логінів за допомогою функції Check Availability й відібрати ті з них, для яких відповідь буде “Username unavailable”. І створити список робочих логінів.
 
 У випадку якщо дана функція немає захисту від автоматизованих атак (тобто має місце Insufficient Anti-automation уразливість), як це є у більшості випадків, це дозволяє проводити автоматизоване виявлення логінів в системі. Що може бути зроблено за допомогою брутфорсерів логінів, наприклад, моєї програми Brute force login identifier. В подальшому виявлені логіни можуть бути використані для визначення паролів користувачів сайта.
-
-This entry was posted on 22:46 30.01.2009 and is filed under [Статті](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2840/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2840/) to post a comment.
-
----

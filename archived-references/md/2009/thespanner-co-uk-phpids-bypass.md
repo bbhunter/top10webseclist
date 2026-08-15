@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/04/phpids-bypass/"
     title: PHPIDS bypass
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2009/01/04/phpids-bypass"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2009/01/04/phpids-bypass"
 cited_by:
   - "2009.md:36"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # PHPIDS bypass
 
-**PHPIDS bypass** - Author not stated, thespanner.co.uk.
+**PHPIDS bypass** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/04/phpids-bypass/>

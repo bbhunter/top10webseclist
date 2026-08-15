@@ -70,11 +70,3 @@ Jeremiah Grossman: Detecting Private Browsing Mode
  I shared the original concept with [Collin Jackson](http://www.collinjackson.com/) who developed the [proof-of-concept code](http://crypto.stanford.edu/%7Ecollinj/research/incognito/). The basic idea is one might want know if a Web user is in the Private Browsing mode in Safari and Firefox, the Incognito mode in Google Chrome, or the InPrivate mode for Internet Explorer 8. The way it works is by having someone visit a unique (never before seen) URL and then checking to see whether a link to that URL is treated as visited by CSS (standard [color history hack](http://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html)). And if they haven't, then you know some privacy feature is actively blocking.
 
 Definitely not anything super serious, but worth putting out there in case someone might have further ideas.
-
-  [Newer Post](https://blog.jeremiahgrossman.com/2009/03/quick-wins-and-web-application-security.html)   [Older Post](https://blog.jeremiahgrossman.com/2009/03/web-security-readers-digest.html)  [Home](https://blog.jeremiahgrossman.com/)
-
- Subscribe to: [Post Comments (Atom)](https://blog.jeremiahgrossman.com/feeds/6291818475471416487/comments/default)
-
-## BIO
-
- Jeremiah Grossman brings 20+ years of experience in Computer Security and has become one of the most recognizable and world-renowned cybersecurity experts in the industry, coining several of the original hacking terms commonly used around the world today. Early in his career, Jeremiah was known as “The Hacker Yahoo” which led to his role as the company’s Information Security Officer. Jeremiah founded WhiteHat Security (now Synopsis), and served as Chief of Security Strategy for SentinelOne which was the highest-valued cybersecurity IPO in history. Most recently, Jeremiah was the founder & CEO of Bit Discovery, which was acquired by Tenable in 2022. He also serves as a company advisor and board member to several tech startups. In his spare time, Jeremiah does Brazilian Jiu-Jitsu and is passionate about classic cars. He recently opened Toybox, a luxury car club in Boise, Idaho.

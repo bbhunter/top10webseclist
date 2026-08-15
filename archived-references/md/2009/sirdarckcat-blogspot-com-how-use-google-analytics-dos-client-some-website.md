@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html"
     title: How to use Google Analytics to DoS a client from some website.
+    author: sirdarckcat
 also_at: []
-authors: []
+authors:
+  - sirdarckcat
 canonical_url: ""
 cited_by:
   - "2009.md:34"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # How to use Google Analytics to DoS a client from some website.
 
-**How to use Google Analytics to DoS a client from some website.** - Author not stated, sirdarckcat.blogspot.com.
+**How to use Google Analytics to DoS a client from some website.** - sirdarckcat, sirdarckcat.blogspot.com.
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html>

@@ -81,11 +81,3 @@ If you enter the username being checked in the Username field of the registratio
 Thus, you need to check a list of usernames using the Check Availability feature and select those for which the response is “Username unavailable.” You can then create a list of valid usernames.
 
 If this feature has no protection against automated attacks (that is, if there is an Insufficient Anti-automation vulnerability), as is the case most of the time, it allows automated discovery of usernames in the system. This can be done using username brute-forcers, for example, my Brute force login identifier program. The usernames discovered can subsequently be used to determine the passwords of the website's users.
-
-This entry was posted on 22:46 30.01.2009 and is filed under [Articles](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2840/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2840/) to post a comment.
-
----

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/"
     title: Pwning Opera Unite with Inferno’s Eleven
+    author: Inferno
   - id: canonical
     resource: "https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/"
 also_at: []
-authors: []
+authors:
+  - Inferno
 canonical_url: "https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/"
 cited_by:
   - "2009.md:66"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Pwning Opera Unite with Inferno’s Eleven
 
-**Pwning Opera Unite with Inferno’s Eleven** - Author not stated, securethoughts.com.
+**Pwning Opera Unite with Inferno’s Eleven** - Inferno, securethoughts.com.
 
 - Published: date not stated
 - Original: <http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/>
@@ -197,26 +199,3 @@ Content-Type: text/html; '>
 
 4. CSRF-ing File Upload Fields – Kuza55
  [http://kuza55.blogspot.com/2008/02/csrf-ing-file-upload-fields.html](https://kuza55.blogspot.com/2008/02/csrf-ing-file-upload-fields.html)
-
-Share:
-
-[![[del.icio.us]](https://securethoughts.com/wp-content/plugins/bookmarkify/delicious.png)](http://del.icio.us/post?url=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&title=Pwning Opera Unite with Inferno’s Eleven) [![[Digg]](https://securethoughts.com/wp-content/plugins/bookmarkify/digg.png)](http://digg.com/submit?phase=2&url=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&title=Pwning Opera Unite with Inferno’s Eleven) [![[Facebook]](https://securethoughts.com/wp-content/plugins/bookmarkify/facebook.png)](https://www.facebook.com/share.php?u=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/) [![[Google]](https://securethoughts.com/wp-content/plugins/bookmarkify/google.png)](https://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&title=Pwning Opera Unite with Inferno’s Eleven) [![[LinkedIn]](https://securethoughts.com/wp-content/plugins/bookmarkify/linkedin.png)](http://www.linkedin.com/shareArticle?mini=true&url=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&title=Pwning Opera Unite with Inferno’s Eleven) [![[Reddit]](https://securethoughts.com/wp-content/plugins/bookmarkify/reddit.png)](http://reddit.com/submit?url=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&title=Pwning Opera Unite with Inferno’s Eleven) [![[StumbleUpon]](https://securethoughts.com/wp-content/plugins/bookmarkify/stumbleupon.png)](http://www.stumbleupon.com/submit?url=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&title=Pwning Opera Unite with Inferno’s Eleven) [![[Technorati]](https://securethoughts.com/wp-content/plugins/bookmarkify/technorati.png)](http://technorati.com/faves?add=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/) [![[Twitter]](https://securethoughts.com/wp-content/plugins/bookmarkify/twitter.png)](https://twitter.com/home/?status=Pwning Opera Unite with Inferno’s Eleven+http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/) [![[Yahoo!]](https://securethoughts.com/wp-content/plugins/bookmarkify/yahoo.png)](http://bookmarks.yahoo.com/toolbar/savebm?opener=tb&u=http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/&t=Pwning Opera Unite with Inferno’s Eleven) [More »](https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/#bookmarkify)
-
-Tags: [Clickjacking](https://securethoughts.com/tag/clickjacking/), [Cross Site Request Forgery](https://securethoughts.com/tag/cross-site-request-forgery/), [Cross Site Scripting](https://securethoughts.com/tag/cross-site-scripting/), [Opera](https://securethoughts.com/tag/opera/), [Opera Unite](https://securethoughts.com/tag/opera-unite/), [Phishing](https://securethoughts.com/tag/phishing/)
-
-  This entry was posted on Monday, August 31st, 2009 at 11:24 pm and is filed under [Auth(entication/orization)](https://securethoughts.com/category/authentication-and-authorization/), [Browsers](https://securethoughts.com/category/browsers/), [Brute Force](https://securethoughts.com/category/brute-force/), [CSRF](https://securethoughts.com/category/csrf/), [Exploits](https://securethoughts.com/category/exploits/), [Flash](https://securethoughts.com/category/flash/), [Information Gathering](https://securethoughts.com/category/information-gathering/), [Phishing](https://securethoughts.com/category/phishing/), [WebAppSec](https://securethoughts.com/category/webappsec/), [XSS](https://securethoughts.com/category/xss/). You can follow any responses to this entry through the [RSS 2.0](https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/feed/) feed. You can leave a response, or [trackback](https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/trackback/) from your own site.
-
-### Leave a Reply
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
- CAPTCHA Code
-
-![CAPTCHA Image](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show_medium.php?si_form_id=com&sid=847cf9dafcc05c2fe0fa9859c5a52216)[ ![CAPTCHA Audio](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/audio_icon.gif)](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_play.php?si_form_id=com)
-[ ![Refresh Image](https://securethoughts.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/refresh.gif)]()
-
----
