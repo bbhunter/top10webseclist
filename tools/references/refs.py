@@ -177,11 +177,51 @@ def _carry_preserved_facts(record, entry):
 
     Only fills what the record LACKS. A fetch that found a fact still wins, so
     this cannot pin a stale value on a page that corrected itself.
+
+    The DIGEST is carried the same way and for the same reason: a fetch never
+    produces one, so without this a re-acquire republishes the document with no
+    `description` and with its research tags stripped back to the format
+    labels. That is silent - the summary is still in the manifest, and only the
+    published file loses it.
+
+    A digest is carried only while it still describes the bytes on disk. Its
+    `of` records the `content_sha256` it was written from, so when a re-fetch
+    brings NEW content the old summary is dropped rather than published over
+    it, and `digest --queue` lists the reference for a fresh reading.
     """
     for field in ("licence", "publisher", "published", "language", "authors"):
         if entry.get(field) and not record.get(field):
             record[field] = entry[field]
+    digest = entry.get("digest") or {}
+    if digest.get("text") and not record.get("digest"):
+        if digest.get("of") == record.get("content_sha256"):
+            record["digest"] = digest
     return record
+
+
+def _gap_after_acquire(entry, record, previous_raw):
+    """The content gap to keep once an acquire has run.
+
+    The gap MIRRORS the record rather than only overwriting when non-empty.
+    Copying it on truthiness meant a gap could be recorded but never cleared:
+    three slide decks kept "we only have a page about it" after the run that
+    proved the page carries the deck.
+
+    EXCEPT when the fetch brought back the bytes we already had. A hand-filed
+    "faulty capture:" is a maintainer's judgement that acquisition cannot make
+    for itself, and identical bytes prove the run changed nothing - so clearing
+    the report there erases a fault that is still true, and drops the reference
+    off document-gaps.md where nobody will see it again.
+
+    Found on the CRLF-desync teaser: `acquire --force --refetch` re-fetched the
+    same page, reported "stored", and wiped the report saying the page is the
+    pre-talk teaser rather than the write-up.
+    """
+    filed_by_hand = (entry.get("content_gap") or "").startswith("faulty capture:")
+    bytes_unchanged = bool(previous_raw) and previous_raw == record.get("raw_sha256")
+    if filed_by_hand and bytes_unchanged:
+        return entry["content_gap"]
+    return record.get("content_gap") or ""
 
 
 def _slug_after_attribution(entry, judged):
@@ -874,15 +914,12 @@ def command_acquire(args):
             if judged and judged.get("class") in grade_module.FOLDERS:
                 entry["grade"] = record["grade"] = judged["class"]
                 entry["decision"] = dict(judged, by="maintainer", at=manifest_utc()[:10])
+            previous_raw = entry.get("raw_sha256") or ""
             for field in ("raw_sha256", "content_sha256", "licence", "publisher",
                           "published", "authors", "language", "commit"):
                 if record.get(field):
                     entry[field] = record[field]
-            # The gap MIRRORS the record rather than only overwriting when
-            # non-empty. Copying it on truthiness meant a gap could be recorded
-            # but never cleared: three slide decks kept "we only have a page
-            # about it" after the run that proved the page carries the deck.
-            entry["content_gap"] = record.get("content_gap") or ""
+            entry["content_gap"] = _gap_after_acquire(entry, record, previous_raw)
             if args.replace_imports and ((entry.get("steps") or {}).get("import") or {}) \
                     .get("result") == "stored":
                 # The hand-imported copy is gone, so the marker that protects it

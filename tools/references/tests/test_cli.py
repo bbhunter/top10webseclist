@@ -103,6 +103,49 @@ class RecoverySelectorTests(unittest.TestCase):
         # a fact the fetch DID find still wins
         self.assertEqual("nccgroup.com", record["publisher"])
 
+    def test_refetching_the_same_bytes_keeps_the_filed_fault(self):
+        """Identical bytes prove the run fixed nothing, so the report stands."""
+        entry = {"content_gap": "faulty capture: this is the teaser; re-acquire",
+                 "raw_sha256": "same"}
+        record = {"raw_sha256": "same", "content_gap": ""}
+        self.assertEqual("faulty capture: this is the teaser; re-acquire",
+                         refs._gap_after_acquire(entry, record, "same"))
+
+    def test_a_fetch_that_brought_new_bytes_can_clear_the_gap(self):
+        """The original behaviour survives: a gap must still be clearable."""
+        entry = {"content_gap": "faulty capture: this is the teaser; re-acquire",
+                 "raw_sha256": "fresh"}
+        record = {"raw_sha256": "fresh", "content_gap": ""}
+        self.assertEqual("", refs._gap_after_acquire(entry, record, "stale"))
+
+    def test_a_gap_the_run_itself_found_is_still_recorded(self):
+        entry = {"content_gap": "", "raw_sha256": "same"}
+        record = {"raw_sha256": "same", "content_gap": "we only have a page about it"}
+        self.assertEqual("we only have a page about it",
+                         refs._gap_after_acquire(entry, record, "same"))
+
+    def test_a_rerender_keeps_the_summary_the_manifest_still_holds(self):
+        """A re-acquire must not republish the document with no description.
+
+        A fetch never produces a digest, so before this the re-render dropped
+        `description` and every research tag from the published file while the
+        summary sat untouched in the manifest.
+        """
+        digest = {"text": "A summary.", "tags": ["desync"],
+                  "of": "abc123"}
+        entry = {"digest": digest}
+        record = {"content_sha256": "abc123"}
+        refs._carry_preserved_facts(record, entry)
+        self.assertEqual(digest, record["digest"])
+
+    def test_a_summary_written_from_other_bytes_is_not_carried(self):
+        """New content must not inherit the old content's summary."""
+        entry = {"digest": {"text": "Describes the OLD page.", "tags": ["xss"],
+                            "of": "old-sha"}}
+        record = {"content_sha256": "new-sha"}
+        refs._carry_preserved_facts(record, entry)
+        self.assertNotIn("digest", record)
+
     def test_a_stated_byline_reaches_both_the_entry_and_the_rendered_record(self):
         entry, record = {"authors": []}, {"authors": []}
         applied = refs._apply_attribution_override(
