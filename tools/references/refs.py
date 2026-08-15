@@ -2545,8 +2545,27 @@ def _accept_byline(url, reading, known, accept="high"):
     return ""
 
 
-DIGEST_MAX = 400
-DIGEST_TAGS_MIN = 4
+# AIM for 400 and REFUSE at 500, rather than truncating at 400. The corpus
+# writes to this length naturally - median 357, ninetieth percentile 389 - so
+# 400 is a real target, but 26 summaries overshot it by a few dozen characters
+# and cutting them at the last sentence break under 400 deleted the FINDING:
+# "...so a link to any site's own PDF makes the plugin issue attacker-chosen
+# requests" survived while "that yields universal CSRF across Firefox, IE and
+# Opera" did not. A ceiling that removes the result to satisfy a round number
+# is the damage this function exists to prevent, so the hard limit sits where
+# only a genuinely rambling summary meets it.
+DIGEST_WANT = 400
+DIGEST_MAX = 500
+_SENTENCE_END = re.compile(r'[.!?](?=\s+["“(]?[A-Z0-9]|\s*$)')
+# 4 to 10 is the GUIDANCE, and a review that comes back under it is worth
+# looking at. It is not the rule, because 20 documents in this archive are
+# honestly served by fewer: the annual list page is `survey` and nothing else,
+# and the DNS-rebinding paper is `dns-rebinding, same-origin-policy` - complete
+# at two. Refusing those would buy a threshold by padding the vocabulary with
+# tags that do not apply, which is the one thing a controlled vocabulary cannot
+# afford. So: warn below WANT, refuse only an empty or overstuffed set.
+DIGEST_TAGS_WANT = 4
+DIGEST_TAGS_MIN = 1
 DIGEST_TAGS_MAX = 10
 
 
@@ -2619,11 +2638,27 @@ def _trim_to_sentence(text, limit=DIGEST_MAX):
     text = html.unescape(" ".join(str(text or "").split()))
     if len(text) <= limit:
         return text
-    # SEARCH WITHIN `limit`, NOT `limit + 1`. The slice keeps the full stop
-    # itself, so a break found AT the limit returns limit + 1 characters - one
-    # over the ceiling this function exists to enforce.
-    cut = text.rfind(".", 0, limit)
+    # A FULL STOP IS NOT A SENTENCE END. Matching a bare "." cut one summary at
+    # "Node.js" and another at ".NET", leaving "Characters that Node." and
+    # "...trusted from KeyInfo, and ." - the naive-rule damage this whole
+    # archive is a catalogue of. A sentence ends where a stop is FOLLOWED BY
+    # WHITESPACE AND A CAPITAL, or ends the text; "Node.js", ".NET" and "2.0"
+    # all fail that and are passed over.
+    #
+    # SEARCH WITHIN `limit`, NOT `limit + 1`: the slice keeps the stop itself,
+    # so a break found AT the limit returns one character over the ceiling.
+    cut = -1
+    for match in _SENTENCE_END.finditer(text, 0, limit):
+        cut = match.start()
     if cut <= 0:
+        return ""
+    # A CUT THAT KEEPS ALMOST NOTHING IS NOT A TRIM. Two summaries here open
+    # with a short sentence and then run 480 characters of semicolon-chained
+    # clauses to the end, so the only clean break sits at 63 of 546 characters
+    # and "trimming" them would publish the opening line and delete every
+    # finding. That summary needs rewriting into sentences, which is a person's
+    # job, so refuse and let the caller say so.
+    if cut + 1 < limit * 0.6:
         return ""
     return text[:cut + 1].strip()
 
@@ -2655,7 +2690,7 @@ def _accept_digest(url, reading, known, vocabulary):
         return ("not in the vocabulary, and not marked as a proposal: "
                 + ", ".join(sorted(unknown)[:4]), "", [], proposals)
     if not DIGEST_TAGS_MIN <= len(tags) <= DIGEST_TAGS_MAX:
-        return ("%d tag(s) after stripping proposals; want %d to %d"
+        return ("%d tag(s) after stripping proposals; need %d to %d"
                 % (len(tags), DIGEST_TAGS_MIN, DIGEST_TAGS_MAX), "", [], proposals)
     return "", text, tags, proposals
 
@@ -2707,7 +2742,7 @@ def command_digest(args):
     known = manifest.data["urls"]
 
     taken = refused = 0
-    trimmed, proposed = [], {}
+    trimmed, proposed, thin, longer = [], {}, [], []
     for url, reading in sorted(readings.items()):
         before = len(" ".join(str((reading or {}).get("text") or "").split()))
         reason, text, tags, proposals = _accept_digest(url, reading or {},
@@ -2720,6 +2755,10 @@ def command_digest(args):
             continue
         if before > len(text):
             trimmed.append((known[url].get("slug") or url, before, len(text)))
+        if len(tags) < DIGEST_TAGS_WANT:
+            thin.append((known[url].get("slug") or url, len(tags)))
+        if len(text) > DIGEST_WANT:
+            longer.append((known[url].get("slug") or url, len(text)))
         if not args.check:
             known[url]["digest"] = {
                 "text": text,
@@ -2732,6 +2771,13 @@ def command_digest(args):
 
     for slug, before, after in trimmed:
         print("  TRIMMED  %-52s %d -> %d" % (str(slug)[:52], before, after))
+    for slug, count in thin:
+        print("  THIN     %-52s %d tag(s), under the %d we aim for - fine if "
+              "the document really is that narrow"
+              % (str(slug)[:52], count, DIGEST_TAGS_WANT))
+    for slug, size in longer:
+        print("  LONG     %-52s %d characters, over the %d we aim for"
+              % (str(slug)[:52], size, DIGEST_WANT))
     if proposed:
         print("\nHeld tag proposal(s), stripped and never published: "
               + ", ".join("%s (x%d)" % (tag, count)

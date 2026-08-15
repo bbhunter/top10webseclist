@@ -490,15 +490,19 @@ Do this AFTER the repairs, not before. A summary records `of`, the content hash
 it was written from, so one written before a tail cut or a re-render is stale
 the moment the fix lands and `--queue` will offer the document again.
 
-**The summary is what the source found and how, in at most 400 characters** -
+**The summary is what the source found and how, aiming at 400 characters** -
 the mechanism, two or three sentences. Write it from the document, not from the
 citation's link text, and not from the abstract alone if the body contradicts
 it. Do not appraise the research and do not describe the archive's copy of it:
-faults belong in `content_gap`, not here. `--apply` cuts an over-long summary at
-a sentence end and refuses one it cannot cut cleanly.
+faults belong in `content_gap`, not here. `--apply` refuses above 500 and
+reports anything over the aim; it will not truncate a rambling summary into a
+fragment, because doing that once kept an opening line and deleted the four
+findings beneath it. Rewrite such a summary into sentences instead.
 
-**Tags come from `archived-references/tag-vocabulary.md`, 4 to 10 per
-document.** A word that file does not have is a PROPOSAL: write it `?like-this`.
+**Tags come from `archived-references/tag-vocabulary.md`, aiming at 4 to 10 per
+document** - aiming, because a genuinely narrow document is better served by two
+than padded up to a threshold with tags that do not apply. A word that file does
+not have is a PROPOSAL: write it `?like-this`.
 Proposals are reported and stripped and never reach a published file; an unknown
 tag NOT marked as a proposal is refused outright, and adding it to the
 vocabulary file to get past that defeats the only control there is. Hold the

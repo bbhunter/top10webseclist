@@ -359,5 +359,109 @@ class RecoverySelectorTests(unittest.TestCase):
             self.assertFalse(refs._clear_completed_pdf_gap(missing, not_pdf))
 
 
+class DigestSummaryTests(unittest.TestCase):
+    """The rules a summary must satisfy, and the ways trimming has gone wrong."""
+
+    def test_keeps_a_summary_that_fits(self):
+        text = "One sentence. And a second one."
+        self.assertEqual(refs._trim_to_sentence(text), text)
+
+    def test_collapses_whitespace_and_decodes_entities_once(self):
+        # A reviewer quoting a payload writes it the way they read it in the page.
+        self.assertEqual(refs._trim_to_sentence("a\n\n  &lt;script&gt; b."),
+                         "a <script> b.")
+        # ONE pass, so a summary ABOUT an entity keeps the entity it names.
+        self.assertEqual(refs._trim_to_sentence("So &amp;apos; terminates it."),
+                         "So &apos; terminates it.")
+
+    def test_never_cuts_inside_an_abbreviation(self):
+        """Cutting on a bare "." left "Characters that Node." and "and .NET".
+
+        The real sentence end is early; the abbreviation's stop sits later but
+        still under the ceiling, so a naive rule prefers it and mutilates the
+        summary. Each case asserts the cut landed on the sentence, not the
+        abbreviation.
+        """
+        opener = "A first sentence, padded out so the kept text clears the "
+        opener += "sixty-percent guard comfortably. " + "Padding words here. " * 12
+        self.assertGreater(len(opener), refs.DIGEST_MAX * 0.6)
+        for token in ("Node.js", ".NET", "2.0"):
+            text = opener + "Then %s appears mid clause and runs on" % token
+            text += " and on" * 40
+            kept = refs._trim_to_sentence(text)
+            self.assertTrue(kept.endswith("Padding words here."), kept[-45:])
+            for bad in ("Node.", "n .", "2."):
+                self.assertFalse(kept.endswith(bad), (token, kept[-45:]))
+
+    def test_refuses_rather_than_mutilating(self):
+        # A short opener followed by one enormous clause chain is a summary that
+        # needs rewriting, not one that needs cutting.
+        self.assertEqual(refs._trim_to_sentence("Short opener. " + "x" * 900), "")
+        self.assertEqual(refs._trim_to_sentence("x" * 900), "")
+
+    def test_stays_within_the_ceiling(self):
+        text = "%s. %s." % ("Aa" * 150, "Bb" * 150)
+        kept = refs._trim_to_sentence(text)
+        self.assertLessEqual(len(kept), refs.DIGEST_MAX)
+
+
+class DigestAcceptTests(unittest.TestCase):
+    KNOWN = {"https://example.test/a": {"slug": "a", "content_sha256": "d" * 64}}
+    VOCAB = {name: 9 for name in
+             ("xss", "csrf", "javascript", "info-leak", "dns", "tls", "cookie",
+              "flash", "java", "php", "waf-bypass", "tooling")}
+
+    def accept(self, **reading):
+        return refs._accept_digest("https://example.test/a", reading,
+                                   self.KNOWN, self.VOCAB)
+
+    def test_takes_a_good_reading(self):
+        reason, text, tags, proposals = self.accept(
+            text="A finding.", tags=["xss", "csrf", "javascript", "info-leak"])
+        self.assertEqual(reason, "")
+        self.assertEqual(text, "A finding.")
+        self.assertEqual(tags, ["xss", "csrf", "javascript", "info-leak"])
+        self.assertEqual(proposals, [])
+
+    def test_refuses_an_unknown_tag(self):
+        reason, _, _, _ = self.accept(text="A finding.",
+                                      tags=["xss", "not-a-real-tag"])
+        self.assertIn("not in the vocabulary", reason)
+
+    def test_strips_a_proposal_and_reports_it(self):
+        reason, _, tags, proposals = self.accept(text="A finding.",
+                                                 tags=["xss", "?brand-new"])
+        self.assertEqual(reason, "")
+        self.assertEqual(tags, ["xss"])
+        self.assertEqual(proposals, ["brand-new"])
+
+    def test_allows_a_narrow_document_its_one_honest_tag(self):
+        # The annual list page is `survey` and nothing else. Padding it up to a
+        # threshold would put tags on it that do not apply.
+        reason, _, tags, _ = self.accept(text="A finding.", tags=["xss"])
+        self.assertEqual(reason, "")
+        self.assertEqual(tags, ["xss"])
+
+    def test_refuses_no_tags_at_all(self):
+        self.assertIn("tag(s)", self.accept(text="A finding.", tags=[])[0])
+
+    def test_refuses_an_overstuffed_tag_set(self):
+        many = sorted(self.VOCAB)[:refs.DIGEST_TAGS_MAX + 1]
+        self.assertIn("tag(s)", self.accept(text="A finding.", tags=many)[0])
+
+    def test_deduplicates_a_repeated_tag(self):
+        # A repeat is a slip, not a request for a longer list, so it collapses
+        # rather than counting towards the cap.
+        reason, _, tags, _ = self.accept(text="A finding.",
+                                         tags=["xss", "csrf", "xss"])
+        self.assertEqual(reason, "")
+        self.assertEqual(tags, ["xss", "csrf"])
+
+    def test_refuses_a_reference_the_archive_does_not_hold(self):
+        reason, _, _, _ = refs._accept_digest("https://nope.test/", {},
+                                              self.KNOWN, self.VOCAB)
+        self.assertIn("no such reference", reason)
+
+
 if __name__ == "__main__":
     unittest.main()
