@@ -2,7 +2,7 @@
 type: Whitepaper
 title: Hacking the Cloud With SAML
 resource: "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, hexacon-2022]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:02:08+00:00"
@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf"
     title: Hacking the Cloud With SAML
+    author: Felix Wilhelm
 also_at: []
-authors: []
+authors:
+  - Felix Wilhelm
 canonical_url: ""
 cited_by:
   - "2022.md:8"
@@ -26,7 +28,7 @@ language: ""
 licence: unknown
 original_url: "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf"
 published: ""
-publisher: ""
+publisher: Hexacon 2022
 publisher_english: ""
 raw_sha256: e7f62766db7b4349336bed8b52476a47e8d784807dfeb75933868a58bdfbe5b6
 retrieved_from: "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Hacking the Cloud With SAML
 
-**Hacking the Cloud With SAML** - Author not stated, Publisher not stated.
+**Hacking the Cloud With SAML** - Felix Wilhelm, Hexacon 2022.
 
 - Published: date not stated
 - Original: <https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf>

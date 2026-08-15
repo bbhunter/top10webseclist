@@ -308,17 +308,3 @@ Here you go! [https://sec-consult.com/blog/detail/forgot-password-taking-over-us
 [[2]](https://link.springer.com/chapter/10.1007/978-3-319-76481-8_12) Scheffler, Sarah, et al. "The unintended consequences of email spam prevention." International Conference on Passive and Active Network Measurement. Springer, Cham, 2018.
 
 *This research has been performed by Timo Longin and Clemens Stockenreitner and published on behalf of the SEC Consult Vulnerability Lab. *
-
-*SEC Consult is always searching for talented security professionals to work in our team. More information can be found at: [https://www.sec-consult.com/career](https://sec-consult.com/career/)*
-
-####  About the author
-
-![Portrait of Timo Longin SEC Consult](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/Authors/a-TLO.png)
-
-Timo Longin
-SEC Consult
-Senior Security Consultant
-
-Timo Longin (also known as Login) is a senior security consultant at SEC Consult at day and a security researcher at night. Aside from everyday security assessments, he publishes blog posts and security tools, holds talks at conferences and universities, and has a passion for CTFs. As a well-rounded offensive security researcher, he tries to find forgotten and new exploitation techniques that make the unthinkable possible!
-
-[ Back ](https://sec-consult.com/blog/)

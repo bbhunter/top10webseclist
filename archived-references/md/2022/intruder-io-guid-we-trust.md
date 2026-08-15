@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.intruder.io/research/in-guid-we-trust"
     title: In GUID We Trust
+    author: Daniel Thatcher
 also_at: []
-authors: []
+authors:
+  - Daniel Thatcher
 canonical_url: ""
 cited_by:
   - "2022.md:52"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # In GUID We Trust
 
-**In GUID We Trust** - Author not stated, intruder.io.
+**In GUID We Trust** - Daniel Thatcher, intruder.io.
 
 - Published: date not stated
 - Original: <https://www.intruder.io/research/in-guid-we-trust>
@@ -185,17 +187,3 @@ UUID timestamp: 138565316756250001
 This may come in useful in some situations when attacking version 1 GUIDs. You can try generate a GUID you can see and a GUID you can't see within the same millisecond. If the GUID you can see has a 1 added to the timestamp, it is very likely that the GUID you can't see will be the same, but without the 1 added to the timestamp.
 
 I haven't come across a scenario where this approach is required, but if you find one I'd be interested to hear about it. You can find me at [@_danielthatcher](https://twitter.com/_danielthatcher) on Twitter if you'd like to share.
-
-## Other research articles
-
-[![Shadow IT Isn’t Invisible - It’s Expanding Your Attack Surface. Here’s Proof](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/68a5f1dcbfefcd9580f0c30c_Shadow%20IT%20blog%20header.jpg) ### Shadow IT Isn’t Invisible - It’s Expanding Your Attack Surface. Here’s Proof Intruder’s security team used CT log queries to find millions of exposed hosts - then found a wide range of Shadow IT exposures attackers can exploit. See real-world Shadow IT risks and what they mean for your attack surface.](https://www.intruder.io/research/shadow-it-risks)
-
-[![Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701c9830b35ef_smugglers.avif) ### Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond Modern web applications typically rely on chains of multiple servers, which forward HTTP requests to one another. The attack surface created by this forwarding is increasingly receiving more attention, including the recent popularisation of cache poisoning...](https://www.intruder.io/research/practical-http-header-smuggling)
-
-[
-
-![A 0-day vending machine: No Mythos necessary](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/6a2ac91aa5ef310abe055947_0%20Day%20Vending%20Machine_blog%20header.jpg)
-
-### A 0-day vending machine: No Mythos necessary
-
-This post details how we are using LLMs to find novel vulnerabilities using code scanning frameworks alongside pre-Mythos models.

@@ -359,6 +359,3 @@ In this post, we covered the technical details behind a vulnerable variable reso
 We hope that we will succeed in raising the attention of developers to this little-known vulnerability so that they understand the most critical aspects. We also wanted to demonstrate the capabilities of an attacker and how they can exploit side channels such as subtle differences in output, no matter how small.
 
 We want to thank the maintainers of Django for their fast replies, patches, and very efficient vulnerability disclosure process.
-
-- [10 Unknown Security Pitfalls for Python](https://www.sonarsource.com/blog/10-unknown-security-pitfalls-for-python/)
-- [Hack the Stack with LocalStack: Code Vulnerabilities Explained](https://www.sonarsource.com/blog/hack-the-stack-with-localstack/)

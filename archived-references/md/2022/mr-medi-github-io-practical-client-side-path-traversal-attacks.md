@@ -297,15 +297,3 @@ This post is not intended to explain what CSS Injection stands for or how to use
 [Exfiltrate data with CSS](https://www.google.com/search?q=css+injection+exfiltration)
 
 [CSS Injection HackerOne Reports](https://www.google.com/search?q=site%3Ahackerone.com+css+injection)
-
-# See more from me:
-
- [## Contact me Reach out to me if you have any questions, ideas, or if you'd like to work together on a project.](https://mr-medi.github.io/about)
-
- [## How Cross-Site Frame Counting Exposes Private Repositories on GitHub Unveiling the Hidden Risks: How Cross-Site Frame Counting Exposes Private Repositories on GitHub](https://mr-medi.github.io/research/2023/07/31/exploring-cross-site-frame-counting-attacks.html)
-
- [
-
-## Practical Client Side Path Traversal Attacks
-
-Exploring how modern web-applications can be exploited by placing user input into the path of client-side requests and showing a clear pathway to exploit it. Addionally, I explain a case study in Acronis program.

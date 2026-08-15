@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://0xacb.com/2022/11/21/recollapse/"
     title: Till REcollapse
+    author: 0xacb
 also_at: []
-authors: []
+authors:
+  - 0xacb
 canonical_url: ""
 cited_by:
   - "2022.md:32"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Till REcollapse
 
-**Till REcollapse** - Author not stated, 0xacb.com.
+**Till REcollapse** - 0xacb, 0xacb.com.
 
 - Published: date not stated
 - Original: <https://0xacb.com/2022/11/21/recollapse/>

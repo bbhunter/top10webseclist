@@ -75,23 +75,3 @@ Our experiments show that testability tarpits are very common. For instance, an 
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2022-150-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=C1ibCNnl8_8&list=PLfUWWM-POgQtu29CHm6cFg53hvTl2fakQ&index=1)
-
-## View More Papers
-
-### [ NSFuzz: Towards Efficient and State-Aware Network Service Fuzzing ](https://www.ndss-symposium.org/ndss-paper/auto-draft-272/)
-
- Shisong Qin (Tsinghua University), Fan Hu (State Key Laboratory of Mathematical Engineering and Advanced Computing), Bodong Zhao (Tsinghua University), Tingting Yin (Tsinghua University), Chao Zhang (Tsinghua University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-272/)
-
-### [ ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment ](https://www.ndss-symposium.org/ndss-paper/auto-draft-183/)
-
- Wenqi Chen (Tsinghua University), Zhiliang Wang (Tsinghua University), Dongqi Han (Tsinghua University), Chenxin Duan (Tsinghua University), Xia Yin (Tsinghua University), Jiahai Yang (Tsinghua University), Xingang Shi (Tsinghua University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-183/)
-
-### [ First, Fuzz the Mutants ](https://www.ndss-symposium.org/ndss-paper/auto-draft-268/)
-
- Alex Groce (Northern Arizona Univerisity), Goutamkumar Kalburgi (Northern Arizona Univerisity), Claire Le Goues (Carnegie Mellon University), Kush Jain (Carnegie Mellon University), Rahul Gopinath (Saarland University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-268/)

@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-40 reference(s) unresolved. 31 of them already have their raw bytes stored.
+42 reference(s) unresolved. 33 of them already have their raw bytes stored.
 
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
@@ -67,6 +67,14 @@ or fix the route and re-run.
 - Reason: faulty capture: 250 ligature glyphs read as U+FFFD inside words ("Certi<?>cate", "Cloud<?>are", "WHOIS<?>eld"); the 2026-08-14 poppler re-read recovered 59KB of previously missing text but maps this font's fi/ff ligature to a replacement character; needs a different extractor or OCR (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:88`
+
+## https://blog.assetnote.io/2022/10/28/exploiting-static-site-generators/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the document is truncated mid-listing, stopping at " const svgReg = /" right after "As long as the SVG file matches the following regex", so the SVG payload, the Next.js material and the disclosure are absent; re-acquire the article (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2022.md:50`
 
 ## https://blog.pspaul.de/posts/bench-press-leaking-text-nodes-with-css/
 
@@ -128,7 +136,7 @@ or fix the route and re-run.
 
 - Outcome: `broken-capture` (no bytes stored)
 - Kind: article
-- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("classier", "benet", "conguration"); could not be re-read on 2026-08-14 because the stored source bytes are gone and the citation is an IEEE DOI that does not serve the PDF; needs the paper obtained by hand, then import --redo (reported 2026-08-14)
+- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("classier", "benet", "conguration"); ALSO extracted pages 11 and 13 are decoded font bytes rather than text, and one printed page is lost entirely - the paper footers run 8 then jump to 10 and prose resumes mid-argument; could not be re-read because the stored source bytes are gone (raw_sha256 is unset), so re-obtain the IEEE S&P paper PDF and re-import (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:73`
 
@@ -243,6 +251,14 @@ or fix the route and re-run.
 - Reason: faulty capture: HTML entities inside a code listing were decoded, so the article's escapeHtml function now reads as replacing every character with itself and contains the invalid JavaScript token '"""'; re-extract keeping entities inside listings (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:23`
+
+## https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the HTML listing the argument depends on published EMPTY (lines 138-140 are a blank html fence) with a second empty promise at line 146, and none of the three figures the prose calls for were preserved; re-acquire the article (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2022.md:53`
 
 ## https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines
 

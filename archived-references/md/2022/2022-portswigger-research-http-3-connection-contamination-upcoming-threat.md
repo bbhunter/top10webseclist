@@ -127,5 +127,3 @@ This also creates a second risk which isn't related to first-request routing - i
 To avoid these risks before they become a reality, ensure your reverse proxies don't perform first-request routing. You can test for this manually in Repeater by enabling HTTP/1 and HTTP/2 connection reuse, and also scan for it using the 'Connection-State' attack in [HTTP Request Smuggler](https://github.com/PortSwigger/http-request-smuggler). Also, be aware that while wildcard TLS certificates have never been ideal, HTTP/3 means a compromised server with a wildcard certificate can now be used to attack sibling domains without an active MITM.
 
 These new threats continue the ongoing trend of web infrastructure descending into a heavily intertwined mess where a weakness in any individual site has numerous non-obvious knock-on effects on the security of the overall system. It'll be interesting to see how these risks play out in practice.
-
-[Back to all articles](https://portswigger.net/research/articles)

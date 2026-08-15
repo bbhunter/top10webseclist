@@ -206,7 +206,3 @@ We've created a [test case](https://portswigger-labs.net/dom-invader/testcases/a
 DOM Invader can help you find SW injection by manipulating the query string. However, in more complex cases or bug chains, you might want to configure DOM Invader to only show you SW registrations and have a blank canary to see all calls to it. You can do this by going to settings and entering a blank canary, then clicking "update canary". If you only want to see SW registrations, click settings again, then the general settings cog (next to the DOM Invader is on), then scroll down and select none. Then search for serviceWorker.register and enable it, this will then show you all SW registrations. You can also use a [sink callback](https://portswigger.net/burp/documentation/desktop/tools/dom-invader/configuration/general#configuring-callbacks) to look for question marks in the sink value.
 
 To find these types of vulnerabilities yourself you can use the latest release of [Burp Suite, currently available on the early adopter channel](https://portswigger.net/burp/releases/professional-community-2022-12-1). If you do give it a try, and especially if you find any instances of SW injection, please let us know - we'd [love your feedback](https://twitter.com/PortSwiggerRes).
-
- [ service workers ](https://portswigger.net/research/service-workers) [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ DOM Clobbering ](https://portswigger.net/research/dom-clobbering)
-
-[Back to all articles](https://portswigger.net/research/articles)

@@ -112,6 +112,14 @@
    "outcome": "archive",
    "reason": "authors was empty. The author identifies himself inside the exploit narrative - \"`joernchen@*\\00` will ... find **my account**\" - which names the account as his own, so it is a credit read from the document."
   },
+  "https://0xacb.com/2022/11/21/recollapse": {
+   "authors": [
+    "0xacb"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The post signs off at lines 319-320, \"Until next time,\" / \" 0xacb\" - the handle the author publishes the site under, which counts as a credit."
+  },
   "https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -123,6 +131,15 @@
    "outcome": "archive",
    "reason": "This is Timothy D. Morgan's complete official AppSec USA 2013 slide deck, recovered from the conference site's 22 January 2015 Wayback capture and extracted with Dockerized Poppler.",
    "title": "What You Didn't Know About XML External Entity Attacks"
+  },
+  "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf": {
+   "authors": [
+    "Felix Wilhelm"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "publisher": "Hexacon 2022",
+   "reason": "authors was empty and publisher was empty. The deck's own title slide area names both: line 62 \"Felix Wilhelm, Google Project Zero\" and line 63 \"Hexacon 2022\", with the closing slide giving \"@_fel1x        fwilhelm@google.com\". The PDF file stem is NOT a fault here - it matches the real title slide, \"Hacking the Cloud With SAML\"."
   },
   "https://albertofdr.github.io/post/permission-hijacking-2025": {
    "authors": [
@@ -327,6 +344,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (trend-micro-research-news-perspectives). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
    "title": "New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries"
+  },
+  "https://blog.viettelcybersecurity.com/tabshell-owassrf": {
+   "authors": [
+    "@rskvp93"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors held the SAME person twice, as \"@rskvp93\" and \"rskvp93\", so the credit line named him twice over. Reduced to the single handle. Q5Ca and nxhoang99, named under \"# Credits\", are discovery credit rather than authorship and are deliberately not added."
   },
   "https://blogs.adobe.com/psirt/2008/09/clipboard_attack_update.html": {
    "class": "research",
@@ -1016,6 +1041,14 @@
    "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (information-week-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
    "title": "AT&T Hack Highlights Web Site Vulnerabilities"
   },
+  "https://intruder.io/research/in-guid-we-trust": {
+   "authors": [
+    "Daniel Thatcher"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty; the document names Daniel Thatcher as its author."
+  },
   "https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache": {
    "authors": [
     "Jorian Woltjer"
@@ -1034,6 +1067,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Verified against the live article: this is the complete, intentionally short disclosure. It states the IIS path-normalization technique, affected browsers, example URL, and security implications."
+  },
+  "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows": {
+   "authors": [
+    "Frans Rosén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Detectify\", which is the publisher. The article carries his byline at line 73, \"**Frans Rosén**Jul 06, 2022\", introduces him at line 83 - \"Frans Rosén, Security Advisor at Detectify goes through three different scenarios found in the wild below\" - and signs off \"Frans Rosén / Security Advisor, Detectify / @fransrosen\". Detectify stays as the publisher."
   },
   "https://labs.hakaioffsec.com/nginx-alias-traversal": {
    "class": "research",
@@ -1273,6 +1314,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the post carries its byline under the title - a \"[JC](https://github.com/joyeecheung)\" avatar link followed by \"Joyee Cheung\" - and the body confirms it: \"This fix was developed and backported to Node.js LTS branches by [Joyee Cheung](https://github.com/joyeecheung) (Igalia, under the sponsorship of Bloomberg).\" The archive recorded only the project account \"@nodejs\"."
+  },
+  "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution": {
+   "authors": [
+    "Paulos Yibelo"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Administrator\", a WordPress default account and the tenth machine placeholder found in this sweep. The document's own opening line states \"*This is a novel vulnerability research by Paulos Yibelo.*\""
   },
   "https://osec.io/blog/2023-11-01-metamask-snaps": {
    "authors": [
@@ -1709,6 +1758,14 @@
    "outcome": "archive",
    "reason": "The deck recorded the handle GreenDog, which is valid since he publishes under it, alongside \"@speakerdeck\" - the hosting platform's own account, not a person, and the same machine-placeholder class as @wowchemy, Guest Post and the GitHub numeric id. Slide 0 gives the full name: \"How to hack SAML if I have paws? Aleksei \\\"GreenDog\\\" Tiurin\", confirmed on slide 1."
   },
+  "https://synacktiv.com/publications/persistent-php-payloads-in-pngs-how-to-inject-php-code-in-an-image-and-keep-it-there.html": {
+   "authors": [
+    "Quentin Roland"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors held only the company handle \"@Synacktiv\". The translated half of this same document states \"Written by Quentin Roland - 10/10/2022 - in Pentest\". Fifth Synacktiv reference crediting the company over the person."
+  },
   "https://synacktiv.com/publications/php-filter-chains-file-read-from-error-based-oracle": {
    "authors": [
     "Rémi Matasse"
@@ -1716,6 +1773,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors held only the company handle \"@Synacktiv\", which is the publisher, not a person. The byline reads \"Rédigé par Rémi Matasse - 21/03/2023 - dans Pentest\", and the English half of the pair reads \"Written by Rémi Matasse\". Publisher Synacktiv is already recorded."
+  },
+  "https://synacktiv.com/publications/php-filters-chain-what-is-it-and-how-to-use-it.html": {
+   "authors": [
+    "Rémi Matasse"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors held only the company handle \"@Synacktiv\". The byline reads \"Rédigé par Rémi Matasse - 18/10/2022 - dans Pentest\", and the English half reads \"Written by Rémi Matasse\". Same researcher as the 2023 filter-chains reference. Publisher Synacktiv is already recorded."
   },
   "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf": {
    "class": "research",
@@ -2040,6 +2105,14 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "The Script Gadgets video is retained in the 2016-17 list, but the authors' CCS paper is archived from https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf."
+  },
+  "https://youtube.com/watch?v=bhthwXhGZDY": {
+   "authors": [
+    "Dongsung Kim"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded only the uploading channel \"DEFCONConference\", which is a platform account rather than a person. The transcript names the speaker twice: \"Please welcome Dongsung Kim\" and \"My name is Dongsung Kim, I'm an IT Security Expert at Security Office... part of the Truesec Group.\""
   },
   "https://zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks": {
    "class": "research",

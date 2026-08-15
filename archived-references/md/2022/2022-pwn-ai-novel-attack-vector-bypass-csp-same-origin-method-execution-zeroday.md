@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/"
     title: Novel Attack Vector to Bypass CSP Via Same Origin Method Execution (Wordpress Zeroday)
-    author: Administrator
+    author: Paulos Yibelo
     last_modified: 2022-05-29
   - id: canonical
     resource: "https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution"
 also_at: []
 authors:
-  - Administrator
+  - Paulos Yibelo
 canonical_url: "https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution"
 cited_by:
   - "2022.md:53"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Novel Attack Vector to Bypass CSP Via Same Origin Method Execution (Wordpress Zeroday)
 
-**Novel Attack Vector to Bypass CSP Via Same Origin Method Execution (Wordpress Zeroday)** - Administrator, PWN.AI.
+**Novel Attack Vector to Bypass CSP Via Same Origin Method Execution (Wordpress Zeroday)** - Paulos Yibelo, PWN.AI.
 
 - Published: 2022-05-29
 - Original: <https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/>

@@ -523,7 +523,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron (Slides)](md/2022/electrovolt-pwning-popular-desktop-apps-while-uncovering-new-attack-slides.md) | whitepaper |  |  | research | 1 |
 | [Exploiting Inter-Process Communication in SAP's HTTP Server](md/2022/exploiting-inter-process-communication-sap-s-http-server.md) | whitepaper |  |  | research | 1 |
 | [FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies](md/2022/frameshifter-security-implications-http-2-http-1-conversion-anomalies.md) | whitepaper |  |  | research | 1 |
-| [Hacking the Cloud With SAML](md/2022/hacking-cloud-saml.md) | whitepaper |  |  | research | 1 |
+| [Hacking the Cloud With SAML](md/2022/hacking-cloud-saml.md) | whitepaper | Hexacon 2022 |  | research | 1 |
 | [Port Contention Goes Portable: Port Contention Side Channels in Web Browsers](md/2022/port-contention-goes-portable-port-contention-side-channels-web-browsers.md) | whitepaper |  |  | research | 1 |
 
 ## 2021 (53)

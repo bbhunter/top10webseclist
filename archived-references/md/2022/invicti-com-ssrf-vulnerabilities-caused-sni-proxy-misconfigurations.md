@@ -154,13 +154,3 @@ As a direction for further research, I can suggest a couple of things to think a
 ## Avoiding SNI proxy vulnerabilities
 
 Whenever you configure a reverse proxy, you should be aware that any misconfigurations may potentially lead to SSRF vulnerabilities that expose backend systems to attack. The same applies to SNI proxies, especially as they are gaining popularity in large-scale production systems. In general, to avoid vulnerabilities when configuring a reverse proxy, you should understand what data could be controlled by an attacker and avoid using it directly in an insecure way.
-
-Text Link
-
-Text Link
-
-Prove vulnerabilities, remediate faster with Invicti
-
-## Experience the future of AppSec
-
-[

@@ -269,8 +269,3 @@ If some WAF block you at /admin/index.aspx, you can access at /a583524842/index.
 However, this attack vector didn't work anymore because Microsoft patched it in [CVE-2020-1476](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1476)
 
 Here is the advisory: [https://lab.viettelcybersecurity.com/advisories/VCSA-12](https://lab.viettelcybersecurity.com/advisories/VCSA-12)
-
-> **Learn more**
-Discover how our solutions can help you strengthen resilience and elevate your security posture [here](https://viettelsecurity.com/)
-For the latest security research from the Viettel Cyber Security Experts and Threat Intelligence community, check out [our Blog](https://blog.viettelcybersecurity.com/).
-To get notified about new publications and to join discussions on social media, follow us on [LinkedIn](https://www.linkedin.com/company/viettel-cyber-security/) and [Facebook](https://www.facebook.com/anninhmangviettel)

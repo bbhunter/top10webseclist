@@ -874,7 +874,3 @@ The total bounties earned was $17,500, thanks to [an extra $4,000](https://hacke
 I've introduced client-side desync and pause-based desync, and provided a toolkit, case-studies and methodology for understanding the threat they pose. This has demonstrated that desync attacks can't be completely avoided by blocking obfuscated or malformed requests, hiding on an internal network, or not having a front-end. We've also learned that early-reads are an invaluable tool for comprehending and exploiting black-box deployments. Finally, I've hopefully demonstrated that custom HTTP servers are something to be avoided.
 
 If you'd like to delve further into this topic, I'd suggest trying these techniques out for yourself using the [accompanying interactive labs](https://portswigger.net/web-security/request-smuggling/browser), then grabbing HTTP Request Smuggler and scanning bug-bounty sites to find some live examples. Enjoy!
-
- [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)

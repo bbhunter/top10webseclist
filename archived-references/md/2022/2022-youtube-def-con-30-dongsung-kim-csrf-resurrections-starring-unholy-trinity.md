@@ -12,11 +12,11 @@ sources:
   - id: original
     resource: "https://www.youtube.com/watch?v=bhthwXhGZDY"
     title: DEF CON 30 - Dongsung Kim - CSRF Resurrections  Starring the Unholy Trinity
-    author: DEFCONConference
+    author: Dongsung Kim
     last_modified: 2022-10-20
 also_at: []
 authors:
-  - DEFCONConference
+  - Dongsung Kim
 canonical_url: ""
 cited_by:
   - "2022.md:36"
@@ -44,7 +44,7 @@ translation_of: ""
 
 # DEF CON 30 - Dongsung Kim - CSRF Resurrections Starring the Unholy Trinity
 
-**DEF CON 30 - Dongsung Kim - CSRF Resurrections Starring the Unholy Trinity** - DEFCONConference, YouTube.
+**DEF CON 30 - Dongsung Kim - CSRF Resurrections Starring the Unholy Trinity** - Dongsung Kim, YouTube.
 
 - Published: 2022-10-20
 - Original: <https://www.youtube.com/watch?v=bhthwXhGZDY>

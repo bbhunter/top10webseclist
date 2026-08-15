@@ -76,23 +76,3 @@ We implemented a prototype of ProbeTheProto and evaluated it on one million webs
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2022-308-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=E494seho3E0&list=PLfUWWM-POgQtu29CHm6cFg53hvTl2fakQ&index=2)
-
-## View More Papers
-
-### [ PickMail: A Serious Game for Email Phishing Awareness Training ](https://www.ndss-symposium.org/ndss-paper/auto-draft-283/)
-
- Gokul CJ (TCS Research, Tata Consultancy Services Ltd., Pune), Vijayanand Banahatti (TCS Research, Tata Consultancy Services Ltd., Pune), Sachin Lodha (TCS Research, Tata Consultancy Services Ltd., Pune)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-283/)
-
-### [ Detecting CAN Masquerade Attacks with Signal Clustering Similarity ](https://www.ndss-symposium.org/ndss-paper/auto-draft-326/)
-
- Pablo Moriano (Oak Ridge National Laboratory), Robert A. Bridges (Oak Ridge National Laboratory) and Michael D. Iannacone (Oak Ridge National Laboratory)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-326/)
-
-### [ The Evolution of Fuzzing in Finding the Unknowns ](https://www.ndss-symposium.org/ndss-paper/auto-draft-270/)
-
- Abhishek Aarya (Google)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-270/)

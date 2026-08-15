@@ -245,7 +245,3 @@ In this blog post, we presented a Memcache Injection vulnerability in Zimbra tha
 Although vulnerabilities such as Cross-Site Scripting and SQL Injections still exist and occur due to a lack of input escaping, they have been well known and documented for decades. The majority of developers understand these vulnerabilities and that certain, context-specific characters should be escaped before passing them to a potentially dangerous function. However, as we have seen, other injection vulnerabilities can occur that are less known and can have a critical impact.
 
 We recommend developers to always be aware of special characters that should be escaped when dealing with technology where less documentation and research about potential vulnerabilities exists.
-
-- [Zimbra 8.8.15 - Webmail compromise via Email](https://blog.sonarsource.com/zimbra-webmail-compromise-via-email)
-- [PHP Supply Chain Attack on Composer](https://blog.sonarsource.com/php-supply-chain-attack-on-composer)
-- [NodeBB 1.18.4 - Remote Code Execution With One Shot](https://blog.sonarsource.com/nodebb-remote-code-execution-with-one-shot)

@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/"
     title: "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows"
-    author: Detectify
+    author: Frans Rosén
     last_modified: 2022-07-06
   - id: canonical
     resource: "https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/"
 also_at: []
 authors:
-  - Detectify
+  - Frans Rosén
 canonical_url: "https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/"
 cited_by:
   - "2022.md:5"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Account hijacking using "dirty dancing" in sign-in OAuth-flows
 
-**Account hijacking using "dirty dancing" in sign-in OAuth-flows** - Detectify, Labs Detectify.
+**Account hijacking using "dirty dancing" in sign-in OAuth-flows** - Frans Rosén, Labs Detectify.
 
 - Published: 2022-07-06
 - Original: <https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/>
@@ -1008,29 +1008,3 @@ I’ve had the time of my life
 Frans Rosén
  Security Advisor, Detectify
  @fransrosen
-
-[Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
-
-![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
-
-**Frans Rosén**
-
-Security Advisor
-
-## Check out more content
-
-The Detectify AI Agent Alfred fully automates the creation of security tests for new vulnerabilities, from research to a merge request. In its first six …
-
-September 25, 2025
-
-CloudKit, the data storage framework by Apple, has various access controls. These access controls could be misconfigured, even by Apple themselves, which affected Apple’s own apps using CloudKit. This blog post explains in detail three bugs found in iCrowd+, Apple News and Apple Shortcuts with different criticality uncovered by Frans Rosen while hacking Cloudkit. All bugs were reported to and fixed by the Apple Security Bounty program.
-
-September 13, 2021
-
-Security researchers in the Detectify Crowdsource community, Ai Ho (@j3ssiejjj) and Bao Bui (@Jok3rDb), found an undocumented security issue in Adobe Experience Manager (AEM) that bypassed authentication, and left the application open to information disclosure attacks
-
-June 28, 2021
-
-Here’s how I (@Almroot) bought the domain name used in the NS delegations for the ccTLD of the Democratic Republic of Congo (.cd) and temporarily took over 50% of all DNS traffic for the TLD
-
-January 15, 2021
