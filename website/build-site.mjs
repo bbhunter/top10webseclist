@@ -23,11 +23,19 @@ const STATIC_FILES = [
   "brand-mark.svg",
   "constellation.js",
   "index.html",
+  "pdf-reader.css",
+  "pdf-reader.html",
+  "pdf-reader.mjs",
+  "pdf-reader-polyfills.mjs",
+  "pdf-reader-url.mjs",
+  "pdf-worker.mjs",
   "robots.txt",
   "site.webmanifest",
   "sitemap.xml",
   "styles.css"
 ];
+const PDF_READER_FILES = ["pdf-reader.css", "pdf-reader.html", "pdf-reader.mjs", "pdf-reader-polyfills.mjs", "pdf-reader-url.mjs", "pdf-worker.mjs"];
+const STATIC_DIRECTORIES = ["vendor/pdfjs"];
 const GITHUB_INDEX = `<!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><title>Web Hack List file origin</title></head>
@@ -125,10 +133,14 @@ async function main() {
 
   const tasks = [];
   if (target === "github") {
-    // GitHub Pages is deliberately a small file origin, not a duplicate site.
-    // Cloudflare owns the full archive; only its explicitly registered
-    // over-limit files are published here.
+    // GitHub Pages is deliberately a small, separate file origin rather than a
+    // duplicate site. It publishes the isolated mobile reader bundle and the
+    // PDFs that exceed Cloudflare's per-file limit; Cloudflare owns everything
+    // else in the archive.
     tasks.push({ source: path.join(APP_DIR, ".nojekyll"), relative: ".nojekyll", required: true });
+    for (const filename of PDF_READER_FILES) {
+      tasks.push({ source: path.join(APP_DIR, filename), relative: filename, required: true });
+    }
     for (const archivePath of Object.keys(largeFallbacks).sort()) {
       validateRelative(archivePath);
       if (!archive.has(archivePath)) throw new Error(`GitHub fallback is not referenced by generated data: ${archivePath}`);
@@ -146,8 +158,16 @@ async function main() {
       tasks.push({ source: path.join(REPO, "original-listings", filename), relative: `original-listings/${filename}`, required: true });
     }
   }
+  for (const directory of STATIC_DIRECTORIES) {
+    for (const filename of await listFiles(path.join(APP_DIR, directory))) {
+      tasks.push({ source: path.join(APP_DIR, directory, filename), relative: `${directory}/${filename}`, required: true });
+    }
+  }
 
-  await fs.rm(output, { recursive: true, force: true });
+  // Large staged trees on mounted filesystems can briefly report ENOTEMPTY as
+  // directory entries settle. Node retries that documented transient class
+  // only when maxRetries is set.
+  await fs.rm(output, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
   await fs.mkdir(output, { recursive: true });
   const skippedLarge = [];
   const skippedFaults = [];

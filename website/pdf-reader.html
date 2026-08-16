@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; script-src-attr 'none'; style-src 'self'; connect-src 'self' https://webhacklist.com; worker-src 'self'; img-src 'self' data: blob:; font-src data: blob:; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'">
+  <title>In-site PDF reader</title>
+  <link rel="stylesheet" href="pdf-reader.css?v=20260816.1">
+</head>
+<body>
+  <header class="reader-toolbar" aria-label="PDF page controls">
+    <div class="page-controls">
+      <button id="previous-page" type="button" aria-label="Previous page" disabled>←</button>
+      <strong id="page-status" aria-live="polite">Page —</strong>
+      <button id="next-page" type="button" aria-label="Next page" disabled>→</button>
+    </div>
+    <div class="zoom-controls">
+      <button id="zoom-out" type="button" aria-label="Zoom out" disabled>−</button>
+      <span id="zoom-status">Fit width</span>
+      <button id="zoom-in" type="button" aria-label="Zoom in" disabled>+</button>
+    </div>
+  </header>
+
+  <main id="document-scroll" tabindex="0" aria-label="PDF pages">
+    <section class="reader-message" id="reader-message" role="status">
+      <i aria-hidden="true"></i>
+      <h1>Opening the complete PDF</h1>
+      <p id="reader-message-text">Loading the document…</p>
+    </section>
+    <div class="pdf-pages" id="pdf-pages" hidden></div>
+  </main>
+
+  <template id="pdf-page-template">
+    <section class="pdf-page">
+      <span class="page-number"></span>
+      <canvas hidden></canvas>
+      <p class="page-loading">Loading page…</p>
+    </section>
+  </template>
+
+  <section class="reader-error" id="reader-error" role="alert" hidden>
+    <span aria-hidden="true">PDF</span>
+    <h1>This PDF could not be displayed here</h1>
+    <p id="reader-error-text">Use the browser or system PDF viewer instead.</p>
+    <a id="open-direct" target="_blank" rel="noopener noreferrer">Open full PDF ↗</a>
+  </section>
+
+  <script type="module" src="pdf-reader.mjs?v=20260816.1"></script>
+</body>
+</html>

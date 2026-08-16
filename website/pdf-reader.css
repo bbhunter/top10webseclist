@@ -1,0 +1,173 @@
+:root {
+  color-scheme: dark;
+  --accent: #78a7ff;
+  --surface: #171b24;
+  --surface-raised: #202631;
+  --line: #34425b;
+  --ink: #edf3ff;
+  --muted: #9eabc0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --accent: #487be0;
+  --surface: #d9dde5;
+  --surface-raised: #f5f7fb;
+  --line: #aeb8c8;
+  --ink: #172235;
+  --muted: #536176;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+
+body {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  color: var(--ink);
+  background: var(--surface);
+}
+
+button,
+a { font: inherit; }
+
+.reader-toolbar {
+  z-index: 3;
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 10px;
+  color: var(--muted);
+  background: rgba(12, 17, 27, .97);
+  border-bottom: 1px solid var(--line);
+  font-size: .72rem;
+}
+
+:root[data-theme="light"] .reader-toolbar { background: rgba(234, 237, 243, .97); }
+
+.page-controls,
+.zoom-controls { display: flex; align-items: center; gap: 7px; }
+
+.reader-toolbar button {
+  display: grid;
+  width: 34px;
+  height: 32px;
+  place-items: center;
+  padding: 0;
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reader-toolbar button:disabled { opacity: .38; cursor: default; }
+.reader-toolbar button:focus-visible,
+.reader-error a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+#page-status { min-width: 92px; color: var(--ink); text-align: center; }
+#zoom-status { min-width: 66px; text-align: center; }
+
+#document-scroll {
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: var(--accent) var(--surface);
+}
+
+.pdf-pages {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+  width: 100%;
+  padding: 12px;
+}
+
+.pdf-page {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-height: calc((100vw - 24px) * 1.294);
+  place-items: center;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, .38);
+  margin-inline: auto;
+}
+
+.pdf-page canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pdf-page canvas[hidden] { display: none; }
+
+.page-number {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  z-index: 1;
+  padding: 3px 6px;
+  color: #334053;
+  background: rgba(255, 255, 255, .9);
+  border: 1px solid #d9dde4;
+  border-radius: 4px;
+  font-size: .58rem;
+}
+
+.page-loading { color: #677184; font-size: .66rem; }
+.pdf-page.is-rendered .page-loading { display: none; }
+
+.reader-message,
+.reader-error {
+  min-height: 100%;
+  place-content: center;
+  justify-items: center;
+  padding: 32px;
+  text-align: center;
+}
+
+.reader-message { display: grid; }
+.reader-message[hidden],
+.reader-error[hidden] { display: none; }
+
+.reader-message i {
+  width: 48px;
+  height: 58px;
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
+  border-radius: 4px;
+  box-shadow: 0 0 28px color-mix(in srgb, var(--accent) 14%, transparent);
+  animation: document-pulse 1s ease-in-out infinite alternate;
+}
+
+.reader-message h1,
+.reader-error h1 { margin: 20px 0 8px; font: 700 1rem/1.35 system-ui, sans-serif; }
+
+.reader-message p,
+.reader-error p { max-width: 440px; margin: 0; color: var(--muted); font: .7rem/1.55 system-ui, sans-serif; }
+
+.reader-error { position: fixed; inset: 46px 0 0; display: grid; background: var(--surface); }
+.reader-error > span { display: grid; width: 64px; height: 78px; place-items: center; color: #07101d; background: var(--accent); font-weight: 800; }
+.reader-error a { margin-top: 20px; padding: 10px 14px; color: #07101d; background: var(--accent); border-radius: 6px; font-size: .7rem; text-decoration: none; }
+
+@keyframes document-pulse { to { transform: translateY(-5px); opacity: .7; } }
+
+@media (min-width: 850px) {
+  .pdf-pages { gap: 20px; padding: 18px; }
+  .pdf-page { max-width: 1100px; min-height: 700px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reader-message i { animation: none; }
+  * { scroll-behavior: auto !important; }
+}

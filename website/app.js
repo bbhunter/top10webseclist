@@ -188,6 +188,8 @@ const state = {
   pdfVersion: "",
   pdfOriginal: false,
   pdfVerified: false,
+  pdfFrameUrl: "",
+  pdfUsesInSiteReader: false,
   // A full page is the useful first view on a phone; page-width remains the
   // roomier desktop default and either toolbar control can change it.
   pdfViewMode: typeof globalThis.innerWidth === "number" && globalThis.innerWidth <= 760
@@ -1044,13 +1046,24 @@ function wireShell() {
   $("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop);
 
   $("#pdf-frame").addEventListener("load", () => {
-    if (!state.pdfPath) return;
-    const expectedUrl = archiveUrl(state.pdfPath, state.pdfKind, state.pdfVersion);
-    if (!expectedUrl || !$("#pdf-frame").src.startsWith(expectedUrl)) return;
+    if (!state.pdfPath || !state.pdfFrameUrl || $("#pdf-frame").src !== state.pdfFrameUrl) return;
+    // A cross-origin reader announces that its own script started. Waiting for
+    // that message keeps a transient GitHub error page from looking successful.
+    if (state.pdfUsesInSiteReader) return;
     clearTimeout(pdfLoadTimer);
     $("#pdf-loading").hidden = true;
     $("#pdf-fallback").hidden = true;
     $("#pdf-frame").hidden = false;
+  });
+  window.addEventListener("message", (event) => {
+    const frame = $("#pdf-frame");
+    if (event.origin !== PDF_READER_ORIGIN || event.source !== frame.contentWindow || event.data?.type !== "pdf-reader-loaded") return;
+    if (!state.pdfPath || !state.pdfUsesInSiteReader || !state.pdfFrameUrl || frame.src !== state.pdfFrameUrl) return;
+    clearTimeout(pdfLoadTimer);
+    $("#pdf-loading").hidden = true;
+    $("#pdf-fallback").hidden = true;
+    frame.hidden = false;
+    frame.contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme }, PDF_READER_ORIGIN);
   });
   $("#pdf-dialog").addEventListener("close", clearPdfViewer);
   $("#pdf-links-toggle").addEventListener("click", () => togglePdfLinks());
@@ -1350,6 +1363,9 @@ function toggleReadingTheme() {
   try { localStorage.setItem(READING_THEME_STORAGE_KEY, state.readingTheme); }
   catch { toast("Reading theme could not be saved in this browser"); }
   applyReadingTheme();
+  if ($("#pdf-dialog").open && state.pdfUsesInSiteReader) {
+    $("#pdf-frame").contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme }, PDF_READER_ORIGIN);
+  }
   if ($("#reader-dialog").open && state.readerItem) syncDocumentUrl(state.readerItem, "reader");
   else if ($("#pdf-dialog").open) syncDocumentUrl(state.pdfItem, state.pdfKind === "listingPdf" ? "results" : "pdf");
   toast(`${state.readingTheme === "light" ? "Light" : "Dark"} reading theme`);
@@ -1959,7 +1975,7 @@ function renderTerminal() {
   }));
   $$('[data-terminal-pdf]', $("#view-root")).forEach((button) => button.addEventListener("click", () => {
     const item = state.items.find((entry) => entry.id === button.dataset.terminalPdf);
-    if (item?.pdfPath) openPdfViewer(item, { userInitiated: true });
+    if (item?.pdfPath) openPdfViewer(item);
   }));
   $$('[data-terminal-web]', $("#view-root")).forEach((button) => button.addEventListener("click", () => {
     const item = state.items.find((entry) => entry.id === button.dataset.terminalWeb);
@@ -2250,7 +2266,7 @@ async function runTerminalCommand(rawCommand) {
       const available = flag === "--md" ? item.mdPath : item.pdfPath;
       state.terminalLines.push(`<p class="term-dim">${available ? `opening the shared ${flag === "--md" ? "Markdown reader" : "PDF viewer"} for ${h(item.id)}…` : `${h(item.id)} has no ${flag.slice(2).toUpperCase()} copy.`}</p>`);
       renderTerminal();
-      if (available) (flag === "--md" ? openReader(item) : openPdfViewer(item, { userInitiated: true }));
+      if (available) (flag === "--md" ? openReader(item) : openPdfViewer(item));
       return;
     } else if (["--web", "--www"].includes(flag)) {
       const url = safeExternalUrl(item.originalUrl);
@@ -2834,15 +2850,14 @@ async function openArtifact(id) {
   $("#artifact-actions").innerHTML = actions.join("");
 
   $("#open-reader")?.addEventListener("click", () => openReader(item));
-  $("#open-pdf-reader")?.addEventListener("click", () => openPdfViewer(item, { userInitiated: true }));
+  $("#open-pdf-reader")?.addEventListener("click", () => openPdfViewer(item));
   $("#open-original-reader")?.addEventListener("click", () => openReader(item, { original: true }));
-  $("#open-original-pdf")?.addEventListener("click", () => openPdfViewer(item, { path: item.originalPdfPath, original: true, userInitiated: true }));
+  $("#open-original-pdf")?.addEventListener("click", () => openPdfViewer(item, { path: item.originalPdfPath, original: true }));
   $("#open-results-pdf")?.addEventListener("click", () => openPdfViewer(null, {
     path: resultsPdf,
     kind: "listingPdf",
     title: `${item.year} Top 10 results`,
-    kicker: `Official archive listing / ${item.year}`,
-    userInitiated: true
+    kicker: `Official archive listing / ${item.year}`
   }));
   $("#artifact-read-toggle").addEventListener("click", () => setReadState(item));
   $("#artifact-favourite-toggle").addEventListener("click", () => setFavouriteState(item));
@@ -2862,12 +2877,26 @@ function showPdfFallback(message = "The preserved file is still available using 
 }
 
 // Some iPhone browsers can request a desktop user agent, so the UA alone is
-// not a dependable signal. A narrow viewport gets the reliable top-level PDF
-// viewer too; the embedded viewer remains available on normal desktop widths.
-function usesTopLevelPdfViewer(userAgent = navigator.userAgent, viewportWidth = globalThis.innerWidth) {
+// not a dependable signal. A narrow viewport gets the page-by-page reader too;
+// the browser-native viewer remains available on normal desktop widths.
+function usesInSitePdfReader(userAgent = navigator.userAgent, viewportWidth = globalThis.innerWidth) {
   const iphone = /\b(?:iPhone|iPod)\b/i.test(String(userAgent || ""));
   const narrowViewport = typeof viewportWidth === "number" && viewportWidth > 0 && viewportWidth <= 820;
   return iphone || narrowViewport;
+}
+
+const PDF_READER_ORIGIN = "https://irsdl.github.io";
+const PDF_READER_PATH = "/webhacklist/pdf-reader.html";
+const PDF_READER_SANDBOX = "allow-scripts allow-same-origin allow-downloads allow-popups allow-popups-to-escape-sandbox";
+
+// PDF.js parses archived third-party PDFs on a separate origin. The surrounding
+// app therefore keeps its storage and DOM isolated even if a hostile document
+// finds a defect in the renderer.
+function inSitePdfReaderUrl(pdfUrl, theme = state.readingTheme) {
+  const reader = new URL(PDF_READER_PATH, PDF_READER_ORIGIN);
+  reader.searchParams.set("file", pdfUrl);
+  reader.searchParams.set("theme", theme === "light" ? "light" : "dark");
+  return reader.href;
 }
 
 async function verifyPdf(mode, url, path) {
@@ -2902,6 +2931,7 @@ function setPdfView(mode) {
   if (!state.pdfPath || !["page-width", "page-fit"].includes(mode)) return;
   const url = archiveUrl(state.pdfPath, state.pdfKind, state.pdfVersion);
   if (!url) return showPdfFallback();
+  const documentUrl = LARGE_PDF_FALLBACKS.get(state.pdfPath) || url;
   state.pdfViewMode = mode;
   const frame = $("#pdf-frame");
   $("#pdf-fit-width").classList.toggle("active", mode === "page-width");
@@ -2911,14 +2941,25 @@ function setPdfView(mode) {
   frame.hidden = true;
   clearTimeout(pdfLoadTimer);
   if (!state.pdfVerified) {
+    if (LARGE_PDF_FALLBACKS.has(state.pdfPath)) {
+      state.pdfVerified = true;
+      setPdfView(mode);
+      return;
+    }
     verifyPdf(mode, url, state.pdfPath);
     return;
   }
-  if (usesTopLevelPdfViewer()) {
-    return showPdfFallback("iPhone browsers show only the first page inside an embedded viewer. Open the full PDF to read every page.");
+  if (state.pdfUsesInSiteReader) {
+    frame.setAttribute("sandbox", PDF_READER_SANDBOX);
+    state.pdfFrameUrl = inSitePdfReaderUrl(documentUrl);
+    frame.src = state.pdfFrameUrl;
+    pdfLoadTimer = setTimeout(() => showPdfFallback("The in-site page reader did not start. Open the full PDF with the browser or another app instead."), 12000);
+    return;
   }
   if (navigator.pdfViewerEnabled === false) return showPdfFallback();
-  frame.src = `${url}#toolbar=1&navpanes=0&zoom=${mode}`;
+  frame.removeAttribute("sandbox");
+  state.pdfFrameUrl = `${documentUrl}#toolbar=1&navpanes=0&zoom=${mode}`;
+  frame.src = state.pdfFrameUrl;
   pdfLoadTimer = setTimeout(showPdfFallback, 9000);
 }
 
@@ -2935,10 +2976,6 @@ function openPdfViewer(item, options = {}) {
   }
 
   const externalUrl = LARGE_PDF_FALLBACKS.get(path) || url;
-  if (options.userInitiated && usesTopLevelPdfViewer()) {
-    window.open(externalUrl, "_blank", "noopener,noreferrer");
-    return;
-  }
 
   state.pdfItem = item || null;
   state.pdfPath = path;
@@ -2947,6 +2984,8 @@ function openPdfViewer(item, options = {}) {
   // the frame and the download link must all ask for the same URL.
   state.pdfVersion = options.original ? (item?.originalPdfVersion || "") : (item?.pdfVersion || "");
   state.pdfVerified = false;
+  state.pdfFrameUrl = "";
+  state.pdfUsesInSiteReader = usesInSitePdfReader();
   const title = options.title || item?.title || "Preserved PDF";
   $("#pdf-title").textContent = title;
   const pdfLanguageNote = !item?.translated
@@ -2978,8 +3017,12 @@ function openPdfViewer(item, options = {}) {
   $("#pdf-download").removeAttribute("target");
   $("#pdf-download").removeAttribute("rel");
   $("#pdf-download").setAttribute("download", path.split("/").at(-1));
-  $("#pdf-fit-width").hidden = usesTopLevelPdfViewer();
-  $("#pdf-fit-page").hidden = usesTopLevelPdfViewer();
+  const inSiteReader = state.pdfUsesInSiteReader;
+  $("#pdf-fit-width").hidden = inSiteReader;
+  $("#pdf-fit-page").hidden = inSiteReader;
+  $("#pdf-viewer-note").innerHTML = inSiteReader
+    ? "<span>In-site page reader</span> Scroll through every page here. Open PDF uses the browser or system viewer; Download saves a copy for another app."
+    : "<span>Browser-native viewer</span> Open PDF uses the browser or system viewer; Download saves a copy for another app. The embedded viewer has its own navigation, search and zoom.";
 
   [$("#artifact-dialog"), $("#reader-dialog")].forEach((dialog) => {
     if (dialog.open) dialog.close();
@@ -3093,10 +3136,13 @@ function clearPdfViewer() {
   state.pdfPath = "";
   state.pdfVersion = "";
   state.pdfVerified = false;
+  state.pdfFrameUrl = "";
+  state.pdfUsesInSiteReader = false;
   if (!$("#reader-dialog").open) clearDocumentUrl();
   const frame = $("#pdf-frame");
   frame.hidden = true;
   frame.removeAttribute("src");
+  frame.removeAttribute("sandbox");
   $("#pdf-loading").hidden = true;
   $("#pdf-fallback").hidden = true;
   $("#pdf-links").hidden = true;
@@ -3385,7 +3431,7 @@ async function openReader(item, options = {}) {
   $("#reader-share").addEventListener("click", () => shareDocument(item, "reader"));
   $("#reader-read-toggle").addEventListener("click", () => setReadState(item));
   $("#reader-favourite-toggle").addEventListener("click", () => setFavouriteState(item));
-  $("#reader-open-pdf")?.addEventListener("click", () => openPdfViewer(item, { userInitiated: true }));
+  $("#reader-open-pdf")?.addEventListener("click", () => openPdfViewer(item));
   $("#reader-language-toggle")?.addEventListener("click", () => openReader(item, { original: !showOriginal }));
   applyReadingTheme();
   if ($("#artifact-dialog").open) $("#artifact-dialog").close();

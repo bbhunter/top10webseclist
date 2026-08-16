@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Web Hack List">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://irsdl.github.io; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
   <meta name="description" content="Web Hacking Techniques Index is an interactive archive of Top 10 Web Hacking Techniques research, nominations, and clearly marked preliminary collections.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Web Hacking Techniques Index">
@@ -311,10 +311,10 @@
     </header>
     <div class="pdf-stage">
       <div class="pdf-loading" id="pdf-loading" role="status"><i></i><p>Preparing the preserved document…</p></div>
-      <!-- Chrome's native PDF viewer cannot start in an opaque-origin sandbox.
-           Adding allow-same-origin beside allow-scripts would make a same-origin
-           HTML sandbox ineffective, so keep the verified application/pdf in a
-           normal frame and retain the site's nosniff and path restrictions. -->
+      <!-- Desktop uses the browser-native viewer, which cannot start in a
+           sandbox. On narrow screens app.js adds a sandbox before loading the
+           separate-origin PDF.js page renderer, then removes it again before
+           any native PDF load. -->
       <iframe id="pdf-frame" title="Preserved PDF document" referrerpolicy="no-referrer" hidden></iframe>
       <div class="pdf-fallback" id="pdf-fallback" hidden>
         <span aria-hidden="true">PDF</span>
@@ -336,6 +336,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="constellation.js"></script>
-  <script src="app.js?v=20260816.3"></script>
+  <script src="app.js?v=20260816.4"></script>
 </body>
 </html>

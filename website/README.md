@@ -201,9 +201,11 @@ opens an exact, archive-wide tag search without summoning a phone keyboard.
 
 ### PDF viewer and safety boundary
 
-Preserved PDFs and yearly result listings open in a large browser-native viewer
-with fit-width, fit-page, Markdown switching, read-state, download and separate-tab
-controls. The application verifies the file with a same-origin `HEAD` request and
+Preserved PDFs and yearly result listings open in a large viewer with Markdown
+switching, read-state, download and separate-tab controls. Desktop browsers keep
+their native PDF viewer and its fit controls. Narrow screens use the archive's
+page-by-page PDF.js reader so iPhone WebKit does not stop at an iframe's first
+page. The application verifies a local file with a same-origin `HEAD` request and
 an `application/pdf` response before embedding it.
 
 Archive paths are restricted to the expected local Markdown, PDF and yearly-list
@@ -211,11 +213,16 @@ directories. External links accept HTTP(S) only and use opener isolation. Raw
 Markdown is escaped before formatting, capped at 8 MB, and protected from stale
 request races; generated heading ids are namespaced so archived content cannot
 clobber the application's own elements. Remote images embed over HTTPS only
-(http-only images become links) with referrers suppressed. A restrictive
-content-security policy blocks inline scripts, objects, cross-origin frames,
-forms, media, workers and cleartext image loads. The smoke test validates these
-invariants, actively exercises hostile Markdown and URL payloads, and validates
-every referenced local file.
+(http-only images become links) with referrers suppressed. PDF.js and the
+untrusted PDF are hosted in a sandboxed frame on the archive's separate GitHub
+Pages file origin; that reader validates its input URL, disables dynamic
+JavaScript evaluation, bounds live canvas memory, and cannot access this
+application's DOM or storage.
+A restrictive content-security policy blocks inline scripts, objects,
+unapproved cross-origin frames, forms, media, workers in the main app and
+cleartext image loads. The smoke test validates these invariants, actively
+exercises hostile Markdown and URL payloads, and validates every referenced
+local file.
 
 ### Constellation controls
 

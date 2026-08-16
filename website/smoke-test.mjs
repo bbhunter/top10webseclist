@@ -3,6 +3,7 @@ import { constants } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import vm from "node:vm";
+import { safePdfUrl as safePdfReaderUrl } from "./pdf-reader-url.mjs";
 
 const root = process.cwd();
 const yearRegistry = JSON.parse(await readFile(path.join(root, "website/archive-years.json"), "utf8"));
@@ -126,6 +127,15 @@ const mockupFiles = [
   "website/styles.css",
   "website/app.js",
   "website/constellation.js",
+  "website/pdf-reader.html",
+  "website/pdf-reader.css",
+  "website/pdf-reader.mjs",
+  "website/pdf-reader-polyfills.mjs",
+  "website/pdf-reader-url.mjs",
+  "website/pdf-worker.mjs",
+  "website/vendor/pdfjs/LICENSE",
+  "website/vendor/pdfjs/build/pdf.mjs",
+  "website/vendor/pdfjs/build/pdf.worker.mjs",
   "website/build-site.mjs",
   "website/hosting.json",
   "website/site.webmanifest",
@@ -137,6 +147,11 @@ const indexSource = await readFile(path.join(root, "website/index.html"), "utf8"
 const appSource = await readFile(path.join(root, "website/app.js"), "utf8");
 const constellationSource = await readFile(path.join(root, "website/constellation.js"), "utf8");
 const stylesSource = await readFile(path.join(root, "website/styles.css"), "utf8");
+const pdfReaderHtmlSource = await readFile(path.join(root, "website/pdf-reader.html"), "utf8");
+const pdfReaderCssSource = await readFile(path.join(root, "website/pdf-reader.css"), "utf8");
+const pdfReaderSource = await readFile(path.join(root, "website/pdf-reader.mjs"), "utf8");
+const pdfReaderPolyfillsSource = await readFile(path.join(root, "website/pdf-reader-polyfills.mjs"), "utf8");
+const pdfWorkerSource = await readFile(path.join(root, "website/pdf-worker.mjs"), "utf8");
 const buildSiteSource = await readFile(path.join(root, "website/build-site.mjs"), "utf8");
 const headersSource = await readFile(path.join(root, "website/_headers"), "utf8");
 const notFoundSource = await readFile(path.join(root, "website/404.html"), "utf8");
@@ -384,6 +399,20 @@ const securityChecks = [
   indexSource.includes("img-src 'self' data:") && !indexSource.includes("img-src 'self' data: https:"),
   indexSource.includes('id="pdf-dialog"'),
   indexSource.includes('id="pdf-frame"') && !/<iframe\b(?=[^>]*\bid="pdf-frame")[^>]*\bsandbox=/i.test(indexSource),
+  appSource.includes('frame.setAttribute("sandbox", PDF_READER_SANDBOX)') && appSource.includes('frame.removeAttribute("sandbox")'),
+  appSource.includes('const PDF_READER_ORIGIN = "https://irsdl.github.io"'),
+  indexSource.includes("frame-src 'self' https://irsdl.github.io") && headersSource.includes("frame-src 'self' https://irsdl.github.io"),
+  pdfReaderHtmlSource.includes("default-src 'none'") && pdfReaderHtmlSource.includes("worker-src 'self'") && pdfReaderHtmlSource.includes("font-src data: blob:"),
+  pdfReaderSource.includes('import "./pdf-reader-polyfills.mjs"') && pdfReaderSource.includes('import { safePdfUrl } from "./pdf-reader-url.mjs"') && pdfReaderSource.includes("isEvalSupported: false"),
+  pdfReaderSource.includes('new URL("./pdf-worker.mjs", import.meta.url)') && pdfWorkerSource.includes('import "./pdf-reader-polyfills.mjs"'),
+  ["Promise.withResolvers", "Promise.try", "Uint8Array.fromBase64", "toBase64", "toHex", "Math.sumPrecise", "Set.prototype.intersection", "transferToFixedLength", "AbortSignal.any", "Response.prototype.bytes"].every((name) => pdfReaderPolyfillsSource.includes(name)),
+  safePdfReaderUrl("https://webhacklist.com/archived-references/pdf/2025/example.pdf?v=20260816")?.pathname === "/archived-references/pdf/2025/example.pdf",
+  safePdfReaderUrl("https://irsdl.github.io/webhacklist/original-listings/2025-top10.pdf")?.hostname === "irsdl.github.io",
+  safePdfReaderUrl("javascript:alert(1)") === null && safePdfReaderUrl("https://evil.example/archived-references/pdf/2025/example.pdf") === null,
+  safePdfReaderUrl("https://webhacklist.com/archived-references/pdf/2025/example.pdf?redirect=https://evil.example") === null,
+  pdfReaderSource.includes("MAX_RENDERED_PAGES") && pdfReaderSource.includes("IntersectionObserver"),
+  pdfReaderSource.includes('parent.postMessage({ type: "pdf-reader-loaded" }, "https://webhacklist.com")'),
+  !/<a\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/i.test(pdfReaderHtmlSource),
   appSource.includes("function safeArchivePath"),
   appSource.includes('method: "HEAD"'),
   !/img-src[^;]*\bhttp:/.test(indexSource),
@@ -515,7 +544,7 @@ const experienceChecks = [
   indexSource.includes("Every researcher behind the 1,100+ techniques collected here"),
   indexSource.includes("Soroush Dalili (@irsdl)"),
   appSource.includes("openReader(item)"),
-  appSource.includes("openPdfViewer(item, { userInitiated: true })"),
+  appSource.includes("openPdfViewer(item)"),
   appSource.includes("function layoutInvestigationBoard"),
   appSource.includes("function makeInvestigationCardDraggable"),
   stylesSource.includes(".hacker-terminal"),
@@ -558,12 +587,15 @@ const deploymentChecks = [
   appSource.includes("function setViewFullscreenFallback") && appSource.includes("viewButton.hidden = !supportedView"),
   stylesSource.includes("height: 100dvh"),
   appSource.includes("function syncDialogScrollLock") && appSource.includes("function showLockedModal"),
-  clientEval(`usesTopLevelPdfViewer("Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)")`) === true,
-  clientEval(`usesTopLevelPdfViewer("Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0)", 390)`) === true,
-  clientEval(`usesTopLevelPdfViewer("Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0)", 1440)`) === false,
-  appSource.includes("options.userInitiated && usesTopLevelPdfViewer()"),
+  clientEval(`usesInSitePdfReader("Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)")`) === true,
+  clientEval(`usesInSitePdfReader("Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0)", 390)`) === true,
+  clientEval(`usesInSitePdfReader("Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0)", 1440)`) === false,
+  clientEval(`inSitePdfReaderUrl("https://webhacklist.com/archived-references/pdf/2025/example.pdf?v=20260816", "light")`) === "https://irsdl.github.io/webhacklist/pdf-reader.html?file=https%3A%2F%2Fwebhacklist.com%2Farchived-references%2Fpdf%2F2025%2Fexample.pdf%3Fv%3D20260816&theme=light",
+  !appSource.includes('window.open(externalUrl, "_blank"'),
   indexSource.includes('id="pdf-fallback-open"'),
-  indexSource.includes('href="styles.css?v=20260816.3"') && indexSource.includes('src="app.js?v=20260816.3"'),
+  indexSource.includes('href="styles.css?v=20260816.3"') && indexSource.includes('src="app.js?v=20260816.4"'),
+  pdfReaderHtmlSource.includes('src="pdf-reader.mjs?v=20260816.1"') && pdfReaderHtmlSource.includes('href="pdf-reader.css?v=20260816.1"'),
+  pdfReaderCssSource.includes("overscroll-behavior: contain") && pdfReaderCssSource.includes("-webkit-overflow-scrolling: touch"),
   stylesSource.includes("body.document-dialog-open") && stylesSource.includes("overscroll-behavior: contain"),
   stylesSource.includes(".reader-dialog[open] { display: grid") && stylesSource.includes(".pdf-dialog[open] { display: grid"),
   stylesSource.includes(".markdown-body a { color: var(--document-accent); overflow-wrap: anywhere"),
@@ -579,6 +611,8 @@ const deploymentChecks = [
   buildSiteSource.includes('target === "cloudflare" && stat.size > assetLimit'),
   buildSiteSource.includes("fileCount > 20000"),
   buildSiteSource.includes('target === "github"') && buildSiteSource.includes("Object.keys(largeFallbacks)"),
+  buildSiteSource.includes('const PDF_READER_FILES = ["pdf-reader.css", "pdf-reader.html", "pdf-reader.mjs", "pdf-reader-polyfills.mjs", "pdf-reader-url.mjs", "pdf-worker.mjs"]'),
+  buildSiteSource.includes('const STATIC_DIRECTORIES = ["vendor/pdfjs"]'),
   buildSiteSource.includes("GitHub Pages site-size limit exceeded"),
   buildSiteSource.includes("default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"),
   headersSource.includes("frame-ancestors 'self'"),
@@ -589,7 +623,8 @@ const deploymentChecks = [
   headersSource.includes("fullscreen=(self)"),
   notFoundSource.includes("default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'"),
   headersSource.includes("/data/collections/*"),
-  headersSource.includes("max-age=31536000, immutable")
+  headersSource.includes("max-age=31536000, immutable"),
+  headersSource.includes("/vendor/pdfjs/*")
 ];
 
 // The submission route crosses two files that nothing else keeps in step: the
