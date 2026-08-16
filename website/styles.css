@@ -799,6 +799,7 @@
   .pdf-fallback > span { display: grid; width: 74px; height: 90px; place-items: center; color: #0d1420; background: var(--document-accent); clip-path: polygon(0 0,72% 0,100% 22%,100% 100%,0 100%); font: 900 .72rem var(--mono); }
   .pdf-fallback h2 { margin: 22px 0 8px; font-size: 1.25rem; }
   .pdf-fallback p { max-width: 480px; color: var(--muted); font-size: .72rem; line-height: 1.6; }
+  .pdf-fallback > a { display: inline-flex; min-height: 42px; align-items: center; margin-top: 20px; padding: 10px 15px; color: #07101d; background: var(--document-accent); border: 1px solid var(--document-accent); border-radius: 5px; font: 750 .62rem var(--mono); text-decoration: none; }
   .pdf-viewer-note { min-height: 34px; padding: 9px 20px; color: #748096; background: var(--document-surface); border-top: 1px solid var(--document-line); font: .51rem var(--mono); }
   .pdf-viewer-note span { margin-right: 8px; color: var(--document-accent); text-transform: uppercase; }
 
