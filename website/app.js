@@ -870,6 +870,7 @@ function wireShell() {
     hideGlobalResults();
     openArtifact(target.dataset.artifact);
   });
+  $("#artifact-digest").addEventListener("click", handleArtifactTagClick);
 
   $("#random-artifact").addEventListener("click", async () => {
     let offset = Math.floor(Math.random() * Math.max(1, state.archiveTotal));
@@ -988,6 +989,7 @@ function wireShell() {
   ["#artifact-dialog", "#reader-dialog", "#pdf-dialog"].forEach((id) => {
     $(id).addEventListener("close", () => requestAnimationFrame(restoreGlobalSearch));
   });
+  $("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop);
 
   $("#pdf-frame").addEventListener("load", () => {
     if (!state.pdfPath) return;
@@ -1037,25 +1039,6 @@ async function handleViewClick(event) {
   if (unreadTarget) {
     const item = state.items.find((entry) => entry.id === unreadTarget.dataset.savedUnread);
     if (item) setReadState(item, false);
-    return;
-  }
-
-  // A tag in the artifact dialog runs the search it names. The whole point of a
-  // controlled vocabulary is that the reader does not have to guess the archive's
-  // spelling, so clicking is the way to ask - and it goes through the same
-  // `tag:` qualifier a reader could have typed, rather than a private code path.
-  const tagTarget = event.target.closest("[data-tag]");
-  if (tagTarget) {
-    const query = `tag:${tagTarget.dataset.tag}`;
-    if ($("#artifact-dialog").open) $("#artifact-dialog").close();
-    const box = $("#global-search");
-    box.value = query;
-    state.query = query;
-    box.focus();
-    updateGlobalSearch();
-    ensureAllCollections().then(() => {
-      if (state.query === query) updateGlobalSearch();
-    }).catch((error) => toast(`The full search index could not be loaded: ${error.message}`));
     return;
   }
 
@@ -1322,6 +1305,9 @@ function toggleReadingTheme() {
 
 function render() {
   const copy = viewCopy();
+  // The document-level palette also owns native controls such as scrollbars.
+  // Set it before rendering so a room change has no one-frame colour mismatch.
+  document.documentElement.dataset.view = state.view;
   $("#view-kicker").textContent = copy.kicker;
   $("#view-mode").textContent = copy.title;
   $("#view-description").textContent = copy.description;
@@ -1354,9 +1340,14 @@ function updateGlobalSearch() {
     return;
   }
   const complete = loadedCollections.size === YEAR_FILES.length;
-  $("#global-results-label").textContent = complete
-    ? `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"} for “${state.query}”`
-    : `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"} so far · loading ${YEAR_FILES.length - loadedCollections.size} collection(s)…`;
+  const exactTag = /^tag:([^\s]+)$/i.exec(state.query)?.[1] || "";
+  $("#global-results-label").textContent = exactTag
+    ? complete
+      ? `${results.length.toLocaleString()} research item${results.length === 1 ? "" : "s"} tagged “${exactTag}”`
+      : `${results.length.toLocaleString()} tagged item${results.length === 1 ? "" : "s"} so far · loading ${YEAR_FILES.length - loadedCollections.size} collection(s)…`
+    : complete
+      ? `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"} for “${state.query}”`
+      : `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"} so far · loading ${YEAR_FILES.length - loadedCollections.size} collection(s)…`;
   // YEAR, TITLE, RESEARCHER. The name sits under the title rather than beside
   // the publisher, because the two are not the same fact and the narrow layout
   // drops the trailing column entirely: fusing them meant a phone showed the
@@ -1372,7 +1363,7 @@ function updateGlobalSearch() {
         </button>`;
       }).join("") + (results.length > 40 ? `<p>Showing the first 40 results. Add another word to narrow the index.</p>` : "")
     : `<p>No archive records matched those words. A word can name its field —
-       <b>author:</b>, <b>publisher:</b>, <b>title:</b>, <b>year:</b> or <b>topic:</b>.</p>`;
+       <b>author:</b>, <b>publisher:</b>, <b>title:</b>, <b>year:</b>, <b>topic:</b> or <b>tag:</b>.</p>`;
   panel.hidden = false;
 }
 
@@ -1381,6 +1372,36 @@ function closeGlobalSearch() {
   searchResumable = false;
   $("#global-search").value = "";
   $("#global-results").hidden = true;
+}
+
+function tagSearchQuery(value) {
+  const tag = String(value || "").trim().toLowerCase();
+  return tag ? `tag:${tag}` : "";
+}
+
+// Tags are promises of navigation, not decoration: selecting one closes the
+// record and opens the complete archive search for that exact controlled term.
+// Focus moves to the result region instead of the input so a phone does not
+// cover the list with its keyboard.
+function handleArtifactTagClick(event) {
+  const target = event.target.closest("[data-tag]");
+  const query = tagSearchQuery(target?.dataset.tag);
+  if (!query) return;
+
+  searchResumable = false;
+  globalResultsScroll = 0;
+  if ($("#artifact-dialog").open) $("#artifact-dialog").close();
+  state.query = query;
+  $("#global-search").value = query;
+  updateGlobalSearch();
+  $("#global-results-list").scrollTop = 0;
+  requestAnimationFrame(() => $("#global-results").focus({ preventScroll: true }));
+
+  ensureAllCollections().then(() => {
+    if (state.query !== query) return;
+    updateGlobalSearch();
+    $("#global-results-list").scrollTop = 0;
+  }).catch((error) => toast(`The full search index could not be loaded: ${error.message}`));
 }
 
 // Opening a record from a search is not the end of the search. The list is put
@@ -1407,6 +1428,18 @@ function restoreGlobalSearch() {
   searchResumable = false;
   updateGlobalSearch();
   $("#global-results-list").scrollTop = globalResultsScroll;
+}
+
+// A modal dialog reports a backdrop click as a click on the dialog itself.
+// Check the pointer coordinates as well so an empty patch inside a long record
+// never behaves like the surrounding page.
+function closeDialogFromBackdrop(event) {
+  const dialog = event.currentTarget;
+  if (event.target !== dialog || !dialog.open) return;
+  const bounds = dialog.getBoundingClientRect();
+  const outside = event.clientX < bounds.left || event.clientX >= bounds.right
+    || event.clientY < bounds.top || event.clientY >= bounds.bottom;
+  if (outside) dialog.close();
 }
 
 function setMetric(count, label) {
@@ -1443,8 +1476,8 @@ function parseQuery(query) {
     const mark = word.indexOf(":");
     const field = mark > 0 ? word.slice(0, mark) : "";
     return Object.hasOwn(SEARCH_FIELDS, field) && typeof SEARCH_FIELDS[field] === "function"
-      ? { pick: SEARCH_FIELDS[field], word: word.slice(mark + 1) }
-      : { pick: null, word };
+      ? { field, pick: SEARCH_FIELDS[field], word: word.slice(mark + 1) }
+      : { field: "", pick: null, word };
   }).filter((term) => term.word);
 }
 
@@ -1463,9 +1496,10 @@ function queryItems(items, query = state.query) {
     // naming rather than about research.
     const haystack = (`${item.title} ${creditOf(item)} ${item.topic} ${item.year} ${item.kind} `
       + `${item.summary || ""} ${(item.tags || []).join(" ")}`).toLowerCase();
-    return terms.every((term) => (term.pick
-      ? term.pick(item).toLowerCase().includes(term.word)
-      : haystack.includes(term.word)));
+    return terms.every((term) => {
+      if (term.field === "tag") return (item.tags || []).some((tag) => tag.toLowerCase() === term.word);
+      return term.pick ? term.pick(item).toLowerCase().includes(term.word) : haystack.includes(term.word);
+    });
   });
 }
 
@@ -2678,9 +2712,11 @@ async function openArtifact(id) {
   const item = await ensureItemLoaded(id);
   if (!item) return;
   const dialog = $("#artifact-dialog");
-  const signalMode = state.view === "signals";
-  dialog.classList.toggle("signal-artifact", signalMode);
-  dialog.style.setProperty("--dialog-color", signalMode ? "#7899ff" : item.topicColor);
+  // The room owns the panel surface; the research topic still owns the narrow
+  // record accent. Keeping those as separate signals stops a Museum record from
+  // turning green while preserving the useful topic-colour cue.
+  dialog.dataset.view = state.view;
+  dialog.style.setProperty("--dialog-color", item.topicColor);
   $("#artifact-eyebrow").textContent = `${item.yearLabel || item.year} / ${item.preliminary ? "Preliminary · unranked · subject to change" : item.section === "winner" ? `Top 10 rank #${item.rank}` : item.excluded ? "Held out of vote" : "Other nomination"}`;
   $("#artifact-title").textContent = item.title;
   $("#artifact-badges").innerHTML = [item.topic, item.kind, item.archiveStatus, item.language, item.translated ? "English translation" : ""].filter(Boolean).map((badge) => `<span>${h(badge)}</span>`).join("");
@@ -2699,7 +2735,7 @@ async function openArtifact(id) {
   const digestBox = $("#artifact-digest");
   if (digestBox) {
     const tags = (item.tags || []).map((tag) =>
-      `<button type="button" class="tag" data-tag="${h(tag)}">${h(tag)}</button>`).join("");
+      `<button type="button" class="tag" data-tag="${h(tag)}" aria-controls="global-results" aria-label="Search all research tagged ${h(tag)}" title="Find all research tagged “${h(tag)}”"><span aria-hidden="true">#</span>${h(tag)}</button>`).join("");
     const collapsible = Boolean(item.summary && item.summary.length > 280);
     digestBox.className = `artifact-digest${collapsible ? " is-collapsible" : ""}`;
     digestBox.innerHTML = item.summary

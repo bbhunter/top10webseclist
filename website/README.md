@@ -156,6 +156,12 @@ reader or PDF viewer restores the exact format and light/dark reading theme.
 Yearly results PDFs are shareable too. Browsers with Web Share use the native
 share sheet, with a clipboard copy fallback on desktop.
 
+The shared record panel adopts the background palette of the archive concept it
+was opened from while retaining the research topic as its narrow accent. Clicking
+the dimmed page outside the panel dismisses it, matching the close button.
+Research tags are navigation controls: selecting one dismisses the record and
+opens an exact, archive-wide tag search without summoning a phone keyboard.
+
 ### Signal Observatory controls
 
 - Tune **All traffic** or one topic family to redraw the twenty-year waveform.

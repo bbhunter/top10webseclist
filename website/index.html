@@ -118,7 +118,7 @@
         <button class="mobile-menu" id="mobile-menu" aria-label="Open concept menu" aria-controls="concept-sidebar" aria-expanded="false">☰</button>
         <label class="global-search">
           <span aria-hidden="true">⌕</span>
-          <input id="global-search" type="search" aria-label="Search the research archive" placeholder="Find a technique, researcher, topic… or author:name" autocomplete="off">
+          <input id="global-search" type="search" aria-label="Search the research archive" placeholder="Find a technique, researcher or topic… try tag:xss" autocomplete="off">
           <kbd>/</kbd>
         </label>
         <nav class="project-links" aria-label="Project links">
@@ -135,7 +135,7 @@
         </div>
       </header>
 
-      <aside class="global-results" id="global-results" aria-label="Archive search results" aria-live="polite" hidden>
+      <aside class="global-results" id="global-results" aria-label="Archive search results" aria-live="polite" tabindex="-1" hidden>
         <header><span id="global-results-label">Search results</span><button id="close-global-results" type="button" aria-label="Close search results">×</button></header>
         <div id="global-results-list"></div>
       </aside>

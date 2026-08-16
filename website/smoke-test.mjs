@@ -226,6 +226,63 @@ const resultsShareUrl = clientEval(`state.pdfPath = "original-listings/2025-top1
 const repositoryArchiveUrl = clientEval(`archiveUrl("archived-references/md/2025/example.md", "md")`);
 const deployedArchiveUrl = clientEval(`location.href = "https://archive.example/webhacklist/#museum"; archiveUrl("archived-references/md/2025/example.md", "md")`);
 const terminalPaths = clientEval(`YEAR_FILES = ["2016-17", "2024"]; state.terminalCwd = "/2024"; state.terminalPreviousCwd = "/"; JSON.stringify([resolveTerminalPath(".."), resolveTerminalPath("/"), resolveTerminalPath("../2016"), terminalPathExists("/favourites")])`);
+const exactTagMatches = JSON.parse(clientEval(`JSON.stringify(queryItems([
+  { id: "exact", title: "Exact", tags: ["xss"], authors: [] },
+  { id: "substring", title: "Substring", tags: ["xssearch"], authors: [] },
+  { id: "mention", title: "An XSS mention", tags: ["browser"], authors: [] }
+], "tag:xss").map((item) => item.id))`));
+const tagClickBehaviour = JSON.parse(clientEval(`(() => {
+  const originalQuerySelector = document.querySelector;
+  const originalEnsureAllCollections = ensureAllCollections;
+  const originalRequestAnimationFrame = globalThis.requestAnimationFrame;
+  const originalYears = YEAR_FILES;
+  const originalLoadedCollections = [...loadedCollections];
+  const originalItems = state.items;
+  const originalQuery = state.query;
+  const search = { value: "" };
+  const label = { textContent: "" };
+  const list = { innerHTML: "", scrollTop: -1 };
+  const panel = { hidden: true, focused: false, focus() { this.focused = true; } };
+  const dialog = { open: true, closed: false, close() { this.open = false; this.closed = true; } };
+  const elements = new Map([
+    ["#global-search", search], ["#global-results-label", label],
+    ["#global-results-list", list], ["#global-results", panel],
+    ["#artifact-dialog", dialog]
+  ]);
+  try {
+    document.querySelector = (selector) => elements.get(selector) || null;
+    globalThis.requestAnimationFrame = (callback) => callback();
+    ensureAllCollections = () => new Promise(() => {});
+    YEAR_FILES = [];
+    loadedCollections.clear();
+    state.items = [{ id: "one", title: "One", tags: ["xss"], authors: [], year: "2025", topic: "XSS" }];
+    handleArtifactTagClick({ target: { closest: () => ({ dataset: { tag: "XSS" } }) } });
+    return JSON.stringify({ query: state.query, value: search.value, label: label.textContent, hidden: panel.hidden, focused: panel.focused, closed: dialog.closed, scrollTop: list.scrollTop });
+  } finally {
+    document.querySelector = originalQuerySelector;
+    ensureAllCollections = originalEnsureAllCollections;
+    globalThis.requestAnimationFrame = originalRequestAnimationFrame;
+    YEAR_FILES = originalYears;
+    loadedCollections.clear();
+    originalLoadedCollections.forEach((year) => loadedCollections.add(year));
+    state.items = originalItems;
+    state.query = originalQuery;
+  }
+})()`));
+const backdropDialogBehaviour = JSON.parse(clientEval(`(() => {
+  const dialog = {
+    open: true,
+    closes: 0,
+    close() { this.closes++; },
+    getBoundingClientRect() { return { left: 20, right: 120, top: 10, bottom: 90 }; }
+  };
+  closeDialogFromBackdrop({ currentTarget: dialog, target: dialog, clientX: 5, clientY: 50 });
+  const outsideCloses = dialog.closes;
+  closeDialogFromBackdrop({ currentTarget: dialog, target: dialog, clientX: 50, clientY: 50 });
+  const insideCloses = dialog.closes;
+  closeDialogFromBackdrop({ currentTarget: dialog, target: {}, clientX: 5, clientY: 50 });
+  return JSON.stringify({ outsideCloses, insideCloses, childCloses: dialog.closes });
+})()`));
 // Favourites and read state are two independent browser-local lists, and both
 // filter across any combination of years and topics.
 const savedFilters = JSON.parse(clientEval(`
@@ -289,6 +346,13 @@ const activeClientSecurityChecks = [
   !externalImageHtml.includes("<img") && externalImageHtml.includes("external-image-reference") && externalImageHtml.includes("target=\"_blank\""),
   !mutationHtml.match(/(?:href|src)="[^"]*</) && mutationHtml.includes("<strong>label</strong>") && mutationHtml.includes("<code>code</code>"),
   terminalPaths === '["/","/","/2016-17",true]',
+  clientEval(`tagSearchQuery(" XSS ")`) === "tag:xss",
+  JSON.stringify(exactTagMatches) === '["exact"]',
+  tagClickBehaviour.query === "tag:xss" && tagClickBehaviour.value === "tag:xss",
+  tagClickBehaviour.label === "1 research item tagged “xss”",
+  tagClickBehaviour.hidden === false && tagClickBehaviour.focused && tagClickBehaviour.closed && tagClickBehaviour.scrollTop === 0,
+  backdropDialogBehaviour.outsideCloses === 1,
+  backdropDialogBehaviour.insideCloses === 1 && backdropDialogBehaviour.childCloses === 1,
   // Route names must be own properties: a bare VIEWS[name] lookup also answers
   // for every Object.prototype key, so "#__proto__" would pass the guard.
   clientEval(`isViewName("__proto__") || isViewName("constructor") || isViewName("toString")`) === false,
@@ -396,7 +460,15 @@ const experienceChecks = [
   appSource.includes('class="shelf-plate-summary"'),
   indexSource.indexOf('id="artifact-digest"') < indexSource.indexOf('id="artifact-actions"'),
   indexSource.indexOf('id="artifact-actions"') < indexSource.indexOf('id="artifact-context"'),
-  appSource.includes('dialog.classList.toggle("signal-artifact", signalMode)'),
+  indexSource.includes('id="global-results"') && indexSource.includes('tabindex="-1"'),
+  appSource.includes("dialog.dataset.view = state.view"),
+  appSource.includes('$("#artifact-digest").addEventListener("click", handleArtifactTagClick)'),
+  appSource.includes('aria-controls="global-results"'),
+  appSource.includes("document.documentElement.dataset.view = state.view"),
+  appSource.includes('$("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop)'),
+  stylesSource.includes('.artifact-dialog:is([data-view="museum"],[data-view="signals"])'),
+  stylesSource.includes('.artifact-dialog[data-view="constellation"]'),
+  stylesSource.includes("*::-webkit-scrollbar-thumb"),
   appSource.includes("function documentShareUrl"),
   appSource.includes("function shareDocument"),
   indexSource.includes('id="pdf-share"'),
@@ -449,7 +521,7 @@ const experienceChecks = [
   stylesSource.includes(".hacker-terminal"),
   stylesSource.includes(".investigation-board"),
   stylesSource.includes(".signal-observatory"),
-  stylesSource.includes(".artifact-dialog.signal-artifact"),
+  !stylesSource.includes(".artifact-dialog.signal-artifact"),
   stylesSource.includes(".signal-status-filter")
 ];
 // Search engines print ONE name above the result, and they pick it from these
