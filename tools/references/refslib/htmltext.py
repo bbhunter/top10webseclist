@@ -92,11 +92,37 @@ def decode(body, content_type=""):
         meta = re.search(r"charset=[\"']?([\w-]+)", head, re.IGNORECASE)
         if meta:
             charset = meta.group(1)
-    for candidate in (charset, "utf-8", "cp1252", "latin-1"):
+    for candidate in (charset, "utf-8"):
         if not candidate:
             continue
         try:
             return body.decode(candidate)
         except (UnicodeDecodeError, LookupError):
             continue
-    return body.decode("utf-8", "replace")
+
+    # A HANDFUL OF BAD BYTES IS NOT A DIFFERENT ENCODING. Latin-1 decodes every
+    # byte by construction, so it always "succeeds" - and on a page that is
+    # utf-8 apart from one stray region it succeeds by mangling everything else.
+    # A 2010 article declaring utf-8 had THREE invalid bytes in 41,508: reading
+    # it as latin-1 published 186 mojibake sequences, where reading it as utf-8
+    # and replacing those three bytes costs five characters.
+    #
+    # So a nearly-valid utf-8 page is decoded as utf-8. A page that is genuinely
+    # latin-1 fails this test loudly - every accented character is a replacement
+    # - and still falls through to the legacy codecs below.
+    # PROPORTION, NOT A COUNT. A short page that is really latin-1 has four bad
+    # characters in eighty - 5% - and must still reach the legacy codecs; the
+    # 41,508-byte page above has five in 41,508, which is 0.01%. An absolute
+    # floor cannot tell those apart, so the test is one bad character in two
+    # hundred.
+    repaired = body.decode("utf-8", "replace")
+    damaged = repaired.count("�")
+    if damaged * 200 <= len(repaired):
+        return repaired
+
+    for candidate in ("cp1252", "latin-1"):
+        try:
+            return body.decode(candidate)
+        except (UnicodeDecodeError, LookupError):
+            continue
+    return repaired

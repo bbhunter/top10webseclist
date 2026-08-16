@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Cross Domain Leakage With Image Size
-description: "A remotely hosted image whose dimensions vary with the viewer's login state leaks cross-domain user state, since the embedding page can read the rendered size. Extends the same trick to fingerprinting servers via PHP easter eggs and Apache default icons, and to presence detection when the image 404s. Framed as CSRF-based state disclosure."
 resource: "http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/"
-tags: [article, webseclist-reference, ha-ckers-org, info-leak, side-channel, csrf, sop-bypass, browser-fingerprinting, detection, iframe, xss, owasp-a01-2021, owasp-a03-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:21+00:00"
+  at: "2026-08-16T23:23:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:33"
 commit: ""
-content_sha256: e749e2ee87e16f674455443809486cc6d51c0a8c0186ffaacb04459b58db677b
+content_sha256: e82c52680f34ea247b99cbee8f793dfd2a9b7f1525036b8a703e759eec6a2bdc
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: ea464b46fa97de123fc76ae4e8500a1b307a6c3e91bd5ecbb31ebb5953fdc0e4
 retrieved_from: "http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:21+00:00"
+retrieved_utc: "2026-08-16T23:23:22+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-cross-size
 snapshot: 20071202130510
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/>
-- Preserved from: http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/ (stored) on 2026-08-16
 - Capture timestamp: 20071202130510
 - Licence: unknown
 

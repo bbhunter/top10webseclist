@@ -328,3 +328,20 @@ class BlockquoteTests(unittest.TestCase):
 
     def test_an_empty_quote_emits_nothing(self):
         self.assertEqual("", self.quote("<blockquote>  </blockquote>"))
+
+
+class NearlyValidUtf8Tests(unittest.TestCase):
+    """One stray byte must not send a UTF-8 page to a legacy codec."""
+
+    def test_three_bad_bytes_do_not_mangle_a_utf8_page(self):
+        body = ("<meta charset=\"UTF-8\">" + "La mayoría del código. " * 200).encode("utf-8")
+        body = body[:300] + b"\xed" + body[300:]
+        text = htmltext.decode(body, "text/html; charset=UTF-8")
+        self.assertIn("mayoría", text)
+        self.assertNotIn("Ã", text)          # the mojibake signature
+
+    def test_a_genuinely_latin1_page_still_reaches_latin1(self):
+        body = ("<meta charset=\"UTF-8\">" + "La mayoría del código. " * 20).encode("latin-1")
+        text = htmltext.decode(body, "text/html; charset=UTF-8")
+        self.assertIn("mayoría", text)
+        self.assertNotIn("\ufffd", text)

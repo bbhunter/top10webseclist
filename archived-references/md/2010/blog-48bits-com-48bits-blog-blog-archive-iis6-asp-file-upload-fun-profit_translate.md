@@ -5,7 +5,7 @@ resource: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-pr
 tags: [article, webseclist-reference, blog-48bits-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-16T23:12:23+00:00"
+  at: "2026-08-16T23:22:25+00:00"
 status: stable
 stale_after: 2027-08-16
 sources:
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:60"
 commit: ""
-content_sha256: 3aa7bd716516510e265f6d9d46c170617416d72451d56bc977ed277f35a8c0d7
+content_sha256: 81c861fc2e9407cbf7ec0a1ec97fe57490e745c946a239e0f22650d30e1b3203
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 544208f567cfed7bd404c26cb7925a2a7a2c40603fa0131bbb86668488256ee2
 retrieved_from: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-16T23:12:23+00:00"
+retrieved_utc: "2026-08-16T23:22:25+00:00"
 slug: blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit_translate
 snapshot: 20130829145418
 title_english: ""
