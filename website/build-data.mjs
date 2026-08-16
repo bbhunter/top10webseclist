@@ -47,7 +47,7 @@ async function atomicWrite(file, contents) {
  * archived-references/tag-vocabulary.json is the only place it has to change.
  */
 function owaspMap(vocabulary) {
-  const map = {};
+  const map = Object.create(null);
   for (const category of vocabulary?.owasp?.categories || []) {
     const id = String(category?.id || "");
     if (!id) continue;
@@ -55,7 +55,7 @@ function owaspMap(vocabulary) {
     for (const tag of category?.tags || []) {
       const key = String(tag || "").trim().toLowerCase();
       if (!key) continue;
-      if (!map[key]) map[key] = [];
+      if (!Object.hasOwn(map, key)) map[key] = [];
       if (!map[key].includes(label)) map[key].push(label);
     }
   }

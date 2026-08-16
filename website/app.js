@@ -219,6 +219,24 @@ function yearRecordFor(year) {
   return YEAR_RECORDS.find((record) => record.id === year) || { id: year, label: year, status: "final", ranked: true };
 }
 
+function compareCollectionsNewestFirst(a, b) {
+  const first = String(a?.id ?? a);
+  const second = String(b?.id ?? b);
+  const firstYear = Number(/^\d{4}/.exec(first)?.[0] || 0);
+  const secondYear = Number(/^\d{4}/.exec(second)?.[0] || 0);
+  return secondYear - firstYear || second.localeCompare(first);
+}
+
+// The registry stays in canonical publishing order. Archive controls use a
+// separate copy so the collection a visitor is most likely to want is first.
+function newestFirstYearRecords(records = YEAR_RECORDS) {
+  return [...records].sort(compareCollectionsNewestFirst);
+}
+
+function newestFirstYearFiles(years = YEAR_FILES) {
+  return [...years].sort(compareCollectionsNewestFirst);
+}
+
 function yearLabel(year, short = false) {
   const record = yearRecordFor(year);
   return short && record.shortLabel ? record.shortLabel : record.label || record.id;
@@ -418,7 +436,9 @@ function withOwaspCategories(tags) {
   if (!map) return source;
   const derived = [];
   for (const tag of source) {
-    for (const category of map[String(tag).toLowerCase()] || []) {
+    const key = String(tag).toLowerCase();
+    const categories = Object.hasOwn(map, key) && Array.isArray(map[key]) ? map[key] : [];
+    for (const category of categories) {
       if (!source.includes(category) && !derived.includes(category)) derived.push(category);
     }
   }
@@ -533,7 +553,6 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
     const title = lead.length >= 4 ? lead : links[0].label;
     const originalUrl = links[0].url;
     const excluded = /excluded|held out/i.test(note) || /excluded|held out/i.test(body.slice(firstIndex));
-    const lookupKey = normalizeUrl(originalUrl);
     const record = links[0].record || links.find((link) => link.record)?.record;
     const topic = topicFor(title);
     // the reader opens the first preserved copy across the research's links
@@ -637,11 +656,7 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
         ? { originalMdPath, originalPdfPath, originalPdfVersion, translated: true }
         : {}),
       archived: Boolean(mdPath || pdfPath),
-      citedBy: record?.cited_by || [`${year}.md:${lineIndex + 1}`],
-      readKey: lookupKey,
-      read: state.readKeys.has(lookupKey),
-      favouriteKey: lookupKey,
-      favourite: state.favouriteKeys.has(lookupKey)
+      citedBy: record?.cited_by || [`${year}.md:${lineIndex + 1}`]
     });
   }
 
@@ -669,8 +684,13 @@ function collectionUrl(year) {
 }
 
 function applyStoredState(item) {
-  item.read = state.readKeys.has(item.readKey);
-  item.favourite = state.favouriteKeys.has(item.favouriteKey);
+  // The keys are deterministic, so reconstruct them instead of repeating them
+  // (and two default-false flags) in every generated collection record.
+  const lookupKey = normalizeUrl(item.originalUrl);
+  item.readKey = lookupKey;
+  item.favouriteKey = lookupKey;
+  item.read = state.readKeys.has(lookupKey);
+  item.favourite = state.favouriteKeys.has(lookupKey);
   return item;
 }
 
@@ -764,7 +784,8 @@ async function loadArchive() {
     }));
     state.archiveTotal = Number(catalogue.total) || YEAR_RECORDS.reduce((sum, record) => sum + Number(record.count || 0), 0);
     state.manifestCount = Number(catalogue.manifestCount) || 0;
-    const latestFinal = [...YEAR_RECORDS].reverse().find((record) => record.status === "final")?.id || YEAR_FILES.at(-1);
+    const newestRecords = newestFirstYearRecords();
+    const latestFinal = newestRecords.find((record) => record.status === "final")?.id || newestRecords[0]?.id;
     state.year = latestFinal;
     state.starYear = latestFinal;
     state.signalYear = latestFinal;
@@ -1346,7 +1367,7 @@ function updateGlobalSearch() {
         return `
         <button type="button" data-artifact="${h(item.id)}">
           <span><b>${h(item.yearLabel || item.year)}</b>${item.favourite ? "★ favourite" : item.rank ? `#${item.rank}` : item.preliminary ? "preliminary" : "nominee"}</span>
-          <div><strong>${h(item.title)}</strong>${names ? `<em>${h(names)}</em>` : ""}</div>
+          <div><strong>${h(item.title)}</strong>${item.summary ? `<p>${h(item.summary)}</p>` : ""}${names ? `<em>${h(names)}</em>` : ""}</div>
           <small>${h(item.publisher || item.topic)}</small>
         </button>`;
       }).join("") + (results.length > 40 ? `<p>Showing the first 40 results. Add another word to narrow the index.</p>` : "")
@@ -1421,7 +1442,7 @@ function parseQuery(query) {
   return query.toLowerCase().split(/\s+/).filter(Boolean).map((word) => {
     const mark = word.indexOf(":");
     const field = mark > 0 ? word.slice(0, mark) : "";
-    return SEARCH_FIELDS[field]
+    return Object.hasOwn(SEARCH_FIELDS, field) && typeof SEARCH_FIELDS[field] === "function"
       ? { pick: SEARCH_FIELDS[field], word: word.slice(mark + 1) }
       : { pick: null, word };
   }).filter((term) => term.word);
@@ -1579,18 +1600,26 @@ function statusMarkup(item) {
 
 function artifactCard(item, compactCard = false) {
   const rank = item.rank ? `<span class="rank-token">#${item.rank}</span>` : item.preliminary ? `<span class="preliminary-token">PRELIMINARY</span>` : `<span>${h(item.kind)}</span>`;
+  // The roomy winner and personal-collection cards should answer the first
+  // question a title raises: what did this research actually find? Dense
+  // nomination walls keep their scanning rhythm and expose the same summary in
+  // the record dialog instead of turning 70+ cards into a page of paragraphs.
+  const summary = !compactCard && item.summary
+    ? `<p class="card-summary">${h(item.summary)}</p>`
+    : "";
   return `
-    <article class="artifact-card topic-${h(item.topic)} ${compactCard ? "compact-card" : ""} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" tabindex="0" role="button" aria-label="Open ${h(item.title)}${item.favourite ? ", favourite" : ""}">
+    <div class="artifact-card topic-${h(item.topic)} ${compactCard ? "compact-card" : ""} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" tabindex="0" role="button" aria-label="Open ${h(item.title)}${item.favourite ? ", favourite" : ""}">
       <div class="card-top"><span>${h(item.yearLabel || item.year)} / ${h(item.topic)}</span>${rank}</div>
       <h3>${h(item.title)}</h3>
+      ${summary}
       <div class="card-foot"><span>${h(short(briefCreditOf(item) || "Unknown publisher", 25))}</span>${statusMarkup(item)}</div>
       ${item.favourite ? `<span class="card-favourite" aria-label="Favourite">★</span>` : ""}
       ${item.read ? `<span class="card-read">✓ read</span>` : ""}
-    </article>`;
+    </div>`;
 }
 
 function yearPills(selected) {
-  return YEAR_RECORDS.map((record) => `<button class="year-pill ${record.id === selected ? "active" : ""} ${record.status === "preliminary" ? "preliminary" : ""}" data-year="${h(record.id)}" aria-pressed="${record.id === selected}" title="${h(record.status === "preliminary" ? "Preliminary, unranked, and subject to change" : `Finalized ${record.label} archive`)}"><span>${h(record.label)}</span>${record.status === "preliminary" ? `<small>PRELIM</small>` : ""}</button>`).join("");
+  return newestFirstYearRecords().map((record) => `<button class="year-pill ${record.id === selected ? "active" : ""} ${record.status === "preliminary" ? "preliminary" : ""}" data-year="${h(record.id)}" aria-pressed="${record.id === selected}" title="${h(record.status === "preliminary" ? "Preliminary, unranked, and subject to change" : `Finalized ${record.label} archive`)}"><span>${h(record.label)}</span>${record.status === "preliminary" ? `<small>PRELIM</small>` : ""}</button>`).join("");
 }
 
 // A card's colour is its research topic and nothing else — the same topic named
@@ -1648,10 +1677,10 @@ function renderLibrary() {
         <h2>Browse by title, not by filename.</h2>
         <p>Each spine is one real technique. Pull it from the shelf to choose the preserved Markdown, printable PDF or original source.</p>
       </section>
-      <aside class="checkout-card">
-        <p class="eyebrow" style="color:#655f48">Reading room card</p>
+      <div class="checkout-card">
+        <p class="eyebrow">Reading room card</p>
         <p><strong>${items.length}</strong> volumes<br><strong>${groups.length}</strong> subject shelves<br><strong>${items.filter((item) => item.archived).length}</strong> locally preserved</p>
-      </aside>
+      </div>
     </div>
     <div class="control-strip" aria-label="Select library year">${yearPills(state.year)}</div>
     <section class="library-hall">
@@ -1661,7 +1690,7 @@ function renderLibrary() {
           <div class="book-shelf">
             ${group.items.map((item, index) => `<button class="book ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" aria-label="Open ${h(item.title)}${item.read ? ", read" : ""}${item.favourite ? ", favourite" : ""}" style="--book-height:${125 + ((index * 19) % 48)}px;--book-color:${h(group.color)}">${h(short(item.title, 48))}<b>${h(yearLabel(item.year, true))}</b></button>`).join("")}
           </div>
-          <div class="shelf-plate" aria-hidden="true"><i class="shelf-plate-notch"></i><b class="shelf-plate-title"></b><span class="shelf-plate-meta"></span></div>
+          <div class="shelf-plate" aria-hidden="true"><i class="shelf-plate-notch"></i><b class="shelf-plate-title"></b><span class="shelf-plate-summary"></span><span class="shelf-plate-meta"></span></div>
         </div>`).join("")}
     </section>`;
 }
@@ -1687,6 +1716,9 @@ function showShelfPlate(book) {
   if (!item) return;
   hideShelfPlates(plate);
   plate.querySelector(".shelf-plate-title").textContent = item.title;
+  const summary = plate.querySelector(".shelf-plate-summary");
+  summary.textContent = item.summary || "";
+  summary.hidden = !item.summary;
   const standing = item.rank ? `#${item.rank}` : item.preliminary ? "PRELIMINARY" : item.kind;
   plate.querySelector(".shelf-plate-meta").textContent = [
     standing,
@@ -1759,7 +1791,7 @@ function renderFavourites() {
   // Offer every year/topic this collection holds, plus any still-selected one it
   // no longer holds, so a selection left over from the other list stays visible
   // and clickable instead of silently emptying the grid.
-  const yearRecords = YEAR_RECORDS.filter((record) => state.savedYears.has(record.id) || all.some((item) => item.year === record.id));
+  const yearRecords = newestFirstYearRecords().filter((record) => state.savedYears.has(record.id) || all.some((item) => item.year === record.id));
   const topicRecords = TOPICS.filter((topic) => state.savedTopics.has(topic.name) || all.some((item) => item.topic === topic.name));
   const filtering = Boolean(state.savedYears.size || state.savedTopics.size);
   const selectedYearCount = state.savedYears.size;
@@ -1810,11 +1842,13 @@ function renderTerminal() {
   if (!state.terminalLines.length) state.terminalLines = terminalWelcome();
   const mdCount = archiveFieldTotal("markdown");
   const pdfCount = archiveFieldTotal("pdf");
+  const terminalYear = YEAR_FILES.includes(state.terminalCwd.slice(1)) ? state.terminalCwd.slice(1) : "";
   $("#view-root").innerHTML = `
+    ${terminalYear ? preliminaryNotice(terminalYear) : ""}
     <section class="hacker-terminal" aria-label="Interactive Hacker Terminal">
       <header class="hacker-terminal-head">
         <strong>THE HACKER TERMINAL</strong><span>·</span>
-        <nav aria-label="List an archive year">${YEAR_FILES.map((year) => `<button data-term-command="ls /${h(year)}">${h(yearLabel(year, true))}</button>`).join("")}</nav>
+        <nav aria-label="List an archive year">${newestFirstYearFiles().map((year) => `<button data-term-command="ls /${h(year)}">${h(yearLabel(year, true))}</button>`).join("")}</nav>
       </header>
       <div class="terminal-output" id="terminal-output" role="log" aria-live="polite">${state.terminalLines.join("")}</div>
       <form class="terminal-input" id="terminal-form">
@@ -2009,7 +2043,7 @@ function terminalRows(items, limit = 60) {
 }
 
 function terminalRootListing() {
-  return `<p class="term-bright">total ${YEAR_FILES.length + 1} directories, ${state.archiveTotal} documents</p>${YEAR_FILES.map((year) => {
+  return `<p class="term-bright">total ${YEAR_FILES.length + 1} directories, ${state.archiveTotal} documents</p>${newestFirstYearFiles().map((year) => {
     const summary = collectionSummaryFor(year);
     const count = Number(summary?.count || 0);
     const archived = Number(summary?.archived || 0);
@@ -2186,7 +2220,7 @@ function terminalCompletion(value) {
   const parts = source.split(/\s+/);
   const commands = ["help", "pwd", "cd", "ls", "open", "grep", "fav", "unfav", "favorites", "random", "stats", "winners", "history", "echo", "clear", "whoami", "exit"];
   let options = commands;
-  if (parts.length > 1 && ["cd", "ls", "list", "winners"].includes(parts[0].toLowerCase())) options = ["/", "..", "-", "/favourites", ...YEAR_FILES.map((year) => `/${year}`)];
+  if (parts.length > 1 && ["cd", "ls", "list", "winners"].includes(parts[0].toLowerCase())) options = ["/", "..", "-", "/favourites", ...newestFirstYearFiles().map((year) => `/${year}`)];
   if (parts.length > 1 && ["open", "cat", "show", "fav", "favourite", "favorite", "unfav"].includes(parts[0].toLowerCase())) options = parts.length > 2 ? ["--md", "--pdf", "--web"] : terminalItemsAtPath().map((item) => item.id);
   const stem = parts.at(-1).toLowerCase();
   const match = options.find((option) => option.toLowerCase().startsWith(stem));
@@ -2213,11 +2247,12 @@ function seededRandom(seed) {
 }
 
 function renderSignals() {
-  if (!YEAR_FILES.includes(state.signalYear)) state.signalYear = YEAR_FILES.at(-1);
+  const chartYears = newestFirstYearFiles();
+  if (!YEAR_FILES.includes(state.signalYear)) state.signalYear = chartYears[0];
   const activeTopic = state.signalTopic === "all" ? null : TOPICS.find((topic) => topic.name === state.signalTopic);
   const signalColor = activeTopic?.color || "#7899ff";
   const topicLabel = activeTopic?.name || "All research";
-  const chart = YEAR_FILES.map((year) => {
+  const chart = chartYears.map((year) => {
     const summary = collectionSummaryFor(year);
     const allItems = year === state.signalYear ? itemsForYear(year) : [];
     const items = activeTopic ? allItems.filter((item) => item.topic === activeTopic.name) : allItems;
@@ -2227,7 +2262,7 @@ function renderSignals() {
   const maxCount = Math.max(1, ...chart.map((point) => point.count));
   const total = chart.reduce((sum, point) => sum + point.count, 0);
   const peak = chart.reduce((best, point) => point.count > best.count ? point : best, chart[0]);
-  const selectedPoint = chart.find((point) => point.year === state.signalYear) || chart.at(-1);
+  const selectedPoint = chart.find((point) => point.year === state.signalYear) || chart[0];
   const selectedItems = selectedPoint.items;
   const selectedArchived = selectedItems.filter((item) => item.archived).length;
   const selectedRead = selectedItems.filter((item) => item.read).length;
@@ -2313,7 +2348,7 @@ function renderSignals() {
       <section class="signal-focus">
         ${selectedPoint.preliminary ? preliminaryNotice(selectedPoint.year) : ""}
         <div class="signal-focus-grid">
-          <aside class="signal-readout">
+          <div class="signal-readout">
             <p class="signal-lock"><i></i> Frequency locked</p>
             <strong>${h(yearLabel(selectedPoint.year))}</strong>
             <span>${h(topicLabel)} / ${selectedItems.length} record${selectedItems.length === 1 ? "" : "s"}</span>
@@ -2325,7 +2360,7 @@ function renderSignals() {
             <div class="signal-distribution" aria-label="Topic distribution for ${h(yearLabel(selectedPoint.year))}">
               ${distribution.map((topic) => `<div title="${h(`${topic.name}: ${topic.count}`)}"><span>${h(topic.name)}</span><i><b style="width:${(topic.count / distributionMax * 100).toFixed(1)}%;background:${h(topic.color)}"></b></i><strong>${topic.count}</strong></div>`).join("")}
             </div>
-          </aside>
+          </div>
           <div class="signal-findings">
             <header><div><p class="eyebrow">Papers on this frequency</p><h3>${h(statusLabel)} in ${h(yearLabel(selectedPoint.year))}</h3></div><span>${filteredArchived}/${statusItems.length} preserved</span></header>
             <div class="signal-result-tools">
@@ -2471,7 +2506,7 @@ function renderEvidence() {
         <div><strong>THE <span>INVESTIGATION</span> BOARD</strong><small>evidence archive 2006–2026 · preliminary material flagged</small></div>
         <div><button id="investigation-search" type="button">⌕ case index <kbd>/</kbd></button><button id="investigation-dense" type="button" aria-pressed="${state.evidenceDense}">⌗ dense</button><button id="investigation-reset" type="button">↺ reset layout</button></div>
       </header>
-      <nav class="case-tabs" aria-label="Case files by year">${YEAR_FILES.map((year) => `<button class="case-tab ${isPreliminaryYear(year) ? "preliminary" : ""}" data-year="${h(year)}" aria-current="${year === state.year}">CASE ${h(yearLabel(year, true))}</button>`).join("")}</nav>
+      <nav class="case-tabs" aria-label="Case files by year">${newestFirstYearFiles().map((year) => `<button class="case-tab ${isPreliminaryYear(year) ? "preliminary" : ""}" data-year="${h(year)}" aria-current="${year === state.year}">CASE ${h(yearLabel(year, true))}</button>`).join("")}</nav>
       ${preliminaryNotice(state.year)}
       <div class="case-slip ${preliminary ? "preliminary" : ""}"><b>CASE ${h(yearLabel(state.year))}</b><strong>${preliminary ? "PRELIMINARY WEB RESEARCH LEADS" : "TOP 10 WEB HACKING TECHNIQUES"}</strong><span>${preliminary ? `${items.length} unranked leads · AI-collected · subject to change` : `${winners.length} exhibits pinned · ${nominees.length} supporting leads`} · ${archived}/${items.length} on file</span></div>
       <div class="investigation-board-frame"><div class="investigation-board ${state.evidenceDense ? "dense" : ""}" id="investigation-board"><svg id="investigation-strings" aria-hidden="true"></svg></div></div>
@@ -2665,10 +2700,17 @@ async function openArtifact(id) {
   if (digestBox) {
     const tags = (item.tags || []).map((tag) =>
       `<button type="button" class="tag" data-tag="${h(tag)}">${h(tag)}</button>`).join("");
+    const collapsible = Boolean(item.summary && item.summary.length > 280);
+    digestBox.className = `artifact-digest${collapsible ? " is-collapsible" : ""}`;
     digestBox.innerHTML = item.summary
-      ? `<p>${h(item.summary)}</p>${tags ? `<div class="tags">${tags}</div>` : ""}`
-      : tags ? `<div class="tags">${tags}</div>` : "";
+      ? `<h3>What the research found</h3><p class="artifact-summary">${h(item.summary)}</p>${collapsible ? `<button class="digest-toggle" type="button" aria-expanded="false">Read full summary</button>` : ""}${tags ? `<div class="tags" aria-label="Research topics">${tags}</div>` : ""}`
+      : tags ? `<h3>Research topics</h3><div class="tags" aria-label="Research topics">${tags}</div>` : "";
     digestBox.hidden = !(item.summary || tags);
+    digestBox.querySelector(".digest-toggle")?.addEventListener("click", (event) => {
+      const expanded = digestBox.classList.toggle("is-expanded");
+      event.currentTarget.setAttribute("aria-expanded", String(expanded));
+      event.currentTarget.textContent = expanded ? "Show less" : "Read full summary";
+    });
   }
   const credited = (item.authors || []).join(", ");
   $("#artifact-facts").innerHTML = `
@@ -2850,6 +2892,34 @@ function openPdfViewer(item, options = {}) {
 // Markdown, which for a rendered PDF is the very document that was printed, and
 // for a preserved original is the text extracted from it.
 const PDF_LINK_LIMIT = 400;
+const MAX_MARKDOWN_BYTES = 2_000_000;
+const MAX_MARKDOWN_LINES = 20_000;
+const MAX_INLINE_MARKERS = 5_000;
+
+// Archived text is untrusted and can otherwise turn a small fetch into a very
+// large DOM (for example, one list item per line). Bound both the source and
+// the number of structural units before parsing it in either document view.
+function validatedMarkdownText(value) {
+  const text = String(value ?? "");
+  if (text.length > MAX_MARKDOWN_BYTES) {
+    throw new Error("Markdown exceeds the safe reader size limit");
+  }
+  let lines = 1;
+  for (let index = 0; index < text.length; index++) {
+    if (text.charCodeAt(index) === 10 && ++lines > MAX_MARKDOWN_LINES) {
+      throw new Error("Markdown exceeds the safe reader line limit");
+    }
+  }
+  return text;
+}
+
+async function responseMarkdownText(response) {
+  const advertisedSize = Number(response.headers.get("content-length") || 0);
+  if (advertisedSize > MAX_MARKDOWN_BYTES) {
+    throw new Error("Markdown exceeds the safe reader size limit");
+  }
+  return validatedMarkdownText(await response.text());
+}
 
 function linksInMarkdown(markdown) {
   const found = new Map();
@@ -2859,7 +2929,7 @@ function linksInMarkdown(markdown) {
     if (!safe || found.has(safe) || found.size >= PDF_LINK_LIMIT) return;
     found.set(safe, (label || "").replace(/[*_`]/g, "").trim() || safe);
   };
-  const body = String(markdown || "");
+  const body = validatedMarkdownText(markdown);
   for (const match of body.matchAll(/\[([^\]\n]{1,120})\]\((https?:\/\/[^\s)]+)\)/g)) {
     remember(match[2], match[1]);
   }
@@ -2892,7 +2962,7 @@ async function togglePdfLinks(force) {
   try {
     const response = await fetch(markdownUrl, { credentials: "same-origin", cache: "default" });
     if (!response.ok) throw new Error(`Markdown returned ${response.status}`);
-    const links = linksInMarkdown(await response.text());
+    const links = linksInMarkdown(await responseMarkdownText(response));
     if (panel.dataset.path !== state.pdfPath) return;
     list.innerHTML = links.length
       ? links.map((link) => `<a href="${h(link.url)}" target="_blank" rel="noopener noreferrer">${h(short(link.label, 70))}<small>${h(link.url)}</small></a>`).join("")
@@ -2959,7 +3029,9 @@ const HL_SLASH = new Set(["javascript", "js", "nodejs", "java", "php", "go", "c"
 
 function highlightCode(code, language) {
   const lang = String(language || "").toLowerCase();
-  const words = HL_KEYWORDS[lang];
+  const words = Object.hasOwn(HL_KEYWORDS, lang) && typeof HL_KEYWORDS[lang] === "string"
+    ? HL_KEYWORDS[lang]
+    : "";
   // An unknown or deliberately plain language still gets escaped, just not lit.
   if (!words && !HL_HASH.has(lang) && !HL_SLASH.has(lang)) return h(code);
   const keywords = new Set((words || "").split(" ").filter(Boolean));
@@ -2994,6 +3066,16 @@ function formatInlineEmphasis(value) {
 }
 
 function inlineMarkdown(value) {
+  // Inline syntax can multiply a short source into several DOM nodes. Reject a
+  // deliberately marker-dense paragraph before any regex or token expansion;
+  // ordinary prose and the archive's long code-bearing lines remain far below
+  // this ceiling.
+  let markerCount = 0;
+  for (const character of String(value ?? "")) {
+    if ((character === "`" || character === "[") && ++markerCount > MAX_INLINE_MARKERS) {
+      throw new Error("Markdown exceeds the safe inline-complexity limit");
+    }
+  }
   const safeTokens = [];
   const hold = (html) => {
     const token = `%%<inline:${safeTokens.length}>%%`;
@@ -3002,7 +3084,7 @@ function inlineMarkdown(value) {
   };
   // The raw "<" in the placeholder cannot appear in escaped text, so document
   // content can never collide with (or forge) one of these trusted tokens.
-  let output = h(value).replace(/`([^`]+)`/g, (_, code) => {
+  let output = h(value).replace(/`([^`\n]{1,10000})`/g, (_, code) => {
     return hold(`<code>${code}</code>`);
   });
 
@@ -3010,27 +3092,29 @@ function inlineMarkdown(value) {
   // would let a document probe private-network URLs, make cookie-bearing image
   // requests, or track every reader. Keep the URL available behind an explicit
   // click; the archived PDF remains the durable visual copy where one exists.
-  output = output.replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+)(?:\s+&quot;[^&]*&quot;)?\)/g, (_, alt, url) => {
+  output = output.replace(/!\[([^\[\]\n]{0,500})\]\((https?:\/\/[^\s)]{1,2048})(?:\s+&quot;[^&\n]{0,500}&quot;)?\)/g, (_, alt, url) => {
     const linkUrl = safeMarkdownUrl(url);
     if (!linkUrl) return alt;
     const label = formatInlineEmphasis(alt || "External article image");
     return hold(`<span class="external-image-reference"><span>${label}</span><a href="${h(linkUrl)}" target="_blank" rel="noopener noreferrer">Open publisher image ↗</a></span>`);
   });
-  output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)(?:\s+&quot;[^&]*&quot;)?\)/g, (_, label, url) => {
+  output = output.replace(/\[([^\[\]\n]{1,500})\]\((https?:\/\/[^\s)]{1,2048})(?:\s+&quot;[^&\n]{0,500}&quot;)?\)/g, (_, label, url) => {
     const safe = safeMarkdownUrl(url);
     return safe ? hold(`<a href="${h(safe)}" target="_blank" rel="noopener noreferrer">${formatInlineEmphasis(label)}</a>`) : label;
   });
-  output = output.replace(/&lt;(https?:\/\/[^&\s]+)&gt;/g, (_, url) => {
+  output = output.replace(/&lt;(https?:\/\/[^&\s]{1,2048})&gt;/g, (_, url) => {
     const safe = safeMarkdownUrl(url);
     return safe ? hold(`<a href="${h(safe)}" target="_blank" rel="noopener noreferrer">${h(safe)}</a>`) : url;
   });
   output = formatInlineEmphasis(output);
-  // Function form so "$&", "$'" etc. inside untrusted code spans are never
-  // interpreted as replacement patterns. Reverse order restores a link that
-  // contains an earlier code token before restoring the code inside its label.
-  for (let index = safeTokens.length - 1; index >= 0; index--) {
-    output = output.replace(`%%<inline:${index}>%%`, () => safeTokens[index]);
-  }
+  // Function form means "$&", "$'" etc. inside untrusted code spans are not
+  // replacement patterns. A link can contain one earlier code token in its
+  // label, hence two bounded passes; replacing one token at a time was
+  // quadratic and let a marker-dense article freeze the reader.
+  const tokenPattern = /%%<inline:(\d+)>%%/g;
+  const restoreTokens = (current) => current.replace(tokenPattern, (token, index) =>
+    Number(index) < safeTokens.length ? safeTokens[Number(index)] : token);
+  output = restoreTokens(restoreTokens(output));
   return output;
 }
 
@@ -3041,7 +3125,7 @@ function demotedHeading(line) {
 }
 
 function markdownDocument(markdown) {
-  let body = String(markdown).replace(/^\uFEFF/, "");
+  let body = validatedMarkdownText(markdown).replace(/^\uFEFF/, "");
   if (body.startsWith("---\n") || body.startsWith("---\r\n")) {
     const end = body.indexOf("\n---", 4);
     if (end !== -1) body = body.slice(body.indexOf("\n", end + 1) + 1);
@@ -3201,10 +3285,7 @@ async function openReader(item, options = {}) {
   try {
     const response = await fetch(markdownUrl, { credentials: "same-origin", cache: "default" });
     if (!response.ok) throw new Error(`Markdown returned ${response.status}`);
-    const advertisedSize = Number(response.headers.get("content-length") || 0);
-    if (advertisedSize > 8_000_000) throw new Error("Markdown exceeds the safe reader size limit");
-    const markdown = await response.text();
-    if (markdown.length > 8_000_000) throw new Error("Markdown exceeds the safe reader size limit");
+    const markdown = await responseMarkdownText(response);
     if (requestToken !== readerRequestToken || state.readerItem !== item) return;
     const documentView = markdownDocument(markdown);
     $("#reader-content").innerHTML = `<div class="archive-warning">Safe reader mode: third-party HTML is escaped, scripts cannot run, and external links and images require a separate click.</div>${documentView.html}`;
@@ -3233,7 +3314,7 @@ function issueFieldText(value, limit = ISSUE_FIELD_LIMIT) {
 }
 
 function issueUrl(form, fields = {}) {
-  const template = CONTRIBUTION_FORMS[form];
+  const template = Object.hasOwn(CONTRIBUTION_FORMS, form) ? CONTRIBUTION_FORMS[form] : "";
   if (!template) return `${REPOSITORY_URL}/issues/new/choose`;
   const url = new URL(`${REPOSITORY_URL}/issues/new`);
   url.searchParams.set("template", template);

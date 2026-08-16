@@ -143,6 +143,7 @@ const notFoundSource = await readFile(path.join(root, "website/404.html"), "utf8
 const progressiveCatalogue = JSON.parse(await readFile(path.join(root, "website/data/catalogue.json"), "utf8"));
 const progressiveRecord = [...progressiveCatalogue.years].reverse().find((record) => record.status === "final") || progressiveCatalogue.years.at(-1);
 const progressiveShard = JSON.parse(await readFile(path.join(root, `website/data/collections/${progressiveRecord.id}.json`), "utf8"));
+const progressiveWireKeysAbsent = ["readKey", "read", "favouriteKey", "favourite"].every((key) => !Object.hasOwn(progressiveShard.items[0], key));
 const sourceBundle = `${indexSource}\n${appSource}`;
 const unsafeBlankTargets = sourceBundle.match(/<a\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/gi) || [];
 
@@ -175,10 +176,15 @@ const progressiveLoad = JSON.parse(await clientEval(`
     count: items.length,
     loaded: loadedCollections.has(__progressiveYear),
     year: items[0]?.year,
+    readKey: items[0]?.readKey,
+    favouriteKey: items[0]?.favouriteKey,
+    originalUrl: items[0]?.originalUrl,
     read: items[0]?.read,
     favourite: items[0]?.favourite
   }))
 `));
+const newestFirstYearIds = JSON.parse(clientEval(`JSON.stringify(newestFirstYearRecords().map((record) => record.id))`));
+const newestFirstYearPillIds = [...clientEval(`yearPills("2025")`).matchAll(/data-year="([^"]+)"/g)].map((match) => match[1]);
 const hostileMarkdown = [
   "# <img src=x onerror=globalThis.pwned=1>",
   "<script>globalThis.pwned=2</script>",
@@ -186,6 +192,7 @@ const hostileMarkdown = [
   "![breaker](https://example.test/x\" onerror=\"globalThis.pwned=4)",
   "[breaker](https://example.test/x\" onmouseover=\"globalThis.pwned=5)",
   "<svg onload=globalThis.pwned=6></svg>",
+  "```constructor\n<img src=x onerror=globalThis.pwned=9>\n```",
   "<https://example.test/?a=1&b=2>"
 ].join("\n\n");
 const hostileHtml = clientEval(`markdownDocument(${JSON.stringify(hostileMarkdown)}).html`);
@@ -194,6 +201,16 @@ const mutationMarkdown = "[**label**](https://example.test/a__b**c) and `code`";
 const mutationHtml = clientEval(`markdownDocument(${JSON.stringify(mutationMarkdown)}).html`);
 const hostileRegistryRecord = [{ id: "2025", label: '"><img src=x onerror=globalThis.pwned=7>', status: "final" }];
 const hostileYearPills = clientEval(`YEAR_RECORDS = ${JSON.stringify(hostileRegistryRecord)}; yearPills("2025")`);
+const summaryCardMarkup = clientEval(`artifactCard({
+  id: "2025-0", year: "2025", yearLabel: "2025", topic: "HTTP",
+  title: "A title", summary: "A <finding> & its impact", archiveStatus: "preserved",
+  authors: ["Researcher"], kind: "article", read: false, favourite: false
+})`);
+const compactSummaryCardMarkup = clientEval(`artifactCard({
+  id: "2025-1", year: "2025", yearLabel: "2025", topic: "HTTP",
+  title: "A compact title", summary: "This stays in the record dialog",
+  archiveStatus: "preserved", kind: "article", read: false, favourite: false
+}, true)`);
 // The collection id reaches data-year/data-signal-year/data-term-command as an
 // attribute value, so it has to be escaped at the sink and not only validated
 // on the way in from the catalogue.
@@ -245,8 +262,12 @@ const unsafeRenderedTags = emittedTags.filter((tag) =>
 );
 const activeClientSecurityChecks = [
   clientEval(`safeExternalUrl("javascript:alert(1)")`) === "",
+  clientEval(`safeExternalUrl("vbscript:msgbox(1)")`) === "",
   clientEval(`safeExternalUrl("data:text/html,<script>alert(1)</script>")`) === "",
+  clientEval(`safeExternalUrl("blob:https://example.test/id")`) === "",
+  clientEval(`safeExternalUrl("//example.test/path")`) === "",
   clientEval(`safeExternalUrl("https://user:pass@example.test/")`) === "",
+  clientEval(`safeExternalUrl("https://user%3Apass@example.test/")`) === "",
   clientEval(`safeArchivePath("../app.js", "md")`) === "",
   clientEval(`safeArchivePath("archived-references/md/2025/example.md", "md")`) === "archived-references/md/2025/example.md",
   unsafeRenderedTags.length === 0,
@@ -272,20 +293,34 @@ const activeClientSecurityChecks = [
   // for every Object.prototype key, so "#__proto__" would pass the guard.
   clientEval(`isViewName("__proto__") || isViewName("constructor") || isViewName("toString")`) === false,
   clientEval(`resolveViewHash("__proto__") === null && resolveViewHash("constructor") === null`) === true,
+  // Query qualifiers and fenced-code language names are untrusted strings.
+  // Inherited Object properties must never be treated as field pickers or
+  // keyword tables: doing so used to turn these inputs into client-side DoS.
+  clientEval(`parseQuery("__proto__:x constructor:y").every((term) => term.pick === null)`) === true,
+  clientEval(`highlightCode("<img src=x>", "constructor")`) === "&lt;img src=x&gt;",
+  clientEval(`highlightCode("<img src=x>", "__proto__")`) === "&lt;img src=x&gt;",
+  clientEval(`issueUrl("__proto__", { title: "x" })`) === "https://github.com/irsdl/webhacklist/issues/new/choose",
+  clientEval(`(() => { try { markdownDocument("x".repeat(MAX_MARKDOWN_BYTES + 1)); return false; } catch (error) { return error.message.includes("size limit"); } })()`) === true,
+  clientEval(`(() => { try { markdownDocument("x\\n".repeat(MAX_MARKDOWN_LINES + 1)); return false; } catch (error) { return error.message.includes("line limit"); } })()`) === true,
+  clientEval(`(() => { try { markdownDocument("[".repeat(MAX_INLINE_MARKERS + 1)); return false; } catch (error) { return error.message.includes("inline-complexity limit"); } })()`) === true,
   clientEval(`resolveViewHash("museum").view`) === "museum",
   clientEval(`JSON.stringify(resolveViewHash("read"))`) === '{"view":"favourites","savedMode":"read"}',
   progressiveLoad.count === progressiveRecord.count,
   progressiveLoad.loaded && progressiveLoad.year === progressiveRecord.id,
+  progressiveWireKeysAbsent,
+  progressiveLoad.readKey === progressiveLoad.favouriteKey && progressiveLoad.readKey === clientEval(`normalizeUrl(${JSON.stringify(progressiveLoad.originalUrl)})`),
   progressiveLoad.read === false && progressiveLoad.favourite === false,
   progressiveRequestUrl === `data/collections/${progressiveRecord.id}.json?v=${progressiveCatalogue.version}`
 ];
 const securityChecks = [
   indexSource.includes("Content-Security-Policy"),
+  indexSource.includes("script-src-attr 'none'") && headersSource.includes("script-src-attr 'none'"),
   indexSource.includes("object-src 'none'"),
   indexSource.includes("frame-src 'self'"),
   indexSource.includes("img-src 'self' data:") && !indexSource.includes("img-src 'self' data: https:"),
   indexSource.includes('id="pdf-dialog"'),
-  indexSource.includes('id="pdf-frame"'),
+  indexSource.includes('id="pdf-frame"') && indexSource.includes('sandbox="allow-scripts"'),
+  !indexSource.includes('sandbox="allow-scripts allow-same-origin"'),
   appSource.includes("function safeArchivePath"),
   appSource.includes('method: "HEAD"'),
   !/img-src[^;]*\bhttp:/.test(indexSource),
@@ -318,6 +353,9 @@ const constellationChecks = [
 const requestedViews = [...indexSource.matchAll(/data-view="([^"]+)"/g)].map((match) => match[1]);
 const experienceChecks = [
   JSON.stringify(requestedViews) === JSON.stringify(["museum", "library", "signals", "constellation", "terminal", "evidence", "favourites"]),
+  newestFirstYearIds[0] === "2026-ai" && newestFirstYearIds[1] === "2025" && newestFirstYearIds.at(-1) === "2006",
+  newestFirstYearIds.every((year, index) => index === 0 || Number.parseInt(newestFirstYearIds[index - 1], 10) >= Number.parseInt(year, 10)),
+  JSON.stringify(newestFirstYearPillIds) === JSON.stringify(newestFirstYearIds),
   indexSource.includes('src="brand-mark.svg"'),
   indexSource.includes("WEB HACKING"),
   !indexSource.includes("brand-glyph"),
@@ -350,6 +388,15 @@ const experienceChecks = [
   appSource.includes('data-signal-status="top10"'),
   appSource.includes('data-signal-status="nominee"'),
   appSource.includes("data-signal-more"),
+  // Summaries are visible where there is room to read them, but the dense
+  // nomination wall stays compact. Record details remain summary-first, and
+  // library/search previews explain the article before a reader opens it.
+  summaryCardMarkup.includes('class="card-summary"') && summaryCardMarkup.includes("A &lt;finding&gt; &amp; its impact"),
+  !compactSummaryCardMarkup.includes('class="card-summary"'),
+  appSource.includes("<h3>What the research found</h3>"),
+  appSource.includes('class="shelf-plate-summary"'),
+  indexSource.indexOf('id="artifact-digest"') < indexSource.indexOf('id="artifact-actions"'),
+  indexSource.indexOf('id="artifact-actions"') < indexSource.indexOf('id="artifact-context"'),
   appSource.includes('dialog.classList.toggle("signal-artifact", signalMode)'),
   appSource.includes("function documentShareUrl"),
   appSource.includes("function shareDocument"),
@@ -358,6 +405,7 @@ const experienceChecks = [
   appSource.includes("function terminalCompletion"),
   appSource.includes("function compileSafeGrep"),
   appSource.includes("function resolveTerminalPath"),
+  appSource.includes("terminalYear ? preliminaryNotice(terminalYear)"),
   appSource.includes("function renderFavourites"),
   appSource.includes("function setFavouriteState"),
   appSource.includes('fetch("data/catalogue.json"'),
@@ -438,7 +486,7 @@ const deploymentChecks = [
   appSource.includes("function toggleViewFullscreen"),
   appSource.includes("function setViewFullscreenFallback") && appSource.includes("viewButton.hidden = !supportedView"),
   stylesSource.includes("height: 100dvh"),
-  stylesSource.includes(".investigation-board { display: grid; min-height: 0 !important"),
+  stylesSource.includes(".investigation-board { display: grid; width: 100%; min-height: 0 !important; grid-template-columns: minmax(0,1fr)"),
   stylesSource.includes("main:fullscreen .favourites-view"),
   stylesSource.includes("main:fullscreen .museum-map"),
   stylesSource.includes("main.view-fullscreen-fallback .museum-map") && stylesSource.includes("main.view-fullscreen-fallback .library-hall"),

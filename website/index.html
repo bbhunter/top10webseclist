@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Web Hack List">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
   <meta name="description" content="Web Hacking Techniques Index is an interactive archive of Top 10 Web Hacking Techniques research, nominations, and clearly marked preliminary collections.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Web Hacking Techniques Index">
@@ -63,7 +63,7 @@
            rather than over the reading area: the heading above the records
            names the mode being read, and a search engine reads an h1 as a
            signal for the name of the SITE. -->
-      <a class="brand" href="#museum" aria-label="Web Hacking Techniques Index home">
+      <a class="brand" href="./#museum" aria-label="Web Hacking Techniques Index home">
         <img class="brand-mark" src="brand-mark.svg" alt="">
         <h1 class="brand-copy"><strong>WEB HACKING</strong><b>TECHNIQUES INDEX</b><em>Research archive</em></h1>
       </a>
@@ -113,7 +113,7 @@
       </div>
     </aside>
 
-    <section class="workspace">
+    <div class="workspace">
       <header class="topbar">
         <button class="mobile-menu" id="mobile-menu" aria-label="Open concept menu" aria-controls="concept-sidebar" aria-expanded="false">☰</button>
         <label class="global-search">
@@ -185,7 +185,7 @@
           <p>Maintained by <a href="https://github.com/irsdl" target="_blank" rel="noopener noreferrer">Soroush Dalili (@irsdl)</a>.</p>
         </div>
       </footer>
-    </section>
+    </div>
   </div>
 
   <!-- Filing research is a GitHub issue, and this page is the only thing that can
@@ -250,13 +250,15 @@
       <p class="eyebrow" id="artifact-eyebrow"></p>
       <h2 id="artifact-title"></h2>
       <div class="artifact-badges" id="artifact-badges"></div>
-      <p class="artifact-context" id="artifact-context"></p>
 
       <div class="artifact-digest" id="artifact-digest" hidden></div>
 
+      <div class="artifact-actions" id="artifact-actions"></div>
+
+      <p class="artifact-context" id="artifact-context"></p>
+
       <dl class="artifact-facts" id="artifact-facts"></dl>
 
-      <div class="artifact-actions" id="artifact-actions"></div>
       <p class="rights-note">Preserved material remains the work of its original author and publisher. The local copies are presented for research and historical access.</p>
     </div>
   </dialog>
@@ -309,7 +311,7 @@
     </header>
     <div class="pdf-stage">
       <div class="pdf-loading" id="pdf-loading" role="status"><i></i><p>Preparing the preserved document…</p></div>
-      <iframe id="pdf-frame" title="Preserved PDF document" referrerpolicy="no-referrer" hidden></iframe>
+      <iframe id="pdf-frame" title="Preserved PDF document" sandbox="allow-scripts" referrerpolicy="no-referrer" hidden></iframe>
       <div class="pdf-fallback" id="pdf-fallback" hidden>
         <span aria-hidden="true">PDF</span>
         <h2>Your browser did not embed this document</h2>

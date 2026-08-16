@@ -378,6 +378,7 @@
   .artifact-card.is-favourite { border-color: rgba(255,180,84,.34); box-shadow: inset 0 0 0 1px rgba(255,180,84,.05); }
   .artifact-card .card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--faint); font: .6rem var(--mono); text-transform: uppercase; }
   .artifact-card h3 { margin: 19px 0 12px; font-size: .92rem; line-height: 1.28; letter-spacing: -.02em; }
+  .artifact-card .card-summary { display: -webkit-box; overflow: hidden; margin: 0 0 16px; color: #91a0b8; font-size: .69rem; line-height: 1.55; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; }
   .artifact-card .card-foot { display: flex; align-items: end; justify-content: space-between; gap: 10px; margin-top: auto; color: var(--muted); font: .59rem var(--mono); }
   .rank-token { color: var(--amber); }
   .status-dot { display: inline-block; width: 5px; height: 5px; margin-right: 5px; background: var(--mint); border-radius: 50%; }
@@ -407,15 +408,20 @@
     box-shadow: 0 40px 120px rgba(0, 0, 0, .72);
   }
   .artifact-dialog::backdrop { background: rgba(1, 6, 5, .82); backdrop-filter: blur(8px); }
+  /* Long record and contribution dialogs scroll. Keep the close action within
+     reach after the first screen, especially on touch devices without Escape. */
+  .artifact-dialog > form:first-child, .contribute-dialog > form:first-child { position: sticky; top: 0; z-index: 5; height: 0; }
   .dialog-close { position: absolute; top: 16px; right: 16px; z-index: 2; width: 36px; height: 36px; color: var(--muted); background: rgba(4, 12, 10, .6); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
   .artifact-glow { height: 9px; background: linear-gradient(90deg, var(--dialog-color, var(--mint)), transparent 70%); }
   .dialog-body { position: relative; padding: clamp(26px, 6vw, 54px); }
   .dialog-body h2 { max-width: 620px; margin: 12px 0 18px; font-size: clamp(1.6rem, 4vw, 3.15rem); line-height: 1.02; letter-spacing: -.055em; }
   .artifact-badges { display: flex; flex-wrap: wrap; gap: 6px; }
   .artifact-badges span { padding: 5px 8px; color: var(--muted); background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 5px; font: .6rem var(--mono); }
-  .artifact-context { margin: 28px 0; padding: 17px 19px; color: #b5c8c0; background: rgba(130,245,178,.045); border-left: 2px solid var(--dialog-color, var(--mint)); font-size: .78rem; line-height: 1.65; }
-  .artifact-digest { margin: 28px 0; }
-  .artifact-digest p { margin: 0 0 14px; color: var(--ink); font-size: .84rem; line-height: 1.7; }
+  .artifact-context { margin: 24px 0; padding: 14px 17px; color: #b5c8c0; background: rgba(130,245,178,.045); border-left: 2px solid var(--dialog-color, var(--mint)); font-size: .72rem; line-height: 1.6; }
+  .artifact-digest { margin: 26px 0 22px; }
+  .artifact-digest h3 { margin: 0 0 9px; color: var(--dialog-color, var(--mint)); font: 700 .58rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+  .artifact-digest .artifact-summary { margin: 0 0 14px; color: var(--ink); font-size: .88rem; line-height: 1.72; }
+  .digest-toggle { display: none; margin: -2px 0 14px; padding: 7px 9px; color: var(--dialog-color, var(--mint)); background: transparent; border: 1px solid color-mix(in srgb,var(--dialog-color, var(--mint)) 35%,transparent); border-radius: 3px; font: 650 .56rem var(--mono); cursor: pointer; }
   .artifact-digest .tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .artifact-digest .tag { padding: 4px 9px; color: var(--faint); font: .58rem var(--mono); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
   .artifact-digest .tag:hover, .artifact-digest .tag:focus-visible { color: var(--dialog-color, var(--mint)); border-color: var(--dialog-color, var(--mint)); }
@@ -904,6 +910,8 @@
   .shelf-plate.is-open { opacity: 1; visibility: visible; transform: none; }
   .shelf-plate-notch { position: absolute; top: -5px; left: var(--notch-x, 20px); width: 8px; height: 8px; background: #2b2214; border-top: 1px solid rgba(246,201,107,.42); border-left: 1px solid rgba(246,201,107,.42); transform: translateX(-50%) rotate(45deg); }
   .shelf-plate-title { display: -webkit-box; overflow: hidden; color: #fdf6e6; font: 650 .78rem/1.35 var(--sans); -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; }
+  .shelf-plate-summary { display: -webkit-box; overflow: hidden; margin-top: 6px; color: #c8bfae; font: .62rem/1.45 var(--sans); -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; }
+  .shelf-plate-summary[hidden] { display: none; }
   .shelf-plate-meta { display: block; margin-top: 4px; overflow: hidden; color: var(--amber); font: .57rem var(--mono); letter-spacing: .04em; text-overflow: ellipsis; white-space: nowrap; }
   .book.is-favourite { outline: 2px solid #ffb454; outline-offset: 2px; }
   .book.is-favourite::before { position: absolute; top: 4px; right: 4px; display: grid; width: 12px; height: 11px; place-items: center; content: "★"; color: #432704; background: rgba(255,214,140,.55); border: 1px solid rgba(52,34,7,.32); border-radius: 1px; font: 900 .58rem var(--mono); writing-mode: horizontal-tb; }
@@ -912,7 +920,8 @@
   .librarian-note h2 { margin: 5px 0 8px; font-family: Georgia, serif; font-size: 1.4rem; }
   .librarian-note p:last-child, .checkout-card p { color: var(--muted); font-size: .74rem; line-height: 1.6; }
   .checkout-card { background: #d9d0b2; color: #253129; transform: rotate(.8deg); }
-  .checkout-card p { color: #536057; }
+  .checkout-card .eyebrow { color: #4e4832; }
+  .checkout-card p { color: #465149; }
 
   /* Favourites */
   .favourites-view { min-height: 560px; }
@@ -1492,6 +1501,7 @@
   .global-results > div > button span b { color: var(--accent); }
   .global-results > div > button > div { min-width: 0; }
   .global-results > div > button strong { display: block; font-size: .72rem; line-height: 1.35; }
+  .global-results > div > button p { display: -webkit-box; overflow: hidden; margin-top: 4px; color: var(--muted); font-size: .63rem; line-height: 1.4; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
   /* The researcher, under the title. Not italic despite the tag: em is here for
      the meaning, and a credit line reads as a name rather than an aside. */
   .global-results > div > button em { display: block; overflow: hidden; margin-top: 4px; color: var(--accent); font: .55rem var(--mono); font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
@@ -1740,6 +1750,10 @@
     .signal-focus-grid { grid-template-columns: 1fr; }
     .signal-finding { grid-template-columns: 44px minmax(0,1fr) 18px; }
     .signal-finding > small { display: none; }
+    /* These are primary route/filter controls, not dense prose links. Give
+       touch users a dependable target while preserving horizontal scrolling. */
+    .year-pill, .signal-tuner button, .signal-status-filter button, .case-tab,
+    .investigation-tools button, .saved-modes button, .favourite-filters button { min-height: 42px; }
     .site-footer { grid-template-columns: 1fr; margin-inline: 18px; }
     .credit-list { grid-template-columns: 1fr; }
     main:fullscreen { padding: 16px; }
@@ -1799,6 +1813,12 @@
     .catalogue-row > *:nth-child(n+3) { display: none; }
     .artifact-facts { grid-template-columns: 1fr 1fr; }
     .artifact-actions > * { flex: 1; justify-content: center; }
+    .artifact-dialog .dialog-body { padding-top: 34px; }
+    .artifact-dialog .artifact-digest { margin-block: 22px 18px; }
+    .artifact-dialog .artifact-digest.is-collapsible:not(.is-expanded) .artifact-summary { display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 7; line-clamp: 7; }
+    .artifact-dialog .artifact-digest.is-collapsible .digest-toggle { display: inline-flex; }
+    .artifact-dialog .artifact-context { margin-block: 20px; }
+    .artifact-card .card-summary { -webkit-line-clamp: 2; line-clamp: 2; }
     .castle-shell { min-height: 560px; margin-inline: -10px; border-radius: 12px; }
     .castle-start { padding-inline: 20px; }
     .castle-start::before, .castle-start::after { width: 13%; }
@@ -1881,7 +1901,7 @@
     main:fullscreen .hacker-terminal { height: calc(100dvh - 116px); margin-inline: 0; }
     main.view-fullscreen-fallback .hacker-terminal { height: calc(100dvh - 116px); margin-inline: 0; }
 
-    .investigation-board { display: grid; min-height: 0 !important; gap: 9px; padding: 12px; }
+    .investigation-board { display: grid; width: 100%; min-height: 0 !important; grid-template-columns: minmax(0,1fr); gap: 9px; padding: 12px; }
     #investigation-strings { display: none; }
     .investigation-card,
     .investigation-board.dense .investigation-card.top-evidence,
@@ -1891,6 +1911,8 @@
       position: relative;
       inset: auto !important;
       width: 100%;
+      min-width: 0;
+      max-width: 100%;
       min-height: 92px;
       padding: 18px 12px 24px;
       cursor: pointer;

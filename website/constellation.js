@@ -359,7 +359,7 @@
             Home: () => this.setDistance(120),
             End: () => this.setDistance(1500)
           };
-          if (!actions[event.key]) return;
+          if (!Object.hasOwn(actions, event.key)) return;
           event.preventDefault();
           event.stopPropagation();
           this.stopFlight();
