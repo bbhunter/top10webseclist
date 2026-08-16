@@ -895,13 +895,21 @@ async function loadArchive() {
   }
 }
 
+function setMobileMenuOpen(open) {
+  const isOpen = Boolean(open);
+  document.body.classList.toggle("menu-open", isOpen);
+  const trigger = $("#mobile-menu");
+  trigger.setAttribute("aria-expanded", String(isOpen));
+  trigger.setAttribute("aria-label", isOpen ? "Close concept menu" : "Open concept menu");
+}
+
 function wireShell() {
   $$(".nav-item").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
 
   $("#mobile-menu").addEventListener("click", () => {
-    const open = document.body.classList.toggle("menu-open");
-    $("#mobile-menu").setAttribute("aria-expanded", String(open));
+    setMobileMenuOpen(!document.body.classList.contains("menu-open"));
   });
+  $("#mobile-menu-backdrop").addEventListener("click", () => setMobileMenuOpen(false));
 
   $("#global-search").addEventListener("input", (event) => {
     state.query = event.target.value.trim();
@@ -942,8 +950,7 @@ function wireShell() {
   });
 
   $$("[data-contribute]").forEach((button) => button.addEventListener("click", () => {
-    document.body.classList.remove("menu-open");
-    $("#mobile-menu").setAttribute("aria-expanded", "false");
+    setMobileMenuOpen(false);
     openSubmissionDialog();
   }));
   ["#contribute-url", "#contribute-research-title", "#contribute-year", "#contribute-authors", "#contribute-why"]
@@ -974,7 +981,10 @@ function wireShell() {
       event.preventDefault();
       $("#global-search").focus();
     }
-    if (event.key === "Escape" && viewFullscreenFallbackActive()) {
+    if (event.key === "Escape" && document.body.classList.contains("menu-open")) {
+      setMobileMenuOpen(false);
+      $("#mobile-menu").focus();
+    } else if (event.key === "Escape" && viewFullscreenFallbackActive()) {
       setViewFullscreenFallback(false);
       syncFullscreenControls();
     } else if (event.key === "Escape" && !$("#global-results").hidden) closeGlobalSearch();
@@ -1249,8 +1259,7 @@ async function setView(view, updateHash = true) {
   }
   destroyInvestigationLayout();
   state.view = view;
-  document.body.classList.remove("menu-open");
-  $("#mobile-menu").setAttribute("aria-expanded", "false");
+  setMobileMenuOpen(false);
   if (updateHash) history.pushState(null, "", `#${viewHash(view)}`);
   render();
   if (view === "favourites" && loadedCollections.size !== YEAR_FILES.length) {

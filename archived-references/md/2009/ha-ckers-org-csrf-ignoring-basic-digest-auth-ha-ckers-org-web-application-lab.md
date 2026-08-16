@@ -1,14 +1,13 @@
 ---
 type: Article
 title: CSRF And Ignoring Basic/Digest Auth ha.ckers.org web application security lab
-description: CSRF against routers and similar devices protected by Basic or Digest auth normally raises a login popup that warns the victim. Requesting the target URL through a CSS background-image on a DIV suppresses that dialog in Internet Explorer, so a failed GET-based CSRF stays silent. Other browsers were not found to behave this way, and POST-based CSRF is unaffected.
 resource: "http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/"
-tags: [article, webseclist-reference, ha-ckers-org, csrf, css, auth-bypass, http, owasp-a01-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T05:08:04+00:00"
+  at: "2026-08-16T23:12:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2009.md:20"
 commit: ""
-content_sha256: 6c4db59093198945746b952b8cea314166179259f8b108322cc04c403d1812cb
+content_sha256: bb043d5e11c764f60c4a2ebb99deb14db5c340a992dfdb2c6a48dcc74a236728
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 343f28a380e485dff46963fe82ea06bd868f96d17b3dda1e591cbc98588f0034
 retrieved_from: "http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:08:04+00:00"
+retrieved_utc: "2026-08-16T23:12:52+00:00"
 slug: ha-ckers-org-csrf-ignoring-basic-digest-auth-ha-ckers-org-web-application-lab
 snapshot: 20090704081456
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/>
-- Preserved from: http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/ (stored) on 2026-08-16
 - Capture timestamp: 20090704081456
 - Licence: unknown
 
@@ -75,3 +74,15 @@ One of the single most annoying things about CSRF and router hacking etc… is t
 > <DIV STYLE="background-image: url(http://router/path.to.hack)">blah</DIV>
 
 I know there are others tags that work, but probably not as well as this method from what I’ve seen so far. I haven’t found a reliable way in other browsers to allow this to happen, but I’ve only barely scratched the surface of the vast number of CSRFable tags out there. But anyway, yes, this doesn’t cause the Basic or Digest auth dialog to fire so it will be more stealthy upon performing a CSRF that fails. Of course for POST based CSRF you’re still out of luck…
+
+  This entry was posted on Tuesday, June 30th, 2009 at 12:51 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
+
+### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Your Name *
+
+ E-Mail (will be hidden) *
+
+ URL
+
+---

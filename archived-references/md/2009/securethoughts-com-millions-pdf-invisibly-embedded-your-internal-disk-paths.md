@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Millions of PDF invisibly embedded with your internal disk paths
-description: "Printing a locally saved web page to PDF through Internet Explorer's print handler embeds the file's full local disk path invisibly in the PDF title attribute, separate from the visible footer and not removable through Page Setup. Search-engine filetype queries per drive letter suggested over 50 million public PDFs leaking internal paths."
 resource: "http://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/"
-tags: [article, webseclist-reference, en-US, securethoughts-com, pdf, info-leak, large-scale-scan, measurement-study, detection, owasp-a09-2021]
+tags: [article, webseclist-reference, en-US, securethoughts-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:04+00:00"
+  at: "2026-08-16T23:12:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/"
@@ -21,7 +20,7 @@ canonical_url: "https://securethoughts.com/2009/11/millions-of-pdf-invisibly-emb
 cited_by:
   - "2009.md:64"
 commit: ""
-content_sha256: 3190f7c3b36c57c48fafc8d932614ad8390f10ab2832662c28e2fe9936b04b9d
+content_sha256: 659d2d39a1738fe4913b62bed933ec255f657532d928ee0302b7530944846829
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +32,8 @@ publisher: securethoughts.com
 publisher_english: ""
 raw_sha256: e453e2b2f43434b25101a6b81f0659b0a62b1077b8cd5eaa1f7ef2e7f521c270
 retrieved_from: "https://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:04+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T23:12:58+00:00"
 slug: securethoughts-com-millions-pdf-invisibly-embedded-your-internal-disk-paths
 snapshot: ""
 title_english: ""
@@ -49,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/>
 - Current location: <https://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/>
-- Preserved from: https://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/ (live) on 2026-08-09
+- Preserved from: https://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -84,9 +83,7 @@ The privacy issue arises from the fact that your local disk path gets invisibly 
 
 *Search for this on your favorite search engine (Google/Bing)*
 
->
-
-filetype:pdf file c (htm OR html OR mhtml)
+> filetype:pdf file c (htm OR html OR mhtml)
 
 [Google Search 1 (for drive C)](https://www.google.com/search?hl=en&q=filetype%3Apdf+file+c+%28htm+OR+html+OR+mhtml%29&btnG=Search&aq=f&oq=&aqi=) – 4 million results
  [Google Search 2 (for drive D)](https://www.google.com/search?hl=en&q=filetype%3Apdf+file+d+%28htm+OR+html+OR+mhtml%29&btnG=Search&aq=f&oq=&aqi=) – 13 million results
@@ -95,3 +92,7 @@ filetype:pdf file c (htm OR html OR mhtml)
 So, out of [280 million pdfs](https://www.google.com/search?hl=en&source=hp&fkt=265&fsdt=593&q=filetype%3Apdf&aq=f&oq=&aqi=g10) accessible on the internet, more than 20% look to be exposing internal disk paths which is a huge number. I have contacted the Microsoft and Adobe Security Teams about this issue. Microsoft has plans to fix this in IE9, while Adobe has opened the case but hasn’t planned the timelines yet.
 
 Special thanks goes to Terem Technologies for their help identifying this bug.
+
+** Category: [Uncategorized](https://securethoughts.com/uncategorized/)
+
+** Tagged:

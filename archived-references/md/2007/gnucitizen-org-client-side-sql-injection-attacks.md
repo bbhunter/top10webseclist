@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Client-side SQL Injection Attacks
-description: "Google Gears puts a SQLite relational store in the browser, so unsanitised input in client-side queries makes SQL injection a client-side problem: attackers can dump, alter or destroy local tables, and echo injected HTML back to cause persistent XSS that recurs on every load. pdp also flags the Gears WorkerPool as cover for background intranet scanning and crypto work."
 resource: "https://www.gnucitizen.org/blog/client-side-sql-injection-attacks"
-tags: [article, webseclist-reference, en, gnucitizen-org, sqli, database, injection, xss, javascript, abuse-of-functionality, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:45+00:00"
+  at: "2026-08-16T23:12:35+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/client-side-sql-injection-attacks"
@@ -23,7 +22,7 @@ canonical_url: "https://www.gnucitizen.org/blog/client-side-sql-injection-attack
 cited_by:
   - "2007.md:84"
 commit: ""
-content_sha256: 47be4065f322a1d6adcf134a65d9d312e5530eaa6a9c5d0bf794615a14a98031
+content_sha256: bc547f0227eeb1567281747712a997656d642aff7737fa5f9d86aa0a5c91efd5
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: d8a4ed4fd9e42cbe08c77e5cc43b87cc7fb5e012deca8f342c4485a8719bca44
 retrieved_from: "https://www.gnucitizen.org/blog/client-side-sql-injection-attacks/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:45+00:00"
+retrieved_utc: "2026-08-16T23:12:35+00:00"
 slug: gnucitizen-org-client-side-sql-injection-attacks
 snapshot: ""
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/client-side-sql-injection-attacks>
 - Current location: <https://www.gnucitizen.org/blog/client-side-sql-injection-attacks/>
-- Preserved from: https://www.gnucitizen.org/blog/client-side-sql-injection-attacks/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/client-side-sql-injection-attacks/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -78,9 +77,7 @@ The second problem is a variation of the first one but it is a bit more twisted.
 
 The worker pool is also quite interesting and can be used for malicious purposes too. This is how Google describes the worker pool:
 
->
-
-In web browsers a single time-intensive operation, such as I/O or heavy computation, can make the UI unresponsive. The WorkerPool module runs operations in the background, without blocking the UI. Scripts executing in the WorkerPool will not trigger the browser's **unresponsive script** dialog.
+> In web browsers a single time-intensive operation, such as I/O or heavy computation, can make the UI unresponsive. The WorkerPool module runs operations in the background, without blocking the UI. Scripts executing in the WorkerPool will not trigger the browser's **unresponsive script** dialog.
 
 This means that attackers can put memory/resource intensive processes in the background without affecting your browser. I wonder what these process will do... hmmm... like scanning your Intranet maybe or maybe even performing crypto calculations. Who knows? All I know is that making something clever in JavaScript without making the browser hang is hard. Well, not any more. Browsers will get better and that will increase the surface of client-side attacks.
 

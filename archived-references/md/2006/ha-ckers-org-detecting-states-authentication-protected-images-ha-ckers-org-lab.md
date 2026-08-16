@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Detecting States of Authentication With Protected Images ha.ckers.org web application security lab
-description: "An IMG tag pointed at a file inside a members-only directory fires onerror when the visitor is not authenticated, so any page can detect a user's login state on a third-party site. A changed image size after login works the same way. Grossman and the author could not extend it beyond protected images and scripts."
 resource: "http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/"
-tags: [article, webseclist-reference, ha-ckers-org, xsleak, side-channel, info-leak, detection, javascript, same-origin-policy, owasp-a01-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:33+00:00"
+  at: "2026-08-16T23:12:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:36"
 commit: ""
-content_sha256: de76480a00668944184feeb72b9d8e59d9d86b987fa6c132ba4fc1e249a92dda
+content_sha256: 4d53429a2d450fdeed38f4f7b51dea6d39e31de0b6df3fead0d04983894bbd30
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: c3eaeb7e91cfa3d1de3f4ba6dd030b210790fbd509fe5a45cf8dae95db1e3717
 retrieved_from: "http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:33+00:00"
+retrieved_utc: "2026-08-16T23:12:43+00:00"
 slug: ha-ckers-org-detecting-states-authentication-protected-images-ha-ckers-org-lab
 snapshot: 20090625161358
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/>
-- Preserved from: http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/ (stored) on 2026-08-16
 - Capture timestamp: 20090625161358
 - Licence: unknown
 
@@ -74,9 +73,7 @@ Detecting States of Authentication With Protected Images ha.ckers.org web applic
 
 The sample code is simple enough:
 
->
-
-<IMG SRC="http://somesite.com/members/protected.jpg" authenticated')">
+> <IMG SRC="http://somesite.com/members/protected.jpg" onerror="alert('not authenticated')">
 
 Let’s assume you have an image that’s inside the members directory as seen above. If the user is authenticated they can see the photo, if not, they can’t and are redirected to a page where they must authenticate. If that’s the case you can automatically detect if the user is logged in. The same holds true if the image changes to say something like “Hello, Bob!” once the user logs in. You can detect the size and use that to verify that the user is logged in.
 

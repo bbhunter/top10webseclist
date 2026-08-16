@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
-description: "Yair Amit's IE parser quirk: a tag and its attribute can be separated by a slash, so <SCRIPT/SRC=\"...\"> needs no whitespace at all. Unlike the earlier non-alpha-non-digit vectors it requires no space, defeating XSS filters that use whitespace to find where a tag ends. IE6-7 and Netscape 8 in IE mode."
 resource: "http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, parser-differential, sanitizer-bypass, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:54:26+00:00"
+  at: "2026-08-16T23:12:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:23"
 commit: ""
-content_sha256: 0213491813afe2a2822348d47907267c44031475e20ec43ef5a371678f51f1b7
+content_sha256: 171893fa17770be36e2bd68cabcd9bdf827595fb506c5614337f49d2aeb141e7
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: b10bca2187fbd9f5be34195fd34675fef6ec2616213725af1d2d16568fa14195
 retrieved_from: "http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:54:26+00:00"
+retrieved_utc: "2026-08-16T23:12:45+00:00"
 slug: ha-ckers-org-non-alpha-non-digit-3-ha-ckers-org-web-application-security-lab
 snapshot: 20070609162004
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/>
-- Preserved from: http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/ (stored) on 2026-08-16
 - Capture timestamp: 20070609162004
 - Licence: unknown
 
@@ -77,3 +76,13 @@ In the Internet Explorer rendering engine (IE6.0-7.0 and Netscape 8.0+ in IE mod
 Although it’s only useful in the Internet Explorer rendering engine it’s a nice vector as it a) obfuscates where the tag and the parameter start and end and b) doesn’t require any spaces. I’m absolutely positive this will cause some XSS filters to fail, so take heed if you use whitespace to test where tags end. Thanks to Yair! Nice find!
 
   This entry was posted on Friday, February 9th, 2007 at 11:08 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

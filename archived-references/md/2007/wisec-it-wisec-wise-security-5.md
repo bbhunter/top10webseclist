@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Wisec - The WIse SECurity
-description: "Stefano Di Paola and Giorgio Fedon save bandwidth in blind SQL injection by reading response size instead of the body. Apache refuses Content-Length on HEAD but answers Range: bytes=-1 with a Content-Range that reveals it, while IIS 6.0 ignores Range yet returns Content-Length on HEAD. A per-server lookup table is given; a later comment adds Tomcat 6.0.26."
 resource: "http://www.wisec.it/sectou.php?id=472f952d79293"
-tags: [article, webseclist-reference, wisec-it, sqli, http, side-channel, database, tooling, owasp-a03-2021]
+tags: [article, webseclist-reference, wisec-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:37:42+00:00"
+  at: "2026-08-16T23:13:05+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://www.wisec.it/sectou.php?id=472f952d79293"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:37"
 commit: ""
-content_sha256: b898124f3d05ed20b2c4be8b639791153f8c0b5160db8a1d3111ee0791369024
+content_sha256: a424ebcefdd4a150202e342270c208f91d19a407c2c1321eb0f68aa763dd794a
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: d9bfbd1dac417b6b483575f90bc3a17ee2d9e3cdeb2bf2d4ba52e85d943e54cd
 retrieved_from: "http://www.wisec.it/sectou.php?id=472f952d79293"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:37:42+00:00"
+retrieved_utc: "2026-08-16T23:13:05+00:00"
 slug: wisec-it-wisec-wise-security-5
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.wisec.it/sectou.php?id=472f952d79293>
-- Preserved from: http://www.wisec.it/sectou.php?id=472f952d79293 (stored) on 2026-08-11
+- Preserved from: http://www.wisec.it/sectou.php?id=472f952d79293 (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -121,39 +120,36 @@ Bursting Performances in Blind SQL Injection - Take 2 (Bandwidth)
 Today my colleague Giorgio Fedon of [Minded Security](http://www.mindedsecurity.com), talked me about an idea regarding how to save bandwidth while exploiting [blind ](http://www.spidynamics.com/whitepapers/Blind_SQLInjection.pdf) [SQL](http://www.cgisecurity.com/questions/blindsql.shtml) [Injection](http://www.databasesecurity.com/webapps/sqlinference.pdf).
  His question was:
 
->
- "When a pentester is trying to get the content of a DB by exploiting a blind injection how can s/he get the content-length header without effectively getting all
- the response body, so that s/he can save time and bandwidth?"
+>  "When a pentester is trying to get the content of a DB by exploiting a blind injection how can s/he get the content-length header without effectively getting all
+>  the response body, so that s/he can save time and bandwidth?"
 
  My answer was: "use HEAD! (in both senses :)"
  It came out that [RFC](http://www.ietf.org/rfc/rfc2616.txt) says it's not possible to use it.
  Infact, Apache doesn't satisfy a HEAD request with Content-Length header in response.
 
+>  HEAD /index.php HTTP/1.1
+>  Host: 127.0.0.1
+>  Accept: */*
 >
- HEAD /index.php HTTP/1.1
- Host: 127.0.0.1
- Accept: */*
-
- HTTP/1.1 200 OK
- Date: Mon, 05 Nov 2007 21:00:07 GMT
- Server: Apache
- Content-Type: text/html
+>  HTTP/1.1 200 OK
+>  Date: Mon, 05 Nov 2007 21:00:07 GMT
+>  Server: Apache
+>  Content-Type: text/html
 
  See? no Content-Length in response even if my localhost home page is 90 bytes long (as Rfc suggests).
  Let's try it with Range header:
 
+>  GET /index.php HTTP/1.1
+>  Host: 127.0.0.1
+>  Accept: */*
+>  Range: bytes=-1
 >
- GET /index.php HTTP/1.1
- Host: 127.0.0.1
- Accept: */*
- Range: bytes=-1
-
- HTTP/1.1 206 Partial Content
- Date: Mon, 05 Nov 2007 21:03:15 GMT
- Server: Apache
- Content-Range: bytes 89-89/90
- Content-Length: 1
- Content-Type: text/html
+>  HTTP/1.1 206 Partial Content
+>  Date: Mon, 05 Nov 2007 21:03:15 GMT
+>  Server: Apache
+>  Content-Range: bytes 89-89/90
+>  Content-Length: 1
+>  Content-Type: text/html
 
  Ahhhh, so the Range header in a request will fullfill my request without sending me the whole body but with a Content-Range which shows me how big would be the body itself.
 
@@ -162,23 +158,22 @@ Today my colleague Giorgio Fedon of [Minded Security](http://www.mindedsecurity.
  But..Yes there is a but.
  HEAD requests are fullfilled with the right Content-Length:
 
+>  HEAD /search.aspx HTTP/1.1
+>  Host: 127.0.0.1
+>  Accept: */*
+>  Content-Length: 22
 >
- HEAD /search.aspx HTTP/1.1
- Host: 127.0.0.1
- Accept: */*
- Content-Length: 22
-
- search=all'+AND+'1'='1
-
- HTTP/1.1 200 OK
- Date: Mon, 05 Nov 2007 21:14:00 GMT
- Server: Microsoft-IIS/6.0
- X-Powered-By: ASP.NET
- Content-Length: 4790
- Content-Type: text/html
- Expires: Mon, 05 Nov 2007 21:14:00 GMT
- Set-Cookie: ASPSESSIONIDSQTCRTQA=XXXXXXXXXXXXXXXXXXX; path=/
- Cache-control: private
+>  search=all'+AND+'1'='1
+>
+>  HTTP/1.1 200 OK
+>  Date: Mon, 05 Nov 2007 21:14:00 GMT
+>  Server: Microsoft-IIS/6.0
+>  X-Powered-By: ASP.NET
+>  Content-Length: 4790
+>  Content-Type: text/html
+>  Expires: Mon, 05 Nov 2007 21:14:00 GMT
+>  Set-Cookie: ASPSESSIONIDSQTCRTQA=XXXXXXXXXXXXXXXXXXX; path=/
+>  Cache-control: private
 
  This means that we get the length of the response body even when there's no body in response.
 
@@ -189,8 +184,6 @@ Today my colleague Giorgio Fedon of [Minded Security](http://www.mindedsecurity.
  Using Content-Length or Content-Range could improve performances a lot.
 
  The following look up table is for server and method:
-
->
 
 ```
 
@@ -215,3 +208,15 @@ WEBSPHERE    GET/POST  X
 **[floyd](http://www.floyd.ch)**, Thursday, September 16, 2010, 15:17
 
 **[Stefano](http://www.wisec.it)**, Thursday, September 16, 2010, 16:25
+
+**Comments are disabled**
+
+[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
+
+# Wisec is brought to you by...
+
+Wisec is written and mantained by  Stefano Di Paola.
+
+Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
+
+  |  |

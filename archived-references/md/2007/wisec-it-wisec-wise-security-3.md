@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Wisec - The WIse SECurity
-description: "Stefano Di Paola replaces the bisection search in blind SQL injection with a mapping approach: where an id parameter yields many distinguishable responses, a CASE expression maps each character value onto a known page, cutting requests from L*log2(255) toward L. The dropped comment thread renames it Mappable Blind SQL Injection, corrects 56 to 64, and derives when it wins."
 resource: "http://www.wisec.it/sectou.php?id=4706611fe9210"
-tags: [article, webseclist-reference, wisec-it, sqli, database, side-channel, algorithmic-complexity, tooling, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, wisec-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:37:42+00:00"
+  at: "2026-08-16T23:13:03+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://www.wisec.it/sectou.php?id=4706611fe9210"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:36"
 commit: ""
-content_sha256: 181ef1508cdcc32c865386ea9085611c329b1c0d93a315063497a626462f20ce
+content_sha256: af204a6199c046a2fdba5c667bec4f16cc7875d256414d2ef5765bb352d83b77
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: fdb2c5af0c654db3f14ed7dc1f05ee3c2d394ad0fa1782bd9cc1fbad70f1b4c3
 retrieved_from: "http://www.wisec.it/sectou.php?id=4706611fe9210"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:37:42+00:00"
+retrieved_utc: "2026-08-16T23:13:03+00:00"
 slug: wisec-it-wisec-wise-security-3
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.wisec.it/sectou.php?id=4706611fe9210>
-- Preserved from: http://www.wisec.it/sectou.php?id=4706611fe9210 (stored) on 2026-08-11
+- Preserved from: http://www.wisec.it/sectou.php?id=4706611fe9210 (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -135,8 +134,7 @@ Optimizing the number of requests in blind SQL injection
 
  where page.jsp is a script which loads dinamically content by using the SQL query:
 
->
- qry= "Select content from pages where id="+Request.value("id");
+>  qry= "Select content from pages where id="+Request.value("id");
 
  Let's suppose the rest of the application gives no clue about SQL errors or the possibility to use other tricks in order to force the web application to display the informations we want.
  This is a classical Blind SQL Injection case.
@@ -148,28 +146,26 @@ Optimizing the number of requests in blind SQL injection
  That is.
  Let's suppose there are more than 255 values for the 'id' parameter
 
->
- "http:// vi.ctim/page.jsp?id=1"
- "http:// vi.ctim/page.jsp?id=2"
- ...
- "http://vi.ctim/page.jsp?id=255"
+>  "http:// vi.ctim/page.jsp?id=1"
+>  "http:// vi.ctim/page.jsp?id=2"
+>  ...
+>  "http://vi.ctim/page.jsp?id=255"
 
  then let's map every single snippet of unique text content for every request.
  Then by setting
 
->
- For (pos = 1; pos<LEN(@@version)){
- idval="(CASE substr(@@version,"+pos+",1)
- when char(1) then 1
- when char(2) then 2
- when char(3) then 3
- when char(4) then 4
- when char(4) then 5
- etc
- end )"
- get response for:
- "http://vi.ctim/page.jsp?id=idval"
- }
+>  For (pos = 1; pos<LEN(@@version)){
+>  idval="(CASE substr(@@version,"+pos+",1)
+>  when char(1) then 1
+>  when char(2) then 2
+>  when char(3) then 3
+>  when char(4) then 4
+>  when char(4) then 5
+>  etc
+>  end )"
+>  get response for:
+>  "http://vi.ctim/page.jsp?id=idval"
+>  }
 
  the attacker will have to accomplish only
 
@@ -186,17 +182,16 @@ Optimizing the number of requests in blind SQL injection
  Let's suppose there exist only 4 unique id values corresponding to 4 unique responses.
  Then the injected query will be (in pseudo code):
 
+>  res=substr(@@version,pos,1);
 >
- res=substr(@@version,pos,1);
-
- if(res>191 and res<255)
- then 1
- else if(res>127 and res<192)
- then 2
- else if(res>63 and res<128)
- then 3
- else
- 4
+>  if(res>191 and res<255)
+>  then 1
+>  else if(res>127 and res<192)
+>  then 2
+>  else if(res>63 and res<128)
+>  then 3
+>  else
+>  4
 
  For each result, the set of values we are analysing will be 1/4 of the previous set.
 
@@ -225,3 +220,15 @@ Optimizing the number of requests in blind SQL injection
 ** Bedirhan Urgun **, Wednesday, October 10, 2007, 07:50
 
 ** Bernardo Damele **, Thursday, October 11, 2007, 15:43
+
+**Comments are disabled**
+
+[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
+
+# Wisec is brought to you by...
+
+Wisec is written and mantained by  Stefano Di Paola.
+
+Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
+
+  |  |

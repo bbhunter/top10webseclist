@@ -1,14 +1,13 @@
 ---
 type: Article
 title: "Breaking Google Gears' Cross-Origin Communication Model"
-description: "Google Gears' worker loader ignored the Content-Type of the files it loaded, so any user-uploadable file, even one served as innocent.jpg, could be loaded as a cross-origin Gears worker running in the hosting site's origin. Worker code contains no angle brackets, so upload filters rarely catch it; from there it reads authenticated pages via Gears HttpRequest and messages the results back."
 resource: "http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html"
-tags: [article, webseclist-reference, ibm-application-security-insider, sop-bypass, same-origin-policy, content-type, mime, file-upload, browser-extension, owasp-a01-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ibm-application-security-insider]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:08+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-16T23:12:28+00:00"
+status: stable
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:6"
 commit: ""
-content_sha256: 62dada8b538996b7f83344b9e7684bd0a3247bb5f9aa2084a91aaecb9fd9c636
+content_sha256: 367a988fd3bde903de1e7b33a055ca896c6bcfa0ef10b9189b5b735851c68f18
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 929d042bb6024cddb98a66e084afd14e73bc2a7b8866845b2e0a3ff869d2e4ec
 retrieved_from: "http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:08+00:00"
+retrieved_utc: "2026-08-16T23:12:28+00:00"
 slug: ibm-application-security-insider-breaking-google-gears-cross-origin-model
 snapshot: 20230326172706
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html>
-- Preserved from: http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html (stored) on 2026-08-09
+- Preserved from: http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html (stored) on 2026-08-16
 - Capture timestamp: 20230326172706
 - Licence: unknown
 
@@ -103,11 +102,9 @@ Google Gears "workers" that are intended to be loaded from a remote origin must 
 ***Here's an excerpt from Google Gears' documentation: ******
 ***
 
->
-
-*If a worker was created from a different origin, all methods on *`*google.gears.factory*`* will fail in that worker until *`*allowCrossOrigin()*`* is called. *
-*This prevents cross-site scripting attacks where the attacker could load a worker URL from another domain, then send malicious messages to that worker (e.g. "delete-all-data"). *
-*Workers that call *`*allowCrossOrigin()*`* should check *`*messageObject.origin*`* and ignore messages from unexpected origins. *
+> *If a worker was created from a different origin, all methods on *`*google.gears.factory*`* will fail in that worker until *`*allowCrossOrigin()*`* is called. *
+> *This prevents cross-site scripting attacks where the attacker could load a worker URL from another domain, then send malicious messages to that worker (e.g. "delete-all-data"). *
+> *Workers that call *`*allowCrossOrigin()*`* should check *`*messageObject.origin*`* and ignore messages from unexpected origins. *
 
 ### **The Problem**
 
@@ -137,7 +134,7 @@ wp.onmessage = function(a, b, message) {
 
      if (request.readyState == 4) {
 
-     wp.sendMessage("The response was: " + 
+     wp.sendMessage("The response was: " +
 
      request.responseText, message.sender);
 

@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Frame Injection Fun
-description: "pagvac separates frame injection from XSS: an unfiltered URL parameter feeding a frameset or iframe needs no angle brackets, so HTML and script filters never fire, and an absolute URL loads attacker content while the trusted domain stays in the address bar. Demonstrated live against mail.google.com's imgres endpoint as a Gmail credential-phishing page."
 resource: "https://www.gnucitizen.org/blog/frame-injection-fun/"
-tags: [article, webseclist-reference, en, gnucitizen-org, iframe, phishing, filter-bypass, open-redirect, url-spoofing, case-study, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:49+00:00"
+  at: "2026-08-16T23:12:36+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/frame-injection-fun/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:24"
 commit: ""
-content_sha256: 37d1a8c1989a828bbcdd00e750b78679b8c710937cae9437e6672184124c9eab
+content_sha256: f4499fe5ecc3ff7c11aec5f4c8ffbfe55c0418d52e4eb2431445884ec54df89b
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: b12ac867e9842a03c45704fdcdfb78b5bb6c0ec431a26cd7d9c86cf64f6488bf
 retrieved_from: "https://www.gnucitizen.org/blog/frame-injection-fun/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:49+00:00"
+retrieved_utc: "2026-08-16T23:12:36+00:00"
 slug: gnucitizen-org-frame-injection-fun
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/frame-injection-fun/>
-- Preserved from: https://www.gnucitizen.org/blog/frame-injection-fun/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/frame-injection-fun/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -90,8 +89,8 @@ http://mail.google.com/imgres?imgurl=http://SecureGoogleMail&**imgrefurl**=http:
 
 The previous PoC URL will cause the entered credentials to be submitted to [www.gnucitizen.org](https://www.gnucitizen.org) when clicking on Sign in, so please do NOT submit any real credentials!
 
->
-
-pIn short:p The attacker has managed to display a non-legitimate third-party page, while the legitimate domain (mail.google.com in this case) is shown in the address bar.The beauty of frame injection attacks is that the attacker is able to impersonate a trusted entity without needing to bypass XSS/HTMLi filters or even break into the target server.
+> pIn short:p The attacker has managed to display a non-legitimate third-party page, while the legitimate domain (mail.google.com in this case) is shown in the address bar.The beauty of frame injection attacks is that the attacker is able to impersonate a trusted entity without needing to bypass XSS/HTMLi filters or even break into the target server.
 
 *Needless to say, in real-life the attacker would most likely automate the process of obtaining the harvested credentials by using a tool such as our [x.php](http://lab.gnucitizen.org/projects/x-php-data-theft-script) data-theft script.*
+
+*Archived Comments*

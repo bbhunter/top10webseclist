@@ -1,14 +1,13 @@
 ---
 type: Article
 title: "IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory"
-description: "CVE-2008-2640: every Flex 3 build ships history/historyFrame.html, which does document.write on document.location.href. Direct exploitation fails because processUrl first calls parent.BrowserHistory. The fix is JavaScript flow manipulation - the attacker's parent page names a bogus iframe _ie_firstload, so the child reads an iframe where it expected a JS object and the branch flips."
 resource: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
-tags: [article, webseclist-reference, blog-watchfire-com, xss, dom, iframe, flash, cve, same-origin-policy, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, blog-watchfire-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:34+00:00"
-status: deprecated
-stale_after: 2027-08-11
+  at: "2026-08-16T23:12:27+00:00"
+status: stable
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
@@ -24,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:54"
 commit: ""
-content_sha256: f7fcf265d45b8291e9d00e594a4297bd7f81a9d033b0dba2f9cab6062c66cecd
+content_sha256: d67c93bc9eff3b3ef322f1b655db38ebc838f4125eeb6dc5c2b82796d6ce6ec4
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +36,7 @@ publisher_english: ""
 raw_sha256: f33d47fa1cb8f2d7c1c62792a75b0535933133c2ab016616a13dd955f207e7ea
 retrieved_from: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:34+00:00"
+retrieved_utc: "2026-08-16T23:12:27+00:00"
 slug: blog-watchfire-com-ibm-application-security-insider-javascript-code-advisory
 snapshot: 20140723103435
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2008/06/javascript-code.html>
-- Preserved from: http://blog.watchfire.com/wfblog/2008/06/javascript-code.html (stored) on 2026-08-11
+- Preserved from: http://blog.watchfire.com/wfblog/2008/06/javascript-code.html (stored) on 2026-08-16
 - Capture timestamp: 20140723103435
 - Licence: unknown
 
@@ -79,13 +78,11 @@ This advisory describes a new security vulnerability found in auto-generated cod
 
 The following text, which describes the HistoryManager and Deep Linking support in Adobe Flex, was taken from the official Adobe documentation:
 
+> "The Flex History Manager lets users navigate through a Flex application by using the web browser's back and forward navigation commands. For example, a user can navigate through several Accordion container panes in a Flex application, and then click the browser's Back button to return the application to its previous states.
 >
-
-"The Flex History Manager lets users navigate through a Flex application by using the web browser's back and forward navigation commands. For example, a user can navigate through several Accordion container panes in a Flex application, and then click the browser's Back button to return the application to its previous states.
-
-The HistoryManager class provides a subset of functionality that is provided by the BrowserManager class and deep linking. In general, you should use the BrowserManager class and deep linking for maintaining state in an application and manipulating URLs and browser history, but the HistoryManager class can be useful under some circumstances, such as if you are maintaining a Flex 2.x application. For more information about deep linking and the BrowserManager class, see About deep linking.
-
-History management is implemented as a set of files that are referenced in the application's wrapper. By default, Adobe Flex Builder generates a wrapper that supports history management, but you can disable it. When you deploy an application that uses the HistoryManager, you must also deploy the history management files such as history.css, history.js, and historyFrame.html. These are the same files that are used by the BrowserManager for deep linking support. For more information, see Deploying applications that use deep linking."
+> The HistoryManager class provides a subset of functionality that is provided by the BrowserManager class and deep linking. In general, you should use the BrowserManager class and deep linking for maintaining state in an application and manipulating URLs and browser history, but the HistoryManager class can be useful under some circumstances, such as if you are maintaining a Flex 2.x application. For more information about deep linking and the BrowserManager class, see About deep linking.
+>
+> History management is implemented as a set of files that are referenced in the application's wrapper. By default, Adobe Flex Builder generates a wrapper that supports history management, but you can disable it. When you deploy an application that uses the HistoryManager, you must also deploy the history management files such as history.css, history.js, and historyFrame.html. These are the same files that are used by the BrowserManager for deep linking support. For more information, see Deploying applications that use deep linking."
 
 The following code was taken from the historyFrame.html:
 
@@ -268,21 +265,19 @@ The most severe impact of the vulnerability described in this document is achiev
 
 The following fix recommendations are taken from the [Adobe security bulletin](http://www.adobe.com/go/apsb08-14):
 
+> Adobe recommends all Flex 3 developers who have enabled History Management update applications created with Flex 3 and their Flex 3 product installations with the following instructions:
 >
-
-Adobe recommends all Flex 3 developers who have enabled History Management update applications created with Flex 3 and their Flex 3 product installations with the following instructions:
-
-- Flex 3 users (both Flex 3 SDK and Flex Builder 3) should update their product installations with the [Flex 3.0.2 SDK update](http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+3).
-
--
-
-Flex 3 users who have enabled History Management in their currently deployed Flex 3 web applications should update all instances of the **historyFrame.html** file with the [updated file](http://www.adobe.com/support/security/bulletins/downloads/historyFrame.zip). The three instances of historyFrame.html in the Flex 3 SDK installation can be found in the following locations:
-
-{install root}/templates/html-templates/client-side-detection-with-history/history/historyFrame.html
-
-{install root}/templates/html-templates/express-installation-with-history/history/historyFrame.html
-
-{install root}/templates/html-templates/no-player-detection-with-history/history/historyFrame.html
+> - Flex 3 users (both Flex 3 SDK and Flex Builder 3) should update their product installations with the [Flex 3.0.2 SDK update](http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+3).
+>
+> -
+>
+> Flex 3 users who have enabled History Management in their currently deployed Flex 3 web applications should update all instances of the **historyFrame.html** file with the [updated file](http://www.adobe.com/support/security/bulletins/downloads/historyFrame.zip). The three instances of historyFrame.html in the Flex 3 SDK installation can be found in the following locations:
+>
+> {install root}/templates/html-templates/client-side-detection-with-history/history/historyFrame.html
+>
+> {install root}/templates/html-templates/express-installation-with-history/history/historyFrame.html
+>
+> {install root}/templates/html-templates/no-player-detection-with-history/history/historyFrame.html
 
 **Acknowledgements:**
 

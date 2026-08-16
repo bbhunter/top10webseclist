@@ -1,12 +1,11 @@
 ---
 type: Article
 title: XSS Fragmentation Attacks + MySpace 0day
-description: "A sla.ckers forum thread developing XSS fragmentation: placing normally harmless code, such as a bare onload=\"alert('XSS');\" attribute with no tag of its own, where a later unclosed tag adopts it as an attribute, so no single input ever contains a complete vector and each fragment passes the filter on its own. kuza55, Spikeman and maluc work the idea against MySpace's filter and close with a working 0day."
 resource: "http://sla.ckers.org/forum/read.php?13,2033"
-tags: [article, webseclist-reference, EN, sla-ckers-org, xss, filter-bypass, sanitizer-bypass, parser-differential, dom, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, EN, sla-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-16T00:01:13+00:00"
+  at: "2026-08-16T23:12:59+00:00"
 status: stable
 stale_after: 2027-08-16
 sources:
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:37"
 commit: ""
-content_sha256: aa16c4040da1abed9bc61d711aae6d5cef5084a700f2e76c1cc53d07308a4ac4
+content_sha256: b453b786be620073caac062bddb4503ea90c099d08d5f7be0c8feb78acd995f7
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: d5a11612a5c888b72a38d32b064a2c02747a40fbef20d75c2a794fe334f1ecc0
 retrieved_from: "http://sla.ckers.org/forum/read.php?13,2033"
 retrieved_kind: stored
-retrieved_utc: "2026-08-16T00:01:13+00:00"
+retrieved_utc: "2026-08-16T23:12:59+00:00"
 slug: sla-ckers-org-xss-fragmentation-attacks-myspace-0day
 snapshot: 20120605165348
 title_english: ""
@@ -93,111 +92,103 @@ I wasn't sure which forums I should post this in, so i just stuck it here, if it
 
  Anyway here's a copy of the article:
 
+> Quote
+> ****
+> ===========================
+>  Fragmentation Is Not Just For The Network
+>  XSS Fragmentation Attacks
+>  18/10/06
+>  by kuza55
+>  ===========================
 >
-
-Quote
-****
-===========================
- Fragmentation Is Not Just For The Network
- XSS Fragmentation Attacks
- 18/10/06
- by kuza55
- ===========================
-
- Contents:
-
- 1.0 Introduction to Fragmentation Attacks
- 2.0 XSS Fragmentation Attacks
- 3.0 MySpace 0day!
- 4.0 Mitigation
- 5.0 Final Notes
-
- ===========================
- 1.0 Introduction to Fragmentation Attacks
- ===========================
- At the simplest level, fragmentation attacks are possible when several fragments, which are by themselves not a security risk and can therefore be allowed to pass through a filter or firewall, but when the fragments reach their destination the fragments are combined and produce something dangerous.
-
- Fragmentation attacks are usually seen in relation to the network/session layer where firewalls and IDSs try to filter packets on how dangerous they are deemed to be, they are also used to sometimes fool those same devices which try to rearrange the packets themselves and read the streams, but that is not what this article is about, this article is specifically about attacks where the whole document is not reassembled and checked.
-
- ===========================
- 2.0 XSS Fragmentation Attacks
- ===========================
- XSS Fragmentation attacks are generally quite rare because they require either multiple sets of input being displayed on the same page which have all gone through the same (or at least a similar) XSS filter and are not tidied up.
-
- Another requirement that must be placed on the XSS filter is that it must be completely dumb in the sense that it simply strips away < and > characters, or it is stateful, and allows certain strings in places where it would not allow them, e.g.
-
+>  Contents:
+>
+>  1.0 Introduction to Fragmentation Attacks
+>  2.0 XSS Fragmentation Attacks
+>  3.0 MySpace 0day!
+>  4.0 Mitigation
+>  5.0 Final Notes
+>
+>  ===========================
+>  1.0 Introduction to Fragmentation Attacks
+>  ===========================
+>  At the simplest level, fragmentation attacks are possible when several fragments, which are by themselves not a security risk and can therefore be allowed to pass through a filter or firewall, but when the fragments reach their destination the fragments are combined and produce something dangerous.
+>
+>  Fragmentation attacks are usually seen in relation to the network/session layer where firewalls and IDSs try to filter packets on how dangerous they are deemed to be, they are also used to sometimes fool those same devices which try to rearrange the packets themselves and read the streams, but that is not what this article is about, this article is specifically about attacks where the whole document is not reassembled and checked.
+>
+>  ===========================
+>  2.0 XSS Fragmentation Attacks
+>  ===========================
+>  XSS Fragmentation attacks are generally quite rare because they require either multiple sets of input being displayed on the same page which have all gone through the same (or at least a similar) XSS filter and are not tidied up.
+>
+>  Another requirement that must be placed on the XSS filter is that it must be completely dumb in the sense that it simply strips away < and > characters, or it is stateful, and allows certain strings in places where it would not allow them, e.g.
+>
 ```
 <body onload="alert('XSS');">
 ```
-
- would not be allowed, but
-
+>
+>  would not be allowed, but
+>
 ```
 onload="alert('XSS');"
 ```
-
- would be.
-
- The idea behind XSS fragmentation attacks is to have your normally non-dangerous code (e.g. onload="alert('XSS');") placed in a dangerous position.
-
- The simplest place to get your code placed is inside another tag and that is the example I'll go with now.
-
- ===========================
- 3.0 MySpace 0day!
- ===========================
- The example I'll be using is a MySpace 0day I discovered. First of all I’ll give a quick explanation of the system MySpace has. You are not just given a single field to enter your profile into, you are given several fields about yourself, who you'd like to meet, your interests, etc.
-
- Anyway, the sections we will be attacking are the most closely placed sections on the page, the interests sections (more specifically the Music and Film ones), normally your resulting code looks like this:
-
 >
-
-Quote
-****
-<tr id=MusicRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Music</td><td id="ProfileMusic" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">Music Goes Here!</td></tr><script language="JavaScript">highlightInterests("ProfileMusic");</script><tr id=FilmsRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Films</td><td id="ProfileFilms" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">Films Go Here!</td></tr>
-
- The only things separating our 2 fields was this small block of code:
-
+>  would be.
 >
-
-Quote
-****
-</td><td id="ProfileMusic" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">Music Goes Here!</td></tr><script language="JavaScript">highlightInterests("ProfileMusic");</script><tr id=FilmsRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Films</td><td id="ProfileFilms" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">
-
- Now what interesting things can we see about that code, well we can see that there are no single quotes there at all, and the only quotes used are double quotes.
-
- So of course we can do something to encapsulate the text in between like so:
-
+>  The idea behind XSS fragmentation attacks is to have your normally non-dangerous code (e.g. onload="alert('XSS');") placed in a dangerous position.
 >
-
-Quote
-****
-<tr id=MusicRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Music</td><td id="ProfileMusic" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word"><body test='</td></tr><script language="JavaScript">highlightInterests("ProfileMusic");</script><tr id=FilmsRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Films</td><td id="ProfileFilms" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">'>Films Go Here!</td></tr>
-
- and as you can see we have included all that text in between in the test parameter for the body tag we've introduced! And as you can also see we have the ability to write things into our tag in the second input field and it will be automatically place din a dangerous position! So if we make our Films field look like so:
-
+>  The simplest place to get your code placed is inside another tag and that is the example I'll go with now.
+>
+>  ===========================
+>  3.0 MySpace 0day!
+>  ===========================
+>  The example I'll be using is a MySpace 0day I discovered. First of all I’ll give a quick explanation of the system MySpace has. You are not just given a single field to enter your profile into, you are given several fields about yourself, who you'd like to meet, your interests, etc.
+>
+>  Anyway, the sections we will be attacking are the most closely placed sections on the page, the interests sections (more specifically the Music and Film ones), normally your resulting code looks like this:
+>
+> > Quote
+> > ****
+> > <tr id=MusicRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Music</td><td id="ProfileMusic" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">Music Goes Here!</td></tr><script language="JavaScript">highlightInterests("ProfileMusic");</script><tr id=FilmsRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Films</td><td id="ProfileFilms" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">Films Go Here!</td></tr>
+>
+>  The only things separating our 2 fields was this small block of code:
+>
+> > Quote
+> > ****
+> > </td><td id="ProfileMusic" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">Music Goes Here!</td></tr><script language="JavaScript">highlightInterests("ProfileMusic");</script><tr id=FilmsRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Films</td><td id="ProfileFilms" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">
+>
+>  Now what interesting things can we see about that code, well we can see that there are no single quotes there at all, and the only quotes used are double quotes.
+>
+>  So of course we can do something to encapsulate the text in between like so:
+>
+> > Quote
+> > ****
+> > <tr id=MusicRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Music</td><td id="ProfileMusic" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word"><body test='</td></tr><script language="JavaScript">highlightInterests("ProfileMusic");</script><tr id=FilmsRow><td valign="top" align="left" width="100" bgcolor="#b1d0f0">Films</td><td id="ProfileFilms" width="175" bgcolor="#d5e8fb" style="WORD-WRAP: break-word">'>Films Go Here!</td></tr>
+>
+>  and as you can see we have included all that text in between in the test parameter for the body tag we've introduced! And as you can also see we have the ability to write things into our tag in the second input field and it will be automatically place din a dangerous position! So if we make our Films field look like so:
+>
 ```
 ' onLoad="alert('XSS');"></body>
 ```
-
- then we have XSS.
-
- This is exactly the attack used on MySpace, and should work on many other sites where input is not cleaned up and dangling tags are allowed to be posted.
-
- Maybe on some sites which allow user comments on articles, etc are vulnerable?
-
- ===========================
- 4.0 Mitigation
- ===========================
- The root of this problem is that sections are filtered separately, but that problem is one that is probably too time-consuming to bother with as fixing another requirement needed for the attack to work is much easier to fix.
-
- The easiest fix is to use something many filtering systems already do for other reasons: disallow incomplete/unclosed tags. At the moment I see no way of being able to exploit the above idea if the filtering engine does not allow either unfinished tags (like in the example above) or unclosed tags (e.g. <style> tags).
-
- ===========================
- 5.0 Final Notes
- ===========================
- Well, what can I say, this is probably a corner case of XSS filter evasion, but it is a corner case that could possibly be applied to many situations since we seem to be able to post html comments in many places these days. I also hope it helps illustrate how security mechanisms such as XSS filters cannot be used as simple drop in modules, but have to be integrated into your design for them to work effectively.
-
- Sadly/Luckily (depending on your viewpoint) manyfilters such as the ones employed by Wordpress and Blogger force you to have 'neat' HTML so this attack is impossible on those 2 cases.
+>
+>  then we have XSS.
+>
+>  This is exactly the attack used on MySpace, and should work on many other sites where input is not cleaned up and dangling tags are allowed to be posted.
+>
+>  Maybe on some sites which allow user comments on articles, etc are vulnerable?
+>
+>  ===========================
+>  4.0 Mitigation
+>  ===========================
+>  The root of this problem is that sections are filtered separately, but that problem is one that is probably too time-consuming to bother with as fixing another requirement needed for the attack to work is much easier to fix.
+>
+>  The easiest fix is to use something many filtering systems already do for other reasons: disallow incomplete/unclosed tags. At the moment I see no way of being able to exploit the above idea if the filtering engine does not allow either unfinished tags (like in the example above) or unclosed tags (e.g. <style> tags).
+>
+>  ===========================
+>  5.0 Final Notes
+>  ===========================
+>  Well, what can I say, this is probably a corner case of XSS filter evasion, but it is a corner case that could possibly be applied to many situations since we seem to be able to post html comments in many places these days. I also hope it helps illustrate how security mechanisms such as XSS filters cannot be used as simple drop in modules, but have to be integrated into your design for them to work effectively.
+>
+>  Sadly/Luckily (depending on your viewpoint) manyfilters such as the ones employed by Wordpress and Blogger force you to have 'neat' HTML so this attack is impossible on those 2 cases.
 
  Please tell me what you think....
 
@@ -571,19 +562,15 @@ but this sorta filter might cause some griefs to it's millions of users.. they s
 
  For example, adding this to your page:
 
->
-
-Quote
-****
-Michael's sister said that in hebrew, ani ohev ontach = i love you
+> Quote
+> ****
+> Michael's sister said that in hebrew, ani ohev ontach = i love you
 
  becomes:
 
->
-
-Quote
-****
-Michael.. i love you
+> Quote
+> ****
+> Michael.. i love you
 
  ..probably not what they intended to say _-_
 

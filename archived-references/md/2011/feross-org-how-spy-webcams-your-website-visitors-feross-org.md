@@ -1,14 +1,13 @@
 ---
 type: Article
 title: "HOW TO: Spy on the Webcams of Your Website Visitors » Feross.org"
-description: "Adobe had added framebusting JavaScript to the Flash Settings Manager page, so instead of framing the page the author framed the settings SWF file directly, which the framebuster never guarded. Overlaying the transparent SWF on a game made visitors' clicks silently grant webcam and microphone access. Shown in Firefox and Safari for Mac; Adobe fixed it in days."
 resource: "https://www.feross.org/webcam-spy/"
-tags: [article, webseclist-reference, en, feross-org, clickjacking, ui-redress, flash, iframe, filter-bypass, case-study, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, feross-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:32+00:00"
+  at: "2026-08-16T23:12:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.feross.org/webcam-spy/"
@@ -23,7 +22,7 @@ canonical_url: "https://feross.org/webcam-spy/"
 cited_by:
   - "2011.md:40"
 commit: ""
-content_sha256: 2ca61a7c5c825abf1e3d177c3cf8ae0d52abe23d0420fda6120fd8bacaf660c7
+content_sha256: 57b9e8fe03ddfcde3bb922fb98735243abe6134c3988a0514f1cad75b64ee53f
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +34,8 @@ publisher: Feross.org
 publisher_english: ""
 raw_sha256: dfb810a3e89934333cfe1a8a22e91fd54297c80c42e4833ce050bbdefa1f324b
 retrieved_from: "https://feross.org/webcam-spy/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T23:12:31+00:00"
 slug: feross-org-how-spy-webcams-your-website-visitors-feross-org
 snapshot: ""
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.feross.org/webcam-spy/>
 - Current location: <https://feross.org/webcam-spy/>
-- Preserved from: https://feross.org/webcam-spy/ (live) on 2026-08-09
+- Preserved from: https://feross.org/webcam-spy/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -104,11 +103,9 @@ Read on for the original blog post.
 
 This attack works by using a neat variation of the normal [clickjacking](http://en.wikipedia.org/wiki/Clickjacking) technique that spammers and other bad people are using in the wild right now. For the uninitiated:
 
+> *Clickjacking* is a malicious technique of tricking Web users into revealing confidential information or taking control of their computer while clicking on seemingly innocuous web pages.
 >
-
-*Clickjacking* is a malicious technique of tricking Web users into revealing confidential information or taking control of their computer while clicking on seemingly innocuous web pages.
-
-– Wikipedia
+> – Wikipedia
 
 Combine clickjacking with the [Adobe Flash Player Setting Manager page](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager06.html) and you have a recipe for some sad times.
 
@@ -126,11 +123,9 @@ Instead of iframing the whole settings page (which contains the framebusting cod
 
 I’ve seen a bunch of clickjacking attacks in the wild, but I’ve never seen any attacks where the attacker iframes a SWF file from a remote domain to clickjack it – let alone a .SWF file as important as one that controls access to your webcam and mic!
 
+> The problem here is the [Flash Player Setting Manager](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager06.html), this inheritance from Macromedia might be the Flash Player security Achilles heel.
 >
-
-The problem here is the [Flash Player Setting Manager](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager06.html), this inheritance from Macromedia might be the Flash Player security Achilles heel.
-
-– [Guy Aharonovsky](http://blog.guya.net/2008/10/07/malicious-camera-spying-using-clickjacking/)
+> – [Guy Aharonovsky](http://blog.guya.net/2008/10/07/malicious-camera-spying-using-clickjacking/)
 
 This is a screenshot of what the Settings Manager .SWF file looks like:
 

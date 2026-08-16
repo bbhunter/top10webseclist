@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
-description: "Stephen de Vries' Google Code Search dorks for XSS and SQL injection in Java applications, quoted in full: <%=.*getParameter for unescaped output, executeQuery.*getParameter for query construction, and a package filter aimed at book publishers' sample code. Searching all public source approximates a poor man's static analysis at internet scale."
 resource: "http://ha.ckers.org/blog/20061005/google-dorks-strike-again/"
-tags: [article, webseclist-reference, ha-ckers-org, large-scale-scan, static-analysis, xss, sqli, java, info-leak, tooling, owasp-a03-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:52:19+00:00"
+  at: "2026-08-16T23:12:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20061005/google-dorks-strike-again/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:73"
 commit: ""
-content_sha256: 75dbbe271d42826e06f8c71f8c1c3cefce94ec1a32e2bba620e26a7bf2004245
+content_sha256: ab941742cdd66af8c156a4072edbfb420151813182984bbdf91b2c7d17bcc332
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 90d0b66d137f71933ee9185bffe5eeb3de9b647bcf69db0a23306243115d6fb6
 retrieved_from: "http://ha.ckers.org/blog/20061005/google-dorks-strike-again/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:52:19+00:00"
+retrieved_utc: "2026-08-16T23:12:42+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-3
 snapshot: 20070331223038
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20061005/google-dorks-strike-again/>
-- Preserved from: http://ha.ckers.org/blog/20061005/google-dorks-strike-again/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20061005/google-dorks-strike-again/ (stored) on 2026-08-16
 - Capture timestamp: 20070331223038
 - Licence: unknown
 
@@ -71,21 +70,19 @@ ha.ckers.org web application security lab - Archive » Google Dorks Strike Again
 
 [Stephen de Vries](http://www.corsaire.com) came up with a few interesting Google dorks today, that I thought would be worth checking out. These are specifically targeting XSS and SQL Injection. It’s interesting because “all the world’s information” really help to speak to find large scale attacks across the internet. Being able to query all the source code in the world is being able to run a massive (poor man’s) security audit across all availible source code. This really opens the doors for large scale distributed attacks.
 
+> Google’s code search provides an easy way to find obvious software flaws in open source and example applications, e.g.:
 >
-
-Google’s code search provides an easy way to find obvious software flaws in open source and example applications, e.g.:
-
- XSS in Java apps
- http://www.google.com/codesearch?hl=en&lr=&q=%3C%25%
- 3D.*getParameter&btnG=Search
-
- (Really obvious) SQL Injection in Java apps:
- http://www.google.com/codesearch?
- hl=en&lr=&q=executeQuery.*getParameter&btnG=Search
-
- Ever wonder why we’re still seeing XSS in 2006?:
- http://www.google.com/codesearch?hl=en&lr=&q=%3C%25%3D.*getParameter
- +package%3A%28oreilly%7Capress.com%29&btnG=Search
+>  XSS in Java apps
+>  http://www.google.com/codesearch?hl=en&lr=&q=%3C%25%
+>  3D.*getParameter&btnG=Search
+>
+>  (Really obvious) SQL Injection in Java apps:
+>  http://www.google.com/codesearch?
+>  hl=en&lr=&q=executeQuery.*getParameter&btnG=Search
+>
+>  Ever wonder why we’re still seeing XSS in 2006?:
+>  http://www.google.com/codesearch?hl=en&lr=&q=%3C%25%3D.*getParameter
+>  +package%3A%28oreilly%7Capress.com%29&btnG=Search
 
 Of course this is a super simple list and only affects one language, but you get the idea. Funny enough this isn’t too far off from how some white box source code scanners work. Of course the better ones attempt to traverse the logic, but in a pinch this is pretty close to how it’s done. I remember finding several dozen privelage escalation and local exec holes in one PERL application I audited using almost the exact same methods.
 

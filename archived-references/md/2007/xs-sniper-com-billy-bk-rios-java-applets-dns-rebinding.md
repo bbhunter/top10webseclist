@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Billy (BK) Rios » Java Applets and DNS Rebinding
-description: "Java applets are pinned to DNS name rather than IP, so an XSS-cached applet can be DNS-rebound by reloading or launching a new JVM after the record changes. Unlike Flash sockets the applet may reach ports below 1024 and use Java's database and RMI libraries. A parallel NGS finding abuses a codebase URI prefixed 'verbatim:'."
 resource: "http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/"
-tags: [article, webseclist-reference, xs-sniper-com, dns-rebinding, java, dns, sop-bypass, xss, attack-chain, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, xs-sniper-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:49+00:00"
+  at: "2026-08-16T23:13:07+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:31"
 commit: ""
-content_sha256: 10879c73051599d667bc13894271e71c1b635f8204b78a6fcc46393e66ef820c
+content_sha256: 6b0e74b0886d9532093e0ce38aba3d58d06661902da9ce267b23fbf071c3f194
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 137f1ae4def45b7cd73da0d0aa6c146dac6ed13ad1c463e3cf23da9b8e9482d8
 retrieved_from: "http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:49+00:00"
+retrieved_utc: "2026-08-16T23:13:07+00:00"
 slug: xs-sniper-com-billy-bk-rios-java-applets-dns-rebinding
 snapshot: 20160312042548
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/>
-- Preserved from: http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/ (stored) on 2026-08-09
+- Preserved from: http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/ (stored) on 2026-08-16
 - Capture timestamp: 20160312042548
 - Licence: unknown
 
@@ -74,18 +73,16 @@ For those of you who were able to see Billy and I present at Hack In the Box Mal
 
  Interestingly enough, a recent post by the NGS guys that was on seclists detailed how this was vulnerable in another way, which appeared to not have to rely on a new load of the JVM. Here’s a comment from that post:
 
+> By specifying a codebase URI prefixed by “verbatim:” it is possible to
+>  load an applet from a remote location but have the browser plugin believe
+>  it has been loaded from the local host. This allows an untrusted applet
+>  to connect to and attempt to exploit network services running on the local
+>  host. It should be noted that unlike binary sockets in Flash 9, an applet
+>  can connect to any port, not just those greater than 1024.
 >
-
-By specifying a codebase URI prefixed by “verbatim:” it is possible to
- load an applet from a remote location but have the browser plugin believe
- it has been loaded from the local host. This allows an untrusted applet
- to connect to and attempt to exploit network services running on the local
- host. It should be noted that unlike binary sockets in Flash 9, an applet
- can connect to any port, not just those greater than 1024.
-
- At the time of reporting this issue, NGS provided Sun with a demonstration
- applet that exploited MS06-040 (“Vulnerability in Server Service could
- allow remote code execution”) on a vulnerable XP SP1 system.
+>  At the time of reporting this issue, NGS provided Sun with a demonstration
+>  applet that exploited MS06-040 (“Vulnerability in Server Service could
+>  allow remote code execution”) on a vulnerable XP SP1 system.
 
  Fortunately for all of us who have Java installed on our systems, this has now been patched by Sun, but I find it interesting that Java has its own URIs that it respects, like the verbatim: URI. Very interesting indeed.
 

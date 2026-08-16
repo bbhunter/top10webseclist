@@ -1,14 +1,13 @@
 ---
 type: Article
 title: SecuriTeam Blogs » Xanga Hit By Script Worm
-description: "Matthew Murphy's same-day analysis of the Xanga worm: a DIV whose CSS background url() holds a javascript: URI split across line breaks that IE reassembles, defeating the site's keyword filter, then eval of the DIV's own code attribute bootstraps XMLHTTP that reposts the worm through the blog editor. Annotated source for all seven routines."
 resource: "https://blogs.securiteam.com/index.php/archives/166"
-tags: [article, webseclist-reference, en, blogs-securiteam-com, xss, filter-bypass, javascript, css, attack-chain, case-study, encoding, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, blogs-securiteam-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-14T21:29:32+00:00"
+  at: "2026-08-16T23:12:29+00:00"
 status: stable
-stale_after: 2027-08-14
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://blogs.securiteam.com/index.php/archives/166"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:66"
 commit: ""
-content_sha256: 4236f5ee63c6359bbe3ca4deaadf3efe377913ed68867d1a2eee902efe2817c7
+content_sha256: 838bf22da01db1116c4b421c95ebca48ad63691d80a504796d40211732ed5d7d
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 369c81fbe9e691d8cc288270fcf65133f15e4584417da113ffe65c6cba732331
 retrieved_from: "https://blogs.securiteam.com/index.php/archives/166"
 retrieved_kind: stored
-retrieved_utc: "2026-08-14T21:29:32+00:00"
+retrieved_utc: "2026-08-16T23:12:29+00:00"
 slug: blogs-securiteam-com-securiteam-blogs-xanga-hit-script-worm
 snapshot: 20061020220354
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blogs.securiteam.com/index.php/archives/166>
-- Preserved from: https://blogs.securiteam.com/index.php/archives/166 (stored) on 2026-08-14
+- Preserved from: https://blogs.securiteam.com/index.php/archives/166 (stored) on 2026-08-16
 - Capture timestamp: 20061020220354
 - Licence: unknown
 
@@ -79,14 +78,12 @@ Following in the footsteps of fellow blog provider MySpace, Xanga.com appears to
 
 Infected sites can easily be recognized by the following text:
 
+> **xangas admin owned you.**
 >
-
-**xangas admin owned you.**
-
-im a motha fuckin balleR, DG4L.
- greets to phrea,camzero,majestic,dgs
- “got steve case up on the phone, bitch this camo youve been owned.”
- free cam0.
+> im a motha fuckin balleR, DG4L.
+>  greets to phrea,camzero,majestic,dgs
+>  “got steve case up on the phone, bitch this camo youve been owned.”
+>  free cam0.
 
 More information as I have it.
 

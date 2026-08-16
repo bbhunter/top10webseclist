@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Username Enumeration Vulnerabilities
-description: "pagvac surveys username enumeration from pentest practice, splitting it into bruteforcable and dumpable, and ranks four probes: login errors, password-recovery errors, signup collisions and existing-URI probing. Signup facilities are best because they always work, are silent and dodge lockout; a real PCI test enumerated 600+ accounts and cracked about 40. CAPTCHA is the only real defence."
 resource: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities"
-tags: [article, webseclist-reference, en, gnucitizen-org, user-enumeration, info-leak, side-channel, case-study, mitigation, email, detection, owasp-a04-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:57+00:00"
+  at: "2026-08-16T23:12:37+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities"
@@ -23,7 +22,7 @@ canonical_url: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabili
 cited_by:
   - "2007.md:83"
 commit: ""
-content_sha256: fef4455f64598944e8e3d803f2cd39467700b88e55164971194e76139345ec7c
+content_sha256: 7c5fc0fb4723b6993bebbfbf7e9a263d662c09baabf471b42321a988742aa021
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 726f6bd264337664752282d9e04805a09bb24a65ad387912129c3b00500ed326
 retrieved_from: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:57+00:00"
+retrieved_utc: "2026-08-16T23:12:37+00:00"
 slug: gnucitizen-org-username-enumeration-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities>
 - Current location: <https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/>
-- Preserved from: https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -78,15 +77,11 @@ Although nothing stops you from blindly trying common set of credentials such as
 
 Let's say that you access `https://acme-site.com/logon.aspx`, and you try to authenticate with the credentials `madeupusername/password`. The application, if vulnerable, will respond with a message similar to the following one:
 
->
-
-Authentication failure: entered username does not exist.
+> Authentication failure: entered username does not exist.
 
 However, if we enter an existing username, the application will then give a different message such as:
 
->
-
-Authentication failure: incorrect password entered.
+> Authentication failure: incorrect password entered.
 
 Username enumeration vulnerabilities can be found in several other ways besides probing changes of responses in login authentication errors. I've seen four different ways to find bruteforcable username enumeration issues:
 
@@ -107,15 +102,11 @@ Remember: there many web applications that allow users to set their username to 
 
 A password recovery facility that is vulnerable to username enumeration (most of them out there are) might return an error message like the following when entering an email address that does *not* exist:
 
->
-
-Sorry, the email address entered does not exist.
+> Sorry, the email address entered does not exist.
 
 On the other hand, entering a *valid* email address would look like similar to this:
 
->
-
-A new password has been sent to your email address.
+> A new password has been sent to your email address.
 
 In short, this method for enumerating usernames is good as a last resort, because *most* web applications allow usernames to be enumerated through the password recovery facility. However, from the stealth point of view, this is the worst way to enumerate usernames. Think about it, if you *do* successfully enumerate a valid username, the target account's owner will get an email with a new password. This is pretty noisy, since you're telling the victim user: "Hey, I'm probing your account!". Even worse, sometimes these reset password emails will include your browser's User-[agent](https://chatbotkit.com/agents) header value plus the source IP address that was used to request a new password! Not that I am saying that it is not possible to hide your POP.
 
@@ -127,9 +118,7 @@ Let's now talk about the third method for enumerating usernames: analyzing chang
 
 Again, this is the same old story. We send a request, in this case typically through a form to register a new account. If the account signup facility is vulnerable to username enumeration, we will get an error message similar to the following when entering an existing username (login name/email address):
 
->
-
-Sorry, there is already an account registered with the same email address.
+> Sorry, there is already an account registered with the same email address.
 
 Otherwise, if the entered username does *not* exist, the account signup process will proceed to the next step (if any), or simply finish successfully.
 

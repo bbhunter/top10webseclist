@@ -6,9 +6,9 @@ resource: "http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/"
 tags: [article, webseclist-reference, ha-ckers-org, file-upload, filter-bypass, javascript, php, mime, xss, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:12:33+00:00"
+  at: "2026-08-16T23:12:50+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/"
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: fdadeb4adabadaa0f053958570834a79f811b8ff9b1145492a5aca248fecfeca
 retrieved_from: "http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:12:33+00:00"
+retrieved_utc: "2026-08-16T23:12:50+00:00"
 slug: ha-ckers-org-hiding-js-valid-images
 snapshot: 20071124033035
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/>
-- Preserved from: http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/ (stored) on 2026-08-10
+- Preserved from: http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/ (stored) on 2026-08-16
 - Capture timestamp: 20071124033035
 - Licence: unknown
 
@@ -91,3 +91,13 @@ I thinks it’s useful for evading filter and hosting malicius JS code into wide
 The =1 thing is pretty clever and indeed simple things like that can stop a lot of errors from happening (IE is often more strict about that than Firefox but your mileage may vary). Anyway, interesting trick. Nice work by Matteo!
 
   This entry was posted on Saturday, June 23rd, 2007 at 12:36 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

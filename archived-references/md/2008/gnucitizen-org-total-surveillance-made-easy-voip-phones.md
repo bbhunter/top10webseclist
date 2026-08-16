@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Total surveillance made easy with VoIP phones
-description: ".mario takes apart the Snom 32x VoIP phone's web interface: CSRF places calls, a persistent XSS in the address book (the number field is unencoded) runs a worm through XHR, call logs are stealable, and the killer step is silently dialling the attacker so the room is bugged with no ring tone, at the victim's expense. No CSRF tokens anywhere, default password 0000."
 resource: "https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/"
-tags: [article, webseclist-reference, en-US, gnucitizen-org, csrf, xss, info-leak, case-study, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en-US, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:42:58+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-16T23:12:39+00:00"
+status: stable
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:66"
 commit: ""
-content_sha256: ea4539e834a763bb047b9ab3974a26c2f78246eef7908a77313c37191626af89
+content_sha256: 6b2a5a078c3a88e5c308f112cbf6c6c3e389419a6efdfc86c74c911987e2789c
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 8fae0f58f5d0d128b0f0016fc7bebcff521506f766c9a07f0a8d88fd29a659f9
 retrieved_from: "https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:42:58+00:00"
+retrieved_utc: "2026-08-16T23:12:39+00:00"
 slug: gnucitizen-org-total-surveillance-made-easy-voip-phones
 snapshot: 20081104074325
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/>
-- Preserved from: https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/ (stored) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/ (stored) on 2026-08-16
 - Capture timestamp: 20081104074325
 - Licence: unknown
 
@@ -112,13 +111,11 @@ The proof of concept (POC) code can be found over here (please use it responsibl
 
 We’ve received a response from Snom. This is what they say.
 
+> To prevent this we will take the following measurments:
 >
-
-To prevent this we will take the following measurments:
-
-- We will publish an article on “how to make your snom phone saver” on our website (including a link to it on the start page)
-- We will send out a newsletter to all our registred VARS and distributers with this information
-- We will work on the FW to improve security (just checked, on FW Ver. 7 the Flash applet is disabled by default)
-- We will publish a new email adress, for security matters (mostlikly security@snom.com), which goes to a bunch of people (including me).
+> - We will publish an article on “how to make your snom phone saver” on our website (including a link to it on the start page)
+> - We will send out a newsletter to all our registred VARS and distributers with this information
+> - We will work on the FW to improve security (just checked, on FW Ver. 7 the Flash applet is disabled by default)
+> - We will publish a new email adress, for security matters (mostlikly security@snom.com), which goes to a bunch of people (including me).
 
 We are thankful for letting us know about your future plans.

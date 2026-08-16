@@ -326,6 +326,40 @@ def _densest_block(root):
 # Markdown rendering
 # ---------------------------------------------------------------------------
 
+def _quote_block(text):
+    """Mark every line of a quoted passage, leaving code listings alone.
+
+    A FENCE IS NOT QUOTED, deliberately. `makepdf` builds a blockquote from
+    consecutive `>` lines and joins them with spaces, so quoting a listing would
+    flatten it onto one line - the flowing damage that loses a payload's
+    indentation. Leaving the fence unmarked keeps the listing a listing in the
+    PDF, and the prose around it - the part where attribution matters - still
+    carries the marker. Four of the ninety quotes in the affected documents
+    contain a listing; the other eighty-six are quoted throughout.
+    """
+    body = (text or "").strip("\n")
+    if not body.strip():
+        return ""
+    lines, fenced, out = body.split("\n"), False, []
+    for line in lines:
+        if line.lstrip().startswith("```"):
+            fenced = not fenced
+            out.append(line)
+            continue
+        if fenced:
+            out.append(line)
+        elif line.strip():
+            out.append("> " + line)
+        elif out and out[-1] != ">":
+            # One blank marker between paragraphs. A <p> child emits its own
+            # blank lines, so without this a two-paragraph quote publishes three
+            # empty `>` rows between the halves.
+            out.append(">")
+    while out and out[-1] == ">":
+        out.pop()
+    return "\n".join(out)
+
+
 def to_markdown(node, base_url=""):
     out = []
     _render(node, out, base_url, [])
@@ -451,9 +485,17 @@ def _render(node, out, base_url, stack):
         return
 
     if tag == "blockquote":
-        out.append("\n\n> ")
-        _children(node, out, base_url, stack)
-        out.append("\n\n")
+        # EVERY LINE, not just the first. A quote whose children are blocks - a
+        # <blockquote> holding two <p>s, which is the ordinary shape - emitted
+        # one `>` and then let the rest of the passage run on unquoted. The
+        # marker was left stranded on its own line and the quoted material read
+        # as the archived author's own words: a passage quoted from another
+        # researcher, published under the wrong name.
+        inner = []
+        _children(node, inner, base_url, stack)
+        quoted = _quote_block("".join(inner))
+        if quoted:
+            out.append("\n\n" + quoted + "\n\n")
         return
 
     if tag == "br":

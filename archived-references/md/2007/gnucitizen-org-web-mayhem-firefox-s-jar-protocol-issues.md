@@ -1,14 +1,13 @@
 ---
 type: Article
 title: "Web Mayhem Firefox's JAR Protocol issues"
-description: "Firefox's jar: protocol runs content from inside an archive under the origin of the archive's URL, so any site accepting ZIP-derived uploads (odt, docx, attachments) becomes vulnerable to persistent XSS. pdp also notes jar: can be nested and can wrap data:, letting a payload be obfuscated past antivirus and IDS."
 resource: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues"
-tags: [article, webseclist-reference, en, gnucitizen-org, xss, file-upload, sop-bypass, same-origin-policy, mime, filter-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:57+00:00"
+  at: "2026-08-16T23:12:38+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues"
@@ -23,7 +22,7 @@ canonical_url: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol
 cited_by:
   - "2007.md:7"
 commit: ""
-content_sha256: 91ece8e19301407707777bdfa02d20c21b6ae661dacbce74439ac1a25fcac7f7
+content_sha256: e120f31d6f37c45d24d1eea1895b67eb444c9301b634a0b302961bae3471ea45
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 0e6a078dce104ef6868c17822985fb685db4edd89642514bf46dfc169c292d71
 retrieved_from: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:57+00:00"
+retrieved_utc: "2026-08-16T23:12:38+00:00"
 slug: gnucitizen-org-web-mayhem-firefox-s-jar-protocol-issues
 snapshot: ""
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues>
 - Current location: <https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/>
-- Preserved from: https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -86,12 +85,12 @@ If you want to learn more about the `jar:` protocol just look it up on the web. 
 
 "What does this all mean?" In simple terms, it means that any application which allows upload of JAR/ZIP files is potentially vulnerable to a persistent Cross-site Scripting. Potential targets for this attack include applications such as web mail clients, collaboration systems, document sharing systems, almost everything that smells like Web2.0, etc, etc, etc. Document formats are in particular very vulnerable. The OpenOffice file format (`odt`) and the less known Microsoft Office 2007 Open Document Format are both based on ZIP. If you create a simple document via either of these products and then you change the extension to `.zip`, you will be able to read all the files the document is made of. An attacker can simply add a malicious page, with a nasty client-side exploits, inside the archive and change back the extension to `.odt` or `.doc`. Who would have though that?
 
->
-
-Once the malicious `Zip/Doc/Odt/Etc/Etc/Etc` file is uploaded/shared the attacker will be able to cross-script the origins in whatever way he likes. My research led to the discovery of many applications that are affected by this issue including some coming from top software vendors such as Google and Microsoft. Their number is so big that it makes almost no sense to try to list them all here or even be bothered to individually investigate all of the related issues in detail. The root cause is only one: the `jar:` URL protocol handler.
+> Once the malicious `Zip/Doc/Odt/Etc/Etc/Etc` file is uploaded/shared the attacker will be able to cross-script the origins in whatever way he likes. My research led to the discovery of many applications that are affected by this issue including some coming from top software vendors such as Google and Microsoft. Their number is so big that it makes almost no sense to try to list them all here or even be bothered to individually investigate all of the related issues in detail. The root cause is only one: the `jar:` URL protocol handler.
 
 But this is not all! Jar URLs can be used to obfuscate malicious payloads to an extend which no Anti-virus software can recognize. The protocol handler can be nested (jars within jars within jars) and can encapsulate the `data:` protocol as well. Attackers can easily write a self extracting payload which is hidden behind multiple permutations of the both `jar:` and `data:` protocols and as such evade intrusion detection and prevention mechanisms that might be on place to guard the perimeter.
 
 ### What shall we do to protect ourselves?
 
 I haven't thought well on this yet but the best way is to very carefully sanitize the types of files you allow your users to upload/share. Unfortunately, sometimes this is impossible, especially when it comes to formats such as `.odt` and `.doc`. You need to open these files and re-save them and as such to guarantee that there are no malicious leftovers. IDS, IPS and Ant-virus vendors should really start looking into how the `jar:` protocol works and come up with dynamic mechanism for uncompressing deeply nested URLs.
+
+*Archived Comments*

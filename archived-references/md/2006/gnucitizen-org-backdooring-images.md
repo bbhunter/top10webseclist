@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Backdooring Images
-description: "pdp on making image files execute script: IE's content sniffing runs HTML appended after a GIF89 header, and .jpg or .gif files whose bodies are HTML execute on view, so an avatar or a linked image on a forum can take the viewer's session. On Firefox an .htaccess line AddType text/html .jpg reproduces it. He argues the fix belongs server-side."
 resource: "https://www.gnucitizen.org/blog/backdooring-images/"
-tags: [article, webseclist-reference, en, gnucitizen-org, file-upload, mime, content-type, xss, filter-bypass, info-leak, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:43+00:00"
+  at: "2026-08-16T23:12:33+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/backdooring-images/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:75"
 commit: ""
-content_sha256: 239ae7e1fd4537164decec0cdd73cfc49b48622100742a328adeb5151d4ad7f2
+content_sha256: 1a594b5afb5d82e214a0161af220390f85df6f0364335d14bd3c8ed6096f9d3a
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 9cd8aa62aa0c12f7cb1e24fbefc6a4c0fe6965e7a293e3ea05095cbcb469c170
 retrieved_from: "https://www.gnucitizen.org/blog/backdooring-images/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:43+00:00"
+retrieved_utc: "2026-08-16T23:12:33+00:00"
 slug: gnucitizen-org-backdooring-images
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/backdooring-images/>
-- Preserved from: https://www.gnucitizen.org/blog/backdooring-images/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/backdooring-images/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -67,9 +66,7 @@ Fri, 15 Dec 2006 04:57:22 GMT
 
 by [pdp](https://www.gnucitizen.org/members/pdp.html)
 
->
-
-An offensive move where a player cuts behind the defenders and receives a pass for a field-goal attempt. [basketball-betting-college](https://www.google.com.my/url?sa=X&start=5&oi=define&q=http://www.basketball-betting-college.com/basketball_betting_terms.htm&usg=__hUeTqOjYgeES_AHDR_XwZ_vZ9tw=)
+> An offensive move where a player cuts behind the defenders and receives a pass for a field-goal attempt. [basketball-betting-college](https://www.google.com.my/url?sa=X&start=5&oi=define&q=http://www.basketball-betting-college.com/basketball_betting_terms.htm&usg=__hUeTqOjYgeES_AHDR_XwZ_vZ9tw=)
 
 OK, we've covered how to backdoor [Flash](https://www.gnucitizen.org/blog/backdooring-flash-objects-receipt/), [QuickTime](https://www.gnucitizen.org/blog/backdooring-quicktime-movies/), [QuickTime Link](https://www.gnucitizen.org/blog/backdooring-mp3-files/), [PDF](http://michaeldaw.org/md-hacks/backdooring-pdf-files/) and simple [HTML files](https://www.gnucitizen.org/blog/backdooring-web-pages), but we haven't discussed how to backdoor images yet. In this post I am going to outline some of the techniques available for maliciously infecting Image (Picture) files with JavaScript code. I must worn you that what you are about to read is not intended to describe new issues but rather to clarify and provide scenarios where the discussed attack vectors can be implemented.
 

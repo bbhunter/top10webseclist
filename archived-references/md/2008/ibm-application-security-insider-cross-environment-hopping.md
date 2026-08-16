@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Cross Environment Hopping
-description: "An XSS flaw in one localhost web server reaches every other service on the machine, because same-origin policy does not separate ports on localhost for IE's ActiveX XMLHTTP objects. Firefox extends it further through Java sockets in JavaScript: enumerate SMB shares, or drive a locally installed proxy (AVAST's) and its HTTP CONNECT support to tunnel into the intranet and talk SMTP."
 resource: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
-tags: [article, webseclist-reference, ibm-application-security-insider, sop-bypass, same-origin-policy, xss, dns-rebinding, proxy, java, activex, ssrf, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, ibm-application-security-insider]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:34+00:00"
-status: deprecated
-stale_after: 2027-08-11
+  at: "2026-08-16T23:12:25+00:00"
+status: stable
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:49"
 commit: ""
-content_sha256: 2d78f536562731c2caa50c9a3b2e4c1cef33ecefe1b4afbbcf7a3351c78e6df8
+content_sha256: 7e40cfe1f1412c70f4413f66d19d2cb974d2e7307c3936e0bff303e120375c3d
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 8e9c0401994f692459b4ffbddee14efc4de48ed24326f7b4713dc921e4403736
 retrieved_from: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:34+00:00"
+retrieved_utc: "2026-08-16T23:12:25+00:00"
 slug: ibm-application-security-insider-cross-environment-hopping
 snapshot: 20220929181316
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html>
-- Preserved from: http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html (stored) on 2026-08-11
+- Preserved from: http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html (stored) on 2026-08-16
 - Capture timestamp: 20220929181316
 - Licence: unknown
 
@@ -142,9 +141,7 @@ As a vulnerability class, XSS is very prevalent in web applications. Numerous ad
 
 A second method of initiating the CEH attack is by exploiting a Cross-Application scripting (XAS) attack. This is not a new type of attack.
 
->
-
-Cross-Application scripting (XAS) is possible when an application executes data in a security context different from the original content (presumably one with less security restrictions). For example the data may be obtained from an un-trusted source (a remote web server) that is sent unfiltered into a trusted application such as when web content is downloaded from a remote server, and then re-displayed on the local host. Any application that downloads and then later displays and executes web content (such as JavaScript) may be vulnerable to XAS (“Cross-Application Scripting”, [Security.nnov.ru](http://www.security.nnov.ru/Jdocument327.html))
+> Cross-Application scripting (XAS) is possible when an application executes data in a security context different from the original content (presumably one with less security restrictions). For example the data may be obtained from an un-trusted source (a remote web server) that is sent unfiltered into a trusted application such as when web content is downloaded from a remote server, and then re-displayed on the local host. Any application that downloads and then later displays and executes web content (such as JavaScript) may be vulnerable to XAS (“Cross-Application Scripting”, [Security.nnov.ru](http://www.security.nnov.ru/Jdocument327.html))
 
 The impact of a XAS vulnerability is usually access to the Local Computer Zone. One of the suggested countermeasures against XAS is to use a local web server in order to present the information gathered by the application instead of loading it from the file system.
 

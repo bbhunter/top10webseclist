@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Widespread XSS for Google Search Appliance
-description: "maluc's UTF-7 XSS against Google Search Appliance sites, 30 posts all preserved with the eight university and .gov exploit URLs intact. Same live-HTML decode drops <script>alert(\"XSS\")</script> from the opening sentence. Broken blockquote at the WhiteAcid quote leaves quoted text outside the quote. Duplicate of the -full-appliance entry; published empty despite dated posts."
 resource: "http://sla.ckers.org/forum/read.php?3,3109"
-tags: [article, webseclist-reference, EN, sla-ckers-org, xss, charset, encoding, filter-bypass, unicode, large-scale-scan, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, EN, sla-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:35+00:00"
+  at: "2026-08-16T23:13:00+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://sla.ckers.org/forum/read.php?3,3109"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:35"
 commit: ""
-content_sha256: 1abe802e1f4a4ed8a365b6f925e5d447799dcd6420dfa4194c571dc5fc3fe61d
+content_sha256: 448d9887125c784b8ef57c980b3fc781df0bde395507fa8658b0ee9420f5d67d
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: 4aaf91ef9678815034c098cccaeb2a6f3e6c1bcb0f828e3bdf81ee8de6b5b64a
 retrieved_from: "http://sla.ckers.org/forum/read.php?3,3109"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:35+00:00"
+retrieved_utc: "2026-08-16T23:13:00+00:00"
 slug: sla-ckers-org-widespread-xss-google-search-appliance
 snapshot: 20110712120049
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://sla.ckers.org/forum/read.php?3,3109>
-- Preserved from: http://sla.ckers.org/forum/read.php?3,3109 (stored) on 2026-08-11
+- Preserved from: http://sla.ckers.org/forum/read.php?3,3109 (stored) on 2026-08-16
 - Capture timestamp: 20110712120049
 - Licence: unknown
 
@@ -126,11 +125,9 @@ Date: November 17, 2006 07:01PM
 
 Awesome, simply awesome.
 
->
-
-Quote
-****
-One problem though: any site with embedded script like for(i=0;i<10;i++) gets changed to for(i=0;i<10;i ) .. which is an infinite loop. you'll have to overwrite that when exploiting..
+> Quote
+> ****
+> One problem though: any site with embedded script like for(i=0;i<10;i++) gets changed to for(i=0;i<10;i ) .. which is an infinite loop. you'll have to overwrite that when exploiting..
 
  Why's that?
 

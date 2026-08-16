@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Another Free MacWorld Platinum Pass? Yes in 2008!
-description: "Kurt Grutzmacher's second year of getting a $1,895 MacWorld Platinum Pass free. IDG validated discount codes client-side by shipping 1,341 MD5 hashes to the browser; harvesting them from the registration page and inferring the 08-X-XXXXX vendor-code mask cuts the keyspace enough for a John the Ripper external filter to surface 08-S-STAFF in under a day."
 resource: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
-tags: [article, webseclist-reference, en-US, grutztopia-jingojango-net, auth-bypass, abuse-of-functionality, javascript, info-leak, case-study, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en-US, grutztopia-jingojango-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:43+00:00"
+  at: "2026-08-16T23:12:40+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:25"
 commit: ""
-content_sha256: 0172226bfe0e60f428723a76236c02a498ae4bdf23edd7beac962446399ea751
+content_sha256: bd02d3698473354ac0dbb24f38951a14a37159c53ed5694a8cf01ab7c9dba1cd
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +32,8 @@ publisher: grutztopia.jingojango.net
 publisher_english: ""
 raw_sha256: 910661d8ec76ae29a68e73ec9f7d17d19a5e94beb37c1235f06009908d287f0a
 retrieved_from: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T23:12:40+00:00"
 slug: grutztopia-jingojango-net-another-free-macworld-platinum-pass-yes-2008
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html>
-- Preserved from: http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html (live) on 2026-08-10
+- Preserved from: http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -111,7 +110,7 @@ For example lets make k = 69, l = 8 and Cs = 30 million:
 Changing l for different lengths and the time changes accordingly:
 
 >  ((69^7)/30M) / 60 = 4,136.86 minutes for 7 chars
-((69^6)/30M) / 60 = 59.95 minutes for 6 chars
+> ((69^6)/30M) / 60 = 59.95 minutes for 6 chars
 
 and so on. . . The time is cumulative and those are just my numbers. Some have found ways to increase the speed to [1 billion cracks-per-second](http://www.google.com/search?q=nick+breese+ps3). Until that code is released or we write our own, we have to work with clusters of machines to reach that. My little cluster of 9 nodes can do just about 60 million MD5's a second so a full 8 character run would take nearly 2 months to complete.
 
@@ -125,45 +124,43 @@ Time To Build An External Filter:
 
 Now that we have a mask (08-x-y(n)) time to modify the john.conf accordingly:
 
+> [Incremental:MW]
+> File = $JOHN/lanman.chr
+> MinLen = 6
+> MaxLen = 6
+> CharCount = 69
 >
-
-[Incremental:MW]
-File = $JOHN/lanman.chr
-MinLen = 6
-MaxLen = 6
-CharCount = 69
-
-[List.External:MW]
-void filter()
-{
- int i, c;
- i = 0;
-
- while (c = word[i]) {
-  // If character is lower case, convert to upper
- if (c >= 'a' && c <= 'z')
- word[i] &= 0xDF;
- i++;
-  }
-
-  // We know the static filter 08-?-?????
-  // Add or remove word[]s to fit the incremental length
- word[9] = word[5];
- word[8] = word[4];
- word[7] = word[3];
- word[6] = word[2];
- word[5] = word[1];
- word[4] = '-';
- word[3] = word[0];
- word[2] = '-';
- word[1] = '8';
- word[0] = '0';
-}
+> [List.External:MW]
+> void filter()
+> {
+>  int i, c;
+>  i = 0;
+>
+>  while (c = word[i]) {
+>   // If character is lower case, convert to upper
+>  if (c >= 'a' && c <= 'z')
+>  word[i] &= 0xDF;
+>  i++;
+>   }
+>
+>   // We know the static filter 08-?-?????
+>   // Add or remove word[]s to fit the incremental length
+>  word[9] = word[5];
+>  word[8] = word[4];
+>  word[7] = word[3];
+>  word[6] = word[2];
+>  word[5] = word[1];
+>  word[4] = '-';
+>  word[3] = word[0];
+>  word[2] = '-';
+>  word[1] = '8';
+>  word[0] = '0';
+> }
 
  With that, we run and wait...
 
 > # john -i=MW -e=MW mw2k8.codes --format=raw-MD5
-Loaded 1341 password hashes with no different salts (Raw MD5 [raw-md5 SSE2])
+> Loaded 1341 password hashes with no different salts (Raw MD5 [raw-md5 SSE2])
 
 .. but not too long because the first code looks REALLY interesting: 08-S-STAFF. Lets try it!
 

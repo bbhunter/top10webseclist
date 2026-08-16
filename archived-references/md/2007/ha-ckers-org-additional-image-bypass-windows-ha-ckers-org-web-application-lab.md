@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Additional Image Bypass on Windows ha.ckers.org web application security lab
-description: "Michael Schramm's finding, relayed by ha.ckers.org: NTFS alternate data streams let a filename carry \"::$DATA\", which Windows strips when the file is written. Appending it to \"foobar.php\" slipped past FCKeditor's denied-extension blacklist and landed on disk as foobar.php. It works on any Windows web server on NTFS, not only IIS."
 resource: "http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/"
-tags: [article, webseclist-reference, ha-ckers-org, file-upload, filter-bypass, php, parser-differential, abuse-of-functionality, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:41+00:00"
+  at: "2026-08-16T23:12:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:60"
 commit: ""
-content_sha256: 4a567e588e6dd4c3469e232f511aedd8c52995b1e6995dd938ae643171d576e4
+content_sha256: 20d8931db2b045c029b4fce4a85e0d60a4c2dc0180303bff4e5edc4321ad6cd5
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 7c7e94c2a55e4e024f162829ef5b020a2d884ac66862c2d448db0b001d73ada5
 retrieved_from: "http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:41+00:00"
+retrieved_utc: "2026-08-16T23:12:48+00:00"
 slug: ha-ckers-org-additional-image-bypass-windows-ha-ckers-org-web-application-lab
 snapshot: 20080907184339
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/>
-- Preserved from: http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070606/additional-image-bypass-on-windows/ (stored) on 2026-08-16
 - Capture timestamp: 20080907184339
 - Licence: unknown
 
@@ -87,3 +86,13 @@ This is only an example, but it should be possible to get this working in many o
 I’d love to hear any anecdotes where this actually works. I’m curious if anyone else can replicate this sort of thing. Pretty slick, and similar in some ways to injecting null bytes to bypass exact string match. Nice work, Michael!
 
   This entry was posted on Wednesday, June 6th, 2007 at 1:42 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
+
+### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Your Name *
+
+ E-Mail (will be hidden) *
+
+ URL
+
+---

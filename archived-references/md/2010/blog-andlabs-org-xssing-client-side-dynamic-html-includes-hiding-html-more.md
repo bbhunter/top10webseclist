@@ -1,14 +1,13 @@
 ---
 type: Article
 title: XSSing client-side dynamic HTML includes by hiding HTML inside images and more
-description: "Argues that sites which fetch a URL fragment by Ajax and drop it into innerHTML are vulnerable even without HTML5 cross-origin requests, because every same-origin file becomes HTML. HTML hidden after a JPEG's end-of-image marker survives and executes when the image is rendered as markup, and poisoned User-Agent strings in server logs give the same effect."
 resource: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org, xss, dom, cors, same-origin-policy, file-upload, mime, content-type, sop-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, blog-andlabs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:04:03+00:00"
+  at: "2026-08-16T23:12:24+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:54"
 commit: ""
-content_sha256: 313888b5324037b92a75a242c4d38a727510b997de842e8b09bfe747901d3b53
+content_sha256: 8a69ae3165fd8936a0ad3d6dd41406d73e994ad6f745b4524d6b89ff87df46b9
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +32,8 @@ publisher: blog.andlabs.org
 publisher_english: ""
 raw_sha256: 4af92accbbf011ad67b4aab11fefdb22c88f4f1841db478493ace9c39a274b97
 retrieved_from: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:04:03+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T23:12:24+00:00"
 slug: blog-andlabs-org-xssing-client-side-dynamic-html-includes-hiding-html-more
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html>
-- Preserved from: http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html (live) on 2026-08-10
+- Preserved from: http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -65,9 +64,7 @@ Matt Austin made a brilliant discovery sometime back and wrote a [detailed post]
 
 Quoting from his post:
 
->
-
-If you click on any URL you see the links don't actually change the page but loads them with ajax. http://touch.facebook.com/#profile.php actually loads http://touch.facebook.com/profile.php into a div on the page.
+> If you click on any URL you see the links don't actually change the page but loads them with ajax. http://touch.facebook.com/#profile.php actually loads http://touch.facebook.com/profile.php into a div on the page.
 
 The problem here is that the XMLHttpRequest object can make Cross Origin calls thanks to HTML5. So if a victim clicks on a link like 'http://touch.facebook.com/#http://attacker.site/evil.php' then 'http://attacker.site/evil.php' is fetched and is included in the innerHTML of the page leading to XSS. Clever find!
 
@@ -97,12 +94,10 @@ IE on the other hand had done the right thing with XDomainRequest which is a new
 
 Eg:
 
+> var xhr = new XMLHttpRequest();
 >
-
-var xhr = new XMLHttpRequest();
-
-xhr.cor = true;
-
-xhr.open("http://external.site/");
+> xhr.cor = true;
+>
+> xhr.open("http://external.site/");
 
 A simple extension like this could prevent existing code from becoming vulnerable while giving the same familiar XHR API to developers for COR.

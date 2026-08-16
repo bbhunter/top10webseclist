@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Billy (BK) Rios » Firefox File Handling Woes
-description: "MFSA2007-27 patched the demonstrations but not the underlying Windows Shell file-type handling. Rios and McFeters show a common handler can still be driven with a single unexpected URI passed through mailto, nntp, news or snews with no user interaction: Firefox hands the URI to the Windows File Handler, which launches Windows Scripting Host on an attacker-named file."
 resource: "http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/"
-tags: [article, webseclist-reference, xs-sniper-com, rce, url-parsing, filter-bypass, attack-chain, cve, mitigation, owasp-a05-2021]
+tags: [article, webseclist-reference, xs-sniper-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:47+00:00"
+  at: "2026-08-16T23:13:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:33"
 commit: ""
-content_sha256: 90b9cc50e7d1bda27ee62aca06a8977b5a9e686c428b45364cc39bc1539897f6
+content_sha256: 403cbffa6f8a8ec65f766854782fcc0ea45acfa68f08bc08bc89a483f21baccb
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: e2ae18fc9951fe673d230299e421004e0462bdf40307e3ff27352a9bcf86f54e
 retrieved_from: "http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:47+00:00"
+retrieved_utc: "2026-08-16T23:13:06+00:00"
 slug: xs-sniper-com-billy-bk-rios-firefox-file-handling-woes
 snapshot: 20160327061346
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/>
-- Preserved from: http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/ (stored) on 2026-08-09
+- Preserved from: http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/ (stored) on 2026-08-16
 - Capture timestamp: 20160327061346
 - Licence: unknown
 
@@ -72,9 +71,7 @@ Saturday, September 1st, 2007
 
 It seems recent [***URI remote command execution bugs*** ](http://xs-sniper.com/blog/remote-command-exec-firefox-2005/)in Firefox have long been forgotten. Mozilla put out a patch in a lighting fast manner, probably spurring on bravado like the [***“10 Fucking Days!”*** ](http://ha.ckers.org/blog/20070803/mozilla-says-ten-fucking-days/)claim overheard at Black hat USA. Let’s take a closer look at the vulnerability, starting with an interesting piece of the description provided in ***[MFSA2007-27](http://www.mozilla.org/security/announce/2007/mfsa2007-27.html)***:
 
->
-
-“…Further investigation by Secunia showed that a % not followed by a valid two-digit hexadecimal number also triggered the problem for the affected protocols. The Firefox and Thunderbird 2.0.0.6 releases contain fixes that prevent the original demonstrations of this variant, but it is still possible to launch a file type handler based on extension rather than the registered protocol handler. A way to exploit a common handler with a single unexpected URI as an argument may yet be found. Since this handling is a property of the Windows Shell API this variant appears to affect other internet-enabled applications that pass these URIs to the Windows Shell.”
+> “…Further investigation by Secunia showed that a % not followed by a valid two-digit hexadecimal number also triggered the problem for the affected protocols. The Firefox and Thunderbird 2.0.0.6 releases contain fixes that prevent the original demonstrations of this variant, but it is still possible to launch a file type handler based on extension rather than the registered protocol handler. A way to exploit a common handler with a single unexpected URI as an argument may yet be found. Since this handling is a property of the Windows Shell API this variant appears to affect other internet-enabled applications that pass these URIs to the Windows Shell.”
 
  Well, to make a long story short, Nate and I have discovered a way to “…exploit a common handler with a single unexpected URI…” Once again, these URI payloads can be passed by the mailto, nntp, news, and snews URIs, allowing us to pass the payload without any user interaction. So, it seems that although the conditions which allowed for remote command execution in Firefox 2.0.0.5 have been addressed with a security patch, the underlying file type handling issues which are truly the heart of the issue have NOT been addressed.
 

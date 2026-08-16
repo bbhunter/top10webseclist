@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Java Applet Same-Origin Policy Bypass via HTTP Redirect » Neal Poole
-description: "Java 6 Update 27 and below and Java 7 set an applet's origin from the URL that began the load rather than the URL the redirect ended at. Hosting evil.jar behind a victim site's open redirect therefore let the applet issue cookie-bearing requests back to that site, enabling data theft and CSRF. Patched in the October 2011 CPU as CVE-2011-3546."
 resource: "https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/"
-tags: [article, webseclist-reference, en, nealpoole-com, same-origin-policy, sop-bypass, java, open-redirect, csrf, cookie, cve, http, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, nealpoole-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:49+00:00"
+  at: "2026-08-16T23:12:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:11"
 commit: ""
-content_sha256: 8382766f994b614b56c5cbcbdfe9f289902a5943a89ec987316f94e46c3834e3
+content_sha256: a5fd0ec1d832f0b3506d4c0221ec557144a3533281e9486ede68136371cda88e
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +32,8 @@ publisher: nealpoole.com
 publisher_english: ""
 raw_sha256: 15a14a4c079b1a07cd1de1bbb16730d293fd67331475509ce8ebeac1befe4d4a
 retrieved_from: "https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T23:12:56+00:00"
 slug: nealpoole-com-java-applet-same-origin-policy-bypass-http-redirect-neal-poole
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/>
-- Preserved from: https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/ (live) on 2026-08-09
+- Preserved from: https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -78,9 +77,7 @@ Java 1.7 and Java 1.6 Update 27 and below do not properly enforce the same-origi
 
 From [Wikipedia](http://en.wikipedia.org/w/index.php?title=Same_origin_policy&diff=next&oldid=420652640):
 
->
-
-In computing, the same origin policy is an important security concept for a number of browser-side programming languages, such as JavaScript. The policy permits scripts running on pages originating from the same site to access each other’s methods and properties with no specific restrictions, but prevents access to most methods and properties across pages on different sites.
+> In computing, the same origin policy is an important security concept for a number of browser-side programming languages, such as JavaScript. The policy permits scripts running on pages originating from the same site to access each other’s methods and properties with no specific restrictions, but prevents access to most methods and properties across pages on different sites.
 
 The origin for a Java applet is the hostname of the website where the applet is served from. So, for example, if I upload an applet to http://example.com/applet.jar, that applet’s origin is example.com. We care about the origin for security reasons: the same-origin policy ensures that an applet is only allowed to make HTTP requests back to the domain from which it originates (or to another domain which resolves to the same IP address, but we can ignore that behavior here).
 
@@ -186,9 +183,7 @@ Java is not able to read or make requests with cookies that are marked HttpOnly.
 
 It appears Firefox [was vulnerable to a similar attack back in 2007:](http://www.mozilla.org/security/announce/2007/mfsa2007-37.html)
 
->
-
-The blogger at beford.org noted that redirects confused Mozilla browsers about the true source of the jar: content: the content was wrongly considered to originate with the redirecting site rather than the actual source. This meant that an XSS attack could be mounted against any site with an open redirect even if it didn’t allow uploads. A published proof-of-concept demonstrates stealing the GMail contact list of users logged-in to GMail.
+> The blogger at beford.org noted that redirects confused Mozilla browsers about the true source of the jar: content: the content was wrongly considered to originate with the redirecting site rather than the actual source. This meant that an XSS attack could be mounted against any site with an open redirect even if it didn’t allow uploads. A published proof-of-concept demonstrates stealing the GMail contact list of users logged-in to GMail.
 
 It also appears that people have been aware of similar attacks against Java for a while now. I stumbled across a post on [http://sla.ckers.org/](http://sla.ckers.org/forum/read.php?2,35422,35443#msg-35454) that mentioned using redirects to JARs as a way to steal cookies. I believe the “fix” referred to in the post (which only covers cookie stealing) was made in response to [this vulnerability](http://malerisch.net/docs/advisories/Oracle_JRE_-_java.net.URLConnection_class_%E2%80%93_Same-of-Origin_(SOP)_Policy_Bypass_-_CVE-2010-3573.html) from 2010.
 

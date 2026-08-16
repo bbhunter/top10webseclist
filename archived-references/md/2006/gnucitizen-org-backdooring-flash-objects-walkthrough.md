@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Backdooring Flash Objects (the walkthrough)
-description: "pdp's narrative walkthrough of backdooring a SWF entirely from the command line: compile an ActionScript class whose main calls getURL(\"javascript:...\") with MTASC, then bind it in front of an untouched movie using swfcombine so the original animation still plays. Covers the swfmill library route and why attaching through attachMovie breaks preloaders."
 resource: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
-tags: [article, webseclist-reference, en, gnucitizen-org, flash, xss, javascript, tooling, file-upload, attack-chain, owasp-a03-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:42+00:00"
+  at: "2026-08-16T23:12:32+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:74"
 commit: ""
-content_sha256: 5a40a8997353d2e776649735e05b7d72b02ba9c45ace2fa635b6f846df952fd4
+content_sha256: 195a4082221e79f4c2e59d9ba4fcf609299c55a2c593c673708f53dc0b2417e4
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 053ef3191ff906862a936a5e7bab8e1ff7cb9ca6ff6e3a06cbd81084a2574144
 retrieved_from: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:42+00:00"
+retrieved_utc: "2026-08-16T23:12:32+00:00"
 slug: gnucitizen-org-backdooring-flash-objects-walkthrough
 snapshot: ""
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/backdooring-flash-objects/>
-- Preserved from: https://www.gnucitizen.org/blog/backdooring-flash-objects/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/backdooring-flash-objects/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -67,9 +66,7 @@ Mon, 04 Sep 2006 19:07:37 GMT
 
 by [pdp](https://www.gnucitizen.org/members/pdp.html)
 
->
-
-The following article is in narrative format and it is purely experimental. Feedback on whether you like it or not will be highly appreciated.
+> The following article is in narrative format and it is purely experimental. Feedback on whether you like it or not will be highly appreciated.
 
 ![The Flash](https://www.gnucitizen.org/files/2006/09/the-flash.jpg)
 

@@ -288,3 +288,43 @@ class NewlineNormalisationTests(unittest.TestCase):
         self.assertNotIn(cr, out)
         self.assertIn("second", out)
         self.assertIn("third", out)
+
+
+class BlockquoteTests(unittest.TestCase):
+    """A quoted passage must stay quoted, or it reads as the author's own words."""
+
+    def quote(self, html):
+        return extract_html.candidates("<main>%s</main>" % html)[0].markdown.strip()
+
+    def test_every_line_of_a_multi_paragraph_quote_is_marked(self):
+        out = self.quote("<blockquote><p>First half here.</p>"
+                         "<p>Second half here.</p></blockquote>")
+        self.assertIn("> First half here.", out)
+        self.assertIn("> Second half here.", out)
+
+    def test_no_line_of_the_quote_escapes_the_marker(self):
+        out = self.quote("<blockquote><p>Matt said this.</p>"
+                         "<p>And then this.</p></blockquote>")
+        for line in out.splitlines():
+            self.assertTrue(line.startswith(">"), line)
+
+    def test_a_listing_inside_a_quote_keeps_its_fence_unmarked(self):
+        # makepdf joins consecutive `>` lines with spaces, so a quoted fence
+        # would flatten the listing onto one line.
+        out = self.quote("<blockquote><p>He wrote:</p>"
+                         "<pre>GET / HTTP/1.1\nHost: x</pre></blockquote>")
+        self.assertIn("> He wrote:", out)
+        self.assertIn("GET / HTTP/1.1\nHost: x", out)
+        self.assertNotIn("> GET / HTTP/1.1", out)
+
+    def test_a_nested_quote_is_marked_twice(self):
+        out = self.quote("<blockquote><p>Outer.</p>"
+                         "<blockquote><p>Inner.</p></blockquote></blockquote>")
+        self.assertIn("> > Inner.", out)
+
+    def test_paragraphs_are_separated_by_one_marker_not_three(self):
+        out = self.quote("<blockquote><p>One.</p><p>Two.</p></blockquote>")
+        self.assertNotIn(">\n>\n>", out)
+
+    def test_an_empty_quote_emits_nothing(self):
+        self.assertEqual("", self.quote("<blockquote>  </blockquote>"))

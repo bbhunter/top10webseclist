@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!
-description: "Google Docs' publish-to-your-blog feature POSTs to /MiscCommands with a docID the server never checked against the caller. Swapping in another document's docID made Google send that document to the attacker's own WordPress blog; Rios demonstrates it on Google's Oak Tree View demo doc. Google fixed it and raised DocID entropy."
 resource: "http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/"
-tags: [article, webseclist-reference, xs-sniper-com, idor, auth-bypass, info-leak, wordpress, case-study, owasp-a01-2021]
+tags: [article, webseclist-reference, xs-sniper-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:49+00:00"
+  at: "2026-08-16T23:13:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/"
@@ -23,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:27"
 commit: ""
-content_sha256: ffe548be893b8f382bf60bc12f5411552446f9d21c9e117b058c2df80fda5527
+content_sha256: f3971320da24267be0cdcdf8a5428ba9ccf15a2c264ddd2c46a8dbbccdd7a358
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: b1308c82c802e24c89ff515a45eb708da1b911b980f32e113f6686e5aea52565
 retrieved_from: "http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:49+00:00"
+retrieved_utc: "2026-08-16T23:13:08+00:00"
 slug: xs-sniper-com-billy-bk-rios-theres-oak-tree-my-blog
 snapshot: 20150908044241
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/>
-- Preserved from: http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/ (stored) on 2026-08-09
+- Preserved from: http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/ (stored) on 2026-08-16
 - Capture timestamp: 20150908044241
 - Licence: unknown
 
@@ -82,12 +81,10 @@ Now… the gory details… First, I went to [*WordPress.com* ](http://wordpress.
 
 Once my blog settings were properly entered, I selected the “Publish This Document To Your Blog” option. The POST request made by my browser looked something like this:
 
+> POST /MiscCommands HTTP/1.1
+>  <HTTP HEADERS>
 >
-
-POST /MiscCommands HTTP/1.1
- <HTTP HEADERS>
-
-command=cmdvalue&localDate=datevalue&docID=doc-id-here&finis=finisvalue&POST_TOKEN=posttokenvalue
+> command=cmdvalue&localDate=datevalue&docID=doc-id-here&finis=finisvalue&POST_TOKEN=posttokenvalue
 
 When this feature is selected, it appears that the Google Docs server makes a request to the xmlrpc.php file on the blog server (WordPress.com), passing the credentials I gave in the blog settings. When the blog server indicates that the blog creds were valid, the Google Docs server sends the contents of the Google Doc to the blog server. hmmmm… that docID value looks reeeallly interesting… I changed the docID in the POST request from the docID of my newly created document to the docID of the “Article For Oak Tree View” ([*the document used by Google to Demo Google Docs*](http://www.youtube.com/watch?v=eRqUE6IHTEA)).
 

@@ -5,9 +5,9 @@ resource: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-pr
 tags: [article, webseclist-reference, blog-48bits-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-14T21:08:46+00:00"
+  at: "2026-08-16T23:12:23+00:00"
 status: stable
-stale_after: 2027-08-14
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:60"
 commit: ""
-content_sha256: af71daf812d629bc8bcf97a0ab65ce5f0da49828562e69d891da75ec6a60ca86
+content_sha256: 3aa7bd716516510e265f6d9d46c170617416d72451d56bc977ed277f35a8c0d7
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 544208f567cfed7bd404c26cb7925a2a7a2c40603fa0131bbb86668488256ee2
 retrieved_from: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-14T21:08:46+00:00"
+retrieved_utc: "2026-08-16T23:12:23+00:00"
 slug: blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit
 snapshot: 20130829145418
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/>
-- Preserved from: http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/ (stored) on 2026-08-14
+- Preserved from: http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/ (stored) on 2026-08-16
 - Capture timestamp: 20130829145418
 - Licence: unknown
 
@@ -87,25 +87,21 @@ AdemÃ¡s, es posible combinar este ataque con el bug *CVE-2009-4444*, permitien
 
 IIS ejecutarÃ¡ el cÃ³digo ASP contenido en el fichero ‘document.pdf’ al acceder a las siguientes URL. AquÃ­ se describen algunos ejemplos:
 
+> http://host/path/folder.asp/document.pdf
 >
-
-http://host/path/folder.asp/document.pdf
-
-http://host/path/user.cer/documents/document.pdf
-
-http://host/path/folder.asa/other/path/document.pdf
-
-http://host/path/folder.asp\document.pdf
-
-http://host/path/folder.cer\document.pdf
-
-http://host/path/folder.asa\document.pdf
+> http://host/path/user.cer/documents/document.pdf
+>
+> http://host/path/folder.asa/other/path/document.pdf
+>
+> http://host/path/folder.asp\document.pdf
+>
+> http://host/path/folder.cer\document.pdf
+>
+> http://host/path/folder.asa\document.pdf
 
 En combinaciÃ³n con el *CVE-2009-4444* ref #1, la siguiente URL es vÃ¡lida tambiÃ©n :
 
->
-
-http://host/path/folder.asp;.jpg/document.pdf
+> http://host/path/folder.asp;.jpg/document.pdf
 
 En otros casos me he encontrado filtros backlist para el filtrado de extensiones, pero lo que normalmente se trata de transmitir a los desarrolladores es que esos filtros no funcionan, siempre hay una manera de saltarlos, la soluciÃ³n es usar filtros whitelist y el principio de seguridad en profundidad.
 
@@ -117,9 +113,7 @@ Incluso usando filtros whitelist existen maneras de saltar ciertas protecciones,
 
 Normalmente los desarrolladores, obtendrÃ¡n los tres Ãºltimos carÃ¡cteres y compararÃ¡n con la lista de extensiones seguras (tales como jpg, gif, png, etc). En este caso, usando ADS y el carÃ¡cter ‘:’ *(CVE-2009-4445 ref. #2)* podrÃ­amos construir una cadena para el nombre del fichero del tipo “filename.asp:.jpg” lo cual harÃ­a que la extensiÃ³n sea vÃ¡lida, ya que jpg estarÃ­a en esa lista de extensiones permitidas y podrÃ­amos crear ficheros vacÃ­os con extensiÃ³n asp. Combinando esta vulnerabilidad con otras podrÃ­amos llegar a comprometer el servidor.
 
->
-
-PoC: file.asp:.jpg -> El fichero file.asp es creado en el DocumentRoot sin contenido.
+> PoC: file.asp:.jpg -> El fichero file.asp es creado en el DocumentRoot sin contenido.
 
 Junto a estas, existen otras tÃ©cnicas para tratar de burlar el sistema de protecciÃ³n, pero cada caso hay que estudiarlo por separado. Los componentes de upload de ficheros en aplicaciones web son uno de los elementos mÃ¡s delicados y hay que prestarle mucha atenciÃ³n en todas las etapas del SDLC.
 
@@ -161,9 +155,7 @@ Pero, quÃ© es PATH_INFO?
 
 Como se puede leer en #4:
 
->
-
-The extra path information, as given by the client. In other words, scripts can be accessed by their virtual pathname, followed by extra information at the end of this path. The extra information is sent as PATH_INFO. This information should be decoded by the server if it comes from a URL before it is passed to the CGI script.
+> The extra path information, as given by the client. In other words, scripts can be accessed by their virtual pathname, followed by extra information at the end of this path. The extra information is sent as PATH_INFO. This information should be decoded by the server if it comes from a URL before it is passed to the CGI script.
 
 Por lo tanto es la informaciÃ³n extra al final del nombre de ruta virtual (donde el nombre de ruta virtual es la URL). Pero el problema es que ASP maneja de forma no standard tanto la variable PATH_INFO como la variable PATH_TRANSLATED a la hora de buscar el fichero de script a ejecutar. ASP asume que la variable PATH_TRANSLATED contendrÃ¡ el path fÃ­sico completo al fichero de script.
 

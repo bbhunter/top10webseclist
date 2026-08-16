@@ -1,14 +1,13 @@
 ---
 type: Article
 title: The Month of Facebook Bugs Report
-description: "Closing report of the Month of Facebook Bugs, which found XSS in over 9,700 Facebook applications. Because an application's page carries its session secret, an XSS there becomes an API request forgery: a double-injection trick loads the direct FBML page in an fb:iframe so a nested iframe leaks the secret via the referrer, enabling profile theft and viral posting."
 resource: "http://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report/"
-tags: [article, webseclist-reference, en-US, theharmonyguy-com, xss, csrf, clickjacking, iframe, measurement-study, info-leak, case-study, javascript, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en-US, theharmonyguy-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:38+00:00"
+  at: "2026-08-16T23:13:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report/"
@@ -23,7 +22,7 @@ canonical_url: "https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebo
 cited_by:
   - "2009.md:89"
 commit: ""
-content_sha256: dfc26dd67f73fb6da21c71de7e848f467e359c1e118400b0dc08cb1dd6891b4f
+content_sha256: 3c056a4f4b7a0a9d39cae2c120d347a18e4efd8d40fdc55341519f88ec765c75
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +34,8 @@ publisher: theharmonyguy.com
 publisher_english: ""
 raw_sha256: 094a7d2b58e136263f7e161a5bc2fbb412d1ff0e131d63e4e4d21c41500a6f74
 retrieved_from: "https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebook-bugs-report/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:38+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T23:13:01+00:00"
 slug: theharmonyguy-com-month-facebook-bugs-report
 snapshot: ""
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report/>
 - Current location: <https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebook-bugs-report/>
-- Preserved from: https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebook-bugs-report/ (live) on 2026-08-09
+- Preserved from: https://theharmonyguy.com/oldsite/2009/10/09/the-month-of-facebook-bugs-report/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -104,21 +103,19 @@ That said, several developers took a while to respond to either me or Facebook. 
 
 I was also a bit disappointed by some of Facebook’s responses. Don’t get me wrong—I’m very grateful for the security contact who got in touch with me early on. He patiently fielded dozens of e-mails about application issues, and I thank him greatly for his efforts. But as I sent reports of discovered holes to Facebook, the Platform Policy Team would then notify the developer. (I also made a point of looking for e-mail addresses for developers, and always contacted them directly if I found any addresses.) On two occasions, I received a copy of the message that Facebook sent the developer. Here is the body of one of them:
 
+> To the developer of application ID#XXXXXXXX,
 >
-
-To the developer of application ID#XXXXXXXX,
-
-We’re writing to inform you that your application, [Application Name], has been reported to contain a cross-site scripting vulnerability. Specifically, the [URI parameter] parameter of the [page name] page can accept FBML or HTML that can load in other pages via an iframe.
-
-Please contact theharmonyguy@gmail.com for more information, and let us know when this issue has been resolved.
-
-Thank you in advance,
-
-[Name]
-
-Platform Policy Team
-
-Facebook
+> We’re writing to inform you that your application, [Application Name], has been reported to contain a cross-site scripting vulnerability. Specifically, the [URI parameter] parameter of the [page name] page can accept FBML or HTML that can load in other pages via an iframe.
+>
+> Please contact theharmonyguy@gmail.com for more information, and let us know when this issue has been resolved.
+>
+> Thank you in advance,
+>
+> [Name]
+>
+> Platform Policy Team
+>
+> Facebook
 
 As you can imagine, several developers who contacted me thought I was associated with Facebook. I would also note that the information I sent to Facebook included an example URI demonstrating the hole. After seeing the above e-mail, I mentioned the terseness of it to my security contact and requested Facebook communicate more with affected developers. I didn’t see any of the reports later in the month, but hopefully they were more helpful.
 

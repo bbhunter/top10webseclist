@@ -1,14 +1,13 @@
 ---
 type: Article
 title: Hacking Intranets Through Web Interfaces
-description: "Uses the web server, not the browser, as the way into an intranet: any feature that fetches a URL server-side (avatar-by-URL, RSS aggregation) will reach RFC1918 space. Default images such as Apache's /icons/ and WordPress smilies turn that fetch into a port sweep and an application fingerprint, and one GET carrying an RFI payload exploits what it finds."
 resource: "http://www.sectheory.com/intranet-hacking.htm"
-tags: [article, webseclist-reference, sectheory-com, ssrf, file-upload, rce, proxy, php, owasp-a10-2021]
+tags: [article, webseclist-reference, en-AU, sectheory-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:03+00:00"
+  at: "2026-08-16T23:12:57+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://www.sectheory.com/intranet-hacking.htm"
@@ -23,11 +22,11 @@ canonical_url: ""
 cited_by:
   - "2008.md:39"
 commit: ""
-content_sha256: 16e4fe29a26c31a358ee8fd988a77a9cb3c839429b2964150636394b386076c5
+content_sha256: f38b926db9d2056531ef33ec34508a66534b20186f41e7c9c2bb4c0fdad9f0fd
 depth: full
 depth_reason: default
 kind: article
-language: ""
+language: en-AU
 licence: unknown
 original_url: "http://www.sectheory.com/intranet-hacking.htm"
 published: ""
@@ -36,7 +35,7 @@ publisher_english: ""
 raw_sha256: be2bcecee6dfc448f18b119727346b2e4e7eff1d88f7fa8f2a9e90368b780a95
 retrieved_from: "http://www.sectheory.com/intranet-hacking.htm"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:03+00:00"
+retrieved_utc: "2026-08-16T23:12:57+00:00"
 slug: sectheory-com-hacking-intranets-through-web-interfaces
 snapshot: 20080517144729
 title_english: ""
@@ -50,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.sectheory.com/intranet-hacking.htm>
-- Preserved from: http://www.sectheory.com/intranet-hacking.htm (stored) on 2026-08-11
+- Preserved from: http://www.sectheory.com/intranet-hacking.htm (stored) on 2026-08-16
 - Capture timestamp: 20080517144729
 - Licence: unknown
 
@@ -99,8 +98,8 @@ Often websites fail to remove default images from websites. The most common of t
 Ideally the sever is now turned into a ping sweep, targeting all known internal address space, including all suspected HTTP ports (80, 8080, 8888, etc... results may vary using HTTP over SSL, which is why 443 is omitted). The server may or may not allow ports to be added which may limit the attack. This can be tested against a public web-server ahead of time to understand the target's behavior. As an example if the target used RFC1918 the following would make a good list to port sweep:
 
 >  10.0.0.0 - 10.255.255.255 (10/8 prefix)
- 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
- 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
+>  172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
+>  192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
 
 *Note: Although most companies use RFC1918 (above) it should be noted that this is not always the case. Some companies use 1.* or 2.*. [General Eletric uses 3.* for instance](http://en.wikipedia.org/wiki/List_of_assigned_/8_IP_address_blocks). Knowing this information ahead of time can prove useful.*
 
