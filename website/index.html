@@ -311,7 +311,11 @@
     </header>
     <div class="pdf-stage">
       <div class="pdf-loading" id="pdf-loading" role="status"><i></i><p>Preparing the preserved document…</p></div>
-      <iframe id="pdf-frame" title="Preserved PDF document" sandbox="allow-scripts" referrerpolicy="no-referrer" hidden></iframe>
+      <!-- Chrome's native PDF viewer cannot start in an opaque-origin sandbox.
+           Adding allow-same-origin beside allow-scripts would make a same-origin
+           HTML sandbox ineffective, so keep the verified application/pdf in a
+           normal frame and retain the site's nosniff and path restrictions. -->
+      <iframe id="pdf-frame" title="Preserved PDF document" referrerpolicy="no-referrer" hidden></iframe>
       <div class="pdf-fallback" id="pdf-fallback" hidden>
         <span aria-hidden="true">PDF</span>
         <h2>Your browser did not embed this document</h2>
