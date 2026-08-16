@@ -6,9 +6,9 @@ resource: "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writi
 tags: [article, webseclist-reference, en, the-hacker-blog, browser-extension, xss, postmessage, clickjacking, csp, sop-bypass, filter-bypass, javascript, tooling, defence, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:32+00:00"
+  at: "2026-08-16T00:01:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:19"
 commit: ""
-content_sha256: 11349feb996124b545527a2402f1052d8f74b1d54f9359a9bc224e205d543229
+content_sha256: f70e5ef765d60ae5a5e1296e4e2df03bfc61240c8ffc5fc8f1b8e4f0e59db516
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: The Hacker Blog
 publisher_english: ""
 raw_sha256: 9bc2e66a3d0d26175f7182f3d42810c27f17ede8fdab40f8464d24c75e671755
 retrieved_from: "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:01:16+00:00"
 slug: the-hacker-blog-kicking-rims-guide-securely-writing-auditing-chrome-extensions
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/>
-- Preserved from: https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/ (live) on 2026-08-09
+- Preserved from: https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -154,7 +154,7 @@ script-src 'self' blob: filesystem: chrome-extension-resource:; object-src 'self
  The above policy is slightly more lax to allow for some general JavaScript operations, such as creating blob: URIs and interacting with the filesystem. Of course, often developers see this default policy and are annoyed by just how strict it is. This annoyance often results with developers attempting to loosen the CSP as much as possible in order to just “have it work”. The Chrome team foresaw this danger and added in additional requirements to prevent developers from making their CSP too loose. For this reason there is no way to allow for the ‘unsafe-inline’ source in a Chrome extension CSP ([hold for <script>s with nonces](https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-inline-script)). This means that a developer can never make use of inline JavaScript execution similar to the following:
 
 ```
-Name: <input  name=”test” />
+Name: <input onfocus=”example()” name=”test” />
 …
 <a href=”javascript:example()”>Click to start</a>
 …
@@ -247,12 +247,12 @@ function generate_fake_key_event(target_element, key_event_type, custom_properti
     new_event
   );
 }
-// Send a keydown with a code of <img src=x  />
+// Send a keydown with a code of <img src=x onerror=alert('XSS') />
 generate_fake_key_event(
   document.body,
   "keydown",
   {
-    "code": "<img src=x  />",
+    "code": "<img src=x onerror=alert('XSS') />",
   }
 )
 ```
@@ -264,7 +264,7 @@ generate_fake_key_event(
 
 -  Events can be generated without any user interaction.
 -  Even if an event states something similar to “Read Only” in the documentation, this is purely to state that an authentically-created event can’t have this property modified after being generated. This doesn’t apply at all to synthetically-generated events.
--  Synthetically-generated events don’t even have to follow the expected format for event property values. Even though the documentation says the “codes” are in a predefined format, this is not enforced in the case of synthetically-generated events. So an attacker can specify *<img src=x />* instead of something like KeyA.
+-  Synthetically-generated events don’t even have to follow the expected format for event property values. Even though the documentation says the “codes” are in a predefined format, this is not enforced in the case of synthetically-generated events. So an attacker can specify *<img src=x onerror=alert(‘XSS’) />* instead of something like KeyA.
 
  This all sounds very painful, but luckily there is a simple check that can be done to verify that an event is actually user-generated. User generated events have their [isTrusted](https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted) property set to true, whereas script-generated events have the isTrusted property set to false. Using this check we can verify if an event was actually created by a user or is simply synthetic:
 
@@ -562,3 +562,21 @@ if( check_origin_match( input_url, "https://trusted-domain.com" ) ) {
  All of these features have been created to automate annoying repetitive actions I’ve had to undertake while auditing various Chrome extensions. If you have suggestions or bugs in any of the functionality of the service, please feel free to reach out to me and I’ll look into it.
 
 ###  [Click here to try out the tarnish Chrome extension analyzer.](https://thehackerblog.com/tarnish/)
+
+### Matthew Bryant (mandatory)
+
+ ![Matthew Bryant (mandatory)](https://thehackerblog.com/images/avatar.jpg)
+
+Security researcher who needs to sleep more. Opinions expressed are solely my own and do not express the views or opinions of my employer.
+
+### ["Zero-Days" Without Incident - Compromising Angular via Expired npm Publisher Email Domains](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
+
+**NOTE:** *If you're just looking for the high level points, see the"[The TL;DR Summary & High-LevelPoints](#the-tldr-summary--high-level...… [Continue reading](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
+
+#### [Video Downloader and Video Downloader Plus Chrome Extension Hijack Exploit - UXSS via CSP Bypass (~15.5 Million Affected)](https://thehackerblog.com/video-download-uxss-exploit-detailed/)
+
+ Published on February 22, 2019
+
+#### [Steam, Fire, and Paste – A Story of UXSS via DOM-XSS & Clickjacking in Steam Inventory Helper](https://thehackerblog.com/steam-fire-and-paste-a-story-of-uxss-via-dom-xss-clickjacking-in-steam-inventory-helper/)
+
+ Published on June 07, 2018

@@ -84,6 +84,23 @@ _COMMENTED_LISTING = re.compile(
     re.IGNORECASE | re.DOTALL)
 
 
+# One real tag: `<` immediately followed by a name, through to its `>`, with
+# quoted attribute values allowed to contain `>`. An escaped `&lt;body ...&gt;`
+# never matches, because it does not open with `<`.
+_TAG = re.compile(r"<[a-zA-Z][a-zA-Z0-9:-]*(?:\"[^\"]*\"|'[^']*'|[^>\"'])*>")
+_HANDLER_ATTRIBUTE = re.compile(
+    r"\son[a-z]+\s*=\s*(\"[^\"]*\"|'[^']*'|[^\s>]+)", re.IGNORECASE)
+_JAVASCRIPT_TARGET = re.compile(
+    r"(href|src)\s*=\s*([\"'])\s*javascript:[^\"']*\2", re.IGNORECASE)
+
+
+def _strip_inline_script(match):
+    """Remove handlers and javascript: targets from ONE tag."""
+    tag = match.group(0)
+    tag = _HANDLER_ATTRIBUTE.sub(" ", tag)
+    return _JAVASCRIPT_TARGET.sub(r"\1=\2#\2", tag)
+
+
 def _uncomment_listing(match):
     body = match.group(2)
     escaped = body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -164,10 +181,16 @@ def sanitise_html(markup):
         removed.append("hidden-element")
 
     # Event handlers and javascript: targets survive tag stripping otherwise.
+    #
+    # INSIDE A TAG ONLY. Applied to the whole document these patterns cannot
+    # tell a live attribute from an ESCAPED one, and an escaped one is the
+    # research: `&lt;body onload=&quot;alert('XSS');&quot;&gt;`, quoted inside a
+    # <pre> by the author, became `&lt;body >` - the vector the article exists
+    # to show, with its handler torn off and the remains left dangling after the
+    # code fence. Escaped text is inert by construction; it renders as
+    # characters and can never act. Only what is really a tag needs stripping.
     before = text
-    text = re.sub(r"\son[a-z]+\s*=\s*(\"[^\"]*\"|'[^']*'|[^\s>]+)", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"(href|src)\s*=\s*([\"'])\s*javascript:[^\"']*\2", r"\1=\2#\2",
-                  text, flags=re.IGNORECASE)
+    text = _TAG.sub(_strip_inline_script, text)
     if text != before:
         removed.append("inline-script-attribute")
 

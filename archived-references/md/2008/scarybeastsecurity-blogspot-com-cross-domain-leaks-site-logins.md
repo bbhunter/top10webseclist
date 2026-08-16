@@ -1,19 +1,21 @@
 ---
 type: Article
-title: Cross-domain leaks of site logins
+title: "Security: Cross-domain leaks of site logins"
 description: "Detects whether a visitor is logged in to a third-party site by loading that site's stylesheet with <link> and reading a property back with getComputedStyle. MySpace serves margin-bottom:3px to logged-in users and 0px otherwise. Argues any non-randomised CSS property value is readable cross-origin, including data: URIs in background-url."
 resource: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xsleak, css, side-channel, info-leak, sop-bypass, javascript, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:57:25+00:00"
+  at: "2026-08-16T00:01:09+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
-    title: Cross-domain leaks of site logins
+    title: "Security: Cross-domain leaks of site logins"
     author: Chris Evans
+  - id: capture
+    resource: "https://web.archive.org/web/20090228050058/https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
 also_at: []
 authors:
   - Chris Evans
@@ -21,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:11"
 commit: ""
-content_sha256: 7022e1d245a418ccb3e14da06cd5ae235c500de6e2429c231bb4a653cd418e71
+content_sha256: 0d648f7b3b34b1685c5ca8cf9de93dc658452ac6d8388847e2db46f356c0930d
 depth: full
 depth_reason: default
 kind: article
@@ -31,24 +33,25 @@ original_url: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leak
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 910a5b02a7d65f3cdb68f7d5aa6c0353e1c2d9a2ee5a0644f3205f795d32a448
+raw_sha256: 2ebaa60ed75f38b88f67be02fbc350fb047f0d5bd3e85a5078f37a761882e201
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:57:25+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:01:09+00:00"
 slug: scarybeastsecurity-blogspot-com-cross-domain-leaks-site-logins
-snapshot: ""
+snapshot: 20090228050058
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# Cross-domain leaks of site logins
+# Security: Cross-domain leaks of site logins
 
-**Cross-domain leaks of site logins** - Chris Evans, scarybeastsecurity.blogspot.com.
+**Security: Cross-domain leaks of site logins** - Chris Evans, scarybeastsecurity.blogspot.com.
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html (live) on 2026-08-10
+- Preserved from: https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html (stored) on 2026-08-16
+- Capture timestamp: 20090228050058
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -78,7 +81,7 @@ alert(window.getComputedStyle(ele, null).getPropertyValue('margin-bottom'));
 }
 </script>
 </head>
-<body >
+<body onload="func()">
 <div id="blah" class="show">
 </body>
 </html>

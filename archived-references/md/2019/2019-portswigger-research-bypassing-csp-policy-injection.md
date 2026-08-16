@@ -6,9 +6,9 @@ resource: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
 tags: [article, webseclist-reference, portswigger-research, csp, xss, injection, header-injection, filter-bypass, parser-differential, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:54+00:00"
+  at: "2026-08-16T00:01:00+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:71"
 commit: ""
-content_sha256: 894775a0c890e155ec28599c84dcd744466f02d962ab716538c051e6359f7aaf
+content_sha256: 47d4fb564dbafe5cc05ef86a90dd361ba95a9172771b6023c3338ea3dbbea486
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 26db70c6b049f98962cd253761f653d6413e024b86bd61662406db0b063b0ada
 retrieved_from: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:54+00:00"
+retrieved_utc: "2026-08-16T00:01:00+00:00"
 slug: 2019-portswigger-research-bypassing-csp-policy-injection
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-06-05
 - Original: <https://portswigger.net/research/bypassing-csp-with-policy-injection>
-- Preserved from: https://portswigger.net/research/bypassing-csp-with-policy-injection (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/bypassing-csp-with-policy-injection (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -105,7 +105,7 @@ Of course hardly anyone uses Edge, so then I thought about Chrome. Since Chrome 
 `Content-Security-Policy: script-src-elem 'none'; script-src-attr 'unsafe-inline'`
 
 `<script>alert("This will be blocked")</script>
-<a href="#" >test</a>`
+<a href="#" onclick="alert('This will be allowed')">test</a>`
 
 The interesting thing about this directive is that it will overwrite existing script-src directives! So you can use it to bypass CSP provided you have policy injection. Here is a PoC that works on Chrome:
 
@@ -116,3 +116,7 @@ The interesting thing about this directive is that it will overwrite existing sc
 PayPal awarded me $900 for this bug which I thought was quite generous for a mitigation bypass.
 
 Visit our Web Security Academy to [learn more about cross-site scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting)
+
+ [ csp ](https://portswigger.net/research/csp)
+
+[Back to all articles](https://portswigger.net/research/articles)

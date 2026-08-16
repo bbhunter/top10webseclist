@@ -6,9 +6,9 @@ resource: "http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html"
 tags: [article, webseclist-reference, en, blog-andlabs-org, csrf, clickjacking, ui-redress, aspnet, java, filter-bypass, iframe, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:59+00:00"
+  at: "2026-08-16T00:00:31+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:9"
 commit: ""
-content_sha256: 3d9a9629229ced5e485ac57b392a7842bbdd4f5137255796b1054660e13923a8
+content_sha256: 71acd9f7a5176548f4027f13d68e62c5960e32d47c0b5f38e58e7afb0ac079f5
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: blog.andlabs.org
 publisher_english: ""
 raw_sha256: 45ccaf623b5d069b38ba9e6bd4107bf292944b33cf76af39f3eb2ef78381a42d
 retrieved_from: "http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:31+00:00"
 slug: blog-andlabs-org-bypassing-csrf-protections-clickjacking-http-pollution
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html>
-- Preserved from: http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html (live) on 2026-08-10
+- Preserved from: http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -106,7 +106,8 @@ This request contains two values for the ‘email’ parameter, one in POST body
 
 This attack can also work in cases when the form is submitted with JavaScript like this:
 
-> <form /><input type="text" name="email" value=""></input>
+> <form onSubmit=process()>
+<input type="text" name="email" value=""></input>
 <input type="hidden" name="csrf-token" value="a0a0a0a0a0a">
 </form>
 

@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1649 reference(s) archived across 20 year list(s). 1518 carry technique and 131 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1649 reference(s) archived across 20 year list(s). 1520 carry technique and 129 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -1435,7 +1435,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Hijacking Safari 4 Top Sites with Phish Bombs](md/2009/securethoughts-com-hijacking-safari-4-top-sites-phish-bombs.md) | article | securethoughts.com |  | research | 1 |
 | [How to use Google Analytics to DoS a client from some website.](md/2009/sirdarckcat-blogspot-com-how-use-google-analytics-dos-client-some-website.md) | article | sirdarckcat.blogspot.com |  | research | 1 |
 | [HTML5 new XSS vectors](md/2009/thespanner-co-uk-html5-new-xss-vectors.md) | article | thespanner.co.uk |  | records | 1 |
-| [HTML5 XSS - The Spanner](md/2009/thespanner-co-uk-html5-xss-spanner.md) | article | thespanner.co.uk |  | records | 1 |
+| [HTML5 XSS](md/2009/thespanner-co-uk-html5-xss-spanner.md) | article | thespanner.co.uk |  | research | 1 |
 | [I know what your friends did last summer](md/2009/thespanner-co-uk-i-know-what-your-friends-did-last-summer.md) | article | thespanner.co.uk |  | records | 1 |
 | [IBM Rational Application Security Insider: Active Man in the Middle Attacks](md/2009/blog-watchfire-com-ibm-application-security-insider-active-man-middle-attacks.md) | article | blog.watchfire.com |  | research | 1 |
 | [IE8 Link Spoofing - Broken Status Bar Integrity](md/2009/secniche-org-ie8-link-spoofing-broken-status-bar-integrity.md) | article | secniche.org |  | research | 1 |
@@ -1453,7 +1453,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Our Favorite XSS Filters and how to Attack them](md/2009/sirdarckcat-blogspot-com-our-favorite-xss-filters-how-attack-them.md) | article | sirdarckcat.blogspot.com |  | research | 1 |
 | [Persistent Cookies and DNS Rebinding Redux ha.ckers.org web application security lab](md/2009/ha-ckers-org-persistent-cookies-dns-rebinding-redux-ha-ckers-org-web-lab.md) | article | ha.ckers.org |  | research | 1 |
 | [PHPIDS bypass](md/2009/thespanner-co-uk-phpids-bypass.md) | article | thespanner.co.uk |  | records | 1 |
-| [Ping pong obfuscation](md/2009/thespanner-co-uk-ping-pong-obfuscation.md) | article | thespanner.co.uk |  | records | 1 |
+| [Ping pong obfuscation](md/2009/thespanner-co-uk-ping-pong-obfuscation.md) | article | thespanner.co.uk |  | research | 1 |
 | [Popup & Focus URL Hijacking ha.ckers.org web application security lab](md/2009/ha-ckers-org-popup-focus-url-hijacking-ha-ckers-org-web-application-security-lab.md) | article | ha.ckers.org |  | records | 2 |
 | [Pretty-Bad-Proxy: An Overlooked Adversary in Browsers' HTTPS Deployments](md/2009/microsoft-research-pretty-bad-proxy-overlooked-adversary-browsers-deployments.md) | article | Microsoft Research |  | research | 1 |
 | [Pwning Opera Unite with Inferno’s Eleven](md/2009/securethoughts-com-pwning-opera-unite-infernos-eleven.md) | article | securethoughts.com |  | research | 1 |
@@ -1518,7 +1518,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [CookieMonster: Cookie Hijacking](md/2008/fscked-org-cookiemonster-cookie-hijacking.md) | article | fscked.org |  | research | 1 |
 | [Creating a rogue CA certificate](md/2008/phreedom-org-creating-rogue-ca-certificate.md) | article | phreedom.org |  | research | 2 |
 | [Cross Environment Hopping](md/2008/ibm-application-security-insider-cross-environment-hopping.md) | article | IBM Application Security Insider |  | research | 1 |
-| [Cross-domain leaks of site logins](md/2008/scarybeastsecurity-blogspot-com-cross-domain-leaks-site-logins.md) | article | scarybeastsecurity.blogspot.com |  | research | 1 |
 | [Cross-site File Upload Attacks](md/2008/gnucitizen-org-cross-site-file-upload-attacks.md) | article | gnucitizen.org |  | research | 1 |
 | [CSRF on Novell GroupWise WebAccess allows email theft and other attacks](md/2008/procheckup-com-csrf-novell-groupwise-webaccess-allows-email-theft-other-attacks.md) | article | procheckup.com |  | research | 1 |
 | [CUPS 0day ‎(Information Security Laboratory‎)](md/2008/lab-gnucitizen-org-cups-0day-information-security-laboratory.md) | article | lab.gnucitizen.org |  | research | 1 |
@@ -1555,6 +1554,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Same Origin Bypassing Using Image Dimensions](md/2008/i8jesus-com-same-origin-bypassing-using-image-dimensions.md) | article | i8jesus.com |  | research | 1 |
 | [SECFORCE :: Research](md/2008/secforce-co-uk-secforce-research.md) | article | secforce.co.uk |  | research | 1 |
 | [Securing Frame Communication in Browsers](md/2008/usenix-org-securing-frame-communication-browsers.md) | article | usenix.org |  | research | 1 |
+| [Security: Cross-domain leaks of site logins](md/2008/scarybeastsecurity-blogspot-com-cross-domain-leaks-site-logins.md) | article | scarybeastsecurity.blogspot.com |  | research | 1 |
 | [Session Extending - продовження сесії - Websecurity](md/2008/websecurity-com-ua-session-extending-websecurity.md) · [English](md/2008/websecurity-com-ua-session-extending-websecurity_translate.md) | article | websecurity.com.ua |  | research | 1 |
 | [Smuggling SMTP through open HTTP proxies](md/2008/schmoil-blogspot-com-smuggling-smtp-through-open-http-proxies.md) | article | schmoil.blogspot.com |  | research | 1 |
 | [Social Networks Evil Twin Attacks](md/2008/gnucitizen-org-social-networks-evil-twin-attacks.md) | article | gnucitizen.org |  | research | 1 |

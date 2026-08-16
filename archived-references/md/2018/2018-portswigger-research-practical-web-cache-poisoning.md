@@ -6,9 +6,9 @@ resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
 tags: [article, webseclist-reference, portswigger-research, cache-poisoning, header-injection, open-redirect, xss, cache, cdn, drupal, http, tooling, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:49+00:00"
+  at: "2026-08-16T00:00:56+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
@@ -25,7 +25,7 @@ canonical_url: "https://portswigger.net/research/practical-web-cache-poisoning"
 cited_by:
   - "2018.md:6"
 commit: ""
-content_sha256: 0837563c3977bcbaf285484764d1eb8f6ad949e4c70d6d30a097a9f35170d3ac
+content_sha256: 8bceddc59361dbe432153c446d8963882a5e489d7c4a93fd7e400d7f2c38e14a
 depth: full
 depth_reason: default
 kind: article
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: 3d8bf50df5f09f66719c5c34a3b8de3001bb10938ea5f964b780eafd0baa1896
 retrieved_from: "https://portswigger.net/research/practical-web-cache-poisoning"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:49+00:00"
+retrieved_utc: "2026-08-16T00:00:56+00:00"
 slug: 2018-portswigger-research-practical-web-cache-poisoning
 snapshot: ""
 title_english: ""
@@ -54,7 +54,7 @@ translation_of: ""
 - Original: <https://portswigger.net/blog/practical-web-cache-poisoning>
 - Current location: <https://portswigger.net/research/practical-web-cache-poisoning>
 - Also published at: <https://portswigger.net/kb/papers/7q1e9u9a/web-cache-poisoning.pdf>
-- Preserved from: https://portswigger.net/research/practical-web-cache-poisoning (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/practical-web-cache-poisoning (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -242,12 +242,14 @@ Cache-Control: public, max-age=1800
 `GET / HTTP/1.1
 Host: redacted.com
 User-Agent: Mozilla/5.0 … Firefox/60.0
-X-Forwarded-Host: a"><iframe >
+X-Forwarded-Host: a"><iframe onload=alert(1)>
+
 HTTP/1.1 200 OK
 X-Served-By: cache-lhr6335-LHR
 Vary: User-Agent, Accept-Encoding
 …
-<link rel="canonical" href="https://a">a<iframe ></iframe> `
+<link rel="canonical" href="https://a">a<iframe onload=alert(1)>
+</iframe> `
 
  This initially looks almost identical to the first example. However, the Vary header tells us that our User-Agent may be part of the cache key, and manual testing confirms this. This means that because we've claimed to be using Firefox 60, our exploit will only be served to other Firefox 60 users. We could use a list of popular user agents to ensure most visitors receive our exploit, but this behaviour has given us the option of more selective attacks. Provided you knew their user agent, you could potentially tailor the attack to target a specific person, or even conceal itself from the website monitoring team.
 
@@ -286,7 +288,7 @@ Host: portswigger-labs.net
 
 HTTP/1.1 200 OK
 ...
-{"Show more":"<svg >
+{"Show more":"<svg onload=alert(1)>"}`
 
 The end result? Anyone who viewed a page containing the text 'Show more' would get exploited.
 
@@ -640,3 +642,7 @@ Finally, I've built a little [challenge](https://hackxor.net/mission?id=8) for p
 You can find further research on this topic in my followup posts [Bypassing Web Cache Poisoning Countermeasures](https://portswigger.net/blog/bypassing-web-cache-poisoning-countermeasures) and [Web Cache Entanglement: Novel Pathways to Poisoning](https://portswigger.net/research/web-cache-entanglement).
 
 Also, we have released a collection of free, interactive labs so you can [try out web cache poisoning for yourself](https://portswigger.net/web-security/web-cache-poisoning) as part of our Web Security Academy:
+
+ [ web cache poisoning ](https://portswigger.net/research/web-cache-poisoning) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
+
+[Back to all articles](https://portswigger.net/research/articles)

@@ -6,9 +6,9 @@ resource: "https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-
 tags: [article, webseclist-reference, en, evil-blog, ui-redress, clickjacking, csrf, oauth, abuse-of-functionality, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:52+00:00"
+  at: "2026-08-16T00:00:53+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html?m=1"
@@ -21,7 +21,7 @@ canonical_url: "https://www.evil.blog/2024/02/cross-window-forgery-web-attack-ve
 cited_by:
   - "2024.md:49"
 commit: ""
-content_sha256: 96319f5d808f21b8c9ae9cc383985e807e782c39ec9183df387ef34db65e6522
+content_sha256: b481d28af11814eb7c7ed8085a9cd1b5c766d5153a05be6fc470fed4ffa6189b
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: evil.blog
 publisher_english: ""
 raw_sha256: 956c9b6073d604831dcce8d2b2864c6b66b67c481a37fcf97e2fd07f867468f0
 retrieved_from: "https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:53+00:00"
 slug: evil-blog-cross-window-forgery-new-class-web-attack
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html?m=1>
 - Current location: <https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1>
-- Preserved from: https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1 (live) on 2026-08-10
+- Preserved from: https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1 (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -71,7 +71,7 @@ To execute this attack, the attacker can employ various methods for successful e
 How does the vulnerability work?
 
 In HTML, an "ID" attribute can be assigned to an HTML tag, serving as a reference. This attribute can also be utilized in the URL Fragment. For instance, if a webpage has an HTML tag similar to the following
-<input type="submit" id="important_button" >,
+<input type="submit" id="important_button" onclick=dosomething()>,
 
 the button can be preselected by navigating to the URL victim.com/page#important_button. If a user navigates to such a URL and presses Enter or Space key, the browser automatically clicks on the newly focused ID attribute, triggering associated action on the website.
 

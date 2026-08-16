@@ -6,24 +6,24 @@ resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, waf-bypass, javascript, encoding, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:02:06+00:00"
+  at: "2026-08-16T00:01:18+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
     title: Ping pong obfuscation
     author: Gareth Heyes
-  - id: canonical
-    resource: "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation"
+  - id: capture
+    resource: "https://web.archive.org/web/20110305051502/http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 also_at: []
 authors:
   - Gareth Heyes
-canonical_url: "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation"
+canonical_url: ""
 cited_by:
   - "2009.md:46"
 commit: ""
-content_sha256: 394d0c26b0f7b18b765ef6ac05208284ce8992d9794e87ef13d6043913f3ac51
+content_sha256: 792c17a9b5f8a570778015450ba3f87ff67fba4f91dda87ef1eaa3fbdc5cc881
 depth: full
 depth_reason: default
 kind: article
@@ -33,12 +33,12 @@ original_url: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 27e86a2c232fd76e3d5d733ff17868ccd1d7f2ee3c74cedd2d949aefcbc086fa
-retrieved_from: "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:02:06+00:00"
+raw_sha256: d431f7b016f95269530f58b192e02823dabc4a027b8589430b755ceaf8c43326
+retrieved_from: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:01:18+00:00"
 slug: thespanner-co-uk-ping-pong-obfuscation
-snapshot: ""
+snapshot: 20110305051502
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/>
-- Current location: <https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation>
-- Preserved from: https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation (live) on 2026-08-10
+- Preserved from: http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/ (stored) on 2026-08-16
+- Capture timestamp: 20110305051502
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,6 +64,58 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[Pure-CSS 3D world collision detection ](https://thespanner.co.uk/pure-css-3d-world-collision-detection)[How to write a Hackvertor tag](https://thespanner.co.uk/how-to-write-a-hackvertor-tag)[Introducing Feedworm: A Privacy-First RSS Reader That Lives in DevTools](https://thespanner.co.uk/introducing-feedworm-a-privacy-first-rss-reader-that-lives-in-devtools)[Speedy RSVP extension](https://thespanner.co.uk/speedy-rsvp-extension)[AutoVader](https://thespanner.co.uk/autovader)[Hackvertor history and tag finder](https://thespanner.co.uk/hackvertor-history-and-tag-finder)[Shadow Repeater v1.2.3 release](https://thespanner.co.uk/shadow-repeater-v123-release)[Burp Hackvertor v2.1.24 release](https://thespanner.co.uk/burp-hackvertor-v2124-release)[Hacking rooms](https://thespanner.co.uk/hacking-rooms)[XSSing TypeErrors in Safari](https://thespanner.co.uk/xssing-typeerrors-in-safari)[valueOf: Another way to get this](https://thespanner.co.uk/valueof-another-way-to-get-this)[Making the Unexploitable Exploitable with X-Mixed-Replace on Firefox](https://thespanner.co.uk/making-the-unexploitable-exploitable-with-x-mixed-replace-on-firefox)[The curious case of the evt parameter](https://thespanner.co.uk/the-curious-case-of-the-evt-parameter)[CSS-Only Tic Tac Toe Challenge](https://thespanner.co.uk/css-only-tic-tac-toe-challenge)[Rewriting relative urls with the base tag in Safari](https://thespanner.co.uk/rewriting-relative-urls-with-the-base-tag-in-safari)[Bypassing DOMPurify with mXSS](https://thespanner.co.uk/bypassing-dompurify-with-mxss)[New IE mutation vector](https://thespanner.co.uk/new-ie-mutation-vector)[How I smashed MentalJS](https://thespanner.co.uk/how-i-smashed-mentaljs)[MentalJS DOM bypass](https://thespanner.co.uk/mentaljs-dom-bypass)[Another XSS auditor bypass](https://thespanner.co.uk/another-xss-auditor-bypass)[XSS Auditor bypass](https://thespanner.co.uk/xss-auditor-bypass)[Bypassing the IE XSS filter](https://thespanner.co.uk/bypassing-the-ie-xss-filter)[Unbreakable filter](https://thespanner.co.uk/unbreakable-filter)[MentalJS bypasses](https://thespanner.co.uk/mentaljs-bypasses)[mXSS](https://thespanner.co.uk/mxss)[Java Serialization](https://thespanner.co.uk/java-serialization)[Bypassing the XSS filter using function reassignment](https://thespanner.co.uk/bypassing-the-xss-filter-using-function-reassignment)[RPO](https://thespanner.co.uk/rpo)[Sandboxed jQuery](https://thespanner.co.uk/sandboxed-jquery)[X-Domain scroll detection on IE using focus](https://thespanner.co.uk/x-domain-scroll-detection-on-ie-using-focus)[Epic fail IE](https://thespanner.co.uk/epic-fail-ie)[new operator](https://thespanner.co.uk/new-operator)[Decoding complex non-alphanumeric JavaScript](https://thespanner.co.uk/decoding-complex-non-alphanumeric-javascript)[Hacking Firefox](https://thespanner.co.uk/hacking-firefox)[DOM Clobbering](https://thespanner.co.uk/dom-clobbering)[Bypassing XSS Auditor](https://thespanner.co.uk/bypassing-xss-auditor)[The evolution of code](https://thespanner.co.uk/the-evolution-of-code)[Non-Alpha PHP in 6-7 charset](https://thespanner.co.uk/non-alpha-php-in-6-7-charset)[Tweetable PHP-Non Alpha](https://thespanner.co.uk/tweetable-php-non-alpha)[MentalJS for PHP](https://thespanner.co.uk/mentaljs-for-php)
+Ping pong obfuscation
 
- Ping pong obfuscation - The Spanner
+# Ping pong obfuscation
+
+Monday, 23 November 2009
+
+This is a fun post about a feature I found in IE that allows you to do some crazy obfuscation. I’ll start off with some simple examples:-
+
+```
+
+<img src=1 language=vbs onerror=msgbox+1>
+<img src=1 language=vbscript onerror=msgbox+1>
+<img src=1 onerror=vbs:msgbox+1>
+
+```
+
+So here we’re not obfuscating but I’m showing how IE accepts the language attribute and a labelled vbs statement to change the event to allow vbscript instead of javascript. Ok so lets play a little ping pong:-
+
+```
+
+execScript("MsgBox 1","vbscript"); //executes vbs from js
+execScript('execScript "alert(1)","javascript"',"vbscript");
+
+```
+
+Look how we can call vbscript from javascript by using execScript and then look how we can execute from javascript to vbscript and then back to javascript again! So now we’re playing some ping pong but how can we make our little game hidden?
+
+```
+
+<a href=# language="JScript.Encode" onclick="#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@">test</a>
+
+```
+
+Wait what? Yeah IE supports jscript.encode within the language attribute. Remember jscript.encode? ah the old ones are the best ![:)](http://www.thespanner.co.uk/wp-includes/images/smilies/icon_smile.gif) That’s it right? Well….
+
+```
+
+<iframe onload=VBScript.Encode:#@~^CAAAAA==\ko$K6,FoQIAAA==^#~@>
+
+```
+
+Yeah you can use VBScript.Encode and Javascript.Encode as labels within an event! You might be going WTF right now and I can understand it because I did exactly the same but it would be silly to finish now without finishing our game of ping pong. How many rallies shall I do? I think 3 should be enough….
+
+```
+
+<body onload="jscript.encode:#@~^TAAAAA==nX+^UmMkwD`r:@$?73hzb)){'Z%QRG=2	V7WB qdG\:2jbebz)'{7:=@$J~E%km.kaOc+U1W9+J*CRcAAA==^#~@">
+
+```
+
+Ok so I go to:-
+ jscript->jscript.encode->jscript.encode->jscript.encode->hex entities
+
+ Tags: [obfuscation](http://www.thespanner.co.uk/tag/obfuscation/)
+
+ The entry '[Ping pong obfuscation](http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/)' was posted on November 23rd, 2009 at 1:45 pm and last modified on November 23rd, 2009 at 1:58 pm, and is filed under [javascript](http://www.thespanner.co.uk/category/javascript/), [Security](http://www.thespanner.co.uk/category/security/). You can follow any responses to this entry through the [RSS 2.0](http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/feed/) feed. Both comments and pings are currently closed.

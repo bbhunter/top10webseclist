@@ -6,9 +6,9 @@ resource: "https://research.securitum.com/security-analysis-of-portal-element/"
 tags: [article, webseclist-reference, en, research-securitum-com, xsleak, clickjacking, side-channel, sop-bypass, info-leak, iframe, cookie, csp, timing-attack, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:13+00:00"
+  at: "2026-08-16T00:01:07+00:00"
 status: deprecated
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://research.securitum.com/security-analysis-of-portal-element/"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:29"
 commit: ""
-content_sha256: 2fc7fc2544cbb2da674b2abc2b3a74aa5c6e640fbc634829b7bb11a7b1528996
+content_sha256: d36377f7b0bc540371a74cd8a8622b82cf20d5cf05264f95695e2882f8d80c04
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: d251e9fced26e1c6bf0722f4976f51032d13548da8e1b98d1d3ce928da81d890
 retrieved_from: "https://research.securitum.com/security-analysis-of-portal-element/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:13+00:00"
+retrieved_utc: "2026-08-16T00:01:07+00:00"
 slug: 2019-research-securitum-com-security-analysis-portal-element
 snapshot: 20191114091030
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: 2019-09-03
 - Original: <https://research.securitum.com/security-analysis-of-portal-element/>
-- Preserved from: https://research.securitum.com/security-analysis-of-portal-element/ (stored) on 2026-08-09
+- Preserved from: https://research.securitum.com/security-analysis-of-portal-element/ (stored) on 2026-08-16
 - Capture timestamp: 20191114091030
 - Licence: unknown
 
@@ -88,7 +88,49 @@ First things first, what even is *<portal>* and why do we need it? Basically, it
 
 An example HTML using portal:
 
- <!doctype html><meta charset=utf-8> <portal src=https://securitum.pl id=portal></portal> <button ></div> <div class="crayon-main" style=""> <table class="crayon-table"> <tr class="crayon-row"> <td class="crayon-nums " data-settings="show"> <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5dcd1a06ae941926534546-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5dcd1a06ae941926534546-2">2</div><div class="crayon-num" data-line="crayon-5dcd1a06ae941926534546-3">3</div></div> </td> <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5dcd1a06ae941926534546-1"><!doctype html><meta charset=utf-8></div><div class="crayon-line crayon-striped-line" id="crayon-5dcd1a06ae941926534546-2"><portal src=https://securitum.pl id=portal></portal></div><div class="crayon-line" id="crayon-5dcd1a06ae941926534546-3"><button onclick=portal.activate()>portal.activate()</button></div></div></td> </tr> </table> </div> </div> <h2><portal> security risks</h2> <p>After getting familiar with what <em><portal></em> is and how it works, I started asking questions about potential security issues. The first one was about URI-s. Content embedded in <em><portal></em> behaves like a top-level frame. And user is allowed to enter various non-HTTP schemes in the address bar, including the typical ones like <em>http:</em> or <em>https:</em> but also <em>file:</em>, <em>data:</em> or <em>javascript:</em>. I wondered if we could do the same with portals?</p> <p>Another direct consequence of <em><portal></em> behaving like a top-level frame are ClickJacking issues. Browsers don’t account X-Frame-Options for top frames. Does that mean that <em><portal></em> created a new, easy way for Clickjacking?</p> <p>In the sections below I’ll answer these questions along with some other ones that popped out during my research.</p> <h2>RISK 1: Accepting unsafe URI schemes</h2> <p>When user inputs the address manually into the address bar, she or he is generally allowed to visit a wide range of URI schemes. Some of the examples are: <em>http:</em>, <em>https:</em>, <em>file:</em>, <em>chrome:</em> or <em>data:</em>. While the schemes could be visited manually, websites are not allowed to redirect users to schemes other than <em>http</em> or <em>https</em> in the top-level frame (this is not exactly true but let’s simplify things a bit). For instance, if a page tried to redirect user to <em>file:///etc/passwd,</em> Chrome would throw an exception:</p> <p><em>Not allowed to load local resource: file:///etc/passwd</em></p> <p>When doing my first tests, it turned out that the same restriction doesn’t apply to <em><portal></em> and I could open any page I wanted, including <em>file:</em> or even <em>chrome:</em> schemes.</p> <p>The video below shows a comparison between <em><iframe></em> and <em><portal></em>. Both <em>file:</em> and <em>chrome:</em> schemes are displayed in <em><portal></em>.</p> <figure class="wp-block-video"><video controls src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/ScreenFlow-1.mp4"></video></figure> <p>Note: The page you can see in the gif is called portal-playground. You can find it in the GitHub repo on <a href="https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/portal-playground.html">https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/portal-playground.html</a>. You can play a little bit with portals in it.</p> <p>While it is obvious that browsers should not allow to open arbitrary URI schemes, the above example doesn’t constitute a direct security vulnerability. However, when you realize that you can also assign <em>javascript:</em> scheme to the URL (as you do in bookmarklets), this changes drastically! There was a security vulnerability in Chrome Canary that made it possible to execute arbitrary javascript in context of another origin. The idea was as follows:<br></p> <div id="crayon-5dcd1a06ae950423859738" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"> <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"> <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div> <div class="crayon-info" style="min-height: 18px !important; line-height: 18px !important;"></div> <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;"> portal.src = 'https://google.com' // and after a while... portal.src='#' // this executes in https://google.com
+ <!doctype html><meta charset=utf-8> <portal src=https://securitum.pl id=portal></portal> <button onclick=portal.activate()>portal.activate()</button>
+
+|
+
+1
+
+2
+
+3
+
+  |
+
+<!doctype html><meta charset=utf-8>
+
+<portal src=https://securitum.pl id=portal></portal>
+
+<button onclick=portal.activate()>portal.activate()</button>
+
+ |   |
+
+## <portal> security risks
+
+After getting familiar with what *<portal>* is and how it works, I started asking questions about potential security issues. The first one was about URI-s. Content embedded in *<portal>* behaves like a top-level frame. And user is allowed to enter various non-HTTP schemes in the address bar, including the typical ones like *http:* or *https:* but also *file:*, *data:* or *javascript:*. I wondered if we could do the same with portals?
+
+Another direct consequence of *<portal>* behaving like a top-level frame are ClickJacking issues. Browsers don’t account X-Frame-Options for top frames. Does that mean that *<portal>* created a new, easy way for Clickjacking?
+
+In the sections below I’ll answer these questions along with some other ones that popped out during my research.
+
+## RISK 1: Accepting unsafe URI schemes
+
+When user inputs the address manually into the address bar, she or he is generally allowed to visit a wide range of URI schemes. Some of the examples are: *http:*, *https:*, *file:*, *chrome:* or *data:*. While the schemes could be visited manually, websites are not allowed to redirect users to schemes other than *http* or *https* in the top-level frame (this is not exactly true but let’s simplify things a bit). For instance, if a page tried to redirect user to *file:///etc/passwd,* Chrome would throw an exception:
+
+*Not allowed to load local resource: file:///etc/passwd*
+
+When doing my first tests, it turned out that the same restriction doesn’t apply to *<portal>* and I could open any page I wanted, including *file:* or even *chrome:* schemes.
+
+The video below shows a comparison between *<iframe>* and *<portal>*. Both *file:* and *chrome:* schemes are displayed in *<portal>*.
+
+Note: The page you can see in the gif is called portal-playground. You can find it in the GitHub repo on [https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/portal-playground.html](https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/portal-playground.html). You can play a little bit with portals in it.
+
+While it is obvious that browsers should not allow to open arbitrary URI schemes, the above example doesn’t constitute a direct security vulnerability. However, when you realize that you can also assign *javascript:* scheme to the URL (as you do in bookmarklets), this changes drastically! There was a security vulnerability in Chrome Canary that made it possible to execute arbitrary javascript in context of another origin. The idea was as follows:
+
+ portal.src = 'https://google.com' // and after a while... portal.src = 'javascript:...' // this executes in https://google.com
 
 |
 
@@ -314,3 +356,5 @@ As of Chrome 78, the attack still works.
 In this write-up I have described the new [<portal> element](https://wicg.github.io/portals/) currently supported only in Chrome Canary. Being inspired by the fact that currently the specification lacks any security considerations, I have covered various security issues that might arise from using portals, showing that currently there’s still a lot to improve.
 
 The list of issues described in this write-up are probably not exhaustive. Hence I’m very curious about your thoughts and other security issues you might think of when analysing portals 🙂
+
+Tagged: [Bug Bounty](https://research.securitum.com/tag/bug-bounty/), [Google](https://research.securitum.com/tag/google/)

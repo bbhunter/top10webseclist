@@ -6,9 +6,9 @@ resource: "https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safa
 tags: [article, webseclist-reference, en, payatu, sop-bypass, xss, sanitizer-bypass, same-origin-policy, iframe, javascript, ios, csp, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:56+00:00"
+  at: "2026-08-16T00:00:55+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safari-reader-mode"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:46"
 commit: ""
-content_sha256: 745447091a080ac1c0ef76826427e07bc57f10c577b977f8119b38f5349ff8cd
+content_sha256: cbd34e37b6c7b924a32085c5be97327c24a94e44a66fd3d0db675f2a11c213a6
 depth: full
 depth_reason: default
 kind: article
@@ -36,8 +36,8 @@ publisher: Payatu
 publisher_english: ""
 raw_sha256: a773ec32e0badcda34345cb23f1c128b070ddf277f2f1ea12b667adffe8eba83
 retrieved_from: "https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:55+00:00"
 slug: 2020-payatu-my-hacking-adventures-safari-reader-mode
 snapshot: ""
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Original: <https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safari-reader-mode>
 - Also published at: <https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/>
 - Also published at: <https://c0d3g33k.github.io/>
-- Preserved from: https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/ (live) on 2026-08-10
+- Preserved from: https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -163,7 +163,7 @@ I tried to attach event handlers with text element, but Safari removed it as wel
 
 ```
  <svg height="30" width="200">
-    <text x="0" y="15" fill="red" >Bla bla bla bla!</text>
+    <text x="0" y="15" fill="red" onclick="alert(1)">Bla bla bla bla!</text>
 </svg>
 
 ```
@@ -390,7 +390,7 @@ And the content of the child frame looks like the following:
 </head>
 <body>
     <h1>Welcome to evilads.com</h1><hr>
-    <p >Click here to check this frame's location!</p>
+    <p onclick="this.innerHTML=window.location.href">Click here to check this frame's location!</p>
     <p>We offer the best web hosting services!, please visit us by clicking the link provided at th end!</p>
     <p>We offer the best web hosting services!, please visit us by clicking the link provided at th end!</p>
     <p>We offer the best web hosting services!, please visit us by clicking the link provided at th end!</p>

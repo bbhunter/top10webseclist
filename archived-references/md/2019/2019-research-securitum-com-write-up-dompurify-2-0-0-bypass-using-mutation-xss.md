@@ -6,9 +6,9 @@ resource: "https://research.securitum.com/dompurify-bypass-using-mxss/"
 tags: [article, webseclist-reference, en, research-securitum-com, mutation-xss, sanitizer-bypass, xss, parser-differential, dom, javascript, filter-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:11+00:00"
+  at: "2026-08-16T00:01:04+00:00"
 status: deprecated
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://research.securitum.com/dompurify-bypass-using-mxss/"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:44"
 commit: ""
-content_sha256: d511fe81327939fd5910da1aa23b761ed6f50e31f8333168e0c2de64f632e080
+content_sha256: 432701797c3d7ce5c52a11ec9ede504c95af75384f9e6094db00f5dcee10f242
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: e827b4e316febcd33b52bfdd505d30d2e8515b21075188bb7ab5efecb1c696cf
 retrieved_from: "https://research.securitum.com/dompurify-bypass-using-mxss/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:11+00:00"
+retrieved_utc: "2026-08-16T00:01:04+00:00"
 slug: 2019-research-securitum-com-write-up-dompurify-2-0-0-bypass-using-mutation-xss
 snapshot: 20250506115504
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: 2019-09-20
 - Original: <https://research.securitum.com/dompurify-bypass-using-mxss/>
-- Preserved from: https://research.securitum.com/dompurify-bypass-using-mxss/ (stored) on 2026-08-09
+- Preserved from: https://research.securitum.com/dompurify-bypass-using-mxss/ (stored) on 2026-08-16
 - Capture timestamp: 20250506115504
 - Licence: unknown
 
@@ -86,7 +86,38 @@ So let’s suppose that we have a purifier with the following allow-list:
 
 and user enters the following HTML:
 
- <div>I am trying to be <i>malicious</i> <u>here</u>! <img src=1 ></div> <div class="crayon-main" style=""> <table class="crayon-table"> <tr class="crayon-row"> <td class="crayon-nums " data-settings="show"> <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-6819f898a5a42730569369-1">1</div></div> </td> <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-6819f898a5a42730569369-1"><div>I am trying to be <i>malicious</i> <u>here</u>! <img src=1 onerror=alert(1)></div></div></div></td> </tr> </table> </div> </div> <p>After parsing we’ll get the following DOM tree:</p> <figure class="wp-block-image"><img fetchpriority="high" decoding="async" width="612" height="280" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image.png" alt="" class="wp-image-1108"/><figcaption>Unsafe HTML</figcaption></figure> <p>So there are two things that should be deleted:</p> <ol class="wp-block-list"><li>The <code><u></code> element that is not in the allow-list,</li><li>The <code>onerror</code> attribute not in in the allow-list.</li></ol> <p>So after traversing the DOM tree, the purifier should leave only the following:</p> <figure class="wp-block-image"><img decoding="async" width="410" height="234" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-1.png" alt="" class="wp-image-1111"/><figcaption>Safe, sanitized HTML</figcaption></figure> <p>Now we have a “safe” DOM tree with all not-allowed elements or attributes stripped. Hence, the purifier would yield the following string after performing sanitization:</p> <div id="crayon-6819f898a5a48862003367" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"> <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"> <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div>Python</div></div> <div class="crayon-info" style="min-height: 18px !important; line-height: 18px !important;"></div> <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;"> <div>I am trying to be <i>malicious</i> here! <img src="1"></div>
+ <div>I am trying to be <i>malicious</i> <u>here</u>! <img src=1 onerror=alert(1)></div>
+
+|
+
+1
+
+  |
+
+<div>I am trying to be <i>malicious</i> <u>here</u>! <img src=1 onerror=alert(1)></div>
+
+ |   |
+
+After parsing we’ll get the following DOM tree:
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image.png)
+
+*Unsafe HTML*
+
+So there are two things that should be deleted:
+
+- The `<u>` element that is not in the allow-list,
+- The `onerror` attribute not in in the allow-list.
+
+So after traversing the DOM tree, the purifier should leave only the following:
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-1.png)
+
+*Safe, sanitized HTML*
+
+Now we have a “safe” DOM tree with all not-allowed elements or attributes stripped. Hence, the purifier would yield the following string after performing sanitization:
+
+ <div>I am trying to be <i>malicious</i> here! <img src="1"></div>
 
 |
 
@@ -170,7 +201,82 @@ So a payload of `<svg></p>whatever` is a base for mXSS, because it mutates when 
 
 Let’s try to assign the following string to `innerHTML` of a DOM element:
 
- <svg></p><style><a id="</style><img src=1 ></div> <div class="crayon-main" style=""> <table class="crayon-table"> <tr class="crayon-row"> <td class="crayon-nums " data-settings="show"> <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-6819f898a5a4d970067050-1">1</div></div> </td> <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-6819f898a5a4d970067050-1"><svg></p><style><a id="</style><img src=1 onerror=alert(1)>"></div></div></td> </tr> </table> </div> </div> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="1402" height="466" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-6.png" alt="" class="wp-image-1121"/></figure> <p>There is nothing inherently wrong with this DOM snippet. All tags (<code><div></code>, <code><svg></code>, <code><p></code>, <code><style></code> and <code><a></code>) and attribute <code>id</code> are allowed by DOMPurify in default configuration. So it doesn’t change anything in this code. However, when we try to assign <code>innerHTML</code> to itself…</p> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="1592" height="330" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-7.png" alt="" class="wp-image-1122"/></figure> <p>… suddenly a wild <code>alert</code> appears! </p> <p>What happens here is the abuse of specific behavior of <code><svg></code> element. Basically, when you open a <code><svg></code> in your HTML, the browser parsing rules change and are closer to XML parsing than to HTML parsing. One of the main difference is that certain tags in HTML cannot have children when being deserialized from text. An example being <code><a href="https://html.spec.whatwg.org/multipage/semantics.html#the-style-element"><style></a></code>. If you look at the HTML spec, you’ll find out that its content model is Text. Even if you try to put an element within a <code><style></code>, it is treated as text:</p> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="932" height="266" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-9.png" alt="" class="wp-image-1124"/></figure> <p>The same thing is not true for SVG. Let’s try exactly the same example but with <code><style></code> being a child of <code><svg></code>:</p> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="1018" height="426" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-10.png" alt="" class="wp-image-1125"/></figure> <p>As you can see, now <code><style></code> has a child element. </p> <p>So now let’s see example with DOMPurify:</p> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="1424" height="90" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-14.png" alt="" class="wp-image-1129"/></figure> <p>In this case, the browser assumes that both <code></p></code> and <code><style></code> are children of <code><svg></code>, which results in <code><a></code> element being a child of <code><style></code>. However, the code mutates a bit and now there’s also an opening <code><p></code> within <code><svg></code>. The code is theoretically harmless since the dangerous <code><img></code> element is actually within a value of <code>id</code> attribute.</p> <p>However, when we try to assign the resulting HTML to <code>innerHTML</code>, the code will mutate to the following form:</p> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="1358" height="48" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-15.png" alt="" class="wp-image-1131"/></figure> <p>Now the <code><svg></code> element is closed immediately and everything that follows is plain HTML. This means that the <code><style></code> element is closed on <code></style></code> and the <code><img></code> tag containing <code>onerror</code> attribute is written to the DOM tree.</p> <figure class="wp-block-image"><img loading="lazy" decoding="async" width="684" height="192" src="https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-16.png" alt="" class="wp-image-1132"/></figure> <p>And that’s it! That is the mXSS in Chrome abused to perform DOMPurify bypass. The same trick would probably be helpful in bypassing other sanitizers as well.</p> <p>You can play around with the bypass in <a href="https://jsbin.com/yomabutoze/edit?html,output">a jsbin I prepared</a>.</p> <h2 class="wp-block-heading">Summary</h2> <p>In the article, I described a recently found DOMPurify bypass because of mXSS behavior in Chrome. The issue was that <code><svg></p></code> was rewritten to <code><svg><p></p></svg></code> by the browser and then rewritten to <code><svg></svg><p></p></code> after assigning it to <code>innerHTML</code>. This could be abused in such a way that the initial HTML parsing assumes that some elements are within <code><svg></code> while in the subsequent ones, they are outside of <code><svg></code>, allowing to add arbitrary HTML tags.</p> <p>So the bypass itself was:</p> <div id="crayon-6819f898a5a4e918636480" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"> <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"> <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div>Python</div></div> <div class="crayon-info" style="min-height: 18px !important; line-height: 18px !important;"></div> <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;"> <svg></p><style><a id="</style><img src=1 ></div> <div class="crayon-main" style=""> <table class="crayon-table"> <tr class="crayon-row"> <td class="crayon-nums " data-settings="show"> <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-6819f898a5a4e918636480-1">1</div></div> </td> <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-6819f898a5a4e918636480-1"><svg></p><style><a id="</style><img src=1 onerror=alert(1)>"></div></div></td> </tr> </table> </div> </div> <h2 class="wp-block-heading">Afterthoughts</h2> <p>After reporting the bypass to DOMPurify, I noticed a few more issues worth mentioning. First of all, the mXSS works not only in Chrome but also in Safari. Second of all, the are a few more variants of it:</p> <ul class="wp-block-list"><li>Instead of <code><svg></code>, you could also use <code><math></code>,</li><li>Instead of <code></p></code>, you could also use <code></br></code>.</li></ul> <p>If you use DOMPurify, you should update it immediately to version 2.0.1 or newer. If, for some reason, you cannot do it, consider altering its default configuration to disallow both <code><math></code> and <code><svg></code> with:</p> <div id="crayon-6819f898a5a50392114186" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"> <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"> <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div>Python</div></div> <div class="crayon-info" style="min-height: 18px !important; line-height: 18px !important;"></div> <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;"> DOMPurify.sanitize(input, { FORBID_TAGS: ['svg', 'math'] });
+ <svg></p><style><a id="</style><img src=1 onerror=alert(1)>">
+
+|
+
+1
+
+  |
+
+<svg></p><style><a id="</style><img src=1 onerror=alert(1)>">
+
+ |   |
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-6.png)
+
+There is nothing inherently wrong with this DOM snippet. All tags (`<div>`, `<svg>`, `<p>`, `<style>` and `<a>`) and attribute `id` are allowed by DOMPurify in default configuration. So it doesn’t change anything in this code. However, when we try to assign `innerHTML` to itself…
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-7.png)
+
+… suddenly a wild `alert` appears!
+
+What happens here is the abuse of specific behavior of `<svg>` element. Basically, when you open a `<svg>` in your HTML, the browser parsing rules change and are closer to XML parsing than to HTML parsing. One of the main difference is that certain tags in HTML cannot have children when being deserialized from text. An example being `[<style>](https://html.spec.whatwg.org/multipage/semantics.html#the-style-element)`. If you look at the HTML spec, you’ll find out that its content model is Text. Even if you try to put an element within a `<style>`, it is treated as text:
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-9.png)
+
+The same thing is not true for SVG. Let’s try exactly the same example but with `<style>` being a child of `<svg>`:
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-10.png)
+
+As you can see, now `<style>` has a child element.
+
+So now let’s see example with DOMPurify:
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-14.png)
+
+In this case, the browser assumes that both `</p>` and `<style>` are children of `<svg>`, which results in `<a>` element being a child of `<style>`. However, the code mutates a bit and now there’s also an opening `<p>` within `<svg>`. The code is theoretically harmless since the dangerous `<img>` element is actually within a value of `id` attribute.
+
+However, when we try to assign the resulting HTML to `innerHTML`, the code will mutate to the following form:
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-15.png)
+
+Now the `<svg>` element is closed immediately and everything that follows is plain HTML. This means that the `<style>` element is closed on `</style>` and the `<img>` tag containing `onerror` attribute is written to the DOM tree.
+
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-16.png)
+
+And that’s it! That is the mXSS in Chrome abused to perform DOMPurify bypass. The same trick would probably be helpful in bypassing other sanitizers as well.
+
+You can play around with the bypass in [a jsbin I prepared](https://jsbin.com/yomabutoze/edit?html,output).
+
+## Summary
+
+In the article, I described a recently found DOMPurify bypass because of mXSS behavior in Chrome. The issue was that `<svg></p>` was rewritten to `<svg><p></p></svg>` by the browser and then rewritten to `<svg></svg><p></p>` after assigning it to `innerHTML`. This could be abused in such a way that the initial HTML parsing assumes that some elements are within `<svg>` while in the subsequent ones, they are outside of `<svg>`, allowing to add arbitrary HTML tags.
+
+So the bypass itself was:
+
+ <svg></p><style><a id="</style><img src=1 onerror=alert(1)>">
+
+|
+
+1
+
+  |
+
+<svg></p><style><a id="</style><img src=1 onerror=alert(1)>">
+
+ |   |
+
+## Afterthoughts
+
+After reporting the bypass to DOMPurify, I noticed a few more issues worth mentioning. First of all, the mXSS works not only in Chrome but also in Safari. Second of all, the are a few more variants of it:
+
+- Instead of `<svg>`, you could also use `<math>`,
+- Instead of `</p>`, you could also use `</br>`.
+
+If you use DOMPurify, you should update it immediately to version 2.0.1 or newer. If, for some reason, you cannot do it, consider altering its default configuration to disallow both `<math>` and `<svg>` with:
+
+ DOMPurify.sanitize(input, { FORBID_TAGS: ['svg', 'math'] });
 
 |
 
@@ -189,3 +295,5 @@ DOMPurify.sanitize(input, {
  });
 
  |   |
+
+Tagged: [dompurify](https://research.securitum.com/tag/dompurify/), [mxss](https://research.securitum.com/tag/mxss/), [XSS](https://research.securitum.com/tag/xss/)

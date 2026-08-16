@@ -6,9 +6,9 @@ resource: "http://drwetter.eu/amazon/"
 tags: [article, webseclist-reference, en, drwetter-eu, xss, case-study, dom, encoding, charset, filter-bypass, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:02+00:00"
+  at: "2026-08-16T00:00:43+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://drwetter.eu/amazon/"
@@ -23,7 +23,7 @@ canonical_url: "https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html"
 cited_by:
   - "2010.md:68"
 commit: ""
-content_sha256: 4310ddd4c091d60c7eddd546609fa54ff6cc3d4346795c34a9492515516a8cdf
+content_sha256: 08f1dba3aca1d059b51ac9ba48037c00e11bcecb5ff857bdc0a84aa3d809e52a
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 191e325aeb293bd33d831afc87a6f0e69a96376207bbf24c5721b10d72a14be0
 retrieved_from: "https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:02+00:00"
+retrieved_utc: "2026-08-16T00:00:43+00:00"
 slug: drwetter-eu-research-remarkable-2nd-order-xss-amazon-how-hack-amazon-book
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://drwetter.eu/amazon/>
 - Current location: <https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html>
-- Preserved from: https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html (stored) on 2026-08-11
+- Preserved from: https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -214,7 +214,7 @@ successful
 
 ```
 
-<img src="http://192.168.1.1/hm_icon.gif" >
+<img src="http://192.168.1.1/hm_icon.gif" onerror="notNetgear()">
 
 ```
 

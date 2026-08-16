@@ -268,3 +268,38 @@ class CommentedListingTest(unittest.TestCase):
         once = sanitise.sanitise_html(
             "<pre><code><!--payload: <b>x</b>--></code></pre>").text
         self.assertEqual(sanitise.sanitise_html(once).text, once)
+
+
+class EscapedPayloadTests(unittest.TestCase):
+    """An escaped vector is the research being quoted, and it is inert."""
+
+    def test_an_escaped_handler_survives(self):
+        # sla.ckers, the worst case found: the author wrote the vector inside a
+        # <pre>, escaped, and the archive published `&lt;body >`.
+        markup = ('<pre class="bbcode">'
+                  '&lt;body onload=&quot;alert(\'XSS\');&quot;&gt;</pre>')
+        result = sanitise.sanitise_html(markup)
+        self.assertIn("&lt;body onload=&quot;alert('XSS');&quot;&gt;", result.text)
+
+    def test_a_live_handler_is_still_removed(self):
+        result = sanitise.sanitise_html("<img src=x onerror=alert(1)>")
+        self.assertNotIn("onerror", result.text)
+        self.assertIn("inline-script-attribute", result.removed)
+
+    def test_a_live_javascript_target_is_still_neutralised(self):
+        result = sanitise.sanitise_html('<a href="javascript:alert(1)">go</a>')
+        self.assertNotIn("javascript:", result.text)
+
+    def test_handler_like_prose_outside_a_tag_is_left_alone(self):
+        prose = "The filter allows onload= through when the tag is split."
+        self.assertEqual(prose, sanitise.sanitise_html(prose).text)
+
+    def test_stripping_inside_a_tag_is_idempotent(self):
+        once = sanitise.sanitise_html('<div onclick="steal()">x</div>').text
+        self.assertEqual(once, sanitise.sanitise_html(once).text)
+
+    def test_a_quoted_attribute_containing_a_bracket_does_not_end_the_tag(self):
+        markup = '<img alt="a > b" onerror=alert(1)>'
+        result = sanitise.sanitise_html(markup)
+        self.assertNotIn("onerror", result.text)
+        self.assertIn('alt="a > b"', result.text)

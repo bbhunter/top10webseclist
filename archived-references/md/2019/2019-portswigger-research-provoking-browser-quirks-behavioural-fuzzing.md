@@ -6,9 +6,9 @@ resource: "https://portswigger.net/research/provoking-browser-quirks-with-behavi
 tags: [article, webseclist-reference, portswigger-research, xss, filter-bypass, fuzzing, parser-differential, unicode, javascript, dom, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:38+00:00"
+  at: "2026-08-16T00:01:02+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:81"
 commit: ""
-content_sha256: c593dbf7c0dc809227ce3e4feecf1244006e019cd7fe3583f15ac2066b134b82
+content_sha256: 1b59a9f37e2e986ad1003782497bdb7f77274187e94b523bb7f94e9849a56a22
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 75bc96cb1ee85fbe754ee6bac09ae016df0956b56ce38e7675cf3be1114c1320
 retrieved_from: "https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:38+00:00"
+retrieved_utc: "2026-08-16T00:01:02+00:00"
 slug: 2019-portswigger-research-provoking-browser-quirks-behavioural-fuzzing
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-05-28
 - Original: <https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing>
-- Preserved from: https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -117,7 +117,7 @@ input.value=log
 Here's the [code in full](https://hackvertor.co.uk/public#bG9nPVtdOwpkaXY9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2Jyk7CmZvcihpPTA7aTw9MHgxMGZmZmY7aSsrKXsKIGRpdi5pbm5lckhUTUwgPSAnPCEtLSAtLSEnK1N0cmluZy5mcm9tQ29kZVBvaW50KGkpKyc+PGltZz4tLT4nOyAKaWYoZGl2LnF1ZXJ5U2VsZWN0b3IoJ2ltZycpKXsKIGxvZy5wdXNoKGkpOwogfQp9IAppbnB1dC52YWx1ZT1sb2c=), you need to open the URL in Firefox and then place the input into the output box and hit the button "Execute JS" to fuzz through the characters. After fuzzing is complete you should see numbers in the input box, these correspond to the character codes that were successful. At the time of writing Firefox (version 67) still allows new line characters - `\n` and `\r` - after the ! to close a comment. I've been informed that this is fixed in future versions of Firefox. So the last stage of fuzzing is now to assemble your payload, this is quite simple you just need to replace the character code with the character and add a XSS payload:
 
 `<!-- --!
-><img src=1 -->`
+><img src=1 onerror=alert(1)> -->`
 
 You can use Hackvertor again to test it works by pasting the above into the output box and then clicking "Test HTML" and an alert box should fire because Firefox (version 67) allows the new line as part of the closing comment.
 
@@ -127,7 +127,7 @@ So that enabled us to find a cool bug in the Firefox HTML parser. Let's find ano
 
 So the character we are fuzzing occurs after the first hyphen and if the character successfully creates an opening HTML comment it will comment out the div element and thus break out of the title attribute. This time when you run "Execute JS" we get two results on Firefox (version 67): "0,45". 45 is expected because that's the hyphen character but 0 is the NULL character! That means Firefox is interpreting the sequence `<!-NULL-` as an opening comment. Crazy stuff (I think the browser vendors need to do more behavioural fuzzing =) ). To finish off this test case we now need to create our vector, we need to do the same thing again replace the `String.fromCodePoint` function with just the NULL character and a cool XSS vector:
 
-`document.body.innerHTML = '<!-\x00- ><div title="--><img src=1 >`
+`document.body.innerHTML = '<!-\x00- ><div title="--><img src=1 onerror=alert(1)>"></div>';`
 
 Let's move onto JavaScript instead of HTML. I tested every browser, and I'm sorry Mozilla but once again Firefox is doing some crazy stuff. I got my inspiration of what to fuzz from a [tweet](https://twitter.com/jinmo123/status/1128973541238484992) by [@jinmo123](https://twitter.com/jinmo123) they are using new cool ES6 features to call functions without parentheses but the question I came up with to fuzz was "What characters are allowed after an `in` or `instanceof` operator?". Next we create the code in Hackvertor again, it follows a similar template as before but this time doesn't use the DOM. First we create the array and for loop:
 
@@ -153,3 +153,7 @@ If you run this code with "Execute JS" it produces a ton of results! Firefox is 
 You can also represent it inside a SVG script:
 
 `<svg><script>alert(1)</script></svg>`
+
+ [ Fuzzing ](https://portswigger.net/research/fuzzing) [ HTML ](https://portswigger.net/research/html) [ JavaScript ](https://portswigger.net/research/javascript)
+
+[Back to all articles](https://portswigger.net/research/articles)

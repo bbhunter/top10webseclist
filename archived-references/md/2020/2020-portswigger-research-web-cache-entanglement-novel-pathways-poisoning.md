@@ -6,9 +6,9 @@ resource: "https://portswigger.net/research/web-cache-entanglement"
 tags: [article, webseclist-reference, portswigger-research, cache-poisoning, cache, parser-differential, http, dos, xss, cdn, bug-bounty, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:09+00:00"
+  at: "2026-08-16T00:01:03+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/research/web-cache-entanglement"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:21"
 commit: ""
-content_sha256: 437d17567de1784df49336243fe53cff936c9eb19b95411b86d3ddd41dd6d413
+content_sha256: f3c7d0dc049d1fcaca02e4c41f5ea924e849915b9dab920fbc807edb31eb4302
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 9b72798463decc75a96772fe72efde889945979cac27dbdb5e502cc43424e33a
 retrieved_from: "https://portswigger.net/research/web-cache-entanglement"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:09+00:00"
+retrieved_utc: "2026-08-16T00:01:03+00:00"
 slug: 2020-portswigger-research-web-cache-entanglement-novel-pathways-poisoning
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2020-08-05
 - Original: <https://portswigger.net/research/web-cache-entanglement>
 - Also published at: <https://portswigger.net/kb/papers/c3wwniai/web-cache-entanglement.pdf>
-- Preserved from: https://portswigger.net/research/web-cache-entanglement (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/web-cache-entanglement (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -400,17 +400,17 @@ Another way to hide parameters from the cache key is simply to send a POST reque
 `POST /view/o2o/shop HTTP/1.1
 Host: alijk.m.taobao.com
 
-_wvUserWkWebView=a</script><svg /data-
+_wvUserWkWebView=a</script><svg onload='alert%26lpar;1%26rpar;'/data-
 
 HTTP/1.1 200 OK
 …
-"_wvUseWKWebView":"a</script><svg /data-"},
+"_wvUseWKWebView":"a</script><svg onload='alert(1)'/data-"},
 ``GET /view/o2o/shop HTTP/1.1
 Host: alijk.m.taobao.com
 
 HTTP/1.1 200 OK
 …
-"_wvUseWKWebView":"a</script><svg /data-"},`
+"_wvUseWKWebView":"a</script><svg onload='alert(1)'/data-"},`
 
 Aaron Costello independently discovered this technique around the same time as me - I recommend checking out [his writeup](https://enumerated.wordpress.com/2020/08/05/the-case-of-the-missing-cache-keys/) on the topic for more examples.
 
@@ -676,3 +676,7 @@ Web caches have escaped serious scrutiny for years. The sheer diversity of cachi
 Alongside [HTTP Request Smuggling](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn), this is another example of flaws arising from complex interactions between separate systems that largely evade detection during both static analysis and white-box testing, then pop up in the production environment.
 
 The only realistic way to achieve resilience against this attack is to acknowledge that web caching redefines what's exploitable, and treat 'unexploitable' vulnerabilities as genuine security issues.
+
+ [ web cache poisoning ](https://portswigger.net/research/web-cache-poisoning) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
+
+[Back to all articles](https://portswigger.net/research/articles)

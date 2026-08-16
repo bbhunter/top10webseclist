@@ -6,9 +6,9 @@ resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
 tags: [article, webseclist-reference, en, gnucitizen-org, xss, filter-bypass, sanitizer-bypass, encoding, url-parsing, javascript, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:54+00:00"
+  at: "2026-08-16T00:00:46+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: b004231ec9082a7baf9f934f9a333eda9b9d9399246dbf53738174631a85e693
 retrieved_from: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:54+00:00"
+retrieved_utc: "2026-08-16T00:00:46+00:00"
 slug: gnucitizen-org-self-contained-xss-attacks
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/self-contained-xss-attacks/>
-- Preserved from: https://www.gnucitizen.org/blog/self-contained-xss-attacks/ (stored) on 2026-08-11
+- Preserved from: https://www.gnucitizen.org/blog/self-contained-xss-attacks/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

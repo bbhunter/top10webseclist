@@ -1,13 +1,14 @@
 ---
 type: Article
 title: "DOM-based race condition: racing in the browser for fun"
+description: "Libraries such as AngularJS bind their attributes only after the page has loaded, so HTML pasted into a contenteditable element before the library script runs is later evaluated as a template expression and gives XSS. The roughly 30 ms window is stretched to seconds by exhausting Chromium's 256-socket connection pool to stall the library's fetch."
 resource: "https://blog.ryotak.net/post/dom-based-race-condition/"
-tags: [article, webseclist-reference, blog-ryotak-net]
+tags: [article, webseclist-reference, blog-ryotak-net, race-condition, csti, dom, xss, angular, sanitizer-bypass, javascript, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:43+00:00"
+  at: "2026-08-16T00:00:36+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://blog.ryotak.net/post/dom-based-race-condition/"
@@ -21,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:30"
 commit: ""
-content_sha256: bc048f892490170776332b6808c46107a5a8eca5a6d1f7ac8f3381b80a81590c
+content_sha256: b742092ad7524b85d190eddb7d10dd4ccdf348ff2d52d7e7f155bd3c99edc9c1
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +34,8 @@ publisher: blog.ryotak.net
 publisher_english: ""
 raw_sha256: 5faba992012332824065d18398f2b7473b16a8a25a7be54ebd8b7df981a75beb
 retrieved_from: "https://blog.ryotak.net/post/dom-based-race-condition/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:36+00:00"
 slug: 2023-blog-ryotak-net-dom-based-race-condition-racing-browser-fun
 snapshot: ""
 title_english: ""
@@ -48,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-10-29
 - Original: <https://blog.ryotak.net/post/dom-based-race-condition/>
-- Preserved from: https://blog.ryotak.net/post/dom-based-race-condition/ (live) on 2026-08-09
+- Preserved from: https://blog.ryotak.net/post/dom-based-race-condition/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -113,11 +114,11 @@ document.addEventListener('paste', event => {
 It can be exploited using the following page:
 
 ```html
-<button
+<button onclick="copy()">Click</button>
 <script>
     document.addEventListener('copy', event => {
         event.preventDefault();
-        event.clipboardData.setData('text/html', '<img src
+        event.clipboardData.setData('text/html', '<img src onerror=alert(1)>');
         alert('Please paste the copied contents into the vulnerable page');
     });
     function copy() {
@@ -420,7 +421,7 @@ document.addEventListener('copy', (e) => {
         document.write("Copied the payload<br>");
 });
 </script>
-<button  SERVER_IP)
+<button onclick=attack()>Attack</button>`, SERVER_IP)
 }
 
 func sleep(w http.ResponseWriter, r *http.Request) {
@@ -491,4 +492,3 @@ According to XS-Leaks Wiki, UDP is limited to 6000 connections, so if HTTP/3 is 
 -
 
 To prevent [connection reuse of HTTP/2](https://datatracker.ietf.org/doc/html/rfc9113#name-connection-reuse), this PoC uses 256 different ports instead of sending requests to the same port. (This code is a bit dirty, but it works! … at least on my machine.) ↩︎
-

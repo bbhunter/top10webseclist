@@ -337,6 +337,12 @@ def to_markdown(node, base_url=""):
     # One pass, deliberately: `&amp;lt;` becomes `&lt;` and stops there.
     text = html_module.unescape(text)
     text = ATTRIBUTED_SPAN.sub("", text)
+    # ONE NEWLINE CONVENTION. A carriage return means nothing in Markdown, and
+    # a page that carries CRLF in its text - a forum post, a pasted listing -
+    # otherwise publishes a file with mixed endings against the repository's
+    # eol=lf. It surfaced only when the handler rule stopped eating `\r` as
+    # part of its own match: one repaired document came back with three.
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"[ \t]+\n", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip() + "\n"

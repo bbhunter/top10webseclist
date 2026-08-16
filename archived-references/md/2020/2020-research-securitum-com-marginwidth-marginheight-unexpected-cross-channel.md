@@ -6,9 +6,9 @@ resource: "https://research.securitum.com/marginwidth-marginheight-the-unexpecte
 tags: [article, webseclist-reference, en, research-securitum-com, sop-bypass, iframe, xss, dom, css, same-origin-policy, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:12+00:00"
+  at: "2026-08-16T00:01:05+00:00"
 status: deprecated
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:38"
 commit: ""
-content_sha256: 7d5730fb17ae575050070a7ab33e8710a4e42b907e66e9ebafadd15c768b7674
+content_sha256: 83a9960f47121cc46f458cb1e0b8d6b9d12a0f1279ccee9f686e3750b89d891d
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: d12d26fb894283b319661b1bfcdcbbd6f0aaadab53b4fb36d5107c35fb8a8f8a
 retrieved_from: "https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:12+00:00"
+retrieved_utc: "2026-08-16T00:01:05+00:00"
 slug: 2020-research-securitum-com-marginwidth-marginheight-unexpected-cross-channel
 snapshot: 20250907031813
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: 2020-07-13
 - Original: <https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/>
-- Preserved from: https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/ (stored) on 2026-08-09
+- Preserved from: https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/ (stored) on 2026-08-16
 - Capture timestamp: 20250907031813
 - Licence: unknown
 
@@ -131,7 +131,7 @@ To test browsers behavior I had a simple code, which lets me check whether the `
 
 In Chromium, the `marginwidth` attribute is reflected in the `<body>` element, but it is parsed to integer before. What’s interesting is that Chromium listens to changes of this value, so if you change it dynamically, it is also reflected in the iframe. Here’s an example:
 
- <style> iframe, input { width:400px; } </style> <iframe id=ifr src="https://sekurak.pl/.htaccess" marginwidth="0"></iframe> <br> <input type=range min=0 max=500 value=0 >
+ <style> iframe, input { width:400px; } </style> <iframe id=ifr src="https://sekurak.pl/.htaccess" marginwidth="0"></iframe> <br> <input type=range min=0 max=500 value=0 oninput="ifr.setAttribute('marginwidth', this.value)">
 
 |
 
@@ -242,3 +242,5 @@ I implemented it and hosted at [https://cdn.sekurak.pl/marginwidth.html](https:/
 I think the main take-away from this article is that HTML spec still has some hidden gems that might be possible in some obscure attacks.
 
 Also I think that `marginwidth` specifically has some potential for XS-Leaks but I couldn’t find a viable scenario.
+
+Tagged: [Browser security](https://research.securitum.com/tag/browser-security/)

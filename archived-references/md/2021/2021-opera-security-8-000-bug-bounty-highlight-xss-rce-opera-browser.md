@@ -6,9 +6,9 @@ resource: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xs
 tags: [article, webseclist-reference, en, opera-security, xss, rce, browser-extension, privilege-escalation, attack-chain, postmessage, dom, bug-bounty, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:06:54+00:00"
+  at: "2026-08-16T00:00:41+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:32"
 commit: ""
-content_sha256: d2d699d6d65dfb8de85968f17869ff1be86fd7d54034a122d95aff7f4c6bd476
+content_sha256: 59f69bd6c00d597e43fa6bdbb1387e4b911e2a5cd4039ff0ee61c2ca4e827b83
 depth: full
 depth_reason: default
 kind: article
@@ -34,8 +34,8 @@ publisher: Opera Security
 publisher_english: ""
 raw_sha256: b18275e20c695c1f12daff3882100c121e052f8dbf50a23292d7d05912b2b5f8
 retrieved_from: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:06:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:41+00:00"
 slug: 2021-opera-security-8-000-bug-bounty-highlight-xss-rce-opera-browser
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2021-09-24
 - Original: <https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/>
-- Preserved from: https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/ (live) on 2026-08-10
+- Preserved from: https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -89,7 +89,7 @@ This functionality is for drag-and-drop; when a user drops an image onto the pag
 This means that the following will cause an alert box, despite no image being loaded on the screen:
 
 `const parser = document.createElement("span");
-parser.innerHTML = '<img src=x >`
+parser.innerHTML = '<img src=x onerror=alert(1)>';`
 
 With all of this in mind, I created a small proof-of-concept XSS. To show how easy it was to cause the XSS, I created a webpage which, once you began dragging an image, would redirect to the web.flow.opera.com page after a couple seconds. This meant that a user would only need to begin dragging an image, and then simply let go of the mouse, for the XSS to happen.
 
@@ -121,3 +121,17 @@ Thanks for reading!
 – [Renwa](https://twitter.com/RenwaX23)
 
 Bounty: $8,000 USD.
+
+ [ ![](https://secure.gravatar.com/avatar/1bc5da9caf0d55cabcd2a1b02829c7e38d344f0eb5a29824736d5da7a2f71adb?s=120&d=mm&r=g)
+
+# Opera Team
+
+ ](https://blogs.opera.com/security/author/operateam/)
+
+ [bug bounty](https://blogs.opera.com/security/tag/bug-bounty/)
+
+---
+
+---
+
+---

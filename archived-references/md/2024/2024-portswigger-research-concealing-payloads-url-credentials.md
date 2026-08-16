@@ -6,9 +6,9 @@ resource: "https://portswigger.net/research/concealing-payloads-in-url-credentia
 tags: [article, webseclist-reference, portswigger-research, xss, dom, url-parsing, javascript, dom-clobbering, encoding, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:58+00:00"
+  at: "2026-08-16T00:01:01+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:155"
 commit: ""
-content_sha256: 8367bc267a5cfd184c540f3597300a0347cb0aac36200629705d53720cde4b9c
+content_sha256: b9c93c4887115ad9f955e58d6a1cda71eb05909b0bfae94ef4dbe7b5ea986f7b
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 1c0a970fbe44260313907f2d55f16823fd157118c4a71bffb3571995cc1beb3a
 retrieved_from: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:58+00:00"
+retrieved_utc: "2026-08-16T00:01:01+00:00"
 slug: 2024-portswigger-research-concealing-payloads-url-credentials
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2024-10-23
 - Original: <https://portswigger.net/research/concealing-payloads-in-url-credentials>
-- Preserved from: https://portswigger.net/research/concealing-payloads-in-url-credentials (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/concealing-payloads-in-url-credentials (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -97,7 +97,7 @@ alert(document.URL);//https://foo:bar@portswigger-labs.net/ `
 I had assumed these two properties were the same since I'd never observed them being different but it turns out that document.URL contains the credentials part of the URL whereas location doesn't. What that means is you can use just URL inside an event grab the payload from the credentials:
 
 `https://alert(1)@portswigger-labs.net
-<img src >
+<img src onerror=alert(URL.slice(8,16))>`
 
 [Grab payload from credentials](https://alert(1)@portswigger-labs.net/xss/xss.php?x=%3Cimg%20src%20onerror=alert(URL.slice(8,16))%3E)
 
@@ -115,7 +115,7 @@ To exploit this you need to provide the payload in the credentials part on Firef
 This can be delivered using redirection or user navigation. You can even use this technique to control the username or password properties of anchor links. This works because every anchor element has these properties, which store the credentials from the URL. If it's a relative link, it inherits the parent credentials, allowing you to clobber these values:
 
  `https://clobbered@example.com
-<a href=# `
+<a href=# onclick=alert(username)>test</a> `
 
 [Anchor Clobbering example ](https://clobbered@portswigger-labs.net/xss/xss.php?x=%3Ca%20href=%23%20onclick=%22alert(username)%22%3Etest%3C/a%3E)
 
@@ -133,3 +133,7 @@ In conclusion, discovering the discrepancies between location and document.URL a
 The ability to conceal payloads through credentials, manipulate the username and password properties within anchor elements, and potentially combine this with DOM clobbering can be used for more advanced exploitation.
 
 **Note:** Safari discards URL credentials. All the examples shown only work on Chrome and Firefox. Also Chrome blocks sub-resources from using URL credentials.
+
+ [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ DOM Clobbering ](https://portswigger.net/research/dom-clobbering) [ DOM ](https://portswigger.net/research/dom)
+
+[Back to all articles](https://portswigger.net/research/articles)

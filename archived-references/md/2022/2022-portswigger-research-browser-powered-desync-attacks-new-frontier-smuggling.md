@@ -6,9 +6,9 @@ resource: "https://portswigger.net/research/browser-powered-desync-attacks"
 tags: [article, webseclist-reference, portswigger-research, desync, request-smuggling, http, cache-poisoning, reverse-proxy, cdn, tooling]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:03+00:00"
+  at: "2026-08-16T00:00:59+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://portswigger.net/research/browser-powered-desync-attacks"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:6"
 commit: ""
-content_sha256: 679f051163828ee986e4804b817cdbd7789be616cff7d1e8eb99d685697acb8c
+content_sha256: ea7e0c83f54af59edf51c81239b7976078795e103844d9c6ee5aacd7a0a5ce17
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 48cea3852d6d909d92a45cb51ef60bb44d9ce3c715c9f9442f682e635e7fb5ed
 retrieved_from: "https://portswigger.net/research/browser-powered-desync-attacks"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:03+00:00"
+retrieved_utc: "2026-08-16T00:00:59+00:00"
 slug: 2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2022-08-10
 - Original: <https://portswigger.net/research/browser-powered-desync-attacks>
 - Also published at: <https://portswigger.net/kb/papers/firuaml/browser-powered-desync-attacks.pdf>
-- Preserved from: https://portswigger.net/research/browser-powered-desync-attacks (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/browser-powered-desync-attacks (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -721,7 +721,7 @@ Here's the final attack script:
  }
 
  </script>
- <a >Start attack</a>`
+ <a onclick="x = window.open('about:blank'); reset()">Start attack</a>`
 
 This was reported on 2022-01-24 and hopefully patched by the time you're reading this. Here's a video of the attack in action:
 
@@ -875,3 +875,7 @@ The total bounties earned was $17,500, thanks to [an extra $4,000](https://hacke
 I've introduced client-side desync and pause-based desync, and provided a toolkit, case-studies and methodology for understanding the threat they pose. This has demonstrated that desync attacks can't be completely avoided by blocking obfuscated or malformed requests, hiding on an internal network, or not having a front-end. We've also learned that early-reads are an invaluable tool for comprehending and exploiting black-box deployments. Finally, I've hopefully demonstrated that custom HTTP servers are something to be avoided.
 
 If you'd like to delve further into this topic, I'd suggest trying these techniques out for yourself using the [accompanying interactive labs](https://portswigger.net/web-security/request-smuggling/browser), then grabbing HTTP Request Smuggler and scanning bug-bounty sites to find some live examples. Enjoy!
+
+ [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
+
+[Back to all articles](https://portswigger.net/research/articles)

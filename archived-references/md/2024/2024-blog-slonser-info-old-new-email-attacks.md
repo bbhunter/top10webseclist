@@ -6,9 +6,9 @@ resource: "https://blog.slonser.info/posts/email-attacks/"
 tags: [article, webseclist-reference, blog-slonser-info, header-injection, parser-differential, smtp, email, injection, filter-bypass, dotnet, python, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:52+00:00"
+  at: "2026-08-16T00:00:37+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://blog.slonser.info/posts/email-attacks/"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:54"
 commit: ""
-content_sha256: b36893b2dea8953832c52bcd3af5c83ed1c082449296acf47c787615f792f5e4
+content_sha256: 70bf4405fd8110049df4bd23cec1ff2cd77b24be6e2ef15277d64f9970d72ee4
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +32,8 @@ publisher: blog.slonser.info
 publisher_english: ""
 raw_sha256: ef9e430a3380cc03e1d71eb45503e62f781e0ff73b2957b4893266d93508700e
 retrieved_from: "https://blog.slonser.info/posts/email-attacks/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:37+00:00"
 slug: 2024-blog-slonser-info-old-new-email-attacks
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: 2024-05-23
 - Original: <https://blog.slonser.info/posts/email-attacks/>
-- Preserved from: https://blog.slonser.info/posts/email-attacks/ (live) on 2026-08-09
+- Preserved from: https://blog.slonser.info/posts/email-attacks/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -119,8 +119,8 @@ In Python, the email module provides a way to parse email addresses. Specificall
 
 ```fallback
 >>> from email.utils import parseaddr
->>> parseaddr("<s@[domain.com\nSlon:<img src=x
-('', 's@[domain.com\nSlon:<img src=x
+>>> parseaddr("<s@[domain.com\nSlon:<img src=x onerror=alert()>]>")
+('', 's@[domain.com\nSlon:<img src=x onerror=alert()>]')
 
 ```
 

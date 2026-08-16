@@ -6,9 +6,9 @@ resource: "http://securethoughts.com/2009/10/hijacking-operas-native-page-using-
 tags: [article, webseclist-reference, en-US, securethoughts-com, xss, sanitizer-bypass, filter-bypass, privilege-escalation, sandbox-escape, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:04+00:00"
+  at: "2026-08-16T00:01:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "http://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/"
@@ -21,7 +21,7 @@ canonical_url: "https://securethoughts.com/2009/10/hijacking-operas-native-page-
 cited_by:
   - "2009.md:63"
 commit: ""
-content_sha256: 093a0ae2ebc39b72b5add9f40e38e8001ace8ab75377535b378b7553c820194b
+content_sha256: 0c06b202af8820198576e754d8b722d7c488374ec5ecf366fa172f733085c748
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: securethoughts.com
 publisher_english: ""
 raw_sha256: 6fa95f79751d3ff989eec4daa99c46f142e54984402a999e880a0db7075799ed
 retrieved_from: "https://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:04+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:01:11+00:00"
 slug: securethoughts-com-hijacking-operas-native-page-using-malicious-rss-payloads
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/>
 - Current location: <https://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/>
-- Preserved from: https://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/ (live) on 2026-08-09
+- Preserved from: https://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -79,8 +79,12 @@ So, if you find a way to execute your malicious javascript in the feed subscript
 
 [![Opera Feed Subscription Page Source in DragonFly - Part 2](https://web.archive.org/web/20130326053137im_/http://securethoughts.com/wp-content/gallery/cache/37__500x300_operanativepagexss2.png)](https://web.archive.org/web/20130326053137/http://securethoughts.com/wp-content/gallery/security/operanativepagexss2.png)
 
-If you had tried the simple xss attacks like **<img src=”x:x” javascript”/>** or something like **<a javascript”>link</a>**, these won’t work here (hint: check out preconditions defined above). It is important to understand what you are attacking and if read this code, you will figure out what constitutes a valid malicious payload that will evade this filter or sanitizer on the Opera Subscriptions Page.
+If you had tried the simple xss attacks like **<img src=”x:x” onerror=”some javascript”/>** or something like **<a onmouseover=”some javascript”>link</a>**, these won’t work here (hint: check out preconditions defined above). It is important to understand what you are attacking and if read this code, you will figure out what constitutes a valid malicious payload that will evade this filter or sanitizer on the Opera Subscriptions Page.
 
 So, here is an example PoC exploit code which executes the **opera.feeds.subscribeNative** function to automatically register a feed in Opera browser without user consent.
 
 **NOTE:** The owners of SecureThoughts.com did not produce this content, nor own the copyright to this content. This content has been reproduced in it’s original form to preserve the knowledge contained within. If you are the original owner of this content and want it attributed to your website or it altered in any way, please complete the contact form and we will edit it immediately.
+
+** Category: [Latest Articles](https://securethoughts.com/latest-articles/)
+
+** Tagged:

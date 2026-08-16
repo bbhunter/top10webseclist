@@ -6,24 +6,24 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net, clickjacking, ui-redress, css, javascript, filter-bypass, dom, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:04:37+00:00"
+  at: "2026-08-16T00:00:32+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
     title: Cursorjacking again
   - id: canonical
-    resource: "https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
+    resource: "http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
 also_at: []
 authors: []
-canonical_url: "https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
+canonical_url: "http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
 cited_by:
   - "2012.md:47"
 commit: ""
-content_sha256: 78da3a60a2cd835b5742ab839246554017b45519e41d2510179062a3c28ce115
+content_sha256: b7df817738fc6be7137217c49a3b48ecd9c5b1fe51db76055e9c32ce72101ce6
 depth: full
 depth_reason: default
 kind: article
@@ -34,9 +34,9 @@ published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
 raw_sha256: aa6a647f3ccd1e30ab5a3010d1a346e9e7ea73c1145ac3c4ce98a06e5214c0d4
-retrieved_from: "https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:04:37+00:00"
+retrieved_from: "http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
+retrieved_kind: stored
+retrieved_utc: "2026-08-16T00:00:32+00:00"
 slug: blog-kotowicz-net-cursorjacking-again
 snapshot: 20170903113359
 title_english: ""
@@ -50,8 +50,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/01/cursorjacking-again.html>
-- Current location: <https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html>
-- Preserved from: https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html (live) on 2026-08-10
+- Current location: <http://blog.kotowicz.net/2012/01/cursorjacking-again.html>
+- Preserved from: http://blog.kotowicz.net/2012/01/cursorjacking-again.html (stored) on 2026-08-16
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -83,12 +83,12 @@ About a year ago, [Marcus Niemietz](https://web.archive.org/web/20171017190804/h
 <img style="position: absolute;z-index:1000;" id=cursor src="cursor.png" />
 <button id=fake style="font-size: 150%;position:absolute;top:100px;left:630px;">click me click me</button>
 <div style="position:absolute;top:100px;left:30px;">
-<a href="#" >i'm not important</a>
+<a href="#" onclick="alert(/you clicked-me-instead/)">i'm not important</a>
 </div>
 <script>
-  var
+  var  oNode = document.getElementById('cursor');
 
-  var  (e) {
+  var onmove = function (e) {
     var nMoveX =  e.clientX, nMoveY =  e.clientY;
     oNode.style.left = (nMoveX + 600)+"px";
     oNode.style.top = nMoveY + "px";

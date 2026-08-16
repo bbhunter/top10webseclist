@@ -6,9 +6,9 @@ resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-servi
 tags: [article, webseclist-reference, en, tenable, csrf, filter-bypass, rce, cookie, url-parsing, file-upload, same-origin-policy, azure, attack-chain, bug-bounty, owasp-a01-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:07+00:00"
+  at: "2026-08-16T00:00:44+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-16
 sources:
   - id: original
     resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/"
@@ -24,7 +24,7 @@ canonical_url: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-s
 cited_by:
   - "2023.md:65"
 commit: ""
-content_sha256: e45182859bf3dc226ed2099522b70e7efc3abd8d4591e51a48706f652b2e85cc
+content_sha256: 7610a22d0c090904beac7dae3382fb44a856914e7c8d79a24dab1c831e84f448
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: e0d1e6af562700ca2f1829c47f8ea4babb741eaec9854576efe5a33803aebacc
 retrieved_from: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:07+00:00"
+retrieved_utc: "2026-08-16T00:00:44+00:00"
 slug: 2023-tenable-emojideploy-smile-your-azure-web-service-just-got-rced
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2023-01-19
 - Original: <https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/>
 - Current location: <https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced>
-- Preserved from: https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced (stored) on 2026-08-11
+- Preserved from: https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced (stored) on 2026-08-16
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -415,7 +415,7 @@ function authScm(){
 setTimeout(function(){ submitRequest(); }, 4000);
 }
 </script>
-<a href="#" >Please authenticate to the scm if you aren't already</a>
+<a href="#" onclick="authScm()">Please authenticate to the scm if you aren't already</a>
 <script>
       function submitRequest()
       {
