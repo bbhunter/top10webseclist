@@ -2861,11 +2861,13 @@ function showPdfFallback(message = "The preserved file is still available using 
   $("#pdf-fallback-message").textContent = message;
 }
 
-// WebKit on iPhone exposes an embedded PDF as a one-page preview even though
-// the same URL is a complete, navigable document at the top level. All iPhone
-// browsers use that engine, so a direct tap should use the reliable viewer.
-function usesTopLevelPdfViewer(userAgent = navigator.userAgent) {
-  return /\b(?:iPhone|iPod)\b/i.test(String(userAgent || ""));
+// Some iPhone browsers can request a desktop user agent, so the UA alone is
+// not a dependable signal. A narrow viewport gets the reliable top-level PDF
+// viewer too; the embedded viewer remains available on normal desktop widths.
+function usesTopLevelPdfViewer(userAgent = navigator.userAgent, viewportWidth = globalThis.innerWidth) {
+  const iphone = /\b(?:iPhone|iPod)\b/i.test(String(userAgent || ""));
+  const narrowViewport = typeof viewportWidth === "number" && viewportWidth > 0 && viewportWidth <= 820;
+  return iphone || narrowViewport;
 }
 
 async function verifyPdf(mode, url, path) {
