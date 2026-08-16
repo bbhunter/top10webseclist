@@ -276,3 +276,39 @@ class TestCompleteRecords(unittest.TestCase):
                                   url="https://github.com/o/r/security/advisories/GHSA-x")
         self.assertEqual(decision.klass, grade.RECORD)
         self.assertEqual(decision.rule, "rule:cve-database")
+
+
+class TestNavigationOnlyCaptures(unittest.TestCase):
+    """A capture that returned the site's menu must not pass as a pointer page."""
+
+    BLOGROLL = "".join(
+        "[Another article number %d](https://example.test/post-%d)" % (n, n)
+        for n in range(40))
+
+    def test_a_blogroll_capture_is_broken_not_a_record(self):
+        decision = grade.classify(self.BLOGROLL + "\n\nDOM Clobbering - The Spanner",
+                                  url="https://example.test/2013/05/28/dom-clobbering")
+        self.assertEqual(decision.rule, "rule:navigation-only")
+        self.assertEqual(decision.klass, grade.BROKEN)
+        self.assertEqual(decision.outcome, "skip")
+
+    def test_a_real_pointer_page_keeps_its_prose_and_stays_a_record(self):
+        page = ("We published a whitepaper on request smuggling this week and the "
+                "full write-up covers the proxy chain, the desync primitive and the "
+                "cache poisoning it enables. It is available in the links below for "
+                "anyone who wants the detail rather than the summary given here. " * 2
+                + "[Whitepaper](https://elsewhere.test/paper.pdf)"
+                  "[Slides](https://elsewhere.test/slides.pdf)"
+                  "[Video](https://elsewhere.test/video)")
+        decision = grade.classify(page, url="https://example.test/announcement")
+        self.assertNotEqual(decision.rule, "rule:navigation-only")
+
+    def test_a_landing_page_linking_to_its_own_files_is_not_navigation(self):
+        # The signal is anchor SHARE, not the host, so this must survive.
+        page = ("This paper studies cloud storage as an attack vector and was "
+                "presented at the conference. The artifacts and the recording are "
+                "linked here for readers who want to reproduce the measurements. "
+                + "[PDF](https://example.test/paper.pdf)[BibTeX](https://example.test/bib)"
+                  "[Video](https://example.test/video)[Slides](https://example.test/s.pdf)")
+        decision = grade.classify(page, url="https://example.test/conference/paper")
+        self.assertNotEqual(decision.rule, "rule:navigation-only")

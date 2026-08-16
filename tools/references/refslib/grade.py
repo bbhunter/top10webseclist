@@ -217,6 +217,10 @@ def classify(markdown, url="", content_gap="", override=None, complete=False, ti
         return Decision("archive", RECORD, "part of the document is missing: " + content_gap,
                         "rule:content-gap", folder=RECORD)
 
+    navigation = _navigation_only(markdown, chars, code_blocks)
+    if navigation:
+        return Decision("skip", BROKEN, navigation, "rule:navigation-only")
+
     pointer = _pointer_page(markdown, chars, code_blocks)
     if pointer:
         return Decision("archive", RECORD, pointer, "rule:pointer-page", folder=RECORD)
@@ -246,6 +250,36 @@ POINTER_WORDS = 400
 POINTER_LINKS_PER_1000 = 3.0
 _LINK = re.compile(r"\]\(\s*https?://")
 _WORD = re.compile(r"[A-Za-z]{3,}")
+
+
+# AN EXTRACTION THAT RETURNED THE NAVIGATION IS NOT A POINTER PAGE, and until
+# this rule existed it was filed as one - "records", a clean-looking outcome
+# that reaches no gap report and so hides the fault for good. 17 documents were
+# in that state: every one of thespanner.co.uk's captures was its 40-link
+# blogroll and the article's title, with no article at all.
+#
+# The signal is the share of the body that sits INSIDE anchors, which needs no
+# knowledge of the host - so a conference landing page is not punished for
+# linking to its own PDF. The corpus separates cleanly: the 17 sit at 98-99%
+# and the next document down is at 70%.
+NAVIGATION_ANCHOR_SHARE = 0.90
+NAVIGATION_MIN_LINKS = 8
+_ANCHOR = re.compile(r"\[([^\]]*)\]\(\s*https?://[^)\s]+\s*\)")
+
+
+def _navigation_only(markdown, chars, code_blocks):
+    text = (markdown or "").strip()
+    if code_blocks or not chars or not text:
+        return ""
+    anchors = list(_ANCHOR.finditer(text))
+    if len(anchors) < NAVIGATION_MIN_LINKS:
+        return ""
+    share = sum(len(match.group(0)) for match in anchors) / len(text)
+    if share < NAVIGATION_ANCHOR_SHARE:
+        return ""
+    return ("%d%% of the document is link text across %d links, so the capture is "
+            "the site's navigation rather than the article"
+            % (round(share * 100), len(anchors)))
 
 
 def _pointer_page(markdown, chars, code_blocks):
