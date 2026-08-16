@@ -223,6 +223,11 @@ let dialogUnlockFrame = null;
 let globalResultsScroll = 0;
 let searchResumable = false;
 
+function focusWithoutScroll(element) {
+  try { element.focus({ preventScroll: true }); }
+  catch { element.focus(); }
+}
+
 // Mobile WebKit still lets the page behind a top-layer <dialog> rubber-band in
 // some browser-chrome states. Pin the document at its current position while a
 // modal is open, then restore that exact position when the last modal closes.
@@ -262,8 +267,7 @@ function showLockedModal(dialog) {
   syncDialogScrollLock();
   // Focusing the dialog surface keeps browsers from auto-focusing the first
   // toolbar action and drawing a misleading selected-looking focus halo.
-  try { dialog.focus({ preventScroll: true }); }
-  catch { dialog.focus(); }
+  focusWithoutScroll(dialog);
 }
 
 function yearRecordFor(year) {
@@ -896,20 +900,33 @@ async function loadArchive() {
 }
 
 function setMobileMenuOpen(open) {
-  const isOpen = Boolean(open);
+  const compact = window.matchMedia("(max-width: 820px)").matches;
+  const isOpen = compact && Boolean(open);
   document.body.classList.toggle("menu-open", isOpen);
   const trigger = $("#mobile-menu");
+  $("#concept-sidebar").toggleAttribute("inert", compact && !isOpen);
   trigger.setAttribute("aria-expanded", String(isOpen));
   trigger.setAttribute("aria-label", isOpen ? "Close concept menu" : "Open concept menu");
+  if (isOpen && !$("#global-results").hidden) closeGlobalSearch();
 }
 
 function wireShell() {
   $$(".nav-item").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
 
+  setMobileMenuOpen(false);
   $("#mobile-menu").addEventListener("click", () => {
     setMobileMenuOpen(!document.body.classList.contains("menu-open"));
   });
-  $("#mobile-menu-backdrop").addEventListener("click", () => setMobileMenuOpen(false));
+  $("#mobile-menu-backdrop").addEventListener("click", () => {
+    setMobileMenuOpen(false);
+    focusWithoutScroll($("#mobile-menu"));
+  });
+  // Every actionable route in the shared drawer dismisses it, including the
+  // project links and Resume button that do not go through setView().
+  $("#concept-sidebar").addEventListener("click", (event) => {
+    if (event.target.closest("a, button")) setMobileMenuOpen(false);
+  });
+  window.matchMedia("(max-width: 820px)").addEventListener("change", () => setMobileMenuOpen(false));
 
   $("#global-search").addEventListener("input", (event) => {
     state.query = event.target.value.trim();
@@ -923,6 +940,10 @@ function wireShell() {
   });
   $("#global-search").addEventListener("focus", updateGlobalSearch);
   $("#close-global-results").addEventListener("click", closeGlobalSearch);
+  document.addEventListener("pointerdown", (event) => {
+    const panel = $("#global-results");
+    if (!panel.hidden && !event.target.closest?.("#global-results, .global-search")) closeGlobalSearch();
+  });
   $("#global-results-list").addEventListener("click", (event) => {
     const target = event.target.closest("[data-artifact]");
     if (!target) return;
@@ -1076,8 +1097,14 @@ function wireShell() {
     frame.contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme }, PDF_READER_ORIGIN);
   });
   $("#pdf-dialog").addEventListener("close", clearPdfViewer);
+  $("#pdf-dialog").addEventListener("cancel", (event) => {
+    if ($("#pdf-links").hidden) return;
+    event.preventDefault();
+    closePdfLinksAndRestoreFocus();
+  });
   $("#pdf-links-toggle").addEventListener("click", () => togglePdfLinks());
-  $("#pdf-links-close").addEventListener("click", () => togglePdfLinks(false));
+  $("#pdf-links-close").addEventListener("click", closePdfLinksAndRestoreFocus);
+  $("#pdf-links-backdrop").addEventListener("click", closePdfLinksAndRestoreFocus);
   $("#pdf-fit-width").addEventListener("click", () => setPdfView("page-width"));
   $("#pdf-fit-page").addEventListener("click", () => setPdfView("page-fit"));
   $("#pdf-read-toggle").addEventListener("click", () => {
@@ -3109,8 +3136,10 @@ async function togglePdfLinks(force) {
   const button = $("#pdf-links-toggle");
   const show = force ?? panel.hidden;
   panel.hidden = !show;
+  $("#pdf-links-backdrop").hidden = !show;
   button.setAttribute("aria-expanded", String(show));
   button.classList.toggle("active", show);
+  if (show) requestAnimationFrame(() => focusWithoutScroll($("#pdf-links-close")));
   if (!show || panel.dataset.path === state.pdfPath) return;
 
   const list = $("#pdf-links-list");
@@ -3137,6 +3166,14 @@ async function togglePdfLinks(force) {
   }
 }
 
+function closePdfLinksAndRestoreFocus() {
+  togglePdfLinks(false);
+  requestAnimationFrame(() => {
+    const button = $("#pdf-links-toggle");
+    if (!button.hidden) focusWithoutScroll(button);
+  });
+}
+
 function clearPdfViewer() {
   clearTimeout(pdfLoadTimer);
   pdfVerifyToken++;
@@ -3155,6 +3192,7 @@ function clearPdfViewer() {
   $("#pdf-loading").hidden = true;
   $("#pdf-fallback").hidden = true;
   $("#pdf-links").hidden = true;
+  $("#pdf-links-backdrop").hidden = true;
   $("#pdf-links").dataset.path = "";
   $("#pdf-links-toggle").setAttribute("aria-expanded", "false");
   $("#pdf-links-toggle").classList.remove("active");

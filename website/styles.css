@@ -150,6 +150,8 @@
     flex-direction: column;
     padding: 28px 22px 22px;
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     background:
       linear-gradient(90deg, transparent 0 21px, rgba(120,153,255,.045) 21px 22px, transparent 22px),
       #090b12;
@@ -806,6 +808,8 @@
 
   /* The link list. A PDF's own links are handled by the browser's viewer, which
      opens them in place; this is the route that opens one in a new tab. */
+  .pdf-links-backdrop { position: absolute; inset: 0; z-index: 2; padding: 0; background: rgba(2,4,10,.62); border: 0; cursor: pointer; touch-action: none; }
+  .pdf-links-backdrop[hidden] { display: none; }
   .pdf-links { position: absolute; top: 0; right: 0; bottom: 0; z-index: 3; display: flex; width: min(390px, 82vw); flex-direction: column; background: color-mix(in srgb,var(--document-accent) 7%,rgba(7,11,19,.98)); border-left: 1px solid var(--document-line); box-shadow: -18px 0 50px rgba(0,0,0,.45); }
   .pdf-links[hidden] { display: none; }
   .pdf-links header { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
@@ -843,6 +847,7 @@
   .pdf-dialog[data-reading-theme="light"] .pdf-loading { color: #53625a; background: rgba(238,233,223,.9); }
   .pdf-dialog[data-reading-theme="light"] .pdf-loading i::before { background: #eee9df; }
   .pdf-dialog[data-reading-theme="light"] .pdf-viewer-note { color: #607068; background: #e7e1d6; }
+  .pdf-dialog[data-reading-theme="light"] .pdf-links-backdrop { background: rgba(31,35,32,.38); }
   .pdf-dialog[data-reading-theme="light"] .pdf-links { background: rgba(238,233,223,.98); }
   .pdf-dialog[data-reading-theme="light"] #pdf-links-list a:hover { background: color-mix(in srgb,var(--document-accent) 9%,transparent); }
 }
@@ -1999,6 +2004,7 @@
     .pdf-actions a, .pdf-actions button { padding: 7px 8px; font-size: .5rem; }
     .pdf-viewer-note { padding-bottom: max(9px, env(safe-area-inset-bottom)); }
     .pdf-viewer-note span { display: none; }
+    .pdf-links header button { width: 42px; height: 42px; }
     .global-results > div > button { grid-template-columns: 70px minmax(0,1fr); }
     .global-results > div > button small { display: none; }
     .global-results > header button { width: 40px; height: 40px; }
