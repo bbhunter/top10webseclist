@@ -188,7 +188,11 @@ const state = {
   pdfVersion: "",
   pdfOriginal: false,
   pdfVerified: false,
-  pdfViewMode: "page-width"
+  // A full page is the useful first view on a phone; page-width remains the
+  // roomier desktop default and either toolbar control can change it.
+  pdfViewMode: typeof globalThis.innerWidth === "number" && globalThis.innerWidth <= 760
+    ? "page-fit"
+    : "page-width"
 };
 
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -211,9 +215,54 @@ let investigationCardInfo = new Map();
 let pdfLoadTimer = null;
 let pdfVerifyToken = 0;
 let readerRequestToken = 0;
+let lockedDialogScrollY = null;
+let dialogUnlockFrame = null;
 // Where the reader was in the result list when they opened a document from it.
 let globalResultsScroll = 0;
 let searchResumable = false;
+
+// Mobile WebKit still lets the page behind a top-layer <dialog> rubber-band in
+// some browser-chrome states. Pin the document at its current position while a
+// modal is open, then restore that exact position when the last modal closes.
+function syncDialogScrollLock() {
+  const modalOpen = $$('dialog[open]').length > 0;
+  if (modalOpen) {
+    if (dialogUnlockFrame !== null) cancelAnimationFrame(dialogUnlockFrame);
+    dialogUnlockFrame = null;
+    if (lockedDialogScrollY === null) {
+      lockedDialogScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
+      document.body.style.setProperty("--dialog-scroll-offset", `-${lockedDialogScrollY}px`);
+      document.body.classList.add("document-dialog-open");
+    }
+    return;
+  }
+  if (lockedDialogScrollY === null || dialogUnlockFrame !== null) return;
+
+  // A record, Markdown and PDF switch closes one dialog immediately before it
+  // opens the next. Waiting one frame avoids briefly unlocking (and jumping)
+  // the page in the middle of that hand-off.
+  dialogUnlockFrame = requestAnimationFrame(() => {
+    dialogUnlockFrame = null;
+    if ($$('dialog[open]').length || lockedDialogScrollY === null) return;
+    const restoreY = lockedDialogScrollY;
+    lockedDialogScrollY = null;
+    document.body.classList.remove("document-dialog-open");
+    document.body.style.removeProperty("--dialog-scroll-offset");
+    const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = "auto";
+    window.scrollTo(0, restoreY);
+    document.documentElement.style.scrollBehavior = previousScrollBehavior;
+  });
+}
+
+function showLockedModal(dialog) {
+  if (!dialog.open) dialog.showModal();
+  syncDialogScrollLock();
+  // Focusing the dialog surface keeps browsers from auto-focusing the first
+  // toolbar action and drawing a misleading selected-looking focus halo.
+  try { dialog.focus({ preventScroll: true }); }
+  catch { dialog.focus(); }
+}
 
 function yearRecordFor(year) {
   return YEAR_RECORDS.find((record) => record.id === year) || { id: year, label: year, status: "final", ranked: true };
@@ -986,8 +1035,11 @@ function wireShell() {
     if (!$("#pdf-dialog").open) clearDocumentUrl();
   });
 
-  ["#artifact-dialog", "#reader-dialog", "#pdf-dialog"].forEach((id) => {
-    $(id).addEventListener("close", () => requestAnimationFrame(restoreGlobalSearch));
+  ["#artifact-dialog", "#reader-dialog", "#pdf-dialog", "#contribute-dialog"].forEach((id) => {
+    $(id).addEventListener("close", () => {
+      syncDialogScrollLock();
+      if (id !== "#contribute-dialog") requestAnimationFrame(restoreGlobalSearch);
+    });
   });
   $("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop);
 
@@ -2796,10 +2848,11 @@ async function openArtifact(id) {
 
   $("#share-artifact").addEventListener("click", () => shareDocument(item));
 
-  if (!dialog.open) dialog.showModal();
+  dialog.scrollTop = 0;
+  showLockedModal(dialog);
 }
 
-function showPdfFallback(message = "The preserved file is still available using the Open tab or Download controls above.") {
+function showPdfFallback(message = "The preserved file is still available using the Open PDF or Download controls above.") {
   clearTimeout(pdfLoadTimer);
   $("#pdf-loading").hidden = true;
   $("#pdf-frame").hidden = true;
@@ -2830,7 +2883,7 @@ async function verifyPdf(mode, url, path) {
       showPdfFallback("This large document is hosted by the archive's GitHub Pages backup because it exceeds Cloudflare Pages' per-file limit. Open the verified backup in a new tab.");
       return;
     }
-    showPdfFallback(`The document could not be safely verified: ${error.message}. Use Open tab or Download if you trust this local file.`);
+    showPdfFallback(`The document could not be safely verified: ${error.message}. Use Open PDF or Download if you trust this local file.`);
   }
 }
 
@@ -2898,7 +2951,7 @@ function openPdfViewer(item, options = {}) {
   togglePdfLinks(false);
   $("#pdf-links").dataset.path = "";
   $("#pdf-new-tab").href = url;
-  $("#pdf-new-tab").textContent = "Open tab ↗";
+  $("#pdf-new-tab").textContent = "Open PDF ↗";
   $("#pdf-download").href = url;
   $("#pdf-download").textContent = "Download";
   $("#pdf-download").removeAttribute("target");
@@ -2910,7 +2963,7 @@ function openPdfViewer(item, options = {}) {
   });
   syncDocumentUrl(item, kind === "listingPdf" ? "results" : "pdf");
   const dialog = $("#pdf-dialog");
-  if (!dialog.open) dialog.showModal();
+  showLockedModal(dialog);
   setPdfView(state.pdfViewMode);
 }
 
@@ -3315,7 +3368,7 @@ async function openReader(item, options = {}) {
   if ($("#artifact-dialog").open) $("#artifact-dialog").close();
   if ($("#pdf-dialog").open) $("#pdf-dialog").close();
   syncDocumentUrl(item, "reader");
-  if (!dialog.open) dialog.showModal();
+  showLockedModal(dialog);
   scroll.scrollTop = 0;
 
   try {
@@ -3573,7 +3626,8 @@ function openSubmissionDialog() {
     }<option value="Not sure">Not sure</option>`;
   }
   updateSubmissionCheck();
-  if (!dialog.open) dialog.showModal();
+  dialog.scrollTop = 0;
+  showLockedModal(dialog);
   requestAnimationFrame(() => $("#contribute-url").focus());
 }
 

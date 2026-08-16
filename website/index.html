@@ -193,7 +193,7 @@
        archive? The check runs locally against the loaded collections. Nothing is
        submitted from here - the button hands GitHub a prefilled form, and the
        submitter reads it before posting it. -->
-  <dialog class="contribute-dialog" id="contribute-dialog" aria-labelledby="contribute-title">
+  <dialog class="contribute-dialog" id="contribute-dialog" aria-labelledby="contribute-title" tabindex="-1">
     <form method="dialog"><button class="dialog-close" aria-label="Close the submission form">×</button></form>
     <div class="artifact-glow" aria-hidden="true"></div>
     <div class="dialog-body">
@@ -243,7 +243,7 @@
     </div>
   </dialog>
 
-  <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title">
+  <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title" tabindex="-1">
     <form method="dialog"><button class="dialog-close" aria-label="Close artifact">×</button></form>
     <div class="artifact-glow" aria-hidden="true"></div>
     <div class="dialog-body">
@@ -263,7 +263,7 @@
     </div>
   </dialog>
 
-  <dialog class="reader-dialog" id="reader-dialog" aria-labelledby="reader-title" data-reading-theme="dark">
+  <dialog class="reader-dialog" id="reader-dialog" aria-labelledby="reader-title" data-reading-theme="dark" tabindex="-1">
     <header class="reader-bar">
       <div>
         <p class="eyebrow" id="reader-kicker">Preserved Markdown</p>
@@ -287,7 +287,7 @@
     </div>
   </dialog>
 
-  <dialog class="pdf-dialog" id="pdf-dialog" aria-labelledby="pdf-title" aria-describedby="pdf-viewer-note" data-reading-theme="dark">
+  <dialog class="pdf-dialog" id="pdf-dialog" aria-labelledby="pdf-title" aria-describedby="pdf-viewer-note" data-reading-theme="dark" tabindex="-1">
     <header class="pdf-bar">
       <div>
         <p class="eyebrow" id="pdf-kicker">Preserved PDF</p>
@@ -297,6 +297,8 @@
         <!-- First on the bar, as the PDF button is in the Markdown reader: one
              place on the toolbar always switches between the two views. -->
         <button id="pdf-open-markdown" type="button" hidden>▤ Markdown</button>
+        <a id="pdf-new-tab" target="_blank" rel="noopener noreferrer" title="Open this PDF in the browser or system PDF viewer">Open PDF ↗</a>
+        <a id="pdf-download" download title="Save the PDF so it can be opened in another app">Download</a>
         <button class="reading-theme-toggle" id="pdf-theme-toggle" type="button" aria-label="Switch to light reading theme" title="Changes the viewer controls and surround; PDF page colours remain original">☀ Light</button>
         <button id="pdf-share" type="button" title="Share this exact PDF view">⌁ Share</button>
         <button id="pdf-read-toggle" type="button">○ Mark as read</button>
@@ -304,8 +306,6 @@
         <button id="pdf-links-toggle" type="button" aria-expanded="false" title="Links inside a PDF are handled by the browser's own viewer and cannot open a new tab; these can" hidden>⚯ Links</button>
         <button id="pdf-fit-width" type="button">Fit width</button>
         <button id="pdf-fit-page" type="button">Fit page</button>
-        <a id="pdf-new-tab" target="_blank" rel="noopener noreferrer">Open tab ↗</a>
-        <a id="pdf-download" download>Download</a>
       </div>
       <form method="dialog"><button class="pdf-close" aria-label="Close PDF viewer">×</button></form>
     </header>
@@ -319,7 +319,7 @@
       <div class="pdf-fallback" id="pdf-fallback" hidden>
         <span aria-hidden="true">PDF</span>
         <h2>Your browser did not embed this document</h2>
-        <p id="pdf-fallback-message">The preserved file is still available using the Open tab or Download controls above.</p>
+        <p id="pdf-fallback-message">The preserved file is still available using the Open PDF or Download controls above.</p>
       </div>
       <aside class="pdf-links" id="pdf-links" hidden aria-label="Links in this document">
         <header>
@@ -330,7 +330,7 @@
         <div id="pdf-links-list"></div>
       </aside>
     </div>
-    <footer class="pdf-viewer-note" id="pdf-viewer-note"><span>Browser-native viewer</span> Use its internal toolbar for navigation, search and zoom. Viewer theme changes the surround; the PDF keeps its original page colours.</footer>
+    <footer class="pdf-viewer-note" id="pdf-viewer-note"><span>Browser-native viewer</span> Open PDF uses the browser or system viewer; Download saves a copy for another app. The embedded viewer has its own navigation, search and zoom.</footer>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
