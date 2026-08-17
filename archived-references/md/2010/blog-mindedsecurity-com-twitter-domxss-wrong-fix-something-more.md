@@ -1,14 +1,13 @@
 ---
 type: Article
 title: A Twitter DomXss, a wrong fix and something more
-description: "Twitter's new site assigned the URL fragment after '#!' straight to window.location, giving DOM XSS via twitter.com/#!javascript:alert(document.domain). Two successive patches failed: String.replace with a string argument strips only the first match, so '::' survived, and IE8 re-decoded the HTML entity form of the colon."
 resource: "http://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, dom, xss, javascript, filter-bypass, sanitizer-bypass, encoding, case-study, open-redirect, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:05:15+00:00"
+  at: "2026-08-17T08:30:36+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
@@ -23,7 +22,7 @@ canonical_url: "https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix
 cited_by:
   - "2010.md:41"
 commit: ""
-content_sha256: 364ddee05edf1cd3551d5245b4a7013504fdced038934dad901d2f8c097361ab
+content_sha256: e46f0efe440e267e03e0174d122ce05a2486a05112c936fecfe7175b8c868d44
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +34,8 @@ publisher: blog.mindedsecurity.com
 publisher_english: ""
 raw_sha256: 405dbee20a1e7b30cbf6adacaaca6206afbc2955c92922ec4c136ac18c169ef0
 retrieved_from: "https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:05:15+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T08:30:36+00:00"
 slug: blog-mindedsecurity-com-twitter-domxss-wrong-fix-something-more
 snapshot: ""
 title_english: ""
@@ -51,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html>
 - Current location: <https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html>
-- Preserved from: https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html (live) on 2026-08-10
+- Preserved from: https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html (stored) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -87,8 +86,7 @@ According to [DOM Xss Wiki](https://code.google.com/p/domxsswiki/wiki/Introducti
 
 In fact the DOM Based Xss will be triggered by simply going to:
 
->
-http://twitter.com/#!javascript:alert(document.domain);
+> http://twitter.com/#!javascript:alert(document.domain);
 
 as shown in the following screenshot:
 
@@ -127,16 +125,15 @@ What's wrong with that?
 - The use of replace ... let's see the doc (ECMA Specification):
 
 > [...]
-String.prototype.replace (searchValue, replaceValue)
-[...]
-If searchValue is not a regular expression, let searchString be ToString(searchValue) and search
-string for the first occurrence of searchString. Let m be 0.
-[...]
+> String.prototype.replace (searchValue, replaceValue)
+> [...]
+> If searchValue is not a regular expression, let searchString be ToString(searchValue) and search
+> string for the first occurrence of searchString. Let m be 0.
+> [...]
 
 The analysis tells that the fix is wrong, and in fact is possible to bypass the replace by doubling the colon ':' char.
 
->
-http://twitter.com/#!javascript::alert(document.domain);
+> http://twitter.com/#!javascript::alert(document.domain);
 
 See the '::' ?
 The replace just deletes the first occurrence of ':' so we just add two ':'.
@@ -144,33 +141,32 @@ It has also the drawback to bypass several client side filters, Safari included.
 
 So I wrote again to twitter:
 
+> Hey,
+> that is not correct!
 >
-Hey,
-that is not correct!
-
-(function(g){var
-a=location.href.split("#!")[1];if(a){g.location=g.HBR=a.replace(":","");}})(window);
-
-will allow:
-
-twitter.com/#!javascript::alert(1)
-
-see the :: ?
-I'd suggest you to urlencode a
-or
-if it breaks things use a whitelist of allowed chars before going to assign a to the location.
-
-Another fix could be using:
-location.pathname=a
-or
-location.search=a
-
-which at least let you stay on the same domain (not sure it works on every browser), but I don't know if it's ok for twitter.
-
-It's not a easy task, as usual :)
-
-Also, please, send me an email when the fix is done, cause I don't want to set a cron job to get when the fix is deployed.
-...
+> (function(g){var
+> a=location.href.split("#!")[1];if(a){g.location=g.HBR=a.replace(":","");}})(window);
+>
+> will allow:
+>
+> twitter.com/#!javascript::alert(1)
+>
+> see the :: ?
+> I'd suggest you to urlencode a
+> or
+> if it breaks things use a whitelist of allowed chars before going to assign a to the location.
+>
+> Another fix could be using:
+> location.pathname=a
+> or
+> location.search=a
+>
+> which at least let you stay on the same domain (not sure it works on every browser), but I don't know if it's ok for twitter.
+>
+> It's not a easy task, as usual :)
+>
+> Also, please, send me an email when the fix is done, cause I don't want to set a cron job to get when the fix is deployed.
+> ...
 
 This morning I found the following fix (no email from them though):
 `
@@ -216,8 +212,7 @@ Twitter finally set a working patch to the second wrong fix (see comments).
 Still not the best,IMHO, but at least it works...well, until there will be a bypass.
 Also, since the patch just blocks ':' still remains an arbitrary redirect issue.
 
->
-twitter.com#!//attacker.ltd/with/a/page/similar/to/twitterlogin/page
+> twitter.com#!//attacker.ltd/with/a/page/similar/to/twitterlogin/page
 
 Update (25/09/2010)
 

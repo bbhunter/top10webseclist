@@ -6,9 +6,9 @@ resource: "http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop
 tags: [article, webseclist-reference, en-US, kyleosborn-org, xss, browser-extension, javascript, sop-bypass, info-leak, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:00+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-17T08:30:49+00:00"
+status: stable
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/"
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: c78e3afa1707bc6b38fc9b133cd6ae335406247d39758277f041fc05d2a88752
 retrieved_from: "http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:00+00:00"
+retrieved_utc: "2026-08-17T08:30:49+00:00"
 slug: kyleosborn-org-hidden-xss-attacking-desktop-mobile-platforms
 snapshot: 20131008025746
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/>
-- Preserved from: http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/ (stored) on 2026-08-09
+- Preserved from: http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/ (stored) on 2026-08-17
 - Capture timestamp: 20131008025746
 - Licence: unknown
 

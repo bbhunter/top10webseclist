@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
-description: "Firefox fires an iframe's onload only when the load succeeds, while IE fires it always, so chained iframes reveal whether a host and port answer, including behind the firewall. Extends the known JavaScript-include port scan to iframes; credited to Spikeman on sla.ckers."
 resource: "http://ha.ckers.org/blog/20070119/iframe-http-ping/"
-tags: [article, webseclist-reference, ha-ckers-org, iframe, side-channel, detection, info-leak, sop-bypass, javascript, prior-art-extension, owasp-a01-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:54:21+00:00"
+  at: "2026-08-17T08:30:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070119/iframe-http-ping/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:66"
 commit: ""
-content_sha256: 420879fafd9d52c06c42478792afce83a832f632dd78d09c3b4d5bb87363c18f
+content_sha256: fbbfe6f0f243b1ea6189adb4f0f90c83b9f3a36506fd68e3245cf416e7ea0084
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 7410932f5ea31943577dfc15d88c2ed820971b985e09a56e6ef9cff6f986e1cb
 retrieved_from: "http://ha.ckers.org/blog/20070119/iframe-http-ping/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:54:21+00:00"
+retrieved_utc: "2026-08-17T08:30:39+00:00"
 slug: ha-ckers-org-iframe-http-ping-ha-ckers-org-web-application-security-lab
 snapshot: 20070620180200
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070119/iframe-http-ping/>
-- Preserved from: http://ha.ckers.org/blog/20070119/iframe-http-ping/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070119/iframe-http-ping/ (stored) on 2026-08-17
 - Capture timestamp: 20070620180200
 - Licence: unknown
 
@@ -73,3 +72,13 @@ A recent thread on [sla.ckers.org discussing a vulnerability in neopets](http://
 [This proof of concept shows the difference (try in IE and Firefox to see the difference)](http://ha.ckers.org/weird/iframe-http-ping.html). You can see that in Firefox a series of iframes can be chained together to do port scanning (including Intranet port scanning). This is obviously a known issue when talking about JavaScript includes, but this is the first time I’ve heard of anyone discussing using an iframe for this purpose.Â Yet another way to do cross domain leakage (and cross firewall leakage at that). Thanks to Spikeman for alerting me to the onload event handler in iframes.
 
   This entry was posted on Friday, January 19th, 2007 at 11:47 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070119/iframe-http-ping/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070119/iframe-http-ping/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

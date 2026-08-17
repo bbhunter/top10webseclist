@@ -69,8 +69,33 @@ FURNITURE = (
                      r"|\bfeatured resources\b|\bwhy choose\b"),
     ("site-navigation", r"^\s*(?:back to all|author posts|previous|next|home)\s*$"
                         r"|\bback to (?:blog|top|all posts)\b"),
+    # `subscribe to:` and then a feed link is Blogger's footer control. It needs
+    # its own branch because the rule beside it requires a determiner - "our" or
+    # "the" - and the platform writes a colon instead.
     ("subscribe", r"\bsubscribe to (?:our|the)\b|\bsign up for (?:our|the)\b"
-                  r"|\bjoin our (?:newsletter|mailing list)\b|\bfollow us on\b"),
+                  r"|\bjoin our (?:newsletter|mailing list)\b|\bfollow us on\b"
+                  r"|^\s*subscribe to:\s*\["),
+    # The comment FORM, not a comment thread. A thread can be the citation - some
+    # cited pages are a discussion, and authors answer corrections below their own
+    # article - so only the form's own furniture is matched, as a whole block:
+    # the heading a reader would click, or the notice that there is nothing to
+    # click. `\Z` matters; without it "Leave a Reply" would match the first line
+    # of a block that continues into the thread itself.
+    ("comment-form", r"\A#{0,4}\s*leave a (?:reply|comment)\s*\Z"
+                     r"|\Acomments? (?:are|is) closed\.?\s*\Z"
+                     r"|\A#{0,4}\s*trackbacks? and pingbacks?\s*\Z"),
+    # A taxonomy row: the label, then nothing but links. The links are what makes
+    # it safe - a sentence beginning "Tags:" that carries prose is not matched,
+    # and a CTF write-up listing its own categories in prose keeps them.
+    ("taxonomy-row", r"\A(?:posted in|filed under|tags?|categor(?:y|ies))\s*:\s*"
+                     r"(?:\[[^\]]*\]\([^)]*\)[,;\s|·•]*)+\Z"),
+    # WordPress's post-meta line, in both wordings it ships with. This one earns
+    # its place twice over: it is the LAST block on 30 documents, so the tail
+    # sweep stopped dead on it and never reached the taxonomy row sitting behind
+    # it. Removing a blocker is worth more than the block itself.
+    ("post-meta", r"\A(?:this|the) entry\b[^\n]{0,240}?\bwas posted\b"
+                  r"|\bboth comments and pings are currently closed\b"
+                  r"|\byou can follow any responses to this entry\b"),
     ("share", r"\bshare (?:this|on)\b|\bshare this (?:post|article)\b"),
     ("legal", r"\bprivacy policy\b.*\bterms\b|\bterms of (?:use|service)\b"
               r"|\bcookie (?:policy|preferences)\b"),

@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Cross Domain Basic Auth Phishing Tactics
-description: "Basic-auth phishing needs no clicked link: an embedded image on a protected domain pops the credential dialog on the page you want to phish. Alex supplies two dialog-spoofing bugs that hide the real host: Opera truncates the hostname after 34 characters and appends an ellipsis, and IE7 shows the Punycode form, so a Cyrillic o in microsoft.de passes."
 resource: "http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/"
-tags: [article, webseclist-reference, ha-ckers-org, phishing, url-spoofing, unicode, ui-redress, abuse-of-functionality, owasp-a04-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:41+00:00"
+  at: "2026-08-17T08:30:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:59"
 commit: ""
-content_sha256: f3083b86432304f21870662e5029ae6594f29585502283939893eae5201bf4bd
+content_sha256: 3c1c1cc1001de392c4c3996dd7bc4f16f832700617b4386d522362df98b1f0b6
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 9edfd319b30491b689b07f40445a92194c3bdfa7fa07fcde324aec5e51c699b5
 retrieved_from: "http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:41+00:00"
+retrieved_utc: "2026-08-17T08:30:48+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-cross-tactics
 snapshot: 20080112152848
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/>
-- Preserved from: http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/ (stored) on 2026-08-17
 - Capture timestamp: 20080112152848
 - Licence: unknown
 
@@ -85,3 +84,13 @@ I’ve informed MS, but they didn’t respond so far.
 The IDN thing is interesting because I’m sure if you were in the field a few years back this will sound familiar - people setting up fake websites that looked in every way like the target website, except one letter would be Cyrillic. That mostly affected Firefox, and Netscape (because it used the Gecko rendering engine), but now it looks as if IE might also run into problems. Not that I think a ton of people fall for this sort of thing, but even if it’s only vaguely useful, it’s still something we should consider as a workable attack vector.
 
   This entry was posted on Friday, June 8th, 2007 at 9:39 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Phishing](http://ha.ckers.org/blog/category/webappsec/phishing/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

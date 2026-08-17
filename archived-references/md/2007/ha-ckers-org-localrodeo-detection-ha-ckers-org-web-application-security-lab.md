@@ -1,14 +1,13 @@
 ---
 type: Article
 title: LocalRodeo Detection ha.ckers.org web application security lab
-description: "RSnake shows Martin Johns's LocalRodeo Firefox extension can be fingerprinted: because it blocks connections to localhost, neither onload nor onerror fires on an image pointed there, while the DOM is left unmodified. Detection is framed as recon - knowing what security software a target runs tells an attacker what not to attempt."
 resource: "http://ha.ckers.org/blog/20070403/localrodeo-detection/"
-tags: [article, webseclist-reference, ha-ckers-org, detection, browser-extension, dns-rebinding, javascript, mitigation, info-leak, owasp-a09-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:25:38+00:00"
+  at: "2026-08-17T08:30:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070403/localrodeo-detection/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:73"
 commit: ""
-content_sha256: 3383f6ae30b3b832a0b3876fdb3c76f447cc70e3b20a753f96294df3ad7bcfa0
+content_sha256: bd0c59969a149199aec0e6ba32c3ecab22c25ebb31cd02af581082c055980d46
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: f67ff14373629945bb1f0c6314fe906dbd78c6735da9a6db31028e9a386287ec
 retrieved_from: "http://ha.ckers.org/blog/20070403/localrodeo-detection/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:25:38+00:00"
+retrieved_utc: "2026-08-17T08:30:44+00:00"
 slug: ha-ckers-org-localrodeo-detection-ha-ckers-org-web-application-security-lab
 snapshot: 20081121143540
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070403/localrodeo-detection/>
-- Preserved from: http://ha.ckers.org/blog/20070403/localrodeo-detection/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070403/localrodeo-detection/ (stored) on 2026-08-17
 - Capture timestamp: 20081121143540
 - Licence: unknown
 
@@ -75,3 +74,13 @@ With all this anti-DNS pinning stuff going on, [Martin Johns](http://shampoo.ant
 However it is pretty trivial to detect LocalRodeo by actually trying to connect to localhost. Because LocalRodeo won’t let the connection take place, neither an onload nor an onerror event handler will fire. However the DOM is not modified so you can’t just iterate over the images and see if the source still points to the correct location. But the first part is enough to [detect if LocalRodeo is installed or not](http://ha.ckers.org/weird/localrodeo.html) (example requires JavaScript). Still, it’s a great tool and I encourage people to try it out and give feedback to help improve it.
 
   This entry was posted on Tuesday, April 3rd, 2007 at 10:58 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
+
+### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Your Name *
+
+ E-Mail (will be hidden) *
+
+ URL
+
+---

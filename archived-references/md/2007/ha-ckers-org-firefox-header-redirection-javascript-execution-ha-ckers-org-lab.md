@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Firefox Header Redirection JavaScript Execution
-description: A timed redirect delivered in an HTTP Refresh header can point at a JavaScript function instead of a URL, and Firefox executes it; IE and Opera did not. RSnake rates it useful mainly where response splitting leaves little room, or to obscure where the script actually fires. A demo CGI is linked.
 resource: "http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, header-injection, response-splitting, javascript, open-redirect, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:54:45+00:00"
+  at: "2026-08-17T08:30:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:80"
 commit: ""
-content_sha256: f9801d7ca3bd10e638dd17a4bf29902f3cdc61fe61b8915ef550e74110e4ab58
+content_sha256: a4979f84e16e9bda2144a62879bdd556f4ad9629e5aadc0f919e70826cd82539
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 84bcf2f86213e621ed235e8abef96721bf4910d1e15b8a8aa336cd722cf72c8e
 retrieved_from: "http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:54:45+00:00"
+retrieved_utc: "2026-08-17T08:30:42+00:00"
 slug: ha-ckers-org-firefox-header-redirection-javascript-execution-ha-ckers-org-lab
 snapshot: 20070620180349
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/>
-- Preserved from: http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/ (stored) on 2026-08-17
 - Capture timestamp: 20070620180349
 - Licence: unknown
 
@@ -73,3 +72,13 @@ This sounds a lot sexier than it actually is, although it was interesting to fin
 [Click here for an example (only works in Firefox)](http://ha.ckers.org/weird/header-redirection.cgi). Like I said, this isn’t that particularly interesting, but it could be somewhat useful in some obscure circumstances. Nothing to see here, move along….
 
   This entry was posted on Friday, March 9th, 2007 at 5:06 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

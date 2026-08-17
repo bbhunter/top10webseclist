@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
-description: "RSnake's write-up of Wade Alcorn's Inter Protocol Exploitation paper. A browser can be driven to speak a non-HTTP protocol to an intranet service, and the traffic it carries can be a working buffer overflow, demonstrated against an Asterisk VoIP server rather than only a toy socket listener. It puts Metasploit-style exploitation behind XSS."
 resource: "http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, javascript, rce, injection, attack-chain, owasp-a03-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:57:21+00:00"
+  at: "2026-08-17T08:30:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:70"
 commit: ""
-content_sha256: d4402d9cca39d80d739187048c67147216d4f513be9151507b13a78bc5d28868
+content_sha256: 43ad2fd9bb2811fb60f73d70c9ac24bb59f968548f7af22125887181905571ae
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 9ed52ad32c3427a56f8e3d04f30b24e8a5e05758da898a80fe755feff893d08a
 retrieved_from: "http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:57:21+00:00"
+retrieved_utc: "2026-08-17T08:30:45+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-7
 snapshot: 20070718160036
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/>
-- Preserved from: http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/ (stored) on 2026-08-17
 - Capture timestamp: 20070718160036
 - Licence: unknown
 
@@ -73,3 +72,13 @@ ha.ckers.org web application security lab - Archive » Inter Protocol Exploitati
 In the paper he talks about a theoretical buffer overflow against a tiny C script that is listening with an open socket. While interesting, it’s also theoretical. Then he whips out a working buffer overflow for Asterisk (VOIP) server. Wow! So add buffer overflows to the sum of things we can now do against servers with XSS and intranet hacking. It’s the first time MetaSploit and XSS have really met on the same proving grounds. This gives credence to something Jeremiah’s been saying for a while - JavaScript is the new shell-code. Well maybe not the new shell-code, but definitely the transmission mechanism for the shellcode! Very cool paper, and I highly recommend the read.
 
   This entry was posted on Wednesday, April 11th, 2007 at 8:22 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

@@ -6,9 +6,9 @@ resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, waf-bypass, javascript, encoding, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-16T00:01:18+00:00"
+  at: "2026-08-17T08:30:52+00:00"
 status: stable
-stale_after: 2027-08-16
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: d431f7b016f95269530f58b192e02823dabc4a027b8589430b755ceaf8c43326
 retrieved_from: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-16T00:01:18+00:00"
+retrieved_utc: "2026-08-17T08:30:52+00:00"
 slug: thespanner-co-uk-ping-pong-obfuscation
 snapshot: 20110305051502
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/>
-- Preserved from: http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/ (stored) on 2026-08-16
+- Preserved from: http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/ (stored) on 2026-08-17
 - Capture timestamp: 20110305051502
 - Licence: unknown
 

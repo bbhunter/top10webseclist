@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
-description: "Ways to make a browser connect straight out to a monitored host and unmask a user behind a proxy or Tor. ftp:// and gopher:// connect quietly; telnet:// and scp:// launch external clients loudly; file:///\\\\ hits SMB on ports 445 and 139. Correlating many simultaneous visitors needs unique hostnames or a block of IPs plus a sniffer."
 resource: "http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/"
-tags: [article, webseclist-reference, ha-ckers-org, deanonymization, info-leak, proxy, ftp, side-channel, detection, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:39+00:00"
+  at: "2026-08-17T08:30:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:57"
 commit: ""
-content_sha256: ce18eb03effbae5e67de4cbbb538cce25deaf7eca5cd2363394fb3e4a85e7a14
+content_sha256: 5900dd616c829353503c570fb6c448290a4de6a88f84575127d682cd3dd95936
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: fde37cd82c651df3e72463e5062834c637d8960b1427e554e986edf641372640
 retrieved_from: "http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:39+00:00"
+retrieved_utc: "2026-08-17T08:30:46+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-8
 snapshot: 20080112152834
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/>
-- Preserved from: http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/ (stored) on 2026-08-17
 - Capture timestamp: 20080112152834
 - Licence: unknown
 
@@ -89,3 +88,13 @@ The next question people are going to ask is, how do you do this if you have doz
 Of course other protocols may be in place with external applications that are installed (similar to the scp example). Knowing them can be tricky and noisy if they fail, depending on how the fail. The point being there are a lot of alternative paths to getting a machine to connect directly to the machine in question by bypassing the normal hypertext transfer protocol completely.
 
   This entry was posted on Saturday, April 21st, 2007 at 10:22 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

@@ -6,14 +6,15 @@ resource: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-cr
 tags: [article, webseclist-reference, en, joshua-jabra-abraham, ssrf, info-leak, large-scale-scan, detection, case-study, vendor-advisory, owasp-a09-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:37:30+00:00"
+  at: "2026-08-17T08:30:50+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
     title: "Internal Port Scanning via Crystal Reports « Joshua \"Jabra\" Abraham"
     author: Joshua Abraham
+    last_modified: 2010-12-02
   - id: capture
     resource: "https://web.archive.org/web/20101225022338/https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
 also_at: []
@@ -30,13 +31,13 @@ kind: article
 language: en
 licence: unknown
 original_url: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
-published: ""
+published: 2010-12-02
 publisher: "Joshua \"Jabra\" Abraham"
 publisher_english: ""
 raw_sha256: f61707668eea59a9c3dbb122e5013d558bd7bff166f9d11c134627324e572b23
 retrieved_from: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:37:30+00:00"
+retrieved_utc: "2026-08-17T08:30:50+00:00"
 slug: 2010-joshua-jabra-abraham-internal-port-scanning-crystal-reports
 snapshot: 20101225022338
 title_english: ""
@@ -48,9 +49,9 @@ translation_of: ""
 
 **Internal Port Scanning via Crystal Reports « Joshua "Jabra" Abraham** - Joshua Abraham, Joshua "Jabra" Abraham.
 
-- Published: date not stated
+- Published: 2010-12-02
 - Original: <https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/>
-- Preserved from: https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/ (stored) on 2026-08-11
+- Preserved from: https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/ (stored) on 2026-08-17
 - Capture timestamp: 20101225022338
 - Licence: unknown
 

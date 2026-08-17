@@ -6,9 +6,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-ab
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, xss, url-spoofing, phishing, case-study, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:37:00+00:00"
+  at: "2026-08-17T08:30:49+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-abc-news-au.html"
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 870488c9ec86319971a43c1ef70f89c4d0d6de52bddaf772ba4217df074a1583
 retrieved_from: "https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:37:00+00:00"
+retrieved_utc: "2026-08-17T08:30:49+00:00"
 slug: blog-jeremiahgrossman-com-my-tv-interview-abc-news-au
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-abc-news-au.html>
 - Current location: <https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html (stored) on 2026-08-11
+- Preserved from: https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html (stored) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

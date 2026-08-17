@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Detecting Default Browser in IE
-description: "A snippet from the handle unsticky uses IE's mimeType reporting to identify the visitor's DEFAULT browser, not merely the one in use, detecting Firefox and Opera reliably. Netscape in IE mode is a known false positive, and Netscape would likely read as Firefox because of the shared Gecko engine."
 resource: "http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/"
-tags: [article, webseclist-reference, ha-ckers-org, browser-fingerprinting, info-leak, javascript, detection, dom, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:37+00:00"
+  at: "2026-08-17T08:30:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:71"
 commit: ""
-content_sha256: 115a8046150be64523f50f070323eb5d350f55483f85596dd551987c79162316
+content_sha256: 62df102f7c6c499abf3d5a47a7197ac32c4f678e18f0171704e410f443463371
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 28148751999ecc80aa5503fe7bbb62d38dff73c04de890a322c08db68f02f7aa
 retrieved_from: "http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:37+00:00"
+retrieved_utc: "2026-08-17T08:30:43+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-detecting-ie
 snapshot: 20070629095421
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/>
-- Preserved from: http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/ (stored) on 2026-08-17
 - Capture timestamp: 20070629095421
 - Licence: unknown
 
@@ -73,3 +72,13 @@ unsticky sent over a nice snippet of code that helps identify if the user is usi
 There does appear to be at least one false positive when using Netscape. If you are using Netscape in IE mode it will think you are using IE and will still report if that is not your default browser. However, I believe this code would also think your default browser is Firefox if you set it to Netscape since Netscape tends to use the Gecko rendering engine as it’s default (I haven’t tried, but that’s my theory). Anyway, cool snippet of code. Thanks, to unsticky for finding it!
 
   This entry was posted on Monday, March 19th, 2007 at 11:25 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

@@ -6,18 +6,20 @@ resource: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/2
 tags: [article, webseclist-reference, ha-ckers-org, browser-extension, javascript, abuse-of-functionality, mime, info-leak, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:17:44+00:00"
+  at: "2026-08-17T08:30:46+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
     title: ha.ckers.org web application security lab - Archive » Turn Any Page Into A Greasemonkey Popup
+  - id: canonical
+    resource: "http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
   - id: capture
     resource: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
 also_at: []
 authors: []
-canonical_url: ""
+canonical_url: "http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
 cited_by:
   - "2007.md:63"
 commit: ""
@@ -32,9 +34,9 @@ published: ""
 publisher: ha.ckers.org
 publisher_english: ""
 raw_sha256: 2d5cfc3ecdcd35a5c4526dc71639ea47a63892174b714b7e5e7ff74a009f1207
-retrieved_from: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:17:44+00:00"
+retrieved_from: "http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T08:30:46+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-turn-any-popup
 snapshot: 20071124032809
 title_english: ""
@@ -48,7 +50,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/>
-- Preserved from: https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/ (live) on 2026-08-10
+- Current location: <http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/>
+- Preserved from: http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/ (stored) on 2026-08-17
 - Capture timestamp: 20071124032809
 - Licence: unknown
 
@@ -77,3 +80,13 @@ I was searching for an old Greasemonkey plugin and ran across some weird behavio
 You could do this with any domain simply by adding an extra parameter to the end of the page. This could be used in some form of detection, or could lead to some other form of exploitation as it does download the file to something like file:///C:/DOCUME~1/USERNA~1/LOCALS~1/Temp/test.user.js (although you would have to enumerate the 5 chars of the username to do anything useful with it). It also can be any mime type, such as, [images for instance](https://web.archive.org/web/20071124032809/http://ha.ckers.org/images/84844372/rsnake/hackers.jpg?test2.user.js). It doesn’t help to switch rendering engines to IE though, because the .js extension won’t allow IE to render it, even if it isn’t JavaScript. Anyway, it was more odd than anything and maybe someone else can find some way to exploit it - I for some reason thought Greasemonkey at least looked at the first several lines of the file before deciding something was or wasn’t a Greasemonkey script. Guess not!
 
   This entry was posted on Sunday, May 6th, 2007 at 11:07 am and is filed under [Webappsec](https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/feed/) feed. You can leave a response, or [trackback](https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](https://web.archive.org/web/20071124032809/http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

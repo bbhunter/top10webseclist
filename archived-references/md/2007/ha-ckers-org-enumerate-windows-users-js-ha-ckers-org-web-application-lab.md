@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
-description: "Sergey Vzloman's proof of concept enumerates local Windows account names from JavaScript by probing Firefox resource:// URLs; the demo tries four accounts and is deliberately noisy. Dan Veditz notes the resource:// issue is fixed in Firefox 2.0.0.4 and 1.5.0.12, but older builds stay exposed, and a few hundred name guesses run quickly."
 resource: "http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/"
-tags: [article, webseclist-reference, ha-ckers-org, info-leak, javascript, deanonymization, sop-bypass, detection, user-enumeration, owasp-a01-2021, owasp-a04-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:25:39+00:00"
+  at: "2026-08-17T08:30:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:64"
 commit: ""
-content_sha256: 4f3ecf9afab2e7063901412553d5be8a167d82ce345cf41ccf2358d84d949367
+content_sha256: 85f46e34ac1b1e75d50375c850032afa7835b99953d65cee2018a72b22b95f1a
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 4759ba80a7a1b319cc70c22f9199680d5847890655332cf4ac47c96f915ef9c1
 retrieved_from: "http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:25:39+00:00"
+retrieved_utc: "2026-08-17T08:30:47+00:00"
 slug: ha-ckers-org-enumerate-windows-users-js-ha-ckers-org-web-application-lab
 snapshot: 20070620215538
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/>
-- Preserved from: http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/ (stored) on 2026-08-17
 - Capture timestamp: 20070620215538
 - Licence: unknown
 
@@ -75,3 +74,13 @@ Sergey Vzloman is at it again… He sent over a really interesting piece of demo
 Of course there are other ways to do this, like get them to connect to you through a [file:///\\ URL as discussed before](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/), but it’s good to have all of this documented since one or more of these may stop working. Nice work, Sergey!
 
   This entry was posted on Friday, May 18th, 2007 at 8:16 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---

@@ -371,3 +371,66 @@ class TestJunkLines(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestCommentFormAndTaxonomy(unittest.TestCase):
+    """Furniture the tail sweep still stopped on."""
+
+    def test_a_comment_form_heading_goes(self):
+        text, removed = boilerplate.trim(ARTICLE + "\n\n### Leave a Reply\n")
+        self.assertNotIn("Leave a Reply", text)
+        self.assertIn("comment-form", removed)
+
+    def test_a_comments_closed_notice_goes(self):
+        text, removed = boilerplate.trim(ARTICLE + "\n\nComments are closed.\n")
+        self.assertNotIn("Comments are closed", text)
+        self.assertIn("comment-form", removed)
+
+    def test_a_comment_THREAD_is_kept(self):
+        """Some cited pages ARE the discussion, and authors answer corrections."""
+        thread = (ARTICLE + "\n\nLeave a Reply\n\nkuza55 said: the filter is "
+                  "stateful, so splitting the vector across two inputs works.\n")
+        text, _ = boilerplate.trim(thread)
+        self.assertIn("kuza55 said", text)
+
+    def test_a_taxonomy_row_goes(self):
+        text, removed = boilerplate.trim(
+            ARTICLE + "\n\nTags: [esapi](https://x.test/tag/esapi/), "
+            "[Javascript](https://x.test/tag/js/)\n")
+        self.assertNotIn("tag/esapi", text)
+        self.assertIn("taxonomy-row", removed)
+
+    def test_a_tags_line_carrying_prose_is_kept(self):
+        keep = (ARTICLE + "\n\nTags: the parser treats these as separate "
+                "attributes, which is what makes the bypass work.\n")
+        text, _ = boilerplate.trim(keep)
+        self.assertIn("what makes the bypass work", text)
+
+    def test_a_blogger_feed_control_goes(self):
+        text, removed = boilerplate.trim(
+            ARTICLE + "\n\nSubscribe to: [Post Comments (Atom)](https://b.test/feeds/1/)\n")
+        self.assertNotIn("Post Comments", text)
+        self.assertIn("subscribe", removed)
+
+    def test_wordpress_post_meta_goes_in_both_wordings(self):
+        for meta in ("This entry was posted on 23 November 2009 at 4pm.",
+                     "The entry '[Ping pong obfuscation](https://x.test/p/)' was posted"):
+            text, removed = boilerplate.trim(ARTICLE + "\n\n" + meta + "\n")
+            self.assertNotIn("was posted", text, meta)
+            self.assertIn("post-meta", removed, meta)
+
+    def test_the_post_meta_blocker_lets_the_sweep_reach_the_taxonomy_row(self):
+        """It was the LAST block on 30 documents, so nothing behind it was seen."""
+        text, removed = boilerplate.trim(
+            ARTICLE + "\n\nTags: [obfuscation](https://x.test/tag/obfuscation/)\n\n"
+            "The entry '[Ping pong](https://x.test/p/)' was posted\n")
+        self.assertNotIn("tag/obfuscation", text)
+        self.assertIn("taxonomy-row", removed)
+        self.assertIn("post-meta", removed)
+        self.assertIn("smuggled prefix", text)
+
+    def test_prose_about_an_entry_being_posted_is_kept(self):
+        keep = (ARTICLE + "\n\nThe attacker's entry in the log was posted by the "
+                "worker process, which is what reveals the injection point.\n")
+        text, _ = boilerplate.trim(keep)
+        self.assertIn("reveals the injection point", text)

@@ -6,9 +6,9 @@ resource: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
 tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, waf-bypass, javascript, dom, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-16T00:01:17+00:00"
+  at: "2026-08-17T08:30:51+00:00"
 status: stable
-stale_after: 2027-08-16
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 71b836ba15b5c167ad37e8e66e2424f6b778ee7422460e18e1a96c29b81e72dc
 retrieved_from: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-16T00:01:17+00:00"
+retrieved_utc: "2026-08-17T08:30:51+00:00"
 slug: thespanner-co-uk-html5-xss-spanner
 snapshot: 20110320090825
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/03/20/html5-xss/>
-- Preserved from: http://www.thespanner.co.uk/2009/03/20/html5-xss/ (stored) on 2026-08-16
+- Preserved from: http://www.thespanner.co.uk/2009/03/20/html5-xss/ (stored) on 2026-08-17
 - Capture timestamp: 20110320090825
 - Licence: unknown
 

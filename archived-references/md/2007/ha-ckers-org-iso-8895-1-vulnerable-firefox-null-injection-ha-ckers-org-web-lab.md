@@ -1,14 +1,13 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » ISO-8895-1 Vulnerable in Firefox to Null Injection
-description: RSnake reports that ISO-8859-1 pages, which he had recommended after the UTF-8 and US-ASCII issues, also let null bytes through in Firefox and break naive filters. The vector is touchy about what precedes it. The code was only ever shown in a screenshot, which this capture does not hold.
 resource: "http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/"
-tags: [article, webseclist-reference, ha-ckers-org, charset, encoding, xss, filter-bypass, unicode, sanitizer-bypass, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:54:32+00:00"
+  at: "2026-08-17T08:30:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/"
@@ -21,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:20"
 commit: ""
-content_sha256: 0bf979653b76ebf4303fb1b3b6748cb3b5b656ceb0068c36e47e2ce6ee6f73ce
+content_sha256: ec014ea9cfc2739fbb756d8c068b24773162ab7d91366b31a994f9f35c7eec8e
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +33,7 @@ publisher_english: ""
 raw_sha256: 9a43d7ca8f9371c0b9dd58cd1cf979c169a971224ac01b8309ccfd4a7c9d0793
 retrieved_from: "http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:54:32+00:00"
+retrieved_utc: "2026-08-17T08:30:41+00:00"
 slug: ha-ckers-org-iso-8895-1-vulnerable-firefox-null-injection-ha-ckers-org-web-lab
 snapshot: 20070609173826
 title_english: ""
@@ -48,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/>
-- Preserved from: http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/ (stored) on 2026-08-09
+- Preserved from: http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/ (stored) on 2026-08-17
 - Capture timestamp: 20070609173826
 - Licence: unknown
 
@@ -78,3 +77,13 @@ Click to enlarge
 Interesting… I’m not sure how useful it is, since it appears to be highly touchy in the amount of characters precede it and what exactly precedes it, but nevertheless I thought I should be full disclosure since I was the one who was touting it as more secure than UTF-8.
 
   This entry was posted on Saturday, February 10th, 2007 at 9:21 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/trackback/) from your own site.
+
+### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
+
+ Name (required)
+
+ Mail (will not be published) (required)
+
+ Website
+
+---
