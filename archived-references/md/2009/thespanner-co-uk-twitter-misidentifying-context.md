@@ -1,14 +1,14 @@
 ---
 type: Article
 title: Twitter misidentifying context
-description: Escaping quotes and angle brackets is not enough inside an inline JavaScript event attribute, because HTML entities are decoded before the script runs, so &apos; becomes a working string terminator. Twitter escaped only literal characters in an onclick handler and stayed injectable; the fix is to escape entity forms too.
+description: Escaping quotes is not enough inside a JavaScript event attribute, because HTML entities are decoded before the script runs. Twitter escaped the literal quote characters in an onclick handler, but the named and numeric entity spellings of an apostrophe, including unterminated ones, still closed the string and injected code. Escape entities too, using hex escapes.
 resource: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, encoding, filter-bypass, sanitizer-bypass, javascript, dom, parser-differential, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, encoding, filter-bypass, sanitizer-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:02:09+00:00"
+  at: "2026-08-17T11:54:34+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/"
@@ -23,7 +23,7 @@ canonical_url: "https://thespanner.co.uk/2009/11/23/twitter-misidentifying-conte
 cited_by:
   - "2009.md:45"
 commit: ""
-content_sha256: c3d2160e0b7d4bcc0b4b18337e877f28f51c1ca56a34ae550a6cfa6a138fad04
+content_sha256: 3ba97589da1e5fa419e3e44e9d02fa5d6a91e3b3ea826c1cd5dce877da95b1e4
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +35,8 @@ publisher: thespanner.co.uk
 publisher_english: ""
 raw_sha256: b3405ed391dec07c7e83d449bb9ce353959f397edfb808bf58dfd5a8f51a54fc
 retrieved_from: "https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:02:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T11:54:34+00:00"
 slug: thespanner-co-uk-twitter-misidentifying-context
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/>
 - Current location: <https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context>
-- Preserved from: https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context (live) on 2026-08-10
+- Preserved from: https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context (stored) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,6 +64,36 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[Pure-CSS 3D world collision detection ](https://thespanner.co.uk/pure-css-3d-world-collision-detection)[How to write a Hackvertor tag](https://thespanner.co.uk/how-to-write-a-hackvertor-tag)[Introducing Feedworm: A Privacy-First RSS Reader That Lives in DevTools](https://thespanner.co.uk/introducing-feedworm-a-privacy-first-rss-reader-that-lives-in-devtools)[Speedy RSVP extension](https://thespanner.co.uk/speedy-rsvp-extension)[AutoVader](https://thespanner.co.uk/autovader)[Hackvertor history and tag finder](https://thespanner.co.uk/hackvertor-history-and-tag-finder)[Shadow Repeater v1.2.3 release](https://thespanner.co.uk/shadow-repeater-v123-release)[Burp Hackvertor v2.1.24 release](https://thespanner.co.uk/burp-hackvertor-v2124-release)[Hacking rooms](https://thespanner.co.uk/hacking-rooms)[XSSing TypeErrors in Safari](https://thespanner.co.uk/xssing-typeerrors-in-safari)[valueOf: Another way to get this](https://thespanner.co.uk/valueof-another-way-to-get-this)[Making the Unexploitable Exploitable with X-Mixed-Replace on Firefox](https://thespanner.co.uk/making-the-unexploitable-exploitable-with-x-mixed-replace-on-firefox)[The curious case of the evt parameter](https://thespanner.co.uk/the-curious-case-of-the-evt-parameter)[CSS-Only Tic Tac Toe Challenge](https://thespanner.co.uk/css-only-tic-tac-toe-challenge)[Rewriting relative urls with the base tag in Safari](https://thespanner.co.uk/rewriting-relative-urls-with-the-base-tag-in-safari)[Bypassing DOMPurify with mXSS](https://thespanner.co.uk/bypassing-dompurify-with-mxss)[New IE mutation vector](https://thespanner.co.uk/new-ie-mutation-vector)[How I smashed MentalJS](https://thespanner.co.uk/how-i-smashed-mentaljs)[MentalJS DOM bypass](https://thespanner.co.uk/mentaljs-dom-bypass)[Another XSS auditor bypass](https://thespanner.co.uk/another-xss-auditor-bypass)[XSS Auditor bypass](https://thespanner.co.uk/xss-auditor-bypass)[Bypassing the IE XSS filter](https://thespanner.co.uk/bypassing-the-ie-xss-filter)[Unbreakable filter](https://thespanner.co.uk/unbreakable-filter)[MentalJS bypasses](https://thespanner.co.uk/mentaljs-bypasses)[mXSS](https://thespanner.co.uk/mxss)[Java Serialization](https://thespanner.co.uk/java-serialization)[Bypassing the XSS filter using function reassignment](https://thespanner.co.uk/bypassing-the-xss-filter-using-function-reassignment)[RPO](https://thespanner.co.uk/rpo)[Sandboxed jQuery](https://thespanner.co.uk/sandboxed-jquery)[X-Domain scroll detection on IE using focus](https://thespanner.co.uk/x-domain-scroll-detection-on-ie-using-focus)[Epic fail IE](https://thespanner.co.uk/epic-fail-ie)[new operator](https://thespanner.co.uk/new-operator)[Decoding complex non-alphanumeric JavaScript](https://thespanner.co.uk/decoding-complex-non-alphanumeric-javascript)[Hacking Firefox](https://thespanner.co.uk/hacking-firefox)[DOM Clobbering](https://thespanner.co.uk/dom-clobbering)[Bypassing XSS Auditor](https://thespanner.co.uk/bypassing-xss-auditor)[The evolution of code](https://thespanner.co.uk/the-evolution-of-code)[Non-Alpha PHP in 6-7 charset](https://thespanner.co.uk/non-alpha-php-in-6-7-charset)[Tweetable PHP-Non Alpha](https://thespanner.co.uk/tweetable-php-non-alpha)[MentalJS for PHP](https://thespanner.co.uk/mentaljs-for-php)
+This is an important post for me, not because it's ground breaking but people don't seem to get this when using data in certain context. If you are a dev please read this and read it until you understand it because if you misidentify context you fail and you fail pretty badly.
 
- Twitter misidentifying context - The Spanner
+I reported this to twitter about two months ago, they responded and fixed four xss holes but two remain and they didn't contact me to test the fix. 
+
+When you are including user input inside a javascript event within a string what do you have to escape? If you answered: '"<>\  
+You are wrong. Twitter is wrong.
+
+Take the following example:-
+```html
+<a href=# onclick="x= 'USERINPUT' ">test</a>
+```
+
+So you can place your input within the single quotes and there is a place on twitter that does this:-
+twitterTheseResults(' \&amp;quot;\'xss','/search?q=&amp;a...
+
+Here they are escaping &amp;quot; with \&amp;quot; and ' with \'. But that isn't enough! Why? Because it's a javascript onclick event! Inside an event you have to escape entities! All of them!
+
+Consider the following vector:-
+```javascript
+&apos;,alert(1),&apos;
+```
+
+No single quotes but &amp;apos; still acts as one. Please look at this test and make sure you understand how it works:-
+[http://tinyurl.com/xssyoda](http://tinyurl.com/xssyoda)
+
+Don't forget other entities work too &amp;#39; &amp;#x27; &amp;#39 &amp;#x27 so make sure you escape all characters within a js event like so:-
+```html
+<a href="#" onclick="x='USERINPUT\x27\x22\x3c\x3e'">test</a>
+```
+
+and Twitter PLEASE fix this and related holes c'mon it's been two months, it's not rocket science to fix.
+
+&amp;apos; works on non-IE browsers but the other entities mentioned work fine on IE too.

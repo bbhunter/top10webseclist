@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-239 archived reference(s) name 282 store object(s) that are no longer held: 49 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 220 raw_sha256.
+215 archived reference(s) name 258 store object(s) that are no longer held: 49 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 196 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -79,14 +79,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf> | whitepaper | `content_sha256` | `2009.md:60` |
 | <http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database> | slides | `raw_sha256` | `2009.md:82` |
 | <http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities/> | article | `raw_sha256` | `2008.md:42` |
-| <http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/> | article | `raw_sha256` | `2007.md:26` |
-| <http://www.thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml/> | article | `raw_sha256` | `2007.md:41` |
-| <http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects/> | article | `raw_sha256` | `2007.md:40` |
-| <http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/> | article | `raw_sha256` | `2009.md:38` |
-| <http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/> | article | `raw_sha256` | `2009.md:45` |
-| <http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/> | article | `raw_sha256` | `2009.md:47` |
-| <http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/> | article | `raw_sha256` | `2010.md:47` |
-| <http://www.thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox/> | article | `raw_sha256` | `2011.md:25` |
 | <http://www.thespanner.co.uk/2014/03/21/rpo/> | article | `raw_sha256` | `2014.md:64`, `2015.md:43` |
 | <http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:24` |
 | <https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization> | article | `raw_sha256`, `browser_dom_sha256` | `2024.md:43` |
@@ -114,8 +106,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://doi.org/10.1109/SP.2019.00025> | article | `browser_dom_sha256` | `2019.md:82` |
 | <https://doi.org/10.1109/SP.2019.00049> | article | `browser_dom_sha256` | `2019.md:75` |
 | <https://doi.org/10.1109/SP61157.2025.00029> | article | `browser_dom_sha256` | `2025.md:91` |
-| <https://elie.im/publication/text-based-captcha-strengths-and-weaknesses> | article | `raw_sha256` | `2011.md:52` |
-| <https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas> | article | `raw_sha256` | `2011.md:23` |
 | <https://githubengineering.com/githubs-post-csp-journey/> | article | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:24` |
 | <https://gitlab.com/kostasdrk/xdriver3-open> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:78` |
 | <https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/> | article | `raw_sha256`, `browser_dom_sha256` | `2007.md:39` |
@@ -158,7 +148,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
 | <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:85` |
 | <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
-| <https://thespanner.co.uk/2013/05/16/dom-clobbering> | article | `raw_sha256` | `2013.md:55` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |
 | <https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2011.md:41` |
 | <https://vulncheck.com/blog/juniper-cve-2023-36845> | article | `raw_sha256` | `2023.md:55` |
@@ -220,13 +209,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu> | article | `raw_sha256` | `2023.md:59` |
 | <https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html> | article | `raw_sha256` | `2024.md:125` |
 | <https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization> | article | `raw_sha256` | `2024.md:73` |
-| <https://www.usenix.org/conference/leet13/workshop-program/presentation/neugschwandtner> | article | `raw_sha256` | `2013.md:62` |
-| <https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and> | article | `raw_sha256` | `2011.md:74` |
-| <https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek> | article | `raw_sha256` | `2011.md:69` |
-| <https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications> | article | `raw_sha256` | `2011.md:71` |
-| <https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers> | article | `raw_sha256` | `2010.md:95` |
-| <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing> | article | `raw_sha256` | `2013.md:59` |
-| <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan> | article | `raw_sha256` | `2013.md:58` |
 | <https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi> | article | `raw_sha256` | `2019.md:80` |
 | <https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei> | article | `raw_sha256` | `2022.md:68` |
 | <https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings> | article | `raw_sha256` | `2023.md:85` |
@@ -252,15 +234,9 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan> | article | `raw_sha256` | `2025.md:96` |
 | <https://www.usenix.org/conference/usenixsecurity25/presentation/you> | article | `raw_sha256` | `2025.md:84` |
 | <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan> | article | `raw_sha256` | `2026-ai.md:32` |
-| <https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan> | article | `raw_sha256` | `2012.md:89` |
-| <https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad> | article | `raw_sha256` | `2012.md:78` |
-| <https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt> | article | `raw_sha256` | `2012.md:83` |
-| <https://www.usenix.org/conference/woot13/workshop-program/presentation/dai> | article | `raw_sha256` | `2013.md:64` |
-| <https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth> | article | `raw_sha256` | `2013.md:54` |
 | <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser> | article | `raw_sha256` | `2015.md:74` |
 | <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino> | article | `raw_sha256` | `2015.md:81` |
 | <https://www.usenix.org/conference/woot18/presentation/smith> | article | `raw_sha256` | `2018.md:70` |
-| <https://www.usenix.org/conference/woot18/workshop-program> | article | `raw_sha256` | `2018.md:90` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html> | article | `raw_sha256` | `2008.md:87` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html> | article | `raw_sha256` | `2008.md:92` |
 | <https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html> | article | `raw_sha256` | `2019.md:21` |

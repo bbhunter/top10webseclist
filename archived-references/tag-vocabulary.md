@@ -63,11 +63,11 @@ JSON.
 
 ## The vocabulary
 
-196 tags, across 1649 documents that carry a digest.
+197 tags, across 1649 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
-| `abuse-of-functionality` | 66 | A04:2021 |
+| `abuse-of-functionality` | 67 | A04:2021 |
 | `active-directory` | 1 | — |
 | `activex` | 12 | — |
 | `ai-agent` | 31 | — |
@@ -77,30 +77,30 @@ JSON.
 | `argument-injection` | 1 | A03:2021 |
 | `aspnet` | 46 | — |
 | `attack-chain` | 181 | — |
-| `auth-bypass` | 302 | A01:2021 |
+| `auth-bypass` | 301 | A01:2021 |
 | `autofill` | 1 | — |
 | `aws` | 30 | — |
 | `azure` | 11 | — |
 | `blind-xss` | 1 | A03:2021 |
 | `blockchain` | 2 | — |
 | `browser-extension` | 71 | — |
-| `browser-fingerprinting` | 23 | — |
+| `browser-fingerprinting` | 22 | — |
 | `bug-bounty` | 165 | — |
 | `cache` | 66 | — |
 | `cache-deception` | 10 | — |
 | `cache-poisoning` | 79 | — |
 | `captcha-bypass` | 2 | A04:2021 |
-| `case-study` | 272 | — |
+| `case-study` | 271 | — |
 | `cdn` | 46 | — |
-| `charset` | 38 | A02:2021 |
+| `charset` | 37 | A02:2021 |
 | `ci-cd` | 27 | A08:2021 |
 | `class-pollution` | 5 | A08:2021 |
-| `clickjacking` | 56 | A04:2021 |
+| `clickjacking` | 57 | A04:2021 |
 | `clipboard` | 1 | — |
 | `cloudflare` | 11 | — |
 | `command-injection` | 51 | A03:2021 |
 | `content-type` | 39 | A05:2021 |
-| `cookie` | 147 | A07:2021 |
+| `cookie` | 146 | A07:2021 |
 | `cors` | 29 | A01:2021 |
 | `crypto` | 2 | A02:2021 |
 | `csp` | 55 | A05:2021 |
@@ -121,7 +121,7 @@ JSON.
 | `dns` | 86 | — |
 | `dns-rebinding` | 30 | A10:2021 |
 | `docker` | 4 | A05:2021 |
-| `dom` | 136 | — |
+| `dom` | 134 | — |
 | `dom-clobbering` | 14 | A08:2021 |
 | `domain-takeover` | 2 | — |
 | `dos` | 106 | — |
@@ -132,16 +132,16 @@ JSON.
 | `electron` | 10 | — |
 | `email` | 50 | — |
 | `embedded-device` | 6 | — |
-| `encoding` | 79 | — |
+| `encoding` | 78 | — |
 | `express` | 8 | — |
-| `file-upload` | 88 | — |
+| `file-upload` | 87 | — |
 | `file-write` | 1 | — |
-| `filter-bypass` | 297 | A05:2021 |
+| `filter-bypass` | 296 | A05:2021 |
 | `flash` | 56 | — |
 | `flask` | 4 | — |
 | `formal-analysis` | 32 | — |
 | `ftp` | 10 | — |
-| `fuzzing` | 49 | — |
+| `fuzzing` | 50 | — |
 | `gadget-chain` | 93 | A08:2021 |
 | `gcp` | 11 | — |
 | `github` | 23 | — |
@@ -151,6 +151,7 @@ JSON.
 | `graphql` | 4 | — |
 | `hash-collision` | 6 | A02:2021 |
 | `header-injection` | 67 | A03:2021 |
+| `html5` | 1 | — |
 | `http` | 209 | — |
 | `http2` | 26 | — |
 | `http3` | 5 | — |
@@ -159,12 +160,12 @@ JSON.
 | `idor` | 27 | A01:2021 |
 | `iframe` | 134 | — |
 | `info-leak` | 591 | — |
-| `injection` | 121 | A03:2021 |
+| `injection` | 122 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 1 | — |
 | `java` | 120 | — |
-| `javascript` | 381 | — |
-| `javascript-runtime` | 21 | — |
+| `javascript` | 372 | — |
+| `javascript-runtime` | 20 | — |
 | `jenkins` | 2 | — |
 | `joomla` | 6 | — |
 | `jwt` | 20 | A07:2021 |
@@ -175,10 +176,10 @@ JSON.
 | `llm` | 33 | — |
 | `load-balancer` | 16 | — |
 | `mass-assignment` | 11 | A01:2021 |
-| `measurement-study` | 225 | — |
+| `measurement-study` | 224 | — |
 | `memory-corruption` | 2 | — |
 | `mime` | 42 | A05:2021 |
-| `mitigation` | 170 | — |
+| `mitigation` | 169 | — |
 | `mongodb` | 6 | — |
 | `mssql` | 11 | — |
 | `mutation-xss` | 11 | A03:2021 |
@@ -189,7 +190,7 @@ JSON.
 | `oauth` | 62 | A07:2021 |
 | `open-redirect` | 62 | A04:2021 |
 | `openid` | 29 | A07:2021 |
-| `parser-differential` | 167 | — |
+| `parser-differential` | 165 | — |
 | `passkeys` | 10 | A07:2021 |
 | `path-traversal` | 66 | A01:2021 |
 | `pdf` | 23 | — |
@@ -220,7 +221,7 @@ JSON.
 | `same-origin-policy` | 172 | A01:2021 |
 | `saml` | 18 | A07:2021 |
 | `sandbox-escape` | 71 | — |
-| `sanitizer-bypass` | 88 | A05:2021 |
+| `sanitizer-bypass` | 84 | A05:2021 |
 | `service-worker` | 10 | — |
 | `session-fixation` | 36 | A07:2021 |
 | `side-channel` | 206 | — |
@@ -243,25 +244,25 @@ JSON.
 | `timing-attack` | 89 | — |
 | `tls` | 107 | A02:2021 |
 | `toctou` | 16 | A04:2021 |
-| `tooling` | 291 | — |
+| `tooling` | 289 | — |
 | `type-confusion` | 1 | — |
 | `typosquatting` | 9 | A06:2021 |
-| `ui-redress` | 71 | A04:2021 |
-| `unicode` | 37 | — |
-| `url-parsing` | 119 | — |
+| `ui-redress` | 72 | A04:2021 |
+| `unicode` | 36 | — |
+| `url-parsing` | 117 | — |
 | `url-spoofing` | 12 | — |
 | `user-enumeration` | 7 | A04:2021 |
 | `vendor-advisory` | 54 | — |
 | `vue` | 1 | — |
-| `waf` | 16 | A05:2021 |
-| `waf-bypass` | 71 | A05:2021 |
+| `waf` | 15 | A05:2021 |
+| `waf-bypass` | 70 | A05:2021 |
 | `webassembly` | 3 | — |
 | `webauthn` | 11 | A07:2021 |
 | `webrtc` | 9 | — |
 | `websocket` | 8 | — |
 | `wordpress` | 21 | — |
 | `xsleak` | 72 | — |
-| `xss` | 379 | A03:2021 |
+| `xss` | 380 | A03:2021 |
 | `xxe` | 31 | A03:2021 |
 
 ### Never published
@@ -294,4 +295,4 @@ A document earns these from the techniques it is already tagged with; nobody tag
 
 ### Used exactly once
 
-Review these before reusing them: `active-directory`, `argument-injection`, `autofill`, `blind-xss`, `clipboard`, `dependency-confusion`, `file-write`, `identity`, `jailbreak`, `laravel`, `subdomain-takeover`, `symfony`, `type-confusion`, `vue`
+Review these before reusing them: `active-directory`, `argument-injection`, `autofill`, `blind-xss`, `clipboard`, `dependency-confusion`, `file-write`, `html5`, `identity`, `jailbreak`, `laravel`, `subdomain-takeover`, `symfony`, `type-confusion`, `vue`

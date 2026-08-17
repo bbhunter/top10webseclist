@@ -1,14 +1,14 @@
 ---
 type: Article
 title: HTML5 new XSS vectors
-description: "The archived document holds no article text, so its research cannot be described from the copy in this archive. The published Markdown and PDF contain only the modern site's recent-posts list; no capture of the 2009 article is held in the content store."
+description: "HTML5's autofocus attribute gives automatic XSS execution inside an attribute injection where angle brackets are filtered, replacing the need for CSS expressions or -moz-binding. Pairing autofocus with onfocus fires without user interaction on input, select, textarea and keygen elements, working in Safari, Chrome and Opera."
 resource: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, javascript, filter-bypass, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, html5, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:02:12+00:00"
+  at: "2026-08-17T11:54:35+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-17
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
@@ -23,7 +23,7 @@ canonical_url: "https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors"
 cited_by:
   - "2009.md:47"
 commit: ""
-content_sha256: af7b0705d316771e27810558f7e79618d9a34af5282ba831d86b5357e3e9ac2e
+content_sha256: 83498b7ebf21d4b4a4de86214c379ce4d8f59bb0b6ca99c0b1a03e3bb5a644e5
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +35,8 @@ publisher: thespanner.co.uk
 publisher_english: ""
 raw_sha256: 8189dcce9e4340653009858c656513bc6aafe6288f0e4e826003c3c76b6fe42a
 retrieved_from: "https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:02:12+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-17T11:54:35+00:00"
 slug: thespanner-co-uk-html5-new-xss-vectors
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/>
 - Current location: <https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors>
-- Preserved from: https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors (live) on 2026-08-10
+- Preserved from: https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors (stored) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,6 +64,25 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[Pure-CSS 3D world collision detection ](https://thespanner.co.uk/pure-css-3d-world-collision-detection)[How to write a Hackvertor tag](https://thespanner.co.uk/how-to-write-a-hackvertor-tag)[Introducing Feedworm: A Privacy-First RSS Reader That Lives in DevTools](https://thespanner.co.uk/introducing-feedworm-a-privacy-first-rss-reader-that-lives-in-devtools)[Speedy RSVP extension](https://thespanner.co.uk/speedy-rsvp-extension)[AutoVader](https://thespanner.co.uk/autovader)[Hackvertor history and tag finder](https://thespanner.co.uk/hackvertor-history-and-tag-finder)[Shadow Repeater v1.2.3 release](https://thespanner.co.uk/shadow-repeater-v123-release)[Burp Hackvertor v2.1.24 release](https://thespanner.co.uk/burp-hackvertor-v2124-release)[Hacking rooms](https://thespanner.co.uk/hacking-rooms)[XSSing TypeErrors in Safari](https://thespanner.co.uk/xssing-typeerrors-in-safari)[valueOf: Another way to get this](https://thespanner.co.uk/valueof-another-way-to-get-this)[Making the Unexploitable Exploitable with X-Mixed-Replace on Firefox](https://thespanner.co.uk/making-the-unexploitable-exploitable-with-x-mixed-replace-on-firefox)[The curious case of the evt parameter](https://thespanner.co.uk/the-curious-case-of-the-evt-parameter)[CSS-Only Tic Tac Toe Challenge](https://thespanner.co.uk/css-only-tic-tac-toe-challenge)[Rewriting relative urls with the base tag in Safari](https://thespanner.co.uk/rewriting-relative-urls-with-the-base-tag-in-safari)[Bypassing DOMPurify with mXSS](https://thespanner.co.uk/bypassing-dompurify-with-mxss)[New IE mutation vector](https://thespanner.co.uk/new-ie-mutation-vector)[How I smashed MentalJS](https://thespanner.co.uk/how-i-smashed-mentaljs)[MentalJS DOM bypass](https://thespanner.co.uk/mentaljs-dom-bypass)[Another XSS auditor bypass](https://thespanner.co.uk/another-xss-auditor-bypass)[XSS Auditor bypass](https://thespanner.co.uk/xss-auditor-bypass)[Bypassing the IE XSS filter](https://thespanner.co.uk/bypassing-the-ie-xss-filter)[Unbreakable filter](https://thespanner.co.uk/unbreakable-filter)[MentalJS bypasses](https://thespanner.co.uk/mentaljs-bypasses)[mXSS](https://thespanner.co.uk/mxss)[Java Serialization](https://thespanner.co.uk/java-serialization)[Bypassing the XSS filter using function reassignment](https://thespanner.co.uk/bypassing-the-xss-filter-using-function-reassignment)[RPO](https://thespanner.co.uk/rpo)[Sandboxed jQuery](https://thespanner.co.uk/sandboxed-jquery)[X-Domain scroll detection on IE using focus](https://thespanner.co.uk/x-domain-scroll-detection-on-ie-using-focus)[Epic fail IE](https://thespanner.co.uk/epic-fail-ie)[new operator](https://thespanner.co.uk/new-operator)[Decoding complex non-alphanumeric JavaScript](https://thespanner.co.uk/decoding-complex-non-alphanumeric-javascript)[Hacking Firefox](https://thespanner.co.uk/hacking-firefox)[DOM Clobbering](https://thespanner.co.uk/dom-clobbering)[Bypassing XSS Auditor](https://thespanner.co.uk/bypassing-xss-auditor)[The evolution of code](https://thespanner.co.uk/the-evolution-of-code)[Non-Alpha PHP in 6-7 charset](https://thespanner.co.uk/non-alpha-php-in-6-7-charset)[Tweetable PHP-Non Alpha](https://thespanner.co.uk/tweetable-php-non-alpha)[MentalJS for PHP](https://thespanner.co.uk/mentaljs-for-php)
+So I posted some new XSS vectors on twitter and I thought I'd share them on the blog in case anyone missed them. Safari, Chrome and Opera all support these now :) We have a brand new way of auto executing XSS. 
 
- HTML5 new XSS vectors - The Spanner
+Normally when you find a XSS hole within a input element that has filtered &lt; and &gt; you can't exploit it automatically without using CSS expressions. The injection looks something like:-
+
+```html
+<input type="text" USER_INPUT>
+```
+
+Here you can do style=xss:expression(alert(1)) or moz-binding etc. but it only works on a limited number of browsers. HTML5 however lets us execute like expressions but without css styles. For example:-
+
+```html
+<input type="text" AUTOFOCUS onfocus=alert(1)>
+```
+
+We use the "autofocus" feature to focus our element and then the onfocus event to execute our XSS. This works with a plethora (I like that word) of tags. Any form based element it seems you can use this method:-
+
+```html
+<input autofocus onfocus=alert(1)>
+<select autofocus onfocus=alert(1)>
+<textarea autofocus onfocus=alert(1)>
+<keygen autofocus onfocus=alert(1)>
+```
