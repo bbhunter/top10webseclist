@@ -1356,6 +1356,30 @@ def command_translate(args):
     return 0
 
 
+def _record_lookup_failure(manifest, key, reason):
+    """Record that the CDX index could not be asked, without losing a capture.
+
+    A DEAD INDEX MUST NOT ERASE A LIVE CAPTURE. `manifest.record` REPLACES the
+    step row, so writing "lookup-failed" over a previous "stored" row deletes
+    the snapshot timestamp and replay URL that prove a good capture was already
+    found - and the next run reads the reference as one the archive never got an
+    answer for. Observed twice against jeremiahgrossman.blogspot.com while
+    archive.org was returning 498/503: a 60,468-byte capture recorded in August
+    was reduced to "lookup-failed" by a retry that never reached the index.
+
+    The failure is a fact about the INDEX being unreachable, not about the
+    source, so an existing capture is kept and merely annotated with the attempt.
+    Returns the kept snapshot, or "" when the failure was recorded normally.
+    """
+    held = manifest.last(key, "wayback") or {}
+    if held.get("result") == "stored":
+        held["lookup_failed_utc"] = manifest_module.utc_now()
+        held["lookup_failed_reason"] = reason
+        return held.get("snapshot") or "already stored"
+    manifest.record(key, "wayback", result="lookup-failed", reason=reason)
+    return ""
+
+
 def command_wayback(args):
     """Look for a better Wayback capture of a reference we could not read."""
     from refslib import wayback as wayback_module
@@ -1476,8 +1500,10 @@ def command_wayback(args):
                     reason = ("%s; host curl fallback: %s; toolbox fallback: %s"
                               % (error, curl_error, fallback_error))
                     print("  ASK FAILED %-58s %s" % (original[:58], reason))
-                    manifest.record(key, "wayback", result="lookup-failed", reason=reason)
+                    kept = _record_lookup_failure(manifest, key, reason)
                     manifest.save()
+                    if kept:
+                        print("    kept the capture already recorded (%s)" % kept)
                     continue
         for candidate in candidates:
             tried += 1

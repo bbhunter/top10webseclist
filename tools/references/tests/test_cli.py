@@ -641,5 +641,52 @@ class TagVocabularyTests(unittest.TestCase):
         self.assertIn("novel-technique", tags_module.retired(vocabulary))
 
 
+class LookupFailureDoesNotEraseACapture(unittest.TestCase):
+    """A dead CDX index is a fact about us, not about the source.
+
+    `manifest.record` REPLACES a step row, so writing "lookup-failed" over a
+    previous "stored" row deletes the snapshot and replay URL that prove a good
+    capture was already found. Observed twice against a 2006 blog post while
+    archive.org was answering 498/503.
+    """
+
+    class _Manifest(object):
+        def __init__(self, step):
+            self.entry = {"steps": ({"wayback": dict(step)} if step else {})}
+            self.recorded = []
+
+        def last(self, key, step):
+            return self.entry["steps"].get(step)
+
+        def record(self, key, step, **fields):
+            self.recorded.append((step, fields))
+            self.entry["steps"][step] = dict(fields)
+            return self.entry["steps"][step]
+
+    def test_a_stored_capture_survives_an_unreachable_index(self):
+        manifest = self._Manifest({"result": "stored", "snapshot": "20060911101728",
+                                   "replay_url": "https://web.archive.org/web/x/y",
+                                   "bytes": 60468})
+        kept = refs._record_lookup_failure(manifest, "https://blog.test/p", "cdx 503")
+        self.assertEqual(kept, "20060911101728")
+        step = manifest.entry["steps"]["wayback"]
+        self.assertEqual(step["result"], "stored")
+        self.assertEqual(step["replay_url"], "https://web.archive.org/web/x/y")
+        self.assertEqual(step["bytes"], 60468)
+        self.assertIn("cdx 503", step["lookup_failed_reason"])
+        self.assertEqual(manifest.recorded, [])
+
+    def test_a_reference_with_no_capture_still_records_the_failure(self):
+        manifest = self._Manifest(None)
+        kept = refs._record_lookup_failure(manifest, "https://blog.test/p", "cdx 503")
+        self.assertEqual(kept, "")
+        self.assertEqual(manifest.entry["steps"]["wayback"]["result"], "lookup-failed")
+
+    def test_an_earlier_failure_is_replaced_rather_than_accumulated(self):
+        manifest = self._Manifest({"result": "lookup-failed", "reason": "old"})
+        refs._record_lookup_failure(manifest, "https://blog.test/p", "cdx 503")
+        self.assertEqual(manifest.entry["steps"]["wayback"]["reason"], "cdx 503")
+
+
 if __name__ == "__main__":
     unittest.main()
