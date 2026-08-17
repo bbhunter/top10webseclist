@@ -150,6 +150,126 @@ def embedded_jsfiddle_candidate(markup, base_url=""):
     return Candidate("embedded-source", markdown, measure(markdown))
 
 
+# A React Server Components page ships its rendered tree as a run of
+# `self.__next_f.push([1,"..."])` string chunks. Concatenated, those chunks are
+# the "flight" payload: newline-separated rows, each `<id>:<data>`, where a long
+# string is length-prefixed as `<id>:T<hex byte length>,<text>`.
+NEXT_FLIGHT_PUSH = re.compile(
+    r'self\.__next_f\.push\(\[\s*1\s*,\s*("(?:[^"\\]|\\.)*")\s*\]\)', re.S)
+FLIGHT_ROW = re.compile(rb"([0-9a-f]+):")
+
+# The prop a Next.js blog hands its article body in. A reference to another row
+# is written "$3b"; anything else is the body inlined.
+MARKDOWN_PROP = re.compile(r'"markdownContent"\s*:\s*("(?:[^"\\]|\\.)*")')
+ROW_REFERENCE = re.compile(r"^\$([0-9a-f]+)$")
+
+META_DESCRIPTION = re.compile(
+    r'<meta\b(?=[^>]*\bname\s*=\s*["\']description["\'])'
+    r'[^>]*\bcontent\s*=\s*"([^"]*)"', re.IGNORECASE)
+
+
+def _flight_rows(markup):
+    """Every `<id>:<data>` row of the RSC payload, decoded."""
+    parts = []
+    for match in NEXT_FLIGHT_PUSH.finditer(markup or ""):
+        try:
+            parts.append(json.loads(match.group(1)))
+        except ValueError:
+            continue
+    if not parts:
+        return {}
+
+    # `T` lengths count UTF-8 BYTES, not characters, so the walk is done over
+    # bytes. Slicing by character would drift on any row holding a smart quote
+    # and truncate every row after it.
+    data = "".join(parts).encode("utf-8")
+    rows, index, size = {}, 0, len(data)
+    while index < size:
+        match = FLIGHT_ROW.match(data, index)
+        if not match:
+            newline = data.find(b"\n", index)
+            if newline < 0:
+                break
+            index = newline + 1
+            continue
+        row_id, cursor = match.group(1).decode("ascii"), match.end()
+        if cursor < size and data[cursor:cursor + 1] == b"T":
+            comma = data.find(b",", cursor)
+            if comma < 0:
+                break
+            try:
+                length = int(data[cursor + 1:comma], 16)
+            except ValueError:
+                index = cursor + 1
+                continue
+            start = comma + 1
+            rows[row_id] = data[start:start + length].decode("utf-8", "replace")
+            index = start + length
+            if index < size and data[index:index + 1] == b"\n":
+                index += 1
+        else:
+            newline = data.find(b"\n", cursor)
+            if newline < 0:
+                rows[row_id] = data[cursor:].decode("utf-8", "replace")
+                break
+            rows[row_id] = data[cursor:newline].decode("utf-8", "replace")
+            index = newline + 1
+    return rows
+
+
+def _prose_key(text):
+    """Comparable prose: link targets and entities carry no meaning here.
+
+    A description renders `[label](url)` as its label, while the body keeps the
+    Markdown, so the two are compared with targets removed.
+    """
+    plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text or "")
+    return re.sub(r"\s+", " ", html_module.unescape(plain)).strip()
+
+
+def embedded_rsc_candidate(markup, base_url=""):
+    """Recover an article that ships only inside a Next.js flight payload.
+
+    A React Server Components page serves its prose as data in `<script>`, so a
+    tokenizer sees the shell and nothing else. Nineteen of twenty archived
+    thespanner.co.uk documents were published this way: a run of navigation
+    links to other posts, zero prose paragraphs, and the research gone.
+
+    THE BODY MUST PROVE IT BELONGS TO THIS PAGE. The same payload also carries a
+    recent-posts list with other articles' bodies in it, so taking the longest
+    prose row would file a neighbouring post under this citation - the exact
+    wrong-page capture this archive treats as its most serious fault. The page's
+    own `<meta name="description">` is the check: it is generated from the
+    article being displayed, so a body that does not open with it is not this
+    page's body and nothing is returned.
+    """
+    rows = _flight_rows(markup)
+    if not rows:
+        return None
+    match = MARKDOWN_PROP.search("".join(rows.values()))
+    if not match:
+        return None
+    try:
+        value = json.loads(match.group(1))
+    except ValueError:
+        return None
+    reference = ROW_REFERENCE.match(value)
+    body = rows.get(reference.group(1), "") if reference else value
+    if not body.strip():
+        return None
+
+    # The description is a TRUNCATED opening of the article, so the body has to
+    # begin with it rather than equal it.
+    described = META_DESCRIPTION.search(markup or "")
+    if described:
+        wanted = _prose_key(html_module.unescape(described.group(1)))[:60]
+        if wanted and not _prose_key(body).startswith(wanted):
+            return None
+
+    markdown = body.strip() + "\n"
+    return Candidate("embedded-rsc", markdown, measure(markdown))
+
+
 def _candidate(name, node, base_url):
     markdown = to_markdown(node, base_url)
     return Candidate(name, markdown, measure(markdown))

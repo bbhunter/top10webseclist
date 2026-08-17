@@ -245,10 +245,13 @@ def acquire(key, entry, store, fetcher, config, taken_slugs=(), refetch=False,
     markup = htmltext.decode(raw if isinstance(raw, bytes) else raw.encode("utf-8"),
                              _content_type(entry))
     embedded_source = extract_html.embedded_jsfiddle_candidate(markup, final_url)
+    embedded_rsc = extract_html.embedded_rsc_candidate(markup, final_url)
     cleaned = sanitise.sanitise_html(markup)
     candidates = extract_html.candidates(cleaned.text, base_url=final_url)
     if embedded_source is not None:
         candidates.append(embedded_source)
+    if embedded_rsc is not None:
+        candidates.append(embedded_rsc)
     chosen, why = choose(candidates)
     # An explicit archive decision is also how a maintainer records that an
     # intentionally short PoC or vendor note is complete.  The old order made
@@ -439,6 +442,20 @@ def choose(candidates):
     """
     if not candidates:
         return None, "no candidate"
+
+    # AN EMBEDDED CANDIDATE IS EVIDENCE, NOT A HEURISTIC. The three ordinary
+    # candidates are guesses about which container holds the article; an embedded
+    # one is only ever produced after the extractor has positively identified the
+    # document's own body in the page's declarative data - a fiddle's editor
+    # configuration, or a flight payload row proven against the page's own
+    # description. Ranking it by length would lose every time the article is
+    # short: thespanner.co.uk serves 3,300 characters of links to other posts, so
+    # a 1,087-character article measures as the weaker candidate while being the
+    # only real one.
+    for item in candidates:
+        if item.name.startswith("embedded-"):
+            return item, "%s recovered the document's own body from page data" % item.name
+
     best_code = max(item.metrics["code_blocks"] for item in candidates)
     best_chars = max(item.metrics["chars"] for item in candidates)
     best_headings = max(item.metrics["headings"] for item in candidates)

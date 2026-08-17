@@ -8,6 +8,7 @@ candidate is measured rather than one being trusted.
 
 from . import support  # noqa: F401
 
+import json
 import unittest
 
 from refslib import extract_html, htmltext
@@ -133,6 +134,83 @@ class TestCandidates(unittest.TestCase):
         markup = 'value: {html: "payload", js: "", css: "body{}"}'
         self.assertIsNone(extract_html.embedded_jsfiddle_candidate(
             markup, "https://example.org/article"))
+
+
+def _flight_page(rows, description):
+    """A Next.js page whose visible body is a link list, as the real ones are."""
+    payload = "".join(rows)
+    chunks = [payload[index:index + 40] for index in range(0, len(payload), 40)]
+    scripts = "".join(
+        "<script>self.__next_f.push([1,%s])</script>" % json.dumps(chunk)
+        for chunk in chunks)
+    return (
+        '<html><head><meta name="description" content="%s">'
+        "</head><body>%s"
+        '<div><a href="/other-post">Another post</a>'
+        '<a href="/third-post">A third post</a></div></body></html>'
+        % (description, scripts))
+
+
+class TestReactServerComponentsPayload(unittest.TestCase):
+    """The article ships as data in a script, so a tokenizer sees a link list.
+
+    Measured on thespanner.co.uk, where nineteen of twenty archived documents
+    published as navigation links with zero prose.
+    """
+
+    ARTICLE = ("The DOM is a mess. In an effort to support legacy short cuts "
+               "the browsers built a monster.\r\n\r\n### HTML Collections\r\n\r\n"
+               "```html\r\n<input id=x><input id=x><script>alert(x)</script>\r\n```\r\n")
+    NEIGHBOUR = "A different post about CSS that happens to sit in the same payload."
+
+    def test_the_article_is_recovered_from_the_flight_payload(self):
+        rows = ['3b:T%x,%s\n' % (len(self.ARTICLE.encode("utf-8")), self.ARTICLE),
+                '15:{"posts":[{"title":"DOM Clobbering","markdownContent":"$3b"}]}\n']
+        candidate = extract_html.embedded_rsc_candidate(
+            _flight_page(rows, "The DOM is a mess. In an effort to support legacy"))
+        self.assertIsNotNone(candidate)
+        self.assertIn("### HTML Collections", candidate.markdown)
+        self.assertIn("<input id=x>", candidate.markdown)
+        self.assertEqual(candidate.metrics["code_blocks"], 1)
+
+    def test_an_inlined_body_is_recovered_too(self):
+        rows = ['7:{"markdownContent":%s}\n' % json.dumps(self.ARTICLE)]
+        candidate = extract_html.embedded_rsc_candidate(
+            _flight_page(rows, "The DOM is a mess. In an effort to support legacy"))
+        self.assertIsNotNone(candidate)
+        self.assertIn("### HTML Collections", candidate.markdown)
+
+    def test_a_neighbouring_post_is_never_filed_under_this_citation(self):
+        """The payload also carries other posts. Publishing one here would be a
+        wrong-page capture, so a body that is not this page's is refused."""
+        rows = ['3b:T%x,%s\n' % (len(self.NEIGHBOUR.encode("utf-8")), self.NEIGHBOUR),
+                '15:{"markdownContent":"$3b"}\n']
+        self.assertIsNone(extract_html.embedded_rsc_candidate(
+            _flight_page(rows, "The DOM is a mess. In an effort to support legacy")))
+
+    def test_a_link_in_the_opening_line_still_matches_the_description(self):
+        """The description renders links as their label; the body keeps the
+        Markdown. Comparing them literally would refuse a sound recovery."""
+        body = "[Andrea Giammarchi](http://example.org/p) had an article which stated"
+        rows = ['41:T%x,%s\n' % (len(body.encode("utf-8")), body),
+                '15:{"markdownContent":"$41"}\n']
+        candidate = extract_html.embedded_rsc_candidate(
+            _flight_page(rows, "Andrea Giammarchi had an article which stated"))
+        self.assertIsNotNone(candidate)
+
+    def test_a_smart_quote_does_not_truncate_the_rows_after_it(self):
+        """`T` lengths count bytes. Slicing by character drifts on any non-ASCII
+        row and truncates every row that follows."""
+        body = "I haven’t hacked the PHPIDS for a while, but here is the vector."
+        rows = ['41:T%x,%s\n' % (len(body.encode("utf-8")), body),
+                '15:{"markdownContent":"$41"}\n']
+        candidate = extract_html.embedded_rsc_candidate(
+            _flight_page(rows, "I haven’t hacked the PHPIDS for a while, but here"))
+        self.assertIsNotNone(candidate)
+        self.assertIn("the vector.", candidate.markdown)
+
+    def test_an_ordinary_page_produces_no_embedded_candidate(self):
+        self.assertIsNone(extract_html.embedded_rsc_candidate(PAGE))
 
 
 class TestSilentLossIsVisible(unittest.TestCase):
