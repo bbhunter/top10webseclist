@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-494 reference(s) unresolved. 447 of them already have their raw bytes stored.
+493 reference(s) unresolved. 446 of them already have their raw bytes stored.
 
 ## http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html
 
@@ -1024,7 +1024,7 @@ or fix the route and re-run.
 
 - Outcome: `broken-capture`
 - Kind: article
-- Reason: faulty capture: THE DOMAIN CHANGED HANDS AND THE NEW OWNER'S BRANDING IS IN THE ARCHIVE. The first body line is a Thai sports-betting site's title, present in the stored object itself. All the evidence is absent: the stored object contains ZERO anchors and ZERO images, so the script link is bare text, the line "Let's see what is interpreted by Microsoft Internet Explorer:" is a dangling colon with nothing after it, and the five Target Check and Inference pairs have no screenshots. The prose is also fragmented - 41 of 77 paragraphs do not end in terminal punctuation, because each hard-wrapped source line became its own paragraph and sentences are split across them (reported 2026-08-15) REPAIRED 2026-08-17: the squatted-domain import was replaced with a 2009 Wayback capture (20090328161750) of the real page. The Thai betting site's branding is gone from the first line, the document carries 13 links and 6 images where the import had none, so the script link and the Target Check and Inference screenshots are present again, and the author is credited from the page's own heading.
+- Reason: faulty capture: THE DOMAIN CHANGED HANDS AND THE NEW OWNER'S BRANDING IS IN THE ARCHIVE. The first body line is a Thai sports-betting site's title, present in the stored object itself. All the evidence is absent: the stored object contains ZERO anchors and ZERO images, so the script link is bare text, the line "Let's see what is interpreted by Microsoft Internet Explorer:" is a dangling colon with nothing after it, and the five Target Check and Inference pairs have no screenshots. The prose is also fragmented - 41 of 77 paragraphs do not end in terminal punctuation, because each hard-wrapped source line became its own paragraph and sentences are split across them (reported 2026-08-15) REPAIRED 2026-08-17: the squatted-domain import was replaced with a 2009 Wayback capture (20090328161750) of the real page. The Thai betting site's branding is gone from the first line, the document carries 13 links and 6 images where the import had none, so the script link and the Target Check and Inference screenshots are present again, and the author is credited from the page's own heading. NOT fully settled: the hard-wrapped prose the report also named is better but not fixed - paragraphs with no terminal punctuation fall from 41 of 77 to 15 of 55, some of which are headings and listings rather than split sentences - and published is still empty.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2009.md:72`
 
@@ -1915,14 +1915,6 @@ or fix the route and re-run.
 - Reason: faulty capture: the publisher's code-block line-number gutter is published as content - bare numbers in their own fenced blocks, or fused into each code line - so listings as published are wrong to copy ("1POST /product/lookup_agg HTTP/1.1", one run of 206 consecutive numbers); re-extract with the gutter excluded (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2024.md:27`
-
-## https://blog.ripstech.com/2017/shopware-php-object-instantiation-to-blind-xxe/
-
-- Outcome: `broken-capture`
-- Kind: article
-- Reason: faulty capture: THE ARCHIVED PAGE IS THE PUBLISHER'S BLOG FRONT PAGE, NOT THE CITED ANALYSIS. It holds a featured post announcing the vendor's acquisition of another company, a newsletter sign-up form and privacy links; the Shopware 5.3.3 write-up the citation names - a PHP object instantiation sink reached and used to trigger a blind XXE - appears nowhere on it. The vendor renamed itself between capture and citation, so the article has almost certainly moved rather than gone: look for it under the new brand before treating it as lost. (reported 2026-08-15) REPAIRED 2026-08-17: the publisher's blog front page was replaced with the cited analysis itself, recovered from a 2017 Wayback capture (20171112153855). The document is now 'Shopware 5.3.3: PHP Object Instantiation to Blind XXE', 8 Nov 2017, 1,586 characters of front page becoming 10,523 of the write-up, and Karim El Ouerghemmi is credited from its own byline.
-- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2016-17.md:45`
 
 ## https://blog.teddykatz.com/2019/11/23/json-padding-oracles.html
 

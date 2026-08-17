@@ -277,3 +277,67 @@ were classified years of site redesigns ago.
 - **Check:** the page is still a record rather than an article that has since
   grown one.
 - **Sample:** `mazin-ahmed-evading-all-web-application-firewalls-xss-filters`
+
+
+---
+
+## Written by, second session
+
+`refs.py acquire`, `wayback`, `papers`, `import`, `attribution`, `digest`, `pdf`
+and two converter changes, run 2026-08-17. That session repaired 40 filed faulty
+captures and is described in commits `12ff4f9` through `617a770`. The packs below
+are what it could not finish, and each is a class rather than a one-off.
+
+## 13. Extractor limits that block a filed repair - 6 classes, 17 references
+
+Each of these was attempted, answered, and reverted: the source is reachable and
+the bytes are held, but the extractor cannot read that page shape, so no
+re-fetch will help. Their manifest entries record what was tried, so the next
+run does not repeat it. These are TOOLING work, not acquisition work.
+
+| Class | References | What answers |
+|---|---|---|
+| Bugzilla comment threads | 2 | extraction keeps under a third of the probed text, even from a stored browser DOM |
+| Repository blob size cap | 1 | a 504,657-byte README exceeds `MAX_BLOB_BYTES` (256 KiB) in `refslib/repo.py`, so only LICENSE is preserved |
+| Squarespace lazy-loaded figures | 3 | a refetch is byte-identical and still keeps 3 of ~13 screenshots |
+| Syntax-highlight code widgets | 1 | fenced listings come through empty; a browser DOM does not populate them |
+| Escaped payload decoded then stripped | ~50 | the converter decodes an author-escaped listing and then removes its handler |
+| Proof-of-work / consent walls | 1 | HAL serves Anubis to every non-browser client on every mirror |
+
+- **Check:** fix the class in the converter with corpus-wide tests, then re-run
+  `acquire --force` offline - every one of these has its bytes in the store.
+- **Sample:** `webkit-bugzilla-15936-overly-permissive-frame-navigation-allows-password-theft`
+
+## 14. Summaries recorded but never published - 33 documents
+
+The manifest holds a summary and tags; the file does not show them. `digest
+--publish` refuses a file it cannot reproduce, which is what protects a
+hand-imported copy and a document carrying a controlled tail cut from being
+silently overwritten. The refusal is correct; the outcome is that a third of a
+document's searchable text is invisible.
+
+- **Check:** decide per document whether to re-render it (losing the hand edit)
+  or to carry the summary in by hand.
+- **Sample:** `agrrrdog-blogspot-com-autobinding-vulns-spring-mvc`
+- **Route:** `refs.py digest --publish` reaches the rest; these need judgement.
+
+## 15. Summaries stale against their own document - 58 references
+
+`digest.of` no longer matches `content_sha256`, so each summary was written from
+bytes the archive has since replaced. None is known to be wrong - most describe
+the same research - but none has been read against what is published now.
+
+- **Check:** `refs.py digest --queue` offers them; read the document, do not
+  re-bless the text on its wording alone.
+- **Sample:** `blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit`
+
+## 16. Orphaned translation PDFs - 24 files
+
+`<slug>_translate.pdf` files no manifest entry claims, from translation pairs
+withdrawn earlier. They are NOT deletable as a side effect: `index
+--prune-files` removes every unclaimed file at once, so a run that renames one
+slug would take all 24 with it.
+
+- **Check:** confirm each pair really was withdrawn rather than mis-recorded,
+  then prune deliberately.
+- **Sample:** `archived-references/pdf/2008/json-hijacking-utf-7_translate.pdf`
