@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1649 reference(s) archived across 20 year list(s). 1546 carry technique and 103 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1649 reference(s) archived across 20 year list(s). 1547 carry technique and 102 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -863,7 +863,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Request and Conquer: Exposing Cross-Origin Resource Size](md/2016-17/usenix-org-request-conquer-exposing-cross-origin-resource-size.md) | article | usenix.org |  | research | 1 |
 | [Request encoding to bypass web application firewalls](md/2016-17/ncc-group-request-encoding-bypass-web-application-firewalls.md) | article | NCC Group | 2017 | research | 1 |
 | [Same-Origin Policy: Evaluation in Modern Browsers](md/2016-17/usenix-org-same-origin-policy-evaluation-modern-browsers.md) | article | usenix.org |  | research | 1 |
-| [Sonar blog](md/2016-17/sonarsource-com-shopware-5-3-3-php-object-instantiation-blind-xxe.md) | article | blog.ripstech.com |  | records | 1 |
+| [Shopware 5.3.3: PHP Object Instantiation to Blind XXE](md/2016-17/sonarsource-com-shopware-5-3-3-php-object-instantiation-blind-xxe.md) | article | blog.ripstech.com |  | research | 1 |
 | [Stealing Messenger.com Login Nonces](md/2016-17/stephensclafani-com-stealing-messenger-com-login-nonces.md) | article | stephensclafani.com |  | research | 1 |
 | [Stealing PINs via Mobile Sensors: Actual Risk versus User Perception](md/2016-17/york-research-database-stealing-pins-mobile-sensors-actual-risk-perception.md) | article | York Research Database |  | research | 1 |
 | [SWEET32: Birthday attacks on 64-bit block ciphers in TLS and OpenVPN](md/2016-17/sweet32-info-sweet32-birthday-attacks-64-bit-block-ciphers-tls-openvpn.md) | article | sweet32.info |  | research | 1 |
@@ -1438,8 +1438,8 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [HTML5 XSS](md/2009/thespanner-co-uk-html5-xss-spanner.md) | article | thespanner.co.uk |  | research | 1 |
 | [I know what your friends did last summer](md/2009/thespanner-co-uk-i-know-what-your-friends-did-last-summer.md) | article | thespanner.co.uk |  | research | 1 |
 | [IBM Rational Application Security Insider: Active Man in the Middle Attacks](md/2009/blog-watchfire-com-ibm-application-security-insider-active-man-middle-attacks.md) | article | blog.watchfire.com |  | research | 1 |
-| [IE8 Link Spoofing - Broken Status Bar Integrity](md/2009/secniche-org-ie8-link-spoofing-broken-status-bar-integrity.md) | article | secniche.org |  | research | 1 |
 | [Inline UTF-7 E4X javascript hijacking](md/2009/thespanner-co-uk-inline-utf-7-e4x-javascript-hijacking.md) | article | thespanner.co.uk |  | research | 1 |
+| [Internet Explorer 8 : Anti Spoofing is a Myth](md/2009/secniche-org-ie8-link-spoofing-broken-status-bar-integrity.md) | article | secniche.org |  | research | 1 |
 | [iPhone SSL Warning and Safari Phishing ha.ckers.org web application security lab](md/2009/ha-ckers-org-iphone-ssl-warning-safari-phishing-ha-ckers-org-web-lab.md) | article | ha.ckers.org |  | records | 1 |
 | [itms Decloaking ha.ckers.org web application security lab](md/2009/ha-ckers-org-itms-decloaking-ha-ckers-org-web-application-security-lab.md) | article | ha.ckers.org |  | research | 1 |
 | [Location based XSS attacks](md/2009/thespanner-co-uk-location-based-xss-attacks.md) | article | thespanner.co.uk |  | research | 1 |
@@ -1543,7 +1543,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [JavaScript Global Namespace Pollution](md/2008/gnucitizen-org-javascript-global-namespace-pollution.md) | article | gnucitizen.org |  | research | 1 |
 | [Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'](md/2008/wired-com-man-allegedly-bilks-e-trade-schwab-50-000-collecting-lots-deposits.md) | article | blog.wired.com |  | research | 1 |
 | [Mike On Ads » Blog Archive » Using your browser URL history to estimate gender](md/2008/mikeonads-com-mike-ads-blog-archive-using-your-browser-url-history-gender.md) | article | mikeonads.com |  | research | 1 |
-| [MySQL and SQL Column Truncation Vulnerabilities](md/2008/suspek-org-mysql-sql-column-truncation-vulnerabilities.md) | article | suspek.org |  | research | 1 |
+| [MySQL and SQL Column Truncation Vulnerabilities](md/2008/suspekt-org-mysql-sql-column-truncation-vulnerabilities.md) | article | suspekt.org |  | research | 1 |
 | [Owning the Client without an Exploit](md/2008/blog-carnal0wnage-com-owning-client-without-exploit.md) | article | blog.carnal0wnage.com |  | research | 1 |
 | [ProCheckUp - Penetration Testing, PCI DSS Compliance, Application Testing](md/2008/procheckup-com-procheckup-penetration-testing-pci-dss-compliance-testing.md) | article | procheckup.com |  | records | 1 |
 | [Pwning Ubuntu via CUPS](md/2008/gnucitizen-org-pwning-ubuntu-cups.md) | article | gnucitizen.org |  | research | 1 |

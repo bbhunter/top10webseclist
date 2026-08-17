@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-494 reference(s) unresolved. 444 of them already have their raw bytes stored.
+494 reference(s) unresolved. 447 of them already have their raw bytes stored.
 
 ## http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html
 
@@ -1022,9 +1022,9 @@ or fix the route and re-run.
 
 ## http://secniche.org/ie_spoof_myth/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
-- Reason: faulty capture: THE DOMAIN CHANGED HANDS AND THE NEW OWNER'S BRANDING IS IN THE ARCHIVE. The first body line is a Thai sports-betting site's title, present in the stored object itself. All the evidence is absent: the stored object contains ZERO anchors and ZERO images, so the script link is bare text, the line "Let's see what is interpreted by Microsoft Internet Explorer:" is a dangling colon with nothing after it, and the five Target Check and Inference pairs have no screenshots. The prose is also fragmented - 41 of 77 paragraphs do not end in terminal punctuation, because each hard-wrapped source line became its own paragraph and sentences are split across them (reported 2026-08-15)
+- Reason: faulty capture: THE DOMAIN CHANGED HANDS AND THE NEW OWNER'S BRANDING IS IN THE ARCHIVE. The first body line is a Thai sports-betting site's title, present in the stored object itself. All the evidence is absent: the stored object contains ZERO anchors and ZERO images, so the script link is bare text, the line "Let's see what is interpreted by Microsoft Internet Explorer:" is a dangling colon with nothing after it, and the five Target Check and Inference pairs have no screenshots. The prose is also fragmented - 41 of 77 paragraphs do not end in terminal punctuation, because each hard-wrapped source line became its own paragraph and sentences are split across them (reported 2026-08-15) REPAIRED 2026-08-17: the squatted-domain import was replaced with a 2009 Wayback capture (20090328161750) of the real page. The Thai betting site's branding is gone from the first line, the document carries 13 links and 6 images where the import had none, so the script link and the Target Check and Inference screenshots are present again, and the author is credited from the page's own heading.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2009.md:72`
 
@@ -1550,9 +1550,9 @@ or fix the route and re-run.
 
 ## http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
-- Reason: faulty capture: THE CAPTURE IS A THIRD-PARTY RE-HOST, NOT THE RESEARCH BLOG. The redirect chain runs suspekt.org to suspek.org - the letter t is gone - and the stored page is a consumer affiliate site whose navigation reads Parental Control, Phone Monitoring, Buying Guide, VPN, Antivirus, Password Managers, carrying the old posts across. Its JSON-LD declares datePublished 2019-12-26, a republication artefact on a 2008 article. The article TEXT is verbatim and complete, so the document is right, but the provenance is not: the re-host strips the byline, so the archive cannot credit Stefan Esser from these bytes, and published is empty although the original URL carries 2008/08/18. A Wayback capture of the suspekt.org URL would be the sound source. Note the manifest raw_sha256 is ABSENT from the store while the frontmatter hash resolves, so this must not be re-rendered with --force (reported 2026-08-15)
+- Reason: faulty capture: THE CAPTURE IS A THIRD-PARTY RE-HOST, NOT THE RESEARCH BLOG. The redirect chain runs suspekt.org to suspek.org - the letter t is gone - and the stored page is a consumer affiliate site whose navigation reads Parental Control, Phone Monitoring, Buying Guide, VPN, Antivirus, Password Managers, carrying the old posts across. Its JSON-LD declares datePublished 2019-12-26, a republication artefact on a 2008 article. The article TEXT is verbatim and complete, so the document is right, but the provenance is not: the re-host strips the byline, so the archive cannot credit Stefan Esser from these bytes, and published is empty although the original URL carries 2008/08/18. A Wayback capture of the suspekt.org URL would be the sound source. Note the manifest raw_sha256 is ABSENT from the store while the frontmatter hash resolves, so this must not be re-rendered with --force (reported 2026-08-15) REPAIRED 2026-08-17: the third-party re-host was replaced with a 2009 Wayback capture (20090206030917) of the original suspekt.org page, so the provenance is now the research blog rather than a consumer affiliate site, and Stefan Esser is credited from the page's own byline line - the credit the re-host had stripped. The recorded title was corrected back from the blog masthead form via overrides, which also rebuilt the slug from suspek-org to suspekt-org and the old pair was removed.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2008.md:42`
 
@@ -1918,9 +1918,9 @@ or fix the route and re-run.
 
 ## https://blog.ripstech.com/2017/shopware-php-object-instantiation-to-blind-xxe/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
-- Reason: faulty capture: THE ARCHIVED PAGE IS THE PUBLISHER'S BLOG FRONT PAGE, NOT THE CITED ANALYSIS. It holds a featured post announcing the vendor's acquisition of another company, a newsletter sign-up form and privacy links; the Shopware 5.3.3 write-up the citation names - a PHP object instantiation sink reached and used to trigger a blind XXE - appears nowhere on it. The vendor renamed itself between capture and citation, so the article has almost certainly moved rather than gone: look for it under the new brand before treating it as lost. (reported 2026-08-15)
+- Reason: faulty capture: THE ARCHIVED PAGE IS THE PUBLISHER'S BLOG FRONT PAGE, NOT THE CITED ANALYSIS. It holds a featured post announcing the vendor's acquisition of another company, a newsletter sign-up form and privacy links; the Shopware 5.3.3 write-up the citation names - a PHP object instantiation sink reached and used to trigger a blind XXE - appears nowhere on it. The vendor renamed itself between capture and citation, so the article has almost certainly moved rather than gone: look for it under the new brand before treating it as lost. (reported 2026-08-15) REPAIRED 2026-08-17: the publisher's blog front page was replaced with the cited analysis itself, recovered from a 2017 Wayback capture (20171112153855). The document is now 'Shopware 5.3.3: PHP Object Instantiation to Blind XXE', 8 Nov 2017, 1,586 characters of front page becoming 10,523 of the write-up, and Karim El Ouerghemmi is credited from its own byline.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:45`
 

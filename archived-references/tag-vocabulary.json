@@ -148,7 +148,7 @@
  "schema": 1,
  "tags": {
   "abuse-of-functionality": {
-   "documents": 67
+   "documents": 69
   },
   "active-directory": {
    "documents": 1
@@ -217,7 +217,7 @@
    "documents": 2
   },
   "case-study": {
-   "documents": 270
+   "documents": 269
   },
   "cdn": {
    "documents": 46
@@ -289,13 +289,13 @@
    "documents": 1
   },
   "deserialization": {
-   "documents": 77
+   "documents": 78
   },
   "desync": {
    "documents": 36
   },
   "detection": {
-   "documents": 120
+   "documents": 119
   },
   "django": {
    "documents": 11
@@ -319,7 +319,7 @@
    "documents": 2
   },
   "dos": {
-   "documents": 106
+   "documents": 105
   },
   "dotnet": {
    "documents": 66
@@ -373,7 +373,7 @@
    "documents": 50
   },
   "gadget-chain": {
-   "documents": 93
+   "documents": 94
   },
   "gcp": {
    "documents": 11
@@ -424,7 +424,7 @@
    "documents": 134
   },
   "info-leak": {
-   "documents": 591
+   "documents": 592
   },
   "injection": {
    "documents": 122
@@ -496,7 +496,7 @@
    "documents": 11
   },
   "mysql": {
-   "documents": 24
+   "documents": 23
   },
   "nextjs": {
    "documents": 11
@@ -535,7 +535,7 @@
    "documents": 39
   },
   "php": {
-   "documents": 116
+   "documents": 117
   },
   "postgres": {
    "documents": 8
@@ -694,7 +694,7 @@
    "documents": 36
   },
   "url-parsing": {
-   "documents": 117
+   "documents": 116
   },
   "url-spoofing": {
    "documents": 12
@@ -736,8 +736,8 @@
    "documents": 380
   },
   "xxe": {
-   "documents": 31
+   "documents": 32
   }
  },
- "updated": "2026-08-17T12:48:39+00:00"
+ "updated": "2026-08-17T13:02:16+00:00"
 }

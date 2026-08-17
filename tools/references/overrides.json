@@ -630,6 +630,14 @@
    "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2010 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name.",
    "title": "Cross-Site Identification (XSid)"
   },
+  "https://blog.ripstech.com/2017/shopware-php-object-instantiation-to-blind-xxe": {
+   "authors": [
+    "Karim El Ouerghemmi"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Reviewed 2026-08-17: the archived page had been the publisher's blog front page, titled \"Sonar blog\"; the cited analysis was recovered from Wayback (20171112153855) and states its byline under its own heading - \"8 Nov 2017 by [Karim El Ouerghemmi](https://blog.ripstech.com/tags/karim-el-ouerghemmi)\"."
+  },
   "https://blog.securitee.org/?p=37": {
    "class": "research",
    "outcome": "archive",
@@ -3061,6 +3069,14 @@
    "outcome": "archive",
    "reason": "authors was empty although THE PUBLISHED DOCUMENT ITSELF names him: the advisory's own byline line reads \"Aditya K Sood, (C) SecNiche Security\" with the address adi_ks [at] secniche.org directly beneath. Nothing had to be fetched to establish this."
   },
+  "https://secniche.org/ie_spoof_myth": {
+   "authors": [
+    "Aditya K Sood"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Reviewed 2026-08-17: the hand-imported copy was a capture of the domain AFTER it changed hands, carrying a Thai sports-betting site's branding and no links or images at all. A 2009 Wayback capture (20090328161750) of the real page replaced it, and that page states the credit under its own heading - \"(C) SecNiche Security Aditya K Sood\"."
+  },
   "https://sectheory.com/file-sharing.htm": {
    "class": "research",
    "outcome": "archive",
@@ -3653,6 +3669,15 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source has rel=\"author\" naming \"suriya\" plus an article:author meta, and the post itself signs off \"-Suriya\". Harsha Vardhan Boppana and Rafay Baloch are quoted contributors, not the author."
+  },
+  "https://suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities": {
+   "authors": [
+    "Stefan Esser"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Reviewed 2026-08-17: recovering the original suspekt.org page from Wayback (20090206030917) replaced a third-party re-host that had stripped the byline. The recovered page states it under its own heading - \"August 18th, 2008 | by Stefan Esser |\". The same capture put the blog masthead into the recorded title as \"Suspekt... » Blog Archive » MySQL and SQL Column Truncation Vulnerabilities\"; the document's own heading is the title stated here.",
+   "title": "MySQL and SQL Column Truncation Vulnerabilities"
   },
   "https://synacktiv.com/publications/persistent-php-payloads-in-pngs-how-to-inject-php-code-in-an-image-and-keep-it-there.html": {
    "authors": [

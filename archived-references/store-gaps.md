@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-211 archived reference(s) name 250 store object(s) that are no longer held: 45 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 192 raw_sha256.
+209 archived reference(s) name 247 store object(s) that are no longer held: 44 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 190 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -78,7 +78,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/> | article | `raw_sha256` | `2008.md:32` |
 | <http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf> | whitepaper | `content_sha256` | `2009.md:60` |
 | <http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database> | slides | `raw_sha256` | `2009.md:82` |
-| <http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities/> | article | `raw_sha256` | `2008.md:42` |
 | <http://www.thespanner.co.uk/2014/03/21/rpo/> | article | `raw_sha256` | `2014.md:64`, `2015.md:43` |
 | <http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:24` |
 | <https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization> | article | `raw_sha256`, `browser_dom_sha256` | `2024.md:43` |
@@ -90,7 +89,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:8` |
 | <https://blog.orange.tw/2019/10/an-analysis-and-thought-about-recently.html> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:56` |
 | <https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:11` |
-| <https://blog.ripstech.com/2017/shopware-php-object-instantiation-to-blind-xxe/> | article | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:45` |
 | <https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/> | article | `raw_sha256`, `browser_dom_sha256` | `2022.md:37` |
 | <https://blog.viettelcybersecurity.com/sharepoint-toolshell/> | article | `raw_sha256`, `browser_dom_sha256` | `2025.md:46` |
 | <https://blog.viettelcybersecurity.com/tabshell-owassrf/> | article | `raw_sha256`, `browser_dom_sha256` | `2022.md:49` |

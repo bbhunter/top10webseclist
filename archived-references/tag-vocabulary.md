@@ -67,7 +67,7 @@ JSON.
 
 | Tag | Documents | OWASP |
 |---|---|---|
-| `abuse-of-functionality` | 67 | A04:2021 |
+| `abuse-of-functionality` | 69 | A04:2021 |
 | `active-directory` | 1 | — |
 | `activex` | 12 | — |
 | `ai-agent` | 31 | — |
@@ -90,7 +90,7 @@ JSON.
 | `cache-deception` | 10 | — |
 | `cache-poisoning` | 79 | — |
 | `captcha-bypass` | 2 | A04:2021 |
-| `case-study` | 270 | — |
+| `case-study` | 269 | — |
 | `cdn` | 46 | — |
 | `charset` | 37 | A02:2021 |
 | `ci-cd` | 27 | A08:2021 |
@@ -114,9 +114,9 @@ JSON.
 | `deanonymization` | 17 | — |
 | `defence` | 59 | — |
 | `dependency-confusion` | 1 | A06:2021 |
-| `deserialization` | 77 | A08:2021 |
+| `deserialization` | 78 | A08:2021 |
 | `desync` | 36 | — |
-| `detection` | 120 | A09:2021 |
+| `detection` | 119 | A09:2021 |
 | `django` | 11 | — |
 | `dns` | 86 | — |
 | `dns-rebinding` | 30 | A10:2021 |
@@ -124,7 +124,7 @@ JSON.
 | `dom` | 134 | — |
 | `dom-clobbering` | 14 | A08:2021 |
 | `domain-takeover` | 2 | — |
-| `dos` | 106 | — |
+| `dos` | 105 | — |
 | `dotnet` | 66 | — |
 | `drupal` | 4 | — |
 | `dynamic-analysis` | 75 | — |
@@ -142,7 +142,7 @@ JSON.
 | `formal-analysis` | 32 | — |
 | `ftp` | 10 | — |
 | `fuzzing` | 50 | — |
-| `gadget-chain` | 93 | A08:2021 |
+| `gadget-chain` | 94 | A08:2021 |
 | `gcp` | 11 | — |
 | `github` | 23 | — |
 | `github-actions` | 18 | A08:2021 |
@@ -159,7 +159,7 @@ JSON.
 | `identity` | 1 | A07:2021 |
 | `idor` | 27 | A01:2021 |
 | `iframe` | 134 | — |
-| `info-leak` | 591 | — |
+| `info-leak` | 592 | — |
 | `injection` | 122 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 1 | — |
@@ -183,7 +183,7 @@ JSON.
 | `mongodb` | 6 | — |
 | `mssql` | 11 | — |
 | `mutation-xss` | 11 | A03:2021 |
-| `mysql` | 24 | — |
+| `mysql` | 23 | — |
 | `nextjs` | 11 | — |
 | `nodejs` | 69 | — |
 | `nosqli` | 3 | A03:2021 |
@@ -196,7 +196,7 @@ JSON.
 | `pdf` | 23 | — |
 | `perl` | 4 | — |
 | `phishing` | 39 | A04:2021 |
-| `php` | 116 | — |
+| `php` | 117 | — |
 | `postgres` | 8 | — |
 | `postmessage` | 34 | — |
 | `predictable-token` | 2 | A02:2021 |
@@ -249,7 +249,7 @@ JSON.
 | `typosquatting` | 9 | A06:2021 |
 | `ui-redress` | 72 | A04:2021 |
 | `unicode` | 36 | — |
-| `url-parsing` | 117 | — |
+| `url-parsing` | 116 | — |
 | `url-spoofing` | 12 | — |
 | `user-enumeration` | 7 | A04:2021 |
 | `vendor-advisory` | 54 | — |
@@ -263,7 +263,7 @@ JSON.
 | `wordpress` | 21 | — |
 | `xsleak` | 72 | — |
 | `xss` | 380 | A03:2021 |
-| `xxe` | 31 | A03:2021 |
+| `xxe` | 32 | A03:2021 |
 
 ### Never published
 
