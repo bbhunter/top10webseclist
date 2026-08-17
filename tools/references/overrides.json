@@ -3915,10 +3915,12 @@
    "reason": "authors was empty. The byline was lost together with the article itself - the published file holds only the site nav list - and the stored source names him immediately after the article H1: \"By Gareth Heyes (@hackvertor)\"."
   },
   "https://thespanner.co.uk/2014/03/21/rpo": {
-   "authors": [],
+   "authors": [
+    "Gareth Heyes"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors recorded \"Ardamis.com | http://www.ardamis.com/\" - a WordPress THEME CREDIT string harvested from the page furniture, not a byline and not a person. The document names nobody, so the correct state is no author."
+   "reason": "Maintainer-stated 2026-08-17: thespanner.co.uk is Gareth Heyes's blog and its articles are his. This capture carries the date, \"Friday, 21 March 2014\", but no byline of its own, so the credit rests on the maintainer's statement rather than on words in the document. Corroborated: the other nineteen archived thespanner references all carry the byline from their own pages, and this post illustrates RPO using hackvertor.co.uk, the author's own tool and domain. Checked for guest posts, which the blog does carry - the one in the site's own feed, \"How I smashed MentalJS\" by Jann Horn, is not cited by any year list."
   },
   "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks": {
    "authors": [
