@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Billy (BK) Rios » Java Applets and DNS Rebinding
+description: "Java applets are pinned to DNS name rather than IP, so an XSS-cached applet can be DNS-rebound by reloading or launching a new JVM after the record changes. Unlike Flash sockets the applet may reach ports below 1024 and use Java's database and RMI libraries. A parallel NGS finding abuses a codebase URI prefixed 'verbatim:'."
 resource: "http://xs-sniper.com/blog/2007/11/04/java-applets-and-dns-rebinding/"
-tags: [article, webseclist-reference, xs-sniper-com]
+tags: [article, webseclist-reference, xs-sniper-com, dns-rebinding, java, dns, sop-bypass, xss, attack-chain, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-16T23:13:07+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » Detecting Default Browser in IE
+description: "A snippet from the handle unsticky uses IE's mimeType reporting to identify the visitor's DEFAULT browser, not merely the one in use, detecting Firefox and Opera reliably. Netscape in IE mode is a known false positive, and Netscape would likely read as Firefox because of the shared Gecko engine."
 resource: "http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, browser-fingerprinting, info-leak, javascript, detection, dom, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-17T08:30:43+00:00"

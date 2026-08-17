@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab - Archive » IE Sends Local Addresses in Referer Header
+description: An IE XML data island fetches a remote URL from a locally saved HTML file and sends the local path as the Referer, leaking the drive location and the Windows username with no JavaScript running. Credited to trev; Firefox is unaffected because it has no data islands.
 resource: "http://ha.ckers.org/blog/20070325/ie-sends-local-addresses-in-referer-header/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, http, side-channel, dom, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-17T08:30:43+00:00"

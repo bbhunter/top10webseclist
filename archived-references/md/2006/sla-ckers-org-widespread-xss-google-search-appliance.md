@@ -1,8 +1,9 @@
 ---
 type: Article
 title: Widespread XSS for Google Search Appliance
+description: "maluc's UTF-7 XSS against Google Search Appliance sites, 30 posts all preserved with the eight university and .gov exploit URLs intact. Same live-HTML decode drops <script>alert(\"XSS\")</script> from the opening sentence. Broken blockquote at the WhiteAcid quote leaves quoted text outside the quote. Duplicate of the -full-appliance entry; published empty despite dated posts."
 resource: "http://sla.ckers.org/forum/read.php?3,3109"
-tags: [article, webseclist-reference, EN, sla-ckers-org]
+tags: [article, webseclist-reference, EN, sla-ckers-org, xss, charset, encoding, filter-bypass, unicode, large-scale-scan, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-16T23:13:00+00:00"

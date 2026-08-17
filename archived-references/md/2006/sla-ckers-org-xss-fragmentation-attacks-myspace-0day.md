@@ -1,8 +1,9 @@
 ---
 type: Article
 title: XSS Fragmentation Attacks + MySpace 0day
+description: "A sla.ckers forum thread developing XSS fragmentation: placing normally harmless code, such as a bare onload=\"alert('XSS');\" attribute with no tag of its own, where a later unclosed tag adopts it as an attribute, so no single input ever contains a complete vector and each fragment passes the filter on its own. kuza55, Spikeman and maluc work the idea against MySpace's filter and close with a working 0day."
 resource: "http://sla.ckers.org/forum/read.php?13,2033"
-tags: [article, webseclist-reference, EN, sla-ckers-org]
+tags: [article, webseclist-reference, EN, sla-ckers-org, xss, filter-bypass, sanitizer-bypass, parser-differential, dom, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-16T23:12:59+00:00"

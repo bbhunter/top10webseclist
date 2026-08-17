@@ -1,8 +1,9 @@
 ---
 type: Article
 title: SMB Decloaking ha.ckers.org web application security lab
+description: "An iframe pointing at a file:// UNC path makes Internet Explorer open an SMB connection to the attacker's host, which a packet capture reads for the real username, IP address, computer name and service pack. It needs no user interaction; the author estimates about half of networks allow outbound SMB."
 resource: "http://ha.ckers.org/blog/20090811/smb-decloaking/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, iframe, info-leak, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-16T23:12:55+00:00"

@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Ways to make a browser connect straight out to a monitored host and unmask a user behind a proxy or Tor. ftp:// and gopher:// connect quietly; telnet:// and scp:// launch external clients loudly; file:///\\\\ hits SMB on ports 445 and 139. Correlating many simultaneous visitors needs unique hostnames or a block of IPs plus a sniffer."
 resource: "http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, deanonymization, info-leak, proxy, ftp, side-channel, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-17T08:30:46+00:00"

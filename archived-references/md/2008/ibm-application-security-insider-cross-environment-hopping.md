@@ -1,12 +1,13 @@
 ---
 type: Article
 title: Cross Environment Hopping
+description: "An XSS flaw in one localhost web server reaches every other service on the machine, because same-origin policy does not separate ports on localhost for IE's ActiveX XMLHTTP objects. Firefox extends it further through Java sockets in JavaScript: enumerate SMB shares, or drive a locally installed proxy (AVAST's) and its HTTP CONNECT support to tunnel into the intranet and talk SMTP."
 resource: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
-tags: [article, webseclist-reference, ibm-application-security-insider]
+tags: [article, webseclist-reference, ibm-application-security-insider, sop-bypass, same-origin-policy, xss, dns-rebinding, proxy, java, activex, ssrf, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-16T23:12:25+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-16
 sources:
   - id: original

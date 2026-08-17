@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "Detects IE7 despite a spoofed user agent by loading a res:// image from the anti-phishing filter: it renders in IE7, while Firefox substitutes a broken-image placeholder whose measurable size gives the browser away. A small demonstration tool accompanies the post."
 resource: "http://ha.ckers.org/blog/20070210/ie70-detector/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, browser-fingerprinting, detection, info-leak, side-channel, tooling, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-17T08:30:40+00:00"

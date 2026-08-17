@@ -1,8 +1,9 @@
 ---
 type: Article
 title: ha.ckers.org web application security lab
+description: "RSnake's write-up of Wade Alcorn's Inter Protocol Exploitation paper. A browser can be driven to speak a non-HTTP protocol to an intranet service, and the traffic it carries can be a working buffer overflow, demonstrated against an Asterisk VoIP server rather than only a toy socket listener. It puts Metasploit-style exploitation behind XSS."
 resource: "http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/"
-tags: [article, webseclist-reference, ha-ckers-org]
+tags: [article, webseclist-reference, ha-ckers-org, xss, javascript, rce, injection, attack-chain, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-17T08:30:45+00:00"
