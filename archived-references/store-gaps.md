@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-215 archived reference(s) name 258 store object(s) that are no longer held: 49 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 196 raw_sha256.
+211 archived reference(s) name 250 store object(s) that are no longer held: 45 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 192 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -190,10 +190,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/> | article | `raw_sha256` | `2010.md:74` |
 | <https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/> | article | `raw_sha256` | `2011.md:6` |
 | <https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018/> | article | `browser_dom_sha256`, `landing_sha256` | `2018.md:77` |
-| <https://www.gnucitizen.org/blog/backdooring-quicktime-movies/> | article | `raw_sha256`, `browser_dom_sha256` | `2006.md:9` |
-| <https://www.gnucitizen.org/blog/google-gmail-e-mail-hijack-technique/> | article | `raw_sha256`, `browser_dom_sha256` | `2007.md:12` |
-| <https://www.gnucitizen.org/blog/hacking-the-interwebs/> | article | `raw_sha256`, `browser_dom_sha256` | `2008.md:65` |
-| <https://www.gnucitizen.org/blog/social-networks-evil-twin-attacks/> | article | `raw_sha256`, `browser_dom_sha256` | `2008.md:67` |
 | <https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/> | article | `content_sha256` | `2007.md:89` |
 | <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:31` |
 | <https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/> | article | `raw_sha256`, `browser_dom_sha256` | `2021.md:39` |

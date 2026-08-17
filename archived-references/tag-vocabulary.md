@@ -90,7 +90,7 @@ JSON.
 | `cache-deception` | 10 | — |
 | `cache-poisoning` | 79 | — |
 | `captcha-bypass` | 2 | A04:2021 |
-| `case-study` | 271 | — |
+| `case-study` | 270 | — |
 | `cdn` | 46 | — |
 | `charset` | 37 | A02:2021 |
 | `ci-cd` | 27 | A08:2021 |

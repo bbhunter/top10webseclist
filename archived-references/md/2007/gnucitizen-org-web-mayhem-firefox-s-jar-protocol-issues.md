@@ -1,8 +1,9 @@
 ---
 type: Article
 title: "Web Mayhem Firefox's JAR Protocol issues"
+description: "Firefox's jar: protocol runs content from inside an archive under the origin of the archive's URL, so any site accepting ZIP-derived uploads (odt, docx, attachments) becomes vulnerable to persistent XSS. pdp also notes jar: can be nested and can wrap data:, letting a payload be obfuscated past antivirus and IDS."
 resource: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues"
-tags: [article, webseclist-reference, en, gnucitizen-org]
+tags: [article, webseclist-reference, en, gnucitizen-org, xss, file-upload, sop-bypass, same-origin-policy, mime, filter-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-16T23:12:38+00:00"

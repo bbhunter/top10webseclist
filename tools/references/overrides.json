@@ -1461,6 +1461,21 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the entry had no author. The write-up is first person and links \"Back then\" to the author’s own earlier post under the handle @joern, corroborated by his shell prompts throughout (\"joern@host2:~/projects/...\"). JUDGEMENT: a shell prompt alone would not be enough, but the self-referential link to his own prior work under that handle is the author identifying himself."
   },
+  "https://gnucitizen.org/blog/backdooring-quicktime-movies": {
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Reviewed 2026-08-17: recovering the authentic 2006 page, which removed an affiliate link the publisher's 2025 rebuild had injected into the researcher's prose, also put the blog masthead back into the recorded title as 'GNUCITIZEN » Backdooring QuickTime Movies'. The document's own heading, and the citation at 2006.md:9, is the title stated here.",
+   "title": "Backdooring QuickTime Movies"
+  },
+  "https://gnucitizen.org/blog/hacking-the-interwebs": {
+   "authors": [
+    "Adrian Pastor",
+    "pdp"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Reviewed 2026-08-17: the recovered 2008 capture states the co-authorship in the article's own opening sentence - \"In the following post, [ap](http://www.gnucitizen.org/about/ap) (Adrian Pastor; pagvac) and [I](http://www.gnucitizen.org/about/pdp) (pdp) are going to expose some secrets\". The edition previously archived had flattened that to \"ap and I\", so only pdp was credited."
+  },
   "https://gnucitizen.org/blog/pwning-ubuntu-via-cups": {
    "authors": [
     "Adrian Pastor"
