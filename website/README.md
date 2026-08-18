@@ -68,9 +68,17 @@ the page depends on it, and the injected tag carries per-response tokens, so no
 fixed hash can ever cover it. Cloudflare adds a nonce to what it injects only when
 it can read one from the CSP response header, which a static `_headers` file cannot
 produce - a per-request nonce would mean routing every asset through a Pages
-function. Switch the feature off under **Security -> Bots -> JavaScript detections**
-rather than loosening the policy for it. Plain Bot Fight Mode offers no such toggle,
-and there the console error is cosmetic and stays.
+function, and the rules-language `uuidv4()` that would otherwise mint one is
+allowed in URL rewrites only, never in a response-header rule.
+
+Switch the injection off rather than loosening the policy for it. The control sits
+in **Security -> Settings**, filtered by **Bot traffic**. Super Bot Fight Mode and
+Enterprise Bot Management expose **JS detections** as its own toggle, so the rest
+of the bot protection survives; under plain Bot Fight Mode the injection is
+bundled and the only switch is Bot Fight Mode itself. Turning that off costs this
+site little - static assets served from Cloudflare's edge have no origin to
+protect - and `curl -s https://webhacklist.com/ | grep -c '__CF\$cv\$params'`
+returns 0 once the injection stops.
 
 ## The name search engines print
 
