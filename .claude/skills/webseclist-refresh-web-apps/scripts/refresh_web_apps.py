@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime
 import hashlib
 import json
 import re
@@ -19,10 +20,38 @@ CATALOGUE = REPO / "website" / "data" / "catalogue.json"
 FINAL_NAME = re.compile(r"^\d{4}(?:-\d{2})?\.md$")
 PRELIMINARY_NAME = re.compile(r"^\d{4}-ai\.md$")
 LINK = re.compile(r"\[((?:[^\]\\]|\\.)+)\]\((?:<(https?://[^>\s]+)>|(https?://[^)\s]+))\)")
+MONTHS = ("January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December")
+
+
+WARNINGS: list[str] = []
 
 
 def fail(message: str) -> None:
     raise SystemExit(f"refresh check failed: {message}")
+
+
+def warn(message: str) -> None:
+    WARNINGS.append(message)
+    print(f"refresh check warning: {message}", file=sys.stderr, flush=True)
+
+
+def spell_date(stamp: str) -> str:
+    """Render an ISO asOf stamp the way a notice spells it: 18 August 2026."""
+    day = datetime.date.fromisoformat(stamp)
+    return f"{day.day} {MONTHS[day.month - 1]} {day.year}"
+
+
+def last_touched(relative: str) -> datetime.date | None:
+    """Commit date of the most recent change to a tracked file, or None."""
+    result = subprocess.run(
+        ["git", "log", "-1", "--format=%cs", "--", relative],
+        cwd=REPO, text=True, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+    )
+    try:
+        return datetime.date.fromisoformat(result.stdout.strip())
+    except ValueError:
+        return None
 
 
 def run(*command: str) -> None:
@@ -96,6 +125,19 @@ def validate_registry() -> tuple[int, int, int]:
         for phrase in ("unranked", "incomplete", "not community-vetted", "subject to change"):
             if phrase not in warning:
                 fail(f"{year} notice must say {phrase!r}")
+        try:
+            spelled = spell_date(record["asOf"])
+        except ValueError:
+            fail(f"{year} asOf must be an ISO yyyy-mm-dd date, not {record['asOf']!r}")
+        # The banner is the only place a reader learns how fresh the collection is,
+        # so the date it prints has to be the date the registry records.
+        if spelled not in record["notice"]:
+            fail(f"{year} notice must state its asOf date as {spelled!r}; "
+                 "the banner shows the notice, so a drifting date misdates the collection")
+        swept = last_touched(f"{year}.md")
+        if swept and swept > datetime.date.fromisoformat(record["asOf"]):
+            warn(f"{year}.md was last changed {swept.isoformat()} but {year} asOf is still "
+                 f"{record['asOf']} - if that change was a sweep, bump asOf and the notice date")
         if (record["contentStart"] != "<!-- archived-references:start -->" or
                 record["contentEnd"] != "<!-- archived-references:end -->"):
             fail(f"{year} must use the shared archived-references marker pair")
@@ -197,7 +239,12 @@ def main() -> int:
     for source in ("app.js", "constellation.js", "build-data.mjs", "build-site.mjs", "smoke-test.mjs"):
         run(node, "--check", f"website/{source}")
     run(node, "website/smoke-test.mjs")
-    print("web-app refresh: PASS")
+    if WARNINGS:
+        print(f"web-app refresh: PASS with {len(WARNINGS)} warning(s)")
+        for message in WARNINGS:
+            print(f"  - {message}")
+    else:
+        print("web-app refresh: PASS")
     print("next: commit the source and generated website/data changes, then push master")
     print("post-push: verify GitHub Actions and Cloudflare Pages deployments; no manual upload or routine cache purge is needed")
     return 0

@@ -24,6 +24,7 @@ Keep the production static archive synchronized without confusing an AI-collecte
    - `ranked: false`
    - a plain-language `notice` saying it is incomplete, unranked, not community-vetted, and subject to change
    - `asOf`, `provenance`, `contentStart`, and `contentEnd`
+   - the `asOf` date spelled out once inside the `notice` (`through 18 August 2026` for `2026-08-18`). The banner on the site *is* the notice, so the check rejects a notice whose date has drifted from `asOf`, and warns when the year file has been committed more recently than `asOf` - a sweep that never restamped the banner.
    - exact `<!-- archived-references:start -->` and `<!-- archived-references:end -->` boundaries around publishable research bullets
 4. Keep scoring notes, watchlists, and dropped candidates outside the registered content boundaries. Only research leads between the two exact headings become app records.
 5. Never create a Top 10 filter, winner count, rank badge, or yearly results-PDF action for a preliminary record.

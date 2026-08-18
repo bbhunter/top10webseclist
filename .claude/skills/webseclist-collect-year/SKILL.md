@@ -214,6 +214,27 @@ Match the list style of the curated year files: `-   [Title](url)` with three
 spaces after the dash. Wrap any URL containing parentheses in angle brackets,
 `[Title](<url>)`, or the markdown link will break.
 
+### 7. Restamp the published banner
+
+The website prints a "PRELIMINARY - SUBJECT TO CHANGE" banner over the
+collection, and the date in it comes from `website/archive-years.json`, not from
+the file you just wrote. A sweep that stops at step 6 leaves the site telling
+readers the leads run through the *previous* sweep's date.
+
+So whenever a sweep adds, removes or re-dates a lead, update that year's record:
+
+- `asOf` - the ISO date the coverage now runs through.
+- `notice` - the same date spelled out, e.g. `through 18 August 2026`. State one
+  date only; `refresh_web_apps.py` fails the run if it does not match `asOf`.
+
+Then run the `webseclist-refresh-web-apps` skill to regenerate
+`website/data/`. It warns when `<YEAR>-ai.md` has been committed more recently
+than `asOf`, which is the symptom of a sweep that skipped this step.
+
+The coverage date is worth keeping honest rather than dropping: on an unranked,
+unvetted collection it is the one thing that tells a reader whether the absence
+of some recent technique means anything.
+
 ## Handling finds from other years
 
 A sweep for one year always surfaces work from the year before. Do not silently
