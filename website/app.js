@@ -188,6 +188,7 @@ const state = {
   pdfVersion: "",
   pdfOriginal: false,
   pdfVerified: false,
+  pdfBytes: 0,
   pdfFrameUrl: "",
   pdfUsesInSiteReader: false,
   // A full page is the useful first view on a phone; page-width remains the
@@ -1076,16 +1077,6 @@ function wireShell() {
   });
   $("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop);
 
-  $("#pdf-frame").addEventListener("load", () => {
-    if (!state.pdfPath || !state.pdfFrameUrl || $("#pdf-frame").src !== state.pdfFrameUrl) return;
-    // A cross-origin reader announces that its own script started. Waiting for
-    // that message keeps a transient GitHub error page from looking successful.
-    if (state.pdfUsesInSiteReader) return;
-    clearTimeout(pdfLoadTimer);
-    $("#pdf-loading").hidden = true;
-    $("#pdf-fallback").hidden = true;
-    $("#pdf-frame").hidden = false;
-  });
   window.addEventListener("message", (event) => {
     const frame = $("#pdf-frame");
     if (event.origin !== PDF_READER_ORIGIN || event.source !== frame.contentWindow || event.data?.type !== "pdf-reader-loaded") return;
@@ -2942,6 +2933,7 @@ async function verifyPdf(mode, url, path) {
     const contentType = response.headers.get("content-type")?.split(";")[0].trim().toLowerCase();
     if (!response.ok || contentType !== "application/pdf") throw new Error(`Unexpected PDF response (${response.status || "network"}, ${contentType || "unknown type"})`);
     if (token !== pdfVerifyToken || path !== state.pdfPath) return;
+    state.pdfBytes = Number(response.headers.get("content-length")) || 0;
     state.pdfVerified = true;
     setPdfView(mode);
   } catch (error) {
@@ -2963,6 +2955,62 @@ async function verifyPdf(mode, url, path) {
   }
 }
 
+// Chrome's built-in viewer implements Adobe's `view` parameter and ignores a
+// `zoom` it cannot read as a percentage; Firefox's pdf.js implements `zoom` and
+// ignores `view`. Stating both is what makes one button fit the page in either
+// viewer - the pdf.js spellings on their own did nothing at all in Chrome.
+const PDF_OPEN_PARAMETERS = {
+  "page-width": "view=FitH&zoom=page-width",
+  "page-fit": "view=Fit&zoom=page-fit"
+};
+
+// The browser reports its document is in place, which for a large file over a
+// slow link can outlast a fixed wait - and the fallback then replaces a
+// document that was still on its way. Spend the size the probe advertised as
+// extra patience, bounded so a genuine failure still resolves.
+function pdfLoadTimeout(base) {
+  const megabytes = state.pdfBytes > 0 ? state.pdfBytes / 1_000_000 : 0;
+  return Math.min(base + Math.round(megabytes * 2000), 45000);
+}
+
+function handlePdfFrameLoad(event) {
+  const frame = event.currentTarget;
+  // A frame a later view change has already replaced can still settle. Only
+  // the one currently in the document may clear the overlay.
+  if (frame !== $("#pdf-frame") || !state.pdfPath || !state.pdfFrameUrl || frame.src !== state.pdfFrameUrl) return;
+  // A cross-origin reader announces that its own script started. Waiting for
+  // that message keeps a transient GitHub error page from looking successful.
+  if (state.pdfUsesInSiteReader) return;
+  clearTimeout(pdfLoadTimer);
+  $("#pdf-loading").hidden = true;
+  $("#pdf-fallback").hidden = true;
+  frame.hidden = false;
+}
+
+// THE TWO VIEW MODES DIFFER ONLY IN THE URL FRAGMENT, and a fragment-only
+// change is a same-document navigation: the frame keeps the document it already
+// holds, fires no `load` event, and no viewer re-reads its open parameters.
+// Assigning `src` in place therefore left the overlay up until the fallback
+// timer replaced a perfectly good document with "Open full PDF", and pressing
+// the other button could not recover because that assignment was fragment-only
+// too. Replacing the element is what forces a real navigation.
+//
+// The address itself never changes, so that navigation is served from the HTTP
+// cache: a view change costs no second download of a multi-megabyte file, which
+// a cache-busting parameter would.
+function navigatePdfFrame(url, sandbox = "") {
+  const current = $("#pdf-frame");
+  const frame = current.cloneNode(false);
+  frame.removeAttribute("src");
+  if (sandbox) frame.setAttribute("sandbox", sandbox);
+  else frame.removeAttribute("sandbox");
+  frame.hidden = true;
+  frame.addEventListener("load", handlePdfFrameLoad);
+  current.replaceWith(frame);
+  state.pdfFrameUrl = url;
+  frame.src = url;
+}
+
 function setPdfView(mode) {
   if (!state.pdfPath || !["page-width", "page-fit"].includes(mode)) return;
   const url = archiveUrl(state.pdfPath, state.pdfKind, state.pdfVersion);
@@ -2978,6 +3026,10 @@ function setPdfView(mode) {
   clearTimeout(pdfLoadTimer);
   if (!state.pdfVerified) {
     if (LARGE_PDF_FALLBACKS.has(state.pdfPath)) {
+      // A backup copy answers no same-origin probe, so nothing here measures
+      // it. Being on that list is the measurement: the file is hosted off
+      // Cloudflare precisely because it outgrew the per-asset limit.
+      state.pdfBytes = Number(ARCHIVE_CATALOGUE?.hosting?.cloudflareMaxAssetBytes) || 0;
       state.pdfVerified = true;
       setPdfView(mode);
       return;
@@ -2986,17 +3038,13 @@ function setPdfView(mode) {
     return;
   }
   if (state.pdfUsesInSiteReader) {
-    frame.setAttribute("sandbox", PDF_READER_SANDBOX);
-    state.pdfFrameUrl = inSitePdfReaderUrl(documentUrl);
-    frame.src = state.pdfFrameUrl;
-    pdfLoadTimer = setTimeout(() => showPdfFallback("The in-site page reader did not start. Open the full PDF with the browser or another app instead."), 12000);
+    navigatePdfFrame(inSitePdfReaderUrl(documentUrl), PDF_READER_SANDBOX);
+    pdfLoadTimer = setTimeout(() => showPdfFallback("The in-site page reader did not start. Open the full PDF with the browser or another app instead."), pdfLoadTimeout(12000));
     return;
   }
   if (navigator.pdfViewerEnabled === false) return showPdfFallback();
-  frame.removeAttribute("sandbox");
-  state.pdfFrameUrl = `${documentUrl}#toolbar=1&navpanes=0&zoom=${mode}`;
-  frame.src = state.pdfFrameUrl;
-  pdfLoadTimer = setTimeout(showPdfFallback, 9000);
+  navigatePdfFrame(`${documentUrl}#toolbar=1&navpanes=0&${PDF_OPEN_PARAMETERS[mode]}`);
+  pdfLoadTimer = setTimeout(showPdfFallback, pdfLoadTimeout(9000));
 }
 
 function openPdfViewer(item, options = {}) {
@@ -3021,6 +3069,7 @@ function openPdfViewer(item, options = {}) {
   state.pdfVersion = options.original ? (item?.originalPdfVersion || "") : (item?.pdfVersion || "");
   state.pdfVerified = false;
   state.pdfFrameUrl = "";
+  state.pdfBytes = 0;
   state.pdfUsesInSiteReader = usesInSitePdfReader();
   const title = options.title || item?.title || "Preserved PDF";
   $("#pdf-title").textContent = title;
@@ -3182,6 +3231,7 @@ function clearPdfViewer() {
   state.pdfPath = "";
   state.pdfVersion = "";
   state.pdfVerified = false;
+  state.pdfBytes = 0;
   state.pdfFrameUrl = "";
   state.pdfUsesInSiteReader = false;
   if (!$("#reader-dialog").open) clearDocumentUrl();

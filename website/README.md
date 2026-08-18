@@ -60,6 +60,18 @@ Cloudflare's `_headers` file applies security headers, immediately revalidates t
 catalogue, caches versioned year shards for a year, and gives archive documents a
 one-day cache with stale revalidation.
 
+Cloudflare's bot **JavaScript detections** inserts an inline `<script>` into every
+HTML response it serves, and that policy carries no `'unsafe-inline'`, no nonce and
+no hash for it, so the browser refuses it and logs a content-security-policy error
+on each page load. The refused script is Cloudflare's, not the app's: nothing on
+the page depends on it, and the injected tag carries per-response tokens, so no
+fixed hash can ever cover it. Cloudflare adds a nonce to what it injects only when
+it can read one from the CSP response header, which a static `_headers` file cannot
+produce - a per-request nonce would mean routing every asset through a Pages
+function. Switch the feature off under **Security -> Bots -> JavaScript detections**
+rather than loosening the policy for it. Plain Bot Fight Mode offers no such toggle,
+and there the console error is cosmetic and stays.
+
 ## The name search engines print
 
 Google, Bing and the rest take the site name from the home page only, and from
@@ -203,10 +215,16 @@ opens an exact, archive-wide tag search without summoning a phone keyboard.
 
 Preserved PDFs and yearly result listings open in a large viewer with Markdown
 switching, read-state, download and separate-tab controls. Desktop browsers keep
-their native PDF viewer and its fit controls. Narrow screens use the archive's
-page-by-page PDF.js reader so iPhone WebKit does not stop at an iframe's first
-page. The application verifies a local file with a same-origin `HEAD` request and
-an `application/pdf` response before embedding it.
+their native PDF viewer and its fit controls. Those controls name the view in both
+dialects the two viewers read - Chrome takes Adobe's `view` parameter and ignores a
+`zoom` it cannot read as a percentage, Firefox's pdf.js takes `zoom` and ignores
+`view` - and each change replaces the frame element, because rewriting only a URL
+fragment is a same-document navigation that no viewer reloads for and no `load`
+event follows. Narrow screens use the archive's page-by-page PDF.js reader so
+iPhone WebKit does not stop at an iframe's first page. The application verifies a
+local file with a same-origin `HEAD` request and an `application/pdf` response
+before embedding it, and waits for the size that probe reports rather than a fixed
+few seconds before offering the file to another app instead.
 
 Archive paths are restricted to the expected local Markdown, PDF and yearly-list
 directories. External links accept HTTP(S) only and use opener isolation. Raw

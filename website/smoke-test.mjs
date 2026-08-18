@@ -399,7 +399,13 @@ const securityChecks = [
   indexSource.includes("img-src 'self' data:") && !indexSource.includes("img-src 'self' data: https:"),
   indexSource.includes('id="pdf-dialog"'),
   indexSource.includes('id="pdf-frame"') && !/<iframe\b(?=[^>]*\bid="pdf-frame")[^>]*\bsandbox=/i.test(indexSource),
-  appSource.includes('frame.setAttribute("sandbox", PDF_READER_SANDBOX)') && appSource.includes('frame.removeAttribute("sandbox")'),
+  // The sandbox now travels with the navigation rather than being set on a
+  // long-lived element: the separate-origin reader must be given it, and the
+  // browser-native viewer - which cannot start inside one - must not be.
+  appSource.includes("navigatePdfFrame(inSitePdfReaderUrl(documentUrl), PDF_READER_SANDBOX)")
+    && appSource.includes('if (sandbox) frame.setAttribute("sandbox", sandbox);')
+    && appSource.includes('else frame.removeAttribute("sandbox");')
+    && /navigatePdfFrame\(`\$\{documentUrl\}#[^`]*`\);/.test(appSource),
   appSource.includes('const PDF_READER_ORIGIN = "https://irsdl.github.io"'),
   indexSource.includes("frame-src 'self' https://irsdl.github.io") && headersSource.includes("frame-src 'self' https://irsdl.github.io"),
   pdfReaderHtmlSource.includes("default-src 'none'") && pdfReaderHtmlSource.includes("worker-src 'self'") && pdfReaderHtmlSource.includes("font-src data: blob:"),
@@ -592,8 +598,26 @@ const deploymentChecks = [
   clientEval(`usesInSitePdfReader("Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0)", 1440)`) === false,
   clientEval(`inSitePdfReaderUrl("https://webhacklist.com/archived-references/pdf/2025/example.pdf?v=20260816", "light")`) === "https://irsdl.github.io/webhacklist/pdf-reader.html?file=https%3A%2F%2Fwebhacklist.com%2Farchived-references%2Fpdf%2F2025%2Fexample.pdf%3Fv%3D20260816&theme=light",
   !appSource.includes('window.open(externalUrl, "_blank"'),
+  // A view change rewrites only the fragment of the PDF's address, and a
+  // fragment-only change is a same-document navigation: unless the element is
+  // replaced the frame keeps the document it has, fires no `load`, and the
+  // overlay stays up until the fallback buries a working document.
+  appSource.includes("const frame = current.cloneNode(false);") && appSource.includes("current.replaceWith(frame);"),
+  // Chrome's viewer reads `view` and ignores a non-numeric `zoom`; pdf.js reads
+  // `zoom` and ignores `view`. One button has to state both spellings.
+  clientEval(`PDF_OPEN_PARAMETERS["page-width"]`) === "view=FitH&zoom=page-width",
+  clientEval(`PDF_OPEN_PARAMETERS["page-fit"]`) === "view=Fit&zoom=page-fit",
+  // A large file buys proportionally longer than the base wait before the
+  // fallback message replaces a document that was still arriving, up to a bound.
+  clientEval(`(state.pdfBytes = 0, pdfLoadTimeout(9000))`) === 9000,
+  clientEval(`(state.pdfBytes = 4_000_000, pdfLoadTimeout(9000))`) === 17000,
+  clientEval(`(state.pdfBytes = 900_000_000, pdfLoadTimeout(9000))`) === 45000,
+  clientEval(`(state.pdfBytes = 0, state.pdfBytes)`) === 0,
+  // The two off-Cloudflare backups are never probed, so the limit they exceeded
+  // stands in for the size no HEAD request will report.
+  appSource.includes("state.pdfBytes = Number(ARCHIVE_CATALOGUE?.hosting?.cloudflareMaxAssetBytes) || 0;"),
   indexSource.includes('id="pdf-fallback-open"'),
-  indexSource.includes('href="styles.css?v=20260817.2"') && indexSource.includes('src="app.js?v=20260817.2"'),
+  indexSource.includes('href="styles.css?v=20260818.1"') && indexSource.includes('src="app.js?v=20260818.1"'),
   (indexSource.match(/id="mobile-menu-backdrop"/g) || []).length === 1,
   appSource.includes('$("#mobile-menu-backdrop").addEventListener("click", () => {') && appSource.includes('focusWithoutScroll($("#mobile-menu"))'),
   stylesSource.includes("body.menu-open .mobile-menu-backdrop") && stylesSource.includes("pointer-events: auto"),
