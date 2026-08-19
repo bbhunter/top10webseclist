@@ -915,3 +915,58 @@ alone suffices, which made every Ruby application reachable.
 
 Original technique. Ruby deserialization was considered impractical outside
 Rails before this; afterwards it was a standing, universal risk.
+## 66.2 — [SMB hash hijacking & user tracking in MS Outlook](https://soroush.me/downloadable/outlook_smb_hash_hijacking.pdf) — Soroush Dalili
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+### Candidate
+
+Published 11 May 2018 by NCC Group; the substantive harness commit lands
+2018-05-08, so the novelty cutoff is 8-11 May 2018. Reported to MSRC on
+8 March 2017 and patched across CVE-2017-8572, CVE-2017-11927 and a May 2018
+update. Not part of the 2018 nomination round.
+
+### Core contribution
+
+Outlook blocks external content and the `\` UNC pattern, but enforces that
+block over a narrower surface than its renderer resolves. A family of legacy
+Windows schemes — `its:`, `mk:@MSITStore:`, `mhtml:its:`, `res:`,
+`knownfolder:`, `shell:`, `cid:`, and protocol-relative `//` reinterpreted as
+UNC on Outlook 2010 — reaches remote and local targets from ordinary HTML sinks
+with only a reading-pane view. The reusable lesson is that a content policy must
+cover the whole URI alias space, and the method that found it is a four-axis
+enumeration: 826 schemes x seven separator grammars x per-scheme grammars x
+Win32 path-namespace target aliases (`\?\UNC\`, `\??\UNC\`), released as
+nccgroup/OutlookLeakTest. Blocking 445 stops the hash theft but not the
+WebDAV-based read tracking.
+
+### Prior art
+
+Forced SMB authentication from HTML content is Aaron Spangler's, Bugtraq 1997.
+The ITS/MHTML/`res:` scheme family was documented as remote-capable by
+MS04-013, TA04-099A and CVE-2007-4848; the HTML sink corpus is cure53
+HTTPLeaks, credited in the paper. Will Dormann's CVE-2018-0950 (11 April 2018)
+reaches the same outcome in the same client one month earlier by a different
+mechanism, OLE in RTF; MSRC pipelines overlap (Dormann November 2016, this
+March 2017), so the two are contemporaneous and independent, not ordered. The
+distinct contribution is the scheme-blind blocklist finding, the systematic
+alias-space method, the local-filesystem reach and the WebDAV tracking split.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58 | 25% | 14.50 | Non-obvious bypass and a systematic alias-space method, but built from pre-existing scheme and sink corpora; no new primitive. |
+| Transferability | 70 | 20% | 14.00 | Scheme, grammar and target corpora are client-agnostic; only the delivery harness is Outlook-Interop-bound. |
+| Lasting value | 57 | 20% | 11.40 | The class stayed live through CVE-2023-23397 and CVE-2025-24054, but these vectors are patched and no successor work is evidenced to cite it. |
+| Technical soundness | 74 | 15% | 11.10 | Wireshark and Procmon observation, named versions, three-advisory vendor patch trail; the 4x campaign figure is uncontrolled and self-reported. |
+| Practical usability | 70 | 10% | 7.00 | Parameterised generator still runnable against other mail clients, plus four concrete defensive workarounds. |
+| Clarity and reproducibility | 82 | 10% | 8.20 | Publishes the full search space, not only the hits, so negative results reproduce too. |
+
+**Final score: 66.2/100.** Archive decision: include as a supporting reference.
+
+### Verdict
+
+Meaningful combination or adaptation. The outcome class is 21 years old and
+every component pre-existed; what was new at the cutoff is the demonstration
+that Outlook's block was scheme-blind and the enumeration method that found it.

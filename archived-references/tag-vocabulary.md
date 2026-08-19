@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-197 tags, across 1649 documents that carry a digest.
+199 tags, across 1650 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -130,13 +130,13 @@ JSON.
 | `dynamic-analysis` | 75 | — |
 | `elasticsearch` | 3 | — |
 | `electron` | 10 | — |
-| `email` | 50 | — |
+| `email` | 51 | — |
 | `embedded-device` | 6 | — |
 | `encoding` | 78 | — |
 | `express` | 8 | — |
 | `file-upload` | 87 | — |
 | `file-write` | 1 | — |
-| `filter-bypass` | 296 | A05:2021 |
+| `filter-bypass` | 297 | A05:2021 |
 | `flash` | 56 | — |
 | `flask` | 4 | — |
 | `formal-analysis` | 32 | — |
@@ -159,7 +159,7 @@ JSON.
 | `identity` | 1 | A07:2021 |
 | `idor` | 27 | A01:2021 |
 | `iframe` | 134 | — |
-| `info-leak` | 592 | — |
+| `info-leak` | 593 | — |
 | `injection` | 122 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 1 | — |
@@ -187,15 +187,16 @@ JSON.
 | `nextjs` | 11 | — |
 | `nodejs` | 69 | — |
 | `nosqli` | 3 | A03:2021 |
+| `ntlm` | 1 | — |
 | `oauth` | 62 | A07:2021 |
 | `open-redirect` | 62 | A04:2021 |
 | `openid` | 29 | A07:2021 |
 | `parser-differential` | 165 | — |
 | `passkeys` | 10 | A07:2021 |
-| `path-traversal` | 66 | A01:2021 |
+| `path-traversal` | 67 | A01:2021 |
 | `pdf` | 23 | — |
 | `perl` | 4 | — |
-| `phishing` | 39 | A04:2021 |
+| `phishing` | 40 | A04:2021 |
 | `php` | 117 | — |
 | `postgres` | 8 | — |
 | `postmessage` | 34 | — |
@@ -225,6 +226,7 @@ JSON.
 | `service-worker` | 10 | — |
 | `session-fixation` | 36 | A07:2021 |
 | `side-channel` | 206 | — |
+| `smb` | 1 | — |
 | `smtp` | 18 | — |
 | `smuggling` | 14 | — |
 | `snmp` | 2 | — |
@@ -249,9 +251,9 @@ JSON.
 | `typosquatting` | 9 | A06:2021 |
 | `ui-redress` | 72 | A04:2021 |
 | `unicode` | 36 | — |
-| `url-parsing` | 116 | — |
+| `url-parsing` | 117 | — |
 | `url-spoofing` | 12 | — |
-| `user-enumeration` | 7 | A04:2021 |
+| `user-enumeration` | 8 | A04:2021 |
 | `vendor-advisory` | 54 | — |
 | `vue` | 1 | — |
 | `waf` | 15 | A05:2021 |
@@ -295,4 +297,4 @@ A document earns these from the techniques it is already tagged with; nobody tag
 
 ### Used exactly once
 
-Review these before reusing them: `active-directory`, `argument-injection`, `autofill`, `blind-xss`, `clipboard`, `dependency-confusion`, `file-write`, `html5`, `identity`, `jailbreak`, `laravel`, `subdomain-takeover`, `symfony`, `type-confusion`, `vue`
+Review these before reusing them: `active-directory`, `argument-injection`, `autofill`, `blind-xss`, `clipboard`, `dependency-confusion`, `file-write`, `html5`, `identity`, `jailbreak`, `laravel`, `ntlm`, `smb`, `subdomain-takeover`, `symfony`, `type-confusion`, `vue`

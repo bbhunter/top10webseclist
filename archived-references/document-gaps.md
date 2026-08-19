@@ -42,7 +42,343 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-493 reference(s) unresolved. 446 of them already have their raw bytes stored.
+535 reference(s) unresolved. 446 of them already have their raw bytes stored.
+
+## https://arxiv.org/abs/2601.07072
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:107`
+
+## https://arxiv.org/abs/2602.09222
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:105`
+
+## https://arxiv.org/abs/2602.21459
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:72`
+
+## https://arxiv.org/abs/2607.06141
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:55`
+
+## https://arxiv.org/abs/2607.19957
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:104`
+
+## https://arxiv.org/abs/2608.09867
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:103`
+
+## https://brave.com/blog/zklogin/
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:84`
+
+## https://embracethered.com/blog/posts/2026/recovering-encrypted-llm-thoughts/
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:103`
+
+## https://eprint.iacr.org/2026/227
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:84`
+
+## https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:106`
+
+## https://github.com/WSP-LAB/Site-Isolation-Is-Dead
+
+- Outcome: `?` (no bytes stored)
+- Kind: repo
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:108`
+
+## https://github.com/WebSec-Lab/BUIzz
+
+- Outcome: `?` (no bytes stored)
+- Kind: repo
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:51`
+
+## https://github.com/YichiCS/KV-Cache-Hijack
+
+- Outcome: `?` (no bytes stored)
+- Kind: repo
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:104`
+
+## https://github.com/cispa/leakylinks
+
+- Outcome: `?` (no bytes stored)
+- Kind: repo
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:85`
+
+## https://github.com/dequeueing/SemanticCache_Poisoning
+
+- Outcome: `?` (no bytes stored)
+- Kind: repo
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:109`
+
+## https://github.com/podiumdesu/wallet-privacy-threats
+
+- Outcome: `?` (no bytes stored)
+- Kind: repo
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:55`
+
+## https://kb.isc.org/docs/cve-2025-40780
+
+- Outcome: `?` (no bytes stored)
+- Kind: advisory
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:38`
+
+## https://lab.ctbb.show/research/solving-an-orb-mystery
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:52`
+
+## https://mizu.re/post/dompurify-bypass-smil-animatetransform-safari
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:53`
+
+## https://petsymposium.org/popets/2026/popets-2026-0094.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:55`
+
+## https://swag.cispa.saarland/papers/mustafa2026leakylinks.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:85`
+
+## https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:54`
+
+## https://wsp-lab.github.io/papers/lee-sp26.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:108`
+
+## https://www.ndss-symposium.org/ndss-paper/when-cache-poisoning-meets-llm-systems-semantic-cache-poisoning-and-its-countermeasures/
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:109`
+
+## https://www.ndss-symposium.org/wp-content/uploads/2026-f200-paper.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:109`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/bach
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:39`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/ben-simhon
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:38`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/chang-hongyan
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:107`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/jung
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:51`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yichen
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:72`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/syros
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:105`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/wu-yifan
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:73`
+
+## https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-yichi
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:104`
+
+## https://www.usenix.org/system/files/usenixsecurity26-bach.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:39`
+
+## https://www.usenix.org/system/files/usenixsecurity26-ben-simhon.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:38`
+
+## https://www.usenix.org/system/files/usenixsecurity26-chang-hongyan.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:107`
+
+## https://www.usenix.org/system/files/usenixsecurity26-jung.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:51`
+
+## https://www.usenix.org/system/files/usenixsecurity26-liu-yichen.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:72`
+
+## https://www.usenix.org/system/files/usenixsecurity26-syros.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:105`
+
+## https://www.usenix.org/system/files/usenixsecurity26-wu-yifan.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:73`
+
+## https://www.usenix.org/system/files/usenixsecurity26-zhang-yichi.pdf
+
+- Outcome: `?` (no bytes stored)
+- Kind: whitepaper
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:104`
+
+## https://zenodo.org/records/20762298
+
+- Outcome: `?` (no bytes stored)
+- Kind: article
+- Reason: not yet acquired
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:72`
 
 ## http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html
 
@@ -1938,7 +2274,7 @@ or fix the route and re-run.
 - Kind: article
 - Reason: faulty capture: the opening paragraphs are missing, so the body starts mid-argument on a back-reference with no antecedent ("That is why a small postMessage challenge on Twitter caught my eye ... the exact confusion I had been abusing in the wild"); re-acquire (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:46`
+- Cited at: `2026-ai.md:50`
 
 ## https://blog.wired.com/27bstroke6/2008/05/man-allegedly-b.html
 
@@ -2162,7 +2498,7 @@ or fix the route and re-run.
 - Kind: article
 - Reason: faulty capture: the archived document is the IACR ePrint landing page, not the paper - about 4.0 kB in which the whole technique is one abstract sentence, while the paper sits one link away at https://eprint.iacr.org/2026/058.pdf; adopt the publisher PDF with papers (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:70`
+- Cited at: `2026-ai.md:81`
 
 ## https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce
 
@@ -2170,7 +2506,7 @@ or fix the route and re-run.
 - Kind: article
 - Reason: faulty capture: seven fenced code blocks are published empty, including the newline-sled payload and the Kubernetes Job example - the known HTML-comment-wrapped-listing class sanitise.py and extract_html.py were fixed for; re-extract offline with acquire --force (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:52`
+- Cited at: `2026-ai.md:61`
 
 ## https://fabianmonrose.github.io/papers/morton18.pdf
 
@@ -2282,7 +2618,7 @@ or fix the route and re-run.
 - Kind: article
 - Reason: faulty capture: the report's comment thread - which is the document for a disclosed HackerOne report - came through as empty entries (a reporter link followed by a lone "."), leaving about 700 characters of technique; recapture (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:53`
+- Cited at: `2026-ai.md:62`
 
 ## https://hal.inria.fr/hal-01652021
 
@@ -2306,7 +2642,7 @@ or fix the route and re-run.
 - Kind: whitepaper
 - Reason: faulty capture: ti/tt ligatures render as wrong characters inside words ("virtualiza?on", "Founda9ons", "Ques%ons", "AXack", "AcLons"). Poppler was tried on 2026-08-15 and reproduced the SAME forms, so the fault is the source PDF's own ToUnicode table rather than our extraction; a re-render cannot fix it and rewriting quoted source text is not allowed - needs the publisher's corrected PDF or OCR (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:81`
+- Cited at: `2026-ai.md:94`
 
 ## https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf
 
@@ -2570,7 +2906,7 @@ or fix the route and re-run.
 - Kind: whitepaper
 - Reason: faulty capture: only 46 of the deck's 110 pages are present (the stored PDF declares /Count 110; the document ends mid-talk at "## Page 46", before the payoff its own agenda promises). Poppler was tried on 2026-08-15 and returned NO text at all - the PDF is image-only, so pdf-text and acquire --force cannot help; needs pdf-pages and a reader, or OCR (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:88`
+- Cited at: `2026-ai.md:101`
 
 ## https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf
 
@@ -2578,7 +2914,7 @@ or fix the route and re-run.
 - Kind: whitepaper
 - Reason: faulty capture: the 143-slide deck yielded only title text - 148 of 351 non-blank lines are a bare page number and slide headings stand with nothing under them, because the substance is in screenshots the text layer does not carry; needs pdf-pages and a reader, or OCR (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:78`
+- Cited at: `2026-ai.md:91`
 
 ## https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1
 
@@ -2874,7 +3210,7 @@ or fix the route and re-run.
 - Kind: article
 - Reason: faulty capture: the capture is the pre-talk teaser and Black Hat abstract, not the write-up - 1,902 characters with no case studies, payloads or code; a live re-fetch on 2026-08-15 returned byte-identical bytes (raw_sha256 unchanged), so the author has not published the write-up at this URL - watch the post, and meanwhile the research is archived from the PortSwigger article and the Black Hat slides cited alongside it (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2026-ai.md:33`
+- Cited at: `2026-ai.md:35`
 
 ## https://tinyurl.com/5w6koqj
 

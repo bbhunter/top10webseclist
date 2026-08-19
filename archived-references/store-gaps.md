@@ -114,7 +114,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://hackerone.com/reports/333419> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:41` |
 | <https://hackerone.com/reports/33935> | article | `raw_sha256`, `browser_dom_sha256` | `2014.md:50` |
 | <https://hackerone.com/reports/341876> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:39` |
-| <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:53` |
+| <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:62` |
 | <https://hal.inria.fr/hal-01652021> | article | `raw_sha256` | `2016-17.md:106` |
 | <https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:60` |
 | <https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html> | article | `raw_sha256`, `browser_dom_sha256` | `2006.md:8` |
@@ -144,7 +144,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html> | article | `raw_sha256` | `2024.md:82` |
 | <https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html> | article | `raw_sha256` | `2024.md:26` |
 | <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
-| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:85` |
+| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:98` |
 | <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |
 | <https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2011.md:41` |
@@ -227,7 +227,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok> | article | `raw_sha256` | `2025.md:85` |
 | <https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan> | article | `raw_sha256` | `2025.md:96` |
 | <https://www.usenix.org/conference/usenixsecurity25/presentation/you> | article | `raw_sha256` | `2025.md:84` |
-| <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan> | article | `raw_sha256` | `2026-ai.md:32` |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan> | article | `raw_sha256` | `2026-ai.md:34` |
 | <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser> | article | `raw_sha256` | `2015.md:74` |
 | <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino> | article | `raw_sha256` | `2015.md:81` |
 | <https://www.usenix.org/conference/woot18/presentation/smith> | article | `raw_sha256` | `2018.md:70` |

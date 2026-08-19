@@ -337,7 +337,7 @@
    "documents": 10
   },
   "email": {
-   "documents": 50
+   "documents": 51
   },
   "embedded-device": {
    "documents": 6
@@ -355,7 +355,7 @@
    "documents": 1
   },
   "filter-bypass": {
-   "documents": 296
+   "documents": 297
   },
   "flash": {
    "documents": 56
@@ -424,7 +424,7 @@
    "documents": 134
   },
   "info-leak": {
-   "documents": 592
+   "documents": 593
   },
   "injection": {
    "documents": 122
@@ -507,6 +507,9 @@
   "nosqli": {
    "documents": 3
   },
+  "ntlm": {
+   "documents": 1
+  },
   "oauth": {
    "documents": 62
   },
@@ -523,7 +526,7 @@
    "documents": 10
   },
   "path-traversal": {
-   "documents": 66
+   "documents": 67
   },
   "pdf": {
    "documents": 23
@@ -532,7 +535,7 @@
    "documents": 4
   },
   "phishing": {
-   "documents": 39
+   "documents": 40
   },
   "php": {
    "documents": 117
@@ -621,6 +624,9 @@
   "side-channel": {
    "documents": 206
   },
+  "smb": {
+   "documents": 1
+  },
   "smtp": {
    "documents": 18
   },
@@ -694,13 +700,13 @@
    "documents": 36
   },
   "url-parsing": {
-   "documents": 116
+   "documents": 117
   },
   "url-spoofing": {
    "documents": 12
   },
   "user-enumeration": {
-   "documents": 7
+   "documents": 8
   },
   "vendor-advisory": {
    "documents": 54
@@ -739,5 +745,5 @@
    "documents": 32
   }
  },
- "updated": "2026-08-17T13:02:16+00:00"
+ "updated": "2026-08-18T15:17:18+00:00"
 }

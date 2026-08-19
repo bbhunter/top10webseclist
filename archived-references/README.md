@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1649 reference(s) archived across 20 year list(s). 1547 carry technique and 102 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1650 reference(s) archived across 20 year list(s). 1548 carry technique and 102 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -734,7 +734,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks](md/2019/latex-gloves-protecting-browser-extensions-probing-revelation-attacks.md) | whitepaper |  |  | research | 1 |
 | [SSO Wars: The Token Menace](md/2019/sso-wars-token-menace.md) | whitepaper |  |  | research | 1 |
 
-## 2018 (76)
+## 2018 (77)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -811,6 +811,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Mystique: Uncovering Information Leakage from Browser Extensions](md/2018/mystique-uncovering-information-leakage-browser-extensions.md) | whitepaper |  |  | research | 1 |
 | [Riding out DOMsday: Towards Detecting and Preventing DOM Cross-Site Scripting](md/2018/riding-out-domsday-towards-detecting-preventing-dom-cross-site-scripting.md) | whitepaper |  |  | research | 1 |
 | [Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks](md/2018/security-risks-asynchronous-web-servers-when-performance-optimizations-attacks.md) | whitepaper |  |  | research | 1 |
+| [SMB hash hijacking & user tracking in MS Outlook](md/2018/ncc-group-smb-hash-hijacking-user-tracking-ms-outlook.md) | whitepaper | NCC Group | 2018 | research | 1 |
 | [Spectre Attacks: Exploiting Speculative Execution](md/2018/spectre-attacks-exploiting-speculative-execution.md) | whitepaper |  |  | research | 1 |
 | [SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js](md/2018/synode-understanding-automatically-preventing-injection-attacks-node-js.md) | whitepaper |  |  | research | 1 |
 | [us 17 Gil Web Cache Deception Attack wp](md/2018/us-17-gil-web-cache-deception-attack-wp.md) | whitepaper |  |  | research | 1 |
@@ -1784,11 +1785,53 @@ each one is re-runnable.
 | <http://polyboy.net/docs/Talks/2011_Bitingthehandthatservesyou_DIMVA.pdf> | The unavailable talk slides are retained in the 2011 list, but the full DIMVA paper cited immediately beside them is archived from http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf. |
 | <http://www.secforce.co.uk/media/tools/socket_attack.zip> | The socket_attack ZIP is a companion demonstration tool retained in the 2008 list. The same entry's complete Abusing PHP Sockets presentation is archived from http://www.secforce.co.uk/media/presentations/OWASP_Abusing_PHP_sockets.pdf, and the recovered SECForce research page documents both artifacts. |
 | <http://www.webappsec.org/lists/websecurity/archive/2009-04/msghtml> | This is a malformed companion URL beside the complete URL Spoofing vulnerability disclosure. The valid msg00047.html message is archived from its near-publication 10 June 2009 capture. |
+| <https://arxiv.org/abs/2601.07072> | not yet acquired |
+| <https://arxiv.org/abs/2602.09222> | not yet acquired |
+| <https://arxiv.org/abs/2602.21459> | not yet acquired |
+| <https://arxiv.org/abs/2607.06141> | not yet acquired |
+| <https://arxiv.org/abs/2607.19957> | not yet acquired |
+| <https://arxiv.org/abs/2608.09867> | not yet acquired |
+| <https://brave.com/blog/zklogin/> | not yet acquired |
 | <https://docs.google.com/presentation/d/1jW0o1YO3FNXlXVkAziM_wSGQqRdLP2kmfoBb6mF1bGY/edit?usp=sharing> | The private 2024 workshop deck is retained beside Ryan and Isabella Barnett's later expanded written treatment at https://webappdefender.blogspot.com/2026/02/lost-in-translation-exploiting-unicode.html. The article preserves the authors' developed research and links their 2025 Black Hat slides; it is identified as a later expansion, not asserted to be a byte-identical copy. Direct export returned HTTP 401 and Docker Chromium did not expose the deck. |
+| <https://embracethered.com/blog/posts/2026/recovering-encrypted-llm-thoughts/> | not yet acquired |
+| <https://eprint.iacr.org/2026/227> | not yet acquired |
+| <https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/> | not yet acquired |
+| <https://github.com/WSP-LAB/Site-Isolation-Is-Dead> | not yet acquired |
+| <https://github.com/WebSec-Lab/BUIzz> | not yet acquired |
+| <https://github.com/YichiCS/KV-Cache-Hijack> | not yet acquired |
+| <https://github.com/cispa/leakylinks> | not yet acquired |
+| <https://github.com/dequeueing/SemanticCache_Poisoning> | not yet acquired |
+| <https://github.com/podiumdesu/wallet-privacy-threats> | not yet acquired |
 | <https://hackerone.com/reports/307670> | The report link is retained beside Keybase's exact public fix at https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc. A publication-era Common Crawl record preserves the report description and example with duplicate id parameters; the commit from 23 January 2018 changes the extension to reject duplicate query-string keys. The current report redirects to sign-in and did not expose its document through Docker Chromium. |
+| <https://kb.isc.org/docs/cve-2025-40780> | not yet acquired |
+| <https://lab.ctbb.show/research/solving-an-orb-mystery> | not yet acquired |
+| <https://mizu.re/post/dompurify-bypass-smil-animatetransform-safari> | not yet acquired |
+| <https://petsymposium.org/popets/2026/popets-2026-0094.pdf> | not yet acquired |
+| <https://swag.cispa.saarland/papers/mustafa2026leakylinks.pdf> | not yet acquired |
+| <https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/> | not yet acquired |
 | <https://twitter.com/mslavco/status/1019332176846950400> | The deleted nomination tweet is retained beside WordPress's complete security-team write-up at https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/. That publication names Slavco, reproduces both reported wpdb::prepare issues and their proof-of-concept code, and explains the 4.8.2 and 4.8.3 fixes. The tweet has no Wayback capture and its public syndication record is a deletion tombstone. |
 | <https://web.archive.org/web/20160403035045/https://github.com/cryptocat/cryptocat/issues/690> | The deleted Cryptocat issue is retained as one example beside the complete Hostile Subdomain Takeover disclosure. The Detectify research article and its second HackerOne example are both archived, so this unavailable example is not treated as a missing article. |
+| <https://wsp-lab.github.io/papers/lee-sp26.pdf> | not yet acquired |
+| <https://www.ndss-symposium.org/ndss-paper/when-cache-poisoning-meets-llm-systems-semantic-cache-poisoning-and-its-countermeasures/> | not yet acquired |
+| <https://www.ndss-symposium.org/wp-content/uploads/2026-f200-paper.pdf> | not yet acquired |
 | <https://www.sensepost.com/blog/html> | This malformed generic SensePost URL is retained as a footnote beside the complete ActiveX Repurposing disclosure, which is archived from the author-linked Carnal0wnage article. |
 | <https://www.sensepost.com/research/reDuh/SensePost_2008.tgz> | The TGZ is the companion reDuh tool package retained in the 2008 list. The author-hosted reDuh research page is independently cited and archived, so the package is not treated as a missing article. |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/bach> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/ben-simhon> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/chang-hongyan> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/jung> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yichen> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/syros> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/wu-yifan> | not yet acquired |
+| <https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-yichi> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-bach.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-ben-simhon.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-chang-hongyan.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-jung.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-liu-yichen.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-syros.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-wu-yifan.pdf> | not yet acquired |
+| <https://www.usenix.org/system/files/usenixsecurity26-zhang-yichi.pdf> | not yet acquired |
 | <https://www.youtube.com/watch?v=Xfbu-pQ1tIc> | The Black Hat USA 2012 conference recording is retained in the 2012 list, but James Forshaw's own research is archived from the whitepaper at https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf and the slide deck at https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf, both cited on the same line. |
 | <https://www.youtube.com/watch?v=v0fraChyonQ> | The DEF CON 31 conference recording is retained in the 2023 list, but Jonathan Birch's own research is archived from the whitepaper at https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf and the slide deck at https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET.pdf, both cited on the same line. |
+| <https://zenodo.org/records/20762298> | not yet acquired |

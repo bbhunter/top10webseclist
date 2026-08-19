@@ -4549,6 +4549,16 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the document closes with \"Research conducted by [zhero;](https://x.com/zhero___) & [inzo_](https://x.com/inzo____)\". Both are handles the researchers publish under, each linked to its own X profile - not the publisher hostname zhero_web_security, which is what the entry previously had to fall back on."
+  },
+  "https://soroush.me/downloadable/outlook_smb_hash_hijacking.pdf": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "publisher": "NCC Group",
+   "title": "SMB hash hijacking & user tracking in MS Outlook",
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Author and publisher stated by the maintainer and confirmed in the document itself, which closes with \"Published date: 11 May 2018\" and \"Written by: Soroush Dalili (@irsdl)\" above the NCC Group source URL. outcome is stated explicitly so the grader does not read an attribution-only override as a decision to keep no document."
   }
  },
  "mirror_sources": [],
