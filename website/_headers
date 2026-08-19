@@ -1,3 +1,11 @@
+# THE ONE THIRD-PARTY FRAME. `frame-src` names youtube-nocookie.com so a talk can
+# play inside the record instead of throwing the reader out to another tab. It
+# widens nothing else: the player runs in YouTube's origin under its own policy,
+# `script-src` stays 'self', and `img-src` is deliberately NOT widened - the
+# player is reached through a locally drawn facade, so no request leaves the page
+# for a reader who never presses play. `fullscreen=(self ...)` below is the same
+# grant for the player's fullscreen button; without it the control is inert.
+#
 # Cloudflare Pages APPENDS the headers of every rule that matches a request
 # rather than letting the most specific rule win. A Cache-Control here would
 # therefore be prepended to each per-path value below, and browsers take the
@@ -5,7 +13,7 @@
 # stale-while-revalidate policies. Security headers apply to everything and are
 # safe to repeat; caching is set per path instead.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://irsdl.github.io; frame-ancestors 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://irsdl.github.io https://www.youtube-nocookie.com; frame-ancestors 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
@@ -13,7 +21,7 @@
   Cross-Origin-Resource-Policy: same-origin
   Origin-Agent-Cluster: ?1
   Strict-Transport-Security: max-age=31536000
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self)
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), fullscreen=(self "https://www.youtube-nocookie.com")
 
 # The app shell and the catalogue index revalidate on every load so a new
 # deployment is picked up immediately. Each path needs its own block: the

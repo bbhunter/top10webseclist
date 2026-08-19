@@ -418,6 +418,10 @@
   .artifact-card h3 { margin: 19px 0 12px; font-size: .92rem; line-height: 1.28; letter-spacing: -.02em; }
   .artifact-card .card-summary { display: -webkit-box; overflow: hidden; margin: 0 0 16px; color: #91a0b8; font-size: .69rem; line-height: 1.55; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; }
   .artifact-card .card-foot { display: flex; align-items: end; justify-content: space-between; gap: 10px; margin-top: auto; color: var(--muted); font: .59rem var(--mono); }
+  /* Status and the talk marker are ONE flex child, so the foot keeps the two-up
+     layout it had before the marker existed. */
+  .artifact-card .card-foot-meta { display: inline-flex; align-items: center; gap: 7px; }
+  .artifact-card .card-video { color: var(--cyan); font-style: normal; font-size: .72rem; line-height: 1; }
   .rank-token { color: var(--amber); }
   .status-dot { display: inline-block; width: 5px; height: 5px; margin-right: 5px; background: var(--mint); border-radius: 50%; }
   .status-dot.partial { background: var(--amber); }
@@ -434,7 +438,12 @@
   .topic-Other { --card-color: #93aaa2; }
   .empty-state { padding: 70px 20px; color: var(--muted); border: 1px dashed var(--line-strong); border-radius: var(--radius); text-align: center; }
 
-  .artifact-dialog {
+  /* The record dialog and the report that opens on top of it share one palette.
+     The report used to arrive in the contribution form's mint whatever room the
+     reader was standing in, so a green form landed over an amber record and
+     read as a different site's dialog. It takes the same tokens, and the same
+     per-room values below. */
+  :is(.artifact-dialog, .report-dialog) {
     --dialog-theme: #7899ff;
     --dialog-surface: #090e18;
     --dialog-panel: #0c1321;
@@ -457,8 +466,8 @@
     border-radius: 20px;
     box-shadow: 0 40px 120px rgba(0,0,0,.72),0 0 50px color-mix(in srgb,var(--dialog-theme) 7%,transparent);
   }
-  .artifact-dialog::backdrop { background: rgba(3,7,14,.84); backdrop-filter: blur(8px); }
-  .artifact-dialog:is([data-view="museum"],[data-view="signals"]) {
+  :is(.artifact-dialog, .report-dialog)::backdrop { background: rgba(3,7,14,.84); backdrop-filter: blur(8px); }
+  :is(.artifact-dialog, .report-dialog):is([data-view="museum"],[data-view="signals"]) {
     --dialog-theme: #7899ff;
     --dialog-surface: #090e18;
     --dialog-panel: #0c1321;
@@ -470,7 +479,7 @@
     --dialog-action-ink: #07101d;
     --dialog-close-surface: rgba(6,11,21,.74);
   }
-  .artifact-dialog[data-view="library"] {
+  :is(.artifact-dialog, .report-dialog)[data-view="library"] {
     --dialog-theme: #f6c96b;
     --dialog-surface: #17150e;
     --dialog-panel: #201d14;
@@ -482,7 +491,7 @@
     --dialog-action-ink: #241805;
     --dialog-close-surface: rgba(16,14,9,.76);
   }
-  .artifact-dialog[data-view="constellation"] {
+  :is(.artifact-dialog, .report-dialog)[data-view="constellation"] {
     --dialog-theme: #82f5b2;
     --dialog-surface: #061510;
     --dialog-panel: #0a1d16;
@@ -494,7 +503,7 @@
     --dialog-action-ink: #041a10;
     --dialog-close-surface: rgba(4,12,10,.7);
   }
-  .artifact-dialog[data-view="terminal"] {
+  :is(.artifact-dialog, .report-dialog)[data-view="terminal"] {
     --dialog-theme: #39ff6e;
     --dialog-surface: #030904;
     --dialog-panel: #071209;
@@ -506,7 +515,7 @@
     --dialog-action-ink: #031007;
     --dialog-close-surface: rgba(1,9,3,.78);
   }
-  .artifact-dialog[data-view="evidence"] {
+  :is(.artifact-dialog, .report-dialog)[data-view="evidence"] {
     --dialog-theme: #d49a53;
     --dialog-surface: #1b120a;
     --dialog-panel: #26190e;
@@ -518,7 +527,7 @@
     --dialog-action-ink: #251506;
     --dialog-close-surface: rgba(18,10,5,.76);
   }
-  .artifact-dialog[data-view="favourites"] {
+  :is(.artifact-dialog, .report-dialog)[data-view="favourites"] {
     --dialog-theme: #ffb454;
     --dialog-surface: #10111b;
     --dialog-panel: #171927;
@@ -530,8 +539,8 @@
     --dialog-action-ink: #211405;
     --dialog-close-surface: rgba(11,11,18,.76);
   }
-  .artifact-dialog[data-view="library"]::backdrop, .artifact-dialog[data-view="evidence"]::backdrop { background: rgba(9,6,3,.84); }
-  .artifact-dialog[data-view="constellation"]::backdrop, .artifact-dialog[data-view="terminal"]::backdrop { background: rgba(1,6,4,.84); }
+  :is(.artifact-dialog, .report-dialog):is([data-view="library"],[data-view="evidence"])::backdrop { background: rgba(9,6,3,.84); }
+  :is(.artifact-dialog, .report-dialog):is([data-view="constellation"],[data-view="terminal"])::backdrop { background: rgba(1,6,4,.84); }
   /* Long record and contribution dialogs scroll. Keep the close action within
      reach after the first screen, especially on touch devices without Escape. */
   .artifact-dialog > form:first-child, .contribute-dialog > form:first-child { position: sticky; top: 0; z-index: 5; height: 0; }
@@ -565,6 +574,42 @@
   .artifact-actions .read-toggle[aria-pressed="true"] { color: var(--dialog-action-ink,var(--accent-ink)); background: var(--dialog-action,var(--accent)); border-color: var(--dialog-action,var(--accent)); }
   .artifact-actions .favourite-toggle[aria-pressed="true"] { color: #2b1b05; background: #ffb454; border-color: #ffb454; }
   .artifact-actions span.disabled { padding: 11px 14px; color: var(--faint); background: rgba(255,255,255,.025); border: 1px dashed var(--line); border-radius: 8px; font: .66rem var(--mono); }
+  /* The talk leaves the site, so it reads as its own kind of action rather than
+     another archive control: a tinted edge, never the accent fill that marks the
+     preserved copy the reader can open here. */
+  .artifact-actions .video-action { border-color: color-mix(in srgb,var(--cyan) 45%,var(--dialog-border,var(--line-strong))); }
+  .artifact-actions .video-action:hover { background: color-mix(in srgb,var(--cyan) 12%,transparent); border-color: var(--cyan); }
+  /* THE TALK, as one of the dialog's blocks. Same shape as the digest above it -
+     an eyebrow over its content, on the same 30/24 rhythm - so it reads as part
+     of the record rather than a bar wedged between the tags and the buttons.
+     A compact card, not a 16:9 poster: the dialog is height-capped, and a full
+     player box pushed every action below the fold. It becomes the player only
+     once the reader presses play, which they asked for. */
+  .artifact-talk { margin: 30px 0 24px; }
+  .artifact-talk h3 { margin: 0 0 11px; color: var(--dialog-color, var(--mint)); font: 700 .64rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+  .talk-card { display: flex; align-items: stretch; background: var(--dialog-panel,var(--panel)); border: 1px solid var(--dialog-border,var(--line)); border-radius: 12px; overflow: hidden; transition: border-color .16s ease; }
+  .talk-card:hover { border-color: color-mix(in srgb,var(--dialog-color,var(--mint)) 45%,transparent); }
+  .talk-play-action { flex: 1; min-width: 0; display: flex; align-items: center; gap: 14px; padding: 13px 16px; color: var(--ink); background: transparent; border: 0; cursor: pointer; text-align: left; }
+  .talk-play-action:hover { background: var(--dialog-soft,transparent); }
+  .talk-play-action:focus-visible { outline: 2px solid var(--dialog-color,var(--mint)); outline-offset: -3px; }
+  .talk-play { flex: none; display: grid; place-items: center; width: 38px; height: 38px; padding-left: 3px; color: var(--paper); background: var(--dialog-color, var(--mint)); border-radius: 50%; font-size: .88rem; transition: transform .16s ease; }
+  .talk-play-action:hover .talk-play { transform: scale(1.07); }
+  .talk-copy { display: grid; gap: 3px; min-width: 0; }
+  .talk-copy b { font: 650 .9rem var(--sans); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .talk-copy small { color: var(--dialog-muted,var(--muted)); font: .66rem var(--mono); letter-spacing: .03em; }
+  /* The new-tab route, attached to the thing it opens instead of repeated as a
+     second button underneath it. */
+  .talk-open { flex: none; display: grid; place-items: center; width: 48px; color: var(--dialog-muted,var(--faint)); background: transparent; border-left: 1px solid var(--dialog-border,var(--line)); text-decoration: none; font-size: .82rem; }
+  .talk-open:hover, .talk-open:focus-visible { color: var(--dialog-color,var(--mint)); background: var(--dialog-soft,transparent); }
+  .talk-note { margin: 9px 2px 0; color: var(--dialog-muted,var(--faint)); font: .62rem var(--mono); line-height: 1.5; opacity: .85; }
+  .artifact-talk.is-playing .talk-card { background: #000; border-color: var(--dialog-border,var(--line)); }
+  .artifact-talk iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
+
+  /* A match the archive is not certain of. It keeps the play glyph but loses
+     the confident edge and sits back in the row, so the eye reaches the real
+     talk first. */
+  .artifact-actions .video-action.is-potential { color: var(--muted); border-color: var(--dialog-border,var(--line)); border-style: dashed; }
+  .artifact-actions .video-action.is-potential:hover { color: var(--ink); background: var(--dialog-soft,transparent); border-color: var(--line-strong); }
   .rights-note { margin-top: 27px; color: var(--dialog-muted,var(--faint)); font: .62rem/1.65 var(--mono); }
   .toast { position: fixed; right: 22px; bottom: 22px; z-index: 70; padding: 11px 14px; color: var(--accent-ink); background: var(--accent); border-radius: 3px; font: 700 .66rem var(--mono); opacity: 0; transform: translateY(12px); pointer-events: none; transition: .22s ease; }
   .toast.show { opacity: 1; transform: none; }
@@ -654,6 +699,31 @@
   .contribute-routes b { color: var(--muted); font-weight: 650; }
   .contribute-routes a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
   .contribute-routes a:hover { color: var(--mint); }
+
+  /* Reporting an inaccuracy borrows the contribution form's LAYOUT and none of
+     its colour. Every rule below undoes a place .contribute-dialog names mint
+     outright, replacing it with the room tokens declared at the top of this
+     file - so the report reads as part of the record it opened from. */
+  .report-dialog {
+    background: radial-gradient(circle at 5% 0,color-mix(in srgb,var(--dialog-theme) 15%,transparent),transparent 34%),var(--dialog-surface);
+    border: 1px solid var(--dialog-border);
+    box-shadow: 0 40px 120px rgba(0,0,0,.72),0 0 50px color-mix(in srgb,var(--dialog-theme) 7%,transparent);
+  }
+  .report-dialog .artifact-glow { background: linear-gradient(90deg, var(--dialog-color, var(--dialog-theme)), transparent 70%); }
+  .report-dialog .eyebrow { color: var(--dialog-color, var(--dialog-theme)); }
+  .report-dialog .contribute-field > span { color: var(--dialog-muted); }
+  .report-dialog .contribute-field > span b { color: var(--dialog-color, var(--dialog-theme)); }
+  .report-dialog .contribute-field small { color: var(--dialog-muted); opacity: .8; }
+  .report-dialog .contribute-field :is(input, select, textarea) { background: var(--dialog-panel); border-color: var(--dialog-border); }
+  .report-dialog .contribute-field :is(input, select, textarea):focus {
+    border-color: color-mix(in srgb,var(--dialog-theme) 55%,transparent);
+    box-shadow: 0 0 0 3px color-mix(in srgb,var(--dialog-theme) 12%,transparent);
+  }
+  .report-dialog .contribute-field input[readonly] { color: var(--dialog-context-ink); background: var(--dialog-soft); }
+  .report-dialog .artifact-actions a, .report-dialog .artifact-actions button { color: var(--dialog-action-ink); background: var(--dialog-action); border-color: var(--dialog-action); }
+  .report-dialog .artifact-actions .secondary { color: var(--ink); background: transparent; border-color: var(--dialog-border); }
+  .report-dialog .artifact-actions .secondary:hover { border-color: var(--dialog-color, var(--dialog-theme)); }
+  .report-dialog .contribute-note { color: var(--dialog-muted); opacity: .85; }
 
   :where(.reader-dialog, .pdf-dialog) {
     --document-accent: var(--view-accent, var(--signal));
@@ -883,12 +953,50 @@
   .museum-map .section-head p { color: #566379; }
   /* Every card carries a topic colour on its top edge; without this key that
      colour is decoration. Only the topics the room actually holds are listed. */
+  /* The colour key is the room's filter, so every chip is a real button. An
+     unpressed chip keeps the quiet legend look it had before there was anything
+     to press; a pressed one fills with its own topic colour, which is the only
+     state that needs to read across a wall of cards in the same palette. */
   .topic-key { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 20px; padding: 11px 14px; background: rgba(9,15,26,.72); border: 1px solid rgba(120,153,255,.15); border-radius: 10px; }
+  .topic-key.is-filtering { background: rgba(9,15,26,.92); border-color: color-mix(in srgb, var(--signal) 34%, transparent); }
   .topic-key > p { flex: 0 0 auto; color: var(--faint); font: .56rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+  .topic-key > p b { display: block; color: color-mix(in srgb, var(--faint) 62%, transparent); font-weight: 400; letter-spacing: .07em; }
   .topic-key ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-  .topic-key li { display: flex; align-items: center; gap: 6px; padding: 4px 9px; color: #c8d2e6; background: color-mix(in srgb, var(--topic-color) 7%, transparent); border: 1px solid color-mix(in srgb, var(--topic-color) 26%, transparent); border-radius: 20px; font: .56rem var(--mono); }
+  .topic-key li { display: flex; }
+  .topic-key li button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    color: #c8d2e6;
+    background: color-mix(in srgb, var(--topic-color) 7%, transparent);
+    border: 1px solid color-mix(in srgb, var(--topic-color) 26%, transparent);
+    border-radius: 20px;
+    font: .56rem var(--mono);
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: color .15s ease, background-color .15s ease, border-color .15s ease;
+  }
+  .topic-key li button:hover { color: #fff; background: color-mix(in srgb, var(--topic-color) 16%, transparent); border-color: color-mix(in srgb, var(--topic-color) 52%, transparent); }
+  .topic-key li button[aria-pressed="true"] { color: #060a12; background: var(--topic-color); border-color: var(--topic-color); font-weight: 700; box-shadow: 0 0 14px color-mix(in srgb, var(--topic-color) 34%, transparent); }
   .topic-key li i { width: 7px; height: 7px; background: var(--topic-color); border-radius: 50%; box-shadow: 0 0 8px color-mix(in srgb, var(--topic-color) 55%, transparent); }
   .topic-key li b { color: var(--topic-color); font-weight: 700; }
+  .topic-key li button[aria-pressed="true"] :is(i, b) { color: #060a12; background: #060a12; box-shadow: none; }
+  .topic-key li button[aria-pressed="true"] b { background: none; }
+  /* A recording is not a tenth topic, so the chip is not a colour: it carries
+     the play glyph the cards and the record dialog already use, and sits after
+     a rule that separates the two axes. */
+  .topic-key li.key-recorded { margin-left: 4px; padding-left: 10px; border-left: 1px solid rgba(120,153,255,.22); --topic-color: var(--signal); }
+  .topic-key li.key-recorded i { width: auto; height: auto; background: none; box-shadow: none; color: var(--signal); font-size: .62rem; }
+  .topic-key li.key-recorded button[aria-pressed="true"] i { color: #060a12; background: none; }
+  /* The count and the control that clears it stay together at the end of the
+     strip, so what is hidden and how to get it back read as one statement.
+     Selector matches `.topic-key > p` so these win over the label rule above
+     rather than depending on which of the two happens to be more specific. */
+  .topic-key > p.topic-key-state { color: var(--faint); letter-spacing: .08em; }
+  .topic-key.is-filtering > p.topic-key-state { color: var(--signal); }
+  .topic-key-reset { flex: 0 0 auto; padding: 5px 11px; color: var(--ink); background: transparent; border: 1px dashed var(--line-strong); border-radius: 20px; font: 650 .56rem var(--mono); cursor: pointer; touch-action: manipulation; }
+  .topic-key-reset:hover { color: #060a12; background: var(--signal); border-color: var(--signal); border-style: solid; }
   /* The two base re-skins use :where() so they stay at single-class specificity
      and the shared preliminary and favourite border cues still win; the state
      rules below are deliberately specific enough to beat their shared originals. */
@@ -1923,6 +2031,12 @@
     .view-fullscreen { width: 42px; min-height: 42px; padding: 0; font-size: 0; }
     .view-fullscreen span { font-size: 1rem; }
     .preliminary-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
+    /* Filter chips are targets on a phone, not a printed legend: give them a
+       thumb-sized height, and let the count line take a row of its own rather
+       than compete with the chips for the last few pixels. */
+    .topic-key { gap: 9px 10px; }
+    .topic-key li button, .topic-key-reset { min-height: 36px; padding-inline: 12px; font-size: .6rem; }
+    .topic-key li.key-recorded { margin-left: 0; padding-left: 0; border-left: 0; }
     .winner-plinths, .nominee-wall, .timeline-winners { grid-template-columns: 1fr; }
     .winner-plinths .artifact-card:first-child { grid-column: auto; }
     .artifact-card { min-height: 145px; }

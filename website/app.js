@@ -40,8 +40,28 @@ const CONTRIBUTION_FORMS = {
   link: "02-dead-or-changed-link.yml",
   capture: "03-faulty-capture.yml",
   credit: "04-author-credit.yml",
-  website: "05-website-feedback.yml"
+  website: "05-website-feedback.yml",
+  inaccuracy: "06-record-inaccuracy.yml"
 };
+
+// The wording here is the reader's, not the archive's: they see a preserved
+// copy that reads nothing like the article, not a failed extraction. Ordered by
+// what actually damages the archive - a Markdown copy that disagrees with its
+// own PDF, or a link that goes nowhere, breaks the record for everyone, while a
+// mismatched recording is one line on it. A recording therefore gets ONE entry
+// here rather than the four it used to, which made the form look like a video
+// complaints desk. Kept in the same order as the issue form's dropdown so the
+// prefill lands on a real option.
+const REPORT_FAULTS = [
+  "The Markdown and the PDF do not match",
+  "The preserved copy is not this research",
+  "A link on this record is wrong or dead",
+  "The author, publisher or title shown is wrong",
+  "The summary or tags misdescribe the research",
+  "A linked video is wrong or will not play",
+  "Something is missing — a copy, a link or a recording",
+  "Something else (described below)"
+];
 // GitHub answers an over-long issue address with an error page rather than a
 // form. A field that would push the address past this is dropped whole, not
 // truncated: half a sentence sitting in a form field reads as the submitter's
@@ -170,6 +190,12 @@ const state = {
   // a shortlist can be read across several years at once.
   savedYears: new Set(),
   savedTopics: new Set(),
+  // The museum room's own filter, driven by the colour key above the walls.
+  // Empty means the whole room. Topics OR together; `roomVideoOnly` is an AND
+  // over whatever they left, so Injection + Recorded asks for recorded
+  // injection research rather than for both lists at once.
+  roomTopics: new Set(),
+  roomVideoOnly: false,
   terminalLines: [],
   terminalHistory: [],
   terminalHistoryIndex: 0,
@@ -626,6 +652,40 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
     const pdfVersion = pdfLink.pdfVersion || "";
     const originalPdfVersion = pdfLink.originalPdfVersion || "";
 
+    // TALK RECORDINGS, gathered across every link on the bullet. The video is
+    // recorded against the reference it belongs to, and that is not always the
+    // link the reader opens: a paper's recording is regularly found through the
+    // slides beside it. Confidence rides along because the archive is not
+    // equally sure of all of them - a video embedded in the cited page is that
+    // research by construction, a search result is a judgement.
+    const videos = [];
+    const seenVideos = new Set();
+    // Several CONFIRMED recordings are several real talks - Orange Tsai gave
+    // that one at three conferences - and each is worth offering by name. Several
+    // unconfirmed ones are the same guess made three times: without a venue to
+    // tell them apart they render as three identical buttons, so only the best
+    // is carried. They arrive ranked, so the best is the first.
+    const anyConfirmed = links.some((link) =>
+      (link.record?.videos || []).some((video) => video.confidence === "confirmed"));
+    for (const link of links) {
+      for (const video of link.record?.videos || []) {
+        const url = safeExternalUrl(video.url);
+        if (!url || seenVideos.has(url)) continue;
+        if (video.confidence !== "confirmed" && (anyConfirmed || videos.length)) continue;
+        seenVideos.add(url);
+        videos.push({
+          url,
+          confidence: video.confidence || "possible",
+          // Minutes, not seconds: the reader is deciding whether to spend the
+          // next half hour, and the shard carries this 400+ times.
+          ...(video.seconds ? { minutes: Math.round(video.seconds / 60) } : {}),
+          ...(video.title ? { videoTitle: video.title } : {}),
+          ...(video.channel ? { channel: video.channel } : {}),
+          ...(video.conference ? { conference: video.conference } : {})
+        });
+      }
+    }
+
     items.push({
       id: `${year}-${position++}`,
       year,
@@ -691,6 +751,7 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       ...(documentLink.record?.digest?.tags?.length
         ? { tags: withOwaspCategories(documentLink.record.digest.tags) }
         : {}),
+      ...(videos.length ? { videos } : {}),
       kind: record?.kind || "link",
       language: record?.language || "",
       published: record?.published || "",
@@ -1069,13 +1130,25 @@ function wireShell() {
     if (!$("#pdf-dialog").open) clearDocumentUrl();
   });
 
-  ["#artifact-dialog", "#reader-dialog", "#pdf-dialog", "#contribute-dialog"].forEach((id) => {
+  // The report form opens from ON TOP of the record dialog, so closing it must
+  // not restore the search panel - the record is still open behind it.
+  ["#artifact-dialog", "#reader-dialog", "#pdf-dialog", "#contribute-dialog",
+   "#report-dialog"].forEach((id) => {
     $(id).addEventListener("close", () => {
       syncDialogScrollLock();
-      if (id !== "#contribute-dialog") requestAnimationFrame(restoreGlobalSearch);
+      if (id !== "#contribute-dialog" && id !== "#report-dialog") requestAnimationFrame(restoreGlobalSearch);
     });
   });
   $("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop);
+  // Dismissing a modal only hides it. An iframe inside a hidden dialog keeps
+  // running, so closing a record with the talk playing left the reader with no
+  // picture, no controls and the sound still going.
+  $("#artifact-dialog").addEventListener("close", stopTalkPlayback);
+  // The report form is a modal like any other and closes the way the record
+  // does. Its own fields are unaffected: closeDialogFromBackdrop checks the
+  // pointer against the dialog's bounds, so a click on an empty patch of the
+  // form is not a click on the page behind it.
+  $("#report-dialog").addEventListener("click", closeDialogFromBackdrop);
 
   window.addEventListener("message", (event) => {
     const frame = $("#pdf-frame");
@@ -1121,6 +1194,12 @@ function toggleInSet(set, value) {
 }
 
 async function handleViewClick(event) {
+  const roomFilterTarget = event.target.closest("[data-room-filter]");
+  if (roomFilterTarget) {
+    applyRoomFilter(roomFilterTarget.dataset.roomFilter);
+    return;
+  }
+
   const favouriteTarget = event.target.closest("[data-favourite]");
   if (favouriteTarget) {
     const item = state.items.find((entry) => entry.id === favouriteTarget.dataset.favourite);
@@ -1741,7 +1820,7 @@ function artifactCard(item, compactCard = false) {
       <div class="card-top"><span>${h(item.yearLabel || item.year)} / ${h(item.topic)}</span>${rank}</div>
       <h3>${h(item.title)}</h3>
       ${summary}
-      <div class="card-foot"><span>${h(short(briefCreditOf(item) || "Unknown publisher", 25))}</span>${statusMarkup(item)}</div>
+      <div class="card-foot"><span>${h(short(briefCreditOf(item) || "Unknown publisher", 25))}</span><span class="card-foot-meta">${statusMarkup(item)}${item.videos?.length ? `<i class="card-video" aria-hidden="true" title="A talk recording is linked on this record">▶</i>` : ""}</span></div>
       ${item.favourite ? `<span class="card-favourite" aria-label="Favourite">★</span>` : ""}
       ${item.read ? `<span class="card-read">✓ read</span>` : ""}
     </div>`;
@@ -1754,24 +1833,95 @@ function yearPills(selected) {
 // A card's colour is its research topic and nothing else — the same topic named
 // in the card's own header. Listing only the topics the room holds keeps the key
 // short and makes it describe the cards actually in front of the reader.
-function topicKey(items) {
+//
+// The key is ALSO the room's filter. The colours already answered "what is in
+// this room"; the question a reader asks next is "show me only those", and a
+// second control repeating the same nine words would have been the wrong way to
+// offer it. Selections are multiple and they OR together. `Recorded` is not a
+// tenth colour but a different axis, so it ANDs over whatever the topics left -
+// which is why Injection + Recorded can honestly come back empty, and says so
+// rather than quietly widening back out to everything.
+function roomFilterActive() {
+  return state.roomTopics.size > 0 || state.roomVideoOnly;
+}
+
+function filterRoom(items) {
+  return items.filter((item) =>
+    (!state.roomTopics.size || state.roomTopics.has(item.topic))
+    && (!state.roomVideoOnly || Boolean(item.videos?.length)));
+}
+
+function topicKey(items, shown) {
   const present = TOPICS
     .map((topic) => ({ ...topic, count: items.filter((item) => item.topic === topic.name).length }))
-    .filter((topic) => topic.count);
+    // A topic this room does not hold is not offered — but one the reader has
+    // SELECTED stays on the strip at zero, because a year that lacks it would
+    // otherwise leave a filter running with no control left to switch it off.
+    .filter((topic) => topic.count || state.roomTopics.has(topic.name));
   if (!present.length) return "";
+  const recorded = items.filter((item) => item.videos?.length).length;
+  const hidden = items.length - shown.length;
+  // WHAT IS NOT ON THE WALL. A filtered room looks exactly like a small one, so
+  // the count of what it is holding back is stated rather than implied by a
+  // pressed button somewhere above.
+  const status = !roomFilterActive()
+    ? `${items.length} on the wall`
+    : shown.length
+      ? `${shown.length} of ${items.length} shown · ${hidden} hidden`
+      : `Nothing here matches · all ${items.length} hidden`;
+  const chip = (topic) => `
+    <li style="--topic-color:${h(topic.color)}">
+      <button type="button" data-room-filter="${h(topic.name)}" aria-pressed="${state.roomTopics.has(topic.name)}" title="${h(state.roomTopics.has(topic.name) ? `Stop filtering by ${topic.name}` : `Show only ${topic.name} research`)}"><i aria-hidden="true"></i>${h(topic.name)} <b>${topic.count}</b></button>
+    </li>`;
   return `
-    <div class="topic-key" role="group" aria-label="What the card colours mean">
-      <p>Card colour = research topic</p>
-      <ul>${present.map((topic) => `<li style="--topic-color:${h(topic.color)}"><i aria-hidden="true"></i>${h(topic.name)} <b>${topic.count}</b></li>`).join("")}</ul>
+    <div class="topic-key${roomFilterActive() ? " is-filtering" : ""}" role="group" aria-label="Filter this room by research topic">
+      <p>Filter the room<b>card colour = topic</b></p>
+      <ul>
+        ${present.map(chip).join("")}
+        ${recorded ? `<li class="key-recorded"><button type="button" data-room-filter="recorded" aria-pressed="${state.roomVideoOnly}" title="${h(state.roomVideoOnly ? "Stop filtering by recording" : "Show only research with a talk recording")}"><i aria-hidden="true">▶</i>Recorded <b>${recorded}</b></button></li>` : ""}
+      </ul>
+      <p class="topic-key-state" role="status">${h(status)}</p>
+      ${roomFilterActive() ? `<button class="topic-key-reset" type="button" data-room-filter="reset">↺ Reset filter</button>` : ""}
     </div>`;
 }
 
+// A filter click rewrites the whole room, and the walls above and below the key
+// change height as it does. Put the key back under the pointer that pressed it
+// instead of letting the page jump to wherever the new content lands.
+function applyRoomFilter(token) {
+  if (token === "reset") {
+    state.roomTopics.clear();
+    state.roomVideoOnly = false;
+  } else if (token === "recorded") {
+    state.roomVideoOnly = !state.roomVideoOnly;
+  } else {
+    toggleInSet(state.roomTopics, token);
+  }
+  const before = $(".topic-key")?.getBoundingClientRect().top;
+  renderMuseum();
+  const after = $(".topic-key")?.getBoundingClientRect().top;
+  if (typeof before !== "number" || typeof after !== "number") return;
+  // Full-screen mode moves the scrolling box from the page onto <main>, so the
+  // shift is applied to whichever of the two actually moved.
+  const drift = after - before;
+  const main = $("#main-content");
+  if (main && main.scrollHeight > main.clientHeight) main.scrollTop += drift;
+  else globalThis.scrollBy?.(0, drift);
+}
+
 function renderMuseum() {
-  const items = itemsForYear(state.year);
+  const roomItems = itemsForYear(state.year);
+  const items = filterRoom(roomItems);
+  const filtering = roomFilterActive();
   const preliminary = isPreliminaryYear(state.year);
   const winners = items.filter((item) => item.section === "winner").sort(byRankThenTitle);
   const nominees = items.filter((item) => item.section !== "winner");
-  setMetric(items.length, preliminary ? `preliminary leads · ${yearLabel(state.year)}` : `artifacts in room ${yearLabel(state.year)}`);
+  setMetric(items.length, filtering
+    ? `of ${roomItems.length} in room ${yearLabel(state.year)}`
+    : preliminary ? `preliminary leads · ${yearLabel(state.year)}` : `artifacts in room ${yearLabel(state.year)}`);
+  // The marquee states what the ROOM holds, not what the filter left, so the
+  // reader always has the unfiltered figure to read the key's counts against.
+  const roomWinners = roomItems.filter((item) => item.section === "winner").length;
   $("#view-root").innerHTML = `
     <section class="museum-map">
       <div class="museum-years" aria-label="Museum rooms">${yearPills(state.year)}</div>
@@ -1779,15 +1929,15 @@ function renderMuseum() {
       <div class="room-marquee">
         <p class="eyebrow">${preliminary ? "Research snapshot" : "Gallery room"}</p>
         <div class="room-number">${h(yearLabel(state.year))}</div>
-        <p>${preliminary ? `${items.length} ${h(yearRecordFor(state.year).provenance || "preliminary")} leads · no ranking · subject to change` : `${winners.length} winning exhibits · ${nominees.length} nominated works`} · ${items.filter((item) => item.archived).length} preserved locally</p>
+        <p>${preliminary ? `${roomItems.length} ${h(yearRecordFor(state.year).provenance || "preliminary")} leads · no ranking · subject to change` : `${roomWinners} winning exhibits · ${roomItems.length - roomWinners} nominated works`} · ${roomItems.filter((item) => item.archived).length} preserved locally</p>
       </div>
-      ${topicKey(items)}
+      ${topicKey(roomItems, items)}
 
       ${preliminary ? "" : `<div class="section-head"><div><p class="eyebrow">The central gallery</p><h2>Top 10 illuminated exhibits</h2></div><p>Selected by community vote and panel</p></div>
-      <div class="winner-plinths">${winners.map((item) => artifactCard(item)).join("") || empty("No ranked exhibits recorded for this room.")}</div>`}
+      <div class="winner-plinths">${winners.map((item) => artifactCard(item)).join("") || empty(filtering ? "No ranked exhibit in this room matches the filter." : "No ranked exhibits recorded for this room.")}</div>`}
 
       <div class="section-head"><div><p class="eyebrow">${preliminary ? "Open review" : "The long gallery"}</p><h2>${preliminary ? "Preliminary research leads" : "Every other nomination"}</h2></div><p>${nominees.length} ${preliminary ? "changeable leads" : "artifacts on the wall"}</p></div>
-      <div class="nominee-wall">${nominees.map((item) => artifactCard(item, true)).join("") || empty(preliminary ? "No preliminary leads recorded." : "No other nominations recorded.")}</div>
+      <div class="nominee-wall">${nominees.map((item) => artifactCard(item, true)).join("") || empty(filtering ? "Nothing else in this room matches the filter." : preliminary ? "No preliminary leads recorded." : "No other nominations recorded.")}</div>
     </section>`;
 }
 
@@ -2860,6 +3010,44 @@ async function openArtifact(id) {
   // reference; these reach the words the author actually published.
   if (item.originalMdPath) actions.push(`<button class="secondary" id="open-original-reader" type="button">▤ Original ${h(item.language || "language")}</button>`);
   if (item.originalPdfPath) actions.push(`<button class="secondary" id="open-original-pdf" type="button">▧ Original ${h(item.language || "language")} PDF</button>`);
+  // THE TALK, where one exists. A plain link rather than an embed, on purpose:
+  // the site's CSP allows frames only from itself, and widening frame-src to a
+  // video host on a web-security archive is a poor trade for an inline player.
+  // Opening out also does the right thing on a phone, where the URL is handed
+  // to whichever app the reader has installed rather than to a cramped iframe.
+  // Confidence is shown whenever the archive is not certain, so a maybe never
+  // looks like a fact.
+  // The talk that plays in the block above is NOT repeated here. It was offered
+  // twice, one control directly under the other, both opening the same video -
+  // which is what made the panel read as bolted on rather than part of the
+  // record. Its own open-in-a-new-tab control lives on the block.
+  const embedded = playableTalk(item);
+  (item.videos || []).forEach((video) => {
+    if (embedded && video.url === embedded.url) return;
+    const href = safeExternalUrl(video.url);
+    if (!href) return;
+    // ONLY A CONFIRMED MATCH IS CALLED A TALK. Below that the archive is
+    // guessing, and a button that says "DEF CON talk" is a claim; "potential
+    // related video" is the same link without the claim, which is what the
+    // reader needs to judge it. Name the conference only where the archive is
+    // certain - and never a channel name, since "WhiteHat DAST by Synopsys
+    // talk" reads as a venue the research never appeared at.
+    const label = video.confidence !== "confirmed"
+      ? "Potential related video"
+      : video.conference ? `${short(video.conference, 24)} talk` : "Watch recording";
+    // Runtime belongs on the control, not in a tooltip: it is what tells a
+    // reader whether this is the talk or a five-minute lightning slot, and it
+    // is the difference the archive sorts these by.
+    const runtime = video.minutes ? ` · ${video.minutes} min` : "";
+    const hint = video.videoTitle
+      ? `${video.videoTitle}${video.channel ? ` — ${video.channel}` : ""} — opens on ${hostOf(href)}`
+      : `Opens the recording on ${hostOf(href)}`;
+    // The wording already carries the doubt, so the class only needs to keep
+    // the two apart visually.
+    const uncertain = video.confidence === "confirmed" ? "" : " is-potential";
+    actions.push(`<a class="secondary video-action${uncertain}" href="${h(href)}" target="_blank" rel="noopener noreferrer" title="${h(hint)}">▶ ${h(label)}${h(runtime)}</a>`);
+  });
+
   // A rejected URL must not become `href=""`, which silently reloads the app.
   const originalUrl = safeExternalUrl(item.originalUrl);
   actions.push(originalUrl
@@ -2874,6 +3062,10 @@ async function openArtifact(id) {
   actions.push(`<button class="secondary read-toggle" id="artifact-read-toggle" type="button" aria-pressed="${item.read}">${item.read ? "✓ Read" : "○ Mark as read"}</button>`);
   actions.push(`<button class="secondary favourite-toggle" id="artifact-favourite-toggle" type="button" aria-pressed="${item.favourite}">${item.favourite ? "★ Favourite" : "☆ Add favourite"}</button>`);
   actions.push(`<button class="secondary" id="share-artifact" type="button">⌁ Share record</button>`);
+  // Last, with the other actions ABOUT the record rather than into it. Placed
+  // among the links it splits the recordings from the original source, and a
+  // reader scanning for somewhere to read is made to step over a complaint form.
+  actions.push(`<button class="secondary" id="report-inaccuracy" type="button">⚑ Report an inaccuracy</button>`);
   $("#artifact-actions").innerHTML = actions.join("");
 
   $("#open-reader")?.addEventListener("click", () => openReader(item));
@@ -2886,6 +3078,8 @@ async function openArtifact(id) {
     title: `${item.year} Top 10 results`,
     kicker: `Official archive listing / ${item.year}`
   }));
+  renderTalkPanel(item);
+  $("#report-inaccuracy")?.addEventListener("click", () => openReportDialog(item));
   $("#artifact-read-toggle").addEventListener("click", () => setReadState(item));
   $("#artifact-favourite-toggle").addEventListener("click", () => setFavouriteState(item));
 
@@ -3781,6 +3975,188 @@ async function copySubmissionDraft() {
   } catch {
     toast(fallbackCopy(markdown) ? "Submission copied as Markdown" : "Copying is unavailable in this browser");
   }
+}
+
+// --- The talk, played in place ----------------------------------------------
+// CLICK TO LOAD, ALWAYS. The panel below is drawn from the archive's own record
+// - title, venue, runtime - and contacts nothing. YouTube is reached only when
+// the reader presses play, so opening a record costs them no third-party request
+// and no cookie for a talk they never watch. That is also why the poster frame
+// is not fetched: a thumbnail from ytimg would leak the visit at render time and
+// force `img-src` open for the sake of a picture.
+
+const YOUTUBE_ID = /(?:youtube\.com\/(?:watch\?(?:[^&]*&)*v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/;
+
+function youtubeId(url) {
+  const match = YOUTUBE_ID.exec(String(url || ""));
+  return match ? match[1] : "";
+}
+
+// Only a confirmed match earns a player. An uncertain one stays a link: giving
+// a guess the same frame as the real talk states it more strongly than the
+// archive can support.
+function playableTalk(item) {
+  return (item.videos || []).find((video) => video.confidence === "confirmed" && youtubeId(video.url));
+}
+
+// Tearing the iframe out is what actually stops the audio. Pausing through the
+// player would mean speaking the YouTube iframe API's postMessage protocol,
+// which is a much wider contract than a click-to-load facade should carry - and
+// a destroyed frame cannot keep playing whatever the embed decides to do.
+function stopTalkPlayback() {
+  const panel = $("#artifact-talk");
+  if (!panel) return;
+  panel.classList.remove("is-playing");
+  panel.innerHTML = "";
+  panel.hidden = true;
+}
+
+function renderTalkPanel(item) {
+  const panel = $("#artifact-talk");
+  if (!panel) return;
+  const talk = playableTalk(item);
+  stopTalkPlayback();
+  panel.hidden = !talk;
+  if (!talk) return;
+
+  // A BLOCK, not a bar. The dialog already states things in one shape - an
+  // eyebrow over its content, which is what `What the research found` is - so
+  // the talk says itself the same way instead of being wedged between the tags
+  // and the buttons with nothing to separate it from either.
+  const meta = [talk.conference, talk.minutes ? `${talk.minutes} min` : ""].filter(Boolean).join(" · ");
+  const heading = talk.conference ? "The talk" : "The recording";
+  panel.innerHTML = `
+    <h3>${h(heading)}</h3>
+    <div class="talk-card">
+      <button class="talk-play-action" type="button" aria-label="Play here: ${h(talk.videoTitle || item.title)}">
+        <span class="talk-play" aria-hidden="true">▶</span>
+        <span class="talk-copy">
+          <b>${h(talk.videoTitle || item.title)}</b>
+          <small>${h(meta)}</small>
+        </span>
+      </button>
+      <a class="talk-open" href="${h(talk.url)}" target="_blank" rel="noopener noreferrer" title="Open on ${h(hostOf(talk.url))} in a new tab" aria-label="Open the recording on ${h(hostOf(talk.url))} in a new tab">↗</a>
+    </div>
+    <p class="talk-note">Nothing is requested from ${h(hostOf(talk.url))} until you press play.</p>`;
+
+  panel.querySelector(".talk-play-action").addEventListener("click", () => {
+    const frame = document.createElement("iframe");
+    // `-nocookie` and no parameters beyond the one that starts it: the reader
+    // asked for this video, not for a related-video rail afterwards.
+    frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtubeId(talk.url))}?autoplay=1&rel=0`;
+    frame.title = talk.videoTitle || `Recording: ${item.title}`;
+    frame.loading = "lazy";
+    frame.referrerPolicy = "strict-origin-when-cross-origin";
+    frame.allow = "accelerometer; encrypted-media; picture-in-picture; fullscreen";
+    frame.allowFullscreen = true;
+    const card = panel.querySelector(".talk-card");
+    card.innerHTML = "";
+    card.append(frame);
+    panel.classList.add("is-playing");
+    // The promise has been kept; repeating it under a playing video is noise.
+    panel.querySelector(".talk-note")?.remove();
+  });
+}
+
+// --- Reporting an inaccuracy on a record ------------------------------------
+// The reader is already looking at the record, so the form starts filled in.
+// Everything it can state for them - which record, which part of it - it states,
+// leaving only the judgement they came to give.
+//
+// THE WHOLE RECORD, not the recording on it. The form began as a video-report
+// desk and read like one: four of its seven faults were about a video, and the
+// one thing that actually breaks a record for every later reader - a preserved
+// Markdown copy that no longer says what its own PDF says - was not on the list
+// at all. The recording is now one line among the rest.
+
+// Every part of the record the reader can point at, named the way they just saw
+// it. The value carries the address as well as the name, because "Preserved PDF"
+// on its own does not tell a maintainer which file to open.
+function reportParts(item) {
+  const parts = [];
+  const add = (label, target) => { if (label && target) parts.push(`${label} — ${target}`); };
+  add("Preserved Markdown", item.mdPath);
+  add("Preserved PDF", item.pdfPath);
+  if (item.translated) {
+    add(`Original ${item.language || "language"} Markdown`, item.originalMdPath);
+    add(`Original ${item.language || "language"} PDF`, item.originalPdfPath);
+  }
+  add("Original source", item.originalUrl);
+  (item.links || []).slice(1).forEach((link) => add(short(link.label, 42), link.url));
+  // Named exactly as the record names them, down to the doubt: a reader
+  // reporting the button that said "potential related video" should find that
+  // wording here rather than have to work out which entry it was.
+  (item.videos || []).forEach((video) => {
+    const name = video.confidence === "confirmed"
+      ? (video.conference ? `${video.conference} talk` : "Recording")
+      : "Potential related video";
+    add(`${name}${video.minutes ? ` · ${video.minutes} min` : ""}`, video.url);
+  });
+  add("The byline", (item.authors || []).join(", ") || item.publisher);
+  return parts;
+}
+
+function reportDraft(item) {
+  return {
+    record: `${item.yearLabel || item.year} — "${item.title}"`,
+    fault: $("#report-fault").value,
+    part: $("#report-part").value,
+    replacement: safeExternalUrl($("#report-replacement").value.trim()),
+    notes: $("#report-notes").value.trim()
+  };
+}
+
+function reportIssueUrl(draft) {
+  return issueUrl("inaccuracy", {
+    title: `[Inaccuracy] ${compact(draft.record).slice(0, 110)}`,
+    record: draft.record,
+    fault: draft.fault,
+    part: draft.part,
+    replacement: draft.replacement,
+    notes: draft.notes
+  });
+}
+
+function reportMarkdown(draft) {
+  return [
+    `**Inaccuracy on ${draft.record}**`,
+    draft.fault ? `What is wrong: ${draft.fault}` : "",
+    draft.part ? `Which part: ${draft.part}` : "",
+    draft.replacement ? `Should be: ${draft.replacement}` : "",
+    draft.notes ? `\n${draft.notes}` : ""
+  ].filter(Boolean).join("\n");
+}
+
+function openReportDialog(item) {
+  const dialog = $("#report-dialog");
+  // It opens ON TOP of the record, so it wears the room the record is wearing
+  // and takes the record's own topic accent. See the .report-dialog rules.
+  dialog.dataset.view = state.view;
+  dialog.style.setProperty("--dialog-color", item.topicColor);
+  $("#report-record").value = `${item.yearLabel || item.year} — ${item.title}`;
+  $("#report-fault").innerHTML = REPORT_FAULTS
+    .map((fault) => `<option value="${h(fault)}">${h(fault)}</option>`).join("");
+  // The neutral answer leads, because most faults are about the record rather
+  // than one addressable piece of it, and a preselected part would put words in
+  // the reporter's mouth.
+  $("#report-part").innerHTML = `<option value="">Not sure / the record as a whole</option>`
+    + reportParts(item).map((part) => `<option value="${h(part)}">${h(part)}</option>`).join("");
+  $("#report-replacement").value = "";
+  $("#report-notes").value = "";
+  const refresh = () => { $("#report-issue").href = reportIssueUrl(reportDraft(item)); };
+  for (const id of ["#report-fault", "#report-part", "#report-replacement", "#report-notes"]) {
+    $(id).oninput = refresh;
+    $(id).onchange = refresh;
+  }
+  $("#report-copy").onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(reportMarkdown(reportDraft(item)));
+      toast("Report copied as Markdown");
+    } catch { toast("Copying is blocked in this browser"); }
+  };
+  refresh();
+  dialog.scrollTop = 0;
+  showLockedModal(dialog);
 }
 
 function openSubmissionDialog() {

@@ -326,6 +326,39 @@ const savedFilters = JSON.parse(clientEval(`
   state.savedTopics = new Set();
   JSON.stringify({ favourites, read, both, twoYears, oneYear, yearAndTopic })
 `));
+
+// The museum room's colour key is also its filter. Topics OR together, and the
+// recordings chip ANDs over whatever they left — so a topic that holds no
+// recording must come back EMPTY and say so, rather than quietly widening back
+// out to the whole room, which is the failure mode that makes a filter lie.
+const roomFilters = JSON.parse(clientEval(`
+  const roomFixture = [
+    { id: "a", year: "2024", topic: "XSS", title: "A", videos: [{ url: "https://youtu.be/aaaaaaaaaaa", confidence: "confirmed" }] },
+    { id: "b", year: "2024", topic: "XSS", title: "B" },
+    { id: "c", year: "2024", topic: "HTTP", title: "C", videos: [{ url: "https://youtu.be/bbbbbbbbbbb", confidence: "possible" }] },
+    { id: "d", year: "2024", topic: "Crypto", title: "D" }
+  ];
+  state.roomTopics = new Set();
+  state.roomVideoOnly = false;
+  const unfiltered = filterRoom(roomFixture).length;
+  const inactive = roomFilterActive();
+  const restingKey = topicKey(roomFixture, roomFixture);
+  state.roomTopics = new Set(["XSS"]);
+  const oneTopic = filterRoom(roomFixture).length;
+  state.roomTopics = new Set(["XSS", "Crypto"]);
+  const twoTopics = filterRoom(roomFixture).length;
+  state.roomTopics = new Set();
+  state.roomVideoOnly = true;
+  const recordedOnly = filterRoom(roomFixture).length;
+  state.roomTopics = new Set(["XSS"]);
+  const topicAndRecorded = filterRoom(roomFixture).length;
+  state.roomTopics = new Set(["Crypto"]);
+  const impossible = filterRoom(roomFixture).length;
+  const emptyKey = topicKey(roomFixture, filterRoom(roomFixture));
+  state.roomTopics = new Set();
+  state.roomVideoOnly = false;
+  JSON.stringify({ unfiltered, inactive, restingKey, oneTopic, twoTopics, recordedOnly, topicAndRecorded, impossible, emptyKey })
+`));
 const emittedTags = hostileHtml.match(/<[^>]+>/g) || [];
 const unsafeRenderedTags = emittedTags.filter((tag) =>
   /<(?:script|iframe|svg|object|embed)\b/i.test(tag)
@@ -407,7 +440,17 @@ const securityChecks = [
     && appSource.includes('else frame.removeAttribute("sandbox");')
     && /navigatePdfFrame\(`\$\{documentUrl\}#[^`]*`\);/.test(appSource),
   appSource.includes('const PDF_READER_ORIGIN = "https://irsdl.github.io"'),
-  indexSource.includes("frame-src 'self' https://irsdl.github.io") && headersSource.includes("frame-src 'self' https://irsdl.github.io"),
+  // The COMPLETE frame-src, in both places it is declared. Asserting the whole
+  // value rather than a prefix is the point: a prefix check passes no matter
+  // what gets appended, and this is the one directive the archive widens.
+  // Exactly two third parties are allowed - the PDF reader and the video player.
+  ["frame-src 'self' https://irsdl.github.io https://www.youtube-nocookie.com;",
+   "frame-src 'self' https://irsdl.github.io https://www.youtube-nocookie.com;"]
+    .every((value, index) => (index === 0 ? indexSource : headersSource).includes(value)),
+  // The player is reached through a locally drawn facade, so no image, script or
+  // connection host is opened up for it.
+  !indexSource.includes("ytimg") && !headersSource.includes("ytimg")
+    && !headersSource.includes("script-src 'self' https://"),
   pdfReaderHtmlSource.includes("default-src 'none'") && pdfReaderHtmlSource.includes("worker-src 'self'") && pdfReaderHtmlSource.includes("font-src data: blob:"),
   pdfReaderSource.includes('import "./pdf-reader-polyfills.mjs"') && pdfReaderSource.includes('import { safePdfUrl } from "./pdf-reader-url.mjs"') && pdfReaderSource.includes("isEvalSupported: false"),
   pdfReaderSource.includes('new URL("./pdf-worker.mjs", import.meta.url)') && pdfWorkerSource.includes('import "./pdf-reader-polyfills.mjs"'),
@@ -501,8 +544,12 @@ const experienceChecks = [
   appSource.includes('aria-controls="global-results"'),
   appSource.includes("document.documentElement.dataset.view = state.view"),
   appSource.includes('$("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop)'),
-  stylesSource.includes('.artifact-dialog:is([data-view="museum"],[data-view="signals"])'),
-  stylesSource.includes('.artifact-dialog[data-view="constellation"]'),
+  // The record dialog and the report that opens on top of it share ONE per-room
+  // palette, so the selector carries both. Asserting the text keeps a later
+  // edit from theming the record and leaving the report in the contribution
+  // form's mint, which is exactly how the two came apart the first time.
+  stylesSource.includes(':is(.artifact-dialog, .report-dialog):is([data-view="museum"],[data-view="signals"])'),
+  stylesSource.includes(':is(.artifact-dialog, .report-dialog)[data-view="constellation"]'),
   stylesSource.includes("*::-webkit-scrollbar-thumb"),
   appSource.includes("function documentShareUrl"),
   appSource.includes("function shareDocument"),
@@ -633,7 +680,8 @@ const deploymentChecks = [
   stylesSource.includes(".reader-dialog[open] { display: grid") && stylesSource.includes(".pdf-dialog[open] { display: grid"),
   stylesSource.includes(".markdown-body a { color: var(--document-accent); overflow-wrap: anywhere"),
   indexSource.indexOf('id="pdf-new-tab"') < indexSource.indexOf('id="pdf-theme-toggle"'),
-  (indexSource.match(/<dialog\b[^>]*tabindex="-1"/g) || []).length === 4,
+  // record, reader, PDF, contribute, report
+  (indexSource.match(/<dialog\b[^>]*tabindex="-1"/g) || []).length === 5,
   stylesSource.includes(".investigation-board { display: grid; width: 100%; min-height: 0 !important; grid-template-columns: minmax(0,1fr)"),
   stylesSource.includes("main:fullscreen .favourites-view"),
   stylesSource.includes("main:fullscreen .museum-map"),
@@ -653,7 +701,8 @@ const deploymentChecks = [
   headersSource.includes("Cross-Origin-Resource-Policy: same-origin"),
   headersSource.includes("Origin-Agent-Cluster: ?1"),
   headersSource.includes("Strict-Transport-Security: max-age=31536000"),
-  headersSource.includes("fullscreen=(self)"),
+  // Fullscreen stays the site's own, plus the video player it now hosts.
+  headersSource.includes('fullscreen=(self "https://www.youtube-nocookie.com")'),
   notFoundSource.includes("default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'"),
   headersSource.includes("/data/collections/*"),
   headersSource.includes("max-age=31536000, immutable"),
@@ -669,6 +718,13 @@ const submissionFormSource = await readFile(path.join(root, ".github/ISSUE_TEMPL
 const issueTemplateFiles = new Set((await readdir(path.join(root, ".github/ISSUE_TEMPLATE"))).filter((name) => name.endsWith(".yml") && name !== "config.yml"));
 const submissionFieldIds = [...submissionFormSource.matchAll(/^ {4}id:\s*([a-z0-9-]+)\s*$/gm)].map((match) => match[1]);
 const submissionFormYears = [...submissionFormSource.matchAll(/^ {8}- "(\d{4})"$/gm)].map((match) => match[1]);
+// The inaccuracy form's own fields and fault list. Both are stated twice - in
+// the page and in the issue template - and a prefill only lands if the two
+// agree exactly, so the test compares them rather than trusting either.
+const inaccuracyFormSource = await readFile(path.join(root, ".github/ISSUE_TEMPLATE/06-record-inaccuracy.yml"), "utf8");
+const inaccuracyFieldIds = [...inaccuracyFormSource.matchAll(/^ {4}id:\s*([a-z0-9-]+)\s*$/gm)].map((match) => match[1]);
+const inaccuracyFaults = [...inaccuracyFormSource.matchAll(/^ {8}- (.+)$/gm)].map((match) => match[1].trim());
+const reportFaults = JSON.parse(clientEval("JSON.stringify(REPORT_FAULTS)"));
 const appTemplateNames = [...appSource.matchAll(/"(\d\d-[a-z0-9-]+\.yml)"/g)].map((match) => match[1]);
 const indexTemplateNames = [...indexSource.matchAll(/issues\/new\?template=([0-9a-z-]+\.yml)/g)].map((match) => match[1]);
 const catalogueYearIds = progressiveCatalogue.years.map((record) => record.id);
@@ -719,9 +775,10 @@ const submissionMatching = JSON.parse(clientEval(`
 const contributionChecks = [
   // Every route the page offers has a form behind it, and every form the app
   // names is a file that exists.
-  issueTemplateFiles.size === 5,
-  appTemplateNames.length === 5 && appTemplateNames.every((name) => issueTemplateFiles.has(name)),
-  indexTemplateNames.length >= 5 && indexTemplateNames.every((name) => issueTemplateFiles.has(name)),
+  // research, dead link, faulty capture, credit, website, record inaccuracy
+  issueTemplateFiles.size === 6,
+  appTemplateNames.length === 6 && appTemplateNames.every((name) => issueTemplateFiles.has(name)),
+  indexTemplateNames.length >= 6 && indexTemplateNames.every((name) => issueTemplateFiles.has(name)),
   (await exists(".github/ISSUE_TEMPLATE/config.yml")) && (await exists(".github/PULL_REQUEST_TEMPLATE.md")) && (await exists("CONTRIBUTING.md")),
   ["research-url", "research-title", "year", "researchers", "whats-new", "prior-art"].every((id) => submissionFieldIds.includes(id)),
   // A year the site can offer but the form cannot accept loses that answer.
@@ -737,6 +794,33 @@ const contributionChecks = [
   clientEval(`submissionIssueUrl({ url: safeExternalUrl("javascript:alert(1)"), title: "", year: "", researchers: "", whatsNew: "" })`) === "https://github.com/irsdl/webhacklist/issues/new?template=01-submit-research.yml",
   clientEval(`issueFieldText("a\\u202Eb\\u0007c")`) === "abc",
   clientEval(`issueFieldText("first\\n\\n\\n\\nsecond")`) === "first\n\nsecond",
+  // THE INACCURACY REPORT COVERS THE WHOLE RECORD. It began as a video desk -
+  // four of its seven faults were about a recording, and the one fault that
+  // actually breaks a record for every later reader, a preserved Markdown copy
+  // that no longer says what its own PDF says, was not on the list at all.
+  reportFaults[0] === "The Markdown and the PDF do not match",
+  // Exactly one fault is ABOUT a video. "Something is missing — a copy, a link
+  // or a recording" names one too, but it is the catch-all for the whole
+  // record, so the count is of the video-specific option.
+  reportFaults.filter((fault) => /\bvideo\b/i.test(fault)).length === 1,
+  reportFaults.some((fault) => /link/i.test(fault)) && reportFaults.some((fault) => /author, publisher or title/i.test(fault)),
+  // Every fault the page offers must exist in the dropdown the prefill lands
+  // on, or GitHub drops the answer and the report arrives blank.
+  reportFaults.every((fault) => inaccuracyFaults.includes(fault)),
+  inaccuracyFaults.length === reportFaults.length,
+  // ...and the same for the fields.
+  ["record", "fault", "part", "replacement", "notes"].every((id) => inaccuracyFieldIds.includes(id)),
+  !inaccuracyFieldIds.includes("video-url") && !appSource.includes('"video-url"'),
+  indexSource.includes('id="report-part"') && !indexSource.includes('id="report-video"'),
+  // The part picker offers the whole record, not just its recordings.
+  appSource.includes("function reportParts") && appSource.includes('add("Preserved Markdown", item.mdPath)') && appSource.includes('add("Preserved PDF", item.pdfPath)'),
+  // It opens on top of the record, so it wears that record's room and accent
+  // rather than the contribution form's mint.
+  indexSource.includes('class="contribute-dialog report-dialog"'),
+  /function openReportDialog[\s\S]*?dialog\.dataset\.view = state\.view/.test(appSource),
+  stylesSource.includes(".report-dialog .artifact-actions a") && !stylesSource.includes(".report-dialog .artifact-actions a, .report-dialog .artifact-actions button { color: #041a10"),
+  // And it dismisses the way every other modal here does.
+  appSource.includes('$("#report-dialog").addEventListener("click", closeDialogFromBackdrop)'),
   submissionMatching.exact === "2019-1",
   submissionMatching.loose === "2019-1",
   submissionMatching.tracked === "2019-1",
@@ -757,6 +841,138 @@ const contributionChecks = [
   stylesSource.includes(".support-action.is-contribute")
 ];
 
+// TALK RECORDINGS. The video is stored on the reference, not on the year list,
+// so the two ways it can silently disappear are the shard dropping the field and
+// the dialog dropping the control. Both are asserted, along with the two rules
+// that make an off-site link safe to offer and an uncertain one honest.
+// Expected independently of app.js: a bullet earns a talk control when ANY of
+// its links names a reference the archive gave a video to.
+const expectedVideoRecords = artifacts.filter((artifact) =>
+  artifact.links.some((link) => link.record?.videos?.length)).length;
+const shardVideoRows = [];
+for (const record of yearRecords) {
+  const shard = JSON.parse(await readFile(path.join(root, `website/data/collections/${record.id}.json`), "utf8"));
+  for (const item of shard.items || []) shardVideoRows.push(...(item.videos || []));
+}
+const shardVideoRecords = new Set();
+for (const record of yearRecords) {
+  const shard = JSON.parse(await readFile(path.join(root, `website/data/collections/${record.id}.json`), "utf8"));
+  for (const item of shard.items || []) if (item.videos?.length) shardVideoRecords.add(item.id);
+}
+const manifestVideoUrls = new Set(
+  Object.values(manifest.urls || {}).flatMap((record) => (record.videos || []).map((video) => video.url)));
+// Within one confidence band the longer recording must come first.
+const confidenceRank = { confirmed: 0, likely: 1, possible: 2 };
+const videoOrderViolations = [];
+for (const record of Object.values(manifest.urls || {})) {
+  const videos = record.videos || [];
+  for (let index = 1; index < videos.length; index++) {
+    const previous = videos[index - 1];
+    const current = videos[index];
+    if (confidenceRank[previous.confidence] !== confidenceRank[current.confidence]) continue;
+    if ((previous.seconds || 0) < (current.seconds || 0)) videoOrderViolations.push(current.url);
+  }
+}
+const videoChecks = [
+  shardVideoRecords.size > 0,
+  // The shard carries every research the manifest gave a recording to; a
+  // dropped allowlist key would show up here and nowhere else.
+  shardVideoRecords.size === expectedVideoRecords,
+  shardVideoRows.every((video) => /^https:\/\//.test(video.url)),
+  shardVideoRows.every((video) => ["confirmed", "likely", "possible"].includes(video.confidence)),
+  // Every video the page offers is one the archive actually recorded.
+  shardVideoRows.every((video) => manifestVideoUrls.has(video.url)),
+  // A channel is not a venue, and these buckets were judging aids, not names.
+  shardVideoRows.every((video) => !["conference upload", "PortSwigger research"].includes(video.conference || "")),
+  // A proof-of-concept clip is not a talk. Nothing under five minutes ships.
+  shardVideoRows.every((video) => !video.minutes || video.minutes >= 5),
+  // Every stored recording is tied to the author, their company, or a stage
+  // they stood on - never a third party retelling the research.
+  Object.values(manifest.urls || {}).flatMap((record) => record.videos || [])
+    .every((video) => ["author", "company", "conference stage", "links the article"].includes(video.by)),
+  // Ordered longest-first within a confidence band, so the talk outranks the clip.
+  shardVideoRecords.size > 0 && [...videoOrderViolations].length === 0,
+  // Only a confirmed match may be called a talk; everything else is offered as
+  // a potential related video, without naming a venue it may never have been at.
+  appSource.includes('? "Potential related video"'),
+  appSource.includes('video.confidence !== "confirmed"'),
+  stylesSource.includes(".video-action.is-potential"),
+  // Reporting an inaccuracy: a button on every record, a form, and a template
+  // that actually exists in the repository.
+  appSource.includes('id="report-inaccuracy"'),
+  appSource.includes("function openReportDialog") && appSource.includes("function reportIssueUrl"),
+  appSource.includes('inaccuracy: "06-record-inaccuracy.yml"'),
+  indexSource.includes('id="report-dialog"') && indexSource.includes('id="report-fault"'),
+  await exists(".github/ISSUE_TEMPLATE/06-record-inaccuracy.yml"),
+  // CLICK TO LOAD. The page must ship no video iframe of its own, and the only
+  // one it ever creates must be built in the click handler, from -nocookie.
+  !/<iframe\b[^>]*youtube/i.test(indexSource),
+  appSource.includes('frame.src = `https://www.youtube-nocookie.com/embed/'),
+  appSource.includes("function renderTalkPanel") && appSource.includes('panel.querySelector(".talk-play-action").addEventListener("click"'),
+  // The embedded talk is offered once. Repeating it as a button directly under
+  // its own player is what made the block read as bolted on.
+  appSource.includes("if (embedded && video.url === embedded.url) return;"),
+  // Its new-tab route rides on the block instead.
+  appSource.includes('class="talk-open"'),
+  // Only a confirmed match gets a player; a guess stays a link.
+  appSource.includes('(item.videos || []).find((video) => video.confidence === "confirmed" && youtubeId(video.url))'),
+  indexSource.includes('id="artifact-talk"') && stylesSource.includes(".talk-card") && stylesSource.includes(".talk-play-action"),
+  // The block sits ABOVE the action row, so the reader meets the talk without
+  // scrolling a height-capped dialog.
+  indexSource.indexOf('id="artifact-talk"') < indexSource.indexOf('id="artifact-actions"'),
+  appSource.includes('class="secondary video-action${uncertain}"'),
+  appSource.includes('target="_blank" rel="noopener noreferrer" title="${h(hint)}"'),
+  appSource.includes('video.confidence === "confirmed"'),
+  stylesSource.includes(".video-action"),
+  // CLOSING THE RECORD STOPS THE TALK. A dismissed dialog only hides its
+  // contents, so an iframe inside one keeps playing: the reader loses the
+  // picture and the controls and keeps the sound. Destroying the frame is what
+  // actually stops it, and it has to be wired to the dialog's own close event.
+  appSource.includes("function stopTalkPlayback"),
+  /function stopTalkPlayback\(\)[\s\S]*?panel\.innerHTML = "";/.test(appSource),
+  appSource.includes('$("#artifact-dialog").addEventListener("close", stopTalkPlayback)')
+];
+
+// The room filter, which is the colour key made pressable.
+const roomFilterChecks = [
+  roomFilters.unfiltered === 4 && roomFilters.inactive === false,
+  roomFilters.oneTopic === 2,
+  // Two topics are a union, not an intersection.
+  roomFilters.twoTopics === 3,
+  // With no topic chosen, recordings alone open the whole room back up and then
+  // narrow it to the records that have one.
+  roomFilters.recordedOnly === 2,
+  roomFilters.topicAndRecorded === 1,
+  // Crypto holds no recording, so Crypto AND Recorded is honestly empty...
+  roomFilters.impossible === 0,
+  // ...and the strip says so, because a filtered room otherwise looks exactly
+  // like a small one.
+  roomFilters.emptyKey.includes("all 4 hidden"),
+  // Read the status line itself, not the whole strip: every chip carries an
+  // aria-hidden glyph, so a bare search for "hidden" always matches.
+  roomFilters.restingKey.includes('role="status">4 on the wall<'),
+  // A reset only exists while something is filtered.
+  roomFilters.emptyKey.includes('data-room-filter="reset"') && !roomFilters.restingKey.includes('data-room-filter="reset"'),
+  // A SELECTED topic stays on the strip even at zero, or a year that does not
+  // hold it would leave a filter running with no control left to switch it off.
+  roomFilters.emptyKey.includes('data-room-filter="Crypto"'),
+  roomFilters.emptyKey.includes('data-room-filter="recorded"'),
+  // Pressed state is announced, not just coloured.
+  (roomFilters.emptyKey.match(/aria-pressed="true"/g) || []).length === 2,
+  (roomFilters.restingKey.match(/aria-pressed="true"/g) || []).length === 0,
+  appSource.includes('const roomFilterTarget = event.target.closest("[data-room-filter]")'),
+  appSource.includes("function applyRoomFilter") && appSource.includes("function roomFilterActive"),
+  appSource.includes("roomTopics: new Set()") && appSource.includes("roomVideoOnly: false"),
+  stylesSource.includes('.topic-key li button[aria-pressed="true"]'),
+  stylesSource.includes(".topic-key-reset") && stylesSource.includes("p.topic-key-state"),
+  // Chips are thumb targets on a phone, not a printed legend.
+  stylesSource.includes(".topic-key li button, .topic-key-reset { min-height: 36px"),
+  // The marquee keeps stating what the ROOM holds, so the key's counts always
+  // have an unfiltered figure to be read against.
+  appSource.includes("const roomWinners = roomItems.filter"),
+  appSource.includes("${topicKey(roomItems, items)}")
+];
+
 const joined = artifacts.filter((artifact) => artifact.record).length;
 const preliminaryRecords = yearRecords.filter((record) => record.status === "preliminary");
 const preliminaryArtifacts = artifacts.filter((artifact) => preliminaryRecords.some((record) => record.id === artifact.year));
@@ -765,6 +981,7 @@ console.log(`Manifest matches:    ${joined}`);
 console.log(`Markdown actions:    ${markdownCount}`);
 console.log(`PDF actions:         ${pdfCount}`);
 console.log(`Original actions:    ${artifacts.length}`);
+console.log(`Talk recordings:     ${shardVideoRows.length} on ${shardVideoRecords.size} record(s), ${videoChecks.filter(Boolean).length}/${videoChecks.length} checks`);
 console.log(`Annual result PDFs:  ${annualPdfFiles.length}`);
 console.log(`Preliminary leads:   ${preliminaryArtifacts.length}`);
 console.log(`Interface assets:     ${mockupFiles.length}`);
@@ -773,6 +990,7 @@ console.log(`Constellation UX:    ${constellationChecks.filter(Boolean).length}/
 console.log(`Requested views:     ${experienceChecks.filter(Boolean).length}/${experienceChecks.length}`);
 console.log(`Mobile/deployment:   ${deploymentChecks.filter(Boolean).length}/${deploymentChecks.length}`);
 console.log(`Contribution route:  ${contributionChecks.filter(Boolean).length}/${contributionChecks.length}`);
+console.log(`Room filter:         ${roomFilterChecks.filter(Boolean).length}/${roomFilterChecks.length}`);
 
 if (artifacts.length < 1000) throw new Error("Expected at least 1,000 artifact titles.");
 if (!preliminaryRecords.length || preliminaryRecords.some((record) => record.ranked !== false || !record.notice || !record.contentStart || !record.contentEnd)) throw new Error("Every preliminary collection must be unranked, bounded, and carry a visible notice.");
@@ -783,10 +1001,16 @@ if (missingLocalFiles.length) throw new Error(`Missing ${missingLocalFiles.lengt
 if (missingAnnualPdfs.length) throw new Error(`Missing annual result PDFs:\n${missingAnnualPdfs.join("\n")}`);
 if (missingMockupFiles.length) throw new Error(`Missing mockup files:\n${missingMockupFiles.join("\n")}`);
 if (unsafeManifestPaths.length) throw new Error(`Unsafe archive path(s) in manifest:\n${unsafeManifestPaths.slice(0, 10).join("\n")}`);
-if (securityChecks.some((passed) => !passed)) throw new Error(`Security checks failed. Unsafe target=_blank tags: ${unsafeBlankTargets.length}; unsafe rendered tags: ${unsafeRenderedTags.join(" ") || "none"}`);
-if (constellationChecks.some((passed) => !passed)) throw new Error("Constellation interaction checks failed.");
-if (experienceChecks.some((passed) => !passed)) throw new Error(`Requested experience checks failed. Views found: ${requestedViews.join(", ")}`);
-if (deploymentChecks.some((passed) => !passed)) throw new Error("Mobile/full-screen/deployment checks failed.");
-if (contributionChecks.some((passed) => !passed)) throw new Error(`Contribution route checks failed at index ${contributionChecks.findIndex((passed) => !passed)}.`);
+// EVERY failing index, not just the first. Each of these arrays covers several
+// unrelated things at once, and a message naming one of them is how the second
+// gets fixed a rerun later — or missed altogether.
+const failedIndices = (checks) => checks.flatMap((passed, index) => passed ? [] : [index]).join(", ");
+if (securityChecks.some((passed) => !passed)) throw new Error(`Security checks failed at index ${failedIndices(securityChecks)}. Unsafe target=_blank tags: ${unsafeBlankTargets.length}; unsafe rendered tags: ${unsafeRenderedTags.join(" ") || "none"}`);
+if (constellationChecks.some((passed) => !passed)) throw new Error(`Constellation interaction checks failed at index ${failedIndices(constellationChecks)}.`);
+if (experienceChecks.some((passed) => !passed)) throw new Error(`Requested experience checks failed at index ${failedIndices(experienceChecks)}. Views found: ${requestedViews.join(", ")}`);
+if (deploymentChecks.some((passed) => !passed)) throw new Error(`Mobile/full-screen/deployment checks failed at index ${failedIndices(deploymentChecks)}.`);
+if (contributionChecks.some((passed) => !passed)) throw new Error(`Contribution route checks failed at index ${failedIndices(contributionChecks)}.`);
+if (videoChecks.some((passed) => !passed)) throw new Error(`Talk recording checks failed at index ${failedIndices(videoChecks)}.`);
+if (roomFilterChecks.some((passed) => !passed)) throw new Error(`Room filter checks failed at index ${failedIndices(roomFilterChecks)}.`);
 
 console.log("Smoke test:          PASS");

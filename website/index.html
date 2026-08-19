@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Web Hack List">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://irsdl.github.io; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://irsdl.github.io https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
   <meta name="description" content="Web Hacking Techniques Index is an interactive archive of Top 10 Web Hacking Techniques research, nominations, and clearly marked preliminary collections.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Web Hacking Techniques Index">
@@ -245,6 +245,47 @@
     </div>
   </dialog>
 
+  <dialog class="contribute-dialog report-dialog" id="report-dialog" aria-labelledby="report-title" tabindex="-1">
+    <form method="dialog"><button class="dialog-close" aria-label="Close the report form">×</button></form>
+    <div class="artifact-glow" aria-hidden="true"></div>
+    <div class="dialog-body">
+      <p class="eyebrow">Report / record inaccuracy</p>
+      <h2 id="report-title">Report an inaccuracy</h2>
+      <p class="artifact-context">Everything on this record is either machine-derived or a judgement call — the preserved Markdown and PDF, the links out, the byline, the summary, any recording — so any of it can be wrong. Tell us what looks off. The button below opens a prefilled GitHub issue you can read and edit before posting; nothing leaves this page until you do.</p>
+
+      <div class="contribute-grid">
+        <label class="contribute-field">
+          <span>Record</span>
+          <input id="report-record" type="text" readonly>
+          <small>Filled in from the record you opened.</small>
+        </label>
+        <label class="contribute-field">
+          <span>What is wrong <b>required</b></span>
+          <select id="report-fault"></select>
+        </label>
+        <label class="contribute-field">
+          <span>Which part of the record</span>
+          <select id="report-part"></select>
+          <small>Everything this record offers, listed as you just saw it. Leave it on “Not sure” if the fault is the record as a whole.</small>
+        </label>
+        <label class="contribute-field">
+          <span>What it should be, if you know</span>
+          <input id="report-replacement" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://…">
+        </label>
+        <label class="contribute-field">
+          <span>Anything else</span>
+          <textarea id="report-notes" rows="3" placeholder="A paragraph that is missing from the copy, an author name, a conference year, a timestamp — whatever makes it obvious."></textarea>
+        </label>
+      </div>
+
+      <div class="artifact-actions">
+        <a id="report-issue" href="https://github.com/irsdl/webhacklist/issues/new?template=06-record-inaccuracy.yml" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Open the prefilled issue</a>
+        <button class="secondary" id="report-copy" type="button"><span aria-hidden="true">⧉</span> Copy as Markdown</button>
+      </div>
+      <p class="contribute-note">A GitHub account is needed to post it. Every report is checked against the archived copy and its original source before the record changes.</p>
+    </div>
+  </dialog>
+
   <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title" tabindex="-1">
     <form method="dialog"><button class="dialog-close" aria-label="Close artifact">×</button></form>
     <div class="artifact-glow" aria-hidden="true"></div>
@@ -254,6 +295,8 @@
       <div class="artifact-badges" id="artifact-badges"></div>
 
       <div class="artifact-digest" id="artifact-digest" hidden></div>
+
+      <div class="artifact-talk" id="artifact-talk" hidden></div>
 
       <div class="artifact-actions" id="artifact-actions"></div>
 

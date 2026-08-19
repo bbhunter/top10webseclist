@@ -1,0 +1,63 @@
+name: Report an inaccuracy on a record
+description: Something the archive states about a piece of research is wrong — a preserved copy, a link, a byline, a summary or a recording.
+title: "[Inaccuracy] "
+labels: ["inaccuracy", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A record here is assembled, not transcribed. The Markdown copy is extracted from
+        the captured page, the PDF is printed from the same capture, the byline and the
+        summary are read off that copy, and any recording is matched to the research by
+        judgement. Every one of those steps can be wrong, and the worst kind is quiet —
+        a Markdown copy that no longer says what its own PDF says still opens and still
+        looks fine.
+
+        You do not need to be sure what the right answer is. Saying which record is
+        affected and what looks wrong is enough.
+
+  - type: input
+    id: record
+    attributes:
+      label: Which record
+      description: The year and the entry title, as shown on the page.
+      placeholder: '2019 — "Cached and Confused: Web Cache Deception in the Wild"'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fault
+    attributes:
+      label: What is wrong
+      options:
+        - The Markdown and the PDF do not match
+        - The preserved copy is not this research
+        - A link on this record is wrong or dead
+        - The author, publisher or title shown is wrong
+        - The summary or tags misdescribe the research
+        - A linked video is wrong or will not play
+        - Something is missing — a copy, a link or a recording
+        - Something else (described below)
+    validations:
+      required: true
+
+  - type: input
+    id: part
+    attributes:
+      label: Which part of the record
+      description: The site fills this in from whatever you had open. Leave it blank if the fault is the record as a whole.
+      placeholder: Preserved PDF — archived-references/pdf/2019/cached-and-confused.pdf
+
+  - type: input
+    id: replacement
+    attributes:
+      label: What it should be, if you know
+      description: The working link, the right source, or the author's own talk.
+      placeholder: https://…
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: How you know, if it is not obvious from the links. A missing section, a speaker name, a conference year, a timestamp.
+      placeholder: The Markdown copy stops at "Exploitation" and the PDF has four more sections after it.
