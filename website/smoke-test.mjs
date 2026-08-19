@@ -360,6 +360,21 @@ const roomFilters = JSON.parse(clientEval(`
   JSON.stringify({ unfiltered, inactive, restingKey, oneTopic, twoTopics, recordedOnly, topicAndRecorded, impossible, emptyKey })
 `));
 
+// The constellation's recording control, which has to survive reaching zero:
+// pressed, it can empty the field, and a control that rendered only while it
+// had something to count would vanish exactly when it is the one thing left to
+// press to get back out.
+const starFilters = JSON.parse(clientEval(`
+  state.starRecordedOnly = false;
+  const resting = recordedFilterButton(3);
+  const nothingToFilter = recordedFilterButton(0);
+  state.starRecordedOnly = true;
+  const pressed = recordedFilterButton(3);
+  const pressedAtZero = recordedFilterButton(0);
+  state.starRecordedOnly = false;
+  JSON.stringify({ resting, nothingToFilter, pressed, pressedAtZero })
+`));
+
 // The recording mark, which every view draws from one function so the seven
 // rooms cannot drift into meaning slightly different things by it.
 const marks = JSON.parse(clientEval(`
@@ -503,7 +518,27 @@ const constellationChecks = [
   appSource.includes("GOLD HALO / TOP 10"),
   appSource.includes('data-star-status="top10"'),
   appSource.includes('starStatus: "all"'),
-  stylesSource.includes(".is-star-tugging")
+  stylesSource.includes(".is-star-tugging"),
+  // THE FIELD'S RECORDING FILTER, the museum's Recorded chip and the
+  // observatory's Recorded button asked in the third room that filters. It ANDs
+  // over the chosen topic and the chosen standing, exactly as those two do.
+  appSource.includes("starRecordedOnly: false"),
+  appSource.includes("state.starRecordedOnly ? standingItems.filter((item) => item.videos?.length) : standingItems"),
+  appSource.includes('event.target.closest("[data-star-recorded]")'),
+  // ...and it is not cleared by the topic, year or standing controls, which
+  // answer a different question.
+  !/starStatusTarget[\s\S]{0,400}state\.starRecordedOnly = false/.test(appSource),
+  !/topicTarget[\s\S]{0,400}state\.starRecordedOnly = false/.test(appSource),
+  starFilters.resting.includes("data-star-recorded") && starFilters.resting.includes('aria-pressed="false"') && starFilters.resting.includes("<b>3</b>"),
+  starFilters.pressed.includes('aria-pressed="true"'),
+  // Nothing to filter and not filtering: no control. Filtering and nothing
+  // left: the control stays, or the reader is stranded in an empty field.
+  starFilters.nothingToFilter === "",
+  starFilters.pressedAtZero.includes('aria-pressed="true"') && starFilters.pressedAtZero.includes("<b>0</b>"),
+  // The preliminary years filter too - they are the ones a recording is most
+  // often the only published artefact of.
+  appSource.includes("${recordedFilterButton(recordedHere)}</div>"),
+  stylesSource.includes(".star-recorded-filter")
 ];
 const requestedViews = [...indexSource.matchAll(/data-view="([^"]+)"/g)].map((match) => match[1]);
 const experienceChecks = [
@@ -968,6 +1003,20 @@ const videoChecks = [
   appSource.includes('item.videos?.length ? " · ▶" : ""') && appSource.includes("<span>video</span>"),
   constellationSource.includes("▶ Recorded") && constellationSource.includes("▶ Possible recording"),
   stylesSource.includes(".record-video {") && stylesSource.includes(".record-video.is-potential"),
+  // IT IS A BADGE, NOT A BARE GLYPH. The mark used to be a lone triangle set at
+  // half a rem in the room's own ink; on a book spine that read as a speck of
+  // grain and beside a card's status line as nothing at all, so a fact carried
+  // in seven views was legible in none of them. Filled for a confirmed talk,
+  // outlined for a guess - the same distinction, at a contrast a reader can
+  // actually see.
+  stylesSource.includes("--record-color: var(--cyan)") && stylesSource.includes("--record-ink:"),
+  /\.record-video \{[^}]*display: inline-flex;[^}]*background: var\(--record-color\)/.test(stylesSource),
+  /\.record-video\.is-potential \{[^}]*border-style: dashed/.test(stylesSource),
+  // A light surface punches the glyph out of the badge rather than inheriting
+  // the dark ink the dark rooms are drawn with.
+  /\.book \.book-video \{[^}]*--record-ink:/.test(stylesSource),
+  /\.investigation-card \.evidence-video \{[^}]*--record-ink:/.test(stylesSource),
+  !/(?:book-video|evidence-video) \{[^}]*font-size: \.5rem/.test(stylesSource),
   // The signals row emits its recording slot even when empty; a slot that came
   // and went would move the arrow beside it into a different grid column on
   // every other row.

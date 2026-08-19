@@ -181,6 +181,11 @@ const state = {
   starYear: "",
   starTopic: "all",
   starStatus: "all",
+  // The recordings axis in the field, on the same terms the museum and the
+  // observatory already offer it: a third, independent question -- not which
+  // stars, but which of them was filmed -- so it is a toggle beside the
+  // standing rather than another value the standing could take.
+  starRecordedOnly: false,
   signalYear: "",
   signalTopic: "all",
   signalStatus: "all",
@@ -1253,6 +1258,15 @@ async function handleViewClick(event) {
     return;
   }
 
+  // Survives a change of topic, year or standing, exactly as the observatory's
+  // does: a reader flying across years to see what was presented should not
+  // have to re-press it at every stop.
+  if (event.target.closest("[data-star-recorded]")) {
+    state.starRecordedOnly = !state.starRecordedOnly;
+    render();
+    return;
+  }
+
   const signalTopicTarget = event.target.closest("[data-signal-topic]");
   if (signalTopicTarget) {
     const topic = signalTopicTarget.dataset.signalTopic;
@@ -1849,6 +1863,19 @@ function videoLabel(item) {
 
 function recordedCount(items) {
   return items.filter((item) => item.videos?.length).length;
+}
+
+// THE FIELD'S RECORDING CONTROL. The museum filters its room by recording and
+// the observatory filters its frequency by it; the constellation offered every
+// other axis the two of them do and not this one, so the same question asked in
+// two rooms had no answer in the third. Rendered while the standing holds
+// something to filter, AND while the filter is still running after it stops
+// holding anything: a control that vanished at zero would leave a reader in an
+// empty field with nothing left to press to get out of it.
+function recordedFilterButton(count) {
+  if (!count && !state.starRecordedOnly) return "";
+  const title = state.starRecordedOnly ? "Stop filtering by recording" : "Show only research with a talk recording";
+  return `<button class="star-recorded-filter ${state.starRecordedOnly ? "active" : ""}" type="button" data-star-recorded aria-pressed="${state.starRecordedOnly}" title="${h(title)}"><i aria-hidden="true">▶</i><span class="full-label">Recorded</span><span class="short-label">Rec</span> <b>${count}</b></button>`;
 }
 
 function artifactCard(item, compactCard = false) {
@@ -2749,11 +2776,17 @@ function renderConstellation() {
   const nomineeCount = topicItems.length - winnerCount;
   if (state.starStatus === "top10" && winnerCount === 0) state.starStatus = "all";
   if (state.starStatus === "nominee" && nomineeCount === 0) state.starStatus = "all";
-  let items = topicItems;
-  if (state.starStatus === "top10") items = items.filter((item) => item.section === "winner");
-  if (state.starStatus === "nominee") items = items.filter((item) => item.section !== "winner");
+  let standingItems = topicItems;
+  if (state.starStatus === "top10") standingItems = standingItems.filter((item) => item.section === "winner");
+  if (state.starStatus === "nominee") standingItems = standingItems.filter((item) => item.section !== "winner");
+  // ANDs over the topic and the standing, as the museum's chip and the
+  // observatory's button both do -- so a year whose Top 10 was never filmed
+  // empties the field and leaves the control pressed, rather than quietly
+  // widening back out to every star.
+  const recordedHere = recordedCount(standingItems);
+  const items = state.starRecordedOnly ? standingItems.filter((item) => item.videos?.length) : standingItems;
   const statusLabel = preliminary ? "preliminary stars" : state.starStatus === "top10" ? "Top 10 stars" : state.starStatus === "nominee" ? "nominee stars" : "stars";
-  setMetric(items.length, `${statusLabel} visible for ${yearLabel(state.starYear)}`);
+  setMetric(items.length, `${state.starRecordedOnly ? "recorded " : ""}${statusLabel} visible for ${yearLabel(state.starYear)}`);
 
   $("#view-root").innerHTML = `
     <div class="sky-controls">
@@ -2810,11 +2843,12 @@ function renderConstellation() {
         <button class="${state.starTopic === "all" ? "active" : ""}" data-topic-filter="all" aria-pressed="${state.starTopic === "all"}" style="--topic-color:#edf9f1">ALL</button>
         ${TOPICS.map((topic) => `<button class="${state.starTopic === topic.name ? "active" : ""}" data-topic-filter="${h(topic.name)}" aria-pressed="${state.starTopic === topic.name}" style="--topic-color:${h(topic.color)}">${h(topic.name.toUpperCase())}</button>`).join("")}
       </div>
-      ${preliminary ? `<div class="star-rank-filter preliminary-filter" role="status"><span>UNRANKED</span><button class="active" data-star-status="all" aria-pressed="true">Preliminary <b>${topicItems.length}</b></button></div>` : `<div class="star-rank-filter" role="group" aria-label="Filter research by Top 10 status">
+      ${preliminary ? `<div class="star-rank-filter preliminary-filter" role="status"><span>UNRANKED</span><button class="active" data-star-status="all" aria-pressed="true">Preliminary <b>${topicItems.length}</b></button>${recordedFilterButton(recordedHere)}</div>` : `<div class="star-rank-filter" role="group" aria-label="Filter research by Top 10 status and by talk recording">
           <span>SHOW</span>
           <button class="${state.starStatus === "all" ? "active" : ""}" data-star-status="all" aria-pressed="${state.starStatus === "all"}">All <b>${topicItems.length}</b></button>
           <button class="top-ten ${state.starStatus === "top10" ? "active" : ""}" data-star-status="top10" aria-pressed="${state.starStatus === "top10"}" ${winnerCount ? "" : "disabled"}><i aria-hidden="true">✦</i> Top 10 <b>${winnerCount}</b></button>
           <button class="${state.starStatus === "nominee" ? "active" : ""}" data-star-status="nominee" aria-pressed="${state.starStatus === "nominee"}" ${nomineeCount ? "" : "disabled"}><span class="full-label">Nominees</span><span class="short-label">Rest</span> <b>${nomineeCount}</b></button>
+          ${recordedFilterButton(recordedHere)}
         </div>`}
       <div class="space-help"><span><kbd>Drag space</kbd> orbit</span><span><kbd>Drag star</kbd> tug</span><span><kbd>Shift + drag</kbd> pan</span><span><kbd>Wheel / pinch</kbd> zoom</span></div>
     </section>`;
