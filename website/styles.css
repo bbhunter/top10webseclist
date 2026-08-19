@@ -421,7 +421,14 @@
   /* Status and the talk marker are ONE flex child, so the foot keeps the two-up
      layout it had before the marker existed. */
   .artifact-card .card-foot-meta { display: inline-flex; align-items: center; gap: 7px; }
-  .artifact-card .card-video { color: var(--cyan); font-style: normal; font-size: .72rem; line-height: 1; }
+  /* THE RECORDING MARK, one glyph in every room the archive has. Solid where
+     the archive is certain the talk is this research, faded where its best
+     match is still a guess — the same distinction the record dialog draws in
+     words, so a reader who learns it once can read it anywhere. Each room
+     positions it; none of them redefines what it means. */
+  .record-video { color: var(--cyan); font-style: normal; line-height: 1; }
+  .record-video.is-potential { color: var(--muted); opacity: .72; }
+  .artifact-card .card-video { font-size: .72rem; }
   .rank-token { color: var(--amber); }
   .status-dot { display: inline-block; width: 5px; height: 5px; margin-right: 5px; background: var(--mint); border-radius: 50%; }
   .status-dot.partial { background: var(--amber); }
@@ -1127,6 +1134,10 @@
   .book:nth-child(5n) { transform: rotate(-2deg); transform-origin: bottom; }
   .book:hover, .book:focus-visible { z-index: 3; outline: none; filter: brightness(1.12); transform: translateY(-14px) rotate(0); box-shadow: inset -5px 0 10px rgba(0,0,0,.18), 0 0 0 1px rgba(255,220,150,.6), 0 16px 24px rgba(0,0,0,.5); }
   .book b { position: absolute; right: 2px; bottom: 4px; left: 2px; color: rgba(52,34,7,.8); font-size: .46rem; letter-spacing: -.02em; text-align: center; text-shadow: 0 1px 0 rgba(255,255,255,.35); writing-mode: horizontal-tb; }
+  /* The spine is vertical type, so the mark is set back to horizontal and
+     pinned opposite the read tick rather than joining the title's flow. */
+  .book .book-video { position: absolute; top: 3px; right: 3px; color: rgba(30,20,4,.85); font-size: .5rem; writing-mode: horizontal-tb; text-shadow: 0 1px 0 rgba(255,255,255,.4); }
+  .book .book-video.is-potential { color: rgba(52,34,7,.45); opacity: 1; }
   .book.is-read { filter: saturate(.35) brightness(.72); }
   .book.is-read::after { position: absolute; top: 4px; left: 4px; display: grid; width: 12px; height: 11px; place-items: center; content: "✓"; color: #10190f; background: rgba(255,255,255,.42); border: 1px solid rgba(52,34,7,.3); border-radius: 1px; font: 900 .55rem var(--mono); writing-mode: horizontal-tb; }
   .shelf-plate {
@@ -1692,21 +1703,34 @@
   .signal-status-filter button:hover { color: #f1f5ff; border-color: rgba(120,153,255,.38); }
   .signal-status-filter button.active { color: #07101d; background: var(--signal-color); border-color: var(--signal-color); }
   .signal-status-filter button.active b { color: inherit; }
+  /* A third axis, not a fourth standing: it sits apart from the Show group and
+     takes the cyan of the recording mark rather than the room's tuned colour,
+     so it cannot be read as one more value of "Show". */
+  .signal-recorded-filter { display: inline-flex; align-items: center; gap: 5px; flex: 0 0 auto; padding: 6px 9px; color: #7d899f; background: transparent; border: 1px solid rgba(110,231,231,.2); border-radius: 4px; font: .48rem var(--mono); cursor: pointer; transition: color .16s ease, background-color .16s ease, border-color .16s ease; }
+  .signal-recorded-filter i { color: var(--cyan); font-style: normal; font-size: .55rem; }
+  .signal-recorded-filter b { color: #aeb9cc; font-weight: 600; }
+  .signal-recorded-filter:hover { color: #f1f5ff; border-color: rgba(110,231,231,.5); }
+  .signal-recorded-filter.active { color: #04191b; background: var(--cyan); border-color: var(--cyan); }
+  .signal-recorded-filter.active :is(i, b) { color: inherit; }
   .signal-status-filter button:disabled { opacity: .35; cursor: default; }
   .signal-preliminary-filter { display: flex; align-items: center; gap: 7px; color: var(--accent); font: .49rem var(--mono); }
   .signal-preliminary-filter i { width: 6px; height: 6px; background: var(--accent); transform: rotate(45deg); }
-  .signal-finding { display: grid; grid-template-columns: 46px minmax(0,1fr) minmax(130px,190px) 18px; align-items: center; gap: 12px; min-height: 61px; padding: 11px 17px; color: #aeb9cc; background: transparent; border: 0; border-bottom: 1px solid rgba(120,153,255,.09); text-align: left; cursor: pointer; transition: .17s; }
+  /* The recording slot is a column of its own and is ALWAYS emitted, empty
+     where there is nothing to mark: a slot that appears only sometimes would
+     move the arrow beside it into a different column on every other row. */
+  .signal-finding { display: grid; grid-template-columns: 46px minmax(0,1fr) minmax(130px,190px) 10px 18px; align-items: center; gap: 12px; min-height: 61px; padding: 11px 17px; color: #aeb9cc; background: transparent; border: 0; border-bottom: 1px solid rgba(120,153,255,.09); text-align: left; cursor: pointer; transition: .17s; }
+  .signal-finding .signal-video { font-size: .58rem; }
   .signal-finding:last-child { border-bottom: 0; }
   .signal-finding:hover { color: #fff; background: color-mix(in srgb,var(--signal-color) 8%,transparent); }
   .signal-finding > span { color: var(--signal-color); font: .48rem var(--mono); }
   .signal-finding > strong { overflow: hidden; font-size: .7rem; text-overflow: ellipsis; white-space: nowrap; }
   .signal-finding > small { overflow: hidden; color: #5f6c82; font: .47rem var(--mono); text-overflow: ellipsis; white-space: nowrap; }
-  .signal-finding > i { color: var(--accent); font-style: normal; opacity: .5; }
+  .signal-finding > i:last-child { color: var(--accent); font-style: normal; opacity: .5; }
   .signal-finding.is-read { opacity: .58; }
   .signal-finding.is-favourite { background: linear-gradient(90deg,rgba(255,180,84,.07),transparent 62%); box-shadow: inset 2px 0 #ffb454; }
-  .signal-finding.is-favourite > i::before { content: "★"; color: #ffb454; }
-  .signal-finding.is-favourite > i { font-size: 0; opacity: 1; }
-  .signal-finding.is-favourite > i::before { font-size: .7rem; }
+  .signal-finding.is-favourite > i:last-child::before { content: "★"; color: #ffb454; }
+  .signal-finding.is-favourite > i:last-child { font-size: 0; opacity: 1; }
+  .signal-finding.is-favourite > i:last-child::before { font-size: .7rem; }
   .signal-more { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; color: #dbe4f6; background: rgba(120,153,255,.06); border: 0; border-top: 1px solid rgba(120,153,255,.12); font: .55rem var(--mono); cursor: pointer; }
   .signal-more:hover { background: rgba(120,153,255,.12); }
   .signal-more span { color: #657189; font-size: .45rem; }
@@ -1748,6 +1772,9 @@
      the meaning, and a credit line reads as a name rather than an aside. */
   .global-results > div > button em { display: block; overflow: hidden; margin-top: 5px; color: var(--view-accent); font: .6rem var(--mono); font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
   .global-results > div > button small { overflow: hidden; font: .59rem var(--mono); text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+  /* The publisher cell ellipses, so the mark is given a line of its own under
+     it rather than being the first thing a long host name truncates away. */
+  .global-results > div > button small .result-video { display: block; margin-top: 4px; font-size: .62rem; }
   .global-results > div > p { padding: 20px; color: var(--faint); font: .66rem/1.6 var(--mono); text-align: center; }
 
   /* The Hacker Terminal, ported into the shared application shell. */
@@ -1852,6 +1879,10 @@
   .investigation-card.evidence-stub { padding-bottom: 26px; color: #5c584d; background: repeating-linear-gradient(0deg,transparent 0 17px,rgba(90,90,90,.2) 17px 18px),linear-gradient(140deg,#ddd8ca,#cfc9b8 60%,#beb7a3); clip-path: polygon(0 0,100% 0,100% 78%,91% 86%,82% 79%,71% 88%,60% 80%,48% 89%,37% 81%,26% 90%,15% 82%,6% 90%,0 83%); }
   .investigation-card .missing-label { color: #8c6a20; font-size: .46rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; white-space: normal; }
   .investigation-card.is-read { filter: saturate(.55) brightness(.92); }
+  /* Pinned top-right on the card, clear of the read and favourite stamps along
+     its bottom edge and of the pin at the top centre. */
+  .investigation-card .evidence-video { position: absolute; top: 5px; right: 6px; color: #1d6f70; font-size: .5rem; }
+  .investigation-card .evidence-video.is-potential { color: #7d7568; opacity: 1; }
   .investigation-card .evidence-read { position: absolute; right: 5px; bottom: 4px; color: #5a704b; font-size: .46rem; letter-spacing: .08em; }
   .investigation-card .evidence-favourite { position: absolute; left: 5px; bottom: 4px; color: #8b5608; font-size: .43rem; letter-spacing: .05em; }
   .investigation-card.is-favourite { box-shadow: 0 8px 16px rgba(0,0,0,.35),0 0 0 3px rgba(255,180,84,.38); }
@@ -2007,7 +2038,7 @@
     .signal-observatory { margin-inline: -4px; }
     .signal-console { grid-template-columns: 64px minmax(0,1fr); }
     .signal-focus-grid { grid-template-columns: 1fr; }
-    .signal-finding { grid-template-columns: 44px minmax(0,1fr) 18px; }
+    .signal-finding { grid-template-columns: 44px minmax(0,1fr) 10px 18px; }
     .signal-finding > small { display: none; }
     /* These are primary route/filter controls, not dense prose links. Give
        touch users a dependable target while preserving horizontal scrolling. */

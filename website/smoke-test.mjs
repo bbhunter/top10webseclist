@@ -359,6 +359,20 @@ const roomFilters = JSON.parse(clientEval(`
   state.roomVideoOnly = false;
   JSON.stringify({ unfiltered, inactive, restingKey, oneTopic, twoTopics, recordedOnly, topicAndRecorded, impossible, emptyKey })
 `));
+
+// The recording mark, which every view draws from one function so the seven
+// rooms cannot drift into meaning slightly different things by it.
+const marks = JSON.parse(clientEval(`
+  const sure = { videos: [{ url: "https://youtu.be/aaaaaaaaaaa", confidence: "confirmed" }] };
+  const guess = { videos: [{ url: "https://youtu.be/bbbbbbbbbbb", confidence: "possible" }] };
+  const mixed = { videos: [guess.videos[0], sure.videos[0]] };
+  JSON.stringify({
+    sure: videoMark(sure), guess: videoMark(guess), mixed: videoMark(mixed),
+    none: videoMark({}), scoped: videoMark(sure, "card-video"),
+    sureLabel: videoLabel(sure), guessLabel: videoLabel(guess), noLabel: videoLabel({}),
+    counted: recordedCount([sure, {}, guess, {}])
+  })
+`));
 const emittedTags = hostileHtml.match(/<[^>]+>/g) || [];
 const unsafeRenderedTags = emittedTags.filter((tag) =>
   /<(?:script|iframe|svg|object|embed)\b/i.test(tag)
@@ -930,7 +944,48 @@ const videoChecks = [
   // actually stops it, and it has to be wired to the dialog's own close event.
   appSource.includes("function stopTalkPlayback"),
   /function stopTalkPlayback\(\)[\s\S]*?panel\.innerHTML = "";/.test(appSource),
-  appSource.includes('$("#artifact-dialog").addEventListener("close", stopTalkPlayback)')
+  appSource.includes('$("#artifact-dialog").addEventListener("close", stopTalkPlayback)'),
+  // THE MARK, drawn once and shown in every room. A record with a recording
+  // should be visible as such while scanning any view, not only after opening
+  // it — and the mark keeps the confidence distinction the record dialog makes
+  // in words, so a guess never looks like a fact anywhere.
+  marks.sure.includes("record-video") && !marks.sure.includes("is-potential"),
+  marks.guess.includes("is-potential"),
+  // One confirmed match among guesses makes the record's mark a confirmed one.
+  marks.mixed.includes("record-video") && !marks.mixed.includes("is-potential"),
+  marks.none === "",
+  marks.scoped.includes("record-video card-video"),
+  marks.sureLabel === ", has a talk recording" && marks.guessLabel === ", has a possible related recording" && marks.noLabel === "",
+  marks.counted === 2,
+  // Every room that lists records draws it: museum and favourites cards, the
+  // library spine and its plate, signals findings, the investigation board,
+  // global search, the terminal listing and detail, and the star readout.
+  appSource.includes('videoMark(item, "card-video")'),
+  appSource.includes('videoMark(item, "book-video")') && appSource.includes('"▶ recorded" : "▶ possible recording"'),
+  appSource.includes('videoMark(item, "signal-video")'),
+  appSource.includes('videoMark(item, "evidence-video")'),
+  appSource.includes('videoMark(item, "result-video")'),
+  appSource.includes('item.videos?.length ? " · ▶" : ""') && appSource.includes("<span>video</span>"),
+  constellationSource.includes("▶ Recorded") && constellationSource.includes("▶ Possible recording"),
+  stylesSource.includes(".record-video {") && stylesSource.includes(".record-video.is-potential"),
+  // The signals row emits its recording slot even when empty; a slot that came
+  // and went would move the arrow beside it into a different grid column on
+  // every other row.
+  appSource.includes('|| `<i class="signal-video" aria-hidden="true"></i>`'),
+  stylesSource.includes("46px minmax(0,1fr) minmax(130px,190px) 10px 18px"),
+  // ...which means the rules for that arrow have to name the arrow.
+  stylesSource.includes(".signal-finding > i:last-child") && !stylesSource.includes(".signal-finding > i {"),
+  // THE SIGNALS RECORDING FILTER, the museum's Recorded chip on the other view
+  // that filters. It ANDs over the tuned topic and the chosen standing.
+  appSource.includes("signalRecordedOnly: false"),
+  appSource.includes("state.signalRecordedOnly ? standingItems.filter((item) => item.videos?.length) : standingItems"),
+  appSource.includes('event.target.closest("[data-signal-recorded]")'),
+  appSource.includes("data-signal-recorded") && appSource.includes("signal-recorded-filter"),
+  // It states what it withheld, and survives a change of year or topic - unlike
+  // signalStatus, which those controls reset.
+  appSource.includes("without a recording hidden"),
+  !/signalTopicTarget[\s\S]{0,400}state\.signalRecordedOnly = false/.test(appSource),
+  stylesSource.includes(".signal-recorded-filter")
 ];
 
 // The room filter, which is the colour key made pressable.

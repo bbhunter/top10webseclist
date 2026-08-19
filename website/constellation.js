@@ -741,7 +741,14 @@
         const item = node.item;
         this.controls.selectionMeta.textContent = `${item.yearLabel || item.year} / ${item.topic}${isTopTen(item) ? ` / Top 10${item.rank ? ` #${item.rank}` : ""}` : item.preliminary ? " / preliminary · unranked" : " / nominee"}`;
         this.controls.selectionTitle.textContent = item.title;
-        this.controls.selectionPublisher.textContent = `${item.publisher || "Unknown publisher"} · ${item.kind || "Web research"} · ${item.read ? "Read" : "Unread"}${item.favourite ? " · Favourite" : ""}`;
+        // A star is a painted dot, so the recording cannot be a glyph out
+        // there; it is spelled into the readout beside the star's other facts,
+        // keeping the archive's own distinction between a match it is sure of
+        // and one it is only offering.
+        const recording = item.videos?.length
+          ? item.videos.some((video) => video.confidence === "confirmed") ? " · ▶ Recorded" : " · ▶ Possible recording"
+          : "";
+        this.controls.selectionPublisher.textContent = `${item.publisher || "Unknown publisher"} · ${item.kind || "Web research"} · ${item.read ? "Read" : "Unread"}${item.favourite ? " · Favourite" : ""}${recording}`;
         this.controls.open.hidden = false;
         if (this.controls.favourite) {
           this.controls.favourite.hidden = false;

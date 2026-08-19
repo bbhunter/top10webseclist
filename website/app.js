@@ -184,6 +184,11 @@ const state = {
   signalYear: "",
   signalTopic: "all",
   signalStatus: "all",
+  // The recordings axis, the same one the museum's colour key carries. Signals
+  // already tunes a topic and a standing; whether the work was also presented
+  // is a third, independent question, so it is a toggle beside them rather than
+  // another value either of them could take.
+  signalRecordedOnly: false,
   signalVisibleCount: 12,
   savedMode: "favourites",
   // Empty means "every year" / "every topic". Both filters are multi-select so
@@ -1276,6 +1281,17 @@ async function handleViewClick(event) {
     return;
   }
 
+  // Not cleared by the topic, year or standing controls above, unlike
+  // `signalStatus`: those three answer "which records", and this answers
+  // "which of them was filmed". A reader tuning across years to see what was
+  // presented should not have to re-press it at every stop.
+  if (event.target.closest("[data-signal-recorded]")) {
+    state.signalRecordedOnly = !state.signalRecordedOnly;
+    state.signalVisibleCount = 12;
+    render();
+    return;
+  }
+
   if (event.target.closest("[data-signal-more]")) {
     state.signalVisibleCount += 12;
     render();
@@ -1530,10 +1546,10 @@ function updateGlobalSearch() {
     ? results.slice(0, 40).map((item) => {
         const names = (item.authors || []).join(", ");
         return `
-        <button type="button" data-artifact="${h(item.id)}">
+        <button type="button" data-artifact="${h(item.id)}" aria-label="${h(`Open ${item.title}${videoLabel(item)}`)}">
           <span><b>${h(item.yearLabel || item.year)}</b>${item.favourite ? "★ favourite" : item.rank ? `#${item.rank}` : item.preliminary ? "preliminary" : "nominee"}</span>
           <div><strong>${h(item.title)}</strong>${item.summary ? `<p>${h(item.summary)}</p>` : ""}${names ? `<em>${h(names)}</em>` : ""}</div>
-          <small>${h(item.publisher || item.topic)}</small>
+          <small>${h(item.publisher || item.topic)}${videoMark(item, "result-video")}</small>
         </button>`;
       }).join("") + (results.length > 40 ? `<p>Showing the first 40 results. Add another word to narrow the index.</p>` : "")
     : `<p>No archive records matched those words. A word can name its field —
@@ -1806,6 +1822,35 @@ function statusMarkup(item) {
   return `<span><i class="status-dot ${h(className)}"></i>${h(archiveLabel(item))}</span>`;
 }
 
+// ONE GLYPH, ONE FACT, IN EVERY ROOM. The archive knows a talk exists for 298
+// records; a reader scanning any of the seven views should be able to see that
+// without opening one. The mark is stated once here rather than per view, so
+// the seven cannot drift into meaning slightly different things — and it keeps
+// the site's own distinction: a solid mark where the archive is certain, a
+// faded one where its best match is still a guess.
+function videoMark(item, extraClass = "") {
+  if (!item.videos?.length) return "";
+  const confirmed = item.videos.some((video) => video.confidence === "confirmed");
+  const label = confirmed
+    ? "A talk recording is linked on this record"
+    : "A possible related recording is linked on this record";
+  return `<i class="record-video${extraClass ? ` ${h(extraClass)}` : ""}${confirmed ? "" : " is-potential"}" aria-hidden="true" title="${h(label)}">▶</i>`;
+}
+
+// The same fact for a screen reader, which cannot see the glyph. Appended to
+// the control's own label rather than given a label of its own, because it
+// describes the record and is not a thing to be pressed.
+function videoLabel(item) {
+  if (!item.videos?.length) return "";
+  return item.videos.some((video) => video.confidence === "confirmed")
+    ? ", has a talk recording"
+    : ", has a possible related recording";
+}
+
+function recordedCount(items) {
+  return items.filter((item) => item.videos?.length).length;
+}
+
 function artifactCard(item, compactCard = false) {
   const rank = item.rank ? `<span class="rank-token">#${item.rank}</span>` : item.preliminary ? `<span class="preliminary-token">PRELIMINARY</span>` : `<span>${h(item.kind)}</span>`;
   // The roomy winner and personal-collection cards should answer the first
@@ -1816,11 +1861,11 @@ function artifactCard(item, compactCard = false) {
     ? `<p class="card-summary">${h(item.summary)}</p>`
     : "";
   return `
-    <div class="artifact-card topic-${h(item.topic)} ${compactCard ? "compact-card" : ""} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" tabindex="0" role="button" aria-label="Open ${h(item.title)}${item.favourite ? ", favourite" : ""}">
+    <div class="artifact-card topic-${h(item.topic)} ${compactCard ? "compact-card" : ""} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" tabindex="0" role="button" aria-label="Open ${h(item.title)}${item.favourite ? ", favourite" : ""}${h(videoLabel(item))}">
       <div class="card-top"><span>${h(item.yearLabel || item.year)} / ${h(item.topic)}</span>${rank}</div>
       <h3>${h(item.title)}</h3>
       ${summary}
-      <div class="card-foot"><span>${h(short(briefCreditOf(item) || "Unknown publisher", 25))}</span><span class="card-foot-meta">${statusMarkup(item)}${item.videos?.length ? `<i class="card-video" aria-hidden="true" title="A talk recording is linked on this record">▶</i>` : ""}</span></div>
+      <div class="card-foot"><span>${h(short(briefCreditOf(item) || "Unknown publisher", 25))}</span><span class="card-foot-meta">${statusMarkup(item)}${videoMark(item, "card-video")}</span></div>
       ${item.favourite ? `<span class="card-favourite" aria-label="Favourite">★</span>` : ""}
       ${item.read ? `<span class="card-read">✓ read</span>` : ""}
     </div>`;
@@ -1967,7 +2012,7 @@ function renderLibrary() {
         <div class="shelf-section">
           <div class="shelf-label"><span>${h(group.name)} studies</span><span>${group.items.length} volumes</span></div>
           <div class="book-shelf">
-            ${group.items.map((item, index) => `<button class="book ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" aria-label="Open ${h(item.title)}${item.read ? ", read" : ""}${item.favourite ? ", favourite" : ""}" style="--book-height:${125 + ((index * 19) % 48)}px;--book-color:${h(group.color)}">${h(short(item.title, 48))}<b>${h(yearLabel(item.year, true))}</b></button>`).join("")}
+            ${group.items.map((item, index) => `<button class="book ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" aria-label="Open ${h(item.title)}${item.read ? ", read" : ""}${item.favourite ? ", favourite" : ""}${h(videoLabel(item))}" style="--book-height:${125 + ((index * 19) % 48)}px;--book-color:${h(group.color)}">${h(short(item.title, 48))}${videoMark(item, "book-video")}<b>${h(yearLabel(item.year, true))}</b></button>`).join("")}
           </div>
           <div class="shelf-plate" aria-hidden="true"><i class="shelf-plate-notch"></i><b class="shelf-plate-title"></b><span class="shelf-plate-summary"></span><span class="shelf-plate-meta"></span></div>
         </div>`).join("")}
@@ -2003,7 +2048,12 @@ function showShelfPlate(book) {
     standing,
     item.publisher || "Unknown publisher",
     `${item.yearLabel || item.year} · ${item.topic}`,
-    archiveLabel(item)
+    archiveLabel(item),
+    // The plate is text, not markup, so the glyph on the spine is spelled out
+    // here rather than repeated — and it keeps the archive's own distinction.
+    item.videos?.length
+      ? item.videos.some((video) => video.confidence === "confirmed") ? "▶ recorded" : "▶ possible recording"
+      : ""
   ].filter(Boolean).join("  ·  ");
   plate.classList.add("is-open");
   positionShelfPlate(plate, shelf, book);
@@ -2318,7 +2368,7 @@ function compileSafeGrep(expression, insensitive = true) {
 
 function terminalRows(items, limit = 60) {
   if (!items.length) return `<p class="term-error">No records matched.</p>`;
-  return items.slice(0, limit).map((item, index) => `<div class="term-row ${item.favourite ? "is-favourite" : ""}"><span>${String(index + 1).padStart(3, "0")}</span><b>${item.favourite ? `★${item.rank ? `#${item.rank}` : ""}` : item.rank ? `#${item.rank}` : item.preliminary ? "PRE" : "·"}</b><button data-term-command="open ${h(item.id)}">${h(item.title)}</button><small>${h(yearLabel(item.year, true))}${item.archived ? "" : " · not archived"}</small></div>`).join("") + (items.length > limit ? `<p class="term-dim">… ${items.length - limit} more result(s). Refine the query to narrow them.</p>` : "");
+  return items.slice(0, limit).map((item, index) => `<div class="term-row ${item.favourite ? "is-favourite" : ""}"><span>${String(index + 1).padStart(3, "0")}</span><b>${item.favourite ? `★${item.rank ? `#${item.rank}` : ""}` : item.rank ? `#${item.rank}` : item.preliminary ? "PRE" : "·"}</b><button data-term-command="open ${h(item.id)}">${h(item.title)}</button><small>${h(yearLabel(item.year, true))}${item.videos?.length ? " · ▶" : ""}${item.archived ? "" : " · not archived"}</small></div>`).join("") + (items.length > limit ? `<p class="term-dim">… ${items.length - limit} more result(s). Refine the query to narrow them.</p>` : "");
 }
 
 function terminalRootListing() {
@@ -2491,7 +2541,15 @@ function terminalDetail(item) {
   const standing = item.rank
     ? `<b class="term-gold">★ TOP 10 · rank #${item.rank}</b>`
     : item.preliminary ? `<b class="term-warn">PRELIMINARY · UNRANKED · SUBJECT TO CHANGE</b>` : `<i>nominee</i>`;
-  return `<section class="terminal-detail"><p class="term-dim">┌─ ${h(item.id)} ─────────────────────────</p><p><span>title</span><strong>${h(item.title)}</strong></p><p><span>year</span>${h(yearLabel(item.year))} ${standing}</p><p><span>source</span>${h(item.publisher || "unknown")} · ${h(item.kind)}</p><p><span>topic</span>${h(item.topic)} · ${h(item.archiveStatus)}${item.favourite ? " · ★ favourite" : ""}</p><p><span>url</span><small>${h(original || "blocked unsafe URL")}</small></p><p><span>actions</span>${mdAction}${pdfAction}${webAction}${favouriteAction}<button data-artifact="${h(item.id)}">[full record]</button></p><p class="term-dim">└────────────────────────────────────────</p></section>`;
+  // A shell prints a field, so the recording is a field rather than a glyph -
+  // and it says which it is, because the confidence band is the whole point of
+  // the record. The URL goes through the same validator as every other outbound
+  // address here; a rejected one is simply absent.
+  const talk = (item.videos || []).find((video) => safeExternalUrl(video.url));
+  const talkLine = talk
+    ? `<p><span>video</span>${talk.confidence === "confirmed" ? `<b class="term-gold">▶ recorded</b>` : `<i>▶ possible match</i>`}${talk.conference ? ` · ${h(talk.conference)}` : ""}${talk.minutes ? ` · ${talk.minutes} min` : ""} <small>${h(safeExternalUrl(talk.url))}</small></p>`
+    : "";
+  return `<section class="terminal-detail"><p class="term-dim">┌─ ${h(item.id)} ─────────────────────────</p><p><span>title</span><strong>${h(item.title)}</strong></p><p><span>year</span>${h(yearLabel(item.year))} ${standing}</p><p><span>source</span>${h(item.publisher || "unknown")} · ${h(item.kind)}</p><p><span>topic</span>${h(item.topic)} · ${h(item.archiveStatus)}${item.favourite ? " · ★ favourite" : ""}</p><p><span>url</span><small>${h(original || "blocked unsafe URL")}</small></p>${talkLine}<p><span>actions</span>${mdAction}${pdfAction}${webAction}${favouriteAction}<button data-artifact="${h(item.id)}">[full record]</button></p><p class="term-dim">└────────────────────────────────────────</p></section>`;
 }
 
 function terminalCompletion(value) {
@@ -2560,7 +2618,12 @@ function renderSignals() {
   const winnerItems = selectedPoint.preliminary ? [] : selectedItems.filter((item) => item.section === "winner");
   const nomineeItems = selectedPoint.preliminary ? [] : selectedItems.filter((item) => item.section !== "winner");
   if (selectedPoint.preliminary || (state.signalStatus === "top10" && !winnerItems.length) || (state.signalStatus === "nominee" && !nomineeItems.length)) state.signalStatus = "all";
-  const statusItems = state.signalStatus === "top10" ? winnerItems : state.signalStatus === "nominee" ? nomineeItems : selectedItems;
+  const standingItems = state.signalStatus === "top10" ? winnerItems : state.signalStatus === "nominee" ? nomineeItems : selectedItems;
+  // ANDs over the topic and the standing, exactly as the museum's Recorded chip
+  // does — so a year whose Top 10 was never filmed comes back empty and says so,
+  // rather than dropping a filter the reader can still see pressed.
+  const recordedHere = recordedCount(standingItems);
+  const statusItems = state.signalRecordedOnly ? standingItems.filter((item) => item.videos?.length) : standingItems;
   const sortedStatusItems = [...statusItems].sort((a, b) =>
     Number(b.section === "winner") - Number(a.section === "winner") || byRankThenTitle(a, b)
   );
@@ -2651,12 +2714,17 @@ function renderSignals() {
                     <button class="${state.signalStatus === "top10" ? "active" : ""}" data-signal-status="top10" aria-pressed="${state.signalStatus === "top10"}" ${winnerItems.length ? "" : "disabled"}>Top 10 <b>${winnerItems.length}</b></button>
                     <button class="${state.signalStatus === "nominee" ? "active" : ""}" data-signal-status="nominee" aria-pressed="${state.signalStatus === "nominee"}" ${nomineeItems.length ? "" : "disabled"}>Other nominations <b>${nomineeItems.length}</b></button>
                   </div>`}
-              <p>Showing <b>${focusItems.length}</b> of ${statusItems.length}${state.signalStatus === "all" && winnerItems.length ? " · Top 10 first" : ""}</p>
+              ${recordedHere || state.signalRecordedOnly
+                ? `<button class="signal-recorded-filter ${state.signalRecordedOnly ? "active" : ""}" type="button" data-signal-recorded aria-pressed="${state.signalRecordedOnly}" title="${h(state.signalRecordedOnly ? "Stop filtering by recording" : "Show only research with a talk recording")}"><i aria-hidden="true">▶</i> Recorded <b>${recordedHere}</b></button>`
+                : ""}
+              <p>Showing <b>${focusItems.length}</b> of ${statusItems.length}${state.signalRecordedOnly ? ` · ${standingItems.length - statusItems.length} without a recording hidden` : state.signalStatus === "all" && winnerItems.length ? " · Top 10 first" : ""}</p>
             </div>
             <div>
-              ${focusItems.map((item) => `<button class="signal-finding ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}">
-                <span>${item.rank ? `#${item.rank}` : item.preliminary ? "PRELIM" : "NOM"}</span><strong>${h(item.title)}</strong><small>${h(item.publisher || item.topic)} · ${h(item.archiveStatus)}</small><i aria-hidden="true">↗</i>
-              </button>`).join("") || empty(`No ${statusLabel.toLowerCase()} are filed in ${yearLabel(selectedPoint.year)}.`)}
+              ${focusItems.map((item) => `<button class="signal-finding ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" aria-label="${h(`Open ${item.title}${videoLabel(item)}`)}">
+                <span>${item.rank ? `#${item.rank}` : item.preliminary ? "PRELIM" : "NOM"}</span><strong>${h(item.title)}</strong><small>${h(item.publisher || item.topic)} · ${h(item.archiveStatus)}</small>${videoMark(item, "signal-video") || `<i class="signal-video" aria-hidden="true"></i>`}<i aria-hidden="true">↗</i>
+              </button>`).join("") || empty(state.signalRecordedOnly
+                ? `No ${statusLabel.toLowerCase()} in ${yearLabel(selectedPoint.year)} has a recording on file.`
+                : `No ${statusLabel.toLowerCase()} are filed in ${yearLabel(selectedPoint.year)}.`)}
               ${remainingItems ? `<button class="signal-more" type="button" data-signal-more>Show 12 more <span>${remainingItems} remaining</span></button>` : statusItems.length ? `<p class="signal-end">All ${statusItems.length} matching records are shown</p>` : ""}
             </div>
           </div>
@@ -2851,7 +2919,7 @@ function layoutInvestigationBoard() {
     const rotation = state.motionReduced ? 0 : (random() - .5) * (winner ? 6.5 : 9);
     const pinOffset = (random() - .5) * width * .4;
     investigationCardInfo.set(item.id, { item, x, y, width, pinOffset, winner, missing: !item.archived });
-    return `<button type="button" class="investigation-card ${winner ? "top-evidence" : "supporting-evidence"} ${item.archived ? "" : "evidence-stub"} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" style="--card-rotation:${rotation.toFixed(2)}deg;left:${Math.round(x)}px;top:${Math.round(y)}px" aria-label="${h(`${item.rank ? `Rank ${item.rank}: ` : ""}${item.title}. ${item.archived ? "Local copy on file." : "Original source only."}${item.favourite ? " Favourite." : ""}`)}"><i class="evidence-pin ${item.archived ? winner ? "red" : "gold" : "grey"}" style="left:calc(50% + ${Math.round(pinOffset)}px)"></i>${winner ? `<span class="evidence-stamp">RANK #${item.rank}</span>` : ""}<strong>${h(item.title)}</strong>${item.archived ? `<small>${h(item.publisher || item.topic)} · ${h(item.kind)}</small>` : `<small class="missing-label">Evidence missing — original link only</small>`}${item.favourite ? `<b class="evidence-favourite">★ SAVED</b>` : ""}${item.read ? `<b class="evidence-read">READ</b>` : ""}</button>`;
+    return `<button type="button" class="investigation-card ${winner ? "top-evidence" : "supporting-evidence"} ${item.archived ? "" : "evidence-stub"} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" style="--card-rotation:${rotation.toFixed(2)}deg;left:${Math.round(x)}px;top:${Math.round(y)}px" aria-label="${h(`${item.rank ? `Rank ${item.rank}: ` : ""}${item.title}. ${item.archived ? "Local copy on file." : "Original source only."}${item.favourite ? " Favourite." : ""}`)}"><i class="evidence-pin ${item.archived ? winner ? "red" : "gold" : "grey"}" style="left:calc(50% + ${Math.round(pinOffset)}px)"></i>${winner ? `<span class="evidence-stamp">RANK #${item.rank}</span>` : ""}<strong>${h(item.title)}</strong>${item.archived ? `<small>${h(item.publisher || item.topic)} · ${h(item.kind)}</small>` : `<small class="missing-label">Evidence missing — original link only</small>`}${videoMark(item, "evidence-video")}${item.favourite ? `<b class="evidence-favourite">★ SAVED</b>` : ""}${item.read ? `<b class="evidence-read">READ</b>` : ""}</button>`;
   }).join("")}`;
 
   if (!window.matchMedia("(max-width: 560px)").matches) {
