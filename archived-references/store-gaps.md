@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-209 archived reference(s) name 247 store object(s) that are no longer held: 44 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 190 raw_sha256.
+181 archived reference(s) name 219 store object(s) that are no longer held: 44 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 162 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -203,34 +203,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu> | article | `raw_sha256` | `2023.md:59` |
 | <https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html> | article | `raw_sha256` | `2024.md:125` |
 | <https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization> | article | `raw_sha256` | `2024.md:73` |
-| <https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi> | article | `raw_sha256` | `2019.md:80` |
-| <https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei> | article | `raw_sha256` | `2022.md:68` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings> | article | `raw_sha256` | `2023.md:85` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min> | article | `raw_sha256` | `2023.md:98` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/kwong> | article | `raw_sha256` | `2023.md:96` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/oz> | article | `raw_sha256` | `2023.md:87` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina> | article | `raw_sha256` | `2023.md:13` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/afek> | article | `raw_sha256` | `2024.md:142` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/ali> | article | `raw_sha256` | `2024.md:151` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo> | article | `raw_sha256` | `2024.md:138` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen> | article | `raw_sha256` | `2024.md:140` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/du> | article | `raw_sha256` | `2024.md:145` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/gast> | article | `raw_sha256` | `2024.md:136` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi> | article | `raw_sha256` | `2024.md:141` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner> | article | `raw_sha256` | `2024.md:112` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/lin-ziyu> | article | `raw_sha256` | `2024.md:139` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/oconnell> | article | `raw_sha256` | `2024.md:143` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/olsson> | article | `raw_sha256` | `2024.md:150` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge> | article | `raw_sha256` | `2024.md:152` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/anliker> | article | `raw_sha256` | `2025.md:95` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder> | article | `raw_sha256` | `2025.md:88` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok> | article | `raw_sha256` | `2025.md:85` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan> | article | `raw_sha256` | `2025.md:96` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/you> | article | `raw_sha256` | `2025.md:84` |
-| <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan> | article | `raw_sha256` | `2026-ai.md:34` |
-| <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser> | article | `raw_sha256` | `2015.md:74` |
-| <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino> | article | `raw_sha256` | `2015.md:81` |
-| <https://www.usenix.org/conference/woot18/presentation/smith> | article | `raw_sha256` | `2018.md:70` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html> | article | `raw_sha256` | `2008.md:87` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html> | article | `raw_sha256` | `2008.md:92` |
 | <https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html> | article | `raw_sha256` | `2019.md:21` |

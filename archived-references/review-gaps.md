@@ -341,3 +341,67 @@ slug would take all 24 with it.
 - **Check:** confirm each pair really was withdrawn rather than mis-recorded,
   then prune deliberately.
 - **Sample:** `archived-references/pdf/2008/json-hijacking-utf-7_translate.pdf`
+
+## 17. Landing pages re-pointed at the paper they link - 22 references
+
+`2026-ai` published 2-9KB abstract pages as though they were the research. Each
+of these now carries the full paper instead, pinned with
+`acquire --linked-document-url`, and the cited landing URL is still the
+reference identity. 11 USENIX Security presentation pages, 8 arXiv `abs` pages,
+2 IACR ePrint pages and 1 NDSS paper page; the character counts went from
+2,188-9,487 to 91,378-650,781, and the PDF tree now carries the author's own
+file rather than a print of an abstract.
+
+Mechanically the substitution is sound - the PDF was named by a labelled,
+same-site link on the page itself. What nobody has read is the RESULT: whether
+the extracted paper is complete, whether its figures and tables survived as
+readable text, and whether the prose belongs to the citation's title.
+
+- **Check:** open the document, confirm its first page is the cited paper and
+  its last section is a real conclusion rather than a truncation.
+- **Sample:** `analyzing-webrtc-ecosystem-breaking-authentication-dtls-srtp`
+- **Known fault in the pack:** `arxiv-org-stealing-reasoning-traces-proprietary-llm-apis`
+  has an ODD number of code fences. The paper quotes model output containing
+  triple backticks, so lines 7855, 8884, 8892 and 8970 each OPEN a fence that
+  nothing closes, and roughly a third of the document renders as one code
+  block. `verify` warns about it; the repair belongs in the converter, not in
+  the generated file.
+- **Route:** `webseclist-review-references`, one collection at a time.
+
+## 18. Conference landing pages re-pointed at their papers - 111 references
+
+`linked_documents.PRIMARY_LABELS` matched a bare `PDF` or `Paper`, and its own
+comment claimed that "is how every NDSS, USENIX and IEEE abstract page offers
+the real thing". USENIX writes the author's surname first - `Bach PDF`, and for
+the accepted draft `Bach Paper (Prepublication) PDF` - so no exact-label test
+ever matched the publisher the comment named. With `AUTHOR_PREFIXED_PDF` added,
+every conference or preprint landing page in the archive published under 12KB
+was checked against its own page: 114 candidates, 111 named a paper, and all
+111 now carry it. 74 on `usenix.org`, 26 on `ndss-symposium.org`, 14 on
+`arxiv.org`, spanning 2007 to 2025; 12.7MB of paper text where abstracts stood.
+The three that named nothing were already the PDF itself.
+
+Mechanically each substitution is sound - the PDF was named by a labelled,
+same-site link on the page, and the appendix beside it was refused. What nobody
+has read is the RESULT, 111 times over.
+
+- **Check:** open the document, confirm its first page is the cited paper and
+  its last section is a conclusion rather than a truncation. The extraction
+  faults this sweep DID surface are fixed and re-run - a false "image-only"
+  verdict on 36 papers, and a partial read that published page one of a
+  95-page paper as the paper - but both were found by reading sizes, not by
+  any check the tool makes.
+- **Sample:** `usenix-org-how-break-xml-encryption` (was 4,390 bytes, now the paper)
+- **Route:** `webseclist-review-references`, one collection at a time.
+
+## 19. Summaries written from bytes that have since been replaced - 169 references
+
+Pack 15 counted 58. The sweep in pack 18 replaced the document under another
+111: each of those summaries was written from an ABSTRACT and now sits on a
+full paper. None is known to be wrong - an abstract summarises the same
+research - but a summary of an abstract is a thinner thing than a summary of a
+paper, and none has been read against what is published now.
+
+- **Check:** `refs.py digest --queue` offers all 169. Read the document; do not
+  re-bless the old text on its wording alone.
+- **Sample:** any 2016-17 or 2022 entry from the sweep.

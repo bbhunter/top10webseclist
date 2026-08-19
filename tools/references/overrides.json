@@ -216,6 +216,19 @@
    "outcome": "archive",
    "reason": "authors recorded \"@dangoodin001\", which came from the twitter:creator meta tag and the bio's Twitter link. the extraction dropped the byline the stored source carries. The stored object has an explicit byline paragraph marked itemprop=\"author creator\" and rel=\"author\" reading \"Dan Goodin\"."
   },
+  "https://arxiv.org/abs/2607.06141": {
+   "authors": [
+    "Weihong Wang",
+    "Yana Dimova",
+    "Victor Vansteenkiste",
+    "Tom Van Goethem",
+    "Tom Van Cutsem"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "title": "The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem (Preprint)",
+   "reason": "title and authors were both wrong: the citation is the sibling link on 2026-ai.md:55, whose link text is the single word \"Preprint\", and pinning the abs page's own PDF as the document left that label as the title. The arXiv page states the real one, \"Title:The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem\", and lists \"Authors:Weihong Wang, Yana Dimova, Victor Vansteenkiste, Tom Van Goethem, Tom Van Cutsem\". The format word keeps it apart from the PoPETs copy of the same paper, which carries the same title."
+  },
   "https://arxiv.org/abs/2607.19545": {
    "authors": [
     "Qinying Wang",
@@ -1393,6 +1406,12 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the README's own citation block names the authors - \"author={Roesner, Franziska and Kohlbrenner, David}\". The archive recorded only the lab account \"UWCSESecurityLab\", which is an organisation, not a byline. The sibling project page (agent-security-cs-washington-edu-agentic-browsers-same-origin-policy) already records the same two names."
   },
+  "https://github.com/WSP-LAB/Site-Isolation-Is-Dead": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions (Artifacts)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the repository's own heading, \"Artifacts\", which two different citations both carry and which names no research. The title is the paper's, from the same list line, with the format word the citation itself uses."
+  },
   "https://github.com/XingTuLab/Cache_Me_Catch_You": {
    "authors": [
     "XiangFan Wu",
@@ -1412,6 +1431,12 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded the repo-owner handle \"chenjj\", which on its own is not a byline. The LICENSE states \"Copyright (c) 2019 Jianjun Chen\", corroborated by the tool's own citation block. Vern Paxson and Jian Jiang are co-authors of the PAPER rather than demonstrably of this tool, so they are not added."
+  },
+  "https://github.com/cispa/leakylinks": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "LeakyLinks: Measuring the Security and Privacy Risks of URL Scanning Services (Artifacts)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the repository's own heading, \"Artifacts\", which two different citations both carry and which names no research. The title is the paper's, from the same list line, with the format word the citation itself uses."
   },
   "https://github.com/diafygi/webrtc-ips": {
    "authors": [
@@ -2548,6 +2573,20 @@
    "outcome": "archive",
    "reason": "authors recorded \"NCCGroupplc\", the company account. Line 321 is an explicit byline: \"**Written by:** Soroush Dalili\", corroborated by \"During a recent security assessment at NCC Group I found...\". Fourth publisher-as-author fault for this author, after the three MDSec references."
   },
+  "https://ndss-symposium.org/ndss-paper/when-cache-poisoning-meets-llm-systems-semantic-cache-poisoning-and-its-countermeasures": {
+   "authors": [
+    "Guanlong Wu",
+    "Taojie Wang",
+    "Yao Zhang",
+    "Zheng Zhang",
+    "Jianyu Niu",
+    "Ye Wu",
+    "Yinqian Zhang"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty: the citation is the NDSS abstract page, which declares no author, and the document archived from it is the conference paper the page links as \"Paper\". The paper's own title block names all seven, each above an affiliation and an address - \"Guanlong Wu\" / \"Taojie Wang\" / \"Yao Zhang\" / \"Zheng Zhang\" / \"Jianyu Niu\" / \"Ye Wu\" / \"Yinqian Zhang\", over SUSTech and ByteDance Inc."
+  },
   "https://ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu": {
    "authors": [
     "Ben Gras",
@@ -2559,6 +2598,12 @@
    "class": "research",
    "outcome": "archive",
    "reason": "The recorded name was WRONG, not merely missing: \"Herbert Box\" for Herbert Bos of VU Amsterdam. The typo is on the NDSS programme page the capture faithfully reproduced, and bylines.json stores it with that line as its evidence. Five other places in this repository say \"Bos\", including an archived 2022 paper CITING THIS PAPER, the 2018 clock-around-clock references, the Black Hat USA 2016 speaker link, the 2018 grand-pwning-unit paper for the same VUSec group, and ai-evaluation/2017/judgements.md. Ground truth is the paper PDF already recorded in also_at."
+  },
+  "https://ndss-symposium.org/wp-content/uploads/2026-f200-paper.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "When Cache Poisoning Meets LLM Systems: Semantic Cache Poisoning and Its Countermeasures (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, \"2026-f200-paper\". The title is the paper's, taken from the NDSS paper page cited beside it on the same list line; the format word keeps it apart from that page's own record."
   },
   "https://ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf": {
    "class": "research",
@@ -2741,6 +2786,19 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited. Reviewed 2026-08-15: the recorded author was the literal placeholder \"xxxxx\", which the published byline printed as though it were a researcher's name. The document names nobody - it is first person throughout (\"I have made proof of concepts\", \"I've reported this issue\") - so the honest value is no author at all. A missing byline says the archive does not know; a placeholder says something false.",
    "title": "DoubleClickjacking: A New Era of UI Redressing"
+  },
+  "https://petsymposium.org/popets/2026/popets-2026-0094.pdf": {
+   "authors": [
+    "Weihong Wang",
+    "Yana Dimova",
+    "Victor Vansteenkiste",
+    "Tom Van Goethem",
+    "Tom Van Cutsem"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "publisher": "Proceedings on Privacy Enhancing Technologies",
+   "reason": "authors and publisher were both empty: the source is a PDF that declares neither in metadata. Its title block names five authors over their affiliation - \"Weihong Wang\" / \"Yana Dimova\" / \"Victor Vansteenkiste\", then \"Tom Van Goethem\" / \"Tom Van Cutsem\", all \"DistriNet, KU Leuven\" - and its running head gives the venue: \"Proceedings on Privacy Enhancing Technologies 2026(3), 523-537\"."
   },
   "https://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html": {
    "authors": [
@@ -3511,6 +3569,16 @@
    "outcome": "archive",
    "reason": "The report states its own byline: \"Found by: Soroush Dalili (Irsdl {4t] yahoo [d0t} com)\". This is the document the 2009 Top 10 announcement cites at #6, where it is credited to Soroush Dalili; the list previously cited the MSRC advisory that the nomination round had linked, which carries Microsoft's byline instead. The report's PDF metadata names no author, so the credit is stated here."
   },
+  "https://soroush.me/downloadable/outlook_smb_hash_hijacking.pdf": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "publisher": "NCC Group",
+   "title": "SMB hash hijacking & user tracking in MS Outlook",
+   "class": "research",
+   "outcome": "archive",
+   "reason": "Author and publisher stated by the maintainer and confirmed in the document itself, which closes with \"Published date: 11 May 2018\" and \"Written by: Soroush Dalili (@irsdl)\" above the NCC Group source URL. outcome is stated explicitly so the grader does not read an attribution-only override as a decision to keep no document."
+  },
   "https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps": {
    "authors": [
     "Mikhail Egorov"
@@ -4071,6 +4139,54 @@
    "outcome": "archive",
    "reason": "authors was empty. The paper's own cover block in the published body names both with their Stanford Computer Science Department affiliation."
   },
+  "https://usenix.org/system/files/usenixsecurity26-bach.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "Analyzing the WebRTC Ecosystem and Breaking Authentication in DTLS-SRTP (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-ben-simhon.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "DNS Cache Poisoning Like it's 2006 (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-chang-hongyan.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild for LLM Systems (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-jung.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "BUIzz: Finding Policy Enforcement Bugs via Interaction Simulation on the Browser User Interface (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-liu-yichen.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "Regular Expression Denial of Service Induced by Backreferences (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-syros.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-wu-yifan.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "Melting the Flesh of PHP's Memory Hardening (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
+  "https://usenix.org/system/files/usenixsecurity26-zhang-yichi.pdf": {
+   "class": "research",
+   "outcome": "archive",
+   "title": "HijackKV: New Threat in Position-Independent KV Cache Reuse (Paper)",
+   "reason": "Reviewed 2026-08-19: the recorded title was the PDF's file stem, because the citation writes this sibling as the bare link text \"Paper\" and the file declares no title of its own. The title is the paper's, taken from the USENIX presentation page cited beside it on the same list line; the format word keeps it apart from that page's own record."
+  },
   "https://veracode.com/blog/research/exploiting-spring-boot-actuators": {
    "authors": [
     "Michael Stepankin"
@@ -4549,16 +4665,6 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the document closes with \"Research conducted by [zhero;](https://x.com/zhero___) & [inzo_](https://x.com/inzo____)\". Both are handles the researchers publish under, each linked to its own X profile - not the publisher hostname zhero_web_security, which is what the entry previously had to fall back on."
-  },
-  "https://soroush.me/downloadable/outlook_smb_hash_hijacking.pdf": {
-   "authors": [
-    "Soroush Dalili"
-   ],
-   "publisher": "NCC Group",
-   "title": "SMB hash hijacking & user tracking in MS Outlook",
-   "class": "research",
-   "outcome": "archive",
-   "reason": "Author and publisher stated by the maintainer and confirmed in the document itself, which closes with \"Published date: 11 May 2018\" and \"Written by: Soroush Dalili (@irsdl)\" above the NCC Group source URL. outcome is stated explicitly so the grader does not read an attribution-only override as a decision to keep no document."
   }
  },
  "mirror_sources": [],
