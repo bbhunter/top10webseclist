@@ -193,7 +193,18 @@ def acquire(key, entry, store, fetcher, config, taken_slugs=(), refetch=False,
         return _github(key, url, entry, kind, store, fetcher, taken_slugs,
                        override=override)
 
-    has_capture = (bool(health.get("snapshot")) and bool(entry.get("raw_sha256"))
+    # The bytes a container fetched past an expired certificate ARE the
+    # document, exactly as a Wayback capture is. `insecure` says so on its way
+    # out - "run acquire --force" - and this guard refused anyway, because it
+    # counted only a capture carrying a Wayback `snapshot`. The page was
+    # preserved and the very next command reported it skipped, which reads as a
+    # page nobody could get.
+    insecure_fetch = (entry.get("steps") or {}).get("insecure-fetch") or {}
+    recovered = bool(health.get("snapshot")) or (
+        insecure_fetch.get("result") == "stored"
+        and bool(insecure_fetch.get("sha256"))
+        and insecure_fetch.get("sha256") == entry.get("raw_sha256"))
+    has_capture = (recovered and bool(entry.get("raw_sha256"))
                    and store.has(entry.get("raw_sha256")))
     if health.get("status") in ("blocked", "js-rendered") \
             and not entry.get("browser_dom_sha256") and not has_capture:
@@ -718,6 +729,26 @@ def _document(key, url, entry, kind, store, fetcher, taken_slugs, refetch, ladde
                         raise extract_doc.Unconvertible(
                             "the lightweight parser hit its safety limit and "
                             "the containerised Poppler route is unavailable: %s" % error)
+                except extract_doc.NoTextLayer:
+                    # ASK POPPLER BEFORE BELIEVING "IMAGE-ONLY". The lightweight
+                    # parser skips any stream it cannot inflate or decode, so it
+                    # reports no text for documents that have plenty. A sweep of
+                    # conference landing pages lost 36 papers to this: every one
+                    # sat just under LARGE_PDF_POPPLER_BYTES, so nothing sent it
+                    # to the container, and one "image-only" arXiv paper gave
+                    # Poppler 199,347 characters. Only a PDF they BOTH find no
+                    # text in is one that truly needs OCR.
+                    try:
+                        body = toolbox.pdf_text(raw)
+                    except toolbox.Unavailable as error:
+                        if "pdftotext produced no text" in str(error):
+                            raise extract_doc.Unconvertible(
+                                "no extractable text: the PDF is image-only (a "
+                                "scan or exported slides), so it needs OCR "
+                                "rather than conversion")
+                        raise extract_doc.Unconvertible(
+                            "the lightweight parser found no text and the "
+                            "containerised Poppler route is unavailable: %s" % error)
             authors, published, publisher = [], "", ""
     except extract_doc.Unconvertible as error:
         # This is the failure list the maintainer asked for. It names the reason
@@ -778,6 +809,18 @@ def _linked_document(key, landing_url, document_url, entry, original_kind, store
     document_entry["kind"] = "whitepaper"
     document_entry["health"] = dict(entry.get("health") or {}, final_url=document_url)
     document_entry.pop("browser_dom_sha256", None)
+    # THE CITATION'S LINK TEXT IS A LABEL; THE PAPER HAS A TITLE. Siblings go on
+    # one list line - `[The Masks We (Think We) Wear](<paper>) [Preprint](<arxiv>)
+    # [Code](<repo>)` - so a sibling's cited title is the word "Preprint", and a
+    # PDF declaring no title of its own falls back to exactly that. The landing
+    # page IS this reference and it already said what the paper is called: the
+    # arXiv abs page was archived as `title: Preprint` the moment its own PDF was
+    # pinned. A maintainer's `decisions[url].title` still wins, downstream.
+    landing_title = meta.clean_title((entry.get("health") or {}).get("title") or "")
+    if not landing_title and not slugs.is_generic(entry.get("title") or ""):
+        landing_title = entry.get("title") or ""
+    if landing_title and not slugs.is_generic(landing_title):
+        document_entry["cited_title"] = landing_title
     document_sha = entry.get("linked_document_sha256") or ""
     if document_sha and store.has(document_sha):
         document_entry["raw_sha256"] = document_sha

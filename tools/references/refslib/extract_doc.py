@@ -57,6 +57,29 @@ BINARY_STREAM_SHORT_CEILING = 0.50
 # archive run.
 MAX_LIGHTWEIGHT_STREAM_BYTES = 1024 * 1024
 
+# HOW MUCH OF THE DOCUMENT THIS PARSER ACTUALLY READ. It walks content streams
+# itself and silently skips every one it cannot inflate or decode, so a partial
+# read is indistinguishable from a short paper: a 95-page arXiv paper came back
+# as 2,131 characters of page one, cleared every content floor, graded as
+# research and was archived as the document. Poppler read 336,406 characters
+# from the same file. Two more in the same sweep, at 16 and 14 pages, did the
+# same thing.
+#
+# The page objects say how long the document is, so coverage is checkable. The
+# test is deliberately lopsided - it fires only at a quarter of the pages or
+# worse, and only for documents long enough for that to mean something - because
+# the cost of a false positive is one container call and the cost of a false
+# negative is publishing page one of a paper as the paper. A PDF whose page tree
+# lives in a compressed object stream counts zero pages, and zero never fires.
+PAGE_OBJECT = re.compile(rb"/Type\s*/Page[^s]")
+COVERAGE_MIN_PAGES = 8
+COVERAGE_FACTOR = 4
+
+
+def declared_pages(data):
+    """Pages the file itself claims, counted from its page objects."""
+    return len(PAGE_OBJECT.findall(data or b""))
+
 
 class Unconvertible(Exception):
     """Raised with a reason a human can act on."""
@@ -64,6 +87,20 @@ class Unconvertible(Exception):
 
 class ExternalPdfToolRequired(Unconvertible):
     """The PDF is valid, but too costly for the lightweight parser."""
+
+
+class NoTextLayer(Unconvertible):
+    """THIS PARSER found no text. That is not the same as there being none.
+
+    The lightweight route reads byte strings straight out of the content
+    streams and skips whatever it cannot inflate or decode, so an ordinary
+    typeset paper can come back with zero pages. Saying "image-only, needs
+    OCR" on that evidence alone was wrong for 36 conference papers in one
+    sweep - all of them just under the 2MB threshold that would have sent
+    them to Poppler, which reads them fine. Poppler is the authority on
+    whether a text layer exists; this exception exists so the caller knows to
+    go and ask it.
+    """
 
 
 # --- the gibberish gate ----------------------------------------------------
@@ -350,6 +387,54 @@ def font_damage(text):
     return len(LOST_GLYPH.findall(text)) + len(QUOTE_IN_WORD.findall(text))
 
 
+# --- a ligature that left NO mark at all ------------------------------------
+#
+# The check above needs a replacement character or a stray quotation mark to
+# fire. A TeX face whose `fi`, `ff`, `ffi` and `fl` glyphs map to nothing does
+# not leave one: the ligature is simply DELETED, and what arrives is prose that
+# passes every gate here - vowels, letter share, no replacement characters -
+# while saying "signicant", "congurations" and "efciency". The NDSS semantic
+# cache-poisoning paper reached the archive that way, 1.9MB of it, just under
+# the size that routes a PDF to poppler regardless: 102 damaged words in a
+# document nothing had any reason to doubt. A reader searching the archive for
+# `configuration` does not find the paper about configurations.
+#
+# THE TEST IS A VOCABULARY, NOT A PATTERN. Every entry is what a real English
+# word becomes with one ligature deleted, and is not itself an English word -
+# which is why `identical`, `classic`, `notice` and `Prolexic` are absent, each
+# of which a suffix-wildcard version of this matched. Measured over the whole
+# corpus, this hits 23 documents of ~1,700 and every one of them is genuinely
+# damaged.
+DROPPED_LIGATURE = re.compile(r"\b(?:%s)\b" % "|".join(sorted((
+    "signicant", "signicantly", "signicance", "signies", "signied",
+    "specic", "specically", "specication", "specications", "specied",
+    "classier", "classiers", "classication", "classied",
+    "identier", "identiers", "identied", "identies", "identication",
+    "notication", "notications", "notied", "noties",
+    "modied", "modier", "modiers", "modication", "modications",
+    "justied", "justication", "veried", "verier", "verication", "veries",
+    "qualied", "qualier", "qualiers",
+    "congure", "congured", "congures", "conguring", "conguration",
+    "congurations", "conrm", "conrms", "conrmed", "conrming", "conrmation",
+    "condence", "condent", "condential",
+    "dene", "dened", "denes", "dening", "denition", "denitions",
+    "denitely", "denitive",
+    "efcient", "efciently", "efciency", "ecient", "eciently", "eciency",
+    "trafc", "difcult", "difculty", "difculties",
+    "sufcient", "sufciently", "coefcient", "coefcients",
+    "benet", "benets", "prole", "proles", "proling", "articial",
+    "workow", "workows", "overow", "overows", "overowing",
+    "reected", "reects", "lter", "lters", "ltering", "ltered",
+), key=len, reverse=True)), re.IGNORECASE)
+DROPPED_LIGATURE_FLOOR = 3
+
+
+def dropped_ligatures(text):
+    """(occurrences, distinct words) where a ligature was deleted outright."""
+    found = DROPPED_LIGATURE.findall(text or "")
+    return len(found), len({word.lower() for word in found})
+
+
 # A LOST GLYPH WITH EXACTLY ONE READING. Some fonts map a ligature to a code
 # point that has no Unicode meaning at all, so neither this parser nor poppler
 # can recover it - the 2008 Stanford CSRF paper reaches us from poppler with 33
@@ -396,9 +481,18 @@ def pdf_to_markdown(data, title=""):
             pages.append(text.strip())
 
     if not pages:
-        raise Unconvertible(
+        raise NoTextLayer(
             "no extractable text: the PDF is image-only (a scan or exported "
             "slides), so it needs OCR rather than conversion")
+
+    # Read SOME of it and stopping is the quiet failure, because what comes back
+    # is real text and passes every check made on it. Hand the file to Poppler
+    # rather than publish the part this parser could reach.
+    declared = declared_pages(data)
+    if declared >= COVERAGE_MIN_PAGES and len(pages) * COVERAGE_FACTOR < declared:
+        raise ExternalPdfToolRequired(
+            "the lightweight parser read %d text stream(s) from a document "
+            "whose page objects say it has %d pages" % (len(pages), declared))
 
     # Before judging the text, undo a ligature map the font got wrong. This runs
     # on evidence rather than on failure, because such a document READS fine:
@@ -417,6 +511,18 @@ def pdf_to_markdown(data, title=""):
             "replacement character inside a word, or as a quotation mark between "
             "two letters. The text reads as prose and would be archived as the "
             "paper, with words like \"identies\" for \"identifies\"" % damage)
+
+    # THE SAME FAILURE, WITH NOTHING LEFT BEHIND TO COUNT. Two distinct words
+    # are required as well as the floor, because one is a typo and a table is a
+    # font.
+    lost, distinct = dropped_ligatures("\n".join(pages))
+    if lost >= DROPPED_LIGATURE_FLOOR and distinct >= 2:
+        raise ExternalPdfToolRequired(
+            "the font's ligatures were dropped rather than read: %d word(s) in "
+            "%d spellings arrived without their fi/ff/fl, such as \"signicant\" "
+            "for \"significant\". The text reads as prose and would be archived "
+            "as the paper, unsearchable for every word it damaged"
+            % (lost, distinct))
 
     ok, reason = text_quality("\n".join(pages))
     if not ok:

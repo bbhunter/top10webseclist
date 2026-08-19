@@ -105,6 +105,43 @@ class TestPdfConversion(unittest.TestCase):
             extract_doc.pdf_to_markdown(b"%PDF-1.4\nno streams\n%%EOF")
         self.assertIn("OCR", str(caught.exception))
 
+    def test_reading_a_fraction_of_the_pages_goes_to_the_external_tool(self):
+        """Reading SOME of a paper is the quiet failure: what comes back is real
+        text and passes every check made on it. One 95-page paper published as
+        2,131 characters of page one this way."""
+        one_page = pdf_with(REAL) + b"\n/Type /Page \n" * 40
+        with self.assertRaises(extract_doc.ExternalPdfToolRequired) as caught:
+            extract_doc.pdf_to_markdown(one_page)
+        self.assertIn("40 pages", str(caught.exception))
+
+    def test_a_short_document_is_not_second_guessed(self):
+        """The test is lopsided on purpose. A handful of pages read as one
+        stream is ordinary, and sending those to a container would be a cost
+        paid on every short write-up in the archive."""
+        short = pdf_with(REAL) + b"\n/Type /Page \n" * 3
+        self.assertIn("Request smuggling", extract_doc.pdf_to_markdown(short))
+
+    def test_a_page_tree_it_cannot_count_never_fires_the_guard(self):
+        """A compressed page tree counts zero pages, and zero must not be read
+        as "read none of it"."""
+        self.assertEqual(extract_doc.declared_pages(pdf_with(REAL)), 0)
+        self.assertIn("Request smuggling", extract_doc.pdf_to_markdown(pdf_with(REAL)))
+
+    def test_finding_no_text_is_raised_as_its_own_kind(self):
+        """"No text HERE" is not "no text". This parser skips any stream it
+        cannot inflate or decode, and a sweep filed 36 ordinary conference
+        papers as scans on its word alone - every one just under the size that
+        would have sent it to Poppler, which reads them in full. The distinct
+        class is what lets `acquire` go and ask before believing the verdict."""
+        with self.assertRaises(extract_doc.NoTextLayer):
+            extract_doc.pdf_to_markdown(b"%PDF-1.4\nno streams\n%%EOF")
+        # Still an Unconvertible, so every existing handler keeps working.
+        self.assertTrue(issubclass(extract_doc.NoTextLayer, extract_doc.Unconvertible))
+        # ...and it must NOT be the safety-limit signal, which routes the same
+        # way but means something else.
+        self.assertFalse(issubclass(extract_doc.NoTextLayer,
+                                    extract_doc.ExternalPdfToolRequired))
+
     def test_gibberish_is_refused_rather_than_archived(self):
         """A custom font encoding decodes to nonsense of the right shape.
         Archiving it would store confident nonsense in place of the paper."""
@@ -152,6 +189,38 @@ class TestPdfConversion(unittest.TestCase):
                   "report said “this works”, which we don’t dispute "
                   "at all. The front end forwards the smuggled prefix onward.")
         self.assertEqual(0, extract_doc.font_damage(quoted))
+
+    def test_a_deleted_ligature_is_sent_to_the_external_tool(self):
+        """The damage that leaves nothing behind to count.
+
+        A face whose `fi`/`ff`/`fl` map to nothing DELETES them, so there is no
+        replacement character for `font_damage` to find and every quality gate
+        passes text reading "signicant" and "congurations".
+        """
+        damaged = (b"BT (The cache is signicant here and its congurations are "
+                   b"specic to one deployment.) Tj ET "
+                   b"BT (We conrm the result and dene the threshold used "
+                   b"throughout the evaluation section.) Tj ET "
+                   b"BT (This paragraph exists so the sample clears the word "
+                   b"count floor easily enough.) Tj ET")
+        with self.assertRaises(extract_doc.ExternalPdfToolRequired) as caught:
+            extract_doc.pdf_to_markdown(pdf_with(damaged))
+        self.assertIn("ligatures were dropped", str(caught.exception))
+
+    def test_english_words_that_merely_look_damaged_are_left_alone(self):
+        """`identical`, `classic` and `notice` are words, not lost ligatures.
+
+        A suffix-wildcard version of this test matched all three, plus the
+        company name Prolexic, across 709 archived documents.
+        """
+        healthy = ("The two responses are identical, which is a classic sign "
+                   "that nobody would notice the classical padding oracle or "
+                   "the identification header Prolexic adds.")
+        self.assertEqual((0, 0), extract_doc.dropped_ligatures(healthy))
+
+    def test_one_damaged_word_alone_is_a_typo_rather_than_a_font(self):
+        self.assertEqual((1, 1), extract_doc.dropped_ligatures(
+            "The result is signicant."))
 
     def test_oversized_decoded_stream_is_sent_to_external_tool(self):
         payload = b"x" * (extract_doc.MAX_LIGHTWEIGHT_STREAM_BYTES + 1)

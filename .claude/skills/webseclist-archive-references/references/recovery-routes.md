@@ -186,6 +186,33 @@ set and one command at a time, exactly as the skill's pipeline section says.
   linked document later proves dead or wrong, clear the pin before acquiring a
   verified cited-page/browser capture:
 
+  **NOTHING WILL TELL YOU THIS ONE IS WRONG.** The discovery that follows a
+  labelled `Paper` link only runs when acquisition has already failed - when
+  extraction came in under the 400-character floor, or the page graded as a
+  pointer or a stub. An abstract page clears both easily: the NDSS semantic
+  cache-poisoning page rendered 3,198 characters of title, authors and abstract
+  and graded `research`, and the arXiv abs page beside it rendered 7,138. Both
+  were archived as complete documents, with the paper one link away, and no
+  report anywhere said so - `document-gaps.md` is for references with no
+  document, and these had one. Ask the question yourself for every conference,
+  journal and preprint landing page (NDSS, USENIX, IEEE, ACM, arXiv, PoPETs, a
+  university group page): open the archived Markdown and look for a `Paper`,
+  `PDF` or `View PDF` link on the same site. A document that stops after the
+  abstract is the symptom; roughly 3-8KB where a paper would be 100KB+ is the
+  tell.
+
+  **The link text becomes the title, and a sibling's link text is a label.**
+  The list writes siblings on one line - `[The Masks We (Think We)
+  Wear](<paper>) [Preprint](<arxiv>) [Code](<repo>)` - so the preprint's cited
+  title is the single word `Preprint`. A PDF that declares no title of its own
+  falls back to exactly that, and the reference publishes as `title: Preprint`.
+  Acquisition now prefers the title the LANDING page recorded, so re-acquiring a
+  reference whose `health.title` is intact fixes itself; where the landing title
+  was never probed, or was already overwritten, state the real one in
+  `decisions[url].title` and re-acquire. Two siblings that end up with the same
+  corrected title collide, so keep the citation's own format word in
+  parentheses: `... (Preprint)` beside the published `...` paper.
+
   ```text
   python tools/references/refs.py acquire --only <unique-substring> --force \
     --clear-linked-document --browser-dom
@@ -234,6 +261,25 @@ set and one command at a time, exactly as the skill's pipeline section says.
   python tools/references/refs.py pdf-pages --only <substring> [--into <dir>]
   ```
 
+  **An expired certificate is not a reason to skip the research, and it takes
+  three commands, not one.** `check` records the TLS failure as `blocked`, which
+  is the same word a bot wall gets, so nothing about the row says the document
+  is perfectly public. Run the whole sequence for such a reference:
+
+  ```text
+  python tools/references/refs.py insecure --only <substring>            # the page
+  python tools/references/refs.py acquire  --force --only <substring>    # extract it
+  python tools/references/refs.py images   --only <substring> --insecure # its figures
+  python tools/references/refs.py pdf      --force --only <substring>
+  ```
+
+  The figures live on the same expired host, so an ordinary `images` run reports
+  every one of them as `empty response` and prints a cheerful `0/32 kept`: a
+  32-screenshot clickjacking write-up published with no pictures at all and
+  nothing in the archive saying why. `--insecure` sends only that reference's
+  image fetches through the same container curl; each one is still decoded and
+  re-encoded from its pixels, so what reaches the archive is unchanged.
+
   **Try `pdf-text` before you look at pictures.** The in-process extractor works
   from a PDF's own `/ToUnicode` map and refuses when that map is missing or wrong,
   because guessing produces confident nonsense. Poppler carries font tables that
@@ -245,6 +291,23 @@ set and one command at a time, exactly as the skill's pipeline section says.
   is not a reason to accept a short or garbled extraction. For a smaller PDF
   whose extracted text is implausibly thin, run `pdf-text` manually and compare
   the result before considering page images.
+
+  **A LIGATURE CAN GO MISSING WITHOUT LEAVING A MARK, and every gate here passes
+  it.** The font-damage check needs a replacement character or a stray quotation
+  mark to fire. A TeX face whose `fi`, `ff`, `ffi` and `fl` map to nothing leaves
+  neither: the glyph is deleted, and what arrives has vowels, letters and no
+  replacement characters, reading as clean prose that says `signicant`,
+  `congurations` and `efciency`. The NDSS semantic cache-poisoning paper was
+  archived that way with 102 damaged words - 1.9MB, just under the size that
+  sends a PDF to poppler regardless - and nobody searching the archive for
+  `configuration` would ever have found it. `extract_doc.dropped_ligatures` now
+  catches this and routes the PDF to poppler automatically, so a re-acquire
+  fixes it offline; the vocabulary it tests is words that are NOT English once
+  the ligature is gone, which is why `identical`, `classic` and `notice` are
+  deliberately absent from it. Where you meet the symptom in an already-published
+  document, `grep -E 'signicant|congur|specic|efcien|conrm|dened'` says so in
+  one command, and `acquire --force` is the fix as long as the entry's
+  `raw_sha256` is still in the store.
 
   **A deck that extracts as bullets and emoji has a FONT-MAP problem, not an
   unreadable text layer - and the renders lie about it too.** poppler needs

@@ -150,8 +150,13 @@ def _tag_text(pattern, markup):
     return _plain(re.sub(r"<[^>]*>", " ", match.group(1))) if match else ""
 
 
-def _clean_title(title):
-    """Drop the site name a publisher appends to every page title."""
+def clean_title(title):
+    """Drop the site name a publisher appends to every page title.
+
+    Public because the health probe records a page title verbatim, suffix and
+    all, and acquisition reads that record back when the document it archives
+    came from somewhere other than the page.
+    """
     title = _plain(title)
     for separator in (" | ", " - ", " – ", " :: ", " · "):
         if separator in title:
@@ -159,6 +164,9 @@ def _clean_title(title):
             if head and len(tail) < len(head) and len(tail) <= 40:
                 title = head
     return title.strip()
+
+
+_clean_title = clean_title
 
 
 def _html_lang(markup):

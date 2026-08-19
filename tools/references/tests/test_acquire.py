@@ -320,6 +320,48 @@ class TestDocumentConversion(unittest.TestCase):
         self.assertEqual(result.status, "stored")
         self.assertEqual(fetcher.calls, [])
 
+    def test_container_fetched_bytes_beat_an_expired_certificate(self):
+        """`insecure` stores the page, then says "run acquire --force".
+
+        The capture test used to require a Wayback `snapshot`, so acquisition
+        refused bytes it already held and reported the reference skipped -
+        which reads as a page nobody could get, one command after getting it.
+        """
+        raw = self.store.put(PAGE.encode("utf-8"))
+        entry = {"spellings": ["https://expired.test/post"], "kind": "article",
+                 "cited_by": ["docs/list.md:1"],
+                 "health": {"status": "blocked",
+                            "evidence": "SSLCertVerificationError"},
+                 "raw_sha256": raw,
+                 "steps": {"insecure-fetch": {"result": "stored", "sha256": raw}}}
+        fetcher = FakeFetcher(status=500)
+        result = acquire.acquire("k", entry, self.store, fetcher, CONFIG)
+        self.assertEqual(result.status, "stored")
+        self.assertEqual(fetcher.calls, [])
+
+    def test_a_blocked_page_with_no_recovered_bytes_is_still_skipped(self):
+        entry = {"spellings": ["https://walled.test/post"], "kind": "article",
+                 "cited_by": ["docs/list.md:1"],
+                 "health": {"status": "blocked"},
+                 "raw_sha256": self.store.put(PAGE.encode("utf-8"))}
+        result = acquire.acquire("k", entry, self.store, FakeFetcher(), CONFIG)
+        self.assertEqual(result.status, "skipped")
+
+    def test_a_linked_paper_is_titled_by_its_landing_page_not_the_link_text(self):
+        """A sibling's link text is a label - `Preprint`, `Code`, `Paper` - and
+        a PDF that declares no title of its own fell back to exactly that."""
+        entry = {"spellings": ["https://arxiv.test/abs/1"], "kind": "article",
+                 "cited_title": "Preprint", "cited_by": ["docs/list.md:1"],
+                 "health": {"status": "ok",
+                            "title": "The Masks We Wear - arXiv.test"},
+                 "linked_document_url": "https://arxiv.test/pdf/1.pdf"}
+        with mock.patch("refslib.extract_doc.pdf_to_markdown",
+                        return_value="Complete paper. " * 50):
+            result = acquire.acquire("k", entry, self.store,
+                                     FakeFetcher(body=MINIMAL_PDF), CONFIG)
+        self.assertEqual(result.status, "stored")
+        self.assertEqual(result.record["title"], "The Masks We Wear")
+
     def test_a_maintainer_archive_decision_reaches_grading(self):
         """A short article about custom 404 handling says 'page not found' in
         its opening. The phrase is research text, not proof that the capture is

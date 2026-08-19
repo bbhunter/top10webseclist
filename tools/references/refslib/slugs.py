@@ -88,6 +88,7 @@ def _fit(parts):
 GENERIC_LABELS = frozenset("""
 whitepaper paper slides slide deck presentation talk video pdf ppt doc document
 here link this that read more download mirror copy article post blog page site
+preprint code repo repository writeup writeups abstract
 """.split())
 
 

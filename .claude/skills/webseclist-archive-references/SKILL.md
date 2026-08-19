@@ -247,6 +247,19 @@ tree, parallel to its Markdown.
 `refs.py pdf --only <substring>` does one reference; `--force` remakes existing
 PDFs (after the Markdown changed).
 
+**`pdf --stale` UNSCOPED IS A CORPUS-WIDE REPRINT, and its selector is file
+mtimes.** One of the four staleness tests is `md newer than pdf`, so anything
+that touches Markdown timestamps without changing a byte - a branch switch, a
+fresh clone, a checkout - makes the whole archive look stale. A run meant to
+refresh the two documents `attribution --rewrite` had just re-published
+reprinted 536 PDFs before it was stopped, every one of them differing from its
+committed version only in the timestamps a PDF embeds. Scope it: `pdf --stale
+--only <substring>`, or `pdf --only <substring> --force` for a reference you
+just changed. If an unscoped run does get away, the manifest is the thing to
+check - `pdf` saves it in batches, so a run killed early leaves the entries
+untouched and `git checkout -- archived-references/pdf` restores the tree
+without disturbing new files, which are untracked.
+
 ## When a plain fetch is not enough
 
 The hard-won recovery routes from the upstream tool all still apply - the
@@ -263,7 +276,12 @@ working any reference the ordinary HTTP route does not deliver cleanly:
   Wayback snapshot (`wayback`), nearest its date; use `--replay-url` when known
 - a live landing page with a paper, code and slides -> preserve the full paper
   with `acquire --linked-document-url` and record every verified sibling with
-  repeatable `--also-at`; the cited landing URL remains the identity
+  repeatable `--also-at`; the cited landing URL remains the identity. An
+  ABSTRACT page needs this too and nothing will ask for it: it extracts well
+  over the content floor and grades as research, so acquisition succeeds and
+  the archive publishes the abstract
+- an expired certificate -> `insecure`, then `acquire --force`, then `images
+  --insecure` for the figures on the same host
 - no useful CDX path -> bounded historical-path discovery with the pinned
   Docker waymore route (`historical-urls`), then verify each candidate
 - a Wayback-wrapped URL -> its kind is the CAPTURED page's kind, never the
@@ -273,8 +291,23 @@ working any reference the ordinary HTTP route does not deliver cleanly:
   sandbox (`transcripts`, `insecure`, `pdf-text`, `pdf-pages`)
 - a genuine scan or rendered deck -> page-image transcription with subagents
 
-Two rules from that playbook bind every session that touches the archive, so
+Three rules from that playbook bind every session that touches the archive, so
 they stay here:
+
+- **`stored` MEANS A FILE WAS WRITTEN, NOT THAT IT IS THE DOCUMENT.** Every
+  outcome count this tool prints is about the fetch, and the three ways an
+  acquisition goes quietly wrong all report `stored`:
+
+  | Symptom | What happened | Route |
+  |---|---|---|
+  | 3-8KB where a paper would be 100KB+ | the abstract page, not the paper | `acquire --linked-document-url` |
+  | `title:` is `Preprint`, `Code`, `Paper` | the citation's link text, because the document declared no title | `decisions[url].title` |
+  | prose reading `signicant`, `congur` | the font's ligatures were deleted | `acquire --force` (routes to poppler) |
+
+  Read the character count `acquire` prints against what the source should hold,
+  and open the first page of what it wrote. None of these reaches any gap report,
+  because all three ARE archived - a document exists, and it is the wrong one or
+  a damaged one. `verify` will not tell you either.
 
 - **A faulty capture goes on `document-gaps.md` the moment it is found.** Whenever
   a capture is discovered to be faulty - the manifest advertises a Markdown or

@@ -1674,6 +1674,15 @@ def command_images(args):
     What is stored is never what was fetched: `images.sanitise` decodes each one
     and writes a new file from the pixels alone, so metadata, appended payloads
     and anything hidden in the low bits do not come with it.
+
+    A HOST WHOSE CERTIFICATE EXPIRED SERVES ITS FIGURES FROM THE SAME HOST.
+    `insecure` recovers the article; every one of its 32 screenshots then came
+    back as "empty response" here, because the archive's own client verifies and
+    always will. `--insecure` sends this command's fetches through the same
+    container curl, for the one reference `--only` names - the maintainer
+    decision is per reference, exactly as it is for the page itself. What is
+    stored still goes through `images.sanitise`, so nothing about what reaches
+    the archive changes; only who did the fetching.
     """
     from refslib import images as images_module
     from refslib.store import Store
@@ -1685,6 +1694,20 @@ def command_images(args):
     archive_dir = root / (config.get("archive_dir") or "archived-references")
     fetcher = check_module.fetcher_module.Fetcher(per_host_gap=args.gap,
                                                   timeout=args.timeout)
+
+    fetch_image = None
+    if getattr(args, "insecure", False):
+        from refslib import toolbox as toolbox_module
+        if not args.only:
+            print("--insecure needs --only. Skipping certificate verification is a")
+            print("per-reference decision, never a sweep.")
+            return 2
+
+        def fetch_image(url):
+            return toolbox_module.fetch_insecure(url)
+
+        print("Fetching this document's images WITHOUT certificate verification,")
+        print("in the container. Each one is still decoded and re-encoded.\n")
 
     documents = kept = refused = held = 0
     for key, entry in manifest.data["urls"].items():
@@ -1715,8 +1738,12 @@ def command_images(args):
                 record[url] = {"reason": "the document reached its embedded image budget"}
                 continue
             try:
-                response = fetcher.get(url, max_bytes=images_module.MAX_SOURCE_BYTES)
-                clean, width, height = images_module.sanitise(response.body or b"")
+                if fetch_image is not None:
+                    body = fetch_image(url)
+                else:
+                    body = fetcher.get(
+                        url, max_bytes=images_module.MAX_SOURCE_BYTES).body or b""
+                clean, width, height = images_module.sanitise(body)
             except images_module.Unusable as error:
                 record[url] = {"reason": str(error)[:120]}
                 refused += 1
@@ -4129,6 +4156,12 @@ def build_parser():
                                help="only references whose identity contains this text")
     images_parser.add_argument("--force", action="store_true",
                                help="fetch again even where an image is already held")
+    images_parser.add_argument("--insecure", action="store_true",
+                               help="fetch this document's images in the container "
+                                    "WITHOUT certificate verification, for the one "
+                                    "reference --only names; for a host whose "
+                                    "certificate expired and whose page was "
+                                    "recovered with `refs.py insecure`")
     images_parser.add_argument("--gap", type=float, default=0.5,
                                help="seconds to wait between requests to one host")
     images_parser.add_argument("--timeout", type=int, default=30)

@@ -21,9 +21,71 @@ PRIMARY_LABELS = frozenset((
     "pdf", "paper", "paper pdf", "full paper", "full text", "download",
     "download paper", "view publication", "read paper", "publication",
     "preprint", "manuscript",
+    # arXiv labels its own file `View PDF`, and the set held `view publication`
+    # but not this. The abs page is 7,138 characters of abstract and metadata -
+    # comfortably over the content floor - so nothing else was ever going to
+    # notice that the paper was one link away.
+    "view pdf", "view paper", "view full text", "download full text",
 ))
 SLIDE_MARKERS = ("slide", "slides", "deck", "presentation", "talk")
 CODE_LABELS = frozenset(("code", "source", "source code", "repository", "github"))
+
+# A PDF SERVED WITHOUT SAYING SO. arXiv publishes its papers at
+# `/pdf/2607.06141`, extension and all absent, so the `.pdf` test alone reads
+# the largest preprint host in this corpus as having no paper on the page.
+# Deliberately narrow - a `/pdf/` first segment and one more, nothing deeper -
+# and still label-gated, so it takes effect only where the page itself says the
+# link is the paper.
+EXTENSIONLESS_PDF_PATH = re.compile(r"^/pdf/[^/]+/?$", re.IGNORECASE)
+
+# A LABEL THAT NAMES THE AUTHOR BEFORE THE FORMAT. The note further down says a
+# bare `Paper` label "is how every NDSS, USENIX and IEEE abstract page offers
+# the real thing"; for USENIX it never was. USENIX titles the link with the
+# author's surname first - `Bach PDF`, and beside it, for the draft the paper
+# was accepted from, `Bach Paper (Prepublication) PDF`. Every exact-label test
+# above therefore missed the one publisher this module's own comments name, and
+# a USENIX Security abstract page - 2-3KB of title, authors and abstract, well
+# over the content floor and grading as research - is archived as the document
+# while the paper sits one link away.
+#
+# THREE CONDITIONS, ALL REQUIRED, because a research page cites other people's
+# papers constantly and none of those is this document:
+#
+#   1. the anchor DECLARES itself a PDF (`type="application/pdf; length=..."`),
+#      which a CMS writes for a file it serves and a hand-written citation of
+#      somebody else's paper does not;
+#   2. the file is on the SAME SITE as the landing page - the same guard the
+#      bare-`Paper` rule leans on, and the one that cut 215 same-site-only
+#      matches down to 18 real ones; and
+#   3. the label is a few words of author and then the word itself.
+AUTHOR_PREFIXED_PDF = re.compile(r"^(?:[\w.'’()-]+ ){1,5}(?:pdf|paper)$",
+                                 re.IGNORECASE)
+DECLARED_PDF_TYPE = re.compile(r"^\s*application/pdf\b", re.IGNORECASE)
+
+# NOT EVERY FILE A CONFERENCE SERVES IS THE PAPER. The three conditions above
+# would take a programme or a proceedings volume just as readily, and those sit
+# in site chrome where the author's own name never appears.
+#
+# THE APPENDIX IS THE ONE THAT ACTUALLY BITES, because it is written in exactly
+# the same form as the paper - `You PDF` beside `You Appendix PDF` - so it is
+# author-prefixed, same-site and type-declared, and passes every test the paper
+# passes. Seventeen USENIX Security pages from 2022-2025 named two candidates
+# for that reason alone and this module rightly declined to choose between
+# them. An appendix is a supplement TO the paper and never the paper, so it is
+# named here; it stays a companion, which is where provenance belongs.
+NOT_THE_PAPER = ("appendix", "supplement", "supplementary", "artifact",
+                 "proceedings", "programme", "program", "schedule", "agenda",
+                 "call for papers", "brochure", "flyer", "poster", "map",
+                 "registration", "sponsor", "errata", "index")
+
+# TWO COPIES OF ONE PAPER. USENIX publishes the camera-ready and, beside it, the
+# prepublication draft it was accepted from. More than one candidate normally
+# means this module declines to choose, which here would mean declining between
+# a paper and its own earlier draft: where a candidate says it is the
+# prepublication and another does not, the one that does not is the paper.
+# Narrow on purpose - `preprint` is NOT in here, because an arXiv preprint is
+# frequently the only copy there is.
+DRAFT_MARKERS = ("prepublication", "pre-publication", "prepub", "preproceedings")
 
 
 class LinkedDocuments(object):
@@ -40,7 +102,11 @@ class _Anchors(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         if tag.lower() == "a":
-            self.current = [dict(attrs).get("href") or "", []]
+            # `type` is kept because it is the page stating, in machine terms,
+            # that the link is a file it serves. Nothing else on an abstract
+            # page says that about the paper.
+            found = dict(attrs)
+            self.current = [found.get("href") or "", [], found.get("type") or ""]
 
     def handle_data(self, data):
         if self.current is not None:
@@ -48,7 +114,8 @@ class _Anchors(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag.lower() == "a" and self.current is not None:
-            self.links.append((self.current[0], "".join(self.current[1])))
+            self.links.append((self.current[0], "".join(self.current[1]),
+                               self.current[2]))
             self.current = None
 
 
@@ -67,28 +134,52 @@ def discover(markup, base_url=""):
     primary = []
     companions = []
     seen = set()
-    for href, anchor_text in parser.links:
+    home = _site(base_url)
+    for href, anchor_text, declared_type in parser.links:
         url = urljoin(base_url, html.unescape(href).strip())
         parts = urlsplit(url)
         if parts.scheme not in ("http", "https") or not parts.netloc:
             continue
         label = _label(anchor_text)
         lowered_url = url.lower()
-        is_pdf = parts.path.lower().endswith(".pdf")
+        is_pdf = bool(parts.path.lower().endswith(".pdf")
+                      or EXTENSIONLESS_PDF_PATH.match(parts.path or ""))
         slides = any(marker in label or marker in lowered_url
                      for marker in SLIDE_MARKERS)
         github = (parts.hostname or "").lower() in ("github.com", "www.github.com")
         is_code = label in CODE_LABELS or (github and "code" in label)
+        # The author-prefixed form, gated on the page serving the file itself.
+        own_file = bool(home and _site(url) == home
+                        and DECLARED_PDF_TYPE.match(declared_type or ""))
+        named_pdf = bool(own_file and AUTHOR_PREFIXED_PDF.match(label))
+        # A named research artefact is worth recording either way; only the
+        # question of which one IS the document turns on the words below.
+        is_companion_label = label in PRIMARY_LABELS or named_pdf
+        is_primary_label = is_companion_label and not any(
+            word in label for word in NOT_THE_PAPER)
 
-        if is_pdf and label in PRIMARY_LABELS and not slides:
-            primary.append(url)
-        if ((is_pdf and (label in PRIMARY_LABELS or slides)) or
+        if is_pdf and is_primary_label and not slides:
+            primary.append((url, label))
+        if ((is_pdf and (is_companion_label or slides)) or
                 (github and is_code)) and url not in seen:
             companions.append(url)
             seen.add(url)
 
-    choices = list(dict.fromkeys(primary))
+    labels = {}
+    for url, label in primary:
+        labels.setdefault(url, label)
+    choices = list(labels)
+    if len(choices) > 1:
+        # The paper, not the draft of the paper. Only ever narrows.
+        finished = [url for url in choices if not _is_draft(url, labels[url])]
+        if len(finished) == 1:
+            choices = finished
     return LinkedDocuments(choices[0] if len(choices) == 1 else "", companions)
+
+
+def _is_draft(url, label):
+    haystack = "%s %s" % (label or "", (url or "").lower())
+    return any(marker in haystack for marker in DRAFT_MARKERS)
 
 
 def _label(text):
@@ -124,6 +215,7 @@ PAPER_PHRASE = re.compile(
 PAPER_LABEL = frozenset((
     "paper", "pdf", "full paper", "paper (pdf)", "read paper", "preprint",
     "download paper", "download pdf", "download the paper", "view paper",
+    "view pdf", "view full text", "download full text",
 ))
 _MARKDOWN_LINK = re.compile(r"\[([^\]\n]{0,80})\]\((https?://[^)\s]+\.pdf)\)",
                             re.IGNORECASE)

@@ -93,6 +93,15 @@ publisher's copy: publishing 4,500 image files would roughly double a repository
 that already carries 800MB of documents, and the website degrades a picture it
 cannot load into a note saying where the archived copy is.
 
+`--insecure`, WITH `--only`, is for the figures of a page recovered by
+`refs.py insecure`. They sit on the same host whose certificate expired, so the
+ordinary fetch reports every one of them as `empty response` and prints a
+cheerful `0/32 kept`; the flag routes only that reference's image fetches
+through the same container curl. Skipping verification stays a per-reference
+maintainer decision - an unscoped run is refused - and each image is still
+decoded and re-encoded from its pixels, so nothing about what reaches the
+archive changes.
+
 > `inventory` parses a document's SECTION structure and suits the upstream
 > project's curated documents; the year lists here are flat link lists, so it
 > reports zero entries. Use `harvest` - it is the discovery route for this repo.
