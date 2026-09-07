@@ -43,7 +43,8 @@
   <link rel="icon" href="brand-mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="brand-mark.svg">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=20260818.1">
+  <link rel="stylesheet" href="styles.css?v=20260907.4">
+  <link rel="stylesheet" href="discovery.css?v=20260907.4">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to archive</a>
@@ -59,6 +60,7 @@
 
   <div class="app-shell" id="app-shell" hidden>
     <aside class="sidebar" id="concept-sidebar" aria-label="Archive experiences">
+      <button class="mobile-menu-close" id="close-mobile-menu" type="button" aria-label="Close concept menu">×</button>
       <!-- The archive's name is the page's one h1. It lives in the masthead
            rather than over the reading area: the heading above the records
            names the mode being read, and a search engine reads an h1 as a
@@ -78,27 +80,29 @@
       </nav>
 
       <nav class="concept-nav">
-        <p class="nav-label"><span>Ways into the archive</span><b>07</b></p>
+        <p class="nav-label"><span>Ways into the archive</span><b>09</b></p>
+        <button class="nav-item" data-view="evidence">
+          <span class="nav-index">01</span><span class="nav-copy"><strong>Investigation Board</strong><em>Casework surface</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
         <button class="nav-item active" data-view="museum" aria-current="page">
-          <span class="nav-index">01</span><span class="nav-copy"><strong>Museum</strong><em>Exhibition rooms</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+          <span class="nav-index">02</span><span class="nav-copy"><strong>Museum</strong><em>Exhibition rooms</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
         <button class="nav-item" data-view="library">
-          <span class="nav-index">02</span><span class="nav-copy"><strong>Library</strong><em>Reading stacks</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+          <span class="nav-index">03</span><span class="nav-copy"><strong>Library</strong><em>Reading stacks</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
+        <button class="nav-item" data-view="time"><span class="nav-index">04</span><span class="nav-copy"><strong>Time Machine</strong><em>Research through time</em></span><span class="nav-arrow" aria-hidden="true">↗</span></button>
         <button class="nav-item" data-view="signals">
-          <span class="nav-index">03</span><span class="nav-copy"><strong>Signals</strong><em>Trend observatory</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+          <span class="nav-index">05</span><span class="nav-copy"><strong>Signals</strong><em>Trend observatory</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
         <button class="nav-item" data-view="constellation">
-          <span class="nav-index">04</span><span class="nav-copy"><strong>Constellation</strong><em>Relationship field</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+          <span class="nav-index">06</span><span class="nav-copy"><strong>Constellation</strong><em>Relationship field</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
         <button class="nav-item" data-view="terminal">
-          <span class="nav-index">05</span><span class="nav-copy"><strong>Hacker Terminal</strong><em>Query console</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+          <span class="nav-index">07</span><span class="nav-copy"><strong>Hacker Terminal</strong><em>Query console</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
-        <button class="nav-item" data-view="evidence">
-          <span class="nav-index">06</span><span class="nav-copy"><strong>Investigation Board</strong><em>Casework surface</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
-        </button>
+        <button class="nav-item" data-view="desk"><span class="nav-index">08</span><span class="nav-copy"><strong>Research Desk</strong><em>Find, save, read</em></span><span class="nav-arrow" aria-hidden="true">↗</span></button>
         <button class="nav-item" data-view="favourites">
-          <span class="nav-index">07</span><span class="nav-copy"><strong>Favourites &amp; Read</strong><em><b id="favourite-count">0</b> saved · <b id="read-count">0</b> read</em></span><span class="nav-arrow" aria-hidden="true">★</span>
+          <span class="nav-index">09</span><span class="nav-copy"><strong>Favourites &amp; Read</strong><em><b id="favourite-count">0</b> saved · <b id="read-count">0</b> read</em></span><span class="nav-arrow" aria-hidden="true">★</span>
         </button>
       </nav>
 
@@ -132,13 +136,13 @@
         <div class="top-actions">
           <button class="quiet-button contribute-launch" data-contribute type="button" aria-label="Submit research" title="Propose research the nomination round missed"><span aria-hidden="true">✍</span><b>Submit research</b></button>
           <button class="quiet-button" id="random-artifact"><span aria-hidden="true">↝</span> Draw a thread</button>
-          <button class="quiet-button site-fullscreen" id="site-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with the complete website"><span aria-hidden="true">⛶</span> Full screen</button>
-          <button class="sound-button" id="motion-toggle" aria-pressed="false" title="Reduce ambient motion">≈</button>
+          <button class="quiet-button site-fullscreen" id="site-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with the complete website"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg> Full screen</button>
+          <button class="sound-button" id="motion-toggle" aria-label="Reduce ambient motion" aria-pressed="false" title="Reduce ambient motion">≈</button>
         </div>
       </header>
 
       <aside class="global-results" id="global-results" aria-label="Archive search results" aria-live="polite" tabindex="-1" hidden>
-        <header><span id="global-results-label">Search results</span><button id="close-global-results" type="button" aria-label="Close search results">×</button></header>
+        <header><span id="global-results-label">Search results</span><button id="close-global-results" type="button" aria-label="Close search results"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></header>
         <div id="global-results-list"></div>
       </aside>
 
@@ -150,11 +154,12 @@
             <p id="view-description">Walk through twenty years of research as rooms, illuminated winners and recovered artifacts.</p>
           </div>
           <div class="view-intro-tools">
+            <div id="discovery-appearance" hidden></div>
             <div class="view-metric" aria-live="polite">
               <span id="view-count">—</span>
               <small id="view-count-label">artifacts in this room</small>
             </div>
-            <button class="view-fullscreen" id="view-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with this archive mode"><span aria-hidden="true">⛶</span> Full screen</button>
+            <button class="view-fullscreen" id="view-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with this archive mode"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg> Full screen</button>
           </div>
         </header>
 
@@ -196,7 +201,7 @@
        submitted from here - the button hands GitHub a prefilled form, and the
        submitter reads it before posting it. -->
   <dialog class="contribute-dialog" id="contribute-dialog" aria-labelledby="contribute-title" tabindex="-1">
-    <form method="dialog"><button class="dialog-close" aria-label="Close the submission form">×</button></form>
+    <form method="dialog"><button class="dialog-close" aria-label="Close the submission form"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
     <div class="artifact-glow" aria-hidden="true"></div>
     <div class="dialog-body">
       <p class="eyebrow">Contribute / research submission</p>
@@ -246,7 +251,7 @@
   </dialog>
 
   <dialog class="contribute-dialog report-dialog" id="report-dialog" aria-labelledby="report-title" tabindex="-1">
-    <form method="dialog"><button class="dialog-close" aria-label="Close the report form">×</button></form>
+    <form method="dialog"><button class="dialog-close" aria-label="Close the report form"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
     <div class="artifact-glow" aria-hidden="true"></div>
     <div class="dialog-body">
       <p class="eyebrow">Report / record inaccuracy</p>
@@ -287,7 +292,7 @@
   </dialog>
 
   <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title" tabindex="-1">
-    <form method="dialog"><button class="dialog-close" aria-label="Close artifact">×</button></form>
+    <form method="dialog"><button class="dialog-close" aria-label="Close artifact"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
     <div class="artifact-glow" aria-hidden="true"></div>
     <div class="dialog-body">
       <p class="eyebrow" id="artifact-eyebrow"></p>
@@ -315,7 +320,7 @@
         <strong id="reader-title">Article reader</strong>
       </div>
       <div class="reader-actions" id="reader-actions"></div>
-      <form method="dialog"><button class="reader-close" aria-label="Close reader">×</button></form>
+      <form method="dialog"><button class="reader-close" aria-label="Close reader"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
     </header>
     <div class="reader-progress" aria-hidden="true"><i id="reader-progress-bar"></i></div>
     <div class="reader-layout">
@@ -352,7 +357,7 @@
         <button id="pdf-fit-width" type="button">Fit width</button>
         <button id="pdf-fit-page" type="button">Fit page</button>
       </div>
-      <form method="dialog"><button class="pdf-close" aria-label="Close PDF viewer">×</button></form>
+      <form method="dialog"><button class="pdf-close" aria-label="Close PDF viewer"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
     </header>
     <div class="pdf-stage">
       <div class="pdf-loading" id="pdf-loading" role="status"><i></i><p>Preparing the preserved document…</p></div>
@@ -371,7 +376,7 @@
       <aside class="pdf-links" id="pdf-links" hidden aria-label="Links in this document">
         <header>
           <strong>Links in this document</strong>
-          <button id="pdf-links-close" type="button" aria-label="Close the link list">×</button>
+          <button id="pdf-links-close" type="button" aria-label="Close the link list"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         </header>
         <p class="pdf-links-note">A link clicked inside the embedded PDF is handled by the browser's own viewer, which opens it in place rather than in a new tab. These open in a new tab.</p>
         <div id="pdf-links-list"></div>
@@ -381,7 +386,8 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="constellation.js"></script>
-  <script src="app.js?v=20260818.1"></script>
+  <script src="constellation.js?v=20260907.4"></script>
+  <script src="discovery.js?v=20260907.4"></script>
+  <script src="app.js?v=20260907.4"></script>
 </body>
 </html>

@@ -35,6 +35,12 @@
 /app.js
   Cache-Control: public, max-age=0, must-revalidate
 
+/discovery.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/discovery.css
+  Cache-Control: public, max-age=0, must-revalidate
+
 /constellation.js
   Cache-Control: public, max-age=0, must-revalidate
 

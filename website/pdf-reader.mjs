@@ -18,14 +18,17 @@ let zoom = 1;
 let generation = 0;
 let resizeTimer = null;
 
-function applyTheme(value) {
+function applyTheme(value, palette) {
   document.documentElement.dataset.theme = value === "light" ? "light" : "dark";
+  if (["desk", "time"].includes(palette)) document.documentElement.dataset.palette = palette;
+  else delete document.documentElement.dataset.palette;
 }
 
-applyTheme(new URLSearchParams(location.search).get("theme"));
+const appearance = new URLSearchParams(location.search);
+applyTheme(appearance.get("theme"), appearance.get("palette"));
 window.addEventListener("message", (event) => {
   if (event.origin !== "https://webhacklist.com" || event.source !== parent || event.data?.type !== "pdf-reader-theme") return;
-  applyTheme(event.data.theme);
+  applyTheme(event.data.theme, event.data.palette);
 });
 
 function setMessage(text) {
@@ -119,6 +122,7 @@ async function renderPage(state) {
     state.renderTask = null;
     state.rendering = false;
     if (error?.name === "RenderingCancelledException") return;
+    console.error("PDF page rendering failed:", error);
     state.section.querySelector(".page-loading").textContent = "This page could not be rendered";
   }
 }

@@ -20,6 +20,8 @@ const STATIC_FILES = [
   "404.html",
   "_headers",
   "app.js",
+  "discovery.js",
+  "discovery.css",
   "brand-mark.svg",
   "constellation.js",
   "index.html",

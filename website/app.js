@@ -22,11 +22,12 @@ const SITE_DOCUMENT_TITLE = `${SITE_TITLE} — Research archive`;
 const READ_STORAGE_KEY = "technique-vault-read-v1";
 const FAVOURITE_STORAGE_KEY = "websec-favourites-v1";
 const READING_THEME_STORAGE_KEY = "technique-vault-reading-theme-v1";
+const MOTION_STORAGE_KEY = "websec-reduced-motion-v1";
 // Every archive mode can fill the screen. The four immersive views additionally
 // get a focused full-screen layout in styles.css; the reading views (Museum,
 // Library and the personal collection) simply gain the whole viewport.
-const FULLSCREEN_VIEWS = new Set(["museum", "library", "signals", "constellation", "terminal", "evidence", "favourites"]);
-// Which personal collection view 07 is showing. Favourites and read state are
+const FULLSCREEN_VIEWS = new Set(["museum", "library", "signals", "constellation", "terminal", "evidence", "favourites", "desk", "time"]);
+// Which personal collection view 09 is showing. Favourites and read state are
 // two independent browser-local lists over the same records.
 const SAVED_MODES = ["favourites", "read", "all"];
 
@@ -97,55 +98,69 @@ function loadReadingTheme() {
   }
 }
 
+function applyMotionPreference() {
+  const systemReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let savedReduced = false;
+  try { savedReduced = localStorage.getItem(MOTION_STORAGE_KEY) === "true"; } catch {}
+  state.motionReduced = systemReduced || savedReduced;
+  document.body.classList.toggle("reduce-motion", state.motionReduced);
+  document.documentElement.classList.toggle("reduce-motion", state.motionReduced);
+  const button = $("#motion-toggle");
+  button.setAttribute("aria-pressed", String(state.motionReduced));
+  button.disabled = systemReduced;
+  button.title = systemReduced ? "Motion reduced by your system preference" : "Reduce ambient motion";
+}
+
 const VIEWS = {
+  ...DISCOVERY_VIEWS,
   museum: {
-    kicker: "Room 01 / exhibition mode",
+    kicker: "Room 02 / exhibition mode",
     title: "Museum at Night",
     description: "Walk through twenty years of research as rooms, illuminated winners and recovered artifacts."
   },
   library: {
-    kicker: "Stack 02 / reading mode",
+    kicker: "Stack 03 / reading mode",
     title: "Infinite Security Library",
     description: "Pull a title from the shelves, browse by subject and turn a very large collection into something tactile."
   },
   signals: {
-    kicker: "Scope 03 / trend mode",
+    kicker: "Scope 05 / trend mode",
     title: "Signal Observatory",
     description: "Tune across twenty years of research, spot rising technique families and open the papers behind every change in frequency."
   },
   constellation: {
-    kicker: "Field 04 / relationship mode",
+    kicker: "Field 06 / relationship mode",
     title: "Research Constellation",
     description: "Fly through individual papers as stars gathered around recurring technique families and follow unexpected neighbours in three dimensions."
   },
   terminal: {
-    kicker: "Shell 05 / query mode",
+    kicker: "Shell 07 / query mode",
     title: "The Hacker Terminal",
-    description: "Query the archive through a recovered CRT shell, then open its records in the shared Markdown and PDF readers."
+    description: "Find research with commands or quick actions. Open, read and save papers from one console."
   },
   evidence: {
-    kicker: "Case 06 / investigation mode",
+    kicker: "Case 01 / investigation mode",
     title: "The Investigation Board",
     description: "Open one corkboard case per year, rearrange its evidence and follow the red thread through the winning research."
   },
   favourites: {
-    kicker: "Collection 07 / saved research",
+    kicker: "Collection 09 / saved research",
     title: "Favourite Research",
     description: "Keep a durable shortlist across every archive view, then return to the papers that matter most."
   }
 };
 
-// View 07 is one surface over two browser-local lists. The copy follows the
+// View 09 is one surface over two browser-local lists. The copy follows the
 // selected list so the page never claims a reading history is a shortlist.
 const SAVED_VIEW_COPY = {
   favourites: VIEWS.favourites,
   read: {
-    kicker: "Collection 07 / reading history",
+    kicker: "Collection 09 / reading history",
     title: "Research You Have Read",
     description: "Every record you marked as read, across as many years as you want to compare at once."
   },
   all: {
-    kicker: "Collection 07 / personal archive",
+    kicker: "Collection 09 / personal archive",
     title: "Saved And Read Research",
     description: "Your shortlist and your reading history together, filtered by any combination of years and topics."
   }
@@ -206,6 +221,8 @@ const state = {
   // injection research rather than for both lists at once.
   roomTopics: new Set(),
   roomVideoOnly: false,
+  terminalDraft: "",
+  terminalBusy: false,
   terminalLines: [],
   terminalHistory: [],
   terminalHistoryIndex: 0,
@@ -983,6 +1000,7 @@ function setMobileMenuOpen(open) {
 }
 
 function wireShell() {
+  $("#discovery-appearance").addEventListener("click", handleDiscoveryClick);
   $$(".nav-item").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
 
   setMobileMenuOpen(false);
@@ -990,6 +1008,10 @@ function wireShell() {
     setMobileMenuOpen(!document.body.classList.contains("menu-open"));
   });
   $("#mobile-menu-backdrop").addEventListener("click", () => {
+    setMobileMenuOpen(false);
+    focusWithoutScroll($("#mobile-menu"));
+  });
+  $("#close-mobile-menu").addEventListener("click", () => {
     setMobileMenuOpen(false);
     focusWithoutScroll($("#mobile-menu"));
   });
@@ -1035,9 +1057,14 @@ function wireShell() {
     if (item) openArtifact(item.id);
   });
 
+  applyMotionPreference();
+  window.matchMedia("(prefers-reduced-motion: reduce)").addEventListener("change", applyMotionPreference);
   $("#motion-toggle").addEventListener("click", () => {
     state.motionReduced = !state.motionReduced;
+    try { localStorage.setItem(MOTION_STORAGE_KEY, String(state.motionReduced)); }
+    catch { toast("Motion preference could not be saved in this browser"); }
     document.body.classList.toggle("reduce-motion", state.motionReduced);
+    document.documentElement.classList.toggle("reduce-motion", state.motionReduced);
     $("#motion-toggle").setAttribute("aria-pressed", String(state.motionReduced));
     toast(state.motionReduced ? "Ambient motion reduced" : "Ambient motion restored");
   });
@@ -1106,6 +1133,7 @@ function wireShell() {
   });
 
   $("#view-root").addEventListener("click", handleViewClick);
+  $("#view-root").addEventListener("input", handleDiscoveryInput);
   $("#view-root").addEventListener("keydown", (event) => {
     const artifactTarget = event.target.closest("[data-artifact]");
     if (artifactTarget && (event.key === "Enter" || event.key === " ")) {
@@ -1132,7 +1160,7 @@ function wireShell() {
   });
   $("#reader-toc").addEventListener("click", (event) => {
     const target = event.target.closest("[data-reader-target]");
-    if (target) $("#reader-content").querySelector(`#${CSS.escape(target.dataset.readerTarget)}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (target) $("#reader-content").querySelector(`#${CSS.escape(target.dataset.readerTarget)}`)?.scrollIntoView({ behavior: state.motionReduced ? "instant" : "smooth", block: "start" });
   });
   $("#reader-dialog").addEventListener("close", () => {
     readerRequestToken++;
@@ -1144,21 +1172,16 @@ function wireShell() {
   // not restore the search panel - the record is still open behind it.
   ["#artifact-dialog", "#reader-dialog", "#pdf-dialog", "#contribute-dialog",
    "#report-dialog"].forEach((id) => {
+    wireDialogDismissal($(id));
     $(id).addEventListener("close", () => {
       syncDialogScrollLock();
       if (id !== "#contribute-dialog" && id !== "#report-dialog") requestAnimationFrame(restoreGlobalSearch);
     });
   });
-  $("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop);
   // Dismissing a modal only hides it. An iframe inside a hidden dialog keeps
   // running, so closing a record with the talk playing left the reader with no
   // picture, no controls and the sound still going.
   $("#artifact-dialog").addEventListener("close", stopTalkPlayback);
-  // The report form is a modal like any other and closes the way the record
-  // does. Its own fields are unaffected: closeDialogFromBackdrop checks the
-  // pointer against the dialog's bounds, so a click on an empty patch of the
-  // form is not a click on the page behind it.
-  $("#report-dialog").addEventListener("click", closeDialogFromBackdrop);
 
   window.addEventListener("message", (event) => {
     const frame = $("#pdf-frame");
@@ -1168,7 +1191,7 @@ function wireShell() {
     $("#pdf-loading").hidden = true;
     $("#pdf-fallback").hidden = true;
     frame.hidden = false;
-    frame.contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme }, PDF_READER_ORIGIN);
+    frame.contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme, palette: isDiscoveryView() ? state.view : "" }, PDF_READER_ORIGIN);
   });
   $("#pdf-dialog").addEventListener("close", clearPdfViewer);
   $("#pdf-dialog").addEventListener("cancel", (event) => {
@@ -1204,6 +1227,7 @@ function toggleInSet(set, value) {
 }
 
 async function handleViewClick(event) {
+  if (handleDiscoveryClick(event)) return;
   const roomFilterTarget = event.target.closest("[data-room-filter]");
   if (roomFilterTarget) {
     applyRoomFilter(roomFilterTarget.dataset.roomFilter);
@@ -1389,6 +1413,13 @@ async function setView(view, updateHash = true) {
   setMobileMenuOpen(false);
   if (updateHash) history.pushState(null, "", `#${viewHash(view)}`);
   render();
+  if (updateHash) {
+    // A selected route starts at its controls, even after reading far down
+    // another view. Move focus out of the now-inert mobile drawer too.
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    $("#main-content").scrollTo({ top: 0, left: 0, behavior: "instant" });
+    focusWithoutScroll($("#main-content"));
+  }
   if (view === "favourites" && loadedCollections.size !== YEAR_FILES.length) {
     await ensureAllCollections();
     if (state.view === view) renderFavourites();
@@ -1418,7 +1449,7 @@ function updateFullscreenButton(button, active, title) {
   button.setAttribute("aria-pressed", String(active));
   button.innerHTML = active
     ? '<span aria-hidden="true">×</span> Exit full screen'
-    : '<span aria-hidden="true">⛶</span> Full screen';
+    : '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg> Full screen';
   button.title = active ? "Exit full screen" : title;
 }
 
@@ -1500,21 +1531,45 @@ function toggleReadingTheme() {
   catch { toast("Reading theme could not be saved in this browser"); }
   applyReadingTheme();
   if ($("#pdf-dialog").open && state.pdfUsesInSiteReader) {
-    $("#pdf-frame").contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme }, PDF_READER_ORIGIN);
+    $("#pdf-frame").contentWindow?.postMessage({ type: "pdf-reader-theme", theme: state.readingTheme, palette: isDiscoveryView() ? state.view : "" }, PDF_READER_ORIGIN);
   }
   if ($("#reader-dialog").open && state.readerItem) syncDocumentUrl(state.readerItem, "reader");
   else if ($("#pdf-dialog").open) syncDocumentUrl(state.pdfItem, state.pdfKind === "listingPdf" ? "results" : "pdf");
   toast(`${state.readingTheme === "light" ? "Light" : "Dark"} reading theme`);
 }
 
+// These controls are replaced when a view redraws. Keep keyboard navigation on
+// the selected control, or its group when a reset removes the original button.
+function captureViewFocus() {
+  const active = document.activeElement;
+  if (!$("#view-root")?.contains(active)) return null;
+  const attribute = ["data-year", "data-room-filter", "data-topic-filter", "data-star-status",
+    "data-star-recorded", "data-signal-topic", "data-signal-year", "data-signal-status",
+    "data-signal-recorded", "data-saved-mode", "data-saved-year", "data-saved-topic"]
+    .find((name) => active.hasAttribute(name));
+  return attribute ? { attribute, value: active.getAttribute(attribute) } : null;
+}
+
+function restoreViewFocus(focus) {
+  if (!focus) return;
+  const controls = $$(`#view-root [${focus.attribute}]`);
+  const target = controls.find((control) => control.getAttribute(focus.attribute) === focus.value)
+    || controls.find((control) => !control.disabled);
+  if (target) focusWithoutScroll(target);
+}
+
 function render() {
+  const focus = captureViewFocus();
   const copy = viewCopy();
   // The document-level palette also owns native controls such as scrollbars.
   // Set it before rendering so a room change has no one-frame colour mismatch.
   document.documentElement.dataset.view = state.view;
+  updateDiscoveryAppearance();
   $("#view-kicker").textContent = copy.kicker;
   $("#view-mode").textContent = copy.title;
   $("#view-description").textContent = copy.description;
+  $("#discovery-appearance").hidden = !isDiscoveryView();
+  $("#discovery-appearance").innerHTML = isDiscoveryView() ? discoveryAppearance() : "";
   document.title = SITE_DOCUMENT_TITLE;
   $$(".nav-item").forEach((button) => {
     const active = button.dataset.view === state.view;
@@ -1524,6 +1579,8 @@ function render() {
   });
 
   const renderers = {
+    desk: renderDiscovery,
+    time: renderDiscovery,
     museum: renderMuseum,
     library: renderLibrary,
     signals: renderSignals,
@@ -1533,6 +1590,7 @@ function render() {
     favourites: renderFavourites
   };
   (Object.hasOwn(renderers, state.view) ? renderers[state.view] : renderMuseum)();
+  restoreViewFocus(focus);
   syncFullscreenControls();
 }
 
@@ -1634,16 +1692,43 @@ function restoreGlobalSearch() {
   $("#global-results-list").scrollTop = globalResultsScroll;
 }
 
-// A modal dialog reports a backdrop click as a click on the dialog itself.
-// Check the pointer coordinates as well so an empty patch inside a long record
-// never behaves like the surrounding page.
-function closeDialogFromBackdrop(event) {
+// Native dialogs retarget backdrop events to the dialog element. Coordinate
+// checks distinguish the backdrop from padding, borders and empty pane space.
+function isDialogBackdropEvent(event) {
   const dialog = event.currentTarget;
-  if (event.target !== dialog || !dialog.open) return;
+  const hitSurface = event.target?.parentElement === dialog && event.target.classList?.contains("dialog-backdrop-hit");
+  if ((event.target !== dialog && !hitSurface) || !dialog.open) return false;
   const bounds = dialog.getBoundingClientRect();
-  const outside = event.clientX < bounds.left || event.clientX >= bounds.right
+  return event.clientX < bounds.left || event.clientX >= bounds.right
     || event.clientY < bounds.top || event.clientY >= bounds.bottom;
-  if (outside) dialog.close();
+}
+
+function closeDialogFromBackdrop(event) {
+  if (isDialogBackdropEvent(event)) event.currentTarget.close();
+}
+
+function wireDialogDismissal(dialog) {
+  // Give touch browsers a real backdrop target: otherwise near-edge taps can
+  // be redirected into the embedded PDF frame. Keep it behind the pane and
+  // out of keyboard navigation; the labelled close button serves that route.
+  const backdrop = document.createElement("button");
+  backdrop.type = "button";
+  backdrop.tabIndex = -1;
+  backdrop.setAttribute("aria-hidden", "true");
+  backdrop.className = "dialog-backdrop-hit";
+  dialog.append(backdrop);
+  let pressedOnBackdrop = false;
+  dialog.addEventListener("pointerdown", (event) => {
+    pressedOnBackdrop = event.button === 0 && event.isPrimary !== false && isDialogBackdropEvent(event);
+  });
+  dialog.addEventListener("pointercancel", () => { pressedOnBackdrop = false; });
+  dialog.addEventListener("close", () => { pressedOnBackdrop = false; });
+  dialog.addEventListener("click", (event) => {
+    // Both ends of a click must be outside. Text selection or a drag that
+    // starts in the pane and ends outside must keep the document open.
+    if (pressedOnBackdrop) closeDialogFromBackdrop(event);
+    pressedOnBackdrop = false;
+  });
 }
 
 function setMetric(count, label) {
@@ -1729,6 +1814,7 @@ function setReadState(item, nextState = !item.read) {
   syncReadButtons(item);
   updateReadingProgress();
   if (state.view === "favourites") renderFavourites();
+  if (isDiscoveryView()) discoveryRefresh();
   toast(nextState ? "Marked as read" : "Marked as unread");
 }
 
@@ -1758,6 +1844,7 @@ function setFavouriteState(item, nextState = !item.favourite) {
   updateFavouriteCount();
   toast(nextState ? "Added to favourites" : "Removed from favourites");
   if (state.view === "favourites") renderFavourites();
+  if (isDiscoveryView()) discoveryRefresh();
 }
 
 function favouriteItems() {
@@ -1768,7 +1855,7 @@ function readItems() {
   return state.items.filter((item) => item.read);
 }
 
-// The records view 07 lists for the selected personal collection.
+// The records view 09 lists for the selected personal collection.
 function savedItems(mode = state.savedMode) {
   if (mode === "read") return readItems();
   if (mode === "all") return state.items.filter((item) => item.favourite || item.read);
@@ -1837,9 +1924,9 @@ function statusMarkup(item) {
 }
 
 // ONE GLYPH, ONE FACT, IN EVERY ROOM. The archive knows a talk exists for 298
-// records; a reader scanning any of the seven views should be able to see that
+// records; a reader scanning any of the archive views should be able to see that
 // without opening one. The mark is stated once here rather than per view, so
-// the seven cannot drift into meaning slightly different things — and it keeps
+// the views cannot drift into meaning slightly different things — and it keeps
 // the site's own distinction: a solid mark where the archive is certain, a
 // faded one where its best match is still a guess.
 function videoMark(item, extraClass = "") {
@@ -1961,6 +2048,7 @@ function topicKey(items, shown) {
 // change height as it does. Put the key back under the pointer that pressed it
 // instead of letting the page jump to wherever the new content lands.
 function applyRoomFilter(token) {
+  const focus = captureViewFocus();
   if (token === "reset") {
     state.roomTopics.clear();
     state.roomVideoOnly = false;
@@ -1971,6 +2059,7 @@ function applyRoomFilter(token) {
   }
   const before = $(".topic-key")?.getBoundingClientRect().top;
   renderMuseum();
+  restoreViewFocus(focus);
   const after = $(".topic-key")?.getBoundingClientRect().top;
   if (typeof before !== "number" || typeof after !== "number") return;
   // Full-screen mode moves the scrolling box from the page onto <main>, so the
@@ -2184,16 +2273,13 @@ function renderFavourites() {
 }
 
 function terminalWelcome() {
-  const preliminaryCount = YEAR_RECORDS.filter((record) => record.status === "preliminary").length;
   return [
-    `<pre class="terminal-banner" aria-label="The Hacker Terminal">╔══════════════════════════════════╗\n║  THE HACKER TERMINAL // ARCHIVE  ║\n╚══════════════════════════════════╝</pre>`,
-    `<p class="term-dim">web-hacking-techniques-index v2.6 · read-only mount · ${YEAR_FILES.length} volumes detected${preliminaryCount ? ` · ${preliminaryCount} preliminary` : ""}</p>`,
-    `<p><span class="term-bright">${state.archiveTotal.toLocaleString()}</span> documents indexed · <span class="term-gold">${archiveFieldTotal("markdown").toLocaleString()} md</span> · <span class="term-gold">${archiveFieldTotal("pdf").toLocaleString()} pdf</span></p>`,
-    `<p>Type <button data-term-command="help">help</button> for commands, or try <button data-term-command="grep request smuggling">grep request smuggling</button>.</p>`
+    `<div class="terminal-welcome"><p class="terminal-eyebrow">RESEARCH CONSOLE / READY</p><h3>The archive is at your fingertips.</h3><p>Choose a quick action, or type a command below.</p><p class="terminal-example">Try <button data-term-command="grep HTTP">grep HTTP</button> to find research, or <button data-term-command="ls /">ls /</button> to browse the collections.</p></div>`
   ];
 }
 
 function renderTerminal() {
+  if (state.view !== "terminal") return;
   setMetric(state.archiveTotal, "records available to query");
   if (!state.terminalLines.length) state.terminalLines = terminalWelcome();
   const mdCount = archiveFieldTotal("markdown");
@@ -2203,18 +2289,18 @@ function renderTerminal() {
     ${terminalYear ? preliminaryNotice(terminalYear) : ""}
     <section class="hacker-terminal" aria-label="Interactive Hacker Terminal">
       <header class="hacker-terminal-head">
-        <strong>THE HACKER TERMINAL</strong><span>·</span>
-        <nav aria-label="List an archive year">${newestFirstYearFiles().map((year) => `<button data-term-command="ls /${h(year)}">${h(yearLabel(year, true))}</button>`).join("")}</nav>
+        <div class="terminal-identity"><span class="terminal-lamp" aria-hidden="true"></span><strong>HACKER TERMINAL</strong><span class="terminal-status" role="status">${state.terminalBusy ? "Working…" : "Ready"}</span></div>
+        <label class="terminal-collection-label" for="terminal-collection">Collection<select id="terminal-collection" aria-label="List a collection"><option value="">Choose…</option>${newestFirstYearFiles().map((year) => `<option value="${h(year)}" ${state.terminalBrowse === year ? "selected" : ""}>${h(yearLabel(year))}</option>`).join("")}</select></label>
+        <nav class="terminal-shortcuts" aria-label="Quick terminal actions"><button type="button" data-term-fill="grep ">Search</button><button type="button" data-term-command="ls /">Browse</button><button type="button" data-term-command="random">Random paper</button><button type="button" data-term-command="favorites">Saved</button><button type="button" data-term-command="help">Help</button><button type="button" data-term-command="clear">Clear</button></nav>
       </header>
-      <div class="terminal-output" id="terminal-output" role="log" aria-live="polite">${state.terminalLines.join("")}</div>
+      <div class="terminal-output" id="terminal-output" role="log" aria-label="Command results" aria-live="polite" aria-busy="${state.terminalBusy}" tabindex="0">${state.terminalLines.join("")}</div>
       <form class="terminal-input" id="terminal-form">
-        <label for="terminal-command">guest@top10:${h(terminalPromptPath())}$</label>
-        <input id="terminal-command" maxlength="500" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command; type help for commands" autofocus>
-        <i aria-hidden="true">▊</i>
+        <label for="terminal-command"><span class="terminal-user">guest@archive</span><span>${h(terminalPromptPath())}</span><b aria-hidden="true">$</b></label>
+        <input id="terminal-command" type="text" value="${h(state.terminalDraft)}" maxlength="500" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type help to get started" aria-label="Terminal command" aria-describedby="terminal-input-help">
+        <button class="terminal-run" type="submit">${state.terminalBusy ? "Working…" : "Run ↵"}</button>
+        <div class="terminal-input-help" id="terminal-input-help"><span>Enter to run · ↑ ↓ history · Tab to complete</span><button id="terminal-complete" type="button">Complete command</button></div>
       </form>
-      <footer class="hacker-terminal-foot">
-        <span>concept: <b>the hacker terminal</b></span><span>${state.archiveTotal.toLocaleString()} docs</span><span>md ${Math.round(mdCount / Math.max(1, state.archiveTotal) * 100)}%</span><span>pdf ${Math.round(pdfCount / Math.max(1, state.archiveTotal) * 100)}%</span><span>↑/↓ history · Tab completes</span>
-      </footer>
+      <footer class="hacker-terminal-foot"><span><b>${state.archiveTotal.toLocaleString()}</b> records</span><span>${mdCount.toLocaleString()} Markdown · ${pdfCount.toLocaleString()} PDF</span><span>Archive commands only</span></footer>
     </section>`;
 
   $("#terminal-form").addEventListener("submit", (event) => {
@@ -2237,22 +2323,48 @@ function renderTerminal() {
     if (url) window.open(url, "_blank", "noopener,noreferrer");
   }));
   const input = $("#terminal-command");
+  const rememberDraft = () => { state.terminalDraft = input.value; };
+  input.addEventListener("input", rememberDraft);
+  $("#terminal-collection").addEventListener("change", (event) => {
+    if (!event.target.value) return;
+    state.terminalBrowse = event.target.value;
+    runTerminalCommand(`ls /${event.target.value}`);
+  });
+  $("[data-term-fill]").addEventListener("click", () => {
+    input.value = "grep ";
+    rememberDraft();
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  });
+  $("#terminal-complete").addEventListener("click", () => {
+    input.value = terminalCompletion(input.value);
+    rememberDraft();
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  });
   input.addEventListener("keydown", (event) => {
+    if (event.isComposing) return;
     if (event.key === "ArrowUp" || event.key === "ArrowDown") {
       if (!state.terminalHistory.length) return;
       event.preventDefault();
+      if (state.terminalHistoryIndex === state.terminalHistory.length) state.terminalHistoryDraft = input.value;
       const delta = event.key === "ArrowUp" ? -1 : 1;
       state.terminalHistoryIndex = clampNumber(state.terminalHistoryIndex + delta, 0, state.terminalHistory.length);
-      input.value = state.terminalHistory[state.terminalHistoryIndex] || "";
-    } else if (event.key === "Tab") {
-      event.preventDefault();
-      input.value = terminalCompletion(input.value);
+      input.value = state.terminalHistory[state.terminalHistoryIndex] ?? state.terminalHistoryDraft ?? "";
+      input.setSelectionRange(input.value.length, input.value.length);
+    } else if (event.key === "Tab" && !event.shiftKey && input.value.trim()) {
+      const completed = terminalCompletion(input.value);
+      if (completed !== input.value) { event.preventDefault(); input.value = completed; }
     }
+    rememberDraft();
   });
+  $$(".hacker-terminal button,.hacker-terminal input,.hacker-terminal select").forEach((control) => { control.disabled = state.terminalBusy; });
   requestAnimationFrame(() => {
     const output = $("#terminal-output");
+    // A route change can remove this terminal before the next frame runs.
+    if (!input.isConnected || !output) return;
     output.scrollTop = output.scrollHeight;
-    input.focus({ preventScroll: true });
+    if (!state.terminalBusy && !documentDialogOpen() && !window.matchMedia("(pointer: coarse)").matches) input.focus({ preventScroll: true });
   });
 }
 
@@ -2439,6 +2551,15 @@ function terminalGrep(args) {
 }
 
 async function runTerminalCommand(rawCommand) {
+  if (state.terminalBusy || !String(rawCommand || "").trim()) return;
+  state.terminalBusy = true;
+  state.terminalDraft = "";
+  renderTerminal();
+  try { await executeTerminalCommand(rawCommand); }
+  finally { state.terminalBusy = false; renderTerminal(); }
+}
+
+async function executeTerminalCommand(rawCommand) {
   const command = String(rawCommand || "").trim().slice(0, 500);
   if (!command) return;
   const parsed = terminalTokens(command);
@@ -3187,8 +3308,11 @@ async function openArtifact(id) {
 
   $("#share-artifact").addEventListener("click", () => shareDocument(item));
 
-  dialog.scrollTop = 0;
   showLockedModal(dialog);
+  // A closed dialog has no layout box, so resetting it before showModal()
+  // leaves its previous scroll offset intact. Reset after opening and focus,
+  // instantly, so every record starts at its heading in every theme.
+  dialog.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
 
 function showPdfFallback(message = "The preserved file is still available using the Open PDF or Download controls above.") {
@@ -3219,6 +3343,7 @@ function inSitePdfReaderUrl(pdfUrl, theme = state.readingTheme) {
   const reader = new URL(PDF_READER_PATH, PDF_READER_ORIGIN);
   reader.searchParams.set("file", pdfUrl);
   reader.searchParams.set("theme", theme === "light" ? "light" : "dark");
+  if (isDiscoveryView()) reader.searchParams.set("palette", state.view);
   return reader.href;
 }
 

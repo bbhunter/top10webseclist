@@ -1,6 +1,44 @@
 // PDF.js 5 follows the newest evergreen-browser baseline. Keep the renderer
 // working on otherwise capable iPhones whose WebKit update trails that baseline.
 // This module runs in both the isolated viewer window and its worker.
+// PDF.js also uses the upsert proposal to cache render state. Calling the
+// intrinsic Map methods preserves cached undefined values and reentrant writes.
+// https://tc39.es/proposal-upsert/#sec-map.prototype.getOrInsertComputed
+if (typeof Map.prototype.getOrInsertComputed !== "function") {
+  const { has, get, set } = Map.prototype;
+  Object.defineProperty(Map.prototype, "getOrInsertComputed", {
+    configurable: true,
+    writable: true,
+    value(key, callback) {
+      const present = has.call(this, key);
+      if (typeof callback !== "function") throw new TypeError("The cache initializer must be a function");
+      if (present) return get.call(this, key);
+      const value = callback(key === 0 ? 0 : key);
+      set.call(this, key, value);
+      return value;
+    }
+  });
+}
+
+if (typeof WeakMap.prototype.getOrInsertComputed !== "function") {
+  const { has, get, set } = WeakMap.prototype;
+  Object.defineProperty(WeakMap.prototype, "getOrInsertComputed", {
+    configurable: true,
+    writable: true,
+    value(key, callback) {
+      const present = has.call(this, key);
+      // Let the native runtime decide which keys can be held weakly, including
+      // symbols in browsers that support them, without changing this cache.
+      set.call(new WeakMap(), key, null);
+      if (typeof callback !== "function") throw new TypeError("The cache initializer must be a function");
+      if (present) return get.call(this, key);
+      const value = callback(key);
+      set.call(this, key, value);
+      return value;
+    }
+  });
+}
+
 if (typeof Promise.withResolvers !== "function") {
   Promise.withResolvers = () => {
     let resolve;

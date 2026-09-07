@@ -50,6 +50,13 @@ a { font: inherit; }
 
 :root[data-theme="light"] .reader-toolbar { background: rgba(234, 237, 243, .97); }
 
+/* Named, allowlisted palettes match the host without accepting arbitrary CSS. */
+:root[data-palette="desk"] { --day-accent:#235bb6; --night-accent:#9bbfff; --day-paper:#f2f5fa; --day-panel:#ffffff; --night-paper:#101a2b; --night-panel:#17243a; }
+:root[data-palette="time"] { --day-accent:#6740a5; --night-accent:#c9b0ff; --day-paper:#f5f1fa; --day-panel:#fffaff; --night-paper:#1c162c; --night-panel:#29203d; }
+:root[data-palette] { --accent:var(--night-accent); --surface:var(--night-paper); --surface-raised:var(--night-panel); --line:color-mix(in srgb,var(--night-accent) 35%,transparent); }
+:root[data-palette][data-theme="light"] { --accent:var(--day-accent); --surface:var(--day-paper); --surface-raised:var(--day-panel); --line:color-mix(in srgb,var(--day-accent) 35%,transparent); }
+:root[data-palette] .reader-toolbar { background:var(--surface-raised); }
+
 .page-controls,
 .zoom-controls { display: flex; align-items: center; gap: 7px; }
 

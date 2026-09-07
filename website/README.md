@@ -6,6 +6,21 @@ repository's real year lists, preliminary collection registry, and reference man
 
 ## Run it
 
+For a complete local preview, including the phone PDF viewer:
+
+```bash
+node website/preview.mjs
+```
+
+Open <http://127.0.0.1:4173/#desk>. This starts a second localhost-only server
+on port 4174 for the isolated PDF reader. Production URLs are replaced only in
+the served preview copies; the production files and reader restrictions stay
+intact. Only website assets and published archive paths are served. Set
+`WEBSEC_PREVIEW_PORT` and `WEBSEC_READER_PORT` to choose different ports.
+
+With this preview running, its actual PDF flow can be checked with
+`PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/preview-test.mjs`.
+
 Serve the repository root (not this directory) so the mockup can load the archive:
 
 ```bash
@@ -21,6 +36,85 @@ Run the archive/link smoke test with:
 ```bash
 node website/smoke-test.mjs
 ```
+
+Browser theme checks cover all nine views at desktop and phone widths, keyboard
+focus after filtering, motion preferences, and reader contrast. With the server
+above running, install the optional test dependency outside the repository:
+
+```bash
+npm install --prefix /tmp/websec-browser-tests playwright@1.55.0
+/tmp/websec-browser-tests/node_modules/.bin/playwright install chromium
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/theme-test.mjs
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/discovery-test.mjs
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/interface-test.mjs
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs WEBSEC_TEST_URL=http://127.0.0.1:4173/ node website/dialog-test.mjs
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs WEBSEC_TEST_URL=http://127.0.0.1:4173/ node website/article-scroll-test.mjs
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/mobile-test.mjs
+```
+
+For the automated accessibility checks, also install `axe-core` in that same
+temporary directory, then run:
+
+```bash
+npm install --prefix /tmp/websec-browser-tests axe-core
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs AXE_SOURCE=/tmp/websec-browser-tests/node_modules/axe-core/axe.min.js node website/accessibility-test.mjs
+```
+
+`interface-test.mjs` checks the requested navigation order, consecutive indices and
+identical sidebar positions, row heights and font sizes across every theme at four
+screen sizes. It also covers Terminal command submission, completion without a Tab
+trap, history, draft retention, busy state and commands finishing after a route change.
+Set `AXE_SOURCE` to include its Terminal accessibility checks.
+
+`dialog-test.mjs` runs against the complete preview on ports 4173/4174. It checks
+record, Markdown, PDF, report and submission panes in all nine themes at desktop
+and phone widths, including both discovery appearances. Genuine backdrop clicks
+close only the topmost pane; interior clicks and drags across its edge keep it
+open. It also checks SVG close-icon centring, scroll restoration and reader cleanup.
+
+`article-scroll-test.mjs` checks that new and reopened records start at their heading
+after scrolling another record or opening its video player, across all nine views
+at desktop and phone widths. It verifies player teardown and preservation of the
+background page position. The external video frame uses a local response fixture.
+
+`mobile-test.mjs` uses touch input to open all nine routes at 320, 390 and 768px,
+checks direct-link reloads, popup bounds, default and saved appearance, rotation,
+and entering/exiting fullscreen in landscape without the native Fullscreen API.
+It also checks that switching views resets the reading position and that the two
+compact views expose their primary filter near the top of the screen.
+
+Set `WEBSEC_TEST_URL` to use a different local preview URL. The production website
+still needs no JavaScript dependencies.
+
+### Regression coverage for future website changes
+
+With `node website/preview.mjs` running and the optional Playwright/axe dependencies
+installed as above, run all nine suites with one command:
+
+```bash
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs AXE_SOURCE=/tmp/websec-browser-tests/node_modules/axe-core/axe.min.js node website/regression-test.mjs
+```
+
+The runner uses the complete preview at port 4173 for every suite, includes Terminal
+accessibility checks, and fails on the first failed suite. It clears the focused
+`WEBSEC_DIALOG_WIDTH` override so the complete popup viewport matrix always runs.
+These are shared interface contracts: preserve them when adding or changing themes.
+
+| Behaviour to preserve | Regression coverage |
+|---|---|
+| Field Guide/Gazette removed; Research Desk/Time Machine retained; dark default and saved appearance | `mobile-test.mjs`, `discovery-test.mjs` |
+| Compact headers with useful controls near the top; all views fit phone widths and support navigation, rotation and fullscreen | `mobile-test.mjs`, `theme-test.mjs` |
+| Requested theme order, consecutive numbering and identical sidebar spacing/fonts | `interface-test.mjs` |
+| Recording markers in Desk/Time Machine, including uncertain matches; Desk video filter combined with other filters | `discovery-test.mjs` |
+| Terminal caret, Run/help/search controls, keyboard history, completion without a Tab trap, retained drafts and safe route changes during pending commands | `interface-test.mjs` |
+| Theme colours in records, forms, search and readers; readable light/dark contrast | `discovery-test.mjs`, `theme-test.mjs`, `accessibility-test.mjs` |
+| Outside click/tap closes only the topmost popup in every view; inside clicks and selection drags keep it open; close icons stay centred | `dialog-test.mjs` |
+| New/reopened articles start at the heading after scrolling or opening a video; previous video frame is removed; background page position is preserved | `article-scroll-test.mjs` |
+| Mobile PDFs render through the isolated local reader; viewer switching and theme changes work | `preview-test.mjs`, `discovery-test.mjs`, `dialog-test.mjs` |
+
+Browser coverage uses Chromium with desktop and touch/mobile emulation. The video
+scroll regression substitutes a local iframe response; it checks the app's player
+lifecycle, not playback on YouTube. Native Safari/device checks remain manual.
 
 Regenerate or check the progressive data with:
 
@@ -119,6 +213,44 @@ fullscreen is unavailable.
 
 ## Archive routes
 
+The navigation order is Investigation Board (01), Museum (02), Library (03),
+Time Machine (04), Signals (05), Constellation (06), Hacker Terminal (07), and
+Research Desk (08), followed by the Favourites & Read utility (09).
+
+Popup behaviour also belongs to the shared shell. Every modal uses
+`wireDialogDismissal` and the `.close-icon` SVG treatment: use the same outside-click
+contract and centred close controls when adding a theme or popup. Phone readers
+keep a visible outer margin so the backdrop can be tapped. Keep existing
+close handlers responsible for playback, iframe, URL and scroll cleanup.
+Reset article scroll only after opening and focusing the dialog: a hidden dialog
+has no layout box, so a reset before `showModal()` cannot clear the previous offset.
+
+Sidebar geometry belongs to the shared shell: themes can change its palette,
+but must not override its row heights, typography, gaps or brand spacing. Keep the
+navigation indices and view kickers synchronized. `interface-test.mjs` enforces this.
+
+Two discovery views share the original archive's records and saved/read state:
+
+- `#desk` — **Research Desk**, a blue catalogue with search, author, collection,
+  subject, selection, reading-status and video filters; sorting, pagination and compact rows.
+- `#time` — **Time Machine**, a violet chronological view with subject filters,
+  year jumps, expandable collections and earlier/later archive comparisons.
+
+Both default to dark mode, remember an explicit light/dark preference, and put filters
+directly below a compact title and appearance bar. Shared record, report,
+submission and search panels use the active palette. The independent reading
+theme keeps that colour family in Markdown and the isolated mobile PDF reader.
+Preliminary collections remain explicitly unranked. Dates represent collection
+years rather than necessarily publication dates. Both views use the shared play
+badge and accessible recording labels: confirmed recordings and possible matches
+remain distinct. Desk's video filter includes both kinds of link, combines with
+its other filters, and clears through Reset filters.
+
+`discovery-test.mjs` checks functional controls, popup palettes, persistence and
+mobile navigation. It also tests the real isolated PDF reader and Markdown
+switching using production origins intercepted with local files, without fetching
+third-party content or weakening the deployed reader's origin restrictions.
+
 Every route is a way into the same archive, so the browser tab always reads
 *Web Hacking Techniques Index* and the archive names itself once, in the masthead
 heading beside the brand mark. Above the records a route shows only its own name, as
@@ -130,7 +262,11 @@ the mode currently open — never as the name of the site.
 - Signal Observatory — a longitudinal frequency map for comparing technique
   families across every collection and opening the research behind each peak
 - Research Constellation — a freely navigable 3D map of every selected year
-- The Hacker Terminal — a CRT archive shell with safe regular-expression search
+- The Hacker Terminal — a green archive console with quick actions, collection
+  browsing, readable results, a native text caret and a Run button. Enter runs a
+  command; arrows recall history; Tab completes an unfinished prefix and otherwise
+  moves focus normally. Complete command also works by touch. Draft input survives
+  switching views, and pending commands cannot replace a different active theme.
 - The Investigation Board — a draggable corkboard archive view and a compact tap list
   on narrow phones
 - Favourite Research — a browser-persistent shortlist shared by every view
@@ -142,6 +278,10 @@ appears on exhibits, books, stars and case files. Preserved Markdown opens
 in a shared formatted reader with a table of contents, reading progress, code and
 table formatting, and links to the raw Markdown, PDF and original source.
 The Markdown and PDF viewers share a persistent light/dark reading-theme control.
+Light readers use darker variants of each archive view's accent for readable
+links, labels and focus indicators. The ambient-motion control remembers your
+choice and pauses constellation drift and animated navigation; a system request
+for reduced motion takes precedence and updates immediately.
 For PDFs the theme changes the viewer controls and surrounding stage while the
 browser-native document keeps its original page colours.
 

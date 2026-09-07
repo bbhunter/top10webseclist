@@ -3,6 +3,7 @@ import { constants } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import vm from "node:vm";
+import "./pdf-reader-polyfills-test.mjs";
 import { safePdfUrl as safePdfReaderUrl } from "./pdf-reader-url.mjs";
 
 const root = process.cwd();
@@ -126,6 +127,8 @@ const mockupFiles = [
   "website/brand-mark.svg",
   "website/styles.css",
   "website/app.js",
+  "website/discovery.js",
+  "website/discovery.css",
   "website/constellation.js",
   "website/pdf-reader.html",
   "website/pdf-reader.css",
@@ -145,6 +148,7 @@ const missingMockupFiles = [];
 for (const file of mockupFiles) if (!(await exists(file))) missingMockupFiles.push(file);
 const indexSource = await readFile(path.join(root, "website/index.html"), "utf8");
 const appSource = await readFile(path.join(root, "website/app.js"), "utf8");
+const discoverySource = await readFile(path.join(root, "website/discovery.js"), "utf8");
 const constellationSource = await readFile(path.join(root, "website/constellation.js"), "utf8");
 const stylesSource = await readFile(path.join(root, "website/styles.css"), "utf8");
 const pdfReaderHtmlSource = await readFile(path.join(root, "website/pdf-reader.html"), "utf8");
@@ -159,7 +163,7 @@ const progressiveCatalogue = JSON.parse(await readFile(path.join(root, "website/
 const progressiveRecord = [...progressiveCatalogue.years].reverse().find((record) => record.status === "final") || progressiveCatalogue.years.at(-1);
 const progressiveShard = JSON.parse(await readFile(path.join(root, `website/data/collections/${progressiveRecord.id}.json`), "utf8"));
 const progressiveWireKeysAbsent = ["readKey", "read", "favouriteKey", "favourite"].every((key) => !Object.hasOwn(progressiveShard.items[0], key));
-const sourceBundle = `${indexSource}\n${appSource}`;
+const sourceBundle = `${indexSource}\n${appSource}\n${discoverySource}`;
 const unsafeBlankTargets = sourceBundle.match(/<a\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/gi) || [];
 
 // Exercise the actual URL and Markdown renderers without a browser. All source
@@ -172,6 +176,7 @@ const clientContext = vm.createContext({
   document: { querySelector: () => null, querySelectorAll: () => [] },
   navigator: {}
 });
+vm.runInContext(discoverySource, clientContext);
 vm.runInContext(appSource.replace(/\nloadArchive\(\);\s*$/, ""), clientContext);
 const clientEval = (expression) => vm.runInContext(expression, clientContext);
 let progressiveRequestUrl = "";
@@ -542,7 +547,7 @@ const constellationChecks = [
 ];
 const requestedViews = [...indexSource.matchAll(/data-view="([^"]+)"/g)].map((match) => match[1]);
 const experienceChecks = [
-  JSON.stringify(requestedViews) === JSON.stringify(["museum", "library", "signals", "constellation", "terminal", "evidence", "favourites"]),
+  JSON.stringify(requestedViews) === JSON.stringify(["evidence", "museum", "library", "time", "signals", "constellation", "terminal", "desk", "favourites"]),
   newestFirstYearIds[0] === "2026-ai" && newestFirstYearIds[1] === "2025" && newestFirstYearIds.at(-1) === "2006",
   newestFirstYearIds.every((year, index) => index === 0 || Number.parseInt(newestFirstYearIds[index - 1], 10) >= Number.parseInt(year, 10)),
   JSON.stringify(newestFirstYearPillIds) === JSON.stringify(newestFirstYearIds),
@@ -592,7 +597,7 @@ const experienceChecks = [
   appSource.includes('$("#artifact-digest").addEventListener("click", handleArtifactTagClick)'),
   appSource.includes('aria-controls="global-results"'),
   appSource.includes("document.documentElement.dataset.view = state.view"),
-  appSource.includes('$("#artifact-dialog").addEventListener("click", closeDialogFromBackdrop)'),
+  appSource.includes("wireDialogDismissal($(id))"),
   // The record dialog and the report that opens on top of it share ONE per-room
   // palette, so the selector carries both. Asserting the text keeps a later
   // edit from theming the record and leaving the report in the contribution
@@ -664,6 +669,7 @@ const webManifest = JSON.parse(await readFile(path.join(root, "website/site.webm
 const metaContent = (name) => (indexSource.match(new RegExp(`<meta (?:name|property)="${name}" content="([^"]*)"`)) || [])[1];
 const documentTitle = (indexSource.match(/<title>([^<]*)<\/title>/) || [])[1] || "";
 const viewTitles = Object.values(JSON.parse(clientEval("JSON.stringify(VIEWS)"))).map((view) => view.title);
+const interfaceAssetVersions = [...indexSource.matchAll(/(?:href|src)="(?:styles\.css|app\.js|constellation\.js|discovery\.(?:js|css))\?v=(\d{8}\.\d+)"/g)].map((match) => match[1]);
 const deploymentChecks = [
   structuredData?.["@type"] === "WebSite",
   structuredData?.name === SITE_NAME,
@@ -675,13 +681,13 @@ const deploymentChecks = [
   webManifest.name === SITE_NAME,
   clientEval("SITE_TITLE") === SITE_NAME,
   documentTitle.startsWith(SITE_NAME),
-  viewTitles.length === 7,
+  viewTitles.length === 9,
   !viewTitles.some((title) => `${documentTitle} ${metaContent("og:site_name")} ${structuredData?.name}`.includes(title)),
   indexSource.includes('rel="canonical" href="https://webhacklist.com/"'),
   indexSource.includes('rel="manifest" href="site.webmanifest"'),
   indexSource.includes('id="site-fullscreen"'),
   indexSource.includes('id="view-fullscreen"'),
-  appSource.includes('const FULLSCREEN_VIEWS = new Set(["museum", "library", "signals", "constellation", "terminal", "evidence", "favourites"])'),
+  clientEval('["desk", "time"].every((view) => FULLSCREEN_VIEWS.has(view))'),
   clientEval(`[...FULLSCREEN_VIEWS].every((view) => Object.hasOwn(VIEWS, view)) && Object.keys(VIEWS).every((view) => FULLSCREEN_VIEWS.has(view))`) === true,
   appSource.includes("function toggleSiteFullscreen"),
   appSource.includes("requestFullscreen(document.documentElement)"),
@@ -713,7 +719,7 @@ const deploymentChecks = [
   // stands in for the size no HEAD request will report.
   appSource.includes("state.pdfBytes = Number(ARCHIVE_CATALOGUE?.hosting?.cloudflareMaxAssetBytes) || 0;"),
   indexSource.includes('id="pdf-fallback-open"'),
-  indexSource.includes('href="styles.css?v=20260818.1"') && indexSource.includes('src="app.js?v=20260818.1"'),
+  interfaceAssetVersions.length === 5 && new Set(interfaceAssetVersions).size === 1,
   (indexSource.match(/id="mobile-menu-backdrop"/g) || []).length === 1,
   appSource.includes('$("#mobile-menu-backdrop").addEventListener("click", () => {') && appSource.includes('focusWithoutScroll($("#mobile-menu"))'),
   stylesSource.includes("body.menu-open .mobile-menu-backdrop") && stylesSource.includes("pointer-events: auto"),
@@ -723,7 +729,7 @@ const deploymentChecks = [
   indexSource.includes('id="pdf-links-backdrop"') && indexSource.includes('id="pdf-links-toggle" type="button" aria-controls="pdf-links"'),
   appSource.includes('$("#pdf-dialog").addEventListener("cancel"') && appSource.includes('$("#pdf-links-backdrop").hidden = !show'),
   stylesSource.includes(".pdf-links-backdrop[hidden] { display: none; }") && stylesSource.includes(".pdf-links header button { width: 42px; height: 42px; }"),
-  pdfReaderHtmlSource.includes('src="pdf-reader.mjs?v=20260816.1"') && pdfReaderHtmlSource.includes('href="pdf-reader.css?v=20260816.1"'),
+  pdfReaderHtmlSource.includes(`src="pdf-reader.mjs?v=${interfaceAssetVersions[0]}"`) && pdfReaderHtmlSource.includes(`href="pdf-reader.css?v=${interfaceAssetVersions[0]}"`),
   pdfReaderCssSource.includes("overscroll-behavior: contain") && pdfReaderCssSource.includes("-webkit-overflow-scrolling: touch"),
   stylesSource.includes("body.document-dialog-open") && stylesSource.includes("overscroll-behavior: contain"),
   stylesSource.includes(".reader-dialog[open] { display: grid") && stylesSource.includes(".pdf-dialog[open] { display: grid"),
@@ -869,7 +875,7 @@ const contributionChecks = [
   /function openReportDialog[\s\S]*?dialog\.dataset\.view = state\.view/.test(appSource),
   stylesSource.includes(".report-dialog .artifact-actions a") && !stylesSource.includes(".report-dialog .artifact-actions a, .report-dialog .artifact-actions button { color: #041a10"),
   // And it dismisses the way every other modal here does.
-  appSource.includes('$("#report-dialog").addEventListener("click", closeDialogFromBackdrop)'),
+  appSource.includes("function wireDialogDismissal(dialog)"),
   submissionMatching.exact === "2019-1",
   submissionMatching.loose === "2019-1",
   submissionMatching.tracked === "2019-1",

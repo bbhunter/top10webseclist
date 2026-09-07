@@ -62,7 +62,7 @@ function owaspMap(vocabulary) {
   return map;
 }
 
-function parserContext(appSource, registry, manifest, owasp) {
+function parserContext(appSource, discoverySource, registry, manifest, owasp) {
   const storage = new Map();
   const context = vm.createContext({
     URL,
@@ -81,6 +81,7 @@ function parserContext(appSource, registry, manifest, owasp) {
   });
   const parserSource = appSource.replace(/\nloadArchive\(\);\s*$/, "\n");
   if (parserSource === appSource) throw new Error("could not isolate app parser from its browser boot call");
+  vm.runInContext(discoverySource, context, { filename: "discovery.js" });
   vm.runInContext(parserSource, context, { filename: "app.js" });
   vm.runInContext(`
     YEAR_RECORDS = __registry.years;
@@ -117,12 +118,13 @@ async function main() {
   const checkOnly = process.argv.slice(2).includes("--check");
   const unknownArgs = process.argv.slice(2).filter((argument) => argument !== "--check");
   if (unknownArgs.length) throw new Error(`unknown argument(s): ${unknownArgs.join(", ")}`);
-  const [registry, hosting, manifest, appSource, vocabulary] = await Promise.all([
+  const [registry, hosting, manifest, appSource, vocabulary, discoverySource] = await Promise.all([
     readJson(REGISTRY_PATH),
     readJson(HOSTING_PATH),
     readJson(MANIFEST_PATH),
     fs.readFile(path.join(APP_DIR, "app.js"), "utf8"),
-    readJson(VOCABULARY_PATH)
+    readJson(VOCABULARY_PATH),
+    fs.readFile(path.join(APP_DIR, "discovery.js"), "utf8")
   ]);
   if (registry?.schema !== 1 || !Array.isArray(registry.years) || !registry.years.length) {
     throw new Error("archive-years.json must contain a non-empty schema-1 years array");
@@ -140,7 +142,7 @@ async function main() {
     }
   }
 
-  const context = parserContext(appSource, registry, manifest, owaspMap(vocabulary));
+  const context = parserContext(appSource, discoverySource, registry, manifest, owaspMap(vocabulary));
   const parsed = [];
   for (const record of registry.years) {
     context.__year = record.id;

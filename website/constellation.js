@@ -25,6 +25,8 @@
   const ease = (value) => 1 - Math.pow(1 - value, 3);
   const WINNER_GOLD = "#f6c96b";
   const isTopTen = (item) => item?.section === "winner" || (Number.isFinite(item?.rank) && item.rank > 0);
+  const motionReduced = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    || document.body.classList.contains("reduce-motion");
 
   function seedNumber(value) {
     let hash = 2166136261;
@@ -74,6 +76,7 @@
       this.resizeObserver = null;
       this.frame = 0;
       this.lastTime = 0;
+      this.visualTime = 0;
       this.width = 1;
       this.height = 1;
       this.pixelRatio = 1;
@@ -632,8 +635,12 @@
         this.controls.zoomRange.setAttribute("aria-valuetext", `${Math.round(this.camera.distance)} astronomical units`);
       }
       if (this.controls.auto) {
-        this.controls.auto.setAttribute("aria-pressed", String(this.autoRotate));
-        this.controls.auto.textContent = this.autoRotate ? "Drift on" : "Drift off";
+        const reduced = motionReduced();
+        const drifting = this.autoRotate && !reduced;
+        this.controls.auto.setAttribute("aria-pressed", String(drifting));
+        this.controls.auto.textContent = drifting ? "Drift on" : "Drift off";
+        this.controls.auto.disabled = reduced;
+        this.controls.auto.title = reduced ? "Drift paused while motion is reduced" : "Toggle camera drift";
       }
       if (this.controls.labels) {
         this.controls.labels.setAttribute("aria-pressed", String(this.showLabels));
@@ -654,7 +661,7 @@
       this.setAutoRotate(false);
       this.flight = {
         started: performance.now(),
-        duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 1 : 1050,
+        duration: motionReduced() ? 1 : 1050,
         fromTarget: { ...this.camera.target },
         target: { ...target },
         fromDistance: this.camera.distance,
@@ -782,8 +789,11 @@
     }
 
     updateComets(delta, time) {
-      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches || document.body.classList.contains("reduce-motion");
-      if (!reduced && time >= this.nextComet && this.comets.length === 0) {
+      if (motionReduced()) {
+        this.comets = [];
+        return;
+      }
+      if (time >= this.nextComet && this.comets.length === 0) {
         this.spawnComet();
         this.nextComet = time + 38000 + this.cometRandom() * 52000;
       }
@@ -796,7 +806,7 @@
 
     update(delta, time) {
       if (this.flight) {
-        const progress = clamp((time - this.flight.started) / this.flight.duration, 0, 1);
+        const progress = motionReduced() ? 1 : clamp((time - this.flight.started) / this.flight.duration, 0, 1);
         const amount = ease(progress);
         this.camera.target.x = mix(this.flight.fromTarget.x, this.flight.target.x, amount);
         this.camera.target.y = mix(this.flight.fromTarget.y, this.flight.target.y, amount);
@@ -806,7 +816,7 @@
         this.camera.pitch = mix(this.flight.fromPitch, this.flight.pitch, amount);
         if (progress >= 1) this.flight = null;
       } else {
-        if (this.autoRotate) this.camera.yaw += delta * 0.000055;
+        if (this.autoRotate && !motionReduced()) this.camera.yaw += delta * 0.000055;
         const movement = delta * Math.max(0.03, this.camera.distance / 1000);
         if (this.keys.has("KeyW") || this.keys.has("ArrowUp")) this.setDistance(this.camera.distance - movement * 0.65);
         if (this.keys.has("KeyS") || this.keys.has("ArrowDown")) this.setDistance(this.camera.distance + movement * 0.65);
@@ -824,11 +834,19 @@
     }
 
     updateNodePhysics(delta) {
+      const reduced = motionReduced();
       const seconds = Math.min(delta, 32) / 1000;
       const damping = Math.exp(-7.5 * seconds);
       const grabbed = this.drag?.node;
       this.nodes.forEach((node) => {
         if (node === grabbed) return;
+        if (reduced) {
+          node.x = node.anchorX;
+          node.y = node.anchorY;
+          node.z = node.anchorZ;
+          node.velocityX = node.velocityY = node.velocityZ = 0;
+          return;
+        }
         node.velocityX += (node.anchorX - node.x) * 15 * seconds;
         node.velocityY += (node.anchorY - node.y) * 15 * seconds;
         node.velocityZ += (node.anchorZ - node.z) * 15 * seconds;
@@ -1438,6 +1456,8 @@
     }
 
     render(time) {
+      if (!motionReduced()) this.visualTime = time;
+      time = this.visualTime;
       const ctx = this.ctx;
       ctx.setTransform(this.pixelRatio, 0, 0, this.pixelRatio, 0, 0);
       ctx.clearRect(0, 0, this.width, this.height);
