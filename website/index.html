@@ -65,7 +65,7 @@
            rather than over the reading area: the heading above the records
            names the mode being read, and a search engine reads an h1 as a
            signal for the name of the SITE. -->
-      <a class="brand" href="./#museum" aria-label="Web Hacking Techniques Index home">
+      <a class="brand" href="./#evidence" aria-label="Web Hacking Techniques Index home">
         <img class="brand-mark" src="brand-mark.svg" alt="">
         <h1 class="brand-copy"><strong>WEB HACKING</strong><b>TECHNIQUES INDEX</b><em>Research archive</em></h1>
       </a>
@@ -81,10 +81,10 @@
 
       <nav class="concept-nav">
         <p class="nav-label"><span>Ways into the archive</span><b>09</b></p>
-        <button class="nav-item" data-view="evidence">
+        <button class="nav-item active" data-view="evidence" aria-current="page">
           <span class="nav-index">01</span><span class="nav-copy"><strong>Investigation Board</strong><em>Casework surface</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
-        <button class="nav-item active" data-view="museum" aria-current="page">
+        <button class="nav-item" data-view="museum">
           <span class="nav-index">02</span><span class="nav-copy"><strong>Museum</strong><em>Exhibition rooms</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
         <button class="nav-item" data-view="library">
@@ -149,9 +149,9 @@
       <main id="main-content" tabindex="-1">
         <header class="view-intro">
           <div>
-            <p class="eyebrow" id="view-kicker">Room 01 / exhibition mode</p>
-            <h2 class="view-mode" id="view-mode">Museum at Night</h2>
-            <p id="view-description">Walk through twenty years of research as rooms, illuminated winners and recovered artifacts.</p>
+            <p class="eyebrow" id="view-kicker">Case 01 / investigation mode</p>
+            <h2 class="view-mode" id="view-mode">The Investigation Board</h2>
+            <p id="view-description">Open one corkboard case per year, rearrange its evidence and follow the red thread through the winning research.</p>
           </div>
           <div class="view-intro-tools">
             <div id="discovery-appearance" hidden></div>
@@ -388,6 +388,6 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="constellation.js?v=20260907.4"></script>
   <script src="discovery.js?v=20260907.4"></script>
-  <script src="app.js?v=20260907.4"></script>
+  <script src="app.js?v=20260908.1"></script>
 </body>
 </html>

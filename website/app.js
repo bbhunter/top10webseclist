@@ -190,7 +190,7 @@ const state = {
   items: [],
   archiveTotal: 0,
   manifestCount: 0,
-  view: "museum",
+  view: "evidence",
   year: "",
   query: "",
   starYear: "",
@@ -1392,7 +1392,7 @@ function viewCopy(view = state.view) {
   if (view === "favourites") {
     return Object.hasOwn(SAVED_VIEW_COPY, state.savedMode) ? SAVED_VIEW_COPY[state.savedMode] : SAVED_VIEW_COPY.favourites;
   }
-  return isViewName(view) ? VIEWS[view] : VIEWS.museum;
+  return isViewName(view) ? VIEWS[view] : VIEWS.evidence;
 }
 
 function setSavedMode(mode) {
