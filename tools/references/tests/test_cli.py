@@ -766,5 +766,41 @@ class ImageFetchUrlTests(unittest.TestCase):
         self.assertEqual(found["Figure/overview.png"], "")
 
 
+class PreservedDiagramTests(unittest.TestCase):
+    def lookup(self, *, path_override=None, tamper=False, svg=None):
+        import hashlib
+        import json
+        from unittest.mock import patch
+        source = "flowchart LR\nA-->B"
+        digest = hashlib.sha256(source.encode()).hexdigest()
+        svg = svg or b'<svg xmlns="http://www.w3.org/2000/svg"><text>Diagram</text></svg>'
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            relative = "archived-references/diagrams/" + digest + ".svg"
+            target = root / relative
+            target.parent.mkdir(parents=True)
+            target.write_bytes(svg + (b" " if tamper else b""))
+            (root / "archived-references/diagram-assets.json").write_text(json.dumps({
+                "diagrams": [{"source": source, "path": path_override or relative,
+                              "sha256": hashlib.sha256(svg).hexdigest()}]}))
+            with patch.object(refs.paths, "repo_root", return_value=root):
+                return refs._image_source({}, _Store())("mermaid:" + digest)
+
+    def test_verified_local_svg_is_available_without_source_images(self):
+        self.assertTrue(self.lookup().startswith("data:image/svg+xml;base64,"))
+
+    def test_diagram_path_cannot_escape_the_archive(self):
+        with self.assertRaisesRegex(ValueError, "invalid preserved diagram path"):
+            self.lookup(path_override="../../outside.svg")
+
+    def test_changed_diagram_bytes_are_rejected(self):
+        with self.assertRaisesRegex(ValueError, "hash mismatch"):
+            self.lookup(tamper=True)
+
+    def test_active_svg_is_rejected_even_when_its_hash_matches(self):
+        with self.assertRaisesRegex(ValueError, "active"):
+            self.lookup(svg=b'<svg xmlns="http://www.w3.org/2000/svg"><script>alert(1)</script></svg>')
+
+
 if __name__ == "__main__":
     unittest.main()

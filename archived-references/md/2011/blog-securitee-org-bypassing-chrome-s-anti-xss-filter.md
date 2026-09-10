@@ -3,19 +3,18 @@ type: Article
 title: "Bypassing Chrome's Anti-XSS filter"
 description: "Chrome's static anti-XSS filter inspected each reflected parameter on its own, so a script tag in one parameter was stripped. Splitting the payload across two reflected parameters and opening a JavaScript multi-line comment in the first, closing it in the second, hides the intervening HTML from the parser and the alert fires. Google declined to treat it as in scope."
 resource: "http://blog.securitee.org/?p=37"
-tags: [article, webseclist-reference, en-US, blog-securitee-org, xss, filter-bypass, sanitizer-bypass, javascript, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, blog-securitee-org, xss, filter-bypass, sanitizer-bypass, javascript, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:07:12+00:00"
+  at: "2026-09-10T00:56:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "http://blog.securitee.org/?p=37"
     title: "Bypassing Chrome's Anti-XSS filter"
     author: Nick Nikiforakis
-  - id: capture
-    resource: "https://web.archive.org/web/20111225204159/http://blog.securitee.org/?p=37"
+    last_modified: 2011-09-15
 also_at: []
 authors:
   - Nick Nikiforakis
@@ -23,22 +22,22 @@ canonical_url: ""
 cited_by:
   - "2011.md:13"
 commit: ""
-content_sha256: f4f5351549930b84206d914b5349cab0f7eb133b90792758a6a2adfe9b56b017
+content_sha256: 26a4d8dd024a7f42fa08e557598ce3d1505b598c11e800bd1d268022c6b08e95
 depth: full
 depth_reason: default
 kind: article
-language: en-US
+language: ""
 licence: unknown
 original_url: "http://blog.securitee.org/?p=37"
-published: ""
+published: 2011-09-15
 publisher: blog.securitee.org
 publisher_english: ""
 raw_sha256: cd4daface5a4fb29e4411bfab591686f8263faa525d858ab9146a5bf5f582d55
 retrieved_from: "http://blog.securitee.org/?p=37"
-retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:07:12+00:00"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:56:02+00:00"
 slug: blog-securitee-org-bypassing-chrome-s-anti-xss-filter
-snapshot: 20111225204159
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,10 +47,9 @@ translation_of: ""
 
 **Bypassing Chrome's Anti-XSS filter** - Nick Nikiforakis, blog.securitee.org.
 
-- Published: date not stated
+- Published: 2011-09-15
 - Original: <http://blog.securitee.org/?p=37>
-- Preserved from: http://blog.securitee.org/?p=37 (stored) on 2026-08-10
-- Capture timestamp: 20111225204159
+- Preserved from: http://blog.securitee.org/?p=37 (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,7 +66,7 @@ page going offline. To read the original, follow the link above.
 
  Posted on [September 15, 2011](http://blog.securitee.org/?p=37) by [nikifor](http://blog.securitee.org/?author=1)
 
-Its been a while since my last post so I decided to make it worthwhile ![:)](http://blog.securitee.org/wp-includes/images/smilies/icon_smile.gif) . I was recently checking a friend’s site for the classic Web application vulnerabilities, when I found a reflected XSS attack. While I was investigating the bug, I noticed that while the bug worked on Mozilla’s Firefox, it didn’t work on Google’s Chrome. As it turns out, Chrome uses an Anti-XSS filter, based on static analysis, which attempts to detect XSS. If it detects such an attempt, it filters out the injected code, and effectively stops the on-going attack.
+Its been a while since my last post so I decided to make it worthwhile :) . I was recently checking a friend’s site for the classic Web application vulnerabilities, when I found a reflected XSS attack. While I was investigating the bug, I noticed that while the bug worked on Mozilla’s Firefox, it didn’t work on Google’s Chrome. As it turns out, Chrome uses an Anti-XSS filter, based on static analysis, which attempts to detect XSS. If it detects such an attempt, it filters out the injected code, and effectively stops the on-going attack.
 
 In order to demonstrate this, I made a vulnerable page at [http://securitee.org/files/chrome_xss.php](http://securitee.org/files/chrome_xss.php). This page simply reads two GET parameters, namely **a** and **b**, which it then prints out in the resulting page.
 
@@ -79,7 +77,7 @@ http://securitee.org/files/chrome_xss.php?a=<u>HTML_INJECTION</u>
 &b=bar
 ```
 
-[![Injecting HTML tags in vulnerable page](http://blog.securitee.org/wp-content/uploads/2011/09/chrome_xss1-1024x681.png)](http://blog.securitee.org/?attachment_id=38)
+[![Injecting HTML tags in vulnerable page](../../figures/2011/blog-securitee-org-bypassing-chrome-s-anti-xss-filter/figure-2.png)](http://blog.securitee.org/?attachment_id=38)
 
 Now if you try to replace these tags by the standard alert function of JavaScript you will see that it doesn’t work.
 
@@ -88,7 +86,7 @@ http://securitee.org/files/chrome_xss.php?a=<script>alert(1);
 </script>&b=bar
 ```
 
-[![Attempting to inject JavaScript](http://blog.securitee.org/wp-content/uploads/2011/09/chrome_xss2-1024x679.png)](http://blog.securitee.org/?attachment_id=41)
+[![Attempting to inject JavaScript](../../figures/2011/blog-securitee-org-bypassing-chrome-s-anti-xss-filter/figure-3.png)](http://blog.securitee.org/?attachment_id=41)
 
 Attempting (and failing) to inject JavaScript
 
@@ -99,7 +97,7 @@ http://securitee.org/files/chrome_xss.php?a=<script>alert(1);
 &b=bar
 ```
 
-[![Ommiting the closing script tag](http://blog.securitee.org/wp-content/uploads/2011/09/chrome_xss3-1024x684.png)](http://blog.securitee.org/?attachment_id=42)
+[![Ommiting the closing script tag](../../figures/2011/blog-securitee-org-bypassing-chrome-s-anti-xss-filter/figure-4.png)](http://blog.securitee.org/?attachment_id=42)
 
 Ommiting the closing script tag
 
@@ -110,37 +108,13 @@ http://securitee.org/files/chrome_xss.php?a=<script>alert(1);/*
 &b=*/</script>
 ```
 
-[![Bypassing Chrome's XSS filter](http://blog.securitee.org/wp-content/uploads/2011/09/chrome_xss4-1024x724.png)](http://blog.securitee.org/?attachment_id=43)
+[![Bypassing Chrome's XSS filter](../../figures/2011/blog-securitee-org-bypassing-chrome-s-anti-xss-filter/figure-5.png)](http://blog.securitee.org/?attachment_id=43)
 
 At last... success!
 
-And indeed, it worked!!! The multi-line comments mean nothing to the HTML but mean the world when they are placed in a script environment ![:)](http://blog.securitee.org/wp-includes/images/smilies/icon_smile.gif) In summary, all you need to bypass the XSS filter is to have at least two variables under your control, and break up your injected script, with the help of multi-line comments, to use both.
+And indeed, it worked!!! The multi-line comments mean nothing to the HTML but mean the world when they are placed in a script environment :) In summary, all you need to bypass the XSS filter is to have at least two variables under your control, and break up your injected script, with the help of multi-line comments, to use both.
 
 Till next time
  Nick Nikiforakis
 
-P.S. I have already told the Chrome folks about this, but their answer was that their filter is not meant to protect against this attack… I don’t know why… you can ask [them](http://code.google.com/p/chromium/issues/detail?id=96616) ![;)](http://blog.securitee.org/wp-includes/images/smilies/icon_wink.gif)
-
- This entry was posted in [Uncategorized](http://blog.securitee.org/?cat=1). Bookmark the [permalink](http://blog.securitee.org/?p=37).
-
--
-
-Pingback: [Wie man den Cross-Site-Scripting-Filter von Googles Chrome umgeht « Web-Sicherheit](http://websicherheit.wordpress.com/2011/09/16/wie-man-den-cross-site-scripting-filter-von-googles-chrome-umgeht/)
-
--
-
-Pingback: [XSS Browser Filter Mitigation « Stubbornly Me](http://avengingsyndrome.wordpress.com/2011/11/02/xss-browser-filter-mitigation/)
-
--
-
-Pingback: [Top web hacking techniques « -: Infosec Notes :-](http://infosec-notes.com/2011/12/20/top-web-hacking-techniques/)
-
-### Leave a Reply
-
-![CAPTCHA Image](http://blog.securitee.org/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?difficulty=1&si_form_id=com&prefix=E4ehs0xNg0Wu8aGl)
-
-  ![Refresh Image](http://blog.securitee.org/wp-content/plugins/si-captcha-for-wordpress/captcha/images/refresh.png)
-
- CAPTCHA Code *
-
-You may use these HTML tags and attributes: `<a href="" title=""> <abbr title=""> <acronym title=""> <b> <blockquote cite=""> <cite> <code> <del datetime=""> <em> <i> <q cite=""> <strike> <strong> `
+P.S. I have already told the Chrome folks about this, but their answer was that their filter is not meant to protect against this attack… I don’t know why… you can ask [them](http://code.google.com/p/chromium/issues/detail?id=96616) ;)

@@ -33,7 +33,7 @@ original_url: "https://web.archive.org/web/20170903113359/https://github.com/Fir
 published: ""
 publisher: GitHub
 publisher_english: ""
-raw_sha256: 3cecc4c7af62efc2a7285510ba5da5cd3a5bcad4787ef91e3133cef79d1aa153
+raw_sha256: 2d48a2940cc1adaf680d052aaa407e9aae5aac0994d42777f2c147b69508e05c
 retrieved_from: "https://web.archive.org/web/20180611030944/https://github.com/FireFart/WordpressPingbackPortScanner"
 retrieved_kind: live
 retrieved_utc: "2026-08-09T01:12:39+00:00"

@@ -3,45 +3,41 @@ type: Article
 title: "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
 description: TLS and DTLS CBC decryption runs measurably faster when a record carries at least two bytes of valid padding, because the 13-byte MAC header aligns hash compression blocks differently. Timing TLS error messages on a LAN and averaging out jitter recovers a plaintext block in about 2^23 sessions, fewer with base64 or BEAST-style tricks; DTLS falls in a single session.
 resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
-tags: [article, webseclist-reference, en, isg-rhul-ac-uk, tls, timing-attack, side-channel, https, mitigation, owasp-a02-2021]
+tags: [article, webseclist-reference, isg-rhul-ac-uk, tls, timing-attack, side-channel, https, mitigation, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T19:36:59+00:00"
+  at: "2026-09-10T00:43:44+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
     title: "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
     author: Nadhem AlFardan, Kenny Paterson
-  - id: canonical
-    resource: "http://www.isg.rhul.ac.uk/tls/Lucky13.html"
-  - id: capture
-    resource: "https://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
 also_at: []
 authors:
   - Nadhem AlFardan
   - Kenny Paterson
-canonical_url: "http://www.isg.rhul.ac.uk/tls/Lucky13.html"
+canonical_url: ""
 cited_by:
   - "2013.md:8"
 commit: ""
-content_sha256: 50276b00e591b43a29bd2b23f0fd5ba85728d230261a1df9e0e22b8bf84811a2
+content_sha256: 8143977673ed83ce38be8b04265dcf2b0b8a43410b92c8fd4d2c5facc1678a9c
 depth: full
 depth_reason: default
 kind: article
-language: en
+language: ""
 licence: unknown
 original_url: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
 published: ""
 publisher: isg.rhul.ac.uk
 publisher_english: ""
 raw_sha256: abc11738aa97bec76138b0d76ee333f222a6f108c7a76229574e374b50a9b5a8
-retrieved_from: "http://www.isg.rhul.ac.uk/tls/Lucky13.html"
-retrieved_kind: stored
-retrieved_utc: "2026-08-11T19:36:59+00:00"
+retrieved_from: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:43:44+00:00"
 slug: isg-rhul-ac-uk-lucky-thirteen-breaking-tls-dtls-record-protocols
-snapshot: 20160507023636
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -53,9 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html>
-- Current location: <http://www.isg.rhul.ac.uk/tls/Lucky13.html>
-- Preserved from: http://www.isg.rhul.ac.uk/tls/Lucky13.html (stored) on 2026-08-11
-- Capture timestamp: 20160507023636
+- Preserved from: http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -98,9 +92,9 @@ We have tested our attacks against OpenSSL and GnuTLS. For OpenSSL, a full plain
 
 ## How severe are the attacks?
 
-We have discovered a variety of attacks, each having different complexity and severity. For TLS, our attacks are multi-session attacks, which means that we require the target plaintext to be repeatedly sent in the same position in the plaintext stream in multiple TLS sessions. The attacks involve detecting small differences in the time at which TLS error messages appear on the network in response to attacker-generated ciphertexts. Because of network jitter and other effects, the times observed by the attacker are noisy, and multiple samples of each time are needed to make the attacks reliable. In their simplest form, our attacks can reliably recover a complete block of TLS-encrypted plaintext using about 223 TLS sessions, assuming the attacker is located on the same LAN as the machine being attacked and HMAC-SHA1 is used as TLS's MAC algorithm. This can be reduced to 219 TLS sessions if the plaintext is known to be base64 encoded. This can be further reduced to 213 sessions per byte if a byte of plaintext in one of the last two positions in a block is already known. The attack complexities are different for different MAC algorithms. Further details can be found in our [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf).
+We have discovered a variety of attacks, each having different complexity and severity. For TLS, our attacks are multi-session attacks, which means that we require the target plaintext to be repeatedly sent in the same position in the plaintext stream in multiple TLS sessions. The attacks involve detecting small differences in the time at which TLS error messages appear on the network in response to attacker-generated ciphertexts. Because of network jitter and other effects, the times observed by the attacker are noisy, and multiple samples of each time are needed to make the attacks reliable. In their simplest form, our attacks can reliably recover a complete block of TLS-encrypted plaintext using about 2^23 TLS sessions, assuming the attacker is located on the same LAN as the machine being attacked and HMAC-SHA1 is used as TLS's MAC algorithm. This can be reduced to 2^19 TLS sessions if the plaintext is known to be base64 encoded. This can be further reduced to 2^13 sessions per byte if a byte of plaintext in one of the last two positions in a block is already known. The attack complexities are different for different MAC algorithms. Further details can be found in our [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf).
 
-The sessions needed for our attacks on TLS can be generated in various ways. The attacks cause the TLS session to be terminated, and some applications running over TLS automatically reconnect and retransmit a cookie or password. In a web environment, the sessions may also be generated by client-side malware, in a similar way to the BEAST attack. Unlike BEAST, no exploit is needed to bypass the same origin policy in the web browser, since the attacker does not require the ability to inject plaintext blocks into the TLS session. And, with the BEAST-style enhancements, the attacker no longer needs to know one out of two bytes of plaintext at the end of the block, so that full plaintext recovery of the full base64 encoded plaintext is possible using 213 sessions per byte.
+The sessions needed for our attacks on TLS can be generated in various ways. The attacks cause the TLS session to be terminated, and some applications running over TLS automatically reconnect and retransmit a cookie or password. In a web environment, the sessions may also be generated by client-side malware, in a similar way to the BEAST attack. Unlike BEAST, no exploit is needed to bypass the same origin policy in the web browser, since the attacker does not require the ability to inject plaintext blocks into the TLS session. And, with the BEAST-style enhancements, the attacker no longer needs to know one out of two bytes of plaintext at the end of the block, so that full plaintext recovery of the full base64 encoded plaintext is possible using 2^13 sessions per byte.
 
 For DTLS, the attacks can be carried out in a single session, and known amplification techniques can be used to boost the timing signals relative to the noise. (Further details of these techniques can be found in [our NDSS12 paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/%7Ekp/dtls.pdf).) The attacks are fully practical for DTLS. For further details, see the [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf).
 
@@ -177,3 +171,5 @@ We have no plans to make the source code generally available. If you are a resea
 In short, no. Our long-term aim is to ensure that weak encryption options are eliminated from TLS, to the eventual benefit of all users of TLS. Experience shows that the only way to make this happen is to make the attacks as powerful as possible and build proof-of-concept implementations of them. We have expended significant research effort to develop and prototype our attacks. We disclosed the attacks to affected vendors well in advance of making our research public, and we worked with any vendor who requested our assistance in assessing the attacks and implementing countermeasures.
 
 ## For more information
+
+Please read our [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf) describing the attacks and mitigations. If you have remaining questions after having read the paper, please contact us via e-mail.

@@ -31,7 +31,7 @@ original_url: "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abu
 published: ""
 publisher: GoSecure
 publisher_english: ""
-raw_sha256: c631a3d3997101411f06d3dd486fe43581702de521c9ad795c55066759a0fed7
+raw_sha256: 3f88c3740d467c3932b46b95cb9835108e6ade3db9df0ba1a93bbc972fc5d4e4
 retrieved_from: "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations"
 retrieved_kind: browser
 retrieved_utc: "2026-08-09T02:39:28+00:00"

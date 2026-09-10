@@ -139,7 +139,9 @@
    "class": "research",
    "outcome": "archive",
    "publisher": "Hexacon 2022",
-   "reason": "authors was empty and publisher was empty. The deck's own title slide area names both: line 62 \"Felix Wilhelm, Google Project Zero\" and line 63 \"Hexacon 2022\", with the closing slide giving \"@_fel1x        fwilhelm@google.com\". The PDF file stem is NOT a fault here - it matches the real title slide, \"Hacking the Cloud With SAML\"."
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Hacking the Cloud With SAML",
+   "published": "2022"
   },
   "https://albertofdr.github.io/post/permission-hijacking-2025": {
    "authors": [
@@ -175,8 +177,13 @@
   "https://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the archive site's masthead rather than the document's own title. The document itself is the one cited.",
-   "title": "[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities",
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "publisher": "Full Disclosure / Neohapsis",
+   "published": "2007-01-03"
   },
   "https://aretekzs.com/posts/fuzzing-ws": {
    "class": "research",
@@ -227,6 +234,27 @@
    "outcome": "archive",
    "reason": "authors was empty. The document names them itself: line 67 reads \"Hongyan Chang, Ergute Bao, Xinjian Luo\". Read from the archived document on 2026-08-28."
   },
+  "https://arxiv.org/abs/2602.04653": {
+   "authors": [
+    "Ariel Fogel",
+    "Omer Hofman",
+    "Eilon Cohen",
+    "Roman Vainshtein"
+   ],
+   "publisher": "arXiv",
+   "title": "Inference-Time Backdoors via Chat Templates: From LLM Supply Chains to Agentic System Compromise"
+  },
+  "https://arxiv.org/abs/2602.05401": {
+   "authors": [
+    "Zihan Wang",
+    "Hongwei Li",
+    "Rui Zhang",
+    "Wenbo Jiang",
+    "Guowen Xu"
+   ],
+   "publisher": "arXiv",
+   "title": "BadTemplate: A Training-Free Backdoor Attack via Chat Template Against Large Language Models"
+  },
   "https://arxiv.org/abs/2602.09222": {
    "authors": [
     "Georgios Syros",
@@ -264,8 +292,8 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "title": "The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem (Preprint)",
-   "reason": "title and authors were both wrong: the citation is the sibling link on 2026-ai.md:55, whose link text is the single word \"Preprint\", and pinning the abs page's own PDF as the document left that label as the title. The arXiv page states the real one, \"Title:The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem\", and lists \"Authors:Weihong Wang, Yana Dimova, Victor Vansteenkiste, Tom Van Goethem, Tom Van Cutsem\". The format word keeps it apart from the PoPETs copy of the same paper, which carries the same title."
+   "reason": "title and authors were both wrong: the citation is the sibling link on 2026-ai.md:55, whose link text is the single word \"Preprint\", and pinning the abs page's own PDF as the document left that label as the title. The arXiv page states the real one, \"Title:The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem\", and lists \"Authors:Weihong Wang, Yana Dimova, Victor Vansteenkiste, Tom Van Goethem, Tom Van Cutsem\". The format word keeps it apart from the PoPETs copy of the same paper, which carries the same title.",
+   "title": "The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem (Preprint)"
   },
   "https://arxiv.org/abs/2607.19545": {
    "authors": [
@@ -306,6 +334,30 @@
    "outcome": "archive",
    "reason": "authors was empty. The document names them itself: line 66 reads \"Alexander Panfilov\". Read from the archived document on 2026-08-28."
   },
+  "https://arxiv.org/abs/2609.00060": {
+   "authors": [
+    "Ke Jiang",
+    "Mohan Yu",
+    "Yuan Chang",
+    "Mohit Kumar Jangid",
+    "Jianyu Niu",
+    "Cong Wang",
+    "Yinqian Zhang"
+   ],
+   "publisher": "arXiv",
+   "title": "A Formal Analysis of Agent Payment Protocols"
+  },
+  "https://arxiv.org/abs/2609.01222": {
+   "authors": [
+    "Zichuan Li",
+    "Jian Cui",
+    "Ashley Chen",
+    "Xiaojing Liao",
+    "Luyi Xing"
+   ],
+   "publisher": "arXiv",
+   "title": "What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness"
+  },
   "https://aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf": {
    "authors": [
     "Arshan Dabirsiaghi"
@@ -321,7 +373,7 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "The live domain served a GoDaddy sale page. A near-publication Wayback capture recovered the cited project page; the curated citation title replaces the stale parked-domain heading and file name. JavaSnoop was written by Arshan Dabirsiaghi at Aspect Security; the recovered project page declares no author, so the byline is stated here.",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
    "title": "JavaSnoop"
   },
   "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers": {
@@ -376,7 +428,9 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty and the file printed \"Author not stated\", falling back to the hostname. The stored source carries the author's own footer signature, \"Copyright <year> Aviv Raff\" wrapped in a mailto:avivra@gmail.com link. This is a personal signature with a contact address, not the site masthead. "
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "A different Opera",
+   "published": "2008-10-30"
   },
   "https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html": {
    "authors": [
@@ -398,14 +452,25 @@
   "https://blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Abusing XSLT for Practical Attacks"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Abusing XSLT for Practical Attacks (White Paper)",
+   "authors": [
+    "Fernando Arnaboldi"
+   ],
+   "publisher": "IOActive",
+   "published": "2015"
   },
   "https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Web Timing Attacks Made Practical"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Web Timing Attacks Made Practical (Whitepaper)",
+   "authors": [
+    "Timothy D. Morgan",
+    "Jason W. Morgan"
+   ],
+   "publisher": "Black Hat",
+   "published": "2015-08-03"
   },
   "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf": {
    "authors": [
@@ -414,14 +479,21 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty against a printed byline: line 68 ends \"Friday the 13th JSON Attacks **Alvaro Muñoz & Oleksandr Mirosh** HPE Software Security Research\".",
-   "title": "Friday the 13th: JSON Attacks"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Friday the 13th JSON Attacks",
+   "publisher": "HPE Software Security Research",
+   "published": "2017-07"
   },
   "https://blackhat.com/docs/webcast/11192015-exploiting-xml-entity-vulnerabilities-in-file-parsing-functionality.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's dated file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Exploiting XXE in File Upload Functionality"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Exploiting XXE in File Upload Functionality",
+   "authors": [
+    "Will Vandevanter"
+   ],
+   "publisher": "Black Hat",
+   "published": "2015-11-19"
   },
   "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process": {
    "authors": [
@@ -718,8 +790,12 @@
   "https://blog.securitee.org/?p=37": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was \"Nick Nikiforakis\", the author's faculty homepage the blog now redirects to rather than the document's own title. The document itself is the one cited.",
-   "title": "Bypassing Chrome's Anti-XSS filter"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Bypassing Chrome's Anti-XSS filter",
+   "authors": [
+    "Nick Nikiforakis"
+   ],
+   "published": "2011-09-15"
   },
   "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps": {
    "authors": [
@@ -798,7 +874,9 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. The ARCHIVED PDF's own cover page names all three under \"A whitepaper from IBM Rational Application Security Team\", and the blog body separately names Sharabani and Yogev as the presenters. The blog's own rel=author is AppSecInsider, the publisher's account, which does not count on its own - the paper cover does."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Flash Parameter Injection",
+   "published": "2008-10-02"
   },
   "https://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html": {
    "authors": [
@@ -806,7 +884,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. The stored source's entry footer reads \"Posted by <a rel=\"author\">Yair Amit</a> on December 08, 2008\" - the same rel=author marker this archive already used to credit four other references on this blog, so this was an inconsistency rather than a hard case. The one commenter on the page was not taken."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Breaking Google Gears' Cross-Origin Communication Model",
+   "publisher": "IBM Application Security Insider",
+   "published": "2008-12-08"
   },
   "https://blog.watchfire.com/wfblog/2009/02/active-man-in-the-middle-attacks.html": {
    "authors": [
@@ -823,7 +904,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty although the PUBLISHED BODY signs off \"-Roee Hay and Yair Amit\", and the stored source additionally carries a rel=author byline naming Roee Hay."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "DNS poisoning via Port Exhaustion",
+   "publisher": "IBM Application Security Insider",
+   "published": "2011-10-18"
   },
   "https://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript": {
    "authors": [
@@ -957,7 +1041,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty although THE PUBLISHED BODY ITSELF states \"Reporter: Jesse Ruderman\" in the bug's own header table, and the first comment gives that person's address. The assignee and the reviewers named alongside were not taken."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Bug 369814 — jar: protocol is an XSS hazard due to ignoring mime type and being considered same-origin with hosting site",
+   "publisher": "Mozilla Bugzilla",
+   "published": "2007-02-09"
   },
   "https://carnal0wnage.blogspot.com/2008/08/owning-client-without-and-exploit.html": {
    "authors": [
@@ -965,7 +1052,8 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors recorded \"Ar-themes\", which is the BLOGGER TEMPLATE DESIGNER - it comes from a meta Author tag naming the theme author, whose own site is ar-themes.blogspot.com and who is credited again in a carousel script comment. A site-builder credit is excluded by the archive's rules. The real byline is in the same stored file: a post-author vcard naming dean de beer, corroborated by the author signing his own comment reply \"Cheers, Dean\"."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "published": "2008-08-27"
   },
   "https://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website": {
    "authors": [
@@ -1030,10 +1118,11 @@
    "title": "Teaching the Old .NET Remoting New Exploitation Tricks"
   },
   "https://code.google.com/p/dominator": {
-   "class": "records",
+   "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was \"Google Code Archive\", the hosting service's own page title rather than the document's own title. The document itself is the one cited.",
-   "title": "dominator - Community version of the DOMinator for Firefox"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "dominator - Community version of the DOMinator for Firefox",
+   "publisher": "Google Code"
   },
   "https://cpdos.org/": {
    "authors": [
@@ -1060,8 +1149,16 @@
   "https://cure53.de/fp170.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was \"fp170\", the publisher's file name rather than the document's own title. The document itself is the one cited.",
-   "title": "mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations (Paper)",
+   "authors": [
+    "Mario Heiderich",
+    "Jörg Schwenk",
+    "Tilman Frosch",
+    "Jonas Magazinius",
+    "Edward Z. Yang"
+   ],
+   "publisher": "ACM"
   },
   "https://cyberark.com/resources/threat-research-blog/racing-and-fuzzing-http-3-open-sourcing-quicdraw": {
    "authors": [
@@ -1103,8 +1200,13 @@
   "https://dhanjani.com/blog/2008/05/safari-carpet-b.html": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was \"Typepad | Network Solutions\", the host's shutdown notice rather than the document's own title. The document itself is the one cited.",
-   "title": "Safari Carpet Bomb"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Safari Carpet Bomb",
+   "authors": [
+    "Nitesh Dhanjani"
+   ],
+   "publisher": "dhanjani.com",
+   "published": "2008-05-15"
   },
   "https://diafygi.github.io/webrtc-ips": {
    "class": "research",
@@ -1131,8 +1233,13 @@
   "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the title truncated with an ellipsis rather than the document's own title. The document itself is the one cited.",
-   "title": "XSS Vulnerabilities in Common Shockwave Flash Files"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "XSS Vulnerabilities in Common Shockwave Flash Files",
+   "authors": [
+    "Rich Cannings"
+   ],
+   "publisher": "Google Docs",
+   "published": "2008-01-02"
   },
   "https://docs.google.com/presentation/d/16mvSEvpnNYrYcJe4XA_Nwd9OwEuf4UTE/edit?usp=sharing&ouid=101230982661442785272&rtpof=true&sd=true": {
    "authors": [
@@ -1177,6 +1284,13 @@
    "outcome": "archive",
    "reason": "IEEE Xplore served an Unable to Load Page response. The complete publisher PDF was supplied by hand; the curated citation supplies the exact paper title and replaces the faulty wall-derived heading and slug.",
    "title": "RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications"
+  },
+  "https://drive.google.com/file/d/1e7deupIiaOVN_DPPz4YAs68wRi0QpqUC/view": {
+   "authors": [
+    "Inti De Ceukelaire"
+   ],
+   "publisher": "Bug Bounty Village",
+   "title": "Hacking Human-in-the-Loop Systems (Slides)"
   },
   "https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html": {
    "authors": [
@@ -1589,7 +1703,9 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-15: the paper names its author under the title - \"Vladislav Korchagin - vladko312@gmail.com - @vladko312\". The archive recorded only the GitHub handle \"vladko312\"."
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Successful Errors: New Code Injection and SSTI Techniques (Paper)",
+   "publisher": "GitHub"
   },
   "https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs": {
    "authors": [
@@ -1618,8 +1734,13 @@
   "https://gnucitizen.org/blog/backdooring-quicktime-movies": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-17: recovering the authentic 2006 page, which removed an affiliate link the publisher's 2025 rebuild had injected into the researcher's prose, also put the blog masthead back into the recorded title as 'GNUCITIZEN » Backdooring QuickTime Movies'. The document's own heading, and the citation at 2006.md:9, is the title stated here.",
-   "title": "Backdooring QuickTime Movies"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Backdooring QuickTime Movies",
+   "authors": [
+    "pdp"
+   ],
+   "publisher": "GNUCITIZEN",
+   "published": "2006-09-05"
   },
   "https://gnucitizen.org/blog/hacking-the-interwebs": {
    "authors": [
@@ -1711,26 +1832,46 @@
   "https://gwern.net/doc/cs/js/2013-stone.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was \"2013 stone\", the mirror's file name rather than the document's own title. The document itself is the one cited.",
-   "title": "Pixel Perfect Timing Attacks with HTML5"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Pixel Perfect Timing Attacks with HTML5 (Whitepaper)",
+   "authors": [
+    "Paul Stone"
+   ],
+   "publisher": "Context Information Security",
+   "published": "2013-07"
   },
   "https://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited.",
-   "title": "DNS Pinning Just Got Worse"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "DNS Pinning Just Got Worse",
+   "authors": [
+    "RSnake"
+   ],
+   "publisher": "ha.ckers.org",
+   "published": "2006-09-08"
   },
   "https://ha.ckers.org/blog/20061211/exponential-xss-attacks": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited.",
-   "title": "Exponential XSS Attacks"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Exponential XSS Attacks",
+   "authors": [
+    "RSnake"
+   ],
+   "publisher": "ha.ckers.org",
+   "published": "2006-12-11"
   },
   "https://ha.ckers.org/blog/20070623/hiding-js-in-valid-images": {
-   "class": "records",
+   "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited.",
-   "title": "Hiding JS in Valid Images"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Hiding JS in Valid Images",
+   "authors": [
+    "RSnake"
+   ],
+   "publisher": "ha.ckers.org",
+   "published": "2007-06-23"
   },
   "https://hackademix.net/2007/08/07/java-evil-popups": {
    "authors": [
@@ -1827,8 +1968,14 @@
   "https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the conference's slide-file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs",
+   "authors": [
+    "Orange Tsai",
+    "Meh Chang"
+   ],
+   "publisher": "HITCON",
+   "published": "2019"
   },
   "https://homakov.blogspot.com/2014/12/the-no-captcha-problem.html": {
    "authors": [
@@ -1856,8 +2003,14 @@
   "https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Lost in Translation: Exploiting Unicode Normalization"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Lost in Translation: Exploiting Unicode Normalization (Slides)",
+   "authors": [
+    "Ryan Barnett",
+    "Isabella Barnett"
+   ],
+   "publisher": "Black Hat",
+   "published": "2025"
   },
   "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-Slides.pdf": {
    "class": "research",
@@ -1928,14 +2081,24 @@
   "https://i.blackhat.com/us-18/Thu-August-9/us-18-Thomas-Its-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "It's A PHP Unserialization Vulnerability Jim, But Not As We Know It"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "File Operation Induced Unserialization via the “phar://” Stream Wrapper",
+   "authors": [
+    "Sam Thomas"
+   ],
+   "publisher": "Secarma Labs",
+   "published": "2018"
   },
   "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's hyphenated file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Breaking Parser Logic! Take Your Path Normalization Off and Pop 0days Out",
+   "authors": [
+    "Orange Tsai"
+   ],
+   "publisher": "Black Hat",
+   "published": "2018"
   },
   "https://i8jesus.com/?p=10": {
    "authors": [
@@ -2019,6 +2182,14 @@
    "outcome": "archive",
    "reason": "authors was empty and the file printed \"Author not stated\". The document signs off \" Regards\" / \" [Dhiraj](http://twitter.com/mishradhiraj_)\"."
   },
+  "https://intigriti.com/researchers/blog/hacking-tools/hacking-ai-customer-service-agents": {
+   "authors": [
+    "Ayoub",
+    "Inti De Ceukelaire"
+   ],
+   "publisher": "Intigriti",
+   "title": "Hacking AI customer service agents"
+  },
   "https://intruder.io/research/in-guid-we-trust": {
    "authors": [
     "Daniel Thatcher"
@@ -2045,7 +2216,7 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty and the header read \"Author not stated\". The document names all five in its own prose: \"The team behind this research comprises Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering and Jacob Schuldt.\" Read from the body, not from metadata."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
   },
   "https://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html": {
    "authors": [
@@ -2069,7 +2240,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. the 2006 template predates the author markup a byline sweep looks for, but the stored Wayback capture carries the older equivalent, a post-footer reading posted by Jeremiah Grossman with the permanent link"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "I know where you've been",
+   "publisher": "Jeremiah Grossman",
+   "published": "2006-08-11"
   },
   "https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-from-slashdot.html": {
    "authors": [
@@ -2085,7 +2259,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. same post-author vcard byline in the stored page, dropped by the converter"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Browser Port Scanning without JavaScript",
+   "publisher": "Jeremiah Grossman",
+   "published": "2006-11-28"
   },
   "https://jeremiahgrossman.blogspot.com/2006/11/bypassing-mozilla-port-blocking.html": {
    "authors": [
@@ -2125,7 +2302,8 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The stored source carries a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "published": "2008-10-07"
   },
   "https://jeremiahgrossman.blogspot.com/2009/06/results-unicode-leftright-pointing.html": {
    "authors": [
@@ -2157,7 +2335,8 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "published": "2010-07-21"
   },
   "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html": {
    "authors": [
@@ -2165,7 +2344,7 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
   },
   "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html": {
    "authors": [
@@ -2407,7 +2586,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty although the body names the writer - \"**Phillip Purviance** [phillip.purviance at whitehatsec.com]\" - and the source carries the same name in bold."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over",
+   "publisher": "Web Application Security Consortium",
+   "published": "2011-02-10"
   },
   "https://lude.rs/h4ck1ng/draw.io_cves.html": {
    "authors": [
@@ -2506,8 +2688,14 @@
   "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Bad Memories"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Bad Memories",
+   "authors": [
+    "Elie Bursztein",
+    "Baptiste Gourdin",
+    "Gustav Rydstedt",
+    "Dan Boneh"
+   ]
   },
   "https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf": {
    "authors": [
@@ -2531,8 +2719,13 @@
   "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Million Browser Botnet"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Million Browser Botnet",
+   "authors": [
+    "Jeremiah Grossman",
+    "Matt Johansen"
+   ],
+   "publisher": "WhiteHat Security"
   },
   "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf": {
    "authors": [
@@ -2756,7 +2949,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. The source has no rel=author, but the sidebar states \"My name is Neal Poole. I'm interested in web application security.\" and the post is first person throughout, so the name is quotable from the document."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Java Applet Same-Origin Policy Bypass via HTTP Redirect",
+   "publisher": "Neal Poole",
+   "published": "2011-10-18"
   },
   "https://netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector": {
    "authors": [
@@ -2988,6 +3184,13 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the article is written by Gareth Heyes but hands over a whole section to a second researcher - \"My highly skilled colleague, [Zak](https://x.com/d4d89704243), refined this mutation into a more streamlined and effective attack vector\" and \"My colleague **Zak** will demonstrate how this can be escalated to achieve **unauthenticated administrator access** on **GitLab**\". JUDGEMENT CALL: this document gives only the first name \"Zak\" and an X handle. The full name is taken from the sibling PortSwigger article archived as 2025-portswigger-research-fragile-lock-novel-bypasses-saml-authentication, whose author Zakhar Fedotkin writes \"In our previous research with Gareth Heyes - [SAML roulette: the hacker always wins]\", identifying himself as the co-author of this one."
   },
+  "https://portswigger.net/research/whats-in-a-tag-name-javascript-apparently": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "publisher": "PortSwigger",
+   "title": "What's in a tag name? JavaScript, apparently"
+  },
   "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again": {
    "class": "research",
    "outcome": "archive",
@@ -3101,7 +3304,10 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was unset although THE PUBLISHED BODY ITSELF reads \"Posted 2008-08-12 17:05 by Christopher\"; the stored source has the same line with the date in an abbr element. A handle counts. The commenters on the page, including one posting as Anonymous, were not taken. Billy Rios and Nathan McFeters are the researchers the post describes, not its author."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "How to Create a GIFAR",
+   "publisher": "RioSec",
+   "published": "2008-08-12"
   },
   "https://riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html": {
    "authors": [
@@ -3283,14 +3489,17 @@
   "https://sectheory.com/rfc1918-security-issues.htm": {
    "class": "research",
    "outcome": "archive",
-   "reason": "The live domain redirected to an unrelated casino takeover. A 2009 Wayback capture recovered the article; the curated citation title replaces the stale takeover-derived file name.",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
    "title": "RFC1918 Caching Security Issues"
   },
   "https://secunia.com/advisories/22477": {
-   "class": "records",
+   "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the live advisory URL 301s into Flexera's corporate site, so the capture and its file name were the \"About Secunia Research\" page. Recaptured from a 2006 snapshot; the file is renamed after the advisory (Secunia SA22477).",
-   "title": "Internet Explorer 7 \"mhtml:\" Redirection Information Disclosure"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Internet Explorer 7 \"mhtml:\" Redirection Information Disclosure",
+   "authors": [],
+   "publisher": "Secunia",
+   "published": "2006-10-19"
   },
   "https://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven": {
    "authors": [
@@ -3368,10 +3577,15 @@
    "title": "Bypassing of web filters by using ASCII"
   },
   "https://securityfocus.com/archive/1/441014/30/0/threaded": {
-   "class": "records",
+   "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was \"BUGTRAQ IS BACK\", the present-day securityfocus.com landing page rather than the document's own title. The document itself is the one cited.",
-   "title": "Forging HTTP request headers with Flash"
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Forging HTTP request headers with Flash",
+   "authors": [
+    "Amit Klein"
+   ],
+   "publisher": "SecurityFocus / Bugtraq",
+   "published": "2006-07-24"
   },
   "https://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website": {
    "authors": [
@@ -3481,7 +3695,8 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. This capture's Blogger byline reads \"Posted by sdc\", and the post body gives the author's own address, \"send me an email at sird@rckc.at\"; the page title element names sirdarckcat, which is the handle he publishes under and the byline both siblings on this blog carry. A handle counts. "
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "published": "2009-08-04"
   },
   "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html": {
    "authors": [
@@ -3549,6 +3764,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\".",
    "title": "wp2shell: Pre Authentication RCE in WordPress Core"
+  },
+  "https://slcyber.io/research/out-of-bounds-out-of-sandbox-rce-goja": {
+   "authors": [
+    "Dylan Pindur",
+    "Adam Kues"
+   ],
+   "publisher": "Searchlight Cyber",
+   "title": "Out of Bounds, Out of Sandbox: RCE in Go JavaScript Engine"
   },
   "https://slideshare.net/neexemil/hotpics-2021": {
    "authors": [
@@ -3700,17 +3923,20 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "The report states its own byline: \"Found by: Soroush Dalili (Irsdl {4t] yahoo [d0t} com)\". This is the document the 2009 Top 10 announcement cites at #6, where it is credited to Soroush Dalili; the list previously cited the MSRC advisory that the nomination round had linked, which carries Microsoft's byline instead. The report's PDF metadata names no author, so the credit is stated here."
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Microsoft IIS 0Day Vulnerability in Parsing Files (semi-colon bug)",
+   "publisher": "Soroush.SecProject.com",
+   "published": "2009-12"
   },
   "https://soroush.me/downloadable/outlook_smb_hash_hijacking.pdf": {
    "authors": [
     "Soroush Dalili"
    ],
-   "publisher": "NCC Group",
-   "title": "SMB hash hijacking & user tracking in MS Outlook",
    "class": "research",
    "outcome": "archive",
-   "reason": "Author and publisher stated by the maintainer and confirmed in the document itself, which closes with \"Published date: 11 May 2018\" and \"Written by: Soroush Dalili (@irsdl)\" above the NCC Group source URL. outcome is stated explicitly so the grader does not read an attribution-only override as a decision to keep no document."
+   "publisher": "NCC Group",
+   "reason": "Author and publisher stated by the maintainer and confirmed in the document itself, which closes with \"Published date: 11 May 2018\" and \"Written by: Soroush Dalili (@irsdl)\" above the NCC Group source URL. outcome is stated explicitly so the grader does not read an attribution-only override as a decision to keep no document.",
+   "title": "SMB hash hijacking & user tracking in MS Outlook"
   },
   "https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps": {
    "authors": [
@@ -3957,8 +4183,14 @@
   "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
-   "title": "Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Bypass Surgery: Abusing Content Delivery Networks With Server Side Request Forgery (SSRF), Flash, and DNS",
+   "authors": [
+    "Mike Brooks",
+    "Matthew Bryant"
+   ],
+   "publisher": "Bishop Fox",
+   "published": "2015-08-06"
   },
   "https://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html": {
    "authors": [
@@ -4354,8 +4586,13 @@
   "https://usenix.org/events/woot10/tech/full_papers/Rizzo.pdf": {
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the citation's own link text rather than the paper's title rather than the document's own title. The document itself is the one cited.",
-   "title": "Practical Padding Oracle Attacks"
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Practical Padding Oracle Attacks",
+   "authors": [
+    "Juliano Rizzo",
+    "Thai Duong"
+   ],
+   "published": "2010-05-25"
   },
   "https://usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html": {
    "authors": [
@@ -4560,7 +4797,7 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The stored source names him in a post-meta span immediately under the title, dated April 03, 2013. The second roberthansen hit in the file is a related-post teaser from June 2014 and was deliberately not used as the evidence."
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
   },
   "https://whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript": {
    "authors": [
@@ -4813,11 +5050,14 @@
   },
   "https://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw": {
    "authors": [
-    "xssniper"
+    "Billy (BK) Rios"
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "authors was empty although THE PUBLISHED BODY ITSELF prints the byline, \"Posted by xssniper | Filed in Security\". A handle counts, and the site masthead independently gives Billy (BK) Rios. Recorded under the handle the document states. "
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Firefoxurl URI Handler Flaw",
+   "publisher": "xs-sniper.com",
+   "published": "2007-07-17"
   },
   "https://xs-sniper.com/blog/2007/07/20/more-uri-stuff-ies-resouce-uri": {
    "authors": [
@@ -4975,6 +5215,1053 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the document closes with \"Research conducted by [zhero;](https://x.com/zhero___) & [inzo_](https://x.com/inzo____)\". Both are handles the researchers publish under, each linked to its own X profile - not the publisher hostname zhero_web_security, which is what the entry previously had to fall back on."
+  },
+  "https://zeroed.tech/blog/viewstate-the-unpatchable-iis-forever-day-being-actively-exploited/": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source supporting a full evaluation retained at the user-requested 55-point threshold; attribution verified from the source.",
+   "title": "View State, The unpatchable IIS forever day being actively exploited",
+   "authors": [
+    "Zeroed"
+   ],
+   "publisher": "zeroed.tech",
+   "published": "2024-07-21"
+  },
+  "https://github.com/zeroed-tech/Machine-Key-Reset/tree/0f0b744180d19564d39e76b12163c9a084ab2336": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source supporting a full evaluation retained at the user-requested 55-point threshold; attribution verified from the source.",
+   "title": "IIS Machine Key Audit and Reset (Original Tooling Snapshot)",
+   "authors": [
+    "Zeroed"
+   ],
+   "publisher": "zeroed.tech",
+   "published": "2024-07-20"
+  },
+  "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Keanu%20Nys%20-%20This%20Message%20Was%20Sent%20by%20Microsoft%20Turning%20Microsoft%20Apps%20into%20our%20Phishing%20Platform%20-%20DEF%20CON%2034%20Red%20Byte%20Messag.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source supporting a full evaluation retained at the user-requested 55-point threshold; attribution verified from the source.",
+   "title": "This Message Was Sent by Microsoft: Turning Microsoft Apps into our Phishing Platform",
+   "authors": [
+    "Keanu Nys"
+   ],
+   "publisher": "Spotit / DEF CON 34",
+   "published": "2026-08-09"
+  },
+  "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary research retained after a full threshold-55 rejudgement; source authors and dates verified.",
+   "title": "Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit",
+   "authors": [
+    "Rachid Allam (zhero)",
+    "Yasser Allam (inzo_)"
+   ],
+   "publisher": "zhero web security",
+   "published": "2026-01-16"
+  },
+  "https://blog.voorivex.team/usual-suspect-type-confusion-in-twelve-bytes": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary research retained after a full threshold-55 rejudgement; source authors and dates verified.",
+   "title": "The Usual Suspect: Type Confusion in Twelve Bytes",
+   "authors": [
+    "HamidSj"
+   ],
+   "publisher": "Voorivex",
+   "published": "2026-06-17"
+  },
+  "https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary research retained after a full threshold-55 rejudgement; source authors and dates verified.",
+   "title": "Computer-Use and TOCTOU: What You Click Is Not What You Get!",
+   "authors": [
+    "Johann Rehberger"
+   ],
+   "publisher": "Embrace The Red",
+   "published": "2026-06-24"
+  },
+  "https://whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Hacking Intranet Websites from the Outside",
+   "authors": [
+    "Jeremiah Grossman",
+    "T.C. Niedzialkowski"
+   ],
+   "publisher": "WhiteHat Security, inc.",
+   "published": "2006-08-03"
+  },
+  "https://trivero.secdiscover.com/html5whitepaper.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Abusing HTML 5 Structured Client-side Storage",
+   "authors": [
+    "Alberto Trivero"
+   ],
+   "publisher": "SecDiscover",
+   "published": "2008-07-20"
+  },
+  "https://wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Abusing Internet Explorer 8's XSS Filters",
+   "authors": [
+    "Eduardo Vela Nava",
+    "David Lindsay"
+   ]
+  },
+  "https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Expression Language Injection",
+   "authors": [
+    "Stefano Di Paola",
+    "Arshan Dabirsiaghi"
+   ]
+  },
+  "https://slcyber.io/research-center/almost-impossible-java-deserialization-through-broken-crypto-in-opentext-directory-services/": {
+   "title": "Almost Impossible: Java Deserialization Through Broken Crypto in OpenText Directory Services",
+   "authors": [
+    "Dylan Pindur",
+    "Adam Kues"
+   ],
+   "publisher": "Searchlight Cyber",
+   "published": "2026-02-16",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover": {
+   "title": "Claude in Chrome: from alert(1) to full account takeover",
+   "authors": [
+    "Raul Klugman-Onitza",
+    "João Donato"
+   ],
+   "publisher": "Zenity Labs",
+   "published": "2026-08-05",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://labs.zenity.io/post/claude-in-chrome-breaking-down-the-injection": {
+   "title": "Claude in Chrome: from alert(1) to full account takeover (Injection analysis)",
+   "authors": [
+    "Raul Klugman-Onitza",
+    "João Donato"
+   ],
+   "publisher": "Zenity Labs",
+   "published": "2026-08-05",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://labs.zenity.io/post/account-takeover-via-claude-in-chrome-a-technical-deep-dive": {
+   "title": "Claude in Chrome: from alert(1) to full account takeover (Technical deep dive)",
+   "authors": [
+    "Raul Klugman-Onitza",
+    "João Donato"
+   ],
+   "publisher": "Zenity Labs",
+   "published": "2026-08-05",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://labs.zenity.io/post/grand-theft-atlas": {
+   "title": "Grand Theft Atlas",
+   "authors": [
+    "Stav Cohen"
+   ],
+   "publisher": "Zenity Labs",
+   "published": "2026-08-05",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://istio.io/latest/blog/2026/security-considerations-on-namespace-based-multi-tenancy/": {
+   "title": "Security Considerations on Istio’s CRDs with Namespace-based Multi-Tenancy",
+   "authors": [
+    "Lorin Lehawany",
+    "Sven Nobis"
+   ],
+   "publisher": "ERNW / Istio",
+   "published": "2026-03-21",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://arxiv.org/abs/2508.20282v1": {
+   "title": "Network-Level Prompt and Trait Leakage in Local Research Agents",
+   "authors": [
+    "Hyejun Jeong",
+    "Mohammadreza Teymoorianfard",
+    "Abhinav Kumar",
+    "Amir Houmansadr",
+    "Eugene Bagdasarian"
+   ],
+   "publisher": "arXiv",
+   "published": "2025-08-27",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; original publication and byline verified."
+  },
+  "https://whitehatsec.com/downloads/WHXSSThreats.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Cross-Site Scripting Worms and Viruses: The Impending Threat and the Best Defense",
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "publisher": "WhiteHat Security",
+   "published": "2006-04"
+  },
+  "https://cgisecurity.com/papers/HackingFeeds.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Feed Injection in Web 2.0: Hacking RSS and Atom Feed Implementations",
+   "authors": [
+    "Robert Auger"
+   ],
+   "publisher": "SPI Dynamics, Inc."
+  },
+  "https://img2.helpnetsecurity.com/dl/articles/CrossSitePrinting.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Cross Site Printing",
+   "authors": [
+    "Aaron Weaver"
+   ],
+   "publisher": null,
+   "published": "2007-11-23"
+  },
+  "https://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Biting the hand that serves you: A closer look at client-side Flash proxies for cross-domain requests",
+   "authors": [
+    "Martin Johns",
+    "Sebastian Lekies"
+   ]
+  },
+  "https://elttam.com/blog/cruising-for-shells-in-flowise": {
+   "title": "Cruising for Shells in Flowise",
+   "authors": [
+    "Alex Brown",
+    "Luke Jahnke",
+    "Jia Hao Poh"
+   ],
+   "publisher": "elttam",
+   "published": "2026-08-03",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://ayush.digital/blog/the-memory-heist": {
+   "title": "The Memory Heist",
+   "authors": [
+    "Ayush Paul"
+   ],
+   "publisher": "Ayush Paul",
+   "published": "2026-07-09",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://arxiv.org/abs/2608.04744": {
+   "title": "Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond",
+   "authors": [
+    "Matteo Golinelli",
+    "Kaan Onarlioglu",
+    "Bruno Crispo"
+   ],
+   "publisher": "arXiv",
+   "published": "2026-08-05",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://github.com/Golim/web-cache-overflow": {
+   "title": "Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond (Code)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-08-05",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you": {
+   "title": "The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework",
+   "authors": [
+    "Jonathan Dunn (xssdoctor)"
+   ],
+   "publisher": "Critical Thinking",
+   "published": "2026-04-02",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://github.com/xssdoctor/cspt_research": {
+   "title": "The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework (Labs)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-04-02",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://blog.voorivex.team/three-0-day-vulnerabilities-in-adminer": {
+   "title": "Three 0-Day Vulnerabilities in Adminer",
+   "authors": [
+    "Yashar Shahinzadeh",
+    "Amirmohammad Safari"
+   ],
+   "publisher": "Voorivex",
+   "published": "2026-06-09",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://labs.zenity.io/post/agentforger-part-1-chatgpt-cross-site-agent-forgery": {
+   "title": "AgentForger: ChatGPT Cross-Site Agent Forgery",
+   "authors": [
+    "Mike Takahashi"
+   ],
+   "publisher": "Zenity Labs",
+   "published": "2026-07-23",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://labs.zenity.io/post/agentforger-part-2-the-autonomous-insider": {
+   "title": "AgentForger: ChatGPT Cross-Site Agent Forgery (Part 2)",
+   "authors": [
+    "Mike Takahashi"
+   ],
+   "publisher": "Zenity Labs",
+   "published": "2026-07-23",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails": {
+   "title": "KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails",
+   "authors": [
+    "André Baptista (0xacb)",
+    "s3np41k1r1t0",
+    "castilho",
+    "Ethiack Research Team"
+   ],
+   "publisher": "Ethiack",
+   "published": "2026-07-31",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://abdelmounaim.xyz/posts/leaky-avatar": {
+   "title": "Leaky Avatar",
+   "authors": [
+    "Abdelmounaim Moulahcene (bl0rph)"
+   ],
+   "publisher": "bl0rph",
+   "published": "2026-07-18",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://github.com/rails/rails-forensics-CVE-2026-66066": {
+   "title": "KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails (Rails technical details)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-07-30",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx": {
+   "title": "DOMPurify XSS via `<selectedcontent>` re-clone",
+   "authors": [
+    "KabirAcharya"
+   ],
+   "publisher": "Cure53",
+   "published": "2026-05-18",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://varonis.com/blog/searchleak": {
+   "title": "SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot",
+   "authors": [
+    "Dolev Taler"
+   ],
+   "publisher": "Varonis Threat Labs",
+   "published": "2026-06-15",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://labs.boostsecurity.io/articles/introducing-smokedmeat": {
+   "title": "Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)",
+   "authors": [
+    "François Proulx"
+   ],
+   "publisher": "Boost Security Labs",
+   "published": "2026-04-15",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://github.com/boostsecurityio/smokedmeat": {
+   "title": "Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket) (Tool)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-04-15",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Primary source retained after full threshold-55 review; publication-time evidence and attribution verified."
+  },
+  "https://media.blackhat.com/bh-us-12/Briefings/Polyakov/BH_US_12_Polyakov_SSRF_Business_WP.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "SSRF vs. Business-critical applications. Part 1: XXE Tunneling in SAP NetWeaver (Whitepaper)",
+   "authors": [
+    "Alexander Polyakov",
+    "Dmitry Chastukhin",
+    "Alexey Tyurin"
+   ],
+   "publisher": "ERPScan"
+  },
+  "https://mcafee.com/us/resources/white-papers/foundstone/wp-pentesters-guide-to-hacking-odata.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "A Pentester’s Guide to Hacking OData (Whitepaper)",
+   "authors": [
+    "Gursev Singh Kalra"
+   ],
+   "publisher": "McAfee Foundstone Professional Services"
+  },
+  "https://media.blackhat.com/eu-13/briefings/Osipov/bh-eu-13-XML-data-osipov-slides.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "XML Out-Of-Band Data Retrieval",
+   "authors": [
+    "Timur Yunusov",
+    "Alexey Osipov"
+   ]
+  },
+  "https://synacktiv.com/en/publications/caught-in-the-octopus-trap-unauthenticated-rce-in-argo-cd-with-codeql": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "Caught in the Octopus Trap: Unauthenticated RCE in Argo CD",
+   "authors": [
+    "Hugo Vincent"
+   ],
+   "publisher": "Synacktiv",
+   "published": "2026-07-01"
+  },
+  "https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "The sorry state of skill distribution",
+   "authors": [
+    "Samuel Judson",
+    "Tjaden Hess"
+   ],
+   "publisher": "Trail of Bits",
+   "published": "2026-06-03"
+  },
+  "https://github.com/trailofbits/overtly-malicious-skills": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "The sorry state of skill distribution (Test corpus)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-06-03"
+  },
+  "https://github.com/cisco-ai-defense/skill-scanner/pull/25": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "The sorry state of skill distribution (Earlier structural validation contribution)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-02-17"
+  },
+  "https://lab.ctbb.show/research/figma-desktop-zero-click-rce": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "Zero-Click RCE in Figma Desktop",
+   "authors": [
+    "Benjamin Mamoud (DavenSec)"
+   ],
+   "publisher": "Critical Thinking",
+   "published": "2026-04-27"
+  },
+  "https://blog.babelo.xyz/posts/elf-in-the-pixels": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "ELF in the Pixels: Building Shared Object–Image Polyglots",
+   "authors": [
+    "Salvatore Abello (babelo)"
+   ],
+   "publisher": "babelo",
+   "published": "2026-05-16"
+  },
+  "https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "Race Against The Patch: Four Exploit Chains in LiteLLM",
+   "authors": [
+    "Shi Weiming",
+    "Bruce Chen"
+   ],
+   "publisher": "STAR Labs",
+   "published": "2026-05-29"
+  },
+  "https://pwn.ai/blog/xss2shell": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold-55 review verified technical contribution, prior art and publication evidence.",
+   "title": "XSS2Shell: WordPress Preauth XSS to RCE Chain (CVE-2026-64638)",
+   "authors": [
+    "Nigusu Kasahun"
+   ],
+   "publisher": "pwn.ai",
+   "published": "2026-08-06"
+  },
+  "https://arxiv.org/pdf/2508.20282v1": {
+   "outcome": "skip",
+   "class": "derivative",
+   "reason": "The complete v1 HTML and this exact original publisher PDF are archived together under https://arxiv.org/abs/2508.20282v1."
+  },
+  "https://ben-stock.de/wp-content/uploads/domxss.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "25 Million Flows Later - Large-scale Detection of DOM-based XSS",
+   "authors": [
+    "Sebastian Lekies",
+    "Ben Stock",
+    "Martin Johns"
+   ],
+   "publisher": "ACM CCS 2013",
+   "published": "2013-11-04"
+  },
+  "https://spectrum.library.concordia.ca/id/eprint/996198": {
+   "title": "Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits",
+   "authors": [
+    "Tariq Houis"
+   ],
+   "publisher": "Concordia University",
+   "published": "2025-11-04",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full contribution review retained at threshold55; original document and publication evidence read."
+  },
+  "https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf": {
+   "title": "Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons",
+   "authors": [
+    "Raphael Karger"
+   ],
+   "publisher": "Black Hat USA 2026",
+   "published": "2026-08-06",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full contribution review retained at threshold55; original document and publication evidence read."
+  },
+  "https://github.com/rek7/build-canaries": {
+   "title": "Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons (Tool)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-08-06",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full contribution review retained at threshold55; original document and publication evidence read."
+  },
+  "https://github.com/rek7/DVASP": {
+   "title": "Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons (Lab)",
+   "authors": [],
+   "publisher": "GitHub",
+   "published": "2026-08-06",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full contribution review retained at threshold55; original document and publication evidence read."
+  },
+  "https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf": {
+   "outcome": "skip",
+   "class": "derivative",
+   "reason": "The exact complete original thesis PDF and its full transcription are preserved under https://spectrum.library.concordia.ca/id/eprint/996198."
+  },
+  "https://openssl.org/~bodo/ssl-poodle.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "This POODLE Bites: Exploiting The SSL 3.0 Fallback",
+   "authors": [
+    "Bodo Möller",
+    "Thai Duong",
+    "Krzysztof Kotowicz"
+   ],
+   "publisher": "Google"
+  },
+  "https://usenix.org/conference/usenixsecurity26/presentation/erinola": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Full threshold55 review retains composition-testing and tooling contribution; earlier constituent attack priority is explicitly documented.",
+   "title": "Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker",
+   "authors": [
+    "Nurullah Erinola",
+    "Marcel Maehren",
+    "Marcus Brinkmann",
+    "Jörg Schwenk"
+   ],
+   "publisher": "USENIX Security 2026",
+   "published": "2026-08-12"
+  },
+  "https://usenix.org/system/files/usenixsecurity26-erinola.pdf": {
+   "outcome": "skip",
+   "class": "derivative",
+   "reason": "Complete original paper is preserved together with its full Markdown under https://usenix.org/conference/usenixsecurity26/presentation/erinola."
+  },
+  "https://zenodo.org/records/20280317": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Versioned first-public artifact record supports the reviewed publication chronology; preserve repository metadata without executing or unpacking the research software.",
+   "title": "QUIC-Attacker (Artifact v1)",
+   "authors": [
+    "Nurullah Erinola",
+    "Marcel Maehren",
+    "Marcus Brinkmann",
+    "Jörg Schwenk"
+   ],
+   "publisher": "Zenodo",
+   "published": "2026-05-19"
+  },
+  "https://usenix.org/conference/usenixsecurity26/presentation/xiao": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Threshold55 full review retains expanded weak-IPC consent model and repair after direct comparison with earlier2022payment-protocol study.",
+   "title": "When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments",
+   "authors": [
+    "Yongkang Xiao",
+    "Jing Chen",
+    "Min Shi",
+    "Kun He",
+    "Qiyi Deng",
+    "Ruiying Du"
+   ],
+   "publisher": "USENIX Security 2026",
+   "published": "2026-08-12"
+  },
+  "https://usenix.org/system/files/usenixsecurity26-xiao.pdf": {
+   "outcome": "skip",
+   "class": "derivative",
+   "reason": "The complete original paper and full transcription are archived under https://usenix.org/conference/usenixsecurity26/presentation/xiao."
+  },
+  "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Exploiting Hardened .NET Deserialization: New Exploitation Ideas and Abuse of Insecure Serialization (Whitepaper)",
+   "authors": [
+    "Piotr Bazydło"
+   ],
+   "publisher": "Trend Micro Zero Day Initiative",
+   "published": "2023-09"
+  },
+  "https://usenix.org/conference/usenixsecurity23/presentation/squarcina": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Cookie Crumbles: Breaking and Fixing Web Session Integrity (Paper)",
+   "authors": [
+    "Marco Squarcina",
+    "Pedro Adão",
+    "Lorenzo Veronese",
+    "Matteo Maffei"
+   ],
+   "publisher": "USENIX Association",
+   "published": "2023-08-09"
+  },
+  "https://zenodo.org/records/17822391": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "55-point review verified the first public contribution in 2025; preserve the cited primary artifact.",
+   "title": "TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction",
+   "authors": [
+    "Senapati Diwangkara",
+    "Yinzhi Cao"
+   ]
+  },
+  "https://github.com/diwangs/transparent-ae/tree/v1.0.0": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "55-point review verified the first public contribution in 2025; preserve the cited primary artifact.",
+   "title": "TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction (Source code)",
+   "authors": [
+    "Senapati Diwangkara",
+    "Yinzhi Cao"
+   ]
+  },
+  "https://funeoka-yumee.github.io/assets/files/ndss26_alias.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "55-point review verified the first public contribution in 2025; preserve the cited primary artifact.",
+   "title": "One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases",
+   "authors": [
+    "Mengying Wu",
+    "Geng Hong",
+    "Jiatao Chen",
+    "Baojun Liu",
+    "Mingxuan Liu",
+    "Min Yang"
+   ]
+  },
+  "https://github.com/lab-rynth/OriginMail": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "55-point review verified the first public contribution in 2025; preserve the cited primary artifact.",
+   "title": "One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases (Source code)",
+   "authors": [
+    "Mengying Wu",
+    "Geng Hong",
+    "Jiatao Chen",
+    "Baojun Liu",
+    "Mingxuan Liu",
+    "Min Yang"
+   ]
+  },
+  "https://blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages!",
+   "authors": [
+    "Orange Tsai"
+   ],
+   "publisher": "Black Hat",
+   "published": "2017"
+  },
+  "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level (Slides)",
+   "authors": [
+    "Paul Gerste"
+   ],
+   "publisher": "SonarSource",
+   "published": "2024-08-10"
+  },
+  "https://github.com/cure53/browser-sec-whitepaper/blob/master/browser-security-whitepaper.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Cure53 Browser Security White Paper",
+   "authors": [
+    "Mario Heiderich",
+    "Alex Inführ",
+    "Fabian Fäßler",
+    "Nikolai Krein",
+    "Masato Kinugawa",
+    "Tsang-Chi \"Filedescriptor\" Hong",
+    "Dario Weißer",
+    "Paula Pustułka"
+   ],
+   "publisher": "Cure53",
+   "published": "2017-11-29"
+  },
+  "https://offzone.moscow/upload/iblock/11a/sagouc86idiapdb8f29w41yaupqv6fwv.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "HTTP Request Splitting vulnerabilities exploitation",
+   "authors": [
+    "Sergey Bobrov"
+   ],
+   "publisher": "OFFZONE",
+   "published": "2023"
+  },
+  "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Cached and Confused: Web Cache Deception in the Wild",
+   "authors": [
+    "Seyed Ali Mirheidari",
+    "Sajjad Arshad",
+    "Kaan Onarlioglu",
+    "Bruno Crispo",
+    "Engin Kirda",
+    "William Robertson"
+   ],
+   "publisher": "USENIX",
+   "published": "2020"
+  },
+  "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Owning the Clout Through SSRF and PDF Generators (Slides)",
+   "authors": [
+    "Ben Sadeghipour",
+    "Cody Brocious"
+   ],
+   "publisher": "DEF CON",
+   "published": "2019"
+  },
+  "https://slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Attacking \"Modern\" Web Technologies (Slides)",
+   "authors": [
+    "Frans Rosén"
+   ],
+   "publisher": "OWASP AppSec Europe",
+   "published": "2018"
+  },
+  "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Original Top 10 research compared against every page of its preserved PDF on 2026-09-09; source-faithful Markdown and figures restored.",
+   "title": "Attacking Secondary Contexts in Web Applications",
+   "authors": [
+    "Sam Curry"
+   ],
+   "publisher": "Kernelcon"
+  },
+  "https://youtube.com/watch?v=gVrdE6g_fa8": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
+  },
+  "https://shampoo.antville.org/stories/1451301": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "(somewhat) breaking the same-origin policy by undermining dns-pinning",
+   "authors": [
+    "Martin Johns"
+   ],
+   "publisher": "It’s a shampoo world anyway",
+   "published": "2006-08-14"
+  },
+  "https://networkworld.com/news/2008/080708-black-hat-ssl-vpn-security.html": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "authors": [
+    "Tim Greene"
+   ],
+   "published": "2008-08-07"
+  },
+  "https://isg.rhul.ac.uk/tls/Lucky13.html": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
+  },
+  "https://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Selecting Encoding Methods For XSS Filter Evasion",
+   "authors": [
+    "RSnake"
+   ],
+   "publisher": "ha.ckers.org",
+   "published": "2006-11-03"
+  },
+  "https://ha.ckers.org/blog/20090617/slowloris-http-dos": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Slowloris HTTP DoS"
+  },
+  "https://stephensclafani.com/2009/05/26/exploiting-unexploitable-xss": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
+  },
+  "https://ha.ckers.org/blog/20090120/persistent-cookies-and-dns-rebinding-redux": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Persistent Cookies and DNS Rebinding Redux"
+  },
+  "https://ha.ckers.org/blog/20091118/dns-rebinding-for-scraping-and-spamming": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "DNS Rebinding for Scraping and Spamming"
+  },
+  "https://ha.ckers.org/blog/20091116/session-fixation-via-dns-rebinding": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Session Fixation Via DNS Rebinding"
+  },
+  "https://cwiki.apache.org/confluence/display/WW/S2-020": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
+  },
+  "https://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "authors": [
+    "Aung Khant"
+   ]
+  },
+  "https://whitehatsec.com/blog/magic-hashes": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Magic Hashes",
+   "publisher": "WhiteHat Security"
+  },
+  "https://netifera.com/research": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Flickr's API Signature Forgery Vulnerability",
+   "authors": [
+    "Thai Duong",
+    "Juliano Rizzo"
+   ],
+   "publisher": "Netifera",
+   "published": "2009-09-28"
+  },
+  "https://blog.ptsecurity.com/2012/08/not-so-random-numbers-take-two.html": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "published": "2012-08-22"
+  },
+  "https://samy.pl/evercookie": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
+  },
+  "https://darkreading.com/vulnerability-management/167901026/security/attacks-breaches/228000532/index.html": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Researchers To Demonstrate New Attack That Exploits HTTP",
+   "authors": [
+    "Kelly Jackson Higgins"
+   ],
+   "published": "2010-11-01"
+  },
+  "https://ha.ckers.org/blog/20100125/css-history-hack-in-firefox-without-javascript-for-intranet-portscanning": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "CSS History Hack In Firefox Without JavaScript for Intranet Portscanning",
+   "published": "2010-01-25"
+  },
+  "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored."
+  },
+  "https://gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Web Mayhem: Firefox’s JAR: Protocol issues",
+   "authors": [
+    "pdp"
+   ],
+   "publisher": "GNUCITIZEN",
+   "published": "2007-11-07"
+  },
+  "https://gnucitizen.org/blog/google-gmail-e-mail-hijack-technique": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Google GMail E-mail Hijack Technique",
+   "authors": [
+    "pdp"
+   ],
+   "publisher": "GNUCITIZEN",
+   "published": "2007-09-25"
+  },
+  "https://slideshare.net/dnkolegov/wh102014": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Covert Timing Channels Based on HTTP Cache Headers (Special Edition for Top 10 Web Hacking Techniques of 2014)",
+   "authors": [
+    "Denis Kolegov",
+    "Oleg Broslavsky",
+    "Nikita Oleksov"
+   ],
+   "publisher": "SlideShare"
+  },
+  "https://gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Automated Padding Oracle Attacks with PadBuster",
+   "authors": [
+    "Brian Holyfield"
+   ],
+   "published": "2010-09-14"
+  },
+  "https://opnsec.com/category/flash": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Advanced Flash Vulnerabilities in Youtube (Parts 1–4)",
+   "authors": [
+    "OpnSec"
+   ],
+   "publisher": "OpnSec",
+   "published": "2017-08-25"
+  },
+  "https://sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "Prepare(): Introducing novel Exploitation Techniques in WordPress",
+   "authors": [
+    "Robin Peraglie"
+   ],
+   "publisher": "OWASP AppSec Europe",
+   "published": "2018-07"
+  },
+  "https://slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities": {
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Top 10 source and complete published Markdown compared during 2026-09-10 accuracy review; source-faithful content and formatting restored.",
+   "title": "SSRF attacks and sockets: smorgasbord of vulnerabilities",
+   "authors": [
+    "Vladimir Vorontsov",
+    "Alexander Golovko"
+   ],
+   "publisher": "ONsec / ZeroNights",
+   "published": "2012-11-20"
   }
  },
  "mirror_sources": [],

@@ -36,7 +36,7 @@ are what the submission form is for.
 
 A submission is judged as a **technique**, on the evidence, against six weighted
 categories — novelty, evidence, impact, durability, reproducibility and clarity. It is
-added only if it scores **60 or above** and comes back with a verified **non-duplicate**
+added only if it scores **55 or above** and comes back with a verified **non-duplicate**
 verdict. In practice that means:
 
 - **It is a method, not an incident.** A reusable technique other researchers can apply,

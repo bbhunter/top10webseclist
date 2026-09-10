@@ -344,62 +344,8 @@ they stay here:
 
 ## Importing documents obtained by hand
 
-Some sources no automated route can reach: an image-only PDF, a page behind a
-wall, a talk with no captions. Convert them however works, drop the results in
-one directory, and:
-
-```text
-python tools/references/refs.py import <directory>
-python tools/references/refs.py index --prune-files
-```
-
-The directory's path is never written into tracked output. Several files for one
-document are joined; files that are not the same document are split apart; a file
-matching no reference is REPORTED rather than guessed at (rename it after the
-reference's URL or title, or drop a `<file>.url` beside it stating the URL). An
-import is sticky - a later `acquire` leaves it alone unless you pass
-`--replace-imports`.
-
-For page-image transcription split across readers, name the complementary
-chunks `<document>.part01.md`, `<document>.part02.md`, and so on. That explicit
-convention is concatenated in numeric order without de-duplication; ordinary
-same-document files are treated as alternative converter attempts instead.
-Put the `.url` sidecar beside part 1 and verify the chunks cover every rendered
-page exactly once before importing.
-
-**Write the `.url` sidecar with NO byte-order mark.** The stated URL is matched
-against the citation's spellings exactly, so a leading BOM makes it match
-nothing and the file is reported unmatched with no hint why. Windows PowerShell
-5.1's `Set-Content -Encoding utf8` writes one; use a plain-UTF-8 writer instead.
-Include the fragment if the citation has one - `#slide=id.p` is part of the
-spelling.
-
-**A hand-downloaded PDF can be adopted as the reference's original bytes.** Put
-the readable text through `import` as the document, then store the PDF as
-`raw_sha256`: `refs.py pdf` copies stored PDF bytes verbatim, so the PDF tree
-carries the author's own file instead of a re-render of our Markdown. Record
-where the bytes came from - a person, not a fetch. This is the route for a
-Google Slides deck, which serves a permission page to the export endpoint and
-renders to canvas, leaving no text for any automated route to read.
-
-`import` performs that adoption automatically when exactly one complete PDF
-contributed to the imported text: it stores the PDF as `raw_sha256` and records
-the `manual-source` step. It refuses to guess between multiple PDF candidates
-and refuses a file without a trailing `%%EOF`. An entry whose earlier imported
-raw or content hash is missing from the active store is eligible for repair
-without `--redo`; use the same supplied PDF to restore both objects.
-
-**A citation with no usable title needs `decisions[url].title`.** One whitepaper
-is cited as a bare footnote link, so its recorded title is `1` and it filed
-itself as `1.md`; the PDF was image-only, so there was no page text to correct
-it from either. State the real title in `overrides.json` and re-import: the
-import path honours it, rebuilds the slug and renames the file.
-
-**Never run an unscoped `import --redo`.** It reopens every past import and is
-far broader than correcting one document. Use `import --redo --only
-<citation-substring> <directory>`; matching still compares the file against the
-whole manifest, but only that citation becomes eligible and only it can be
-reported as reassigned.
+Read [the manual import procedure](references/manual-imports.md) before importing
+hand-obtained documents, repairing an import, or changing its title.
 
 ## Grades, and what gets no file
 
@@ -467,139 +413,14 @@ so `document-gaps.md` contains the actual remaining work before handing off.
 
 ## Translation is a stage of the pipeline, not an afterthought
 
-The archive is read in English, and a third of a technique is lost when the
-write-up is in a language the reader cannot follow. Run translation on every
-acquire, before you call the run finished; `verify` warns for any document that
-is not in English and has no translation.
-
-**ONLY A DOCUMENT THAT IS ACTUALLY IN ANOTHER LANGUAGE GETS ONE.** The website
-opens the `_translate` file INSTEAD of the original, so manufacturing one for an
-English document replaces the real thing with a machine paraphrase of itself. A
-Black Hat deck about Unicode confusables was translated on the strength of three
-CJK sample characters on one slide, and its 78KB text render then stood in front
-of the author's own 4.7MB PDF on the site. `translate` therefore requires a
-material share of the document's prose to be foreign (`TRANSLATION_SHARE` in
-`refslib/translate.py`, calibrated against every pair in the archive) before it
-will build a pair. A stray foreign phrase inside an English write-up stays where
-the author put it.
-
-```text
-python tools/references/refs.py translate                # the backlog
-python tools/references/refs.py translate --prepare      # mask payloads, split into chunks
-#   ... translate each chunk-NN.txt, save beside as chunk-NN.en.txt ...
-python tools/references/refs.py translate --apply        # store and render each pair offline
-# after importing an older store that already has translation hashes:
-python tools/references/refs.py translate --render       # render every stored pair offline
-python tools/references/refs.py pdf --translations-only --force  # re-print English only
-```
-
-Never use a corpus-wide `acquire --force` merely to materialise translations.
-It re-enters acquisition for every source and deliberately skips sticky manual
-imports, which are often the PDFs and OCR transcripts that required translation
-in the first place. `translate --apply` now writes the original/English pair in
-the same operation; `translate --render [--only <substring>]` is the offline,
-store-backed recovery route for translations recorded by an older run.
-If a translation object alone has gone missing but its generated
-`<slug>_translate.md` still exists, `translate --render` recovers the exact
-English body after the fixed untrusted-text banner back into the store before
-rewriting the pair; do not retranslate surviving archive text.
-Use the translation-only PDF selector after a translation run: forcing the
-whole PDF corpus would needlessly rewrite every original-language artifact.
-
-The mechanical half is masking and splitting; the translation itself is a
-reading job for `reference-translator`, an agent with an empty tool set because
-archived pages are untrusted text written to be read by models for years. Every
-non-prose construct - code, payloads, URLs, type names, CVE ids, hashes - is
-masked as `{{PH_n}}` first and restored byte-identically; a placeholder that does
-not come back is treated as a refusal.
-
-**A translation is a SECOND FILE, not a section.** The original keeps the
-source's own words whole, and the English lives beside it:
-
-```text
-md/<year>/<slug>.md            the source's own words
-md/<year>/<slug>_translate.md  the English
-pdf/<year>/<slug>_translate.pdf
-```
-
-Both belong to one artifact - same manifest entry, same slug, same folder - and
-each file names the other in its frontmatter (`translation_file` on the original,
-`translation_of` on the English), so either can be opened alone and still lead to
-its partner. Both carry the full attribution block, because the English is the
-one a reader is most likely to open. Dropping a translation makes both of its
-files orphans on the next sweep, which is what should happen to English nothing
-stands behind. This replaced a single dual-language file, which could not be
-linked to, printed or read cleanly as either one.
-
-**Check what is actually in the backlog before translating it.** Not everything
-the language test flags is worth a translator's time, and some of it is worth
-less than nothing:
-
-- **Page furniture in another language.** SpeakerDeck's "recommended decks"
-  sidebar put Japanese conference titles from 2026 into references from 2017.
-  Translating those files the sidebar into the archive as though the author wrote
-  it. Fix the extraction or leave it; do not translate it.
-- **A page that is not the document.** Five references resolved to a Google
-  sign-in page. That is an exclusion question, not a translation one.
-- **Machine text.** A minified inline bundle is masked-looking but unmasked, and
-  one arrived as a single 500,444-character "segment". `_is_unbroken_machine_text`
-  catches those now, by syntax share rather than word length - characters-per-word
-  calls a minified bundle more prose-like than a Chinese paragraph, because CJK
-  writing has no Latin words to count.
+Check for foreign-language documents after every acquisition. Read
+[the translation procedure](references/translation.md) before preparing, applying
+or recovering translations; only genuinely foreign prose gets a translation.
 
 ## Naming the researcher
 
-Extraction records an author only where the page DECLARES one, in a meta tag,
-`article:author`, `dc.creator` or JSON-LD. Most pages do not: 1,254 of 1,684
-references once published as "Author not stated" while the byline sat in the
-first lines of the document, and the credit line fell back to the hostname. That
-is wrong twice over - it credits a domain rather than a person, and where the
-domain has since been taken over it credits the squatter.
-
-The byline is therefore READ OUT OF THE ARCHIVED TEXT, by an agent, one document
-at a time:
-
-```text
-python tools/references/refs.py bylines --queue work/bylines.json     # offline
-#   ... reference-attributor reads each excerpt, one per invocation ...
-python tools/references/refs.py bylines --apply work/reviewed.json    # offline
-python tools/references/refs.py attribution                           # offline
-#   ... then re-render, as any stated attribution needs ...
-```
-
-`--queue` writes every reference with no author beside the text to read it from.
-The excerpt deliberately starts AFTER our own frontmatter, heading and
-attribution block: hand a reader our "Author not stated" line and they will
-report back what we already believe. Links are collapsed to their text, so a
-name arrives without a URL beside it.
-
-`--apply` records what clears the bar in `bylines.json` and refuses the rest. A
-name is taken only when the reference exists, the reviewer is confident, and it
-quoted the words the name was read from. **A wrong name is worse than no name**:
-an unattributed reference says the archive does not know, a misattributed one
-credits a stranger with someone's work and reads as fact. An entry naming nobody
-is kept too, so the next run does not ask the same question again.
-
-`--accept medium` widens it, and "medium" is not a synonym for "doubtful": it is
-what a reviewer says when the byline is real but sits somewhere other than under
-the title - a site-wide footer ("Wisec is written and mantained by Stefano Di
-Paola"), a signature, a handle an author has published under for twenty years.
-Taking those is a curation call, which is why it is spelled on the command line.
-
-**ATTRIBUTION MUST NEVER DECIDE WHETHER A DOCUMENT IS KEPT.** `grade.classify`
-reads an override as a whole judgement and defaults a missing `outcome` to
-`skip`, so an entry carrying only `authors` once told the grader to keep no
-document at all - 214 research references lost their grade in a single run. The
-grader now ignores an override that says nothing about keeping the document, and
-`refs.attribution_decision` returns only `authors` and `publisher`. Re-render
-runs should still watch the count of `grade: null` entries and stop if it rises.
-
-`bylines.json` is generated and always loses to `overrides.json`, where a
-maintainer states an author by hand. Withdraw a wrong credit there with
-`"authors": []`; see the `attribution` notes in `tools/references/README.md`.
-
-Expect several authors. A conference paper has six and keeping the first two is
-the same failure in a smaller costume.
+Read [the attribution procedure](references/attribution.md) when extracting or
+publishing document-derived bylines. Credit only names supported by the source.
 
 ## The review agents
 
@@ -619,165 +440,14 @@ and the result lands in a tracked file to be read as a diff before it ships.
 
 ## Summarising and tagging what was archived
 
-A reference is not finished when its files exist. The website shows a summary
-and searches on tags, and both live in the manifest's `digest` field, which
-nothing mechanical can fill: the tool can tell you a document is 40KB of prose,
-not that it is about a parser differential.
-
-Same two halves as `bylines`, and for the same reason:
-
-```text
-python tools/references/refs.py digest --queue work/digests.json --collection 2019
-#   ... read each document, write text and tags ...
-python tools/references/refs.py digest --apply work/reviewed.json --check
-python tools/references/refs.py digest --apply work/reviewed.json
-python tools/references/refs.py digest --vocabulary
-```
-
-Everything here is offline. Run it AFTER the documents are published and their
-bylines settled, so a summary is written from the text a reader will actually
-get.
-
-**The summary is a retrieval aid, not a review.** Two or three sentences
-aiming at 400 characters, saying what the source found and how - the mechanism,
-not an appraisal of it. Write it from the archived document, never from the
-citation's link text: those disagree more often than they agree, and the
-citation is the shorter and vaguer of the two. `--apply` refuses above 500 and
-reports anything over the 400 aim, because the point is a short summary rather
-than a truncated one: trimming a 546-character summary at its last sentence
-break once kept the opening line and deleted every finding under it. A summary
-that long usually needs rewriting into sentences, and the tool refuses instead
-of mangling it.
-
-**Tags come from `archived-references/tag-vocabulary.json`, at most 10 per
-document.** The JSON is the record; `tag-vocabulary.md` is a reading of it, and
-both are generated - edit the JSON. There is no floor: the annual list page is
-`survey` and nothing else, and a narrow paper is honestly served by two.
-Padding a document up to a threshold puts tags on it that do not apply, which
-is the one thing a controlled vocabulary cannot afford.
-
-**Reach for a tag the archive already uses before inventing one.** That is the
-whole point of a vocabulary - a reader searching `prototype-pollution` should
-find every document about it, not the two-thirds that picked that spelling. The
-queue file `--queue` writes lists the vocabulary most-used first, for exactly
-this.
-
-**A tag the list lacks is still allowed.** Write it and it is adopted, and
-reported as new at the end of the run. Refusing it used to throw away the one
-moment someone had actually read the document. A `?` prefix still marks a word
-you want a maintainer to look at, and it is now KEPT rather than stripped.
-
-What prevents drift is folding, not refusal, and it happens before anything is
-written: case and punctuation never make a second tag (`XSS`, `xss` and
-`  XSS ` are one), and a synonym is folded for good by adding it to `aliases`
-in the JSON (`wasm` publishes as `webassembly`). If a new tag means something
-the archive already names, the fix is an alias, not a second word beside it.
-
-**The OWASP Top 10 categories are derived, never typed.** Tag the techniques;
-the mapping in the JSON turns them into categories, which reach the published
-file as `owasp-a03-2021` and so on. Do not tag a document with a category by
-hand.
-
-**The tags MUST name the techniques the research actually uses.** That is the
-rule no count can check, and it is what a reader searches for: a paper that
-chains a parser differential into an auth bypass is tagged for both, whatever
-its title says. Everything else - the language, the platform, the venue - is
-secondary and only worth a tag when someone would plausibly search by it.
-
-Prefer an existing tag to a near-synonym, and remember a tag that would fit
-almost every document in the archive is not earning its place. There is no
-minimum: a narrow document is better served by its two true tags than by four
-that include two which do not apply.
-
-The digest records `of`, the content hash it was written from. A later repair
-changes that hash, `--queue` offers the document again, and the stale summary
-is replaced rather than left describing bytes nobody can read any more.
+Every newly archived or repaired document needs a current digest. Read
+[the summary and tagging procedure](references/digests.md) after publication and
+attribution, before finishing the run.
 
 ## The talk behind the research
 
-A citation says where research was published. It never says whether the same
-work was also given as a talk, which is the question a reader asks the moment
-they finish a paper. 297 references now answer it from a `videos` array on their
-manifest entry, and the site plays the confirmed ones inside the record.
-
-```json
-"videos": [
- {
-  "url": "https://www.youtube.com/watch?v=nb91qhj5cOE",
-  "confidence": "confirmed",
-  "found": "raw-embed",
-  "by": "conference stage",
-  "conference": "BSides",
-  "seconds": 2479,
-  "published": "2022-12-23",
-  "title": "[BSL2022] Till REcollapse: fuzzing the web for mysterious bugs - André Baptista",
-  "channel": "BSides Lisbon",
-  "checked": "2026-08-18"
- }
-]
-```
-
-`confidence` is one of `confirmed`, `likely`, `possible`. `found` records how the
-match was made - `raw-embed`, `youtube-search`, `in-document`, `on-line`,
-`usenix-page`. `by` records the evidence that it belongs to this research -
-`author`, `company`, `conference stage`, `links the article`. `conference` is
-omitted where the archive cannot name a venue, because the site prints it as a
-fact. A `steps.videos` row is recorded beside the array, the same as any other
-stage: `{"result": "recorded", "best": "confirmed", "count": 2, "rule": …}`.
-
-**THREE RULES DECIDE ADMISSION, and they are what the band means.** A recording
-is `confirmed` only when all three hold:
-
-1. **It is the author's, or their company's, or the conference's stage.** A
-   third party covering the same bug is not this research.
-2. **It is the talk, not the clip.** Where a thirty-minute conference recording
-   and a two-minute proof-of-concept both exist, the talk wins; rows are ordered
-   longest-first within a band so the site offers it first.
-3. **Its date could plausibly be about this work.** A talk a few months after a
-   post is normal - it can even fall in the following list year. Six years after
-   is different research wearing a similar title.
-
-Scoring without those rules is not a smaller version of this, it is a different
-thing: it matched a Hairspray soundtrack to "I know where you've been", a DEF
-CON 32 talk to a 2008 finding, and a Node.js talk to a Python paper. The rules
-are the whole record.
-
-**Below `confirmed` the archive is guessing, and the site says so.** A confirmed
-match with a YouTube id gets a player inside the record. Everything else is one
-button reading `Potential related video`, which never names a venue - "DEF CON
-talk" is a claim, the same link without the claim is what lets a reader judge
-it. Only one such guess is offered per record, and none at all where a confirmed
-one exists. Downgrading a wrong match to `possible` is not a fix; a video that
-is not the author's, or not this research, is REMOVED.
-
-**Look in the content store before searching anywhere.** Sanitisation strips
-`<iframe>` from a published document by design, so an embedded talk is invisible
-in the Markdown - but the raw captured bytes behind it still hold the embed. 90
-of these rows cost no searching at all, only reading back what the archive had
-already stored. After that: the conference's own page, the citation's own links,
-then search. USENIX and similar publish recordings AFTER the conference, so a
-capture taken at publication time predates the embed and needs a live look.
-
-**A date that does not fit is recorded, not published.** Where the recording's
-date sits awkwardly against the list year, write the reason into `date_note` and
-leave the row unpublished for a human:
-
-```json
-"date_note": "the recording is from 2018-02-06, 25 month(s) after the 2016 list year"
-```
-
-55 rows currently carry one. Telling "the talk, given late" from "a different
-piece of research" is a reading of both documents, not a rule a run can apply,
-and getting it wrong in either direction is worse than leaving it for the next
-person.
-
-**There is no `refs.py` subcommand for this yet.** The array is written into
-`archived-references/manifest.json` directly and the run then re-indexes as
-usual; `refs.py transcripts` is a different thing (captions via yt-dlp). Write
-the fields exactly as above - the website reads them by name, and a row missing
-`confidence` is treated as a guess. **The year lists are never touched**: a
-recording belongs on the reference, not in the curated list, and
-`website/build-data.mjs` is what carries it onto the site.
+Read [the recording selection rules](references/related-talks.md) when finding,
+verifying or updating related talks and their confidence in the manifest.
 
 ## What you own
 

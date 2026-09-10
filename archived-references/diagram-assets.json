@@ -1,0 +1,862 @@
+{
+  "schema": 1,
+  "renderer": "Mermaid 11.16.0",
+  "bundle_sha256": "74d7c46dabca328c2294733910a8aa1ed0c37451776e8d5295da38a2b758fb9b",
+  "diagrams": [
+    {
+      "source": "flowchart TB\n subgraph JS[\"JavaScript\"]\n S([\"Start\"]) --> A[\"Create Cross Domain Request<br/>flashXHR = new flashXHR();\"]\n A --> B[\"Set Callback Method<br/>flashXHR.onreadystate = foo;\"]\n B --> C[\"Call Open Method<br/>flashXHR.open(&quot;GET&quot;, url);\"]\n C --> D[\"Call Send Method<br/>flashXHR.send();\"]\n E[\"Callback Method<br/>foo(response);\"] --> T([\"Stop\"])\n end\n subgraph Flash\n H[\"Create Request Handler<br/>handler= new Handler(url)\"]\n R[\"Send Cross Domain Request\"] --> K[\"Call Callback Method<br/>ExternalInterface.call(callback);\"]\n end\n C --> H\n H --> C\n D --> R\n R --> N[\"Network\"]\n N --> R\n K --> E",
+      "path": "archived-references/diagrams/00a56a5a48b78ffde18b1f4d82f40868a7c8d73c188f9ca8194281dca5b84c03.svg",
+      "sha256": "3129f666f6e4b39fc965f9ecb7fc736afed4f7e6745f49466f91055c9d86e981"
+    },
+    {
+      "source": "flowchart LR\n A[\"GET /contests/ HTTP/1.1<br/>Host:cups.online\"] --- B[\"404 Not Found<br/>Content-Type: text/html\"]\n C[\"Second request with script in path\"] --- D[\"301 Moved Permanently\"]",
+      "path": "archived-references/diagrams/00ef72aba0717d36efe4392d183ff6d5cab1d13afdc5719272d50f876b6c9e49.svg",
+      "sha256": "ee81799df2013e2679df455d1be910cd3b2a6334831197835bb3369ee0ea558c"
+    },
+    {
+      "source": "flowchart TB\n    A[\"GET /my-services/invoices/:id/pdf\"]\n    B[\"Retrieve the following...<br/>[unknown] + / invoices / + :id\"]\n    C[\"PDF content ...\"]\n    A --> B\n    B --> A\n    B --> C\n    C --> B",
+      "path": "archived-references/diagrams/021e40922cda4c09fa051942afd2d7f19c28e183ea85118116a9d97b2b8f1033.svg",
+      "sha256": "81567fb1b51b97f484b02fead580498c6c3b7bc064e561095c19a618dd1678a8"
+    },
+    {
+      "source": "flowchart LR\n  A[\"Attacker\"] --> W\n  subgraph WA[\"Web Application\"]\n    W[\"XSS Filter\"]\n  end\n  W --> E[\"Envelope\"] --> BF\n  subgraph B[\"Browser\"]\n    BF[\"XSS Filter\"] --> IH[\"innerHTML\"] --> M[\"Mutation\"] --> H[\"HTML Rendering\"] --> X[\"XSS Executes\"]\n  end\n  X --> V[\"Victims\"]",
+      "path": "archived-references/diagrams/02824cb37fce7a4063771dfc83c575b14e6d5a6897ab076f8a0c308089a590d6.svg",
+      "sha256": "022dbd199598e811a07659b8138b32c3e638ccd4b407889ca97cc96629350130"
+    },
+    {
+      "source": "flowchart LR\n A[\"Attacker Session_id\"] --> B[\"Session_id inside X-Original-Uri\"]\n C[\"Client Session_id\"] --> D[\"Session_id in the final Cookie header\"]",
+      "path": "archived-references/diagrams/03c1fa14bd45537102fa2ac95ad3a6b8d045407452e73ad79917d672037e147b.svg",
+      "sha256": "899c00dc0ad46ef27bcc12138e66fc321169ef69ab081dc337fc811d277242af"
+    },
+    {
+      "source": "flowchart LR\n  A[Application] --- D[(Database)]\n  A --- L[Logging]\n  A --- M[Message Queue]\n  A --- S[Storage]\n  A --- C[Cache]\n  A --- E[\"…\"]\n  linkStyle 0 stroke:#ff2f5e,stroke-width:3px",
+      "path": "archived-references/diagrams/0491dd27cba91ad70eeedca566742ac16bfeeebe27c20addfbedf823c1445820.svg",
+      "sha256": "c07321b1520d8ad0ac5a8309d62936f4bd12122e9b79bd085c458fdea2b4c6b6"
+    },
+    {
+      "source": "flowchart TB\n U[\"A U+0041 — OVERLONG\"]\n U --> B0[\"11000001 · c1 · leading byte n=2\"]\n U --> B1[\"10000001 · 81 · continuation byte\"]",
+      "path": "archived-references/diagrams/05abb4ba34ca570da9ed787490e93078d395fe046318a33125f4c35fd0545063.svg",
+      "sha256": "23168452420ba930d5ab30e62b28df4ea3a199281830bd3aedee23919c8deaff"
+    },
+    {
+      "source": "flowchart TD\nB[\"BIOS/MBR\"] --> L[\"LILO/GRUB<br/>Stage 1<br/>Stage 2\"]\nL --> K[\"vmlinuz kernel<br/>zImage<br/>bzImage\"]\nK --> I[\"/sbin/init\"]",
+      "path": "archived-references/diagrams/08242c11d28a9b53f9f9f02cf4567bd83ce4088ae9d5c24c1a1913310e583afe.svg",
+      "sha256": "48514d5326cfe5ebacb2011d174b8734b6a1100e28e55c169997246d1263ca6c"
+    },
+    {
+      "source": "sequenceDiagram\n participant H as Hacker\n participant M as MyBB\n participant D as DNS\n H->>M: http://foo.orange.tw/\n Note over M: 1\n M->>D: Q: foo.orange.tw\n D->>H: DNS query\n H-->>D: A: 1.2.3.4\n D-->>M: A: 1.2.3.4\n Note over M: 2\n Note over M: 3\n M->>D: Q: foo.orange.tw\n D->>H: DNS query\n H-->>D: A: 127.0.0.1\n D-->>M: A: 127.0.0.1\n Note over M: 4",
+      "path": "archived-references/diagrams/09b1110f154c264d39e9aa752ddf9f78538c84d8838b31deb3196ced1debf192.svg",
+      "sha256": "d4ec9698936817bd63714f9ec33eabd55232e9cb497e83c780687878ff0e34fd"
+    },
+    {
+      "source": "flowchart LR\n subgraph a[\"Direct HTTP/1.1\"]\n U[\"User\"] --> S[\"Server\"]\n S -->|http/1.1| U\n end\n subgraph b[\"HTTP/2 with HTTP/1.1 backend\"]\n V[\"User\"] --> F[\"First server\"]\n F -->|http/2| V\n F --> B[\"Second server\"]\n B -->|http/1.1| F\n end\n linkStyle 1,5 stroke:red",
+      "path": "archived-references/diagrams/0c783bc21f7aa2065259d0175e98c28e19c502b8d3ac71b57943d777f3176ef7.svg",
+      "sha256": "700094e5229e81d9b93a431ec245ac3e3c0cb5f0082a4c2eb226e6f400adbec8"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"HD image of cat?\"| A[\"akamai.example.com\"]\n  A -->|\"HD image of cat?\"| E[\"example.com\"]",
+      "path": "archived-references/diagrams/0fb56f1f8df0daa339cd2be4635266e0b65695c0aa88e144dc8bb4f8ffd0a66b.svg",
+      "sha256": "e7fc54c79c7a25b3edc312f7acd478d559d3a5ad18e2b8ce8a9eda10239d8eae"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"Adobe Analytics\"]\n  U --> J[\"jQuery\"]\n  U --> K[\"Akamai\"]\n  U --> D[\"DynDNS\"]\n  U --> C[\"amazon cloudfront\"]",
+      "path": "archived-references/diagrams/12261f3fea46741236b3ed8a34047c27b942b2270a2b7a65d36423a7a7157a8a.svg",
+      "sha256": "d874dd094f6e58c89a71655354e6e3bce22c0b52863597263e17796e630f6943"
+    },
+    {
+      "source": "flowchart LR\n  random[\"Random Final cipher block\"] --> d1[\"Block Cipher Decryption\"]\n  k1[\"Key\"] --> d1\n  d1 --> x1((\"XOR\"))\n  p1[\"Final plaintext block\"] --> x1\n  x1 --> c1[\"Ciphertext\"]\n  c1 --> d2[\"Block Cipher Decryption\"]\n  k2[\"Key\"] --> d2\n  d2 --> x2((\"XOR\"))\n  p2[\"Plaintext\"] --> x2\n  x2 --> c2[\"First cipher block\"]\n  c2 --> d3[\"Block Cipher Decryption\"]\n  k3[\"Key\"] --> d3\n  d3 --> x3((\"XOR\"))\n  p3[\"First plaintext block\"] --> x3\n  x3 --> iv[\"Initialization vector (VI)\"]",
+      "path": "archived-references/diagrams/14fad57f1134cd8da68d0667b1ca4651154d5e6c04ab544d8217d767ae5c9cd3.svg",
+      "sha256": "8cfa1001595b3c3e8110a85a8c642d9cf9bce251815d8d52726bd68099e6033a"
+    },
+    {
+      "source": "flowchart LR\n  A[\"First Q\"] --> B[\"First Q after …\"]",
+      "path": "archived-references/diagrams/15fe9b072c04c95f40f3dd1bb2a17840c10766dd9e43854e1211f19bc1f2b506.svg",
+      "sha256": "c31df5b28ef3a3b3ea213212246de61b938b078abe216134d1e830fbabee3076"
+    },
+    {
+      "source": "flowchart LR\n C[\"Client computer\"] -.- N[\"CDN — Content Delivery Network\"]\n N -.- S[\"Server\"]",
+      "path": "archived-references/diagrams/164cfca13cc7a003d3e1b767ec69e1851f1ec0da580c638345c635686006bced.svg",
+      "sha256": "0dd41584681c6e4918fb70c913ea42ed1b58c9c5213ff376ec4851e315f2ce61"
+    },
+    {
+      "source": "sequenceDiagram\n participant R as Researcher\n participant A as Application\n R->>A: &lt;%=1%&gt;@*#{1}\n A->>R: 1@*#{1}\n R->>A: ${\"&lt;%-1-%&gt;\"}\n A->>R: ${\"\"}",
+      "path": "archived-references/diagrams/19fc0af535b47572acf9ca2ba7131a1272859cda0adb854836324f550bb89b01.svg",
+      "sha256": "e879dd9a44eda42cdab86180dbdc00eb56efb4cc9fb60f1d30b3088fcccc8454"
+    },
+    {
+      "source": "sequenceDiagram\n participant R as Researcher\n participant A as Application\n R->>A: { system(\"sleep 10\") }\n Note right of A: 10s\n A->>R: Server response",
+      "path": "archived-references/diagrams/1a520b3b9a0bff65c3e61101ff69b0012b9428092a2b7ed41100aa1c231e2654.svg",
+      "sha256": "ad3e9f35cf7c650fe6eb749d79781e01f2267a9558b0c5227d12b76b9c8172c8"
+    },
+    {
+      "source": "flowchart TB\n subgraph filter[\"filter id = timingfilter1\"]\n  noise[\"feImage xlink:href = noise.png\"] --> composite[\"feComposite in2 = SourceGraphic<br/>operator = arithmetic; k1 = 1\"]\n  input[\"Input Element: white square\"] --> composite\n  composite --> noisy[\"Noisy image\"]\n  noisy -->|\"t1\"| erode[\"feMorphology operator = erode; radius = 30\"]\n  erode --> result[\"Darkened noisy image\"]\n end",
+      "path": "archived-references/diagrams/1ba45bc2f2100a95a83c70a23bd10fff21ff9b0209d185a01aa32334ec66c058.svg",
+      "sha256": "e0448fcc33be78433d3cebb45f5288ce1f883c0902d20aebec3540437577f765"
+    },
+    {
+      "source": "flowchart LR\nsubgraph H[\"HEAP MEMORY — LOW to HIGH\"]\ndirection LR\nJ[\"JS Buffer\"] ~~~ S1[\"SSL\"] ~~~ S2[\"SSL\"] ~~~ S3[\"SSL\"]\nend\nS1 --- D\nD[\"version | method | … | *handshake_func | …\"] --> A[\"ssl_accept()\"]\nAL[\"Allocate\"] --> J",
+      "path": "archived-references/diagrams/1be157c7386e215fc0bfbe0cfe9df20ddac67419f99d44c4aa9a208956901d05.svg",
+      "sha256": "b92749bf10101fc314d94040e6f01834fe8204813b462e537fab3a633038dde2"
+    },
+    {
+      "source": "flowchart TB\n U[\"? U+000D\"]\n U --> B0[\"00001101 · 0d · Byte 0\"]",
+      "path": "archived-references/diagrams/1c990e466240bc9ac2e5dda3ee829aceb33fa271d856a0e2d0dad0198a55e430.svg",
+      "sha256": "fdc13bd9c8c4a42df33aed3ba24ba2d09b3ff3581fddcf2e953d16feb7ad4afa"
+    },
+    {
+      "source": "flowchart TD\n    U[\"static in http://127.0.0.1/static../settings.py\"] --> L[\"location /static\"]",
+      "path": "archived-references/diagrams/1cd3bbf3c85a5e8f756976cb4c6c61fd558ef790a4d9e812430a92435ce28148.svg",
+      "sha256": "f84bb5d49a8ac8b51a235c608a727b0468bc7cb0b213d9fdc535c03255425894"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com — ATTACKER HIJACKS SWF WITH PLUGIN\"]\n  L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/1d0b3b2a306876ddd19e4587f2e51efe1678b8962c0d5b18eeafb866f4eaa7c0.svg",
+      "sha256": "88ebc6783146ce284d10ca67e6141fcc77c146e2630dd3ae77316d3827c86785"
+    },
+    {
+      "source": "flowchart LR\n  A[\"First Q\"] --> B[\"First Q after …\"]\n  B --> C[\"Continues outside the original slide\"]",
+      "path": "archived-references/diagrams/1f303404f15a3e22eb5ee003a3ca11bd92f902139b06ef56d0849db5f3dfcf03.svg",
+      "sha256": "accaf85972212b94daef5b66c9a1142ed4eda2a78c5caa41cf6ea3f021ff80cb"
+    },
+    {
+      "source": "flowchart LR\n s[\"Sent: SYN\"] --> sa[\"Received: SYN/ACK\"] --> ack[\"Sent: ACK\"] --> req[\"Sent: HTTP Request\"] --> crit[\"? Critical Computation ?\"] --> hdr[\"Received: HTTP Response Headers\"] --> a[\"Sent: ACK\"] --> body[\"Received: HTTP Response Body\"] --> fin[\"Sent: ACK/FIN\"] --> last[\"Received: ACK\"]",
+      "path": "archived-references/diagrams/2291c50aeb254cd6d4b25a93a86232b9aba90e420d59903ac58c88a5cdcc2eff.svg",
+      "sha256": "5ceb9b94c71b8633dcc3c406a1714f45c0b558756b16d78f3d8d0ede0aa5c1bb"
+    },
+    {
+      "source": "sequenceDiagram\n    actor User\n    participant Pinterest as Pinterest API\n    participant Authy\n    participant Service as User Service\n    User->>Pinterest: 1. password\n    Pinterest->>User: ok\n    User->>Pinterest: 2. phone number\n    Pinterest->>User: ok\n    Pinterest->>Authy: 3. phone number\n    Authy->>Pinterest: authy id\n    Pinterest->>Authy: 4. Request code\n    Authy->>Pinterest: ok\n    Authy->>User: 5. verification code\n    User->>Pinterest: 6. verification code\n    Pinterest->>Authy: 7. verification code\n    Authy->>Pinterest: ok\n    Pinterest->>Pinterest: 8. Enable 2FA / Gen. backup code\n    Pinterest->>Service: 9. phone number, 2FA enabled, backup code\n    Service->>Pinterest: ok\n    Pinterest->>User: 2FA enabled / backup code",
+      "path": "archived-references/diagrams/22ee96ec1d8db75afaf7d9eadb16ffe5b0cbc8f7a590951d6273e1c9cc71f251.svg",
+      "sha256": "51a646a3bbaf27f10a7f162fd49a9bfe69342166af820a79b97df97c8c3e5992"
+    },
+    {
+      "source": "flowchart TB\n  subgraph A[\"Vulnerable library used\"]\n    subgraph B[\"Has vulnerable config\"]\n      subgraph C[\"Vulnerable in default config\"]\n        H[Harbor]\n      end\n    end\n  end",
+      "path": "archived-references/diagrams/23088a3cfa90c92df85d7ee8d7c92b2bc42eab1f03188f74a4bbe22f04c4417b.svg",
+      "sha256": "eccbc0fdc9ffa94258c6ae1c53927162dc8d1aca53451b899fb72a058463bf24"
+    },
+    {
+      "source": "flowchart LR\n A[\"http://a.net (attacker)\"] --> J\n B[\"http://b.net\"] --> F\n subgraph Browser[\"Browser: http://a.net\"]\n J[\"JavaScript (a.net)\"]\n F[\"CrossDomain.swf (b.net)\"]\n end\n U[\"User\"] --- J\n J -->|\"via CrossDomain.swf; Cookie for c.net\"| C[\"http://c.net\"]\n C --> J\n C --- P[\"Crossdomain.xml\"]",
+      "path": "archived-references/diagrams/25ab6a9ef3ba07a6d8544cdda92bb154443d902cae893614bcee6b5dfd504464.svg",
+      "sha256": "4dfd05ce4a2695c1447c9134715f79a551eabea537a85ebc35f4978ba76ea65f"
+    },
+    {
+      "source": "flowchart TD\n A[\"If-Match request\"] --> C{\"HTTP code is 412?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/2602852c2eb4319e7af4d4f7efedd538c7384c0d890bdd72e7523de6ac4bc84f.svg",
+      "sha256": "ccd1f11e83e3ed8c36570156f89be27270471d49a8db7ca642f87a42e17796fb"
+    },
+    {
+      "source": "flowchart LR\n C[\"fsockopen + fputs listing\"] --> Q[\"GET /1, GET /2, GET /3 request stream\"]\n Q --> R[\"Concatenated HTTP/1.1 200 OK responses: data 1, data 2, data3\"]",
+      "path": "archived-references/diagrams/28015ffa0238170b666adb9f297aad475a7fbd737a44872cba161cf13bc95604.svg",
+      "sha256": "2a3eb75ed231aa8cb9d13f1efc5c4026b6a0681d3968572e02011cd8926671a3"
+    },
+    {
+      "source": "flowchart TD\n A[\"Calculate time took for request: diff_time\"] --> B[\"Sleep (sleep_time - diff_time) microseconds\"]",
+      "path": "archived-references/diagrams/2854e121cfa7e75ec7519a80a96bff21160a4ea308720cc72b3090ac9dc68b99.svg",
+      "sha256": "807897520eb74da2bc5923d22f1edf67136202b7c91d21d10284ceba77956f3e"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com — hijacked FlowPlayer\"]\n  A --> K[\"akamai.legitbank.com\"]\n  K -->|\"HIJACKED FLOWPLAYER REQUESTS PAGE FROM LEGITBANK.COM\"| L[\"legitbank.com\"]\n  M[\"mediapm.edgesuite.net\"]",
+      "path": "archived-references/diagrams/2a146cf49e2a7024476fecbdf39f4bb1952997fbbe127e5b4b48ac6942ef6a64.svg",
+      "sha256": "2cf0e30daa22c4ba65f086bf71a258ff200d590d7b2a7ed095472c2776275cd5"
+    },
+    {
+      "source": "flowchart LR\n Q[\"GET /head, GET /data, GET /foot request stream\"] --> R[\"Concatenated HTTP responses with XML root and CDATA wrapping\"]\n R --> P[\"fgets, substr, DOMDocument and nodeValue listing\"]",
+      "path": "archived-references/diagrams/2a428536c14b111ba5964a0afa0afa7df06f7c974729c30dbe66102e9cf42b93.svg",
+      "sha256": "7b3cbdc64b78a03d1e07ef819362a78d26cbc972716ff5089f51166042582bfc"
+    },
+    {
+      "source": "sequenceDiagram\n    actor U as User\n    participant C as Computer\n    U->>C: Sends serialized object\n    C->>C: Deserializes object\n    C->>C: Performs operations on object\n    C->>C: Serializes object again\n    C->>U: Sends new serialized object",
+      "path": "archived-references/diagrams/2b62d9f754577b2b5a2c2564aa0099128419dc683ea8946d8d510a9af17dad65.svg",
+      "sha256": "c3e1a8408810ee2e905f5dc3fd8cb249271ff959ed8dda63090d9ff8c7a2b5eb"
+    },
+    {
+      "source": "sequenceDiagram\n participant R as Researcher\n participant A as Application\n R->>A: #{ 1 / (1.0 == 1.0) }\n A->>R: Normal server response\n R->>A: #{ 1 / (1.0 == 0.1) }\n A->>R: Internal Server Error",
+      "path": "archived-references/diagrams/2bf350b187f92a400bfcb1caf46595ac05fb94b421ed5e8dee416a6f93d24820.svg",
+      "sha256": "daae8e33b5e38de5d4b048e0b97f1bd068527c211ad1c5d6161dd1fb9a4e7019"
+    },
+    {
+      "source": "flowchart LR\n A[\"signature parameter contains only this data\"] --> B[\"PoC: HTTP/1.1<br/>Host: mail.yandex.ru<br/>X-Original-Uri prefix through %0D%0A%0D%0A; excludes --xxx\"]",
+      "path": "archived-references/diagrams/2c2e5b715a04b780aaea4a9a04746788696d8b8ba196be2e7feac6437a1e0566.svg",
+      "sha256": "0752f8bd71345cf1fc45e7698668caef0f3a4da6913f235b9749903ef7c9e1ff"
+    },
+    {
+      "source": "flowchart LR\n A[\"NFD: é\"] --> B[\"e + combining acute\"]\n C[\"NFC: é\"] --> D[\"e + combining acute\"] --> E[\"é\"]\n F[\"NFKD: U+2460 (circled digit one)\"] --> G[\"1\"]\n H[\"NFKC: U+2460 (circled digit one)\"] --> I[\"1\"] --> J[\"1\"]",
+      "path": "archived-references/diagrams/2dc05d58c4dfe29845f4f7eb86c71d07f0900f7b1ac887d826b555f0bf29d4d6.svg",
+      "sha256": "b4ec84ad8b0601d4e95d316c9eb6f5874fab8d2e1db470c82a096ddfd88232dd"
+    },
+    {
+      "source": "flowchart TB\n    A[\"Apache\"] --- S[\"/..;/ seems to be a directory. Take it!\"]\n    T[\"Tomcat\"] --- B[\"OK! /..;/ is the parent directory\"]",
+      "path": "archived-references/diagrams/2eb2631394fa928175ff7ad426ead35a19a6dbb3337d364d49d61d9940db838c.svg",
+      "sha256": "5210e7c3dd6a1ecb799b9f8f65bf182622325df24f6dadbb91a99c51e955132d"
+    },
+    {
+      "source": "flowchart TB\n    A[\"GET /profile?id=1<br/>Host: example.com\"]\n    subgraph internal[\" \"]\n      B[\"GET /api/profiles/1/info<br/>Host: internal.example.com\"]\n      C[\"Content-type: application/json<br/>{&quot;name&quot;:&quot;Sam&quot;}\"]\n      B --> C\n      C --> B\n    end\n    A --> internal\n    internal --> A",
+      "path": "archived-references/diagrams/3026053c16fa95f224b0ee02d1eef29c829e3666199f7809935abd25efd0ea1f.svg",
+      "sha256": "ee1b1cb086a002251eb31d77c9c45d64a07db18246d55d6cc0254c9c3d27c0d8"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] -->|/%252e%252e/| F[\"First server\"]\n F -->|/%2e%2e/| B[\"Second server\"]\n B --> F\n F --> U\n linkStyle 1 stroke:red",
+      "path": "archived-references/diagrams/311d4e1b92f7b0d369cc089948894e3e357696a198952f16c1917da4fe45cdb5.svg",
+      "sha256": "32713fd0d55e4f83bf4c849e3461b35cddac995c4b83f9820e66dc7730f305a2"
+    },
+    {
+      "source": "flowchart TB\n subgraph Input\n B2[\"Byte 2 — MSB\"]\n B1[\"Byte 1\"]\n B0[\"Byte 0 — LSB\"]\n end\n subgraph LE[\"Little Endian\"]\n L2[\"Byte 2\"]\n L1[\"Byte 1\"]\n L0[\"Byte 0\"]\n end\n subgraph BE[\"Big Endian\"]\n R0[\"Byte 0\"]\n R1[\"Byte 1\"]\n R2[\"Byte 2\"]\n end\n B2 --> L2\n B1 --> L1\n B0 --> L0\n B2 --> R2\n B1 --> R1\n B0 --> R0",
+      "path": "archived-references/diagrams/31a45bfbbd603a9f2a9a68fa9cf51290c5894cd4b546ae8867a251a442131790.svg",
+      "sha256": "5d5a5a94bd1c7b2265422a6792463673ecac841f193025c5579a479e0780aa67"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com — hijacked SWF\"]\n  A -->|\"Performs authenticated requests freely.\"| L[\"legitbank.com\"]\n  L --> A",
+      "path": "archived-references/diagrams/377381ed32c6cf894a7acf6a469a912f82bede684aff3c92bff065c2487220c8.svg",
+      "sha256": "f9cf926f3cfe196dc0927b9f9ab147e3bb34d8e98d63163c5f201b2866f042bc"
+    },
+    {
+      "source": "flowchart LR\nB[\"Browser\"] -. \"SSL/TLS\" .-> V\nsubgraph I[\"Intranet\"]\nV[\"SSL VPN\"] <-.->|SSH| S[\"Computer\"]\nV <-.->|RDP| R[\"Computer\"]\nend",
+      "path": "archived-references/diagrams/39042e17ddbe35c79adfbcadac4097c55ba6499078283ff2d232720e6dfd93f6.svg",
+      "sha256": "061e07ffb0c27cb2dd3eab43f0762399329afb3890f9c36d66f3b4483ae0e0fa"
+    },
+    {
+      "source": "flowchart LR\n  idp[\"Identity Provider (IdP)\"]\n  user[\"User\"]\n  sp[\"Service Provider (SP)\"]\n  user -->|\"1. Initial request\"| sp\n  sp -->|\"2. Redirect to IdP with SAML Request\"| user\n  user -->|\"3. Forward SAML Request\"| idp\n  idp <-->|\"4. Authenticate the user\"| user",
+      "path": "archived-references/diagrams/39b4736db91718c1249d637fc49f52cceec59bb55850a8910dbd0e21fac9f2a0.svg",
+      "sha256": "3814835950dbee49c9ea1b0c878a3266c39aaab8270f439dbbb74b589445e433"
+    },
+    {
+      "source": "flowchart LR\n I[\"input\"] ---|test| R[\"Regex Replace\"]\n R ---|test| U[\"Url Encode\"]\n U ---|test| O[\"output\"]",
+      "path": "archived-references/diagrams/3d66afe2a03e2306f1070e8f28d3f5dd12ef7cf2a01c73dca652173b32325792.svg",
+      "sha256": "a0b2a76624c48d2cc328f7b9f557632ee7d20dd761bcd6efe5a6c60eb1f273f1"
+    },
+    {
+      "source": "flowchart TD\n A[\"HTTP request\"] --> B[\"Get new header value\"]\n B --> C{\"Header was changed?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/40890223dd01e17dcbcd0143713d51e170929788eb223121ba5fa8cedc3fde0b.svg",
+      "sha256": "67a74af0e323bec5188ceb0959a390bbb04d8fdc2518d87e75f0412fa6c5b707"
+    },
+    {
+      "source": "flowchart LR\n  LP[\"Length padding\"] --> FP[f]\n  IV((IV)) --> F1[f] --> F2[f] --> FN[f] --> FP[f] --> Final[Finalisation] --> Hash((Hash))\n  M1[\"Message block 1\"] --> P1[\"Message block 1\"] --> F1\n  M2[\"Message block 2\"] --> P2[\"Message block 2\"] --> F2\n  MN[\"Message block n\"] --> PN[\"Message block n\"] --> FN",
+      "path": "archived-references/diagrams/411c7ef7ef7da53bd495df75736c9e0864e25351f3761a92a8f0a56818431d23.svg",
+      "sha256": "e7f174ebafa8fd8618d1312083baa8489a6f0763f7354e913319726155c36cc1"
+    },
+    {
+      "source": "flowchart LR\n A[\"1.1.1.1\"] --> P[\"urllib2 / httplib\"]\n B[\"2.2.2.2\"] --> Q[\"requests\"]\n C[\"3.3.3.3\"] --> R[\"urllib\"]",
+      "path": "archived-references/diagrams/443a8127ef179049eb17165b67f0f78c9102d8c12d5f6e47fbc40b70e5fd9dec.svg",
+      "sha256": "e4b2505e57b07475cc86bf8bbc142e56826333db8e27db60d9d1fa3f94ecedf6"
+    },
+    {
+      "source": "flowchart LR\n  subgraph C[\"Corporate network\"]\n    PCs[\"Six desktop computers\"]\n  end\n  subgraph E[\"ERP network\"]\n    ERP[\"ERP server\"]\n  end\n  subgraph I[\"Industrial network\"]\n    PLC[\"PLC\"]\n  end\n  PCs <-->|\"Firewall boundary\"| ERP\n  ERP <-->|\"Firewall boundary\"| PLC",
+      "path": "archived-references/diagrams/4612be4711203d2f6c5f60bf784cbf622d825eb431f2aaa6d3c319dcfee06d10.svg",
+      "sha256": "1758029271cd761da8f8d4e726f6dae891638e3be9323663949106d27a182132"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] -->|CRLF Injection + Open Redirect| F[\"First server\"]\n F --> B[\"Second server\"]\n B -->|/\\attacker.tld? + Cookie| F\n F --> U\n U -->|Session_id| A[\"attacker.tld\"]\n linkStyle 1,4 stroke:red\n linkStyle 2,3 stroke:green",
+      "path": "archived-references/diagrams/472748b2341ebf6533298621bf66024b69e0e5b7af6c328a4390d9bd8a2cdee9.svg",
+      "sha256": "bb27e0753a192ee95786ecc2b457798bee4fd079d4af6d43fbefa07b78cfdc36"
+    },
+    {
+      "source": "sequenceDiagram\n    participant V as Browser / Victim\n    participant W as Application / site.tld\n    participant A as Attacker / atk.site.tld\n    V->>W: GET /\n    W->>V: Set-Cookie: sid=good#59; Path=/\n    V->>A: GET /\n    A->>V: Set-Cookie: sid=evil#59; Path=/login#59; Domain=site.tld\n    V->>W: POST /login/index.php — Cookie: sid=evil#59; sid=good\n    Note right of W: !",
+      "path": "archived-references/diagrams/483cafbfffbab58a5c5ac27092468d5a430bfd476ede244201d505330474ee46.svg",
+      "sha256": "c94cf53849f6c8f7f0993df765ffc1b5cebb800300a82748fb697ec3d5038a98"
+    },
+    {
+      "source": "flowchart LR\n A[\"http://a.net (attacker)\"] --> J\n B[\"http://b.net\"] --> F\n subgraph Browser[\"Browser: http://a.net\"]\n J[\"JavaScript (a.net)\"]\n F[\"CrossDomain.swf (b.net)\"]\n end\n U[\"User\"] --- J\n J -->|\"via CrossDomain.swf; Cookie for b.net\"| B\n B --> J",
+      "path": "archived-references/diagrams/4e5bbe2596c4e7f7655062798876f1b6b9a8d1b0e701fb779f6bdb19e70fffb3.svg",
+      "sha256": "ca9795344ef5668f056bbb2bb608948334bf0f2cec907e890e5612d699893aa2"
+    },
+    {
+      "source": "flowchart TD\n  req[\"GET /?SAMLResponse=...\"] --> py[\"python3-saml\"]\n  py --> xmlsec[\"xmlsec\"]\n  xmlsec --> libxslt[\"libxslt\"]\n  libxslt --> libxml2[\"libxml2\"]",
+      "path": "archived-references/diagrams/4f127b9d18d6656c1796ef4d6635ae367956644dd6adffc0ebf21fe51231957c.svg",
+      "sha256": "30f6ec5be3a1c7a9e8d58e1fae77bdc8b2d2d1e3c9c922e011de16a699895fbd"
+    },
+    {
+      "source": "flowchart LR\n A[\"google.com\"] --> B[\"PHP parse_url\"]\n C[\"evil.com\"] --> D[\"PHP readfile\"]",
+      "path": "archived-references/diagrams/4f475c824819f7a83ada2e60e05f69b161dea3996e3926e9392319239ec05e87.svg",
+      "sha256": "db13159316587764fe4dc678e833fe1312d9d61b7b661a5694169ccc833d7e09"
+    },
+    {
+      "source": "flowchart TD\n  A[\"Computer — top\"] <--> B[\"Computer — left\"]\n  A <--> C[\"Computer — right\"]\n  A <--> D[\"Computer — lower left\"]\n  A <--> E[\"Computer — lower right\"]\n  B <--> C\n  B <--> D\n  B <--> E\n  C <--> D\n  C <--> E\n  D <--> E",
+      "path": "archived-references/diagrams/53465208a7bd3dbb5f041102439e08ca66e88e77153a4244a26058018a10afd8.svg",
+      "sha256": "6651ef7a3b2de6cc2bf6af43491af7a9f3da01d9108b2ace71464f7e5ef0a547"
+    },
+    {
+      "source": "flowchart TD\n  S[\"Web server\"] <--> B1[\"Web browser — left\"]\n  S <--> B2[\"Web browser — centre left\"]\n  S <--> B3[\"Web browser — centre right\"]\n  S <--> B4[\"Web browser — right\"]",
+      "path": "archived-references/diagrams/5682fb07fddadca17f133e8eac5ef6f8d3e3b05fd0b0986c2a3b7c3e369b19d1.svg",
+      "sha256": "3095aede10fe7d68d3d46c4aba83bb9ac86f8ce0961e5a918b629c164a5c2290"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"User navigates to attacker page\"| A[\"attacker.com\"]\n  L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/58843329a6a6e0cabc1fa0c578108d9bbb1fe13968fd9c7c84c74393fe36d622.svg",
+      "sha256": "eaa6cc3c665b0b8e3cbdf5fa11ef72868b1d0b77f0bc774fbff8d9e567b888e3"
+    },
+    {
+      "source": "flowchart LR\n B[\"Byte 0\"] --> S[\"Single Byte Buffer\"]",
+      "path": "archived-references/diagrams/5a04601f2a326d321aa603238cea5d754c8382a59fa3dc1f2fa3cf76822c06e7.svg",
+      "sha256": "e6a4784e4f31739c34ca7424974233ac90ec7237d9e06f08eebe9797581a7b27"
+    },
+    {
+      "source": "flowchart TD\n A[\"HTTP request\"] --> B[\"Get Last-Modified header value\"]\n B --> C{\"Header value was changed?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/5a8a60044655025e3dfb994d627e6aa1c1689c909f755587dfb30a922f4f7340.svg",
+      "sha256": "fbc77380ab10da242ae0d3d5138aa9c449567cc76fef10d914e216831f14c86f"
+    },
+    {
+      "source": "flowchart TD\n    Q[\"WP_Query constructor arguments\"] -->|parsed into| S[\"SQL query\"]\n    S -->|executes| D[(DB)]\n    D -->|Results and SQL query stored in WP_Query!| Q",
+      "path": "archived-references/diagrams/5ba5830da184d71f3bd358ca36049da4bb5bfe8940e27a94b41e720e8f15e452.svg",
+      "sha256": "f7d86a74fefcae2eacefb4b13f83cd5c5aa5dd3b6fe35e7e5add169fcb63ecc6"
+    },
+    {
+      "source": "flowchart TD\n A[\"Request\"] --> B[\"Page has been changed: HTTP/1.1 412 OK (page data)\"]\n A --> C[\"Page has not been changed: HTTP/1.1 200 OK (only headers)\"]",
+      "path": "archived-references/diagrams/5bcc510a434f7ec46846cbd13118840efa6c7789c167fcf68e497241d80a9de9.svg",
+      "sha256": "a4646f4c96bf0de1d4831f72504738f0538e544f93d4dde7ee1d8f11d05999d1"
+    },
+    {
+      "source": "flowchart LR\n  idp[\"Identity Provider (IdP)\"]\n  user[\"User\"]\n  sp[\"Service Provider (SP)\"]\n  user -->|\"1. Initial request\"| sp\n  sp -->|\"2. Redirect to IdP with SAML Request\"| user\n  user -->|\"3. Forward SAML Request\"| idp",
+      "path": "archived-references/diagrams/5c38955e2952edc60a22b9df73100f7fe4989510c449da578efcccb822af9725.svg",
+      "sha256": "be5e4a1fc5fb44a4657bbd454e6e47135c3849b516f0116ee481913e105b3c4a"
+    },
+    {
+      "source": "flowchart TD\n    subgraph SET[\"set_transient()\"]\n      A[\"WP_Query object\"] -->|serialize| B[\"Serialized WP_Query; sql length 100; secret token\"]\n      B -->|prepare| C[\"INSERT INTO … serialized value; token remains\"]\n      C -->|query| E[\"INSERT INTO … serialized value; token restored to percent sign\"]\n    end\n    E --> D[(DB)]\n    subgraph GET[\"get_transient()\"]\n      F[\"Serialized WP_Query; declared length 100, shorter SQL value\"] -->|unserialize| G[\"WP_Query object\"]\n    end\n    D --> F",
+      "path": "archived-references/diagrams/5c86fa8c06f53057159ba3a54b8a65c2dee4b460d1919c23d148481892292612.svg",
+      "sha256": "dfbbc28927794247652bd3216d79758201cebf2337b695e04bd17f62e156b429"
+    },
+    {
+      "source": "flowchart LR\n A[\"CRLF Injection<br/>HTTP Parameter Pollution<br/>Open Redirect\"] --- B[\"Leak httpOnly cookie Session_id\"]",
+      "path": "archived-references/diagrams/5e26d2dd4c7b7891d7d6f375265095dcd0e01a88612ece43a3b82ae8992f4da1.svg",
+      "sha256": "919f3e00478e3739e866f204681c79e7b8f33df325c7dcfa155f13a33c3eed3a"
+    },
+    {
+      "source": "flowchart BT\n  ext[\"Extension\"]\n  subgraph webkit[\"WebKit\"]\n    write[\"document.write\"]\n  end\n  subgraph v8[\"V8 JS\"]\n    eval[\"eval\"]\n    report[\"report\"]\n  end\n  write --> report\n  eval -.-> report\n  report --> ext\n  report -.-> ext",
+      "path": "archived-references/diagrams/60bae79854b60f4fb6bebe58c2e788e8c492964a171eb0b9e104d3ac09fbd0e3.svg",
+      "sha256": "9ad307021a1918af0927a62961e5e49e2c25093dba9932752596ea6cdff4723e"
+    },
+    {
+      "source": "flowchart LR\n A[\"Ã U+00C3 — Latin Capital Letter A with Tilde\"] --> B[\"A U+0041\"]\n A --> C[\"U+0303 — Combining Tilde\"]",
+      "path": "archived-references/diagrams/622cca99382f8c56845b5d5b15ae066a33ce577bc689e07710fdc2e2b6534831.svg",
+      "sha256": "2e11e6c82a1d41f40577beb5a384b7bb48d37a4a53c444058349db58edb65ed2"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"Users logs in to legitbank.com\"| L[\"legitbank.com\"]\n  A[\"attacker.com\"]",
+      "path": "archived-references/diagrams/626bf8cc1affa9b2167f1ba381edecfcb3227e33ecfef0e5d37353033a085c02.svg",
+      "sha256": "c3900e17f4167c69cdeb6830b308fd8246580ef645ae88e1166fe3ecb899eb1c"
+    },
+    {
+      "source": "flowchart LR\n  malware[\"JavaScript Malware\"] <-->|\"HTTP via Firewall\"| user\n  subgraph Intranet\n    user[\"User\"] <--> wiki[\"Wiki\"]\n    user <--> printer[\"Printer\"]\n    user <--> web[\"New Web Server\"]\n    user <--> bug[\"Bug Tracking\"]\n    user <--> phone[\"IP Phone\"]\n  end",
+      "path": "archived-references/diagrams/64185aff4c0243f581c0d73370f2ac783f991a552909453243f9e9905ef59abd.svg",
+      "sha256": "d382ce8cfe61a87e2bc335a5e06efc4d9e9ed968fbdb7f5ea6da25bc707d8f44"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com — ATTACKER LOADS MALICIOUS PLUGIN INTO FLOWPLAYER\"]\n  A --> K[\"akamai.legitbank.com\"]\n  M[\"mediapm.edgesuite.net\"]\n  L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/668e1cc522fcd2ddf0d3c115bc96d9af6e7cc92327b4d08723449605799c8195.svg",
+      "sha256": "036248ad5f9f025bfa2a2c4907b4a0284c84adc4e059ac6993ce1c771e273de9"
+    },
+    {
+      "source": "flowchart LR\n A[\"Input validation\"] --> B[\"Format processing\"]\n C[\"External network access\"] --> D[\"Internal network access\"]",
+      "path": "archived-references/diagrams/6ab7d4fa87bf7349f6e91a790db7bdc00802c55a68870fa42e0c709300c9b895.svg",
+      "sha256": "ad5d611267bebdd553da5d1342d3d2f0484c7f137baef7d1bc2eb043dc3f3efc"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"HD image of cat?\"| A[\"akamai.example.com\"]\n  E[\"example.com\"] -->|\"Here you go! — cat image\"| A",
+      "path": "archived-references/diagrams/6ee28804a5529af193d61283e8c657fd6b9cd0f86ab137d1454181b07de28367.svg",
+      "sha256": "95d8ee28660c779379a99112e46bf3412062125c57cb53ed08b8b72d9104fc50"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"foxnews.com homepage?\"| F[\"FOX NEWS Channel\"]",
+      "path": "archived-references/diagrams/70bb9d6d2d500213968362a94dbfca9bffe46c607e432b2aee3c6ca7660e1853.svg",
+      "sha256": "c509e4902a584ea83f15373ddb88017e72fed0d3dcc1863f796f545085a09caf"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com\"]\n  A -->|\"Attacker loads FlowPlayer from Akamai EdgeSuite subdomain\"| K[\"akamai.legitbank.com\"]\n  K -->|\"FlowPlayer requested from mediapm host\"| M[\"mediapm.edgesuite.net\"]\n  L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/71b6b98dacbe7d369599b3a12439d2ed90dacc1c2a936c1dbbdeaac4037c04ee.svg",
+      "sha256": "0bf87c676507680cdb6fcc4be42b306de4b8e2d9a1879e09f62ccfba814eb2d4"
+    },
+    {
+      "source": "flowchart TD\n A[\"Sleep (sleep_time - CONST - request_time)\"] --> B[\"Calculate diff_time\"] --> C{\"diff_time < CONST?\"}\n C -->|then| B\n C -->|else| D[\"Continue\"]",
+      "path": "archived-references/diagrams/73c2faaea4b319f0dcbec58c7afcf171e48c647938fc3b91b0df212752ac22f4.svg",
+      "sha256": "b80aa2066799dea83a72435811184a6e03c1be873e25fddc61708f245456d805"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User\"] --> PA[\"Packet A\"] --> A[\"Server A (Portal or XI) · 192.168.0.1\"]\n  A <--> PB[\"Packet B · crosses firewall\"]\n  PB <--> B[\"Server B (ERP, HR, BW etc.) · 172.16.0.1 · exploit\"]",
+      "path": "archived-references/diagrams/759b0220c924286836bbda9d58cc9d84c2f886e786178e942d2dbb718bdfb46d.svg",
+      "sha256": "f6cf46795c4728eb7465f061fcdd4b4f5caeb9dfacc9e68afbca8844138906e7"
+    },
+    {
+      "source": "flowchart TD\n A[\"If-None-Match request\"] --> C{\"HTTP code is 200?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/79a5fc89b73bf013e6d2626a947897ea1c76515d6c7cd8489d4ae676059e2de1.svg",
+      "sha256": "65cf049b95d5a64299f77d32031b86c9bfa88ab34ce696dc2853b32c58ee9533"
+    },
+    {
+      "source": "flowchart TB\n U[\"〈 U+3008\"]\n U --> B0[\"11100011 · e3 · leading byte n=3\"]\n U --> B1[\"10000000 · 80 · continuation byte\"]\n U --> B2[\"10001000 · 88 · continuation byte\"]",
+      "path": "archived-references/diagrams/7adc202fc1928d8efef65b39576bb06f608283cc52431ce15f58bc51babfa357.svg",
+      "sha256": "f324ffa37f146a41b46be7d1071f74b71db872af65f96235b40145ce68c4d97e"
+    },
+    {
+      "source": "flowchart TB\n  subgraph C[\"Open XML Formats File Container\"]\n    A[\"Document Properties\"]\n    B[\"Custom Defined XML\"]\n    D[\"Charts\"]\n    E[\"Embedded Code/Macros\"]\n    F[\"Images, Video, Sound files\"]\n    G[\"WordML/SpreadsheetML, etc.\"]\n    H[\"Comments\"]\n  end",
+      "path": "archived-references/diagrams/7c34dd059e9939f1e5a2390705416547717b2de3bdaf4b64a72e35cfad7561b1.svg",
+      "sha256": "95af43b34727d7ace17ba0047b839c9970c5451baebb47788e7dd55583537959"
+    },
+    {
+      "source": "flowchart LR\n A[\"signature parameter contains only this data\"] --> B[\"HTTP/1.1<br/>Host: mail.yandex.ru<br/>Cookie: yandexuid=[…]\"]",
+      "path": "archived-references/diagrams/7cda507d4561c3d8f543201ce9b04320f4eec9f8c39ad8f87156d1dd05a9a8aa.svg",
+      "sha256": "2fb5a283e692216ecba727b8eefbf796cbe4de296cdb7ce6083aaa1fa1e64deb"
+    },
+    {
+      "source": "flowchart LR\n  A[\"Attacker laptop\"] --> L[\"LegitBank.com\"]\n  L --> I[\"accounting.internal.LegitBank.com\"]\n  W[\"www.LegitBank.com — three web-server icons\"]",
+      "path": "archived-references/diagrams/7d81f750abf06034f2eacda19559f2278ee79c33da3d7201ea3db952e4dd374b.svg",
+      "sha256": "d2eb30de84dc751db14588632d277697295213cef118b734add46777cebc03ff"
+    },
+    {
+      "source": "flowchart TD\n A[\"Calc diff_time\"] --> B{\"diff_time < sleep_time?\"}\n B -->|then| A\n B -->|else| C[\"Continue\"]",
+      "path": "archived-references/diagrams/7dcb8ad75df0c89667cebfefb679651e55d6b4cacf9bd8de20ac3e15abb4998c.svg",
+      "sha256": "660578a137770fb53335f4f63ef94dc82d444eac08605f658291571277ef42ed"
+    },
+    {
+      "source": "flowchart TD\n  A[\"Classic Administrative Templates (ADM)\"] --> B[\"Google\"]\n  B --> C[\"Google Chrome\"]\n  B --> D[\"Google Chrome - Default Settings (users can override)\"]",
+      "path": "archived-references/diagrams/7dd0c9c8bc495a47e78bb3305cc309ab9daf36d2c1c720c1937d129882f66dd0.svg",
+      "sha256": "73cc5584e9bcf88c88c4fc66d295cae323c78fb3356865967bdfb303355fc815"
+    },
+    {
+      "source": "flowchart TD\n A[\"Send HTTP request\"] --> B[\"Get host response\"] --> C{\"Page has been changed?\"}\n C -->|else| A\n C -->|then| D[\"Continue\"]",
+      "path": "archived-references/diagrams/7f35d0ffbd348afb87224106e21d8cd0ffda5c842447e1eb39f02edac5567aa2.svg",
+      "sha256": "67bf4cdbc04be28580eda1bb05a0ae1f5ab51290584dafba4344662257a63780"
+    },
+    {
+      "source": "flowchart LR\n  idp[\"Identity Provider (IdP)\"]\n  user[\"User\"]\n  sp[\"Service Provider (SP)\"]\n  user -->|\"1. Initial request\"| sp",
+      "path": "archived-references/diagrams/8187517e20f704d4145d6a6761805eef4b7bb3b0c6214e3d5e80b08f47ad77f2.svg",
+      "sha256": "fbc11baa8b30d28f15dad114b37875ea5c7d9509e35c91f13c611023784d1789"
+    },
+    {
+      "source": "flowchart LR\n  A[Application] <--> D[(Database)]",
+      "path": "archived-references/diagrams/8227ccfa7dce0c451e63d261779752ed3934d2e1c2de2755abe76bd8e02aa8d0.svg",
+      "sha256": "7673f2c528dd9f2e8c1abeb5809f7867e32723a01847f82a9f337d89a4ec1833"
+    },
+    {
+      "source": "flowchart TB\n U[\"Reverse solidus U+005C — OVERLONG\"]\n U --> B0[\"11000001 · c1 · leading byte n=2\"]\n U --> B1[\"10011100 · 9c · continuation byte\"]",
+      "path": "archived-references/diagrams/82e000ababdc56e10f528615812b6faa2e271a537c7b17767637f90794e4bed2.svg",
+      "sha256": "05d49f2bc1ed721e32a516777aa2a5ea9b8874a37ac44a534d16ec6a96124b60"
+    },
+    {
+      "source": "flowchart TD\n A[\"If-Modified request\"] --> C{\"HTTP code is 200?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/832670dcb288f40f2edb415ac5cb9f6c6a33afcc4100233a211628a61caf6cda.svg",
+      "sha256": "a4394ca1b51e74edf976034b15b03b8bef4d18e450ed78e733e8bc9ef9ef7d5a"
+    },
+    {
+      "source": "flowchart LR\n  c[\"Service Provider (SP)\"]\n  n1[\"Identity Provider (IdP)\"] <--> c\n  n2[\"Identity Provider (IdP)\"] <--> c\n  n3[\"Identity Provider (IdP)\"] <--> c\n  n4[\"Identity Provider (IdP)\"] <--> c",
+      "path": "archived-references/diagrams/8361c67ee4479b94ff3c5d4d7c6757ee4c7ceb819e92f39896127271b7c2b3cb.svg",
+      "sha256": "cdd79f214e7ac6085d56228733c8a6aa1b55d3b02a2f251e020e8e0783044a67"
+    },
+    {
+      "source": "flowchart TB\n A[\"a-n?\"] --- B[\"m-z?\"]\n A --- C[\"a-h?\"]\n B --- B1[\"…\"]\n B --- B2[\"…\"]\n C --- D[\"a-e?\"]\n C --- E[\"h-n?\"]\n D --- D1[\"…\"]\n D --- D2[\"…\"]\n E --- E1[\"…\"]\n E --- E2[\"…\"]",
+      "path": "archived-references/diagrams/853faadc3e94e9eb0e7cd3f85742f3669f7da7f9d524887e7720464f63b00a5d.svg",
+      "sha256": "518bfc78b075c6b07a0702c4ed00c78a422c425c5637c636b98e9ec641d02895"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] -->|CRLF Injection| F[\"First server\"]\n F --> B[\"Second server\"]\n F --> B\n B --> F\n B --> F\n F --> U\n linkStyle 1,2,3,4,5 stroke:red",
+      "path": "archived-references/diagrams/86a558468e9854ff10b018bc5feb4db993be8837ee06a8f14966f85e450fefef.svg",
+      "sha256": "522515e400765c2f9e71ebb9bd01a760e166ccbc062ce10cfa6dbe30ec9de9f4"
+    },
+    {
+      "source": "flowchart TB\n U[\"💻 U+1F4BB\"]\n U --> B0[\"11110000 · f0 · leading byte n=4\"]\n U --> B1[\"10011111 · 9f · continuation byte\"]\n U --> B2[\"10010010 · 92 · continuation byte\"]\n U --> B3[\"10111011 · bb · continuation byte\"]",
+      "path": "archived-references/diagrams/86a64cd58b40657bcba4832f4783375c389402357dd8ce8bb32a8f63b7fca18f.svg",
+      "sha256": "ab416f5ad01eb70b9a8dc9977a11a3ee905a77d407bf89b63853c88e677dcee2"
+    },
+    {
+      "source": "flowchart LR\nF[\"Fuzzer\"] -->|Normal request| V[\"Fortigate SSL VPN\"]\nF -->|Normal request| V\nF -->|Overflow request| V\nF -->|Normal request| V\nlinkStyle 2 stroke:#d9b400,stroke-width:3px",
+      "path": "archived-references/diagrams/8761fc990006d706103df6d9d7c1cb65141bad10bc17769c72e2420fc87cd730.svg",
+      "sha256": "b11276f2539f3c707ab71bc74b59c680de9118361e0d443715c0f18a7ec30e13"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com — Flash icon added\"]\n  L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/87bcf768d326a6d05bc8ab5f8078ddcbe798432b6d1a62ebfe11b811034c9447.svg",
+      "sha256": "508612bb21259aa95e317eb5bccb717abede5b84d9853e1f95aa992d038be421"
+    },
+    {
+      "source": "flowchart LR\nsubgraph H[\"HEAP MEMORY — LOW to HIGH\"]\ndirection LR\nJ[\"JS Buffer\"] ~~~ S1[\"SSL\"] ~~~ S2[\"SSL\"] ~~~ S3[\"SSL\"]\nend\nS1 --- D\nD[\"version | method | … | *handshake_func | …\"] --> A[\"ssl_accept()\"]",
+      "path": "archived-references/diagrams/87dcb2ebc586ea6ec6051ca91a0e556097f4686071d626ab253b41fc28bfd183.svg",
+      "sha256": "e12cffd63b88a5743552e96223c566af8cf8b7c2bba46b344d0c62f3a894e9ce"
+    },
+    {
+      "source": "flowchart LR\n A[\"Attacker\"] -->|\"XML\"| S[\"Server\"]\n S -->|\"DTD Parsing, SYSTEM reading\"| S\n S -->|\"DTD Request\"| E[\"Evil Host\"]\n S -->|\"HTTP Request with file content\"| E",
+      "path": "archived-references/diagrams/8a384cc992f3359ef374145b4780b3f48751223e617e3249ea5616c40ce1a9d9.svg",
+      "sha256": "20095a951050a52b80c7cbe22fbfbcc96f634343ea4131a00e002adfc2e6cce7"
+    },
+    {
+      "source": "flowchart TB\n U[\"前 U+524D\"]\n U --> B0[\"11100101 · e5 · Byte 2 — leading byte n=3\"]\n U --> B1[\"10001001 · 89 · Byte 1 — continuation byte\"]\n U --> B2[\"10001101 · 8d · Byte 0 — continuation byte\"]",
+      "path": "archived-references/diagrams/8f803a34ee0bd06e419928a30311a56578a84fb9d3c7cd531373cd5d31852743.svg",
+      "sha256": "ed03a2625417e673e3231d49c8fa0226409538d81e322841d18c715006ae5642"
+    },
+    {
+      "source": "flowchart LR\n    subgraph discover [\"Discovery + Generation\"]\n        A1[/\"Vendor Docs\"/] --> A2[\"Identify supported ecosystems\"]\n        A2 --> A3[\"Find missing payloads\"]\n        A3 --> A4[\"AI generates candidate payload\"]\n        A4 --> A5[\"Review + test\"]\n    end\n\n    subgraph library [\"Payload Library\"]\n        B1[(\"Verified payloads\")]\n    end\n\n    subgraph deploy [\"Deployment\"]\n        C1[/\"package.json, Makefile, ...\"/] --> C2[\"Target processes repo\"]\n        C2 --> C3((\"Beacon\"))\n    end\n\n    A5 --> B1\n    B1 --> C1",
+      "path": "archived-references/diagrams/920c2d3e0e090ad4213059470b3164a1d72d52e2e8dc477202bc894d77f64bcd.svg",
+      "sha256": "54ca394ed12715f1a94e3926ffdde04cf8b79d80c602173bdcc34cb51f81bed8"
+    },
+    {
+      "source": "flowchart BT\n  A[\"Local cross-origin.xhtml in Safari: Accessing private information from: Fernando\"] --> B[\"Bing in Safari: logged-in name Fernando\"]",
+      "path": "archived-references/diagrams/92d7ba147c02277d4e5bf3267f8d9c750ccc5ae1747a5e8cff0544223c98a6ce.svg",
+      "sha256": "0eee2cca8eaf2d602760c6435b9449b563cbb4d56a4645d8c3a8f10c1673bd86"
+    },
+    {
+      "source": "flowchart LR\n A[\"11211\"] --> B[\"PHP readfile / Perl LWP\"]\n C[\"80\"] --> D[\"PHP parse_url / Perl URI\"]",
+      "path": "archived-references/diagrams/9525238741053a2dbcfe35df76812c6358476fca7ae5ffaca2e33ed6edc6765a.svg",
+      "sha256": "b54ac484eaa411645609c998dd75f2795105ef3e1bb9d5469ee7d4ae993dc648"
+    },
+    {
+      "source": "flowchart LR\n    A[\"Load http://ex.ploit.info/\"] --> B[\"XHR to http://169.254.169.254/latest/user-data\"] --> C([FAIL])\n    D[\"Load http://ex.ploit.info/\"] --> E[\"XHR to http://ex.ploit.info/latest/user-data\"] --> F([SUCCEED])",
+      "path": "archived-references/diagrams/95914d58c58a4fcd7a31003a38f0e69d1ef68bb077807eb62c4ef414af5b4a0c.svg",
+      "sha256": "d93c129eadee635705331ea68d73d04614f19927af3f817b9468cf3319e3e0e4"
+    },
+    {
+      "source": "flowchart LR\n  U[\"Laptop\"] -->|SSRF| A[\"Akamai\"]\n  A -->|\"Remote SWF Include\"| S[\"Flash server with malicious SWF\"]",
+      "path": "archived-references/diagrams/9832660ecb1aac3a902562e82bd0275ccbace3367dadfe1500a4bff462b8061f.svg",
+      "sha256": "a4a6b73a20b30fbcef20dd24c778087d16dda336ec4a4ef2d45b1e44944a3b12"
+    },
+    {
+      "source": "flowchart TB\n U[\"A U+0041\"]\n U --> B0[\"01000001 · 41 · single byte\"]",
+      "path": "archived-references/diagrams/985078a64bbe73c66fef7773b4e608b26784729883f1346758421f7d57dae8de.svg",
+      "sha256": "5a6eeee52d5fef4db197bc4f5d81f36652e37b69cb7654527f103ae22d6c32ff"
+    },
+    {
+      "source": "flowchart LR\n  Outside[\"External request\"] --> Block[\"Direct route blocked at firewall\"]\n  Outside --> C[\"Corporate network server · 192.168.0.1\"]\n  C -->|\"Request relayed across firewall\"| H[\"HTTP Server · 172.16.0. [label clipped in original]\"]",
+      "path": "archived-references/diagrams/9892848295e0607c46960e1de1d999545c58e879d0aa7b6a60861913f1ac5900.svg",
+      "sha256": "81870adf4f1dd2e7e69fe7d9e3f78c9c1a0c974164fef31ef21e6f7f895b02b1"
+    },
+    {
+      "source": "flowchart LR\n U[\"Attacker\"] -->|\"user@gmȁil.com\"| S[\"Server\"]\n S <-->|check| D[\"Database\"]",
+      "path": "archived-references/diagrams/98e7950b0b13088f8b7f2e060f2c0a290003a1219e68cb4148fa2ab8451ac4a3.svg",
+      "sha256": "8c42c0cdc3277665042cb30a6d562aa6e23ac9b64329912c9850cf75ac454c21"
+    },
+    {
+      "source": "flowchart TB\n n[\"Random noise\"] -->|\"t1\"| f1[\"&lt;feMorphology operator=&quot;erode&quot; radius=&quot;2&quot; /&gt;\"] --> dn[\"Darkened noisy image\"]\n b[\"Black image\"] -->|\"t2\"| f2[\"&lt;feMorphology operator=&quot;erode&quot; radius=&quot;2&quot; /&gt;\"] --> db[\"Black image\"]",
+      "path": "archived-references/diagrams/9bb2452e6f84a794ad5417d1af3c735d0ef3a22a3ac8d1f104912bfff138648d.svg",
+      "sha256": "b7c3496ce70a6842ff4c092f826986428543709b86dd863bcf3786e38ee2690f"
+    },
+    {
+      "source": "flowchart TD\nB[\"BIOS\"] --> L[\"LILO\"] --> K[\"Kernel\"] --> I[\"/sbin/init\"]\nE[\"Enter key\"]\nT[\"///////////////bin/sh\"]\nI ~~~ E ~~~ T",
+      "path": "archived-references/diagrams/9d2229fdaa89252624a7ed639b6714a0b59300d85b66580125bbbf070befb2c4.svg",
+      "sha256": "f883e5da04c0a31fda000db9e75307ebc85f90a7c4c8c9d0d31c9c28b427c493"
+    },
+    {
+      "source": "flowchart LR\n P[\"Payload\"]\n S[\"Server\"]\n Q[\"HTTP request\"]\n subgraph TB[\"Trusted boundary\"]\n W[\"Web server\"]\n end\n H[\"page.html: write_t\"]\n R[\"HTTP response\"]\n Z[\"Zombie\"]\n L[\"Local storage\"]\n W -->|read| Q\n W -->|write| H\n W -->|write| R\n Z -->|read| R\n Z -->|write| L\n H -. HTTP response .-> P\n L -. HTTP request .-> H\n S -->|read| P\n S -->|write| Q",
+      "path": "archived-references/diagrams/9e8628bfa26ac581cc9d2b00028294114e0b0767e2ec28a53bbb488b87952832.svg",
+      "sha256": "111ccac9b4f534f026e380bbcc15d39ae4c1b18d20daab064f48874083a7c48a"
+    },
+    {
+      "source": "flowchart LR\n subgraph c[\"CSS Filter Effects\"]\n  s[\"SVG Filters\"]\n  p[\"Predefined CSS Filters\"]\n  w[\"WebGL Shaders\"]\n end",
+      "path": "archived-references/diagrams/9ed9f1f99f3bab2b5fc685407ff7e00db75fbf0dcde4ab8fbd84836d9ee297f0.svg",
+      "sha256": "75979790e7581b08749ae6a80ed5794d1adfe995778f207535a04167b913abd9"
+    },
+    {
+      "source": "flowchart TB\n  subgraph b1[\"Browser 1\"]\n    subgraph t11[\"Tab 1\"]\n      subgraph c11[\"content script\"]\n        w11[\"Web page & user script\"]\n      end\n    end\n    subgraph t1n[\"Tab n\"]\n      subgraph c1n[\"content script\"]\n        w1n[\"Web page & user script\"]\n      end\n    end\n    bg1[\"Background script\"]\n    c11 <--> bg1\n    c1n <--> bg1\n  end\n  subgraph bm[\"Browser m\"]\n    subgraph tm1[\"Tab 1\"]\n      subgraph cm1[\"content script\"]\n        wm1[\"Web page & user script\"]\n      end\n    end\n    subgraph tmn[\"Tab n\"]\n      subgraph cmn[\"content script\"]\n        wmn[\"Web page & user script\"]\n      end\n    end\n    bgm[\"Background script\"]\n    cm1 <--> bgm\n    cmn <--> bgm\n  end\n  backend[\"Control backend\"]\n  bg1 <--> backend\n  bgm <--> backend",
+      "path": "archived-references/diagrams/a2ffbde367becf1af0d2e0d54a0f3d48ecf260584f2feb4654e43aaf1634a335.svg",
+      "sha256": "0ee514656b3f54367dfd5132e6e67424a95547c57cf4ce311ccf9acd1bb3c36b"
+    },
+    {
+      "source": "flowchart TD\n A[\"Request\"] --> B[\"Response\"]",
+      "path": "archived-references/diagrams/a3062637743e158ec60eae438f60413045fe218968745548403e39a4bab7152f.svg",
+      "sha256": "92971b6d424df2c5922394096173dde3f2db95634697ae082f9d1bfe03977ced"
+    },
+    {
+      "source": "flowchart TB\n U[\". U+002E — OVERLONG\"]\n U --> B0[\"11000000 · c0 · leading byte n=2\"]\n U --> B1[\"10101110 · ae · continuation byte\"]",
+      "path": "archived-references/diagrams/a31dd3e0e43fbc4226b245250410fb3f8183124c08599add059f2fae838517d1.svg",
+      "sha256": "96ab01e73b234074a3335cd08ad3acfe75b77e2a92a459dd5b0a7783e9242ade"
+    },
+    {
+      "source": "flowchart LR\nsubgraph H[\"HEAP MEMORY — LOW to HIGH\"]\ndirection LR\nS1[\"SSL\"] ~~~ S2[\"SSL\"] ~~~ S3[\"SSL\"]\nend\nS1 --- D\nD[\"version | method | … | *handshake_func | …\"] --> A[\"ssl_accept()\"]",
+      "path": "archived-references/diagrams/a3d3077ada9e8fdffd6ecb625574c703f0c777cbb741544cab245b719b5cc115.svg",
+      "sha256": "df59bb7f2f4183507e9dbd59c96ca9eef8e9b7835cbdb6ce726ba167b13e4335"
+    },
+    {
+      "source": "flowchart LR\n  U[\"First user laptop\"] -->|\"HD image of cat?\"| A[\"akamai.example.com\"]\n  A -->|\"Here you go! — cat image\"| U\n  V[\"Second user laptop\"] -->|\"HD image of cat?\"| A\n  A -->|\"Here you go! — cat image\"| V\n  E[\"example.com\"]",
+      "path": "archived-references/diagrams/a6f4b6281036eca7355f7adc8c0703ce50e2d8af882a14157cf1af59bb7815b6.svg",
+      "sha256": "508f0aeaef9fcb04abc107b8eec33351bf2593cc4fc5a78bc60e179154bc7197"
+    },
+    {
+      "source": "flowchart TB\n w[\"White input\"] --> fw[\"timingfilter1\"] --> n[\"Darkened noisy output\"]\n b[\"Black input\"] --> fb[\"timingfilter1\"] --> bo[\"Black output\"]",
+      "path": "archived-references/diagrams/a80cfe9d5f3f0824e1e1ed170ef0db200f98e43413819d2d2e3c73af5431a6f6.svg",
+      "sha256": "8d76b53cc6df0031dc184d349e48e980c88a6d1ffb1a60ebcfbf967dc6f5e7c3"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] --> Browser\n A[\"http://a.net (attacker)\"] --> J\n B[\"http://b.net\"] --> F\n subgraph Browser[\"Browser: http://a.net\"]\n J[\"JavaScript\"] <--> F[\"CrossDomain.swf\"]\n end\n B <-->|\"Trust\"| C[\"http://c.net\"]\n B --- P[\"Crossdomain.xml: allow-access-from domain=&quot;b.net&quot;\"]\n P --- C",
+      "path": "archived-references/diagrams/ab8b31c7d174d381cd7e852870f3b2552c988bde23ae695ada735a7e11b4b5e3.svg",
+      "sha256": "cf63f224e2047581807186feee0d4d859de892a02680a9270b77d1d4142d25c1"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] --> F[\"First server\"]\n F --> U\n F -->|CRLF Injection| B[\"Second server\"]\n B --> F\n B -->|Auth check| D[(\"Database\")]\n D --> B\n linkStyle 1,2,3 stroke:red",
+      "path": "archived-references/diagrams/abdb42702396f3be321f1463b55975bee2e2fc4bb61141d16cf0c4a710add9d2.svg",
+      "sha256": "aac6985dd4687fa056e696c43bd1ce563d6408b57ebe688750febf9aa395f3fd"
+    },
+    {
+      "source": "flowchart TB\n U[\"Carriage Return U+000D\"]\n U --> B0[\"00001101 · 0d · Byte 0\"]",
+      "path": "archived-references/diagrams/acc1a0b1b2f1cf68a401e2e5533d59a8d7743ef741d229515465c0f9057eead1.svg",
+      "sha256": "f02f01512420c18d06b10ce80a07132932784f2e4ee2492721f9371c957697da"
+    },
+    {
+      "source": "flowchart TB\n subgraph t1[\"t1\"]\n  j1[\"JavaScript\"] --> l1[\"Layout\"] --> p1[\"Painting\"]\n end\n subgraph t2[\"t2\"]\n  j2[\"JavaScript\"] --> l2[\"Layout\"] --> p2[\"Painting\"]\n end\n p1 --> j2",
+      "path": "archived-references/diagrams/ad4bdeee34ca6a76876a9d78ce705eb91d1dc7c1f392bc4f9f97edec6a082777.svg",
+      "sha256": "5c52293b7ab580df50c355b624a471837fca51bed2c5888cacdcde261a789bee"
+    },
+    {
+      "source": "flowchart TD\n A[\"Request\"] --> B[\"Page has been changed: HTTP/1.1 200 OK (page data)\"]\n A --> C[\"Page has not been changed: HTTP/1.1 304 OK (only headers)\"]",
+      "path": "archived-references/diagrams/ad94d7c281906f683bab9723deb8900495917b4e46d9b0e4573ee10e16a1c807.svg",
+      "sha256": "4e3f2f1422df851fe253556494e23537c9bf154bc10e887e081857251455f47f"
+    },
+    {
+      "source": "flowchart TB\n U[\"/ U+002F — OVERLONG\"]\n U --> B0[\"11000000 · c0 · leading byte n=2\"]\n U --> B1[\"10101111 · af · continuation byte\"]",
+      "path": "archived-references/diagrams/ae68aa986bde1d14c2927b938561ffe1d24b68142fd6009ca89a8f33d1a3df2a.svg",
+      "sha256": "e757262925c5613d231777b45c50000d0d539c2921b55081b6173a9362563d6c"
+    },
+    {
+      "source": "flowchart LR\nV[\"Victim\"] -->|\"1 Fetch the malicious page\"| A[\"Attacker\"]\nV -->|\"2 Fingerprint the browser\"| V\nV -->|\"3 Find the router\"| R[\"Router\"]\nV -->|\"4 Fingerprint the router\"| R\nV -->|\"5 Inject the payload\"| R\nR -->|\"6 Extract the data\"| A\nA -->|\"7 Geolocalize the network using the location aware browsing protocol\"| G[\"Google\"]",
+      "path": "archived-references/diagrams/ae9e1f5593b9c03569af881a76a1f39e4f03db6b0299da6b0782e359471730b6.svg",
+      "sha256": "0dbd9e4aa1a0d48c67d7f64d606cbceffdce5a8c690887541644e1bfe0caad3f"
+    },
+    {
+      "source": "flowchart LR\n  A[Application] --- D[(Database)]\n  A --- L[Logging]\n  A --- M[Message Queue]\n  A --- S[Storage]\n  A --- C[Cache]\n  A --- E[\"…\"]",
+      "path": "archived-references/diagrams/b0e9e78c5515b99fe66636766f302999c49a278507ddf2bd5b48bab09a69a079.svg",
+      "sha256": "c88eba8eb6a0b0bee2a0636ff4b7be007e2ae33d90306a1c5a1ed3d34df64c42"
+    },
+    {
+      "source": "flowchart LR\n  A[\"Attacker laptop\"] --> L[\"LegitBank.com\"]\n  L --> C[\"Cloud icon\"]\n  L --> W[\"Web-server icon\"]\n  L --> D[\"Database icon\"]\n  L --> I[\"Identity/key icon\"]",
+      "path": "archived-references/diagrams/b2d44ddca1fe5e8db0e94dbcc06522662220ec2b26c08412259411a4ad98294d.svg",
+      "sha256": "291ec388f73541b17863977b260eea4102c31c0d25777ea793b46ed02550587c"
+    },
+    {
+      "source": "flowchart TD\n A[\"HTTP request\"] --> B[\"Get ETag header value\"]\n B --> C{\"Header value was changed?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/b431a2433a0c8e3b21ac96664824b58139f627ef0d8cee4e21ae3314aea8fa0d.svg",
+      "sha256": "5367a9c879cb5e03480d879231846642d17c57226daa30dad923de8a2a6b08cf"
+    },
+    {
+      "source": "flowchart LR\n    F[\"foo.xhtml<br/>#quot;#35;#123;util.escape(...)#125;#quot;\"] -->|return| S[\"type(string)<br/>#35;#123;malicious#125;\"]\n    S -->|evaluate| E[\" \"]\n    style E fill:transparent,stroke:transparent",
+      "path": "archived-references/diagrams/b5059bcd22d5cb5d3e48ef843875ac3a117cd12139c5d884dea9bf5a53b2a1c5.svg",
+      "sha256": "1928dec780c4f950a6dcf9fcca77ea099c21951c3de4013de24a3a1f658f1407"
+    },
+    {
+      "source": "flowchart TB\n    A[\"Nginx\"] --- S[\"/..;/ seems to be a directory, Take it\"]\n    T[\"Tomcat\"] --- B[\"Oh shit! /..;/ is the parent directory\"]",
+      "path": "archived-references/diagrams/b53c685eed7b8c35999407ff80e655c67dbddccdf734020dc06045eee98955fd.svg",
+      "sha256": "3085b504dcb34ebf49adce0063419f1ed4273d5927e03e3d65887322d607571a"
+    },
+    {
+      "source": "flowchart TB\n subgraph JS[\"JavaScript\"]\n S([\"Start\"]) --> A[\"Create Cross Domain Request<br/>flashXHR = new flashXHR();\"]\n A --> B[\"Set Callback Method<br/>flashXHR.onreadystate = foo;\"]\n B --> C[\"Call Open Method<br/>flashXHR.open(&quot;GET&quot;, url);\"]\n C --> D[\"Call Send Method<br/>flashXHR.send();\"]\n E[\"Callback Method<br/>foo(response);\"]\n end\n subgraph Flash\n H[\"Create Request Handler<br/>Handler = new Handler(url)\"]\n H --> R[\"Calculate Random and Redirect Browser<br/>var random = Math.random() * n<br/>Var firstUrl = url + &quot;#&quot; + random;<br/>navigateToUrl(firstUrl);\"]\n Q{\"firstURL ==<br/>location.href\"} -->|\"No\"| M[\"Manipulation detected\"]\n Q -->|\"Yes\"| X[\"Send Cross Domain Request\"]\n end\n C --> H\n R --> C\n D --> Q\n X --> E\n X --> N[\"Network\"]\n N --> X\n E --> T([\"Stop\"])\n M --> T",
+      "path": "archived-references/diagrams/b62c40172471e06f2c4da8afa54887b2dcfa556cfe8609f57f6f4ebd942dbbe4.svg",
+      "sha256": "da03a0f5ed21fad9f01cf8577ab9d70d0ba5b0b821f2baddfadc01ffebd52fe6"
+    },
+    {
+      "source": "flowchart LR\nsubgraph H[\"HEAP MEMORY — LOW to HIGH\"]\ndirection LR\nJ[\"JS Buffer\"] ~~~ S1[\"SSL\"] ~~~ S2[\"SSL\"] ~~~ S3[\"SSL\"]\nend\nS1 --- D\nD[\"AAAAAAAA…<br/>AAAAAAAA…<br/>AAAAAAAA…\"] --x A[\"ssl_accept()\"]\nstyle J fill:#c65d0b\nstyle S1 fill:#c65d0b\nstyle D fill:#c65d0b",
+      "path": "archived-references/diagrams/b76e075433f703bcf85588d423d987c8d597ca6f9f5bf8f898c5c69a9a978ecd.svg",
+      "sha256": "cacf1add9bc8a66f0a94256e429c30f99d8227689e8cd031ea8aaaa1a4cb81b7"
+    },
+    {
+      "source": "flowchart LR\n U[\"Attacker\"] -->|\"user@gmȁil.com\"| S[\"Server\"]\n S <-->|check| D[\"Database\"]\n S <-->|insert| D\n S -->|Response| U\n M[\"SMTP\"]\n E[\"Submitted email: user@gmȁil.com\"] --> M",
+      "path": "archived-references/diagrams/b8de736df5c0b68355637ad2df89fb4db5d3fd483134ffd16fef8587f4a427b8.svg",
+      "sha256": "6055041fc383d54df9e71732cda513fb41bbe79c4ba760aff111177e095a3790"
+    },
+    {
+      "source": "flowchart TD\n  A[\"akamai.example.com\"] --> B[\"x.example.com.edgesuite.net.\"]\n  B --> C[\"a1337.g.akamai.net.\"]\n  C --> D[\"184.25.56.98\"]",
+      "path": "archived-references/diagrams/b94a624e5b57256185d98648e8be7c94aae3c988394dbad0fef931f7e798f35e.svg",
+      "sha256": "50976b00dde597615cd443e4ac68eca526cc240b72e0b225ee58bc5bb920a570"
+    },
+    {
+      "source": "flowchart TB\n  subgraph Advertisers\n    flowers[\"Buy! Save on Flowers\"]\n    roses[\"BUY Now!\"]\n    widgets[\"Buy! Save on Widgets — Now at Example.com\"]\n  end\n  flowers --> ads[\"Advertising Networks\"]\n  roses --> ads\n  widgets --> ads\n  subgraph Publishers\n    blogs[\"Blogs\"]\n    news[\"News\"]\n    social[\"Social Networks\"]\n    reviews[\"Reviews\"]\n  end\n  ads --> blogs\n  ads --> news\n  ads --> social\n  ads --> reviews\n  visitors[\"Visitors\"]",
+      "path": "archived-references/diagrams/ba3454cb034df0353f163a710ced7011c64b04eb21ffb8759f39c556ed8ef995.svg",
+      "sha256": "786fd81f2bfda40c69f1a4f710ac856c76c383e69bc4f0b58cd60bbeded25654"
+    },
+    {
+      "source": "sequenceDiagram\n participant R as Researcher\n participant A as Application\n R->>A: {{ include(strval(7*7)) }}\n A->>R: No such file: 49\n R->>A: {{ include(shell_exec(\"whoami\")) }}\n A->>R: No such file: root",
+      "path": "archived-references/diagrams/bcc0fe7460ec3ab1a09be9e23633b0717b684c44be1de85b7c7a7eabb62ee2c1.svg",
+      "sha256": "4fac9be64eeef57811dea276d43256cd8fdab9207b6cea1c49c0c5411434778c"
+    },
+    {
+      "source": "flowchart LR\n  idp[\"Identity Provider (IdP)\"]\n  user[\"User\"]\n  sp[\"Service Provider (SP)\"]\n  user -->|\"1. Initial request\"| sp\n  sp -->|\"2. Redirect to IdP with SAML Request\"| user\n  user -->|\"3. Forward SAML Request\"| idp\n  idp <-->|\"4. Authenticate the user\"| user\n  idp -->|\"5. Redirect to SP with SAML Response\"| user\n  user -->|\"6. Forward SAML Response\"| sp\n  user <-->|\"7. Authenticated session\"| sp",
+      "path": "archived-references/diagrams/bce24fda009b5bb892ee7abbb1dbbfd7a2eaf4f00a9673180b9bde7c7c8c0ea3.svg",
+      "sha256": "d236f74e3d10df96960fb8952a52403d53608e2c356f3ba200ac605259a051f1"
+    },
+    {
+      "source": "flowchart TD\nB[\"BIOS\"] --> L[\"LILO\"] --> K[\"Kernel\"] --> I[\"/sbin/init\"]\nE[\"Enter key\"]\nT[\"?????????????????\"]\nI ~~~ E ~~~ T",
+      "path": "archived-references/diagrams/bec87884cc8b8fbe5bb769c16006616e7cd7bcd9a609bd37fe3852812e77c76e.svg",
+      "sha256": "207d2215fbf723f74291791828f7dc894f272f8630b0e850f7b2c6918729ca19"
+    },
+    {
+      "source": "flowchart BT\n  subgraph SD[\"Service Document\"]\n    FA[\"Feed A\"]\n    FB[\"Feed B\"]\n  end\n  EA[\"EntityType A<br/>Entry 1<br/>Entry 2<br/>…<br/>Entry N\"] --> FA\n  EB[\"EntityType B<br/>Entry 1<br/>Entry 2<br/>…<br/>Entry N\"] --> FB",
+      "path": "archived-references/diagrams/c0c9f61362743bea0530c8692c7393c029efb3306052b9bea5b90ca49709fff2.svg",
+      "sha256": "5f0fad00b7663a70c7dbb11a441eafc0b82b6a8c94aaeea7451c4a4185ccd248"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] -->|CRLF Injection| C[\"company.tld\"]\n C --> S[\"Amazon S3\"]\n S --> A[\"attacker-bucket<br/>/s3/xss.html\"]\n B[\"company-bucket\"]\n linkStyle 1,2 stroke:red",
+      "path": "archived-references/diagrams/c1fd7844e7cffe531a40b43439af989fae5be82c0d9c2f5d6444e28a4c05fd00.svg",
+      "sha256": "7f8762154b82dc283e3e79a73a33253ca973b235794501ae39ec530bff550bb2"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"User logs in to legitbank.com\"| L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/c296975f06beaaca7ac2fe540f78e8370d54c928aaf1657b7154314072e30e22.svg",
+      "sha256": "a952a309d8d051edece243e3ef8b34519c7e6670a59f3fd17f4f9c821648c3ec"
+    },
+    {
+      "source": "flowchart LR\n  c[\"Identity Provider (IdP)\"]\n  n1[\"Service Provider (SP)\"] <--> c\n  n2[\"Service Provider (SP)\"] <--> c\n  n3[\"Service Provider (SP)\"] <--> c\n  n4[\"Service Provider (SP)\"] <--> c",
+      "path": "archived-references/diagrams/c29e65bd8be1e1c9c09b3ff3162059ed35a587cc57f169095f277c5094a0de13.svg",
+      "sha256": "aff0c7d098cfde5b76b1a15c657f5c808d1e3d8256dfdb777f8fedf65cef535f"
+    },
+    {
+      "source": "flowchart LR\n C[\"Hooded client computer\"] -.- N[\"CDN — Content Delivery Network\"]\n N -.- S[\"Server\"]",
+      "path": "archived-references/diagrams/c4349cd5c65a444d893553417b4ffb7999a1dcaaf88d31d0381d51cee66aa310.svg",
+      "sha256": "8925ac20b94b2c40f196bb8f26bc96929bfd6faab55806bdf7772006e37dd635"
+    },
+    {
+      "source": "flowchart LR\n    A[Attacker] -->|Json.NET serialized payload| R[SolarWinds RabbitMQ]\n    R --> K[(SwisPubSub key)]\n    K --> I[Information Service]\n    I -->|Json.NET deserialization| I\n    I -->|Attacker's deserialized object is serialized again.| I\n    I --> K\n    K --> R\n    R -->|Serialized object| A",
+      "path": "archived-references/diagrams/c47d2e14d9a6680f76138925e196bad090890414d853d477ff29e7738249e65a.svg",
+      "sha256": "25950621180e5224339b32d36ad4b58631420179c997198f7342382d067f27df"
+    },
+    {
+      "source": "flowchart LR\n  malware[\"JavaScript Malware\"] <-->|HTTP| user\n  malware -->|\"FTP — blocked ×\"| firewall[\"Firewall\"]\n  malware -->|\"SSH — blocked ×\"| firewall\n  malware -->|\"NetBIOS — blocked ×\"| firewall\n  subgraph Intranet\n    user[\"User\"] <--> wiki[\"Wiki\"]\n    user <--> printer[\"Printer\"]\n    user <--> server[\"New Web Server\"]\n    user <--> phone[\"IP Phone\"]\n    user <--> bugs[\"Bug Tracking\"]\n  end",
+      "path": "archived-references/diagrams/c49f829e3bacbad2e588b32a26a4523c62dedf7a6c207ca751fb208717bbd2c1.svg",
+      "sha256": "5f5c1ed1466e02a013ada7baa112fa04f5b463705536fb19cda7afb01faea206"
+    },
+    {
+      "source": "sequenceDiagram\n    actor U as User\n    participant C as Computer\n    U->>C: Sends malicious serialized object\n    C->>C: Deserializes object that implements dangerous getter method\n    C->>C: Deserialization completed. Perform operations on object.\n    C->>C: Serializes object again\n    C->>C: Call dangerous getter - insecure serialization exploited\n    C->>U: Sends new serialized object",
+      "path": "archived-references/diagrams/c5127c9ed933fe0df5fc32a4d1663e1eaabc2a55c702d579030723a47d2e48e7.svg",
+      "sha256": "7cdf80822a64ae23c0c254dd54d4124b93b73d53045710df8c1e080084a0a813"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] -->|\"HD image of cat?\"| A[\"akamai.example.com\"]\n  A -->|\"Here you go! — cat image\"| U\n  E[\"example.com\"]",
+      "path": "archived-references/diagrams/c51f6609e6ca1ebb8fb9b2426875bb3d92942042d92194d6eda874a91bbaf61b.svg",
+      "sha256": "f8976b1e30153942de0424076eacf1f297cc558ae84436eef5af55506c14555f"
+    },
+    {
+      "source": "flowchart TD\n A[\"If-Unmodified request\"] --> C{\"HTTP code is 412?\"}\n C -->|then| D[\"Received 1\"]\n C -->|else| E[\"Received 0\"]\n D --> F[\"Store header value\"]\n F --> G[\"Wait n seconds\"]\n E --> G\n G --> A",
+      "path": "archived-references/diagrams/c5455b54b834794d48a3a13b67738c238a3af9fda947f87be109f0ad87c836b5.svg",
+      "sha256": "f2e3b02752a6f688270983a4572770edef2c7a8a4e8d0b9943a2e960820ba02e"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] --> S[\"Server\"]\n S --> U\n linkStyle 1 stroke:red",
+      "path": "archived-references/diagrams/c6b7fcda21aa0c7e5235cb4fca14cd3410057fb141c5c861a3944b6f1593e81e.svg",
+      "sha256": "b71285c180d21c3d3aa38175af4cf48dfa98bb10b2151cdab88a473b90e071cf"
+    },
+    {
+      "source": "sequenceDiagram\n    participant V as Browser / Victim\n    participant W as Application / site.tld\n    participant A as Attacker / atk.site.tld\n    V->>W: GET /\n    W->>V: Set-Cookie: __Host-sid=good#59; Secure#59; Path=/\n    V->>A: GET /\n    A->>V: Set-Cookie: =__Host-sid=evil#59; Path=/login#59; Domain=site.tld\n    V->>W: POST /login/index.php — Cookie: __Host-sid=evil#59; __Host-sid=good\n    Note right of W: !",
+      "path": "archived-references/diagrams/c896905d9f7dd8b69c8ab0aed7ca41804e484c83891c908f94f2c01dc404795d.svg",
+      "sha256": "9dda4e11a3795ee4752052a4f778f4e4ccd9947003f7d584cb242676b7ee0667"
+    },
+    {
+      "source": "sequenceDiagram\n    actor U as User\n    participant D as Device-Gateway Service\n    U->>D: MessagePack serialized authentication payload\n    D->>D: Deserialize\n    D->>D: Verify credentials\n    D->>U: Sends back serialized response with token\n    U->>D: Sends serialized request with token\n    D->>D: Deserialize\n    D->>D: Verify token\n    D->>D: Perform operation",
+      "path": "archived-references/diagrams/c8b92765f4b895387b1519a645c5c8a935a7c1f8198e92c713d14a36081912c1.svg",
+      "sha256": "ecc0d26851ec33fabb9f5e4b303426d7266edf9297d1237783a6cc95d9494006"
+    },
+    {
+      "source": "flowchart TD\nB[\"BIOS\"] --> L[\"LILO\"] --> K[\"Kernel\"] --> I[\"/sbin/init\"]\nE[\"Enter key\"]\nT[\"///////////////bin/sh\"]\nI ~~~ E ~~~ T\nM[\"Memory Patch\"] --> I",
+      "path": "archived-references/diagrams/cb4f261afba97d34e14cd0a7176d0e521a76bfbdf8ba48d7e0bd04848ba8d74f.svg",
+      "sha256": "9e0927199bcc2b99fa34fe47c150a32faa906289013a2a53c23ef09ef7413595"
+    },
+    {
+      "source": "flowchart TD\nB[\"BIOS\"] --> L[\"LILO\"] --> K[\"Kernel\"] --> I[\"/sbin/init\"]\nE[\"Enter key\"]\nT[\"/home/bin/dsconfig.pl\"]\nI ~~~ E ~~~ T\nM[\"Memory Forensics\"] --> I",
+      "path": "archived-references/diagrams/cda5a89436555b4106bed31db468716597bae2a4b87b61d82fc8494a35f5f1ac.svg",
+      "sha256": "5ddea6a106b4e5f0e666bf9a5d40063d5f269f2fbd5d73968e08a0d5da69b67d"
+    },
+    {
+      "source": "flowchart LR\n  A[\"Fourth Q\"] --> B[\"Second Q after …\"]\n  B --> C[\"Continues outside the original slide\"]",
+      "path": "archived-references/diagrams/d219d16189488743e910d2b2d05f64ac72abf942d58e6ee4d7d624b5af70d80f.svg",
+      "sha256": "7f42ab4a05c4fcc77a99d871b4f9990b7dde653b81a01aa57cdab2ece1d4d650"
+    },
+    {
+      "source": "flowchart LR\n B[\"http://b.net\"]\n subgraph Browser[\"Browser: http://b.net\"]\n J[\"JavaScript (b.net)\"]\n F[\"CrossDomain.swf (b.net)\"]\n end\n U[\"User\"] --- J\n B --> J\n B --> F\n J -->|\"via CrossDomain.swf; Cookie for c.net\"| C[\"http://c.net\"]\n C --> J\n C --- P[\"Crossdomain.xml\"]",
+      "path": "archived-references/diagrams/d6b809c82bfa7413fd6839dffdfaca5247fc4ecde8daef35f83b1c1d28d12518.svg",
+      "sha256": "35e65074f703f0648b01e7708b8e1d2ebbc482588eba56e146a7ef3ec096d098"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] -->|\"user@gmail.com\"| S[\"Server\"]\n S <-->|check| D[\"Database\"]\n S <-->|insert| D\n S -->|Response| U\n M[\"SMTP\"]",
+      "path": "archived-references/diagrams/d76167ee830dcce764b6aac83a13e0f0bead1abefa60ed0967c8ec1f0512a6f3.svg",
+      "sha256": "001c99c06f6d80394ef4edf8e09fbf2d0d5c2e97efde1b0423399781268c795f"
+    },
+    {
+      "source": "flowchart TD\n  A[\"static.fbcdn.com\"] --> B[\"static.facebook.com.edgesuite.net.\"]\n  B --> C[\"a1860.g.akamai.net.\"]\n  C --> D[\"64.145.75.11\"]",
+      "path": "archived-references/diagrams/d7849a259e79d90795e0a9ad472d96fd31f97a147e08c39009302120a7930eb5.svg",
+      "sha256": "b7889b89fcd731232b27f9216ad94720c5bcda9aae92991f89260763d3f2e212"
+    },
+    {
+      "source": "flowchart LR\n  A[\"Fourth Q\"] --> B[\"Second Q after …\"]",
+      "path": "archived-references/diagrams/d84b63e27f35d5c289db0b8276a1e5ac9d04013ae1096be00868800b78c86190.svg",
+      "sha256": "f6886c81b7de1e53c5a21bf0d9ea64f674f3e75d9b9e5ffa3a8a52e938dbd01a"
+    },
+    {
+      "source": "flowchart TB\n    A[\"Nginx\"] --- S[\"/..;/ seems to be a directory with the /status whitelist. Pass to you!\"]\n    T[\"Tomcat\"] --- B[\"Oh shit! /..;/ is the parent directory\"]",
+      "path": "archived-references/diagrams/d8f0ee0f1fad8feb4d277166e77f8d8068db14e7059288cba4dc3b94e05d052d.svg",
+      "sha256": "daf179d3036ca28109166973c1951258917151c1d52830563ff72afa3c8644b7"
+    },
+    {
+      "source": "flowchart RL\n  F[\"FOX NEWS Channel\"] -->|\"Here you go!\"| U[\"User laptop\"]",
+      "path": "archived-references/diagrams/dc29dc20b0f08993885b08913e227183e65dbc7be03005f3cc010d14797aac4b.svg",
+      "sha256": "cb6fee04f246173c14dea31687f566e9e5f6d7b10ec951a0027f07cd1eaa7a7c"
+    },
+    {
+      "source": "sequenceDiagram\n participant R as Researcher\n participant A as Application\n R->>A: ${ 7*7 }\n A->>R: ${ 7*7 }\n R->>A: &lt;%= 7*7 %&gt;\n A->>R: 49",
+      "path": "archived-references/diagrams/de7050a85137e602a5ffaaba8bbba9de3d4c0e58eb46d48403c4a2582db1f7a8.svg",
+      "sha256": "b1599ac08483db8b49a87552af0067fd1256866d59cc6f2ce5e32e5f87ffca8a"
+    },
+    {
+      "source": "flowchart TD\n    U[User] -->|PAYLOAD| N[Newtonsoft]\n    N -->|DESERIALIZATION| A[Deserialize SecurityException through Serializable constructor]\n    A --> B[Set m_serializedMethodInfo member to BinaryFormatter gadget]\n    B --> C[Pass deserialized SecurityException to PropertyGrid.SelectedObjects setter]\n    C --> D[Invoke SecurityException.get_Method - Remote Code Execution]",
+      "path": "archived-references/diagrams/df73d92cc6e3cbc7b8781f750684ca50c41d07bc94edd5b9040c7da46ff0e992.svg",
+      "sha256": "b0e8aa016d8432e65183b3876f0ce6917668e1175ea3d327fa69215ba1782cb1"
+    },
+    {
+      "source": "flowchart TD\n    U[User] -->|PAYLOAD| N[Newtonsoft]\n    N -->|DESERIALIZATION| A[Deserialize SettingsPropertyValue]\n    A --> B[Set SerializedValue to BinaryFormatter RCE gadget]\n    B --> C[Set ComboBox.DisplayMember to PropertyValue]\n    C --> D[Invoke ComboBox.set_Text setter]\n    D --> E[Invoke SettingsPropertyValue.get_PropertyValue - RCE]",
+      "path": "archived-references/diagrams/e0fa3fa960ea93f1d351b260c905036e677673737d90797e80e789436ca24554.svg",
+      "sha256": "bd319173fb001275715a9a674506a9acbf03b1098a28a30de9872936935dce2e"
+    },
+    {
+      "source": "flowchart LR\n  IV((IV)) --> C1[\"compression function\"] --> C2[\"compression function...\"] --> C3[\"compression function\"] --> C4[\"compression function...\"] --> C5[\"compression function\"] --> MAC((\"new MAC\"))\n  S[secret] --> C1\n  M[\"message...\"] --> C2\n  P[\"length padding\"] --> C3\n  E[\"extra data...\"] --> C4\n  N[\"new length padding\"] --> C5",
+      "path": "archived-references/diagrams/e30b0488209341e015e62e575492a5c63114d22bc2a2dddde0d69165bfe9e3ad.svg",
+      "sha256": "0bed615cf6cf9bef3063eb2953ae39d5e7d18799c5505175978406ab082b91ab"
+    },
+    {
+      "source": "flowchart TD\n A[\"WAIT for HTTP request\"] --> B{\"Current message bit is 1?\"}\n B -->|then| C[\"Send new header value\"] --> D[\"Store header value\"] --> A\n B -->|else| E[\"Send old header value\"] --> A",
+      "path": "archived-references/diagrams/e81a52236390e3d4f9f4be58a2c80fa6dbf03931ae274822576f751a0dc80b97.svg",
+      "sha256": "8a8a5512b582371365f02ee985cbe07e6cc3654700842e1ad77064e09db2af09"
+    },
+    {
+      "source": "sequenceDiagram\n    participant V as Browser / Victim\n    participant W as Application / site.tld\n    participant A as Attacker / atk.site.tld\n    Note over V,A: pre-session fixation\n    A->>W: 1 GET /login\n    W->>A: Set-Cookie: sess[unauthenticated,s] — form(t(s))\n    V->>A: GET /foo\n    A->>V: 2 Set-Cookie: sess[unauthenticated,token]#59; Domain=site.tld\n    Note over V,W: user login\n    V->>W: GET /login — Cookie: sess[unauthenticated,token]\n    W->>V: form(t′(s))\n    V->>W: POST /login — Cookie: sess[unauthenticated,s] — user, pwd, t′(s)\n    W->>V: 3 Set-Cookie: sess′[authenticated,s]\n    Note over V,A: token replay\n    Note over V,A: Unlabelled connection shown in the original figure\n    V->>W: 4 POST /action — Cookie: sess′[authenticated,s] — t(s)\n    Note right of W: !",
+      "path": "archived-references/diagrams/e95856dc245b6415f2b9a3237006689c97f7db10f238d04c80ee91f508877942.svg",
+      "sha256": "bbb0181d6a446c5f972ce7a5df0f0a69547ae876caf4cf16c79bb9b7e39b2e92"
+    },
+    {
+      "source": "flowchart LR\n  idp[\"Identity Provider (IdP)\"]\n  user[\"User\"]\n  sp[\"Service Provider (SP)\"]\n  user -->|\"1. Initial request\"| sp\n  sp -->|\"2. Redirect to IdP with SAML Request\"| user\n  user -->|\"3. Forward SAML Request\"| idp\n  idp <-->|\"4. Authenticate the user\"| user\n  idp -->|\"5. Redirect to SP with SAML Response\"| user\n  user -->|\"6. Forward SAML Response\"| sp",
+      "path": "archived-references/diagrams/ecaebc64c6db78173032d578354462d81b85097b3287d3229d25bbc89802940c.svg",
+      "sha256": "a1dc224d6c8a459512379fbe04592bc671143a7dd250fc5b63a8955a76367a9a"
+    },
+    {
+      "source": "flowchart LR\n  U[\"User laptop\"] --> A[\"attacker.com\"]\n  A -->|\"Attacker loads vulnerable SWF from victim.\"| L[\"legitbank.com\"]",
+      "path": "archived-references/diagrams/ed1f7ebb7ac1482e88cb7c2547d369a389eafe6bc54e075d5441e1bb2918dbff.svg",
+      "sha256": "87031c0a6db0054047f11a418025b71f1e273999808a1f77caee956ae0f72b5e"
+    },
+    {
+      "source": "flowchart LR\n t[\"Templating\"] --> c[\"Collection\"] --> p[\"Packet Analysis\"] --> r[\"Training\"] --> e[\"Testing\"] --> a[\"Attack\"]",
+      "path": "archived-references/diagrams/ee2df690e0196705d8009fec22b33475cf6eac694e3ce938a8f028599626427c.svg",
+      "sha256": "c99d799c706e853ed86f1395c78fed41359ce578a10eaac78884cadd77aa77eb"
+    },
+    {
+      "source": "flowchart LR\n U[\"User\"] --> F[\"First server\"]\n F --> B[\"Second server\"]\n B --> F\n F --> U\n linkStyle 1 stroke:red",
+      "path": "archived-references/diagrams/f274ea05ecf7ebf48a5848ce614f312aec126ec6fb571d11170a510fbde28b28.svg",
+      "sha256": "a12bf28f439fb4c303fe450033332f517e32042abf6b27bf73f66e4a0643d376"
+    },
+    {
+      "source": "flowchart TD\nC1[\"Connection 1\"] --- S1\nC2[\"Connection 2\"] --- S2\nC3[\"Connection 3\"] --- S3\nsubgraph H[\"HEAP MEMORY — LOW to HIGH\"]\ndirection LR\nS1[\"SSL\"] ~~~ S2[\"SSL\"] ~~~ S3[\"SSL\"]\nend",
+      "path": "archived-references/diagrams/f3ad0e280f7d6cd8f19905f3200532b7f08d08d7ee451db35fcbe4acd6054b7b.svg",
+      "sha256": "ad253607a266de7bebd75766261c27218e906a76ee42ff9c6f43c3a6e3be083d"
+    },
+    {
+      "source": "flowchart LR\nsubgraph H[\"HEAP MEMORY — LOW to HIGH\"]\ndirection LR\nJ[\"JS Buffer\"] ~~~ S1[\"SSL\"] ~~~ S2[\"SSL\"] ~~~ S3[\"SSL\"]\nend\nS1 --- D\nD[\"version | method | … | *handshake_func | …\"] --> A[\"system()\"]\nstyle J fill:#c65d0b\nstyle S1 fill:#c65d0b\nstyle D fill:#c65d0b",
+      "path": "archived-references/diagrams/f422c866fec5d4400b55ae252fb941f72e8ee1a44dbbb36e484b5544041bb5f0.svg",
+      "sha256": "3882adb251557532edc134b5fd774e7ec939faed9106aa855627b8cde386f367"
+    },
+    {
+      "source": "flowchart LR\n A[\"evil.com:80\"] --> B[\"cURL / libcurl\"]\n C[\"google.com\"] --> D[\"NodeJS URL / Perl URI / Go net/url / PHP parse_url / Ruby addressable\"]",
+      "path": "archived-references/diagrams/f453c1a6713eaa646858ad6807bc023d09cabc7193e39fa56c1f5de6bbb23d27.svg",
+      "sha256": "9e1ebb279bd82db42c81bb84c0e52bed4b181682f5cda381db8314507b029d73"
+    },
+    {
+      "source": "flowchart BT\n    I[\"SS-XSS-I: {js}\"] --> S[\"SS-XSS-S: {https, js}\"]\n    I --> N[\"NET, SS-HOST-I: {headers, js}\"]\n    S --> H[\"SS-HOST-S: {https, js, headers}\"]\n    N --> H",
+      "path": "archived-references/diagrams/f7306d70035e8483864179fe4d31b1eeb9d5415b657443271fb77477eb170e69.svg",
+      "sha256": "36d4ee1f33d86290e79434464e6ce54d77b66dc1557ef16e1c031482750ab5d5"
+    },
+    {
+      "source": "flowchart LR\n  A[Application] <-->|lightning mark| D[(Database)]",
+      "path": "archived-references/diagrams/f812cf9a2d08781dfb5d9531567e60554b83074e29d53967fcd1210db7560989.svg",
+      "sha256": "3190b2b96ea533eb80537ecedf63eebf5d01b5aab95e3f0ff7bd0d93da7a574b"
+    },
+    {
+      "source": "flowchart LR\n    C[\"Client\"]\n    subgraph S[\" \"]\n        N[\"NGINX<br/>static files<br/>- images<br/>- scripts<br/>- files\"]\n        T[\"Tomcat\"]\n        A[\"Apache\"]\n    end\n    C -.-> N\n    N -.-> C\n    N -.-> T\n    T -.-> N\n    N -.-> A\n    A -.-> N\n    style S stroke-dasharray: 2 5\n    linkStyle 0,2,4 stroke:#ffbf00\n    linkStyle 1,3,5 stroke:#44cc22",
+      "path": "archived-references/diagrams/fa132bedf67b73a86360fafa1e04fc098a1b1b9b8a707c616958d89f90d28fad.svg",
+      "sha256": "52965e2413950f400c0eed80b4e483ef095c13c1163b1748cd2d6dd52712fc6f"
+    }
+  ]
+}

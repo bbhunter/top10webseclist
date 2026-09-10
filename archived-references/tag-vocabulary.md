@@ -63,21 +63,21 @@ JSON.
 
 ## The vocabulary
 
-201 tags, across 1693 documents that carry a digest.
+201 tags, across 1701 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
 | `abuse-of-functionality` | 69 | A04:2021 |
 | `active-directory` | 1 | — |
 | `activex` | 13 | — |
-| `ai-agent` | 44 | — |
+| `ai-agent` | 49 | — |
 | `algorithmic-complexity` | 32 | A04:2021 |
 | `android` | 33 | — |
 | `angular` | 3 | — |
 | `argument-injection` | 2 | A03:2021 |
 | `aspnet` | 46 | — |
-| `attack-chain` | 182 | — |
-| `auth-bypass` | 303 | A01:2021 |
+| `attack-chain` | 183 | — |
+| `auth-bypass` | 306 | A01:2021 |
 | `autofill` | 1 | — |
 | `aws` | 30 | — |
 | `azure` | 11 | — |
@@ -139,7 +139,7 @@ JSON.
 | `filter-bypass` | 303 | A05:2021 |
 | `flash` | 56 | — |
 | `flask` | 5 | — |
-| `formal-analysis` | 32 | — |
+| `formal-analysis` | 33 | — |
 | `ftp` | 10 | — |
 | `fuzzing` | 56 | — |
 | `gadget-chain` | 94 | A08:2021 |
@@ -147,7 +147,7 @@ JSON.
 | `github` | 23 | — |
 | `github-actions` | 18 | A08:2021 |
 | `gitlab` | 7 | — |
-| `go` | 14 | — |
+| `go` | 15 | — |
 | `graphql` | 4 | — |
 | `hash-collision` | 5 | A02:2021 |
 | `header-injection` | 67 | A03:2021 |
@@ -164,7 +164,7 @@ JSON.
 | `ios` | 16 | — |
 | `jailbreak` | 4 | — |
 | `java` | 122 | — |
-| `javascript` | 372 | — |
+| `javascript` | 374 | — |
 | `javascript-runtime` | 20 | — |
 | `jenkins` | 2 | — |
 | `joomla` | 6 | — |
@@ -177,7 +177,7 @@ JSON.
 | `load-balancer` | 16 | — |
 | `mass-assignment` | 11 | A01:2021 |
 | `measurement-study` | 230 | — |
-| `memory-corruption` | 4 | — |
+| `memory-corruption` | 5 | — |
 | `mime` | 42 | A05:2021 |
 | `mitigation` | 172 | — |
 | `mongodb` | 6 | — |
@@ -203,15 +203,15 @@ JSON.
 | `postmessage` | 34 | — |
 | `predictable-token` | 5 | A02:2021 |
 | `prior-art-extension` | 58 | — |
-| `privilege-escalation` | 105 | A01:2021 |
-| `prompt-injection` | 36 | A03:2021 |
+| `privilege-escalation` | 106 | A01:2021 |
+| `prompt-injection` | 41 | A03:2021 |
 | `prototype-pollution` | 21 | A08:2021 |
 | `proxy` | 82 | — |
 | `python` | 36 | — |
 | `race-condition` | 30 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 274 | — |
+| `rce` | 275 | — |
 | `react` | 6 | — |
 | `redis` | 3 | — |
 | `redos` | 3 | — |
@@ -223,7 +223,7 @@ JSON.
 | `rust` | 3 | — |
 | `same-origin-policy` | 177 | A01:2021 |
 | `saml` | 18 | A07:2021 |
-| `sandbox-escape` | 71 | — |
+| `sandbox-escape` | 72 | — |
 | `sanitizer-bypass` | 85 | A05:2021 |
 | `service-worker` | 10 | — |
 | `session-fixation` | 35 | A07:2021 |
@@ -242,7 +242,7 @@ JSON.
 | `static-analysis` | 72 | — |
 | `struts` | 4 | — |
 | `subdomain-takeover` | 1 | — |
-| `supply-chain` | 56 | A06:2021 |
+| `supply-chain` | 58 | A06:2021 |
 | `survey` | 18 | — |
 | `symfony` | 1 | — |
 | `timing-attack` | 89 | — |
@@ -266,7 +266,7 @@ JSON.
 | `websocket` | 8 | — |
 | `wordpress` | 21 | — |
 | `xsleak` | 73 | — |
-| `xss` | 383 | A03:2021 |
+| `xss` | 384 | A03:2021 |
 | `xxe` | 32 | A03:2021 |
 
 ### Never published

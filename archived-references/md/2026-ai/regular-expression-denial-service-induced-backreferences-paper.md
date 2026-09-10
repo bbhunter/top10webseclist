@@ -24,7 +24,7 @@ authors:
   - Dongyoon Lee
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:72"
+  - "2026-ai.md:88"
 commit: ""
 content_sha256: eac8e70b366697ac28637b9d6e740fc170072add2263621d53370e2252c1f2a1
 depth: full

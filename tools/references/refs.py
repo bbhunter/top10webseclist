@@ -2033,14 +2033,35 @@ def _image_source(entry, store):
     """
     held = {url: item.get("sha256") for url, item in (entry.get("images") or {}).items()
             if item.get("sha256")}
-    if not held:
-        return None
     from refslib import images as images_module
 
     cache = {}
+    diagrams = None
 
     def source(url):
+        nonlocal diagrams
         if url in cache:
+            return cache[url]
+        if re.fullmatch(r"mermaid:[a-f0-9]{64}", url):
+            import base64
+            import hashlib
+            from render_diagrams import checked_svg
+            root = paths.repo_root()
+            if diagrams is None:
+                index = root / "archived-references" / "diagram-assets.json"
+                rows = json.loads(index.read_text()).get("diagrams", []) if index.exists() else []
+                diagrams = {hashlib.sha256(row["source"].encode()).hexdigest(): row for row in rows}
+            row = diagrams.get(url[8:])
+            if not row:
+                return ""
+            expected = "archived-references/diagrams/" + url[8:] + ".svg"
+            if row.get("path") != expected:
+                raise ValueError("invalid preserved diagram path")
+            svg = (root / expected).read_bytes()
+            if hashlib.sha256(svg).hexdigest() != row.get("sha256"):
+                raise ValueError("preserved diagram hash mismatch")
+            checked_svg(svg.decode("utf-8"))
+            cache[url] = "data:image/svg+xml;base64," + base64.b64encode(svg).decode("ascii")
             return cache[url]
         sha = held.get(url)
         body = store.get(sha) if (sha and store.has(sha)) else b""

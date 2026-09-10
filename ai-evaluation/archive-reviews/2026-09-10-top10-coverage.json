@@ -1,0 +1,4268 @@
+{
+  "date": "2026-09-10",
+  "citation_occurrences": 231,
+  "unique_urls": 230,
+  "ranked_techniques": 190,
+  "finalized_collections": 19,
+  "records": [
+    {
+      "url": "https://whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf",
+      "title": "Hacking Intranet Websites from the Outside",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://secunia.com/advisories/22477",
+      "title": "Internet Explorer 7 \"mhtml:\" Redirection Information Disclosure",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://shampoo.antville.org/stories/1451301",
+      "title": "(somewhat) breaking the same-origin policy by undermining dns-pinning",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse",
+      "title": "DNS Pinning Just Got Worse",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html",
+      "title": "I know where you've been",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://gnucitizen.org/blog/backdooring-quicktime-movies",
+      "title": "Backdooring QuickTime Movies",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "faulty capture: The original lead illustration kodo_ipod.jpg remains unavailable; original and migrated author URLs and two publication-era Wayback requests return404. All three technical screenshots are preserved.; resolve remaining source limitations (reported 2026-09-10)"
+    },
+    {
+      "url": "https://securityfocus.com/archive/1/441014/30/0/threaded",
+      "title": "Forging HTTP request headers with Flash",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20061211/exponential-xss-attacks",
+      "title": "Exponential XSS Attacks",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion",
+      "title": "Selecting Encoding Methods For XSS Filter Evasion",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://whitehatsec.com/downloads/WHXSSThreats.pdf",
+      "title": "Cross-Site Scripting Worms and Viruses: The Impending Threat and the Best Defense",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://cgisecurity.com/papers/HackingFeeds.pdf",
+      "title": "Feed Injection in Web 2.0: Hacking RSS and Atom Feed Implementations",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2006.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1",
+      "title": "XSS Vulnerabilities in Common Shockwave Flash Files",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html",
+      "title": "[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues",
+      "title": "Web Mayhem: Firefox’s JAR: Protocol issues",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=369814",
+      "title": "Bug 369814 — jar: protocol is an XSS hazard due to ignoring mime type and being considered same-origin with hosting site",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://img2.helpnetsecurity.com/dl/articles/CrossSitePrinting.pdf",
+      "title": "Cross Site Printing",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20070623/hiding-js-in-valid-images",
+      "title": "Hiding JS in Valid Images",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw",
+      "title": "Firefoxurl URI Handler Flaw",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://jumperz.net/index.php?i=2&a=1&b=7",
+      "title": "J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://jumperz.net/index.php?i=2&a=1&b=7",
+        "markdown": "archived-references/md/2007/jumperz-net-j-u-m-p-e-r-z-n-e-t-stealing-information-using-anti-demonstration.md",
+        "title": "J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ca6c33ba6b111976b0d5587a1f3fea1f25dffb1a9b635fee70baae03dac3730c",
+        "raw_sha256": "8be3deee16970cba6b098b7fb5e74eb344e508e450129ff4df670441e131b1f6",
+        "content_sha256": "a11cd3c48542794a69a87332c19a6312697d3d31637972baad6c56fd60d03332",
+        "body_chars": 3765
+      }
+    },
+    {
+      "url": "https://gnucitizen.org/blog/google-gmail-e-mail-hijack-technique",
+      "title": "Google GMail E-mail Hijack Technique",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine",
+      "title": "ha.ckers.org web application security lab - Archive » PDF XSS Can Compromise Your Machine",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine",
+        "markdown": "archived-references/md/2007/ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-pdf-xss-machine.md",
+        "title": "ha.ckers.org web application security lab - Archive » PDF XSS Can Compromise Your Machine",
+        "same_body_as_HEAD": true,
+        "body_sha256": "cdd87994a139ee14866b363f35712a9daf94ce65d65ebc1c2c839fbabbd3af48",
+        "raw_sha256": "4341fcba21876ec3d366d09ffcb3da1feb3ed0138da0eec1265d458470b6ff77",
+        "content_sha256": "adceef21c2ff74f15a8a5521cfa526357e68ee5d064fc0fda6445923231d7890",
+        "body_chars": 1543
+      }
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2006/11/browser-port-scanning-without.html",
+      "title": "Browser Port Scanning without JavaScript",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2007.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://riosec.com/how-to-create-a-gifar",
+      "title": "How to Create a GIFAR",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html",
+      "title": "Breaking Google Gears' Cross-Origin Communication Model",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://dhanjani.com/blog/2008/05/safari-carpet-b.html",
+      "title": "Safari Carpet Bomb",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2008/10/clickjacking-web-pages-can-see-and-hear.html",
+      "title": "Clickjacking: Web pages can see and hear you",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://aviv.raffon.net/2008/10/30/ADifferentOpera.aspx",
+      "title": "A different Opera",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://trivero.secdiscover.com/html5whitepaper.pdf",
+      "title": "Abusing HTML 5 Structured Client-side Storage",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html",
+      "title": "Security: Cross-domain leaks of site logins",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html",
+        "markdown": "archived-references/md/2008/scarybeastsecurity-blogspot-com-cross-domain-leaks-site-logins.md",
+        "title": "Security: Cross-domain leaks of site logins",
+        "same_body_as_HEAD": true,
+        "body_sha256": "36723a28a284b1f52a8bee068a6df55d756bf59adb38982b55530594dc7d63f7",
+        "raw_sha256": "2ebaa60ed75f38b88f67be02fbc350fb047f0d5bd3e85a5078f37a761882e201",
+        "content_sha256": "0d648f7b3b34b1685c5ca8cf9de93dc658452ac6d8388847e2db46f356c0930d",
+        "body_chars": 2213
+      }
+    },
+    {
+      "url": "https://sensepost.com/research/reDuh/SensePost_2008.tgz",
+      "title": "Tunneling tcp over http over sql-injection",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-08",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The TGZ is the companion reDuh tool package retained in the 2008 list. The author-hosted reDuh research page is independently cited and archived, so the package is not treated as a missing article."
+      }
+    },
+    {
+      "url": "https://carnal0wnage.blogspot.com/2008/08/owning-client-without-and-exploit.html",
+      "title": "Owning the Client without an Exploit",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://sensepost.com/blog/html",
+      "title": "1",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-08",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "This malformed generic SensePost URL is retained as a footnote beside the complete ActiveX Repurposing disclosure, which is archived from the author-linked Carnal0wnage article."
+      }
+    },
+    {
+      "url": "https://networkworld.com/news/2008/080708-black-hat-ssl-vpn-security.html",
+      "title": "SSL VPNs might not be as secure as you think",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.watchfire.com/wfblog/2008/10/flash-parameter.html",
+      "title": "Flash Parameter Injection",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2008.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://phreedom.org/research/rogue-ca",
+      "title": "Creating a rogue CA certificate",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://phreedom.org/research/rogue-ca",
+        "markdown": "archived-references/md/2008/phreedom-org-creating-rogue-ca-certificate.md",
+        "title": "Creating a rogue CA certificate",
+        "same_body_as_HEAD": true,
+        "body_sha256": "75eadba03fc9181a4bb5b7dbd6cf440cd9bed12f91b2e2264f9d6127fec9924f",
+        "raw_sha256": "d5c71d0895b763ab13921a907f94ae48c5ee724970b46b7e33f170d9694f8f13",
+        "content_sha256": "d0180409cdc84049b98722e8e99ee365500a4f7718ac6b8820037a0eddf31d94",
+        "body_chars": 2811
+      }
+    },
+    {
+      "url": "https://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html",
+      "title": "Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html",
+        "markdown": "archived-references/md/2009/blog-mindedsecurity-com-http-parameter-pollution-new-web-attack-category-not-p.md",
+        "title": "Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f1bab5115b2bf5f73d7557ccbb3b9c35ee26695970e83a76d758c6cac087cbec",
+        "raw_sha256": "1e001541b0f85c43a3c1db85699ad8fa1eaab3c5ff8e2562ef35801cf22c6573",
+        "content_sha256": "9a53fa67dacdbb0d87b2c28dba94f50569259e5073a9c94d6bfe96c7cf3beb9e",
+        "body_chars": 1606
+      }
+    },
+    {
+      "url": "https://netifera.com/research",
+      "title": "Flickr's API Signature Forgery Vulnerability",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 3,
+          "line": 7
+        },
+        {
+          "year_file": "2010.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html",
+      "title": "Cross-domain search timing",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html",
+        "markdown": "archived-references/md/2009/scarybeastsecurity-blogspot-com-cross-domain-search-timing.md",
+        "title": "Cross-domain search timing",
+        "same_body_as_HEAD": true,
+        "body_sha256": "61c410be1cb716ce958bf2532dd70e3d228b4945c2aabab1502b10dd7a6197e5",
+        "raw_sha256": "4d2236ce45f3e2c68e22fb81e25f8196379516746d2f863ccf28588ee479bca7",
+        "content_sha256": "91f1c5228c286037ef3023d2ca630fd0e43a49543ab4351bcd1c5f1e76468e0a",
+        "body_chars": 3886
+      }
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20090617/slowloris-http-dos",
+      "title": "Slowloris HTTP DoS",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://soroush.me/downloadable/iis-semicolon-report.pdf",
+      "title": "Microsoft IIS 0Day Vulnerability in Parsing Files (semi-colon bug)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blogs.technet.com/msrc/archive/2009/12/27/new-reports-of-a-vulnerability-in-iis.aspx",
+      "title": "New Reports of a Vulnerability in IIS",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blogs.technet.com/msrc/archive/2009/12/27/new-reports-of-a-vulnerability-in-iis.aspx",
+        "markdown": "archived-references/md/2009/blogs-technet-com-new-reports-vulnerability-iis.md",
+        "title": "New Reports of a Vulnerability in IIS",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ef5679063b87d6eee79b9d7d713c62ab1ab9705a283851611cd0f62e3abb2f6f",
+        "raw_sha256": "5e2d3b0bbd3b49231a338deddd7f46d9f7b553c8ac5950c9df1e101a6cde6d84",
+        "content_sha256": "49cff08642970f88a1791486c2e3235a2c377ee36826082e2b1d816b30a88e6e",
+        "body_chars": 2985
+      }
+    },
+    {
+      "url": "https://stephensclafani.com/2009/05/26/exploiting-unexploitable-xss",
+      "title": "Exploiting Unexploitable XSS",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html",
+      "title": "Our Favorite XSS Filters and how to Attack them",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://sectheory.com/rfc1918-security-issues.htm",
+      "title": "RFC1918 Caching Security Issues",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20090120/persistent-cookies-and-dns-rebinding-redux",
+      "title": "Persistent Cookies and DNS Rebinding Redux",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20091118/dns-rebinding-for-scraping-and-spamming",
+      "title": "DNS Rebinding for Scraping and Spamming",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20091116/session-fixation-via-dns-rebinding",
+      "title": "Session Fixation Via DNS Rebinding",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2009.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://usenix.org/events/woot10/tech/full_papers/Rizzo.pdf",
+      "title": "Practical Padding Oracle Attacks",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster",
+      "title": "Automated Padding Oracle Attacks with PadBuster",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "faulty capture: Original decryption figure po_fig4_sm.png and fully padded block figure po_fig10_sm.png remain missing. Recorded image/full-size replays return 404, redirects to homepage, unrelated HTML, or network timeout. Do not clear the document content gap.; resolve remaining source limitations (reported 2026-09-10)"
+    },
+    {
+      "url": "https://youtube.com/watch?v=yghiC_U2RaM",
+      "title": "POET vs ASP.NET: DotNetNuke",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The padding-oracle demonstration video is retained in the 2010 list, but the complete paper is archived from https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf."
+      }
+    },
+    {
+      "url": "https://samy.pl/evercookie",
+      "title": "samy kamkar - evercookie - virtually irrevocable persistent cookies",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2010/08/breaking-browsers-hacking-auto-complete.html",
+      "title": "Breaking Browsers: Hacking Auto-Complete (All Materials Available)",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://jeremiahgrossman.blogspot.com/2010/08/breaking-browsers-hacking-auto-complete.html",
+        "markdown": "archived-references/md/2010/blog-jeremiahgrossman-com-breaking-browsers-hacking-auto-complete-all-available.md",
+        "title": "Breaking Browsers: Hacking Auto-Complete (All Materials Available)",
+        "same_body_as_HEAD": true,
+        "body_sha256": "c09af597b55ddcb3f81b71bb5df2d46b649a06d3a1b240cbf0b2c775947a6d3d",
+        "raw_sha256": "2675655f42df9262fdb361210e8f2ef4904adc224d982f476847354ab64207e5",
+        "content_sha256": "6d424a377cf979fcb141866f4f56c4c310b65d7930dc20b266af33021d68d7f3",
+        "body_chars": 2853
+      }
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html",
+      "title": "I know who your name, where you work, and live (Safari v4 & v5)",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html",
+      "title": "The Safari AutoFill hack LIVES!",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html",
+        "markdown": "archived-references/md/2010/blog-jeremiahgrossman-com-safari-autofill-hack-lives.md",
+        "title": "The Safari AutoFill hack LIVES!",
+        "same_body_as_HEAD": true,
+        "body_sha256": "1f8b0e612d7bee84c89a69e379f4c63f6a807610b518f75045627845c8124416",
+        "raw_sha256": "618bab965d228aee94d1bd81edd7fa4cacb14753dfbb3eba256fae80eab9164c",
+        "content_sha256": "5a8496a089d8e64bbe9bbe67a5d837a9c394239083180af3f78b388bcd174433",
+        "body_chars": 7339
+      }
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html",
+      "title": "In Firefox we can’t read auto-complete, but we can write to it (a lot)!",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html",
+      "title": "Stealing AutoComplete form data in Internet Explorer 6 & 7",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html",
+        "markdown": "archived-references/md/2010/blog-jeremiahgrossman-com-stealing-autocomplete-form-data-internet-explorer-6-7.md",
+        "title": "Stealing AutoComplete form data in Internet Explorer 6 & 7",
+        "same_body_as_HEAD": true,
+        "body_sha256": "7c9afac3567302bb0185a399598f1ee328baf30c76a1fe742fd6b4c17402e264",
+        "raw_sha256": "a16f9bdcdf558bc3cf4cc005507ccddaba3a77f26e5d227f2dfab9924f785f3b",
+        "content_sha256": "c421920401579111cbf92b6f10fadbe80f8fe69c3c03e17209191ccb9c75d20f",
+        "body_chars": 8881
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=bt0Qh9c59_c",
+      "title": "Attacking HTTPS with Cache Injection",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "the video page declares no caption track; the browser route also failed (RuntimeError: the page never published a caption track). YouTube now requires a player-generated token on the caption URL, so no plain fetch, in-page fetch or transcript panel returns it. Only a manual transcript export will cover this",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The HTTPS cache-injection demo is retained in the 2010 list, but the same research is archived from the authors' Bad Memories whitepaper at https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf."
+      }
+    },
+    {
+      "url": "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf",
+      "title": "Bad Memories",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html",
+      "title": "Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html",
+        "markdown": "archived-references/md/2010/blog-andlabs-org-bypassing-csrf-protections-clickjacking-http-pollution.md",
+        "title": "Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution",
+        "same_body_as_HEAD": true,
+        "body_sha256": "e63d56c6423f9f0fc16a962aaa2e2b02eb55c79e7da4483b473d5811dfe84883",
+        "raw_sha256": "45ccaf623b5d069b38ba9e6bd4107bf292944b33cf76af39f3eb2ef78381a42d",
+        "content_sha256": "71acd9f7a5176548f4027f13d68e62c5960e32d47c0b5f38e58e7afb0ac079f5",
+        "body_chars": 4855
+      }
+    },
+    {
+      "url": "https://p42.us/ie8xss",
+      "title": "Universal XSS in IE8",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-08",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The original demonstration page is retained in the 2010 list, while Eduardo Vela Nava and David Lindsay's complete Black Hat Europe paper is archived from an exact PDF republication at https://www.wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf."
+      }
+    },
+    {
+      "url": "https://wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf",
+      "title": "Abusing Internet Explorer 8's XSS Filters",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://darkreading.com/vulnerability-management/167901026/security/attacks-breaches/228000532/index.html",
+      "title": "Researchers To Demonstrate New Attack That Exploits HTTP",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://aspectsecurity.com/tools/javasnoop",
+      "title": "JavaSnoop",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "faulty capture: All four original GUI screenshots remain unavailable. Original image replays fail and exact successful-capture CDX queries return empty; no substitute diagrams were invented.; Three source video poster images remain unavailable; original YouTube demo links are preserved but videos were not replayed/captured.; resolve remaining source limitations (reported 2026-09-10)"
+    },
+    {
+      "url": "https://ha.ckers.org/blog/20100125/css-history-hack-in-firefox-without-javascript-for-intranet-portscanning",
+      "title": "CSS History Hack In Firefox Without JavaScript for Intranet Portscanning",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html",
+      "title": "Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2010.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html",
+        "markdown": "archived-references/md/2010/blog-mindedsecurity-com-java-dsn-rebinding-java-same-ip-policy-internet-mayhem.md",
+        "title": "Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem",
+        "same_body_as_HEAD": true,
+        "body_sha256": "44a335ec08259cdc55bbba39eaf200a31df638ea1e5c5a8d8ebe658806b5b3ce",
+        "raw_sha256": "d5c8a86d276f0d86b67cdfbd5f747a9ace83bc369d5cfe308b1fe4f18886b971",
+        "content_sha256": "cbdb2f966e32b7d985abceae53776075589391ad05cfcbaacf3a3fd29008d2ad",
+        "body_chars": 2089
+      }
+    },
+    {
+      "url": "https://vnhacker.blogspot.com/2011/09/beast.html",
+      "title": "BEAST",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://vnhacker.blogspot.com/2011/09/beast.html",
+        "markdown": "archived-references/md/2011/2011-blogger-beast.md",
+        "title": "BEAST",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ef17aa8b285726c31394ed1c92d51e1e3ad44aedf116a71431b920b9e670c694",
+        "raw_sha256": "4fc5ba6ff6ed23a9f0fb8a33ce5acc1da99dae29bca83a40558324bc9f77ecf1",
+        "content_sha256": "dfbd81510220fe0223f45f36f17f580c786cf2dbc5cf2dee611bc5f78aebce97",
+        "body_chars": 14268
+      }
+    },
+    {
+      "url": "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java",
+      "title": "Multiple vulnerabilities in Apache Struts2 and property oriented programming with Java",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java",
+        "markdown": "archived-references/md/2011/2012-reiners-weblog-multiple-vulnerabilities-apache-struts2-property-java.md",
+        "title": "Multiple vulnerabilities in Apache Struts2 and property oriented programming with Java",
+        "same_body_as_HEAD": true,
+        "body_sha256": "eb5758c000cda19799ac78a966d6e895568dbbf80ff25377100b9391b6882b6d",
+        "raw_sha256": "beb8d79b311a38f532cfe0ba3d0a630269a351ef2e42fadb1e66302683decbb0",
+        "content_sha256": "8bb0c16d039406754ab10675eb8959234ab3db451d90d3b141f1d62a46d6ba5b",
+        "body_chars": 15019
+      }
+    },
+    {
+      "url": "https://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html",
+      "title": "DNS poisoning via Port Exhaustion",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://code.google.com/p/dominator",
+      "title": "dominator - Community version of the DOMinator for Firefox",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf",
+      "title": "Biting the hand that serves you: A closer look at client-side Flash proxies for cross-domain requests",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://polyboy.net/docs/Talks/2011_Bitingthehandthatservesyou_DIMVA.pdf",
+      "title": "[slides",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-08",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The unavailable talk slides are retained in the 2011 list, but the full DIMVA paper cited immediately beside them is archived from http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf."
+      }
+    },
+    {
+      "url": "https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf",
+      "title": "Expression Language Injection",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect",
+      "title": "Java Applet Same-Origin Policy Bypass via HTTP Redirect",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html",
+      "title": "CAPTCHA Hax With TesserCap",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html",
+        "markdown": "archived-references/md/2011/gursevkalra-blogspot-com-random-security-captcha-hax-tessercap.md",
+        "title": "CAPTCHA Hax With TesserCap",
+        "same_body_as_HEAD": true,
+        "body_sha256": "841f2a77fee6ba11ddc6912227bade82e997f9da51db21f777a4fd68a4054530",
+        "raw_sha256": "0dfdb1b8a6dfaa3b729ed37ed9a07299cf8bf90ba8ba9e8afbb47e6c46ae7694",
+        "content_sha256": "237d94d038b76911e1003349804089c89952a28331b2a2dd17c9f38550fad9a6",
+        "body_chars": 5986
+      }
+    },
+    {
+      "url": "https://blog.securitee.org/?p=37",
+      "title": "Bypassing Chrome's Anti-XSS filter",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://lists.webappsec.org/pipermail/websecurity_lists.webappsec.org/2011-February/007533.html",
+      "title": "[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2011.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512",
+      "title": "New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512",
+        "markdown": "archived-references/md/2012/threatpost-com-new-attack-uses-ssl-tls-information-leak-hijack-https-sessions.md",
+        "title": "New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions",
+        "same_body_as_HEAD": true,
+        "body_sha256": "716f3bbf9aff76c4d8d9941b80a9a824b7cfb40eb42c3a535c10e75194bfc2d4",
+        "raw_sha256": "f442b8d53aafa2ebdbb268af573bbb7eb8265cbcd9159ad478c61c9cdf8efa65",
+        "content_sha256": "af5903d283568e8d8deca9a6bdeb65cd07474ab9532de9ce9d17dbdac0d6ff7b",
+        "body_chars": 5057
+      }
+    },
+    {
+      "url": "https://arstechnica.com/security/2012/09/crime-hijacks-https-sessions",
+      "title": "Crack in Internet's foundation of trust allows HTTPS session hijacking",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://arstechnica.com/security/2012/09/crime-hijacks-https-sessions",
+        "markdown": "archived-references/md/2012/ars-technica-crack-internet-s-foundation-trust-allows-https-session-hijacking.md",
+        "title": "Crack in Internet's foundation of trust allows HTTPS session hijacking",
+        "same_body_as_HEAD": true,
+        "body_sha256": "3205d8099eae5a95a9c1ca2c3cbfc3c47a3677b0d9af64c2f978f5e0c378146b",
+        "raw_sha256": "19a23754eb053346c73478944dbea0e5c9bcaef2c2021617af3fc42b95961cab",
+        "content_sha256": "537ae5a2d6baac843489bf2f34cb93addf249e7b1c295ffe48b52c5575d09748",
+        "body_chars": 9738
+      }
+    },
+    {
+      "url": "https://media.blackhat.com/bh-us-12/Briefings/Polyakov/BH_US_12_Polyakov_SSRF_Business_WP.pdf",
+      "title": "SSRF vs. Business-critical applications. Part 1: XXE Tunneling in SAP NetWeaver (Whitepaper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities",
+      "title": "SSRF attacks and sockets: smorgasbord of vulnerabilities",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://erpscan.com/press-center/blog/ssrf-via-ws-adressing",
+      "title": "SSRF via WS-Adressing",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://erpscan.com/press-center/blog/ssrf-via-ws-adressing",
+        "markdown": "archived-references/md/2012/2012-erpscan-ssrf-ws-adressing.md",
+        "title": "SSRF via WS-Adressing",
+        "same_body_as_HEAD": true,
+        "body_sha256": "2be473a6d97dea8654c0f13e80b0d921f2dc388d743598b4e659c565a6057eae",
+        "raw_sha256": "7ff6c865b86916b83e00dd958025255cb07e7034e6e53707e8c3453ae281ad35",
+        "content_sha256": "f54cda3b5ab4f7b42cb00f79f92c4312bd41d569f92119254f866bce02844d66",
+        "body_chars": 904
+      }
+    },
+    {
+      "url": "https://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html",
+      "title": "Intro to Chrome addons hacking: fingerprinting",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html",
+        "markdown": "archived-references/md/2012/blog-kotowicz-net-intro-chrome-addons-hacking-fingerprinting.md",
+        "title": "Intro to Chrome addons hacking: fingerprinting",
+        "same_body_as_HEAD": true,
+        "body_sha256": "831de1a5bb859f2c815f9dc36ecfb13a28446df35bc171aeb120fdf7c9d71811",
+        "raw_sha256": "7304edba83e2e0d303f9590dda73076073eb83a76f5615fc3be37f8c7a86e10e",
+        "content_sha256": "d10719f2d08ff95dfd5e145db092e7cc07d0353bc9333ceaf412df20d751b3d9",
+        "body_chars": 5916
+      }
+    },
+    {
+      "url": "https://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html",
+      "title": "Chrome addons hacking: want XSS on google.com?",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html",
+        "markdown": "archived-references/md/2012/blog-kotowicz-net-chrome-addons-hacking-want-xss-google-com.md",
+        "title": "Chrome addons hacking: want XSS on google.com?",
+        "same_body_as_HEAD": true,
+        "body_sha256": "141e3750ed554f61424e6a23a4de5b90698456155683d617cbf99a5cdd9c60a1",
+        "raw_sha256": "01b7e0b521c5e4738b4b321fc0f3d8652238e202e1f5bebb49f340cec7b51b4c",
+        "content_sha256": "5cc6c7cb0d23aacefc772e5cf1776540afb6cd9397ba137bd3bf41194f7e6ec8",
+        "body_chars": 5058
+      }
+    },
+    {
+      "url": "https://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html",
+      "title": "Chrome addons hacking: Bye Bye AdBlock filters!",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html",
+        "markdown": "archived-references/md/2012/blog-kotowicz-net-chrome-addons-hacking-bye-bye-adblock-filters.md",
+        "title": "Chrome addons hacking: Bye Bye AdBlock filters!",
+        "same_body_as_HEAD": true,
+        "body_sha256": "177cd68a7ecb1fee886c26bbb3fa5bd297d58289325964c7a0ca54f4a21f01a3",
+        "raw_sha256": "ef03e6889f4e83b6b0657b56466be2008c145ce62888fa5cbf22b04e06d62e62",
+        "content_sha256": "d5f1879aa33ca7437c8a51e529d6dcb7eb5d10ff4b50a514e7ac89411a852bbd",
+        "body_chars": 6770
+      }
+    },
+    {
+      "url": "https://blog.kotowicz.net/2012/07/xss-chef-chrome-extension-exploitation.html",
+      "title": "XSS ChEF - Chrome extension exploitation framework",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.kotowicz.net/2012/07/xss-chef-chrome-extension-exploitation.html",
+        "markdown": "archived-references/md/2012/blog-kotowicz-net-xss-chef-chrome-extension-exploitation-framework.md",
+        "title": "XSS ChEF - Chrome extension exploitation framework",
+        "same_body_as_HEAD": true,
+        "body_sha256": "0807316152b62fbf1c2bcc9d949c325ac7db6eaa0a644a74929f34222297ba05",
+        "raw_sha256": "82221aeaa32434bcb377dfcf89bead120323d138c7430ee89d2111dada3a0b17",
+        "content_sha256": "34235f4e70a24579cc19162df1219aa104168c91056cd3214c7d2263115f1105",
+        "body_chars": 5059
+      }
+    },
+    {
+      "url": "https://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html",
+      "title": "Owning a system through a Chrome extension",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html",
+        "markdown": "archived-references/md/2012/blog-kotowicz-net-owning-system-through-chrome-extension.md",
+        "title": "Owning a system through a Chrome extension",
+        "same_body_as_HEAD": true,
+        "body_sha256": "a657b96d556eb79a3f99ccd4b8afe511feb1df40fc74f85bfbe157390875dc00",
+        "raw_sha256": "2f8a3776e14546d9a240c69e30e0d18b8deb4d33a2792d6afb3963fcd26e2d11",
+        "content_sha256": "3350ee5de78fb39d1952501418fed127ff3e238435b673ae25e2c2d2fd32830b",
+        "body_chars": 6902
+      }
+    },
+    {
+      "url": "https://blog.ptsecurity.com/2012/08/not-so-random-numbers-take-two.html",
+      "title": "Not So Random Numbers. Take Two",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://superevr.com/blog/2012/blended-threats-and-javascript",
+      "title": "Blended Threats and JavaScript",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://superevr.com/blog/2012/blended-threats-and-javascript",
+        "markdown": "archived-references/md/2012/superevr-blended-threats-javascript.md",
+        "title": "Blended Threats and JavaScript",
+        "same_body_as_HEAD": true,
+        "body_sha256": "5874d98f33699d9e1a63a72a1971f2daacc67ef218368ffb29ad7d0dbb6d1489",
+        "raw_sha256": "f052744117810a3317b73288361b78fa680d4683aa76602c7b4f16bd0a582d04",
+        "content_sha256": "9450a029a05864603019101a6c2a19ba606eb2652e80441687ae2763cb514e6e",
+        "body_chars": 733
+      }
+    },
+    {
+      "url": "https://riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html",
+      "title": "A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html",
+        "markdown": "archived-references/md/2012/riyazwalikar-com-bug-hunter-s-rhapsody-cross-site-port-attacks-xspa.md",
+        "title": "A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA",
+        "same_body_as_HEAD": true,
+        "body_sha256": "3cace6c2789294ee5f06df085ca314250fa4cab109eb4a01b220f3c4b98f4ba6",
+        "raw_sha256": "96dda764f1332bf63228b7de82d8206ec75a65beda4d65e5ac2112a70999c5fa",
+        "content_sha256": "ad656ab121a823d5a6f284468a4716deef4ca2f99665ca90a245d4c821b3b71e",
+        "body_chars": 6721
+      }
+    },
+    {
+      "url": "https://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website",
+      "title": "How a Platform Using HTML5 Can Affect the Security of Your Website",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website",
+        "markdown": "archived-references/md/2012/2012-security-musings-how-platform-using-html5-can-affect-security-your-website.md",
+        "title": "How a Platform Using HTML5 Can Affect the Security of Your Website",
+        "same_body_as_HEAD": true,
+        "body_sha256": "173699c863a45dd58b4152583b50c7c184b3b2c02b3b44a6ecc2d9e2047659d4",
+        "raw_sha256": "a742f846d73c26cd0a732a2a549cb1101427599d68b67f4299d3993480fdd287",
+        "content_sha256": "47cc4e69f21a77a689d9d13f6d6b75f6051925122ffae7d1fa76ed8b5d1c0767",
+        "body_chars": 13664
+      }
+    },
+    {
+      "url": "https://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html",
+      "title": "CAPTCHA Re-Riding Attack",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html",
+        "markdown": "archived-references/md/2012/gursevkalra-blogspot-com-random-security-captcha-re-riding-attack.md",
+        "title": "CAPTCHA Re-Riding Attack",
+        "same_body_as_HEAD": true,
+        "body_sha256": "2fc0105151636e9a845e8e646df7a62296c04bd1e26b6da87b4192d026ad605a",
+        "raw_sha256": "adb8afcc8b7740d86b60f71044672084814d129aceb5c7f843860345f557e5a9",
+        "content_sha256": "bcee5d8fb8612417cae55df04f4750f7ac6efba742129da563b0076e5612701b",
+        "body_chars": 5961
+      }
+    },
+    {
+      "url": "https://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html",
+      "title": "XSS: Gaining access to HttpOnly Cookie in 2012",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://mcafee.com/us/resources/white-papers/foundstone/wp-pentesters-guide-to-hacking-odata.pdf",
+      "title": "A Pentester’s Guide to Hacking OData (Whitepaper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2012.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://hackinparis.com/talk-mario-heiderich",
+      "title": "The inner HTML Apocalypse : How MXSS attacks change everything we believed to know so far",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The conference programme page is retained in the 2013 list, while the complete mXSS Attacks paper by Mario Heiderich and coauthors is archived from the author's Cure53 copy at https://cure53.de/fp170.pdf."
+      }
+    },
+    {
+      "url": "https://cure53.de/fp170.pdf",
+      "title": "mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations (Paper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579",
+      "title": "BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579",
+        "markdown": "archived-references/md/2013/2013-threatpost-the-first-stop-for-security-news-breach-compression-seconds.md",
+        "title": "BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds",
+        "same_body_as_HEAD": true,
+        "body_sha256": "b819a817b390655392ed348fcd9c365d76df1bf520e4d8d2edad654ba6a402aa",
+        "raw_sha256": "50b456605300c4a9628c8a4678e24b2754719082b2e631286ea7773d79338cc6",
+        "content_sha256": "94f84f1bdb67bb74e9cab70c7177798fa1c60601af2a6df0ae419bf8b4f7bd04",
+        "body_chars": 4450
+      }
+    },
+    {
+      "url": "https://contextis.co.uk/research/white-papers/pixel-perfect-timing-attacks-html5",
+      "title": "Context » Information Security",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The migrated Context landing page is retained in the 2013 list, while Paul Stone's complete 29-page Pixel Perfect Timing Attacks with HTML5 whitepaper is archived from https://gwern.net/doc/cs/js/2013-stone.pdf."
+      }
+    },
+    {
+      "url": "https://gwern.net/doc/cs/js/2013-stone.pdf",
+      "title": "Pixel Perfect Timing Attacks with HTML5 (Whitepaper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://isg.rhul.ac.uk/tls/Lucky13.html",
+      "title": "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://isg.rhul.ac.uk/tls",
+      "title": "On the Security of RC4 in TLS",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://media.blackhat.com/eu-13/briefings/Osipov/bh-eu-13-XML-data-osipov-slides.pdf",
+      "title": "XML Out-Of-Band Data Retrieval",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf",
+      "title": "Million Browser Botnet",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://youtube.com/watch?v=ERJmkLxGRC0",
+      "title": "Black Hat 2013 - Million Browser Botnet",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The demo video is retained in the 2013 list, but the same Black Hat research is archived from the authors' Million Browser Botnet paper at https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf."
+      }
+    },
+    {
+      "url": "https://blackhat.com/us-13/briefings.html",
+      "title": "Black Hat USA 2013",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blackhat.com/us-13/briefings.html",
+        "markdown": "archived-references/md/2013/blackhat-com-black-hat-usa-2013.md",
+        "title": "Black Hat USA 2013",
+        "same_body_as_HEAD": true,
+        "body_sha256": "457f1dd58a0fed558a536f16fa6580b4bc433ddec42dd85486c8506b37c9ace4",
+        "raw_sha256": "d8d90ea9fe6a01499e6153b4a0d28d5322c7b1f531e7a07c1f3525fc1e14c18c",
+        "content_sha256": "017ab03db93cadd3a80ece2483764a706cb51f15f22cc78ac65fb906fac9bafa",
+        "body_chars": 171162
+      }
+    },
+    {
+      "url": "https://ben-stock.de/wp-content/uploads/domxss.pdf",
+      "title": "25 Million Flows Later - Large-scale Detection of DOM-based XSS",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking",
+      "title": "Tor Hidden-Service Passive De-Cloaking",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://feross.org/fill-disk",
+      "title": "Introducing the HTML5 Hard Disk Filler™ API » Feross.org",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2013.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://feross.org/fill-disk",
+        "markdown": "archived-references/md/2013/feross-org-introducing-html5-hard-disk-fillertm-api-feross-org.md",
+        "title": "Introducing the HTML5 Hard Disk Filler™ API » Feross.org",
+        "same_body_as_HEAD": true,
+        "body_sha256": "4526da430b98bdac8f4e98af8043867e4438d01160abb557e6c37cc34285f05f",
+        "raw_sha256": "10eccce797e9735cb8e97f1fbfc83ed83d4cd044f9d5fcc4ec106db869ef4886",
+        "content_sha256": "3daefc967b6360bb4ef411c8083964edce3f574fcd1c4ea320c9cd22a4d748da",
+        "body_chars": 6259
+      }
+    },
+    {
+      "url": "https://heartbleed.com/",
+      "title": "Heartbleed Bug",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://heartbleed.com/",
+        "markdown": "archived-references/md/2014/heartbleed-com-heartbleed-bug.md",
+        "title": "Heartbleed Bug",
+        "same_body_as_HEAD": true,
+        "body_sha256": "e25b6a0f69cf0a62718cd4465083e5298b8e5562a4691872831cbcdd216398cf",
+        "raw_sha256": "4eb0834390e4640589c92b83b8283b80def911c95175d2e14e9dc4abae92126d",
+        "content_sha256": "e18575aac5c1753d7640fecb6aa55efd2431bbc8bd846d3ffcd7458a5d3d16a0",
+        "body_chars": 21751
+      }
+    },
+    {
+      "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+      "title": "CVE - CVE-2014-6271",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+        "markdown": "archived-references/md/2014/cve-mitre-org-cve-cve-2014-6271.md",
+        "title": "CVE - CVE-2014-6271",
+        "same_body_as_HEAD": true,
+        "body_sha256": "8f90632e3b2d576d85de44e477e13a708fef2d343d7a65e405575014198a15a1",
+        "raw_sha256": "88b7992fce54393ebea5129c971ae71b8089d93897d42ebd8023efeb499cf625",
+        "content_sha256": "48597e77c5e81a2e0c55d1da7118c21898f9839c735d81cb7f4df896314f6734",
+        "body_chars": 28093
+      }
+    },
+    {
+      "url": "https://openssl.org/~bodo/ssl-poodle.pdf",
+      "title": "This POODLE Bites: Exploiting The SSL 3.0 Fallback",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash",
+      "title": "Abusing JSONP with Rosetta Flash",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970",
+      "title": "12 Million Home Routers Vulnerable to Takeover",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970",
+        "markdown": "archived-references/md/2014/2014-threatpost-the-first-stop-for-security-news-12-million-home-takeover.md",
+        "title": "12 Million Home Routers Vulnerable to Takeover",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f7fd0d2283388982ac2e47902100fb22a6c2147ecb22f42d1cc313738ff05f49",
+        "raw_sha256": "8bbbaf545eed7f1942cebbbce49aca5f87762ec499b6053bdcdcb4b66c2c57d5",
+        "content_sha256": "54ae1e1dc4cb12772809ee0d7ca9cccdba01e34baaf47c50d80395f05a97c862",
+        "body_chars": 5072
+      }
+    },
+    {
+      "url": "https://yasserali.com/hacking-paypal-accounts-with-one-click",
+      "title": "Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://yasserali.com/hacking-paypal-accounts-with-one-click",
+        "markdown": "archived-references/md/2014/yasserali-com-yasser-ali-s-blog-hacking-paypal-accounts-one-click-patched.md",
+        "title": "Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)",
+        "same_body_as_HEAD": true,
+        "body_sha256": "87782c07bcec9d6683b1c0b2d7a8cf461b639aa7be7abd6f369298bc5205d733",
+        "raw_sha256": "4dc446d7d2d68e9a2d9bfc23589cfd31173d36d4932f781b85c98f1670fdc715",
+        "content_sha256": "a4fbb6483fbdbdaa6b16a10d895ace561c68f8093388bbc7cfc8acdfbe586309",
+        "body_chars": 5304
+      }
+    },
+    {
+      "url": "https://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338",
+      "title": "How Hackers Reportedly Side-Stepped Google's Two-Factor Authentication",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338",
+        "markdown": "archived-references/md/2014/2014-gizmodo-how-hackers-reportedly-side-stepped-google-s-two-authentication.md",
+        "title": "How Hackers Reportedly Side-Stepped Google's Two-Factor Authentication",
+        "same_body_as_HEAD": true,
+        "body_sha256": "fba7c1e36c3ec6f776bb4fe18949c7495767ecf78edbc4d5f42be8c1e944a2b0",
+        "raw_sha256": "e46ac55864068b461bb0e89703d000a9b125e6c69d67a2dd811c1a3c7977a733",
+        "content_sha256": "da60a436e1e7b9e288df8f25fb01ba05fc6233aed2dcabfce027789be9be2ea5",
+        "body_chars": 2911
+      }
+    },
+    {
+      "url": "https://cwiki.apache.org/confluence/display/WW/S2-020",
+      "title": "S2-020 - Apache Struts 2 Documentation",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://rapid7.com/db/modules/exploit/multi/http/struts_code_exec_classloader",
+      "title": "CVE-2014-0094 Apache Struts ClassLoader Manipulation Remote Code Execution",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://rapid7.com/db/modules/exploit/multi/http/struts_code_exec_classloader",
+        "markdown": "archived-references/md/2014/rapid7-com-cve-2014-0094-apache-struts-classloader-manipulation-execution.md",
+        "title": "CVE-2014-0094 Apache Struts ClassLoader Manipulation Remote Code Execution",
+        "same_body_as_HEAD": true,
+        "body_sha256": "b11230e62d9cdc1ec504a3c3faccac0f11b793c1b279bb0a4e45b0ddd6436482",
+        "raw_sha256": "af578f38d732d2c21f27b3ed163e2db2c67117d2df8aa17aaeddb1a39dc0ef29",
+        "content_sha256": "28d94dcb0a5a8a17e8dc8cd8ae6812584e0c0e728886603014fa37e477ab1cb5",
+        "body_chars": 4353
+      }
+    },
+    {
+      "url": "https://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website",
+      "title": "Using Facebook Notes to DDoS any website",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website",
+        "markdown": "archived-references/md/2014/chr13-com-using-facebook-notes-ddos-any-website.md",
+        "title": "Using Facebook Notes to DDoS any website",
+        "same_body_as_HEAD": true,
+        "body_sha256": "53eaba05122fd2eea531385333ea95c926507ffd90303f738fa45a032e4d67f2",
+        "raw_sha256": "f9367a42684003df84d1b3d2a3289b4b7086a0010e4f2b80b01e114a81144dbe",
+        "content_sha256": "9c75c82bb088d9389ef874146ec6496014ea81c49efe352040b0554fdc54f09d",
+        "body_chars": 6329
+      }
+    },
+    {
+      "url": "https://slideshare.net/dnkolegov/wh102014",
+      "title": "Covert Timing Channels Based on HTTP Cache Headers (Special Edition for Top 10 Web Hacking Techniques of 2014)",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2014.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://freakattack.com/",
+      "title": "Tracking the FREAK Attack",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://freakattack.com/",
+        "markdown": "archived-references/md/2015/freakattack-com-tracking-freak-attack.md",
+        "title": "Tracking the FREAK Attack",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f455152d6d7dcc630a27217f97efc55486793cb59e93f6b50ee72603137fcd04",
+        "raw_sha256": "5ed4ea567cff4711876cd4bd9eb1516649014f2debd2d3e73991dedcd43c902d",
+        "content_sha256": "45db8afd20770cf2f1ea7d1284b20a56cc82c62eb3b6a2accce68055016976ff",
+        "body_chars": 21408
+      }
+    },
+    {
+      "url": "https://schneier.com/blog/archives/2015/05/the_logjam_and_.html",
+      "title": "The Logjam (and Another) Vulnerability against Diffie-Hellman Key Exchange",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://schneier.com/blog/archives/2015/05/the_logjam_and_.html",
+        "markdown": "archived-references/md/2015/schneier-com-logjam-another-vulnerability-against-diffie-hellman-key-exchange.md",
+        "title": "The Logjam (and Another) Vulnerability against Diffie-Hellman Key Exchange",
+        "same_body_as_HEAD": true,
+        "body_sha256": "40b9519e8541574850c5f81d3ed986709ba1f0ef225d567f062a47f00d81b6cf",
+        "raw_sha256": "96d35f2aae092192fb7c43121e8fc3be99cbd326dc06b5b34efae9b0869d683b",
+        "content_sha256": "4c901f98ac28cba4a4fc09ed1ae02f30bdc6290843fdf18c0fc4f530356ddd41",
+        "body_chars": 7418
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=KirTCSAvt9M",
+      "title": "Web Timing Attacks Made Practical",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The Web Timing Attacks video is retained in the 2015 list, but the Black Hat whitepaper is archived from https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf."
+      }
+    },
+    {
+      "url": "https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf",
+      "title": "Web Timing Attacks Made Practical (Whitepaper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.mazinahmed.net/2015/09/evading-all-web-application-firewalls.html",
+      "title": "Evading All Web-Application Firewalls XSS Filters",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The short announcement is retained in the 2015 list, while the complete Evading All Web Application Firewalls XSS Filters paper is archived from https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf."
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=ekUQIVUzDX4",
+      "title": "Black Hat USA (2015) - Bypass Surgery - Abusing CDNs with SSRF Flash and DNS - 06Aug2015",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The Bypass Surgery video is retained in the 2015 list, but Matthew Bryant's copy of the Black Hat slides is archived from https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf."
+      }
+    },
+    {
+      "url": "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf",
+      "title": "Bypass Surgery: Abusing Content Delivery Networks With Server Side Request Forgery (SSRF), Flash, and DNS",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://illusorytls.com/",
+      "title": "illusoryTLS",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://illusorytls.com/",
+        "markdown": "archived-references/md/2015/illusorytls-com-illusorytls.md",
+        "title": "illusoryTLS",
+        "same_body_as_HEAD": true,
+        "body_sha256": "7a4eb7d8ca894ad09a61f294ef65ecad17047a682128de29a24ba2bb38ae687c",
+        "raw_sha256": "7160afc66ab0063a5633631f33d64dd587e197f649fea1e252bf0a9970706fb8",
+        "content_sha256": "f40a08d2458dfa8bb75273bb042feee940bfce2cbee4a5138db5d6350fbf2224",
+        "body_chars": 8914
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=ouBwRZJHmmo",
+      "title": "Exploiting XXE in File Upload Functionality",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "the video page declares no caption track; the browser route also failed (RuntimeError: the page never published a caption track). YouTube now requires a player-generated token on the caption URL, so no plain fetch, in-page fetch or transcript panel returns it. Only a manual transcript export will cover this",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The XXE file-upload video is retained in the 2015 list, but its written Black Hat presentation is archived at https://www.blackhat.com/docs/webcast/11192015-exploiting-xml-entity-vulnerabilities-in-file-parsing-functionality.pdf."
+      }
+    },
+    {
+      "url": "https://blackhat.com/docs/webcast/11192015-exploiting-xml-entity-vulnerabilities-in-file-parsing-functionality.pdf",
+      "title": "Exploiting XXE in File Upload Functionality",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://youtube.com/watch?v=bUcd-yibTCE",
+      "title": "Abusing XSLT for Practical Attacks",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "the video page declares no caption track; the browser route also failed (RuntimeError: the page never published a caption track). YouTube now requires a player-generated token on the caption URL, so no plain fetch, in-page fetch or transcript panel returns it. Only a manual transcript export will cover this",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The XSLT attack video is retained in the 2015 list, but the authors' Black Hat whitepaper is archived at https://www.blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf."
+      }
+    },
+    {
+      "url": "https://blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf",
+      "title": "Abusing XSLT for Practical Attacks (White Paper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://whitehatsec.com/blog/magic-hashes",
+      "title": "Magic Hashes",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://vimeo.com/ondemand/44conlondon2015/142249673",
+      "title": "Watch Smart Muttering; a story and toolset for smart meter platform : Presented By Ian de Villiers Online | Vimeo On Demand on VimeoMenuSearch",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "the video page declares no caption track; the browser route also failed (RuntimeError: the page never published a caption track). YouTube now requires a player-generated token on the caption URL, so no plain fetch, in-page fetch or transcript panel returns it. Only a manual transcript export will cover this",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The asynchronous-vulnerabilities conference video is retained in the 2015 list, but James Kettle's written research is archived at https://portswigger.net/research/hunting-asynchronous-vulnerabilities."
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+      "title": "Hunting asynchronous vulnerabilities",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2015.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+        "markdown": "archived-references/md/2015/2015-portswigger-research-hunting-asynchronous-vulnerabilities-2.md",
+        "title": "Hunting asynchronous vulnerabilities",
+        "same_body_as_HEAD": true,
+        "body_sha256": "73b8627353b56656abf93d822b1aba2617a163de6cd149f73d0acd1525bb20b5",
+        "raw_sha256": "0b4dfe73e7d8a2d70438ef25c7ff1ea41a45a0871e92eb2bd4c3bf61ed646790",
+        "content_sha256": "faeaed25e39421121cc868741877a301b2e6c58710ee24c747686ec2e19d62e6",
+        "body_chars": 14418
+      }
+    },
+    {
+      "url": "https://blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf",
+      "title": "A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages!",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 1,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html",
+      "title": "Web Cache Deception Attack",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 2,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html",
+        "markdown": "archived-references/md/2016-17/omergil-blogspot-com-web-cache-deception-attack.md",
+        "title": "Web Cache Deception Attack",
+        "same_body_as_HEAD": true,
+        "body_sha256": "495cf5b68125d38d12c72cd2573408fc7561f83cddb20e2fc3364c548919e3ce",
+        "raw_sha256": "05caeeccb5125e967c8dd3855aabfe925ff697603ec3c1488386c7a0a26090ad",
+        "content_sha256": "481b728ae7492dfd5772c4f32433a32d0bd09f4ae001289769d2d2e16edec2c0",
+        "body_chars": 9650
+      }
+    },
+    {
+      "url": "https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c",
+      "title": "How I hacked hundreds of companies through their helpdesk",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 3,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c",
+        "markdown": "archived-references/md/2016-17/2017-medium-how-i-hacked-hundreds-companies-through-their-helpdesk.md",
+        "title": "How I hacked hundreds of companies through their helpdesk",
+        "same_body_as_HEAD": true,
+        "body_sha256": "9e0deca2d55ce5d481fa79338678440b936cfadd10227d5d51d92d2021dce850",
+        "raw_sha256": "6e611edadf6a603cba9941d59cbff9c9469cf92ef4354692201f82dfb03cbac0",
+        "content_sha256": "f31ba8bb276d9a3ed0c91b4fd1c85e4a1cb80c042bc2a5254492cb2a3664bbd9",
+        "body_chars": 15039
+      }
+    },
+    {
+      "url": "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf",
+      "title": "Friday the 13th JSON Attacks",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 4,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://bugs.chromium.org/p/project-zero/issues/detail?id=1139",
+      "title": "1139 - cloudflare: Cloudflare Reverse Proxies are Dumping Uninitialized Memory - project-zero",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 5,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://bugs.chromium.org/p/project-zero/issues/detail?id=1139",
+        "markdown": "archived-references/md/2016-17/project-zero-issues-chromium-org-cloudflare-cloudflare-reverse-proxies-42450151.md",
+        "title": "1139 - cloudflare: Cloudflare Reverse Proxies are Dumping Uninitialized Memory - project-zero",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f7f671c7a9bd2464730af7b6ca6bf5e828ecb3ee85f91d67e9873fe50dc426e7",
+        "raw_sha256": "68998ccce17afdede925c8b6546a6a4630e13b048809013f3cba4af3adb0ef69",
+        "content_sha256": "f7f671c7a9bd2464730af7b6ca6bf5e828ecb3ee85f91d67e9873fe50dc426e7",
+        "body_chars": 6075
+      }
+    },
+    {
+      "url": "https://opnsec.com/category/flash",
+      "title": "Advanced Flash Vulnerabilities in Youtube (Parts 1–4)",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 6,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets",
+      "title": "A deep dive into AWS S3 access controls",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 7,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets",
+        "markdown": "archived-references/md/2016-17/2017-labs-detectify-deep-dive-aws-s3-access-controls.md",
+        "title": "A deep dive into AWS S3 access controls",
+        "same_body_as_HEAD": true,
+        "body_sha256": "cdcc73b38f963ed4b9646d787690ecbf2113edc87bd8e80a1bb28ecda5584f19",
+        "raw_sha256": "33dfae22a501b786724c3c15f515c601f8378b37d41b8e315b7e34994c9b9585",
+        "content_sha256": "52c2dd9f720c38f386609dcd4af7a6ef62ad317489421e4248f71fc991bffb34",
+        "body_chars": 31251
+      }
+    },
+    {
+      "url": "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls",
+      "title": "Request encoding to bypass web application firewalls",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 8,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls",
+        "markdown": "archived-references/md/2016-17/ncc-group-request-encoding-bypass-web-application-firewalls.md",
+        "title": "Request encoding to bypass web application firewalls",
+        "same_body_as_HEAD": true,
+        "body_sha256": "cd3426286e5d2ef336d6c15698fa1339ae73980c09ea82c7d2f9516208257882",
+        "raw_sha256": "a2f417af275115bda03b112736f8f8dcb9a66ef818041ba8644763f3d27c9f94",
+        "content_sha256": "09ab04c6d3e09ec51b4707a3b6b979c79519891c7ed93b6849dab5a54bda8eda",
+        "body_chars": 9436
+      }
+    },
+    {
+      "url": "https://github.com/cure53/browser-sec-whitepaper/blob/master/browser-security-whitepaper.pdf",
+      "title": "Cure53 Browser Security White Paper",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 9,
+          "line": 15
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7",
+      "title": "Binary Webshell Through OPcache in PHP 7",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2016-17.md",
+          "rank": 10,
+          "line": 16
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7",
+        "markdown": "archived-references/md/2016-17/2016-gosecure-binary-webshell-through-opcache-php-7.md",
+        "title": "Binary Webshell Through OPcache in PHP 7",
+        "same_body_as_HEAD": true,
+        "body_sha256": "a24a398523ef5df316451689f9665349e42e2ee6b46bd4e0f7f18f5dca5a68c1",
+        "raw_sha256": "fbed04532d5bab05821f62e4b5871860d334df04803ca4e34f971cb3a5f8e576",
+        "content_sha256": "866c09831cd6b6709e3cfcc9af2e2a386193b063dc3e77faa13bca03da059448",
+        "body_chars": 9729
+      }
+    },
+    {
+      "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
+      "title": "Breaking Parser Logic! Take Your Path Normalization Off and Pop 0days Out",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
+      "title": "Practical Web Cache Poisoning",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
+        "markdown": "archived-references/md/2018/2018-portswigger-research-practical-web-cache-poisoning.md",
+        "title": "Practical Web Cache Poisoning",
+        "same_body_as_HEAD": true,
+        "body_sha256": "06cac41e938b22443a4abeb451e258a250c7edbf58aa165da13d7e0274d521b6",
+        "raw_sha256": "3d8bf50df5f09f66719c5c34a3b8de3001bb10938ea5f964b780eafd0baa1896",
+        "content_sha256": "8bceddc59361dbe432153c446d8963882a5e489d7c4a93fd7e400d7f2c38e14a",
+        "body_chars": 38722
+      }
+    },
+    {
+      "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection",
+      "title": "Beyond XSS: Edge Side Include Injection",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection",
+        "markdown": "archived-references/md/2018/2018-gosecure-beyond-xss-edge-side-include-injection.md",
+        "title": "Beyond XSS: Edge Side Include Injection",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f641dc17076d6b2f21fd24e00156e83093c866f223b2d9f85fabf4ab2ba9050d",
+        "raw_sha256": "6007930d248c45b2b6048d5c2855b4f3273e376b3a079e745e58672775835003",
+        "content_sha256": "40e8d3ffde617ac0b579f3e77d5d9545c4fb2b2f759d835bd7d45ab23bf4a7ab",
+        "body_chars": 31789
+      }
+    },
+    {
+      "url": "https://github.com/HoLyVieR/prototype-pollution-nsec18",
+      "title": "GitHub - HoLyVieR/prototype-pollution-nsec18: Content released at NorthSec 2018 for my talk on prototype pollution",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://github.com/HoLyVieR/prototype-pollution-nsec18",
+        "markdown": "archived-references/md/2018/github-holyvier-prototype-pollution-nsec18.md",
+        "title": "GitHub - HoLyVieR/prototype-pollution-nsec18: Content released at NorthSec 2018 for my talk on prototype pollution",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f3151670346fdcef6cc2bde005ed7c89c27b7cf5844ced568dc61e75af4cd515",
+        "raw_sha256": null,
+        "content_sha256": "7df9feab3ff5934482b0346d29eb7999f9d030765385e5d8d16bf6ff6daea3ba",
+        "body_chars": 1148
+      }
+    },
+    {
+      "url": "https://slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save",
+      "title": "Attacking \"Modern\" Web Technologies (Slides)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://youtube.com/watch?v=GePBmsNJw6Y",
+      "title": "BSidesMCR 2018: It's A PHP Unserialization Vulnerability Jim, But Not As We Know It by Sam Thomas",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The PHP unserialization video is retained in the 2018 list, but Sam Thomas's Black Hat whitepaper is archived from https://i.blackhat.com/us-18/Thu-August-9/us-18-Thomas-Its-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf."
+      }
+    },
+    {
+      "url": "https://i.blackhat.com/us-18/Thu-August-9/us-18-Thomas-Its-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf",
+      "title": "File Operation Induced Unserialization via the “phar://” Stream Wrapper",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files",
+      "title": "Exploiting XXE with local DTD files",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files",
+        "markdown": "archived-references/md/2018/mohemiv-com-exploiting-xxe-local-dtd-files.md",
+        "title": "Exploiting XXE with local DTD files",
+        "same_body_as_HEAD": true,
+        "body_sha256": "19006e71fa23740c814eb39826378249ba29f39b6d33f08fb81316d04ccc07e4",
+        "raw_sha256": "44aeb41417beec955f1052594632e02d47a6c99ad19219762fc9629f204601d3",
+        "content_sha256": "cf08b451140c8fa6872d78f8c7aa4bfe93ff40fc5d4f5f33628279508fd3b3f4",
+        "body_chars": 4693
+      }
+    },
+    {
+      "url": "https://sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240",
+      "title": "Prepare(): Introducing novel Exploitation Techniques in WordPress",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://notsosecure.com/data-exfiltration-formula-injection",
+      "title": "Data Exfiltration via Formula Injection #Part1",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://notsosecure.com/data-exfiltration-formula-injection",
+        "markdown": "archived-references/md/2018/2018-notsosecure-data-exfiltration-formula-injection-part1.md",
+        "title": "Data Exfiltration via Formula Injection #Part1",
+        "same_body_as_HEAD": true,
+        "body_sha256": "63cc40f3627c893e806bfac62cafc5c1e74cb93ce34497cfc3e92f39219a2928",
+        "raw_sha256": "93288c8ac530e2166231f009d2dfd846b230cbfbe18d8630f4563d1cf4ac1b49",
+        "content_sha256": "cd33179dc565bff8373935991259f66cf4cf4d18ab5d97eb616e21b3d9ccfb33",
+        "body_chars": 12917
+      }
+    },
+    {
+      "url": "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549",
+      "title": "XS-Searching Google’s bug tracker to find out vulnerable source code",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2018.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549",
+        "markdown": "archived-references/md/2018/2019-medium-xs-searching-googles-bug-tracker-find-out-vulnerable-source-code.md",
+        "title": "XS-Searching Google’s bug tracker to find out vulnerable source code",
+        "same_body_as_HEAD": true,
+        "body_sha256": "bc5079a512b6d82bf373572f55b4a4de9c58ad24debd69af16cc0f9b76590956",
+        "raw_sha256": "25247ea57f6172b4ebc82a809302509a5f3c78c1392bb0429ffb1df2c9bac314",
+        "content_sha256": "1c8b96f422dd63db07360c3d98d4b58262ebd6e16bf5d0bd96df72e51f646aeb",
+        "body_chars": 9182
+      }
+    },
+    {
+      "url": "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf",
+      "title": "Cached and Confused: Web Cache Deception in the Wild",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
+      "title": "[🌐💧💥] HTTP Cache Cross-Site Leaks",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
+        "markdown": "archived-references/md/2019/sirdarckcat-blogspot-com-http-cache-cross-site-leaks.md",
+        "title": "[🌐💧💥] HTTP Cache Cross-Site Leaks",
+        "same_body_as_HEAD": true,
+        "body_sha256": "2c866c7c10a467ad7a220fd0689b162ebe14b192ec7bb3940524950078e35b1e",
+        "raw_sha256": "eefbbec35107eaac72814984e214bb0714e66512c4629b85b372a7da6818d48e",
+        "content_sha256": "15cbf4a3e43d61a4e24745e3d657b4e746b1c94ca534b9607403d95d7a9d561b",
+        "body_chars": 11768
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=o-tL9ULF0KI",
+      "title": "Ben Sadeghipour - Owning The Clout Through Server Side Request Forgery - DEF CON 27 Conference",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The Owning the Clout video is retained in the 2019 list, but the speakers' DEF CON presentation is archived from https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf."
+      }
+    },
+    {
+      "url": "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf",
+      "title": "Owning the Clout Through SSRF and PDF Generators (Slides)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html",
+      "title": "Hacking Jenkins Part 2 - Abusing Meta Programming for Unauthenticated RCE!",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html",
+        "markdown": "archived-references/md/2019/2019-orange-tsai-hacking-jenkins-part-2-abusing-meta-programming-rce.md",
+        "title": "Hacking Jenkins Part 2 - Abusing Meta Programming for Unauthenticated RCE!",
+        "same_body_as_HEAD": true,
+        "body_sha256": "885121da385e292b013128f55a22eb9949f43e055dcddc0c6325541f66d80ffe",
+        "raw_sha256": "2c91d29ff670d4bb1e78202b26451aa2879f3fb8178a448cc20c5fc8848829ef",
+        "content_sha256": "ed2f4e9721f589a572a952a2d7bdc31f7a37e8113567ce712e0fa41e10358a15",
+        "body_chars": 20675
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=gVrdE6g_fa8",
+      "title": "How did Masato find the Google Search XSS?",
+      "category": "Fresh source and capture-fault review",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://blog.isec.pl/all-is-xss-that-comes-to-the-net",
+      "title": "All is XSS that comes to the .NET",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.isec.pl/all-is-xss-that-comes-to-the-net",
+        "markdown": "archived-references/md/2019/2019-blog-isec-pl-all-xss-that-comes-net.md",
+        "title": "All is XSS that comes to the .NET",
+        "same_body_as_HEAD": true,
+        "body_sha256": "e289c164212b6d22f5c6b6a9e18022c0dba65005b2a3e60b184215f3742be7a7",
+        "raw_sha256": "b8fe6132b01121f6b3f5f7ecaf1f639b1882962e1b9ac6b261774c9913fd6012",
+        "content_sha256": "892eb9270c43ef1af7968759aeb6bf445db4e47338fe365baefd993db1bc4752",
+        "body_chars": 14437
+      }
+    },
+    {
+      "url": "https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here",
+      "title": "\"CI Knew There Would Be Bugs Here\" — Exploring Continuous Integration Services as a Bug Bounty Hunter",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here",
+        "markdown": "archived-references/md/2019/2019-edoverflow-ci-knew-there-would-be-bugs-here-exploring-continuous-hunter.md",
+        "title": "\"CI Knew There Would Be Bugs Here\" — Exploring Continuous Integration Services as a Bug Bounty Hunter",
+        "same_body_as_HEAD": true,
+        "body_sha256": "5d80c9fceff843fd7ac3c76284ddb7fd8e0a6f3c6106e28e066418318d47d7eb",
+        "raw_sha256": "5a01a205bcb653b50658c44eb881dee474b1ddb6da3ec11c27cc36890dcf3b05",
+        "content_sha256": "40ac66848e9c6c9e3a54b2ce959d6e654a768046abd4d481412fa36d851566b3",
+        "body_chars": 15040
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=1IoythC_pIY",
+      "title": "Orange Tsai - Infiltrating Corporate Intranet Like NSA Preauth RCE - DEF CON 27 Conference",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The SSL VPN exploitation video is retained in the 2019 list, but the HITCON presentation is archived from https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf."
+      }
+    },
+    {
+      "url": "https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf",
+      "title": "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://leucosite.com/Edge-Chromium-EoP-RCE",
+      "title": "Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://leucosite.com/Edge-Chromium-EoP-RCE",
+        "markdown": "archived-references/md/2019/leucosite-com-microsoft-edge-chromium-elevation-privilege-potential-execution.md",
+        "title": "Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution",
+        "same_body_as_HEAD": true,
+        "body_sha256": "069283a4b0a413c6d3a7030d0b43fda84dd2f126f1d39b722dcbede31a9eff78",
+        "raw_sha256": "5ee5dfa6d8c64ae787e1c2f8599e88a158dd110b956b571690105a66aaa43aa6",
+        "content_sha256": "d302249df935dc8cb38f9596f35ee8ce34b58b6db0f4ddc7216eaaf1e044f1c3",
+        "body_chars": 21938
+      }
+    },
+    {
+      "url": "https://samcurry.net/filling-in-the-blanks-exploiting-null-byte-buffer-overflow-for-a-40000-bounty",
+      "title": "Filling in the Blanks: Exploiting Null Byte Buffer Overflow for a $40,000 Bounty",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2019.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://samcurry.net/filling-in-the-blanks-exploiting-null-byte-buffer-overflow-for-a-40000-bounty",
+        "markdown": "archived-references/md/2019/2019-samcurry-net-filling-blanks-exploiting-null-byte-buffer-overflow-40-bounty.md",
+        "title": "Filling in the Blanks: Exploiting Null Byte Buffer Overflow for a $40,000 Bounty",
+        "same_body_as_HEAD": true,
+        "body_sha256": "e8e5f1a8e6f535b85a7098ef70bc99fa3dd4b693c095c16fc28c2d7e36a1b58e",
+        "raw_sha256": "c83251c4fa2a2efd7bda0e15189531f3c968718d983fdcb4bbdff9b13985cb87",
+        "content_sha256": "be0437205ff791fc2cc420539a087f468489ac847f714bbde4431bfc4af3d5c6",
+        "body_chars": 8080
+      }
+    },
+    {
+      "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
+      "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
+        "markdown": "archived-references/md/2020/labs-bishopfox-com-h2c-smuggling-request-smuggling-http-2-cleartext-h2c.md",
+        "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
+        "same_body_as_HEAD": true,
+        "body_sha256": "d0c00120e61198b496308a06a25c81c2490a169128cbc87fd58642375c5234e2",
+        "raw_sha256": "09bcd483e0be3995f8f78c162d3ba99f7524be244cf221200963ae10d9dfb853",
+        "content_sha256": "a3aa3075e1ebd10804dff6d9f4dee486fbae2d7bfe002779552dae23bc69dd04",
+        "body_chars": 16683
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/portable-data-exfiltration",
+      "title": "Portable Data exFiltration: XSS for PDFs",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/portable-data-exfiltration",
+        "markdown": "archived-references/md/2020/2020-portswigger-research-portable-data-exfiltration-xss-pdfs.md",
+        "title": "Portable Data exFiltration: XSS for PDFs",
+        "same_body_as_HEAD": true,
+        "body_sha256": "91d7f6393489371242374414d01ef35d0aa66030b69f99fc359452df48093ded",
+        "raw_sha256": "0b3621c82c3f97abfd9d94c4f567b273626b3cb11e50e93f5ba1f68e142ab5e4",
+        "content_sha256": "17b57310517e51b88b2acc683352686f4ee68c4a5c97075cd44e3d585c06e9c5",
+        "body_chars": 33736
+      }
+    },
+    {
+      "url": "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit",
+      "title": "Attacking Secondary Contexts in Web Applications",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://github.com/jmdx/TLS-poison",
+      "title": "TLS-poison",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://github.com/jmdx/TLS-poison",
+        "markdown": "archived-references/md/2020/github-jmdx-tls-poison.md",
+        "title": "TLS-poison",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f94bca0138814e15415a9b19e5e5606290c02da80c7c9a723cade4142694615f",
+        "raw_sha256": null,
+        "content_sha256": "b2223e725437f789c40a56bba07a677078bedc5ae1199972d12dc5daa9da0465",
+        "body_chars": 8351
+      }
+    },
+    {
+      "url": "https://samy.pl/slipstream",
+      "title": "samy kamkar - NAT Slipstreaming v2.0",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://samy.pl/slipstream",
+        "markdown": "archived-references/md/2020/samy-pl-samy-kamkar-nat-slipstreaming-v2-0.md",
+        "title": "samy kamkar - NAT Slipstreaming v2.0",
+        "same_body_as_HEAD": true,
+        "body_sha256": "21796675497c05e9518d8fc07c649553d8f9b87e45069238fb466de63cade05f",
+        "raw_sha256": "51c964e5779475cc296f3e5108959f5ac3671edc8264a1e207336fdd90998859",
+        "content_sha256": "704b8b902787fdae20b9dea8be96366bd66c9390a8db1da7b18f45d3fb50b162",
+        "body_chars": 44995
+      }
+    },
+    {
+      "url": "https://github.security.telekom.com/2020/05/smuggling-http-headers-through-reverse-proxies.html",
+      "title": "Smuggling HTTP headers through reverse proxies",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://github.security.telekom.com/2020/05/smuggling-http-headers-through-reverse-proxies.html",
+        "markdown": "archived-references/md/2020/2020-telekom-security-smuggling-http-headers-through-reverse-proxies.md",
+        "title": "Smuggling HTTP headers through reverse proxies",
+        "same_body_as_HEAD": true,
+        "body_sha256": "e36540c36a6347713e1d02912c247e74cf64482440598bb4d9a7bc19a8443e90",
+        "raw_sha256": "1de26c834be9eb38dd8bde5f725ec0b9dba4c2b4ed128a89277ea3dc45d748ac",
+        "content_sha256": "0227c7321dfc3a5c2b57fa47d0a6b1d5c857413aca4884a896431bb19ea98939",
+        "body_chars": 19549
+      }
+    },
+    {
+      "url": "https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html",
+      "title": "How I Hacked Facebook Again! Unauthenticated RCE on MobileIron MDM",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html",
+        "markdown": "archived-references/md/2020/2020-orange-tsai-how-i-hacked-facebook-again-unauthenticated-rce-mobileiron-mdm.md",
+        "title": "How I Hacked Facebook Again! Unauthenticated RCE on MobileIron MDM",
+        "same_body_as_HEAD": true,
+        "body_sha256": "4d481e9da4e917887632dd97cff4342d9b96654d857f7f46978c9a5c0de63c44",
+        "raw_sha256": "1880fa9bd3c239a1d4c5e6a6048fbd715148dd54da0b5a326e9906e0d322500b",
+        "content_sha256": "8a57318fd8bea95d41ea0a94fafc4d6c0c2f82be66c544394d332d9b669799b2",
+        "body_chars": 17275
+      }
+    },
+    {
+      "url": "https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html",
+      "title": "ImageMagick - Shell injection via PDF password",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html",
+        "markdown": "archived-references/md/2020/insert-script-blogspot-com-imagemagick-shell-injection-pdf-password.md",
+        "title": "ImageMagick - Shell injection via PDF password",
+        "same_body_as_HEAD": true,
+        "body_sha256": "aec8063204be98d92b7e6750135c1ca8ac457281fbcc1045480745d3da96e84d",
+        "raw_sha256": "5364e757775c493b57a8ea61a8f3767cb298f1809afcca386356e5cb662af090",
+        "content_sha256": "1fd858886ef99893a721536299c024ebafe1ca65d5c9e9326e074fb8a0501ae4",
+        "body_chars": 18072
+      }
+    },
+    {
+      "url": "https://swarm.ptsecurity.com/attacking-ms-exchange-web-interfaces",
+      "title": "Attacking MS Exchange Web Interfaces",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://swarm.ptsecurity.com/attacking-ms-exchange-web-interfaces",
+        "markdown": "archived-references/md/2020/pt-swarm-attacking-ms-exchange-web-interfaces.md",
+        "title": "Attacking MS Exchange Web Interfaces",
+        "same_body_as_HEAD": true,
+        "body_sha256": "5dafb4af25bd466d59fd17058f1dc4108079bd6a3b0ff82aa8cd75bc7e53e8cb",
+        "raw_sha256": "71b01f1a3b34caa3a0f8c94a62927750fd0afd1b02f1a9e8828b1870b6730dd8",
+        "content_sha256": "baf59e73415cd62616a81816f32456f98ed31a1cd606dfd322fcc7fa15678d61",
+        "body_chars": 41986
+      }
+    },
+    {
+      "url": "https://blog.isec.pl/waf-evasion-techniques",
+      "title": "WAF evasion techniques",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2020.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.isec.pl/waf-evasion-techniques",
+        "markdown": "archived-references/md/2020/2020-blog-isec-pl-waf-evasion-techniques.md",
+        "title": "WAF evasion techniques",
+        "same_body_as_HEAD": true,
+        "body_sha256": "8011569b42d42b558f8673da11d1e5e0bf2e6cc80186ef92ef90b32aaedff3e4",
+        "raw_sha256": "0ce27b91bf077df3a719ec192d97d9a3b4e1d06f1f02adf3f5968f3cd169172d",
+        "content_sha256": "2c8104977807699b47f9ec8b74669a6fb9f88f0d46cf4c3cdfe487273061ee28",
+        "body_chars": 14550
+      }
+    },
+    {
+      "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
+      "title": "Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
+        "markdown": "archived-references/md/2021/2023-medium-dependency-confusion-how-i-hacked-apple-microsoft-dozens-companies.md",
+        "title": "Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies",
+        "same_body_as_HEAD": true,
+        "body_sha256": "a4149038fb4833080e7ef6baee1697dc2acee785f459c69d2a7a9ef33f1e198d",
+        "raw_sha256": "967b5d7dd0ff6323e927871d42f3a079482942ba7f9583c325ed5e1b29fffa54",
+        "content_sha256": "96bce6b987ed127889d257d3be6b97e53232ed8f254b1e2aaea5bcc3785a7598",
+        "body_chars": 15660
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/http2",
+      "title": "HTTP/2: The Sequel is Always Worse",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/http2",
+        "markdown": "archived-references/md/2021/2021-portswigger-research-http-2-sequel-always-worse.md",
+        "title": "HTTP/2: The Sequel is Always Worse",
+        "same_body_as_HEAD": true,
+        "body_sha256": "5278d4bcbffc094150842907381f51c088e7d14ca260eb01f14962ee4add481c",
+        "raw_sha256": "b36821d93e613ccc57c9b9a59f9bac9739301fe4a072f9d907cb9f2b3cdc6df8",
+        "content_sha256": "6cb11b90007bd1004594e76f585b4ef5487576d3fd55de5859a254f91ecbfd88",
+        "body_chars": 41632
+      }
+    },
+    {
+      "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1",
+      "title": "A New Attack Surface on MS Exchange Part 1",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1",
+        "markdown": "archived-references/md/2021/2021-orange-tsai-new-attack-surface-ms-exchange-part-1.md",
+        "title": "A New Attack Surface on MS Exchange Part 1",
+        "same_body_as_HEAD": true,
+        "body_sha256": "3617860b201c33018070a100d86c53ef25d2a8ce9a951b12423d478744ea118a",
+        "raw_sha256": "295307869b8dec8d398ae873767b5cd5f012d07300aa1eb3b3f4e67ba2ce3483",
+        "content_sha256": "cf5a9db7d4fd624ee5f4fc99e9cb220d463f76c328ac28c313b7ded3c517a91e",
+        "body_chars": 30815
+      }
+    },
+    {
+      "url": "https://blog.s1r1us.ninja/research/PP",
+      "title": "s1r1us - Prototype Pollution",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.s1r1us.ninja/research/PP",
+        "markdown": "archived-references/md/2021/blog-s1r1us-ninja-s1r1us-prototype-pollution.md",
+        "title": "s1r1us - Prototype Pollution",
+        "same_body_as_HEAD": true,
+        "body_sha256": "95d285b144076419dd9dfdb5065ab305f9e08b17c990ed2fc7ff4d011a8667dc",
+        "raw_sha256": "4ec0378ef741da97c6d21ed4fe7d4fa59829cfef33e3a41469529594fd731ff3",
+        "content_sha256": "2e8de8e7161cfe67ca716dbbfe53c962508d886a7f0aacfc273f8d408f29d3e1",
+        "body_chars": 28881
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/hidden-oauth-attack-vectors",
+      "title": "Hidden OAuth attack vectors",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/hidden-oauth-attack-vectors",
+        "markdown": "archived-references/md/2021/2021-portswigger-research-hidden-oauth-attack-vectors.md",
+        "title": "Hidden OAuth attack vectors",
+        "same_body_as_HEAD": true,
+        "body_sha256": "14cad37b7d484928069152f8917fb332846289f1ec4463bd11743de0621c7a36",
+        "raw_sha256": "a82f02572d883560e795bf87170b03a1fef644fd3f73d594badbbc34290f871d",
+        "content_sha256": "ed6a1848440ad25b9c897e3400a6c9a859e0cdf48c396b9b75a8c4b7d2c3bffe",
+        "body_chars": 27561
+      }
+    },
+    {
+      "url": "https://youst.in/posts/cache-poisoning-at-scale",
+      "title": "Cache Poisoning at Scale",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://youst.in/posts/cache-poisoning-at-scale",
+        "markdown": "archived-references/md/2021/youst-in-cache-poisoning-scale.md",
+        "title": "Cache Poisoning at Scale",
+        "same_body_as_HEAD": true,
+        "body_sha256": "c8c1fa0630da0651f5dd028ae09063e25e0b73597db5ad9c28c3cdcb837cc013",
+        "raw_sha256": "95028ddb021cf5bef41487749ffe1bb7c9e00e34a411e18ccaff34054c7ed7b5",
+        "content_sha256": "474b0cfae5dfdd6a8ddd5aa7da4b68e7481a5f62058031f6492127e05d27175d",
+        "body_chars": 13899
+      }
+    },
+    {
+      "url": "https://bishopfox.com/blog/json-interoperability-vulnerabilities",
+      "title": "An Exploration & Remediation of JSON Interoperability Vulnerabilities",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://bishopfox.com/blog/json-interoperability-vulnerabilities",
+        "markdown": "archived-references/md/2021/bishop-fox-exploration-remediation-json-interoperability-vulnerabilities.md",
+        "title": "An Exploration & Remediation of JSON Interoperability Vulnerabilities",
+        "same_body_as_HEAD": true,
+        "body_sha256": "cecbfbab7c98d3710566e7380dee997a81b121f92009885774accf938d265068",
+        "raw_sha256": "611eaa06c83d2ab4b0658635f03ae4bd8e397ce34cbf66f43e6f625cf5270a01",
+        "content_sha256": "e518923c7b8c4135402ce1929134e2692f13d9d11696c27d6907a3fae9526ab9",
+        "body_chars": 35942
+      }
+    },
+    {
+      "url": "https://intruder.io/research/practical-http-header-smuggling",
+      "title": "Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://intruder.io/research/practical-http-header-smuggling",
+        "markdown": "archived-references/md/2021/intruder-io-practical-http-header-smuggling-sneaking-past-reverse-beyond.md",
+        "title": "Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond",
+        "same_body_as_HEAD": true,
+        "body_sha256": "1390d3143031728ff386fcffe6f5cfa5fbb9d5c976f2d6dd59dd122579e84913",
+        "raw_sha256": "3a92cd6f7b9d25674d0e6be297d17914226e2714be54b7713848f9e2b88f4565",
+        "content_sha256": "d0ff020f830ae415d0db7a322678c6bcac2b29e38f1b4e87e9bf1c33332668a7",
+        "body_chars": 26342
+      }
+    },
+    {
+      "url": "https://slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions",
+      "title": "HTTP Request Smuggling via higher HTTP versions",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions",
+        "markdown": "archived-references/md/2021/2021-slideshare-http-request-smuggling-higher-http-versions.md",
+        "title": "HTTP Request Smuggling via higher HTTP versions",
+        "same_body_as_HEAD": true,
+        "body_sha256": "f4bc5d6c73e81c5c1d345d3f854ca4c09c0b53187874660011adcc8aea43118c",
+        "raw_sha256": "0f7dfc600e7c455aee08e041aa1b741dd7fe67c12de84845f73d4abe003749f5",
+        "content_sha256": "8af3c811be45ac4af2ed2ec14999aed3307d8f90b4af63cc9a91355aa9137006",
+        "body_chars": 15467
+      }
+    },
+    {
+      "url": "https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition",
+      "title": "Fuzzing for XSS via nested parsers condition",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2021.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition",
+        "markdown": "archived-references/md/2021/pt-swarm-fuzzing-xss-nested-parsers-condition.md",
+        "title": "Fuzzing for XSS via nested parsers condition",
+        "same_body_as_HEAD": true,
+        "body_sha256": "2567b2f880e01b2a8e5a77d16353ae1979d1b3f8ef364e0cd2c3f859a796c21d",
+        "raw_sha256": "999a59c37c772f786ea99b990b27fd3e027cddabb4962b7bab2052a36939da40",
+        "content_sha256": "31fbfa4a6ff3002d89fe8b015a7183a8c986992f50d9ec83ac78f2e2eb0f66fe",
+        "body_chars": 16561
+      }
+    },
+    {
+      "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows",
+      "title": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows",
+        "markdown": "archived-references/md/2022/2022-labs-detectify-account-hijacking-using-dirty-dancing-sign-oauth-flows.md",
+        "title": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
+        "same_body_as_HEAD": true,
+        "body_sha256": "b63c79e62a3f75c1783e8565291af064af81337abf84506ae47501f62b87b75e",
+        "raw_sha256": "8fc53888243b0532ad89e614da5b2dd9c482ea583a05767f5ce3775f4c4c6781",
+        "content_sha256": "0eefe5925e6574e536bea43dfad09756ed30b96ba6fa136e3d1b9f9bf40260d2",
+        "body_chars": 55502
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/browser-powered-desync-attacks",
+      "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/browser-powered-desync-attacks",
+        "markdown": "archived-references/md/2022/2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling.md",
+        "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
+        "same_body_as_HEAD": true,
+        "body_sha256": "b7dc247adcc0eba21c53522d04b9c35f47ecfcd500a608026d84166632aa3d7d",
+        "raw_sha256": "48cea3852d6d909d92a45cb51ef60bb44d9ce3c715c9f9442f682e635e7fb5ed",
+        "content_sha256": "ea7e0c83f54af59edf51c81239b7976078795e103844d9c6ee5aacd7a0a5ce17",
+        "body_chars": 53422
+      }
+    },
+    {
+      "url": "https://sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection",
+      "title": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection",
+        "markdown": "archived-references/md/2022/2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection.md",
+        "title": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ffa09478be969a5370a5cfd9cdcac47dda6af3f37d1f7c31bb916e0edd466d98",
+        "raw_sha256": "85f767a26d44b4ace9ba1343a8b6b7cf43d27337b4967782da467b14bfdb7ec6",
+        "content_sha256": "6d1e35e661f3a83a14b21649e375a032441303a6dacfbcf2f3a9071e6c4ba21d",
+        "body_chars": 21614
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=WHn-6xHL7mI",
+      "title": "HEXACON2022 - Hacking the Cloud with SAML by Felix Wilhelm",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The SAML cloud-hacking video is retained in the 2022 list, but Felix Wilhelm's Hexacon slides are archived from https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf."
+      }
+    },
+    {
+      "url": "https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf",
+      "title": "Hacking the Cloud With SAML",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html",
+      "title": "Bypassing .NET Serialization Binders",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html",
+        "markdown": "archived-references/md/2022/codewhitesec-blogspot-com-bypassing-net-serialization-binders.md",
+        "title": "Bypassing .NET Serialization Binders",
+        "same_body_as_HEAD": true,
+        "body_sha256": "c450eea726e4bfa9a1c2afb3df31f36d60a3a5c121a7cf97edad2a25c61791ab",
+        "raw_sha256": "237bd028a13bb7c6afe70c2ba3507a268c44de9557316aff078eb034f9c98615",
+        "content_sha256": "02a4e8be132fcd549df097425963d902d1ac6fceaa17b17ba9d7c309703fe82a",
+        "body_chars": 34793
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning",
+      "title": "Making HTTP header injection critical via response queue poisoning",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning",
+        "markdown": "archived-references/md/2022/2022-portswigger-research-making-http-header-injection-critical-poisoning.md",
+        "title": "Making HTTP header injection critical via response queue poisoning",
+        "same_body_as_HEAD": true,
+        "body_sha256": "4d766fdcfc9dd4ae7dc93a767b38f79874e773a87abc67d2e8805faa81bd7ec8",
+        "raw_sha256": "cc7a7a7d579a6018e372048563ac1e36b06bf2a691f625b00569090501f6836c",
+        "content_sha256": "4be925c1f594a1c7b87fe22836d845cf626829d107685e51270b4ed768a2fa89",
+        "body_chars": 6929
+      }
+    },
+    {
+      "url": "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b",
+      "title": "Worldwide Server-side Cache Poisoning on All Akamai Edge Nodes ($50K+ Bounty Earned)",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b",
+        "markdown": "archived-references/md/2022/2023-medium-worldwide-server-side-cache-poisoning-all-akamai-edge-nodes-earned.md",
+        "title": "Worldwide Server-side Cache Poisoning on All Akamai Edge Nodes ($50K+ Bounty Earned)",
+        "same_body_as_HEAD": true,
+        "body_sha256": "03c3f689cbe823e1df44f58cf1d00c94e965227610f771bf8227b7a908173559",
+        "raw_sha256": "aaf37b54c2e87e2b7dacc84884ed62cca782ea866676f4927d25759b48574393",
+        "content_sha256": "19f580659d6f8f01b201df140b1be032f5dd93cff31e04e7aa90f2f4f38f5954",
+        "body_chars": 13328
+      }
+    },
+    {
+      "url": "https://neilmadden.blog/2022/04/19/psychic-signatures-in-java",
+      "title": "CVE-2022-21449: Psychic Signatures in Java",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://neilmadden.blog/2022/04/19/psychic-signatures-in-java",
+        "markdown": "archived-references/md/2022/2022-neil-madden-cve-2022-21449-psychic-signatures-java.md",
+        "title": "CVE-2022-21449: Psychic Signatures in Java",
+        "same_body_as_HEAD": true,
+        "body_sha256": "4822ff34299bd5a199543ea4ac3bb2cd7cfb50baa69385ae9547ffff90dc9e1d",
+        "raw_sha256": "43fce57ca0e204c431652955c3898f8a512a7efb8f3dcffbcb011129d753e806",
+        "content_sha256": "9f46ba4a941bf41e06ba63f6b62c89951a6e6ca1552c1b02b62612d973cdb6f8",
+        "body_chars": 12607
+      }
+    },
+    {
+      "url": "https://mr-medi.github.io/research/2022/11/04/practical-client-side-path-traversal-attacks.html",
+      "title": "Practical Client Side Path Traversal Attacks",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://mr-medi.github.io/research/2022/11/04/practical-client-side-path-traversal-attacks.html",
+        "markdown": "archived-references/md/2022/mr-medi-github-io-practical-client-side-path-traversal-attacks.md",
+        "title": "Practical Client Side Path Traversal Attacks",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ccaaba56e1612f12b31d09170b1a7633c0b16cc568ea62a46264c972e1bfe2fe",
+        "raw_sha256": "df59b53e3eecc2e09fff436662a0bd53f9110c8e43a8e4d9c11a2297ed4832d3",
+        "content_sha256": "95b8a8570d1beb884042f1cfd1e4de84c5a84f5561cd57063d31cafca4845dd0",
+        "body_chars": 11828
+      }
+    },
+    {
+      "url": "https://samcurry.net/universal-xss-on-netlifys-next-js-library",
+      "title": "Exploiting Web3's Hidden Attack Surface: Universal XSS on Netlify's Next.js Library",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2022.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://samcurry.net/universal-xss-on-netlifys-next-js-library",
+        "markdown": "archived-references/md/2022/2022-samcurry-net-exploiting-web3-s-hidden-attack-surface-universal-xss-library.md",
+        "title": "Exploiting Web3's Hidden Attack Surface: Universal XSS on Netlify's Next.js Library",
+        "same_body_as_HEAD": true,
+        "body_sha256": "1a3622d6e5dc581a95c173b320684be61dbcd52281b96767d60bdef3f8822173",
+        "raw_sha256": "42bd110c7a4b12556f5efbe883d7dd71417071a98966a0176637105f5eb98f73",
+        "content_sha256": "1a03012ce4fb7a66206c412d7c75257d1d994b6b3b0a75bd025f46742d29199b",
+        "body_chars": 16025
+      }
+    },
+    {
+      "url": "https://portswigger.net/research/smashing-the-state-machine",
+      "title": "Smashing the state machine: the true potential of web race conditions",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://portswigger.net/research/smashing-the-state-machine",
+        "markdown": "archived-references/md/2023/2023-portswigger-research-smashing-state-machine-true-potential-web-conditions.md",
+        "title": "Smashing the state machine: the true potential of web race conditions",
+        "same_body_as_HEAD": true,
+        "body_sha256": "7d1fbda49112a9a0a07882ff5584df1828c355f62f8281d4eb84f917b8d878b0",
+        "raw_sha256": "b07d384ec63c7b16f2906e9062417ede3d0ac78213482a51a22e40d7ced6520e",
+        "content_sha256": "6aa4780cdac9283fa64be0b6e514334ed14b41c9a8fe053d43185fd9ee2b6075",
+        "body_chars": 46671
+      }
+    },
+    {
+      "url": "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf",
+      "title": "Exploiting Hardened .NET Deserialization: New Exploitation Ideas and Abuse of Insecure Serialization (Whitepaper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide",
+      "title": "SMTP Smuggling - Spoofing E-Mails Worldwide",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide",
+        "markdown": "archived-references/md/2023/sec-consult-smtp-smuggling-spoofing-e-mails-worldwide.md",
+        "title": "SMTP Smuggling - Spoofing E-Mails Worldwide",
+        "same_body_as_HEAD": true,
+        "body_sha256": "55b13d829b4ff4ea97e547b7037463775c7c9405809dd780539e051262f04302",
+        "raw_sha256": "033ad3a533b0cb5f63621ffea5a7c086d95b7e185baf97161fddf387b75bf88a",
+        "content_sha256": "9d4c9606dbfd83cb8dc0b1acd1faee548f414e3b72a3f3c69ce423e46d0d03e2",
+        "body_chars": 60284
+      }
+    },
+    {
+      "url": "https://synacktiv.com/publications/php-filter-chains-file-read-from-error-based-oracle",
+      "title": "PHP filter chains: file read from error-based oracle",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://synacktiv.com/publications/php-filter-chains-file-read-from-error-based-oracle",
+        "markdown": "archived-references/md/2023/synacktiv-php-filter-chains-file-read-error-based-oracle.md",
+        "title": "PHP filter chains: file read from error-based oracle",
+        "same_body_as_HEAD": true,
+        "body_sha256": "70acc0eb4c228f1b6729f5f32baed973ff37cba4ac43a14d7b1f1124ce658f0a",
+        "raw_sha256": "88719fcad904e4fe73326777de874960f4458c94480f9ea576bef5740fa41191",
+        "content_sha256": "0fdad732546ca373370bf1fa2bb90e58771db81d4f5a14576057742822ad5c85",
+        "body_chars": 37530
+      }
+    },
+    {
+      "url": "https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies",
+      "title": "(Research) Exploiting HTTP Parsers Inconsistencies",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies",
+        "markdown": "archived-references/md/2023/2023-rafa-s-security-researches-research-exploiting-http-parsers-inconsistencies.md",
+        "title": "(Research) Exploiting HTTP Parsers Inconsistencies",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ea9f0e73fd6cebe4ba852f68942bf013458faacedcf6b4f6ea43a7c55f0e828d",
+        "raw_sha256": "adeaa4da83c220033405291492d9e11de67399bc877f6e66c2f989d68ea9af96",
+        "content_sha256": "537c87ea06867908c782eed7a249a6c26b9030904208fc62c89c277b3fda8892",
+        "body_chars": 28951
+      }
+    },
+    {
+      "url": "https://offzone.moscow/upload/iblock/11a/sagouc86idiapdb8f29w41yaupqv6fwv.pdf",
+      "title": "HTTP Request Splitting vulnerabilities exploitation",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://speakerdeck.com/masatokinugawa/how-i-hacked-microsoft-teams-and-got-150000-dollars-in-pwn2own",
+      "title": "How I Hacked Microsoft Teams and got $150,000 in Pwn2Own",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://speakerdeck.com/masatokinugawa/how-i-hacked-microsoft-teams-and-got-150000-dollars-in-pwn2own",
+        "markdown": "archived-references/md/2023/2023-speaker-deck-how-i-hacked-microsoft-teams-got-150-000-pwn2own.md",
+        "title": "How I Hacked Microsoft Teams and got $150,000 in Pwn2Own",
+        "same_body_as_HEAD": true,
+        "body_sha256": "d698704cc1cb873a40b132c434e39934cc6935ef2d6c23067871144a3718c164",
+        "raw_sha256": "9fa609e5cedea6811b18017d3a512f79f6ca6f1de85662c37ee3a9ea7d931657",
+        "content_sha256": "eb84f39b99db3642f8966da53e4223f5e182e00e8ad76e270e410ec90e2d7a62",
+        "body_chars": 40333
+      }
+    },
+    {
+      "url": "https://blog.malicious.group/from-akamai-to-f5-to-ntlm",
+      "title": "From Akamai to F5 to NTLM... with love.",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.malicious.group/from-akamai-to-f5-to-ntlm",
+        "markdown": "archived-references/md/2023/2023-malicious-group-akamai-f5-ntlm-love.md",
+        "title": "From Akamai to F5 to NTLM... with love.",
+        "same_body_as_HEAD": true,
+        "body_sha256": "22e5df73c44a36a2773827a6301701920bbe054bb8580c259cec895637e97ae3",
+        "raw_sha256": "b6425ab08ae106adfa88ef6c41432cc4bd70a044d962218bf17bdaa5fb2a81c1",
+        "content_sha256": "44e54fbd4eb3ecdd07dfc79b75bbe3f9f43b294d3f8efeb3e6366a3c65b1a104",
+        "body_chars": 31513
+      }
+    },
+    {
+      "url": "https://usenix.org/conference/usenixsecurity23/presentation/squarcina",
+      "title": "Cookie Crumbles: Breaking and Fixing Web Session Integrity (Paper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://hackcompute.com/hacking-epp-servers",
+      "title": "can I speak to your manager? hacking root EPP servers to take control of zones",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2023.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://hackcompute.com/hacking-epp-servers",
+        "markdown": "archived-references/md/2023/2023-hackcompute-can-i-speak-your-manager-hacking-root-epp-servers-take-zones.md",
+        "title": "can I speak to your manager? hacking root EPP servers to take control of zones",
+        "same_body_as_HEAD": true,
+        "body_sha256": "84df80d280b1068f5fe07a023cae24b783035bfda056f9feb4790d967a18c280",
+        "raw_sha256": "b8ebb566d010857e47c7c2dfd2d25c788edd3a31eaf0975034d299af083782ad",
+        "content_sha256": "3f2985105e432790078592fc47b34608396f94cd38e59410d17c6d03bfd6082d",
+        "body_chars": 26183
+      }
+    },
+    {
+      "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en",
+      "title": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en",
+        "markdown": "archived-references/md/2024/2024-orange-tsai-confusion-attacks-exploiting-hidden-semantic-ambiguity-server.md",
+        "title": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
+        "same_body_as_HEAD": true,
+        "body_sha256": "aef25e471408d455ee158059b2688fd5ad176bfe4484db2121a0de8dfe981703",
+        "raw_sha256": "e245d781cefc03f204384be12a270a36b9526af083dff47348e503e4f4fe28d2",
+        "content_sha256": "03b8ef1339bde4d34fe450d798a329cd94b0439af77feaaafd0cced566f91b5a",
+        "body_chars": 53755
+      }
+    },
+    {
+      "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
+      "title": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level (Slides)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://youtube.com/watch?v=Tfg1B8u1yvE",
+      "title": "DEF CON 32 - SQL Injection Isn't Dead  Smuggling Queries at the Protocol Level - Paul Gerste",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The protocol-level query-smuggling video is retained in the 2024 list, but Paul Gerste's DEF CON slides are archived from https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf."
+      }
+    },
+    {
+      "url": "https://bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites",
+      "title": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites",
+        "markdown": "archived-references/md/2024/2024-bugcrowd-unveiling-te-0-http-request-smuggling-discovering-websites.md",
+        "title": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
+        "same_body_as_HEAD": true,
+        "body_sha256": "db6abb8201868e459582d8dc3d8803585791ee3a00ca755bce5c45da4b60feef",
+        "raw_sha256": "0fa08f8557f143468374f5eaf6ac85cd8a8795710e7938968dd3f2472e5d743d",
+        "content_sha256": "ed699de57705654a4536f4428e7560694ce9b0bec5b9fc0031ee9e2c4d6e7ae6",
+        "body_chars": 12465
+      }
+    },
+    {
+      "url": "https://blog.orange.tw/posts/2025-01-worstfit-unveiling-hidden-transformers-in-windows-ansi",
+      "title": "WorstFit: Unveiling Hidden Transformers in Windows ANSI!",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.orange.tw/posts/2025-01-worstfit-unveiling-hidden-transformers-in-windows-ansi",
+        "markdown": "archived-references/md/2024/2025-orange-tsai-worstfit-unveiling-hidden-transformers-windows-ansi.md",
+        "title": "WorstFit: Unveiling Hidden Transformers in Windows ANSI!",
+        "same_body_as_HEAD": true,
+        "body_sha256": "b47c8de154ab0bce018909ca7e6cbe3065560fc18f92e8e9989d368313c12d43",
+        "raw_sha256": "88c67425f66b04a91affbdab83f4e4754937caa22574f4fa444214740108b795",
+        "content_sha256": "cd4077c79fcd78d43395d060d619e4aef76d4d47995c859a012ab64962607f4f",
+        "body_chars": 53391
+      }
+    },
+    {
+      "url": "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes",
+      "title": "Exploring the DOMPurify library: Bypasses and Fixes (1/2)",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes",
+        "markdown": "archived-references/md/2024/mizu-re-exploring-dompurify-library-bypasses-fixes-1-2.md",
+        "title": "Exploring the DOMPurify library: Bypasses and Fixes (1/2)",
+        "same_body_as_HEAD": true,
+        "body_sha256": "3b50be7583c2fb35eb8e71ed1b915c7731db71139b0052c55f46cddc5297910c",
+        "raw_sha256": "330bfe4840982344a113610aeef3c30830f623008b384d465775363d1ced534a",
+        "content_sha256": "1eba2d753c6984d995765c2a77946663c513c72fad406bff06deb124d82240c1",
+        "body_chars": 50055
+      }
+    },
+    {
+      "url": "https://paulosyibelo.com/2024/12/doubleclickjacking-what.html",
+      "title": "DoubleClickjacking: A New Era of UI Redressing",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://paulosyibelo.com/2024/12/doubleclickjacking-what.html",
+        "markdown": "archived-references/md/2024/blog-doubleclickjacking-new-era-ui-redressing.md",
+        "title": "DoubleClickjacking: A New Era of UI Redressing",
+        "same_body_as_HEAD": true,
+        "body_sha256": "3013bd6c030aabf67d4cea086df8039ce8582d9f86c949b9d5c2e0c5ed6f94b8",
+        "raw_sha256": "878f9ac04df21152babe2003070907f20a130b269f9dcb26f5dd5d9c0f12d031",
+        "content_sha256": "ca9f411c71a9a4b92e2b7221326b67b7cc8070fdb4cf1cded92b397d011de930",
+        "body_chars": 11037
+      }
+    },
+    {
+      "url": "https://codeanlabs.com/blog/research/cve-2024-4367-arbitrary-js-execution-in-pdf-js",
+      "title": "CVE-2024-4367 - Arbitrary JavaScript execution in PDF.js",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://codeanlabs.com/blog/research/cve-2024-4367-arbitrary-js-execution-in-pdf-js",
+        "markdown": "archived-references/md/2024/2024-codeanlabs-cve-2024-4367-arbitrary-javascript-execution-pdf-js.md",
+        "title": "CVE-2024-4367 - Arbitrary JavaScript execution in PDF.js",
+        "same_body_as_HEAD": true,
+        "body_sha256": "5b1fa7ca3a85264313154bea7b3e95712f0cfc6d2109d31afe7d0f31a8cc2165",
+        "raw_sha256": "86bc0e02575a68511ff352422a3560548cc2223dc7b53a85879362a87ebcd35d",
+        "content_sha256": "94e30545a1046acadc4bd2706fac35f18a2644a32b832509aab2c0f84a4eec90",
+        "body_chars": 15025
+      }
+    },
+    {
+      "url": "https://blog.voorivex.team/oauth-non-happy-path-to-ato",
+      "title": "OAuth Non-Happy Path to ATO",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.voorivex.team/oauth-non-happy-path-to-ato",
+        "markdown": "archived-references/md/2024/2024-voorivex-team-oauth-non-happy-path-ato.md",
+        "title": "OAuth Non-Happy Path to ATO",
+        "same_body_as_HEAD": true,
+        "body_sha256": "d45fe91f3d59645e479b8a3fc42609fbd75745e0e7f07cbe1cd041f5f41e7ec9",
+        "raw_sha256": "e5ffeba7cc0fa017dae4fe25b3a88525caafc8df4156f2743be8de9aa618fd7c",
+        "content_sha256": "ab8040ade1a083c05cffbe9e2f702dc76de0f0b5595b2bd645e9f120b8b3b657",
+        "body_chars": 11122
+      }
+    },
+    {
+      "url": "https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html",
+      "title": "ChatGPT Account Takeover - Wildcard Web Cache Deception",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html",
+        "markdown": "archived-references/md/2024/2024-harel-security-research-chatgpt-account-takeover-wildcard-web-deception.md",
+        "title": "ChatGPT Account Takeover - Wildcard Web Cache Deception",
+        "same_body_as_HEAD": true,
+        "body_sha256": "8e37dc7deeda015c2a254bdff68c060b7c0f845dc5881eb36d6c9635559bb588",
+        "raw_sha256": "c0d93ce341897c7c2e2f44f3ebb591fabe91e10d86a0bef561cce67b1c7067ed",
+        "content_sha256": "c13a965b14068ad1c4513e868f2925a31420fdb6ca52dc65fa52a14714c37b60",
+        "body_chars": 5149
+      }
+    },
+    {
+      "url": "https://snyk.io/articles/hijacking-oauth-flows-via-cookie-tossing",
+      "title": "Hijacking OAUTH flows via Cookie Tossing",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2024.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://snyk.io/articles/hijacking-oauth-flows-via-cookie-tossing",
+        "markdown": "archived-references/md/2024/2024-snyk-labs-hijacking-oauth-flows-cookie-tossing.md",
+        "title": "Hijacking OAUTH flows via Cookie Tossing",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ab63bfa872ffdc1de1c8e8a1db9028cd822fccc67b055a588254a5e189f848f1",
+        "raw_sha256": "52782c41871c2d6542bfc6389aa1313b07577d754448693d87a33f1a5077eda9",
+        "content_sha256": "aa1f33d6ae417cb5bc390122d5e53c0e823d3d39a33b3bdd04f8ad2f0ca52445",
+        "body_chars": 12293
+      }
+    },
+    {
+      "url": "https://github.com/vladko312/Research_Successful_Errors",
+      "title": "Successful Errors: New Code Injection and SSTI Techniques (Paper)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 1,
+          "line": 5
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://elttam.com/blog/leaking-more-than-you-joined-for",
+      "title": "ORM Leaking More Than You Joined For",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 2,
+          "line": 6
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://elttam.com/blog/leaking-more-than-you-joined-for",
+        "markdown": "archived-references/md/2025/elttam-com-orm-leaking-more-than-you-joined.md",
+        "title": "ORM Leaking More Than You Joined For",
+        "same_body_as_HEAD": true,
+        "body_sha256": "fe84f9e9ad6effb9fb36e19927d6687f8e3e920979f1d26ab9a96eb004f9bf91",
+        "raw_sha256": "80f2ef4f7a811ba2eefab0814de71904a38a51cb53048e7a7964f2e3c3523dd7",
+        "content_sha256": "7bddf5d7409391a7b93a81ae626b92a21ebbe12e3c5a033dcb9714a6df053b16",
+        "body_chars": 56298
+      }
+    },
+    {
+      "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops",
+      "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 3,
+          "line": 7
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops",
+        "markdown": "archived-references/md/2025/2025-searchlight-cyber-novel-ssrf-technique-involving-http-redirect-loops.md",
+        "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
+        "same_body_as_HEAD": true,
+        "body_sha256": "ba7752e12f001c437cec60848669958f9fa8d8adb039fb67f55d557e70b12b37",
+        "raw_sha256": "f83998135820e50e31a90e112032efa277265f8f9915b22e0040ea38ae312170",
+        "content_sha256": "cf7da7137f93e3560f4aa0ef9a1033c82d90e206fd211bc404870a5065861389",
+        "body_chars": 7599
+      }
+    },
+    {
+      "url": "https://youtube.com/watch?v=ETB2w-f3pM4",
+      "title": "Black Hat USA 2025 | Lost in Translation: Exploiting Unicode Normalization",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The Unicode normalization video is retained in the 2025 list, but Ryan and Isabella Barnett's Black Hat slides are archived from https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf."
+      }
+    },
+    {
+      "url": "https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf",
+      "title": "Lost in Translation: Exploiting Unicode Normalization (Slides)",
+      "category": "Fresh PDF page review",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 4,
+          "line": 8
+        }
+      ],
+      "remaining_content_gap": ""
+    },
+    {
+      "url": "https://labs.watchtowr.com/soapwn-pwning-net-framework-applications-through-http-client-proxies-and-wsdl",
+      "title": "SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 5,
+          "line": 9
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://labs.watchtowr.com/soapwn-pwning-net-framework-applications-through-http-client-proxies-and-wsdl",
+        "markdown": "archived-references/md/2025/2025-watchtowr-labs-soapwn-pwning-net-framework-applications-through-http-wsdl.md",
+        "title": "SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL",
+        "same_body_as_HEAD": true,
+        "body_sha256": "16c766a29907cb4a173fe5b067a6cf296afd2995345c5ed1a21a5d213fac6f25",
+        "raw_sha256": "5560745b29f6b4b884e5ee5b371b7c38f3aea5a0dede055418915580010132a8",
+        "content_sha256": "5c0ede8362dde248315827a0e3d60377e989ab7af8767421256d480a7029f51a",
+        "body_chars": 39570
+      }
+    },
+    {
+      "url": "https://blog.arkark.dev/2025/12/26/etag-length-leak",
+      "title": "Cross-Site ETag Length Leak",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 6,
+          "line": 10
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.arkark.dev/2025/12/26/etag-length-leak",
+        "markdown": "archived-references/md/2025/2025-blog-arkark-dev-cross-site-etag-length-leak.md",
+        "title": "Cross-Site ETag Length Leak",
+        "same_body_as_HEAD": true,
+        "body_sha256": "e94490faf07959e18d419a266c5995d70e7c2a0ffeb5a97b67975733b239cd2a",
+        "raw_sha256": "fe10e46d71328e607e1f937553b3f277ba96cf9a4fd6b0279b8586c5a69f7e43",
+        "content_sha256": "3734ccb809cc4692a77a0804acac333d506586ccc2e64103eb70140ef15f265e",
+        "body_chars": 20953
+      }
+    },
+    {
+      "url": "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir",
+      "title": "Next.js, cache, and chains: the stale elixir",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 7,
+          "line": 11
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir",
+        "markdown": "archived-references/md/2025/2025-zhero-web-security-next-js-cache-chains-stale-elixir.md",
+        "title": "Next.js, cache, and chains: the stale elixir",
+        "same_body_as_HEAD": true,
+        "body_sha256": "0d867d87872efecdd8d5872b679fe29df69dc52e921ce7cea819daa9fe17655f",
+        "raw_sha256": "d157a1b016b19befea228726ee6e6139739f4855ab14731714dac96587300c39",
+        "content_sha256": "5ad8111c19b2b3956b419551c0713b9505a419670294d5b79f7f0b37f7a4cff5",
+        "body_chars": 22414
+      }
+    },
+    {
+      "url": "https://blog.babelo.xyz/posts/cross-site-subdomain-leak",
+      "title": "XSS-Leak: Leaking Cross-Origin Redirects",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 8,
+          "line": 12
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.babelo.xyz/posts/cross-site-subdomain-leak",
+        "markdown": "archived-references/md/2025/2025-salvatore-abello-s-blog-xss-leak-leaking-cross-origin-redirects.md",
+        "title": "XSS-Leak: Leaking Cross-Origin Redirects",
+        "same_body_as_HEAD": true,
+        "body_sha256": "3b96b33d49d13d7bf37316db6ffcaf64874869e4f8671a15de7dd5a35cbbb9ab",
+        "raw_sha256": "8f4791aa38530c9715d4779a157ac85ee1a127db0761c5b339e860ac3f7e2642",
+        "content_sha256": "cfc330eb47a802d0533428f0d186b63026fd7b275ae29356b2b283f1f9c34776",
+        "body_chars": 19212
+      }
+    },
+    {
+      "url": "https://blog.flomb.net/posts/http2connect",
+      "title": "Playing with HTTP/2 CONNECT",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 9,
+          "line": 13
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://blog.flomb.net/posts/http2connect",
+        "markdown": "archived-references/md/2025/blog-flomb-net-playing-http-2-connect.md",
+        "title": "Playing with HTTP/2 CONNECT",
+        "same_body_as_HEAD": true,
+        "body_sha256": "c1ca795fa2bc093e6f0c5be5f3914b4baaeac17fa9a9ecb0235cefa4f0d38765",
+        "raw_sha256": "08591d6d7ae98854924a149c2ff69e368d34c98b7578c64abd2a3db1e74b631f",
+        "content_sha256": "36c1272d2674a64ab4f7a8e4f7313e65869e93d94454b052009a0da52bd99148",
+        "body_chars": 14349
+      }
+    },
+    {
+      "url": "https://youtu.be/Dq_KVLXzxH8",
+      "title": "OffensiveCon25 - Joernchen - Parser Differentials: When Interpretation Becomes a Vulnerability",
+      "category": "Excluded companion / duplicate citation",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "exclusion": {
+        "at": "2026-08-09",
+        "by": "maintainer",
+        "class": "derivative",
+        "outcome": "skip",
+        "reason": "The Parser Differentials video is retained in the 2025 list, but Joern Schneeweisz's author-hosted slide deck is archived from https://0day.click/parser-diff-talk-oc25/."
+      }
+    },
+    {
+      "url": "https://0day.click/parser-diff-talk-oc25",
+      "title": "Parser Differentials: When Interpretation Becomes a Vulnerability",
+      "category": "Prior full review; unchanged body verified",
+      "citations": [
+        {
+          "year_file": "2025.md",
+          "rank": 10,
+          "line": 14
+        }
+      ],
+      "remaining_content_gap": "",
+      "prior_review_verification": {
+        "url": "https://0day.click/parser-diff-talk-oc25",
+        "markdown": "archived-references/md/2025/0day-click-parser-differentials-when-interpretation-becomes-vulnerability.md",
+        "title": "Parser Differentials: When Interpretation Becomes a Vulnerability",
+        "same_body_as_HEAD": true,
+        "body_sha256": "82e5e5b4adef4899a322a0b8b49820c3a9740e490821065049573d489bcb10ce",
+        "raw_sha256": "45a82450812054718f7a8b3b52552e4981d75602cf8431dab4addd07ef42919f",
+        "content_sha256": "a6dabbfeb1fdbc39aef267173c839af1828baec589f61b0e5dd65dc4ff60f67e",
+        "body_chars": 13424
+      }
+    }
+  ]
+}

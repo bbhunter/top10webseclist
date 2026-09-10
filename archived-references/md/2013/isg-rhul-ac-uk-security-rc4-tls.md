@@ -3,21 +3,17 @@ type: Article
 title: On the Security of RC4 in TLS
 description: Measured the keystream biases of RC4 as used in TLS and turned them into plaintext recovery. A single-byte-bias attack over the first 256 keystream bytes recovers 220 bytes of a repeated plaintext from roughly 2^30 sessions, and a double-byte (Fluhrer-McGrew) attack works within one connection. The single-byte attack carries to WPA/TKIP because of its per-packet keys.
 resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
-tags: [article, webseclist-reference, en, isg-rhul-ac-uk, tls, https, info-leak, cookie, cve, mitigation, owasp-a02-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, isg-rhul-ac-uk, tls, https, info-leak, cookie, cve, mitigation, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:38+00:00"
+  at: "2026-09-10T00:43:53+00:00"
 status: deprecated
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
     title: On the Security of RC4 in TLS
     author: Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering, Jacob Schuldt
-  - id: canonical
-    resource: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls"
-  - id: capture
-    resource: "https://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
 also_at: []
 authors:
   - Nadhem AlFardan
@@ -25,26 +21,26 @@ authors:
   - Kenny Paterson
   - Bertram Poettering
   - Jacob Schuldt
-canonical_url: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls"
+canonical_url: ""
 cited_by:
   - "2013.md:9"
 commit: ""
-content_sha256: 765c21b687bad2dbb0a74526fd7bc3f911bcc72b693c021c58fdcb4fee7cdc33
+content_sha256: f1a75c1992af6ea3fb979b74d588d7cecd8a48984296d4f1c75049dc1bd0a9c6
 depth: full
 depth_reason: default
 kind: article
-language: en
+language: ""
 licence: unknown
 original_url: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
 published: ""
 publisher: isg.rhul.ac.uk
 publisher_english: ""
 raw_sha256: 6fc4a4d1d035477fe728f28c0d82f286463e12bde23dc01090ad5be97215c449
-retrieved_from: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:38+00:00"
+retrieved_from: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:43:53+00:00"
 slug: isg-rhul-ac-uk-security-rc4-tls
-snapshot: 20160507023636
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -56,9 +52,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/>
-- Current location: <http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls>
-- Preserved from: http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls (live) on 2026-08-10
-- Capture timestamp: 20160507023636
+- Preserved from: http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/ (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -115,17 +109,17 @@ All WPA/TKIP implementations are affected.
 
 ## How severe are the attacks?
 
-Our first attack is a multi-session attack, which means that we require a target plaintext to be repeatedly sent in the same position in the plaintext stream in multiple TLS connections or sessions. It exploits **single-byte biases** in the initial 256 bytes of RC4 keystreams. For details of these biases, see this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 244 random 128-bit keys).
+Our first attack is a multi-session attack, which means that we require a target plaintext to be repeatedly sent in the same position in the plaintext stream in multiple TLS connections or sessions. It exploits **single-byte biases** in the initial 256 bytes of RC4 keystreams. For details of these biases, see this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 2^44 random 128-bit keys).
 
 Since the first 36 bytes of plaintext are formed from an unpredictable Finished message when SHA-1 is the selected hashing algorithm in the TLS Record Protocol, these first 36 bytes cannot be recovered. This means that the single-byte bias attack can recover 220 bytes of TLS-encrypted plaintext.
 
-The number of connections/sessions needed to reliably recover these plaintext bytes is around 230, but already with only 224 connections/sessions, certain bytes can be recovered reliably.
+The number of connections/sessions needed to reliably recover these plaintext bytes is around 2^30, but already with only 2^24 connections/sessions, certain bytes can be recovered reliably.
 
 The connections/sessions needed for our single-byte bias attack can be generated in various ways. The attacker could cause the TLS session to be terminated, and some applications running over TLS then automatically reconnect and retransmit a cookie or password. In a web environment, the sessions may also be generated by client-side malware, in a similar way to the BEAST attack.
 
-This attack also applies directly to WPA/TKIP, with similar success rates, because of its use of per-packet keys for RC4. Here, the particular structure of WPA/TKIP keys means that a different set of biases are obtained in the first 256 bytes of RC4 keystream. For details, see this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/tkip_biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 241 WPA/TKIP keys).
+This attack also applies directly to WPA/TKIP, with similar success rates, because of its use of per-packet keys for RC4. Here, the particular structure of WPA/TKIP keys means that a different set of biases are obtained in the first 256 bytes of RC4 keystream. For details, see this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/tkip_biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 2^41 WPA/TKIP keys).
 
-Our second attack applies to TLS and can be carried out in a single connection or session (but tolerates multiple connections/sessions). It exploits certain **double-byte biases** in RC4 keystreams (the Fluhrer-McGrew biases). It targets plaintext bytes located at any position in the TLS plaintext stream. The number of encryptions needed to reliably recover a set of 16 consecutive targeted plaintext bytes is around 10⋅230, but already with only 6⋅230 sessions, these target bytes can be recovered with 50% reliability. Since this double-byte bias attack does not require the TLS Handshake Protocol to be rerun, it can in practice be more efficient than our single-byte bias attack.
+Our second attack applies to TLS and can be carried out in a single connection or session (but tolerates multiple connections/sessions). It exploits certain **double-byte biases** in RC4 keystreams (the Fluhrer-McGrew biases). It targets plaintext bytes located at any position in the TLS plaintext stream. The number of encryptions needed to reliably recover a set of 16 consecutive targeted plaintext bytes is around 10⋅2^30, but already with only 6⋅2^30 sessions, these target bytes can be recovered with 50% reliability. Since this double-byte bias attack does not require the TLS Handshake Protocol to be rerun, it can in practice be more efficient than our single-byte bias attack.
 
 In contrast to the recent [Lucky 13 attack](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/Lucky13.html), there is no need for sophisticated timing of error messages, and the attacker can be located anywhere on the network path between client and server in our attacks.
 
@@ -198,4 +192,4 @@ In short, no. Our long-term aim is to ensure that weak encryption options are el
 
 ## For more information
 
-The single-byte bias attack on RC4 was announced on 12th March 2013 during [Dan Bernstein's invited talk at FSE 2013](http://web.archive.org/web/20160520151330/http://cr.yp.to/talks/2013.03.12/slides.pdf). Further information about biases in the RC4 keystream can be found in this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 244 random 128-bit keys). Raw data for 245 random 128-bit keys can be found in this [file](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/RC4_keystream_dist_2_45.txt). Further information about biases in the RC4 keystream for WPA/TKIP keys can be found in this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/tkip_biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 241 WPA/TKIP keys). Full details of our attacks can be found in our [research paper](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/RC4biases.pdf). A high-level overview of the results can be obtained by reading our [USENIX Security 2013 presentation](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/usenix-presentation.pdf). Video for this talk is available on the [USENIX Security 2013 website](http://web.archive.org/web/20160520151330/https://www.usenix.org/conference/usenixsecurity13/security-rc4-tls). If you have remaining questions after having studied these resources, please contact us via e-mail.
+The single-byte bias attack on RC4 was announced on 12th March 2013 during [Dan Bernstein's invited talk at FSE 2013](http://web.archive.org/web/20160520151330/http://cr.yp.to/talks/2013.03.12/slides.pdf). Further information about biases in the RC4 keystream can be found in this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 2^44 random 128-bit keys). Raw data for 2^45 random 128-bit keys can be found in this [file](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/RC4_keystream_dist_2_45.txt). Further information about biases in the RC4 keystream for WPA/TKIP keys can be found in this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/tkip_biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 2^41 WPA/TKIP keys). Full details of our attacks can be found in our [research paper](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/RC4biases.pdf). A high-level overview of the results can be obtained by reading our [USENIX Security 2013 presentation](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/usenix-presentation.pdf). Video for this talk is available on the [USENIX Security 2013 website](http://web.archive.org/web/20160520151330/https://www.usenix.org/conference/usenixsecurity13/security-rc4-tls). If you have remaining questions after having studied these resources, please contact us via e-mail.

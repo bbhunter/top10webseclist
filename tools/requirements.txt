@@ -8,3 +8,6 @@
 #
 #   pip install -r tools/requirements.txt
 pypdf>=4.0
+
+# YAML frontmatter validation for tools/check_skills.py.
+PyYAML>=6.0

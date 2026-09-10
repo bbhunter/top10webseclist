@@ -3,7 +3,7 @@
 Dev-only tooling. Nothing here is part of the reading list itself, and no command
 in this directory ever writes a `20xx.md` year list.
 
-There are **two** tools, and they preserve different things. Getting them mixed up
+There are **two archive** tools, and they preserve different things. Getting them mixed up
 is the easiest mistake to make here, because both end up producing PDFs:
 
 | Tool | Preserves | Output |
@@ -14,6 +14,33 @@ is the easiest mistake to make here, because both end up producing PDFs:
 So `capture_pdf.py` archives the *index* of the list; `references/` archives the
 *articles on it*. This file documents the first. For the second see
 [`references/README.md`](references/README.md).
+
+## Skill compatibility check
+
+```bash
+python3 -m pip install -r tools/requirements.txt
+python3 tools/check_skills.py --strict
+```
+
+Checks every `SKILL.md` in `.claude/skills/` and `.agents/skills/` against
+[Anthropic's authoring requirements](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+and the [Agent Skills format](https://agentskills.io/specification): valid YAML
+without duplicate keys, portable frontmatter fields, matching directory/name,
+name syntax and reserved words, non-empty descriptions, no XML in discovery
+metadata, and limits of 64 characters for names, 1,024 for descriptions and 500
+for optional compatibility text. Optional `metadata` maps strings to strings;
+the specifications do not state a separate size cap for that map.
+
+The checker also verifies explicit local Markdown links in the entrypoint and
+reports skills at or above the recommended 500-line threshold. That threshold
+is authoring guidance, not a metadata hard limit; `--strict` makes it fail the
+local check. Review trigger clarity, examples, reference navigation and runtime
+prerequisites separately; static validation cannot prove skill behaviour.
+
+These are repository workflows: their scripts and Codex adapters require this
+checkout. Passing this check does not make each folder a standalone Claude.ai
+upload or test its execution in Claude. Claude Code has additional frontmatter
+fields, but [portable uploads accept only the shared fields](https://code.claude.com/docs/en/skills#using-skill-frontmatter-outside-claude-code).
 
 ## capture_pdf.py
 

@@ -1,7 +1,7 @@
 # 2021 candidate judgements
 
 These scorecards apply the repository's weighted judge rubric. `KEPT` means the
-candidate met the historical 60-or-above inclusion rule as well as the
+candidate meets the historical 55-or-above inclusion rule as well as the
 first-publication, originality-verdict and original-nomination exclusions.
 
 ## 85.5 — [Spook.js: Attacking Chrome Strict Site Isolation via Speculative Execution](https://www.spookjs.com/)
@@ -528,7 +528,9 @@ otherwise benign text.
 | Clarity and reproducibility | 80 | 10% | 8.00 | Parsing pattern, classifier and validation are clear. |
 
 **Final score: 69.4/100.** Archive decision: include under the historical
-60-or-above qualifying-technique rule.
+55-or-above qualifying-technique rule. The 2026-09-09 threshold reconciliation
+changed only this gate wording; the score, verdict and inclusion decision are
+unchanged.
 
 ### Verdict
 

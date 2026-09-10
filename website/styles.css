@@ -2392,3 +2392,6 @@
   .close-icon { display:block; width:18px; height:18px; pointer-events:none; }
   .dialog-backdrop-hit { position:fixed; inset:0; z-index:-1; width:100vw; height:100dvh; margin:0; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; cursor:default; }
 }
+.archive-figure { display: block; margin: 1.5rem 0; }
+.archive-figure img { display: block; max-width: 100%; height: auto; margin: auto; background: #fff; }
+.archive-figure details { margin-top: .75rem; }

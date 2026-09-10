@@ -116,6 +116,29 @@ Browser coverage uses Chromium with desktop and touch/mobile emulation. The vide
 scroll regression substitutes a local iframe response; it checks the app's player
 lifecycle, not playback on YouTube. Native Safari/device checks remain manual.
 
+### Preserved research diagrams and figures
+
+The Markdown reader displays repository-owned PNG figure crops and pre-rendered
+Mermaid diagrams. External images remain explicit outbound links. Genuine code
+stays in fenced listings; an unrecognized diagram is shown as source code.
+
+After changing a Mermaid fence in a published reference, render its static asset
+before regenerating the website data:
+
+```bash
+python3 tools/references/render_diagrams.py --bundle /path/to/mermaid.min.js
+```
+
+Use `dist/mermaid.min.js` from Mermaid **11.16.0**. The renderer requires SHA-256
+`74d7c46dabca328c2294733910a8aa1ed0c37451776e8d5295da38a2b758fb9b` and fails for
+other bytes. Keep the downloaded bundle and its license outside tracked output.
+It executes in the archive toolbox with networking disabled, validates the SVGs,
+and writes `archived-references/diagrams/` plus `diagram-assets.json`. The site
+build checks both source and asset hashes and copies only referenced assets.
+No Mermaid runtime or remote image request is added to the public reader.
+
+The generated `data/diagrams.json` index loads only when opening Markdown with a Mermaid fence. The startup catalogue holds its versioned descriptor, keeping diagram source text out of the initial download. Unavailable diagram assets leave the readable source intact.
+
 Regenerate or check the progressive data with:
 
 ```bash

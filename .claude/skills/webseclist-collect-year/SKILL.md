@@ -99,13 +99,13 @@ primitive that reshapes a class. Score the contribution, not the headline. You
 do not need a full scorecard for every candidate at this stage; use the criteria
 as a filter, and reach for the full skill when a call is genuinely close.
 
-- **Keep-cut: score 60 or above.** A candidate stays in `<YEAR>-ai.md` only if a
-  full `webseclist-judge-reference` scorecard puts it at **≥ 60/100** with a
-  non-duplicate verdict; below 60 it is recorded in the evaluation folder but its
+- **Keep-cut: score 55 or above.** A candidate stays in `<YEAR>-ai.md` only if a
+  full `webseclist-judge-reference` scorecard puts it at **≥ 55/100** with a
+  non-duplicate verdict; below 55 it is recorded in the evaluation folder but its
   link is removed from the displayed list. This cut is above the judge skill's
   general ≥ 50 supporting-reference bar and below its ≥ 70 core-technique label.
   Both provisional lists and the separately review-gated historical missed-item
-  path use ≥ 60, while the historical path additionally requires publication-year
+  path use ≥ 55, while the historical path additionally requires publication-year
   verification and proof that the work was never nominated. Out-of-window work is
   excluded regardless of score.
 
@@ -243,10 +243,10 @@ drop it and do not quietly add it to a curated list.
 - Record it in the **Explicitly excluded** section with its actual publication
   date, so the next run does not re-chase it.
 - If it looks genuinely significant *and* is missing from that year's list, run
-  the full `webseclist-judge-reference` skill on it. Only if it scores **≥ 60**
+  the full `webseclist-judge-reference` skill on it. Only if it scores **≥ 55**
   with a non-duplicate verdict is it a candidate for the curated `<YEAR>.md`,
   and then it is added as a single reviewed line under "Other nominations" with
-  the score noted in the collecting file. Below 60, it stays excluded but the
+  the score noted in the collecting file. Below 55, it stays excluded but the
   source and judgement remain in `ai-evaluation/<YEAR>/` for audit history.
 
 This is the **only** circumstance in which this workflow touches a curated year

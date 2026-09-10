@@ -1,6 +1,6 @@
 ---
 name: webseclist-find-missed
-description: Finds web hacking techniques published in a past year (2006..2025) but never nominated in that year's Top 10 Web Hacking Techniques round, records every credible lead and judgement under ai-evaluation/YEAR, and adds only review-gated finds scoring 60 or above with a non-duplicate verdict under "Missed from the original list." Use when asked to find, recover, backfill, catch up on, or audit missed research for one year, a range, or all historical years. Use webseclist-collect-year for the current year, webseclist-judge-reference to score one reference without editing a list, and the archive skills to preserve sources or announcement pages.
+description: Finds web hacking techniques published in a past year (2006..2025) but never nominated in that year's Top 10 Web Hacking Techniques round, records every credible lead and judgement under ai-evaluation/YEAR, and adds only review-gated finds scoring 55 or above with a non-duplicate verdict under "Missed from the original list." Use when asked to find, recover, backfill, catch up on, or audit missed research for one year, a range, or all historical years. Use webseclist-collect-year for the current year, webseclist-judge-reference to score one reference without editing a list, and the archive skills to preserve sources or announcement pages.
 ---
 
 # Find techniques the original nomination round missed
@@ -9,8 +9,8 @@ You are auditing one or more **past** years of the Top 10 Web Hacking Techniques
 list for research that was published that year, qualifies as a web hacking
 technique, was **never nominated**, and is strong enough to belong in the record.
 The bar is deliberately evidence-based: a find is added to a curated year list only when a
-**full `webseclist-judge-reference` evaluation scores it at least 60** with a
-non-duplicate verdict — i.e. core-technique material. Everything weaker is
+**full `webseclist-judge-reference` evaluation scores it at least 55** with a
+qualifying non-duplicate verdict, including supporting research. Everything weaker is
 recorded under `ai-evaluation/<YEAR>/`, not added and never silently discarded.
 
 This is the one workflow whose whole purpose is to make a **review-gated edit to a
@@ -118,11 +118,11 @@ cat candidates.txt | python .claude/skills/webseclist-collect-year/scripts/known
   trusting a feed or search snippet. Presented-this-year but disclosed-last-year
   belongs to last year.
 - **Not already recorded** — survived the exclusion filter in step 3.
-- **Plausibly 60 or above** — use the judge's rubric as a pre-screen. This is
-  also the finalized-list addition gate; fully judging the 60–70 band preserves
+- **Plausibly 55 or above** — use the judge's rubric as a pre-screen. This is
+  also the finalized-list addition gate; fully judging the 55–70 band preserves
   useful supporting research and makes close historical calls
   reviewable. Impact is not novelty; a scary CVE on a big target usually is not
-  a missed *technique*. Record credible leads screened below 60 in the yearly
+  a missed *technique*. Record credible leads screened below 55 in the yearly
   evaluation index with the original URL and screening reason.
 
 ### 5. Judge each survivor in full
@@ -158,7 +158,7 @@ sort `history.jsonl`; unchanged scorecards add nothing, and changed ones append
 with a `supersedes` link.
 
 After a range or all-years run, audit score arithmetic, latest history state,
-the 60-point gate, and the projection into every curated missed section:
+the 55-point gate, and the projection into every curated missed section:
 
 ```bash
 python .claude/skills/webseclist-find-missed/scripts/audit.py
@@ -168,9 +168,9 @@ The audit is read-only. Fix any reported mismatch in the readable scorecard and
 curated entry, then re-import the corrected card as `rejudgement` so history
 records the change instead of hiding it.
 
-**Addition gate:** add to the year file only if **final score >= 60** *and* the
+**Addition gate:** add to the year file only if **final score >= 55** *and* the
 verdict is a novelty verdict (Original technique, Meaningful extension, Meaningful
-combination/adaptation, or Tooling/methodology). A score below 60,
+combination/adaptation, or Tooling/methodology). A score below 55,
 or a Duplicate / Independent-rediscovery / Insufficient-evidence verdict, does
 **not** qualify — record it as a rejected lead instead. The historical
 missed-technique workflow deliberately uses a broader gate than the judge
@@ -188,7 +188,7 @@ end of the file, after `## Other nominations`:
 
 > These techniques were **not** part of this year's original nomination round.
 > Each was found in a later audit, evaluated in full with the
-> `webseclist-judge-reference` skill, and scored **60 or above** (qualifying
+> `webseclist-judge-reference` skill, and scored **55 or above** (qualifying
 > material) with a non-duplicate verdict before being added here. The judge score
 > and verdict are noted per entry. Added <YYYY-MM-DD>.
 
@@ -212,7 +212,7 @@ Rules for the entries, matching the house style of the year files:
 - If the section already exists from a previous run, **merge** into it (add new
   bullets, keep the date line as the earliest run and note the new date if you
   like) rather than creating a second section.
-- If a year yields nothing at or above 60, **add nothing** and say so in the report.
+- If a year yields nothing at or above 55, **add nothing** and say so in the report.
   An empty result is the correct and common outcome for a well-curated year.
 
 ### 7. Report
@@ -256,5 +256,5 @@ to a curated list. It does **not** collect the current year into `YEAR-ai.md`
 (that is `webseclist-collect-year`), does not re-rank or re-vote a year, does not
 touch 2026, does not fetch or convert sources into `archived-references/` (that is
 `webseclist-archive-references`), and does not snapshot announcement pages (that
-is `webseclist-archive-listings`). A below-60 result is a recommendation to leave
+is `webseclist-archive-listings`). A below-55 result is a recommendation to leave
 the list unchanged, not a licence to lower the bar.

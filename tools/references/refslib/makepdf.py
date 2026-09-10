@@ -17,6 +17,7 @@ without one it degrades to a labelled link. Either way printing cannot pull a
 remote asset.
 """
 
+import hashlib
 import html as html_module
 import re
 
@@ -232,6 +233,15 @@ def markdown_to_html_body(md_text, image_source=None):
                 body.append(lines[index])
                 index += 1
             index += 1  # consume the closing fence (or run off the end)
+            # A reviewed Mermaid diagram has an inert, hash-bound local SVG.
+            # Unknown diagrams keep their literal source, like any other code.
+            if language == "mermaid" and image_source:
+                digest = hashlib.sha256("\n".join(body).strip().encode("utf-8")).hexdigest()
+                diagram = image_source("mermaid:" + digest)
+                if diagram:
+                    out.append('<figure><img src="%s" alt="Diagram reconstructed from the preserved source"></figure>'
+                               % html_module.escape(diagram, quote=True))
+                    continue
             # Coloured by `highlight.py`, which is lossless by construction and
             # escapes as it goes: strip its spans and the escaped listing comes
             # back byte for byte.

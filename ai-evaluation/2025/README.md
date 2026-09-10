@@ -7,10 +7,47 @@ this pass. Exact URL filtering was followed by semantic comparison against that
 file and backward mechanism checks through the 2006–2024 lists and local
 reference text.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
+The historical-list gate is **55 or above plus a qualifying non-duplicate
 verdict**. A score alone cannot rescue prior disclosure, an existing nomination
 under another URL, or work outside offensive web scope. SAML Roulette and
 Universal Cross-app Attacks were retained and reassessed with the fresh leads.
+
+## Threshold reconciliation — 9 September 2026
+
+The current report has **32 full scorecards: 21 kept and 11 excluded**.
+The missed section of `2025.md` contains **21 grouped entries**, matching the
+21 qualifying cards. The dated audit results below describe their original
+passes, whose threshold was 60; this section records the current 55-point gate.
+
+All existing full cards were checked for score, verdict, original year and
+nomination overlap. No previously excluded card in the 55–59.9 range qualifies:
+the 56.1 Veeam case remains excluded on verdict. No stronger qualifying full
+card was omitted. Three list/evaluation inconsistencies received full primary
+source review and explicit evidence-based rejudgements, rather than inferred
+arithmetic for the old compact scores.
+
+| Score | Current verdict | Change | Candidate |
+|---:|---|---|---|
+| 69.5 | Meaningful extension | added; original August 2025 v1, not the 2026 revision | [Network-Level Prompt and Trait Leakage in Local Research Agents](https://arxiv.org/abs/2508.20282v1) |
+| 56.8 | Useful application or case study | removed; replaces compact 76.8 assessment | [RebirthDay Attack](https://doi.org/10.1145/3719027.3744832) |
+| 56.3 | Useful application or case study | removed; replaces full 60.1 assessment | [Gotchas in Email Parsing — Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives) |
+
+RebirthDay is correctly a 2025 publication, but RFC 7871 §11.2 (2016) already
+describes both the ECS-induced concurrent queries and the missing-ECS reply
+attack. Its original paper supplies useful implementation experiments and
+measurements without a distinct new attack or discovery method. Jakarta's audit
+checklist similarly maps established email-identity confusion into a Java
+ecosystem; the review considered its tooling claim and source-level details
+before excluding it. These are verdict exclusions even though both exceed 55.
+The full comparisons, limits and six fresh scores are in
+[judgements.md](judgements.md), with append-only history in
+[history.jsonl](history.jsonl). Other scores were unchanged.
+
+This was a bounded reconciliation, not a new conference sweep. The four
+unjudged CCS leads below remain unjudged and are not displayed as techniques.
+The RebirthDay and Jakarta archive texts were inspected and appeared intact;
+no faulty capture was discovered. Archive and generated-site changes are handled
+separately by the parent workflow.
 
 ## Coverage
 
@@ -76,7 +113,7 @@ No archive capture was opened, validated or changed during this audit.
 ## Gate note
 
 All fresh additions scored above 70, but this audit applies the repository's
-current **60-or-above** historical gate. The wording in `2025.md` was corrected
+then-current **60-or-above** historical gate. The wording in `2025.md` was corrected
 accordingly. This pass did not run the reference archiver or refresh either Web
 application.
 
@@ -120,12 +157,12 @@ papers.
 
 RebirthDay was added on 2026-08-10 from that unswept conference: it surfaced
 during a sweep of Black Hat Asia 2026 decks, where it turned out to be a
-re-presentation of CCS '25 work. It qualifies on its own merits, but it is one
-arbitrary paper from a programme nobody has been through.
+re-presentation of CCS '25 work. It was provisionally accepted then; the full
+9 September rejudgement above removes it after checking explicit earlier ECS
+attack descriptions.
 
-**CCS 2025 remains unaudited.** A `webseclist-find-missed` pass over that
-programme is the outstanding work; this note exists so the imbalance is visible
-rather than closed over by a single entry.
+At that point CCS 2025 remained unaudited. The 11 August sweep below subsequently
+addressed the programme, leaving four full-paper acquisition leads unresolved.
 
 ## CCS 2025 sweep (2026-08-11)
 
@@ -196,10 +233,10 @@ all excluded on verdict. Scorecards in [judgements.md](judgements.md).
 | 63.0 | Useful application or case study | not added | [More Than DoS: Progress Telerik UI for ASP.NET AJAX Unsafe Reflection (CVE-2025-3600)](https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600/) |
 | 62.7 | Useful application or case study | not added | [Bypassing Authentication Like It Is The 90s: Pre-Auth RCE Chains in Kentico Xperience CMS](https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms/) |
 | 61.5 | Useful application or case study | not added | [Cache Me If You Can: Sitecore Experience Platform Cache Poisoning to RCE](https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/) |
-| 56.1 | Useful application or case study | below gate | [By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam (CVE-2025-23120)](https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/) |
+| 56.1 | Useful application or case study | excluded on verdict under current 55 gate | [By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam (CVE-2025-23120)](https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/) |
 
-Three clear the numeric gate on execution quality and are still excluded, because
-the historical gate requires both a score of 60 or above **and** a novelty
+Three cleared the numeric gate at that audit, and all four clear today's 55-point
+gate. They remain excluded because inclusion requires a qualifying novelty
 verdict; "useful application or case study" is not one. The Kentico case is the
 clearest: a mechanism search rather than a product search surfaced Apache CXF
 CVE-2012-0803 and CVE-2013-0239, the same failure — a WS-Security UsernameToken
@@ -217,3 +254,13 @@ changed the verdict.
 | [Code injection attacks using publicly disclosed ASP.NET machine keys](https://www.microsoft.com/en-us/security/blog/2025/02/06/code-injection-attacks-using-publicly-disclosed-asp-net-machine-keys/) | threat intelligence | Vendor reporting on exploitation of published keys, not a new technique. |
 | [SOAPwn whitepaper and slides (Black Hat EU 2025)](https://i.blackhat.com/BH-EU-25/eu-25-Bazydlo-SOAPwn-wp.pdf) | already represented | Conference artifacts of the SOAPwn research already nominated for 2025. |
 | [GoldMelody Hidden Chords: in-memory IIS modules](https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/) | threat intelligence | Actor reporting on leaked-machine-key exploitation. |
+
+## Bullseye year correction — 9 September 2026
+
+[Bullseye’s full thesis](https://spectrum.library.concordia.ca/id/eprint/996198/) was publicly deposited on 4 November 2025. The 2026 conference paper repeats its methods and study. A fresh full review scores the original thesis **64.6**, a tooling/methodology contribution, and adds one grouped entry to the 2025 missed section after checking the original nominations. Test-guided exploitation predates it; the retained contribution is its integrated discovery workflow. The complete comparison with JSGo (2024) and PoCGen v1 (June 2025) is in [judgements.md](judgements.md).
+
+### TranSPArent publication-year migration — 10 September 2026
+
+[TranSPArent](https://zenodo.org/records/17822391) is retained at **69.1**, a tooling/methodology contribution first publicly preserved on 4 December 2025. Its [immutable source release](https://github.com/diwangs/transparent-ae/tree/v1.0.0) already implements test-trace call-edge stitching and template-to-JavaScript sink mapping; the February 2026 conference paper is the same contribution. A fresh six-category review, local and primary web prior-art checks and the original nomination comparison support this historical addition. The later paper was read to establish identity; its later reception was excluded from scoring. This extends the historical list to 20 grouped missed entries.
+
+One Email, Many Faces was also migrated from the 2026 compact records after verification of its April 2025 OriginMail implementation and July 2025 full preprint. Its fresh full score is **61.3**, a supporting methodology contribution; the later conference copy is excluded from 2026. See the full evidence and qualifications in [judgements.md](judgements.md).

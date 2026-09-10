@@ -1,7 +1,7 @@
 # 2025 candidate judgements
 
 These scorecards apply the repository's weighted judge rubric. `KEPT` means the
-candidate met the historical 60-or-above inclusion rule as well as the
+candidate met the historical 55-or-above inclusion rule as well as the
 first-publication, originality-verdict and original-nomination exclusions.
 
 ## 86.9 — [My ZIP isn't your ZIP: Identifying and Exploiting Semantic Gaps Between ZIP Parsers](https://www.usenix.org/conference/usenixsecurity25/presentation/you)
@@ -1357,45 +1357,401 @@ is the new element, and it is not patchable in the way the previous sink was.
 Meaningful combination or adaptation. The chain is assembled from known parts,
 but the execution sink is new and durable by design.
 
-## 60.1 — [Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives) — Jia Hao Poh, elttam
+## 56.3 — [Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives) — Jia Hao Poh, elttam
 
-**KEPT** · Useful application or case study · confidence Medium
+**REMOVED** · Useful application or case study · confidence High
 
 ### Candidate
 
-Published 17 November 2025. Documents parsing differentials in Jakarta Mail's
-`InternetAddress` and `MimeMessage` and the access-control consequences.
+Full rejudgement on 9 September 2026 of the original 17 November 2025 article,
+read in full live and in the intact local archive. The article expands the
+author's BSides Canberra and Perth 2025 talks; the
+[Canberra programme history](https://pretalx.com/bsides-canberra-2025/schedule/changelog/)
+establishes the earlier presentation. All load-bearing prior art below predates
+2025, so the precise talk cutoff does not affect the comparison. The score
+replaces 60.1 on new evidence, not because the threshold changed. The old event
+remains in `history.jsonl`.
 
 ### Core contribution
 
-A systematic comparison showing the single-argument `InternetAddress`
-constructor validates through `parse()` while the two- and three-argument forms
-do not, plus RFC 822 and RFC 2047 handling that makes
-`<attacker@example.com>@foo.com` pass a naive `split('@')[1]` domain check while
-delivering elsewhere. Includes Semgrep rules and notes which downstream
-frameworks inherit the behaviour.
+An audit catalogue maps Java mail constructors, encoded personal names, group
+addresses and downstream Spring/Hibernate validation to application trust
+decisions. `InternetAddress(String)` parses, whereas the personal-name overloads
+assign the address directly. An application can validate one interpretation and
+send to another, or display a decoded name as trusted identity. The article
+adds concrete review prompts and linked Semgrep audit rules. It does not show
+a distinct new exploit beyond these established parsing and display confusions;
+several proposed consequences are explicitly hypothetical.
 
 ### Prior art
 
-Gareth Heyes' "Splitting the email atom" (PortSwigger, 2024, already in
-`2024.md`) established email-parser differentials as an access-control bypass
-class, and earlier AWS SES work covered related ground. The candidate applies
-that established class to one Java library rather than extending the class.
+Local list/archive checks found the nominated 2024
+[Splitting the email atom](https://portswigger.net/research/splitting-the-email-atom),
+which turns parser disagreement and encoded email syntax into identity bypasses.
+The article itself credits Nathan Davison's earlier
+[AWS SES research](https://nathandavison.com/blog/exploiting-email-address-parsing-with-aws-ses):
+the angle-address plus trailing address payload, privilege check, and different
+delivery destination are the same security use, not merely shared old APIs.
+An independent search for constructor validation found
+[Commons Email EMAIL-49, 7 September 2005](https://issues.apache.org/jira/browse/email-49),
+which explicitly compares the validating one-argument constructor with the
+non-validating personal-name overloads and explains the required validation.
+That issue alone is API background, not a prior security attack; combined with
+the earlier demonstrated parser-to-identity attack, it removes the claimed
+new capability. Mapping these behaviours to Jakarta and adding call-site audit
+patterns is useful engineering, but no new search or exploit-generation method
+is demonstrated.
 
 ### Scorecard
 
 | Category | Score | Weight | Weighted | Reason |
 |---|---:|---:|---:|---|
-| Original contribution | 48 | 25% | 12.00 | Known differential class mapped onto a specific library. |
-| Transferability | 55 | 20% | 11.00 | Findings are Jakarta Mail-specific; the constructor-asymmetry lesson is broader. |
-| Lasting value | 52 | 20% | 10.40 | Useful review reference while the library keeps these constructors. |
-| Technical soundness | 78 | 15% | 11.70 | Behaviours are demonstrated per constructor with concrete inputs. |
-| Practical usability | 72 | 10% | 7.20 | Shipped Semgrep rules make it directly usable in review. |
-| Clarity and reproducibility | 78 | 10% | 7.80 | Clear tabulation of inputs against parsed results. |
+| Original contribution | 40 | 25% | 10.00 | Useful systematic audit mapping; the exploit and constructor distinction both predate the article. |
+| Transferability | 55 | 20% | 11.00 | Applies across Jakarta Mail consumers, with Spring and Hibernate examples. |
+| Lasting value | 55 | 20% | 11.00 | Concrete review checklist remains useful, but mainly repackages an established identity-parsing test. |
+| Technical soundness | 72 | 15% | 10.80 | Source-level behaviours and payloads are shown; hypothetical chains and a reversed accessor claim limit confidence in the checklist. |
+| Practical usability | 65 | 10% | 6.50 | Audit rules locate call sites, but do not establish attacker control or an exploitable identity decision. |
+| Clarity and reproducibility | 70 | 10% | 7.00 | Clear code examples; the final checklist needs correction before direct use. |
 
-**Final score: 60.1/100.** Archive decision: include as a supporting reference.
+**Final score: 56.3/100.** Computed with `score.py 40 55 55 72 65 70`.
+Archive decision: exclude from the missed-technique list; nonqualifying verdict.
+
+### Reverification
+
+- Reopened the full article, its linked Semgrep rules and the two closest original
+  attack accounts; separately searched pre-2025 constructor validation history.
+- Checked the strongest tooling interpretation: the rules identify named API
+  uses for manual review, without a new analysis or discovery algorithm. That
+  helps usability but does not make every audit checklist a new methodology.
+- The article's final checklist reverses `getSender()` and `getFrom()` return
+  shapes. The published API has a single `Address` sender and `Address[]` from
+  and reply-to values. This is an error in the original source, not a faulty
+  archive capture. The earlier card also misstated the angle-address payload's
+  naive split result; this card avoids that unsupported example.
+- Benefit of doubt was given to the broader review mapping, not withheld because
+  the components are old. No live exploit was run. Later adoption and fixes do
+  not enter any category.
 
 ### Verdict
 
-Useful application or case study. Clears the threshold on execution and
-practical value, not on novelty of the underlying class.
+Useful application or case study. Remove the previously grandfathered entry
+after mechanism-level review. A score over 55 does not satisfy the separate
+novelty-verdict gate.
+
+## 69.5 — [Network-Level Prompt and Trait Leakage in Local Research Agents](https://arxiv.org/abs/2508.20282v1) — Hyejun Jeong, Mohammadreza Teymoorianfard, Abhinav Kumar, Amir Houmansadr and Eugene Bagdasarian
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+Original arXiv v1, submitted 27 August 2025 at 21:24 UTC, verified against the
+[version history](https://arxiv.org/abs/2508.20282). Read the complete
+[v1 paper](https://arxiv.org/html/2508.20282v1), including appendices and inference
+templates. The January 2026 revision and later USENIX appearance do not determine
+eligibility or scores. This explicit six-category rejudgement replaces the
+compact 68.0 assessment in the 2026 audit; its original arithmetic is unknown
+and is not reconstructed. Absent from the 2025 original nominations.
+
+### Core contribution
+
+Local research agents amplify a private request into a dense sequence of visits
+to semantically related web domains. A passive observer who sees those domains
+can use a few labelled examples and an LLM to infer the originating task; repeated
+sessions support trait inference. The added capability is reconstruction of
+free-form agent intent from its browser actions, rather than a classifier for a
+preselected website or search keyword. The observer needs domain visibility and
+separable local sessions, but not page content, the user prompt or model access.
+
+The original evaluates GPT Researcher, Browser Use and AutoGen traces; two agents
+are instructed to visit at least five sites. Prompt evaluation uses TREC queries,
+while traits use generated personas whose queries intentionally expose selected
+traits. The reported 0.77 functional and 0.735 domain-equivalence results are
+LLM-judged similarity dimensions, not percentages of exactly recovered prompts.
+The 19-of-32 trait result likewise uses similarity thresholds on synthetic data.
+
+### Prior art
+
+Local backward searches found the already-listed 2019
+[search-autocomplete keylogging attack](https://www.usenix.org/conference/usenixsecurity19/presentation/monaco),
+which recovers typed search text from timing and protocol-dependent lengths.
+[Oh, Li and Hopper's 2017 keyword fingerprinting](https://petsymposium.org/popets/2017/popets-2017-0048.php)
+classifies monitored search keywords using Tor traffic features.
+[Weiss, Ayzenshteyn and Mirsky, March 2024](https://arxiv.org/abs/2403.09751)
+infer AI-assistant responses from streamed-token lengths. These establish that
+encrypted traffic can disclose user intent; the 2025 contribution is the
+agent-created sequence of domain semantics as an additional observation channel,
+with open-ended inference and a multi-session extension. It is not the first
+traffic inference or demographic profiling attack.
+
+An independent web search for pre-cutoff research-agent domain privacy and
+prompt inference did not locate the same demonstrated method. Later related
+agent-query papers were excluded from all six scores. Comparison against 2025
+prompt-injection nominations found a different trust boundary: passive exposure
+through actions, rather than attacker instructions changing those actions.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 66 | 25% | 16.50 | Meaningful new observation and inference method within established traffic privacy attacks. |
+| Transferability | 76 | 20% | 15.20 | Several browsing-agent architectures share task-driven domain expansion, subject to visibility. |
+| Lasting value | 74 | 20% | 14.80 | Provides a reusable test for privacy leakage through delegated web actions and session composition. |
+| Technical soundness | 64 | 15% | 9.60 | Ablations and multiple agents support the narrower leakage claim; synthetic traits and lenient model judging constrain recovery claims. |
+| Practical usability | 60 | 10% | 6.00 | Domain-log inference is feasible, but encrypted DNS/ECH, tunnel placement and session mixing affect observation. |
+| Clarity and reproducibility | 74 | 10% | 7.40 | Detailed datasets, settings and templates; no credit for code availability added after v1. |
+
+**Final score: 69.5/100.** Computed with `score.py 66 76 74 64 60 74`.
+Archive decision: include as a supporting reference in 2025.
+
+### Reverification
+
+- Rechecked arXiv chronology independently of the 2026 conference label and
+  compared the original nomination set by mechanism as well as URL.
+- Read the appendix scoring prompts: OBELS uses abstracted intent/source/entity
+  matches and encourages partial agreement. It is not an independent execution
+  test demonstrating that a recovered prompt completes the same task.
+- The strongest objection is that domains have always revealed interests.
+  The measured amplification through agent task decomposition and reusable
+  inference experiment add enough beyond that observation for an extension,
+  with originality below a new-class claim.
+- Trait experiments are deliberately revealing synthetic personas; logged
+  agent visits often stand in for network capture. A user's ISP cannot directly
+  observe a remote hosted agent's browsing, so those traces do not establish that
+  threat model. The 70–140-domain figure is not universal across agents.
+- Full primary evidence supports a 2025 technique despite these limitations;
+  no live interception was performed and no later replication was credited.
+
+### Verdict
+
+Meaningful extension. Add one grouped 2025 entry for v1 and its PDF. The older
+2026 exclusion remains correct on year, while its historical omission is fixed.
+
+## 56.8 — [RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox](https://doi.org/10.1145/3719027.3744832) — Xiang Li, Mingming Zhang, Zuyao Xu, Fasheng Miao, Yuqi Qiu, Baojun Liu, Jia Zhang, Xiaofeng Zheng, Haixin Duan, Zheli Liu, Yunhai Zhang and Dunqiu Fan
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Full original CCS 2025 paper, read in the intact archived author document.
+The [author's publication page](https://zhangmm.net/publication/ccs25-rebirthday/)
+labels it July 2025; the
+[institution's September 2025 announcement](https://dissec.nankai.edu.cn/2025/0922/c34486a578225/page.htm)
+and October 2025 proceedings independently establish the year. Exact earliest
+public day is unresolved, so no 2025 prior work is used against it. The 2026
+Black Hat presentation is a later presentation. This new full judgement replaces
+the compact 76.8 claim preserved in the 2026 README; no original six-score table
+exists to reconstruct. It was not nominated in 2025.
+
+### Core contribution
+
+Different ECS subnets separate otherwise identical in-flight DNS queries.
+Accepting replies without ECS removes that distinction, so many outstanding
+queries can match an attacker's forged response attempts. The paper implements
+this birthday-poisoning attack against current resolvers and measures aggregation
+and randomness weaknesses across software, routers and public services.
+Its strongest remaining contribution is empirical validation and a reproducible
+deployment-testing procedure, not the first description of the ECS mechanism.
+
+The paper's 18-of-22 software headline combines six ECS-related implementations
+with eleven lacking aggregation and one with weak randomness. Three controlled
+poisoning demonstrations succeed, while Technitium yields denial of service
+without establishing poisoning. Internet measurements test prerequisites rather
+than actually poisoning the surveyed resolvers.
+
+### Prior art
+
+Local DNS-poisoning searches and the original paper's references led to
+[CERT VU#457875, November 2002](https://www.kb.cert.org/vuls/id/457875):
+concurrent same-record queries increase spoofed-answer collision probability.
+More decisively, an independent pre-2025 ECS/birthday search found
+[RFC 7871 §11.2, May 2016](https://www.rfc-editor.org/rfc/rfc7871#section-11.2).
+It explicitly describes varying ECS to create concurrent same-name queries,
+the need to match ECS response fields, and bypassing that match by flooding
+responses with no ECS because compatibility rules accept their absence. This is
+the exact relevant security use, not simply documentation of old components.
+The paper cites RFC 7871 but does not identify a new step that escapes this
+earlier threat description. Its current implementations and larger census do
+not by themselves establish a new technique. Other port side-channel and
+bailiwick attacks are less close prior art than this explicit ECS account.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 30 | 25% | 7.50 | Substantial empirical follow-through on an explicitly described attack, with no distinct new offensive mechanism established. |
+| Transferability | 74 | 20% | 14.80 | ECS aggregation and response matching span independent resolver implementations. |
+| Lasting value | 62 | 20% | 12.40 | Concrete deployment checks and experimental data give the older warning useful testing value. |
+| Technical soundness | 66 | 15% | 9.90 | Packet model and controlled results are detailed; broad vulnerability totals are weaker than demonstrated exploitation. |
+| Practical usability | 48 | 10% | 4.80 | Requires spoofing and favorable timing; experiments change resolver limits and delay legitimate replies. |
+| Clarity and reproducibility | 74 | 10% | 7.40 | Packet layouts, settings and test procedure are provided, though the headline conflates different failure classes. |
+
+**Final score: 56.8/100.** Computed with `score.py 30 74 62 66 48 74`.
+Archive decision: exclude from the missed-technique list; nonqualifying verdict.
+
+### Reverification
+
+- Re-read RFC 7871 §11.2 separately from the paper's novelty claim. Its missing-ECS
+  attack is explicit and public nine years before the candidate.
+- Considered the strongest alternative, a tooling or methodology contribution.
+  The measurement sends repeated queries to owned authoritative infrastructure
+  and counts aggregation/forwarding outcomes. This is a useful application of
+  the specified threat predicates, not a distinct demonstrated discovery method.
+- Publication-time experiments impose 0.5–1-second legitimate-answer delays;
+  Unbound's per-thread query limit is raised, and PowerDNS near-miss protection
+  is disabled. Source spoofing, ECS configuration and DNSSEC/0x20 constraints
+  remain. These settings limit practical claims but do not invalidate the
+  controlled mechanism.
+- The Internet census establishes vulnerable-looking prerequisites rather than
+  successful attacks on 365,000 resolvers. CVE counts and later vendor response
+  are not novelty or lasting-value evidence. No attack was run during this review.
+- Benefit of doubt preserves strong cross-implementation and empirical value;
+  it cannot convert an explicit prior attack into an original extension.
+
+### Verdict
+
+Useful application or case study. Remove the earlier compact-score addition.
+The year is correctly 2025, but the exact attack predates it and the remaining
+empirical contribution does not pass the qualifying novelty-verdict gate.
+
+## 64.6 — [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits](https://spectrum.library.concordia.ca/id/eprint/996198/) [Thesis](https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf) — Tariq Houis; related conference paper with Shaoqi Jiang, Mohammad Mannan and Amr Youssef
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits (Bullseye)
+- **Author:** Tariq Houis, Concordia University; the related NDSS paper credits Tariq Houis, Shaoqi Jiang, Mohammad Mannan and Amr Youssef.
+- **Publication date / novelty cutoff:** 4 November 2025, 16:48, verified repository deposit and unchanged modification timestamp. The cover's May 2025 and catalogue's 13 August thesis dates do not establish public availability.
+- **Reference:** [Full thesis](https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf); [deposit record](https://spectrum.library.concordia.ca/id/eprint/996198/).
+
+Fresh full review on 9 September 2026, replacing the 57.8 compact assessment that incorrectly treated the conference appearance as a 2026 contribution. Checked the 2025 curated nominations and original PortSwigger nomination page for title, authors and mechanism overlap; this tool is absent.
+
+### Core Contribution
+
+Combine package-specific valid arguments extracted from developer tests with typed attack fragments, enumerate less obvious exported entry points, and validate each attempt through recursive and differential prototype observations. This creates a practical discovery method for previously unknown pollution sources, including functions that need a valid options argument alongside the attack input. It does not establish application-level attacker reachability or downstream RCE. The full thesis already includes the dual oracles, proxy-based sink locator, ablations and the same package study as the later conference paper.
+
+### Prior Art
+
+- [Arteau's NorthSec 2018 release](https://github.com/HoLyVieR/prototype-pollution-nsec18) supplies the underlying dynamic reflection/fixed-exploit approach. The local 2018 archive and original release were checked. Bullseye explicitly inherits these inputs rather than introducing prototype pollution.
+- [JSGo, CCS 2024](https://netsec.ccert.edu.cn/files/papers/ccs24-testsuite.pdf), especially sections 3–4, already converts test-suite knowledge into vulnerability-triggering inputs, including prototype pollution. It uses trace alignment to construct HTTP requests for a known target location. Bullseye instead discovers sources across package entry points through simpler typed argument combinations.
+- [PoCGen v1](https://arxiv.org/html/2506.04962v1) ([5 June 2025 submission record](https://arxiv.org/abs/2506.04962v1)) already dynamically enumerates package exports, statically extracts test usage snippets, combines them with exploit examples, and validates prototype pollution at runtime. It starts from a vulnerability report and uses iterative LLM generation, whereas Bullseye is a deterministic discovery pipeline without a known vulnerability report.
+- The incremental contribution is the integrated source-discovery method and its demonstrated complementary coverage. Testsuite guidance or automatic PoC generation alone cannot be claimed as new. Only the 2025 thesis and pre-cutoff sources affect these scores; the 2026 paper is used to verify duplication, not to supply later benefits.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 52/100 | 25% | 13.00/25 | Known testing ideas are combined into a distinct discovery pipeline with improved entry coverage and richer pollution observations. |
+| Transferability | 71/100 | 20% | 14.20/20 | Package tests can supply otherwise missing argument constraints across JavaScript libraries; the method remains language and oracle dependent. |
+| Lasting value | 70/100 | 20% | 14.00/20 | Combining valid usage with attack fragments and measuring observation blind spots provides durable testing guidance. |
+| Technical soundness | 66/100 | 15% | 9.90/15 | Baselines and ablations support the incremental method, with denominator inconsistencies and disputed reachability classifications limiting broad claims. |
+| Practical usability | 61/100 | 10% | 6.10/10 | Detailed construction is usable by researchers; the cutoff document promises a future code release and cannot show real application exploitability. |
+| Clarity and reproducibility | 74/100 | 10% | 7.40/10 | Full algorithms, seed tables, timings, experimental settings and limitations allow substantial reconstruction without counting later artifacts. |
+
+**Final score: 64.6/100.** Computed with `score.py 52 71 70 66 61 74`.
+
+### Reverification
+
+Read the complete 72-page original thesis, including references and appendices, then reopened the deposit metadata and compared the conference paper's contribution, algorithms, experiment sizes and appendices. A second prior-art search for test-guided exploit generation found PoCGen's June 2025 version, which materially narrows the novelty beyond the thesis's own related-work discussion. JSGo's original methodological sections were also reopened. Both are pre-cutoff original sources.
+
+The strongest objection is that existing test-guided validation already provides the general idea. The favorable, supported reading is a complementary discovery design, with ablations attributing gains to input pairing and richer observations; this justifies a methodology verdict rather than an original attack label. The 0.51-second headline is amortized parallel throughput, excluding download and installation, while individual packages average 32.38 seconds. “No false positives” concerns observed pollution under package-level input control, not confirmed remote attack paths. The thesis reports 807 entry points in its main result but 818 in ablations, and sometimes labels baseline-only results unknown rather than proved false positives. Its exclusion of `constructor.prototype` assumes equivalence that need not hold when filters distinguish keys. Its 100-ms timeout and partial AST handling can miss valid cases. These are publication-time limitations. No tool was executed, and no later CVEs, patches, adoption or code release increased any score.
+
+### Verdict
+
+**Tooling or methodology contribution; include as a supporting reference in 2025.** The combined discovery workflow clears 55 and is distinct from report-driven PoC synthesis and known-sink HTTP validation. It is excluded from the 2026 display because the full contribution was public in 2025. Confidence is medium: first public code availability and any earlier full disclosure remain uncertain, and the original artifact was promised rather than verified at the cutoff.
+
+---
+
+## 69.1 — [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction](https://zenodo.org/records/17822391) [Source code](https://github.com/diwangs/transparent-ae/tree/v1.0.0) — Senapati Diwangkara and Yinzhi Cao
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction
+- **Author or organisation:** Senapati Diwangkara and Yinzhi Cao
+- **Publication date / novelty cutoff:** 4 December 2025: public Zenodo v1.0.0 artifact, created the same day. The NDSS conference publication is February 2026 and is not the original technique year.
+- **Reference:** [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction](https://www.ndss-symposium.org/wp-content/uploads/2026-f1721-paper.pdf)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.6-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Automates framework-specific taint-sink models by working backward from dangerous DOM operations through SPA runtimes. Framework tests supply dynamic stack traces to repair missing static call edges; value/key analysis identifies exposed JavaScript parameters; transpiler test pairs recover the corresponding HTML/JSX/template attributes. These generated abstractions feed ordinary application taint analysis. The public 2025 artifact already implements the central combination; the later paper explains the same method.
+
+### Prior Art
+
+- **First public evidence:** [Zenodo v1.0.0, 4 December 2025](https://zenodo.org/records/17822391), links an immutable [GitHub v1.0.0 tree](https://github.com/diwangs/transparent-ae/tree/v1.0.0). The full release README, autostitch implementation, template-mapping implementations and evaluation driver were read. This is working technical source, not an empty repository or acceptance notice.
+- **Local and closest prior:** [ReactAppScan, CCS October 2024](https://yinzhicao.org/reactappscan/reactappscan.pdf), also preserved locally, models React lifecycles and cross-component data flow but uses a curated sink list (§5/Table 2). It already covers JSX attributes, refs and DOM writes: those underlying exploits are not new.
+- **Earlier analysis foundations:** [Madsen, Livshits and Fanning, Microsoft technical report, November 2012](https://www.microsoft.com/en-us/research/publication/practical-static-analysis-of-javascript-applications-in-the-presence-of-frameworks-and-libraries/) combines use and pointer analysis to avoid handwritten library stubs. [Chakraborty et al., ECOOP 2022](https://manu.sridharan.net/files/ECOOP22-RootCause.pdf), public preprint 13 May 2022, compares dynamic and static flows to diagnose missing JavaScript call edges. This precedes the use of runtime evidence to improve framework analysis.
+- **Distinct increment:** Amortized sink abstraction across multiple SPA runtimes and template syntaxes, rather than a new XSS primitive or the first hybrid JavaScript analysis. The 2026 paper was read in full to verify mechanism identity; later conference recognition, patch outcomes and unsupported later additions do not increase any score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58/100 | 25% | 14.50/25 | A meaningful automation combination beyond curated React sinks and earlier dynamic/static graph comparison; the constituent analyses and underlying DOM exploits are established. |
+| Transferability | 75/100 | 20% | 15.00/20 | The abstraction applies to Vue, React and Angular, with reusable separation between framework and application; typed sources and runnable framework tests remain prerequisites. |
+| Lasting value | 76/100 | 20% | 15.20/20 | Learning sink models from runtime/compiler tests can reduce recurring model maintenance and support future framework versions without relying on a particular vulnerability remaining open. |
+| Technical soundness | 68/100 | 15% | 10.20/15 | Historical implementation supplies concrete stitching and mapping logic plus evaluation drivers, with explicit framework-specific heuristics; it is not a soundness proof or independently rerun result. |
+| Practical usability | 69/100 | 10% | 6.90/10 | Versioned code, datasets and installation workflow support reuse, though Nix, Git LFS, CodeQL and framework-specific setup impose material cost. |
+| Clarity and reproducibility | 73/100 | 10% | 7.30/10 | The immutable README, implementation and test fixtures expose the process clearly; the later paper clarifies the same process, but its reported aggregate results are not treated as independently verified. |
+
+**Final score: 69.1/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the immutable release, the full conference paper, ReactAppScan’s actual source/sink table and the ECOOP 2022 dynamic/static comparison. A second mechanism search for library summaries and missing-call-edge recovery found the 2012 report, reducing any claim of foundational novelty. Corrected ReactAppScan’s venue from the candidate bibliography’s S&P attribution to CCS 2024. ReactAppScan already lists DOM attribute sinks, so the candidate’s broad “none considered” statement is not accepted literally. Its 14 additional CodeQL sink categories are not 14 newly invented exploits. The historical autostitch code contains a React workLoop special case, and template mapping uses heuristics, so “generic” is conditional. The paper reports 24/57 false discoveries; package-level flows can require an external sanitizer and need not be exploitable end-to-end in every embedding. Its appendix says 24 baseline alerts while Table IV uses 34, an unresolved reproducibility inconsistency. Tests and source were inspected but not executed. The nomination page and complete local 2025 list were checked by title, authors, URLs and mechanism; this contribution is absent. The score evaluates the public December 2025 artifact, without rewarding later adoption or asserting every conference result was already documented in December.
+
+### Verdict
+
+**Tooling or methodology contribution; supporting archive inclusion in 2025.** The 2025 artifact clears the 55-point historical gate and is not an existing 2025 nomination. Include the artifact once in 2025; exclude this later conference copy from the 2026 display.
+
+---
+
+## 61.3 — [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](https://funeoka-yumee.github.io/assets/files/ndss26_alias.pdf) [OriginMail](https://github.com/lab-rynth/OriginMail) — Mengying Wu, Geng Hong, Jiatao Chen, Baojun Liu, Mingxuan Liu and Min Yang
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases
+- **Author or organisation:** Mengying Wu, Geng Hong, Jiatao Chen, Baojun Liu, Mingxuan Liu and Min Yang
+- **Publication date / novelty cutoff:** 23 April 2025 for the substantive OriginMail normalization implementation; 29 July 2025 for the complete public preprint in the author’s Git history. September 2025 camera-ready and February 2026 conference publication are later copies.
+- **Reference:** [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](https://funeoka-yumee.github.io/assets/files/ndss26_alias.pdf)
+
+Fresh full evaluation during the September 2026 threshold reconciliation; migrated from a compact 2026 record after verifying the original 2025 disclosure.
+
+### Core Contribution
+
+Systematically probes provider-specific email alias rules and compares them with account-registration checks, then supplies a normalization implementation and a study of human alias classification. The reusable increment is a cross-provider test matrix covering prefix, infix, suffix, case and domain transformations, including unusual provider rules. It extends known email canonicalization and identity-confusion analysis rather than inventing alias-based account multiplication or phishing.
+
+### Prior Art
+
+- **Candidate-side disclosure:** [OriginMail implementation, 23 April 2025](https://github.com/lab-rynth/OriginMail/blob/71e8d6e38130d739bf73acd88072eaa555607a9a/src/OriginMail.py) already contains the provider-specific transformation rules. The [complete preprint, 29 July 2025](https://raw.githubusercontent.com/funeoka-yumee/funeoka-yumee.github.io/0c6460ebb20ec38b4acff180d455b7959e6f39a6/assets/files/ndss26_alias.pdf) contains the comparative measurement and user study. Immutable Git timestamps are the available evidence; independent first-live snapshots were not found.
+- **Earlier foundations and tooling:** [RFC 5233, January 2008, §4](https://www.rfc-editor.org/rfc/rfc5233) explicitly describes implementation-specific subaddress splitting, including prefixes, and warns that applying local rules to foreign addresses can misidentify them. [normalize-email, July 2015 release](https://github.com/johno/normalize-email/blob/de0dc4f1d79f2d1875aacd5ea75a00f9e6a4e22c/index.js) already normalizes provider-specific dots/plus tags/domain aliases; [August 2017 code](https://github.com/johno/normalize-email/blob/5c959f44294913628b270872e172029ae3b6e59d/index.js) explicitly adds Outlook-specific rules. Both historical implementations were read.
+- **Earlier exploitation:** [James Fisher, 7 April 2018](https://jameshfisher.com/2018/04/07/the-dots-do-matter-how-to-scam-a-gmail-user/) describes Gmail/Netflix identity disagreement and a concrete payment phishing scenario. [Castle, 9 July 2025](https://blog.castle.io/detecting-gmail-based-fake-accounts-what-emailnator-teaches-us/) measured 46,000 Gmail variants collapsing to 291 roots and discussed free-tier abuse plus normalization. Castle predates the full July paper but postdates OriginMail’s April implementation, so it cannot diminish the April tool contribution.
+- **Local check and distinction:** Mechanism searches found email-parsing and account-abuse material but no earlier preserved equivalent of this five-transformation, 28-provider/18-platform matrix. This is a useful measurement/tooling extension; the older account-abuse campaign and normalization concept are not new attacks. The full July preprint was compared against the fully read conference paper, with every changed earlier sentence read separately; later revised wording, artifact badges and recognition do not affect any score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 48/100 | 25% | 12.00/25 | Broadens an established canonicalization/identity-confusion method into a comparative probe matrix and more unusual rules; core normalization and alias abuse precede it. |
+| Transferability | 72/100 | 20% | 14.40/20 | Provider/consumer interpretation mismatches recur in registration, abuse detection and account correlation beyond any one service. |
+| Lasting value | 70/100 | 20% | 14.00/20 | The test dimensions and separation of provider truth from relying-party interpretation support future testing; a static rule table still requires maintenance. |
+| Technical soundness | 52/100 | 15% | 7.80/15 | Actual delivery probes and registration observations support implementation findings, but survey classification is not observed phishing compromise and several internal table/assertion inconsistencies limit stronger conclusions. |
+| Practical usability | 65/100 | 10% | 6.50/10 | The original Python implementation and explicit transformations are usable in testing; ambiguous 2925 prefixes yield candidate roots rather than a uniquely safe normalization oracle. |
+| Clarity and reproducibility | 66/100 | 10% | 6.60/10 | The immutable source and detailed preprint expose procedures and limitations, although aggregate documentation judgments and survey arithmetic contain unresolved errors. |
+
+**Final score: 61.3/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the historical implementation, complete July preprint and its differences from the conference copy; independently searched disposable-account abuse and provider-specific normalization history. The April code already includes Eclipso separators, Proton punctuation and 2925 prefix candidates; these are not 2026 inventions. RFC 5233 expressly anticipates implementation-specific prefix/suffix conventions. The 2015/2017 library verifies prior provider-specific normalization, while Castle is used only against the later paper measurement claim. The study enrolled 304 people but analyzes 174 passing attention; its 31.65% concerns alias-classification errors, not measured phishing clicks or account compromise. Table VI says 151/174 equals 65.52%, which is arithmetically inconsistent. Its Eclipso plus example conflicts with the detailed separator set and historical code. Registration-check acceptance does not prove unlimited activated accounts or resource theft; only two actual accounts per tested platform were created. Provider-local case folding is not by itself an SMTP violation. The 139-account npm campaign is evidence reused from the authors’ earlier corpus, not a freshly invented attack. No experiment or supplied code was executed. The complete 2025 list and previously fetched nomination set were checked by title, authors, URLs and mechanism; this grouped contribution was absent. Earlier publication evidence changes placement, not research credit.
+
+### Verdict
+
+**Tooling or methodology contribution; supporting archive inclusion in 2025.** The 61.3-point methodology contribution passes the historical 55-point gate. Include it once under 2025, grouping the preprint with OriginMail, and exclude the later NDSS copy from the 2026 display.
+
+---

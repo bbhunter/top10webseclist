@@ -3,6 +3,8 @@
 let YEAR_RECORDS = [];
 let YEAR_FILES = [];
 let ARCHIVE_CATALOGUE = null;
+let ARCHIVE_DIAGRAMS = Object.create(null);
+let diagramRequest = null;
 let LARGE_PDF_FALLBACKS = new Map();
 const loadedCollections = new Set();
 const collectionRequests = new Map();
@@ -391,6 +393,10 @@ function safeArchivePath(value, kind) {
   if (/[\\?#%\u0000-\u001f]/.test(value) || value.startsWith("/") || value.split("/").includes("..")) return "";
   const expected = kind === "md"
     ? /^archived-references\/md\/[a-z0-9-]+\/[a-z0-9._-]+\.md$/i
+    : kind === "figure"
+      ? /^archived-references\/figures\/[a-z0-9-]+\/[a-z0-9._-]+\/[a-z0-9_-][a-z0-9._-]*\.png$/i
+    : kind === "diagram"
+      ? /^archived-references\/diagrams\/[a-f0-9]{64}\.svg$/
     : kind === "listingPdf"
       ? /^original-listings\/[0-9-]+-(?:top10|nominees-and-top10)\.pdf$/i
       : /^archived-references\/pdf\/[a-z0-9-]+\/[a-z0-9._-]+\.pdf$/i;
@@ -3764,6 +3770,13 @@ function inlineMarkdown(value) {
     return hold(`<code>${code}</code>`);
   });
 
+  // Only repository-owned figure crops can load automatically. The exact
+  // relative syntax cannot resolve to an arbitrary URL or escape the archive.
+  output = output.replace(/!\[([^\[\]\n]{0,500})\]\(\.\.\/\.\.\/(figures\/[a-z0-9-]+\/[a-z0-9._-]+\/[a-z0-9_-][a-z0-9._-]*\.png)\)/gi, (_, alt, relative) => {
+    const path = safeArchivePath(`archived-references/${relative}`, "figure");
+    return path ? hold(`<span class="archive-figure"><img src="${h(archiveUrl(path, "figure"))}" alt="${alt}" loading="lazy" decoding="async"></span>`) : alt;
+  });
+
   // Preserved Markdown is third-party input. Loading its images automatically
   // would let a document probe private-network URLs, make cookie-bearing image
   // requests, or track every reader. Keep the URL available behind an explicit
@@ -3798,6 +3811,21 @@ function demotedHeading(line) {
   return line.length > 300 && /^#{1,6}\s+/.test(line)
     ? line.replace(/^#{1,6}\s*/, "")
     : line;
+}
+
+async function ensureDiagramIndex() {
+  if (!ARCHIVE_CATALOGUE?.diagramIndex) return;
+  if (!diagramRequest) {
+    diagramRequest = (async () => {
+      const response = await fetch(`data/diagrams.json?v=${encodeURIComponent(ARCHIVE_CATALOGUE.version)}`, { credentials: "same-origin", cache: "default" });
+      if (!response.ok) throw new Error(`Diagram index returned ${response.status}`);
+      const index = await response.json();
+      if (index?.schema !== 1 || index.version !== ARCHIVE_CATALOGUE.version || !index.diagrams || typeof index.diagrams !== "object" || Array.isArray(index.diagrams)) throw new Error("Diagram index does not match this archive");
+      for (const value of Object.values(index.diagrams)) if (!safeArchivePath(value, "diagram")) throw new Error("Invalid preserved diagram path");
+      ARCHIVE_DIAGRAMS = index.diagrams;
+    })().catch((error) => { diagramRequest = null; throw error; });
+  }
+  return diagramRequest;
 }
 
 function markdownDocument(markdown) {
@@ -3836,7 +3864,14 @@ function markdownDocument(markdown) {
       const code = [];
       index++;
       while (index < lines.length && !/^```/.test(lines[index].trim())) code.push(lines[index++]);
-      html.push(`<pre><code${language ? ` class="language-${h(language)}"` : ""}>${highlightCode(code.join("\n"), language)}</code></pre>`);
+      const source = code.join("\n");
+      const diagrams = ARCHIVE_DIAGRAMS;
+      const diagramPath = language === "mermaid" && Object.hasOwn(diagrams, source.trim())
+        ? safeArchivePath(diagrams[source.trim()], "diagram") : "";
+      const listing = `<pre><code${language ? ` class="language-${h(language)}"` : ""}>${highlightCode(source, language)}</code></pre>`;
+      html.push(diagramPath
+        ? `<figure class="archive-figure"><img src="${h(archiveUrl(diagramPath, "diagram"))}" alt="Diagram reconstructed from the preserved source" loading="lazy"><details><summary>Diagram source</summary>${listing}</details></figure>`
+        : listing);
       continue;
     }
     // A HEADING THE LENGTH OF AN ARTICLE IS NOT A HEADING. Some sources put a
@@ -3864,7 +3899,33 @@ function markdownDocument(markdown) {
     }
     if (line.includes("|") && /^\s*\|?\s*:?-{3,}/.test(next)) {
       flushParagraph();
-      const splitRow = (row) => row.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+      const splitRow = (row) => {
+        const source = row.trim().replace(/^\|/, "");
+        const cells = [];
+        let cell = "";
+        let codeTicks = 0;
+        for (let offset = 0; offset < source.length; offset++) {
+          const character = source[offset];
+          if (character === "\\" && source[offset + 1] === "|") {
+            cell += "|";
+            offset++;
+          } else if (character === "`") {
+            let count = 1;
+            while (source[offset + count] === "`") count++;
+            if (!codeTicks) codeTicks = count;
+            else if (codeTicks === count) codeTicks = 0;
+            cell += "`".repeat(count);
+            offset += count - 1;
+          } else if (character === "|" && !codeTicks) {
+            cells.push(cell.trim());
+            cell = "";
+          } else {
+            cell += character;
+          }
+        }
+        if (cell.trim() || !source.endsWith("|")) cells.push(cell.trim());
+        return cells;
+      };
       const headers = splitRow(line);
       index += 2;
       const rows = [];
@@ -3963,6 +4024,11 @@ async function openReader(item, options = {}) {
     if (!response.ok) throw new Error(`Markdown returned ${response.status}`);
     const markdown = await responseMarkdownText(response);
     if (requestToken !== readerRequestToken || state.readerItem !== item) return;
+    if (/^```mermaid\s*$/m.test(markdown)) {
+      // If the optional figures are unavailable, retain readable source code.
+      await ensureDiagramIndex().catch((error) => console.warn(error.message));
+      if (requestToken !== readerRequestToken || state.readerItem !== item) return;
+    }
     const documentView = markdownDocument(markdown);
     $("#reader-content").innerHTML = `<div class="archive-warning">Safe reader mode: third-party HTML is escaped, scripts cannot run, and external links and images require a separate click.</div>${documentView.html}`;
     $("#reader-toc").innerHTML = documentView.headings.slice(0, 40).map((heading) => `<button class="${heading.level > 2 ? "sub" : ""}" data-reader-target="${h(heading.slug)}">${h(short(heading.title, 52))}</button>`).join("");

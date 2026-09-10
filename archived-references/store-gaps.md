@@ -32,74 +32,35 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-181 archived reference(s) name 219 store object(s) that are no longer held: 44 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 162 raw_sha256.
+101 archived reference(s) name 127 store object(s) that are no longer held: 32 browser_dom_sha256, 2 landing_sha256, 93 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
-| <http://bindshell.net/papers/ftppasv> | article | `raw_sha256` | `2007.md:72` |
 | <http://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html> | article | `raw_sha256`, `browser_dom_sha256` | `2022.md:24` |
-| <http://blog.quaji.com/2009/12/out-of-context-information-disclosure.html> | article | `raw_sha256` | `2009.md:77` |
 | <http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/> | article | `raw_sha256` | `2007.md:13` |
 | <http://ha.ckers.org/blog/20070216/embeding-svg-that-contains-xss-using-base64-encoding-in-firefox/> | article | `raw_sha256` | `2007.md:79` |
-| <http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/> | article | `raw_sha256` | `2007.md:62` |
-| <http://ha.ckers.org/blog/20070702/ie60-protocol-guessing/> | article | `raw_sha256` | `2007.md:53` |
-| <http://ha.ckers.org/blog/20070725/res-timing-attack/> | article | `raw_sha256` | `2007.md:52` |
 | <http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/> | article | `raw_sha256` | `2007.md:48` |
-| <http://ha.ckers.org/blog/20070901/recursive-request-dos/> | article | `raw_sha256` | `2007.md:44` |
-| <http://ha.ckers.org/blog/20071112/effects-of-dns-rebinding-on-ies-trust-zones/> | article | `raw_sha256` | `2007.md:47` |
-| <http://ha.ckers.org/blog/20071209/exaggerating-timing-attack-results-via-get-flooding/> | article | `raw_sha256` | `2007.md:45` |
-| <http://ha.ckers.org/blog/20071209/initiatin-probes-against-servers-via-other-servers/> | article | `raw_sha256` | `2007.md:46` |
-| <http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/> | article | `raw_sha256` | `2008.md:26` |
 | <http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/> | article | `raw_sha256` | `2008.md:28` |
 | <http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/> | article | `raw_sha256` | `2008.md:36` |
 | <http://ha.ckers.org/blog/20080520/http-proxies-bypass-firewalls/> | article | `raw_sha256` | `2008.md:35` |
-| <http://ha.ckers.org/blog/20090120/persistent-cookies-and-dns-rebinding-redux/> | article | `raw_sha256` | `2009.md:14` |
-| <http://ha.ckers.org/blog/20090713/hash-information-disclosure-via-collisions-the-hard-way/> | article | `raw_sha256` | `2009.md:21` |
-| <http://ha.ckers.org/blog/20090809/smbenum/> | article | `raw_sha256` | `2009.md:27` |
-| <http://ha.ckers.org/blog/20091117/dns-rebinding-for-credential-brute-force/> | article | `raw_sha256` | `2009.md:26` |
-| <http://ha.ckers.org/blog/20091118/dns-rebinding-for-scraping-and-spamming/> | article | `raw_sha256` | `2009.md:14`, `2009.md:28` |
 | <http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/> | article | `raw_sha256` | `2010.md:29` |
 | <http://ha.ckers.org/blog/20100820/quick-proxy-detection/> | article | `raw_sha256` | `2010.md:26` |
 | <http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/> | article | `raw_sha256` | `2010.md:25` |
-| <http://krebsonsecurity.com/2015/05/st-louis-federal-reserve-suffers-dns-breach/> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:25` |
-| <http://ui-redressing.mniemietz.de/> | article | `content_sha256` | `2010.md:76` |
-| <http://web.archive.org/web/20160507023636/http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/> | article | `raw_sha256` | `2013.md:34` |
-| <http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/domxss.pdf> | whitepaper | `content_sha256` | `2013.md:12` |
 | <http://web.archive.org/web/20160507023636/http://slid.es/mscasharjaved/trusted-friend-attack> | article | `raw_sha256` | `2013.md:35` |
-| <http://web.archive.org/web/20160507023636/http://threatpost.com/patches-for-django-framework-fix-dos-vulnerability/102323> | article | `raw_sha256` | `2013.md:28` |
 | <http://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689> | article | `raw_sha256` | `2013.md:31` |
 | <http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet> | slides | `raw_sha256` | `2013.md:20` |
-| <http://web.archive.org/web/20160507023636/https://communities.coverity.com/blogs/security/2013/05/29/struts2-remote-code-execution-via-ognl-injection> | article | `raw_sha256` | `2013.md:39` |
-| <http://web.archive.org/web/20160507023636/https://superevr.com/blog/2013/dont-use-linksys-routers/> | article | `raw_sha256` | `2013.md:29` |
-| <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter> | article | `raw_sha256` | `2013.md:30` |
 | <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/> | article | `raw_sha256` | `2013.md:23` |
-| <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/> | article | `raw_sha256` | `2013.md:18` |
-| <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/> | article | `raw_sha256` | `2013.md:13` |
-| <http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/> | article | `raw_sha256` | `2008.md:32` |
-| <http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf> | whitepaper | `content_sha256` | `2009.md:60` |
 | <http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database> | slides | `raw_sha256` | `2009.md:82` |
 | <http://www.thespanner.co.uk/2014/03/21/rpo/> | article | `raw_sha256` | `2014.md:64`, `2015.md:43` |
-| <http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:24` |
 | <https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization> | article | `raw_sha256`, `browser_dom_sha256` | `2024.md:43` |
 | <https://amolnaik4.blogspot.com/2011/03/exploitation-of-self-only-cross-site.html> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:49` |
-| <https://bahruz.me/publications/11844.pdf> | whitepaper | `content_sha256` | `2022.md:22` |
-| <https://blog.bentkowski.info/2018/07/vulnerability-in-hangouts-chat-aka-how.html> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:59` |
-| <https://blog.cm2.pw/exploiting-post-based-xssi/> | article | `raw_sha256` | `2020.md:33` |
-| <https://blog.mozilla.org/security/2015/03/23/revoking-trust-in-one-cnnic-intermediate-certificate/> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:35` |
 | <https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:8` |
-| <https://blog.orange.tw/2019/10/an-analysis-and-thought-about-recently.html> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:56` |
-| <https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:11` |
 | <https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/> | article | `raw_sha256`, `browser_dom_sha256` | `2022.md:37` |
 | <https://blog.viettelcybersecurity.com/sharepoint-toolshell/> | article | `raw_sha256`, `browser_dom_sha256` | `2025.md:46` |
 | <https://blog.viettelcybersecurity.com/tabshell-owassrf/> | article | `raw_sha256`, `browser_dom_sha256` | `2022.md:49` |
-| <https://bugs.chromium.org/p/project-zero/issues/detail?id=1139> | article | `content_sha256` | `2016-17.md:11` |
 | <https://bugs.webkit.org/show_bug.cgi?id=15936> | article | `raw_sha256` | `2007.md:101` |
 | <https://bugzilla.mozilla.org/show_bug.cgi?id=370445> | article | `raw_sha256`, `browser_dom_sha256` | `2007.md:78` |
-| <https://code.google.com/p/dominator/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:8` |
 | <https://code.google.com/p/puzzlemall/downloads/list> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:53` |
-| <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/> | article | `landing_sha256` | `2008.md:91` |
-| <https://diafygi.github.io/webrtc-ips/> | article | `raw_sha256` | `2015.md:76` |
-| <https://doi.org/10.1007/978-3-319-18467-8_7> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:79` |
 | <https://doi.org/10.1016/j.cose.2015.07.004> | article | `browser_dom_sha256` | `2015.md:77` |
 | <https://doi.org/10.1109/SP.2019.00025> | article | `browser_dom_sha256` | `2019.md:82` |
 | <https://doi.org/10.1109/SP.2019.00049> | article | `browser_dom_sha256` | `2019.md:75` |
@@ -114,18 +75,13 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://hackerone.com/reports/333419> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:41` |
 | <https://hackerone.com/reports/33935> | article | `raw_sha256`, `browser_dom_sha256` | `2014.md:50` |
 | <https://hackerone.com/reports/341876> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:39` |
-| <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:62` |
-| <https://hal.inria.fr/hal-01652021> | article | `raw_sha256` | `2016-17.md:106` |
+| <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:78` |
 | <https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:60` |
-| <https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html> | article | `raw_sha256`, `browser_dom_sha256` | `2006.md:8` |
-| <https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html> | article | `raw_sha256`, `browser_dom_sha256` | `2010.md:7` |
 | <https://jsfiddle.net/gcollazo/UMyEm/embedded/result/> | article | `browser_dom_sha256` | `2012.md:39` |
 | <https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7> | article | `raw_sha256` | `2025.md:36` |
-| <https://medium.com/@amineaboud/story-of-a-weird-vulnerability-i-found-on-facebook-fc0875eb5125> | article | `raw_sha256` | `2020.md:53` |
 | <https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c> | article | `raw_sha256` | `2016-17.md:9` |
 | <https://mksben.l0.cm/2018/05/cve-2018-5175-firefox-csp-strict-dynamic-bypass.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:25`, `2018.md:38` |
 | <https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:57` |
-| <https://skii.dev/rook-to-xss/> | article | `raw_sha256` | `2024.md:102` |
 | <https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps> | slides | `raw_sha256` | `2018.md:53` |
 | <https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis> | slides | `raw_sha256` | `2019.md:27` |
 | <https://speakerdeck.com/bo0om/at-home-among-strangers?slide=9> | slides | `raw_sha256` | `2019.md:23` |
@@ -141,11 +97,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries> | slides | `raw_sha256` | `2018.md:30` |
 | <https://speakerdeck.com/shhnjk/piloting-edge-copilot> | slides | `raw_sha256` | `2024.md:59` |
 | <https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer> | slides | `raw_sha256` | `2019.md:48` |
-| <https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html> | article | `raw_sha256` | `2024.md:82` |
-| <https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html> | article | `raw_sha256` | `2024.md:26` |
-| <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
-| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:98` |
-| <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
+| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:129` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |
 | <https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2011.md:41` |
 | <https://vulncheck.com/blog/juniper-cve-2023-36845> | article | `raw_sha256` | `2023.md:55` |
@@ -164,56 +116,24 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141> | article | `raw_sha256` | `2014.md:36` |
 | <https://web.archive.org/web/20160403035045/http://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250> | article | `raw_sha256` | `2014.md:27` |
 | <https://web.archive.org/web/20160403035045/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks> | article | `raw_sha256` | `2014.md:18` |
-| <https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014> | slides | `raw_sha256` | `2014.md:14` |
 | <https://web.archive.org/web/20160403035045/http://www.vupen.com/blog/20140520.Advanced_Exploitation_Firefox_UaF_Pwn2Own_2014.php> | article | `raw_sha256` | `2014.md:22` |
-| <https://web.archive.org/web/20160403035045/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf> | whitepaper | `content_sha256` | `2014.md:23` |
-| <https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/> | article | `raw_sha256` | `2014.md:51` |
-| <https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/> | article | `raw_sha256` | `2014.md:52` |
-| <https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/> | article | `raw_sha256` | `2012.md:5` |
-| <https://web.archive.org/web/20170903113359/http://news.ncsu.edu/releases/wms-enck-cloud-browsers/> | article | `raw_sha256` | `2012.md:19` |
-| <https://web.archive.org/web/20170903113359/http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html> | article | `raw_sha256` | `2012.md:19` |
 | <https://web.archive.org/web/20170903113359/http://www.scatmania.org/2012/04/24/visitor-tracking-without-cookies/> | article | `raw_sha256` | `2012.md:22` |
 | <https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11> | slides | `raw_sha256` | `2012.md:53` |
-| <https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities> | slides | `raw_sha256` | `2012.md:6` |
-| <https://web.archive.org/web/20170903113359/http://xs-sniper.com/blog/2012/10/11/content-smuggling/> | article | `raw_sha256` | `2012.md:27` |
-| <https://web.archive.org/web/20170903113359/https://github.com/FireFart/WordpressPingbackPortScanner> | article | `raw_sha256` | `2012.md:54` |
-| <https://web.archive.org/web/20170903113359/https://github.com/OpenSecurityResearch/clipcaptcha> | article | `raw_sha256` | `2012.md:58` |
 | <https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/exploiting-xss-in-ajax-web-applications/> | article | `raw_sha256` | `2012.md:30` |
 | <https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/> | article | `raw_sha256` | `2012.md:29` |
-| <https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/> | article | `raw_sha256` | `2012.md:23` |
-| <https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/> | article | `raw_sha256` | `2012.md:40` |
-| <https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/> | article | `raw_sha256` | `2015.md:39` |
-| <https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/> | article | `raw_sha256` | `2016-17.md:31` |
 | <https://webappdefender.blogspot.com/2026/02/lost-in-translation-exploiting-unicode.html> | article | `raw_sha256` | `2024.md:58` |
 | <https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/> | article | `raw_sha256` | `2010.md:74` |
 | <https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/> | article | `raw_sha256` | `2011.md:6` |
 | <https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018/> | article | `browser_dom_sha256`, `landing_sha256` | `2018.md:77` |
-| <https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/> | article | `content_sha256` | `2007.md:89` |
-| <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:31` |
-| <https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/> | article | `raw_sha256`, `browser_dom_sha256` | `2021.md:39` |
 | <https://www.kb.cert.org/vuls/id/120541/> | article | `raw_sha256`, `browser_dom_sha256` | `2009.md:99` |
 | <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/> | article | `landing_sha256` | `2010.md:93` |
-| <https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/> | article | `landing_sha256` | `2010.md:87` |
-| <https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/> | article | `landing_sha256` | `2010.md:88` |
-| <https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240> | article | `raw_sha256` | `2018.md:12` |
-| <https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-perspective/> | slides | `raw_sha256` | `2016-17.md:49` |
-| <https://www.slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save> | slides | `raw_sha256` | `2018.md:9` |
 | <https://www.slideshare.net/neexemil/hotpics-2021> | slides | `raw_sha256` | `2021.md:41` |
 | <https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions> | slides | `raw_sha256` | `2021.md:13` |
 | <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu> | article | `raw_sha256` | `2023.md:59` |
-| <https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html> | article | `raw_sha256` | `2024.md:125` |
 | <https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization> | article | `raw_sha256` | `2024.md:73` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html> | article | `raw_sha256` | `2008.md:87` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html> | article | `raw_sha256` | `2008.md:92` |
 | <https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html> | article | `raw_sha256` | `2019.md:21` |
-| <https://www.whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf> | whitepaper | `content_sha256` | `2006.md:5`, `2006.md:23` |
 | <https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration> | article | `raw_sha256` | `2023.md:39` |
 | <https://www.wiz.io/blog/ingress-nginx-kubernetes-vulnerabilities> | article | `raw_sha256` | `2025.md:43` |
-| <https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks> | advisory | `raw_sha256` | `2024.md:119` |
-| <https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all> | advisory | `raw_sha256` | `2024.md:122` |
-| <https://www.zerodayinitiative.com/blog/2024/9/4/exploiting-exchange-powershell-after-proxynotshell-part-1-multivaluedproperty> | advisory | `raw_sha256` | `2024.md:127` |
-| <https://wya.pl/2022/02/26/cve-2022-22947-spel-casting-and-evil-beans/> | advisory | `raw_sha256` | `2022.md:48` |
 | <https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html> | article | `raw_sha256` | `2009.md:78` |
-| <https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html> | article | `raw_sha256` | `2009.md:75` |
-| <https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html> | article | `raw_sha256` | `2009.md:70` |
-| <https://zeroknock.blogspot.com/2010/08/google-chrome-http-auth-dialog-through.html> | article | `raw_sha256` | `2010.md:61` |

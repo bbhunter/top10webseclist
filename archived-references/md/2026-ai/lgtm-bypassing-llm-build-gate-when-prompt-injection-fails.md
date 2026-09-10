@@ -2,7 +2,7 @@
 type: Whitepaper
 title: "LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails"
 description: OpenSearch guards pull_request_target CI with a step that curls the PR diff into a Claude prompt, failing the build at medium severity or above. The gate sees about three lines of context, cannot open implementation files kept in another repository, and never sees the author. Base64-wrapped payloads were blocked in 24 of 25 runs, and the diff arrives as user text with no system-prompt boundary, so both evasions are re-rollable coin flips.
-resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf"
+resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails.pdf"
 tags: [whitepaper, webseclist-reference, llm, prompt-injection, ci-cd, github-actions, supply-chain, filter-bypass, rce, owasp-a03-2021, owasp-a05-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
@@ -11,7 +11,7 @@ status: stable
 stale_after: 2027-08-09
 sources:
   - id: original
-    resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf"
+    resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails.pdf"
     title: "LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails"
     author: Aviv Donenfeld
 also_at: []
@@ -19,7 +19,7 @@ authors:
   - Aviv Donenfeld
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:88"
+  - "2026-ai.md:132"
 commit: ""
 content_sha256: c5fa8e2e40f6937ec28efe205ee16f746f60071510f564b4b9a724f16e431d54
 depth: full
@@ -27,7 +27,7 @@ depth_reason: default
 kind: whitepaper
 language: ""
 licence: unknown
-original_url: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf"
+original_url: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails.pdf"
 published: ""
 publisher: ""
 publisher_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 **LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails** - Aviv Donenfeld, Publisher not stated.
 
 - Published: date not stated
-- Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf>
+- Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails.pdf>
 - Preserved from: https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf (manual-import) on 2026-08-09
 - Licence: unknown
 

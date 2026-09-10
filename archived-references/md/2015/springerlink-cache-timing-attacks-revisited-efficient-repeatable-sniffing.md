@@ -33,7 +33,7 @@ original_url: "https://doi.org/10.1007/978-3-319-18467-8_7"
 published: ""
 publisher: SpringerLink
 publisher_english: ""
-raw_sha256: ae65c5a4b2068cf70605fcd6d539b275cc0d07aa085edfe36bf7c1187275c3b4
+raw_sha256: 0f79cce7da0d27a1172f553083c49834a6c43fb7b289e0e6ffb78e9027353391
 retrieved_from: "https://doi.org/10.1007/978-3-319-18467-8_7"
 retrieved_kind: browser
 retrieved_utc: "2026-08-09T02:39:23+00:00"

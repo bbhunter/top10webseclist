@@ -6,8 +6,32 @@ round. The URL exclusion set contained 69 distinct references from
 [`2023.md`](../../2023.md); candidates were also compared by mechanism so URL
 aliases, later proceedings copies and companion artifacts were not re-added.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
+The historical-list gate is **55 or above plus a qualifying non-duplicate
 verdict**. First public release controls the year, not the later venue date.
+
+## Threshold reconciliation — 2026-09-09
+
+All 24 full evaluations across the passes recorded below were reconciled with
+the original nominations, the missed section and the latest immutable history.
+There are 19 kept and five removed cards; all 19 kept techniques are already in
+the missed section. History contains no additional candidate absent from the
+readable cards. No qualifying technique is missing, including above the former
+60-point gate, so this pass adds no source URLs.
+
+Two scores fall in the newly eligible 55–59.9 band: MessagePack Typeless at 57.4
+and PwnAssistant at 57.2. Both retain **Useful application or case study**
+verdicts, which are outside the find-missed skill's eligible novelty verdicts.
+Their scores now clear the numerical gate, but their verdicts do not clear the
+separate contribution gate. Silent Spring remains excluded from 2023 despite
+81.7 because its first technical disclosure was in 2022. The other two removed
+cards, at 47.4 and 32.9, remain below 55.
+
+No numerical scores, verdicts or decisions changed. Earlier references to a
+60-point threshold describe the gate used in those historical passes; the
+current gate is 55 plus an eligible novelty verdict and the original year and
+nomination exclusions. Screened-only leads were not promoted or freshly
+rejudged, and no new source verification was needed for an addition because
+there were no additions. Archive and website work remain separate.
 
 ## Coverage
 

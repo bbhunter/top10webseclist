@@ -30,7 +30,7 @@ canonical_url: "https://web.archive.org/web/20160416035757/https://securehomes.e
 cited_by:
   - "2014.md:23"
 commit: ""
-content_sha256: 9c18ed646dbac4178c90bc7ddb1c863ab019fca0cfdeae58ca528c5b458ac6be
+content_sha256: b6ef0e98b413a1533dae102d4493340b9e01ac0e36bdfcd5c749b2a2d0c3c762
 depth: full
 depth_reason: default
 kind: whitepaper

@@ -35,7 +35,7 @@ original_url: "https://web.archive.org/web/20170903113359/https://github.com/Ope
 published: ""
 publisher: GitHub
 publisher_english: ""
-raw_sha256: 2b632562aa316f8c68c7e32e7bae88cb68498613cc38c10ee97ac1b036ed49e5
+raw_sha256: cbdc0f78b7447ec9a608078e5f76832f47572074399459317484a52bcd3f9259
 retrieved_from: "https://web.archive.org/web/20180611034231/https://github.com/OpenSecurityResearch/clipcaptcha"
 retrieved_kind: live
 retrieved_utc: "2026-08-09T01:12:52+00:00"

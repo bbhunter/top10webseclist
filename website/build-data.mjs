@@ -156,7 +156,21 @@ async function main() {
     parsed.push({ record, items: portableItems, summary: collectionSummary(record, portableItems) });
   }
 
-  const contentFingerprint = stableJson({ parsed: parsed.map(({ record, items }) => ({ record, items })), hosting });
+  const diagrams = Object.create(null);
+  const diagramIndexPath = path.join(REPO, "archived-references", "diagram-assets.json");
+  const diagramIndex = await readJson(diagramIndexPath).catch((error) => {
+    if (error.code === "ENOENT") return { diagrams: [] };
+    throw error;
+  });
+  for (const diagram of diagramIndex.diagrams || []) {
+    if (!/^archived-references\/diagrams\/[a-f0-9]{64}\.svg$/.test(diagram.path)
+        || hash(diagram.source) !== path.basename(diagram.path, ".svg")
+        || hash(await fs.readFile(path.join(REPO, diagram.path))) !== diagram.sha256) {
+      throw new Error(`invalid preserved diagram: ${diagram.path}`);
+    }
+    diagrams[diagram.source] = diagram.path;
+  }
+  const contentFingerprint = stableJson({ parsed: parsed.map(({ record, items }) => ({ record, items })), hosting, diagrams });
   const version = hash(contentFingerprint).slice(0, 20);
   const manifestCount = Object.keys(manifest?.urls || {}).length;
   const generated = new Date().toISOString();
@@ -179,6 +193,7 @@ async function main() {
     collection.summary.sha256 = hash(body);
   }
 
+  const diagramBody = `${stableJson({ schema: 1, version, diagrams })}\n`;
   const catalogue = {
     schema: 1,
     version,
@@ -190,11 +205,13 @@ async function main() {
       manifest: "archived-references/manifest.json"
     },
     hosting,
+    diagramIndex: { file: "data/diagrams.json", bytes: Buffer.byteLength(diagramBody), sha256: hash(diagramBody) },
     years: parsed.map((collection) => collection.summary)
   };
   const catalogueBody = `${stableJson(catalogue)}\n`;
 
   if (checkOnly) {
+    if (await fs.readFile(path.join(OUTPUT_DIR, "diagrams.json"), "utf8") !== diagramBody) throw new Error("diagram index is stale; run node website/build-data.mjs");
     const actualCatalogue = await readJson(path.join(OUTPUT_DIR, "catalogue.json"));
     const comparableCatalogue = { ...catalogue, generated: actualCatalogue.generated };
     if (stableJson(actualCatalogue) !== stableJson(comparableCatalogue)) {
@@ -222,6 +239,7 @@ async function main() {
         await fs.unlink(path.join(COLLECTIONS_DIR, entry.name));
       }
     }
+    await atomicWrite(path.join(OUTPUT_DIR, "diagrams.json"), diagramBody);
     await atomicWrite(path.join(OUTPUT_DIR, "catalogue.json"), catalogueBody);
   }
 

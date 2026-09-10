@@ -25,7 +25,7 @@ authors:
   - Min Yang
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:102"
+  - "2026-ai.md:133"
 commit: ""
 content_sha256: b0ad1b52a6242b26a135356d839da51e9589f1e1afa508c0acf6e912a28a8d12
 depth: full

@@ -7,7 +7,7 @@ this pass. Exact URL filtering was followed by semantic comparison against that
 file and backward mechanism checks through the 2006–2020 lists and local
 reference text.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
+The historical-list gate is **55 or above plus a qualifying non-duplicate
 verdict**. A score alone cannot rescue prior disclosure, an existing nomination
 under another URL, or work outside offensive web scope. ALPACA, the entry found
 by the earlier audit, was retained and reassessed alongside the fresh leads.
@@ -75,9 +75,20 @@ No archive capture was opened, validated or changed during this audit.
 | Trojan Source | scope-adjacent | The source-code bidirectional-text attack can affect web languages but is not specifically a web-hacking technique. |
 | SoK: On the Analysis of Web Browser Security | survey | Organizes prior browser-security work and defenses without a new offensive method. |
 
-## Gate note
+## Threshold reconciliation — 2026-09-09
 
-The fresh additions include one score of 69.4. This audit deliberately applies
-the repository's current **60-or-above** historical gate, and the wording in
-`2021.md` was corrected accordingly. This pass did not run the reference
-archiver or refresh either web application.
+The current historical gate is **55 or above plus a qualifying non-duplicate
+verdict**. All 13 full evaluations, including every score above the former
+60-point gate, were compared with the original nominations, the missed section,
+and the latest state of the immutable history. All 13 qualifying candidates are
+already represented in the missed section; the lowest score is 69.4. No full
+evaluations fall in the newly eligible 55–59.9 band, and history contains no
+additional candidate absent from the readable cards.
+
+This bounded reconciliation added no techniques and changed no numerical scores
+or decisions. The 15 screened leads above remain screening outcomes, not full
+evaluations; their original date, coverage and scope reasons were not rejudged in
+this threshold-only pass. No fresh source verification was needed for an
+addition, because there were no additions. The stale gate wording was corrected
+in this index and the scorecards, and the changed card was appended to history.
+Reference preservation and website refresh remain separate work.

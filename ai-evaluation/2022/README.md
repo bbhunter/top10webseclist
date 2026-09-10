@@ -7,10 +7,34 @@ including one retrospective entry from an earlier audit. Exact URL filtering
 was followed by semantic comparison against every listed mechanism and backward
 checks through the 2006–2021 lists.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
+The current historical-list gate is **55 or above plus a qualifying non-duplicate
 verdict**. A score alone cannot rescue prior disclosure, an original nominee
 under another URL, or work first published in a different year. All credible
 screened leads are retained below, including leads excluded on date or scope.
+The original August audit used a 60-point gate; its dated results remain below.
+
+## Threshold reconciliation — 9 September 2026
+
+All 25 completed scorecards were checked against the original nominations and
+the current missed section. All 24 cards with qualifying novelty verdicts
+(72.6–88.8) are already represented once; no stronger qualifying card is missing.
+The only remaining card is **The Perils of Expired Domains — We're Reading Your
+Email**, **57.0**, with a **Useful application or case study** verdict. It clears
+the numeric threshold but not the historical workflow's novelty-verdict gate,
+so it remains excluded. No new entry or source URL was added.
+
+The [watchTowr original](https://labs.watchtowr.com/the-perils-of-expired-domains-were-reading-your-email/)
+was reopened and confirms Benjamin Harris and 23 August 2022. Its own prior-art
+link leads to Joshua Avery Reed's [25 July 2020 DNS Institute paper](https://dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf),
+which describes purchasing dangling MX targets and receiving their mail. This
+supports retaining the existing case-study classification rather than promoting
+it solely because the threshold changed.
+
+`score.py` reproduced all 25 existing totals. Numeric scores and verdicts are
+unchanged; this was a bounded reconciliation of completed judgements, not a new
+research sweep or a reassessment of every earlier screening decision. The
+additional gate/evidence note is preserved in the append-only history. No archive
+capture was inspected or changed, and no capture fault was found in this pass.
 
 ## Coverage
 

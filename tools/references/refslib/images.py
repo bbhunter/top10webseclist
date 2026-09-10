@@ -194,5 +194,6 @@ def data_uri(body):
     """The embeddable form. Offline by construction: the PDF renderer must never
     reach the network while printing an archived document."""
     import base64
-    return "data:%s;base64,%s" % (MEDIA_TYPE,
+    media_type = "image/png" if body.startswith(b"\x89PNG\r\n\x1a\n") else MEDIA_TYPE
+    return "data:%s;base64,%s" % (media_type,
                                   base64.b64encode(body).decode("ascii"))

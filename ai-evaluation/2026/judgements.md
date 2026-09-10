@@ -1,7 +1,7 @@
 # Per-entry judgements
 
-One block per candidate, ordered by score. Every entry was read in full, prior-art searched
-against `archived-references/` by mechanism and against the open web, then scored with
+One block per candidate, ordered by score. Full-evidence reviews read the complete source and search prior art
+against `archived-references/` by mechanism and against the open web, then score with
 [`score.py`](../../.claude/skills/webseclist-judge-reference/scripts/score.py). See
 [README.md](README.md) for the method, the weights and the caveats.
 
@@ -56,7 +56,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
-## 74.5 — [Get Set, Exploit! Unveiling Python Class Pollution In-the-Wild](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gavin%20Zhong%2C%20Zhengyu%20Liu%2C%20Jianjia%20Yu%20-%20Get%20Set%2C%20Exploit%20Unveiling%20Python%20Class%20Pollution%20In-the-Wild%20-%20P.pdf) — Zhong, Liu, Yu, Johns Hopkins
+## 74.5 — [Get Set, Exploit! Unveiling Python Class Pollution In-the-Wild](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gavin%20Zhong%2C%20Zhengyu%20Liu%2C%20Jianjia%20Yu%20-%20Get%20Set%2C%20Exploit%20Unveiling%20Python%20Class%20Pollution%20In-the-Wild%20-%20P.pdf) — Zhong, Liu, Yu, Johns Hopkins [Current slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gavin%20Zhong%2C%20Zhengyu%20Liu%2C%20Jianjia%20Yu%20-%20Get%20Set%2C%20Exploit%20Unveiling%20Python%20Class%20Pollution%20In-the-Wild%20-%20P.pdf)
 
 **KEPT** · Meaningful extension · confidence High
 
@@ -65,6 +65,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What was already known.** The class itself (Abdulrah33m, Jan 2023, in archive), that it reaches RCE end-to-end (chilaxan, CVE-2024-5452, 2024), the Ruby analogue (Doyensec 2024), and automated pollution-gadget hunting from the JavaScript world.
 
 ---
+
 
 ## 74.2 — [Can AI do novel security research? Meet the HTTP Terminator](https://portswigger.net/research/can-ai-do-novel-security-research) [Whitepaper](https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf) [Tool](https://github.com/portswigger/http-terminator) — James Kettle, PortSwigger
 
@@ -86,7 +87,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
-## 74.0 — [One Chain to Own Them All: Breaking AI Infrastructures](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf) — Ji'an Zhou & Lei Lu
+## 74.0 — [One Chain to Own Them All: Breaking AI Infrastructures](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf) — Ji'an Zhou & Lei Lu [Current slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf)
 
 **KEPT** · Original technique · confidence Medium
 
@@ -95,6 +96,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What was already known.** The logic-level bypass of the same boundary was the author's own earlier CVE, that pickle model files are dangerous at all, and that several inference servers expose model loading over HTTP; the re-targeting across five products is coverage, but the primitive voids the vendor's published security guarantee.
 
 ---
+
 
 ## 73.8 — [One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution](https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf) — Miao, Li, An, Xu, Wang, Tsinghua
 
@@ -354,7 +356,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
-## 65.6 — [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Barak%20Sternberg%2C%20Nevo%20Poran%2C%20Ron%20Bobrov%20-%20Your%20WAF%20Blocked%20Us%2C%20That%20Was%20The%20Exploit%20-%20Remote%20Agent%20Takeover%20via%20Cloudflare%2C%20Sentry%20and%20C.pdf) [Agentjacking](https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/) — Sternberg, Poran, Bobrov, Tenet Security
+## 65.6 — [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Barak%20Sternberg%2C%20Nevo%20Poran%2C%20Ron%20Bobrov%20-%20Your%20WAF%20Blocked%20Us%2C%20That%20Was%20The%20Exploit%20-%20Remote%20Agent%20Takeover%20via%20Cloudflare%2C%20Sentry%20and%20C.pdf) [Agentjacking](https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/) — Sternberg, Poran, Bobrov, Tenet Security [Current slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Barak%20Sternberg%2C%20Nevo%20Poran%2C%20Ron%20Bobrov%20-%20Your%20WAF%20Blocked%20Us%2C%20That%20Was%20The%20Exploit%20-%20Remote%20Agent%20Takeover%20via%20Cloudflare%2C%20Sentry%20and%20C.pdf)
 
 **KEPT** · Meaningful combination · confidence High
 
@@ -364,7 +366,8 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
-## 65.5 — [Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf) — Peyton Kennedy, Endor Labs
+
+## 65.5 — [Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf) — Peyton Kennedy, Endor Labs [Current slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf)
 
 **KEPT** · Meaningful combination · confidence Medium
 
@@ -373,6 +376,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What was already known.** Each individual bug is a classic class, LLM-output-equals-user-input is settled 2023-era doctrine, and the sandbox escape is precisely the endowment-leak obligation that the sandbox's own documentation and prior analyses already name as the primary risk.
 
 ---
+
 
 ## 65.5 — [Stealing GitHub tokens via VS Code webview keyboard event bubbling](https://blog.ammaraskar.com/github-token-stealing/) — Ammar Askar
 
@@ -446,7 +450,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
-## 62.5 — [LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf) — Aviv Donenfeld
+## 62.5 — [LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf) — Aviv Donenfeld [Current slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails.pdf)
 
 **KEPT** · Meaningful combination · confidence Medium
 
@@ -455,6 +459,7 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What was already known.** Both halves separately: dependency confusion as a build-time execution vector, and that LLM reviewers are bypassable. The structural claim that scanning artifacts an analyzer cannot see is unsound was published two months earlier.
 
 ---
+
 
 ## 62.5 — [Parse and Parse: MIME Validation Bypass to XSS via Parser Differential](https://lab.ctbb.show/research/parse-and-parse-mime-validation-bypass-to-xss-via-parser-differential) — Tang Cheuk Hei (siunam)
 
@@ -536,305 +541,1311 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
-## 59.8 — [Almost Impossible Java Deserialization Through Broken Crypto in OpenText Directory Services](https://slcyber.io/research-center/almost-impossible-java-deserialization-through-broken-crypto-in-opentext-directory-services/) — Pindur, Kues, Williamson
+## 68.6 — [Almost Impossible: Java Deserialization Through Broken Crypto in OpenText Directory Services](https://slcyber.io/research-center/almost-impossible-java-deserialization-through-broken-crypto-in-opentext-directory-services/) — Dylan Pindur & Adam Kues, Searchlight Cyber
 
-**REMOVED** · Meaningful combination · confidence Medium
+**KEPT** · Meaningful combination · confidence Medium
 
-**What is new.** The delivery primitive: a hand-built Deflate stream whose canonical Huffman codes emit only ASCII bytes, keeping bit alignment and deliberately incompressible so zlib stores rather than compresses, letting a ysoserial payload survive a character-constrained channel.
+### Candidate
 
-**What was already known.** HMAC over content with attacker-controlled length prefixes excluded is a textbook canonicalisation flaw, alphabet-constrained Deflate has existed as a tool since 2014 (ascii-zip, behind Rosetta Flash, in archive and cited by the candidate), and the gadget chain is stock ysoserial.
+- **Title:** Almost Impossible: Java Deserialization Through Broken Crypto in OpenText Directory Services
+- **Author or organisation:** Dylan Pindur & Adam Kues, Searchlight Cyber
+- **Publication date / novelty cutoff:** 2026-02-16
+- **Reference:** [Almost Impossible: Java Deserialization Through Broken Crypto in OpenText Directory Services](https://slcyber.io/research-center/almost-impossible-java-deserialization-through-broken-crypto-in-opentext-directory-services/)
 
----
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.8-point record. The old total is preserved in history, not reverse-engineered into category scores.
 
-## 59.5 — [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit) — zhero; & inzo\_
+### Core Contribution
 
-**REMOVED** · Meaningful extension · confidence High
+Construct a restricted-alphabet Deflate payload that also resists recompression, then exploit unauthenticated field boundaries in a signed envelope to shift decoding into that embedded payload. The reusable advance is solving simultaneous character and recompression constraints: adapt the Huffman representation and iteratively add poorly compressed symbols until the outer compressor emits a stored block. The article demonstrates Java deserialization with a DNS callback.
 
-**What is new.** Escaping the execution paradox by routing through the internal remote endpoint so a private header rewrites the pathname, then URL-encoding one character so the decoded and raw paths diverge, reaching a server-side fetch against a Host-derived origin.
+### Prior Art
 
-**What was already known.** The class, an SSR framework trusting its own internal headers plus a Host-derived origin, is established largely by these same authors (Next.js internal-header work 2024, in archive; CVE-2025-29927).
+The local 2014 archive preserves [Rosetta Flash](https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/) (8 July 2014). The candidate explicitly builds on Gábor Molnár’s [ascii-zip / ASCII Flash construction](https://molnarg.github.io/ascii-flash/) (public compressor 29 April 2014), which already uses custom Deflate/Huffman encodings and alignment to emit alphabet-constrained bytes. That earlier tool did not satisfy the additional anti-recompression constraint used here. Ordinary Java gadget deserialization and an HMAC that fails to bind parsing boundaries are components, rather than the new claim.
 
----
+### Scorecard
 
-## 59.3 — [The Usual Suspect: Type Confusion in Twelve Bytes](https://blog.voorivex.team/usual-suspect-type-confusion-in-twelve-bytes) — HamidSj, Voorivex
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 62/100 | 25% | 15.50/25 | A meaningful additional constraint is solved beyond ascii-zip, particularly adaptive padding that preserves the embedded compressed stream. |
+| Transferability | 63/100 | 20% | 12.60/20 | The serialization target is narrow, but encoding through nested transformation layers is a broader exploitation problem. |
+| Lasting value | 67/100 | 20% | 13.40/20 | At publication the method offered reusable reasoning about payload survival across compression and text encodings. |
+| Technical soundness | 84/100 | 15% | 12.60/15 | The derivation covers code completeness, alignment, modified UTF-8, and a resulting callback; arbitrary command execution is not demonstrated. |
+| Practical usability | 62/100 | 10% | 6.20/10 | Adaptation requires substantial manual work and a suitable envelope flaw, but the construction is concrete. |
+| Clarity and reproducibility | 83/100 | 10% | 8.30/10 | A detailed derivation and intermediate examples support reconstruction even without a turnkey general encoder. |
 
-**REMOVED** · Meaningful extension · confidence Medium
+**Final score: 68.6/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
 
-**What is new.** A reusable observation about magic-byte sniffers rather than about one library: ISO-BMFF detection in `file-type` matches `ftyp` at offset 4 and the brand at offset 8 but never validates the 4-byte box-size field at offset 0, so any format sniffed by a suffix of its header hands the attacker free control of the bytes *before* the magic — exactly where a comment opener has to go. `/*` there and `*/` after the brand yields a file that is a valid HEIC to the validator and valid JavaScript, HTML, CSS or JSON to the consumer.
+### Reverification
 
-**What was already known.** Polyglot uploads and comment-wrapped image headers are old (GIF89a= as a JS assignment is the canonical example), detection-versus-consumption gaps are the standard framing, and the author positions the work as the same pattern they previously described for libmagic. One library, one version, and served-by-extension is the precondition doing most of the work; the score lands just under the keep-cut on marginal novelty, not on quality.
+Reopened the complete original article and Molnár’s original slides; local Rosetta Flash coverage was checked. A second search combined Huffman, ASCII, incompressible and nested compression. Narrowed the result from an assumed shell to the demonstrated DNS/deserialization outcome. The live primary page credits Pindur and Kues; the old compact card’s additional Williamson attribution could not be substantiated and is removed. Neither the age of Deflate nor the existing gadget erases the newly solved combination of constraints. Publication-time evidence governs every score.
 
----
+### Verdict
 
-## 59.2 — [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](https://lab.ctbb.show/research/h2-WAF-Bypasses) — Diyan Apostolov
-
-**REMOVED** · Meaningful combination · confidence Medium
-
-**What is new.** The architectural insight that where the WAF sits relative to frame assembly decides what it can see: an out-of-process hook fires on HEADERS and reads an empty body because the DATA frame has not arrived. Plus Extended CONNECT to GET conversion defeating method ACLs.
-
-**What was already known.** H2-to-H1 translation as an attack surface (Kettle 2021, Frameshifter 2022, h2c smuggling 2020), body-size inspection limits, and HAProxy documented multiplexer behaviour. The writeup cites no prior art and re-presents some as findings.
-
----
-
-## 59.2 — [Claude in Chrome: from alert(1) to full account takeover](https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover) [Technical deep dive](https://labs.zenity.io/post/account-takeover-via-claude-in-chrome-a-technical-deep-dive) — Onitza-Klugman, Donato, Cohen, Zenity Labs
-
-**REMOVED** · Useful application · confidence Medium
-
-**What is new.** One evasion primitive: hiding the payload behind an import from an attacker-run lookalike CDN so the agent never reads the code it is about to execute, a reusable way to defeat model-level review of agent-executed code.
-
-**What was already known.** The whole spine is known: email-delivered indirect injection, an agent script tool amounting to universal XSS in an authenticated session, and an unauthenticated feed as a token oracle. The vendor treated it as known-by-design and marked the report ineligible.
+**Meaningful combination; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 59.1 — [Grand Theft Atlas (PleaseFix + Intent Collision)](https://labs.zenity.io/post/grand-theft-atlas) [PerplexedBrowser](https://labs.zenity.io/p/perplexedbrowser-perplexity-s-agent-browser-can-leak-your-personal-pc-local-files) [Class hub](https://zenity.io/research/pleasefix-vulnerabilities) — Stav Cohen, Michael Bargury et al., Zenity Labs
+## 67.9 — [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit) — Rachid Allam (zhero) & Yasser Allam (inzo_)
 
-**REMOVED** · Meaningful combination · confidence Medium
+**KEPT** · Meaningful extension · confidence Medium
 
-**What is new.** The intent-collision framing plus concrete evasions against intent-based gates, and above all delegating a code-blocked action to a second agent to route around a deterministic boundary that held. Agent-to-agent delegation as a boundary bypass is the durable idea.
+### Candidate
 
-**What was already known.** Indirect prompt injection in agentic browsers with cross-origin reach and hidden-instruction obfuscation, including the same team's own earlier post which already named intent collision, and Brave's series from August 2025.
+- **Title:** Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit
+- **Author or organisation:** Rachid Allam (zhero) & Yasser Allam (inzo_)
+- **Publication date / novelty cutoff:** 2026-01-16
+- **Reference:** [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit)
 
----
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.5-point record. The old total is preserved in history, not reverse-engineered into category scores.
 
-## 59.1 — [Computer-Use and TOCTOU: What You Click Is Not What You Get!](https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/) — Johann Rehberger
+### Core Contribution
 
-**REMOVED** · Meaningful extension · confidence High
+Route a request through a framework-internal endpoint to replace its logical pathname, then use a raw/decoded-path disagreement to reach a server-side fetch that normal routing would make unreachable. The demonstrated result is full-read SSRF through a Host-derived origin; a separate invalid-header path crashes the process. The reusable contribution is the reachability construction across routing, normalization, and fetch layers.
 
-**What is new.** Turning a flaky screenshot-versus-action race into a reliable one by deliberately widening the window with an injected stalling task, plus an end-to-end sink using a deeplink to pre-draft a message so one click at a known coordinate sends it.
+### Prior Art
 
-**What was already known.** The core mechanism, that a screenshot-then-click agent can be made to click something other than what it saw, was publicly disclosed against a major agent a year earlier and is cited by the author; UI redressing and TOCTOU are decades old.
+The local 2024 archive preserves the same authors’ [Next.js internal-header/cache-poisoning research](https://zhero-web-sec.github.io/research-and-things/nextjs-and-cache-poisoning-a-quest-for-the-black-hole) (2024), establishing trust in client-supplied internal routing headers as an exploitation route. It does not provide this remote-endpoint/prerender/raw-path construction. [The SvelteKit advisory](https://github.com/sveltejs/kit/security/advisories/GHSA-j62c-4x62-9r35) was public on 15 January 2026; the article’s complete construction followed on 16 January. Those dates bound the disclosure; private discovery dates do not move it into 2025.
 
----
+### Scorecard
 
-## 59.1 — [Patch-Guided Vulnerability Detection: Extracting Java API Security Rules via Attack–Defense Cross-Analysis (VulGenie)](https://www.usenix.org/conference/usenixsecurity26/presentation/chen-bofei) [Artifact](https://zenodo.org/records/18039660) — Chen, Liao, Zhang (Fudan); Zhang, Payer (EPFL)
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 54/100 | 25% | 13.50/25 | The new part is making the apparently unreachable fetch reachable, not inventing SSRF or internal-header abuse. |
+| Transferability | 68/100 | 20% | 13.60/20 | The routing/normalization testing method transfers to server-rendered frameworks; the exact endpoint is framework-specific. |
+| Lasting value | 65/100 | 20% | 13.00/20 | The multi-layer reachability analysis offers reusable testing hypotheses at publication, without relying on later uptake. |
+| Technical soundness | 82/100 | 15% | 12.30/15 | Code and requests explain the causal path and the SSRF/DoS distinction. |
+| Practical usability | 73/100 | 10% | 7.30/10 | Concrete requests make testing practical where the documented deployment conditions hold. |
+| Clarity and reproducibility | 82/100 | 10% | 8.20/10 | The execution paradox and its resolution are explained step by step with sufficient implementation context. |
 
-**REMOVED** · Tooling / methodology · confidence Low-Medium
+**Final score: 67.9/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
 
-*(Fourth re-check round, 14 August 2026. USENIX 403s automated fetches, so this was judged from the abstract, the Zenodo artifact record and secondary summaries — **re-judge if the full text becomes readable**.)*
+### Reverification
 
-**What is new.** A denoising step that most patch-mining work skips: a modification-behaviour dependency patch graph isolates the constraint the patch actually added from the refactoring around it, and attack–defense cross-validation then decides which security-sensitive API that constraint was protecting. Deviation-guided static analysis keeps the resulting rules affordable to run. 198 rules from 150 Java patches at 81.82% precision, 177 of them with no CodeQL equivalent, 46 0-days across ten Java applications and ten CVEs.
+Reopened the article and 15 January advisory and followed the article’s earlier Next.js work. A second search used prerender, remote endpoint, Host-derived fetch and internal-header synonyms. Corrected the preconditions: SSRF requires the Node adapter, a prerendered route, and an origin configuration that permits the attacker-controlled host; the DoS has different conditions. No claim is made that every SvelteKit deployment is exploitable. The new construction survives the closest located earlier technique; unsuccessful searches do not prove priority.
 
-**What was already known.** Deriving misuse rules by diffing insecure against fixed code is SEADER's approach (21 misuse templates from 28 code pairs) and the data-driven / example-based Java vulnerability-detection line before it; "security patches encode an invariant" is the standing premise of that whole field. Web bearing is indirect — this is a Java API-misuse detector whose targets happen to be web applications, closer in kind to the Bullseye prototype-pollution detector (57.8, removed) than to the gadget-chain work kept at 68.8.
+### Verdict
 
----
-
-## 59.0 — [Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise) — Brown, Jahnke, Poh, elttam
-
-**REMOVED** · Meaningful combination · confidence High
-
-**What is new.** Two primitives look genuinely new: choosing a 13-byte table name so the SQLite record header serialises as a quote byte, smuggling a quote past an alphanumeric-only regex, which generalises to other length-prefixed formats; and a config-sourcing behaviour as an exec sink for an arbitrary file write.
-
-**What was already known.** The other four chains are competent re-application: a vm2 escape via an allowlisted dependency, pandas pickle reading past a denylist, TypeORM as a code loader, and the authors' own 2020 environment-variable trick.
-
----
-
-## 59.0 — [Security Considerations on Namespace-Based Multi-Tenancy (Istio VirtualService MITM)](https://istio.io/latest/blog/2026/security-considerations-on-namespace-based-multi-tenancy/) [Weaponized against Kubeflow](https://insinuator.net/2026/05/cve-2026-47237-overly-permissive-istio-permissions-allow-kubeflow-authorization-token-stealing/) — Lehawany & Nobis, ERNW
-
-**REMOVED** · Meaningful extension · confidence Medium
-
-**What is new.** A real transferable idea: the networking CRDs predate namespace RBAC, so a route with mesh-wide blast radius is guarded by namespace-scoped RBAC, letting a tenant claim arbitrary hostnames and MITM other namespaces despite mTLS, proven end-to-end by stealing bearer tokens.
-
-**What was already known.** The underlying class, namespace-scoped RBAC guarding cluster-wide-effect config, is established from ingress-controller research; the cross-namespace behaviour was filed upstream in 2022 and a mitigation setting already existed.
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 59.0 — [The Memory Heist](https://www.ayush.digital/blog/the-memory-heist) [Independent Tencent Zhuque analysis](https://security.tencent.com/index.php/blog/msg/225) — Ayush Paul; Tencent Zhuque Lab
+## 67.6 — [The Usual Suspect: Type Confusion in Twelve Bytes](https://blog.voorivex.team/usual-suspect-type-confusion-in-twelve-bytes) — HamidSj, Voorivex
 
-**REMOVED** · Meaningful extension · confidence Medium
+**KEPT** · Meaningful extension · confidence Medium
 
-**What is new.** The channel: where the defence was that the agent may only follow links it found and never construct URLs, the attacker page supplies a pre-built alphabetic link tree so each navigation choice encodes one character, showing that no-URL-construction does not reduce channel capacity.
+### Candidate
 
-**What was already known.** Agent memory extraction via indirect injection, fake-verification social engineering of agents, user-agent cloaking, and symbol-at-a-time encoding of secrets into a network destination, whose DNS form was published a year earlier.
+- **Title:** The Usual Suspect: Type Confusion in Twelve Bytes
+- **Author or organisation:** HamidSj, Voorivex
+- **Publication date / novelty cutoff:** 2026-06-17
+- **Reference:** [The Usual Suspect: Type Confusion in Twelve Bytes](https://blog.voorivex.team/usual-suspect-type-confusion-in-twelve-bytes)
 
----
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.3-point record. The old total is preserved in history, not reverse-engineered into category scores.
 
-## 59.0 — [Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond](https://arxiv.org/abs/2608.04744) — Golinelli, Onarlioglu, Crispo
+### Core Contribution
 
-**REMOVED** · Meaningful extension · confidence High
+Exploit a file-type sniffer that checks a magic signature at a nonzero offset while leaving the preceding bytes unconstrained. A comment opener in those free bytes makes the checked header inert to a second language parser, yielding reusable upload/type-confusion constructions for several active content formats. This is a detection-versus-consumption differential, not proof that the file is a decodable image.
 
-**What is new.** Turning developer cache-busting into sustained eviction needing no knowledge of the replacement algorithm, the corollary that forced eviction opens a poisoning window, and a Tranco-10k measurement of the precondition.
+### Prior Art
 
-**What was already known.** Cache busting via unnecessarily-keyed query strings is decades-old practice (the paper says so), cache pollution has a large literature, Random Query String DoS was described in 2011, and CPDoS (2019) and Cache Key Normalization DoS (2020, in archive) cover cache-key availability attacks.
+Local searches for polyglot, magic bytes, GIFAR and upload validation found the archived [GIFAR construction](https://web.archive.org/web/20081225132058/http://riosec.com/how-to-create-a-gifar) (2008) and later parser-differential work. More directly, the same author’s [libmagic inconsistencies](https://lab.ctbb.show/research/libmagic-inconsistencies-that-lead-to-type-confusion) (6 October 2025) already exploited a classifier/consumer disagreement, using JSON nesting limits and embedded signatures. The 2026 contribution is the reusable free-prefix property of suffix-checked headers, illustrated with file-type’s ISO-BMFF sniffing; the earlier JSON mechanism does not supply that construction.
 
----
+### Scorecard
 
-## 57.8 — [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof-of-Concept Exploits](https://www.ndss-symposium.org/ndss-paper/bullseye-detecting-prototype-pollution-in-npm-packages-with-proof-of-concept-exploits/) — Houis, Jiang, Mannan, Youssef, Concordia
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 50/100 | 25% | 12.50/25 | A modest, distinct payload-construction primitive within the established polyglot class. |
+| Transferability | 72/100 | 20% | 14.40/20 | The unchecked-prefix hypothesis applies beyond one suffix or file format, subject to actual parser behavior. |
+| Lasting value | 66/100 | 20% | 13.20/20 | It suggests a persistent audit method for partial magic checks and downstream interpretation. |
+| Technical soundness | 78/100 | 15% | 11.70/15 | The code supports shallow-sniffer acceptance and active-content parsing; image-format validity is not established. |
+| Practical usability | 76/100 | 10% | 7.60/10 | The generator and examples are directly usable against applications with matching upload and serving behavior. |
+| Clarity and reproducibility | 82/100 | 10% | 8.20/10 | The byte offsets and consumer interpretations are explicit and reproducible. |
 
-**REMOVED** · Tooling / methodology · confidence High
+**Final score: 67.6/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
 
-**What is new.** Solving the reachability problem in dynamic prototype-pollution detection by harvesting entry points and real argument shapes from each package's own test suite, then combining context-aware exploit generation with dual runtime oracles for PoC-validated results with no false positives, at 50,392 packages in under eight hours.
+### Reverification
 
-**What was already known.** The detection idea is explicitly built on Arteau's reflection-based dynamic checking and a later extended exploit-input study, and prototype pollution discovery at registry scale has been attacked repeatedly by static and dynamic tools; this scales and validates known knowledge.
+Reopened both original articles, checked their dates, and searched independently for HEIC/ftyp polyglot prefixes and comment-wrapped magic bytes. Corrected the historical compact card: these are not demonstrated valid HEIC images, and successful active content depends on how the server serves the accepted upload. Those qualifications bound the demonstrated result; they do not erase the prefix-control primitive. Current library fixes and absence of independent deployment tests were excluded from all scores.
 
----
+### Verdict
 
-## 57.8 — [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you) [Repo](https://github.com/xssdoctor/cspt_research) — Jonathan Dunn
-
-**REMOVED** · Tooling / methodology · confidence High
-
-**What is new.** A per-framework map of URL-decoding pipelines across eight frameworks with concrete new gadgets, including a React Router case-sensitive double-decode and a Next.js page-vs-route-handler split, plus published labs.
-
-**What was already known.** CSPT itself, its exploitation to CSRF and XSS, and the decode-level reasoning were established by Doyensec CSPT2CSRF (2024) and Berson WAF decode-level work; this systematises an established primitive.
-
----
-
-## 57.7 — [Three 0-Day Vulnerabilities in Adminer](https://blog.voorivex.team/three-0-day-vulnerabilities-in-adminer) — Yashar Shahinzadeh & Amirmohammad Safari, Voorivex
-
-**REMOVED** · Useful application · confidence High
-
-**What is new.** Three concrete primitives against a database client, of which two transfer past the product. A malicious MySQL server controls the version banner, and Adminer's `~^(\d\.?\d).*~s` extraction returns the raw string when the match fails — landing attacker text inside a `<script>` that already carries a valid CSP nonce, so the policy signs the payload. That "the server you connect to is untrusted input" pattern applies to any DB-admin UI. `VACUUM INTO` also survives a blocklist that only knows `ATTACH`, a useful note on blocklists chasing named statements instead of capabilities.
-
-**What was already known.** ODBC DSN injection through unsanitised connection strings, and `TraceFile`/`TraceOn` as the write primitive, are established MSSQL tradecraft. `VACUUM INTO` as a file-write has been documented since at least the 2020 osquery discussion and sits in PayloadsAllTheThings. Rogue-MySQL-server attacks on Adminer are a line the same team already contributed to (the file-read that became CVE-2021-43008). Good vulnerability research, low class novelty.
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 57.5 — [Beyond the Limits of Site Isolation](https://www.youtube.com/watch?v=d3nfJL86jrc) — Ivan Fratric, Google Project Zero
+## 49.7 — [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](https://lab.ctbb.show/research/h2-WAF-Bypasses) — Diyan Apostolov (fsi), Critical Thinking
 
-**REMOVED** · Meaningful extension · confidence Low
+**REMOVED** · Useful synthesis · confidence Medium
 
-**What is new.** Per the official abstract: systematic enumeration of alternate channels by which a compromised renderer leaks cross-site URLs, why one Chromium bug has resisted fixing for six years, and the reframing that sensitive URLs carry auth tokens.
+### Candidate
 
-**What was already known.** The Chromium compromised-renderers documentation states the full-URL protection goal and the open bug, and compromised-renderer attacks on Site Isolation were surveyed publicly in 2019. The only artifact is a conference video with no transcript or slides.
+- **Title:** HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)
+- **Author or organisation:** Diyan Apostolov (fsi), Critical Thinking
+- **Publication date / novelty cutoff:** 2026-06-01
+- **Reference:** [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](https://lab.ctbb.show/research/h2-WAF-Bypasses)
 
----
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
 
-## 57.2 — [AgentForger: ChatGPT Cross-Site Agent Forgery](https://labs.zenity.io/post/agentforger-part-1-chatgpt-cross-site-agent-forgery) [Part 2](https://labs.zenity.io/post/agentforger-part-2-the-autonomous-insider) — Mike Takahashi, Zenity Labs
+### Core Contribution
 
-**REMOVED** · Meaningful combination · confidence Medium
+A black-box testing matrix probes when proxy/WAF integrations inspect request bodies, how they translate Extended CONNECT, and whether normalization and size boundaries diverge. It offers concrete delayed-DATA tests and a combined probe script. Several reported outcomes concern deliberately limited authentication or custom-rule configurations; those are not evidence of product-wide WAF failure.
 
-**What is new.** The escalation target: a URL-seeded prompt against an agent builder yields not a single forged response but a persistent scheduled connector-authorized agent, forging a backdoor rather than a request.
+### Prior Art
 
-**What was already known.** The underlying primitive, an unguarded URL parameter that auto-submits a prompt for a logged-in user, was published by Tenable a year earlier and is not acknowledged by the post.
+The local archive preserves [h2c smuggling](https://bishopfox.com/blog/h2c-smuggling-request) (10 September 2020), which already exploits protocol-upgrade/inspection boundaries, though not this exact delayed-DATA test. [HAProxy’s own SPOE example](https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing) (23 July 2019) expressly requires `option http-buffer-request` to obtain a request body. The [Envoy 1.32.0 ext_authz source](https://github.com/envoyproxy/envoy/blob/v1.32.0/api/envoy/extensions/filters/http/ext_authz/v3/ext_authz.proto) predates the article and explicitly describes `x-envoy-auth-partial-body`, contrary to the article’s claimed lack of a truncation signal. These sources distinguish old integration requirements from newly demonstrated exploit paths.
 
----
+### Scorecard
 
-## 56.8 — [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails) — Baptista, Mendes, Castilho, Ethiack
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 40/100 | 25% | 10.00/25 | The combined probing workflow is useful, but much of its matrix restates known configuration and parsing gaps. |
+| Transferability | 60/100 | 20% | 12.00/20 | Delayed-body and transformation-boundary tests generalize to other proxy/security integrations. |
+| Lasting value | 55/100 | 20% | 11.00/20 | The matrix suggests useful tests, but its unsupported universal architecture claims limit its value as a model. |
+| Technical soundness | 38/100 | 15% | 5.70/15 | The HTTP/1.1-atomicity explanation is unsound; pre-cutoff docs contradict the truncation claim, and some results are configuration-specific. |
+| Practical usability | 55/100 | 10% | 5.50/10 | A public probe script is useful, but HTTP status outcomes alone need backend and policy controls before being called bypasses. |
+| Clarity and reproducibility | 55/100 | 10% | 5.50/10 | Requests and expected outcomes are visible, while the deployment fixtures and causal explanations are incomplete. |
 
-**REMOVED** · Meaningful combination · confidence Medium
+**Final score: 49.7/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
 
-**What is new.** The Rails-side chain around the file-read primitive: trusting the client-declared content type on direct upload, a variation key that signs only the transform and not the blob so a harvested key can be replayed against an attacker-uploaded blob, and single-pixel transforms for byte-exact exfiltration.
+### Reverification
 
-**What was already known.** The headline primitive was not first here: the libvips and libmatio header disagreement reaching HDF5 external file lists was published independently two weeks earlier, another researcher reached a similar chain, HDF5 external storage as a file-read primitive had surfaced in ML model loaders, and the escalation CVE was pre-existing.
+Reopened the article and inspected its linked probe code. A different search for SPOE body buffering led to the 2019 primary documentation, and the version-pinned Envoy source confirms its partial-body signal. The script’s fingerprint path offers h2 again in a second handshake, so that path alone does not prove acceptance contrary to the negotiated ALPN; the article’s transcript remains an author claim. These are publication-time evidence checks, not later corrections or a penalty for absent real-world adoption. A new full scorecard replaces the compact 59.2 summary and does not clear 55.
 
----
+### Verdict
 
-## 56.8 — [GitHub RCE Vulnerability: CVE-2026-3854](https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854) — Wiz Research
-
-**REMOVED** · Useful application · confidence Medium
-
-**What is new.** The specific attack surface: push options copied unsanitised into an internal semicolon-delimited header parsed last-write-wins, so a user can override security-policy fields downstream services treat as authoritative, then chain them into execution.
-
-**What was already known.** The class is textbook: injecting the delimiter of an internal trusted-metadata channel built by string concatenation, with last-write-wins parsing turning that into a policy override (Intruder 2021, in archive; Orange Tsai 2018). The AI-assisted reverse engineering is asserted with no method shown.
-
----
-
-## 56.5 — [DOMPurify XSS via `<selectedcontent>` re-clone](https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx) — Cure53 / KabirAcharya
-
-**REMOVED** · Meaningful extension · confidence High
-
-**What is new.** An engine-maintained live mirror is refreshed after a one-pass sanitizer has already cleared that subtree, yielding the invariant that sanitizers must re-walk or ban engine-managed clones.
-
-**What was already known.** mXSS via post-sanitization DOM mutation is a decade-old family (Heiderich 2013; Securitum 2019 and 2020; mizu.re 2024), and the fix is a one-line allowlist removal on one new element.
+**Useful synthesis; no 2026 display inclusion.** Useful testing synthesis, but the fresh full assessment is below 55 after correcting material causal and scope claims. No list addition.
 
 ---
 
-## 56.2 — [SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot](https://www.varonis.com/blog/searchleak) [Reprompt](https://www.varonis.com/blog/reprompt) [Data Tomb Raider slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Dolev%20Taler%2C%20Mark%20Vaitsman%20-%20Data%20Tomb%20Raider%20Raiding%20Modern%20AI%20Vaults%20with%20Legacy%20Flaws%20for%20Treasure%20Stealing%20-%20v1.pdf) — Dolev Taler & Mark Vaitsman, Varonis Threat Labs
+## 66.1 — [Claude in Chrome: from alert(1) to full account takeover](https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover) [Injection analysis](https://labs.zenity.io/post/claude-in-chrome-breaking-down-the-injection) [Technical deep dive](https://labs.zenity.io/post/account-takeover-via-claude-in-chrome-a-technical-deep-dive) — Raul Klugman-Onitza & João Donato, Zenity Labs
 
-**REMOVED** · Meaningful combination · confidence Medium
+**KEPT** · Meaningful combination · confidence Medium
 
-**What is new.** The HTML rendering race, where the image tag renders before the sanitizer wraps it, defeating the standard wrap-outbound-URLs mitigation in a streaming LLM interface: a reusable client-side primitive to test against any AI chat frontend.
+### Candidate
 
-**What was already known.** Everything else is built from known parts: URL-parameter auto-submit (Tenable 2025), zero-click assistant exfiltration (EchoLeak 2025), markdown-image exfiltration, and abusing an allowlisted endpoint as the fetching proxy. The label is the team's own from a companion post the same month.
+- **Title:** Claude in Chrome: from alert(1) to full account takeover
+- **Author or organisation:** Raul Klugman-Onitza & João Donato, Zenity Labs
+- **Publication date / novelty cutoff:** 2026-08-05
+- **Reference:** [Claude in Chrome: from alert(1) to full account takeover](https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover)
 
----
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
 
-## 56.2 — [Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker](https://www.usenix.org/conference/usenixsecurity26/presentation/erinola) — Niklas Erinola et al.
+### Core Contribution
 
-**REMOVED** · Tooling / methodology · confidence Medium
+A staged email injection first changes the agent’s observation tool, then disguises a browser-context code import as a harmless package call. The imported implementation is not reviewed with the visible call and retains authenticated page capabilities. The reusable issue is a policy check on the apparent tool invocation rather than the transitive code it executes; account-recovery flows demonstrate its consequences.
 
-**What is new.** A sending-side-unconstrained framework plus a probe suite systematically enumerating valid and invalid coalescence and fragmentation combinations, an encoding-equivalence oracle earlier tools could not express, yielding eight DoS bugs across fifteen libraries.
+### Prior Art
 
-**What was already known.** The underlying idea that multiple encodings of the same information produce divergence is standard parser-differential reasoning, and the same authors already applied this probing methodology to DTLS fragmentation in 2023.
+Local 2023 material preserves [Greshake’s indirect-prompt-injection research](https://github.com/greshake/llm-security), whose [paper](https://arxiv.org/abs/2302.12173) was first public 23 February 2023 and already connects retrieved instructions to tool/API actions. Zenity’s [PerplexedBrowser](https://labs.zenity.io/post/perplexedbrowser-perplexity-s-agent-browser-can-leak-your-personal-pc-local-files) (3 March 2026) already combines task-aligned injection, cross-surface agent action and exfiltration. The same authors’ [29 December 2025 threat analysis](https://labs.zenity.io/post/claude-in-chrome-a-threat-analysis) already exposes multiple observation tools, authenticated arbitrary JavaScript, and weak plan enforcement, but does not disclose the staged import construction. None of these located sources supplies this visual-to-text tool switch plus benign-looking remote-code import. The article’s December 2025/January 2026 vendor reports were private and do not establish an earlier public disclosure.
 
----
+### Scorecard
 
-## 56.0 — [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](https://www.synacktiv.com/en/publications/caught-in-the-octopus-trap-unauthenticated-rce-in-argo-cd-with-codeql) — Hugo Vincent, Synacktiv
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 52/100 | 25% | 13.00/25 | The import indirection and observation-tool switch add a concrete capability beyond another email injection example. |
+| Transferability | 70/100 | 20% | 14.00/20 | Checking transitive code and tool-mediated provenance applies across code-capable browser agents. |
+| Lasting value | 67/100 | 20% | 13.40/20 | The policy boundary remains a useful research question even if this particular payload is blocked. |
+| Technical soundness | 73/100 | 15% | 10.95/15 | Companion articles expose the injection and authenticated flow; broader universal-XSS language exceeds the demonstrated conditions. |
+| Practical usability | 70/100 | 10% | 7.00/10 | Concrete payloads and account-flow descriptions enable adaptation, requiring a logged-in victim and agent access. |
+| Clarity and reproducibility | 78/100 | 10% | 7.80/10 | The companion disclosure makes the chain understandable; some code is conveyed as images and demos rather than a packaged harness. |
 
-**REMOVED** · Meaningful combination · confidence Medium
+**Final score: 66.1/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
 
-**What is new.** The concrete demonstration that a caller-supplied field on an internal-only gRPC API reaches exec argv, chained through unauthenticated cache poisoning to cluster-wide manifest injection, plus a reusable CodeQL recipe for modelling Go gRPC methods as remote flow sources.
+### Reverification
 
-**What was already known.** Argument injection into subprocess flags is textbook, the repo-server and cache being unauthenticated-by-design is documented in the project's own hardening guidance, and CodeQL model packs are a standard documented feature.
+Reopened the overview, injection analysis and technical deep dive; their bylines identify two authors, correcting the older expanded attribution. Searched separately for JavaScript-tool imports, CDN laundering and browser-agent code execution; followed the overview’s earlier threat-analysis link and checked the prior PerplexedBrowser method. No exact earlier import construction was verified. The score credits the demonstrated combination, not the account count or headline severity. The claimed ability to act on arbitrary domains is bounded by navigation and approval behavior; Google Drive escalation includes plan approval.
 
----
+### Verdict
 
-## 56.0 — [The sorry state of skill distribution](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/) — Judson & Hess, Trail of Bits
-
-**REMOVED** · Useful application · confidence Medium
-
-**What is new.** The head-to-head result that three real scanners all pass four deliberately malicious skills, plus a public PoC corpus and upstreamed hardening patches: a concrete checkable datapoint that scanning cannot be the control.
-
-**What was already known.** Every evasion used is long-standing tradecraft: source-versus-bytecode divergence, archive obfuscation, padding past a truncation window, and prompt injection against an LLM analyzer, the last already shown academically in 2025.
-
----
-
-## 55.9 — [Zero-Click RCE in Figma Desktop](https://lab.ctbb.show/research/figma-desktop-zero-click-rce/) — Benjamin Mamoud
-
-**REMOVED** · Meaningful combination · confidence Medium
-
-**What is new.** Two reusable escalation ideas: racing prototype pollution against initialisation to forge a feature flag and unlock a normally-unreachable API, and recognising that a partial expression evaluator resolving unbound identifiers against an empty object is a pollution sink reaching Function.
-
-**What was already known.** Prototype-pollution gadget hunting, the webpack require-leak, and unvalidated Electron IPC file-write as XSS-to-RCE (ElectroVolt, BH USA 2022, in archive); the chain composition is the contribution and it is bound to one product patched within hours.
+**Meaningful combination; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 55.7 — [ELF in the Pixels: Building Shared Object–Image Polyglots](https://blog.babelo.xyz/posts/elf-in-the-pixels/) — Salvatore Abello
+## 64.0 — [Grand Theft Atlas](https://labs.zenity.io/post/grand-theft-atlas) — Stav Cohen, Zenity Labs
 
-**REMOVED** · Meaningful extension · confidence High
+**KEPT** · Meaningful extension · confidence Medium
 
-**What is new.** That the Pillow PCD plugin sniffs its marker at offset 2048 rather than byte 0, so an ELF header can occupy offset 0 and the file passes verify() while remaining loadable as a shared object, plus a standalone builder.
+### Candidate
 
-**What was already known.** Polyglot upload-validation bypass as a class (GIFAR 2008, PHP-in-PNG, ImageTragick, mitra) and the author's own HITCON 2025 precursor; ELF shared-object polyglots appeared independently in the Atril advisory five days later.
+- **Title:** Grand Theft Atlas
+- **Author or organisation:** Stav Cohen, Zenity Labs
+- **Publication date / novelty cutoff:** 2026-08-05
+- **Reference:** [Grand Theft Atlas](https://labs.zenity.io/post/grand-theft-atlas)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.1-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+A hijacked browser agent that cannot perform a final purchase directly asks a second, independently authorized shopping assistant to complete it. The enforced local action restriction survives, but does not constrain the equivalent delegated action. The article also demonstrates distributing an injection across viewport-sized observations. The reusable contribution is testing policy preservation across agent-to-agent handoffs, with a concrete cross-provider workflow.
+
+### Prior Art
+
+Local searches of preserved indirect-injection and agent material found the established [Greshake 2023](https://arxiv.org/abs/2302.12173) external-content-to-action model. [Authenticated Delegation and Authorized AI Agents](https://arxiv.org/abs/2501.09674) (16 January 2025) already argues for explicit restricted agent authority; this establishes the underlying authorization problem, not the particular exploit. The same team’s [PerplexedBrowser](https://labs.zenity.io/post/perplexedbrowser-perplexity-s-agent-browser-can-leak-your-personal-pc-local-files) (3 March 2026) already publishes task-aligned injection and multilingual framing. The narrower August addition is the demonstrated escape from a blocked action through a second assistant, rather than a new injection class.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 53/100 | 25% | 13.25/25 | A distinct exploitation route is demonstrated across two agents, while confused-deputy and task-injection principles are older. |
+| Transferability | 70/100 | 20% | 14.00/20 | Equivalent-operation delegation is a general test for distributed agent authorization. |
+| Lasting value | 70/100 | 20% | 14.00/20 | At publication it motivates testing whether action restrictions survive transformations and handoffs. |
+| Technical soundness | 66/100 | 15% | 9.90/15 | The walkthrough and demonstrations support the route; internal classifier and hard-boundary explanations are partly author inference. |
+| Practical usability | 61/100 | 10% | 6.10/10 | The path is usable as a test strategy but depends on available downstream assistants and authenticated workflows. |
+| Clarity and reproducibility | 68/100 | 10% | 6.80/10 | Concrete stages are described; exact model/version configuration and repeated success measurements are limited. |
+
+**Final score: 64.0/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the original article, checked the single-author byline, and contrasted its March predecessor. A second search used delegation, confused deputy and purchase-assistant synonyms, leading to the January 2025 authorization paper. No claim of inventing delegation risk is made. The source’s suggestion that ordinary SOP/CORS prevented all traditional CSRF is incorrect and is not adopted; the evidence concerns agent authority, not a browser SOP implementation bypass. January vendor reporting was private. Broad classifier explanations remain author claims, and no later patch or popularity evidence affects the scores.
+
+### Verdict
+
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 55.5 — [Race Against The Patch: Four Exploit Chains in LiteLLM](https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/) — Shi Weiming & Bruce Chen, STAR Labs
+## 59.8 — [Computer-Use and TOCTOU: What You Click Is Not What You Get!](https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/) — Johann Rehberger, Embrace The Red
 
-**REMOVED** · Meaningful combination · confidence High
+**KEPT** · Meaningful extension · confidence Medium
 
-**What is new.** Two composition patterns: deliberately exhausting the database connection pool to reach a fail-open branch, and second-order secret exfiltration where an environment-variable indirection is stored through an unpatched validation path and resolved later inside a privileged request.
+### Candidate
 
-**What was already known.** The headline environment-reference leak and the template-injection RCE were published concurrently or earlier by others (McCaulay, 18 days earlier); the rest is textbook authorisation and Python-jail material on a new target.
+- **Title:** Computer-Use and TOCTOU: What You Click Is Not What You Get!
+- **Author or organisation:** Johann Rehberger, Embrace The Red
+- **Publication date / novelty cutoff:** 2026-06-24–2026-06-25
+- **Reference:** [Computer-Use and TOCTOU: What You Click Is Not What You Get!](https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.1-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Combine an existing screenshot-to-click race with a deliberately induced extra tool operation that lengthens the interval before the planned click. That creates time to load another origin whose sensitive control occupies the intended coordinate. The contribution is a reliability extension to agent click hijacking, not a new TOCTOU class or a new cross-origin email-send consequence.
+
+### Prior Art
+
+Local searches for screenshot/action races and agent click hijacking did not locate a closer preserved construction. [Jun Kokatsu’s Operator advisory](https://github.com/google/security-research/security/advisories/GHSA-mp56-7vrw-qxvf) (18 August 2025) already demonstrates tab/window replacement, delayed coordinate clicks and a Gmail compose/send target. [Atomicity for Agents v1](https://arxiv.org/html/2603.00476v1) (28 February 2026) systematically evaluates observation/action races and page dynamics, explicitly excluding prompt injection. Neither located source demonstrates using an injected unrelated tool calculation to enlarge the page-load window. The article appeared 25 June and identifies the preceding day’s public talk; private October 2025 reporting is not public disclosure.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 42/100 | 25% | 10.50/25 | The demonstrated scheduling aid extends the earlier exploit, while most of the attack capability was already public. |
+| Transferability | 65/100 | 20% | 13.00/20 | Induced work can widen races in other multi-tool visual-agent workflows. |
+| Lasting value | 64/100 | 20% | 12.80/20 | The separation of agent decision latency from mutable page state supplies a reusable reliability test. |
+| Technical soundness | 70/100 | 15% | 10.50/15 | The walkthrough and demonstration explain the causal chain; reliability across agents remains unquantified. |
+| Practical usability | 65/100 | 10% | 6.50/10 | A tester can adapt the demonstrated stall and coordinate alignment, with session and page-layout constraints. |
+| Clarity and reproducibility | 65/100 | 10% | 6.50/10 | The article distinguishes the earlier exploit and its extension, but offers less automation than a full benchmark. |
+
+**Final score: 59.8/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the June article and the original 2025 advisory. A different prior-art search for browser-agent atomicity located the February 2026 paper, whose threat model and attack-vector sections were checked. This materially narrows the novelty claim to the induced tool-delay step. No priority claim is made for TOCTOU, cross-origin clicks, or sending email. The scores assess the original disclosure and potential reuse, excluding later product fixes and adoption.
+
+### Verdict
+
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 55.3 — [Shaking the MCP Tree: a security deep dive](https://blog.voorivex.team/shaking-the-mcp-tree) — Amirmohammad Safari, Voorivex
+## 59.1 — [Patch-Guided Vulnerability Detection: Extracting Java API Security Rules via Attack–Defense Cross-Analysis (VulGenie)](https://www.usenix.org/conference/usenixsecurity26/presentation/chen-bofei) [Artifact](https://zenodo.org/records/18039660) — Bofei Chen, Shuang Liao, Lei Zhang, Chibin Zhang, Mathias Payer and Yuan Zhang
 
-**REMOVED** · Useful application · confidence Medium
+**REMOVED** · Insufficient evidence · confidence Low
 
-**What is new.** An early field survey of what unprotected RFC 7591 Dynamic Client Registration actually buys an attacker on real MCP deployments: self-registering a client with a `javascript:` redirect URI to reach a client-side redirect handler, `redirect_uri` reflected into a consent-screen script, an encoded-`../` path-normalisation escape chained with an OAuth open-redirect gadget for SSRF, and authenticating straight to MCP endpoints that assume only an assistant will ever call them.
+### Candidate
 
-**What was already known.** The author says so directly — "the attack techniques I'm about to show you aren't brand new" — and credits PortSwigger's OAuth work as the base. Open DCR abuse, `javascript:` redirect URIs, consent-screen reflection and normalisation bypasses are each long established; what changes is the deployment surface, and 2026 already carries several MCP entries that go further into mechanism.
+The complete [21-page USENIX paper](https://www.usenix.org/system/files/usenixsecurity26-chen-bofei.pdf), including appendices, was read for this 10 September 2026 review. The unresolved issue is the first public technical version, not access to that conference paper. [DataCite's original DOI metadata](https://api.datacite.org/dois/10.5281/zenodo.18039660) records an issued date of **23 December 2025**, registration on 24 December, and concept DOI 10.5281/zenodo.17972521. Its description merely names the paper; it does not expose the implementation. The earlier small test upload does not itself establish the claimed contribution. A 2025 technical release is plausible but not established from readable original bytes.
+
+### Core Contribution
+
+VulGenie extracts Java API security rules by comparing attack-side and defense-side data flows around a patch. A modification-behavior graph groups semantically equivalent changes and removes irrelevant edits; backward lifting identifies sensitive API parameters, including across loaded JARs. An LLM translates defensive checks into rules, and a deviation-guided context/path-sensitive analysis looks for violations. The strongest plausible increment is this integration for semantic Java guards and complex multi-API patches, rather than discovering patch-based inference or LLM rule generation.
+
+### Prior Art
+
+- [APHP, USENIX Security, August 2023](https://www.usenix.org/system/files/usenixsecurity23-lin.pdf) already extracts API constraints from patches and descriptions using critical variables, paths and code-property graphs. Its narrower post-operation focus leaves room for a broader Java-rule method.
+- [GPTAid, original preprint, 14 September 2024](https://arxiv.org/html/2409.09288v1) already generates API rules using an LLM, generates conforming/violating code, and refines rules with dynamic feedback and code differences. It is not merely unvalidated majority-vote rule generation.
+- [DISPATCH, USENIX Security, August 2025](https://yunlongxing.github.io/publications/security25_DISPATCH.pdf) already constructs patch dependency graphs and slices/merges fine-grained changes to isolate security repair semantics. A patch graph by itself is not VulGenie's original contribution.
+- Local mechanism searches also found [FAST (2023)](https://www.yinzhicao.org/FAST/ODGen-FAST.pdf), which selectively analyzes JavaScript flows to control state explosion, rather than inferring Java rules from patches. No local exact combined method was established.
+- These sources predate both plausible candidate years. A separate citation-backtracking search located Seal's 2025 patch/value-flow specification inference, but the author's full-paper link was unavailable; its institutional abstract is a lead, not a fully verified equivalent.
+
+### Scorecard
+
+**Historical total: 59.1/100; not a current six-category judgement.** The old abstract-based total is retained for provenance only. Its category arithmetic cannot be reconstructed. No fresh total is asserted because the original technical release cannot be established; scoring the later conference paper as if every detail were public in December 2025 would violate the publication-time evidence boundary. This record is excluded from the count of full six-category scorecards.
+
+### Reverification
+
+Reopened the complete conference paper and the primary APHP, GPTAid and DISPATCH methods; searched independently for patch-graph denoising and value-flow specification mining. The conference paper supports a substantive methodology candidate, but claims require qualification: 198 true rules and 177 rules absent from CodeQL are not 177 newly invented exploitation concepts. The 46 findings are unique source–sink pairs in a selected ten-project experiment; reported recall uses the union of tool findings as its ground truth. The 150 manually verifiable patches were selected from 930 candidates. Some baseline table/body counts disagree. Joern failures and absent library bodies cause misses; reflection and static initialization remain limitations. No supplied experiment was rerun, and later CVEs or adoption supply no score credit.
+
+The artifact page, API, direct files and preview routes were attempted through direct requests, the repository fetcher, Windows curl, web retrieval and Docker curl. Responses timed out, returned 403, or returned a 504 gateway body. None verifies the December README or code, and a bare issued date is not proof of substantive content. This access failure is uncertainty, not proof of duplication or poor research. The necessary next evidence is the original December 2025 artifact bytes and version history; establish what was technically disclosed, then score that version and place it in its actual year.
+
+### Verdict
+
+**Insufficient evidence; do not include pending first-version verification.** The old 59.1 exceeds the new display threshold but does not waive evidence or publication-year requirements. The full 2026 paper is now readable; the earlier abstract-only access explanation is superseded. No 2025 or 2026 addition is made from metadata alone.
 
 ---
 
-## 55.2 — [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](https://labs.boostsecurity.io/articles/introducing-smokedmeat/) — François Proulx, Boost Security Labs
+## 71.5 — [Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise) — Alex Brown, Luke Jahnke & Jia Hao Poh, elttam
 
-**REMOVED** · Tooling / methodology · confidence Medium
+**KEPT** · Meaningful combination · confidence Medium
 
-**What is new.** A purpose-built post-exploitation implant for CI runners, packaging the full recon to post-exploitation to pivot kill chain rather than a one-shot shell.
+### Candidate
 
-**What was already known.** Every constituent technique comes from the author's own earlier catalog and from existing tooling that the article explicitly names as what this extends; the announcement post is short, with the substance in the released source.
+- **Title:** Cruising for Shells in Flowise
+- **Author or organisation:** Alex Brown, Luke Jahnke & Jia Hao Poh, elttam
+- **Publication date / novelty cutoff:** 2026-08-03 (SQLite serial-type construction); earlier public dependency flaws assessed as prior art
+- **Reference:** [Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.0-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Turn a constrained SQLite database write into a shell-script payload even when the table name permits only alphanumeric characters. Choosing its length makes a binary serial-type byte become a shell quote; a later controllable field closes it and supplies commands. A sourced browser configuration file supplies execution without an executable permission bit. This exposes length metadata as an attacker-controlled syntax source beyond the validated string.
+
+### Prior Art
+
+Local searches for SQLite polyglots and arbitrary-file-write execution found established file-write-to-execution work, including the 2024 restricted-Rails archive. The source explicitly acknowledges old components, including [Moment’s locale-path advisory](https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4) (3 April 2022), and the authors’ [environment-variable research](https://www.elttam.com/blog/env/) (2020). Those do not demonstrate synthesizing a forbidden shell quote through SQLite’s encoded string length. Searching both the literal thirteen-byte construction and broader binary-record/shell-polyglot descriptions found no verified earlier equivalent. The result is a combination/extension, not six separately novel RCE classes.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 60/100 | 25% | 15.00/25 | The serial-type quote creates a distinct capability under an alphanumeric input restriction; several other chains are known-component applications. |
+| Transferability | 70/100 | 20% | 14.00/20 | Length-controlled serialization metadata is relevant to other binary formats and constrained-write exploitation. |
+| Lasting value | 70/100 | 20% | 14.00/20 | The audit question—what syntax can derived metadata introduce—has research value beyond the patched application. |
+| Technical soundness | 85/100 | 15% | 12.75/15 | The byte derivation, code paths and execution trigger establish the chain under stated filesystem permissions. |
+| Practical usability | 74/100 | 10% | 7.40/10 | The method is usable with a constrained write and suitable sourced-file sink, but adaptation requires format analysis. |
+| Clarity and reproducibility | 84/100 | 10% | 8.40/10 | Detailed code, hexdumps, payload construction and deployment conditions support reproduction. |
+
+**Final score: 71.5/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the August article, followed its old Moment advisory, and repeated the search with binary-header quote and SQLite serial-type terms. Checked the exact relationship: a 13-byte TEXT value gives serial type 39 (0x27), while the separate namespace value closes the shell quote. This does not defeat SQLite parsing or grant a file write by itself. The demonstrated deployment permits the necessary write and later launches Chromium; the entry is scored for this construction, not unrelated old gadgets or root impact. Later patches and AI-assistance comparisons do not affect the scores.
+
+### Verdict
+
+**Meaningful combination; core archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 55.2 — [Scanning the Scanners: Turning Security Vendors Into Supply Chain Weapons](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf) — Raphael Karger, ZeroPath
+## 61.7 — [Security Considerations on Istio’s CRDs with Namespace-based Multi-Tenancy](https://istio.io/latest/blog/2026/security-considerations-on-namespace-based-multi-tenancy/) — Lorin Lehawany & Sven Nobis, ERNW
 
-**REMOVED** · Tooling / methodology · confidence Medium
+**KEPT** · Meaningful extension · confidence Medium
 
-**What is new.** The empirical adversarial sweep of 20 hosted scanners with five confirmed boundary failures, a five-boundary model with an evidence bar separating a backend path firing from real worker impact, and a released regression corpus plus a deliberately-vulnerable scanner.
+### Candidate
 
-**What was already known.** All the primitives it fires are known: build files executing during analysis and symlink escape to the process environment. Vendor credentials in the worker is a consequence, not a discovery.
+- **Title:** Security Considerations on Istio’s CRDs with Namespace-based Multi-Tenancy
+- **Author or organisation:** Lorin Lehawany & Sven Nobis, ERNW
+- **Publication date / novelty cutoff:** 2026-03-21
+- **Reference:** [Security Considerations on Istio’s CRDs with Namespace-based Multi-Tenancy](https://istio.io/latest/blog/2026/security-considerations-on-namespace-based-multi-tenancy/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.0-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+A tenant allowed to create a namespaced routing object can use its mesh gateway scope to redirect another tenant’s outbound traffic. Namespace authorization does not bound the object’s mesh-wide effect, and authenticated transport follows the reconfigured destination. The useful extension is the explicit mesh-internal/external traffic path and its mode-dependent isolation analysis, rather than discovery of cross-namespace routing abuse in general.
+
+### Prior Art
+
+Local mechanism searches found general namespace/control-plane trust material but no closer preserved mesh construction. The primary [NCC assessment](https://istio.io/latest/blog/2021/ncc-security-assessment/NCC_Group_Google_GOIST2005_Report_2020-08-06_v1.1.pdf), publicly released with [Istio’s announcement](https://istio.io/latest/blog/2021/ncc-security-assessment/) on 13 July 2021, already demonstrates namespace-limited users hijacking another namespace’s gateway traffic (findings 017 and 023). This is a much closer antecedent than merely an ingress analogy. The 2026 account extends the analysis to mesh-scoped sidecar routing, including outbound services and ambient-mode mitigation limits. The May Kubeflow application is later evidence and does not increase this March score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 42/100 | 25% | 10.50/25 | The core authorization mismatch is old; mesh-wide outbound routing and mode-specific analysis are a modest extension. |
+| Transferability | 69/100 | 20% | 13.80/20 | Namespaced objects with wider effects recur in orchestration and service-mesh controls. |
+| Lasting value | 63/100 | 20% | 12.60/20 | The capability/effect mismatch offers a durable audit model at disclosure. |
+| Technical soundness | 77/100 | 15% | 11.55/15 | The control-plane explanation is coherent and explicitly distinguishes routing impersonation from bypassing destination authorization. |
+| Practical usability | 60/100 | 10% | 6.00/10 | Operators can audit permissions and scoping from the article, though it lacks a self-contained exploit harness. |
+| Clarity and reproducibility | 72/100 | 10% | 7.20/10 | Preconditions and limitations are clearly described, including why forwarding may lose the original identity. |
+
+**Final score: 61.7/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the March original, the 2021 release announcement and the relevant original audit findings. A second search for VirtualService request hijacking found the explicit older exploit and narrowed the novelty claim. The historical compact card conflated the March mesh analysis with the later Kubeflow bearer-token demonstration; the latter is excluded from scoring. mTLS is not cryptographically broken and destination AuthorizationPolicies can reject forwarded requests. The original mesh extension clears the threshold without treating unchanged namespace behavior as a newly invented class.
+
+### Verdict
+
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 64.1 — [The Memory Heist](https://www.ayush.digital/blog/the-memory-heist) — Ayush Paul
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+- **Title:** The Memory Heist
+- **Author or organisation:** Ayush Paul
+- **Publication date / novelty cutoff:** 2026-07-09
+- **Reference:** [The Memory Heist](https://www.ayush.digital/blog/the-memory-heist)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.0-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Supply a recursive tree of allowed links so an agent can reveal a secret through successive navigation choices without constructing a new URL. A fake verification step induces the choices; memory supplies the demonstrated data. The contribution is an adaptive navigation channel through a link-provenance restriction, showing that an allowlist of reachable URLs does not prevent information-bearing selection.
+
+### Prior Art
+
+Local searches of preserved indirect-prompt-injection and exfiltration work establish the general external-content-to-secret-disclosure class. The closer primary [CamoLeak](https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code) was published 8 October 2025 (its later page update does not change that cutoff): it precomputes allowed Camo URLs for alphabet symbols and induces their rendering to leak secrets. That already supplies alphabet-selection exfiltration under a URL restriction. Memory Heist’s narrower addition is recursive, stateful link discovery through web_fetch, rather than image rendering through a pre-signed proxy. Tencent’s later analysis is not an independent contribution or prior art for July.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 44/100 | 25% | 11.00/25 | A modest new navigation construction within an established symbol-selection exfiltration family. |
+| Transferability | 70/100 | 20% | 14.00/20 | The channel generalizes to agents restricted to discovered links and to secrets from other authorized data sources. |
+| Lasting value | 65/100 | 20% | 13.00/20 | It gives a reusable test of whether approved choices can still carry information. |
+| Technical soundness | 74/100 | 15% | 11.10/15 | The staged experiments and request logs explain the channel; search-result delivery is proposed rather than demonstrated. |
+| Practical usability | 70/100 | 10% | 7.00/10 | Interactive examples make reproduction practical with the described agent capabilities. |
+| Clarity and reproducibility | 80/100 | 10% | 8.00/10 | The direct-prompt experiment, recursive tree and indirect-injection scenario are distinguished clearly. |
+
+**Final score: 64.1/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the original and CamoLeak’s alphabet construction, checked their publication dates, and searched separately for recursive link exfiltration and no-URL-construction bypasses. Credit is limited to the adaptive navigation extension; memory theft, user-agent cloaking and fake verification are not new. The article’s inferred hometown is not described as a stored security-question answer. Current mitigation and lack of a bounty do not affect any score; Tencent’s later reproduction is omitted from the grouped citation.
+
+### Verdict
+
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 66.8 — [Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond](https://arxiv.org/abs/2608.04744) [Code](https://github.com/Golim/web-cache-overflow) — Matteo Golinelli, Kaan Onarlioglu & Bruno Crispo
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+- **Title:** Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond
+- **Author or organisation:** Matteo Golinelli, Kaan Onarlioglu & Bruno Crispo
+- **Publication date / novelty cutoff:** 2026-08-05 arXiv v1; same-author thesis catalogued 2026-03-10 is an earlier 2026 lead, with full thesis unavailable (403)
+- **Reference:** [Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond](https://arxiv.org/abs/2608.04744)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.0-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Create many separately keyed copies of one cacheable object, then use a cache-hit feedback loop and lightweight HEAD requests to maintain occupancy and evict useful objects. The contribution is an operational extension of cache pollution using imprecise keys, bandwidth-saving proxy behavior and forced eviction as a preparatory step for poisoning.
+
+### Prior Art
+
+Local 2019/2020 cache research includes [CPDoS](https://cpdos.org/) and [Web Cache Entanglement](https://portswigger.net/research/web-cache-entanglement), which establish cache availability and key-normalization attacks. Gao et al.’s original [Internet Cache Pollution Attacks and Countermeasures](https://users.cs.northwestern.edu/~ychen/Papers/icnp06.pdf) (ICNP 2006) already describes locality disruption, repeated refresh of unpopular entries, reverse-proxy applicability and cache-hit degradation. The narrower addition is synthetic duplicate objects plus a measured low-bandwidth maintenance strategy, not cache exhaustion or false locality itself. [Golinelli’s thesis catalogue](https://iris.unitn.it/handle/11572/478270) explicitly names WCO and dates the thesis 10 March 2026; the full thesis is blocked, so first technical priority within 2026 remains uncertain. All located antecedents used here predate March.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 49/100 | 25% | 12.25/25 | An incremental operational construction beyond established cache pollution; broad claims of a fundamentally new DoS class are not credited. |
+| Transferability | 70/100 | 20% | 14.00/20 | The same mechanism is demonstrated across five stand-alone proxies sharing imprecise keys. |
+| Lasting value | 70/100 | 20% | 14.00/20 | Cache-key precision and maintenance cost remain useful audit concepts beyond particular defaults. |
+| Technical soundness | 77/100 | 15% | 11.55/15 | Controlled experiments and parameter sweeps support the mechanism; public-site measurements establish prerequisites, not vulnerable deployments. |
+| Practical usability | 68/100 | 10% | 6.80/10 | Published implementation and detection probes help adaptation, but rate limits, cache size, admission policy and CDN architecture constrain success. |
+| Clarity and reproducibility | 82/100 | 10% | 8.20/10 | Algorithm, environments, results and limits are documented with released code. |
+
+**Final score: 66.8/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened arXiv v1, read its full body, algorithm, appendices and linked repository, and independently searched cache pollution/false locality. The 2006 original materially limits novelty. The 3,600-site observation does not prove exploitable DoS; poisoning experiments use deliberately vulnerable lab origins, and production DoS was not tested. HEAD maintenance is an observed proxy behavior, not a universal HTTP TTL guarantee. A second date search found the March thesis; both repository routes returned 403, recorded as a date/content gap rather than silently asserting an August invention. No later adoption or mitigation outcome affects scores.
+
+### Verdict
+
+**Meaningful extension; supporting archive inclusion.** The verified August paper is eligible in 2026 as a meaningful operational extension. Exact first technical publication within 2026 is uncertain because the March thesis could not be read; it is not counted as a separate technique.
+
+---
+
+## 64.6 — [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits](https://www.ndss-symposium.org/ndss-paper/bullseye-detecting-prototype-pollution-in-npm-packages-with-proof-of-concept-exploits/) [Thesis](https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf) — Tariq Houis; related conference paper with Shaoqi Jiang, Mohammad Mannan and Amr Youssef
+
+**REMOVED** · Tooling or methodology contribution · confidence Medium
+
+Out of window: see the retained [2025 full judgement](../2025/judgements.md).
+
+### Candidate
+
+- **Title:** Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits (Bullseye)
+- **Author:** Tariq Houis, Concordia University; the related NDSS paper credits Tariq Houis, Shaoqi Jiang, Mohammad Mannan and Amr Youssef.
+- **Publication date / novelty cutoff:** 4 November 2025, 16:48, verified repository deposit and unchanged modification timestamp. The cover's May 2025 and catalogue's 13 August thesis dates do not establish public availability.
+- **Reference:** [Full thesis](https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf); [deposit record](https://spectrum.library.concordia.ca/id/eprint/996198/).
+
+Fresh full review on 9 September 2026, replacing the 57.8 compact assessment that incorrectly treated the conference appearance as a 2026 contribution. Checked the 2025 curated nominations and original PortSwigger nomination page for title, authors and mechanism overlap; this tool is absent.
+
+### Core Contribution
+
+Combine package-specific valid arguments extracted from developer tests with typed attack fragments, enumerate less obvious exported entry points, and validate each attempt through recursive and differential prototype observations. This creates a practical discovery method for previously unknown pollution sources, including functions that need a valid options argument alongside the attack input. It does not establish application-level attacker reachability or downstream RCE. The full thesis already includes the dual oracles, proxy-based sink locator, ablations and the same package study as the later conference paper.
+
+### Prior Art
+
+- [Arteau's NorthSec 2018 release](https://github.com/HoLyVieR/prototype-pollution-nsec18) supplies the underlying dynamic reflection/fixed-exploit approach. The local 2018 archive and original release were checked. Bullseye explicitly inherits these inputs rather than introducing prototype pollution.
+- [JSGo, CCS 2024](https://netsec.ccert.edu.cn/files/papers/ccs24-testsuite.pdf), especially sections 3–4, already converts test-suite knowledge into vulnerability-triggering inputs, including prototype pollution. It uses trace alignment to construct HTTP requests for a known target location. Bullseye instead discovers sources across package entry points through simpler typed argument combinations.
+- [PoCGen v1](https://arxiv.org/html/2506.04962v1) ([5 June 2025 submission record](https://arxiv.org/abs/2506.04962v1)) already dynamically enumerates package exports, statically extracts test usage snippets, combines them with exploit examples, and validates prototype pollution at runtime. It starts from a vulnerability report and uses iterative LLM generation, whereas Bullseye is a deterministic discovery pipeline without a known vulnerability report.
+- The incremental contribution is the integrated source-discovery method and its demonstrated complementary coverage. Testsuite guidance or automatic PoC generation alone cannot be claimed as new. Only the 2025 thesis and pre-cutoff sources affect these scores; the 2026 paper is used to verify duplication, not to supply later benefits.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 52/100 | 25% | 13.00/25 | Known testing ideas are combined into a distinct discovery pipeline with improved entry coverage and richer pollution observations. |
+| Transferability | 71/100 | 20% | 14.20/20 | Package tests can supply otherwise missing argument constraints across JavaScript libraries; the method remains language and oracle dependent. |
+| Lasting value | 70/100 | 20% | 14.00/20 | Combining valid usage with attack fragments and measuring observation blind spots provides durable testing guidance. |
+| Technical soundness | 66/100 | 15% | 9.90/15 | Baselines and ablations support the incremental method, with denominator inconsistencies and disputed reachability classifications limiting broad claims. |
+| Practical usability | 61/100 | 10% | 6.10/10 | Detailed construction is usable by researchers; the cutoff document promises a future code release and cannot show real application exploitability. |
+| Clarity and reproducibility | 74/100 | 10% | 7.40/10 | Full algorithms, seed tables, timings, experimental settings and limitations allow substantial reconstruction without counting later artifacts. |
+
+**Final score: 64.6/100.** Computed with `score.py 52 71 70 66 61 74`.
+
+### Reverification
+
+Read the complete 72-page original thesis, including references and appendices, then reopened the deposit metadata and compared the conference paper's contribution, algorithms, experiment sizes and appendices. A second prior-art search for test-guided exploit generation found PoCGen's June 2025 version, which materially narrows the novelty beyond the thesis's own related-work discussion. JSGo's original methodological sections were also reopened. Both are pre-cutoff original sources.
+
+The strongest objection is that existing test-guided validation already provides the general idea. The favorable, supported reading is a complementary discovery design, with ablations attributing gains to input pairing and richer observations; this justifies a methodology verdict rather than an original attack label. The 0.51-second headline is amortized parallel throughput, excluding download and installation, while individual packages average 32.38 seconds. “No false positives” concerns observed pollution under package-level input control, not confirmed remote attack paths. The thesis reports 807 entry points in its main result but 818 in ablations, and sometimes labels baseline-only results unknown rather than proved false positives. Its exclusion of `constructor.prototype` assumes equivalence that need not hold when filters distinguish keys. Its 100-ms timeout and partial AST handling can miss valid cases. These are publication-time limitations. No tool was executed, and no later CVEs, patches, adoption or code release increased any score.
+
+### Verdict
+
+**Tooling or methodology contribution; include as a supporting reference in 2025.** The combined discovery workflow clears 55 and is distinct from report-driven PoC synthesis and known-sink HTTP validation. It is excluded from the 2026 display because the full contribution was public in 2025. Confidence is medium: first public code availability and any earlier full disclosure remain uncertain, and the original artifact was promised rather than verified at the cutoff.
+
+---
+
+## 60.4 — [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you) [Labs](https://github.com/xssdoctor/cspt_research) — Jonathan Dunn (xssdoctor)
+
+**KEPT** · Useful synthesis · confidence Medium
+
+### Candidate
+
+- **Title:** The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework
+- **Author or organisation:** Jonathan Dunn (xssdoctor)
+- **Publication date / novelty cutoff:** 2026-04-02
+- **Reference:** [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 57.8-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Map route-parameter decoding, query parsing and fetch sinks across eight frontend frameworks, emphasizing where apparently similar APIs return differently encoded values. The reusable contribution is a comparative testing methodology and lab corpus, rather than a new client-side path traversal primitive.
+
+### Prior Art
+
+The local 2024 list contains [CSPT2CSRF](https://blog.doyensec.com/2024/07/02/cspt2csrf.html) and [encoding-level WAF bypasses](https://matanber.com/blog/cspt-levels). [CSPT the Eval Villain Way](https://blog.doyensec.com/2024/12/03/cspt-with-eval-villain.html) already traces decoded path input through fetch and secondary sinks. [React Router issue 10814](https://github.com/remix-run/react-router/issues/10814) documents decoding inconsistencies in 2023. The new synthesis organizes framework-specific source/sink differences and lab cases, not traversal, decoding or chaining to XSS.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 43/100 | 25% | 10.75/25 | The comparative framework corpus provides incremental understanding beyond existing discovery and encoding techniques. |
+| Transferability | 75/100 | 20% | 15.00/20 | Source/normalizer/sink separation applies across frontend and hybrid frameworks. |
+| Lasting value | 65/100 | 20% | 13.00/20 | The systematic audit approach has value beyond any one router version. |
+| Technical soundness | 49/100 | 15% | 7.35/15 | Material examples are wrong: encoded dot-only segments are normalized, literal traversal disappears before wildcard matching, and traversal inside a query value is not itself path traversal. |
+| Practical usability | 70/100 | 10% | 7.00/10 | Labs and the matrix are useful starting points, but findings must be rechecked against exact versions and real sinks. |
+| Clarity and reproducibility | 73/100 | 10% | 7.30/10 | Detailed code paths aid reproduction, while contradictory examples reduce trust in the complete table. |
+
+**Final score: 60.4/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete original article and re-fetched it. A second search located the 2024 instrumentation methodology and 2023 router issue. Checked the [WHATWG URL parsing definition](https://url.spec.whatwg.org/#double-dot-url-path-segment) and evaluated the candidate’s URLs locally with Node’s WHATWG URL implementation: /path/%2E%2E/second becomes /second; /docs/../../etc/passwd becomes /etc/passwd. The SolidStart example places input after ?source=, which cannot establish path traversal by itself. The valid mapping contribution remains a reusable methodology, with a substantial technical-soundness deduction rather than accepting the universal headline.
+
+### Verdict
+
+**Useful synthesis; supporting archive inclusion.** A supporting methodology/synthesis inclusion above 55. Inclusion credits the comparative testing corpus with explicit corrections; it does not endorse every example or claim that ordinary decoded parameters are framework vulnerabilities.
+
+---
+
+## 63.2 — [Three 0-Day Vulnerabilities in Adminer](https://blog.voorivex.team/three-0-day-vulnerabilities-in-adminer) — Yashar Shahinzadeh & Amirmohammad Safari, Voorivex
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** Three 0-Day Vulnerabilities in Adminer
+- **Author or organisation:** Yashar Shahinzadeh & Amirmohammad Safari, Voorivex
+- **Publication date / novelty cutoff:** 2026-06-09; April reports were private
+- **Reference:** [Three 0-Day Vulnerabilities in Adminer](https://blog.voorivex.team/three-0-day-vulnerabilities-in-adminer)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 57.7-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Exploit a failed numeric-version extraction as a raw-data fallback: a rogue database server supplies a nonmatching banner, preg_replace returns it unchanged, and the application inserts it into already nonce-authorized JavaScript. The transferable detail is that an extraction operation assumed to constrain input can instead preserve the whole attacker string, across a backend-protocol-to-browser boundary. Two file-write chains accompany this result.
+
+### Prior Art
+
+Local [2022 PHP object-instantiation research](https://swarm.ptsecurity.com/exploiting-arbitrary-object-instantiations/) already treats PDO connection strings as a dangerous input boundary. The candidate itself acknowledges the team’s earlier [rogue-MySQL Adminer file-read](https://infosecwriteups.com/adminer-script-results-to-pwning-server-private-bug-bounty-program-fe6d8a43fe6f), later rediscovered as CVE-2021-43008. [SQLite’s VACUUM INTO documentation](https://sqlite.org/lang_vacuum.html#vacuum_with_an_into_clause) supplies the underlying arbitrary-output capability; its age alone does not prove the exact exploit, but the candidate’s ATTACH-blocklist substitution is modest. Searches for earlier version-banner/regex-fallback exploitation did not verify the same construction. The old compact card’s assertion that the exact TraceFile/TraceOn exploit was established could not be independently substantiated, so it is not used as evidence of priority.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 44/100 | 25% | 11.00/25 | The failed-extraction-to-nonce-script route is an incremental reusable combination; ordinary file writes and rogue-server control are not new classes. |
+| Transferability | 61/100 | 20% | 12.20/20 | Protocol metadata may reach trusted templates in many administrative clients, although this concrete path depends on Adminer. |
+| Lasting value | 60/100 | 20% | 12.00/20 | Checking failure behavior of data-extraction helpers is a durable audit lesson. |
+| Technical soundness | 79/100 | 15% | 11.85/15 | Full source paths and a runnable rogue-server implementation support the chain; writable roots and installed drivers constrain the RCE claims. |
+| Practical usability | 78/100 | 10% | 7.80/10 | The payloads and preconditions permit controlled reproduction with little missing infrastructure. |
+| Clarity and reproducibility | 83/100 | 10% | 8.30/10 | The article provides minimal server code and end-to-end requests, although universal exposure claims are overstated. |
+
+**Final score: 63.2/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the complete original, read all three chains and checked the extraction mismatch against the supplied banner (one digit followed by a quote fails the two-digit regex). A second search for the exact banner/nonce route located the later July maintainer advisory, which is corroboration only and not used to boost publication-time scores. The DBlib route is speculation, not a demonstrated fourth exploit. Arbitrary shell writes require a writable interpreted path. The nonce does not malfunction: the application has already placed the injected code inside a trusted script. Failed retrieval of an alleged older PDO article is not treated as prior art.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 57.5 — [Beyond the Limits of Site Isolation](https://www.youtube.com/watch?v=d3nfJL86jrc) — Ivan Fratric
+
+**REMOVED** · Insufficient evidence · confidence Low
+
+### Candidate
+
+- **Title:** Beyond the Limits of Site Isolation
+- **Author:** Ivan Fratric
+- **Publication date:** 15 May 2026 talk, confirmed by the [OffensiveCon agenda](https://www.offensivecon.org/agenda/2026/); 28 May is the video upload date.
+- **Reference:** [Original video](https://www.youtube.com/watch?v=d3nfJL86jrc); [speaker abstract](https://www.offensivecon.org/speakers/2026/ivan-fratric.html).
+
+### Core Contribution
+
+The abstract describes cross-origin information theft from a compromised Chromium renderer, including URL and authentication-token disclosure and alternative channels. Those are research leads, not a verified account of the talk's complete mechanism.
+
+### Prior Art
+
+The previous compact assessment compared Chromium's compromised-renderer boundary and older URL-protection work. This review could obtain the official abstract, agenda and video metadata, but not the talk's complete technical content. Those incomplete comparisons do not establish whether the attack is a meaningful extension. No claim of duplication is made.
+
+### Scorecard
+
+**Historical compact score: 57.5/100; not a completed six-category evaluation.** The original category breakdown is unavailable and is not reconstructed. All six category scores remain pending a full original-source read; this historical total cannot satisfy the current full-scorecard inclusion gate.
+
+### Reverification
+
+Reopened the speaker page, May 15 agenda entry and original YouTube metadata. A second search for slides, transcript, renderer URL leaks and token disclosure did not produce a complete original source. The player response exposed an automatic-caption URL, but both caption formats returned empty bodies. No video viewing or transcript review is claimed. The strongest favorable reading is a reusable alternative-channel technique crossing a compromised-renderer boundary; the unavailable steps prevent verification and scoring. Corrected the disclosure date from upload date to the actual talk date. This remains a revisitable evidence gap.
+
+### Verdict
+
+**Insufficient evidence; no display inclusion at present.** Obtain the full video transcript or original slides and perform a fresh publication-time evaluation. The 55-point threshold does not convert an incomplete historical score into a verified judgement.
+
+---
+
+## 65.5 — [AgentForger: ChatGPT Cross-Site Agent Forgery](https://labs.zenity.io/post/agentforger-part-1-chatgpt-cross-site-agent-forgery) [Part 2](https://labs.zenity.io/post/agentforger-part-2-the-autonomous-insider) — Mike Takahashi, Zenity Labs
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** AgentForger: ChatGPT Cross-Site Agent Forgery
+- **Author or organisation:** Mike Takahashi, Zenity Labs
+- **Publication date / novelty cutoff:** 2026-07-23; June vendor report was private
+- **Reference:** [AgentForger: ChatGPT Cross-Site Agent Forgery](https://labs.zenity.io/post/agentforger-part-1-chatgpt-cross-site-agent-forgery)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 57.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Use an auto-submitted URL prompt to control an agent builder, including the approval policy and recurring schedule of the agent it creates. The resulting agent inherits already-authorized connectors and polls an attacker-accessible mailbox for further commands. The added capability is unauthorized construction of persistent delegated authority, rather than a new URL-triggered prompt injection.
+
+### Prior Art
+
+Local agent-injection coverage was checked. [Tenable TRA-2025-22](https://www.tenable.com/security/research/tra-2025-22) (15 July 2025) already publishes ChatGPT auto-submission through the q URL parameter. [SpAIware](https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/) (20 September 2024) already demonstrates persistent injected instructions and ongoing exfiltration. Neither located antecedent shows this agent-construction workflow changing its own approval policy, publishing a new agent and scheduling connector-backed command retrieval. Persistence and CSRF alone are not new.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 49/100 | 25% | 12.25/25 | The builder-policy-scheduler combination creates a distinct persistent authority configuration from the earlier one-click prompt. |
+| Transferability | 71/100 | 20% | 14.20/20 | Similar creation wizards and tool builders expose a general lifecycle-authorization boundary. |
+| Lasting value | 69/100 | 20% | 13.80/20 | Separating permission to configure an agent from permission to execute it remains a durable audit method. |
+| Technical soundness | 74/100 | 15% | 11.10/15 | Both original parts show the full setup and commands; success across versions and model settings is not quantified. |
+| Practical usability | 66/100 | 10% | 6.60/10 | The initialization and task payloads are provided; existing connectors and workspace access are required. |
+| Clarity and reproducibility | 76/100 | 10% | 7.60/10 | The stages, prerequisites and follow-on effects are explicit, although demonstrations carry some evidence visually. |
+
+**Final score: 65.5/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read both original parts including the separately rendered code blocks; reopened the first and second article and the older Tenable/SpAIware sources. Searched separately for CSRF-triggered agent deployment and scheduled persistence. Narrowed the claim to constructing authority and scheduling, not inventing persistence. The agent only receives connector permissions previously granted to the victim; this is not an OAuth-consent bypass or access outside that authority. Reconnaissance and financial-message scenarios are consequences, not separately scored techniques.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 66.0 — [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails) [Earlier Leaky Avatar disclosure](https://abdelmounaim.xyz/posts/leaky-avatar/) [Rails technical details](https://github.com/rails/rails-forensics-CVE-2026-66066) — André Baptista (0xacb), s3np41k1r1t0, castilho & Ethiack Research Team; earlier primitive by Abdelmounaim Moulahcene (bl0rph)
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails
+- **Author or organisation:** André Baptista (0xacb), s3np41k1r1t0, castilho & Ethiack Research Team; earlier primitive by Abdelmounaim Moulahcene (bl0rph)
+- **Publication date / novelty cutoff:** 2026-07-18 earlier image-read primitive; 2026-07-30 Rails technical disclosure; 2026-07-31 Ethiack extension writeup
+- **Reference:** [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.8-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Reach an unsafe scientific-image loader using a spoofed image content type and a genuine, blob-independent signed transformation, then preserve exact external-file bytes through resizing with a one-pixel read oracle. Recovered signing secrets permit attacker-chosen Vips transformations. The Rails-specific reachability and reliable read-to-transformation chain extend an earlier HDF5/libvips avatar disclosure.
+
+### Prior Art
+
+Read the complete [Leaky Avatar](https://abdelmounaim.xyz/posts/leaky-avatar/) original (18 July 2026): it already reaches matload through a spoofed avatar type, reads HDF5 external storage, recovers bytes from resized image blocks and steals environment/cloud credentials. Therefore none of those capabilities is attributed first to Ethiack. [Rails’ 13 August 2025 advisory](https://rubyonrails.org/2025/8/13/Rails-Versions-8-0-2-1-7-2-2-2-and-7-1-5-2-have-been-released) already documents unsafe Active Storage transformation methods. The July extension connects genuine transferable variation keys and exact reads to a Vips validation gap; familiar secret-to-signed-payload escalation is an existing component.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 49/100 | 25% | 12.25/25 | A meaningful reachability and exploitation combination beyond the independently published image-read primitive. |
+| Transferability | 66/100 | 20% | 13.20/20 | The method applies across signed transformation pipelines with broad native-format support. |
+| Lasting value | 66/100 | 20% | 13.20/20 | Token binding, type disagreement and output-preservation constraints remain useful audit dimensions. |
+| Technical soundness | 82/100 | 15% | 12.30/15 | The source traces parser fields, byte extraction and Rails call paths, with concrete deployment requirements. |
+| Practical usability | 70/100 | 10% | 7.00/10 | The chain is actionable with uploads, an accessible transformation route and the relevant native dependencies. |
+| Clarity and reproducibility | 80/100 | 10% | 8.00/10 | Detailed technical explanation and upstream supporting material enable reconstruction; some payload code is rendered separately. |
+
+**Final score: 66.0/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read and reopened the full Ethiack article; fetched and read the full earlier July original after web retrieval failed. A second search found the 2025 transformation advisory and the July Rails technical repository. The old summary omitted the earlier author’s resized-block read, now explicitly credited. Root execution is an environment-specific demonstration, not a universal consequence; ImageMagick installations are outside this loader chain. The extension is evaluated at its July disclosure, with earlier July material as prior art and no credit from August third-party reproduction.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** One grouped 2026 entry preserves the earlier primitive and later Rails extension. It does not count each component or the independent rediscovery as a separate technique.
+
+---
+
+## 59.9 — [GitHub RCE Vulnerability: CVE-2026-3854](https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854) — Sagi Tzadik, Wiz Research
+
+**REMOVED** · Useful application/case study · confidence Medium
+
+### Candidate
+
+- **Title:** GitHub RCE Vulnerability: CVE-2026-3854
+- **Author or organisation:** Sagi Tzadik, Wiz Research
+- **Publication date / novelty cutoff:** 2026-04-28 technical article; March 10 advisory/patch precedes it
+- **Reference:** [GitHub RCE Vulnerability: CVE-2026-3854](https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.8-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Unsanitized Git push options escape a semicolon-delimited trusted header. Last-write-wins parsing replaces policy fields, selects an unsandboxed execution mode, redirects hook lookup and activates a normally unavailable enterprise feature. The report is a strong concrete case of internal metadata injection, without a demonstrated new parsing or exploitation primitive.
+
+### Prior Art
+
+Local 2021 material includes [Practical HTTP Header Smuggling](https://www.intruder.io/research/practical-http-header-smuggling) (10 November 2021), explicitly demonstrating attacker data becoming trusted backend metadata and bypassing frontend restrictions. Local 2018 [Breaking Parser Logic](https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf) covers cross-component parsing boundaries. These are not the same GitHub exploit; they establish the exploitation model to which delimiter injection and mutable policy fields are applied. The target-specific hook flags are the main new findings. The claimed AI-assisted reverse-engineering improvement is not exposed as a reproducible research method.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 30/100 | 25% | 7.50/25 | The concrete vulnerability and field mapping are new, but the underlying exploitation technique is an established application. |
+| Transferability | 66/100 | 20% | 13.20/20 | Trust propagation through internal text protocols generalizes beyond the reported Git services. |
+| Lasting value | 62/100 | 20% | 12.40/20 | The case is useful for auditing production/debug mode and metadata trust assumptions. |
+| Technical soundness | 82/100 | 15% | 12.30/15 | Binary analysis, wire observations and execution output substantiate the chain; third-party repository access is inferred from permissions, not performed. |
+| Practical usability | 67/100 | 10% | 6.70/10 | The relevant fields and sequencing are given, though full payload and binary-analysis tooling are not published. |
+| Clarity and reproducibility | 78/100 | 10% | 7.80/10 | Clear architectural explanation and traces make the mechanism understandable, with limited reconstruction material. |
+
+**Final score: 59.9/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the entire original article and checked its sole named byline against structured author metadata. Reopened the original and the 2021 primary research, then searched separately for trusted-header policy replacement and X-Stat predecessors. The search did not establish an earlier identical GitHub exploit; exclusion rests on the demonstrated contribution being an application of an established mechanism, not an unsupported duplicate claim. Millions of repositories, bounty size and claimed AI productivity do not increase technique novelty.
+
+### Verdict
+
+**Useful application/case study; no 2026 display inclusion.** Above 55 on usefulness and evidence, but still excluded by the novelty gate: an application/case study without a demonstrated new primitive, meaningful technical extension or reusable new methodology.
+
+---
+
+## 73.0 — [DOMPurify XSS via `<selectedcontent>` re-clone](https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx) — KabirAcharya; advisory published by Cure53
+
+**KEPT** · Meaningful extension · confidence High
+
+### Candidate
+
+- **Title:** DOMPurify XSS via `<selectedcontent>` re-clone
+- **Author or organisation:** KabirAcharya; advisory published by Cure53
+- **Publication date / novelty cutoff:** 2026-05-18 public release/technical warning; full advisory 2026-05-19
+- **Reference:** [DOMPurify XSS via `<selectedcontent>` re-clone](https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.5-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Trigger a browser-managed selectedcontent re-clone while the sanitizer is walking the original option. Removing an attribute refreshes a subtree already visited, introducing unsanitized handlers behind the traversal cursor. This is a live-tree side effect of sanitization itself, distinct from only reparsing a sanitized string.
+
+### Prior Art
+
+The local 2024 winner [Exploring DOMPurify](https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes) documents mutation-XSS and traversal hazards; mutation after sanitization is not a new class. The [18 May WHATWG issue](https://github.com/whatwg/html/issues/12532) raises selectedcontent cloning as a sanitizer hazard and the [same-day DOMPurify release](https://github.com/cure53/DOMPurify/releases/tag/3.4.5) credits this researcher. These adjacent disclosure records are grouped as the same emerging issue, not an independent older invention or a second entry. The narrower contribution is a runnable re-clone-after-visit trigger with the exact attribute removal and output behavior.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 62/100 | 25% | 15.50/25 | A new browser-maintained mutation route violates the one-pass walk invariant; old mXSS does not establish this precise route. |
+| Transferability | 69/100 | 20% | 13.80/20 | Other sanitizers traversing browser-maintained live projections face the same kind of side effect. |
+| Lasting value | 72/100 | 20% | 14.40/20 | Accounting for implicit engine mutations during cleanup is a durable security invariant. |
+| Technical soundness | 84/100 | 15% | 12.60/15 | A minimal payload, expected serialized output and tested engine versions support the causal explanation. |
+| Practical usability | 82/100 | 10% | 8.20/10 | The compact default-configuration reproducer is straightforward within the stated browser-support limits. |
+| Clarity and reproducibility | 85/100 | 10% | 8.50/10 | The advisory clearly distinguishes original, sanitized and later live DOM states, including when the handler fires. |
+
+**Final score: 73.0/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete advisory and reopened it; searched separately for selectedcontent cloning and pre-May sanitizer issues. Located and opened the 18 May standards discussion and attributed release, moving the cutoff back one day rather than treating the 19 May advisory as first public mention. Re-read the older DOMPurify research for the distinction between parser mutation and live clone refresh. No browser exploit was executed here; reproduction is author-reported in Chromium 148/WebKit 625, with Safari and Firefox excluded at disclosure. The small patch size and recent browser feature do not reduce the demonstrated primitive’s novelty.
+
+### Verdict
+
+**Meaningful extension; core archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 66.2 — [SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot](https://www.varonis.com/blog/searchleak) — Dolev Taler, Varonis Threat Labs
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot
+- **Author or organisation:** Dolev Taler, Varonis Threat Labs
+- **Publication date / novelty cutoff:** 2026-06-15 (datePublished and visible date agree)
+- **Reference:** [SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot](https://www.varonis.com/blog/searchleak)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Exploit a streaming response that temporarily renders an image before the final output is neutralized, then send that image request through an allowed remote-image fetching service. The combination makes a URL-triggered search instruction exfiltrate data despite final-output handling and browser destination restrictions. The temporal rendering gap, rather than the URL prompt alone, is the added route.
+
+### Prior Art
+
+Local prompt-injection coverage and the primary [Tenable July 2025 q-parameter advisory](https://www.tenable.com/security/research/tra-2025-22) establish auto-executing URL prompts. Read the same author’s complete [Reprompt](https://www.varonis.com/blog/reprompt) article, first published 14 January 2026: it already combines URL prompts, repeated requests and remote follow-on instructions. SearchLeak adds a different rendering-time escape and image-fetch relay, so the earlier article is prior art rather than an extra citation counted as a new June contribution. Image-based exfiltration and permissive proxy endpoints are established components; no new injection class or broken browser CSP implementation is claimed.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 49/100 | 25% | 12.25/25 | The streaming-before-cleanup and permitted-fetch relay supply a meaningful combined route beyond the already disclosed URL prompt. |
+| Transferability | 70/100 | 20% | 14.00/20 | Incremental rendering and trusted resource proxies recur in chat and other streaming applications. |
+| Lasting value | 68/100 | 20% | 13.60/20 | Checking side effects before final validation remains a durable testing principle. |
+| Technical soundness | 74/100 | 15% | 11.10/15 | The article supplies a full prompt and request sequence, but not a browser trace or a controlled success-rate study. |
+| Practical usability | 73/100 | 10% | 7.30/10 | A concrete one-click test can be adapted when enterprise search, transient markup rendering and an allowed relay coexist. |
+| Clarity and reproducibility | 79/100 | 10% | 7.90/10 | The three stages and limitations are understandable, although some evidence rests on screenshots and demonstrations. |
+
+**Final score: 66.2/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete original and its structured metadata, correcting the older two-author attribution to the sole byline, Dolev Taler. Reopened it and independently searched streaming sanitizer races and image-fetch relays; contrasted the full earlier Reprompt mechanism. Wrapping content in a code element alone does not sanitize HTML: the claim retained is the observed transition from active markup to inert display, not that code tags are a security primitive. The Bing request is an intended image-fetch feature used as a relay; no general internal-network SSRF capability is demonstrated. Scores credit publication-time evidence, not later CVE coverage or hypothetical complete account takeover.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 68.6 — [Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker](https://www.usenix.org/conference/usenixsecurity26/presentation/erinola) [Paper](https://www.usenix.org/system/files/usenixsecurity26-erinola.pdf) [Artifact v1](https://zenodo.org/records/20280317) — Nurullah Erinola, Marcel Maehren, Marcus Brinkmann & Jörg Schwenk, Ruhr University Bochum
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker
+- **Author or organisation:** Nurullah Erinola, Marcel Maehren, Marcus Brinkmann & Jörg Schwenk, Ruhr University Bochum
+- **Publication date / novelty cutoff:** 2026-05-19–2026-08-12 for the full study (Zenodo v1 publication/creation 19–20 May; original deposited PDF retrieval failed); XQUIC STREAM-frame defect already exposed by a 12 December 2025 patch
+- **Reference:** [Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker](https://www.usenix.org/conference/usenixsecurity26/presentation/erinola)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Make the encapsulation boundary an explicit protocol-test dimension: hold a logical payload fixed while varying its division across frames, packets and UDP datagrams, then combine it with invalid frame placements or stream-control ordering. A flexible QUIC stack and three test catalogs expose behavior that an isolated frame test misses. The HTTP/3 response-confusion example illustrates why cross-layer parsing matters, but is not credited as a wholly new application-layer desynchronization class.
+
+### Prior Art
+
+The local Opossum and TLS-truncation archives establish older application confusion and truncation outcomes. [QUICTester v1](https://arxiv.org/pdf/2505.12690v1) (19 May 2025) already tests invalid frame/packet combinations, retained Initial keys and coalesced Initial handling (S-21–S-28), and demonstrates spoofed Initial packets affecting XQUIC and Kwik. Therefore the candidate’s suggestion that earlier studies only considered isolated packets is too broad. [TLS-Attacker’s December 2024 paper](https://www.acsac.org/2024/program/artifacts_competition/comp-acsac24-final11.pdf) describes the reusable workflow/modifiable-variable architecture and QUIC as an extension being pursued, not this completed test catalog. The [12 December 2025 XQUIC patch](https://github.com/alibaba/xquic/commit/4764604a0e487eeb49338b4498aecda2194eae84) explicitly rejects STREAM in Initial/Handshake packets and includes a test; that defect cannot be called first disclosed in August 2026. The distinct retained work is systematic boundary-composition coverage and its reusable stack/test suite, beyond those particular known checks.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 54/100 | 25% | 13.50/25 | The systematic composition matrix and supporting implementation extend existing QUIC testing, while several claimed novel checks have direct predecessors. |
+| Transferability | 75/100 | 20% | 15.00/20 | Boundary-preserving payload transformations apply to multiple QUIC stacks and other layered encrypted protocols. |
+| Lasting value | 75/100 | 20% | 15.00/20 | Separating protocol state, frame placement and encapsulation provides a useful basis for future security tests. |
+| Technical soundness | 70/100 | 15% | 10.50/15 | Concrete traces and controlled comparisons support the findings, but some prior-work and no-false-negative claims are overstated. |
+| Practical usability | 68/100 | 10% | 6.80/10 | The released framework and implementation corpus support reuse; some exploits additionally require an active network position. |
+| Clarity and reproducibility | 78/100 | 10% | 7.80/10 | Workflow examples, test matrices, artifacts and packet diagrams make the method reconstructable, with earliest artifact contents not retrieved here. |
+
+**Final score: 68.6/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete 19-page proceedings PDF, including tables and appendices, and reopened author/venue metadata. A separate search for retained Initial keys led back to QUICTester’s original May 2025 paper and its coalesced-packet findings, narrowing the candidate’s precedence claim. Followed CVE-2026-6328 to the original GitHub patch and verified its December 12, 2025 commit metadata and full diff; CVE publication in April 2026 is not the defect’s first technical disclosure. Checked the 2024 TLS-Attacker paper’s outlook rather than treating its QUIC mention as a completed equivalent. Zenodo v1 lists full paper and code in May 2026, but download attempts timed out; exact differences from the August proceedings copy remain an evidence gap and are not silently treated as verified. All comparison sources predate the May–August interval, and no later adoption, patch response or artifact revision affects the score. The strongest favorable interpretation is a useful expanded method rather than a new protocol attack class. Only two-frame compositions and server implementations were evaluated, resumption and packet loss were excluded, and lack of an observable response can hide processing. HTTP/3 resource confusion is demonstrated; every compliance deviation is not thereby an exploitable attack. No test was executed.
+
+### Verdict
+
+**Tooling or methodology contribution; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 64.8 — [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](https://www.synacktiv.com/en/publications/caught-in-the-octopus-trap-unauthenticated-rce-in-argo-cd-with-codeql) — Hugo Vincent, Synacktiv
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+- **Title:** Caught in the Octopus Trap: Unauthenticated RCE in Argo CD
+- **Author or organisation:** Hugo Vincent, Synacktiv
+- **Publication date / novelty cutoff:** 2026-07-01 full technical disclosure; 29 June network-policy advisory
+- **Reference:** [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](https://www.synacktiv.com/en/publications/caught-in-the-octopus-trap-unauthenticated-rce-in-argo-cd-with-codeql)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.0-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Reach an internal rendering service through missing network isolation, choose an executable through its Kustomize options, and recover the credential for its deployment cache. The distinctive extension poisons both cached manifests and Git revision metadata so ordinary automatic synchronization deploys the attacker manifest without requiring self-healing. The article also gives a reusable CodeQL source model for Go gRPC service methods.
+
+### Prior Art
+
+Local CI/CD and internal-service research was searched by cache poisoning, Argo CD and GitOps. [Cycode’s original report](https://cycode.com/blog/revealing-argo-cd-critical-vulnerability/) was published 21 May 2024 (the page explicitly distinguishes its later update); it already forges Redis manifest entries and their non-secret integrity hash to obtain privileged deployment. [Argo CD Secrets](https://www.sstic.org/2025/presentation/argo_cd_secrets/) (4 June 2025) documents sensitive deployment state and secret compromise. The 2026 addition is the revision-cache trigger that relaxes the self-healing prerequisite, combined with a specific unauthenticated rendering-service path. The [29 June 2026 advisory](https://github.com/argoproj/argo-helm/security/advisories/GHSA-47m3-95c7-g2g8) describes network-policy exposure without the full construction; the complete article is the technical cutoff.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 47/100 | 25% | 11.75/25 | The trigger broadens an existing cache-poisoning capability under a concrete changed prerequisite. |
+| Transferability | 65/100 | 20% | 13.00/20 | Cache authority, revision tracking and service source modeling apply to other delivery controllers. |
+| Lasting value | 66/100 | 20% | 13.20/20 | Separately testing state contents and change-detection metadata is a durable audit method. |
+| Technical soundness | 80/100 | 15% | 12.00/15 | Requests, traces and code follow the complete chain; exploit reachability depends on deployment isolation. |
+| Practical usability | 68/100 | 10% | 6.80/10 | The article provides construction details but explicitly delays release of its automation tool. |
+| Clarity and reproducibility | 80/100 | 10% | 8.00/10 | The gRPC modeling and cache-key sequence are explained well enough for manual reconstruction. |
+
+**Final score: 64.8/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the full original and reopened it alongside the earlier Cycode report. A second search for revision metadata and self-healing located the SSTIC secrets paper, which does not supply the same trigger. Private January 2025 reporting and February 2025 console timestamps do not establish public publication in that year. Corrected the scope: this is reachable internal gRPC, not an unauthenticated public web API in every installation; Auto Sync remains necessary for automatic deployment. The shown initial command exfiltrates a Redis password rather than itself proving a reverse shell. The promised argo-cdown release is not credited as available publication-time tooling.
+
+### Verdict
+
+**Meaningful extension; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 64.3 — [The sorry state of skill distribution](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/) [Test corpus](https://github.com/trailofbits/overtly-malicious-skills) [Earlier structural validation contribution](https://github.com/cisco-ai-defense/skill-scanner/pull/25) — Samuel Judson & Tjaden Hess, Trail of Bits
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** The sorry state of skill distribution
+- **Author or organisation:** Samuel Judson & Tjaden Hess, Trail of Bits
+- **Publication date / novelty cutoff:** 2026-02-17 structural scanner contribution; complete attack corpus/writeup public by 2026-06-03
+- **Reference:** [The sorry state of skill distribution](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 56.0-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Test skill-distribution scanners at the boundary between the files they inspect and the behavior the agent eventually executes: truncation, nested document archives, bytecode/source disagreement and persuasive configuration changes. The contribution is a compact adversarial corpus and concrete cross-scanner testing method, plus a structural validator, rather than a new malware evasion class or a proof that all scanners are useless.
+
+### Prior Art
+
+Local supply-chain, scanner and agent-injection material was searched. [SkillSieve v1](https://arxiv.org/html/2604.06550v1) (8 April 2026, sections 3, 5.3 and 6.3) already tests adversarial skill corpora with cross-file/encoded payloads and describes deceptive legitimate-task justification. That bounds originality of the June corpus. However the authors’ [structural-validation pull request](https://github.com/cisco-ai-defense/skill-scanner/pull/25) was public 17 February 2026, explicitly fixing skipped bytecode/hidden files and adding file-format validation; April work is not prior art for that February component. The corpus adds inspectable nested-file, truncation and execution-representation cases across actual distribution scanners. Its April 30 commit timestamp alone does not prove public availability then, so June 3 remains the verified complete-corpus cutoff.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 43/100 | 25% | 10.75/25 | The inspectable corpus and format-boundary tests add modest methodological knowledge; evasion and deceptive explanations predate them. |
+| Transferability | 70/100 | 20% | 14.00/20 | Inspection/consumption disagreement affects agent packages and other mixed-format supply chains. |
+| Lasting value | 67/100 | 20% | 13.40/20 | Testing what bytes a security pipeline actually consumes remains useful as scanners evolve. |
+| Technical soundness | 69/100 | 15% | 10.35/15 | Concrete artifacts and results support the four examples, but the sample cannot establish universal scanner failure. |
+| Practical usability | 78/100 | 10% | 7.80/10 | The published corpus and validator are straightforward resources for regression testing. |
+| Clarity and reproducibility | 80/100 | 10% | 8.00/10 | Source, observed classifications and explanations make the examples inspectable without relying on a headline. |
+
+**Final score: 64.3/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the entire article, checked the original byline, reopened the corpus and February pull request, and independently searched for earlier adversarial skill benchmarks. API metadata confirms the February public pull request; commit author time for the corpus is treated as uncertain public timing. SkillSieve narrows the June originality claim, while its later date cannot reduce the February contribution. The strongest reading is a useful boundary-focused regression suite rather than mere demonstration of four familiar malware tricks. No malicious skill was installed or executed. The benign office-tool example establishes a risky reuse assumption, not a separately demonstrated compromise; later scanner fixes and adoption are excluded.
+
+### Verdict
+
+**Tooling or methodology contribution; supporting archive inclusion.** A bounded new test corpus and structural analysis method clear the 55-point threshold. The four examples do not justify a universal claim that skill scanning cannot work.
+
+---
+
+## 61.1 — [Zero-Click RCE in Figma Desktop](https://lab.ctbb.show/research/figma-desktop-zero-click-rce/) — Benjamin Mamoud (DavenSec)
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** Zero-Click RCE in Figma Desktop
+- **Author or organisation:** Benjamin Mamoud (DavenSec)
+- **Publication date / novelty cutoff:** 2026-04-27
+- **Reference:** [Zero-Click RCE in Figma Desktop](https://lab.ctbb.show/research/figma-desktop-zero-click-rce/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.9-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Use a restricted, destabilizing prototype write to alter a feature gate while a separately executing plugin survives. Restart the plugin during the remaining message-processing window to expose a stronger evaluator, then make the pollution non-enumerable to restore stable execution. The contribution is the staged upgrade and recovery strategy, followed by ordinary privileged callback and desktop IPC exploitation.
+
+### Prior Art
+
+Local prototype-pollution and Electron records were searched. [The original Firefox sandbox-escape analysis](https://www.thezdi.com/blog/2022/8/23/but-you-told-me-you-were-safe-attacking-the-mozilla-firefox-renderer-part-2) (23 August 2022, Hossein Lotfi describing Manfred Paul’s exploit) already combines prototype pollution, crash/restart behavior and privileged JavaScript execution. It crashes a renderer to activate a parent-process restoration gadget; it does not show an integer-only write temporarily unlocking an API that repairs the pollution. Generic prototype-to-Function traversal and dangerous Electron IPC are existing components, not separate original claims.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 51/100 | 25% | 12.75/25 | The restricted-write, feature-gate race and cleanup create a meaningful added capability under a different constraint. |
+| Transferability | 67/100 | 20% | 13.40/20 | The staged escalation method transfers to plugin systems whose initialization and failure lifetimes diverge. |
+| Lasting value | 65/100 | 20% | 13.00/20 | Auditing feature-gate integrity and surviving execution contexts offers reusable research hypotheses. |
+| Technical soundness | 60/100 | 15% | 9.00/15 | Code supports the principal stages, but the timing harness and measured reliability are not independently exposed; some explanation is inaccurate. |
+| Practical usability | 58/100 | 10% | 5.80/10 | Adaptation needs a published plugin, a suitable initialization window and product-specific callbacks. |
+| Clarity and reproducibility | 72/100 | 10% | 7.20/10 | The call paths are detailed, although the omitted race loop prevents complete reproduction from the visible writeup. |
+
+**Final score: 61.1/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete original and reopened its public date and code; independently searched crash/restart prototype-pollution exploitation and read the original 2022 Firefox analysis. This narrowed the distinct claim to upgrading and stabilizing constrained pollution. Corrected overclaims: Object.keys does not enumerate inherited properties, and a realm by itself does not establish an independent event loop. The claimed roughly 99% timing success is author-reported. The displayed desktop PoC writes text to an .exe path; immediate cross-platform process execution is not demonstrated. A victim must run a published plugin, so zero-click is not an accurate unconditional description. These affect soundness and reproducibility, not whether the illustrated combination adds a capability.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** The staged capability upgrade clears 55, with bounded confidence and no endorsement of the unconditional zero-click or cross-platform execution headline.
+
+---
+
+## 62.8 — [ELF in the Pixels: Building Shared Object–Image Polyglots](https://blog.babelo.xyz/posts/elf-in-the-pixels/) — Salvatore Abello (babelo)
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** ELF in the Pixels: Building Shared Object–Image Polyglots
+- **Author or organisation:** Salvatore Abello (babelo)
+- **Publication date / novelty cutoff:** 2026-05-16 writeup; TRX CTF challenge 24–26 April 2026 provides an earlier bounded disclosure context
+- **Reference:** [ELF in the Pixels: Building Shared Object–Image Polyglots](https://blog.babelo.xyz/posts/elf-in-the-pixels/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.7-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Keep a native shared-object header at byte zero while satisfying an image parser whose identifying header is sought at a later offset. Patch the non-conflicting offsets and supply the expected image region so an upload can be accepted as Photo CD and later loaded as an ELF shared object. The construction solves a native-loader constraint that appending executable text to an image does not solve.
+
+### Prior Art
+
+Local polyglot and image-upload research includes the earlier [polymorphic-image investigation](https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html) (30 April 2020), establishing image-consumer disagreement as an exploitation method. The candidate expressly builds on the 2025 HITCON IMGC0NV challenge: [a participant’s full construction](https://rolbk.com/posts/hitcon2025-imgc0nv/) uses a BMP/pickle message that survives re-encoding. That does not satisfy the ELF-at-byte-zero requirement. The candidate uses a different acceptance route with weaker re-encoding tolerance. [The TRX challenge record](https://ctftime.org/task/32237) and linked rawpayload solution show the same 2026 challenge family; they are contemporaneous attribution leads, not a separately counted discovery. The exact public ordering of April solution and May article is unresolved.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 48/100 | 25% | 12.00/25 | A modest but distinct native-loader/image acceptance construction beyond earlier image/pickle combinations. |
+| Transferability | 62/100 | 20% | 12.40/20 | The offset-compatibility method generalizes, while this payload specifically needs an ELF-loading sink and PCD acceptance. |
+| Lasting value | 65/100 | 20% | 13.00/20 | It supplies a durable way to reason about header ownership and consumer constraints. |
+| Technical soundness | 66/100 | 15% | 9.90/15 | The offsets and full builder are explicit; fixed patch offsets may corrupt arbitrary compiled libraries and shallow verification is overstated. |
+| Practical usability | 73/100 | 10% | 7.30/10 | The builder is usable for compatible binaries, with a second loading flaw and unchanged upload bytes required. |
+| Clarity and reproducibility | 82/100 | 10% | 8.20/10 | Complete construction and exploit code make the intended environment reproducible, with limitations clearly listed. |
+
+**Final score: 62.8/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the entire article including both code listings and reopened it through the original captured source when web extraction failed. A second search for Photo CD, PcdImagePlugin and ELF/image predecessors found a same-challenge participant writeup; its original host failed DNS, so exact ordering is not assumed. Read the earlier HITCON construction and checked the April competition dates. Corrected two limits: Image.open().verify() acceptance is not proof of complete decoding, and checking only ELF magic is not a general guarantee that the patched library loads. The claimed minimum 786432-byte size supplies image data but is not established as the minimum for that shallow validation. No exploit was executed, no generic earlier ELF/PCD equivalent was verified, and failed searches are not proof of priority.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** Keep one bounded 2026 construction, crediting the challenge context. Its native shared-object interpretation is a distinct capability from script-language prefix polyglots; it cannot survive image re-encoding.
+
+---
+
+## 63.2 — [Race Against The Patch: Four Exploit Chains in LiteLLM](https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/) — Shi Weiming & Bruce Chen, STAR Labs
+
+**KEPT** · Meaningful combination · confidence Medium
+
+### Candidate
+
+- **Title:** Race Against The Patch: Four Exploit Chains in LiteLLM
+- **Author or organisation:** Shi Weiming & Bruce Chen, STAR Labs
+- **Publication date / novelty cutoff:** 2026-05-29 full chain writeup; April 2026 patches disclose constituent issues earlier
+- **Reference:** [Race Against The Patch: Four Exploit Chains in LiteLLM](https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.5-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Connect controlled resource exhaustion to an authentication exception path, then race credential creation while the database recovers. Other chains trace how low-privilege metadata becomes routing policy or is later resolved into a server secret and forwarded through a configurable integration. The added value is concrete end-to-end reachability across those boundaries, rather than four new vulnerability classes.
+
+### Prior Art
+
+Local searches covered fail-open behavior, resource pools, callback secrets and Python sandboxing. [X41’s original advisory](https://www.x41-dsec.de/lab/advisories/x41-2026-001-litellm/) (8 April 2026) already demonstrates escape from the same guardrail endpoint via bytecode reconstruction; the candidate’s coroutine-frame route differs but is not the first sandbox break. [The 13 April commit](https://github.com/BerriAI/litellm/commit/df75e79615) already shows environment-reference rejection in immediate callback parameters. Its diff reveals that this commit changes silent rejection into an exception, rather than introducing the check. [The 30 April stored-metadata fix](https://github.com/BerriAI/litellm/commit/f2f1e3a0ba) explicitly removes secret resolution from key metadata. Those earlier technical disclosures bound the May originality claim. The report adds demonstrated privilege-to-integration chains and the induced database-failure race, not priority for the patched constituent defects.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45/100 | 25% | 11.25/25 | Modest additional exploitation capability arises from concrete boundary composition, with several components already technically public. |
+| Transferability | 67/100 | 20% | 13.40/20 | The exception, persistence and metadata-authority paths recur in gateways and integration platforms. |
+| Lasting value | 65/100 | 20% | 13.00/20 | Tracking authority across input, storage and later secret resolution is a useful long-term audit approach. |
+| Technical soundness | 69/100 | 15% | 10.35/15 | Detailed call paths and responses support the chains, but chronology errors and incomplete concurrency harness reduce certainty. |
+| Practical usability | 72/100 | 10% | 7.20/10 | Requests and deployment prerequisites are explicit; the pre-auth path needs non-default fail-open configuration. |
+| Clarity and reproducibility | 80/100 | 10% | 8.00/10 | Four worked chains clearly expose intermediate capabilities and constraints, with the race harness less complete. |
+
+**Final score: 63.2/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read all four chains and reopened the original byline and publication date. A separate search followed upstream patch and advisory links, then GitHub API commit records and diffs were checked. Corrected the April 13 interpretation and recorded that f2f1e3a was committed April 30, before the article’s May version chronology suggests. Commit time is not by itself proof of release inclusion; no conclusion about the contest image is inferred from it. The initial exhaustion path must still permit a subsequent database write, a timing prerequisite the article acknowledges. The later chains start with an internal-user credential, not no authentication. Existing admin permission to launch an MCP process is the final sink, not a new command-injection flaw. Later competition results, patch velocity and AI productivity claims do not affect scores.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
+
+---
+
+## 54.5 — [Shaking the MCP Tree: A Security Deep Dive](https://blog.voorivex.team/shaking-the-mcp-tree) — Amirmohammad Safari, Voorivex
+
+**REMOVED** · Useful application/case study · confidence Medium
+
+### Candidate
+
+- **Title:** Shaking the MCP Tree: A Security Deep Dive
+- **Author or organisation:** Amirmohammad Safari, Voorivex
+- **Publication date / novelty cutoff:** 2026-02-03
+- **Reference:** [Shaking the MCP Tree: A Security Deep Dive](https://blog.voorivex.team/shaking-the-mcp-tree)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.3-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Apply OAuth dynamic-registration testing to remote MCP deployments, then combine a path-validation disagreement with a registered-client error redirect to escape a document-fetch allowlist. A discovery template and manual inspection walkthrough make familiar OAuth and SSRF testing accessible on this newer deployment surface.
+
+### Prior Art
+
+The local archive and reopened [Hidden OAuth attack vectors](https://portswigger.net/research/hidden-oauth-attack-vectors) (24 March 2021) already give dynamic-registration discovery, stored client metadata, XSS and full-read SSRF examples. More precisely, [RFC 9700 section 4.11.2](https://www.rfc-editor.org/rfc/rfc9700.html#name-authorization-server-as-ope) (January 2025) explicitly describes an attacker registering their own redirect URI and intentionally sending an erroneous authorization request to obtain a redirect. This is prior exploitation knowledge, not merely documentation of an API component. The MCP case applies that redirector to an ordinary SSRF allowlist/path-normalization chain; no new redirect primitive or general testing method is established.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 29/100 | 25% | 7.25/25 | The new targets and reported findings are useful applications, while the proposed secret-weapon redirect is already an explicitly documented attack. |
+| Transferability | 63/100 | 20% | 12.60/20 | OAuth discovery and direct tool-input testing apply broadly to remote agent integrations. |
+| Lasting value | 55/100 | 20% | 11.00/20 | The checklist is useful but adds limited methodology beyond the existing OAuth and SSRF work. |
+| Technical soundness | 64/100 | 15% | 9.60/15 | Payloads explain the claimed chain; redacted targets and absent complete responses limit independent reconstruction. |
+| Practical usability | 68/100 | 10% | 6.80/10 | A concrete discovery template and request flow help practitioners test matching integrations. |
+| Clarity and reproducibility | 73/100 | 10% | 7.30/10 | Clear worked examples are supplied, although some explanations blur intended protocol behavior and vulnerabilities. |
+
+**Final score: 54.5/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the full original, reopened its February 3 date and author, and compared the archived 2021 article. A second search specifically for erroneous authorization requests located the January 2025 RFC’s explicit malicious-redirect construction, substantially narrowing the strongest novelty claim. Dynamic registration alone does not bypass resource-owner authentication or consent, and using one’s own authorized token directly is not inherently a flaw. The strongest favorable reading is a practical combined MCP case study; it does not demonstrate a new capability under constraints absent from the earlier mechanisms. The generic MCP label and reported sensitive data do not raise novelty.
+
+### Verdict
+
+**Useful application/case study; no 2026 display inclusion.** Useful supporting reading, but omitted from the technique list because the contribution remains an application of established exploitation knowledge. Even a passing total would not waive that list’s novelty gate.
+
+---
+
+## 66.3 — [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](https://labs.boostsecurity.io/articles/introducing-smokedmeat/) [Tool](https://github.com/boostsecurityio/smokedmeat) — François Proulx, Boost Security Labs
+
+**KEPT** · Meaningful methodology extension · confidence Medium
+
+### Candidate
+
+- **Title:** Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)
+- **Author or organisation:** François Proulx, Boost Security Labs
+- **Publication date / novelty cutoff:** 2026-04-15 public launch; reviewed repository snapshot 9213a85efcbd2b0d70cfb34bc55e3f90d9ca513e at that cutoff
+- **Reference:** [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](https://labs.boostsecurity.io/articles/introducing-smokedmeat/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Integrate workflow vulnerability selection, context-specific delivery, runner secret collection, credential classification and cloud/repository pivots into a repeatable CI/CD attack-path workflow. Discovered credentials extend the attack graph and trigger analysis of newly reachable repositories. The contribution is an operational testing method and artifact, not new workflow-injection, secret-extraction or token-exchange primitives.
+
+### Prior Art
+
+Local 2024/2025 supply-chain coverage preserves runner compromise and workflow attack research. The pinned [Gato-X 0.6.1 release](https://pypi.org/project/gato-x/0.6.1/) (31 January 2025) already supports reachability/gate analysis, automated runner implantation, callbacks, interactive shells and secret enumeration. It is therefore inaccurate to frame earlier tools as only static awareness or as lacking C2. The candidate expressly builds on poutine, LOTP, Nord-Stream and conventional C2 designs. Its narrower extension combines context-aware delivery with automatic credential-driven re-enumeration, cloud exchange and a persistent cross-system graph.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 46/100 | 25% | 11.50/25 | Incremental but meaningful integration of previously separate testing stages; existing primitives and C2 are explicitly credited. |
+| Transferability | 67/100 | 20% | 13.40/20 | The workflow spans several pipeline contexts and federated cloud identity providers. |
+| Lasting value | 65/100 | 20% | 13.00/20 | Tracking how recovered authority expands reachable pipelines has value beyond individual payloads. |
+| Technical soundness | 76/100 | 15% | 11.40/15 | Publication-time documentation supplies concrete operating flows and a playground; the framework was inspected, not executed here. |
+| Practical usability | 85/100 | 10% | 8.50/10 | A packaged quickstart, guided delivery and automatic credential handling make the method readily reusable. |
+| Clarity and reproducibility | 85/100 | 10% | 8.50/10 | Pinned README and tutorial describe setup, payload selection, pivots, graph updates and cleanup in detail. |
+
+**Final score: 66.3/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete launch post, then fetched README and TUTORIAL from the last repository commit dated before 16 April, avoiding credit from the current evolving branch. Reopened the January 2025 Gato-X release and compared its pinned README. A second search for pipeline post-exploitation located the earlier automated implantation/secret-exfiltration capabilities, narrowing the first-framework marketing claim. No external pipeline was targeted and no tool execution is claimed. The relevance comes from web-triggered repository/workflow attacks and federated identity pivots, not merely from being a general post-exploitation tool.
+
+### Verdict
+
+**Meaningful methodology extension; supporting archive inclusion.** Supporting inclusion as a reproducible methodology extension. It is not credited with inventing the individual attacks, and later repository features are outside this score.
+
+---
+
+## 66.5 — [Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf) [Tool](https://github.com/rek7/build-canaries) [Lab](https://github.com/rek7/DVASP) — Raphael Karger, ZeroPath
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons
+- **Author or organisation:** Raphael Karger, ZeroPath
+- **Publication date / novelty cutoff:** 2026-08-06 Black Hat disclosure; tool commits date from 30 June, with earlier public visibility unverified
+- **Reference:** [Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Turn documentation about a hosted scanner’s internal tools into a reviewed corpus of repository-shaped probes, validate each locally runnable probe against the real tool using a unique callback, then distinguish a backend interaction from an actual worker boundary failure. The contribution is reusable coverage discovery and regression tooling for repository-processing services; lifecycle scripts, executable configuration and symlink reads are established primitives.
+
+### Prior Art
+
+Local archived pipeline research, including [Khan’s 2023 runner attack](https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/), establishes untrusted-repository execution reaching platform credentials. [Living Off the Pipeline](https://github.com/boostsecurityio/lotp), publicly discussed with [Poutine in April 2024](https://labs.boostsecurity.io/articles/unveiling-poutine-an-open-source-build-pipelines-security-scanner/), already inventories execution-by-design tool features. [Kudelski’s CodeRabbit write-up](https://kudelskisecurity.com/research/how-we-exploited-coderabbit-from-a-simple-pr-to-rce-and-write-access-on-1m-repositories) (19 August 2025) demonstrates the same scanner-facing malicious-configuration-to-production-credentials capability. The candidate does not invent that reverse supply-chain direction. Its added method is documentation-driven coverage expansion, per-probe real-tool validation and a reusable generated regression corpus.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 44/100 | 25% | 11.00/25 | The primitives and scanner attack direction already existed; the integrated coverage and validation workflow is a modest tooling addition. |
+| Transferability | 76/100 | 20% | 15.20/20 | The repository-shaped probing method applies to many hosted analyzers and build-related ingestion services. |
+| Lasting value | 73/100 | 20% | 14.60/20 | A checked corpus and explicit separation of interaction, primitive and impact can improve future regression testing. |
+| Technical soundness | 73/100 | 15% | 10.95/15 | The deck clearly bounds its sample and observations, though anonymized cases limit independent vendor-level verification. |
+| Practical usability | 72/100 | 10% | 7.20/10 | Deterministic generation and a deliberately vulnerable local scanner make the method practically reusable. |
+| Clarity and reproducibility | 76/100 | 10% | 7.60/10 | The full slides and cutoff repository documentation specify the workflow, examples, identifiers and limitations. |
+
+**Final score: 66.5/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete 56-page deck, reopened its Black Hat title and linked tools, then checked GitHub commit history and the README at commit 299e312a2565ad8e0bc17a8c5c0f232d86c0993d (3 August). Commits begin 30 June, but private commit dates are not proof of public release; the stated Black Hat release is the verified disclosure. A second search followed the deck’s CodeRabbit antecedent to its moved primary article, verifying the exact earlier free-trial/configuration/worker-credentials path. The strongest objection is target-only repetition; the concrete generation and validation workflow supports the narrower tooling verdict. Five selected-platform findings are not a population prevalence estimate. A callback alone is expressly not RCE, token presence does not establish every permission, and the signing-key consequence is conditional. The later 12 August companion article was used to locate the prior article, not to enhance the August 6 score. Current PyPI packaging changes and later corpus growth were excluded. No payload or hosted scanner was executed.
+
+### Verdict
+
+**Tooling or methodology contribution; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
@@ -2000,17 +3011,95 @@ and the patch-resistance argument is a real change in kind for this lineage.
 
 ---
 
-## 68.0 — [Network-Level Prompt and Trait Leakage in Local Research Agents](https://www.usenix.org/conference/usenixsecurity26/presentation/jeong) [Paper](https://www.usenix.org/system/files/usenixsecurity26-jeong.pdf) [Preprint](https://arxiv.org/abs/2508.20282) [Code](https://github.com/umass-aisec/wra) — Jeong, Teymoorianfard, Kumar, Houmansadr, Bagdasarian, UMass Amherst
+## 69.5 — [Network-Level Prompt and Trait Leakage in Local Research Agents](https://www.usenix.org/conference/usenixsecurity26/presentation/jeong) — Hyejun Jeong, Mohammadreza Teymoorianfard, Abhinav Kumar, Amir Houmansadr and Eugene Bagdasarian
 
-**REMOVED** · Original technique · confidence Medium
+**REMOVED** · Meaningful extension · confidence Medium
 
-*(Fifth re-check round, 18 August 2026. Removed on date, not on merit: **out of window**. arXiv 2508.20282 v1 is 27 August 2025 — verified directly, with v2 on 3 September 2025 and v3 on 15 January 2026 — and the v1 abstract already carries the attack, the metric and the headline results. This is 2025 work presented at USENIX Security '26, so it belongs to 2025. It scores above the keep-cut and is flagged to the maintainer for the 2025 "Missed from the original list" review path, in the same way RebirthDay was in the fourth round.)*
+This is a publication-year exclusion, adopting the completed original-source evaluation in [the 2025 judgement record](../2025/judgements.md). The 2026 presentation is the same contribution as [arXiv v1, 27 August 2025](https://arxiv.org/abs/2508.20282v1); its 69.5 score qualifies for the 2025 list and does not qualify its conference copy for a second 2026 entry.
 
-**What is new.** Traffic analysis inverted to a new target: not which site was visited but what was asked. The mechanism-level insight is that a research agent is a semantic amplifier — it decomposes one private natural-language prompt into sub-queries and executes them as 70–140 domain visits with low per-step timing variance, so the trace is a near-deterministic function of the intent and, unlike human browsing, separable from background traffic on that signature alone. A passive observer holding only domain names, order and coarse packet features recovers over 73% of the functional and domain knowledge of the prompt and, across sessions, up to 19 of 32 latent traits, holding up with 40% of domains masked. Two by-products: an ontology-aware triplet metric that scores leakage where sentence-embedding similarity and LLM-as-judge collapse it, and the observation that agents visit many domains contributing nothing to the report but widening the observer's view — the lever the proposed defences pull.
+### Candidate
 
-**What was already known.** Encrypted-traffic inference is a deep literature: website fingerprinting under Tor, keyword fingerprinting of search queries (Oh et al., PETS 2017), domain-sequence re-identification, and cross-platform browsing-log linkage. [Weiss et al. (USENIX Security 2024)](https://arxiv.org/abs/2403.09751) recovered response content from token lengths, but from model output rather than from where the client went. None reconstruct a natural-language prompt or infer persona traits from an agent's traversal.
+Original arXiv v1, submitted 27 August 2025 at 21:24 UTC, verified against the
+[version history](https://arxiv.org/abs/2508.20282). Read the complete
+[v1 paper](https://arxiv.org/html/2508.20282v1), including appendices and inference
+templates. The January 2026 revision and later USENIX appearance do not determine
+eligibility or scores. This explicit six-category rejudgement replaces the
+compact 68.0 assessment in the 2026 audit; its original arithmetic is unknown
+and is not reconstructed. Absent from the 2025 original nominations.
 
----
+### Core contribution
+
+Local research agents amplify a private request into a dense sequence of visits
+to semantically related web domains. A passive observer who sees those domains
+can use a few labelled examples and an LLM to infer the originating task; repeated
+sessions support trait inference. The added capability is reconstruction of
+free-form agent intent from its browser actions, rather than a classifier for a
+preselected website or search keyword. The observer needs domain visibility and
+separable local sessions, but not page content, the user prompt or model access.
+
+The original evaluates GPT Researcher, Browser Use and AutoGen traces; two agents
+are instructed to visit at least five sites. Prompt evaluation uses TREC queries,
+while traits use generated personas whose queries intentionally expose selected
+traits. The reported 0.77 functional and 0.735 domain-equivalence results are
+LLM-judged similarity dimensions, not percentages of exactly recovered prompts.
+The 19-of-32 trait result likewise uses similarity thresholds on synthetic data.
+
+### Prior art
+
+Local backward searches found the already-listed 2019
+[search-autocomplete keylogging attack](https://www.usenix.org/conference/usenixsecurity19/presentation/monaco),
+which recovers typed search text from timing and protocol-dependent lengths.
+[Oh, Li and Hopper's 2017 keyword fingerprinting](https://petsymposium.org/popets/2017/popets-2017-0048.php)
+classifies monitored search keywords using Tor traffic features.
+[Weiss, Ayzenshteyn and Mirsky, March 2024](https://arxiv.org/abs/2403.09751)
+infer AI-assistant responses from streamed-token lengths. These establish that
+encrypted traffic can disclose user intent; the 2025 contribution is the
+agent-created sequence of domain semantics as an additional observation channel,
+with open-ended inference and a multi-session extension. It is not the first
+traffic inference or demographic profiling attack.
+
+An independent web search for pre-cutoff research-agent domain privacy and
+prompt inference did not locate the same demonstrated method. Later related
+agent-query papers were excluded from all six scores. Comparison against 2025
+prompt-injection nominations found a different trust boundary: passive exposure
+through actions, rather than attacker instructions changing those actions.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 66 | 25% | 16.50 | Meaningful new observation and inference method within established traffic privacy attacks. |
+| Transferability | 76 | 20% | 15.20 | Several browsing-agent architectures share task-driven domain expansion, subject to visibility. |
+| Lasting value | 74 | 20% | 14.80 | Provides a reusable test for privacy leakage through delegated web actions and session composition. |
+| Technical soundness | 64 | 15% | 9.60 | Ablations and multiple agents support the narrower leakage claim; synthetic traits and lenient model judging constrain recovery claims. |
+| Practical usability | 60 | 10% | 6.00 | Domain-log inference is feasible, but encrypted DNS/ECH, tunnel placement and session mixing affect observation. |
+| Clarity and reproducibility | 74 | 10% | 7.40 | Detailed datasets, settings and templates; no credit for code availability added after v1. |
+
+**Final score: 69.5/100.** Computed with `score.py 66 76 74 64 60 74`.
+Archive decision: include as a supporting reference in 2025.
+
+### Reverification
+
+- Rechecked arXiv chronology independently of the 2026 conference label and
+  compared the original nomination set by mechanism as well as URL.
+- Read the appendix scoring prompts: OBELS uses abstracted intent/source/entity
+  matches and encourages partial agreement. It is not an independent execution
+  test demonstrating that a recovered prompt completes the same task.
+- The strongest objection is that domains have always revealed interests.
+  The measured amplification through agent task decomposition and reusable
+  inference experiment add enough beyond that observation for an extension,
+  with originality below a new-class claim.
+- Trait experiments are deliberately revealing synthetic personas; logged
+  agent visits often stand in for network capture. A user's ISP cannot directly
+  observe a remote hosted agent's browsing, so those traces do not establish that
+  threat model. The 70–140-domain figure is not universal across agents.
+- Full primary evidence supports a 2025 technique despite these limitations;
+  no live interception was performed and no later replication was credited.
+
+### Verdict
+
+Meaningful extension. Add one grouped 2025 entry for v1 and its PDF. The older
+2026 exclusion remains correct on year, while its historical omission is fixed.
 
 ## 67.7 — [MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection](https://www.usenix.org/conference/usenixsecurity26/presentation/syros) [Paper](https://www.usenix.org/system/files/usenixsecurity26-syros.pdf) [Preprint](https://arxiv.org/abs/2602.09222) — Syros, Rose, Robertson, Nita-Rotaru, Oprea, Grinstead, Kerschbaumer, Northeastern & Mozilla
 
@@ -2144,75 +3233,280 @@ and the patch-resistance argument is a real change in kind for this lineage.
 
 ---
 
-## 59.6 — [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction](https://www.ndss-symposium.org/wp-content/uploads/2026-f1721-paper.pdf) [Author copy](https://yinzhicao.org/reactappscan/TranSPArent.pdf) — Diwangkara & Cao, Johns Hopkins
+## 69.1 — [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction](https://www.ndss-symposium.org/wp-content/uploads/2026-f1721-paper.pdf) [Artifact](https://zenodo.org/records/17822391) — Senapati Diwangkara and Yinzhi Cao
 
-**REMOVED** · Tooling / methodology · confidence Medium
+**REMOVED** · Tooling or methodology contribution · confidence Medium
 
-*(Fifth re-check round, 18 August 2026. Lands 0.4 under the cut.)*
+### Candidate
 
-**What is new.** Framework-specific taint sinks are *derived* rather than enumerated: run the framework's own test suite, harvest stack traces to stitch the call edges static analysis loses to higher-order and component-generated functions, then taint backwards from a DOM sink up to the framework's public interface. The transferable trick is the second half — template-syntax sinks are recovered by pattern-matching the transpiler's own tests against their already-derived JavaScript counterparts, so a templating language is bridged without writing a parser for it. Ablation is load-bearing: without the stitching step the pipeline finds none of the nineteen sinks. The output is directly consumable, with fourteen sinks absent from CodeQL's standard library.
+- **Title:** TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction
+- **Author or organisation:** Senapati Diwangkara and Yinzhi Cao
+- **Publication date / novelty cutoff:** 4 December 2025: public Zenodo v1.0.0 artifact, created the same day. The NDSS conference publication is February 2026 and is not the original technique year.
+- **Reference:** [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction](https://www.ndss-symposium.org/wp-content/uploads/2026-f1721-paper.pdf)
 
-**What was already known.** Automatic taint-specification inference for JavaScript libraries is established by [Extracting taint specifications for JavaScript libraries](https://dl.acm.org/doi/10.1145/3377811.3380390) (ICSE 2020) and [InspectJS](https://arxiv.org/abs/2111.09625), and augmenting a static call graph with dynamic hints is prior practice the paper itself cites. The same lab's [ReactAppScan](https://dl.acm.org/doi/10.1145/3658644.3670331) (CCS 2024, already archived) established SPA component-graph taint with hard-coded sinks. Against it: the false-discovery rate is barely better than vanilla CodeQL, only about a tenth of reported paths were manually checked, and the framework versions studied are already superseded.
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.6-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Automates framework-specific taint-sink models by working backward from dangerous DOM operations through SPA runtimes. Framework tests supply dynamic stack traces to repair missing static call edges; value/key analysis identifies exposed JavaScript parameters; transpiler test pairs recover the corresponding HTML/JSX/template attributes. These generated abstractions feed ordinary application taint analysis. The public 2025 artifact already implements the central combination; the later paper explains the same method.
+
+### Prior Art
+
+- **First public evidence:** [Zenodo v1.0.0, 4 December 2025](https://zenodo.org/records/17822391), links an immutable [GitHub v1.0.0 tree](https://github.com/diwangs/transparent-ae/tree/v1.0.0). The full release README, autostitch implementation, template-mapping implementations and evaluation driver were read. This is working technical source, not an empty repository or acceptance notice.
+- **Local and closest prior:** [ReactAppScan, CCS October 2024](https://yinzhicao.org/reactappscan/reactappscan.pdf), also preserved locally, models React lifecycles and cross-component data flow but uses a curated sink list (§5/Table 2). It already covers JSX attributes, refs and DOM writes: those underlying exploits are not new.
+- **Earlier analysis foundations:** [Madsen, Livshits and Fanning, Microsoft technical report, November 2012](https://www.microsoft.com/en-us/research/publication/practical-static-analysis-of-javascript-applications-in-the-presence-of-frameworks-and-libraries/) combines use and pointer analysis to avoid handwritten library stubs. [Chakraborty et al., ECOOP 2022](https://manu.sridharan.net/files/ECOOP22-RootCause.pdf), public preprint 13 May 2022, compares dynamic and static flows to diagnose missing JavaScript call edges. This precedes the use of runtime evidence to improve framework analysis.
+- **Distinct increment:** Amortized sink abstraction across multiple SPA runtimes and template syntaxes, rather than a new XSS primitive or the first hybrid JavaScript analysis. The 2026 paper was read in full to verify mechanism identity; later conference recognition, patch outcomes and unsupported later additions do not increase any score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58/100 | 25% | 14.50/25 | A meaningful automation combination beyond curated React sinks and earlier dynamic/static graph comparison; the constituent analyses and underlying DOM exploits are established. |
+| Transferability | 75/100 | 20% | 15.00/20 | The abstraction applies to Vue, React and Angular, with reusable separation between framework and application; typed sources and runnable framework tests remain prerequisites. |
+| Lasting value | 76/100 | 20% | 15.20/20 | Learning sink models from runtime/compiler tests can reduce recurring model maintenance and support future framework versions without relying on a particular vulnerability remaining open. |
+| Technical soundness | 68/100 | 15% | 10.20/15 | Historical implementation supplies concrete stitching and mapping logic plus evaluation drivers, with explicit framework-specific heuristics; it is not a soundness proof or independently rerun result. |
+| Practical usability | 69/100 | 10% | 6.90/10 | Versioned code, datasets and installation workflow support reuse, though Nix, Git LFS, CodeQL and framework-specific setup impose material cost. |
+| Clarity and reproducibility | 73/100 | 10% | 7.30/10 | The immutable README, implementation and test fixtures expose the process clearly; the later paper clarifies the same process, but its reported aggregate results are not treated as independently verified. |
+
+**Final score: 69.1/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the immutable release, the full conference paper, ReactAppScan’s actual source/sink table and the ECOOP 2022 dynamic/static comparison. A second mechanism search for library summaries and missing-call-edge recovery found the 2012 report, reducing any claim of foundational novelty. Corrected ReactAppScan’s venue from the candidate bibliography’s S&P attribution to CCS 2024. ReactAppScan already lists DOM attribute sinks, so the candidate’s broad “none considered” statement is not accepted literally. Its 14 additional CodeQL sink categories are not 14 newly invented exploits. The historical autostitch code contains a React workLoop special case, and template mapping uses heuristics, so “generic” is conditional. The paper reports 24/57 false discoveries; package-level flows can require an external sanitizer and need not be exploitable end-to-end in every embedding. Its appendix says 24 baseline alerts while Table IV uses 34, an unresolved reproducibility inconsistency. Tests and source were inspected but not executed. The nomination page and complete local 2025 list were checked by title, authors, URLs and mechanism; this contribution is absent. The score evaluates the public December 2025 artifact, without rewarding later adoption or asserting every conference result was already documented in December.
+
+### Verdict
+
+**Tooling or methodology contribution; no 2026 display inclusion.** The 2025 artifact clears the 55-point historical gate and is not an existing 2025 nomination. Include the artifact once in 2025; exclude this later conference copy from the 2026 display.
 
 ---
 
-## 59.4 — [When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments](https://www.usenix.org/conference/usenixsecurity26/presentation/xiao) [Paper](https://www.usenix.org/system/files/usenixsecurity26-xiao.pdf) [Artifact](https://doi.org/10.5281/zenodo.20303820) — Xiao, Chen, Shi, He, Deng & Du, Wuhan University
+## 62.8 — [When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments](https://www.usenix.org/conference/usenixsecurity26/presentation/xiao) [Paper](https://www.usenix.org/system/files/usenixsecurity26-xiao.pdf) — Yongkang Xiao, Jing Chen, Min Shi, Kun He, Qiyi Deng and Ruiying Du
 
-**REMOVED** · Meaningful combination · confidence Medium
+**KEPT** · Tooling or methodology contribution · confidence Medium
 
-*(Fifth re-check round, 18 August 2026. Lands 0.6 under the cut and was deliberately not rounded up.)*
+### Candidate
 
-**What is new.** Six formal models of real third-party payment protocols across three scenarios and two payment providers, verified under deliberately weakened channel assumptions with the adversary granted legitimate merchant access. The invariant that fails in all six is a *design* property rather than an implementation bug: user payment authorization is never cryptographically bound to order semantics, so whenever channel integrity fails anywhere between merchant client, merchant server and payment system, the user can be induced to authorize an arbitrary order. The proposed remedy, per-user-merchant keys binding consent to order semantics, is itself formally verified, and the invariant generalises to web checkout and consent flows.
+- **Title:** When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments
+- **Author or organisation:** Yongkang Xiao, Jing Chen, Min Shi, Kun He, Qiyi Deng and Ruiying Du
+- **Publication date / novelty cutoff:** 2026, by 12 August (USENIX Security proceedings). The 20 May Zenodo v1 record has restricted files and no technical description; that metadata alone does not establish public disclosure. The exact earlier paper release is unresolved.
+- **Reference:** [When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments](https://www.usenix.org/conference/usenixsecurity26/presentation/xiao)
 
-**What was already known.** Every component. [How to Shop for Free Online (S&P 2011)](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf), already archived, established the derive-the-invariants-then-test-the-cashier method for three-party payments. The paper states outright that the order-tampering attack was first identified by earlier work (NDSS 2017), and the implicit-intent hijacking that carries the "new variant" is a decade-old mobile IPC weakness its own related work cites. Formal modelling of payment protocols is established for card schemes. The judged x402 entry (64.7) was scored against the same 2011 lineage and contributes a facilitator-side rule set with no analogue here. The headline prevalence figure also shifts between abstract and body.
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 59.4-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Models payment orders, authorization and results as separate injective-agreement properties, varies two external channel assumptions independently, and checks six protocol variants in Tamarin. The useful increment is a reusable matrix of user-consent and channel assumptions, including the merchant-app–payment-app boundary, plus a per-user/merchant key-binding countermeasure. Signed order substitution is not a newly discovered attack. The Android demonstration requires a malicious local app to intercept an implicit Intent; it is not a network-only attack against correctly isolated applications.
+
+### Prior Art
+
+- **Cutoff and evidence boundary:** Original USENIX 2026 paper, all sections and artifact appendix; [May 2026 artifact record](https://zenodo.org/records/20303820) is restricted, so neither its bare timestamp nor later versions establish that the full method was public then. No later impact or uptake is scored.
+- **Local antecedent:** [Wang et al., How to Shop for Free Online, S&P 2011](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf) already analyzed distributed checkout-state inconsistencies and used verification. Local searches also recovered 2014 payment-logic testing and 2016 multi-party attack patterns.
+- **Closest attack:** [Yang et al., Show Me the Money, NDSS 2017, §III.E](https://www.lijuanru.com/publications/ndss17.pdf) explicitly substitutes a legitimately signed attacker order, preserving price and commodity while changing recipient or merchant. It already explains why showing amount and description fails.
+- **Closest formal predecessor:** [Li Hui, Fan Li-Yan, Pan Xue-Song and Feng Hao-Nan, February 2022, pp.113–125](https://www.jcr.cacrnet.org.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=531), DOI [10.13868/j.cnki.jcr.000507](https://doi.org/10.13868/j.cnki.jcr.000507), modeled five payment protocols with ProVerif, varied five assumptions, formalized agreement properties, generated substitution attacks and tested 210 apps. Its §3.1 treats app–SDK IPC as protected; the present independent weak-IPC channel matrix and key-pinning repair remain distinct.
+- **Component and exploitation prior:** [Android implicit-Intent hijacking guidance, 24 September 2024](https://developer.android.com/privacy-and-security/risks/implicit-intent-hijacking?authuser=00) already describes intercepting and modifying sensitive cross-app payloads. Applying that channel to an old signed-order substitution is a modest adaptation, not the primary originality claim.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45/100 | 25% | 11.25/25 | The weak-IPC channel matrix and user/order binding repair add modeling detail; both the substitution attack and formal third-party payment analysis already existed. |
+| Transferability | 72/100 | 20% | 14.40/20 | The separation of party agreement, consent and channel guarantees transfers to web redirects, QR handoffs and other multi-party APIs. |
+| Lasting value | 70/100 | 20% | 14.00/20 | Explicit assumptions and counterexample classifications offer reusable protocol-audit structure despite changes to the particular payment SDKs. |
+| Technical soundness | 66/100 | 15% | 9.90/15 | Formal definitions, result tables and a concrete local-app demonstration support the narrow claims; the idealized order oracle and first-use trust limitation restrict broader claims. |
+| Practical usability | 61/100 | 10% | 6.10/10 | The paper specifies models and a reproduction workflow; deposited v1 files are restricted, exploit code and affected-app data are intentionally withheld, and repair requires provider integration. |
+| Clarity and reproducibility | 72/100 | 10% | 7.20/10 | Detailed rules, diagrams, properties and appendix explain the method, but no independent model run was performed and some prose overstates first-use protection. |
+
+**Final score: 62.8/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the candidate’s §§3–7, Tables 1–2 and artifact appendix, the full 2022 publisher PDF, and the 2017 signed-order substitution section. A second search for formal payment verification, rather than the candidate title, uncovered the omitted 2022 predecessor and overturned the abstract’s suggestion that systematic formal payment analysis was absent. A separate implicit-Intent search verified that the IPC interception primitive was documented by 2024. Credit is confined to the expanded modeling/countermeasure contribution. The measurement denominator is 461 app versions (116 affected versions across 53 apps), not 461 independent applications; the study tested interception rather than fully exploiting every app. The repair’s key pair is generated/stored by the merchant and pinned at the payment app; this is not a user-held signing key. Table 2 explicitly leaves initial-payment order agreement false, so the conclusion’s unconditional protection language is not adopted. The model assumes an order oracle capable of matching amount/description and a user who cannot authenticate payee identity. Results are author-reported; Tamarin and attack apps were not executed. Full artifact access and the exact first paper-release date remain evidence gaps; confidence is Medium.
+
+### Verdict
+
+**Tooling or methodology contribution; supporting archive inclusion.** The demonstrated extension clears the current 55-point threshold and is not the same contribution as its identified antecedents.
 
 ---
 
-## 57.2 — [XSS2Shell: WordPress Pre-Auth XSS to RCE](https://pwn.ai/blog/xss2shell) — Nigusu Kasahun, pwn.ai
+## 65.1 — [XSS2Shell: WordPress Preauth XSS to RCE Chain (CVE-2026-64638)](https://pwn.ai/blog/xss2shell) — Nigusu Kasahun & pwn.ai; earlier SOME technique by Paulos Yibelo
 
-**REMOVED** · Meaningful combination · confidence Medium
+**KEPT** · Meaningful combination · confidence Medium
 
-*(Fifth re-check round, 18 August 2026.)*
+### Candidate
 
-**What is new.** One primitive: a *chained-sanitizer* differential in which the downstream filter manufactures markup the upstream stripper declared inert. PHP's `strip_tags()` only opens a tag when a letter immediately follows the angle bracket, so `< area id=x>` survives as text, while WordPress's KSES tokenizer tolerates the leading whitespace, treats it as an allowlisted element and re-emits it *normalised* into a real tag. The reusable statement is order-dependent: strip-then-filter is not the sum of two filters, and a normalising sanitizer placed downstream of a stripping one can resurrect a payload that neither the stripper nor a browser would have parsed.
+- **Title:** XSS2Shell: WordPress Preauth XSS to RCE Chain (CVE-2026-64638)
+- **Author or organisation:** Nigusu Kasahun & pwn.ai; earlier SOME technique by Paulos Yibelo
+- **Publication date / novelty cutoff:** 2026-08-06–2026-08-07 (page/advisory dated 6 August; article timeline says 7 August)
+- **Reference:** [XSS2Shell: WordPress Preauth XSS to RCE Chain (CVE-2026-64638)](https://pwn.ai/blog/xss2shell)
 
-**What was already known.** The entire exploitation half is the same site's own prior work, and it is already in this archive: [Paulos Yibelo, May 2022](https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution), preserved at `archived-references/md/2022/2022-pwn-ai-novel-attack-vector-bypass-csp-same-origin-method-execution-zeroday.md` and cited by `2022.md`, already published the unauthenticated JSONP endpoint, its callback filter, the dotted-property Same Origin Method Execution chain, cross-window method execution and the click-through to plugin-install code execution. SOME itself is Ben Hayak (2014, archived), DOM clobbering of an undefined global is a textbook pattern, and the application-password redirect sink carried its own advisory in 2023. Sanitizer-versus-parser differentials as a class are mXSS (2013, archived) and a 2019 PHP bug on the same `strip_tags` normalisation mismatch. Verified distinct from wp2shell (62.0) and The WordPress Chain Massacre, which turn on a batch-endpoint dispatch desync.
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 57.2-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Pass markup through one sanitizer as text, let a second sanitizer reconstruct allowed elements, and use those elements to activate existing page event handlers. Clobbering a missing request-URL variable steers that automatic request to a script-typed JSONP response. The new entry and gadget chain reaches previously known cross-window method execution without first requiring unrestricted script injection.
+
+### Prior Art
+
+Read the local and live [WordPress SOME research](https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution) (29 May 2022). It already uses WordPress JSONP, an opener relationship and method-only callbacks to click privileged controls and install a plugin; those capabilities are not new here. The 2026 addition supplies the pre-auth sanitizer-composition entry, absent-input equality check, automatic event bubbling, URL clobber and jQuery content-type execution path. Generic DOM clobbering and parser disagreement predate this combination; no claim is made that every constituent is original.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 54/100 | 25% | 13.50/25 | The complete new reachability route makes known downstream SOME usable from a newly demonstrated constrained input. |
+| Transferability | 69/100 | 20% | 13.80/20 | Sanitizer composition and unintended interaction between reused page scripts are broadly testable. |
+| Lasting value | 68/100 | 20% | 13.60/20 | Checking whether allowed inert markup activates existing request gadgets remains useful beyond this patch. |
+| Technical soundness | 66/100 | 15% | 9.90/15 | Concrete code traces support the chain, but unconditional reliability and affected-version claims exceed the shown evidence. |
+| Practical usability | 65/100 | 10% | 6.50/10 | A tester can reconstruct the initial payload; the execution chain needs an administrator session and enabling browser/site conditions. |
+| Clarity and reproducibility | 78/100 | 10% | 7.80/10 | The technical stages and prerequisites can be followed, although the published minimal form omits an automatic submission trigger. |
+
+**Final score: 65.1/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete candidate and earlier SOME article, then reopened the same-disclosure [WordPress advisory](https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-52p2-r8wf-jcrf) and [release notice](https://wordpress.org/news/2026/08/wordpress-7-0-3-release/). A separate search checked sanitizer resurrection and WordPress event/JSONP precedents. The older article already includes cross-window plugin installation, so the new result is credited to its input-to-request route. The official advisory explicitly requires victim interaction for the RCE chain; the candidate’s own chain opens two windows despite claiming to remove multiple-window requirements. The PHP sample contains questionable backtick/system usage; no execution was performed here. Later August 8 analyses were used only as leads and did not affect scores. Keep the August 6–7 cutoff ambiguity explicit, without silently using private July discovery dates.
+
+### Verdict
+
+**Meaningful combination; supporting archive inclusion.** A meaningful new constrained-input chain clears the threshold. The published title is retained as a source title, with the evaluation distinguishing pre-auth XSS from administrator-dependent PHP execution.
 
 ---
 
-## 55.8 — [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](https://www.ndss-symposium.org/wp-content/uploads/2026-s148-paper.pdf) — Wu, Hong, Chen, Liu, Liu & Yang, Fudan / Tsinghua / Zhongguancun Lab
+## 61.3 — [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](https://www.ndss-symposium.org/wp-content/uploads/2026-s148-paper.pdf) [OriginMail](https://github.com/lab-rynth/OriginMail) — Mengying Wu, Geng Hong, Jiatao Chen, Baojun Liu, Mingxuan Liu and Min Yang
+
+**REMOVED** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases
+- **Author or organisation:** Mengying Wu, Geng Hong, Jiatao Chen, Baojun Liu, Mingxuan Liu and Min Yang
+- **Publication date / novelty cutoff:** 23 April 2025 for the substantive OriginMail normalization implementation; 29 July 2025 for the complete public preprint in the author’s Git history. September 2025 camera-ready and February 2026 conference publication are later copies.
+- **Reference:** [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](https://www.ndss-symposium.org/wp-content/uploads/2026-s148-paper.pdf)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.8-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Systematically probes provider-specific email alias rules and compares them with account-registration checks, then supplies a normalization implementation and a study of human alias classification. The reusable increment is a cross-provider test matrix covering prefix, infix, suffix, case and domain transformations, including unusual provider rules. It extends known email canonicalization and identity-confusion analysis rather than inventing alias-based account multiplication or phishing.
+
+### Prior Art
+
+- **Candidate-side disclosure:** [OriginMail implementation, 23 April 2025](https://github.com/lab-rynth/OriginMail/blob/71e8d6e38130d739bf73acd88072eaa555607a9a/src/OriginMail.py) already contains the provider-specific transformation rules. The [complete preprint, 29 July 2025](https://raw.githubusercontent.com/funeoka-yumee/funeoka-yumee.github.io/0c6460ebb20ec38b4acff180d455b7959e6f39a6/assets/files/ndss26_alias.pdf) contains the comparative measurement and user study. Immutable Git timestamps are the available evidence; independent first-live snapshots were not found.
+- **Earlier foundations and tooling:** [RFC 5233, January 2008, §4](https://www.rfc-editor.org/rfc/rfc5233) explicitly describes implementation-specific subaddress splitting, including prefixes, and warns that applying local rules to foreign addresses can misidentify them. [normalize-email, July 2015 release](https://github.com/johno/normalize-email/blob/de0dc4f1d79f2d1875aacd5ea75a00f9e6a4e22c/index.js) already normalizes provider-specific dots/plus tags/domain aliases; [August 2017 code](https://github.com/johno/normalize-email/blob/5c959f44294913628b270872e172029ae3b6e59d/index.js) explicitly adds Outlook-specific rules. Both historical implementations were read.
+- **Earlier exploitation:** [James Fisher, 7 April 2018](https://jameshfisher.com/2018/04/07/the-dots-do-matter-how-to-scam-a-gmail-user/) describes Gmail/Netflix identity disagreement and a concrete payment phishing scenario. [Castle, 9 July 2025](https://blog.castle.io/detecting-gmail-based-fake-accounts-what-emailnator-teaches-us/) measured 46,000 Gmail variants collapsing to 291 roots and discussed free-tier abuse plus normalization. Castle predates the full July paper but postdates OriginMail’s April implementation, so it cannot diminish the April tool contribution.
+- **Local check and distinction:** Mechanism searches found email-parsing and account-abuse material but no earlier preserved equivalent of this five-transformation, 28-provider/18-platform matrix. This is a useful measurement/tooling extension; the older account-abuse campaign and normalization concept are not new attacks. The full July preprint was compared against the fully read conference paper, with every changed earlier sentence read separately; later revised wording, artifact badges and recognition do not affect any score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 48/100 | 25% | 12.00/25 | Broadens an established canonicalization/identity-confusion method into a comparative probe matrix and more unusual rules; core normalization and alias abuse precede it. |
+| Transferability | 72/100 | 20% | 14.40/20 | Provider/consumer interpretation mismatches recur in registration, abuse detection and account correlation beyond any one service. |
+| Lasting value | 70/100 | 20% | 14.00/20 | The test dimensions and separation of provider truth from relying-party interpretation support future testing; a static rule table still requires maintenance. |
+| Technical soundness | 52/100 | 15% | 7.80/15 | Actual delivery probes and registration observations support implementation findings, but survey classification is not observed phishing compromise and several internal table/assertion inconsistencies limit stronger conclusions. |
+| Practical usability | 65/100 | 10% | 6.50/10 | The original Python implementation and explicit transformations are usable in testing; ambiguous 2925 prefixes yield candidate roots rather than a uniquely safe normalization oracle. |
+| Clarity and reproducibility | 66/100 | 10% | 6.60/10 | The immutable source and detailed preprint expose procedures and limitations, although aggregate documentation judgments and survey arithmetic contain unresolved errors. |
+
+**Final score: 61.3/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Reopened the historical implementation, complete July preprint and its differences from the conference copy; independently searched disposable-account abuse and provider-specific normalization history. The April code already includes Eclipso separators, Proton punctuation and 2925 prefix candidates; these are not 2026 inventions. RFC 5233 expressly anticipates implementation-specific prefix/suffix conventions. The 2015/2017 library verifies prior provider-specific normalization, while Castle is used only against the later paper measurement claim. The study enrolled 304 people but analyzes 174 passing attention; its 31.65% concerns alias-classification errors, not measured phishing clicks or account compromise. Table VI says 151/174 equals 65.52%, which is arithmetically inconsistent. Its Eclipso plus example conflicts with the detailed separator set and historical code. Registration-check acceptance does not prove unlimited activated accounts or resource theft; only two actual accounts per tested platform were created. Provider-local case folding is not by itself an SMTP violation. The 139-account npm campaign is evidence reused from the authors’ earlier corpus, not a freshly invented attack. No experiment or supplied code was executed. The complete 2025 list and previously fetched nomination set were checked by title, authors, URLs and mechanism; this grouped contribution was absent. Earlier publication evidence changes placement, not research credit.
+
+### Verdict
+
+**Tooling or methodology contribution; no 2026 display inclusion.** The 61.3-point methodology contribution passes the historical 55-point gate. Include it once under 2025, grouping the preprint with OriginMail, and exclude the later NDSS copy from the 2026 display.
+
+---
+
+## 47.5 — [The Script Tag That Isn't: Speculation Rules Injection](https://labs.trace37.com/blog/specfetch-speculation-rules-injection/) — Paul Reed, trace37 labs
+
+**REMOVED** · Useful application/case study · confidence Low
+
+### Candidate
+
+- **Title:** The Script Tag That Isn't: Speculation Rules Injection
+- **Author or organisation:** Paul Reed, trace37 labs
+- **Publication date / novelty cutoff:** 2026-04-09 (publisher-stated; exact original revision unverified)
+- **Reference:** [The Script Tag That Isn't: Speculation Rules Injection](https://labs.trace37.com/blog/specfetch-speculation-rules-injection/)
+
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.5-point record. The old total is preserved in history, not reverse-engineered into category scores.
+
+### Core Contribution
+
+Inject a speculation-rules data block into unsanitized HTML so the browser speculatively loads a same-origin page with session credentials. The demonstration combines this with a deliberately state-changing GET endpoint, or with a separate reflected-XSS flaw. It is an educational application of a known HTML-injection surface; its examples do not establish a sanitizer escape or a new general ability to execute arbitrary authenticated actions.
+
+### Prior Art
+
+Local searches for prerendering, HTML injection and forced browsing were followed by historical specification review. The [7 October 2024 specification snapshot](https://github.com/WICG/nav-speculation/blob/9595024f3d2ef1067547b7006233351aa5707bd9/speculation-rules.bs) already contains explicit security sections for unescaped-HTML attackers, script-src enforcement, user-generated links with harmful side effects and comparable frame/subresource capabilities. The [October 2024 browser security discussion](https://groups.google.com/a/chromium.org/g/blink-dev/c/5tRvEbps5JU) distinguishes injectable inline rules from HTTP-header rules and explains their CSP treatment. These are security analyses predating the article, not merely old API documentation. The candidate adds a small demonstration and sanitizer comparison but does not show a materially new capability under stronger restrictions.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 28/100 | 25% | 7.00/25 | The demonstrated risk and attacker-controlled-HTML premise were explicitly analyzed before the cutoff. |
+| Transferability | 61/100 | 20% | 12.20/20 | Speculative-load side effects remain relevant across applications using the browser feature. |
+| Lasting value | 51/100 | 20% | 10.20/20 | The test idea is useful, but its marginal method beyond existing security analysis is limited. |
+| Technical soundness | 39/100 | 15% | 5.85/15 | Several blanket claims confuse page loading with attacker-controlled code, and the demonstrations use already unsafe endpoints. |
+| Practical usability | 57/100 | 10% | 5.70/10 | The payload is easy to try in the artificial lab, with no validated sanitizer bypass or independent target artifact. |
+| Clarity and reproducibility | 65/100 | 10% | 6.50/10 | Examples are readable but inconsistent trigger descriptions and unsupported comparisons hinder reliable reuse. |
+
+**Final score: 47.5/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
+
+### Reverification
+
+Read the complete original including lab description and stated prerequisites, then independently searched browser-team security discussions. Fetched the pre-cutoff specification by immutable commit and verified its October 2024 date and explicit security sections, overturning the article’s assertion that the subject lacked security treatment. The favorable reading is a convenient practical demonstration; the paper does not test the potentially distinct case of inline-speculation-rules being allowed while executable injection and framing are blocked. Markdown pass-through without sanitization already accepts active HTML. A prerendered page can make requests using its own code, but that does not grant arbitrary attacker-selected POST bodies or bypass CSRF tokens by itself. Document rules select existing matching links; they do not redirect every hovered link to an arbitrary target. No lab was executed, original-revision provenance remains uncertain, and later implementations or adoption were not scored.
+
+### Verdict
+
+**Useful application/case study; no 2026 display inclusion.** Fresh full review supersedes the old 55.5 compact record. The demonstrated marginal contribution is below 55 and does not clear the novelty gate; publication provenance and lab artifacts remain limitations rather than accusations of fabrication.
+
+---
+
+## 54.2 — [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](https://www.ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf) [Artifact](https://zenodo.org/records/16996391) — Andrea Infantino, Mir Masood Ali, Kostas Solomos and Jason Polakis
 
 **REMOVED** · Useful application or case study · confidence Medium
 
-*(Fifth re-check round, 18 August 2026.)*
+### Candidate
 
-**What is new.** An empirical alias-rule table obtained by protocol-level probing rather than by reading documentation — five construction operations sent in raw MIME from the authors' own mail server against twenty-eight provider accounts. That exposes behaviour no documentation states: eight providers support aliasing with none at all, one accepts a prefix scheme over twelve special characters, another documents its infix form but not its suffix form, and two major package registries treat the domain part case-sensitively in contradiction of RFC 5321. The least derivative finding is from the user study: self-reported alias literacy *raises* phishing susceptibility, because knowledge of one provider's rules is over-generalised to domains that do not implement them.
+- **Title:** Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments
+- **Author or organisation:** Andrea Infantino, Mir Masood Ali, Kostas Solomos and Jason Polakis
+- **Publication date / novelty cutoff:** By 23 February 2026 (NDSS paper and artifact issued date). DataCite registered the artifact DOI on 29 August 2025, but that reservation does not establish when its technical files became public; earlier disclosure remains unresolved.
+- **Reference:** [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](https://www.ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf)
 
-**What was already known.** The provider-normalises-but-platform-does-not mismatch is long-public folklore with a documented in-the-wild campaign: [Agari's 2019 report](https://agariinc.medium.com/bec-actors-exploiting-gmail-dot-accounts-for-fun-and-profit-397bf048e92c) traced fifty-six dot variants of a single address through dozens of credit-card applications and tax returns — alias multiplicity abuse at scale, seven years before this. Plus-addressing for trial farming, and normalising before uniqueness checks, are standard vendor guidance. The adjacent but distinct class of parser disagreement over which domain an address denotes is [Splitting the email atom](https://portswigger.net/research/splitting-the-email-atom) (2024, archived).
+Fresh full evaluation on 9 September 2026 under the publication-time rubric; supersedes the compact 55.4-point record. The old total is preserved in history, not reverse-engineered into category scores.
 
----
+### Core Contribution
 
-## 55.5 — [The Script Tag That Isn't: Speculation Rules Injection](https://labs.trace37.com/blog/specfetch-speculation-rules-injection/) [Lab](https://labs.trace37.com/labs/speculation-rules-injection/) — Paul Reed, trace37 labs
+A comparative empirical study of native password-manager UI automation: a malicious local application triggers credential retrieval with synthetic keyboard input, impersonates mutable application identities where relevant, and conceals prompts using window layering or off-screen placement. It reconstructs differing desktop autofill checks and demonstrates extraction from already-unlocked vaults, including stored OTPs and account recovery material. The demonstrated contribution is platform-specific measurement and implementations of an established local UI automation attack.
 
-**REMOVED** · Meaningful extension · confidence Low
+### Prior Art
 
-*(Fifth re-check round, 18 August 2026. One of four candidates from a publisher that openly runs an AI-assisted hunting platform; all four were put through a dedicated verification pass before scoring. **Novelty cutoff unestablished** — the claimed 9 April date has no independent corroboration, the only Wayback record is a 403 later that month, and there is no CVE, advisory or third-party report.)*
+- **Closest explicit prior technique:** KeePass author Dominik Reichl described on [2 November 2015](https://sourceforge.net/p/keepass/discussion/329220/thread/8e511d96/) a same-user program exporting an open password vault through simulated keystrokes while a screenshot above all windows hides the operation. This is previously published exploitation knowledge with comparable preconditions, not merely an old window API. The modern [KeePass security page](https://keepass.info/help/kb/sec_issues.html) was only a retrieval lead; the dated original maintainer post establishes precedence.
+- **Earlier systematic foundation:** [Jang et al., A11y Attacks, CCS November 2014](https://www.cs.ucr.edu/~csong/ccs14-a11y.pdf), §§4.3–4.4, already examines desktop/mobile input provenance, synthesizes consent, and steals protected password contents through alternative UI paths; §4.4.2 includes sudo-password theft.
+- **Local check:** Searches across the preserved corpus for autofill, synthetic input, password-manager UI and A11y found the 2017 S&P program containing Cloak and Dagger, and related browser work; those do not themselves establish a desktop predecessor. The independent maintainer/source-paper search supplied the closest actual equivalent.
+- **Distinct increment and evidence boundary:** Concrete black-box reconstruction of 1Password application checks, shortcut inference, per-product timings, and macOS/Windows concealment differences are useful new case evidence. Their shared capability of unattended concealed vault extraction was already explicit in 2015. All six scores assess this incremental case evidence from the full original 18-page paper; no subsequent fixes, bounty, adoption or reputation credit.
 
-**What is new.** The sharpest idea is that a `script` element can be a pure JSON data block and still be an execution primitive, which defeats the "does this contain executable JavaScript?" test that markdown pipelines reason with — common renderers pass it through while dedicated sanitizers strip it, so the vulnerable surface is precisely a renderer being used as if it were a sanitizer. The document-rules variant needs no injected anchor at all, turning the page's own navigation links into prerender triggers. The most transferable part is the escalation argument: a same-origin prerender is a full execution context, so a reflected XSS on that origin loses its user-interaction requirement and tokens become readable rather than needing to be forged.
+### Scorecard
 
-**What was already known.** Prerender as a request-forcing primitive that carries session cookies is documented — [Chromium issue 40087297](https://issues.chromium.org/issues/40087297) records the legacy prerender hint sending same-site cookies cross-site, [sirdarckcat's HTTP cache leaks](https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html) (2019, archived) used it to force a render, and Cross-Window Forgery (2024, archived) used it to warm a target. The legacy hint also executed JavaScript, so the hidden fully-rendered tab predates the modern API. Verification against MDN confirmed the mechanics but also the bound the post concedes: inline speculation rules must be permitted by `script-src`, so any site with a script-source policy is already immune, and the post leaves a conflict between MDN's stricter reading and a browser violation message unresolved. Two apparent corroborations found during searching turned out to be the publisher's own text quoted back, so the absence of prior art lowers confidence rather than establishing novelty.
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 36/100 | 25% | 9.00/25 | The central synthetic-input-plus-concealment attack is explicit in the 2015 primary source. New product workflows and measured identity checks add moderate empirical understanding, not a new primitive. |
+| Transferability | 66/100 | 20% | 13.20/20 | Testing input provenance, alternative credential-release paths and UI visibility transfers across managers and desktop systems, conditional on a local attacker with the required permissions. |
+| Lasting value | 60/100 | 20% | 12.00/20 | The comparison is useful for testing consistent authorization across UI paths; much of the reusable attack insight and platform threat model already existed. |
+| Technical soundness | 51/100 | 15% | 7.65/15 | Detailed setups and algorithms support feasibility, but claimed Linux-wide restrictions follow one Ubuntu setup, and vault-cloning persistence and authentication claims exceed the demonstrated experiment. |
+| Practical usability | 59/100 | 10% | 5.90/10 | Attack steps and timing measurements are concrete, with a running unlocked vault and macOS Accessibility authorization required; these are material operating prerequisites, not remote website attacks. |
+| Clarity and reproducibility | 65/100 | 10% | 6.50/10 | The full paper explains its workflows and settings, but independently accessible artifact files could not be verified and some generalizations and command descriptions require clarification. |
 
----
+**Final score: 54.2/100.** Calculated with `score.py`; all six scores use evidence available at the disclosure cutoff.
 
-## 55.4 — [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](https://www.ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf) — Infantino, Ali, Solomos & Polakis, University of Illinois Chicago
+### Reverification
 
-**REMOVED** · Meaningful combination · confidence Medium
+Reopened the full paper including appendices, the dated 2015 maintainer discussion and the original 2014 paper’s password and consent attacks. The second search specifically for concealed desktop export overturned the initial interpretation that stealthy native vault theft was a new combination. The strongest favorable reading is a useful systematic map of current managers and their alternative release paths; this is credited in transferability and lasting value, without treating product breadth as novelty. macOS requires explicitly granted Accessibility permission; the vault must already be unlocked, and KeePassXC AutoType is enabled for the experiments. Stolen OTPs are stored secrets, not a demonstrated WebAuthn or independent-factor bypass. The alleged persistent account access after changing the master password is not established by possessing an old master password and Secret Key. The Linux visibility result is confined to the tested desktop configuration. Keeper uses Bundle Display Name in the detailed attack despite the introduction’s Bundle ID wording. The primitive remains useful, so this is not called a duplicate: its incremental empirical study is scored. DataCite verifies the issued/registered date discrepancy; artifact API/file requests timed out, and no earlier technical release is silently assumed. No experiments were rerun.
 
-*(Fifth re-check round, 18 August 2026.)*
+### Verdict
 
-**What is new.** Two transferable design lessons. A security-critical feature with two entry points enforces its checks on only one: the primary autofill path binds a credential to an application identifier and validates code signature, developer identity and their association, while the quick-access path performs no application-level validation at all — so the checks on the front door are irrelevant. And the desktop has no origin: application identity rests on a spoofable bundle identifier plus signature allowlists, and window-level manipulation lets an attacker raise its own window above the interface it is driving, so the password manager the attack operates is never seen.
-
-**What was already known.** The class-level insight — autofill outside a browser must guess its target and can be lied to — is the long-filed window-title spoofing problem in another manager's auto-type feature. Synthetic input defeating operating-system security dialogs is Patrick Wardle's DEF CON 2018 work. Most damaging to the "previously unexplored" framing, [DEF CON 32 in August 2024](https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jeffrey%20Hofmann%20Colby%20Morgan%20-%20Discovering%20and%20exploiting%20local%20attacks%20against%20the%201Password%20MacOS%20desktop%20application.pdf) (CVE-2024-42219) already demonstrated a local malicious process on the same platform taking the full vault *and* the account unlock key — same threat model, same target, same outcome, by a different mechanism. The paper cites none of these. Closest judged neighbour is AutoFail (66.5), the mobile analogue.
+**Useful application or case study; no 2026 display inclusion.** 54.2 is below the current 55-point display threshold; the useful-case-study verdict also fails the collection’s nonduplicate-novelty gate. Retain the full evaluation and original links, without adding this to the displayed 2026 list. The general judge rubric would allow a supporting case-study reference at this score, which is distinct from this collection’s narrower display rule.
 
 ---
 
@@ -2501,3 +3795,474 @@ and the patch-resistance argument is a real change in kind for this lineage.
 **What is new.** That idle pooled sockets were left paused with only an error listener, so bytes a hostile upstream pre-stages on a keep-alive socket are consumed as the *next* request's response, shifting every subsequent response on that connection by one. The residue is a single library instance of a known hazard, plus the fix shape of destroying an idle pooled socket that receives unsolicited bytes.
 
 **What was already known.** [RFC 9112 §6.3](https://datatracker.ietf.org/doc/html/rfc9112) (2022) already directs clients not to treat post-response data as a separate response, naming cache poisoning as the reason. Poisoning a *client's* connection pool was published as client-side desync in [Browser-Powered Desync Attacks](https://portswigger.net/research/browser-powered-desync-attacks) (2022, archived), and response queue poisoning in [Making HTTP header injection critical](https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning) (2022, archived); the runtime had prior socket-reuse race work in 2020. Post-cutoff but decisive on soundness: the maintainer who wrote the fix argued publicly that this is a property of the protocol rather than a bug, that several other major clients share it, and that the fix broke widely deployed downstream packages.
+
+## 67.8 — [Out of Bounds, Out of Sandbox: RCE in Go JavaScript Engine](https://www.slcyber.io/research/out-of-bounds-out-of-sandbox-rce-goja)
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+*(Sixth sweep, 9 September 2026.)*
+
+### Candidate
+
+- **Title:** Out of Bounds, Out of Sandbox: RCE in Go JavaScript Engine
+- **Author or organisation:** Dylan Pindur and Adam Kues, Searchlight Cyber
+- **Publication date:** Article 7 September 2026; candidate-side fix dated 17 June 2026 and exploit repository initial commit dated 29 June 2026. Public visibility of those commits on their creation dates is not independently established.
+- **Reference:** https://www.slcyber.io/research/out-of-bounds-out-of-sandbox-rce-goja ; [PoCs](https://github.com/assetnote/goja-heap-oob)
+
+### Core Contribution
+
+The article develops an embedded JavaScript engine memory-corruption exploit from a TypedArray offset bug. The reusable contribution is its bridge from script-controlled buffers to Go runtime objects and native calls, including a host command object invoked through a forged JavaScript receiver. The source reports successful exploitation in a SaaS automation feature and in a scanner's template initialization before signature rejection. These outcomes were inspected in the published evidence, not independently reproduced.
+
+### Prior Art
+
+- **Novelty cutoff:** Conservatively use the interval **17 June–7 September 2026**. Zendesk's [upstream fix 7ac5d30](https://github.com/dop251/goja/commit/7ac5d3034fc4331316e8c78777db856207a2e3d4), authored and committed 17 June, explains the incorrect destination offset and includes reproducing tests. The [exploit repository's initial commit](https://github.com/assetnote/goja-heap-oob/commit/4f67cda47394bb0e6bb7f79aebb14b468aab563a) is dated 29 June. Repository creation/commit timestamps alone do not establish its original public visibility, so 7 September remains the firm article disclosure. No work from inside this uncertain interval is used to reduce originality.
+- **Earliest credible pre-cutoff related work:** StalkR, [Golang heap corruption during garbage collection](https://blog.stalkr.net/2013/06/golang-heap-corruption-during-garbage.html), 4 June 2013: heap reuse to corrupt a function pointer already demonstrated that Go memory corruption can redirect execution.
+- **Closest pre-cutoff equivalent work:** StalkR, [Golang data races to break memory safety](https://blog.stalkr.net/2015/04/golang-data-races-to-break-memory-safety.html), 15 April 2015, demonstrates mismatched slice/interface fields and function-pointer overwrite; Johannes Lauinger, [Exploitation Exercise with Go unsafe.Pointer: ROP and Spawning a Shell](https://dev.to/jlauinger/exploitation-exercise-with-go-unsafe-pointer-rop-and-spawning-a-shell-part-3-4mm7), 27 May 2020, provides a complete unsafe-Go exploitation exercise. These establish the building blocks, although their attacker interface and exploitation paths differ.
+- **Local archive check:** Searched `Goja`, `unsafe.Pointer`, Go memory corruption, TypedArray and function-pointer mechanisms across `archived-references/md/`. The Go-specific hit inspected, [Unexpected security footguns in Go's parsers](https://blog.trailofbits.com/2025/06/17/unexpected-security-footguns-in-gos-parsers/), addresses parsing semantics rather than this memory-corruption bridge. No local equivalent was established; absence is not proof of priority.
+- **Post-cutoff evidence (not prior art):** None used.
+- **Candidate's distinct contribution as of the cutoff:** A concrete adaptation of established heap exploitation to script-only control over a Go-hosted runtime, with a documented route through runtime object layouts and calling conventions. Credit the working bridge and practical artifacts, not the general possibility of corrupting Go memory or a new affected product.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 55/100 | 25% | 13.75/25 | Meaningful script-to-host adaptation; heap corruption, forged slices and function-pointer control predate it. |
+| Transferability | 65/100 | 20% | 13.00/20 | Applicable to embedded runtimes using unsafe Go; offsets and native-call details remain build dependent. |
+| Lasting value | 65/100 | 20% | 13.00/20 | A useful reference for auditing apparent language safety and host/runtime boundaries. |
+| Technical soundness | 85/100 | 15% | 12.75/15 | Root cause, upstream correction and staged exploit code agree; reported live outcomes were not rerun. |
+| Practical usability | 68/100 | 10% | 6.80/10 | Harness and scanner PoC are provided; heap spraying and target-specific offsets limit reliability. |
+| Clarity and reproducibility | 85/100 | 10% | 8.50/10 | Detailed object traversal and published artifacts make the reasoning inspectable. |
+
+**Final score: 67.8/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Re-fetched original article, upstream fix through GitHub's commit API, repository README, and full `demo-harness/exploit.js`. The two authors, article date, unsafe offset bug, call bridge and template-init ordering match the source. The article's description of a one-element BigUint64Array as one byte is a wording error; the code allocates one eight-byte element.
+- **Cutoff audit:** All external prior art above predates even the earliest end of the disclosure interval. Commit timestamps were explicitly separated from established public visibility. The patch is candidate-side evidence, not independent prior art.
+- **Independent prior-art check:** Repeated the search via Go slice/interface races and function-pointer hijacking after the initial unsafe-pointer search, locating and reopening StalkR's 2013 and 2015 examples. Searched for earlier Goja sandbox escape disclosures; no equivalent was established.
+- **Strongest challenge to the result:** This can be characterized as conventional JavaScript-engine heap exploitation on a new implementation; neither a new product nor Go's reputation for memory safety earns novelty points.
+- **Benefit-of-doubt check:** The host-call bridge and practical script-only exploit are substantial work beyond simply finding an out-of-bounds write, and are preserved in code.
+- **Changes after reverification:** Narrowed novelty to the adaptation, corrected the publication-date assumption and noted the byte-count typo. Score recomputed with `score.py`; 67.8 remains appropriate.
+
+### Verdict
+
+Meaningful combination or adaptation
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** Medium
+- **Reasoning:** The marginal contribution is a concrete exploitable bridge from untrusted embedded JavaScript to Go host operations. The building blocks were established years earlier, but the implementation and artifacts are useful beyond a target-specific vulnerability announcement. Clears the provisional collection's 60-point cut.
+- **Evidence gaps:** Original public visibility dates of the June commits; independent exploit execution and statistical reliability measurements. No universal claim about Go or all Goja embedders is supported.
+
+---
+
+## 54.2 — [Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning](https://www.cyera.com/research/nemoclaw-one-website-visit-to-hijack-your-ai-agent)
+
+**REMOVED** · Useful application or case study · confidence Medium
+
+*(Sixth sweep, 9 September 2026.)*
+
+### Candidate
+
+- **Title:** Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning
+- **Author or organisation:** Elad Luz and Ofek Itach, Oasis Security / Cyera
+- **Publication date:** 25 August 2026
+- **Reference:** https://www.cyera.com/research/nemoclaw-one-website-visit-to-hijack-your-ai-agent
+
+### Core Contribution
+
+A deployment decision disables a local inference service's hostname defense. Browser DNS rebinding then reaches its unauthenticated management API, which rewrites the chat template used for future inference. Unlike changing the model's default system message, modifying this rendering layer affects requests that supply their own system message. The supplied demonstration reports a persistent marker in later agent output; wider organizational compromise is a possible consequence rather than a demonstrated result.
+
+### Prior Art
+
+- **Novelty cutoff:** 25 August 2026 for the complete template-poisoning chain, verified on the original article. Earlier deployment fixes could disclose network exposure but were not shown here to disclose this complete contribution.
+- **Earliest credible pre-cutoff related work:** Gérald Doussot, NCC Group, [Ollama DNS Rebinding Attack](https://www.nccgroup.com/research/technical-advisory-ollama-dns-rebinding-attack-cve-2024-28224/), 8 April 2024, already demonstrates browser rebinding to the full Ollama API and a sequence involving model creation and data exfiltration. Its fix was public in March 2024.
+- **Closest pre-cutoff equivalent work:** Chris Moberly, GitLab, [Drive-By Attack in Ollama Desktop v0.10.0](https://gitlab-com.gitlab.io/gl-security/security-tech-notes/red-team-tech-notes/ollama-driveby/), 19 August 2025, demonstrates a webpage modifying local configuration to substitute a remote model with poisoned system instructions. More directly, Fogel et al., [Inference-Time Backdoors via Hidden Instructions in LLM Chat Templates](https://arxiv.org/abs/2602.04653), v1 4 February 2026, already establishes hidden system-level instructions in model chat templates without changing weights, including Ollama evaluation. Wang et al., [BadTemplate](https://arxiv.org/abs/2602.05401), v1 5 February 2026, also demonstrates template insertion into high-priority system context. These latter two were read in their original v1 HTML, not inferred from later coverage.
+- **Local archive check:** Searched DNS rebinding, Ollama, model templates and template poisoning. Inspected the archived [State of DNS Rebinding in 2023](https://www.nccgroup.com/research/state-of-dns-rebinding-in-2023/) and confirmed long-established local-service access primitives. The February template papers were absent from the 2026 evaluation index, an important sweep lead rather than evidence of novelty.
+- **Post-cutoff evidence (not prior art):** None used.
+- **Candidate's distinct contribution as of the cutoff:** Demonstrates how a particular integration defeats an existing fix and supplies a drive-by entry point for already-published template poisoning. It is a useful deployment case study, not the origin of either rebinding or template-layer persistence.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 30/100 | 25% | 7.50/25 | Both Ollama rebinding and hidden template instructions were already public; new contribution is the integration path. |
+| Transferability | 58/100 | 20% | 11.60/20 | General deployment-composition lesson, but the concrete exposure depends on binding and client configuration. |
+| Lasting value | 48/100 | 20% | 9.60/20 | Useful demonstration of a known model-management risk; earlier work already explains the key primitive. |
+| Technical soundness | 77/100 | 15% | 11.55/15 | Middleware explanation and controlled marker demonstration are coherent; larger outcomes remain hypothetical. |
+| Practical usability | 65/100 | 10% | 6.50/10 | API paths and preconditions support auditing similar deployments. |
+| Clarity and reproducibility | 75/100 | 10% | 7.50/10 | Clear chain, but no independent reproduction or broad browser compatibility measurement here. |
+
+**Final score: 54.2/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Original Cyera article fetched again; NCC's original 2024 advisory; GitLab's complete 2025 writeup; February 2026 arXiv v1 papers. The claimed hidden instruction changes the serialized prompt, not model weights.
+- **Cutoff audit:** Original publications explicitly establish 2024-04-08, 2025-08-19, 2026-02-04 and 2026-02-05, all before 2026-08-25. Later summaries were used only to locate primary sources.
+- **Independent prior-art check:** After searching Ollama rebinding and model poisoning, separately searched `chat template` plus backdoor/poison. That found a researcher-hosted poisoned CodeScout model, leading to the original Fogel paper and the independently dated BadTemplate paper. Also inspected the June 2026 `Obisidan/ollama-security-audit` model-poisoning script; it changes the `system` field, so it is not the strongest template-level precedent.
+- **Strongest challenge to the result:** The initially apparent distinguishing template mechanism was already explicitly researched in February; counting it as a new primitive would overstate this article.
+- **Benefit-of-doubt check:** The browser-to-management-API composition and accidental disabling of an existing defense deserve case-study credit; demonstrated deployment exploitability is more than a generic warning.
+- **Changes after reverification:** Changed draft meaningful adaptation/65.2 to useful case study/54.2 after finding direct template-poisoning prior art. Recomputed all marginal-contribution categories with `score.py`.
+
+### Verdict
+
+Useful application or case study
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** Medium
+- **Reasoning:** It meets the judge's general supporting-reference threshold but falls below the provisional collection's 60-point cut. Preserve the lead and judgement; do not add to the displayed list.
+- **Evidence gaps:** No independent exploit execution, tested browser matrix, or verification of claimed downstream exfiltration. Neither lack of those checks nor prior art implies the disclosure is invalid.
+
+---
+
+## 64.4 — [Hacking AI customer service agents](https://www.intigriti.com/researchers/blog/hacking-tools/hacking-ai-customer-service-agents)
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+*(Sixth sweep, 9 September 2026.)*
+
+### Candidate
+
+- **Title:** Hacking AI customer service agents / Hacking Human-in-the-Loop Systems
+- **Author or organisation:** Inti De Ceukelaire; companion article by Ayoub and Inti De Ceukelaire, Intigriti
+- **Publication date:** 2026-08-07 talk; article displays 2026-09-02, while CMS/JSON-LD records publication at 2026-09-03 14:00 UTC
+- **Reference:** https://www.intigriti.com/researchers/blog/hacking-tools/hacking-ai-customer-service-agents
+- **Related artifact:** [177-page slides](https://drive.google.com/file/d/1e7deupIiaOVN_DPPz4YAs68wRi0QpqUC/view)
+
+### Core Contribution
+
+Email clients can turn attacker-controlled unsubscribe parameters or reflected subjects into victim-signed messages that an action-capable support agent treats as authority. The work combines these delivery mechanisms with support-channel identity discrepancies, forged tool data and crawler namespace poisoning. The reusable insight is to audit where automation converts authenticated origin into authorization, including the evidence shown to a human reviewer. These are author-reported production cases, illustrated with redacted/reconstructed flows; independent exploitation was not performed.
+
+### Prior Art
+
+- **Novelty cutoff:** 2026-08-07, when the [Bug Bounty Village agenda](https://www.bugbountydefcon.com/agenda-2026) places the matching talk at 16:00–17:00. The DEF CON 34-labelled deck communicates the contribution; exact slide-upload date is unavailable. The article is a later companion, not a September first-disclosure claim. Reopened HTML has an editorial `date` of 2026-09-02, but `_publishedAt` and JSON-LD `datePublished` of 2026-09-03T14:00:00.216+00:00; this is a CMS-field discrepancy, not explained by timezone conversion. The August talk fixes eligibility and novelty cutoff independently.
+- **Earliest credible pre-cutoff related work:** De Ceukelaire's [Ticket Trick](https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c), 2017-09-10 on the live primary source, already extracts verification/reset mail through support portals. [Abusing autoresponders and email bounces](https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2), 2019-02-21, already attacks email automation and reflects sensitive metadata. Both were also read in the local archive; its Ticket Trick frontmatter uses a different September date, which does not affect precedence.
+- **Closest pre-cutoff equivalent work:** [Greshake et al.](https://arxiv.org/abs/2302.12173), 2023-02-23, establishes indirect instruction injection through retrieved content and manipulation of API calls. [Splitting the email atom](https://portswigger.net/research/splitting-the-email-atom), 2024-08-07, establishes email parser discrepancies as access-control bypasses. [Turning List-Unsubscribe into an SSRF/XSS Gadget](https://security.lauritz-holtmann.de/post/xss-ssrf-list-unsubscribe/), 2025-12-23, already weaponizes that header, with different sinks.
+- **Post-cutoff evidence (not prior art):** The September companion article corroborates the deck; no influence/adoption claim made.
+- **Candidate's distinct contribution as of the cutoff:** Victim-signed command delivery through unsubscribe/autoresponder behavior is a useful composition beyond the earlier metadata leaks, parser tricks and generic prompt injection. The broader catalogue is principally application and synthesis, not a new attack class per example.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 55/100 | 25% | 13.75/25 | A meaningful signed-command composition amid substantial known material. |
+| Transferability | 75/100 | 20% | 15.00/20 | Email automation, support agents and review interfaces recur across products. |
+| Lasting value | 68/100 | 20% | 13.60/20 | Authenticated message origin remains distinct from user intent. |
+| Technical soundness | 57/100 | 15% | 8.55/15 | Concrete sequences, but synthetic/redacted demonstrations and misleading SPF/DKIM explanations. |
+| Practical usability | 65/100 | 10% | 6.50/10 | Identifies concrete audit entry points and required channel behavior. |
+| Clarity and reproducibility | 70/100 | 10% | 7.00/10 | Detailed deck and prose; original target traces and test harness absent. |
+
+**Final score: 64.4/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Reopened the article and read the complete extracted 177-page deck; rechecked signed-message sequences on slides 72–83 and crawler/forged-response examples on slides 156–175. The unsubscribe path requires a click; the autoresponder path depends on a replying victim mailbox and accepted spoofed input.
+- **Cutoff audit:** Agenda date and matching deck identify the August talk. Opened prior-art primary pages and checked their displayed dates; all precede August 2026. Undated recent MIME-defense pages were not credited as prior art.
+- **Independent prior-art check:** Repeated searches using unsubscribe gadgets and signed autoresponder terminology, after the initial email-parsing/Ticket Trick/local-archive search. This found the 2025 unsubscribe research; its sinks differ from signed instructions to an agent.
+- **Strongest challenge to the result:** Most individual attacks are existing email, path traversal, RAG poisoning or injection patterns. Also the article/deck conflate SMTP envelope identity, header From and DKIM: [RFC 7208](https://datatracker.ietf.org/doc/html/rfc7208) checks SMTP identities, while [RFC 6376](https://datatracker.ietf.org/doc/html/rfc6376) specifies message signatures. A diagram is not independent proof of its particular claimed success.
+- **Benefit-of-doubt check:** Credit the signed-command delivery composition and practical channel mapping; do not infer universal compromise or reject all examples because one protocol explanation is imprecise.
+- **Changes after reverification:** Technical score limited to 57; novelty remains moderate. score.py computed 64.4 from the six listed inputs.
+
+### Verdict
+
+Meaningful combination or adaptation
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** Medium
+- **Reasoning:** Useful concrete combinations and a reusable boundary to test, with prior art receiving the credit for their constituent techniques. Clears the 60-point provisional-list cut.
+- **Evidence gaps:** No independent reproductions, vendor/version matrix or raw production reports for most examples; initial public deck upload time unavailable.
+
+---
+
+## 62.2 — [A Formal Analysis of Agent Payment Protocols](https://arxiv.org/abs/2609.00060) — Ke Jiang, Mohan Yu, Yuan Chang, Mohit Kumar Jangid, Jianyu Niu, Cong Wang, Yinqian Zhang
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+*(Sixth sweep, 9 September 2026.)*
+
+### Candidate
+
+- **Title:** A Formal Analysis of Agent Payment Protocols
+- **Author or organisation:** Ke Jiang, Mohan Yu, Yuan Chang, Mohit Kumar Jangid, Jianyu Niu, Cong Wang, Yinqian Zhang; SUSTech, IIT, City University of Hong Kong.
+- **Publication date:** arXiv v1 submitted 30 August 2026, announced in the September listing. Submission and public announcement are distinct; the defensible public-disclosure interval is 30 August–2 September 2026.
+- **Reference:** [Record](https://arxiv.org/abs/2609.00060), [full v1](https://arxiv.org/html/2609.00060v1).
+
+### Core Contribution
+
+The contribution is a common way to test authorization, payment and delivery relationships across x402, MPP, AP2 and ACP. The paper pairs specification-derived models with minimally strengthened models and checks that successful transactions remain reachable after each repair. Its reusable output is the cross-protocol property map and trace-comparison method. The reported finding count mixes model violations and several kinds of implementation evidence; it is not a count of proven production vulnerabilities.
+
+### Prior Art
+
+- **Novelty cutoff:** 30 August–2 September 2026, from the arXiv record and announcement listing. Only sources already public before 30 August are used to reduce novelty; no precedence is inferred within that interval.
+- **Earliest credible pre-cutoff related work:** [Wang et al., How to Shop for Free Online (S&P 2011)](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf), checked in the local 2011 archive, already derives transaction invariants, exploits inconsistent merchant/cashier state, and uses verification. [Do et al., W3C Web Payment APIs (2021 preprint; S&P 2022)](https://publ.sec.uni-stuttgart.de/dohosseynikuestersschmitzwenzlerwuertele-iacr-2021.pdf) already supplies formal web-payment analysis and verified repairs.
+- **Closest pre-cutoff equivalent work:** [Five Attacks on x402 (12 May 2026)](https://arxiv.org/abs/2605.11781) formally covers finality, replay, payment/service correspondence and HTTP intermediaries. [Free-Riding the Agentic Web (29 May; revised 22 June 2026)](https://arxiv.org/abs/2605.30998) contributes x402 invariants, implementation tests and pricing analysis. [AP2 runtime verification (6 February 2026)](https://arxiv.org/abs/2602.06345) already separates context binding and consume-once enforcement. The existing [x402 facilitator study (21 July 2026)](https://arxiv.org/abs/2607.19545) is also in the local archive. These eliminate any claim to first finding payment-state inconsistency or first formally analyzing agent payments.
+- **Additional challenge:** [AIP-Bench (23 July 2026)](https://arxiv.org/abs/2607.21824) already claims cross-platform protocol analysis and a deterministic benchmark. [Beyond the Mandate (24 August 2026)](https://arxiv.org/abs/2608.23858) already maps AP2 lifecycle, deployments and trust boundaries. Their primary records were opened; neither abstract establishes the same four-protocol matched Tamarin corpus, but this is not proof that every individual finding is new.
+- **Post-cutoff evidence (not prior art):** None used.
+- **Candidate's distinct contribution as of the cutoff:** The shared, source-mapped verification treatment of four protocols and its matched executable repairs. The implementation/schema distinction and REST-to-MCP correspondence cases help operationalize the method. Generic replay, missing binding and premature delivery are credited to earlier work.
+
+Local searches covered `cashier.as.a.service`, `web payment api`, `x402`, `payment.*idempot` and `payment.*binding`; the 2011 paper and the full archived x402 paper were inspected.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 52/100 | 25% | 13.00/25 | Moderate methodological extension; the central failure classes and formal-analysis approach predate it. |
+| Transferability | 75/100 | 20% | 15.00/20 | Cross-role and cross-stage relations can guide other delegated API and checkout reviews. |
+| Lasting value | 65/100 | 20% | 13.00/20 | The property-to-trace comparison remains useful as these particular drafts change; later adoption is not yet established. |
+| Technical soundness | 68/100 | 15% | 10.20/15 | Explicit reachability checks and evidence levels; model fidelity and some deliberately weakened channel assumptions remain limitations. |
+| Practical usability | 50/100 | 10% | 5.00/10 | Mechanisms and repair conditions are actionable, but a downloadable complete model/PoC package was not located. |
+| Clarity and reproducibility | 60/100 | 10% | 6.00/10 | Full paper, equations and case mapping available; no independent rerun of the claimed verification corpus. |
+
+**Final score: 62.2/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Full v1, including sections IV–VII and appendix E; the primary arXiv record supplies all seven authors and the submission date. Rechecked the distinction between runtime PoCs, schema witnesses and symbolic-only results.
+- **Cutoff audit:** The May x402 papers and February AP2 paper have explicit pre-cutoff submission histories. The July and 24 August primary records were checked independently. Publication-year eligibility is secure despite the submission/announcement interval.
+- **Independent prior-art check:** After following the bibliography, searched separately for agent-payment MCP idempotency, cross-protocol taxonomies and a released model corpus. This surfaced AIP-Bench and Beyond the Mandate as stronger challenges than the generic 2011 lineage alone. Reopened the earlier x402 attack/related-work sections and AP2 runtime analysis.
+- **Strongest challenge to the result:** Much of the claimed new count may be familiar invariants applied to new protocol branches; missing message signatures under a compromised TLS terminator do not establish attacks on normal end-to-end TLS deployments.
+- **Benefit-of-doubt check:** Matched models and retained successful traces provide useful analysis beyond a threat checklist, even without a new primitive or complete production exploits.
+- **Changes after reverification:** Restricted the verdict to methodology and originality to 52; did not credit the headline count as forty novel attacks. The computed score remains above the provisional collection's 60 cut.
+
+### Verdict
+
+**Tooling or methodology contribution**
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** A useful cross-protocol extension with carefully separated evidence levels, resting on established payment-security ideas.
+- **Evidence gaps:** Complete runnable model/PoC package not located; implementation and proof results are author-reported and were not independently reproduced. Some witnesses require stronger adversary access than ordinary network interception.
+
+---
+
+## 70.1 — [What's in a tag name? JavaScript, apparently](https://portswigger.net/research/whats-in-a-tag-name-javascript-apparently) — Gareth Heyes, PortSwigger
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+### Candidate
+
+- **Title:** What's in a tag name? JavaScript, apparently
+- **Author or organisation:** Gareth Heyes, PortSwigger
+- **Publication date:** 25 August 2026, 14:24 UTC, stated on the article and corroborated by the publisher's RSS.
+- **Reference:** https://portswigger.net/research/whats-in-a-tag-name-javascript-apparently
+
+### Core Contribution
+
+Uses an HTML element's tag name as a payload source, retrieving its lowercase form through `localName` and transforming it into JavaScript, a URL or reconstructed markup. The supplied variants map a source-to-sink route beyond the familiar focus trigger. They require retained executable handlers; that precondition limits applicability without making the source technique cosmetic. Browser-wide compatibility and practical WAF bypasses remain author claims, separate from the explained, reproducible primitive.
+
+### Prior Art
+
+- **Novelty cutoff:** 25 August 2026. The full article is the earliest candidate-side technical disclosure verified; no earlier equivalent was verified, which is not proof of priority.
+- **Earliest credible pre-cutoff related work:** The local archive's *One vector to rule them all* places code in an element's `name` and evaluates it through event handlers. The body lacks a publication date and its live source is unavailable, so it supplies mechanism context rather than a priority anchor.
+- **Closest verified pre-cutoff related work:** [Heyes, One XSS cheatsheet to rule them all, 26 September 2019, updated 4 September 2020](https://portswigger.net/research/one-xss-cheatsheet-to-rule-them-all) establishes focus execution on custom elements using `tabindex`. It does not recover executable text from a tag name or map the candidate's transformations. No exact predecessor under comparable constraints was verified.
+- **Documented component background, not equivalent exploitation:** [W3C DOM4, 19 November 2015](https://www.w3.org/TR/2015/REC-dom-20151119/) specifies `localName`, `tagName` uppercasing and writable attributes. This explains why the construction works; it does not establish the age of this security use.
+- **Local search:** Repeated complete-archive searches for `localName`, tag-name payloads, attribute rewriting and event triggers; inspected the older name-based vector and mXSS context. No exact tag-name-source chain surfaced.
+- **Post-cutoff evidence (not prior art):** None used.
+- **Candidate's distinct contribution as of the cutoff:** A non-obvious payload-source and transformation technique that testers can add to source/sink and HTML-filter coverage. Its value is the reusable construction rule, not the claim that every supplied spelling defeats a deployed WAF.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 65/100 | 25% | 16.25/25 | Tag-name retrieval and transformation add a non-obvious source route absent from the verified earlier focus-trigger work; old APIs alone do not establish an old technique. |
+| Transferability | 70/100 | 20% | 14.00/20 | Standard DOM/HTML mechanisms recur across applications and frameworks; retained handlers and suitable filtering remain necessary. |
+| Lasting value | 68/100 | 20% | 13.60/20 | Persistent DOM semantics support a durable rule for testing unusual payload sources and transformations; expected usefulness, not observed adoption. |
+| Technical soundness | 75/100 | 15% | 11.25/15 | Concrete explained constructions and linked PoCs support the narrow primitive; no universal browser or WAF success is inferred. |
+| Practical usability | 70/100 | 10% | 7.00/10 | Ready examples and a mutation approach are usable in research and filter testing without needing a named vulnerable deployment. |
+| Clarity and reproducibility | 80/100 | 10% | 8.00/10 | Precise examples, explanations and hosted PoCs; not independently executing them limits this review's confidence rather than removing source detail. |
+
+**Final score: 70.1/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Reopened complete publisher article and the 2019 source, checked the fixed-date DOM4 specification, and retained the actual executable-handler precondition.
+- **Cutoff audit:** The 2019 article's stated 2020 update predates the candidate. DOM4 is dated 2015 but is classified only as component background. Unavailable/undated sources are not priority anchors.
+- **Independent prior-art check:** Repeated searches for tag-name payloads, `localName` plus `eval`, and `getAttributeNode` plus `onfocus`. Opened a [December 2024 CTF writeup](https://gg0h.github.io/2024/12/18/Intigriti-1224-Challenge/) and [Mozilla bug 290324](https://bugzilla.mozilla.org/show_bug.cgi?id=290324): the former concerns reparse context, the latter privileged access to content-defined properties. Neither supplies the same tag-name payload-source technique. No exact predecessor found remains uncertainty rather than positive evidence of first discovery.
+- **Strongest challenge to the result:** The technique is conditional on surviving executable handlers, so its operational advantage over simpler XSS is filter-dependent. No measured WAF bypass establishes that advantage universally.
+- **Benefit-of-doubt check:** Source discovery and transformation mapping are useful contributions under those constraints. A working security boundary bypass or production incident is not necessary to demonstrate a reusable research primitive.
+- **Changes after reverification:** **Correction on 9 September 2026: 56.0 → 70.1.** Re-read the updated skill and full rubric. The earlier card conflated component age with technique age, used absent adoption as negative evidence for two-week-old work, and let missing deployment/WAF evidence depress research usability. Original contribution 40→65 now compares actual security uses; transferability 60→70 credits platform-wide mechanisms while retaining conditions; lasting value 50→68 forecasts durability from persistent semantics; soundness 70→75 separates supported construction from broad claims; practical usability 55→70 credits immediately usable research examples. Clarity remains 80. Recomputed with `score.py`; no new priority claim or independently tested WAF/browser result is asserted. The earlier scorecard remains in append-only history.
+
+### Verdict
+
+Meaningful combination or adaptation
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** A useful non-obvious payload source and transformation route extends established event-trigger knowledge. Its reusable testing value clears the provisional collection's 60-point threshold, with broader exploitation and priority claims kept qualified.
+- **Evidence gaps:** Exact historical priority and independently verified compatibility matrix; no named WAF bypass or deployment exploit is established. These delimit claims and confidence rather than erase the supplied construction.
+
+---
+
+## 58.0 — [This Message Was Sent by Microsoft: Turning Microsoft Apps into our Phishing Platform](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Keanu%20Nys%20-%20This%20Message%20Was%20Sent%20by%20Microsoft%20Turning%20Microsoft%20Apps%20into%20our%20Phishing%20Platform%20-%20DEF%20CON%2034%20Red%20Byte%20Messag.pdf) — Keanu Nys, Spotit
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+### Candidate
+
+- **Title:** This Message Was Sent by Microsoft: Turning Microsoft Apps into our Phishing Platform
+- **Author or organisation:** Keanu Nys, Spotit
+- **Publication date:** DEF CON 34, Sunday 9 August 2026; the downloaded deck was generated 13 August. Its exact upload day is unverified; it was available on 9 September.
+- **Reference:** [125-page presentation](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Keanu%20Nys%20-%20This%20Message%20Was%20Sent%20by%20Microsoft%20Turning%20Microsoft%20Apps%20into%20our%20Phishing%20Platform%20-%20DEF%20CON%2034%20Red%20Byte%20Messag.pdf). The official [schedule](https://defcon.org/html/defcon-34/dc-34-schedule.html) uses the subtitle “Turning First-Party Services into our Phishing Platform,” Sunday 10:00, Track 2.
+
+### Core Contribution
+
+Combines notification customization, weak recipient checks, and interactive email cards into phishing workflows sent by legitimate Microsoft services. The useful residue is how independent sender, recipient, tenant and interactive-content checks compose. Slide evidence includes Power BI's unverified Email attribute, SharePoint's client-only external-recipient restriction, and Adaptive Card provider enrollment. It requires control of suitable Microsoft tenant resources and victim interaction; no automatic credential compromise is shown.
+
+### Prior Art
+
+- **Novelty cutoff:** 9 August 2026 conference presentation, with a 13 August deck revision; no materially earlier candidate-side artifact was verified. The introductory company-branding material revisits the author's 2025 talk and is not credited as newly discovered in 2026.
+- **Documented component background, not equivalent exploitation:** [Woon Kiat Wong, Actionable Messages for Outlook, August 2017](https://learn.microsoft.com/en-us/archive/msdn-magazine/2017/august/microsoft-office-actionable-messages-for-outlook) documents inline forms, hiding the original body, server-originated HTTP POST actions, and dynamic card refresh. These capabilities themselves are established product features.
+- **Closest pre-cutoff equivalent work:** [Chen and Passera, Proofpoint, 15 August 2024](https://www.proofpoint.com/us/blog/email-and-cloud-threats/surge-credential-hijacking-attacks-focus-on-sharepoint) documents phishing through legitimate SharePoint sharing notifications. [Debojyoti Goswami, ProArch, 13 February 2026](https://www.proarch.com/blog/threats-vulnerabilities/power-bi-notifications-as-a-phishing-tool) directly observes Power BI scorecard-subscription phishing sent from Microsoft's real notification address. Neither establishes the candidate's precise recipient-validation or Adaptive Card combinations.
+- **Local archive:** Searched notification/phishing, Adaptive Cards, SharePoint and Microsoft-phishing mechanisms across all archived Markdown; no exact earlier card/recipient chain surfaced. General tenant/application trust-boundary material does not establish duplication.
+- **Post-cutoff evidence (not prior art):** None used.
+- **Candidate's distinct contribution as of the cutoff:** Concrete service-specific routes that broaden control of recipients and content, plus a card-driven credential/MFA interaction inside Outlook. The trusted-service sender premise, Power BI delivery route and interactive-card functionality were already public.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45/100 | 25% | 11.25/25 | Useful composition and recipient-validation details; substantial underlying service abuse already documented. |
+| Transferability | 55/100 | 20% | 11.00/20 | Multiple notification systems illustrate the trust mismatch, but exploit steps depend on Microsoft-specific APIs and policy. |
+| Lasting value | 60/100 | 20% | 12.00/20 | Separating sender authority, recipient eligibility and interactive-content validation is a durable audit rule even when individual enrollment or UI routes change. |
+| Technical soundness | 75/100 | 15% | 11.25/15 | Concrete requests, screenshots and explicit failed variants; no independent tenant reproduction. |
+| Practical usability | 70/100 | 10% | 7.00/10 | Detailed workflow and control matrix useful for authorized assessment. |
+| Clarity and reproducibility | 55/100 | 10% | 5.50/10 | Many screenshot-only steps depend on narration; no complete standalone lab or automation artifact. |
+
+**Final score: 58.0/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Downloaded PDF text, metadata and rendered slides 89–114, especially rejected external-card execution and the global-provider route; official conference schedule independently confirms speaker and Sunday session.
+- **Cutoff audit:** Reopened dated 2017 Microsoft documentation, 2024 Proofpoint report and February 2026 ProArch observation, all earlier than the August presentation. PDF creation is explicitly distinguished from upload/publication date.
+- **Independent prior-art check:** After broad notification/phishing searches, searched exact SharePoint API name, actionable-message phishing, and the Power BI sender address. This found the directly observed February Power BI campaign.
+- **Strongest challenge to the result:** A broad “Microsoft sent the phishing” novelty claim fails against earlier SharePoint and Power BI abuse; inline HTTP forms are longstanding Outlook features.
+- **Benefit-of-doubt check:** The recipient-validation and provider-enrollment combinations are more informative than simply reusing an allowed sender. No exact earlier equivalent of all these steps was verified.
+- **Changes after reverification:** Original contribution reduced from 50 to 45 after verifying the Power BI precursor; score recomputed from 58.2 to 57.0 with `score.py` on 9 September 2026. **Rubric correction later on 9 September: 57.0 → 58.0.** Reopened the actual SharePoint/Power BI abuse reports and the Microsoft component documentation, and reinspected the saved deck evidence. Kept the former as security prior art and explicitly separated the latter as background. Original contribution remains 45 because the verified older service-abuse routes supply much of the capability, while the card/recipient composition retains moderate credit; this is not an inference from API age. Lasting value rises 55→60: a changed UI or patched enrollment route does not remove the durable multi-check audit lesson. No lack-of-adoption penalty applies. Technical score and source-detail score remain unchanged: the deck supports concrete steps, and its screenshot/narration gaps concern reproducibility rather than whether this reviewer ran an exploit. Recomputed with `score.py`; the earlier scorecard remains in history.
+
+### Verdict
+
+Meaningful combination or adaptation
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The new deck resolves the artifact watchlist and adds operational detail beyond established trusted-service phishing. The user lowered the provisional display cut to 55 on 9 September 2026. The full, reverified 58.0 judgement now qualifies; this threshold promotion changes no category score or novelty claim.
+- **Evidence gaps:** Exact deck upload day, complete narration and independently repeated tenant configuration; no claim of universal external Adaptive Card acceptance is supported.
+
+---
+
+---
+
+**Threshold reconciliation, 9 September 2026:** Full scorecard and source/date/predecessor checks already completed in this session; no duplicate among existing displayed entries. Promoted under the user-authorized ≥55 cut with the numerical score unchanged.
+
+
+## 66.5 — [What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness](https://arxiv.org/abs/2609.01222)
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness
+- **Author or organisation:** Zichuan Li, Jian Cui, Ashley Chen, Xiaojing Liao, Luyi Xing; University of Illinois Urbana-Champaign
+- **Publication date:** 2026-09-01; revised 2026-09-02
+- **Reference:** https://arxiv.org/abs/2609.01222
+- **Related artifact:** https://zichuan.li/LLMAgentCPE/
+
+### Core Contribution
+
+The work treats agent context assembly as a provenance problem: content can acquire greater authority through a real API-message role change, or broader persistence when copied from a session/project into global memory. It catalogues 16 source-selection, markup and loading-logic vectors, demonstrates five attack chains, and presents CoRA, an automated source-discovery and runtime validation method. The reusable addition is a way to audit which files and metadata actually enter context, with what role and persistence, and then validate propagation between sources. Generic indirect injection and persistent memory poisoning are established prior art.
+
+### Prior Art
+
+- **Novelty cutoff:** 2026-09-01 13:26:21 UTC, the [arXiv v1 submission](https://arxiv.org/abs/2609.01222v1). The complete v1 communicates the taxonomy, method and cases. Searches of the title and project did not establish an earlier candidate-side technical publication; the project page has no independent publication timestamp. September 2 is a revision, not first disclosure.
+- **Earliest credible pre-cutoff related work:** [Greshake et al., indirect prompt injection](https://arxiv.org/abs/2302.12173), 2023-02-23, establishes instructions delivered through external data. Rehberger's [Hacking Memories](https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/), 2024-05-22, demonstrates third-party documents invoking a memory tool and persisting instructions into later conversations. [SpAIware](https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/), 2024-09-20, extends that to persistent exfiltration.
+- **Closest pre-cutoff equivalent work:** He et al., [When Context Gets Root: Privilege Escalation in LLM Harnesses](https://arxiv.org/html/2608.27299v1), submitted 2026-08-27, explicitly models actual role promotion during harness reconstruction. It demonstrates delegation changing tool-derived instructions into user messages, custom-agent system prompts, and persistence via goals, scheduling and skills. This precedes CPE by five days; independent discovery is plausible but does not establish historical priority. The existing local [Prompt Injection as Role Confusion](https://arxiv.org/abs/2603.12277), first submitted 2026-02-22, instead measures models' perceived roles despite unchanged labels. [RyotaK's Claude Code permission bypasses](https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/), 2026-01-12, exploit command argument and allowlist discrepancies; sharing an agent product or execution outcome does not make CPE that entry's duplicate.
+- **Post-cutoff evidence (not prior art):** The live project page corroborates the five case descriptions. No influence or adoption claim is inferred from later summaries.
+- **Candidate's distinct contribution as of the cutoff:** CoRA's source census, instrumentation, separated role/scope verification and removal/relaunch propagation tests systematically operationalize an already-public trust problem. The detailed loading-priority, dynamic discovery and output-parser combinations add useful harness-specific audit knowledge. The evidence does not support crediting both broad attack categories as wholly new.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 54/100 | 25% | 13.50/25 | Broad classes predate the cutoff; a useful systematic discovery/validation method and detailed attack compositions remain. |
+| Transferability | 78/100 | 20% | 15.60/20 | Source provenance, actual message placement, precedence and persistence are reusable across harness architectures. |
+| Lasting value | 72/100 | 20% | 14.40/20 | Provides concrete audit dimensions beyond individual prompts or product patches; lasting influence is prospective. |
+| Technical soundness | 68/100 | 15% | 10.20/15 | Instrumented canaries, separated loading/behavior checks and controlled case comparisons support the mechanism; author-only evaluation, simple objectives and permissive configurations limit general claims. |
+| Practical usability | 60/100 | 10% | 6.00/10 | Detailed surfaces and workflows inform testing; complete CoRA code and independently replayable traces were not located. |
+| Clarity and reproducibility | 68/100 | 10% | 6.80/10 | Full paper, version table, payloads and demos explain the method; some role notation and outcome terminology are imprecise. |
+
+**Final score: 66.5/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Full v1 HTML/text, reopened arXiv version history, project payloads and case descriptions, especially sections V–VII and appendices. The 282 figure counts verified context sources, not 282 independently exploited vulnerabilities. Of 1,761 candidate propagation paths, authors report 1,315 loading successes and 1,034 benign behavior successes with GPT-5.5. These are author-reported measurements, not independently reproduced results.
+- **Cutoff audit:** Reopened arXiv histories confirm August 27 versus September 1 precedence. Reopened Rehberger originals confirm May/September 2024 public dates. The role-confusion paper's February 22 first submission and June revision both predate CPE; local archive directory/year alone was not used as date evidence. RyotaK's primary date is January 12. No uncertain earlier project timestamp was treated as evidence of CPE priority.
+- **Independent prior-art check:** After local searches for persistent prompt injection, memory poisoning, runtime skill discovery and role context, a separate search for context reconstruction/privilege and memory persistence found the August 27 paper. Following SpAIware's earlier-source link verified May 2024 memory injection. This materially challenges a two-new-classes reading.
+- **Strongest challenge to the result:** Both broad classes can look like renamed known attacks, and many enumerated sources are intentional features. Role placement alone proves neither unauthorized action nor guaranteed model compliance. High attack counts rely on simple greeting-style objectives; several tested modes allow broad writes. The Claude execution case needs a session permission for repeated node commands and an approved download; it is not an unconditional command-permission bypass. The Codex case gets vulnerable server code merged by an automated reviewer; it is not runner RCE.
+- **Benefit-of-doubt check:** The strongest contribution is concrete provenance measurement and attack composition. The Cline example turns text echoed as suspicious into parsed XML tool calls, writes persistent rules/configuration, and only gains broader approvals after restart; Gemini's built-in global memory write operates outside the project sandbox. Those cases add more than merely finding another poisoned README.
+- **Changes after reverification:** Narrowed the draft classification to Tooling or methodology contribution and Original contribution to 54 after verifying the August 27 overlap; recomputed with score.py. Retained strong transferability and method credit rather than treating overlap as complete duplication. Corrected the interpretation of the 282 source count and limited execution claims to their stated prerequisites.
+
+### Verdict
+
+Tooling or methodology contribution
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** Medium
+- **Reasoning:** The role and persistence threat is older than the candidate, but CoRA and the detailed context-assembly audit provide a meaningful, reusable addition. Its 66.5 score clears the year sweep's 60-point threshold without implying first discovery of either broad class.
+- **Evidence gaps:** No independent end-to-end reproduction; complete code/traces were not found on the linked project page, and the paper promises further release while withholding some details for coordinated disclosure. Exact project publication time and independent evidence of discovery order remain unavailable. Vendor acknowledgements and patch claims were not independently verified and do not raise the score.
+
+---
+
+## 65.4 — [Chat-template backdoors: systematic evaluation and agentic impact](https://arxiv.org/abs/2602.04653) · [BadTemplate](https://arxiv.org/abs/2602.05401)
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+- **Title:** Inference-Time Backdoors via Hidden Instructions in LLM Chat Templates; revised as Inference-Time Backdoors via Chat Templates: From LLM Supply Chains to Agentic System Compromise. Grouped with BadTemplate: A Training-Free Backdoor Attack via Chat Template Against Large Language Models.
+- **Author or organisation:** Ariel Fogel, Omer Hofman, Eilon Cohen, Roman Vainshtein (Pillar Security/Fujitsu); BadTemplate: Zihan Wang, Hongwei Li, Rui Zhang, Wenbo Jiang, Guowen Xu.
+- **Publication date:** Fogel preprint v1 February 4, 2026; agent expansion v4 May 24, 2026. BadTemplate v1 February 5, 2026. Evaluation September 9, 2026.
+- **Reference:** [Fogel v1 and submission history](https://arxiv.org/abs/2602.04653v1), [May expansion](https://arxiv.org/abs/2602.04653v4), [BadTemplate v1](https://arxiv.org/abs/2602.05401v1), [implementation](https://github.com/FujitsuResearch/chat-template-backdoor-attack).
+
+### Core Contribution
+
+Changing a distributed model's chat template can inject privileged instructions without changing weights. The 2026 contribution evaluated here is systematic measurement of that already-disclosed mechanism. Fogel tests dormant/triggered conditions across models and engines; BadTemplate adds classification experiments and ablations. These belong in one technique entry: neither creates a second trust-boundary crossing. Fogel uses deterministic template conditions; BadTemplate inserts natural-language conditions whose activation depends on the model. This distinction matters for measurement, but does not establish a separately original attack surface. [Fogel](https://arxiv.org/html/2602.04653v1), [BadTemplate](https://arxiv.org/html/2602.05401v1).
+
+### Prior Art
+
+- **Novelty cutoff:** The underlying Fogel mechanism was technically public on **July 9, 2025**, in [Pillar's original disclosure](https://www.pillar.security/blog/llm-backdoors-at-the-inference-level-the-threat-of-poisoned-templates), including conditional GGUF-template manipulation and a working demonstration. It must not be presented as a 2026 discovery. The bounded contribution scored here is the **February 4, 2026 systematic extension**, followed by BadTemplate on February 5. [Pillar's February 10 followup](https://www.pillar.security/blog/from-discovery-to-large-scale-validation-chat-template-backdoors-across-18-models-and-4-engines) explicitly attributes the original to July and distinguishes its single-model demonstration from the expanded study. May's agent results do not retrospectively increase February originality.
+- **Earliest credible pre-cutoff related work:** [Greshake et al., February 23, 2023](https://arxiv.org/abs/2302.12173), also preserved locally as `archived-references/md/2023/github-greshake-llm-security.md`, demonstrates retrieved instructions controlling integrated applications and APIs. Its lower-trust data entry point differs from poisoned serialization metadata. [Peng's model-metadata SSTI advisory, May 10, 2024](https://github.com/abetlen/llama-cpp-python/security/advisories/GHSA-56xg-wfcc-g829), establishes template supply-chain execution risks, but exploits unsafe Python/Jinja execution rather than supported formatting behavior.
+- **Closest pre-cutoff equivalent work:** The July 2025 Pillar original already supplies the central capability. [Guo and Cai's System Prompt Poisoning, May 10, 2025](https://arxiv.org/abs/2505.06493v1), also establishes persistent behavioral manipulation by poisoning authoritative instructions, though without the GGUF distribution route. [ChatInject, September 26, 2025](https://arxiv.org/abs/2509.22830v1), is eligible prior art for the February extension, but **postdates the July mechanism**: it spoofs conversational structure through external content, rather than replacing the template. None of these sources proves the 2026 measurement contribution valueless.
+- **Post-cutoff evidence (not prior art):** The May revision reports browser-agent exfiltration, generated-web-application poisoning, and 3,868 benchmark episodes. Those are bounded experimental demonstrations, not verified attacks against unsuspecting production users. The current official repository supports the model-level evaluation, but its recursive file listing contains no agent paths; the claimed agent artifact availability remains unconfirmed. [May paper](https://arxiv.org/html/2602.04653v4), [repository](https://github.com/FujitsuResearch/chat-template-backdoor-attack).
+- **Candidate's distinct contribution as of the cutoff:** A reusable comparative evaluation of activation, dormancy and runtime transfer; BadTemplate supplies complementary trigger/instruction-position and detection measurements. New product counts or payloads alone receive no originality credit. BadTemplate's closed-model experiments emulate poisoned system prompts because those tokenizers cannot be modified; they do not demonstrate tampered commercial model distribution. [BadTemplate, sections V–VII](https://arxiv.org/html/2602.05401v1).
+
+### Scorecard
+
+Computed with `python3 .claude/skills/webseclist-judge-reference/scripts/score.py --original 40 --transferability 76 --lasting 72 --technical 73 --practical 73 --clarity 76`.
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 40/100 | 25% | 10.00/25 | Moderate methodological extension; the behavioral-template primitive was already public in July 2025. |
+| Transferability | 76/100 | 20% | 15.20/20 | The comparison method and trust-boundary model apply across deployment stacks; applicability requires control of the consumed template. |
+| Lasting value | 72/100 | 20% | 14.40/20 | Useful reference for model-artifact testing and provenance assessment; later agent results reinforce relevance without establishing influence. |
+| Technical soundness | 73/100 | 15% | 10.95/15 | Controlled comparisons and complementary ablations support the bounded conclusions. Scanner observations and input-defense failures do not establish universal undetectability. |
+| Practical usability | 73/100 | 10% | 7.30/10 | Model-level templates, configuration and harness are available; comprehensive execution requires model access and compute. |
+| Clarity and reproducibility | 76/100 | 10% | 7.60/10 | Methods and model-level implementation are inspectable. Agent artifact availability and independent outcome replication remain gaps. |
+
+**Final score: 65.4/100**
+
+### Reverification
+
+- **Candidate facts rechecked against:** Original full HTML of both February versions, Fogel March v3 and May v4, arXiv submission histories, Pillar's July original and February followup, and the official repository's README and recursive file tree. Local scratch full texts: `/tmp/templateprior.txt`, `/tmp/badtemplateprior.txt`, `/tmp/template-v3.txt`, `/tmp/template-v4.txt`, `/tmp/template-july.txt`.
+- **Cutoff audit:** Primary dates place Greshake, Peng and Guo/Cai before July 2025; ChatInject after July but before February 2026. Fogel v1 precedes BadTemplate v1 by roughly sixteen hours, an order insufficient to infer dependence or independent discovery. No earlier public BadTemplate version was verified. The March version lacks the agent section; May is the earliest verified version containing that expansion.
+- **Independent prior-art check:** After archive searches for chat templates, model supply chains and system prompts, repeated internet searches using hidden tokenizer instructions, conditional GGUF poisoning and training-free backdoors; followed citations to primary prompt-poisoning and metadata-SSTI sources. The July original decisively overturned first-discovery framing. Search incompleteness is a confidence limit, not positive novelty evidence.
+- **Strongest challenge to the result:** This could be mistaken for a renamed 2025 technique supported only by more targets. The retained value must rest on reusable controlled evaluation and ablation methodology, not breadth or scary agent outcomes.
+- **Benefit-of-doubt check:** Formalized dormancy tests, comparison across runtimes and complementary activation ablations provide a defensible methodological addition. No inference of copying, dishonesty or independence is made from the publication sequence.
+- **Changes after reverification:** Reframed as a 2026 methodological extension of the explicitly credited 2025 original; grouped the two papers; bounded commercial-model and universal-defense claims; limited artifact claims to inspected files. Re-ran the helper with the final category scores above.
+
+### Verdict
+
+**Tooling or methodology contribution**
+
+- **Archive decision:** Include as a supporting reference. **Keep** in the preliminary 2026 collection under its >=60 selection rule, as one grouped technique with explicit 2025 priority and 2026 evaluation scope.
+- **Confidence:** Medium.
+- **Reasoning:** The original mechanism belongs to 2025. The 2026 evaluation material adds enough reproducible comparative work to preserve, while the related paper does not justify a second technique slot. May's expansion supports continued relevance, not retroactive originality.
+- **Evidence gaps:** No independent experimental rerun; complete agent evidence bundle not located in the inspected public repository; earlier informal/preprint disclosures of the 2026 evaluation may exist. The claims of broad scanner failure and deployment prevalence were not independently audited.

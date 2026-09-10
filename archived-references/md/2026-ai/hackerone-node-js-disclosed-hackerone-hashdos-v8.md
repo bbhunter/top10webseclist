@@ -19,7 +19,7 @@ authors:
   - sharp_edged
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:53"
+  - "2026-ai.md:78"
 commit: ""
 content_sha256: 96867e3142ab37bf8fdbb8b52c3f7233a8b28f0d1ddbbd8f21a97e56e2002244
 depth: full

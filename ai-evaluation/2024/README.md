@@ -8,10 +8,37 @@ comparison against every nomination and backward checks through the 2006–2023
 lists, so renamed papers, later proceedings copies and companion artifacts were
 not re-added.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
+The historical-list gate is **55 or above plus a qualifying non-duplicate
 verdict**. First public release controls the year, not a later conference date.
 All credible leads remain recorded, including candidates excluded on date,
 scope, prior-art or same-mechanism grounds.
+
+## Threshold reconciliation — 2026-09-09
+
+All 29 full evaluations across the recorded passes were compared with the
+original nominations, the missed section and the latest immutable history.
+There are now 26 kept and three removed cards, with all 26 kept techniques
+represented in the missed section. History contains no additional candidate
+absent from the readable cards. No full evaluation falls in the newly eligible
+55–59.9 band. Reviewing higher-scoring exclusions recovered one omitted
+methodology contribution.
+
+The View State article by Zeroed / zeroed.tech is added at its unchanged 63.3.
+A full scope rejudgement found that its application-pool key auditor and reset
+workflow are concrete web-security testing methodology under the current
+scope, despite the earlier incident-response exclusion. The article is dated
+21 July 2024; the original code snapshot is from 20 July. The grouped list entry
+links both. A fresh backward search also corrected the earlier claim that its
+logging evidence was new: ACSC Advisory 2020-006 already covered Event ID 1316.
+The modest originality score credits the narrower automation contribution,
+not a new ViewState exploitation primitive. The other three removed cards
+score 49.6, 46.3 and 44.2 and remain below 55.
+
+One changed card was appended to history; all earlier events and all numerical
+scores were preserved. Historical descriptions of the former 60-point gate and
+scope decision below remain records of those passes and are superseded by this
+reconciliation. Screened-only leads were not freshly rejudged. Archive
+preservation and website refresh remain separate work.
 
 ## Coverage
 

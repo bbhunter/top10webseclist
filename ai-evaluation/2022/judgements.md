@@ -1,7 +1,7 @@
 # 2022 candidate judgements
 
 These scorecards apply the repository's weighted judge rubric. `KEPT` means the
-candidate met the historical 60-or-above inclusion rule as well as the
+candidate meets the current historical 55-or-above inclusion rule as well as the
 first-publication, originality-verdict and original-nomination exclusions.
 
 ## 88.8 — [Hertzbleed: Turning Power Side-Channel Attacks Into Remote Timing Attacks on x86](https://www.usenix.org/conference/usenixsecurity22/presentation/wang-yingchen) — Yingchen Wang et al.
@@ -987,6 +987,17 @@ Useful application or case study. It is the first of this team's
 abandoned-infrastructure posts and is recorded here as prior art for the 2024
 .MOBI and 2025 abandoned-bucket entries, but on its own it restates a class that
 was already eight years old.
+
+**Threshold reconciliation, 9 September 2026:** The 57.0 score clears the new
+55-point numeric gate, but Useful application or case study is not a qualifying
+novelty verdict for historical missed-list additions. Retain the exclusion and
+the existing category scores; this gate change is not a numerical rejudgement.
+The reopened [original post](https://labs.watchtowr.com/the-perils-of-expired-domains-were-reading-your-email/)
+confirms the 23 August 2022 date and links to Joshua Avery Reed's
+[Potential Email Compromise via Dangling DNS MX](https://dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf),
+dated 25 July 2020. That earlier paper already describes registering a dangling
+MX target, configuring its address and SMTP server, and receiving the affected
+domain's mail. This supports the existing case-study classification.
 
 ### Reverification
 

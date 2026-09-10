@@ -55,7 +55,7 @@ the whole thing in one durable, greppable place:
 > of work that should have been on a year's list, open an issue or PR — anything that
 > qualifies as a web hacking technique nominee for that year will be reviewed and,
 > if it fits, added to its relevant year. Later audit additions are visibly separated
-> from the original nominations, require a score of **60 or above** plus a verified
+> from the original nominations, require a score of **55 or above** plus a verified
 > non-duplicate verdict, and retain both accepted and rejected evidence under
 > [`ai-evaluation/`](ai-evaluation/).
 
@@ -246,7 +246,8 @@ deployment details.
 
 Twenty years of this list have made one thing clear: the work that lasts is rarely the
 work with the scariest headline. So this repo ships a **research evaluator** — a Claude
-Code skill, [`webseclist-judge-reference`](.claude/skills/webseclist-judge-reference/SKILL.md),
+Code skill, [**Judgy McJudgerson**](.claude/skills/webseclist-judge-reference/SKILL.md)
+(`webseclist-judge-reference`),
 that reads a writeup, hunts for prior art across **both** the 1,500+ references archived
 here **and** the wider web, and hands down a verdict: *original technique*, *meaningful
 extension*, *clever combination*, *nice case study* … or the dreaded **"already known."**

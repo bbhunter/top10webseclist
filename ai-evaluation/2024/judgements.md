@@ -1079,64 +1079,54 @@ that makes HTTP .NET Remoting exploitable without inside knowledge.
   it.
 - **Changes after reverification:** none.
 
-## 63.3 — [View State, the unpatchable IIS forever day being actively exploited](https://zeroed.tech/blog/viewstate-the-unpatchable-iis-forever-day-being-actively-exploited/) — zeroed.tech
+## 63.3 — [View State, the unpatchable IIS forever day being actively exploited](https://zeroed.tech/blog/viewstate-the-unpatchable-iis-forever-day-being-actively-exploited/) [Original tooling snapshot](https://github.com/zeroed-tech/Machine-Key-Reset/tree/0f0b744180d19564d39e76b12163c9a084ab2336) — Zeroed, zeroed.tech
 
-**REMOVED** · Tooling or methodology contribution · confidence Medium
+**KEPT** · Tooling or methodology contribution · confidence Medium
 
 ### Candidate
 
-Published 21 July 2024. Judged in the 2026-08-12 pass over the ysonet
-.NET-deserialization reference set.
+- **Title:** View State, The unpatchable IIS forever day being actively exploited.
+- **Author or organisation:** Zeroed / zeroed.tech; the repository commits use the name Zeroed.
+- **Publication date:** Article 21 July 2024; audit/reset tooling committed 20 July 2024. The narrowest defensible disclosure interval is 20–21 July because commit timestamps do not independently prove when the repository became public.
+- **Reference:** Article and dated repository snapshot linked above. Reviewed again on 9 September 2026.
 
-### Core contribution
+### Core Contribution
 
-An end-to-end practitioner treatment of ViewState: exploitation against a simple
-application and against a fully patched Exchange 2019 host, then the part that is
-genuinely under-documented — the forensic artifacts a successful ViewState
-exploit leaves behind, how a threat hunter finds them, and why remediation is
-hard, because rotating machine keys across a farm is disruptive and incomplete
-rotation leaves the door open.
+Systematises assessment of ASP.NET machine-key persistence across IIS application pools. It maps identities to storage locations and creation times, supplies an auditor and resetter, and explains fallback-key and in-memory-state pitfalls when validating recovery from key compromise. This is directly useful in web-security testing: it tests whether an authenticated-state trust secret survives a purported reset. The exploit walkthrough is supporting context, not a new ViewState execution primitive.
 
-### Prior art
+### Prior Art
 
-The offensive half restates work already on the lists: ViewState deserialization
-with a known or leaked machine key (2019), Exchange post-auth ViewState CVEs, and
-the standard ysoserial.net workflow. The detection and remediation half has no
-obvious single predecessor, but it is defensive.
+- **Novelty cutoff:** 20–21 July 2024. The repository's initial audit commit is `d1dde4d405152cb23c0b9792240494708df9669b` (20 July, 03:09 UTC); commit `0f0b744180d19564d39e76b12163c9a084ab2336` adds the resetter and README at 08:03 UTC. The article gives 21 July. The last repository commit is also 21 July 2024; no later functionality is credited.
+- **Earliest credible related work and exploitation baseline:** Soroush Dalili's [Exploiting Deserialisation in ASP.NET via ViewState](https://soroush.me/blog/exploiting-deserialisation-in-asp-net-via-viewstate), February 2019, already nominated in `2019.md`, explains known-key payload construction, framework differences and testing behavior. His [Danger of Stealing Auto Generated .NET Machine Keys](https://soroush.me/blog/danger-of-stealing-auto-generated-net-machine-keys), 11 May 2019, explicitly demonstrates key theft for post-patch persistence, supplies extraction code and recommends creating a new application pool when resetting credentials. These are exploitation knowledge, not merely old API documentation.
+- **Closest defensive equivalent:** The primary [ACSC Advisory 2020-006, version 2.0](https://www.cyber.gov.au/sites/default/files/2023-02/ACSC%20Advisory%202020-006%20Active%20exploitation%20of%20vulnerability%20in%20Microsoft%20IIS.pdf), dated 22 May 2020, identifies Event ID 1316 and the invalid-ViewState message, recommends replacing compromised keys, and warns of detection false positives. It disproves the earlier card's suggestion that the logging insight lacked a predecessor.
+- **Candidate's distinct contribution:** A concrete application-pool inventory and reset workflow, with code correlating identities, key stores and generation times. The verified predecessors cover exploitation and detection but do not supply this automation. This is modest systematisation, not first discovery of persistence, forensic logging or key rotation.
+- **Evidence boundary:** Only the 2024 article, 2024 code and pre-cutoff references contribute to the score. Search results from 2025–2026 incident reports were excluded. The local archive was searched for ViewState, key-store paths and event markers, and its 2019 ViewState text was read. No exact earlier tool was established; that uncertainty limits confidence rather than proving originality.
 
 ### Scorecard
 
-| Category | Score | Weight | Weighted | Reason |
+| Category | Score | Weight | Weighted score | Reason |
 |---|---:|---:|---:|---|
-| Original contribution | 38 | 25% | 9.50 | The exploitation material is a synthesis of published technique; the artifact and remediation analysis is the only unattested part. |
-| Transferability | 58 | 20% | 11.60 | The hunting artifacts apply to any ASP.NET estate, but they are detection inputs rather than an attack primitive. |
-| Lasting value | 66 | 20% | 13.20 | ViewState compromise remains unpatchable by design, so the remediation guidance keeps its relevance. |
-| Technical soundness | 80 | 15% | 12.00 | Exploitation and artifacts are demonstrated against real targets. |
-| Practical usability | 84 | 10% | 8.40 | Immediately usable by both testers and responders. |
-| Clarity and reproducibility | 86 | 10% | 8.60 | Long, precise and complete about setup and preconditions. |
+| Original contribution | 38/100 | 25% | 9.50/25 | Modest automation and integration over well-established exploitation and detection; no new execution primitive. |
+| Transferability | 58/100 | 20% | 11.60/20 | Reusable across IIS/ASP.NET application pools, with platform-specific stores and privileges. |
+| Lasting value | 66/100 | 20% | 13.20/20 | Durable audit question: verify all persistent and in-memory copies of a web trust secret, including fallback locations. This forecast does not rely on subsequent uptake or the headline's “unpatchable” claim. |
+| Technical soundness | 80/100 | 15% | 12.00/15 | Concrete source, storage mapping and demonstrated workflow support the narrow method; an invalid-state event alone does not prove malicious execution. |
+| Practical usability | 84/100 | 10% | 8.40/10 | Provided scripts make pool-by-pool assessment directly actionable in an authorised lab; reset requires privileged access and application-specific precautions. |
+| Clarity and reproducibility | 86/100 | 10% | 8.60/10 | Code, examples, preconditions and recovery pitfalls permit reproduction; no claim that the reviewer executed the scripts. |
 
-**Final score: 63.3/100.** Archive decision: do not include.
-
-### Verdict
-
-Tooling or methodology contribution, but defensive and incident-response
-oriented rather than an offensive web hacking technique, and its offensive half
-restates work already represented on the 2019 and later lists. It clears the
-numeric gate on practical and presentational strength; the missed-technique
-section is not the right home for it.
+**Final score: 63.3/100.** Archive decision: include as a supporting reference under the historical 55-or-above gate.
 
 ### Reverification
 
-- **Candidate facts rechecked against:** the archived post, which states the
-  21 July 2024 publication date in its body.
-- **Independent prior-art check:** searched for earlier ViewState exploitation
-  artifact and threat-hunting guidance, and compared the offensive sections
-  against the 2019 ViewState entry already in the archive.
-- **Strongest challenge to the result:** the DFIR artifact analysis really does
-  appear to be first-of-kind, which would argue for inclusion.
-- **Benefit-of-doubt check:** that is why the score sits above 60 rather than in
-  the fifties; the exclusion rests on the verdict and scope, not on the number.
-- **Changes after reverification:** none.
+- **Candidate facts rechecked against:** Reopened the full article, read both PowerShell scripts and retrieved the GitHub commit API and original README snapshot. The byline, article date, script dates and application-pool workflow agree. No script was executed.
+- **Cutoff audit:** The 2019 primary pages and the dated 2020 advisory precede the entire 20–21 July 2024 interval. Later incident-response reports and current platform behavior do not affect the score.
+- **Independent prior-art check:** After the local ViewState search, searched separately for pre-cutoff `1316`, `AutoGenKeyCreationTime`, key regeneration and LSA-secret persistence. This found the ACSC advisory, overturning the earlier “first-of-kind” forensic characterization. Dalili's linked key-theft article provided another mechanism-specific backward route.
+- **Strongest challenge to the result:** Most exploitation, detection and key-rotation advice was already public. Treating the article as a new attack would duplicate the 2019 nomination. The additional workflow is narrow and requires administrative access; the event-maliciousness wording is stronger than the evidence warrants.
+- **Benefit-of-doubt check:** An IIS key inventory and verification workflow is web-security testing even when also used by responders. The released scripts provide a concrete methodology contribution that the current scope expressly allows; an incident-response label is not an independent exclusion.
+- **Changes after reverification:** Reversed the former scope-only exclusion to KEPT. Corrected the prior-art claim and recorded the earlier tooling disclosure interval. Retained all six numerical scores, recomputed with `score.py`: 63.3. Old scope reasoning and the original 63.3 decision remain in immutable history. No credit was added for component age, later adoption, severity or a new vulnerable product.
+
+### Verdict
+
+Tooling or methodology contribution. Eligible supporting research: the application-pool audit workflow is distinct from the already-nominated exploitation primitive and directly supports web-security testing. Confidence is Medium because exact public repository availability within the two-day interval and exhaustive precedence for similar administrative scripts remain uncertain.
 
 ## 82.5 — [CVE-2024-4577 - Yet Another PHP RCE: Make PHP-CGI Argument Injection Great Again!](https://blog.orange.tw/posts/2024-06-cve-2024-4577-yet-another-php-rce/) — Orange Tsai, DEVCORE
 

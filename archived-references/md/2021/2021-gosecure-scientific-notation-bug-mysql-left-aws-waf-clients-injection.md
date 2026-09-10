@@ -32,7 +32,7 @@ original_url: "https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bu
 published: ""
 publisher: GoSecure
 publisher_english: ""
-raw_sha256: 1ca26586421866063d928206a90dac5b54166014ac728e60e83d1e4f986ec699
+raw_sha256: 0022f3809c4ab89707ba26b2a076fd191383e83bb27f9fabc791f81f1d1a9b0f
 retrieved_from: "https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/"
 retrieved_kind: browser
 retrieved_utc: "2026-08-09T02:39:28+00:00"

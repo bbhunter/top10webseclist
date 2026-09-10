@@ -6,14 +6,15 @@ resource: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and
 tags: [article, webseclist-reference, sirdarckcat-blogspot-com, xss, filter-bypass, waf-bypass, browser-extension, sanitizer-bypass, javascript, php, unicode, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:59:20+00:00"
+  at: "2026-09-10T00:53:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
     title: Our Favorite XSS Filters and how to Attack them
     author: sirdarckcat
+    last_modified: 2009-08-04
 also_at: []
 authors:
   - sirdarckcat
@@ -21,20 +22,20 @@ canonical_url: ""
 cited_by:
   - "2009.md:12"
 commit: ""
-content_sha256: 094a4cd4baee8ab6f8822909a78cf21479dba30e1a0effcca71eb1964bdcf6a3
+content_sha256: 30a6fc35f8441d18b545b7feaee371cf4308c8e9ea664fa0804186799f7818c1
 depth: full
 depth_reason: default
 kind: article
 language: ""
 licence: unknown
 original_url: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
-published: ""
+published: 2009-08-04
 publisher: sirdarckcat.blogspot.com
 publisher_english: ""
-raw_sha256: a49f37f6c6f01f891568efb86162f6aa014846e9f303983c4287a618bf216c1e
+raw_sha256: 415c30d046b040b081fe01b567291ec6673e543a381bd5dbdca81daf15d409e8
 retrieved_from: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:59:20+00:00"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:53:07+00:00"
 slug: sirdarckcat-blogspot-com-our-favorite-xss-filters-how-attack-them
 snapshot: ""
 title_english: ""
@@ -46,9 +47,9 @@ translation_of: ""
 
 **Our Favorite XSS Filters and how to Attack them** - sirdarckcat, sirdarckcat.blogspot.com.
 
-- Published: date not stated
+- Published: 2009-08-04
 - Original: <https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html>
-- Preserved from: https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html (live) on 2026-08-10
+- Preserved from: https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -80,10 +81,14 @@ So well, Black Hat 2009 and DEFCON 17 are over now, and on Black Hat I presented
 
  There was a fix I didnt tested regarding the same origin exception, so now instead of using:
 
+```text
 http://www.google.com/imgres?imgurl=http://tinyurl.com/ZWZ8Z4&imgrefurl=http://tinyurl.com/ZWZ8Z4
+```
 
  Use:
- [http://www.google.com/imgres?imgurl=http://pwn&imgrefurl=/search?q=ZWZ8Z4%26btnI=l%23asciifullNameRowId](https://www.google.com/imgres?imgurl=http://pwn&imgrefurl=/search?q%3DZWZ8Z4%26btnI%3Dl%23asciifullNameRowId)
+ ```text
+http://www.google.com/imgres?imgurl=http://pwn&imgrefurl=/search?q=ZWZ8Z4%26btnI=l%23asciifullNameRowId
+```
 
  Since we dont really need TinyURL, it was just an extra, but well, it makes sense for it to get fixed.
 
@@ -136,7 +141,9 @@ http://www.google.com/imgres?imgurl=http://tinyurl.com/ZWZ8Z4&imgrefurl=http://t
  [http://sla.ckers.org/forum/read.php?2,29259](http://sla.ckers.org/forum/read.php?2,29259)
 
  Also, I want to state that I want to do:
- ./pressure.pl -h tra.ckers.org -p /rsnake -p /id
+```sh
+./pressure.pl -h tra.ckers.org -p /rsnake -p /id
+```
 
  So well, blackhat was a lot of fun, and actually I wasn't planning to stay for defcon, but with a fast
  flight change and a lot of luck, I was able to stay more time, and go to defcon.

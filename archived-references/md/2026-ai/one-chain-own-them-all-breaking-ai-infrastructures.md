@@ -2,7 +2,7 @@
 type: Whitepaper
 title: "One Chain to Own Them All: Breaking AI Infrastructures"
 description: "A hunt across AI serving stacks that ends in PyTorch's model loader: the weights_only whitelist meant to make torch.load safe was bypassed once, then again after the fix, when a whitelisted function reached through persistent_load overflows and pickle's SETITEM opcodes give control of index and value, with Debian's non-PIE CPython supplying an address. vLLM's prompt_embeds, SGLang, OpenLLM, ComfyUI and NVIDIA Dynamo all feed attacker-supplied tensors into torch.load, so one chain reaches all."
-resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
+resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
 tags: [whitepaper, webseclist-reference, rce, deserialization, python, llm, cve, attack-chain, info-leak, memory-corruption, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
@@ -11,7 +11,7 @@ status: stable
 stale_after: 2027-08-11
 sources:
   - id: original
-    resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
+    resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
     title: "One Chain to Own Them All: Breaking AI Infrastructures"
     author: "Ji'an Zhou"
 also_at: []
@@ -19,7 +19,7 @@ authors:
   - "Ji'an Zhou"
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:78"
+  - "2026-ai.md:122"
 commit: ""
 content_sha256: cc0ad9810dc665ccfee7b45132e18691c60daf56b4ce5ee93d77c45bffd95cb7
 depth: full
@@ -27,7 +27,7 @@ depth_reason: default
 kind: whitepaper
 language: ""
 licence: unknown
-original_url: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
+original_url: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
 published: ""
 publisher: ""
 publisher_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 **One Chain to Own Them All: Breaking AI Infrastructures** - Ji'an Zhou, Publisher not stated.
 
 - Published: date not stated
-- Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>
+- Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>
 - Preserved from: https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf (stored) on 2026-08-11
 - Licence: unknown
 

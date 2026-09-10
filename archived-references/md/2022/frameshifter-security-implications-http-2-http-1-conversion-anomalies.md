@@ -28,7 +28,7 @@ canonical_url: "https://spaces-cdn.owlstown.com/blobs/h04e1cfw22p2g7xvog93a96x6z
 cited_by:
   - "2022.md:22"
 commit: ""
-content_sha256: 1d26e1b07129a642f4e4758d0161c7b8933e8c93f09f4abb77df000841082726
+content_sha256: 1e5c853667a550c8b346047da688c71940d9a180893ce2757e73b7a0aa478687
 depth: full
 depth_reason: default
 kind: whitepaper

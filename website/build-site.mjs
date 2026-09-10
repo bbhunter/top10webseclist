@@ -133,6 +133,22 @@ async function main() {
     archivePaths(shard.items).forEach((archivePath) => archive.add(archivePath));
   }
 
+  for (const file of [...archive].filter((file) => file.endsWith(".md"))) {
+    const markdown = await fs.readFile(path.join(REPO, file), "utf8").catch((error) => {
+      if (error.code === "ENOENT") return "";
+      throw error;
+    });
+    for (const match of markdown.matchAll(/!\[[^\[\]\n]*\]\(\.\.\/\.\.\/(figures\/[a-z0-9-]+\/[a-z0-9._-]+\/[a-z0-9_-][a-z0-9._-]*\.png)\)/gi)) {
+      archive.add(validateRelative(`archived-references/${match[1]}`));
+    }
+  }
+  const diagramIndex = await readJson(path.join(APP_DIR, "data", "diagrams.json"));
+  if (diagramIndex.schema !== 1 || diagramIndex.version !== catalogue.version) throw new Error("diagram index does not match catalogue");
+  for (const diagram of Object.values(diagramIndex.diagrams || {})) {
+    if (!/^archived-references\/diagrams\/[a-f0-9]{64}\.svg$/.test(diagram)) throw new Error("invalid diagram path");
+    archive.add(diagram);
+  }
+
   const tasks = [];
   if (target === "github") {
     // GitHub Pages is deliberately a small, separate file origin rather than a
@@ -154,7 +170,7 @@ async function main() {
       tasks.push({ source: path.join(APP_DIR, "data", filename), relative: `data/${filename}`, required: true });
     }
     for (const archivePath of [...archive].sort()) {
-      tasks.push({ source: path.join(REPO, archivePath), relative: archivePath, required: false });
+      tasks.push({ source: path.join(REPO, archivePath), relative: archivePath, required: /\.(?:png|svg)$/.test(archivePath) });
     }
     for (const filename of (await fs.readdir(path.join(REPO, "original-listings"))).filter((name) => name.endsWith(".pdf")).sort()) {
       tasks.push({ source: path.join(REPO, "original-listings", filename), relative: `original-listings/${filename}`, required: true });

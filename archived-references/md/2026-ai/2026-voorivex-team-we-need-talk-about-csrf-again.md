@@ -20,7 +20,7 @@ authors:
   - Amirmohammad Safari
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:45"
+  - "2026-ai.md:58"
 commit: ""
 content_sha256: 658530674e2264d9a372d64ed1bcf5fcada4ed8850b39f2738613f2b6882b66e
 depth: full

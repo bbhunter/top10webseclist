@@ -1,5 +1,16 @@
 # Where to look, and how to reach it
 
+## Contents
+
+- [Beat 1 — PortSwigger and the conference circuit](#beat-1--portswigger-and-the-conference-circuit)
+- [Beat 2 — Researcher blogs](#beat-2--researcher-blogs)
+- [Beat 3 — Search by mechanism, not by name](#beat-3--search-by-mechanism-not-by-name)
+- [Beat 4 — Academic venues](#beat-4--academic-venues)
+- [Beat 5 — Bug bounty platform disclosures](#beat-5--bug-bounty-platform-disclosures)
+- [Beat 6 — Non-English research](#beat-6--non-english-research)
+- [Beat 7 — CTF-originated primitives](#beat-7--ctf-originated-primitives)
+- [How to reach awkward sources](#how-to-reach-awkward-sources)
+
 Split the sweep across the beats below rather than issuing one broad search.
 Web-security research does not live in one place, and a generic "best web
 hacking techniques of YEAR" query returns roundups and news, which are exactly

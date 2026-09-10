@@ -1,5 +1,12 @@
 # Open Knowledge Format (OKF) v0.2 - reference
 
+## Contents
+
+- [What OKF is](#what-okf-is)
+- [Fields](#fields)
+- [Rules that matter here](#rules-that-matter-here)
+- [How this archive maps onto it](#how-this-archive-maps-onto-it)
+
 Captured 2026-08-03 from the specification and the v0.2 announcement.
 
 - Specification: <https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf>

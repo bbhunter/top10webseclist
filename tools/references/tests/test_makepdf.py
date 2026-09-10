@@ -112,5 +112,27 @@ class TestColouredListings(unittest.TestCase):
             self.assertIn("pre .%s {" % kind, makepdf.STYLE)
 
 
+
+class TestPreservedDiagrams(unittest.TestCase):
+    def test_reviewed_diagram_is_embedded_offline(self):
+        looked_up = []
+        def source(key):
+            looked_up.append(key)
+            return "data:image/svg+xml;base64,PHN2Zy8+"
+        result = makepdf.markdown_to_html_body("```mermaid\nflowchart LR\nA-->B\n```", source)
+        self.assertIn('<figure><img src="data:image/svg+xml;base64,PHN2Zy8+"', result)
+        self.assertRegex(looked_up[0], r"^mermaid:[a-f0-9]{64}$")
+        self.assertNotIn("<pre>", result)
+
+    def test_unknown_diagram_stays_literal_and_safe(self):
+        result = makepdf.markdown_to_html_body("```mermaid\n<script>alert(1)</script>\n```", lambda key: "")
+        self.assertIn("<pre><code>", result)
+        self.assertNotIn("<script>", result)
+
+    def test_regular_code_is_not_replaced_with_a_diagram(self):
+        result = makepdf.markdown_to_html_body("```javascript\nalert(1)\n```", lambda key: self.fail("code requested an image"))
+        self.assertIn("<pre><code>", result)
+
+
 if __name__ == "__main__":
     unittest.main()

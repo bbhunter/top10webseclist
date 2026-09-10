@@ -138,6 +138,12 @@ class TestResolvingATarget(unittest.TestCase):
 
 class TestEmbedding(unittest.TestCase):
 
+    def test_preserved_png_crop_keeps_its_media_type(self):
+        from PIL import Image
+        buffer = io.BytesIO()
+        Image.new("RGB", (32, 32), "white").save(buffer, format="PNG")
+        self.assertTrue(images.data_uri(buffer.getvalue()).startswith("data:image/png;base64,"))
+
     def test_a_data_uri_is_what_the_renderer_gets(self):
         clean, _width, _height = images.sanitise(raster())
         self.assertTrue(images.data_uri(clean).startswith("data:image/jpeg;base64,"))

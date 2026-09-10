@@ -32,7 +32,7 @@ original_url: "http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh
 published: 2011-12-10
 publisher: Yifan Lu
 publisher_english: ""
-raw_sha256: c1fe8a210d58c37965a327226f7a456a5e7c322e3b634bc955863d68fa13746e
+raw_sha256: 49067a0680e564e77c0fdb1bb748efe31506a24f5b049535ba0b4c5126b62fe2
 retrieved_from: "http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/"
 retrieved_kind: browser
 retrieved_utc: "2026-08-09T02:39:44+00:00"

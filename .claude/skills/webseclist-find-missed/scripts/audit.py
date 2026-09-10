@@ -139,15 +139,15 @@ def audit_year(year: int) -> tuple[list[str], dict[str, int]]:
         missed = ""
     else:
         missed = sections[1]
-        if "60 or above" not in missed.split("\n\n", 1)[0] + missed[:700]:
-            errors.append(f"{year}: missed-section policy does not state 60 or above")
+        if "55 or above" not in missed.split("\n\n", 1)[0] + missed[:700]:
+            errors.append(f"{year}: missed-section policy does not state 55 or above")
 
     for score_text in SCORED_LIST_RE.findall(missed):
-        if float(score_text) < 60:
-            errors.append(f"{year}: curated missed entry below 60: {score_text}")
+        if float(score_text) < 55:
+            errors.append(f"{year}: curated missed entry below 55: {score_text}")
     for url, card in cards.items():
         present = url in missed
-        should_be_present = card["decision"] == "kept" and float(card["score"]) >= 60
+        should_be_present = card["decision"] == "kept" and float(card["score"]) >= 55
         if should_be_present and not present:
             errors.append(f"{year}: kept judgement absent from missed section: {url}")
         if not should_be_present and present:
@@ -155,7 +155,7 @@ def audit_year(year: int) -> tuple[list[str], dict[str, int]]:
 
     kept = sum(card["decision"] == "kept" for card in cards.values())
     low_band = sum(
-        card["decision"] == "kept" and 60 <= float(card["score"]) < 70
+        card["decision"] == "kept" and 55 <= float(card["score"]) < 70
         for card in cards.values()
     )
     return errors, {"cards": len(cards), "kept": kept, "low_band": low_band}
@@ -180,7 +180,7 @@ def main() -> int:
         state = "FAIL" if errors else "ok"
         print(
             f"{state:4} {year}: {counts['cards']} cards, {counts['kept']} kept, "
-            f"{counts['low_band']} in 60-69.9"
+            f"{counts['low_band']} in 55-69.9"
         )
 
     if all_errors:
@@ -190,7 +190,7 @@ def main() -> int:
         return 1
     print(
         f"audit valid: {len(years)} years, {totals['cards']} cards, "
-        f"{totals['kept']} kept, {totals['low_band']} in 60-69.9"
+        f"{totals['kept']} kept, {totals['low_band']} in 55-69.9"
     )
     return 0
 

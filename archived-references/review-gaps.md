@@ -405,3 +405,75 @@ paper, and none has been read against what is published now.
 - **Check:** `refs.py digest --queue` offers all 169. Read the document; do not
   re-bless the old text on its wording alone.
 - **Sample:** any 2016-17 or 2022 entry from the sweep.
+
+
+## 9 September 2026 preliminary additions: capture review
+
+Eight newly cited documents were preserved during the 2026 sweep. Full source text was read for research evaluation, and titles, authors and body presence were checked in the published Markdown. A separate page-by-page capture/layout review remains pending; research novelty scores do not certify extraction fidelity. The three webpage PDFs were subsequently rendered through Windows Docker Desktop: Goja has 19 pages, Intigriti 12 and Heyes 3. Containerized text extraction reaches the end of each document, and first-page previews were visually checked; the broader capture review remains pending.
+
+- [A Formal Analysis of Agent Payment Protocols](md/2026-ai/formal-analysis-agent-payment-protocols.md) — original publisher PDF retained; review text extraction and page correspondence.
+- [Out of Bounds, Out of Sandbox: RCE in Go JavaScript Engine](md/2026-ai/slcyber-io-out-bounds-out-sandbox-rce-go-javascript-engine.md) — webpage text retained; review code, tables and figure correspondence.
+- [Hacking AI customer service agents](md/2026-ai/2026-intigriti-hacking-ai-customer-service-agents.md) — webpage text retained; review code, tables and figure correspondence.
+- [Hacking Human-in-the-Loop Systems (Slides)](md/2026-ai/bug-bounty-village-hacking-human-loop-systems-slides.md) — original publisher PDF retained; review text extraction and page correspondence.
+- [What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness](md/2026-ai/arxiv-what-s-your-agent-s-context-context-privilege-escalation-attacks-harness.md) — original publisher PDF retained; review text extraction and page correspondence.
+- [Inference-Time Backdoors via Chat Templates: From LLM Supply Chains to Agentic System Compromise](md/2026-ai/arxiv-inference-time-backdoors-chat-templates-llm-supply-chains-compromise.md) — original publisher PDF retained; review text extraction and page correspondence.
+- [BadTemplate: A Training-Free Backdoor Attack via Chat Template Against Large Language Models](md/2026-ai/arxiv-badtemplate-training-free-backdoor-attack-chat-template-against-models.md) — original publisher PDF retained; review text extraction and page correspondence.
+- [What's in a tag name? JavaScript, apparently](md/2026-ai/2026-portswigger-what-s-tag-name-javascript-apparently.md) — webpage text retained; review code, tables and figure correspondence.
+
+
+## 10 September 2026 threshold additions: capture review
+
+The 55-point reconciliation preserved 46 newly cited source documents. Research evaluation read their source content and publication checks confirmed titles, bylines, bodies and PDF presence. Separate full capture/layout review remains pending for the following documents; a novelty score does not certify extraction fidelity. Unavailable supporting records are on document-gaps.md, and unavailable store objects are on store-gaps.md.
+
+- [AgentForger: ChatGPT Cross-Site Agent Forgery](md/2026-ai/2026-zenity-labs-agentforger-chatgpt-cross-site-agent-forgery.md)
+- [AgentForger: ChatGPT Cross-Site Agent Forgery (Part 2)](md/2026-ai/2026-zenity-labs-agentforger-chatgpt-cross-site-agent-forgery-part-2.md)
+- [Almost Impossible: Java Deserialization Through Broken Crypto in OpenText Directory Services](md/2026-ai/searchlight-cyber-almost-impossible-java-deserialization-through-services.md)
+- [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](md/2026-ai/2026-zhero-web-security-avoiding-paradox-native-full-read-ssrf-one-sveltekit.md)
+- [Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker](md/2026-ai/usenix-security-2026-breaking-boundaries-analyzing-quic-frame-packet-attacker.md)
+- [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](md/2026-ai/synacktiv-caught-octopus-trap-unauthenticated-rce-argo-cd.md)
+- [Claude in Chrome: from alert(1) to full account takeover](md/2026-ai/2026-zenity-labs-claude-chrome-alert-1-full-account-takeover.md)
+- [Claude in Chrome: from alert(1) to full account takeover (Injection analysis)](md/2026-ai/2026-zenity-labs-claude-chrome-alert-1-full-account-takeover-injection-analysis.md)
+- [Claude in Chrome: from alert(1) to full account takeover (Technical deep dive)](md/2026-ai/2026-zenity-labs-claude-chrome-alert-1-full-account-takeover-technical-deep-dive.md)
+- [Computer-Use and TOCTOU: What You Click Is Not What You Get!](md/2026-ai/2026-embrace-the-red-computer-use-toctou-what-you-click-not-what-you-get.md)
+- [Cruising for Shells in Flowise](md/2026-ai/elttam-cruising-shells-flowise.md)
+- [DOMPurify XSS via `<selectedcontent>` re-clone](md/2026-ai/2026-cure53-dompurify-xss-selectedcontent-re-clone.md)
+- [Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits](md/2025/concordia-university-detecting-prototype-pollution-npm-packages-proof-exploits.md)
+- [ELF in the Pixels: Building Shared Object–Image Polyglots](md/2026-ai/2026-babelo-elf-pixels-building-shared-objectimage-polyglots.md)
+- [Grand Theft Atlas](md/2026-ai/2026-zenity-labs-grand-theft-atlas.md)
+- [IIS Machine Key Audit and Reset (Original Tooling Snapshot)](md/2024/zeroed-tech-iis-machine-key-audit-reset-original-tooling-snapshot.md)
+- [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](md/2026-ai/2026-ethiack-kindarails2shell-how-matlab-file-reads-your-secrets-pops-rails.md)
+- [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails (Rails technical details)](md/2026-ai/github-kindarails2shell-how-matlab-file-reads-your-secrets-pops-shell-details.md)
+- [Leaky Avatar](md/2026-ai/2026-bl0rph-leaky-avatar.md)
+- [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](md/2026-ai/boost-security-labs-living-off-pipeline-defensive-research-weaponized-brisket.md)
+- [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket) (Tool)](md/2026-ai/github-living-off-pipeline-defensive-research-weaponized-smokedmeat-brisket-tool.md)
+- [Network-Level Prompt and Trait Leakage in Local Research Agents](md/2025/arxiv-network-level-prompt-trait-leakage-local-research-agents.md)
+- [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](md/2025/one-email-many-faces-deep-dive-identity-confusion-email-aliases.md)
+- [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases (Source code)](md/2025/github-one-email-many-faces-deep-dive-identity-confusion-email-aliases-code.md)
+- [Race Against The Patch: Four Exploit Chains in LiteLLM](md/2026-ai/star-labs-race-against-patch-four-exploit-chains-litellm.md)
+- [Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons](md/2026-ai/black-hat-usa-2026-scanning-scanners-turning-security-vendors-supply-weapons.md)
+- [Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons (Lab)](md/2026-ai/github-scanning-scanners-turning-security-vendors-supply-chain-weapons-lab.md)
+- [Scanning the Scanners: Turning Security Vendors into Supply-Chain Weapons (Tool)](md/2026-ai/github-scanning-scanners-turning-security-vendors-supply-chain-weapons-tool.md)
+- [SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot](md/2026-ai/2026-varonis-threat-labs-searchleak-parameter-prompt-injection-microsoft-copilot.md)
+- [Security Considerations on Istio’s CRDs with Namespace-based Multi-Tenancy](md/2026-ai/ernw-istio-security-considerations-istios-crds-namespace-based-multi-tenancy.md)
+- [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](md/2026-ai/2026-critical-thinking-dot-dot-slash-that-frameworks-hand-you-cspt-framework.md)
+- [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework (Labs)](md/2026-ai/github-dot-dot-slash-that-frameworks-hand-you-cspt-across-every-major-labs.md)
+- [The Memory Heist](md/2026-ai/2026-ayush-paul-memory-heist.md)
+- [The Usual Suspect: Type Confusion in Twelve Bytes](md/2026-ai/2026-voorivex-usual-suspect-type-confusion-twelve-bytes.md)
+- [The sorry state of skill distribution](md/2026-ai/2026-trail-of-bits-sorry-state-skill-distribution.md)
+- [The sorry state of skill distribution (Earlier structural validation contribution)](md/2026-ai/2026-github-sorry-state-skill-distribution-earlier-structural-contribution.md)
+- [The sorry state of skill distribution (Test corpus)](md/2026-ai/github-sorry-state-skill-distribution-test-corpus.md)
+- [This Message Was Sent by Microsoft: Turning Microsoft Apps into our Phishing Platform](md/2026-ai/spotit-def-con-34-this-message-sent-microsoft-turning-microsoft-apps-platform.md)
+- [Three 0-Day Vulnerabilities in Adminer](md/2026-ai/2026-voorivex-three-0-day-vulnerabilities-adminer.md)
+- [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction (Source code)](md/2025/github-transparent-taint-style-vulnerability-detection-generic-single-page-code.md)
+- [View State, The unpatchable IIS forever day being actively exploited](md/2024/zeroed-tech-view-state-unpatchable-iis-forever-day-being-actively-exploited.md)
+- [Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond](md/2026-ai/arxiv-web-cache-overflow-exploiting-imprecise-keys-cache-degradation-beyond.md)
+- [Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond (Code)](md/2026-ai/github-web-cache-overflow-exploiting-imprecise-keys-cache-degradation-code.md)
+- [When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments](md/2026-ai/usenix-security-2026-when-authorization-loses-its-meaning-breaking-payments.md)
+- [XSS2Shell: WordPress Preauth XSS to RCE Chain (CVE-2026-64638)](md/2026-ai/2026-pwn-ai-xss2shell-wordpress-preauth-xss-rce-chain-cve-2026-64638.md)
+- [Zero-Click RCE in Figma Desktop](md/2026-ai/2026-critical-thinking-zero-click-rce-figma-desktop.md)
+
+The finalized Top 10 PDF transcription repairs are tracked individually in the [10 September PDF review](../ai-evaluation/archive-reviews/2026-09-10-top10-pdf-review.md). Those completed documents supersede their earlier transcription-review backlog entries; the broader historical packs above remain in place.
+
+## 10 September 2026 — Top 10 capture repair follow-up
+
+The [complete Top 10 coverage inventory](../ai-evaluation/archive-reviews/2026-09-10-top10-coverage.md) reconciles all 230 unique citations. The fresh pass visually reviewed the 40 PDF-derived documents and source-compared the 57 further flagged captures; four of those yielded additional complete PDFs. Of the 57 capture repairs, 54 are complete and three retain unavailable-illustration gaps on document-gaps.md. The 111 unflagged documents retain the earlier full review after verification that their bodies are unchanged. The 22 companion/duplicate exclusions remain explicit. These completed Top 10 repairs supersede earlier extraction/transcription concerns for the reviewed documents; unrelated nomination and preliminary review packs remain pending.

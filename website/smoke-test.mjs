@@ -217,6 +217,17 @@ const hostileMarkdown = [
 ].join("\n\n");
 const hostileHtml = clientEval(`markdownDocument(${JSON.stringify(hostileMarkdown)}).html`);
 const externalImageHtml = clientEval(`markdownDocument("![private probe](https://127.0.0.1/admin)").html`);
+const localFigureHtml = clientEval(`markdownDocument("![Preserved figure](../../figures/2010/bad-memories/figure-02.png)").html`);
+const unsafeFigureHtml = clientEval(`markdownDocument("![Traversal](../../figures/2010/../private.png)").html`);
+const diagramHtml = clientEval(`(() => {
+  const previous = ARCHIVE_DIAGRAMS;
+  ARCHIVE_DIAGRAMS = { "flowchart LR\\nA-->B": "archived-references/diagrams/${"a".repeat(64)}.svg" };
+  const result = markdownDocument(${JSON.stringify("```mermaid\nflowchart LR\nA-->B\n```")}).html;
+  ARCHIVE_DIAGRAMS = previous;
+  return result;
+})()`);
+const unknownDiagramHtml = clientEval(`markdownDocument(${JSON.stringify("```mermaid\n<script>alert(1)</script>\n```")}).html`);
+const technicalTableHtml = clientEval(`markdownDocument(${JSON.stringify("| Feature | Example |\n| --- | --- |\n| minimum_[chrome\\|edge]_version | `left || right` |\n| literal | ``a|`b`` |")}).html`);
 const mutationMarkdown = "[**label**](https://example.test/a__b**c) and `code`";
 const mutationHtml = clientEval(`markdownDocument(${JSON.stringify(mutationMarkdown)}).html`);
 const hostileRegistryRecord = [{ id: "2025", label: '"><img src=x onerror=globalThis.pwned=7>', status: "final" }];
@@ -426,6 +437,11 @@ const activeClientSecurityChecks = [
   Boolean(clientEval(`compileSafeGrep("a+a?$").error`)),
   clientEval(`compileSafeGrep("^CVE-\\\\d{4}-\\\\d{1,7}$").regex.test("CVE-2026-12345")`) === true,
   !externalImageHtml.includes("<img") && externalImageHtml.includes("external-image-reference") && externalImageHtml.includes("target=\"_blank\""),
+  localFigureHtml.includes('<img src="http') && localFigureHtml.includes("archived-references/figures/2010/bad-memories/figure-02.png"),
+  !unsafeFigureHtml.includes("<img"),
+  diagramHtml.includes('<img src="http') && diagramHtml.includes("Diagram source") && diagramHtml.includes("a".repeat(64) + ".svg"),
+  !unknownDiagramHtml.includes("<img") && unknownDiagramHtml.includes("&lt;script&gt;"),
+  (technicalTableHtml.match(/<td>/g) || []).length === 4 && technicalTableHtml.includes("minimum_[chrome|edge]_version") && technicalTableHtml.includes("left || right"),
   !mutationHtml.match(/(?:href|src)="[^"]*</) && mutationHtml.includes("<strong>label</strong>") && mutationHtml.includes("<code>code</code>"),
   terminalPaths === '["/","/","/2016-17",true]',
   clientEval(`tagSearchQuery(" XSS ")`) === "tag:xss",

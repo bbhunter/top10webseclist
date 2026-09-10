@@ -3,44 +3,40 @@ type: Article
 title: Tor Hidden-Service Passive De-Cloaking
 description: "A passive method for locating the real host of a Tor hidden service: bots on Tor poll the service while a feed of Internet outages is watched, and when every bot loses it at the moment of a known network break, the outage localises the origin. Induced brief outages narrow it to a subnet, and HTTP Date headers give clock skew as corroboration."
 resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
-tags: [article, webseclist-reference, en, whitehat-security, info-leak, side-channel, timing-attack, case-study]
+tags: [article, webseclist-reference, whitehat-security, info-leak, side-channel, timing-attack, case-study]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:07:01+00:00"
+  at: "2026-09-10T00:53:39+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
     title: Tor Hidden-Service Passive De-Cloaking
     author: Robert Hansen
-  - id: canonical
-    resource: "http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
-  - id: capture
-    resource: "https://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
 also_at: []
 authors:
   - Robert Hansen
-canonical_url: "http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
+canonical_url: ""
 cited_by:
   - "2013.md:13"
 commit: ""
-content_sha256: 57e9e1050076e15770f3a1adaa1a87233cabd46cffbb9bb773860269c5462f63
+content_sha256: a4ea6991d897100d4193c19d35ddf5d9af8bec2242feabaefc70d7e0a3f72f6c
 depth: full
 depth_reason: default
 kind: article
-language: en
+language: ""
 licence: unknown
 original_url: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: 7b4d6a775e30d847ab5fce495b66b5f153040deaa44fe44a106f04d9640d4c5d
-retrieved_from: "http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:07:01+00:00"
+raw_sha256: b742791502b43d9bb90574b8f2e3f094480729c30db81b466d910cb43832bf85
+retrieved_from: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:53:39+00:00"
 slug: whitehat-security-tor-hidden-service-passive-de-cloaking
-snapshot: 20160507023636
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -52,9 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/>
-- Current location: <http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/>
-- Preserved from: http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/ (live) on 2026-08-10
-- Capture timestamp: 20160507023636
+- Preserved from: http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/ (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -77,19 +71,11 @@ Because the Internet can be flaky and regularly has minor outages – sometimes 
 
 De-cloaking begins with a few of your robots doing regular polling to make sure your service remains online. This polling is essential for performing tests. When you do discover an outage on the Internet, you should immediately have your robots ­ from Tor nodes around the world ­ attempt to contact the server in question. If just a few of the bots are blocked, it’s likely that they are either just transiting the “broken” network or that the bot is itself on this “broken” network.
 
-[![](http://web.archive.org/web/20160521212845im_/https://www.whitehatsec.com/wp-content/uploads/picture_1.jpg)
-
-Detecting a broken link that doesn’t give away the origin (click to enlarge).
-
-](http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/wp-content/uploads/picture_1.jpg)
+[![Detecting a broken link that doesn’t give away the origin (click to enlarge).](http://web.archive.org/web/20160521212845im_/https://www.whitehatsec.com/wp-content/uploads/picture_1.jpg)](http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/wp-content/uploads/picture_1.jpg)
 
 However, if none of your bots can reach the service in question, there’s a good chance that you’ve found the part of the Internet that’s currently broken. One caveat is that if all of the [Introducer nodes](http://web.archive.org/web/20160521212845/https://www.torproject.org/docs/hidden-services.html.en) lie beyond the path of the disruption it may give a false positive, but this is unlikely unless the outage is extremely close to where the polling robots are, or the outage is extremely large. So false positives are a real possibility, although not enough of a deterrent to make this attack un-viable.
 
-[![](http://web.archive.org/web/20160521212845im_/https://www.whitehatsec.com/wp-content/uploads/picture_2.jpg)
-
-Detecting an outage that does give away the origin (click to enlarge).
-
-](http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/wp-content/uploads/picture_2.jpg)
+[![Detecting an outage that does give away the origin (click to enlarge).](http://web.archive.org/web/20160521212845im_/https://www.whitehatsec.com/wp-content/uploads/picture_2.jpg)](http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/wp-content/uploads/picture_2.jpg)
 
 This same “contact the server in question” technique can reveal other additional granular/smaller breakages by monitoring for outages within a specific network, then monitoring down to the data center, and possibly even down to the subnet. At the subnet level you’re monitoring a small enough set of machines that one could ­ at least theoretically ­ cause selective minor outages (even a few seconds could do the trick) by using a wide variety of denial-of-service attacks to find the one machine that, when attacked, also makes your bots unable to access the site at exactly the same time the site you are monitoring becomes unresponsive.
 

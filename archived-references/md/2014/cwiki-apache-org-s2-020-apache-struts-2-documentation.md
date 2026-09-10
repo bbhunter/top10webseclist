@@ -6,26 +6,22 @@ resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/c
 tags: [article, webseclist-reference, cwiki-apache-org, class-pollution, rce, dos, mass-assignment, struts, java, cve, vendor-advisory, mitigation, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:34:48+00:00"
+  at: "2026-09-10T00:53:45+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-09-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020"
     title: S2-020 - Apache Struts 2 Documentation
     author: Lukasz Lenart
-  - id: canonical
-    resource: "https://cwiki.apache.org/confluence/display/WW/S2-020"
-  - id: capture
-    resource: "https://web.archive.org/web/20150907194344/https://cwiki.apache.org/confluence/display/WW/S2-020"
 also_at: []
 authors:
   - Lukasz Lenart
-canonical_url: "https://cwiki.apache.org/confluence/display/WW/S2-020"
+canonical_url: ""
 cited_by:
   - "2014.md:12"
 commit: ""
-content_sha256: 3adb277aa7d6428604c91628a5a54fe7975d4f400a605e2ef6dbd3a69f0b9f72
+content_sha256: 6259ec68e89e38dd322fd5e50869ec477cf4e22a3de3848b3153cfba3bfd6fdb
 depth: full
 depth_reason: default
 kind: article
@@ -36,11 +32,11 @@ published: ""
 publisher: cwiki.apache.org
 publisher_english: ""
 raw_sha256: 5197be3fff26c6778535820613ff2f306f11600aecda13a67ce3a9a99f00743d
-retrieved_from: "https://cwiki.apache.org/confluence/display/WW/S2-020"
-retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:34:48+00:00"
+retrieved_from: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020"
+retrieved_kind: manual-import
+retrieved_utc: "2026-09-10T00:53:45+00:00"
 slug: cwiki-apache-org-s2-020-apache-struts-2-documentation
-snapshot: 20150907194344
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -52,9 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020>
-- Current location: <https://cwiki.apache.org/confluence/display/WW/S2-020>
-- Preserved from: https://cwiki.apache.org/confluence/display/WW/S2-020 (stored) on 2026-08-11
-- Capture timestamp: 20150907194344
+- Preserved from: https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020 (manual-import) on 2026-09-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -79,69 +73,16 @@ S2-020 - Apache Struts 2 Documentation - Apache Software Foundation
 
 Upgrade Commons FileUpload to version 1.3.1 (avoids DoS attacks) and adds 'class' to exclude params in ParametersInterceptor (avoid ClassLoader manipulation)
 
-|
 
-Who should read this
-
- |
-
-All Struts 2 developers and users
-
- |  |
-|
-
-Impact of vulnerability
-
- |
-
-DoS attacks and ClassLoader manipulation
-
- |  |
-|
-
-Maximum security rating
-
- |
-
-Important
-
- |  |
-|
-
-Recommendation
-
- |
-
-Developers should immediately upgrade to [Struts 2.3.16.1](http://struts.apache.org/download.cgi#struts23161)
-
- |  |
-|
-
-Affected Software
-
- |
-
-Struts 2.0.0 - Struts 2.3.16
-
- |  |
-|
-
-Reporter
-
- |
-
-Peter Magnusson (peter.magnusson at omegapoint.se), Przemysław Celej (p-celej at o2.pl)
-
- |  |
-|
-
-CVE Identifier
-
- |
-
-CVE-2014-0050 (DoS), CVE-2014-0094 (ClassLoader manipulation)
-
- |  |
+| Field | Value |
+| --- | --- |
+| Who should read this | All Struts 2 developers and users |
+| Impact of vulnerability | DoS attacks and ClassLoader manipulation |
+| Maximum security rating | Important |
+| Recommendation | Developers should immediately upgrade to [Struts 2.3.16.1](http://struts.apache.org/download.cgi#struts23161) |
+| Affected Software | Struts 2.0.0 - Struts 2.3.16 |
+| Reporter | Peter Magnusson (peter.magnusson at omegapoint.se), Przemysław Celej (p-celej at o2.pl) |
+| CVE Identifier | CVE-2014-0050 (DoS), CVE-2014-0094 (ClassLoader manipulation) |
 
 ## Problem
 
@@ -164,6 +105,20 @@ If you cannot upgrade to version 2.3.16.1 which is strongly advised, you can app
 The fixed commons-fileupload library is a drop-in replacement for the vulnerable version. Deployed applications can be hardened by replacing the commons-fileupload jar file in WEB-INF/lib with the updated jar. For Maven
 based Struts 2 projects, the following dependency needs to be added:
 
+```xml
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.3.1</version>
+</dependency>
+```
+
 ### Exclude 'class' parameter
 
 Simple add '^class\.*' to the list of excludeParams as below
+
+```xml
+<interceptor-ref name="params">
+  <param name="excludeParams">^class\..*,^dojo\..*,^struts\..*,^session\..*,^request\..*,^application\..*,^servlet(Request|Response)\..*,^parameters\..*,^action:.*,^method:.*</param>
+</interceptor-ref>
+```

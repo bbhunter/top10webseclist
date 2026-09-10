@@ -29,7 +29,7 @@ original_url: "https://blog.mozilla.org/security/2015/03/23/revoking-trust-in-on
 published: ""
 publisher: Mozilla Security Blog
 publisher_english: ""
-raw_sha256: 326afdae6aa525a2152cbc6a477e00fae0bfae0aaeb424a3fcf08b9a1568b7be
+raw_sha256: 7415ac7e372243580285ee6392f2456cbea58cf485a8313ed57d9c190186cd14
 retrieved_from: "https://blog.mozilla.org/security/2015/03/23/revoking-trust-in-one-cnnic-intermediate-certificate/"
 retrieved_kind: browser
 retrieved_utc: "2026-08-09T02:39:18+00:00"
