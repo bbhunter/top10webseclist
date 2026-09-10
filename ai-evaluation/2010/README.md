@@ -87,3 +87,29 @@ DNS-prefetch inference is the only newly added 60–69.9 entry. It appears in th
 historical list because this audit's explicit gate is 60, while its exact score
 and narrower “meaningful extension” verdict remain visible. This audit did not
 run the reference archiver or refresh either web application.
+
+## Repeat discovery sweep — 2026-09-10
+
+The [dated evidence](2026-09-10-sweep.md) records 12 credible leads from fresh
+mechanism searches and archived-article citation tracing. Four require full
+judgement: Safari URL-parser disagreement, Chrome cross-origin property pollution,
+Heffner's router rebinding combination, and the Russian Bitrix/FormCalc PDF attack.
+Three remain evidence holds; five were screened, including two PDFs of existing
+nominations. No new scorecards or curated additions were made in this discovery
+pass. Its current gate is **55**, superseding the historical 60-point wording in
+the August account. Exact queries, evidence paths and coverage limits are recorded
+in the dated note.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 3 new full judgements completed; 3 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Safari: a tale of betrayal and revenge](https://lcamtuf.blogspot.com/2010/06/safari-tale-of-betrayal-and-revenge.html) | 75.0 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [How to Hack Millions of Routers](https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf) | 77.2 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [Hitting Bitrix with a Hammer: FormCalc authenticated response reading](https://xakep.ru/2010/09/01/54715/) | 74.3 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+
+Chrome cross-origin property pollution remains held for the full-source and distinctness comparison. Safari, router rebinding and the Bitrix/FormCalc composition are the three final additions.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

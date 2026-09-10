@@ -98,3 +98,20 @@ low originality credit because XXE, SSRF and SAML attacks were established. It
 qualifies narrowly for the reusable Burp testing extension and the systematic
 cross-implementation workflow. This audit did not run the reference archiver
 or refresh either web application.
+
+
+## Additional sweep — 2026-09-10
+
+[Detailed dated evidence](2026-09-10-sweep.md) records 11 lead groups: one survivor for final judgement (PWA offline-cache history and push-fed persistent mining), four prescreen-held groups, and six screened groups. The citation inventory contained 2,403 outbound occurrences / 1,824 unique raw URLs across 73 documents; only selected promising references were traced. The substantive PWA disclosure was verified in a 22 August SIGPL deck, earlier than its October CCS paper. Its earliest-artifact draft is 62.3/100, with the October evidence kept separate; this is not a final scorecard or an addition.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications](https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf) | 62.3 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+
+The PWA judgement uses the substantive 22 August 2018 SIGPL deck as its cutoff. The later CCS paper is preserved as the expanded account; its additional evidence was not backdated into the score.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

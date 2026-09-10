@@ -92,3 +92,25 @@ this threshold-only pass. No fresh source verification was needed for an
 addition, because there were no additions. The stale gate wording was corrected
 in this index and the scorecards, and the changed card was appended to history.
 Reference preservation and website refresh remain separate work.
+
+## Independent repeat sweep — 2026-09-10
+
+[Detailed coverage, every lead, primary evidence and draft scores](2026-09-10-sweep.md): 12 lead groups, comprising 2 survivors for main-reviewer judgement, 2 held prescreens and 8 screened groups. Read the 53-URL exclusion set and triaged research-bearing citations from an inventory of 1,848 outbound occurrences. New survivor URLs both passed the exclusion helper.
+
+- [Talking About My Generation](https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf) — draft **70.3**, tooling/methodology; precise in-place URL/sink span mapping improves DOM XSS exploit generation. Full source and closest 2013/2018 methods read; note legacy-encoding validation browser and only 846 cases exclusive to the new method.
+- [Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning](https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf) — draft **63.6**, tooling/methodology; full twelve-page source read. Classifier prefilter contribution, with projected rather than deployed end-to-end speedups; prior comparison needs final reviewer verification.
+
+These are evidence handoffs, not final scorecards or authorized additions. The detailed ledger retains all screened and held leads, including older Go XML disclosure, Exchange companion chains, alternate Japanese artifacts and incompletely verified Chinese CSRF/Alexa research. No final judgements, history or curated list changed in this delegated sweep.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 2 new full judgements completed; 2 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis](https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf) | 70.3 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning](https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf) | 63.6 | Tooling or methodology contribution; added — [full card](judgements.md) |
+
+Late date handoff: [The State of the SameSite](https://publications.cispa.saarland/3504/) records an accepted-version deposit on 13 October 2021 at 11:32 despite 2022 S&P proceedings. It remains a 2021 evidence hold for full method/prior-art judgement, not a 2022 addition and not a completed rejection.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

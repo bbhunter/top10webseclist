@@ -98,3 +98,24 @@ clock could weaken policy expiry. The qualifying extension is the demonstrated
 NTP man-in-the-middle workflow, Delorean tool and finding that most tested
 preload entries were finite and therefore also expirable. This audit did not run
 the reference archiver or refresh either web application.
+
+## Supplementary sweep — 2026-09-10
+
+The [dated evidence note](2026-09-10-sweep.md) records 11 additional credible
+leads, selective tracing of archived Markdown citations, exact queries and
+coverage limitations. One malicious-IdP/OpenID paper advances for main-agent
+review with a provisional 66.8 rubric calculation; seven leads are held for
+missing full-source/date/distinctness evidence and three were screened out.
+These are preliminary states, not new final scorecards or additions. In
+particular, newly verified 2009 OpenID association-poisoning research prevents
+crediting the paper's first key-confusion strategy as original in 2014.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On](https://arxiv.org/pdf/1412.1623v1) | 66.8 | Meaningful extension; added — [full card](judgements.md) |
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

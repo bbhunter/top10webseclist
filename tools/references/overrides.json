@@ -6262,6 +6262,308 @@
    ],
    "publisher": "ONsec / ZeroNights",
    "published": "2012-11-20"
+  },
+  "https://arxiv.org/pdf/1412.1623v1": {
+   "authors": [
+    "Christian Mainka",
+    "Vladislav Mladenov",
+    "Jörg Schwenk"
+   ],
+   "title": "Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On"
+  },
+  "https://arxiv.org/pdf/1508.04324v1": {
+   "authors": [
+    "Vladislav Mladenov",
+    "Christian Mainka",
+    "Julian Krautwald",
+    "Florian Feldmann",
+    "Jörg Schwenk"
+   ],
+   "publisher": "arXiv"
+  },
+  "https://arxiv.org/pdf/1611.02875v1.pdf": {
+   "authors": [
+    "Dolière Francis Somé",
+    "Nataliia Bielova",
+    "Tamara Rezk"
+   ]
+  },
+  "https://arxiv.org/pdf/2001.07421v1": {
+   "authors": [
+    "Artur Janc",
+    "Krzysztof Kotowicz",
+    "Lukas Weichselbaum",
+    "Roberto Clapis"
+   ],
+   "publisher": "Google"
+  },
+  "https://arxiv.org/pdf/2201.01649v1.pdf": {
+   "authors": [
+    "Lorenzo Veronese",
+    "Benjamin Farinier",
+    "Mauro Tempesta",
+    "Marco Squarcina",
+    "Matteo Maffei"
+   ],
+   "publisher": "arXiv"
+  },
+  "https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf": {
+   "authors": [
+    "Michael Cherny",
+    "Sagie Dulce"
+   ],
+   "publisher": "Aqua Security"
+  },
+  "https://blog.arkark.dev/2023/12/28/seccon-finals": {
+   "publisher": "blog.arkark.dev",
+   "authors": [
+    "arkark"
+   ],
+   "reason": "Personal publication handle supported by the source’s self-identifying contact/about and author-repository links; no unsupported real-name expansion. Reviewed 2026-09-10."
+  },
+  "https://blog.nerdbank.net/2009/03/08/openid-association-poisoning": {
+   "authors": [
+    "Andrew Arnott"
+   ]
+  },
+  "https://blog.scrt.ch/2016/05/12/net-serialiception": {
+   "authors": [
+    "agix"
+   ],
+   "publisher": "SCRT"
+  },
+  "https://bugs.php.net/bug.php?id=72663": {
+   "authors": [
+    "Taoguang Chen"
+   ],
+   "publisher": "PHP"
+  },
+  "https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf": {
+   "authors": [
+    "William Melicher",
+    "Clement Fung",
+    "Lujo Bauer",
+    "Limin Jia"
+   ],
+   "publisher": "ACM"
+  },
+  "https://davidlitchfield.com/lateral-sql-injection.pdf": {
+   "authors": [
+    "David Litchfield"
+   ],
+   "publisher": "NGSSoftware"
+  },
+  "https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf": {
+   "authors": [
+    "Amit Klein"
+   ],
+   "publisher": "Trusteer"
+  },
+  "https://github.com/WICG/shared-storage/issues/136": {
+   "authors": [
+    "anisenoff"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://github.com/WICG/shared-storage/issues/39": {
+   "authors": [
+    "gtanzer"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://github.com/WICG/shared-storage/issues/86": {
+   "authors": [
+    "anisenoff"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf": {
+   "authors": [
+    "Souphiane Bensalim",
+    "David Klein",
+    "Thomas Barber",
+    "Martin Johns"
+   ],
+   "publisher": "ACM"
+  },
+  "https://imperva.com/docs/imperva_hii_http2.pdf": {
+   "authors": [
+    "Imperva Defense Center"
+   ],
+   "publisher": "Imperva"
+  },
+  "https://lcamtuf.blogspot.com/2010/06/safari-tale-of-betrayal-and-revenge.html": {
+   "authors": [
+    "Michał Zalewski"
+   ]
+  },
+  "https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf": {
+   "authors": [
+    "Craig Heffner"
+   ],
+   "publisher": "Black Hat"
+  },
+  "https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf": {
+   "authors": [
+    "Tal Be’ery",
+    "Amichai Shulman"
+   ],
+   "publisher": "Imperva"
+  },
+  "https://nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf": {
+   "authors": [
+    "Tom Van Goethem",
+    "Gertjan Franken",
+    "Iskander Sanchez-Rola",
+    "David Dworken",
+    "Wouter Joosen"
+   ],
+   "publisher": "ACM"
+  },
+  "https://pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf": {
+   "authors": [
+    "Jens Müller",
+    "Fabian Ising",
+    "Vladislav Mladenov",
+    "Christian Mainka",
+    "Sebastian Schinzel",
+    "Jörg Schwenk"
+   ],
+   "publisher": "ACM"
+  },
+  "https://portswigger.net/research/bypassing-csp-with-dangling-iframes": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "publisher": "PortSwigger"
+  },
+  "https://portswigger.net/research/json-hijacking-for-the-modern-web": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "publisher": "PortSwigger"
+  },
+  "https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf": {
+   "authors": [
+    "Qiyi Zhang",
+    "Fengyu Liu",
+    "Zihan Lin",
+    "Yuan Zhang"
+   ],
+   "publisher": "ACM CCS"
+  },
+  "https://seclists.org/bugtraq/2006/Feb/364": {
+   "authors": [
+    "Amit Klein"
+   ]
+  },
+  "https://seclists.org/fulldisclosure/2007/Feb/548": {
+   "authors": [
+    "Stefan Esser"
+   ],
+   "publisher": "Full Disclosure"
+  },
+  "https://securitee.org/files/kirchner_power_ccs2025.pdf": {
+   "authors": [
+    "Robin Kirchner",
+    "Chris Tsoukaladelis",
+    "Martin Johns",
+    "Nick Nikiforakis"
+   ],
+   "publisher": "ACM CCS"
+  },
+  "https://secweb.work/papers/some2020remote.pdf": {
+   "authors": [
+    "Dolière Francis Somé",
+    "Stefano Calzavara",
+    "Marco Squarcina",
+    "Matteo Maffei"
+   ]
+  },
+  "https://sektioneins.de/advisories/advisory-022009-phpids-unserialize-vulnerability.html": {
+   "authors": [
+    "Stefan Esser"
+   ],
+   "language": "en",
+   "publisher": "SektionEins"
+  },
+  "https://shiftordie.de/blog/2017/02/21/fingerprinting-firefox-users-with-cached-intermediate-ca-certificates-fiprinca": {
+   "authors": [
+    "Alexander Klink"
+   ]
+  },
+  "https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html": {
+   "publisher": "sirdarckcat.blogspot.com",
+   "authors": [
+    "sirdarckcat"
+   ],
+   "reason": "Personal publication handle supported by the source’s self-identifying contact/about and author-repository links; no unsupported real-name expansion. Reviewed 2026-09-10."
+  },
+  "https://sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf": {
+   "authors": [
+    "Georges Bossert"
+   ],
+   "publisher": "SSTIC",
+   "title_english": "Comparisons and attacks on HTTP2"
+  },
+  "https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf": {
+   "authors": [
+    "Phakpoom Chinprutthiwong",
+    "Raj Vardhan",
+    "Guangliang Yang",
+    "Guofei Gu"
+   ],
+   "publisher": "ACM"
+  },
+  "https://swag.cispa.saarland/papers/klein2022hand.pdf": {
+   "authors": [
+    "David Klein",
+    "Thomas Barber",
+    "Souphiane Bensalim",
+    "Ben Stock",
+    "Martin Johns"
+   ]
+  },
+  "https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf": {
+   "authors": [
+    "Jan Drescher",
+    "Sepehr Mirzaei",
+    "Soheil Khodayari",
+    "David Klein",
+    "Thomas Barber",
+    "Martin Johns",
+    "Giancarlo Pellegrino"
+   ],
+   "publisher": "ACM"
+  },
+  "https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf": {
+   "authors": [
+    "Jiyeon Lee",
+    "Hayeon Kim",
+    "Junghwan Park",
+    "Insik Shin",
+    "Sooel Son"
+   ],
+   "publisher": "ACM"
+  },
+  "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf": {
+   "authors": [
+    "Joel Weinberger",
+    "Prateek Saxena",
+    "Devdatta Akhawe",
+    "Matthew Finifter",
+    "Richard Shin",
+    "Dawn Song"
+   ],
+   "publisher": "University of California, Berkeley"
+  },
+  "https://xakep.ru/2010/09/01/54715": {
+   "authors": [
+    "oxod"
+   ],
+   "published": "2010-09-01",
+   "publisher": "Xakep",
+   "title_english": "Taking a Hammer to Bitrix: Finding 0day Vulnerabilities in a Popular CMS"
   }
  },
  "mirror_sources": [],

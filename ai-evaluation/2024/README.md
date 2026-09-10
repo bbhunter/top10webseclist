@@ -213,3 +213,23 @@ on external request data across several template engines. Full reasoning is in
 | Score | Verdict | List decision | Candidate |
 |---:|---|---|---|
 | 68.9 | Meaningful extension | add | [Limitations are just an illusion – advanced server-side template exploitation with RCE everywhere](https://www.yeswehack.com/learn-bug-bounty/server-side-template-injection-exploitation) |
+
+## Independent repeat sweep — 2026-09-10
+
+[Detailed lead ledger, primary dates, source digests and coverage](2026-09-10-sweep.md): **14 groups**, with **1 grouped survivor**, **7 held prescreens**, and **6 screened groups**. The exclusion helper returned 151 URLs; citation triage used 4,147 outbound occurrences. No final judgement, history or curated list was changed in this delegated sweep.
+
+The survivor is Alex Nisenoff's **February 2024 Shared Storage queue and termination channels**: [queue report](https://github.com/WICG/shared-storage/issues/136), [crash disclosure](https://github.com/WICG/shared-storage/issues/86#issuecomment-1924746302). Draft **65.0/100**, meaningful combination/adaptation, pending main review. The June 2023 delayed-network disclosure is earlier research and is not counted again; the whole 2025 paper is not dated 2024.
+
+Fresh primary history changes two promising conference leads' date assessment. Sheriff/The Great Request Robbery has substantive **28 October 2023** graph-augmentation code; PanoptiChrome has a substantive **12 October 2023** public patch. Full later papers were read, but no independently dated 2024 technical delta was established. Both earlier tooling leads were transferred to the 2023 reviewer. The previous Robbery “same mechanism” screen is insufficient to describe its concrete methodology extension, even though the new evidence also prevents an unqualified 2024 addition.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Shared Storage worklet queue and termination channels](https://github.com/WICG/shared-storage/issues/136) | 65.0 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+
+The queue and termination disclosures form one grouped 2024 technique with two citation links; they are not two additions.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

@@ -970,3 +970,38 @@ alias-space method, the local-filesystem reach and the WebDAV tracking split.
 Meaningful combination or adaptation. The outcome class is 21 years old and
 every component pre-existed; what was new at the cutoff is the demonstration
 that Outlook's block was scheme-blind and the enumeration method that found it.
+
+## 62.3 — [Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications](https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf) — Jiyeon Lee, Hayeon Kim, Junghwan Park, Insik Shin, Sooel Son
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Full paper and earliest verified [SIGPL lecture deck](https://sigpl.or.kr/school/2018s/slides/0822-SooelSon.pdf) read in the sweep. The [program](https://sigpl.or.kr/school/2018s/) establishes 22 August 2018, preceding the October CCS paper. The score uses mechanisms actually disclosed in August; the later paper is a fuller companion, not a second discovery or a source of retroactive scoring credit. Earlier unrelated postMessage research in the lecture is excluded. URL and semantic exclusions passed.
+
+### Core Contribution and Prior Art
+
+An offline malicious PWA frames other offline-capable sites and observes whether previously installed content loads, exposing local visit state. A second recipe adapts CoinHive to service-worker execution and uses push events for continued work distribution. The local [2015 AppCache resource-status paper](https://www.ndss-symposium.org/wp-content/uploads/2017/09/01_1_2.pdf) instead creates manifests and observes current cross-origin fetch outcomes. The [Chromium security FAQ, last updated May 2017](https://www.chromium.org/Home/chromium-security/security-faq/service-worker-security-faq/), already describes persistent registration and push-triggered later attacks. [Good₿Miner, October 2017](https://devpost.com/software/good-miner), proposes service-worker mining as future work. The increment is the installed offline-state oracle and concrete push-fed workload adaptation; neither background execution nor cache privacy is new.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | August publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 67 | 25% | 16.75 | Distinct offline-state oracle and working workload combination above known components. |
+| Transferability | 60 | 20% | 12.00 | Offline/push-capable applications, not arbitrary sites. |
+| Lasting value | 69 | 20% | 13.80 | Reusable questions about background lifetime and offline-state observability. |
+| Technical soundness | 61 | 15% | 9.15 | Architecture and measured example, with compatibility and event details missing from the early deck. |
+| Practical usability | 48 | 10% | 4.80 | Offline revisit or push permission and workload adaptation impose substantial setup. |
+| Clarity and reproducibility | 58 | 10% | 5.80 | Readable sequence, incomplete early implementation and failure-mode detail. |
+
+**Final score: 62.3/100.** Computed with `score.py 67 60 69 61 48 58`.
+
+### Reverification
+
+The sweep's independent mining/history/AppCache searches recovered the explicit 2017 attack discussion and planned miner, narrowing novelty. Final review repeated the offline-history search and reopened the program and FAQ. Strongest objection is repackaging cache or persistent-worker behavior; the changed probed state and push-fed implementation supply the bounded increment. Do not borrow October's Firefox event restrictions, silent-push resubscription or detailed compatibility into August's scores. October's contradictory 187-versus-211 history counts are recorded in the sweep and not used as an exploit-rate claim. No later miners or mitigation outcomes affect this judgement.
+
+### Verdict
+
+Meaningful combination or adaptation. Keep the two August research recipes as supporting material; their restrictive conditions explain the modest score.

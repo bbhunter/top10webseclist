@@ -111,3 +111,29 @@ certificate-validation, browser-DDoS and encrypted-length leakage. They cross
 the gate only because their robust probing, large-scale hybrid analysis,
 browser-bot economics and password-length workflow are qualifying extensions,
 methodologies or adaptations.
+
+## Supplementary sweep — 2026-09-10
+
+The [dated evidence note](2026-09-10-sweep.md) retains nine additional lead
+groups: two survivors with full-source digests and provisional calculations,
+four held before full judgement, and three screened. The survivors are OIDC
+malicious endpoints (original August 2015 preprint; draft 71.3) and Netty cookie
+parsing / HttpOnly exfiltration (May 2015; draft 70.5). These are main-review
+inputs, not final scorecards or additions. Citation tracing found the Netty
+article inside the full LinkedIn blog capture: it is separate from the nominated
+November post despite sharing a URL before the fragment. The note records
+source/version corrections, primary prior art, exact queries and limitations.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 3 new full judgements completed; 3 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [On the security of modern Single Sign-On Protocols – OpenID Connect 1.0](https://arxiv.org/pdf/1508.04324v1) | 71.3 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [A Look into Netty’s Recent Security Update: cookie parsing and HttpOnly exfiltration](https://security.linkedin.com/blog-archive#05152015) | 70.5 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [Service Workers: New APIs = New Vulns = Fun++](https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html) | 68.7 | Meaningful extension; added — [full card](judgements.md) |
+
+The [service-worker article](https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html) was a later citation/prior-art follow-up and is included for its redirect/CORS composition. The May Netty cookie article shares an archived LinkedIn page with an original November nominee, but describes separate research; no duplicate archive record is created.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

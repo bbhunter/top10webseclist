@@ -1,0 +1,406 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/1412.1623v1",
+    "md": "archived-references/md/2014/do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign.md",
+    "pdf": "archived-references/pdf/2014/do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign.pdf",
+    "pages": 32,
+    "pdf_text_chars": 74773,
+    "raw_sha256": "ffdbf2aefd52071375445310a038624bfc4d0feb25f014ef6cdce90bde7ebfc7",
+    "content_sha256": "4a03135b11a2784e036ac6a28f720f242f0082f0f87ff0ffc8d9d6718740bdb9",
+    "content_gap": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/1508.04324v1",
+    "md": "archived-references/md/2015/security-modern-single-sign-protocols-openid-connect-1-0.md",
+    "pdf": "archived-references/pdf/2015/security-modern-single-sign-protocols-openid-connect-1-0.pdf",
+    "pages": 18,
+    "pdf_text_chars": 45262,
+    "raw_sha256": "91057d02910fb1fdb907e10a2c7a722026a1679e947699d64ba40d580d58e1b9",
+    "content_sha256": "3b33d50bfee23a6eb93148e67ebfc3d631271f83bafd2d145b7be8c11e5a9bfe",
+    "content_gap": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/1611.02875v1.pdf",
+    "md": "archived-references/md/2016-17/content-security-policy-violations-due-same-origin-policy.md",
+    "pdf": "archived-references/pdf/2016-17/content-security-policy-violations-due-same-origin-policy.pdf",
+    "pages": 19,
+    "pdf_text_chars": 94485,
+    "raw_sha256": "8bfc444b93d3d877ac3f9e8fd1b8680295b6a0648dcddb3fa6568eef2e577c06",
+    "content_sha256": "8c6c88b04d6da6f76f6343ebb9296c8a2b113951e3aaf1221cd9005f7c294b8f",
+    "content_gap": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/2001.07421v1",
+    "md": "archived-references/md/2020/information-leaks-safaris-intelligent-tracking-prevention.md",
+    "pdf": "archived-references/pdf/2020/information-leaks-safaris-intelligent-tracking-prevention.pdf",
+    "pages": 6,
+    "pdf_text_chars": 19326,
+    "raw_sha256": "60a5137cf49680c260f1e1efc55af7090ed9c4e0252e9fea9957cedcfa5c58ae",
+    "content_sha256": "b777e14f0b5a62a9d44fb3367aeb9df0a4b95d700674d589956d836deaab0e3d",
+    "content_gap": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/2201.01649v1.pdf",
+    "md": "archived-references/md/2022/webspec.md",
+    "pdf": "archived-references/pdf/2022/webspec.pdf",
+    "pages": 18,
+    "pdf_text_chars": 103142,
+    "raw_sha256": "22292a26462584e12d1f7b54a8a1f79a69fb7b8eb0567fe9d6c5d93ef6eeeb82",
+    "content_sha256": "e6e70121e22deba753383472b51f391350eda2c1aa58a368712a0c3fda57c814",
+    "content_gap": "faulty capture: Figure 1 graphical icons remain garbled in the Markdown text layer after table and reading-order repair; transcribe the figure labels/icons against the intact preserved PDF (reported 2026-09-10)"
+  },
+  {
+    "url": "https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf",
+    "md": "archived-references/md/2016-17/well-that-escalated-quickly.md",
+    "pdf": "archived-references/pdf/2016-17/well-that-escalated-quickly.pdf",
+    "pages": 18,
+    "pdf_text_chars": 25845,
+    "raw_sha256": "fb8170e20509e2e7b1864a4fb072d1f03635d39a1c0d5118a28ba159d56a7d2b",
+    "content_sha256": "16512f2d5e3f13ccc8eea7b638aba62fc6267f86a9b98c76fe3f8d8fc9178f35",
+    "content_gap": ""
+  },
+  {
+    "url": "https://blog.arkark.dev/2023/12/28/seccon-finals",
+    "md": "archived-references/md/2023/2023-blog-arkark-dev-seccon-ctf-2023-finals-author-writeups.md",
+    "pdf": "archived-references/pdf/2023/2023-blog-arkark-dev-seccon-ctf-2023-finals-author-writeups.pdf",
+    "pages": 38,
+    "pdf_text_chars": 23354,
+    "raw_sha256": "9b17a97d318eeb6ce8a6592276b2bbcf37a077bcf77aaaeb800ff462f91fe526",
+    "content_sha256": "2baf3dcdae24a398c4eee928e92cae1cdc7787869114f3b1e7185678169d8cd5",
+    "content_gap": ""
+  },
+  {
+    "url": "https://blog.nerdbank.net/2009/03/08/openid-association-poisoning",
+    "md": "archived-references/md/2009/blog-nerdbank-net-openid-association-poisoning.md",
+    "pdf": "archived-references/pdf/2009/blog-nerdbank-net-openid-association-poisoning.pdf",
+    "pages": 2,
+    "pdf_text_chars": 4145,
+    "raw_sha256": "64838386d85a96a2162ad5abb2ce1464b64cc41a4cb08d23a8ed2c4924b54659",
+    "content_sha256": "18a3e41006f0644c6565fc4045b08240f56924c724c2b7671bf0de7e6da17b75",
+    "content_gap": ""
+  },
+  {
+    "url": "https://blog.scrt.ch/2016/05/12/net-serialiception",
+    "md": "archived-references/md/2016-17/blog-scrt-ch-net-serialiception.md",
+    "pdf": "archived-references/pdf/2016-17/blog-scrt-ch-net-serialiception.pdf",
+    "pages": 10,
+    "pdf_text_chars": 10872,
+    "raw_sha256": "c6a723d44f97ffed9b4ebfd7ccd982134bdbee8aae647b74b70a4c3c7103d461",
+    "content_sha256": "6da37c2ebab8760573c2486a88c678b2018eee023cedec227c55d2e6cdc0b39d",
+    "content_gap": ""
+  },
+  {
+    "url": "https://bugs.php.net/bug.php?id=72663",
+    "md": "archived-references/md/2016-17/bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization.md",
+    "pdf": "archived-references/pdf/2016-17/bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization.pdf",
+    "pages": 3,
+    "pdf_text_chars": 4069,
+    "raw_sha256": "1b44a7409a59e639c9865d8bd064f17e9e4796a2c005cba697b719f8a9903dfc",
+    "content_sha256": "ac694bccc8331385a2d2d2b1d739278f4a45250ff41094a059e8dae12f99365b",
+    "content_gap": ""
+  },
+  {
+    "url": "https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf",
+    "md": "archived-references/md/2021/towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning.md",
+    "pdf": "archived-references/pdf/2021/towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning.pdf",
+    "pages": 12,
+    "pdf_text_chars": 72543,
+    "raw_sha256": "3887d9506eb41e04aeddd31a9a6c6b6d2aaad481d801442ad45b1c638a420c99",
+    "content_sha256": "738d4ff76837284e5e9084e004da8d2dce0f8106937384923b6bd9bc24cae4a3",
+    "content_gap": ""
+  },
+  {
+    "url": "https://davidlitchfield.com/lateral-sql-injection.pdf",
+    "md": "archived-references/md/2008/lateral-sql-injection.md",
+    "pdf": "archived-references/pdf/2008/lateral-sql-injection.pdf",
+    "pages": 4,
+    "pdf_text_chars": 6357,
+    "raw_sha256": "0db673b33010a9aa5626bc5198e1ef07be87e36a1d9a04d25e9c098c2c211bbe",
+    "content_sha256": "d91302b63c624457a53025043425b109d35b043da17b85d96060db90963734a4",
+    "content_gap": ""
+  },
+  {
+    "url": "https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf",
+    "md": "archived-references/md/2007/windows-dns-server-cache-poisoning.md",
+    "pdf": "archived-references/pdf/2007/windows-dns-server-cache-poisoning.pdf",
+    "pages": 13,
+    "pdf_text_chars": 25679,
+    "raw_sha256": "e6bf106c2809b9fc55bd7e40137aa82ae7c1d6097a707860f8585ff0ea7fd84d",
+    "content_sha256": "a880319780faf1d9eab43a6c88fd3def7596005bc34652fe1099f210b18af71f",
+    "content_gap": ""
+  },
+  {
+    "url": "https://github.com/WICG/shared-storage/issues/136",
+    "md": "archived-references/md/2024/2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet.md",
+    "pdf": "archived-references/pdf/2024/2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet.pdf",
+    "pages": 2,
+    "pdf_text_chars": 3025,
+    "raw_sha256": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+    "content_sha256": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+    "content_gap": ""
+  },
+  {
+    "url": "https://github.com/WICG/shared-storage/issues/39",
+    "md": "archived-references/md/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.md",
+    "pdf": "archived-references/pdf/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.pdf",
+    "pages": 2,
+    "pdf_text_chars": 3717,
+    "raw_sha256": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+    "content_sha256": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+    "content_gap": ""
+  },
+  {
+    "url": "https://github.com/WICG/shared-storage/issues/86",
+    "md": "archived-references/md/2023/2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate.md",
+    "pdf": "archived-references/pdf/2023/2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate.pdf",
+    "pages": 4,
+    "pdf_text_chars": 7705,
+    "raw_sha256": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+    "content_sha256": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+    "content_gap": ""
+  },
+  {
+    "url": "https://ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf",
+    "md": "archived-references/md/2021/talking-about-my-generation-targeted-dom-based-xss-exploit-generation-analysis.md",
+    "pdf": "archived-references/pdf/2021/talking-about-my-generation-targeted-dom-based-xss-exploit-generation-analysis.pdf",
+    "pages": 7,
+    "pdf_text_chars": 40046,
+    "raw_sha256": "28ddb5f544e8e63a0c0090276a41eaa79030f3347e5acb3051fbc5441c67537b",
+    "content_sha256": "82edf884932ea6702eb2bc8e861bb9aa6d89402f23b877ff6729fdf41fe8663e",
+    "content_gap": ""
+  },
+  {
+    "url": "https://imperva.com/docs/imperva_hii_http2.pdf",
+    "md": "archived-references/md/2016-17/http-2-depth-analysis-top-four-flaws.md",
+    "pdf": "archived-references/pdf/2016-17/http-2-depth-analysis-top-four-flaws.pdf",
+    "pages": 23,
+    "pdf_text_chars": 38171,
+    "raw_sha256": "13e9036cd1cb820510fb817ebff990d0ce6409fd14fdb33c54c9a51bd494ddf1",
+    "content_sha256": "36418e9289a187ae63de8bbdd5593dbd64d70448c9b095c93f06a499c273a44b",
+    "content_gap": ""
+  },
+  {
+    "url": "https://lcamtuf.blogspot.com/2010/06/safari-tale-of-betrayal-and-revenge.html",
+    "md": "archived-references/md/2010/lcamtuf-blogspot-com-safari-tale-betrayal-revenge.md",
+    "pdf": "archived-references/pdf/2010/lcamtuf-blogspot-com-safari-tale-betrayal-revenge.pdf",
+    "pages": 2,
+    "pdf_text_chars": 4003,
+    "raw_sha256": "7f21e4ed2b02ab4a1691e1bba6b546165bf2d0a552bb1ba61742a11bab1fae4d",
+    "content_sha256": "0d53bcd568f6506358e5c35d543ffc495030233112e624fe1a51a0f39c615e5f",
+    "content_gap": ""
+  },
+  {
+    "url": "https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf",
+    "md": "archived-references/md/2010/how-hack-millions-routers.md",
+    "pdf": "archived-references/pdf/2010/how-hack-millions-routers.pdf",
+    "pages": 36,
+    "pdf_text_chars": 21651,
+    "raw_sha256": "2a31321b8597c345a453413f9c24e00b80ee37719c88ed97c44fb871f8d2281d",
+    "content_sha256": "b3f0156e676d48a5e7c2fd7595d8dd47127aa6e4c6d166c1d02613154d1cf96d",
+    "content_gap": ""
+  },
+  {
+    "url": "https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf",
+    "md": "archived-references/md/2013/perfect-crime-only-time-will-tell.md",
+    "pdf": "archived-references/pdf/2013/perfect-crime-only-time-will-tell.pdf",
+    "pages": 33,
+    "pdf_text_chars": 38646,
+    "raw_sha256": "20bb08e3bfec601a3d7434e84beb5d02c399f0d7d7553aa6b93f264d55fcab70",
+    "content_sha256": "934fd832b3cbbc8d81b2b0d8e20732912c94a817cc1df535bb4fc9931a0b46ef",
+    "content_gap": ""
+  },
+  {
+    "url": "https://nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf",
+    "md": "archived-references/md/2022/sok-exploring-current-future-research-directions-xs-leaks-through-model.md",
+    "pdf": "archived-references/pdf/2022/sok-exploring-current-future-research-directions-xs-leaks-through-model.pdf",
+    "pages": 15,
+    "pdf_text_chars": 96547,
+    "raw_sha256": "2a184d1a65d4596d6c05c99b663c669105aca0b7f0a95d0635934a07cb3d6a50",
+    "content_sha256": "c3259a11c0fd264cc63dceaef3e29df65e5726bb3e1a2b1d8492573021e66886",
+    "content_gap": ""
+  },
+  {
+    "url": "https://pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf",
+    "md": "archived-references/md/2019/practical-decryption-exfiltration-breaking-pdf-encryption.md",
+    "pdf": "archived-references/pdf/2019/practical-decryption-exfiltration-breaking-pdf-encryption.pdf",
+    "pages": 15,
+    "pdf_text_chars": 87516,
+    "raw_sha256": "ef143564f88937fcf70c61bcd3b0bda1830543d2d4028cc5e6f5f2479a7f9420",
+    "content_sha256": "f181631ab596ca289bb99be9569005470d55f0aa35e0683810c2b48d9dcc802f",
+    "content_gap": ""
+  },
+  {
+    "url": "https://portswigger.net/research/bypassing-csp-with-dangling-iframes",
+    "md": "archived-references/md/2022/2022-portswigger-research-bypassing-csp-dangling-iframes.md",
+    "pdf": "archived-references/pdf/2022/2022-portswigger-research-bypassing-csp-dangling-iframes.pdf",
+    "pages": 4,
+    "pdf_text_chars": 5258,
+    "raw_sha256": "8f697323c64d6c5826e944cc4ac8ca6c7ae5942f8ba5d30bd93ea642ebded300",
+    "content_sha256": "1acf33b16f4195b15815ce09a38765493a01725484e556bf984bb50a191db2c5",
+    "content_gap": ""
+  },
+  {
+    "url": "https://portswigger.net/research/json-hijacking-for-the-modern-web",
+    "md": "archived-references/md/2016-17/2016-portswigger-research-json-hijacking-modern-web.md",
+    "pdf": "archived-references/pdf/2016-17/2016-portswigger-research-json-hijacking-modern-web.pdf",
+    "pages": 6,
+    "pdf_text_chars": 14221,
+    "raw_sha256": "0bf00401ecf2cbc21b166f85047b69ce17b023eec9242fdfa75fd3a3d440ced9",
+    "content_sha256": "146304a248da231099877e56953fd18d3978e5725f8cc3cc398410d992181c53",
+    "content_gap": ""
+  },
+  {
+    "url": "https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf",
+    "md": "archived-references/md/2025/be-aware-what-you-let-pass-demystifying-url-based-authentication-applications.md",
+    "pdf": "archived-references/pdf/2025/be-aware-what-you-let-pass-demystifying-url-based-authentication-applications.pdf",
+    "pages": 15,
+    "pdf_text_chars": 95112,
+    "raw_sha256": "e1f969da02eee0d66cfb3338064e19a6211c3547bea937587afb900ec42020fe",
+    "content_sha256": "cfb29cea71201daa97fa2b76e323d8316be57e8dab41f3181da3f809a2413876",
+    "content_gap": ""
+  },
+  {
+    "url": "https://seclists.org/bugtraq/2006/Feb/364",
+    "md": "archived-references/md/2006/seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling.md",
+    "pdf": "archived-references/pdf/2006/seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling.pdf",
+    "pages": 14,
+    "pdf_text_chars": 25047,
+    "raw_sha256": "f412302b5a0883a9cdcef0f412098fd7563fb5fe59273ee80055634f32a8238f",
+    "content_sha256": "e97637227b3d6b7bf0cdefbfa24bad7fd680308a9bb34ce7d37c1e00cb40c2ab",
+    "content_gap": ""
+  },
+  {
+    "url": "https://seclists.org/fulldisclosure/2007/Feb/548",
+    "md": "archived-references/md/2007/seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability.md",
+    "pdf": "archived-references/pdf/2007/seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability.pdf",
+    "pages": 4,
+    "pdf_text_chars": 5447,
+    "raw_sha256": "7d5a4cf037d087df00cddcfbea48d3ff0b0ebeabfb5b7fbba7d83c1fcc6e1cd6",
+    "content_sha256": "a22730eaecc33b974df45b7a5112943dc80d0c532e918edef25a619470c93f2b",
+    "content_gap": ""
+  },
+  {
+    "url": "https://securitee.org/files/kirchner_power_ccs2025.pdf",
+    "md": "archived-references/md/2025/power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives.md",
+    "pdf": "archived-references/pdf/2025/power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives.pdf",
+    "pages": 15,
+    "pdf_text_chars": 96638,
+    "raw_sha256": "dd5225847780802780b962828d80a7708b02843aeca4d443e43f39ea2a16698c",
+    "content_sha256": "d2f1de1b47c011fcb99097830e95970588df43e50081bc5f2840c797e0017058",
+    "content_gap": ""
+  },
+  {
+    "url": "https://secweb.work/papers/some2020remote.pdf",
+    "md": "archived-references/md/2020/remote-local-exacerbating-web-attacks-service-workers-caches.md",
+    "pdf": "archived-references/pdf/2020/remote-local-exacerbating-web-attacks-service-workers-caches.pdf",
+    "pages": 11,
+    "pdf_text_chars": 54697,
+    "raw_sha256": "bfff1ffbfcc9238b5a7b9150629ab123240f301122ab49e1e999493f4b5f1e92",
+    "content_sha256": "44f114b13cb13fd86ac09ca2744c8debd9a397d147a2de90c9d1bd330f2fb854",
+    "content_gap": ""
+  },
+  {
+    "url": "https://sektioneins.de/advisories/advisory-022009-phpids-unserialize-vulnerability.html",
+    "md": "archived-references/md/2009/2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability.md",
+    "pdf": "archived-references/pdf/2009/2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability.pdf",
+    "pages": 6,
+    "pdf_text_chars": 9428,
+    "raw_sha256": "7aaa2afc085c9cadc148466f8a1501af42048326c4690025810a8b1fb9fabca5",
+    "content_sha256": "bb64a92993c019aba8bbda75635e720f36c7a55b67d5ce8080dbcd6c75ac7c72",
+    "content_gap": ""
+  },
+  {
+    "url": "https://shiftordie.de/blog/2017/02/21/fingerprinting-firefox-users-with-cached-intermediate-ca-certificates-fiprinca",
+    "md": "archived-references/md/2016-17/shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca.md",
+    "pdf": "archived-references/pdf/2016-17/shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca.pdf",
+    "pages": 5,
+    "pdf_text_chars": 8809,
+    "raw_sha256": "1a32cf7f075cdaceeed51836a4d17006c7f9bb7816b3478eb82291cdd5c80e0f",
+    "content_sha256": "a5172119900c3d7c1d2bf7d2d69faa3da196f503f335886a041bedcbc6ec5037",
+    "content_gap": ""
+  },
+  {
+    "url": "https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html",
+    "md": "archived-references/md/2015/sirdarckcat-blogspot-com-service-workers-new-apis-new-vulns-fun.md",
+    "pdf": "archived-references/pdf/2015/sirdarckcat-blogspot-com-service-workers-new-apis-new-vulns-fun.pdf",
+    "pages": 4,
+    "pdf_text_chars": 10976,
+    "raw_sha256": "2972b1afd421768f2bbc8a61610e27360872cd65155f3a69c796ce53d0c028fe",
+    "content_sha256": "62897b35a7530e06ab39865725a9822719b0c49b684ffb39af955e1f1def2e86",
+    "content_gap": ""
+  },
+  {
+    "url": "https://sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf",
+    "md": "archived-references/md/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2.md",
+    "pdf": "archived-references/pdf/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2.pdf",
+    "pages": 36,
+    "pdf_text_chars": 11027,
+    "raw_sha256": "ba219afd587f38d3abdb3735f5d67b98534d19ad0d6d2aab4a400a7bef321efd",
+    "content_sha256": "9b099f2ab1e5e13f559694f385242406d3169456315d5e1f228eb07ced3b4220",
+    "content_gap": "",
+    "translation_md": "archived-references/md/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2_translate.md",
+    "translation_pdf": "archived-references/pdf/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2_translate.pdf"
+  },
+  {
+    "url": "https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf",
+    "md": "archived-references/md/2020/security-study-service-worker-cross-site-scripting.md",
+    "pdf": "archived-references/pdf/2020/security-study-service-worker-cross-site-scripting.pdf",
+    "pages": 12,
+    "pdf_text_chars": 72835,
+    "raw_sha256": "a424cb5bee39a6482f1a6f896fee2d9b7fc62b23b9d38153836c7b4be8c8e835",
+    "content_sha256": "996fff97ee49329a0bf3fd6d945d221aef3a7dab47fd9926baf89a84edd8275f",
+    "content_gap": ""
+  },
+  {
+    "url": "https://swag.cispa.saarland/papers/klein2022hand.pdf",
+    "md": "archived-references/md/2022/hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions.md",
+    "pdf": "archived-references/pdf/2022/hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions.pdf",
+    "pages": 16,
+    "pdf_text_chars": 88360,
+    "raw_sha256": "2c29c977e381dd696b62bfc647dc5cf24cfa3fabd532ac138ded7a4044369d66",
+    "content_sha256": "665d65e771877ce0d172f1c3cf15d61c15108b38700254c6e2a731ab165d2959",
+    "content_gap": ""
+  },
+  {
+    "url": "https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf",
+    "md": "archived-references/md/2025/dom-we-trust-exploring-hidden-dangers-reading-dom-web.md",
+    "pdf": "archived-references/pdf/2025/dom-we-trust-exploring-hidden-dangers-reading-dom-web.pdf",
+    "pages": 15,
+    "pdf_text_chars": 94447,
+    "raw_sha256": "68cc242d78a646c0f44d9db893243fdfd668e66eb69e707b319f5d85379c037a",
+    "content_sha256": "277886565b1fc50166a0f7188039dde458ef3ad9b474dcac9edd4c1b34822f2c",
+    "content_gap": ""
+  },
+  {
+    "url": "https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf",
+    "md": "archived-references/md/2018/pride-prejudice-progressive-web-apps-abusing-native-app-like-applications.md",
+    "pdf": "archived-references/pdf/2018/pride-prejudice-progressive-web-apps-abusing-native-app-like-applications.pdf",
+    "pages": 16,
+    "pdf_text_chars": 88082,
+    "raw_sha256": "bfe4f5e9a9c4161a428264881385452a797201d99db64e3be673692463dac1a7",
+    "content_sha256": "3da356213fd6d6986f084f8f928a4c345f9485ab32c802423f7f67338f5adc9b",
+    "content_gap": ""
+  },
+  {
+    "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf",
+    "md": "archived-references/md/2011/empirical-analysis-xss-sanitization-web-application-frameworks.md",
+    "pdf": "archived-references/pdf/2011/empirical-analysis-xss-sanitization-web-application-frameworks.pdf",
+    "pages": 17,
+    "pdf_text_chars": 79326,
+    "raw_sha256": "0fe0f7acbcd939a789a3c2cccc5b73047b944a4f40a419f2766bdaeaf8ff21c1",
+    "content_sha256": "036b934bb3e075b221e15e745c91fa545bc8d6ee38ca25708b79df8d62931c67",
+    "content_gap": ""
+  },
+  {
+    "url": "https://xakep.ru/2010/09/01/54715",
+    "md": "archived-references/md/2010/xakep-ru-0day-cms.md",
+    "pdf": "archived-references/pdf/2010/xakep-ru-0day-cms.pdf",
+    "pages": 7,
+    "pdf_text_chars": 19164,
+    "raw_sha256": "68d84acbd279d0a98513dffc7f4c8bcecbce11280a3ea5446564e799f0e0a2c0",
+    "content_sha256": "9658b84f398477bd38fcc4e18bb33ce299fcca9e8bd381897c4882b5a93a6642",
+    "content_gap": "",
+    "translation_md": "archived-references/md/2010/xakep-ru-0day-cms_translate.md",
+    "translation_pdf": "archived-references/pdf/2010/xakep-ru-0day-cms_translate.pdf"
+  }
+]

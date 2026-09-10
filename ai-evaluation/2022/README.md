@@ -158,3 +158,38 @@ through the `.rem` and `.soap` handler mappings, is the web-relevant part.
 | [Searching for Deserialization Protection Bypasses in Microsoft Exchange (CVE-2022-21969)](https://medium.com/@frycos/searching-for-deserialization-protection-bypasses-in-microsoft-exchange-cve-2022-21969-bfa38f63a62d) | already represented | A blocklist bypass in one product; the general result is the 2023 number-two entry. |
 | [Yet Another Telerik UI Revisit](https://blog.blacklanternsecurity.com/p/yet-another-telerik-ui-revisit) | already represented | Re-exploitation of the 2017 and 2019 Telerik issues already on the lists. |
 | [OWASSRF: CrowdStrike Identifies New Exploit Method for Exchange](https://www.crowdstrike.com/en-us/blog/owassrf-exploit-analysis-and-recommendations/) | already represented | The OWASSRF and TabShell chain is already a 2022 nomination through the Viettel writeup. |
+
+## 2026-09-10 — Citation tracing and independent missing-reference sweep
+
+See [the detailed sweep ledger](2026-09-10-sweep.md) for exclusions, exact search
+coverage, primary-source digests, skeptical prior-art comparisons and limitations.
+The pass inspected the 2,168-occurrence outbound-link inventory alongside broad
+mechanism searches. Five leads reach main adjudication: Hand Sanitizers in the
+Wild / SemAttack (draft 75.2), WebSpec (74.5),
+click-free dangling iframes (71.0), the XS-Leaks component model and server
+request-count sketches (66.0), and Shared Storage's k-anonymity fallback oracle
+(64.1). These are draft scores, not final additions. The SoK's earliest online
+day remains unresolved; its 2022 proceedings and substantive source are verified.
+The older dangling-iframe prescreen is reopened on the specific no-click
+increment over the fully read 2018 predecessor. No archive fault was established.
+
+The sanitizer paper used a modified browser with URL auto-encoding disabled;
+its 40 validated vulnerabilities include four requiring manual correction.
+Three late academic leads remain explicitly held for full-source comparison,
+including Accept All Exploits and Server-Side Browsers.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 5 new full judgements completed; 5 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [WebSpec](https://arxiv.org/pdf/2201.01649v1.pdf) | 74.5 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [Bypassing CSP with dangling iframes](https://portswigger.net/research/bypassing-csp-with-dangling-iframes) | 71.0 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf) | 66.0 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [Problem with Shared Storage’s described use of k-anonymity](https://github.com/WICG/shared-storage/issues/39) | 64.1 | Meaningful extension; added — [full card](judgements.md) |
+| [Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions](https://swag.cispa.saarland/papers/klein2022hand.pdf) | 72.7 | Tooling or methodology contribution; added — [full card](judgements.md) |
+
+Hand Sanitizers was lowered from the draft 75.2 to **72.7** after complete earlier client-side extraction/automata work was recovered. Generic extraction, pre-images and witness replay are prior art; the final card credits DOM boundary selection and specific browser/JavaScript semantic integration. Shared Storage issue39 is the 2022 disclosure, separately from later timing and queue variants.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

@@ -110,3 +110,22 @@ CVE-2020-0688 post postdates and defers to the ZDI analysis it discusses.
 | [Umbraco LFI Exploitation since 2015](https://medium.com/@qazbnm456/umbraco-lfi-exploitation-d32803661fa3) | product advisory | One CMS file-inclusion chain; no primitive beyond known LFI-to-machine-key exposure. |
 | [How to exploit the DotNetNuke Cookie Deserialization](https://pentest-tools.com/blog/exploit-dotnetnuke-cookie-deserialization) | product advisory | Exploitation guide for a 2017 CVE, restating a known sink. |
 | [Introducing YSoSerial.Net April 2020 Improvements](https://www.mdsec.co.uk/2020/04/introducing-ysoserial-net-april-2020-improvements/) | tooling release note | A changelog for the payload generator; the techniques it packages are nominated elsewhere. |
+
+
+## Additional sweep — 2026-09-10
+
+[Detailed dated evidence](2026-09-10-sweep.md) records 17 lead groups: three survivors for final judgement, four prescreen-held and ten screened. Survivors are the original SecWeb 2020 Cache API study (draft 66.6), ACSAC SW-XSS/scanner (68.3), and the January ITP report’s detailed extensions beyond December 2019 disclosure (71.0). Draft scores include fresh earlier-source comparisons and material qualifications; no final scorecards or list additions are claimed. The outbound inventory contains 2,458 occurrences / 1,871 raw URLs across 71 documents; selected research citations were traced.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 3 new full judgements completed; 3 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](https://secweb.work/papers/some2020remote.pdf) | 66.6 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [Security Study of Service Worker Cross-Site Scripting](https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf) | 68.3 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [Information Leaks via Safari’s Intelligent Tracking Prevention](https://arxiv.org/pdf/2001.07421v1) | 71.0 | Meaningful extension; added — [full card](judgements.md) |
+
+SW-XSS is retained for its scanner/injection method, with the already-fixed import-cache persistence excluded. The January ITP report is scored for its incremental detail beyond December 2019 disclosure.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

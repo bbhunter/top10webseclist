@@ -832,3 +832,46 @@ unexpected finite-preload finding. Novelty is therefore deliberately modest.
 
 Meaningful extension. The clock-expiry idea has explicit prior art, but the NTP
 workflow, tool and preload analysis create a materially more actionable attack.
+
+## 66.8 — [Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On](https://arxiv.org/pdf/1412.1623v1) — Christian Mainka, Vladislav Mladenov, Jörg Schwenk
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Full original v1 read, including evaluation, availability statement and appendix. [Version metadata](https://arxiv.org/abs/1412.1623) establishes 4 December 2014. Component fixes appeared during 2014, including Drupal's January advisory; that advisory does not disclose the complete session-overwrite procedure. The judgement uses the 2014 technical boundary, excludes the later expanded paper and credits no later uptake. Exact first disclosure of every component within 2014 is uncertain. URL and semantic checks against `2014.md` passed.
+
+### Core Contribution
+
+A hostile OpenID provider exercises discovery, association and token validation. The substantive extensions are (1) delaying a token while a second login overwrites session identity/provider state, bypassing rediscovery while retaining the attacker's key handle, and (2) supplying victim local identity through attacker-controlled discovery despite successful verification of the attacker's token. The paper supplies concrete Drupal, Sourceforge and ownCloud flows plus configurable testing profiles. These are web authentication attacks; they require the relevant inconsistent trust bindings, not a cryptographic break.
+
+### Prior Art
+
+Local searches covered OpenID association poisoning, discovery identity, concurrent login and SSO testing in the pre-2014 archive. The following comparisons restrict novelty:
+
+- [Arnott, 8 March 2009](https://blog.nerdbank.net/2009/03/08/openid-association-poisoning/) already gives the malicious-provider association-handle overwrite attack. KC strategy 1 and the purported new attacker model receive no originality credit. The 2010 van Delft/Oostdijk survey repeats it with an unnecessarily stronger interception assumption.
+- [Drupal's February 2011 discovery discussion](https://www.drupal.org/project/drupal/issues/575810) already identifies forged local-identity mapping after intercepted discovery. The residual 2014 adaptation serves the attacker's own metadata and needs no interception of the victim's discovery.
+- The archived 2012 traffic-guided SSO paper and [2014 SSOScan](https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou), especially its §3.3 replay tests, establish active SSO testing. A [January 2010 OpenID framework proposal](https://lists.openid.net/pipermail/openid-general/2010-January/019887.html) even explicitly requests automated association-poisoning tests and names existing security tests. Generic hostile-provider testing is therefore not new; the particular concurrent-state bypass and reproducible expanded profiles are the increment.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 53 | 25% | 13.25 | Major novelty claims have exact prior art; concurrent-state and discovery adaptations remain substantive. |
+| Transferability | 68 | 20% | 13.60 | Correlated issuer/key/identity checks and session state recur across SSO implementations. |
+| Lasting value | 70 | 20% | 14.00 | Detailed adversarial flows and reusable profiles support subsequent audits without relying on later adoption. |
+| Technical soundness | 81 | 15% | 12.15 | White-box analysis and black-box account-access checks support the bounded mechanisms across 11 of 16 tested implementations. |
+| Practical usability | 61 | 10% | 6.10 | Reconstructible procedure, but provider setup and no verified public tool release at v1 impose effort. |
+| Clarity and reproducibility | 77 | 10% | 7.70 | Message sequences and state transitions are explicit; the suite is promised on acceptance despite the abstract's availability claim. |
+
+**Final score: 66.8/100.** Computed with `score.py 53 68 70 81 61 77`.
+
+### Reverification
+
+Fresh backward searches for concurrent OpenID login/key attacks and OpenID testing found the 2010 framework proposal, further narrowing methodology credit. Reopened the candidate's §7.2 session overwrite and §8 availability descriptions, and the earlier SSOScan replay procedure. Strongest objection: the paper packages known trust-binding failures and overclaims four new classes. Strongest favorable case: its concrete concurrent-state bypass defeats an otherwise effective rediscovery check, and the attacker-owned discovery route removes a prior network prerequisite. No claim of first-ever malicious IdP or all-new tooling survives this check. The procedure, rather than vulnerable-site counts, clears the 55-point gate.
+
+### Verdict
+
+Meaningful extension. Keep the distinct validation-bypass compositions, with explicit deduction for the already published poisoning primitive and earlier testing work.

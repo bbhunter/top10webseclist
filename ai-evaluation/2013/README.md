@@ -104,3 +104,23 @@ through score alone. The unique-bid result is the most borderline: it remains
 included because its side-signal extraction plus simulation-guided business-logic
 abuse is a demonstrated reusable method, but its transferability is narrow and
 confidence is therefore Medium.
+
+## Supplemental sweep — 2026-09-10
+
+The [dated sweep evidence](2026-09-10-sweep.md) records mechanism searches and
+research-citation tracing from the archived Markdown. It screened 13 credible
+lead groups: one survivor (TIME, draft 65.5 pending final judgement), six held
+for missing source/date/distinctness evidence, and six excluded as earlier or
+already represented work. The TIME evidence distinguishes its demonstrated
+constituent methods from its explicitly hypothetical combined attack. No curated
+additions or historical judgements were changed by this discovery pass.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [A Perfect CRIME? Only TIME Will Tell](https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf) | 65.5 | Meaningful extension; added — [full card](judgements.md) |
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

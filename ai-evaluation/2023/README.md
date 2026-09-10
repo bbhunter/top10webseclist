@@ -174,3 +174,40 @@ II. Neither addition duplicates the 2023 number-two entry "Exploiting Hardened
 | [Introducing Badsecrets](https://blog.blacklanternsecurity.com/p/introducing-badsecrets) | tooling for known technique | Detects known-key cryptographic material; the ViewState and machine-key techniques it checks are already nominated. |
 | [Microsoft Exchange PowerShell Remoting Deserialization leading to RCE (CVE-2023-21707)](https://starlabs.sg/blog/2023/04-microsoft-exchange-powershell-remoting-deserialization-leading-to-rce-cve-2023-21707/) | product advisory | One Exchange CVE; the PowerShell-remoting attack surface is covered by the 2024 nominations. |
 | [Programming with XAML: Assembly.Load for .NET deserialization](https://russtone.io/2023/05/30/programming-with-xaml/) | already represented | XAML gadget construction restating the ObjectDataProvider technique established in 2017. |
+
+## Independent citation and mechanism sweep — 10 September 2026
+
+The bounded [sweep evidence and complete lead ledger](2026-09-10-sweep.md) records
+**20 lead groups: two survivors for final review, nine held at pre-screen and
+nine screened out of the fresh 2023 shortlist**. The exclusion helper returned
+90 existing URLs. The outbound inventory contained 3,468 occurrences, 2,739
+distinct raw URLs and 88 Markdown sources; only selected research citations
+were traced, not every link individually assessed.
+
+| Candidate | Draft result | State |
+|---|---:|---|
+| [Shared Storage single-URL timing budget bypass](https://github.com/WICG/shared-storage/issues/86) | 69.0 | June 5, 2023 substantive issue; meaningful combination/adaptation proposed. Earlier API leakage and worklet timing warnings explicitly compared. |
+| [DOMLeakify — inline-style ID-existence timing oracle](https://blog.arkark.dev/2023/12/28/seccon-finals) | 63.2 | December 28, 2023 original solver verified; meaningful combination/adaptation proposed against earlier graphics timing attacks. |
+
+These are evidence handoffs with six-category draft scores, **not completed
+formal judgements or curated additions**. The linked sweep indexes every held
+and screened group, including Intruder's independent prototype-pollution
+detection method, additional CTF primitives, and substantive 2023 source
+releases of Sheriff/JAW v3 and PanoptiChrome discovered through 2024 papers.
+The later papers' evaluation results must not be projected back into 2023.
+Shared Storage's July 2022 default-URL attack and February 2024 crash extension
+were referred to the main audit for their proper years. No new faulty archived
+capture was identified; no existing scorecard or history was changed.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 2 new full judgements completed; 2 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Leaking more than log₂ of the URL count with the selectURL gate](https://github.com/WICG/shared-storage/issues/86) | 69.0 | Meaningful extension; added — [full card](judgements.md) |
+| [DOMLeakify: style-attribute ID-existence timing oracle](https://blog.arkark.dev/2023/12/28/seccon-finals) | 63.2 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+
+Shared Storage’s final verdict is Meaningful extension at **69.0**, superseding the delegated combination/adaptation draft label. The complete issue and comments also preserve the later 2024 crash disclosure, which is evaluated in its own year.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

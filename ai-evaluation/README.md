@@ -31,8 +31,12 @@ python .claude/skills/webseclist-judge-reference/scripts/history.py \
 python .claude/skills/webseclist-judge-reference/scripts/history.py verify
 ```
 
-The display threshold is 60 for both provisional `YEAR-ai.md` collections and
-historical missed-item audits. Their evidence gates remain distinct: a past
-curated list also requires a verified publication year, proof that the item was
-never nominated, and a qualifying non-duplicate verdict. Falling below a display
+The historical missed-item gate is **55 or above plus a qualifying non-duplicate
+verdict**. A past curated list also requires a verified publication year and
+evidence that the technique was never nominated. Provisional `YEAR-ai.md`
+collections follow their own collection workflow. Falling below an addition
 threshold is never permission to erase the candidate or its judgement.
+
+The [10 September 2026 all-years audit](2026-09-10-all-years.md) records 41 new
+qualifying techniques from independent 2006–2025 searches and selected research
+citation tracing, with each year's lead ledger, full scores and unresolved work.

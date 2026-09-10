@@ -771,3 +771,58 @@ candidates, so it qualifies only in the new 60–69 band.
 Tooling or methodology contribution. It contributes a reusable method for turning
 web-visible side signals into a simulation-guided business-logic exploit, although
 its reach is narrower than the higher-scoring additions.
+
+---
+
+## 65.5 — [A Perfect CRIME? Only TIME Will Tell](https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf) — Tal Be’ery and Amichai Shulman
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** A Perfect CRIME? Only TIME Will Tell
+- **Author or organisation:** Tal Be’ery and Amichai Shulman
+- **Publication date / novelty cutoff:** March 2013, Black Hat Europe technical disclosure; exact first public day not established.
+- **Reference:** [Original source](https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Choose request lengths on either side of a TCP acknowledgement boundary so a one-byte difference changes browser-observed completion time. The demonstrated HTTP timing signal and separate compression-length recovery experiment are distinct. Their combination into network-observer-free secret extraction is explicitly future work, not a completed exploit.
+
+### Prior Art
+
+[Bortz, Boneh and Nandy, 2007](https://crypto.stanford.edu/~dabo/pubs/papers/webtiming.pdf) already supply browser timing and minimum-sample filtering, while excluding multi-packet requests in their experiment. [Ling et al., INFOCOM2012](https://citeseerx.ist.psu.edu/document?doi=31e7ff7312f34a08a995e5b2f08e948aae7e4995&repid=rep1&type=pdf) passively classify sites using captured SSH-tunnel RTTs; they do not supply the chosen-byte browser boundary. [Gilad and Herzberg, PETS2012](https://www.freehaven.net/anonbib/cache/tcp-tor-pets12.pdf) use spoofed active TCP probes for connection discovery. General compression-length attacks and response extraction are earlier; recovered [CRIME slides](https://docs.google.com/presentation/d/11eBmGiHbYcHR9gL5nDyZChu_-lCa2GizeuOfaLU2HOU/export/pdf) explicitly discuss response gzip, although the mutable export is not an authenticated 2012 snapshot.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 65 | 25% | 16.25 | Concrete chosen-byte boundary measurement beyond passive RTT classification and active connection discovery. |
+| Transferability | 65 | 20% | 13.00 | Protocol-level browser measurement, conditional on connection behavior and observable events. |
+| Lasting value | 72 | 20% | 14.40 | Reusable investigation of whether restricted timing exposes length, assessed at disclosure. |
+| Technical soundness | 68 | 15% | 10.20 | Code and measurements support narrow signal; separate experiments do not prove their combination. |
+| Practical usability | 45 | 10% | 4.50 | Hard-coded boundaries and missing combined recovery leave substantial implementation work. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Detailed explanation, logs and JavaScript support reconstruction within environment limits. |
+
+**Final score: 65.5/100**
+
+### Reverification
+
+- **Facts rechecked:** The full TIME paper, full Ling paper and 43-slide CRIME deck were read during follow-up; main reviewed the source-specific comparison and reopened TIME’s AppendixB/future-work evidence.
+- **Cutoff audit:** All securely dated related papers precede March2013; later BREACH/HEIST are excluded. Mutable CRIME provenance prevents a stronger priority claim.
+- **Independent check:** A new TCP-boundary/acknowledgement path recovered Gilad’s active timing work and resolved Ling’s full-source comparison.
+- **Strongest challenge:** Familiar timing and compression ideas, with no combined secret oracle. **Benefit-of-doubt check:** A demonstrated one-byte-to-RTT amplification remains a useful measurement primitive.
+- **Changes:** Retained 65.5 only for that narrow extension; the CNN demo uses HTTP and hard-coded 2588/2589 parameters, not demonstrated HTTPS secret recovery.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Exact cutoff day and immutable CRIME slide revision unresolved; no historical execution or independent figure-by-figure reproduction.

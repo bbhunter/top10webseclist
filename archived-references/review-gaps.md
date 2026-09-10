@@ -477,3 +477,49 @@ The finalized Top 10 PDF transcription repairs are tracked individually in the [
 ## 10 September 2026 — Top 10 capture repair follow-up
 
 The [complete Top 10 coverage inventory](../ai-evaluation/archive-reviews/2026-09-10-top10-coverage.md) reconciles all 230 unique citations. The fresh pass visually reviewed the 40 PDF-derived documents and source-compared the 57 further flagged captures; four of those yielded additional complete PDFs. Of the 57 capture repairs, 54 are complete and three retain unavailable-illustration gaps on document-gaps.md. The 111 unflagged documents retain the earlier full review after verification that their bodies are unchanged. The 22 companion/duplicate exclusions remain explicit. These completed Top 10 repairs supersede earlier extraction/transcription concerns for the reviewed documents; unrelated nomination and preliminary review packs remain pending.
+
+## 10 September 2026 — historical missed-reference additions
+
+The [all-years audit](../ai-evaluation/2026-09-10-all-years.md) added 40 source identities. Full source reads, source-grounded digests, byline checks and bounded extraction repairs were completed, but the independent archive-validation gate has not been run on the final published files. These 39 documents need that final judgement, including visual/code typography and the French/Russian translation pairs where present. The original PDFs retain figures that text extraction does not reproduce. No `verified` stamp was inferred from successful acquisition or printing.
+
+WebSpec is omitted from this pack because its known remaining figure-icon fault belongs on the generated document-gap report. This pack preserves the distinction between a known fault and a pending judgement; all earlier review packs remain in place.
+
+- [Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On](md/2014/do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign.md)
+- [On the security of modern Single Sign-On Protocols – OpenID Connect 1.0](md/2015/security-modern-single-sign-protocols-openid-connect-1-0.md)
+- [On the Content Security Policy Violations due to the Same-Origin Policy](md/2016-17/content-security-policy-violations-due-same-origin-policy.md)
+- [Information Leaks via Safari’s Intelligent Tracking Prevention](md/2020/information-leaks-safaris-intelligent-tracking-prevention.md)
+- [Well, That Escalated Quickly!](md/2016-17/well-that-escalated-quickly.md)
+- [SECCON CTF 2023 Finals: Author Writeups](md/2023/2023-blog-arkark-dev-seccon-ctf-2023-finals-author-writeups.md)
+- [OpenID association poisoning](md/2009/blog-nerdbank-net-openid-association-poisoning.md)
+- [.NET serialiception](md/2016-17/blog-scrt-ch-net-serialiception.md)
+- [PHP :: Sec Bug #72663 :: Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization](md/2016-17/bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization.md)
+- [Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning](md/2021/towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning.md)
+- [Lateral SQL Injection](md/2008/lateral-sql-injection.md)
+- [Windows DNS Server Cache Poisoning](md/2007/windows-dns-server-cache-poisoning.md)
+- [Shared Storage Return Times Outside of Worklet Appear to Be Dependent on Activity in Worklet](md/2024/2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet.md)
+- [Problem with sharedStorage's described use of k-anonymity](md/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.md)
+- [Leaking more than log_2(|URLs|) bits of data with the selectURL gate](md/2023/2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate.md)
+- [Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis](md/2021/talking-about-my-generation-targeted-dom-based-xss-exploit-generation-analysis.md)
+- [HTTP/2: In-depth analysis of the top four flaws](md/2016-17/http-2-depth-analysis-top-four-flaws.md)
+- [Safari: a tale of betrayal and revenge](md/2010/lcamtuf-blogspot-com-safari-tale-betrayal-revenge.md)
+- [How to Hack Millions of Routers](md/2010/how-hack-millions-routers.md)
+- [A Perfect CRIME? Only TIME Will Tell](md/2013/perfect-crime-only-time-will-tell.md)
+- [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](md/2022/sok-exploring-current-future-research-directions-xs-leaks-through-model.md)
+- [Practical Decryption exFiltration: Breaking PDF Encryption](md/2019/practical-decryption-exfiltration-breaking-pdf-encryption.md)
+- [Bypassing CSP with dangling iframes](md/2022/2022-portswigger-research-bypassing-csp-dangling-iframes.md)
+- [JSON hijacking for the modern web](md/2016-17/2016-portswigger-research-json-hijacking-modern-web.md)
+- [Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications](md/2025/be-aware-what-you-let-pass-demystifying-url-based-authentication-applications.md)
+- [Bugtraq: Whitepaper by Amit Klein: "HTTP Response Smuggling"](md/2006/seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling.md)
+- [Full Disclosure: Advisory 03/2007: Multiple Browsers Cross Domain Charset Inheritance Vulnerability](md/2007/seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability.md)
+- [The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives](md/2025/power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives.md)
+- [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](md/2020/remote-local-exacerbating-web-attacks-service-workers-caches.md)
+- [Advisory 02/2009: PHPIDS unserialize() Vulnerability](md/2009/2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability.md)
+- [Fingerprinting Firefox users with cached intermediate CA certificates (#fiprinca)](md/2016-17/shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca.md)
+- [Service Workers: New APIs = New Vulns = Fun++](md/2015/sirdarckcat-blogspot-com-service-workers-new-apis-new-vulns-fun.md)
+- [Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)](md/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2.md)
+- [Security Study of Service Worker Cross-Site Scripting](md/2020/security-study-service-worker-cross-site-scripting.md)
+- [Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions](md/2022/hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions.md)
+- [In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web](md/2025/dom-we-trust-exploring-hidden-dangers-reading-dom-web.md)
+- [Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications](md/2018/pride-prejudice-progressive-web-apps-abusing-native-app-like-applications.md)
+- [An Empirical Analysis of XSS Sanitization in Web Application Frameworks](md/2011/empirical-analysis-xss-sanitization-web-application-frameworks.md)
+- [Молотком по Битриксу: Выявляем 0day-уязвимости популярной CMS](md/2010/xakep-ru-0day-cms.md)

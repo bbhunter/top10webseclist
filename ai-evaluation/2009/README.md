@@ -75,3 +75,20 @@ for the nominated i8jesus cross-protocol item was found to be a parked domain;
 the fault was recorded centrally in the archive manifest and the generated
 needs-work index. This audit did not run the reference archiver or refresh
 either web application.
+
+## Repeat discovery sweep — 2026-09-10
+
+[Detailed sweep evidence](2026-09-10-sweep.md) records 14 lead rows (13 clusters), citation traces, exact queries and coverage limits. The strongest new leads are PHP object-graph exploitation and the 2009 PHP-filesystem normalization extension; hardened-PHP post-exploitation needs source recovery. The sweep checked 98 known year URLs and the outbound inventory spanning 95 archived source files. No new scorecards or curated edits were made in this discovery phase. Existing historical 60-point decisions remain preserved above, with the 59.3 EV-SSL score flagged for reconciliation under the current 55-point gate.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 2 new full judgements completed; 2 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [PHPIDS unserialize() Vulnerability: Reusing Framework Object Chains](https://sektioneins.de/advisories/advisory-022009-phpids-unserialize-vulnerability.html) | 79.2 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [OpenID association poisoning](https://blog.nerdbank.net/2009/03/08/openid-association-poisoning/) | 63.0 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+
+The additional [OpenID association-poisoning disclosure](https://blog.nerdbank.net/2009/03/08/openid-association-poisoning/) came from the 2014 malicious-IdP prior-art trace. The PHP filesystem cluster remains held for its exact increment over the December 2008 path-truncation source; its initial advance recommendation did not become a completed judgement. Hardened-PHP post-exploitation and failed-source leads remain held.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

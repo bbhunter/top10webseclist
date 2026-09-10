@@ -761,3 +761,38 @@ restored gadget.
   insight, and it generalises to any process-wide setting reachable from a
   gadget.
 - **Changes after reverification:** none.
+
+## 74.8 — [Practical Decryption exFiltration: Breaking PDF Encryption](https://www.pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf) — Jens Müller, Fabian Ising, Vladislav Mladenov, Christian Mainka, Sebastian Schinzel, Jörg Schwenk
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium-high
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Full 15-page paper, appendix and project page read during the sweep; evaluation tables were visually checked. The [author announcement](https://web-in-security.blogspot.com/2019/09/pdfex-major-security-flaws-in-pdf.html) establishes public disclosure on 30 September 2019, preceding November CCS. Private May reporting is not public priority. URL/semantic exclusions passed; the browser PDF viewers and HTTP-capable actions provide a direct web-security connection.
+
+### Core Contribution and Prior Art
+
+An attacker modifies encrypted PDF data and delivers it to a recipient who decrypts it. Mixed encrypted/plain objects and references route resulting plaintext into external requests. A second construction reuses the AESV3 permission field as known plaintext for CBC gadgets, with PDF-specific object-stream and string handling. [EFAIL, USENIX 2018](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-poddebniak.pdf), §§3–5, already provides malleability gadgets and Deflate backreferences that remove random fragments. Those concepts are not new here. Local PDF/encryption and later PDF-injection citations were checked for duplication; older URI actions alone do not supply the encrypted-object construction. The increment is the PDF-specific composition and reusable permission-block gadget source.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 70 | 25% | 17.50 | Substantial PDF object-level adaptation above EFAIL gadgets and compression. |
+| Transferability | 70 | 20% | 14.00 | Shared document model across viewers; not every encrypted format. |
+| Lasting value | 78 | 20% | 15.60 | Reusable analysis of mixed encryption, references and active rendering. |
+| Technical soundness | 86 | 15% | 12.90 | Detailed constructions, threat model and differentiated implementation results. |
+| Practical usability | 64 | 10% | 6.40 | Requires ciphertext modification, recipient decryption and sometimes interaction; encoding limits matter. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Explicit objects, operations and versions; published evidence was not independently executed. |
+
+**Final score: 74.8/100.** Computed with `score.py 70 70 78 86 64 84`.
+
+### Reverification
+
+Fresh backward searches targeted encrypted-PDF Identity filters, permission fields and exfiltration, rather than just the paper title. The sweep reopened EFAIL and corrected its initial impression: compression-assisted removal of random fragments was already known. Final review rechecked the announcement and PDF-specific permission/compression evidence. Strongest objection is EFAIL applied to another renderer; the permission-field gadget source and PDF reference/object-stream constraints create a meaningful adaptation. Results distinguish some leakage in 27 viewers from complete plaintext in 21, with browser interaction differences. Later PDF attacks, fixes and popularity give no scoring credit.
+
+### Verdict
+
+Meaningful combination or adaptation. Keep PDFex's document-specific engineering, without claiming a new CBC attack class or universal automatic full-document recovery.

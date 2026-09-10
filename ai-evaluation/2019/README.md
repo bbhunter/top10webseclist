@@ -119,3 +119,31 @@ without describing the .NET 4.8 type-check bypass.
 | [RCEvil.net (BSides Iowa)](https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf) | already represented | Payload generation for ViewState with a known machine key; the technique is the 2019 nomination. |
 | [Bypassing Low Type Filter in .NET Remoting](https://www.tiraniddo.dev/2019/10/bypassing-low-type-filter-in-net.html) | scope mismatch | Concerns the TCP and IPC transports; the HTTP-channel work is nominated separately. |
 | [Analysis and exploitation of CVE-2019-10068, Kentico CMS](https://dreadlocked.github.io/2019/10/25/kentico-cms-rce/) | product advisory | Independent analysis of one product CVE; no distinct primitive. |
+
+## Supplemental sweep — 10 September 2026
+
+The [dated evidence handoff](2026-09-10-sweep.md) records a bounded mechanism and
+archived-citation sweep against 72 known URLs and 3,058 outbound inventory rows.
+It retains **13 credible candidate groups: 1 survivor, 6 held pre-screen and 6
+screened**. PDFex has a full-source evidence digest, fresh pre-cutoff comparison
+against EFAIL, and a helper-verified **draft 74.8/100** (Meaningful
+combination/adaptation). This is not a final judgement or list addition.
+
+Held leads are generated .NET machine-key persistence, Netflix/Google HTTP/2
+resource-exhaustion variants, PDF signature spoofing, Shadow Workers, Jenkins
+Part 1 dynamic routing, and Covert Content Attacks on encrypted email. Each hold
+states its missing source, chronology, scope or novelty evidence. The note also
+records citation-derived wrong-year and already-covered results, exact searches,
+weak non-English coverage and retrieval limitations. No new confirmed faulty
+archive capture was found; curated files and score/history records were not
+changed by this worker.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Practical Decryption exFiltration: Breaking PDF Encryption](https://www.pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf) | 74.8 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

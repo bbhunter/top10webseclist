@@ -534,3 +534,113 @@ non-duplicate novelty verdict); `REMOVED` means it remains only in this audit.
   incomplete prototype and prior-art-heavy components keep it below 60.
 - **Evidence gaps:** No end-to-end worm or independent reproduction validates the
   complete propagation and live-update claim.
+
+---
+
+## 76.6 — [Multiple Browsers Cross Domain Charset Inheritance](https://seclists.org/fulldisclosure/2007/Feb/548) — Stefan Esser
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Multiple Browsers Cross Domain Charset Inheritance
+- **Author or organisation:** Stefan Esser
+- **Publication date / novelty cutoff:** 23 February 2007, original dated Full Disclosure advisory. October 2006 was private notification and a nontechnical teaser.
+- **Reference:** [Original source](https://seclists.org/fulldisclosure/2007/Feb/548). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+An embedding origin supplies an otherwise unspecified charset to a victim frame. Reflected UTF-7 then becomes executable markup in the victim origin, including browsers without UTF-7 autodetection. Explicit victim charset, framing restrictions and absence of injected text remain boundaries.
+
+### Prior Art
+
+[Yair Amit’s 21 December 2005 Google advisory](https://seclists.org/vulnwatch/2005/q4/74) already explains UTF-7 filter bypass and missing charset, relying on IE Auto-Select. [WebKit bug 6118](https://www2.webkit.org/show_bug.cgi?id=6118), December 2005, documents frame charset inheritance for compatibility. The security composition changes who controls interpretation; neither earlier source establishes that exploitation route. The local 2006 encoding and Google Search Appliance threads cover different encoding controls.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 74 | 25% | 18.50 | Cross-origin inheritance removes the autodetection precondition of earlier UTF-7 attacks. |
+| Transferability | 78 | 20% | 15.60 | The interpretation-boundary test applies across engines and unlabelled applications. |
+| Lasting value | 76 | 20% | 15.20 | Inherited parsing metadata offers a reusable security-testing question at disclosure. |
+| Technical soundness | 80 | 15% | 12.00 | Short causal chain and explicit affected/unaffected conditions; no claim to override explicit charset. |
+| Practical usability | 78 | 10% | 7.80 | Simple construction within the stated framing, input and charset requirements. |
+| Clarity and reproducibility | 75 | 10% | 7.50 | Clear explanation and versions; standalone exploit deliberately withheld. |
+
+**Final score: 76.6/100**
+
+### Reverification
+
+- **Facts rechecked:** Main reviewer reread the complete recovered Esser and Watchfire advisories; reopened WebKit’s original inheritance discussion. The sweep read the author’s next-day explanation and same-day Mozilla technical confirmation.
+- **Cutoff audit:** Private October reporting does not move the public contribution to 2006; later bug comments are excluded.
+- **Independent check:** Parent/charset/UTF-7 searches backward from February and the separate compatibility-bug path found component prior, without establishing the same earlier attack.
+- **Strongest challenge:** Both ingredients are old. **Benefit-of-doubt check:** An attacker-controlled cross-origin interpretation route is a capability change, not merely another encoded string.
+- **Changes:** Retained the narrow combination verdict and all six independently grounded draft scores. No exploit was run.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** An earlier exact attack may survive in an unindexed source; historical browsers were not independently exercised.
+
+---
+
+## 66.1 — [Windows DNS Server Cache Poisoning](https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf) — Amit Klein
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Windows DNS Server Cache Poisoning
+- **Author or organisation:** Amit Klein
+- **Publication date / novelty cutoff:** 13 November 2007, public-disclosure timeline and original author release; March–June cover dates are research dates.
+- **Reference:** [Original source](https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+A black-box DNS transaction-ID analysis identifies a counter transition at which only eight next IDs remain. Browser-triggered CNAME conditioning brings the generator to that boundary before an external attacker races spoofed DNS replies. The browser does not send spoofed UDP.
+
+### Prior Art
+
+The [1997 BIND advisory](https://marc.info/?l=best-of-security&m=96843707620680) already describes query-ID prediction and spoofed-answer races. Klein’s [July 2007 BIND9 paper, author index](https://www.securitygalore.com/site3/dns_cache_poisoning) and [August BIND8 paper](https://dl.packetstormsecurity.net/papers/attack/BIND_8_DNS_Cache_Poisoning.pdf) already supply PRNG analysis and browser/CNAME delivery. The increment is the concrete Windows bit-field/counter invariant, not that delivery chain. The [14 November Scanit disclosure](https://seclists.org/fulldisclosure/2007/Nov/346) documents independent analysis and credits Klein; it is adjacent attribution, not evidence used to improve the November13 score.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58 | 25% | 14.50 | A concrete generator-analysis increment within an established attack workflow. |
+| Transferability | 56 | 20% | 11.20 | Partial-state reasoning generalizes, though this bit invariant is implementation-specific. |
+| Lasting value | 65 | 20% | 13.00 | Reusable black-box analysis and discrimination of query artifacts from predictability. |
+| Technical soundness | 80 | 15% | 12.00 | Explicit model, measured invariants and complete predictor; unknown internals acknowledged. |
+| Practical usability | 70 | 10% | 7.00 | Small candidate set, but recursion, cache state, spoofing and racing are material constraints. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Detailed algorithm, fields and Perl appendix allow reconstruction. |
+
+**Final score: 66.1/100**
+
+### Reverification
+
+- **Facts rechecked:** Full 13-page source and appendices were read during the sweep; main reviewer reopened the [November13 release](https://seclists.org/bugtraq/2007/Nov/175), August paper and detailed July mechanism comparison.
+- **Cutoff audit:** July/August precede the original paper’s explicit November release; private Scanit reporting is not public priority.
+- **Independent check:** Searches by Windows counter prediction and backward citation tracing recovered the 1997 predecessor. No verified earlier matching Windows invariant was established.
+- **Strongest challenge:** This retargets an established poisoning workflow. **Benefit-of-doubt check:** Deriving an efficient partial-state predictor is a real, modest research extension.
+- **Changes:** Browser delivery and proxy influence receive no originality credit. Retained 66.1, without later DNS events or uptake.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Historic resolver experiments were not rerun. Some old prior URLs failed; July technical sections were recovered from a contemporaneous copy. PDF text font mapping needs care during preservation.

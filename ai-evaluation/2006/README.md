@@ -63,3 +63,27 @@ other work existed.
 **17 credible leads** were retained: 10 advanced to full scorecards, six qualified
 on score/verdict, five were newly added, and one was the existing Cross-Site Cooking
 entry. BeEF would clear the score gate but failed the mandatory year-proof gate.
+
+## Repeat sweep — 2026-09-10
+
+The [dated sweep evidence](2026-09-10-sweep.md) records 14 credible leads from a
+bounded mechanism search and tracing citations in the 78 archived Markdown files.
+Four were forwarded for full judgement: HTTP Response Smuggling, Puppetnets
+(with a first-disclosure year caveat), Cross Context Scripting with Sage, and Six
+Degrees of XSSploitation. Other leads include same-work PDFs, pre-2006 research,
+previously evaluated work, and evidence holds. This discovery pass added no entries
+and changed no existing scorecards. The current skill gate is **55**, whereas the
+August account above describes its then-used 60-point gate. See the dated evidence
+for all lead URLs, exclusion decisions, exact queries and coverage limitations.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [HTTP Response Smuggling](https://seclists.org/bugtraq/2006/Feb/364) | 78.0 | Meaningful extension; added — [full card](judgements.md) |
+
+Cross Context Scripting with Sage is already represented by the nominated Hacking RSS Feeds slides, including Sage/local-file behavior; the full-source nomination comparison resolves the initial duplicate question. Puppetnets remains held for the 2005 project-site/publication boundary. Six Degrees of XSSploitation remains held because the recovered deck does not establish the complete incremental method strongly enough. No completed rejected scorecard is implied by these prescreens.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

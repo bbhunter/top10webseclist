@@ -672,3 +672,58 @@ this audit's explicit 60-point rule.
 Tooling or methodology contribution. The overlap with Sidebuster keeps the
 score below 70; the black-box classifier and Fisher metric remain distinct and
 strong enough for the historical gate.
+
+---
+
+## 71.8 — [An Empirical Analysis of XSS Sanitization in Web Application Frameworks](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf) — Joel Weinberger, Prateek Saxena, Devdatta Akhawe, Matthew Finifter, Richard Shin and Dawn Song
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** An Empirical Analysis of XSS Sanitization in Web Application Frameworks
+- **Author or organisation:** Joel Weinberger, Prateek Saxena, Devdatta Akhawe, Matthew Finifter, Richard Shin and Dawn Song
+- **Publication date / novelty cutoff:** 9 February 2011, UCB/EECS-2011-11 primary report; later ESORICS paper is a revised version of the same contribution.
+- **Reference:** [Original source](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+The report compares framework escaping guarantees with application contexts, DOM transitions and policy requirements. Template inspection and sampled PHP execution reveal gaps that a context-only sanitizer contract cannot express. Its reusable contribution is the structured framework/application audit, not invention of context-sensitive escaping.
+
+### Prior Art
+
+[SANER](https://seclab.nu/static/publications/ssp2008saner.pdf), May 2008, already combines sanitization graphs with dynamic tests. [BLUEPRINT](https://www.cs.columbia.edu/~junfeng/14fa-e6121/papers/blueprint.pdf), 2009, already models multiple parsers and unsafe DOM re-entry. [SCRIPTGARD](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/scriptgard-paper-update-10-1-2010-0404.pdf), October-stamped 2010 report, already covers nested contexts, automatic decoding and path-dependent sanitizer order. The candidate adds comparative framework coverage and explicit multi-attribute application policy requirements. Locally archived BEK is a different symbolic-transducer analysis and its verified August2011 presentation is later; it is an exclusion comparison, not proven pre-February prior art.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 61 | 25% | 15.25 | Systematic coverage and policy comparison extends substantial earlier context/testing foundations. |
+| Transferability | 83 | 20% | 16.60 | Audit method spans languages, templates and server/client boundaries. |
+| Lasting value | 80 | 20% | 16.00 | Interacting parsers and application trust policies offer durable research questions as of February. |
+| Technical soundness | 68 | 15% | 10.20 | Definitions and examples support gaps; dynamic coverage and original inconsistencies limit guarantees. |
+| Practical usability | 68 | 10% | 6.80 | Useful audit recipe; broad reproduction requires custom instrumentation and manual coverage. |
+| Clarity and reproducibility | 69 | 10% | 6.90 | Tables and examples communicate the method, but version/count discrepancies and incomplete recipes remain. |
+
+**Final score: 71.8/100**
+
+### Reverification
+
+- **Facts rechecked:** Both original report and later proceedings version were read in the sweep. Main reviewer reopened the February PDF and SCRIPTGARD; source-specific method/table checks are in the dated evidence record.
+- **Cutoff audit:** The original Berkeley record fixes February9. Later proceedings polish and deployment history are excluded.
+- **Independent check:** Policy/framework searches and citation backtracking challenged the initial browser-model novelty claim; SCRIPTGARD supplies the strongest earlier model.
+- **Strongest challenge:** Context/decoding and sanitizer placement are already established. **Benefit-of-doubt check:** Comparing framework contracts with richer application policies still supplies a transferable method.
+- **Changes:** Score only this methodology. Django escaping mismatches are not confirmed-XSS rates; thirteen-framework prose/fourteen-row table and sampling limits remain limitations.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No reproduction of the empirical corpus; heuristic sanitizer identification and sampled paths cannot establish complete coverage. Earlier exact comparative studies may remain undiscovered.

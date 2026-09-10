@@ -94,3 +94,36 @@ Chapman and Evans's black-box side-channel detector is the only newly added
 Sidebuster while crediting the distinct repeated-crawl, multi-dimensional
 classifier and Fisher-criterion methodology. This audit did not run the
 reference archiver or refresh either web application.
+
+## Follow-up sweep — 2026-09-10
+
+The [bounded repeat sweep](2026-09-10-sweep.md) checked 77 current exclusion
+URLs and the 1,395-line outbound-citation inventory. Ten lead groups were
+retained: one candidate for full judgement, three held for source/date or
+contribution clarification, and six exclusions/alternative artifacts. No new
+scorecard or curated-list edit was made in this discovery pass.
+
+| Lead | Screening disposition |
+|---|---|
+| [A Systematic Analysis of XSS Sanitization in Web Application Frameworks](https://mfinifter.github.io/papers/esorics2011.pdf) | Advance for full judgement as framework-audit methodology; ESORICS 2011 verified. |
+| [Amberate](https://www.jstage.jst.go.jp/article/jssst/28/4/28_4_4_175/_article/-char/en) | Hold: 2011 journal paper verified, but author site reports public 2009 presentations; no distinct 2011 increment established. |
+| [Exploiting misuse of Python's pickle](https://blog.nelhage.com/2011/03/exploiting-pickle/) | Screened: explicitly known technique; cited antecedent to already-added Sour Pickles. |
+| [File Upload XSS Vulnerability in Wordpress](https://nealpoole.com/blog/2011/04/file-upload-xss-vulnerability-in-wordpress/) | Screened: application of documented MIME sniffing and active upload behavior. |
+| [Invisible arbitrary CSRF file upload](http://blog.kotowicz.net/2011/05/invisible-arbitrary-csrf-file-upload-in.html) | Hold: cited follow-up to nominated upload research; original body unavailable, separate increment unverified. |
+| [Imgur.com session hijacking](http://blog.kotowicz.net/2011/07/imgurcom-session-hijacking.html) | Hold: citation in nominated fake-CAPTCHA research; body unavailable, likely related but no definitive novelty judgement. |
+| [Rails CSRF protection bypass](http://weblog.rubyonrails.org/2011/2/8/csrf-protection-bypass-in-ruby-on-rails) | Related advisory for nominated Flash + 307 CSRF work, no independent new lead established. |
+| [CSS quoting disclosure](http://htmlpurifier.org/security/2010/css-quoting) | Prior-year citation in candidate bibliography; do not move into 2011. |
+| [CAPTCHA paper/slides](https://cdn.elie.net/static/files/text-based-captcha-strengths-and-weaknesses/text-based-captcha-strengths-and-weaknesses-paper.pdf) and [BEK PDF](https://www.usenix.org/events/sec11/tech/full_papers/Hooimeijer.pdf) | Alternative artifacts of nominated/already-added research. |
+| [XSS without the browser](http://kyleosborn.org/2011/06/19/toorcon-seattle-2011-xss-without-the-browser/) | Earlier artifact explicitly linked by nominated Hidden XSS work; no separate contribution established. |
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [An Empirical Analysis of XSS Sanitization in Web Application Frameworks](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf) | 71.8 | Tooling or methodology contribution; added — [full card](judgements.md) |
+
+The surviving framework study is cited at its original 9 February 2011 Berkeley technical report, An Empirical Analysis of XSS Sanitization in Web Application Frameworks; the later ESORICS version is the same research. Hasegawa’s MBCS JSON earlier-year handoff remains a prior/disclosure lead, not an extra completed judgement.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

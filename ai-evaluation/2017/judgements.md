@@ -1177,3 +1177,77 @@ the target is dynamically linked, which is a much broader precondition.
 
 Original technique. The linker primitive was known; delivering it remotely over
 HTTP without a writable path was not.
+
+## 69.7 — [Well, That Escalated Quickly! How Abusing Docker API Led to Remote Code Execution, Same Origin Bypass and Persistence in the Hypervisor via Shadow Containers](https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf) — Michael Cherny, Sagie Dulce
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Full 18-page whitepaper text read during the sweep and causal steps reopened for final review. Cover and Black Hat program establish July 2017; exact first release day remains unresolved, so use pre-July prior art. Image-only implementation examples were not independently transcribed or executed. The research was found through the archived conference program and passed URL and semantic exclusions.
+
+### Core Contribution
+
+A browser-compatible Docker build request creates an unprivileged container using host networking. That foothold supplies LLMNR answers which first serve an attacker page and later resolve its hostname to loopback, giving the browser full same-origin access to the local Docker API. Restart-enabled container/VM state transfer supplies persistence. The web contribution is this staged origin-boundary escalation, conditional on an exposed API and the described virtual networking; universal concealment is not demonstrated.
+
+### Prior Art
+
+Local rebinding and developer-service searches were compared with [Jackson et al., CCS 2007](https://crypto.stanford.edu/dns/dns-rebinding.pdf), §§3–5: intranet/loopback rebinding and external-DNS filtering already exist. [BreakPoint Labs, October 2016](https://breakpoint-labs.com/multicast-name-poisoning/) demonstrates multicast-name poisoning, while the candidate itself quotes Docker's earlier TCP/CSRF warning. [Webpack issue 887, April 2017](https://github.com/webpack/webpack-dev-server/issues/887) already reaches a developer service with ordinary DNS rebinding. None of those primitives is new. The increment bootstraps a local responder through a restricted simple request, then changes a non-external-DNS resolver path to unlock the full API.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 68 | 25% | 17.00 | Connects restricted web API execution to virtual-network host rebinding. |
+| Transferability | 65 | 20% | 13.00 | Local HTTP services and alternate resolvers recur; the initial foothold is conditional. |
+| Lasting value | 72 | 20% | 14.40 | Reveals a reusable resolver/interface boundary to audit. |
+| Technical soundness | 78 | 15% | 11.70 | Explicit causal chain supports the narrower result, not universal invisibility. |
+| Practical usability | 64 | 10% | 6.40 | Reconstructible, with exposed API, networking and multi-stage prerequisites. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Ordered explanation; some details are image-only and no independent execution was attempted. |
+
+**Final score: 69.7/100.** Computed with `score.py 68 65 72 78 64 72`.
+
+### Reverification
+
+The sweep independently searched pre-July Docker build/CSRF, LLMNR/browser and NetBIOS/SOP combinations, then reopened the Stanford predecessor. Final review repeated the resolver search and reread the initial build and subsequent host-rebinding sequence. Strongest objection: all components were known, and initial execution already provides network access. The meaningful gain is escalation from that constrained container to unrestricted daemon operations using a resolver route outside the assumed DNS defense. Later container attacks, fixes and adoption were excluded from every category.
+
+### Verdict
+
+Meaningful combination or adaptation. Keep the staged browser/API/resolver chain with its prerequisites and limited evidence of persistence concealment.
+
+## 69.7 — [Fingerprinting Firefox users with cached intermediate CA certificates (#fiprinca)](https://shiftordie.de/blog/2017/02/21/fingerprinting-firefox-users-with-cached-intermediate-ca-certificates-fiprinca/) — Alexander Klink
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Original article read in full and reopened for final review. Public by 21 February 2017; reported privately on 27 January, with exact bug-opening time unresolved. Use pre-27-January prior art conservatively and do not turn private submission into public disclosure. URL and semantic exclusions passed; adjacent author research supplied the lead.
+
+### Core Contribution and Prior Art
+
+An image request to a host omitting an intermediate certificate succeeds only when Firefox can complete the chain from its cache. Load/error events expose this state to a remote website, including state shared with private browsing. The author describes deriving a 300-plus-intermediate probe corpus from public TLS scans. Local archive comparison with [Aggarwal et al., USENIX 2010](https://www.usenix.org/events/sec10/tech/full_papers/Aggarwal.pdf), §5.2, shows that CA-cache browsing-history leakage to a **local attacker** was already explicit. The distinct contribution is the remote incomplete-chain oracle and corpus-building method. Earlier TLS-session tracking and HSTS supercookies further preclude claiming security-state tracking itself as new.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 72 | 25% | 18.00 | Turns known local CA-cache leakage into a remote web-observable oracle. |
+| Transferability | 58 | 20% | 11.60 | Depends on the demonstrated browser's certificate-cache behavior. |
+| Lasting value | 72 | 20% | 14.40 | Reusable test for security-state caches crossing privacy boundaries. |
+| Technical soundness | 78 | 15% | 11.70 | Explicit observable and corpus method, with reliability limits acknowledged. |
+| Practical usability | 60 | 10% | 6.00 | Simple probes but many requests and changing third-party hosts. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Minimal probe and detailed corpus-processing steps. |
+
+**Final score: 69.7/100.** Computed with `score.py 72 58 72 78 60 80`.
+
+### Reverification
+
+Fresh certificate-cache/privacy and pre-cutoff TLS-state searches found the 2010 predecessor; final review added image-event-specific searches and reread that paper's local-attacker paragraph alongside the complete article. The strongest duplicate objection covers the cache privacy insight, not remote observation. Changing probe servers, naturally added certificates and false results limit reliability. Unique identification accuracy, geographic inference and deliberately planted identifiers remain proposed possibilities, not measured guarantees. Later mitigation history and browser obsolescence do not affect the score.
+
+### Verdict
+
+Meaningful extension. Retain the remote oracle and reproducible corpus method, with local-cache leakage credited to the earlier research.

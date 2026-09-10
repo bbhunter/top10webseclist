@@ -439,3 +439,58 @@ usernames from public email addresses, and proposes direct password brute force.
 - **Reasoning:** Useful case study, but below the gate because the component techniques
   and their combination were already routine.
 - **Evidence gaps:** None material to the novelty verdict.
+
+---
+
+## 78.0 — [HTTP Response Smuggling](https://seclists.org/bugtraq/2006/Feb/364) — Amit Klein
+
+**KEPT** · Meaningful extension · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Author:** Amit Klein.
+- **Publication date / novelty cutoff:** 20 February 2006, dated original mailing-list disclosure; independently cross-posted to [WebAppSec](https://seclists.org/webappsec/2006/q1/240).
+- **Reference:** Full whitepaper embedded in the linked disclosure.
+
+### Core Contribution
+
+The extension is a response-side parser-differential testing method: defenses and receivers disagree about line delimiters, duplicate lengths and status lines. Its worked counterexamples defeat CRLF-only blocking and even header-boundary markers. Cache poisoning itself is earlier work.
+
+### Prior Art
+
+- **Earliest verified related work:** Klein's [Divide and Conquer](https://dl.packetstormsecurity.net/papers/general/whitepaper_httpresponse.pdf), March 2004, already demonstrates response splitting, cache poisoning and cross-user response substitution.
+- **Closest precursor:** Linhart, Klein, Heled and Orrin's [HTTP Request Smuggling](https://www.cgisecurity.com/lib/HTTP-Request-Smuggling.pdf), June 2005, exploits disagreement over request framing, including duplicate Content-Length.
+- **Distinct contribution:** Applying this model to the response-processing and mitigation boundary, with concrete CR-only PHP/proxy and marker-defense counterexamples. This is an extension, not the invention of parsing discrepancies.
+- **Local comparison:** The nominated [Response Splitting Filter Evasion](http://ha.ckers.org/blog/20060827/response-splitting-filter-evasion/) was read in the local archive. Its August 2006 slash-free Content-Type trick does not already record this February contribution. The full 2006 nomination and missed sections contain no equivalent entry.
+- **Evidence boundary:** Original 2004/2005 PDFs and 2006 disclosure only. Later classifications were retrieval pointers, never evidence of lasting value or originality.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 70 | 25% | 17.50 | Nontrivial response-defense extension of explicitly credited splitting and request smuggling. |
+| Transferability | 85 | 20% | 17.00 | Comparing chained response parsers applies across servers, proxies and browsers. |
+| Lasting value | 80 | 20% | 16.00 | At disclosure, the systematic disagreement model supports continued testing beyond the named products. |
+| Technical soundness | 80 | 15% | 12.00 | Worked framing examples, named versions and explicit cache/timing failure conditions. |
+| Practical usability | 73 | 10% | 7.30 | Concrete probes; some attacks require two injection locations or a compatible proxy. |
+| Clarity and reproducibility | 82 | 10% | 8.20 | Payload structure, expected interpretation and environment details are provided. |
+
+**Final score: 78.0/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Reopened both dated original cross-posts and reread the full Bugtraq body, including appendix. Reopened the 2005 PDF and inspected the downloaded 2004 source's mechanism and related-work sections.
+- **Cutoff audit:** Both predecessors predate February 2006. The later August nomination is an exclusion comparison, not prior art.
+- **Independent prior-art check:** Searched backward for response smuggling, then followed the candidate's own splitting/request-smuggling references and compared their wire-framing examples. Local mechanism and nomination searches found the distinct August trick.
+- **Strongest challenge:** Most building blocks and outcomes were already known. The score credits the demonstrated response-side counterexamples and testing framework, not their individual ingredients.
+- **Benefit-of-doubt check:** Different constraints on allowable injected data matter; dismissing all of it as another cache-poisoning payload would erase the extension.
+- **Changes after reverification:** Retained the extension verdict; no original-class claim. No historical exploits were run.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** Clears the 55-point gate with a distinct, demonstrated response-parser contribution and verified 2006 disclosure.
+- **Evidence gaps:** An unsuccessful backward search cannot exclude obscure earlier equivalents; experiments were evaluated from the original report rather than rerun.

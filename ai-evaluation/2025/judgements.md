@@ -1755,3 +1755,171 @@ Reopened the historical implementation, complete July preprint and its differenc
 **Tooling or methodology contribution; supporting archive inclusion in 2025.** The 61.3-point methodology contribution passes the historical 55-point gate. Include it once under 2025, grouping the preprint with OriginMail, and exclude the later NDSS copy from the 2026 display.
 
 ---
+
+---
+
+## 67.8 — [Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications](https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf) — Qiyi Zhang, Fengyu Liu, Zihan Lin and Yuan Zhang
+
+**KEPT** · Tooling or methodology contribution · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Title:** Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications.
+- **Authors:** Qiyi Zhang, Fengyu Liu, Zihan Lin and Yuan Zhang, Fudan University.
+- **Publication date:** 2025; CCS proceedings dated 13–17 October. [Artifact metadata](https://zenodo.org/records/16990216) records 29 August 2025.
+- **Reference:** Original author-hosted 15-page proceedings paper linked above.
+
+### Core Contribution
+
+UABScan maps framework versions and configuration to routing transformations, extracts authentication-related URL code slices, and compares risky checks with sanitization patterns. It turns known normalization bypasses into a targeted static audit method. It reports candidate inconsistencies; exploitation still needs manual validation.
+
+### Prior Art
+
+- **Novelty cutoff:** 2025, no later than the October proceedings; August artifact publication is an earlier candidate-side release. Exact first release of the full paper and prototype contents is unresolved. Only safely pre-2025 work is asserted as prior art.
+- **Closest attack work:** Orange Tsai's [Breaking Parser Logic](https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf), Black Hat USA 2018, slides 44–49, already demonstrates path-parameter normalization disagreement bypassing ACLs and context mapping. The underlying bypass is not new.
+- **Closest verified tool:** [BypassPro at its 21 June 2024 revision](https://github.com/0x727/BypassPro/tree/34a1d23f1fcf17e2c28f071bcfe0f3a0e5dda1be). Original README describes active/passive Burp fuzzing, `/public/..;`, status-code and response-similarity signals. It does not perform the candidate's routing/configuration-aware static slicing.
+- **Local comparison:** Searched normalization, authentication bypass, UABScan and the candidate title across the lists and archive. The nominated 2018 slides are related prior art; the 2025 list contains no equivalent tool.
+- **Distinct contribution:** A framework-feature model joined to path-specific data/control-flow and sanitization patterns, with measured ablations. Not a first claim to path traversal or authentication bypass.
+- **Evidence boundary:** Proceedings body and its original evaluation only. Later lab publication pages were retrieval leads, not evidence of subsequent success; CVE counts, popularity and subsequent uptake do not affect scores.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58 | 25% | 14.50 | Useful specialized static method built from established bypasses and analysis components. |
+| Transferability | 71 | 20% | 14.20 | Routing-feature/check consistency generalizes; implementation models Spring and Jersey manually. |
+| Lasting value | 76 | 20% | 15.20 | Configuration-aware comparison supplies a durable audit strategy for distributed enforcement. |
+| Technical soundness | 68 | 15% | 10.20 | Concrete validations and ablations, but selected ground truth and inconsistent ablation prose limit confidence in aggregate claims. |
+| Practical usability | 65 | 10% | 6.50 | Prototype and manageable reported runtime; compilation, framework models and manual PoCs constrain deployment. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Algorithm, tuple design, examples and artifact are given; heuristic patterns and reporting discrepancies need care. |
+
+**Final score: 67.8/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Read the full 15-page paper including algorithm, validation, limitations, references and example appendix; revisited §4–5 and the primary prior-art artifacts.
+- **Cutoff audit:** Zenodo API confirms an unchanged 29 August 2025 metadata record. Exact first technical release remains a 2025 precision gap; 2018 and the pinned 2024 README are safely earlier.
+- **Independent prior-art check:** Repeated searches using Java routing/authentication code slicing and static normalization detection; traced the paper's own BypassPro and Orange Tsai citations to their original contents.
+- **Strongest challenge:** Most attack features are already known, and the 53 cases used to derive patterns overlap the historical ground-truth source population.
+- **Benefit-of-doubt check:** Feature extraction and sanitization modeling reduce false positives in the reported ablations; this is a substantive method, even without new payloads.
+- **Changes after reverification:** Score the method only. The paper verifies 56 findings among 70 tested reports, not all 94 reports; 87.5% recall concerns 24 historical vulnerabilities. Table 5 and its prose swap 24/28 false positives; the broader recall table uses a different denominator. These original reporting limitations affect technical/clarity scores, not an unsupported rejection of the whole method.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** Qualifies under the 55 gate for a reusable, evaluated audit method, with no credit for inventing normalization bypasses.
+- **Evidence gaps:** Exact first technical release date; prototype was not executed; no independent validation of all reported findings.
+
+---
+
+## 69.5 — [The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives](https://www.securitee.org/files/kirchner_power_ccs2025.pdf) — Robin Kirchner, Chris Tsoukaladelis, Martin Johns and Nick Nikiforakis
+
+**KEPT** · Meaningful extension · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Authors:** Robin Kirchner, Chris Tsoukaladelis, Martin Johns and Nick Nikiforakis.
+- **Publication date:** 2025, CCS proceedings 13–17 October; April disclosure to services was private. Public patches in April are possible earlier partial disclosures, not proof the entire study was public.
+- **Reference:** Original author-hosted 15-page paper linked above.
+
+### Core Contribution
+
+An archive observatory maps crawler characteristics, while deliberate policy-dependent page behavior and archive-specific bypasses allow publishers to evade faithful capture or change replayed content. The separable extension includes activating otherwise blocked code when CSP is stripped and combining measured crawler detection with replay manipulation across services.
+
+### Prior Art
+
+- **Novelty cutoff:** 2025, by the October proceedings; exact first public technical release remains unresolved. All asserted prior art is safely pre-2025.
+- **Closest predecessor:** Lerner, Kohno and Roesner, [Rewriting History](https://adalerner.com/lerner-rewritingHistory-CCS17.pdf), CCS October–November 2017, §§3.2–3.3 and 5.1–5.4. It explicitly includes an unchanged first-party owner deliberately altering its own past, foresight, script URL obfuscation, same-origin archive escapes and nearest-neighbor anachronisms. These are not new 2025 threat models.
+- **Additional earlier comparison:** Watanabe et al., *Melting Pot of Origins*, NDSS 2020, already evaluates rehosting attacks; its actual paper describes feasible demonstrations, so the candidate's characterization as purely theoretical is not adopted. Local archived prose has dropped ligatures, filed separately for repair.
+- **Local exclusion:** Both earlier works are represented; the 2025 observatory and CSP-stripping evasion are absent from the curated year and previous completed cards.
+- **Distinct contribution:** Systematic cross-service analysis, policy-removal activation and concrete routes around modern archive defenses. Ordinary cloaking and deliberate own-history modification receive no novelty credit.
+- **Evidence boundary:** Original proceedings experiments and safely earlier work only. Later archive patches, uptake and policy responses do not influence any category.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 55 | 25% | 13.75 | Narrower evasion and measurement extension; much of the claimed threat model and replay manipulation is explicit prior art. |
+| Transferability | 73 | 20% | 14.60 | Policy-dependent transformations and crawler observatories apply across rehosting services. |
+| Lasting value | 75 | 20% | 15.00 | Reusable tests of capture/replay integrity and policy removal, not dependent on current crawler addresses. |
+| Technical soundness | 76 | 15% | 11.40 | Concrete payloads, service-specific conditions and experiments; crawler attribution and detection false positives remain limitations. |
+| Practical usability | 70 | 10% | 7.00 | Examples and observatory implementation support testing; some routes require several service-specific steps. |
+| Clarity and reproducibility | 77 | 10% | 7.70 | Explicit attack requirements, tables and demos; full crawler dataset is restricted and broad novelty claims overstate the delta. |
+
+**Final score: 69.5/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Full paper, references and appendix read; reopened primary paper and original 2017 predecessor, especially §§3 and 5.
+- **Cutoff audit:** Private April exchanges are not the public cutoff; scored original 2025 publication against safely earlier 2017/2020 evidence.
+- **Independent prior-art check:** Searched archive CSP-removal activation and deliberately planted future resources, then followed the candidate's own antecedent to its complete threat model.
+- **Strongest challenge:** The paper calls intentional first-party history changes new, but the 2017 source states and illustrates them explicitly.
+- **Benefit-of-doubt check:** That overstatement does not erase the separately demonstrated CSP-stripping evasion or systematic observatory method.
+- **Changes after reverification:** Removed first-party threat-model novelty and reduced the verdict to an extension. Resource deletion remains theoretical; not every service permits every attack, and post-patch Megalodon needs its snapshot-only mode.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** Useful incremental methods survive a substantially narrower novelty comparison.
+- **Evidence gaps:** Exact earliest public release of each partial mechanism; no independent demo replay; crawler dataset not publicly available in full.
+
+---
+
+## 60.7 — [In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web](https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf) — Jan Drescher, Sepehr Mirzaei, Soheil Khodayari, David Klein, Thomas Barber, Martin Johns and Giancarlo Pellegrino
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web
+- **Author or organisation:** Jan Drescher, Sepehr Mirzaei, Soheil Khodayari, David Klein, Thomas Barber, Martin Johns and Giancarlo Pellegrino
+- **Publication date / novelty cutoff:** By 29 August 2025 substantive artifact documentation; exact earlier first release remains unresolved, with CCS paper in October2025.
+- **Reference:** [Original source](https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Extend DOM-source analysis and combine gadget discovery with separately verified markup injection, measuring their intersection and validation patterns. Two limited table/frameset selection adaptations may add capability. The defensible contribution is incremental methodology and measurement, not a new gadget class or four new ordering attacks.
+
+### Prior Art
+
+The full [2017 script-gadgets paper](https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf) already automates DOM taint, benign-markup generation and gadget validation. [Heyes, November–December2022](https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering) directly demonstrates later html/body injection changing getElementById and querySelector selection: two claimed2025 ordering attacks are already exploitation knowledge. [Sheriff’s 2023 graph code](https://github.com/SoheilKhodayari/JAW/blob/c74fcfe6b62a6d93901f65ffd4d7483c2aab2b89/engine/lib/jaw/graphbuilder.js) and [Great Request Robbery, 2024](https://trouge.net/papers/sp24_request_hijacking.pdf) supply hybrid graph/taint machinery and non-XSS request sinks. [Parse Me Baby, 2024](https://www.ias.tu-bs.de/publications/parsing_differentials.pdf) already explains foster parenting; its selector-order adaptation is not automatically duplicate merely because the parser rule is old. Detailed comparison is in the [DOM follow-up](2026-09-10-dom-followup.md).
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45 | 25% | 11.25 | Modest systematization; major ingredients and two exact ordering attacks are prior. |
+| Transferability | 72 | 20% | 14.40 | Explicit DOM reads and sensitive sinks recur, subject to injection/selector/parser constraints. |
+| Lasting value | 68 | 20% | 13.60 | DOM-source semantics and paired-prerequisite analysis offer reusable testing research. |
+| Technical soundness | 62 | 15% | 9.30 | Substantial evidence and error analysis, but influence/impact and ordering claims require narrowing. |
+| Practical usability | 58 | 10% | 5.80 | Useful tools with substantial setup and manual conditional-exploit investigation. |
+| Clarity and reproducibility | 64 | 10% | 6.40 | Full method and dated artifact; ordering and live impact reproduction need gap filling. |
+
+**Final score: 60.7/100**
+
+### Reverification
+
+- **Facts rechecked:** Full candidate,2017 paper and2024 Robbery paper read in the sweep/follow-up; main read candidate earlier and reopened Heyes’s complete relevant ordering examples after the new prior was found.
+- **Cutoff audit:** [AE-v2 August29 record](https://zenodo.org/records/16994554) supplies a substantive public bound; all decisive prior is2024 or earlier, so exact2025 day uncertainty does not affect this comparison.
+- **Independent check:** Search by later injection, first-match selectors and parser ordering found exact2022 attacks, overturning the stronger initial novelty draft.
+- **Strongest challenge:** Mechanism, automation, sink taxonomy, hybrid machinery and two attacks already exist. **Benefit-of-doubt check:** DOM-source/injection-pair integration and constrained table/frameset adaptations retain useful incremental value.
+- **Changes:** Reduced initial73.2 draft to60.7. The657 pairs are coexisting prerequisites,357,982 checks are marker influence, and34% is an ordering obstacle, not completed harmful attacks or successful new bypasses. Detailed cases lack a current injection.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Exact earliest artifact visibility unresolved; conditional case studies,28.6% static false positives and8/13 benchmark detection limit impact/coverage. No live exploit execution.

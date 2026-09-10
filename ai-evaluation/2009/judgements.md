@@ -586,3 +586,112 @@ but do not add it to the year list.
 Useful application or case study, below 60. The work is preserved in the audit
 record but is conceptually represented by the rogue-CA, TLS and browser-origin
 techniques already listed.
+
+---
+
+## 79.2 — [PHPIDS unserialize() Vulnerability: Reusing Framework Object Chains](https://sektioneins.de/advisories/advisory-022009-phpids-unserialize-vulnerability.html) — Stefan Esser
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Author / organisation:** Stefan Esser, SektionEins.
+- **Publication date:** 2009; advisory timeline 9 December, wrapper 8 December. Related object chains were disclosed in the original [November POC2009 deck](https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20POC2009%20Shocking%20News%20In%20PHP%20Exploitation.pdf).
+- **Reference:** Full primary advisory linked in the heading; the title gloss identifies the contribution evaluated here.
+
+### Core Contribution
+
+Untrusted serialized properties connect existing framework objects into a chain starting at a destructor and reaching a dangerous operation. The advisory explains Zend_Log → mail writer → layout → replacement filter, converting an input-inspecting component's deserialization into PHP execution without an interpreter memory bug.
+
+### Prior Art
+
+- **Novelty cutoff:** November–December 2009 for the demonstrated object-chain disclosures. The advisory also cites RSS09; exact ordering within 2009 remains unresolved. The direct replacement-filter route was withheld in the November slides and exposed in the December advisory.
+- **Earlier components:** PHP object lifecycle and serialization were already public; [PHP issue 36696](https://bugs.php.net/bug.php?id=36696), initial March 2006 report, demonstrates lifecycle behavior with Serializable objects. It is component documentation, not this exploitation chain. The November author's discussion acknowledges earlier unsafe deserialization and a previous file-deletion demo, whose public date is not established here.
+- **Closest comparison:** November slides 28–45 explain existing serialization hazards and show multi-object file-write/include chains. These are grouped candidate contributions, not predecessors used to erase the later disclosed execution path. No earlier equivalent multi-object PHP exploitation source was recovered by mechanism searches.
+- **Local exclusion:** Searched the full archive and 2006–2008 sources for unserialization, wakeup, destructors and object injection; original 2009 PHPIDS filter nominations do not describe this chain. The later 2010 code-reuse talk is not prior art.
+- **Evidence boundary:** Original 2009 code and stated limitations only. Later POP terminology, libraries, adoption and exploit impact are excluded from all categories.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 75 | 25% | 18.75 | Reuses compatible methods across attacker-wired objects to obtain a capability beyond the acknowledged single-object hazards. |
+| Transferability | 85 | 20% | 17.00 | A graph-building audit strategy applies beyond the particular PHPIDS entry point and Zend chain. |
+| Lasting value | 85 | 20% | 17.00 | Identifies existing object behavior as an exploitation language and suggests systematic source-to-sink graph searches. |
+| Technical soundness | 80 | 15% | 12.00 | Method bodies and property transitions support the execution route; supplied code is sufficient to inspect the chain. |
+| Practical usability | 70 | 10% | 7.00 | Requires unsafe deserialization and available classes; the advisory deliberately withholds a turnkey serialized payload. |
+| Clarity and reproducibility | 75 | 10% | 7.50 | Stepwise code explanation and earlier concrete slide payloads support reconstruction with version matching. |
+
+**Final score: 79.2/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Full advisory read and reopened; checked the November deck's chain sections and its explicit withholding of direct execution details.
+- **Cutoff audit:** Kept the 2009 disclosure interval and separated private October reporting from public releases; ignored later interpreter exploits and historical retellings.
+- **Independent prior-art check:** Repeated searches using wakeup/destructor exploitation and pre-2009 object serialization instead of the later POP name; found component behavior and memory faults, not a verified earlier equivalent graph attack.
+- **Strongest challenge:** Deserialization hazards and useful destructors predate this work; exact earlier public file-deletion evidence is missing.
+- **Benefit-of-doubt check:** Joining benign methods under attacker-chosen object types is the added capability, not simply a new victim of an interpreter bug.
+- **Changes after reverification:** Combination/adaptation verdict, no claim to inventing all deserialization attacks. Searches that found no equivalent lower confidence rather than prove priority.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The graph construction method is reusable independently of the named application.
+- **Evidence gaps:** Exact RSS09 disclosure content/date; no historical payload execution was attempted.
+
+---
+
+## 63.0 — [OpenID association poisoning](https://blog.nerdbank.net/2009/03/08/openid-association-poisoning/) — Andrew Arnott
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Author:** Andrew Arnott.
+- **Publication date / reference:** Original author article, 8 March 2009, linked above.
+
+### Core Contribution
+
+A malicious identity provider chooses an association handle already used by an honest provider. A relying party that stores keys in an insufficiently scoped namespace replaces the honest key and accepts attacker-signed identities. This is a conditional protocol-implementation attack; the author found neither tested library vulnerable.
+
+### Prior Art
+
+- **Novelty cutoff:** 8 March 2009, article header and complete original nine-step scenario.
+- **Earlier foundation:** [OpenID Authentication 2.0](https://openid.net/specs/openid-authentication-2_0.html), final December 2007, association responses, indirect authentication requests and §11.4 establish provider-selected handles and signature verification. They supply the ingredients; the inspected portions do not give the hostile-provider overwrite scenario.
+- **Closest comparison:** General key/identity binding is established protocol design. This candidate makes the overwrite and forged-assertion consequence concrete for a shared association cache. No exact earlier exploitation source was verified by backward searches.
+- **Local exclusion:** OpenID/association searches and the 2009 nominations contain no equivalent. The lead came from examining the 2014 malicious-provider paper's antecedents.
+- **Evidence boundary:** Only the 2009 article and earlier specification. Excluded 2011–2012 explanatory comments and all later vulnerability confirmations from every score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 60 | 25% | 15.00 | Explicit malicious-peer key replacement scenario adds a concrete audit case to known binding principles. |
+| Transferability | 70 | 20% | 14.00 | Untrusted remote identifiers selecting shared key-cache entries generalize across federated services. |
+| Lasting value | 70 | 20% | 14.00 | A durable namespace/binding test independent of a particular library defect. |
+| Technical soundness | 65 | 15% | 9.75 | Coherent conditional sequence grounded in protocol fields, but no vulnerable implementation is demonstrated. |
+| Practical usability | 30 | 10% | 3.00 | Both checked implementations resisted it; useful as an audit hypothesis rather than a ready exploit. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Clear ordered scenario and prerequisites; no original test harness. |
+
+**Final score: 63.0/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Entire original article read and reopened; the negative library tests are explicit.
+- **Cutoff audit:** The final 2007 protocol precedes March 2009; later comments and 2014/2016 papers do not improve the original evidence.
+- **Independent prior-art check:** Searched handle overwriting, association poisoning and malicious-provider key substitution, and inspected the earlier protocol's signature and handle rules.
+- **Strongest challenge:** This is a foreseeable key-scoping failure without a demonstrated vulnerable product.
+- **Benefit-of-doubt check:** A well-specified conditional attack can supply reusable testing knowledge even when the first tested implementations are sound.
+- **Changes after reverification:** Limited practical score; explicitly separated a plausible attack from demonstrated deployment impact.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** Preserves the concrete earlier attack analysis without importing the later implementations that made it exploitable.
+- **Evidence gaps:** No original vulnerable implementation or independent experiment; failed prior-art searches do not establish first invention.

@@ -1366,3 +1366,58 @@ Meaningful extension. The work turns self-contained, quote-free string
 bootstrapping into a repeatable SSTI exploitation pattern across template
 engines. It clears the historical 60-point, non-duplicate gate and belongs in
 the 2024 missed-technique section.
+
+---
+
+## 65.0 — [Shared Storage worklet queue and termination channels](https://github.com/WICG/shared-storage/issues/136) — Alex Nisenoff
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Shared Storage worklet queue and termination channels
+- **Author or organisation:** Alex Nisenoff
+- **Publication date / novelty cutoff:** 2 February 2024 termination disclosure; 20 February queue report and shared-process observation; 21 February implementation confirmation.
+- **Reference:** [Original source](https://github.com/WICG/shared-storage/issues/136). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Worklet activity changes the completion time of storage writes in its less-privileged embedding page. Conditional worklet termination separately leaks through missing selected-resource requests or a shared-process page crash. The group identifies alternate outputs beyond a nominal selection budget, with distinct mitigation consequences.
+
+### Prior Art
+
+[Loophole, USENIX2017](https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila) already times shared browser queues and process activity. [Issue86’s June2023 body](https://github.com/WICG/shared-storage/issues/86) already communicates through delayed network requests. The new [February2 termination comment](https://github.com/WICG/shared-storage/issues/86#issuecomment-1924746302), [February20 process observation](https://github.com/WICG/shared-storage/issues/86#issuecomment-1954416877) and queue experiment adapt old covert-channel principles to additional observations across this API boundary. The later2025 paper’s scheduler explanation/capacities are excluded.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 62 | 25% | 15.50 | Experimentally exposes two additional observations across the API budget boundary. |
+| Transferability | 62 | 20% | 12.40 | API-specific implementation with a broader isolated-execution design lesson. |
+| Lasting value | 70 | 20% | 14.00 | Reusable accounting for shared queues, process failure and all observable effects. |
+| Technical soundness | 72 | 15% | 10.80 | Controlled activity graphs and maintainer confirmation; limited end-to-end quantification. |
+| Practical usability | 58 | 10% | 5.80 | Concrete operations/triggers but calibration and a complete encoder remain work. |
+| Clarity and reproducibility | 65 | 10% | 6.50 | Concise experiments and figures; less complete than a runnable artifact. |
+
+**Final score: 65.0/100**
+
+### Reverification
+
+- **Facts rechecked:** Full API histories and three histograms read in sweep; main reread original queue body and all February crash discussion and reopened Loophole.
+- **Cutoff audit:** Each channel keeps its February date; original delayed-network channel remains2023.
+- **Independent check:** Storage-set/queue/timing and crash/termination searches plus the shared-event-loop predecessor challenge broad novelty.
+- **Strongest challenge:** Queues and termination are old covert channels. **Benefit-of-doubt check:** Demonstrated coupling and local process propagation expose distinct holes in the particular budgeted design.
+- **Changes:** Retained65.0 for the grouped extension. Chrome121 histograms establish observable coupling, not an independently measured end-to-end encoder or general cross-browser leak.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No independent browser execution or capacity/reliability benchmark; attacker controls worklet and observing page.

@@ -771,3 +771,169 @@ the historical 60-or-above gate qualifies it for the missed list.
 
 Meaningful extension. Prefetching materially amplifies old DNS cache snooping
 into a search-query inference technique.
+
+---
+
+## 75.0 — [Safari: a tale of betrayal and revenge](https://lcamtuf.blogspot.com/2010/06/safari-tale-of-betrayal-and-revenge.html) — Michał Zalewski
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Title:** Safari: a tale of betrayal and revenge.
+- **Author:** Michał Zalewski.
+- **Publication date / reference:** Original linked blog post, 7 June 2010.
+
+### Core Contribution
+
+An origin checker and an authenticated network fetcher interpret the same unusual HTTP reference differently. A data-URL navigation removes the base hostname so unrelated authenticated sites acquire matching empty-host origins in the checker. The contribution is the complete composition and the constraint-removing navigation, not the invention of parser disagreement.
+
+### Prior Art
+
+- **Novelty cutoff:** 7 June 2010, original article header. January vendor reporting was private; neither the 1994 specification nor the implementation's age dates the attack.
+- **Closest earlier exploitation:** Zalewski's publicly reported 2007 [embedded-NUL hostname attack](https://bugzilla.mozilla.org/show_bug.cgi?id=370445), original description, uses length-aware DOM strings versus C-string DNS/network handling to obtain cookie and same-origin confusion. It already establishes checker/fetcher disagreement as an attack pattern. The local archived copy omits that description; its existing manifest fault remains recorded, so the live original supplied evidence.
+- **Earlier component:** [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986), January 2005, §5.4.2, explains legacy same-scheme relative references. This documents syntax, not the demonstrated authenticated-origin collapse.
+- **Local comparison:** Mechanism searches over 2006–2009 identified the NUL issue, protocol guessing, data-URL and JAR-origin work. Read the original 2010 nominations and confirmed that the strokejacking article cites this separate earlier post.
+- **Distinct contribution:** A different two-parser composition with empty-base behavior, plus a data navigation that makes the attack available from a website rather than only manually opened windows.
+- **Evidence boundary:** The June article and safely earlier sources; the article labels its historical reconstruction speculative. No later parser research, uptake, patch longevity or present-day browser behavior enters any score.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 68 | 25% | 17.00 | Demonstrated empty-base composition and navigation route extend an existing disagreement pattern. |
+| Transferability | 80 | 20% | 16.00 | Comparing authorization and fetching interpretations is useful across composed URL-processing systems. |
+| Lasting value | 80 | 20% | 16.00 | Base-context changes supply a reusable dimension for differential testing, independently of this Safari defect. |
+| Technical soundness | 75 | 15% | 11.25 | Causal chain and prerequisite are explicit; codebase history is acknowledged speculation. |
+| Practical usability | 68 | 10% | 6.80 | A compact browser-triggerable route, limited to the affected parser composition. |
+| Clarity and reproducibility | 79 | 10% | 7.90 | Concrete URL interpretations and the missing-base workaround make the mechanism straightforward to reconstruct. |
+
+**Final score: 75.0/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Full original body read and reopened; checked authenticated fetching, empty-host comparison and data-URL precondition.
+- **Cutoff audit:** Public June date separated from private January report and much older components. The 2007 original report predates it; later bug discussion was excluded.
+- **Independent prior-art check:** Searched empty-host origin collapse, KURL/CFNetwork, then URL checker versus network interpretation; followed the local NUL hostname finding back to the original description.
+- **Strongest challenge:** The author had already demonstrated parser disagreement defeating origin checks in 2007.
+- **Benefit-of-doubt check:** A documented parsing rule alone did not supply this route; changing the base context creates an additional exploitable capability.
+- **Changes after reverification:** Classified as combination/adaptation rather than first parser-confusion technique. No live exploit was run.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The useful residue is testing composed origin and fetching parsers under changing base contexts.
+- **Evidence gaps:** No historical browser replay; implementation genealogy remains the author's stated inference.
+
+---
+
+## 77.2 — [How to Hack Millions of Routers](https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf) — Craig Heffner
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** How to Hack Millions of Routers
+- **Author or organisation:** Craig Heffner
+- **Publication date / novelty cutoff:** 29 July 2010, verified Black Hat technical presentation; February8 cover date does not establish public release.
+- **Reference:** [Original source](https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Rebind browser HTTP to the router’s observed public WAN address. Weak-end-system acceptance, an all-address administrative listener and incoming-interface firewall rules let a LAN request reach that service despite disabled WAN administration. This avoids private-address discovery and ordering restrictions; authentication remains a separate requirement.
+
+### Prior Art
+
+[Jackson et al., 2007](https://crypto.stanford.edu/dns/dns-rebinding.pdf) already describe multiple-A fallback, connection refusal, XHR reads, browser proxies, router reconfiguration and protected public-address space. The candidate credits Byrne’s earlier proxy. Its increment is the specific WAN-address/weak-end-system/interface-filter composition and supporting implementation. Locally listed 2010 Java rebinding and NAT Pinning use different mechanisms.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 70 | 25% | 17.50 | Non-obvious composition removes an obstacle to an established primitive. |
+| Transferability | 74 | 20% | 14.80 | Shared packet acceptance, listener binding and filter behavior extend across vendors, conditionally. |
+| Lasting value | 76 | 20% | 15.20 | Reusable test of address-based browser trust versus interface-based policy. |
+| Technical soundness | 87 | 15% | 13.05 | Packet path, configurations, implementation and positive/negative results support the claim. |
+| Practical usability | 82 | 10% | 8.20 | Integrated DNS/HTTP proxy and setup instructions support testing under explicit prerequisites. |
+| Clarity and reproducibility | 85 | 10% | 8.50 | Detailed sequence, configurations and failure cases allow reconstruction. |
+
+**Final score: 77.2/100**
+
+### Reverification
+
+- **Facts rechecked:** Full official paper read in the sweep; main reviewer reopened it and the original Stanford paper and reviewed the packet-path/configuration comparison.
+- **Cutoff audit:** [Black Hat’s program](https://blackhat.com/html/bh-us-10/bh-us-10-briefings.html) anchors July2010; an earlier upload day remains unverified.
+- **Independent check:** Queries by weak-end-system, WAN address and rebinding plus direct prior-paper comparison narrow the claim; failed negative searches do not establish first invention.
+- **Strongest challenge:** Fallback, proxies and router attacks were already public. **Benefit-of-doubt check:** The packet-policy combination removes a concrete earlier constraint.
+- **Changes:** Retained 77.2 for that bounded combination. No generic authentication bypass, universal router coverage or later uptake credit.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Historical equipment and implementation were not run; no exact earlier upload day was established. Diagram graphics were not individually transcribed in the source review.
+
+---
+
+## 74.3 — [Hitting Bitrix with a Hammer: FormCalc authenticated response reading](https://xakep.ru/2010/09/01/54715/) — oxod
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Hitting Bitrix with a Hammer: FormCalc authenticated response reading
+- **Author or organisation:** oxod
+- **Publication date / novelty cutoff:** 1 September 2010, original Russian article; September21 same-title copy is later.
+- **Reference:** [Original source](https://xakep.ru/2010/09/01/54715/). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+An uploaded PDF opened through Adobe’s browser plug-in inherits the authenticated application origin. FormCalc reads an administrative HTML response, extracts its anti-CSRF token and submits an authenticated command. The reusable capability is active-document response reading across an untrusted-upload boundary; Bitrix command execution is the case study.
+
+### Prior Art
+
+[Kierznowski’s September2006 Backdooring PDF Files](https://web.archive.org/web/20070102032610/http://michaeldaw.org/md-hacks/backdooring-pdf-files/) already shows active PDF networking. The [March2009 FormCalc GET discussion](https://acrobatusers.com/forum/forms-livecycle-designer/javascript-equivalent-get-formcalc/) supplies HTML response parsing; [April2010 POST discussion](https://acrobatusers.com/forum/general-acrobat-topics/javascript-blacklist-framework/) supplies its networking component. Neither establishes the same hostile-upload/token-read attack. The locally archived [December2010 Will It Blend announcement](http://xs-sniper.com/blog/2010/12/17/will-it-blend/) is later and describes a different multi-plugin chain; unavailable slides limit exact artifact comparison.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 72 | 25% | 18.00 | Meaningful security composition of documented networking and active-upload behavior. |
+| Transferability | 74 | 20% | 14.80 | Applies to applications serving attacker PDFs on an authenticated origin, with compatible plug-in. |
+| Lasting value | 74 | 20% | 14.80 | Provides a reusable active-upload/response-reading audit rule beyond blind requests. |
+| Technical soundness | 78 | 15% | 11.70 | Concrete chain and local result support narrow capability; exact Reader version is missing. |
+| Practical usability | 74 | 10% | 7.40 | Request logic and XFA replacement method are supplied; opening the document is required. |
+| Clarity and reproducibility | 76 | 10% | 7.60 | Detailed procedure but apparent literal code errors prevent copy-and-run claims. |
+
+**Final score: 74.3/100**
+
+### Reverification
+
+- **Facts rechecked:** Both complete Russian articles and their actual GET/parse/POST and iText examples were recovered/read in the sweep; main reopened the September1 primary page and reviewed literal-code limitations.
+- **Cutoff audit:** The live article date and later copy’s link establish September1; later FormCalc research is excluded.
+- **Independent check:** Earlier PDF/CSRF/authenticated-FormCalc searches and local PDF-backdoor comparison establish component prior without the same demonstrated security composition.
+- **Strongest challenge:** Networking APIs and active PDFs are old. **Benefit-of-doubt check:** Reading a token before posting creates a capability beyond blind CSRF.
+- **Changes:** Retained 74.3, with clarity reduced for apparent content-type/command typography errors. Author’s local success is a report, not an independently rerun result.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Author attribution is the self-identified oxod handle. Exact Reader build and historical reproduction are unverified; linked Will It Blend slide body was unavailable.

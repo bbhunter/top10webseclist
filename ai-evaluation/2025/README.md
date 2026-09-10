@@ -264,3 +264,17 @@ changed the verdict.
 [TranSPArent](https://zenodo.org/records/17822391) is retained at **69.1**, a tooling/methodology contribution first publicly preserved on 4 December 2025. Its [immutable source release](https://github.com/diwangs/transparent-ae/tree/v1.0.0) already implements test-trace call-edge stitching and template-to-JavaScript sink mapping; the February 2026 conference paper is the same contribution. A fresh six-category review, local and primary web prior-art checks and the original nomination comparison support this historical addition. The later paper was read to establish identity; its later reception was excluded from scoring. This extends the historical list to 20 grouped missed entries.
 
 One Email, Many Faces was also migrated from the 2026 compact records after verification of its April 2025 OriginMail implementation and July 2025 full preprint. Its fresh full score is **61.3**, a supporting methodology contribution; the later conference copy is excluded from 2026. See the full evidence and qualifications in [judgements.md](judgements.md).
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 3 new full judgements completed; 3 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications](https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf) | 67.8 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives](https://www.securitee.org/files/kirchner_power_ccs2025.pdf) | 69.5 | Meaningful extension; added — [full card](judgements.md) |
+| [In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web](https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf) | 60.7 | Tooling or methodology contribution; added — [full card](judgements.md) |
+
+The DOM paper was narrowed to **60.7** after comparison with 2017 script gadgets, 2023 hybrid analysis and the exact 2022 body/html lookup-order payload. The Shared Storage paper remains held for a separately established 2025 increment; its substantive earlier issue disclosures were evaluated in 2022, 2023 and 2024.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

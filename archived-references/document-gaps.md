@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-421 reference(s) unresolved. 393 of them already have their raw bytes stored.
+424 reference(s) unresolved. 396 of them already have their raw bytes stored.
 
 ## http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/
 
@@ -1556,6 +1556,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2013.md:53`
 
+## https://arxiv.org/pdf/2201.01649v1.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: Figure 1 graphical icons remain garbled in the Markdown text layer after table and reading-order repair; transcribe the figure labels/icons against the intact preserved PDF (reported 2026-09-10)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2022.md:85`
+
 ## https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts
 
 - Outcome: `broken-capture`
@@ -2267,6 +2275,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the archived document is the York PURE RESEARCH-DATABASE RECORD, 4,777 characters with no full text, no PDF link and no author list at all, which is why it prints Author not stated; the archived PDF is a render of the record; 2016-17.md:112 cites the record, so the citation must move to the open-access article behind the DOI (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:112`
+
+## https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: Appendix A extraction loses positive/checkmark table values while retaining negative dashes; transcribe the table against the intact original PDF, preserving each positive and negative result (reported 2026-09-10)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2016-17.md:30`
 
 ## https://research.securitum.com/security-analysis-of-portal-element/
 
@@ -3187,6 +3203,14 @@ or fix the route and re-run.
 - Reason: faulty capture: 92 PERCENT OF THE PAPER IS MISSING. The published body is 4,546 characters - page 1 only - ending mid-sentence on "port provided by major browsers was not consistent and only", where the stored PDF is 12 pages and 70,523 characters. Every attack technique, the browser results, the filter-circumvention analysis, the mitigation and all 43 references are gone, and the file carries a single page marker for a 12-page paper. The ligature damage is ARCHIVE-INTRODUCED, not source-inherent: pdftotext on the same stored bytes returns correct ASCII with specific x28, files x100 and filtering x14, while the published text has ZERO of each and 21 damaged tokens in 4,546 characters (les, specic, rst, ltering, dierent, prot, aws). The glyphs were deleted, not preserved as ligature codepoints - the entire non-ASCII census of the body is two en-dashes. REPAIRABLE OFFLINE (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2011.md:80`
+
+## https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: PDF text extraction drops fi/fl ligatures throughout the prose (for example first becomes rst and flaws becomes aws); re-extract from the verified original PDF with a ligature-preserving extractor, check raw_sha256 exists before an offline re-render, and compare the published body against the source (reported 2026-09-10)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:73`
 
 ## https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks/
 

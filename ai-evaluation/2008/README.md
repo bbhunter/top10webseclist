@@ -64,3 +64,39 @@ cutoff. Its omission from that round is precisely a missed-list case. The same
 resource remains the official number-one item in `2009.md`, because this audit
 does not rewrite historical rankings; its presence there does not change its
 first-publication year.
+
+## Follow-up sweep — 2026-09-10
+
+A bounded repeat sweep checked the current 91-URL exclusion set, indexed links
+in all 92 archived Markdown files (including translation siblings), searched
+era-appropriate mechanisms and proceedings, and followed selected research
+citations. [Detailed evidence and limitations](2026-09-10-sweep.md) records 12
+lead groups: one new candidate advanced for full judgement (Lateral SQL
+Injection), three unresolved source/methodology leads, and eight exclusions or
+previously screened groups. No new scorecard or curated-list addition was made
+by this sweep. Earlier judgements remain unchanged.
+
+| Candidate / lead | Current screening disposition |
+|---|---|
+| [Lateral SQL Injection](https://www.davidlitchfield.com/lateral-sql-injection.pdf) | Advance for full judgement; original four-page paper read, 2008 verified, session-controlled datatype formatting expands SQL-injection input surface. |
+| [Insecure Content Ownership](http://xs-sniper.com/blog/2008/04/04/insecure-content-ownership/) | Source-recovery lead; cited by nominated YouTube attack, original body unavailable. |
+| [Encapsulating CSRF inside Flash movies](https://guya.net/2008/09/14/encapsulating-csrf-attacks-inside-massively-distributed-flash-movies-real-world-example/) | Source-recovery lead; cited by nominated IE/Flash article, original body unavailable. |
+| [All Your iFRAMEs Point to Us](https://www.usenix.org/legacy/event/sec08/tech/full_papers/provos/provos_html/index.html) | Methodology follow-up; abstract and contents checked, not enough comparison with earlier work for a score. |
+| [Surf Jack](http://enablesecurity.com/2008/08/11/surf-jack-https-will-not-save-you/) | Mechanism already represented by CookieMonster; no evidence recovered for a separate contribution. |
+| [Client-side SQL Injection](https://www.gnucitizen.org/blog/client-side-sql-injection-attacks/) | 5 June 2007 verified on original; already in 2007 list. |
+| [Local Web Servers Are Dangerous](https://r00tin.blogspot.com/2008/03/local-web-servers-are-dangerous.html) | Overlaps nominated uTorrent/Cross Environment Hopping family; body fetch failed. |
+| [Clickjacking details](http://ha.ckers.org/blog/20081007/clickjacking-details/) / [camera spying](http://blog.guya.net/2008/10/07/malicious-camera-spying-using-clickjacking/) | Alternative original artifacts of nominated Clickjacking / Videojacking. |
+| [Flash Parameter Injection whitepaper](http://blog.watchfire.com/FPI.pdf) | Alternative artifact explicitly linked by nominated article. |
+| [Cursor Injection](https://www.davidlitchfield.com/cursor-injection.pdf) | Original cover dated 24 February 2007; prior art for Lateral SQL Injection, not a 2008 find. |
+| [Encoded, Layered, and Transcoded Syntax Attacks](https://blackhat.com/html/bh-usa-08/bh-usa-08-archive.html) | Earlier screened lead; archive listing retrieved, no new substantive evidence to reopen. |
+| [JSON Hijacking with UTF-7](http://powerofcommunity.net/poc2008/hasegawa.pptx) / encoding-XSS searches | JSON technique already nominated; Mozilla advisory alone insufficient to nominate a separate research article. |
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Lateral SQL Injection](https://www.davidlitchfield.com/lateral-sql-injection.pdf) | 69.7 | Meaningful extension; added — [full card](judgements.md) |
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

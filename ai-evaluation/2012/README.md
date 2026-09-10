@@ -124,3 +124,24 @@ scope is borderline; the transferable core was scored and transferability was
 held at 78 rather than raised. The repository already treats this class as in
 scope, having nominated PHP unserialization in 2018, .NET Remoting over HTTP in
 2019 and hardened .NET deserialization at number two in 2023.
+
+## Supplementary sweep — 10 September 2026
+
+The [dated evidence ledger](2026-09-10-sweep.md) records a fresh mechanism search
+and archived-Markdown citation pass under the current **55-point** gate. It
+checked 97 known URLs and an outbound inventory of 1,343 rows (1,159 URLs), and
+retains 18 lead/artifact-cluster rows. No new candidate cleared the source,
+calendar-year and distinct-contribution pre-screen; three sources remain held
+for recovery. Hasegawa's MBCS JSON presentation was traced to public 2011 primary
+evidence and handed to that year's sweep. Homakov's OAuth posts were compared
+against earlier IETF draft attack descriptions, rather than rejected merely for
+sharing a family with existing SSO papers. No new scorecards or list edits were
+made by this supplementary discovery pass.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 0 new full judgements completed; 0 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+No new technique cleared the source, calendar-year and distinct-contribution prescreen. Zero full new judgements and zero additions is the final outcome; source-recovery holds remain listed.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

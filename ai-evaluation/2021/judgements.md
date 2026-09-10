@@ -536,3 +536,113 @@ unchanged.
 
 Meaningful extension. It is narrower than the higher-scoring candidates but is
 not merely ordinary typosquatting: the platform parser manufactures the link.
+
+---
+
+## 70.3 — [Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis](https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf) — Souphiane Bensalim, David Klein, Thomas Barber and Martin Johns
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis
+- **Author or organisation:** Souphiane Bensalim, David Klein, Thomas Barber and Martin Johns
+- **Publication date / novelty cutoff:** 26 April 2021 EuroSec; October2020 crawl date is not public disclosure.
+- **Reference:** [Original source](https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Use character-level source/sink relationships to replace the appropriate URL span in place, preserving routing and structured parameter syntax while generating context-sensitive payloads. This extends existing taint-guided generation with a more precise mutation rule and measured additional coverage.
+
+### Prior Art
+
+[25 Million Flows Later, 2013](https://publications.cispa.saarland/3/1/domxss.pdf) already generates context-sensitive breakouts from byte taint. [Riding out DOMsday, 2018](https://www.cs.cmu.edu/~anupamd/paper/ndss2018.pdf) matches query values to sink taint but moves the candidate to a fragment. Both primary mechanisms were read in the local archive. The increment is in-place URL/sink span selection, including structure preservation, not first taint tracking or first exploit generation; FLAX, Kudzu and DexterJS are further earlier families.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 62 | 25% | 15.50 | More precise position-preserving mutation demonstrates additional cases beyond established heuristics. |
+| Transferability | 74 | 20% | 14.80 | Varied client URL parsing patterns, limited to URL sources and selected sinks. |
+| Lasting value | 75 | 20% | 15.00 | Concrete reusable mutation method and baseline comparison support future testing work. |
+| Technical soundness | 77 | 15% | 11.55 | Explicit algorithm, overlap counts and validation; browser modification limits external interpretation. |
+| Practical usability | 61 | 10% | 6.10 | Instrumentation/crawl infrastructure required; turnkey release not established. |
+| Clarity and reproducibility | 74 | 10% | 7.40 | Examples, indices and experiment filters support reconstruction. |
+
+**Final score: 70.3/100**
+
+### Reverification
+
+- **Facts rechecked:** Full seven-page paper read in the sweep; main reopened it and reviewed the six-index algorithm and prior comparisons.
+- **Cutoff audit:** EuroSec2021 source fixes April26; no earlier substantive release verified.
+- **Independent check:** URL/in-place exploit-generation searches and direct older-generator comparison challenged broad targeting novelty.
+- **Strongest challenge:** Taint and contextual generation are old. **Benefit-of-doubt check:** Preserving the original URL structure reaches cases missed by earlier mutation heuristics.
+- **Changes:** Retained 70.3. The 846 exclusive flows are measured against the union of baselines; the larger headline factors compare individual baselines. Validation disables URL auto-encoding to emulate legacy IE, so results are not stock-Firefox vulnerability counts.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No independent rerun; authenticated/deeper interaction and persistent flows are outside coverage. Automatic URL encoding was disabled.
+
+---
+
+## 63.6 — [Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning](https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf) — William Melicher, Clement Fung, Lujo Bauer and Limin Jia
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning
+- **Author or organisation:** William Melicher, Clement Fung, Lujo Bauer and Limin Jia
+- **Publication date / novelty cutoff:** 19–23 April 2021 WWW conference interval; June3 ACM publication is later.
+- **Reference:** [Original source](https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+A source-function classifier built from bag-of-AST-token features triages JavaScript before expensive taint confirmation. The contribution is an evaluated DOM-XSS cost/recall operating point and reusable training method, including evidence that standalone classification is unsuitable. It is not a completed replacement for dynamic analysis.
+
+### Prior Art
+
+[NeuTaint v1, July8 2019](https://arxiv.org/pdf/1907.03756v1) already learns dynamic input-to-sink influence and saliency without depending on internal instruction semantics. [VulDeePecker v1, January5 2018](https://arxiv.org/pdf/1801.01681v1) learns source-code vulnerability features from dependency slices and normalized token sequences. Full prior papers were recovered/read in follow-up. The candidate’s unsliced function-level DOM-XSS triage and cost frontier differ, but its broad characterization of both predecessors as static C analysis is inaccurate. DOMsday2018 supplies reused taint/confirmation infrastructure.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58 | 25% | 14.50 | Specific evaluated DOM-XSS prefilter adapts existing learned analysis. |
+| Transferability | 67 | 20% | 13.40 | JavaScript code reuse is broad, but context, labels and browser assumptions constrain transfer. |
+| Lasting value | 68 | 20% | 13.60 | Cost/recall tuning and labelled data can inform future testing from the publication vantage. |
+| Technical soundness | 63 | 15% | 9.45 | Detailed classifier evaluation; projected speed and unresolved integration limit system claims. |
+| Practical usability | 48 | 10% | 4.80 | Substantial training/browser setup; no completed integrated runtime demonstrated. |
+| Clarity and reproducibility | 79 | 10% | 7.90 | Representation, hyperparameters, splits, errors, equations and artifact reference are detailed. |
+
+**Final score: 63.6/100**
+
+### Reverification
+
+- **Facts rechecked:** Complete twelve-page candidate and full primary predecessor papers read during sweep/follow-up; main reopened candidate and NeuTaint and reviewed the detailed methodological comparison.
+- **Cutoff audit:** Both versioned priors precede April2021. Modern dataset metadata cannot establish the original release date.
+- **Independent check:** Function/classifier/JavaScript-taint queries and full-source comparison corrected the initially abstract-only prior treatment.
+- **Strongest challenge:** Learned vulnerability features and learned taint are old. **Benefit-of-doubt check:** A source-function triage strategy and measured recall/cost tradeoff still add modest methodology.
+- **Changes:** Retained 63.6 with narrower novelty. The 3.43× result is a modeled cached GPU-assisted per-function saving, not a measured integrated browser speedup; source identification and whole-script tracking remain unresolved.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No independent training/reproduction; negative labels can miss unexecuted paths and cross-function behavior. Publication-time artifact availability is stated by the paper, not inferred from a 2026 dataset version.

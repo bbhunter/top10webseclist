@@ -112,3 +112,30 @@ BREACH, expired-domain abuse and encrypted-stream classification all predate
 2016. What qualifies is the distinct generic method, new attack adaptation or
 systematic testing contribution documented in each scorecard. This audit did
 not run the reference archiver or refresh either web application.
+
+## Follow-up sweep — 2026-09-10
+
+The [dated evidence ledger](2026-09-10-sweep.md) records fresh mechanism searches,
+non-English coverage and tracing of research citations in the shared 2016/2017
+archive. It uses the current **55** gate, superseding this older audit's threshold
+for the new sweep. Six distinct contribution leads advance for full judgement
+with publication-time evidence digests and independent draft category scores;
+five additional leads remain held for missing evidence. These drafts do not
+constitute curated additions or replace the earlier scorecards.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 6 new full judgements completed; 6 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization](https://bugs.php.net/bug.php?id=72663) | 72.8 | Meaningful extension; added — [full card](judgements.md) |
+| [JSON hijacking for the modern web](https://portswigger.net/research/json-hijacking-for-the-modern-web) | 68.0 | Meaningful extension; added — [full card](judgements.md) |
+| [.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/) | 66.8 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)](https://www.sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf) | 60.8 | Tooling or methodology contribution; added — [full card](judgements.md) |
+| [HTTP/2: In-depth analysis of the top four flaws](https://www.imperva.com/docs/imperva_hii_http2.pdf) | 65.2 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [On the Content Security Policy Violations due to the Same-Origin Policy](https://arxiv.org/pdf/1611.02875v1.pdf) | 66.3 | Tooling or methodology contribution; added — [full card](judgements.md) |
+
+The shared 2016–17 list receives six 2016 additions. HTTP/2 work is narrowly credited: Bossert for comparative state-machine testing and Imperva for the repeated-index HPACK construction. Existing RFC warnings and old compression bombs receive no new originality credit.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

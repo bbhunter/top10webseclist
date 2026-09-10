@@ -1153,3 +1153,168 @@ leakage itself.
 
 Meaningful combination or adaptation. Confidence is Medium; the entry sits just
 above the threshold because its reusable password workflow is narrow but real.
+
+---
+
+## 71.3 — [On the security of modern Single Sign-On Protocols – OpenID Connect 1.0](https://arxiv.org/pdf/1508.04324v1) — Vladislav Mladenov, Christian Mainka, Julian Krautwald, Florian Feldmann and Jörg Schwenk
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** On the security of modern Single Sign-On Protocols – OpenID Connect 1.0
+- **Author or organisation:** Vladislav Mladenov, Christian Mainka, Julian Krautwald, Florian Feldmann and Jörg Schwenk
+- **Publication date / novelty cutoff:** 18 August 2015, original five-author v1; alleged October2014 private reporting is not verified public disclosure.
+- **Reference:** [Original source](https://arxiv.org/pdf/1508.04324v1). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Malicious discovery mixes honest registration/authorization endpoints with an attacker token endpoint. A client acquires valid credentials and the user visibly authenticates honestly, but the client sends its credentials and code to the attacker at redemption. The composition attacks server-side trust setup before later token validation.
+
+### Prior Art
+
+[Discovery draft21](https://openid.net/specs/openid-connect-discovery-1_0-21.html), December19 2013 §7.2, already warns about fake metadata and impersonated issuers. The candidate can keep its own issuer consistent, so that warning’s issuer/TLS remedy does not establish this chain was known. [Cao et al., RAID2014](https://iseclab.org/files/publications/Cao2014Protecting_Web.pdf) studies RP impersonation and channel binding. [Malicious IdPs, December2014](https://arxiv.org/pdf/1412.1623v1) and [Arnott, March2009](https://blog.nerdbank.net/2009/03/08/openid-association-poisoning/) already establish hostile-provider/key-binding attacks. Neither gives this dynamic-registration/credential-redirection composition. The October2015 user-info variant and January2016 v2 are excluded from the August score.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 70 | 25% | 17.50 | Specific mixed-endpoint registration chain beyond the known malicious-metadata threat. |
+| Transferability | 73 | 20% | 14.60 | Trust correlation across setup/redemption generalizes to federated systems with optional extensions. |
+| Lasting value | 76 | 20% | 15.20 | Reusable testing of server-side configuration trust, inferred at disclosure. |
+| Technical soundness | 76 | 15% | 11.40 | Explicit phased flow and one implementation demo; broad universal claims withheld. |
+| Practical usability | 54 | 10% | 5.40 | Custom provider and registration setup, initiation defenses and limited deployment constrain use. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Endpoint matrix and assumptions support reconstruction without a complete runnable suite. |
+
+**Final score: 71.3/100**
+
+### Reverification
+
+- **Facts rechecked:** Full v1 read in the sweep; main reopened original v1 and the dated Discovery draft, reviewing their actual endpoint conditions.
+- **Cutoff audit:** Corrected five-author title/version, retained August18 and excluded later implicit-flow coverage.
+- **Independent check:** Configuration/registration/token-endpoint searches and specification backtracking challenged broad malicious-provider novelty.
+- **Strongest challenge:** Known endpoint impersonation. **Benefit-of-doubt check:** Obtaining valid credentials through honest registration and leaking them before verification is a distinct composition.
+- **Changes:** Retained 71.3; one MITREid implementation demonstration is not proof of all deployed systems, and the source reports optional extensions were not publicly deployed.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No verified public technical copy of the alleged 2014 report; no independent multi-implementation reproduction.
+
+---
+
+## 70.5 — [A Look into Netty’s Recent Security Update: cookie parsing and HttpOnly exfiltration](https://security.linkedin.com/blog-archive#05152015) — Luca Carettoni; research with Roman Shafigullin and Mukul Khullar
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** A Look into Netty’s Recent Security Update: cookie parsing and HttpOnly exfiltration
+- **Author or organisation:** Luca Carettoni; research with Roman Shafigullin and Mukul Khullar
+- **Publication date / novelty cutoff:** 6–15 May 2015: public patch May6, Play advisory May9, full article May15. Ordering inside this interval remains uncertain.
+- **Reference:** [Original source](https://security.linkedin.com/blog-archive#05152015). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+An unterminated quoted cookie value absorbs later protected cookies. An application reflecting only the first cookie then exposes the HttpOnly cookie in readable response content. This changes selective reflection into cross-cookie disclosure; cookie-setting, ordering and readable reflection are required.
+
+### Prior Art
+
+[Mozilla’s February2009 advisory](https://www.mozilla.org/en-US/security/advisories/mfsa2009-05/) exposes Set-Cookie through a browser API. The [December2012 Apache/HttpOnly write-up](https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html) already uses malformed-header reflection. Netty adds a normal individually reflected value that expands across parser boundaries. [RFC6265](https://www.rfc-editor.org/rfc/rfc6265.html), April2011, supplies grammar, not this exploitation composition. The URL exclusion is a false collision: the nominated November23 LinkedIn login article differs from the May15 article within the same archived page.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 68 | 25% | 17.00 | Distinct selective-reflection route extending known malformed-header disclosure. |
+| Transferability | 66 | 20% | 13.20 | Parser/consumer disagreement can recur, though evidence centers on Netty/Play. |
+| Lasting value | 71 | 20% | 14.20 | Reusable boundary-and-reflection testing rule beyond one decoder patch. |
+| Technical soundness | 78 | 15% | 11.70 | Parser code, parsed outputs and application flow support the bounded claim. |
+| Practical usability | 68 | 10% | 6.80 | Small test when setting, order and reflection prerequisites hold. |
+| Clarity and reproducibility | 76 | 10% | 7.60 | Concrete decoder and application example, without complete browser/order harness. |
+
+**Final score: 70.5/100**
+
+### Reverification
+
+- **Facts rechecked:** Main read the complete preserved May15 article and reopened the [Play advisory](https://www.playframework.com/security/vulnerability/CVE-2015-2156-HttpOnlyBypass); sweep also inspected [May6 PR3748](https://github.com/netty/netty/pull/3748).
+- **Cutoff audit:** Private April8 reporting excluded; close May release interval retained.
+- **Independent check:** Unterminated-cookie/reflection queries and older Apache capture comparison narrowed the purported universal bypass.
+- **Strongest challenge:** Malformed cookies already leaked HttpOnly values. **Benefit-of-doubt check:** Selective reflection without an error page is a new boundary-confusion route.
+- **Changes:** Retained 70.5 for that route; Play’s contemporaneous advisory overrides unsupported all/default-application wording. Later cookie-sandwich work is excluded.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Original URL now fails but the intact archived primary article is readable. No historic exploit rerun. Shared-page archive attribution must not imply the November nomination covers May research.
+
+---
+
+## 68.7 — [Service Workers: New APIs = New Vulns = Fun++](https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html) — Eduardo Vela Nava
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Service Workers: New APIs = New Vulns = Fun++
+- **Author or organisation:** Eduardo Vela Nava
+- **Publication date / novelty cutoff:** 25 May 2015 for the open-redirect/CORS/cache chain; later May27 demonstration details excluded.
+- **Reference:** [Original source](https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+A service worker caches a CORS-enabled redirected response under the original request URL, then replays foreign content as a document on the original origin. With suitable cache logic and an open redirect, this can bootstrap script execution without initial XSS. It is not a claim that every open redirect or worker is vulnerable.
+
+### Prior Art
+
+[ServiceWorker issue698](https://github.com/w3c/ServiceWorker/issues/698), May11 with explicit May14/23 confirmations, already demonstrates same-origin-script Cache API poisoning and persistence. [Vela’s May12 2014 message](https://lists.w3.org/Archives/Public/public-whatwg-archive/2014May/0075.html) already uses XSS/AppCache/cookie-bomb FALLBACK persistence. [Chromium’s April30–May1 2015 discussion](https://groups.google.com/a/chromium.org/g/net-dev/c/ISwnbx4vozw/m/lAYChmvAZtIJ) already recognizes response-origin confusion. The extension is the open-redirect plus CORS population bootstrap under a legitimate worker, removing those earlier initial-XSS/MITM requirements.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 64 | 25% | 16.00 | Concrete bootstrap extension to previously disclosed cache persistence and origin confusion. |
+| Transferability | 76 | 20% | 15.20 | Trust mismatch can recur in programmable request/response caches under explicit conditions. |
+| Lasting value | 74 | 20% | 14.80 | Reusable test of response read permission versus later document execution authority. |
+| Technical soundness | 66 | 15% | 9.90 | Clear causal chain, but main redirect example is prose plus mutable sample code. |
+| Practical usability | 60 | 10% | 6.00 | Requires active compatible worker, redirect, CORS population and later cache selection. |
+| Clarity and reproducibility | 68 | 10% | 6.80 | Explicit mechanism and mitigation; pinned self-contained redirect demo absent at cutoff. |
+
+**Final score: 68.7/100**
+
+### Reverification
+
+- **Facts rechecked:** Full May25 and May27 articles and primary issue/thread read in the sweep; main reopened May25 and issue698’s dated confirmation.
+- **Cutoff audit:** May27 examples and later comments do not improve May25 scores. The earlier talk did not include this chain according to the author.
+- **Independent check:** CORS/cache/open-redirect search and AppCache citation tracing found exact prior persistence, narrowing novelty.
+- **Strongest challenge:** Cache poisoning and response-origin confusion are already known. **Benefit-of-doubt check:** The no-initial-XSS bootstrap is a meaningful capability extension.
+- **Changes:** Retained 68.7 for that chain only. Universal-deployment and forever-persistence predictions receive no credit; code for the already-known overwrite does not improve the redirect demonstration’s reproducibility.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No byte-authenticated original blog revision; adjacent dated follow-up corroborates the topic. No external demo or modern-browser PoC executed.

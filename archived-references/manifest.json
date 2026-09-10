@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-10T01:22:38+00:00",
+ "updated": "2026-09-10T16:04:59+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -12549,6 +12549,461 @@
    },
    "title": "What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness"
   },
+  "https://arxiv.org/pdf/1412.1623v1": {
+   "also_at": [],
+   "authors": [
+    "Christian Mainka",
+    "Vladislav Mladenov",
+    "Jörg Schwenk"
+   ],
+   "cited_by": [
+    "2014.md:81"
+   ],
+   "cited_title": "Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On",
+   "content_gap": "",
+   "content_sha256": "4a03135b11a2784e036ac6a28f720f242f0082f0f87ff0ffc8d9d6718740bdb9",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "4a03135b11a2784e036ac6a28f720f242f0082f0f87ff0ffc8d9d6718740bdb9",
+    "tags": [
+     "openid",
+     "sso",
+     "auth-bypass",
+     "identity",
+     "crypto",
+     "tooling"
+    ],
+    "text": "Uses an attacker-controlled identity provider to examine OpenID discovery, association and token verification. OpenID Attacker tests recipient confusion, key confusion, identity spoofing and discovery spoofing against 16 implementations, compromising 11. The paper traces failures to missing bindings between identities, provider URLs, cryptographic keys and session state."
+   },
+   "first_seen_utc": "2026-09-10T14:26:09+00:00",
+   "grade": "research",
+   "raw_sha256": "ffdbf2aefd52071375445310a038624bfc4d0feb25f014ef6cdce90bde7ebfc7",
+   "slug": "do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign",
+   "spellings": [
+    "https://arxiv.org/pdf/1412.1623v1"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "4a03135b11a2784e036ac6a28f720f242f0082f0f87ff0ffc8d9d6718740bdb9",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T14:50:27+00:00"
+    },
+    "import": {
+     "chars": 86110,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "4a03135b11a2784e036ac6a28f720f242f0082f0f87ff0ffc8d9d6718740bdb9",
+     "utc": "2026-09-10T14:50:27+00:00"
+    },
+    "manual-source": {
+     "bytes": 1010590,
+     "now": "ffdbf2aefd520713",
+     "reason": "the complete PDF supplied for this manual import",
+     "result": "stored",
+     "utc": "2026-09-10T14:34:50+00:00",
+     "was": ""
+    },
+    "pdf": {
+     "bytes": 1010590,
+     "file": "archived-references/pdf/2014/do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:56:54+00:00"
+    },
+    "render": {
+     "chars": 86110,
+     "depth": "full",
+     "file": "archived-references/md/2014/do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:50:27+00:00"
+    }
+   },
+   "title": "Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On"
+  },
+  "https://arxiv.org/pdf/1508.04324v1": {
+   "also_at": [],
+   "authors": [
+    "Vladislav Mladenov",
+    "Christian Mainka",
+    "Julian Krautwald",
+    "Florian Feldmann",
+    "Jörg Schwenk"
+   ],
+   "cited_by": [
+    "2015.md:83"
+   ],
+   "cited_title": "On the security of modern Single Sign-On Protocols – OpenID Connect 1.0",
+   "content_gap": "",
+   "content_sha256": "3b33d50bfee23a6eb93148e67ebfc3d631271f83bafd2d145b7be8c11e5a9bfe",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "3b33d50bfee23a6eb93148e67ebfc3d631271f83bafd2d145b7be8c11e5a9bfe",
+    "tags": [
+     "openid",
+     "oauth",
+     "sso",
+     "auth-bypass",
+     "info-leak",
+     "csrf",
+     "attack-chain"
+    ],
+    "text": "OpenID Connect discovery metadata can combine an honest provider’s registration and authorization endpoints with an attacker’s token endpoint. Dynamic registration then causes a client to send its new credentials and the victim’s authorization code to the attacker. The paper tests MITREid Connect and discusses endpoint restrictions and provider allowlists."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "publisher": "arXiv",
+   "raw_sha256": "91057d02910fb1fdb907e10a2c7a722026a1679e947699d64ba40d580d58e1b9",
+   "slug": "security-modern-single-sign-protocols-openid-connect-1-0",
+   "spellings": [
+    "https://arxiv.org/pdf/1508.04324v1"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "3b33d50bfee23a6eb93148e67ebfc3d631271f83bafd2d145b7be8c11e5a9bfe",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:30:19+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Vladislav Mladenov",
+      "Christian Mainka",
+      "Julian Krautwald",
+      "Florian Feldmann",
+      "Jörg Schwenk"
+     ],
+     "publisher": "arXiv",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 49660,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "3b33d50bfee23a6eb93148e67ebfc3d631271f83bafd2d145b7be8c11e5a9bfe",
+     "utc": "2026-09-10T15:30:19+00:00"
+    },
+    "manual-source": {
+     "bytes": 1374969,
+     "now": "91057d02910fb1fd",
+     "reason": "the complete PDF supplied for this manual import",
+     "result": "stored",
+     "utc": "2026-09-10T15:30:18+00:00",
+     "was": ""
+    },
+    "pdf": {
+     "bytes": 1374969,
+     "file": "archived-references/pdf/2015/security-modern-single-sign-protocols-openid-connect-1-0.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:56:56+00:00"
+    },
+    "render": {
+     "chars": 49660,
+     "depth": "full",
+     "file": "archived-references/md/2015/security-modern-single-sign-protocols-openid-connect-1-0.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:30:19+00:00"
+    }
+   },
+   "title": "On the security of modern Single Sign-On Protocols – OpenID Connect 1.0"
+  },
+  "https://arxiv.org/pdf/1611.02875v1.pdf": {
+   "also_at": [],
+   "authors": [
+    "Dolière Francis Somé",
+    "Nataliia Bielova",
+    "Tamara Rezk"
+   ],
+   "cited_by": [
+    "2016-17.md:121"
+   ],
+   "cited_title": "On the Content Security Policy Violations due to the Same-Origin Policy",
+   "content_gap": "",
+   "content_sha256": "8c6c88b04d6da6f76f6343ebb9296c8a2b113951e3aaf1221cd9005f7c294b8f",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "8c6c88b04d6da6f76f6343ebb9296c8a2b113951e3aaf1221cd9005f7c294b8f",
+    "tags": [
+     "csp",
+     "same-origin-policy",
+     "iframe",
+     "xss",
+     "info-leak",
+     "measurement-study"
+    ],
+    "text": "Examines how scripts in same-origin parent pages and iframes can bypass each other’s differing CSP restrictions. A crawl of over one million pages identifies potentially vulnerable page–iframe pairs, including cases requiring origin relaxation. The paper also finds browser differences in CSP inheritance for sandboxed srcdoc iframes and discusses origin-wide policy enforcement."
+   },
+   "first_seen_utc": "2026-09-10T14:45:49+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "raw_sha256": "8bfc444b93d3d877ac3f9e8fd1b8680295b6a0648dcddb3fa6568eef2e577c06",
+   "slug": "content-security-policy-violations-due-same-origin-policy",
+   "spellings": [
+    "https://arxiv.org/pdf/1611.02875v1.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "8c6c88b04d6da6f76f6343ebb9296c8a2b113951e3aaf1221cd9005f7c294b8f",
+     "extraction": null,
+     "raw_sha256": "8bfc444b93d3d877ac3f9e8fd1b8680295b6a0648dcddb3fa6568eef2e577c06",
+     "reason": "",
+     "result": "stored",
+     "slug": "content-security-policy-violations-due-same-origin-policy",
+     "utc": "2026-09-10T14:47:01+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Dolière Francis Somé",
+      "Nataliia Bielova",
+      "Tamara Rezk"
+     ],
+     "publisher": "",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 957089,
+     "file": "archived-references/pdf/2016-17/content-security-policy-violations-due-same-origin-policy.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:56:59+00:00"
+    },
+    "render": {
+     "chars": 147107,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/content-security-policy-violations-due-same-origin-policy.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:47:02+00:00"
+    }
+   },
+   "title": "On the Content Security Policy Violations due to the Same-Origin Policy"
+  },
+  "https://arxiv.org/pdf/2001.07421v1": {
+   "also_at": [],
+   "authors": [
+    "Artur Janc",
+    "Krzysztof Kotowicz",
+    "Lukas Weichselbaum",
+    "Roberto Clapis"
+   ],
+   "cited_by": [
+    "2020.md:83"
+   ],
+   "cited_title": "Information Leaks via Safari’s Intelligent Tracking Prevention",
+   "content_gap": "",
+   "content_sha256": "b777e14f0b5a62a9d44fb3367aeb9df0a4b95d700674d589956d836deaab0e3d",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "b777e14f0b5a62a9d44fb3367aeb9df0a4b95d700674d589956d836deaab0e3d",
+    "tags": [
+     "xsleak",
+     "side-channel",
+     "browser-fingerprinting",
+     "info-leak",
+     "cookie",
+     "http",
+     "abuse-of-functionality"
+    ],
+    "text": "Safari’s user-specific tracking-prevention list creates global state that websites can alter and probe. Overlong Referer headers and other request side channels reveal domain classification, enabling browsing-history inference, persistent identifiers and cross-site search leaks. Attackers can also force domains onto the list to disrupt authenticated requests."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "publisher": "Google",
+   "raw_sha256": "60a5137cf49680c260f1e1efc55af7090ed9c4e0252e9fea9957cedcfa5c58ae",
+   "slug": "information-leaks-safaris-intelligent-tracking-prevention",
+   "spellings": [
+    "https://arxiv.org/pdf/2001.07421v1"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "b777e14f0b5a62a9d44fb3367aeb9df0a4b95d700674d589956d836deaab0e3d",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:35:18+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Artur Janc",
+      "Krzysztof Kotowicz",
+      "Lukas Weichselbaum",
+      "Roberto Clapis"
+     ],
+     "publisher": "Google",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 20147,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "b777e14f0b5a62a9d44fb3367aeb9df0a4b95d700674d589956d836deaab0e3d",
+     "utc": "2026-09-10T15:35:18+00:00"
+    },
+    "manual-source": {
+     "bytes": 494484,
+     "now": "60a5137cf49680c2",
+     "reason": "the complete PDF supplied for this manual import",
+     "result": "stored",
+     "utc": "2026-09-10T15:35:18+00:00",
+     "was": ""
+    },
+    "pdf": {
+     "bytes": 494484,
+     "file": "archived-references/pdf/2020/information-leaks-safaris-intelligent-tracking-prevention.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:01+00:00"
+    },
+    "render": {
+     "chars": 20147,
+     "depth": "full",
+     "file": "archived-references/md/2020/information-leaks-safaris-intelligent-tracking-prevention.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:35:18+00:00"
+    }
+   },
+   "title": "Information Leaks via Safari’s Intelligent Tracking Prevention"
+  },
+  "https://arxiv.org/pdf/2201.01649v1.pdf": {
+   "also_at": [],
+   "authors": [
+    "Lorenzo Veronese",
+    "Benjamin Farinier",
+    "Mauro Tempesta",
+    "Marco Squarcina",
+    "Matteo Maffei"
+   ],
+   "cited_by": [
+    "2022.md:85"
+   ],
+   "cited_title": "WebSpec",
+   "content_gap": "faulty capture: Figure 1 graphical icons remain garbled in the Markdown text layer after table and reading-order repair; transcribe the figure labels/icons against the intact preserved PDF (reported 2026-09-10)",
+   "content_sha256": "e6e70121e22deba753383472b51f391350eda2c1aa58a368712a0c3fda57c814",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "e6e70121e22deba753383472b51f391350eda2c1aa58a368712a0c3fda57c814",
+    "tags": [
+     "formal-analysis",
+     "cookie",
+     "same-origin-policy",
+     "csp",
+     "tooling"
+    ],
+    "text": "WebSpec models browser behavior in Coq, compiles security invariants into constrained Horn clauses, and checks generated attack traces with machine-checked proofs. It exposes flaws involving Host cookies and domain relaxation, CSP inheritance for blob URLs, and interactions among browser defenses."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "arXiv",
+   "raw_sha256": "22292a26462584e12d1f7b54a8a1f79a69fb7b8eb0567fe9d6c5d93ef6eeeb82",
+   "slug": "webspec",
+   "spellings": [
+    "https://arxiv.org/pdf/2201.01649v1.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "e6e70121e22deba753383472b51f391350eda2c1aa58a368712a0c3fda57c814",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:54:42+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Lorenzo Veronese",
+      "Benjamin Farinier",
+      "Mauro Tempesta",
+      "Marco Squarcina",
+      "Matteo Maffei"
+     ],
+     "publisher": "arXiv",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 106216,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "e6e70121e22deba753383472b51f391350eda2c1aa58a368712a0c3fda57c814",
+     "utc": "2026-09-10T15:54:42+00:00"
+    },
+    "pdf": {
+     "bytes": 1279840,
+     "file": "archived-references/pdf/2022/webspec.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:04+00:00"
+    },
+    "render": {
+     "chars": 106216,
+     "depth": "full",
+     "file": "archived-references/md/2022/webspec.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:54:42+00:00"
+    }
+   },
+   "title": "WebSpec"
+  },
   "https://arxiv.org/pdf/2508.20282v1": {
    "also_at": [],
    "cited_by": [
@@ -19987,6 +20442,90 @@
     }
    ]
   },
+  "https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf": {
+   "also_at": [],
+   "authors": [
+    "Michael Cherny",
+    "Sagie Dulce"
+   ],
+   "cited_by": [
+    "2016-17.md:122"
+   ],
+   "cited_title": "Well, That Escalated Quickly!",
+   "content_gap": "",
+   "content_sha256": "16512f2d5e3f13ccc8eea7b638aba62fc6267f86a9b98c76fe3f8d8fc9178f35",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "16512f2d5e3f13ccc8eea7b638aba62fc6267f86a9b98c76fe3f8d8fc9178f35",
+    "tags": [
+     "docker",
+     "csrf",
+     "sop-bypass",
+     "same-origin-policy",
+     "rce",
+     "attack-chain",
+     "privilege-escalation"
+    ],
+    "text": "Chains a browser-triggered Docker build with local name-resolution spoofing against Docker for Windows. An initial build container answers LLMNR queries to rebind a hostname to localhost, bypassing browser origin restrictions and gaining Docker API control. A shadow-container technique then transfers attack state across VM restarts to maintain persistence inside the Linux VM."
+   },
+   "first_seen_utc": "2026-09-10T14:45:49+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "Aqua Security",
+   "raw_sha256": "fb8170e20509e2e7b1864a4fb072d1f03635d39a1c0d5118a28ba159d56a7d2b",
+   "slug": "well-that-escalated-quickly",
+   "spellings": [
+    "https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "16512f2d5e3f13ccc8eea7b638aba62fc6267f86a9b98c76fe3f8d8fc9178f35",
+     "extraction": null,
+     "raw_sha256": "fb8170e20509e2e7b1864a4fb072d1f03635d39a1c0d5118a28ba159d56a7d2b",
+     "reason": "",
+     "result": "stored",
+     "slug": "well-that-escalated-quickly",
+     "utc": "2026-09-10T14:47:05+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Michael Cherny",
+      "Sagie Dulce"
+     ],
+     "publisher": "Aqua Security",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 968056,
+     "file": "archived-references/pdf/2016-17/well-that-escalated-quickly.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:06+00:00"
+    },
+    "render": {
+     "chars": 30445,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/well-that-escalated-quickly.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:47:05+00:00"
+    }
+   },
+   "title": "Well, That Escalated Quickly!"
+  },
   "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf": {
    "also_at": [],
    "authors": [
@@ -25124,6 +25663,186 @@
     }
    },
    "title": "Cookie Bugs - Smuggling & Injection"
+  },
+  "https://blog.arkark.dev/2023/12/28/seccon-finals": {
+   "also_at": [],
+   "authors": [
+    "arkark"
+   ],
+   "cited_by": [
+    "2023.md:103"
+   ],
+   "cited_title": "DOMLeakify: style-attribute ID-existence timing oracle",
+   "content_gap": "",
+   "content_sha256": "2baf3dcdae24a398c4eee928e92cae1cdc7787869114f3b1e7185678169d8cd5",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "2baf3dcdae24a398c4eee928e92cae1cdc7787869114f3b1e7185678169d8cd5",
+    "tags": [
+     "css-injection",
+     "timing-attack",
+     "xsleak",
+     "dom",
+     "parser-differential",
+     "prototype-pollution",
+     "sandbox-escape",
+     "csp"
+    ],
+    "text": "Five SECCON challenge writeups include DOMLeakify: injected style attributes use Firefox -moz-element() to make costly rendering conditional on a secret DOM ID, exposing it through timing. Other challenges combine parser differences, CSP reporting, prototype pollution, and JavaScript sandbox escapes."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "images": {
+    "https://blog.arkark.dev/assets/images/babywaf-02-d8fd4b467151de8fb750242e2439b2e0.png": {
+     "bytes": 19475,
+     "height": 375,
+     "sha256": "642c3289791d2af02217b7324d2b8adf46c312c614180f10d3a8a2ee4488616f",
+     "width": 1028
+    },
+    "https://blog.arkark.dev/assets/images/cgi-2023-01-f9d5b1ba0736e2c5609cf434c226c436.png": {
+     "bytes": 13943,
+     "height": 197,
+     "sha256": "3294953750f25bfccea77e8348302d024e4d350e50cf1491af9994a696a0a8fd",
+     "width": 725
+    },
+    "https://blog.arkark.dev/assets/images/domleakify-01-9e55a9499ff00dfae90c1c7463555c99.png": {
+     "bytes": 18000,
+     "height": 468,
+     "sha256": "5d40759c3096af298ed708067dd5308e9445d5740c8a3faf6bfa7c8535aa94ed",
+     "width": 525
+    },
+    "https://blog.arkark.dev/assets/images/domleakify-02-915f9634157b347ab3eed9927ea0f110.png": {
+     "bytes": 57388,
+     "height": 839,
+     "sha256": "cc3ee0f8e9b40e29e18a5a0ca1891327ffac320ddd2535e44187bd8c3117d580",
+     "width": 805
+    },
+    "https://blog.arkark.dev/assets/images/domleakify-03-f516c20d5fea4e299ace539c01e8bd6a.png": {
+     "bytes": 35298,
+     "height": 408,
+     "sha256": "f4b081dcb8a25728e560817ea7047f8f20a62c76b207ba37aa13bbf1531cf845",
+     "width": 884
+    },
+    "https://blog.arkark.dev/assets/images/domleakify-04-b474e60a2913262d429615b8c15910cc.png": {
+     "bytes": 38818,
+     "height": 477,
+     "sha256": "6ad5e290381dc9c2a1af6d1b8d89604a41ba5fa519ca6b2a68bc5106be3e4c23",
+     "width": 916
+    },
+    "https://blog.arkark.dev/assets/images/domleakify-05-ec1f1dfa1218e5dc3761fcc5f3208813.png": {
+     "bytes": 20478,
+     "height": 474,
+     "sha256": "1421ffff1212950b288ed6906dba79e8cc2b280101ba29574e43a2e2f4d4913a",
+     "width": 1100
+    },
+    "https://blog.arkark.dev/assets/images/domleakify-06-0afd8f8a88d708e86772047bd28f94e7.png": {
+     "bytes": 11993,
+     "height": 406,
+     "sha256": "c14c6ec970f0075328d94a3b52db6a8fdb4d3a0903d38c380ece28b11c2198c3",
+     "width": 1100
+    },
+    "https://blog.arkark.dev/assets/images/lemonmd-01-90036b4295c902bf5d47de07f2cd3037.png": {
+     "bytes": 54873,
+     "height": 603,
+     "sha256": "63c58f899d1feac56741ad2281725cc8a2dff486d35fb8b09a19a8d6a760a61f",
+     "width": 1008
+    },
+    "https://blog.arkark.dev/assets/images/lemonmd-02-764283ba11bc95f7005f479d22706eea.png": {
+     "bytes": 43394,
+     "height": 383,
+     "sha256": "6ad06b28635cc3a46a7b35c2d1bd86ebf3ae562d7c168a89350863c63b83bbe2",
+     "width": 974
+    },
+    "https://blog.arkark.dev/assets/images/lemonmd-03-7b6932cb0880167a962fc254ddce04df.png": {
+     "bytes": 22974,
+     "height": 586,
+     "sha256": "bfd2ba9324761a1e2c65d4e73e844bebd1fb1fff857aa735fc290448820d9b08",
+     "width": 989
+    },
+    "https://blog.arkark.dev/assets/images/lemonmd-05-c56dbeadbfba25e92d169e9723db9715.png": {
+     "bytes": 24709,
+     "height": 586,
+     "sha256": "a8ae86fb8c31dd8b707a7539527a7ad1e7f85de6f52b39303026490f25677e88",
+     "width": 997
+    },
+    "https://blog.arkark.dev/assets/images/lemonmd-06-6cd67dcdd476dfc17a403aed4aa15d43.png": {
+     "bytes": 30750,
+     "height": 346,
+     "sha256": "d04fd53ca7a2f8a9ea7d2c316281701ed5aabc7bbfcbab2f7d97cad0ac730f93",
+     "width": 573
+    },
+    "https://blog.arkark.dev/assets/images/top-01-da5f4fd9d14181f583cc208b57b67bb9.jpg": {
+     "bytes": 126843,
+     "height": 738,
+     "sha256": "20ba6535649efcf21167414dc3c255fca34af4fd9572153057e695e485eab435",
+     "width": 1100
+    },
+    "https://blog.arkark.dev/assets/images/top-02-b03048657ce351cef07f28806cbdd3d1.jpg": {
+     "bytes": 135595,
+     "height": 1100,
+     "sha256": "4465471ef31edaa3d2478325ca94d9f23acabd5b0abd9fe9dc560fd7efc9aec8",
+     "width": 879
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2023-12-28",
+   "publisher": "blog.arkark.dev",
+   "raw_sha256": "9b17a97d318eeb6ce8a6592276b2bbcf37a077bcf77aaaeb800ff462f91fe526",
+   "slug": "2023-blog-arkark-dev-seccon-ctf-2023-finals-author-writeups",
+   "spellings": [
+    "https://blog.arkark.dev/2023/12/28/seccon-finals"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "2baf3dcdae24a398c4eee928e92cae1cdc7787869114f3b1e7185678169d8cd5",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:53:51+00:00"
+    },
+    "images": {
+     "bytes": 654531,
+     "reason": "15 of 15 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:48:39+00:00"
+    },
+    "import": {
+     "chars": 27542,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "2baf3dcdae24a398c4eee928e92cae1cdc7787869114f3b1e7185678169d8cd5",
+     "utc": "2026-09-10T15:53:51+00:00"
+    },
+    "pdf": {
+     "bytes": 1058640,
+     "file": "archived-references/pdf/2023/2023-blog-arkark-dev-seccon-ctf-2023-finals-author-writeups.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T16:04:59+00:00"
+    },
+    "render": {
+     "chars": 27542,
+     "depth": "full",
+     "file": "archived-references/md/2023/2023-blog-arkark-dev-seccon-ctf-2023-finals-author-writeups.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:53:51+00:00"
+    }
+   },
+   "title": "SECCON CTF 2023 Finals: Author Writeups"
   },
   "https://blog.arkark.dev/2025/09/08/asisctf-quals": {
    "also_at": [],
@@ -36267,6 +36986,123 @@
    },
    "title": "Revoking Trust in one CNNIC Intermediate Certificate"
   },
+  "https://blog.nerdbank.net/2009/03/08/openid-association-poisoning": {
+   "also_at": [],
+   "authors": [
+    "Andrew Arnott"
+   ],
+   "cited_by": [
+    "2009.md:110"
+   ],
+   "cited_title": "OpenID association poisoning",
+   "content_gap": "",
+   "content_sha256": "18a3e41006f0644c6565fc4045b08240f56924c724c2b7671bf0de7e6da17b75",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "18a3e41006f0644c6565fc4045b08240f56924c724c2b7671bf0de7e6da17b75",
+    "tags": [
+     "openid",
+     "sso",
+     "auth-bypass",
+     "identity",
+     "crypto"
+    ],
+    "text": "Describes a possible OpenID association-store flaw: a malicious provider chooses another provider’s association handle and replaces its shared secret. A relying party that indexes associations incorrectly could reject legitimate logins or accept forged identities. The author checks DotNetOpenId and Janrain’s Ruby library and finds neither vulnerable to this proposed attack."
+   },
+   "first_seen_utc": "2026-09-10T14:07:34+00:00",
+   "grade": "research",
+   "kind": "article",
+   "language": "en-US",
+   "licence": "unknown",
+   "publisher": "blog.nerdbank.net",
+   "raw_sha256": "64838386d85a96a2162ad5abb2ce1464b64cc41a4cb08d23a8ed2c4924b54659",
+   "slug": "blog-nerdbank-net-openid-association-poisoning",
+   "spellings": [
+    "https://blog.nerdbank.net/2009/03/08/openid-association-poisoning/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "18a3e41006f0644c6565fc4045b08240f56924c724c2b7671bf0de7e6da17b75",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 4196,
+        "code_blocks": 0,
+        "headings": 5,
+        "images": 1,
+        "links": 13,
+        "name": "precision",
+        "tables": 0,
+        "words": 549
+       },
+       {
+        "chars": 6364,
+        "code_blocks": 0,
+        "headings": 10,
+        "images": 1,
+        "links": 36,
+        "name": "recall",
+        "tables": 0,
+        "words": 660
+       },
+       {
+        "chars": 6406,
+        "code_blocks": 0,
+        "headings": 10,
+        "images": 1,
+        "links": 36,
+        "name": "raw",
+        "tables": 0,
+        "words": 665
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "64838386d85a96a2162ad5abb2ce1464b64cc41a4cb08d23a8ed2c4924b54659",
+     "reason": "",
+     "result": "stored",
+     "slug": "blog-nerdbank-net-openid-association-poisoning",
+     "utc": "2026-09-10T14:18:07+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Andrew Arnott"
+     ],
+     "publisher": "blog.nerdbank.net",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 71378,
+     "file": "archived-references/pdf/2009/blog-nerdbank-net-openid-association-poisoning.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:13+00:00"
+    },
+    "render": {
+     "chars": 6186,
+     "depth": "full",
+     "file": "archived-references/md/2009/blog-nerdbank-net-openid-association-poisoning.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:18:07+00:00"
+    }
+   },
+   "title": "OpenID association poisoning"
+  },
   "https://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html": {
    "also_at": [],
    "authors": [
@@ -41890,6 +42726,157 @@
      "url": "https://www.youtube.com/watch?v=v5dq80S1WF4"
     }
    ]
+  },
+  "https://blog.scrt.ch/2016/05/12/net-serialiception": {
+   "also_at": [],
+   "authors": [
+    "agix"
+   ],
+   "cited_by": [
+    "2016-17.md:118"
+   ],
+   "cited_title": ".NET serialiception",
+   "content_gap": "",
+   "content_sha256": "6da37c2ebab8760573c2486a88c678b2018eee023cedec227c55d2e6cdc0b39d",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "6da37c2ebab8760573c2486a88c678b2018eee023cedec227c55d2e6cdc0b39d",
+    "tags": [
+     "dotnet",
+     "aspnet",
+     "deserialization",
+     "xxe",
+     "gadget-chain",
+     "rce",
+     "tooling"
+    ],
+    "text": "Investigates .NET BinaryFormatter deserialization reachable through web inputs and unsigned ViewState. Besides DataSet XXE, it develops a chain through COM unmarshalling, bitmap heap spraying and ROP to execute code in an IIS lab. A JSON converter supports stream inspection and editing; shared object references amplify the spray without duplicating each bitmap in the input."
+   },
+   "first_seen_utc": "2026-09-10T14:26:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://blog.scrt.ch/wp-content/uploads/2016/05/crash_capture_20160512_103139.png": {
+     "bytes": 68827,
+     "height": 305,
+     "sha256": "325c3e98b76ece2332be76281143ce279f1b5ae3033114f9b3d7e2b10fb8d1c1",
+     "width": 671
+    },
+    "https://blog.scrt.ch/wp-content/uploads/2016/05/heap.bmp": {
+     "bytes": 84282,
+     "height": 818,
+     "sha256": "b382255a3361b7a7b9cf874cf7e3a1147667b083c4ea1cfd4eee805467e95d26",
+     "width": 640
+    },
+    "https://blog.scrt.ch/wp-content/uploads/2016/05/heaprop.bmp": {
+     "bytes": 234212,
+     "height": 818,
+     "sha256": "3cfd88dc93367fdce7b2d75eba87abdf713f2736e538c99fa9fa1c7d00e71366",
+     "width": 640
+    },
+    "https://blog.scrt.ch/wp-content/uploads/2016/05/heapsc.bmp": {
+     "bytes": 126581,
+     "height": 818,
+     "sha256": "f4ccad1c56c8ac68b6bd1235f32883b4b52a1ac59ec43d011deaee5a08af9d92",
+     "width": 640
+    }
+   },
+   "kind": "article",
+   "language": "en-US",
+   "licence": "unknown",
+   "publisher": "SCRT",
+   "raw_sha256": "c6a723d44f97ffed9b4ebfd7ccd982134bdbee8aae647b74b70a4c3c7103d461",
+   "slug": "blog-scrt-ch-net-serialiception",
+   "spellings": [
+    "https://blog.scrt.ch/2016/05/12/net-serialiception/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "6da37c2ebab8760573c2486a88c678b2018eee023cedec227c55d2e6cdc0b39d",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 12462,
+        "code_blocks": 3,
+        "headings": 7,
+        "images": 4,
+        "links": 22,
+        "name": "precision",
+        "tables": 0,
+        "words": 1466
+       },
+       {
+        "chars": 12462,
+        "code_blocks": 3,
+        "headings": 7,
+        "images": 4,
+        "links": 22,
+        "name": "recall",
+        "tables": 0,
+        "words": 1466
+       },
+       {
+        "chars": 12500,
+        "code_blocks": 3,
+        "headings": 7,
+        "images": 4,
+        "links": 22,
+        "name": "raw",
+        "tables": 0,
+        "words": 1472
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "c6a723d44f97ffed9b4ebfd7ccd982134bdbee8aae647b74b70a4c3c7103d461",
+     "reason": "",
+     "result": "stored",
+     "slug": "blog-scrt-ch-net-serialiception",
+     "utc": "2026-09-10T14:28:54+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "agix"
+     ],
+     "publisher": "SCRT",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "images": {
+     "bytes": 513902,
+     "reason": "4 of 4 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:48:46+00:00"
+    },
+    "pdf": {
+     "bytes": 644574,
+     "file": "archived-references/pdf/2016-17/blog-scrt-ch-net-serialiception.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:14+00:00"
+    },
+    "render": {
+     "chars": 14299,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/blog-scrt-ch-net-serialiception.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:28:54+00:00"
+    }
+   },
+   "title": ".NET serialiception"
   },
   "https://blog.securitee.org/?p=37": {
    "also_at": [],
@@ -53408,6 +54395,123 @@
    },
    "title": "1139 - cloudflare: Cloudflare Reverse Proxies are Dumping Uninitialized Memory - project-zero"
   },
+  "https://bugs.php.net/bug.php?id=72663": {
+   "also_at": [],
+   "authors": [
+    "Taoguang Chen"
+   ],
+   "cited_by": [
+    "2016-17.md:116"
+   ],
+   "cited_title": "Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization",
+   "content_gap": "",
+   "content_sha256": "ac694bccc8331385a2d2d2b1d739278f4a45250ff41094a059e8dae12f99365b",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "ac694bccc8331385a2d2d2b1d739278f4a45250ff41094a059e8dae12f99365b",
+    "tags": [
+     "php",
+     "deserialization",
+     "filter-bypass",
+     "gadget-chain"
+    ],
+    "text": "Shows that malformed PHP serialized objects can be created with attacker-controlled properties before parsing fails and skips __wakeup(). Destructors can then run without the defensive cleanup placed in __wakeup(). Further examples retain these partially initialized objects through custom deserialization or session decoding, allowing other magic methods to be invoked."
+   },
+   "first_seen_utc": "2026-09-10T14:26:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://bugs.php.net/images/logo.png": {
+     "reason": "130x67 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "publisher": "PHP",
+   "raw_sha256": "1b44a7409a59e639c9865d8bd064f17e9e4796a2c005cba697b719f8a9903dfc",
+   "slug": "bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization",
+   "spellings": [
+    "https://bugs.php.net/bug.php?id=72663"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "ac694bccc8331385a2d2d2b1d739278f4a45250ff41094a059e8dae12f99365b",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 3960,
+        "code_blocks": 6,
+        "headings": 3,
+        "images": 2,
+        "links": 6,
+        "name": "recall",
+        "tables": 2,
+        "words": 378
+       },
+       {
+        "chars": 4061,
+        "code_blocks": 6,
+        "headings": 3,
+        "images": 2,
+        "links": 6,
+        "name": "raw",
+        "tables": 2,
+        "words": 394
+       }
+      ],
+      "chosen": "raw",
+      "why": "raw kept the most code blocks and text"
+     },
+     "raw_sha256": "1b44a7409a59e639c9865d8bd064f17e9e4796a2c005cba697b719f8a9903dfc",
+     "reason": "",
+     "result": "stored",
+     "slug": "bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization",
+     "utc": "2026-09-10T14:28:48+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Taoguang Chen"
+     ],
+     "publisher": "PHP",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "images": {
+     "bytes": 0,
+     "reason": "0 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:48:49+00:00"
+    },
+    "pdf": {
+     "bytes": 84310,
+     "file": "archived-references/pdf/2016-17/bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:18+00:00"
+    },
+    "render": {
+     "chars": 5944,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/bugs-php-net-php-sec-bug-72663-create-unexpected-object-don-t-deserialization.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:28:48+00:00"
+    }
+   },
+   "title": "PHP :: Sec Bug #72663 :: Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization"
+  },
   "https://bugs.webkit.org/show_bug.cgi?id=15936": {
    "also_at": [],
    "cited_by": [
@@ -55403,6 +56507,92 @@
     }
    },
    "title": "{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF"
+  },
+  "https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf": {
+   "also_at": [],
+   "authors": [
+    "William Melicher",
+    "Clement Fung",
+    "Lujo Bauer",
+    "Limin Jia"
+   ],
+   "cited_by": [
+    "2021.md:69"
+   ],
+   "cited_title": "Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning",
+   "content_gap": "",
+   "content_sha256": "738d4ff76837284e5e9084e004da8d2dce0f8106937384923b6bd9bc24cae4a3",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "738d4ff76837284e5e9084e004da8d2dce0f8106937384923b6bd9bc24cae4a3",
+    "tags": [
+     "xss",
+     "dom",
+     "javascript",
+     "dynamic-analysis",
+     "measurement-study"
+    ],
+    "text": "Trains a neural classifier on JavaScript function tokens to select code for DOM XSS taint tracking. Its hybrid design retains 94.5% of unique confirmed vulnerabilities while modeling a 3.43-fold reduction in taint-tracking cost; the classifier alone has inadequate precision."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "3887d9506eb41e04aeddd31a9a6c6b6d2aaad481d801442ad45b1c638a420c99",
+   "slug": "towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning",
+   "spellings": [
+    "https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "738d4ff76837284e5e9084e004da8d2dce0f8106937384923b6bd9bc24cae4a3",
+     "extraction": null,
+     "raw_sha256": "3887d9506eb41e04aeddd31a9a6c6b6d2aaad481d801442ad45b1c638a420c99",
+     "reason": "",
+     "result": "stored",
+     "slug": "towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning",
+     "utc": "2026-09-10T15:37:37+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "William Melicher",
+      "Clement Fung",
+      "Lujo Bauer",
+      "Limin Jia"
+     ],
+     "publisher": "ACM",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "pdf": {
+     "bytes": 2193480,
+     "file": "archived-references/pdf/2021/towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:19+00:00"
+    },
+    "render": {
+     "chars": 106792,
+     "depth": "full",
+     "file": "archived-references/md/2021/towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:37:37+00:00"
+    }
+   },
+   "title": "Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning"
   },
   "https://code-white.com/blog/2019-02-telerik-revisited": {
    "also_at": [],
@@ -63225,6 +64415,86 @@
    },
    "title": "Researchers To Demonstrate New Attack That Exploits HTTP"
   },
+  "https://davidlitchfield.com/lateral-sql-injection.pdf": {
+   "also_at": [],
+   "authors": [
+    "David Litchfield"
+   ],
+   "cited_by": [
+    "2008.md:95"
+   ],
+   "cited_title": "Lateral SQL Injection",
+   "content_gap": "",
+   "content_sha256": "d91302b63c624457a53025043425b109d35b043da17b85d96060db90963734a4",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "d91302b63c624457a53025043425b109d35b043da17b85d96060db90963734a4",
+    "tags": [
+     "sqli",
+     "database",
+     "encoding",
+     "privilege-escalation"
+    ],
+    "text": "Shows how Oracle session settings can influence supposedly safe DATE values embedded in dynamic SQL. Changing NLS_DATE_FORMAT introduces SQL through date parameters or SYSDATE, reaching procedures with no direct user input and enabling privilege escalation with cursor injection. It also demonstrates quote insertion through numeric formatting, while limiting claims about its exploitability."
+   },
+   "first_seen_utc": "2026-09-10T13:59:08+00:00",
+   "grade": "research",
+   "publisher": "NGSSoftware",
+   "raw_sha256": "0db673b33010a9aa5626bc5198e1ef07be87e36a1d9a04d25e9c098c2c211bbe",
+   "slug": "lateral-sql-injection",
+   "spellings": [
+    "https://www.davidlitchfield.com/lateral-sql-injection.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "d91302b63c624457a53025043425b109d35b043da17b85d96060db90963734a4",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T14:01:40+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "David Litchfield"
+     ],
+     "publisher": "NGSSoftware",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:03:26+00:00"
+    },
+    "import": {
+     "chars": 6421,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "d91302b63c624457a53025043425b109d35b043da17b85d96060db90963734a4",
+     "utc": "2026-09-10T14:01:40+00:00"
+    },
+    "pdf": {
+     "bytes": 157537,
+     "file": "archived-references/pdf/2008/lateral-sql-injection.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:22+00:00"
+    },
+    "render": {
+     "chars": 6421,
+     "depth": "full",
+     "file": "archived-references/md/2008/lateral-sql-injection.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:01:40+00:00"
+    }
+   },
+   "title": "Lateral SQL Injection"
+  },
   "https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html": {
    "also_at": [],
    "cited_by": [
@@ -65531,6 +66801,82 @@
     }
    },
    "title": "File Download Injection"
+  },
+  "https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf": {
+   "also_at": [],
+   "authors": [
+    "Amit Klein"
+   ],
+   "cited_by": [
+    "2007.md:108"
+   ],
+   "cited_title": "Windows DNS Server Cache Poisoning",
+   "content_gap": "",
+   "content_sha256": "a880319780faf1d9eab43a6c88fd3def7596005bc34652fe1099f210b18af71f",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "a880319780faf1d9eab43a6c88fd3def7596005bc34652fe1099f210b18af71f",
+    "tags": [
+     "dns",
+     "cache-poisoning",
+     "predictable-token",
+     "javascript",
+     "attack-chain"
+    ],
+    "text": "Windows DNS Server uses a static UDP source port and a structured transaction ID. CNAME chains advance its counter to a state where the next ID has only eight possible values, enabling cache poisoning after a browser-triggered lookup. The paper derives the predictor, explains forwarding variants and includes a Perl prediction script."
+   },
+   "first_seen_utc": "2026-09-10T15:14:56+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "Trusteer",
+   "raw_sha256": "e6bf106c2809b9fc55bd7e40137aa82ae7c1d6097a707860f8585ff0ea7fd84d",
+   "slug": "windows-dns-server-cache-poisoning",
+   "spellings": [
+    "https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "a880319780faf1d9eab43a6c88fd3def7596005bc34652fe1099f210b18af71f",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:51:04+00:00"
+    },
+    "import": {
+     "chars": 25477,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "a880319780faf1d9eab43a6c88fd3def7596005bc34652fe1099f210b18af71f",
+     "utc": "2026-09-10T15:51:04+00:00"
+    },
+    "pdf": {
+     "bytes": 128887,
+     "file": "archived-references/pdf/2007/windows-dns-server-cache-poisoning.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:24+00:00"
+    },
+    "render": {
+     "chars": 25477,
+     "depth": "full",
+     "file": "archived-references/md/2007/windows-dns-server-cache-poisoning.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:51:04+00:00"
+    }
+   },
+   "title": "Windows DNS Server Cache Poisoning"
   },
   "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1": {
    "also_at": [],
@@ -80741,6 +82087,223 @@
     }
    },
    "title": "Code"
+  },
+  "https://github.com/WICG/shared-storage/issues/136": {
+   "also_at": [],
+   "authors": [
+    "anisenoff"
+   ],
+   "cited_by": [
+    "2024.md:162"
+   ],
+   "cited_title": "Shared Storage worklet queue and termination channels",
+   "content_gap": "",
+   "content_sha256": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+    "tags": [
+     "timing-attack",
+     "side-channel",
+     "info-leak"
+    ],
+    "text": "Demonstrates that Shared Storage writes inside a worklet alter completion times of writes issued outside it. Histograms expose otherwise hidden worklet activity through contention in the storage API, motivating discussion of immediate resolution, rate limits, and execution limits."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2024-02-20",
+   "publisher": "GitHub",
+   "raw_sha256": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+   "slug": "2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet",
+   "spellings": [
+    "https://github.com/WICG/shared-storage/issues/136"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+     "extraction": null,
+     "raw_sha256": "7d570e7f723de8927fb9b5372931ed5eaa9f878177e2e3397bc147ffc4f61c93",
+     "reason": "",
+     "result": "stored",
+     "slug": "2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet",
+     "utc": "2026-09-10T15:37:39+00:00"
+    },
+    "pdf": {
+     "bytes": 57104,
+     "file": "archived-references/pdf/2024/2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:28+00:00"
+    },
+    "render": {
+     "chars": 4392,
+     "depth": "full",
+     "file": "archived-references/md/2024/2024-github-shared-storage-return-times-outside-worklet-appear-be-worklet.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:37:39+00:00"
+    }
+   },
+   "title": "Shared Storage Return Times Outside of Worklet Appear to Be Dependent on Activity in Worklet"
+  },
+  "https://github.com/WICG/shared-storage/issues/39": {
+   "also_at": [],
+   "authors": [
+    "gtanzer"
+   ],
+   "cited_by": [
+    "2022.md:88"
+   ],
+   "cited_title": "Problem with Shared Storage’s described use of k-anonymity",
+   "content_gap": "",
+   "content_sha256": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+    "tags": [
+     "side-channel",
+     "info-leak",
+     "deanonymization",
+     "abuse-of-functionality"
+    ],
+    "text": "Shows how the proposed Shared Storage k-anonymity check could reveal cross-site bits when selectURL falls back to an unchecked default URL. Encoding a first-party identifier in that URL links the bit to a user, and repeated selections leak further bits. The discussion proposes checking the default too."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2022-07-22",
+   "publisher": "GitHub",
+   "raw_sha256": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+   "slug": "2022-github-problem-sharedstorage-s-described-use-k-anonymity",
+   "spellings": [
+    "https://github.com/WICG/shared-storage/issues/39"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+     "extraction": null,
+     "raw_sha256": "f5561e3eb1442d7b2459db5272255a71544b3611aa9a5a0d3bf516f4859f38e3",
+     "reason": "",
+     "result": "stored",
+     "slug": "2022-github-problem-sharedstorage-s-described-use-k-anonymity",
+     "utc": "2026-09-10T15:37:43+00:00"
+    },
+    "pdf": {
+     "bytes": 74006,
+     "file": "archived-references/pdf/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:30+00:00"
+    },
+    "render": {
+     "chars": 5256,
+     "depth": "full",
+     "file": "archived-references/md/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:37:43+00:00"
+    }
+   },
+   "title": "Problem with sharedStorage's described use of k-anonymity"
+  },
+  "https://github.com/WICG/shared-storage/issues/86": {
+   "also_at": [],
+   "authors": [
+    "anisenoff"
+   ],
+   "cited_by": [
+    "2023.md:102",
+    "2024.md:162"
+   ],
+   "cited_title": "Leaking more than log₂ of the URL count with the selectURL gate",
+   "content_gap": "",
+   "content_sha256": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+    "tags": [
+     "timing-attack",
+     "side-channel",
+     "info-leak",
+     "abuse-of-functionality"
+    ],
+    "text": "Shared Storage worklets delay selected-URL requests according to stored values, leaking information through server-observed timing even when a single URL incurs zero budget cost. Later comments demonstrate conditional worklet crashes as a request-presence channel and discuss process isolation."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2023-06-05",
+   "publisher": "GitHub",
+   "raw_sha256": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+   "slug": "2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate",
+   "spellings": [
+    "https://github.com/WICG/shared-storage/issues/86",
+    "https://github.com/WICG/shared-storage/issues/86#issuecomment-1924746302"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+     "extraction": null,
+     "raw_sha256": "ddc3a405b6702054f190a2ac842df9717c931962ab9b0b2f6ba1ad862a2e96b5",
+     "reason": "",
+     "result": "stored",
+     "slug": "2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate",
+     "utc": "2026-09-10T15:37:48+00:00"
+    },
+    "pdf": {
+     "bytes": 61031,
+     "file": "archived-references/pdf/2023/2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:34+00:00"
+    },
+    "render": {
+     "chars": 9023,
+     "depth": "full",
+     "file": "archived-references/md/2023/2023-github-leaking-more-than-log-2-urls-bits-data-selecturl-gate.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:37:48+00:00"
+    }
+   },
+   "title": "Leaking more than log_2(|URLs|) bits of data with the selectURL gate"
   },
   "https://github.com/WSP-LAB/Site-Isolation-Is-Dead": {
    "also_at": [],
@@ -114028,6 +115591,97 @@
     }
    ]
   },
+  "https://ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf": {
+   "also_at": [],
+   "authors": [
+    "Souphiane Bensalim",
+    "David Klein",
+    "Thomas Barber",
+    "Martin Johns"
+   ],
+   "cited_by": [
+    "2021.md:68"
+   ],
+   "cited_title": "Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis",
+   "content_gap": "",
+   "content_sha256": "82edf884932ea6702eb2bc8e861bb9aa6d89402f23b877ff6729fdf41fe8663e",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "82edf884932ea6702eb2bc8e861bb9aa6d89402f23b877ff6729fdf41fe8663e",
+    "tags": [
+     "xss",
+     "dom",
+     "dynamic-analysis",
+     "tooling",
+     "encoding"
+    ],
+    "text": "Generates DOM XSS exploits using dynamic taint traces to identify replaceable URL ranges, preserve surrounding URL structure, and choose context-breaking payloads. The evaluation confirms 7,199 flows across 711 domains using a browser configured for legacy URL-encoding behavior."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "28ddb5f544e8e63a0c0090276a41eaa79030f3347e5acb3051fbc5441c67537b",
+   "slug": "talking-about-my-generation-targeted-dom-based-xss-exploit-generation-analysis",
+   "spellings": [
+    "https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "82edf884932ea6702eb2bc8e861bb9aa6d89402f23b877ff6729fdf41fe8663e",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:53:54+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Souphiane Bensalim",
+      "David Klein",
+      "Thomas Barber",
+      "Martin Johns"
+     ],
+     "publisher": "ACM",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 40169,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "82edf884932ea6702eb2bc8e861bb9aa6d89402f23b877ff6729fdf41fe8663e",
+     "utc": "2026-09-10T15:53:54+00:00"
+    },
+    "pdf": {
+     "bytes": 626306,
+     "file": "archived-references/pdf/2021/talking-about-my-generation-targeted-dom-based-xss-exploit-generation-analysis.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:35+00:00"
+    },
+    "render": {
+     "chars": 40169,
+     "depth": "full",
+     "file": "archived-references/md/2021/talking-about-my-generation-targeted-dom-based-xss-exploit-generation-analysis.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:53:54+00:00"
+    }
+   },
+   "title": "Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis"
+  },
   "https://ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf": {
    "also_at": [],
    "authors": [
@@ -117917,6 +119571,85 @@
     }
    },
    "title": "Misconfigurations in Java XML Parsers"
+  },
+  "https://imperva.com/docs/imperva_hii_http2.pdf": {
+   "also_at": [],
+   "authors": [
+    "Imperva Defense Center"
+   ],
+   "cited_by": [
+    "2016-17.md:120"
+   ],
+   "cited_title": "HTTP/2: In-depth analysis of the top four flaws",
+   "content_gap": "",
+   "content_sha256": "36418e9289a187ae63de8bbdd5593dbd64d70448c9b095c93f06a499c273a44b",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "36418e9289a187ae63de8bbdd5593dbd64d70448c9b095c93f06a499c273a44b",
+    "tags": [
+     "http2",
+     "dos",
+     "algorithmic-complexity",
+     "cve"
+    ],
+    "text": "Analyzes HTTP/2 implementation failures across five servers: stream reuse, slow reads, dependency cycles and HPACK decompression bombs. Multiplexing amplifies resource exhaustion, while repeated references to a large compressed header consume memory. The report details affected implementations, traces vulnerable code paths, and explains how shared libraries also expose Wireshark."
+   },
+   "first_seen_utc": "2026-09-10T14:45:49+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "Imperva",
+   "raw_sha256": "13e9036cd1cb820510fb817ebff990d0ce6409fd14fdb33c54c9a51bd494ddf1",
+   "slug": "http-2-depth-analysis-top-four-flaws",
+   "spellings": [
+    "https://www.imperva.com/docs/imperva_hii_http2.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "36418e9289a187ae63de8bbdd5593dbd64d70448c9b095c93f06a499c273a44b",
+     "extraction": null,
+     "raw_sha256": "13e9036cd1cb820510fb817ebff990d0ce6409fd14fdb33c54c9a51bd494ddf1",
+     "reason": "",
+     "result": "stored",
+     "slug": "http-2-depth-analysis-top-four-flaws",
+     "utc": "2026-09-10T14:46:56+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Imperva Defense Center"
+     ],
+     "publisher": "Imperva",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 6404884,
+     "file": "archived-references/pdf/2016-17/http-2-depth-analysis-top-four-flaws.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:38+00:00"
+    },
+    "render": {
+     "chars": 52217,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/http-2-depth-analysis-top-four-flaws.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:46:56+00:00"
+    }
+   },
+   "title": "HTTP/2: In-depth analysis of the top four flaws"
   },
   "https://informationweek.com/news/showArticle.jhtml?articleID=192500500&subSection=Breaking+News": {
    "also_at": [],
@@ -137342,6 +139075,121 @@
    },
    "title": "The curse of inverse strokejacking"
   },
+  "https://lcamtuf.blogspot.com/2010/06/safari-tale-of-betrayal-and-revenge.html": {
+   "also_at": [],
+   "authors": [
+    "Michał Zalewski"
+   ],
+   "cited_by": [
+    "2010.md:103"
+   ],
+   "cited_title": "Safari: a tale of betrayal and revenge",
+   "content_gap": "",
+   "content_sha256": "0d53bcd568f6506358e5c35d543ffc495030233112e624fe1a51a0f39c615e5f",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "0d53bcd568f6506358e5c35d543ffc495030233112e624fe1a51a0f39c615e5f",
+    "tags": [
+     "url-parsing",
+     "parser-differential",
+     "sop-bypass",
+     "same-origin-policy"
+    ],
+    "text": "Explains a Safari same-origin bypass caused by disagreement between WebKit’s KURL parser and CFNetwork. Hostless-looking HTTP URLs receive authenticated content from distinct servers while origin checks treat both as having an empty host. A data-URL transition supplies the parsing context needed to trigger the discrepancy from a webpage; Safari 4.1 and 5.0 fixed the flaw."
+   },
+   "first_seen_utc": "2026-09-10T13:59:08+00:00",
+   "grade": "research",
+   "kind": "article",
+   "licence": "unknown",
+   "publisher": "lcamtuf.blogspot.com",
+   "raw_sha256": "7f21e4ed2b02ab4a1691e1bba6b546165bf2d0a552bb1ba61742a11bab1fae4d",
+   "slug": "lcamtuf-blogspot-com-safari-tale-betrayal-revenge",
+   "spellings": [
+    "https://lcamtuf.blogspot.com/2010/06/safari-tale-of-betrayal-and-revenge.html"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "0d53bcd568f6506358e5c35d543ffc495030233112e624fe1a51a0f39c615e5f",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 3522,
+        "code_blocks": 0,
+        "headings": 0,
+        "images": 0,
+        "links": 8,
+        "name": "precision",
+        "tables": 0,
+        "words": 513
+       },
+       {
+        "chars": 3913,
+        "code_blocks": 0,
+        "headings": 1,
+        "images": 0,
+        "links": 12,
+        "name": "recall",
+        "tables": 0,
+        "words": 534
+       },
+       {
+        "chars": 3974,
+        "code_blocks": 0,
+        "headings": 1,
+        "images": 0,
+        "links": 12,
+        "name": "raw",
+        "tables": 0,
+        "words": 544
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "7f21e4ed2b02ab4a1691e1bba6b546165bf2d0a552bb1ba61742a11bab1fae4d",
+     "reason": "",
+     "result": "stored",
+     "slug": "lcamtuf-blogspot-com-safari-tale-betrayal-revenge",
+     "utc": "2026-09-10T13:59:58+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Michał Zalewski"
+     ],
+     "publisher": "lcamtuf.blogspot.com",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:03:26+00:00"
+    },
+    "pdf": {
+     "bytes": 58339,
+     "file": "archived-references/pdf/2010/lcamtuf-blogspot-com-safari-tale-betrayal-revenge.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:41+00:00"
+    },
+    "render": {
+     "chars": 5624,
+     "depth": "full",
+     "file": "archived-references/md/2010/lcamtuf-blogspot-com-safari-tale-betrayal-revenge.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T13:59:58+00:00"
+    }
+   },
+   "title": "Safari: a tale of betrayal and revenge"
+  },
   "https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html": {
    "also_at": [],
    "browser_dom_sha256": "72bc9ddcee71f7115c512d5e3df7b65e48ea65953aa2d7af067ec35cba073006",
@@ -142706,6 +144554,88 @@
    },
    "title": "Bad Memories"
   },
+  "https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf": {
+   "also_at": [],
+   "authors": [
+    "Craig Heffner"
+   ],
+   "cited_by": [
+    "2010.md:104"
+   ],
+   "cited_title": "How to Hack Millions of Routers",
+   "content_gap": "",
+   "content_sha256": "b3f0156e676d48a5e7c2fd7595d8dd47127aa6e4c6d166c1d02613154d1cf96d",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "b3f0156e676d48a5e7c2fd7595d8dd47127aa6e4c6d166c1d02613154d1cf96d",
+    "tags": [
+     "dns-rebinding",
+     "same-origin-policy",
+     "sop-bypass",
+     "proxy",
+     "embedded-device",
+     "javascript",
+     "tooling"
+    ],
+    "text": "Multiple DNS A records and TCP connection failure redirect browser requests from an attacker server to a router’s public IP. Routers using the weak end system model accept this traffic from the LAN, exposing their administrative interface without guessing an internal address. Rebind turns the browser into an interactive proxy; tests cover 27 router configurations."
+   },
+   "first_seen_utc": "2026-09-10T15:16:44+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "Black Hat",
+   "raw_sha256": "2a31321b8597c345a453413f9c24e00b80ee37719c88ed97c44fb871f8d2281d",
+   "slug": "how-hack-millions-routers",
+   "spellings": [
+    "https://media.blackhat.com/bh-us-10/whitepapers/Heffner/BlackHat-USA-2010-Heffner-How-to-Hack-Millions-of-Routers-wp.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "b3f0156e676d48a5e7c2fd7595d8dd47127aa6e4c6d166c1d02613154d1cf96d",
+     "extraction": null,
+     "raw_sha256": "2a31321b8597c345a453413f9c24e00b80ee37719c88ed97c44fb871f8d2281d",
+     "reason": "",
+     "result": "stored",
+     "slug": "how-hack-millions-routers",
+     "utc": "2026-09-10T15:17:09+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Craig Heffner"
+     ],
+     "publisher": "Black Hat",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "pdf": {
+     "bytes": 1215971,
+     "file": "archived-references/pdf/2010/how-hack-millions-routers.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:40+00:00"
+    },
+    "render": {
+     "chars": 24685,
+     "depth": "full",
+     "file": "archived-references/md/2010/how-hack-millions-routers.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:17:09+00:00"
+    }
+   },
+   "title": "How to Hack Millions of Routers"
+  },
   "https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf": {
    "also_at": [],
    "authors": [
@@ -143488,6 +145418,90 @@
     }
    },
    "title": "SSRF vs. Business-critical applications. Part 1: XXE Tunneling in SAP NetWeaver (Whitepaper)"
+  },
+  "https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf": {
+   "also_at": [],
+   "authors": [
+    "Tal Be’ery",
+    "Amichai Shulman"
+   ],
+   "cited_by": [
+    "2013.md:66"
+   ],
+   "cited_title": "A Perfect CRIME? Only TIME Will Tell",
+   "content_gap": "",
+   "content_sha256": "934fd832b3cbbc8d81b2b0d8e20732912c94a817cc1df535bb4fc9931a0b46ef",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "934fd832b3cbbc8d81b2b0d8e20732912c94a817cc1df535bb4fc9931a0b46ef",
+    "tags": [
+     "timing-attack",
+     "side-channel",
+     "info-leak",
+     "http",
+     "tls",
+     "javascript",
+     "prior-art-extension"
+    ],
+    "text": "Extends compression-leak research in two separate demonstrations: browser JavaScript measures a one-byte request-size difference amplified at a TCP acknowledgement boundary, while response-length observations recover a Google Scholar user’s email address. Combining timing with compressed-response secret extraction is proposed as future work."
+   },
+   "first_seen_utc": "2026-09-10T15:16:44+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "Imperva",
+   "raw_sha256": "20bb08e3bfec601a3d7434e84beb5d02c399f0d7d7553aa6b93f264d55fcab70",
+   "slug": "perfect-crime-only-time-will-tell",
+   "spellings": [
+    "https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "934fd832b3cbbc8d81b2b0d8e20732912c94a817cc1df535bb4fc9931a0b46ef",
+     "extraction": null,
+     "raw_sha256": "20bb08e3bfec601a3d7434e84beb5d02c399f0d7d7553aa6b93f264d55fcab70",
+     "reason": "",
+     "result": "stored",
+     "slug": "perfect-crime-only-time-will-tell",
+     "utc": "2026-09-10T15:17:13+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Tal Be’ery",
+      "Amichai Shulman"
+     ],
+     "publisher": "Imperva",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "pdf": {
+     "bytes": 975069,
+     "file": "archived-references/pdf/2013/perfect-crime-only-time-will-tell.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:42+00:00"
+    },
+    "render": {
+     "chars": 42789,
+     "depth": "full",
+     "file": "archived-references/md/2013/perfect-crime-only-time-will-tell.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:17:13+00:00"
+    }
+   },
+   "title": "A Perfect CRIME? Only TIME Will Tell"
   },
   "https://media.blackhat.com/eu-13/briefings/Osipov/bh-eu-13-XML-data-osipov-slides.pdf": {
    "also_at": [],
@@ -158703,7 +160717,7 @@
     "2020.md:73"
    ],
    "cited_title": "Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites",
-   "content_gap": "",
+   "content_gap": "faulty capture: PDF text extraction drops fi/fl ligatures throughout the prose (for example first becomes rst and flaws becomes aws); re-extract from the verified original PDF with a ligature-preserving extractor, check raw_sha256 exists before an offline re-render, and compare the published body against the source (reported 2026-09-10)",
    "content_sha256": "459321de4ec376a1807a0ebdfbdf92078523fba6a8256ff168a3c4704ab532e3",
    "decision": {
     "at": "2026-08-19",
@@ -167756,6 +169770,100 @@
    },
    "title": "Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF abuse"
   },
+  "https://nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf": {
+   "also_at": [],
+   "authors": [
+    "Tom Van Goethem",
+    "Gertjan Franken",
+    "Iskander Sanchez-Rola",
+    "David Dworken",
+    "Wouter Joosen"
+   ],
+   "cited_by": [
+    "2022.md:87"
+   ],
+   "cited_title": "SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model",
+   "content_gap": "",
+   "content_sha256": "c3259a11c0fd264cc63dceaef3e29df65e5726bb3e1a2b1d8492573021e66886",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "c3259a11c0fd264cc63dceaef3e29df65e5726bb3e1a2b1d8492573021e66886",
+    "tags": [
+     "xsleak",
+     "side-channel",
+     "timing-attack",
+     "formal-analysis",
+     "survey",
+     "mitigation"
+    ],
+    "text": "Models XS-Leaks as state changes followed by observable state retrieval, classifying 38 attacks and examining defense gaps. Derives request-count oracles from HTTP connection limits and server rate limits, then studies deployed protections and introduces Leakbuster to guide configuration."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "2a184d1a65d4596d6c05c99b663c669105aca0b7f0a95d0635934a07cb3d6a50",
+   "slug": "sok-exploring-current-future-research-directions-xs-leaks-through-model",
+   "spellings": [
+    "https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "c3259a11c0fd264cc63dceaef3e29df65e5726bb3e1a2b1d8492573021e66886",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:54:44+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Tom Van Goethem",
+      "Gertjan Franken",
+      "Iskander Sanchez-Rola",
+      "David Dworken",
+      "Wouter Joosen"
+     ],
+     "publisher": "ACM",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 100551,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "c3259a11c0fd264cc63dceaef3e29df65e5726bb3e1a2b1d8492573021e66886",
+     "utc": "2026-09-10T15:54:44+00:00"
+    },
+    "pdf": {
+     "bytes": 813948,
+     "file": "archived-references/pdf/2022/sok-exploring-current-future-research-directions-xs-leaks-through-model.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:45+00:00"
+    },
+    "render": {
+     "chars": 100551,
+     "depth": "full",
+     "file": "archived-references/md/2022/sok-exploring-current-future-research-directions-xs-leaks-through-model.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:54:44+00:00"
+    }
+   },
+   "title": "SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model"
+  },
   "https://notsosecure.com/data-exfiltration-formula-injection": {
    "also_at": [],
    "authors": [
@@ -173139,6 +175247,89 @@
     }
    ]
   },
+  "https://pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf": {
+   "also_at": [],
+   "authors": [
+    "Jens Müller",
+    "Fabian Ising",
+    "Vladislav Mladenov",
+    "Christian Mainka",
+    "Sebastian Schinzel",
+    "Jörg Schwenk"
+   ],
+   "cited_by": [
+    "2019.md:85"
+   ],
+   "cited_title": "Practical Decryption exFiltration: Breaking PDF Encryption",
+   "content_gap": "",
+   "content_sha256": "f181631ab596ca289bb99be9569005470d55f0aa35e0683810c2b48d9dcc802f",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "f181631ab596ca289bb99be9569005470d55f0aa35e0683810c2b48d9dcc802f",
+    "tags": [
+     "pdf",
+     "crypto",
+     "gadget-chain",
+     "info-leak",
+     "javascript",
+     "measurement-study",
+     "attack-chain"
+    ],
+    "text": "Modified encrypted PDFs exfiltrate plaintext when their recipients decrypt them. Partial encryption permits attacker-controlled forms, links or scripts to reference encrypted objects; unauthenticated CBC and known permission bytes also enable encrypted gadgets. Tests on 27 viewers distinguish interaction requirements and full, partial or single-word leakage."
+   },
+   "first_seen_utc": "2026-09-10T15:14:56+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "ef143564f88937fcf70c61bcd3b0bda1830543d2d4028cc5e6f5f2479a7f9420",
+   "slug": "practical-decryption-exfiltration-breaking-pdf-encryption",
+   "spellings": [
+    "https://www.pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "f181631ab596ca289bb99be9569005470d55f0aa35e0683810c2b48d9dcc802f",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:51:18+00:00"
+    },
+    "import": {
+     "chars": 143327,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "f181631ab596ca289bb99be9569005470d55f0aa35e0683810c2b48d9dcc802f",
+     "utc": "2026-09-10T15:51:18+00:00"
+    },
+    "pdf": {
+     "bytes": 3913601,
+     "file": "archived-references/pdf/2019/practical-decryption-exfiltration-breaking-pdf-encryption.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:46+00:00"
+    },
+    "render": {
+     "chars": 143327,
+     "depth": "full",
+     "file": "archived-references/md/2019/practical-decryption-exfiltration-breaking-pdf-encryption.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:51:18+00:00"
+    }
+   },
+   "title": "Practical Decryption exFiltration: Breaking PDF Encryption"
+  },
   "https://pentest.blog/advisory-netmodule-router-software-race-condition-leads-to-remote-code-execution": {
    "also_at": [],
    "authors": [
@@ -176795,6 +178986,130 @@
     }
    ]
   },
+  "https://portswigger.net/research/bypassing-csp-with-dangling-iframes": {
+   "also_at": [],
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "cited_by": [
+    "2022.md:86"
+   ],
+   "cited_title": "Bypassing CSP with dangling iframes",
+   "content_gap": "",
+   "content_sha256": "1acf33b16f4195b15815ce09a38765493a01725484e556bf984bb50a191db2c5",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "1acf33b16f4195b15815ce09a38765493a01725484e556bf984bb50a191db2c5",
+    "tags": [
+     "csp",
+     "iframe",
+     "info-leak",
+     "dom",
+     "filter-bypass"
+    ],
+    "text": "A dangling iframe name captures following HTML, including secrets. An attacker-controlled outer frame navigates the victim iframe to about:blank, gains access, and reads the preserved window.name. This extracts data without executing JavaScript in the victim document despite restrictive CSP."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "images": {
+    "https://portswigger.net/cms/images/9e/5b/c853-article-dangling-markup-iframes-article.jpg": {
+     "bytes": 44484,
+     "height": 464,
+     "sha256": "773b54d9fce59bdb0d932b0033ef1d26c2dcc3bda47107c05ba1739718bce354",
+     "width": 940
+    },
+    "https://portswigger.net/content/images/profiles/callout_gareth_heyes_114px.png": {
+     "reason": "114x114 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2022-06-14",
+   "publisher": "PortSwigger",
+   "raw_sha256": "8f697323c64d6c5826e944cc4ac8ca6c7ae5942f8ba5d30bd93ea642ebded300",
+   "slug": "2022-portswigger-research-bypassing-csp-dangling-iframes",
+   "spellings": [
+    "https://portswigger.net/research/bypassing-csp-with-dangling-iframes"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "1acf33b16f4195b15815ce09a38765493a01725484e556bf984bb50a191db2c5",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 5599,
+        "code_blocks": 0,
+        "headings": 7,
+        "images": 2,
+        "links": 15,
+        "name": "recall",
+        "tables": 0,
+        "words": 693
+       },
+       {
+        "chars": 5659,
+        "code_blocks": 0,
+        "headings": 7,
+        "images": 2,
+        "links": 15,
+        "name": "raw",
+        "tables": 0,
+        "words": 701
+       }
+      ],
+      "chosen": "raw",
+      "why": "raw kept the most code blocks and text"
+     },
+     "raw_sha256": "8f697323c64d6c5826e944cc4ac8ca6c7ae5942f8ba5d30bd93ea642ebded300",
+     "reason": "",
+     "result": "stored",
+     "slug": "2022-portswigger-research-bypassing-csp-dangling-iframes",
+     "utc": "2026-09-10T15:38:02+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Gareth Heyes"
+     ],
+     "publisher": "PortSwigger",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "images": {
+     "bytes": 44484,
+     "reason": "1 of 2 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:49:12+00:00"
+    },
+    "pdf": {
+     "bytes": 117826,
+     "file": "archived-references/pdf/2022/2022-portswigger-research-bypassing-csp-dangling-iframes.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:50+00:00"
+    },
+    "render": {
+     "chars": 7709,
+     "depth": "full",
+     "file": "archived-references/md/2022/2022-portswigger-research-bypassing-csp-dangling-iframes.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:38:02+00:00"
+    }
+   },
+   "title": "Bypassing CSP with dangling iframes"
+  },
   "https://portswigger.net/research/bypassing-csp-with-policy-injection": {
    "also_at": [],
    "authors": [
@@ -180053,6 +182368,131 @@
      "url": "https://www.youtube.com/watch?v=3VJKmARDzJ4"
     }
    ]
+  },
+  "https://portswigger.net/research/json-hijacking-for-the-modern-web": {
+   "also_at": [],
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "cited_by": [
+    "2016-17.md:117"
+   ],
+   "cited_title": "JSON hijacking for the modern web",
+   "content_gap": "",
+   "content_sha256": "146304a248da231099877e56953fd18d3978e5725f8cc3cc398410d992181c53",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "146304a248da231099877e56953fd18d3978e5725f8cc3cc398410d992181c53",
+    "tags": [
+     "javascript",
+     "charset",
+     "encoding",
+     "info-leak",
+     "sop-bypass",
+     "csp"
+    ],
+    "text": "Combines JavaScript Proxy traps with UTF-16BE script decoding to turn cross-origin JSON into undeclared variable names and recover their contents. Browser-specific prototype-chain tricks expose data in Edge, Chrome and Safari. The article also develops an injection-assisted variant without proxies and a CSP bypass, and explains why explicit response charsets prevent the charset attacks."
+   },
+   "first_seen_utc": "2026-09-10T14:26:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://portswigger.net/cms/images/87/f8/47a5caf9883b-article-json-hijacking-modern-web-article.png": {
+     "bytes": 37408,
+     "height": 550,
+     "sha256": "8684aaf0fbdf6eb364c7c02347b5f4c3e80141ceafac2ce33d8dec992bc6332d",
+     "width": 1100
+    },
+    "https://portswigger.net/content/images/profiles/callout_gareth_heyes_114px.png": {
+     "reason": "114x114 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2016-11-25",
+   "publisher": "PortSwigger",
+   "raw_sha256": "0bf00401ecf2cbc21b166f85047b69ce17b023eec9242fdfa75fd3a3d440ced9",
+   "slug": "2016-portswigger-research-json-hijacking-modern-web",
+   "spellings": [
+    "https://portswigger.net/research/json-hijacking-for-the-modern-web"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "146304a248da231099877e56953fd18d3978e5725f8cc3cc398410d992181c53",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 15202,
+        "code_blocks": 0,
+        "headings": 12,
+        "images": 2,
+        "links": 22,
+        "name": "recall",
+        "tables": 0,
+        "words": 1990
+       },
+       {
+        "chars": 15260,
+        "code_blocks": 0,
+        "headings": 12,
+        "images": 2,
+        "links": 22,
+        "name": "raw",
+        "tables": 0,
+        "words": 1999
+       }
+      ],
+      "chosen": "raw",
+      "why": "raw kept the most code blocks and text"
+     },
+     "raw_sha256": "0bf00401ecf2cbc21b166f85047b69ce17b023eec9242fdfa75fd3a3d440ced9",
+     "reason": "",
+     "result": "stored",
+     "slug": "2016-portswigger-research-json-hijacking-modern-web",
+     "utc": "2026-09-10T14:28:51+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Gareth Heyes"
+     ],
+     "publisher": "PortSwigger",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "images": {
+     "bytes": 37408,
+     "reason": "1 of 2 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:49:15+00:00"
+    },
+    "pdf": {
+     "bytes": 156043,
+     "file": "archived-references/pdf/2016-17/2016-portswigger-research-json-hijacking-modern-web.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:52+00:00"
+    },
+    "render": {
+     "chars": 17289,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/2016-portswigger-research-json-hijacking-modern-web.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:28:51+00:00"
+    }
+   },
+   "title": "JSON hijacking for the modern web"
   },
   "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work": {
    "also_at": [],
@@ -186142,6 +188582,94 @@
    },
    "title": "r2c blog — Exploiting dynamic rendering engines to take control of web apps"
   },
+  "https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf": {
+   "also_at": [],
+   "authors": [
+    "Qiyi Zhang",
+    "Fengyu Liu",
+    "Zihan Lin",
+    "Yuan Zhang"
+   ],
+   "cited_by": [
+    "2025.md:106"
+   ],
+   "cited_title": "Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications",
+   "content_gap": "",
+   "content_sha256": "cfb29cea71201daa97fa2b76e323d8316be57e8dab41f3181da3f809a2413876",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "cfb29cea71201daa97fa2b76e323d8316be57e8dab41f3181da3f809a2413876",
+    "tags": [
+     "java",
+     "auth-bypass",
+     "url-parsing",
+     "parser-differential",
+     "static-analysis",
+     "tooling",
+     "measurement-study"
+    ],
+    "text": "Studies authentication bypasses caused by disagreement between Java URL routing and access checks. UABScan extracts framework routing features, slices URL-dependent code, and matches risky checks against sanitization patterns. Across 529 applications it reports 94 candidates; verification confirms 56 vulnerabilities, including 35 new ones, with 80% precision among checked findings."
+   },
+   "first_seen_utc": "2026-09-10T13:59:08+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM CCS",
+   "raw_sha256": "e1f969da02eee0d66cfb3338064e19a6211c3547bea937587afb900ec42020fe",
+   "slug": "be-aware-what-you-let-pass-demystifying-url-based-authentication-applications",
+   "spellings": [
+    "https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "cfb29cea71201daa97fa2b76e323d8316be57e8dab41f3181da3f809a2413876",
+     "extraction": null,
+     "raw_sha256": "e1f969da02eee0d66cfb3338064e19a6211c3547bea937587afb900ec42020fe",
+     "reason": "",
+     "result": "stored",
+     "slug": "be-aware-what-you-let-pass-demystifying-url-based-authentication-applications",
+     "utc": "2026-09-10T14:00:06+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Qiyi Zhang",
+      "Fengyu Liu",
+      "Zihan Lin",
+      "Yuan Zhang"
+     ],
+     "publisher": "ACM CCS",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:03:26+00:00"
+    },
+    "pdf": {
+     "bytes": 906685,
+     "file": "archived-references/pdf/2025/be-aware-what-you-let-pass-demystifying-url-based-authentication-applications.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:57:55+00:00"
+    },
+    "render": {
+     "chars": 128607,
+     "depth": "full",
+     "file": "archived-references/md/2025/be-aware-what-you-let-pass-demystifying-url-based-authentication-applications.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:00:06+00:00"
+    }
+   },
+   "title": "Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications"
+  },
   "https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies": {
    "also_at": [],
    "authors": [
@@ -186708,7 +189236,7 @@
     "2016-17.md:30"
    ],
    "cited_title": "Whitepaper",
-   "content_gap": "",
+   "content_gap": "faulty capture: Appendix A extraction loses positive/checkmark table values while retaining negative dashes; transcribe the table against the intact original PDF, preserving each positive and negative result (reported 2026-09-10)",
    "content_sha256": "014d3ecf3c496ca920004c69dfb6210fc0e7e20e63994a065510e5db550f11a3",
    "decision": {
     "at": "2026-08-14",
@@ -200142,6 +202670,136 @@
    },
    "title": "Frame Hijacking"
   },
+  "https://seclists.org/bugtraq/2006/Feb/364": {
+   "also_at": [],
+   "authors": [
+    "Amit Klein"
+   ],
+   "cited_by": [
+    "2006.md:91"
+   ],
+   "cited_title": "HTTP Response Smuggling",
+   "content_gap": "",
+   "content_sha256": "e97637227b3d6b7bf0cdefbfa24bad7fd680308a9bb34ce7d37c1e00cb40c2ab",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "e97637227b3d6b7bf0cdefbfa24bad7fd680308a9bb34ce7d37c1e00cb40c2ab",
+    "tags": [
+     "http",
+     "smuggling",
+     "response-splitting",
+     "parser-differential",
+     "header-injection",
+     "cache-poisoning",
+     "filter-bypass"
+    ],
+    "text": "Extends HTTP response-splitting attacks by exploiting differences between defensive filters, proxies and browsers. Lone line-ending characters, conflicting Content-Length headers and permissive status-line parsing bypass proposed protections and enable cache poisoning. Worked examples and browser checks explain when these techniques succeed and why blocking only familiar attack strings fails."
+   },
+   "first_seen_utc": "2026-09-10T13:59:08+00:00",
+   "grade": "research",
+   "images": {
+    "https://seclists.org/images/bugtraq-logo.png": {
+     "reason": "80x40 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "publisher": "seclists.org",
+   "raw_sha256": "f412302b5a0883a9cdcef0f412098fd7563fb5fe59273ee80055634f32a8238f",
+   "slug": "seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling",
+   "spellings": [
+    "https://seclists.org/bugtraq/2006/Feb/364"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "e97637227b3d6b7bf0cdefbfa24bad7fd680308a9bb34ce7d37c1e00cb40c2ab",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 24560,
+        "code_blocks": 1,
+        "headings": 3,
+        "images": 1,
+        "links": 18,
+        "name": "precision",
+        "tables": 0,
+        "words": 3481
+       },
+       {
+        "chars": 24560,
+        "code_blocks": 1,
+        "headings": 3,
+        "images": 1,
+        "links": 18,
+        "name": "recall",
+        "tables": 0,
+        "words": 3481
+       },
+       {
+        "chars": 24623,
+        "code_blocks": 1,
+        "headings": 3,
+        "images": 1,
+        "links": 18,
+        "name": "raw",
+        "tables": 0,
+        "words": 3489
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "f412302b5a0883a9cdcef0f412098fd7563fb5fe59273ee80055634f32a8238f",
+     "reason": "",
+     "result": "stored",
+     "slug": "seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling",
+     "utc": "2026-09-10T13:59:52+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Amit Klein"
+     ],
+     "publisher": "seclists.org",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:03:26+00:00"
+    },
+    "images": {
+     "bytes": 0,
+     "reason": "0 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:49:19+00:00"
+    },
+    "pdf": {
+     "bytes": 197256,
+     "file": "archived-references/pdf/2006/seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:57:58+00:00"
+    },
+    "render": {
+     "chars": 26601,
+     "depth": "full",
+     "file": "archived-references/md/2006/seclists-org-bugtraq-whitepaper-amit-klein-http-response-smuggling.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T13:59:52+00:00"
+    }
+   },
+   "title": "Bugtraq: Whitepaper by Amit Klein: \"HTTP Response Smuggling\""
+  },
   "https://seclists.org/bugtraq/2008/Jan/0270.html": {
    "also_at": [],
    "authors": [
@@ -200451,6 +203109,136 @@
     }
    },
    "title": "Full Disclosure: Cross Site Cooking"
+  },
+  "https://seclists.org/fulldisclosure/2007/Feb/548": {
+   "also_at": [],
+   "authors": [
+    "Stefan Esser"
+   ],
+   "cited_by": [
+    "2007.md:107"
+   ],
+   "cited_title": "Multiple Browsers Cross Domain Charset Inheritance",
+   "content_gap": "",
+   "content_sha256": "a22730eaecc33b974df45b7a5112943dc80d0c532e918edef25a619470c93f2b",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "a22730eaecc33b974df45b7a5112943dc80d0c532e918edef25a619470c93f2b",
+    "tags": [
+     "charset",
+     "encoding",
+     "iframe",
+     "xss",
+     "filter-bypass",
+     "same-origin-policy",
+     "vendor-advisory"
+    ],
+    "text": "Pages without an explicit charset inherit a cross-origin parent frame’s encoding in affected Firefox, IE7 and Opera9 versions. An attacker can frame a target inside a UTF-7 page so encoded input bypasses XSS filters and becomes executable markup. The advisory identifies affected versions, disclosure dates and Firefox’s fix."
+   },
+   "first_seen_utc": "2026-09-10T15:14:56+00:00",
+   "grade": "research",
+   "images": {
+    "https://seclists.org/images/fulldisclosure-logo.png": {
+     "reason": "80x40 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "publisher": "Full Disclosure",
+   "raw_sha256": "7d5a4cf037d087df00cddcfbea48d3ff0b0ebeabfb5b7fbba7d83c1fcc6e1cd6",
+   "slug": "seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability",
+   "spellings": [
+    "https://seclists.org/fulldisclosure/2007/Feb/548"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "a22730eaecc33b974df45b7a5112943dc80d0c532e918edef25a619470c93f2b",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 4880,
+        "code_blocks": 1,
+        "headings": 3,
+        "images": 1,
+        "links": 11,
+        "name": "precision",
+        "tables": 0,
+        "words": 558
+       },
+       {
+        "chars": 4880,
+        "code_blocks": 1,
+        "headings": 3,
+        "images": 1,
+        "links": 11,
+        "name": "recall",
+        "tables": 0,
+        "words": 558
+       },
+       {
+        "chars": 4982,
+        "code_blocks": 1,
+        "headings": 3,
+        "images": 1,
+        "links": 11,
+        "name": "raw",
+        "tables": 0,
+        "words": 569
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "7d5a4cf037d087df00cddcfbea48d3ff0b0ebeabfb5b7fbba7d83c1fcc6e1cd6",
+     "reason": "",
+     "result": "stored",
+     "slug": "seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability",
+     "utc": "2026-09-10T15:17:27+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Stefan Esser"
+     ],
+     "publisher": "Full Disclosure",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "images": {
+     "bytes": 0,
+     "reason": "0 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:49:22+00:00"
+    },
+    "pdf": {
+     "bytes": 104561,
+     "file": "archived-references/pdf/2007/seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T16:04:56+00:00"
+    },
+    "render": {
+     "chars": 7094,
+     "depth": "full",
+     "file": "archived-references/md/2007/seclists-org-full-disclosure-advisory-03-2007-multiple-browsers-vulnerability.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:17:27+00:00"
+    }
+   },
+   "title": "Full Disclosure: Advisory 03/2007: Multiple Browsers Cross Domain Charset Inheritance Vulnerability"
   },
   "https://seclists.org/fulldisclosure/2010/Mar/232": {
    "also_at": [],
@@ -205098,6 +207886,87 @@
    },
    "title": "You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions"
   },
+  "https://securitee.org/files/kirchner_power_ccs2025.pdf": {
+   "also_at": [],
+   "authors": [
+    "Robin Kirchner",
+    "Chris Tsoukaladelis",
+    "Martin Johns",
+    "Nick Nikiforakis"
+   ],
+   "cited_by": [
+    "2025.md:107"
+   ],
+   "cited_title": "The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives",
+   "content_gap": "",
+   "content_sha256": "d2f1de1b47c011fcb99097830e95970588df43e50081bc5f2840c797e0017058",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "d2f1de1b47c011fcb99097830e95970588df43e50081bc5f2840c797e0017058",
+    "tags": [
+     "csp",
+     "same-origin-policy",
+     "xss",
+     "dom",
+     "tls",
+     "measurement-study",
+     "abuse-of-functionality"
+    ],
+    "text": "Studies eight web archives using instrumented pages and crawler metadata. It shows how CSP or script stripping and server-side cloaking distort captured content, while future archive references and live-web escapes let publishers alter old snapshots. All eight services exhibit an evasion weakness, and seven permit anachronistic manipulation under the tested conditions."
+   },
+   "first_seen_utc": "2026-09-10T14:07:34+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM CCS",
+   "raw_sha256": "dd5225847780802780b962828d80a7708b02843aeca4d443e43f39ea2a16698c",
+   "slug": "power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives",
+   "spellings": [
+    "https://www.securitee.org/files/kirchner_power_ccs2025.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "d2f1de1b47c011fcb99097830e95970588df43e50081bc5f2840c797e0017058",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T14:51:13+00:00"
+    },
+    "import": {
+     "chars": 134778,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "d2f1de1b47c011fcb99097830e95970588df43e50081bc5f2840c797e0017058",
+     "utc": "2026-09-10T14:51:13+00:00"
+    },
+    "pdf": {
+     "bytes": 2707473,
+     "file": "archived-references/pdf/2025/power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:04+00:00"
+    },
+    "render": {
+     "chars": 134778,
+     "depth": "full",
+     "file": "archived-references/md/2025/power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:51:13+00:00"
+    }
+   },
+   "title": "The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives"
+  },
   "https://securitum.com/crashing_servers_with_digits.html": {
    "also_at": [],
    "authors": [
@@ -206407,7 +209276,8 @@
     "Jovon Itwaru"
    ],
    "cited_by": [
-    "2015.md:41"
+    "2015.md:41",
+    "2015.md:84"
    ],
    "cited_title": "Who Are You? A Statistical Approach to Protecting LinkedIn Logins(CSS UI Redressing Issue)",
    "content_gap": "",
@@ -206549,7 +209419,8 @@
    "raw_sha256": "487da08219b2a22160e99f3ff81434e8fa175e270f78d4911dbe52980ee3efe8",
    "slug": "linkedin-linkedin-security-practices-find-out-how-we-protect-you",
    "spellings": [
-    "https://security.linkedin.com/blog-archive#11232015"
+    "https://security.linkedin.com/blog-archive#11232015",
+    "https://security.linkedin.com/blog-archive#05152015"
    ],
    "steps": {
     "acquire": {
@@ -208072,6 +210943,215 @@
    },
    "title": "Microsoft Issues Emergency Patch for Critical IE Flaw Exploited in the Wild"
   },
+  "https://secweb.work/papers/some2020remote.pdf": {
+   "also_at": [],
+   "authors": [
+    "Dolière Francis Somé",
+    "Stefano Calzavara",
+    "Marco Squarcina",
+    "Matteo Maffei"
+   ],
+   "cited_by": [
+    "2020.md:81"
+   ],
+   "cited_title": "The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches",
+   "content_gap": "",
+   "content_sha256": "44f114b13cb13fd86ac09ca2744c8debd9a397d147a2de90c9d1bd330f2fb854",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "44f114b13cb13fd86ac09ca2744c8debd9a397d147a2de90c9d1bd330f2fb854",
+    "tags": [
+     "service-worker",
+     "cache-poisoning",
+     "xss",
+     "csp",
+     "attack-chain",
+     "mitigation"
+    ],
+    "text": "Existing same-origin malicious JavaScript can rewrite service-worker caches to remove CSP and other security headers, reorder cached scripts, and persist attacks after server fixes. Cached authenticated responses can also remain readable after logout. The paper proposes restricting page access to worker caches."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "raw_sha256": "bfff1ffbfcc9238b5a7b9150629ab123240f301122ab49e1e999493f4b5f1e92",
+   "slug": "remote-local-exacerbating-web-attacks-service-workers-caches",
+   "spellings": [
+    "https://secweb.work/papers/some2020remote.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "44f114b13cb13fd86ac09ca2744c8debd9a397d147a2de90c9d1bd330f2fb854",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:53:56+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Dolière Francis Somé",
+      "Stefano Calzavara",
+      "Marco Squarcina",
+      "Matteo Maffei"
+     ],
+     "publisher": "",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 59731,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "44f114b13cb13fd86ac09ca2744c8debd9a397d147a2de90c9d1bd330f2fb854",
+     "utc": "2026-09-10T15:53:56+00:00"
+    },
+    "pdf": {
+     "bytes": 398587,
+     "file": "archived-references/pdf/2020/remote-local-exacerbating-web-attacks-service-workers-caches.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:06+00:00"
+    },
+    "render": {
+     "chars": 59731,
+     "depth": "full",
+     "file": "archived-references/md/2020/remote-local-exacerbating-web-attacks-service-workers-caches.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:53:56+00:00"
+    }
+   },
+   "title": "The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches"
+  },
+  "https://sektioneins.de/advisories/advisory-022009-phpids-unserialize-vulnerability.html": {
+   "also_at": [],
+   "authors": [
+    "Stefan Esser"
+   ],
+   "cited_by": [
+    "2009.md:109"
+   ],
+   "cited_title": "PHPIDS unserialize() Vulnerability: Reusing Framework Object Chains",
+   "content_gap": "",
+   "content_sha256": "bb64a92993c019aba8bbda75635e720f36c7a55b67d5ce8080dbcd6c75ac7c72",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "bb64a92993c019aba8bbda75635e720f36c7a55b67d5ce8080dbcd6c75ac7c72",
+    "tags": [
+     "php",
+     "deserialization",
+     "gadget-chain",
+     "rce",
+     "vendor-advisory"
+    ],
+    "text": "Explains how PHPIDS turns inspection of attacker input into unsafe PHP object deserialization. In Zend Framework applications, a crafted object graph can chain a logging destructor through mail shutdown and layout rendering to a preg_replace filter, enabling PHP code execution. The advisory traces the existing classes used by the chain and identifies PHPIDS 0.6.3.1 as the fix."
+   },
+   "first_seen_utc": "2026-09-10T14:07:34+00:00",
+   "grade": "research",
+   "kind": "advisory",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2009-12-08",
+   "publisher": "SektionEins",
+   "raw_sha256": "7aaa2afc085c9cadc148466f8a1501af42048326c4690025810a8b1fb9fabca5",
+   "slug": "2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability",
+   "spellings": [
+    "https://sektioneins.de/advisories/advisory-022009-phpids-unserialize-vulnerability.html"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "bb64a92993c019aba8bbda75635e720f36c7a55b67d5ce8080dbcd6c75ac7c72",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 8491,
+        "code_blocks": 1,
+        "headings": 0,
+        "images": 0,
+        "links": 0,
+        "name": "precision",
+        "tables": 0,
+        "words": 1103
+       },
+       {
+        "chars": 8491,
+        "code_blocks": 1,
+        "headings": 0,
+        "images": 0,
+        "links": 0,
+        "name": "recall",
+        "tables": 0,
+        "words": 1103
+       },
+       {
+        "chars": 8564,
+        "code_blocks": 1,
+        "headings": 0,
+        "images": 0,
+        "links": 0,
+        "name": "raw",
+        "tables": 0,
+        "words": 1111
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "7aaa2afc085c9cadc148466f8a1501af42048326c4690025810a8b1fb9fabca5",
+     "reason": "",
+     "result": "stored",
+     "slug": "2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability",
+     "utc": "2026-09-10T14:17:40+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Stefan Esser"
+     ],
+     "publisher": "SektionEins",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 114584,
+     "file": "archived-references/pdf/2009/2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:58:06+00:00"
+    },
+    "render": {
+     "chars": 10805,
+     "depth": "full",
+     "file": "archived-references/md/2009/2009-sektioneins-gmbh-advisory-02-2009-phpids-unserialize-vulnerability.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:17:40+00:00"
+    }
+   },
+   "title": "Advisory 02/2009: PHPIDS unserialize() Vulnerability"
+  },
   "https://sensepost.com/blog/1303.html": {
    "also_at": [],
    "authors": [
@@ -208972,6 +212052,140 @@
     }
    },
    "title": "Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …"
+  },
+  "https://shiftordie.de/blog/2017/02/21/fingerprinting-firefox-users-with-cached-intermediate-ca-certificates-fiprinca": {
+   "also_at": [],
+   "authors": [
+    "Alexander Klink"
+   ],
+   "cited_by": [
+    "2016-17.md:123"
+   ],
+   "cited_title": "Fingerprinting Firefox users with cached intermediate CA certificates (#fiprinca)",
+   "content_gap": "",
+   "content_sha256": "a5172119900c3d7c1d2bf7d2d69faa3da196f503f335886a041bedcbc6ec5037",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "a5172119900c3d7c1d2bf7d2d69faa3da196f503f335886a041bedcbc6ec5037",
+    "tags": [
+     "browser-fingerprinting",
+     "tls",
+     "cache",
+     "side-channel",
+     "info-leak"
+    ],
+    "text": "Fingerprints Firefox through its cache of intermediate CA certificates. Image loads from servers with incomplete certificate chains succeed only when the missing intermediate is cached. Probes covering over 300 intermediates reveal browsing-related information and can link private browsing to a normal profile; deliberately populating the cache could also create a supercookie."
+   },
+   "first_seen_utc": "2026-09-10T14:45:49+00:00",
+   "grade": "research",
+   "images": {
+    "https://shiftordie.de/static/correct_case.png": {
+     "bytes": 24384,
+     "height": 536,
+     "sha256": "e93a2d9b5298ffdd38e2004268ad322f73b1ab25ea3fc432d0ea574b8c62c89c",
+     "width": 874
+    },
+    "https://shiftordie.de/static/incorrect_case.png": {
+     "bytes": 31353,
+     "height": 536,
+     "sha256": "45663a663a6d2ee3538bff0516a495e39bcd5b7c18c85c727e9bd405d9a4dbe5",
+     "width": 942
+    },
+    "https://shiftordie.de/static/poc.png": {
+     "bytes": 134423,
+     "height": 679,
+     "sha256": "ee186589250d98b5f17b5772c1994bf4fce61be46c0686538efcc04052b9b0f6",
+     "width": 1100
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "publisher": "shiftordie.de",
+   "raw_sha256": "1a32cf7f075cdaceeed51836a4d17006c7f9bb7816b3478eb82291cdd5c80e0f",
+   "slug": "shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca",
+   "spellings": [
+    "https://shiftordie.de/blog/2017/02/21/fingerprinting-firefox-users-with-cached-intermediate-ca-certificates-fiprinca/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "a5172119900c3d7c1d2bf7d2d69faa3da196f503f335886a041bedcbc6ec5037",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 8512,
+        "code_blocks": 0,
+        "headings": 0,
+        "images": 3,
+        "links": 12,
+        "name": "precision",
+        "tables": 0,
+        "words": 1296
+       },
+       {
+        "chars": 8512,
+        "code_blocks": 0,
+        "headings": 0,
+        "images": 3,
+        "links": 12,
+        "name": "recall",
+        "tables": 0,
+        "words": 1296
+       },
+       {
+        "chars": 8610,
+        "code_blocks": 0,
+        "headings": 0,
+        "images": 3,
+        "links": 12,
+        "name": "raw",
+        "tables": 0,
+        "words": 1309
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "1a32cf7f075cdaceeed51836a4d17006c7f9bb7816b3478eb82291cdd5c80e0f",
+     "reason": "",
+     "result": "stored",
+     "slug": "shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca",
+     "utc": "2026-09-10T14:47:07+00:00"
+    },
+    "images": {
+     "bytes": 190160,
+     "reason": "3 of 3 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:49:27+00:00"
+    },
+    "pdf": {
+     "bytes": 268144,
+     "file": "archived-references/pdf/2016-17/shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:58:09+00:00"
+    },
+    "render": {
+     "chars": 11080,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/shiftordie-de-fingerprinting-firefox-users-cached-intermediate-ca-fiprinca.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T14:47:07+00:00"
+    }
+   },
+   "title": "Fingerprinting Firefox users with cached intermediate CA certificates (#fiprinca)"
   },
   "https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html": {
    "also_at": [],
@@ -210894,6 +214108,94 @@
     }
    },
    "title": "Our Favorite XSS Filters and how to Attack them"
+  },
+  "https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html": {
+   "also_at": [],
+   "authors": [
+    "sirdarckcat"
+   ],
+   "cited_by": [
+    "2015.md:85"
+   ],
+   "cited_title": "Service Workers: New APIs = New Vulns = Fun++",
+   "content_gap": "",
+   "content_sha256": "62897b35a7530e06ab39865725a9822719b0c49b684ffb39af955e1f1def2e86",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "62897b35a7530e06ab39865725a9822719b0c49b684ffb39af955e1f1def2e86",
+    "tags": [
+     "service-worker",
+     "cache-poisoning",
+     "xss",
+     "open-redirect",
+     "csrf"
+    ],
+    "text": "Shows how page JavaScript can poison service-worker caches, turning reflected XSS into persistent client-side execution. Caching redirected cross-origin responses under the original URL can also turn an open redirect into persistent XSS. Discusses response URL checks, templating, and offline CSRF handling."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "images": {
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggeUIiMQ92AaWykv99S_uO88j21ZkcBgscUrtIKbv8zHQFxnwW6gEp_Ia1VIwbwO45rihmVqUKFMiatD0owCFNfqAE2gcqvaRQrRsP5Mb56Sgccm8ZHZVmlkv8IUlWElEednqcOQ/s320/Screenshot+2015-05-25+at+22.27.00.png": {
+     "reason": "320x122 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "licence": "unknown",
+   "publisher": "sirdarckcat.blogspot.com",
+   "raw_sha256": "2972b1afd421768f2bbc8a61610e27360872cd65155f3a69c796ce53d0c028fe",
+   "slug": "sirdarckcat-blogspot-com-service-workers-new-apis-new-vulns-fun",
+   "spellings": [
+    "https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "62897b35a7530e06ab39865725a9822719b0c49b684ffb39af955e1f1def2e86",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:53:50+00:00"
+    },
+    "images": {
+     "bytes": 0,
+     "reason": "0 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-10T15:49:32+00:00"
+    },
+    "import": {
+     "chars": 12447,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "62897b35a7530e06ab39865725a9822719b0c49b684ffb39af955e1f1def2e86",
+     "utc": "2026-09-10T15:53:50+00:00"
+    },
+    "pdf": {
+     "bytes": 111743,
+     "file": "archived-references/pdf/2015/sirdarckcat-blogspot-com-service-workers-new-apis-new-vulns-fun.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:58:13+00:00"
+    },
+    "render": {
+     "chars": 12447,
+     "depth": "full",
+     "file": "archived-references/md/2015/sirdarckcat-blogspot-com-service-workers-new-apis-new-vulns-fun.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:53:50+00:00"
+    }
+   },
+   "title": "[Service Workers] New APIs = New Vulns = Fun++"
   },
   "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html": {
    "also_at": [],
@@ -228288,6 +231590,105 @@
     }
    ]
   },
+  "https://sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf": {
+   "also_at": [],
+   "authors": [
+    "Georges Bossert"
+   ],
+   "cited_by": [
+    "2016-17.md:119"
+   ],
+   "cited_title": "Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)",
+   "content_gap": "",
+   "content_sha256": "9b099f2ab1e5e13f559694f385242406d3169456315d5e1f228eb07ced3b4220",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "9b099f2ab1e5e13f559694f385242406d3169456315d5e1f228eb07ced3b4220",
+    "tags": [
+     "http2",
+     "fuzzing",
+     "formal-analysis",
+     "parser-differential",
+     "tooling",
+     "detection"
+    ],
+    "text": "Uses active automata learning with L* to compare HTTP/2 server state machines, then guides a fuzzer through valid states before mutating messages and transitions. Tests of Apache, Nginx, H2O and Tomcat expose divergent behavior and security bugs. The slides also propose state-machine fingerprints and discuss how inconsistent stream handling could complicate intrusion detection."
+   },
+   "first_seen_utc": "2026-09-10T14:45:49+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "SSTIC",
+   "raw_sha256": "ba219afd587f38d3abdb3735f5d67b98534d19ad0d6d2aab4a400a7bef321efd",
+   "slug": "comparisons-attacks-http2-comparaisons-et-attaques-sur-http2",
+   "spellings": [
+    "https://www.sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "9b099f2ab1e5e13f559694f385242406d3169456315d5e1f228eb07ced3b4220",
+     "extraction": null,
+     "raw_sha256": "ba219afd587f38d3abdb3735f5d67b98534d19ad0d6d2aab4a400a7bef321efd",
+     "reason": "",
+     "result": "stored",
+     "slug": "comparisons-attacks-http2-comparaisons-et-attaques-sur-http2",
+     "utc": "2026-09-10T14:46:49+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Georges Bossert"
+     ],
+     "publisher": "SSTIC",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T14:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 1338729,
+     "file": "archived-references/pdf/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:14+00:00"
+    },
+    "pdf-translation": {
+     "bytes": 100528,
+     "file": "archived-references/pdf/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2_translate.pdf",
+     "result": "rendered",
+     "source": "markdown-translation",
+     "utc": "2026-09-10T15:59:29+00:00"
+    },
+    "render": {
+     "chars": 23937,
+     "depth": "full",
+     "file": "archived-references/md/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2.md",
+     "result": "ok",
+     "translation_chars": 19794,
+     "translation_file": "archived-references/md/2016-17/comparisons-attacks-http2-comparaisons-et-attaques-sur-http2_translate.md",
+     "utc": "2026-09-10T15:59:27+00:00"
+    },
+    "translate": {
+     "chars": 16215,
+     "lost_placeholders": 0,
+     "result": "stored",
+     "segments": 5,
+     "sha256": "6a03127507be045ac5e32c2044af7e4b8d6ee715c95477bce7f2d24cc3b6b249",
+     "utc": "2026-09-10T15:14:34+00:00"
+    }
+   },
+   "title": "Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)",
+   "title_english": "Comparisons and attacks on HTTP2",
+   "translation_sha256": "6a03127507be045ac5e32c2044af7e4b8d6ee715c95477bce7f2d24cc3b6b249"
+  },
   "https://starlabs.sg/blog/2021/04/you-talking-to-me": {
    "also_at": [],
    "authors": [
@@ -229474,6 +232875,93 @@
     }
    },
    "title": "Temporal Session Race Conditions (TSRC) Sept 2011 Presentation"
+  },
+  "https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf": {
+   "also_at": [],
+   "authors": [
+    "Phakpoom Chinprutthiwong",
+    "Raj Vardhan",
+    "Guangliang Yang",
+    "Guofei Gu"
+   ],
+   "cited_by": [
+    "2020.md:82"
+   ],
+   "cited_title": "Security Study of Service Worker Cross-Site Scripting",
+   "content_gap": "",
+   "content_sha256": "996fff97ee49329a0bf3fd6d945d221aef3a7dab47fd9926baf89a84edd8275f",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "996fff97ee49329a0bf3fd6d945d221aef3a7dab47fd9926baf89a84edd8275f",
+    "tags": [
+     "service-worker",
+     "xss",
+     "javascript",
+     "dynamic-analysis",
+     "tooling",
+     "measurement-study"
+    ],
+    "text": "Finds service workers that trust configuration in their registration URL and pass it to script-loading or execution sinks. Attackers can obtain persistent worker-level code execution through page URL forwarding or existing JavaScript access. SW-Scanner combines instrumentation and replay to confirm 40 vulnerable sites."
+   },
+   "first_seen_utc": "2026-09-10T15:28:46+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "a424cb5bee39a6482f1a6f896fee2d9b7fc62b23b9d38153836c7b4be8c8e835",
+   "slug": "security-study-service-worker-cross-site-scripting",
+   "spellings": [
+    "https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "996fff97ee49329a0bf3fd6d945d221aef3a7dab47fd9926baf89a84edd8275f",
+     "extraction": null,
+     "raw_sha256": "a424cb5bee39a6482f1a6f896fee2d9b7fc62b23b9d38153836c7b4be8c8e835",
+     "reason": "",
+     "result": "stored",
+     "slug": "security-study-service-worker-cross-site-scripting",
+     "utc": "2026-09-10T15:38:13+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Phakpoom Chinprutthiwong",
+      "Raj Vardhan",
+      "Guangliang Yang",
+      "Guofei Gu"
+     ],
+     "publisher": "ACM",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "pdf": {
+     "bytes": 2021311,
+     "file": "archived-references/pdf/2020/security-study-service-worker-cross-site-scripting.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:17+00:00"
+    },
+    "render": {
+     "chars": 113046,
+     "depth": "full",
+     "file": "archived-references/md/2020/security-study-service-worker-cross-site-scripting.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:38:13+00:00"
+    }
+   },
+   "title": "Security Study of Service Worker Cross-Site Scripting"
   },
   "https://sudistark.github.io/2024/08/31/bypassing-csp-via-url-parser-confusions-xss-on-netlify-s-image-cdn.html": {
    "also_at": [],
@@ -230930,6 +234418,95 @@
     }
    },
    "title": "MySQL and SQL Column Truncation Vulnerabilities"
+  },
+  "https://swag.cispa.saarland/papers/klein2022hand.pdf": {
+   "also_at": [],
+   "authors": [
+    "David Klein",
+    "Thomas Barber",
+    "Souphiane Bensalim",
+    "Ben Stock",
+    "Martin Johns"
+   ],
+   "cited_by": [
+    "2022.md:89"
+   ],
+   "cited_title": "Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions",
+   "content_gap": "",
+   "content_sha256": "665d65e771877ce0d172f1c3cf15d61c15108b38700254c6e2a731ab165d2959",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "665d65e771877ce0d172f1c3cf15d61c15108b38700254c6e2a731ab165d2959",
+    "tags": [
+     "sanitizer-bypass",
+     "xss",
+     "dom",
+     "dynamic-analysis",
+     "static-analysis",
+     "tooling",
+     "measurement-study"
+    ],
+    "text": "Extracts custom JavaScript sanitizers from observed DOM XSS data flows, then applies symbolic string analysis to generate bypasses and validates them in browsers. SemAttack models sanitizer operations and HTML contexts, uncovering ineffective filters and sanitizer combinations across a large web crawl."
+   },
+   "first_seen_utc": "2026-09-10T15:39:49+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "raw_sha256": "2c29c977e381dd696b62bfc647dc5cf24cfa3fabd532ac138ded7a4044369d66",
+   "slug": "hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions",
+   "spellings": [
+    "https://swag.cispa.saarland/papers/klein2022hand.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "665d65e771877ce0d172f1c3cf15d61c15108b38700254c6e2a731ab165d2959",
+     "extraction": null,
+     "raw_sha256": "2c29c977e381dd696b62bfc647dc5cf24cfa3fabd532ac138ded7a4044369d66",
+     "reason": "",
+     "result": "stored",
+     "slug": "hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions",
+     "utc": "2026-09-10T15:39:53+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "David Klein",
+      "Thomas Barber",
+      "Souphiane Bensalim",
+      "Ben Stock",
+      "Martin Johns"
+     ],
+     "publisher": "",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "pdf": {
+     "bytes": 362482,
+     "file": "archived-references/pdf/2022/hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:19+00:00"
+    },
+    "render": {
+     "chars": 117943,
+     "depth": "full",
+     "file": "archived-references/md/2022/hand-sanitizers-wild-large-scale-study-custom-javascript-sanitizer-functions.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:39:53+00:00"
+    }
+   },
+   "title": "Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions"
   },
   "https://swag.cispa.saarland/papers/mustafa2026leakylinks.pdf": {
    "also_at": [],
@@ -244657,6 +248234,105 @@
     }
    },
    "title": "troopers 2015 the old is new again cve 2011 2461 is back"
+  },
+  "https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf": {
+   "also_at": [],
+   "authors": [
+    "Jan Drescher",
+    "Sepehr Mirzaei",
+    "Soheil Khodayari",
+    "David Klein",
+    "Thomas Barber",
+    "Martin Johns",
+    "Giancarlo Pellegrino"
+   ],
+   "cited_by": [
+    "2025.md:108"
+   ],
+   "cited_title": "In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web",
+   "content_gap": "",
+   "content_sha256": "277886565b1fc50166a0f7188039dde458ef3ad9b474dcac9edd4c1b34822f2c",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "277886565b1fc50166a0f7188039dde458ef3ad9b474dcac9edd4c1b34822f2c",
+    "tags": [
+     "dom",
+     "gadget-chain",
+     "dynamic-analysis",
+     "static-analysis",
+     "xss",
+     "csrf",
+     "measurement-study"
+    ],
+    "text": "Combines taint tracking and static analysis to find DOM reads that influence script execution, requests, links, and other sensitive operations. Pairs verified gadgets with markup injection points and studies parser behavior that can make later injected elements win selectors. Confirms 657 paired flows across 37 sites."
+   },
+   "first_seen_utc": "2026-09-10T15:37:20+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "68cc242d78a646c0f44d9db893243fdfd668e66eb69e707b319f5d85379c037a",
+   "slug": "dom-we-trust-exploring-hidden-dangers-reading-dom-web",
+   "spellings": [
+    "https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "277886565b1fc50166a0f7188039dde458ef3ad9b474dcac9edd4c1b34822f2c",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:54:46+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Jan Drescher",
+      "Sepehr Mirzaei",
+      "Soheil Khodayari",
+      "David Klein",
+      "Thomas Barber",
+      "Martin Johns",
+      "Giancarlo Pellegrino"
+     ],
+     "publisher": "ACM",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 129472,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "277886565b1fc50166a0f7188039dde458ef3ad9b474dcac9edd4c1b34822f2c",
+     "utc": "2026-09-10T15:54:46+00:00"
+    },
+    "pdf": {
+     "bytes": 938173,
+     "file": "archived-references/pdf/2025/dom-we-trust-exploring-hidden-dangers-reading-dom-web.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:22+00:00"
+    },
+    "render": {
+     "chars": 129472,
+     "depth": "full",
+     "file": "archived-references/md/2025/dom-we-trust-exploring-hidden-dangers-reading-dom-web.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:54:46+00:00"
+    }
+   },
+   "title": "In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web"
   },
   "https://trouge.net/papers/xsleaks_sp2023.pdf": {
    "also_at": [],
@@ -273056,6 +276732,97 @@
    },
    "title": "Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions"
   },
+  "https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf": {
+   "also_at": [],
+   "authors": [
+    "Jiyeon Lee",
+    "Hayeon Kim",
+    "Junghwan Park",
+    "Insik Shin",
+    "Sooel Son"
+   ],
+   "cited_by": [
+    "2018.md:93"
+   ],
+   "cited_title": "Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications",
+   "content_gap": "",
+   "content_sha256": "3da356213fd6d6986f084f8f928a4c345f9485ab32c802423f7f67338f5adc9b",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "3da356213fd6d6986f084f8f928a4c345f9485ab32c802423f7f67338f5adc9b",
+    "tags": [
+     "service-worker",
+     "cache",
+     "side-channel",
+     "phishing",
+     "iframe",
+     "measurement-study",
+     "abuse-of-functionality",
+     "info-leak"
+    ],
+    "text": "Studies progressive web apps’ push notifications, offline caches and service workers. It demonstrates push-domain spoofing through leaked subscription objects, offline history inference from cross-origin iframe load events, and persistent cryptocurrency mining via push-driven workers. A crawl measures deployment and tests attacks against browsers and push services."
+   },
+   "first_seen_utc": "2026-09-10T15:14:56+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "ACM",
+   "raw_sha256": "bfe4f5e9a9c4161a428264881385452a797201d99db64e3be673692463dac1a7",
+   "slug": "pride-prejudice-progressive-web-apps-abusing-native-app-like-applications",
+   "spellings": [
+    "https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "3da356213fd6d6986f084f8f928a4c345f9485ab32c802423f7f67338f5adc9b",
+     "extraction": null,
+     "raw_sha256": "bfe4f5e9a9c4161a428264881385452a797201d99db64e3be673692463dac1a7",
+     "reason": "",
+     "result": "stored",
+     "slug": "pride-prejudice-progressive-web-apps-abusing-native-app-like-applications",
+     "utc": "2026-09-10T15:17:39+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Jiyeon Lee",
+      "Hayeon Kim",
+      "Junghwan Park",
+      "Insik Shin",
+      "Sooel Son"
+     ],
+     "publisher": "ACM",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "pdf": {
+     "bytes": 1431802,
+     "file": "archived-references/pdf/2018/pride-prejudice-progressive-web-apps-abusing-native-app-like-applications.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:24+00:00"
+    },
+    "render": {
+     "chars": 115202,
+     "depth": "full",
+     "file": "archived-references/md/2018/pride-prejudice-progressive-web-apps-abusing-native-app-like-applications.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:17:39+00:00"
+    }
+   },
+   "title": "Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications"
+  },
   "https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018": {
    "also_at": [
     "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-alhuzali.pdf",
@@ -273247,6 +277014,111 @@
      "url": "https://www.youtube.com/watch?v=CGQqPr3U-P4"
     }
    ]
+  },
+  "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf": {
+   "also_at": [],
+   "authors": [
+    "Joel Weinberger",
+    "Prateek Saxena",
+    "Devdatta Akhawe",
+    "Matthew Finifter",
+    "Richard Shin",
+    "Dawn Song"
+   ],
+   "cited_by": [
+    "2011.md:82"
+   ],
+   "cited_title": "An Empirical Analysis of XSS Sanitization in Web Application Frameworks",
+   "content_gap": "",
+   "content_sha256": "036b934bb3e075b221e15e745c91fa545bc8d6ee38ca25708b79df8d62931c67",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "036b934bb3e075b221e15e745c91fa545bc8d6ee38ca25708b79df8d62931c67",
+    "tags": [
+     "xss",
+     "sanitizer-bypass",
+     "dom",
+     "encoding",
+     "parser-differential",
+     "measurement-study",
+     "dynamic-analysis",
+     "defence"
+    ],
+    "text": "Models browser parsers, context transitions and decoding operations to explain why sanitization can fail after data changes context. An evaluation of web frameworks and PHP/Django applications compares automatic escaping with actual output contexts and sanitizer policies. Examples show URI-scheme bypasses and DOM re-parsing that undoes HTML encoding."
+   },
+   "first_seen_utc": "2026-09-10T15:14:56+00:00",
+   "grade": "research",
+   "publisher": "University of California, Berkeley",
+   "raw_sha256": "0fe0f7acbcd939a789a3c2cccc5b73047b944a4f40a419f2766bdaeaf8ff21c1",
+   "retrieved_from": "https://web.archive.org/web/20231205190204id_/https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf",
+   "retrieved_kind": "manual-import",
+   "slug": "empirical-analysis-xss-sanitization-web-application-frameworks",
+   "snapshot": "20231205190204",
+   "spellings": [
+    "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "036b934bb3e075b221e15e745c91fa545bc8d6ee38ca25708b79df8d62931c67",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:27:04+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Joel Weinberger",
+      "Prateek Saxena",
+      "Devdatta Akhawe",
+      "Matthew Finifter",
+      "Richard Shin",
+      "Dawn Song"
+     ],
+     "publisher": "University of California, Berkeley",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-10T15:52:29+00:00"
+    },
+    "import": {
+     "chars": 105822,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "036b934bb3e075b221e15e745c91fa545bc8d6ee38ca25708b79df8d62931c67",
+     "utc": "2026-09-10T15:27:04+00:00"
+    },
+    "manual-source": {
+     "bytes": 258580,
+     "now": "0fe0f7acbcd939a7",
+     "reason": "the complete PDF supplied for this manual import",
+     "result": "stored",
+     "utc": "2026-09-10T15:27:04+00:00",
+     "was": ""
+    },
+    "pdf": {
+     "bytes": 258580,
+     "file": "archived-references/pdf/2011/empirical-analysis-xss-sanitization-web-application-frameworks.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-10T15:58:26+00:00"
+    },
+    "render": {
+     "chars": 105822,
+     "depth": "full",
+     "file": "archived-references/md/2011/empirical-analysis-xss-sanitization-web-application-frameworks.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-10T15:27:04+00:00"
+    }
+   },
+   "title": "An Empirical Analysis of XSS Sanitization in Web Application Frameworks"
   },
   "https://wya.pl/2022/02/26/cve-2022-22947-spel-casting-and-evil-beans": {
    "also_at": [],
@@ -273443,6 +277315,105 @@
     }
    },
    "title": "CVE-2022-22947: SpEL Casting and Evil Beans"
+  },
+  "https://xakep.ru/2010/09/01/54715": {
+   "also_at": [],
+   "authors": [
+    "oxod"
+   ],
+   "cited_by": [
+    "2010.md:105"
+   ],
+   "cited_title": "Hitting Bitrix with a Hammer (Молотком по Битриксу): FormCalc authenticated response reading",
+   "content_gap": "",
+   "content_sha256": "9658b84f398477bd38fcc4e18bb33ce299fcca9e8bd381897c4882b5a93a6642",
+   "decision": {
+    "at": "2026-09-10",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-10",
+    "by": "webseclist-review/1",
+    "of": "9658b84f398477bd38fcc4e18bb33ce299fcca9e8bd381897c4882b5a93a6642",
+    "tags": [
+     "pdf",
+     "csrf",
+     "xss",
+     "file-upload",
+     "waf-bypass",
+     "php",
+     "attack-chain",
+     "rce"
+    ],
+    "text": "A Bitrix support-ticket PDF, opened on the application’s origin, uses FormCalc GET and POST calls to read an administrator’s CSRF token and invoke the PHP console. The article also chains BBCode attribute injection or profile-field XSS with unfiltered event handlers to bypass the WAF and submit authenticated commands."
+   },
+   "first_seen_utc": "2026-09-10T15:16:44+00:00",
+   "grade": "research",
+   "kind": "article",
+   "language": "ru-RU",
+   "licence": "unknown",
+   "publisher": "Xakep",
+   "raw_sha256": "68d84acbd279d0a98513dffc7f4c8bcecbce11280a3ea5446564e799f0e0a2c0",
+   "slug": "xakep-ru-0day-cms",
+   "spellings": [
+    "https://xakep.ru/2010/09/01/54715/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "9658b84f398477bd38fcc4e18bb33ce299fcca9e8bd381897c4882b5a93a6642",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-10T15:25:10+00:00"
+    },
+    "import": {
+     "chars": 18605,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "9658b84f398477bd38fcc4e18bb33ce299fcca9e8bd381897c4882b5a93a6642",
+     "utc": "2026-09-10T15:25:10+00:00"
+    },
+    "pdf": {
+     "bytes": 143130,
+     "file": "archived-references/pdf/2010/xakep-ru-0day-cms.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-10T15:59:32+00:00"
+    },
+    "pdf-translation": {
+     "bytes": 136273,
+     "file": "archived-references/pdf/2010/xakep-ru-0day-cms_translate.pdf",
+     "result": "rendered",
+     "source": "markdown-translation",
+     "utc": "2026-09-10T15:59:33+00:00"
+    },
+    "render": {
+     "chars": 21323,
+     "depth": "full",
+     "file": "archived-references/md/2010/xakep-ru-0day-cms.md",
+     "result": "ok",
+     "translation_chars": 22307,
+     "translation_file": "archived-references/md/2010/xakep-ru-0day-cms_translate.md",
+     "utc": "2026-09-10T15:59:28+00:00"
+    },
+    "translate": {
+     "chars": 19453,
+     "lost_placeholders": 0,
+     "result": "stored",
+     "segments": 5,
+     "sha256": "e39579ef3e9f1503ac2ff14e1d5e6bb702fb4a76c4442d398078f2c08ee2988d",
+     "utc": "2026-09-10T15:50:18+00:00"
+    }
+   },
+   "title": "Молотком по Битриксу: Выявляем 0day-уязвимости популярной CMS",
+   "title_english": "Taking a Hammer to Bitrix: Finding 0day Vulnerabilities in a Popular CMS",
+   "translation_sha256": "e39579ef3e9f1503ac2ff14e1d5e6bb702fb4a76c4442d398078f2c08ee2988d"
   },
   "https://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw": {
    "also_at": [],

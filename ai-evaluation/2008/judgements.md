@@ -449,3 +449,58 @@ but do not add it to the year list.
 
 Independent rediscovery. It passes the numeric threshold but fails the required
 non-duplicate/first-publication gate.
+
+---
+
+## 69.7 — [Lateral SQL Injection](https://www.davidlitchfield.com/lateral-sql-injection.pdf) — David Litchfield
+
+**KEPT** · Meaningful extension · confidence Medium · reviewed 2026-09-10
+
+### Candidate
+
+- **Author / organisation:** David Litchfield, NGSSoftware.
+- **Publication date:** 2008; manuscript dated 27 February, publicly circulating by late April.
+- **Reference:** Author-hosted original four-page paper, *Lateral SQL Injection: A New Class of Vulnerability in Oracle*.
+
+### Core Contribution
+
+Ambient date-format state can become SQL syntax during implicit DATE-to-text conversion. The resulting injection can affect typed parameters and procedures taking no arguments at all. The demonstrated DATE route is distinct from the paper's tentative NUMBER observation.
+
+### Prior Art
+
+- **Novelty cutoff:** Conservatively February–April 2008; the PDF cover alone is not proof of release. [Contemporary April discussion](https://seclists.org/securecoding/2008/q2/20) identifies the already-public paper; [a contemporary reader's account](https://www.petefinnigan.com/weblog/archives/archive-042008.html) distinguishes private February review from late-April publication. Exact day is unresolved, but the calendar year is supported.
+- **Closest verified pre-cutoff work:** Litchfield's [Cursor Injection](https://www.davidlitchfield.com/cursor-injection.pdf), cover dated 24 February 2007. That method supplies the executable cursor used after an injection point is available; it does not create a typed/no-argument injection point from NLS formatting.
+- **Local comparison:** Searches across the archive for NLS_DATE_FORMAT, lateral SQL injection, cursor injection and cursor snarfing found no candidate equivalent. Checked the 2008 nominations and prior evaluations; no alternate title records this mechanism.
+- **Distinct contribution:** A new source of attacker influence over dynamic SQL, not a new claim to cursor execution or privilege escalation.
+- **Evidence boundary:** The original four pages and pre-2008 cursor work. Later NUMBER exploitation, adoption and later documentation do not affect scores. Sources inside the unresolved cutoff interval were not asserted to be prior art.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 72 | 25% | 18.00 | Demonstrated ambient-format injection into typed and parameterless routines. |
+| Transferability | 68 | 20% | 13.60 | General audit insight about implicit conversion and session state; demonstrations remain Oracle-specific. |
+| Lasting value | 75 | 20% | 15.00 | Expands taint-source review beyond explicit parameters using persistent language/database semantics. |
+| Technical soundness | 74 | 15% | 11.10 | DATE execution is supported; NUMBER exploitation is explicitly tentative. |
+| Practical usability | 55 | 10% | 5.50 | Requires influence over session formatting plus unsafe SQL concatenation; no universal remote entry point. |
+| Clarity and reproducibility | 65 | 10% | 6.50 | Short worked transcript, but inconsistent routine names and an omitted parameter type need correction by readers. |
+
+**Final score: 69.7/100**
+
+### Reverification
+
+- **Candidate facts rechecked:** Read all four original pages; reopened the author PDF and checked its title, date and DATE versus NUMBER claims. Read the earlier cursor mechanism in its original PDF.
+- **Cutoff audit:** Separated manuscript date from public circulation. Cursor Injection is safely earlier than the entire candidate interval.
+- **Independent prior-art check:** Repeated backward searches using NLS_DATE_FORMAT and SQL injection rather than the candidate title; followed the embedded cursor citation. Generic date-format examples establish component age, not this security use.
+- **Strongest challenge:** The end-stage exploitation is borrowed, and a direct database session is a substantial prerequisite.
+- **Benefit-of-doubt check:** That prerequisite does not make a new ambient taint source a cosmetic payload variation.
+- **Changes after reverification:** Qualified publication precision, counted only the demonstrated DATE contribution and reduced reproducibility for source typos. No live exploit was attempted.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** Qualifies under the historical 55 gate; the reusable contribution is finding injection where explicit input appears absent or typed.
+- **Evidence gaps:** Exact first-public release day and an independently rerun historical environment are unavailable. Neither is needed to assert the supported 2008 year.

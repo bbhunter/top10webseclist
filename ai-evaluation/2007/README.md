@@ -74,3 +74,20 @@ general judge defaults. They appear in the historical list because this audit's
 explicit gate is 60, while their entry text preserves both the exact score and
 the narrower verdict. The two sub-60 scorecards remain discoverable here and in
 the immutable history rather than being discarded.
+
+## Repeat sweep — 2026-09-10
+
+See [dated sweep evidence](2026-09-10-sweep.md) for all 13 newly logged lead rows, exact mechanism searches, negative sources, archive-citation traces and limitations. The pass inventoried links in 100 archived Markdown files against 103 known year URLs and identified two clusters for further full judgement: cross-domain charset inheritance and browser-triggered DNS transaction-ID prediction. It also records already-represented artifacts, earlier work and failed-fetch recovery leads. No new scorecards or curated additions were made in this discovery pass. The existing 58.1 and 55.8 scorecards require reverification under the current 55-point gate; the historical 60-point discussion above is preserved as the earlier audit record.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 2 new full judgements completed; 2 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Multiple Browsers Cross Domain Charset Inheritance](https://seclists.org/fulldisclosure/2007/Feb/548) | 76.6 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [Windows DNS Server Cache Poisoning](https://dl.packetstormsecurity.net/papers/attack/Windows_DNS_Cache_Poisoning.pdf) | 66.1 | Meaningful extension; added — [full card](judgements.md) |
+
+The two DNS disclosures form one comparison cluster. Klein’s Windows predictor is the retained contribution, with browser/CNAME delivery treated as earlier work. Historical threshold-reconciliation notes above are superseded by the current scorecard/history/list audit; they do not denote extra discoveries in this run.
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

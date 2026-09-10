@@ -601,3 +601,168 @@ disclosure it discusses is neither this post nor this URL.
 - **Benefit-of-doubt check:** that taxonomy is why transferability is scored at
   55 rather than lower; it does not make the post a first disclosure.
 - **Changes after reverification:** none.
+
+---
+
+## 66.6 — [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](https://secweb.work/papers/some2020remote.pdf) — Dolière Francis Somé, Stefano Calzavara, Marco Squarcina and Matteo Maffei
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches
+- **Author or organisation:** Dolière Francis Somé, Stefano Calzavara, Marco Squarcina and Matteo Maffei
+- **Publication date / novelty cutoff:** 11 September 2020 SecWeb presentation; August5 program release alone does not date full PDF availability.
+- **Reference:** [Original source](https://secweb.work/papers/some2020remote.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Origin-shared cache mutation lets existing page script alter policy-bearing responses or security bootstrap order before a benign worker replays them. The methodological contribution is to test header and early-execution defenses at that mutable-state boundary, with deployment measurements. Initial execution and a relevant worker cache are assumed.
+
+### Prior Art
+
+[Vela, May2015](https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html) already overwrites cached Responses, including headers, for persistence; even that overwrite has [May2015 issue698](https://github.com/w3c/ServiceWorker/issues/698) prior. [Braun, March2017](https://frederikbraun.de/sw-sri-challenge.html) bypasses worker SRI using sandbox/srcdoc/registration/RPO routes. The candidate adds systematic policy stripping and bootstrap-order consequences plus an audit of cached policies, not invention of cache poisoning. The later three-author WOOT2021 revision is outside this score.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58 | 25% | 14.50 | Systematizes consequences of known cache mutation; no first-cache-attack credit. |
+| Transferability | 73 | 20% | 14.60 | Several independent headers and initialization defenses share this trust boundary. |
+| Lasting value | 72 | 20% | 14.40 | Reusable audit of mutable policy-bearing state, grounded in then-current deployments. |
+| Technical soundness | 66 | 15% | 9.90 | Causal examples and measurements, but assumed XSS and no systematic exploit-confirmation corpus. |
+| Practical usability | 60 | 10% | 6.00 | Concrete steps with substantial initial-execution and caching preconditions. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Full methodology and snippets; no packaged early-version attack artifact verified. |
+
+**Final score: 66.6/100**
+
+### Reverification
+
+- **Facts rechecked:** Full original four-author work-in-progress read in the sweep; main reopened it and compared the earlier Vela body and source-specific policy examples.
+- **Cutoff audit:** Original [SecWeb2020 program](https://secweb.work/2020.html) anchors September11; later revised experiments are excluded.
+- **Independent check:** Cache/Object.freeze/policy-boundary queries and direct 2015 comparison challenge the broad primitive claim.
+- **Strongest challenge:** A known writable Response already includes headers. **Benefit-of-doubt check:** Explicit early-execution/policy tests and measured opportunities form a modest reusable methodology.
+- **Changes:** Use methodology verdict and 66.6. Cached-policy observations are not confirmed XSS; policy removal does not grant hardware permission without consent.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No independent exploit corpus; sample coverage and initial execution constrain deployment conclusions.
+
+---
+
+## 68.3 — [Security Study of Service Worker Cross-Site Scripting](https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf) — Phakpoom Chinprutthiwong, Raj Vardhan, Guangliang Yang and Guofei Gu
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Security Study of Service Worker Cross-Site Scripting
+- **Author or organisation:** Phakpoom Chinprutthiwong, Raj Vardhan, Guangliang Yang and Guofei Gu
+- **Publication date / novelty cutoff:** 7–11 December 2020 ACSAC; July in the hosting path is not public-disclosure evidence.
+- **Reference:** [Original source](https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Parameters pass from a document URL through registration into a benign service worker’s location and executable imports. The scanner models that context transition, preserves baseline value types and confirms controllable imports. Eleven reported cases need only a crafted link; other confirmed cases need existing page execution.
+
+### Prior Art
+
+General DOM taint and exploit generation are earlier in locally archived FLAX, 25 Million Flows and DOMsday. [Larsen’s June2016 JSONP/worker article](https://c0nradsc0rner.com/2016/06/17/xss-persistence-using-jsonp-and-serviceworkers/) is a cited predecessor constructing the worker body; its host could not be recovered, limiting exact comparison. Vela2015 changes cached page responses, a different route. Crucially, [Chrome’s September19 2019 update explanation](https://developer.chrome.com/blog/fresher-sw/) already says imported scripts are checked for freshness, matching Firefox56 and Safari. The candidate’s general freshness premise is therefore stale at publication.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 63 | 25% | 15.75 | Practical configuration-to-worker source/sink model beyond known registration/cache routes. |
+| Transferability | 68 | 20% | 13.60 | Parameterized worker ecosystems with multiple executable sinks, within one platform family. |
+| Lasting value | 74 | 20% | 14.80 | Reusable registration trust-boundary tests and context analysis. |
+| Technical soundness | 65 | 15% | 9.75 | Concrete confirmations support injection; stale freshness model weakens broader conclusions. |
+| Practical usability | 67 | 10% | 6.70 | Scanner/release stated, with useful weak-attacker cases and stronger preconditions elsewhere. |
+| Clarity and reproducibility | 77 | 10% | 7.70 | Detailed instrumentation, filtering and examples; anonymized targets and no independent rerun. |
+
+**Final score: 68.3/100**
+
+### Reverification
+
+- **Facts rechecked:** Full twelve-page paper read in the sweep; main revisited the parameter-to-import example and reopened the 2019 primary browser explanation.
+- **Cutoff audit:** [ACSAC2020 program](https://www.acsac.org/2020/program/final/s297.html) fixes the conference interval; later browser behavior is not used as a penalty.
+- **Independent check:** Queries by worker location parameters and importScripts, plus primary update documentation, challenged both novelty and persistence.
+- **Strongest challenge:** Familiar taint analysis and an incorrect update assumption. **Benefit-of-doubt check:** The confirmed benign-entry-script injection route and tailored scanner still add useful methodology.
+- **Changes:** Retained 68.3 for the bounded method, excluding the unsupported approximately forty-day persistence inference and any claim that all forty cases are link-only.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Old JSONP primary host unavailable; exact historical reproduction not performed. Main-file update intervals cannot establish import persistence.
+
+---
+
+## 71.0 — [Information Leaks via Safari’s Intelligent Tracking Prevention](https://arxiv.org/pdf/2001.07421v1) — Artur Janc, Krzysztof Kotowicz, Lukas Weichselbaum and Roberto Clapis
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Information Leaks via Safari’s Intelligent Tracking Prevention
+- **Author or organisation:** Artur Janc, Krzysztof Kotowicz, Lukas Weichselbaum and Roberto Clapis
+- **Publication date / novelty cutoff:** 21 January 2020 v1 for detailed residual-strike, pinning and search constructions; general ITP-state risk already public December2019.
+- **Reference:** [Original source](https://arxiv.org/pdf/2001.07421v1). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Train and probe shared per-user tracking-classifier state. Remaining strikes reveal earlier cross-origin activity; artificially classified domains encode identifiers; two preloaded strikes make a private-search media inclusion observable as classification. Short-lived probes can avoid saturating the state. These recipes extend the already disclosed general classifier leak.
+
+### Prior Art
+
+[WebKit, December10 2019](https://webkit.org/blog/9661/preventing-tracking-prevention-tracking/) already explains user-specific classification and differential referrer/cookie behavior, crediting Google. [Fetch issue903, May8 2019](https://github.com/whatwg/fetch/issues/903) supplies long-Referer error/size oracles. The candidate explicitly credits 2015 HSTS pinning and established cross-site search, also traced in the local archive. The new unit is controlled classifier training plus residual-state/search readout, not the invention of tracking-prevention tracking or its component channels.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 64 | 25% | 16.00 | Concrete classifier-manipulation recipes extend disclosed risks and familiar component oracles. |
+| Transferability | 71 | 20% | 14.20 | Shared trainable browser-security state is a transferable design problem; examples are Safari-specific. |
+| Lasting value | 77 | 20% | 15.40 | Reusable externally-trainable/state-observable audit perspective at disclosure. |
+| Technical soundness | 76 | 15% | 11.40 | Threshold observations, request pairs and alternatives support the core; empirical depth varies. |
+| Practical usability | 60 | 10% | 6.00 | Concrete tests with some already-fixed cases and target-dependent conditions. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Compact causal explanation, sequences and mitigation limits support understanding. |
+
+**Final score: 71.0/100**
+
+### Reverification
+
+- **Facts rechecked:** Full six-page v1 read in the sweep and local main review; main reopened the December primary post and rechecked strike/preloading/search construction.
+- **Cutoff audit:** Earlier partial disclosure remains 2019; private reports do not establish an earlier public date for detailed recipes.
+- **Independent check:** Searches by ITP strikes, pinning and search followed the long-header and classifier predecessors rather than only the candidate title.
+- **Strongest challenge:** The general risk and several components are already public. **Benefit-of-doubt check:** Residual-strike and conditional third-strike recipes create specific new observations under explicit constraints.
+- **Changes:** Retained 71.0 for those extensions, with December-fixed cases limiting usability at publication. No universal inbox extraction or equal validation of all five variants is claimed.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Private report and exact first upload of every PoC are unavailable; no independent historical browser execution.

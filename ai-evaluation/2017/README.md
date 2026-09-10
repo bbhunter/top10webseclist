@@ -152,3 +152,24 @@ same year, and the deck adds no new primitive, gadget or sink.
 | [How to configure Json.NET to create a vulnerable web API](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html) | already represented | Companion material to "Friday the 13th: JSON Attacks", which is already nominated for 2016-17. |
 | [Attacking .NET Serialization](https://speakerdeck.com/pwntester/attacking-net-serialization) | duplicate artifact | A second deck of the same authors' 2017 JSON-attacks work, already represented. |
 | [DEF CON 25 and AppSecUSA recordings of Friday the 13th: JSON Attacks](https://www.youtube.com/watch?v=ZBfBYoK_Wr0) | duplicate artifact | Conference recordings of the nominated whitepaper. |
+
+## Supplemental sweep — 2026-09-10
+
+The [dated evidence note](2026-09-10-sweep.md) records mechanism searches and
+original-research citation tracing. Thirteen credible lead groups yielded two
+survivors awaiting final judgement: the Docker host-rebinding chain and fiprinca's
+remote intermediate-CA-cache probe (each draft 69.7). Four leads remain held and
+seven were screened out. The note compares both survivors with primary earlier
+work and records source/date limitations; no curated additions or historical
+judgements were changed by this discovery pass.
+
+## Final all-years adjudication — 2026-09-10
+
+This concludes the discovery handoff above. 2 new full judgements completed; 2 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
+
+| Research | Final score | Final verdict / disposition |
+|---|---:|---|
+| [Well, That Escalated Quickly! How Abusing Docker API Led to Remote Code Execution, Same Origin Bypass and Persistence in the Hypervisor via Shadow Containers](https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf) | 69.7 | Meaningful combination or adaptation; added — [full card](judgements.md) |
+| [Fingerprinting Firefox users with cached intermediate CA certificates (#fiprinca)](https://shiftordie.de/blog/2017/02/21/fingerprinting-firefox-users-with-cached-intermediate-ca-certificates-fiprinca/) | 69.7 | Meaningful extension; added — [full card](judgements.md) |
+
+These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.

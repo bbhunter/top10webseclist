@@ -1073,3 +1073,113 @@ finding is a competent application of both to one product.
 
 Useful application or case study. Below the 60 threshold: real impact, but the
 underlying technique was already documented.
+
+---
+
+## 69.0 — [Leaking more than log₂ of the URL count with the selectURL gate](https://github.com/WICG/shared-storage/issues/86) — anisenoff (Alex Nisenoff)
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Leaking more than log₂ of the URL count with the selectURL gate
+- **Author or organisation:** anisenoff (Alex Nisenoff)
+- **Publication date / novelty cutoff:** 5 June 2023 substantive issue and same-day confirmation; earlier wrapper files do not establish the complete worklet disclosure.
+- **Reference:** [Original source](https://github.com/WICG/shared-storage/issues/86). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Delay worklet completion according to a stored bit and observe when the selected resource reaches a cooperating server. A single candidate URL incurs zero selection entropy, yet its request timing communicates an identifier across embedding sites. Immediate promise resolution does not hide this later network observation.
+
+### Prior Art
+
+[Issue3, July2021](https://github.com/WICG/shared-storage/issues/3) already discusses worklet/Spectre and addModule timing leakage. [Issue17, February2022](https://github.com/WICG/shared-storage/issues/17) and [issue39, July2022](https://github.com/WICG/shared-storage/issues/39) establish network data joining and fallback leakage. [June2 2023 explainer](https://github.com/WICG/shared-storage/blob/8cdd926317197dcbb0893f535b7e6e16461e134b/README.md) describes immediate promise resolution and delayed frame loading. The increment combines these semantics into a post-return, zero-selection-cost timing channel. February2024 crash comments are separate later contributions.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 67 | 25% | 16.75 | Concrete unaccounted output path despite immediate local return and zero URL-choice entropy. |
+| Transferability | 66 | 20% | 13.20 | Budgeted isolated execution designs share the lesson, though demonstration is this API. |
+| Lasting value | 74 | 20% | 14.80 | Reusable audit of all observable effects beyond nominal output entropy. |
+| Technical soundness | 76 | 15% | 11.40 | Explicit construction, two-site screenshots and same-day confirmation support the narrow claim. |
+| Practical usability | 57 | 10% | 5.70 | Controlled embedded origin/server, dwell time and timing signal required. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Complete issue and screenshots; mutable demo version limits exact reproduction. |
+
+**Final score: 69.0/100**
+
+### Reverification
+
+- **Facts rechecked:** Entire issue/comments and both screenshots read in sweep; main reopened original and read its full API body, including tested Chrome114 version.
+- **Cutoff audit:** June5 reply corroborates mechanism; current updated timestamp and earlier scaffolding do not move it to another year.
+- **Independent check:** Single-URL/timing queries and direct earlier-issue/explainer comparison challenge claims of first worklet leakage.
+- **Strongest challenge:** Operation timing and unrestricted networking were known. **Benefit-of-doubt check:** Zero-cost post-return network output defeats the stated accounting/mitigation.
+- **Changes:** Retained69.0. Multi-symbol throughput and iframe-cache variants are hypotheses, not measured attacks. Current linked demo files have a registration-name mismatch and are not asserted runnable originals.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Historical body revision and complete original runnable bundle not authenticated; no independent execution. Only attacker-controlled origin storage is at issue.
+
+---
+
+## 63.2 — [DOMLeakify: style-attribute ID-existence timing oracle](https://blog.arkark.dev/2023/12/28/seccon-finals) — arkark
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** DOMLeakify: style-attribute ID-existence timing oracle
+- **Author or organisation:** arkark
+- **Publication date / novelty cutoff:** 28 December 2023 author write-up and immutable solver commit; earlier challenge distribution does not establish intended-solver publication.
+- **Reference:** [Original source](https://blog.arkark.dev/2023/12/28/seccon-finals). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+An inline style reflects a guessed element ID through Firefox -moz-element, then scale/drop-shadow amplifies its rendering cost. Timing other victim-origin popup navigations reveals whether the ID exists. The challenge’s special per-prefix IDs permit iterative secret recovery; the general primitive tests exact IDs under a style-attribute-only injection boundary.
+
+### Prior Art
+
+[Stone, Pixel Perfect, 2013](https://media.blackhat.com/us-13/US-13-Stone-Pixel-Perfect-Timing-Attacks-with-HTML5-WP.pdf) already combines -moz-element, expensive filters and timing to read rendered content. [Barth’s December2011 shader discussion](https://web.archive.org/web/20120529015444/http://www.schemehostport.com/2011/12/timing-attacks-on-css-shaders.html) supplies pixel-dependent timing foundations. [Sheddow, October2018](https://blog.sheddow.xyz/css-timing-attack/) supplies conditional selector work, requiring a selector-evaluation gadget. The candidate’s distinct route uses victim inline style attributes without stylesheet selectors, custom SVG filters or victim script.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 66 | 25% | 16.50 | Restricted-input adaptation of established graphics and conditional timing. |
+| Transferability | 54 | 20% | 10.80 | Firefox pages with inline style and sensitive guessable IDs; full extraction relies on artificial layout. |
+| Lasting value | 68 | 20% | 13.60 | Adds an inline-style dependent-rendering test to sanitizer/XS-Leak methodology. |
+| Technical soundness | 70 | 15% | 10.50 | Complete narrow solver, with noise, popup and stability limits. |
+| Practical usability | 44 | 10% | 4.40 | Expensive repeated windows and demanding target conditions. |
+| Clarity and reproducibility | 74 | 10% | 7.40 | App, configuration, browser settings and immutable solver support reconstruction. |
+
+**Final score: 63.2/100**
+
+### Reverification
+
+- **Facts rechecked:** Entire DOMLeakify section, app/configuration and [original solver](https://github.com/arkark/my-ctf-challenges/commit/0ed219959ce92c56b378c4cce9caa389f4e2b90f) read during sweep; main reopened author article and Stone source and reviewed source-specific limits.
+- **Cutoff audit:** December28 solver history supports the contribution date; other CTF sections are separate leads.
+- **Independent check:** moz-element/style-attribute/timing searches and local graphics-channel comparison recover strong earlier technique-level prior.
+- **Strongest challenge:** Nearly all graphics/timing ingredients are old. **Benefit-of-doubt check:** Narrower allowed injection and a new exact-ID observation route matter.
+- **Changes:** Retained63.2; no arbitrary-text/prefix matching claim. Firefox, popup access, special challenge IDs, noise and possible crashes constrain the demonstration.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No historical Firefox run or general deployment study. Other challenge solutions and techniques are not included in this score.

@@ -1153,3 +1153,225 @@ originating encrypted-media inference.
 
 Meaningful extension. Adaptive streaming and unknown-title handling advance a
 known traffic-analysis family enough to retain above the 60-point threshold.
+
+## 72.8 — [Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization](https://bugs.php.net/bug.php?id=72663) — Taoguang Chen
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Original report read in full during the sweep and reopened for final review. Submitted 24 July 2016; the private security-repository discussion means submission cannot safely be equated with public disclosure. Public PHP 5.6.25 fix on 18 August bounds the disclosure interval within 2016. Scores use the original report and pre-24-July prior art, with no later exploitation/adoption credit. Both URL and semantic exclusions against the shared year list passed. Search evidence is in [the dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Malformed property parsing can leave objects allocated with attacker-supplied fields while skipping the subsequent wakeup guard. Destruction then invokes a gadget without the guard's sanitization; custom or session deserialization can also retain incomplete objects for later magic methods. This general engine-lifecycle primitive strengthens web application object injection when unsafe deserialization and useful classes are present.
+
+### Prior Art
+
+The local 2009 Esser object-injection/POP family establishes magic-method exploitation. [PHP bug 60879, January 2012](https://bugs.php.net/60879) omits wakeup for an ordinary empty object in a release candidate. A fresh final search also recovered [bug 38018, July 2006](https://bugs.php.net/bug.php?edit=1&id=38018): destruction after wakeup throws was explicitly known. Neither shows skipping a field-clearing wakeup altogether by partial parsing, nor the reported retained-object paths. The increment is that bypass, not discovery of destructors after failure.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 67 | 25% | 16.75 | Partial-object parsing defeats a guard despite older destructor/error behavior. |
+| Transferability | 76 | 20% | 15.20 | Engine behavior spans application classes and decoders. |
+| Lasting value | 73 | 20% | 14.60 | Guard timing and retained invalid objects offer reusable audit questions. |
+| Technical soundness | 80 | 15% | 12.00 | Parser control flow and compact examples establish the causal ordering. |
+| Practical usability | 70 | 10% | 7.00 | Small crafted input, conditional on an unsafe entry point and gadgets. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Clear lifecycle examples; no complete packaged application chain. |
+
+**Final score: 72.8/100.** Computed with `score.py 67 76 73 80 70 72`.
+
+### Reverification
+
+Backward searches for malformed-object/wakeup bypasses found the 2012 regression; the final differently worded search found the closer 2006 destructor report. Reopened the candidate's parser return-before-wakeup and property-clearing example. The strongest duplicate objection covers destruction after a failed wakeup, but that earlier guard still executes and can clear fields. The candidate bypasses that execution. No program was run; the evaluation assesses the documented mechanism.
+
+### Verdict
+
+Meaningful extension. Retain the malformed-object guard bypass and retention primitive, with earlier lifecycle semantics explicitly acknowledged.
+
+## 68.0 — [JSON hijacking for the modern web](https://portswigger.net/research/json-hijacking-for-the-modern-web) — Gareth Heyes
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+The original 44-slide [OWASP London deck](https://owasp.org/www-chapter-london/assets/slides/OWASPLondon20161124_JSON_Hijacking_Gareth_Heyes.pdf) was read in full in the sweep; its 24 November 2016 presentation is the earliest verified artifact. The 25 November blog was reopened in full. Only deck-corroborated mechanisms count: later blog updates and subsequent fixes do not establish the original contribution. URL and semantic exclusions passed.
+
+### Core Contribution
+
+Deep prototype proxies recover cross-origin undefined identifiers; Chrome additionally leaks them through caller source. Another route encodes assignments and increments into a partly controlled response, then enumerates global names to recover its prefix/suffix without proxies. UTF-16 self-inclusion also reaches script execution under suitable same-origin CSP rules. Valid-identifier syntax, alignment, charset behavior and controlled response fragments limit these branches.
+
+### Prior Art
+
+Local charset/XSSI searches and the cited survey led to [Terada's March 2015 Identifier based XSSI attacks](https://www.mbsd.jp/Whitepaper/xssi.pdf), §§2.2–2.3: UTF-16BE JSON-to-identifier conversion, error leakage and proxy interception were already published. [Dumke-von der Ehe, February 2013](https://balpha.de/2013/02/plain-text-considered-harmful-a-cross-domain-exploit/) supplies the plaintext/proxy family. The added deep-prototype/caller and proxy-free extraction paths are narrower than the blog's general JSON-hijacking framing.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 58 | 25% | 14.50 | Distinct observable leakage routes above substantial 2015 prior art. |
+| Transferability | 72 | 20% | 14.40 | Several browsers and formats, with restrictive response syntax. |
+| Lasting value | 68 | 20% | 13.60 | Charset interpretation and global-name observability suggest reusable research. |
+| Technical soundness | 75 | 15% | 11.25 | Original staged payloads explain browser-specific behavior and failures. |
+| Practical usability | 65 | 10% | 6.50 | Concrete examples, but alignment and injection prerequisites matter. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Detailed examples permit reconstruction of the bounded branches. |
+
+**Final score: 68.0/100.** Computed with `score.py 58 72 68 75 65 78`.
+
+### Reverification
+
+The sweep independently searched UTF-16BE/CSP, window/NaN and pre-November proxy interception. Final review reopened the blog's caller and proxy-free branches and its explicit later Terada acknowledgement. The strongest objection defeats invention of UTF-16 JSON hijacking; it does not eliminate the specific bypass/extraction routes. No present-day browser behavior or later popularity affected any category.
+
+### Verdict
+
+Meaningful extension. Keep the additional leakage methods, not a claim to originate charset-based XSSI.
+
+## 66.8 — [.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/) — agix, SCRT
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Primary post read in full and reopened for final review. Its original date is 12 May 2016, corroborated by the source project; the migrated page also records a 2023 modification, so exact revision provenance is less certain. The documented original lab chain is scored without later serialization exploits or uptake. Citation tracing from the listed Friday the 13th JSON research found it; URL/semantic exclusions passed.
+
+### Core Contribution
+
+A compact BinaryFormatter stream reuses one byte array across many Bitmap objects to amplify heap allocations. This prepares pointer structures, ROP and payload allocations for a native COM unmarshalling path reached through a .NET deserialization constructor. The author demonstrates the combination through unsigned ViewState in an IIS lab and provides format-conversion examples. Platform libraries, non-ASLR code and alignment/retry requirements restrict it; WCF exploitation is only conjectured.
+
+### Prior Art
+
+The local [Forshaw 2012 paper](https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf), example 3, already exposes `IWbemClassObjectFreeThreaded` and `CoUnmarshalInterface`. [Herzog's November 2014 deck](https://www.slideshare.net/ASF-WS/asfws-2014-slides-why-net-needs-macs-and-other-serialization-talesv20) already reaches gadget effects through unsigned ViewState. These entry points receive no novelty credit. The increment is reference-amplified Bitmap spraying combined with the native pointer chain and supporting readable-format tooling.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 65 | 25% | 16.25 | Compact spray/native chain adds to known COM and ViewState entry points. |
+| Transferability | 62 | 20% | 12.40 | General serialization tooling, platform-dependent native exploitation. |
+| Lasting value | 69 | 20% | 13.80 | Reference amplification and constructor analysis form reusable methods. |
+| Technical soundness | 74 | 15% | 11.10 | Explained control flow and author lab result; no independent execution. |
+| Practical usability | 60 | 10% | 6.00 | Examples help, but libraries, alignment and missing MAC are demanding prerequisites. |
+| Clarity and reproducibility | 73 | 10% | 7.30 | Staged explanation and converters support reconstruction. |
+
+**Final score: 66.8/100.** Computed with `score.py 65 62 69 74 60 73`.
+
+### Reverification
+
+The sweep searched pre-May BinaryFormatter heap spraying and COM/StdWrapper; final review added Bitmap-specific searches and reopened the full primary chain and Forshaw constructor. Strongest objection is repackaging established dangerous deserialization, but the specific compact spray and native exploitation composition supplies the substantive delta. Untested recursive-reference DoS and WCF suggestions receive no credit. No executable or exploit archive was downloaded or run.
+
+### Verdict
+
+Meaningful combination or adaptation. Retain the reference-amplified native chain and accompanying manipulation method.
+
+## 60.8 — [Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)](https://www.sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf) — Georges Bossert
+
+**KEPT** · Tooling or methodology contribution · confidence Medium-low
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+The full original French 36-slide deck was read during the sweep; final review reopened its fuzzing, fingerprinting and limitations slides. Official program/deck establish 2–3 June 2016, with a one-day discrepancy; use pre-2-June prior art. The documented April builds and May measurements are not public-disclosure dates. URL and semantic exclusions passed. English translation is required in the archive.
+
+### Core Contribution and Prior Art
+
+An L* implementation learns HTTP2 response automata, then a concrete harness reaches valid states before mutating message grammar and fields. The vocabulary, configurations and automaton differences also support server fingerprinting. The local [de Ruiter/Poll 2015 TLS work](https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter) already learns states and explicitly proposes guiding message fuzzing. Thus this is a bounded implemented HTTP2 adaptation, not a new learning/fuzzing principle. It is useful offensive protocol-audit methodology even though the reported crashes are not developed into exploits.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 46 | 25% | 11.50 | Implements a previously articulated method for HTTP2 with concrete vocabulary/harness. |
+| Transferability | 70 | 20% | 14.00 | Four configurations and reusable interfaces support testing other stacks. |
+| Lasting value | 65 | 20% | 13.00 | State-aware mutation and differential responses offer reusable audit methods. |
+| Technical soundness | 65 | 15% | 9.75 | Concrete automata, but sparse vulnerability validation. |
+| Practical usability | 58 | 10% | 5.80 | Builds and configurations given; CPU-heavy workflow and unfinished feedback loop. |
+| Clarity and reproducibility | 68 | 10% | 6.80 | Clear workflow and examples, little exploit evidence. |
+
+**Final score: 60.8/100.** Computed with `score.py 46 70 65 65 58 68`.
+
+### Reverification
+
+Local and web state-machine/fuzzing comparisons, followed by fresh HTTP2/L* searches, recovered the closest TLS predecessor; final review reread its explicit message-fuzzing suggestion. Strongest objection is a routine protocol port. The specified vocabulary, working state-directed mutations and comparative automata provide a reviewable operational increment, albeit modest. IDS evasion is expressly theoretical; h2o security findings and nginx/Apache crashes lack root-cause detail and earn no exploit-level credit. Current failure to retrieve `http2_compare` is a reproducibility uncertainty, not evidence it was unavailable in 2016. No later usage or protocol attacks affected the scores.
+
+### Verdict
+
+Tooling or methodology contribution. The concrete HTTP2 audit implementation qualifies as supporting material above 55; it does not originate state-machine fuzzing.
+
+## 65.2 — [HTTP/2: In-depth analysis of the top four flaws](https://www.imperva.com/docs/imperva_hii_http2.pdf) — Imperva Defense Center
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium-low
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Original 23-page report read in full during the sweep. Its August 2016 footer and producer's 3 August release announcement establish the year; pre-3-August evidence bounds novelty. URL and semantic exclusions passed. The evaluated contribution is narrowly the repeated-index HPACK amplification recipe, not all four bundled flaws.
+
+### Core Contribution and Prior Art
+
+A header entry near the dynamic-table limit is repeatedly referenced by compact indexes, expanding roughly 16 KB of encoded headers into 64 MB before multiplication across streams. This supplies a concrete HTTP2 decoder-exhaustion construction. Compression bombs and slow-read attacks are older. [RFC7541, May 2015, §§7.3–7.4](https://www.rfc-editor.org/rfc/rfc7541.html#section-7.3), reopened for final review, explicitly warns about memory exhaustion, bounds table state and recommends sequential processing. These are substantial prior art, but do not specify this repeated-index amplification recipe. The shared archive's protocol DoS material and nghttp2 priority-cycle history further remove novelty from the rest of the bundle.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 46 | 25% | 11.50 | Modest concrete adaptation above explicit exhaustion warnings and old compression bombs. |
+| Transferability | 75 | 20% | 15.00 | Protocol-level construction spans decoders. |
+| Lasting value | 68 | 20% | 13.60 | Encoded/decoded resource accounting is a reusable testing direction. |
+| Technical soundness | 76 | 15% | 11.40 | Amplification analysis and reported failures support DoS, not inferred code execution. |
+| Practical usability | 64 | 10% | 6.40 | Clear construction, without a fully packaged environment. |
+| Clarity and reproducibility | 73 | 10% | 7.30 | Counts and diagrams help reconstruction; the broad bundle obscures the new component. |
+
+**Final score: 65.2/100.** Computed with `score.py 46 75 68 76 64 73`.
+
+### Reverification
+
+The sweep searched pre-August HPACK bombs, repeated-memory amplification and 4096-byte decompression; final review repeated the bomb search and reread the RFC's temporary-memory discussion. The August 4 Hyper advisory corroborates the publication chronology but is after the cutoff and adds no scoring credit. Strongest objection is that the report operationalizes an obvious standards warning. The favorable case is a specific compact, cross-decoder test construction whose bound differs from dynamic-table state accounting. That modest adaptation clears the supporting-material gate. Unexplored IIS crashes are not scored as RCE; later attacks and adoption are excluded.
+
+### Verdict
+
+Meaningful combination or adaptation, confined to HPACK reference amplification.
+
+## 66.3 — [On the Content Security Policy Violations due to the Same-Origin Policy](https://arxiv.org/pdf/1611.02875v1.pdf) — Dolière Francis Somé, Nataliia Bielova, Tamara Rezk
+
+**KEPT** · Tooling or methodology contribution · confidence Medium-low
+
+Evaluated 2026-09-10.
+
+### Candidate
+
+Full 19-page original v1, including algorithm and appendix, read during the sweep; key cross-frame cases reopened for final review. [arXiv history](https://arxiv.org/abs/1611.02875) establishes 9 November 2016. The 2017 revision, November 15 vendor response and later uptake are excluded. URL and semantic checks against the shared list passed.
+
+### Core Contribution and Prior Art
+
+The method normalizes and compares policies across parent/iframe relationships, identifying where origin-granted access defeats a document's intended resource restrictions. It includes a policy-inclusion algorithm, concrete exfiltration examples and a cloned Dropbox demonstration with mutual domain relaxation. The local CSP archive, [CSP2](https://www.w3.org/TR/2015/CR-CSP2-20150721/), [Veditz's January 2013 inheritance discussion](https://lists.w3.org/Archives/Public/public-webappsec/2013Jan/0033.html) and [Irwin's July 2015 iframe-policy discussion](https://lists.w3.org/Archives/Public/public-webappsec/2015Jul/0147.html) establish the underlying policy/origin behavior. The increment is systematic relational auditing rather than discovery that CSP is document-scoped. Listed CSP Is Dead tests whitelist trust, a different audit dimension.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Publication-time reason |
+|---|---:|---:|---:|---|
+| Original contribution | 55 | 25% | 13.75 | Cross-frame algorithm/systematization above known policy and origin behavior. |
+| Transferability | 76 | 20% | 15.20 | Framework-independent document relationships. |
+| Lasting value | 76 | 20% | 15.20 | Compositional policy auditing offers reusable questions. |
+| Technical soundness | 60 | 15% | 9.00 | Examples support conditional attacks; normalization and assumed compromise/relaxation limit broader claims. |
+| Practical usability | 62 | 10% | 6.20 | Algorithm and examples, with manual validation required. |
+| Clarity and reproducibility | 69 | 10% | 6.90 | Detailed appendix, but threat and statistical framing need care. |
+
+**Final score: 66.3/100.** Computed with `score.py 55 76 76 60 62 69`.
+
+### Reverification
+
+Fresh pre-2016 frame-policy searches recovered W3C discussions and reduced primitive novelty. Final review reopened those messages and the candidate's mutual `document.domain` prerequisite. Strongest objection is a census of expected behavior; the inclusion algorithm and reproducible relational audit are the narrower contribution. V1's 94% assumes possible relaxation, while 23.5% describes inspected same-origin frame pairs; neither is a proven exploit rate. Script compromise is assumed, nonce/hash normalization loses detail, and not all earlier CSP work was recoverable. No later revision's statistics or browser outcomes enter the score.
+
+### Verdict
+
+Tooling or methodology contribution. Keep the comparative policy-audit method with conditional findings clearly separated from demonstrated attacks.

@@ -1011,3 +1011,278 @@ domain's mail. This supports the existing case-study classification.
   the prior-art sections of the 2024 and 2025 cards, which lowered .MOBI's
   originality score - not by inflating this one.
 - **Changes after reverification:** none.
+
+---
+
+## 74.5 — [WebSpec](https://arxiv.org/pdf/2201.01649v1.pdf) — Lorenzo Veronese, Benjamin Farinier, Mauro Tempesta, Marco Squarcina and Matteo Maffei
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** WebSpec
+- **Author or organisation:** Lorenzo Veronese, Benjamin Farinier, Mauro Tempesta, Marco Squarcina and Matteo Maffei
+- **Publication date / novelty cutoff:** 5 January 2022 arXiv v1; private December2021 conference submission is not public disclosure.
+- **Reference:** [Original source](https://arxiv.org/pdf/2201.01649v1.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Model browser transitions and security invariants in Coq, compile a supported fragment to constrained Horn clauses and reconstruct minimal violating traces with Z3. The same model supports proofs of repairs across modern browser boundaries. January v1 does not automatically execute generated browser tests.
+
+### Prior Art
+
+[Akhawe et al., CSF2010](https://theory.stanford.edu/~jcm/papers/browsermodel-csf-2010.pdf) already discovers web attacks with an executable Alloy model. Featherweight Firefox, WebSpi and WIM add substantial prior formal machinery. The candidate’s combination is modern browser/API breadth plus machine-checked proof and bounded trace discovery. An earlier [WHATWG blob-policy discussion](https://github.com/whatwg/html/issues/2593#issuecomment-885083373) already describes the relevant inheritance concern; it is not a new January primitive. The cookie example additionally requires victim domain relaxation.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 75 | 25% | 18.75 | Modern model/proof/discovery combination extends established web model checking. |
+| Transferability | 76 | 20% | 15.20 | Multiple browser security boundaries share the invariant/transition framework. |
+| Lasting value | 78 | 20% | 15.60 | Reusable formal reasoning offers durable research value at disclosure. |
+| Technical soundness | 82 | 15% | 12.30 | Definitions, traces and proofs support results within model fidelity and finite bounds. |
+| Practical usability | 48 | 10% | 4.80 | Specialist modeling and expensive solving, sometimes weeks without optimizations. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Explicit traces, source link and compiler appendix aid reconstruction. |
+
+**Final score: 74.5/100**
+
+### Reverification
+
+- **Facts rechecked:** Full18-page v1 read in the sweep; main reopened versioned source and the earlier Alloy paper, reviewing original output and model limits.
+- **Cutoff audit:** arXiv v1 fixes January5; later repository/browser-test-verifier features excluded.
+- **Independent check:** Earlier Coq/browser-model searches and direct formal-model citation comparison challenge first-automatic-discovery claims.
+- **Strongest challenge:** Model checking is old and abstract traces may not execute. **Benefit-of-doubt check:** Broader modern semantics and paired discovery/proof are valuable methodological integration.
+- **Changes:** Retained74.5 with specialist setup and solver costs; no universal host-cookie bypass or later executable-test capability credited.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Original repository first-public commit unresolved; no model/solver execution here, and abstract fidelity remains a substantive limit.
+
+---
+
+## 71.0 — [Bypassing CSP with dangling iframes](https://portswigger.net/research/bypassing-csp-with-dangling-iframes) — Gareth Heyes
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Bypassing CSP with dangling iframes
+- **Author or organisation:** Gareth Heyes
+- **Publication date / novelty cutoff:** 14 June 2022 original article; February10 private reports do not establish earlier public release.
+- **Reference:** [Original source](https://portswigger.net/research/bypassing-csp-with-dangling-iframes). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Capture following secret markup inside an unfinished nested iframe name, then navigate that frame to about:blank from the outer attacker page and read the retained name. The useful composition removes victim clicks and a secret-bearing resource request under the demonstrated restrictive CSP.
+
+### Prior Art
+
+[Heyes’s 2018 DOM dangling-markup article](https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup) already combines dangling markup and retained names, but requires one or two clicks. Earlier developer discussion and [Mozilla bug1685807, 2021](https://bugzilla.mozilla.org/show_bug.cgi?id=1685807) document about:blank/name behavior. Those components are old; the complete automatic injection/CSP extraction recipe is the increment. The previous broad grouping with Framing without iframes did not establish this capability was already nominated.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 65 | 25% | 16.25 | Meaningful composition of known primitives removes interaction requirements. |
+| Transferability | 68 | 20% | 13.60 | Frameable HTML-injection targets across applications, under browser constraints. |
+| Lasting value | 63 | 20% | 12.60 | Useful boundary lesson, but particular payload depends on browser quirks. |
+| Technical soundness | 78 | 15% | 11.70 | Complete causal demonstration with explicit setup and limits. |
+| Practical usability | 80 | 10% | 8.00 | Short automatic PoC under clear prerequisites. |
+| Clarity and reproducibility | 88 | 10% | 8.80 | Clear progression, payload and timeline make reproduction understandable. |
+
+**Final score: 71.0/100**
+
+### Reverification
+
+- **Facts rechecked:** Both complete Heyes articles read in the sweep and reopened by main; navigation and name-reading sequence is explicit.
+- **Cutoff audit:** Public June14 separated from private report; preexisting browser discussions predate it.
+- **Independent check:** about:blank/window.name/dangling searches found component prior and narrowed originality.
+- **Strongest challenge:** Familiar window-name technique. **Benefit-of-doubt check:** Removing required user interaction and resource exfiltration is a concrete capability change.
+- **Changes:** Retained71.0; explicit before-secret injection, frameability and applicable browser behavior remain requirements. Reopens an earlier prescreen, not an existing full rejected scorecard.
+
+### Verdict
+
+Meaningful combination or adaptation.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** No historical browser rerun; exact priority beyond inspected primary sources remains uncertain.
+
+---
+
+## 66.0 — [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf) — Tom Van Goethem, Gertjan Franken, Iskander Sanchez-Rola, David Dworken and Wouter Joosen
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model
+- **Author or organisation:** Tom Van Goethem, Gertjan Franken, Iskander Sanchez-Rola, David Dworken and Wouter Joosen
+- **Publication date / novelty cutoff:** 30 May–3 June 2022 AsiaCCS interval; exact first public upload day unresolved.
+- **Reference:** [Original source](https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Extend resource/inclusion/leak analysis with stateful browser, OS and server components, separating private-state transfer from observable retrieval. Worked adaptations infer victim-dependent request counts by exhausting server keepalive or IP rate-limit budgets. These are attack sketches supporting a discovery method, not a shipped calibrated exploit scanner.
+
+### Prior Art
+
+[XSinator2021](https://christianmainka.de/projects/casa/) already formalizes XS-Leaks and supplies an automated browser test tool; locally archived connection-pool, cache and exhaustion attacks supply earlier shared-resource channels. The increment is explicit cross-component state reasoning and server-counter adaptations. All38 classified leaks are not new findings. A mutable present-day connection-pool wiki cannot authenticate every historical detail; the score does not depend on treating it as a frozen2020 source.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 63 | 25% | 15.75 | Component extension and server-counter adaptations beyond established XS-Leak model. |
+| Transferability | 72 | 20% | 14.40 | State reasoning spans server, browser and OS components. |
+| Lasting value | 73 | 20% | 14.60 | Reusable transfer/retrieval analysis can direct future discovery at disclosure. |
+| Technical soundness | 64 | 15% | 9.60 | Formal reasoning and worked sketches, with no calibrated end-to-end experiments. |
+| Practical usability | 44 | 10% | 4.40 | No shipped offensive tool or measurements; adaptation work required. |
+| Clarity and reproducibility | 72 | 10% | 7.20 | Precise conditions, examples and classification explain the method. |
+
+**Final score: 66.0/100**
+
+### Reverification
+
+- **Facts rechecked:** Full15-page paper including appendices read in the sweep; main reopened it and checked authors and server-counter assessment unit.
+- **Cutoff audit:** Primary PDF establishes2022 conference; exact upload unknown, earlier model securely2021.
+- **Independent check:** Rate-limit/MaxKeepAliveRequests searches and XSinator comparison challenged the novelty of resource exhaustion itself.
+- **Strongest challenge:** Taxonomy and familiar exhaustion may add little. **Benefit-of-doubt check:** Explicit state-transfer/retrieval decomposition gives a reusable search method and distinct server adaptations.
+- **Changes:** Retained66.0; no measured attack success/capacity claimed. Browser connection partitioning constrains keepalive route; IP limits can remain shared.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** First-upload day unresolved; counter channels lack complete implementation/success evaluation. Not every historical shared-resource source was recovered in an immutable version.
+
+---
+
+## 64.1 — [Problem with Shared Storage’s described use of k-anonymity](https://github.com/WICG/shared-storage/issues/39) — gtanzer
+
+**KEPT** · Meaningful extension · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Problem with Shared Storage’s described use of k-anonymity
+- **Author or organisation:** gtanzer
+- **Publication date / novelty cutoff:** 22 July 2022 20:03:11 UTC, original issue creation and technical body.
+- **Reference:** [Original source](https://github.com/WICG/shared-storage/issues/39). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+A below-threshold selected URL falls back to an unchecked default URL that combines a first-party identifier with a cross-site secret bit. A three-URL construction defeats the proposed k-anonymity rule; repeating selection exports additional bits to an untrusted observer. The report supplies a corrected independence/anonymity invariant.
+
+### Prior Art
+
+[Issue17, February2 2022](https://github.com/WICG/shared-storage/issues/17) already describes first-party-ID/cross-site-bit joining through unrestricted fenced-frame networking and proposes k-anonymous URLs. The July report defeats that proposed defense through default selection semantics, rather than discovering the general information-flow objective. [Issue14, December2021](https://github.com/WICG/shared-storage/issues/14) discusses intended cross-site experiments and budgets; its opening body does not contain this default-branch counterexample.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 70 | 25% | 17.50 | Concrete failure of the earlier k-anonymity defense via unchecked fallback. |
+| Transferability | 55 | 20% | 11.00 | Specific API with a broader failover/validation failure mode. |
+| Lasting value | 63 | 20% | 12.60 | Reusable fallback noninterference lesson at disclosure. |
+| Technical soundness | 70 | 15% | 10.50 | Explicit counterexample and corrected invariant support logical claim. |
+| Practical usability | 40 | 10% | 4.00 | Specification-stage attack without runnable browser evidence. |
+| Clarity and reproducibility | 85 | 10% | 8.50 | Compact complete three-branch example can be checked directly. |
+
+**Final score: 64.1/100**
+
+### Reverification
+
+- **Facts rechecked:** Main read complete preserved primary API bodies for issues17/39 and timestamps; sweep also compared issue14.
+- **Cutoff audit:** February proposal precedes July counterexample. Later2023 timing and2025 paper results excluded.
+- **Independent check:** Default-URL/anonymity searches and the earlier issue lineage test for an exact earlier counterexample.
+- **Strongest challenge:** Same data-joining objective as February. **Benefit-of-doubt check:** Defeating its explicit proposed repair is a distinct extension with a precise logical example.
+- **Changes:** Retained64.1 and proposal-level usability; no demonstrated deployed browser exploit or universal data extraction claimed.
+
+### Verdict
+
+Meaningful extension.
+
+- **Archive decision:** Include as a supporting reference.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Historical issue body edit history not independently authenticated; no deployment demonstration. Account handle is the verified authorship.
+
+---
+
+## 72.7 — [Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions](https://swag.cispa.saarland/papers/klein2022hand.pdf) — David Klein, Thomas Barber, Souphiane Bensalim, Ben Stock and Martin Johns
+
+**KEPT** · Tooling or methodology contribution · confidence Medium
+
+Reviewed 2026-09-10.
+
+### Candidate
+
+- **Title:** Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions
+- **Author or organisation:** David Klein, Thomas Barber, Souphiane Bensalim, Ben Stock and Martin Johns
+- **Publication date / novelty cutoff:** 8 June 2022 public presentation; earlier exact upload unresolved,2021 crawl dates are not disclosure.
+- **Reference:** [Original source](https://swag.cispa.saarland/papers/klein2022hand.pdf). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+
+### Core Contribution
+
+Select mutating sanitizer portions from rich URL-to-DOM taint traces, model specific JavaScript/browser operations, invert context-dependent malicious-output constraints and validate synthesized URL inputs. SemAttack contributes a specialized integrated bypass pipeline and empirical results, extending substantial earlier extraction and automata machinery.
+
+### Prior Art
+
+[ICSE2012 client validation analysis](https://sites.cs.ucsb.edu/~bultan/publications/icse12.pdf), [ViewPoints ISSTA2012](https://sites.cs.ucsb.edu/~bultan/publications/issta12.pdf), and [Alkhalaf’s June2014 dissertation](https://sites.cs.ucsb.edu/~bultan/publications/AlkhalafDissertation.pdf) already extract client JavaScript through instrumented Rhino, model sanitizer transformations with automata, compute bad-output preimages and replay counterexamples. Thus none of those broad operations is new in2022. [Talking About My Generation, April2021](https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf) supplies reused targeted generation. The remaining delta is DOM-flow boundary selection, first-only replacement/encoding/serialization models and context-specific integration. SAP sanitizer-checker is the candidate’s own artifact, not independent prior.
+
+**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted score | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 64 | 25% | 16.00 | Specialized DOM boundary selection and semantic integration; generic extraction/automata/preimages are prior. |
+| Transferability | 78 | 20% | 15.60 | Custom sanitizer methods across websites within supported operations and flows. |
+| Lasting value | 76 | 20% | 15.20 | Reusable testing of context-dependent transformations with an empirical failure corpus at disclosure. |
+| Technical soundness | 76 | 15% | 11.40 | Detailed models and validation, limited by approximations, observed paths and modified browser. |
+| Practical usability | 65 | 10% | 6.50 | Research tooling and generated witnesses with substantial environment/coverage constraints. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Complete method, operation extensions, limitations and companion implementation. |
+
+**Final score: 72.7/100**
+
+### Reverification
+
+- **Facts rechecked:** Full candidate read in sweep/follow-up; full prior2012 papers and complete dissertation Chapter2 plus relevant Chapter4 passages read after main’s skeptical search found the overlap. Main reviewed the exact before/after methodology comparison.
+- **Cutoff audit:** Prior2012/2014 methods are securely earlier; initial March2022 repository has limited mitigation demos and does not prove publication of the full pipeline. June8 remains a firm bound.
+- **Independent check:** JavaScript/sanitizer/automata search led to the dissertation, then primary-paper backtracking corrected the draft’s broad extraction/preimage novelty.
+- **Strongest challenge:** The apparent core pipeline was already public in generic form. **Benefit-of-doubt check:** Concrete DOM source selection and browser semantic extensions are not interchangeable with earlier form-validation slicing.
+- **Changes:** Originality reduced74→64 and total75.2→72.7; other categories rechecked independently. Forty validated cases include four manual corrections, and disabled URL auto-encoding prevents interpreting them as forty stock-Firefox exploits.
+
+### Verdict
+
+Tooling or methodology contribution.
+
+- **Archive decision:** Include as a core technique.
+- **Confidence:** Medium.
+- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
+- **Evidence gaps:** Exact first upload unresolved; no independent code execution. Unsupported operations, single-witness fallback and disabled encoding limit coverage and deployment claims.
