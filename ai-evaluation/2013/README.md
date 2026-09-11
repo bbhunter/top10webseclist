@@ -124,3 +124,14 @@ This concludes the discovery handoff above. 1 new full judgement completed; 1 qu
 | [A Perfect CRIME? Only TIME Will Tell](https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf) | 65.5 | Meaningful extension; added — [full card](judgements.md) |
 
 These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+
+## TECAPI follow-up — 11 September 2026
+
+The [full source review](2026-09-11-tecapi.md) applies the current **55-point plus qualifying-novelty gate**. Decisions below supersede only these candidates; earlier audit counts above describe their dated runs. Full scorecards are also integrated into [the current ledger](judgements.md).
+
+| Score | Decision | Verdict | Candidate |
+|---:|---|---|---|
+| 61.2 | Added | Tooling or methodology contribution | [Invisibility Purge / .NET Havoc](https://media.blackhat.com/eu-13/briefings/Chen/bh-eu-13-invisibility-purge-chen-slides.pdf) |
+| 33.0 | Not added | Duplicate or already known | [The Boomerang Effect](https://deepsec.net/docs/Slides/2013/DeepSec_2013_Shay_Chen_-_The_Boomerang_Effect_-_Using_Session_Puzzling_To_Attack_Apps_From_The_Backend.pdf) |
+
+The unexpected dangers of preg_replace remains **unscored: insufficient evidence**. The original now returns a small landing page, and attempted archive recovery failed. This is a discovery lead with no published archive document, not a faulty existing capture. See the full review for URLs and recovery evidence.

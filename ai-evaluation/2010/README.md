@@ -113,3 +113,7 @@ This concludes the discovery handoff above. 3 new full judgements completed; 3 q
 Chrome cross-origin property pollution remains held for the full-source and distinctness comparison. Safari, router rebinding and the Bitrix/FormCalc composition are the three final additions.
 
 These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+
+## TECAPI follow-up — 11 September 2026
+
+The [rejudgement](2026-09-11-tecapi.md) recovers Vladimir Vorontsov’s August SDRF paper as the predecessor of his September Bitrix article. The single grouped entry is retained at **72.9/100**, Meaningful combination or adaptation (previously 74.3). The paper is an additional archived document, not an additional technique. The novelty cutoff is corrected to August; the earlier scorecard remains in immutable history.

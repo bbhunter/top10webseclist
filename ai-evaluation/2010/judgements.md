@@ -885,55 +885,63 @@ Meaningful combination or adaptation.
 
 ---
 
-## 74.3 — [Hitting Bitrix with a Hammer: FormCalc authenticated response reading](https://xakep.ru/2010/09/01/54715/) — oxod
+## 72.9 — [SDRF / Hitting Bitrix with a Hammer: FormCalc authenticated response reading](https://xakep.ru/2010/09/01/54715/) — Vladimir Vorontsov (oxod)
 
 **KEPT** · Meaningful combination or adaptation · confidence Medium
 
-Reviewed 2026-09-10.
+Rejudged 2026-09-11 after recovering the earlier whitepaper through TECAPI.
 
 ### Candidate
 
-- **Title:** Hitting Bitrix with a Hammer: FormCalc authenticated response reading
-- **Author or organisation:** oxod
-- **Publication date / novelty cutoff:** 1 September 2010, original Russian article; September21 same-title copy is later.
-- **Reference:** [Original source](https://xakep.ru/2010/09/01/54715/). Full-source reading, local exclusion checks and source-specific evidence are recorded in the [dated sweep](2026-09-10-sweep.md).
+- **Title:** SDRF vulnerability in web-applications and browsers; Hitting Bitrix with a Hammer: FormCalc authenticated response reading.
+- **Author:** Vladimir Vorontsov, ONsec; the later Xakep article uses oxod. The author's [2011 ZeroNights biography](https://2011.zeronights.org/) explicitly connects Vladimir Vorontsov and oxod.ru, the site also linked by the Xakep article. This later record is attribution evidence only.
+- **Publication date / novelty cutoff:** The whitepaper is dated 18 August 2010. The [author's Full Disclosure message](https://seclists.org/fulldisclosure/2010/Aug/236) establishes public availability by 22 August 2010; the exact first upload is unverified. All scored material is present in that paper. The 1 September Xakep article is a later application and companion document.
+- **Sources:** Complete [English paper attached to the disclosure](https://seclists.org/fulldisclosure/2010/Aug/att-236/onsec-whitepaper-01_eng_pdf.bin), and the already preserved Russian article with English translation. The attachment was verified as a PDF, despite its mirror's filename suffix.
 
 ### Core Contribution
 
-An uploaded PDF opened through Adobe’s browser plug-in inherits the authenticated application origin. FormCalc reads an administrative HTML response, extracts its anti-CSRF token and submits an authenticated command. The reusable capability is active-document response reading across an untrusted-upload boundary; Bitrix command execution is the case study.
+Attacker-uploaded active documents served from an authenticated application origin can make credentialed requests and read their responses through browser plug-ins. The paper combines Adobe Reader FormCalc GET, token extraction and POST with a RoundCube example, including its custom request header. It also tests Opera 10.60/10.61: opening a downloaded document can retain the network origin despite application/octet-stream delivery, undermining a common upload mitigation. Flash supplies another illustrated path; Gmail is an application example. The later Bitrix article applies the same FormCalc read/token/post capability to an administrative command.
+
+The credit is for the concrete PDF response-reading composition and tested browser origin handling. Generic active-file upload, authenticated plug-in requests and request forgery were already known. Same-origin privileges are being inherited by hostile content; this is not proof of a universal cross-origin bypass.
 
 ### Prior Art
 
-[Kierznowski’s September2006 Backdooring PDF Files](https://web.archive.org/web/20070102032610/http://michaeldaw.org/md-hacks/backdooring-pdf-files/) already shows active PDF networking. The [March2009 FormCalc GET discussion](https://acrobatusers.com/forum/forms-livecycle-designer/javascript-equivalent-get-formcalc/) supplies HTML response parsing; [April2010 POST discussion](https://acrobatusers.com/forum/general-acrobat-topics/javascript-blacklist-framework/) supplies its networking component. Neither establishes the same hostile-upload/token-read attack. The locally archived [December2010 Will It Blend announcement](http://xs-sniper.com/blog/2010/12/17/will-it-blend/) is later and describes a different multi-plugin chain; unavailable slides limit exact artifact comparison.
+- **Earliest relevant component:** David Kierznowski's [Backdooring PDF Files](https://web.archive.org/web/20070102032610/http://michaeldaw.org/md-hacks/backdooring-pdf-files/) (September 2006) already documents active PDF networking. Amit Klein's [Forging HTTP Request Headers with Flash](http://www.securityfocus.com/archive/1/441014/30/0/threaded) (July 2006; local preserved copy compared) supplies request/header crafting, not this FormCalc authenticated response-reading chain.
+- **Closest earlier security composition:** Tim Starling's [Secure web uploads](https://tstarling.com/blog/2008/12/secure-web-uploads/) (16 December 2008) expressly warns that hostile uploaded active content inherits application credentials. Its Flash policy and GIFAR cases preclude a claim that SDRF invented the general trust-boundary mistake. They do not document this FormCalc chain or Opera 10.60/10.61's download-opening behavior.
+- **Documented APIs:** The [March 2009 FormCalc GET discussion](https://acrobatusers.com/forum/forms-livecycle-designer/javascript-equivalent-get-formcalc/) already covers returned HTML parsing; the [April 2010 POST discussion](https://acrobatusers.com/forum/general-acrobat-topics/javascript-blacklist-framework/) supplies the second networking component.
+- **Local comparison:** The preserved January 2007 Adobe Reader disclosure by Stefano Di Paola demonstrates PDF-driven blind CSRF/UXSS through different flaws. Searches across the 2006–2010 lists and archived PDF, Flash, upload and request-forgery material found no separate nomination for this specific FormCalc composition. The December 2010 Will It Blend announcement is later and excluded from prior art.
+- **Distinct contribution:** A reproducible active-document response-read/token/post workflow plus browser-specific evidence against download-header isolation. The later Bitrix article is the same research family by the same author and earns no second technique count.
 
-**Evidence boundary:** All six categories assess the original technical disclosure and demonstrably earlier knowledge. Later copies are retrieval evidence only; uptake, subsequent patches and present-day exploitability receive no credit or penalty. The dated sweep records the local mechanism search and nomination comparison.
+**Evidence boundary:** All six categories assess the August paper against pre-August material. The September case supplies no retrospective novelty or impact credit; later reputation, prevalence, patches and browser obsolescence are excluded.
 
 ### Scorecard
 
+Computed using `score.py --original 68 --transferability 74 --lasting 74 --technical 78 --practical 70 --clarity 76`.
+
 | Category | Score | Weight | Weighted score | Reason |
 |---|---:|---:|---:|---|
-| Original contribution | 72 | 25% | 18.00 | Meaningful security composition of documented networking and active-upload behavior. |
-| Transferability | 74 | 20% | 14.80 | Applies to applications serving attacker PDFs on an authenticated origin, with compatible plug-in. |
-| Lasting value | 74 | 20% | 14.80 | Provides a reusable active-upload/response-reading audit rule beyond blind requests. |
-| Technical soundness | 78 | 15% | 11.70 | Concrete chain and local result support narrow capability; exact Reader version is missing. |
-| Practical usability | 74 | 10% | 7.40 | Request logic and XFA replacement method are supplied; opening the document is required. |
-| Clarity and reproducibility | 76 | 10% | 7.60 | Detailed procedure but apparent literal code errors prevent copy-and-run claims. |
+| Original contribution | 68 | 25% | 17.00 | Concrete PDF/browser extension of known active-upload trust-boundary attacks; generic SDRF naming receives no extra credit. |
+| Transferability | 74 | 20% | 14.80 | Applies across authenticated applications hosting attacker documents, with compatible browser and plug-in constraints. |
+| Lasting value | 74 | 20% | 14.80 | Reusable audit question: what origin, credentials and response access does opened user content inherit? |
+| Technical soundness | 78 | 15% | 11.70 | Explicit request logic, returned-token handling and browser observations support the bounded claims; no independent historical reproduction. |
+| Practical usability | 70 | 10% | 7.00 | Requires an upload or content-hosting path, document opening and affected client software; examples make the chain testable. |
+| Clarity and reproducibility | 76 | 10% | 7.60 | Full paper, code and illustrated application cases; incomplete client-version matrix and experimental controls limit reproducibility. |
 
-**Final score: 74.3/100**
+**Final score: 72.9/100**
 
 ### Reverification
 
-- **Facts rechecked:** Both complete Russian articles and their actual GET/parse/POST and iText examples were recovered/read in the sweep; main reopened the September1 primary page and reviewed literal-code limitations.
-- **Cutoff audit:** The live article date and later copy’s link establish September1; later FormCalc research is excluded.
-- **Independent check:** Earlier PDF/CSRF/authenticated-FormCalc searches and local PDF-backdoor comparison establish component prior without the same demonstrated security composition.
-- **Strongest challenge:** Networking APIs and active PDFs are old. **Benefit-of-doubt check:** Reading a token before posting creates a capability beyond blind CSRF.
-- **Changes:** Retained 74.3, with clarity reduced for apparent content-type/command typography errors. Author’s local success is a report, not an independently rerun result.
+- **Facts rechecked:** Read the complete English PDF and original disclosure; compared its FormCalc flow with the previously read Xakep original and translation. The publication date in the disclosure is 22 August, regardless of the mirror thread index's timezone display.
+- **Cutoff audit:** The cover gives 18 August; public-message evidence supports 22 August. None of the added priors falls between those dates, so this uncertainty does not change the result.
+- **Independent search path:** Searches for SDRF and its author were followed by searches for secure uploads, GIFAR, active PDF networking and FormCalc response parsing. Starling's earlier first-person technical account materially narrows originality. A failed exact-match search is not evidence of invention.
+- **Strongest challenge:** The generic same-origin uploaded-content problem and networking APIs are already public. The paper nevertheless supplies a concrete PDF token-read composition and tested origin-handling behavior beyond the earlier generic warning.
+- **Changes:** Corrected the earlier September novelty cutoff, linked the same author's predecessor as a companion, and reduced 74.3 to 72.9 for narrower originality and client prerequisites. Retained one entry, not a separately counted SDRF addition.
 
 ### Verdict
 
-Meaningful combination or adaptation.
+**Primary verdict: Meaningful combination or adaptation**
 
-- **Archive decision:** Include as a core technique.
+- **Archive decision:** Include as a core technique; preserve the August English paper beside the existing September article and translation.
 - **Confidence:** Medium.
-- **Reasoning:** The bounded contribution described above clears the 55-point historical-addition gate; component age and familiar impact are excluded from its novelty credit.
-- **Evidence gaps:** Author attribution is the self-identified oxod handle. Exact Reader build and historical reproduction are unverified; linked Will It Blend slide body was unavailable.
+- **Reasoning:** The bounded PDF/browser contribution meets the 55-point historical gate. Earlier general active-upload attacks remain explicit prior art.
+- **Evidence gaps:** Exact first publication day, complete plug-in version matrix and independent historical execution remain unverified.

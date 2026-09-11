@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-10T16:04:59+00:00",
+ "updated": "2026-09-11T20:52:00+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -145503,6 +145503,99 @@
    },
    "title": "A Perfect CRIME? Only TIME Will Tell"
   },
+  "https://media.blackhat.com/eu-13/briefings/Chen/bh-eu-13-invisibility-purge-chen-slides.pdf": {
+   "also_at": [],
+   "authors": [
+    "Shay Chen",
+    "Niv Sela"
+   ],
+   "cited_by": [
+    "2013.md:67"
+   ],
+   "cited_title": "Invisibility Purge / .NET Havoc",
+   "content_gap": "",
+   "content_sha256": "95c7fbdebbfa44a56053b6783aec01dc92af982c440d95441bf1ceead1812fba",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "maintainer",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-11",
+    "by": "webseclist-review/1",
+    "of": "95c7fbdebbfa44a56053b6783aec01dc92af982c440d95441bf1ceead1812fba",
+    "tags": [
+     "auth-bypass",
+     "aspnet",
+     "dotnet",
+     "tooling"
+    ],
+    "text": "Hidden, disabled or commented ASP.NET and Mono controls can still expose executable server events. The slides map EventValidation and ViewState prerequisites, describe control enumeration and reuse of cached signed state, and introduce the SCIP testing extension. Authorization must be checked inside the event handler."
+   },
+   "first_seen_utc": "2026-09-11T20:34:44+00:00",
+   "grade": "research",
+   "kind": "slides",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2013-03",
+   "publisher": "Hacktics Advanced Security Center, Ernst & Young",
+   "raw_sha256": "13b1fdcc5fd3c4f85c266a2fe86467b529cd7c86a8e27b3103af9ea3a51f949d",
+   "slug": "hacktics-advanced-security-center-ernst-young-invisibility-purge-slides",
+   "spellings": [
+    "https://media.blackhat.com/eu-13/briefings/Chen/bh-eu-13-invisibility-purge-chen-slides.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "95c7fbdebbfa44a56053b6783aec01dc92af982c440d95441bf1ceead1812fba",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-11T20:49:43+00:00"
+    },
+    "capture-review": {
+     "reason": "Repaired transcription checked against all 65 original pages; original PDF preserved unchanged; source-figure descriptions clearly labeled.",
+     "result": "valid",
+     "utc": "2026-09-11T20:52:00+00:00"
+    },
+    "import": {
+     "chars": 27608,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "95c7fbdebbfa44a56053b6783aec01dc92af982c440d95441bf1ceead1812fba",
+     "utc": "2026-09-11T20:49:43+00:00"
+    },
+    "metadata-review": {
+     "authors": [
+      "Shay Chen",
+      "Niv Sela"
+     ],
+     "published": "2013-03",
+     "reason": "Original cover/date header and dated publication evidence reviewed in ai-evaluation; no modern uptake used for scoring.",
+     "result": "verified",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "pdf": {
+     "bytes": 8476485,
+     "file": "archived-references/pdf/2013/hacktics-advanced-security-center-ernst-young-invisibility-purge-slides.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-11T20:50:44+00:00"
+    },
+    "render": {
+     "chars": 27608,
+     "depth": "full",
+     "file": "archived-references/md/2013/hacktics-advanced-security-center-ernst-young-invisibility-purge-slides.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T20:49:43+00:00"
+    }
+   },
+   "title": "Invisibility Purge (Slides)"
+  },
   "https://media.blackhat.com/eu-13/briefings/Osipov/bh-eu-13-XML-data-osipov-slides.pdf": {
    "also_at": [],
    "authors": [
@@ -203240,6 +203333,93 @@
    },
    "title": "Full Disclosure: Advisory 03/2007: Multiple Browsers Cross Domain Charset Inheritance Vulnerability"
   },
+  "https://seclists.org/fulldisclosure/2010/Aug/236": {
+   "also_at": [
+    "https://seclists.org/fulldisclosure/2010/Aug/att-236/onsec-whitepaper-01_eng_pdf.bin",
+    "http://onsec.ru/onsec-whitepaper-01.eng.pdf"
+   ],
+   "authors": [
+    "Vladimir Vorontsov"
+   ],
+   "cited_by": [
+    "2010.md:105"
+   ],
+   "cited_title": "SDRF whitepaper",
+   "content_gap": "",
+   "content_sha256": "e1cba4e155ce760520d0b9a10db7e66dc419eff3145a584b981ab651fbfb610d",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-11",
+    "by": "webseclist-review/1",
+    "of": "e1cba4e155ce760520d0b9a10db7e66dc419eff3145a584b981ab651fbfb610d",
+    "tags": [
+     "csrf",
+     "file-upload",
+     "pdf",
+     "flash",
+     "sop-bypass"
+    ],
+    "text": "Uploaded PDF and Flash documents can inherit an application’s origin and browser credentials, read responses, extract anti-CSRF tokens, and submit authenticated requests. FormCalc demonstrates the chain in RoundCube. Opera 10.60/10.61 can retain the origin when opening a downloaded file, weakening download-header isolation."
+   },
+   "first_seen_utc": "2026-09-11T20:34:44+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "language": "en",
+   "licence": "unknown",
+   "linked_document_sha256": "2bbcbc1e7df3589650f1f93ca4947b1b1933ac3ec1b1c76dbcedd97997b7f901",
+   "linked_document_url": "https://seclists.org/fulldisclosure/2010/Aug/att-236/onsec-whitepaper-01_eng_pdf.bin",
+   "published": "2010-08-18",
+   "publisher": "ONsec",
+   "raw_sha256": "2bbcbc1e7df3589650f1f93ca4947b1b1933ac3ec1b1c76dbcedd97997b7f901",
+   "slug": "onsec-sdrf-vulnerability-web-applications-browsers-whitepaper",
+   "spellings": [
+    "https://seclists.org/fulldisclosure/2010/Aug/236"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "e1cba4e155ce760520d0b9a10db7e66dc419eff3145a584b981ab651fbfb610d",
+     "extraction": null,
+     "raw_sha256": "2bbcbc1e7df3589650f1f93ca4947b1b1933ac3ec1b1c76dbcedd97997b7f901",
+     "reason": "",
+     "result": "stored",
+     "slug": "onsec-sdrf-vulnerability-web-applications-browsers-whitepaper",
+     "utc": "2026-09-11T20:37:13+00:00"
+    },
+    "metadata-review": {
+     "authors": [
+      "Vladimir Vorontsov"
+     ],
+     "published": "2010-08-18",
+     "reason": "Original cover/date header and dated publication evidence reviewed in ai-evaluation; no modern uptake used for scoring.",
+     "result": "verified",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "pdf": {
+     "bytes": 604879,
+     "file": "archived-references/pdf/2010/onsec-sdrf-vulnerability-web-applications-browsers-whitepaper.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-11T20:47:47+00:00"
+    },
+    "render": {
+     "chars": 11269,
+     "depth": "full",
+     "file": "archived-references/md/2010/onsec-sdrf-vulnerability-web-applications-browsers-whitepaper.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T20:37:14+00:00"
+    }
+   },
+   "title": "SDRF vulnerability in web-applications and browsers (Whitepaper)"
+  },
   "https://seclists.org/fulldisclosure/2010/Mar/232": {
    "also_at": [],
    "authors": [
@@ -205216,6 +205396,329 @@
     }
    },
    "title": "RFC1918 Caching Security Issues"
+  },
+  "https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html": {
+   "also_at": [],
+   "authors": [
+    "Shay Chen",
+    "Eran Tamari"
+   ],
+   "cited_by": [
+    "2012.md:93"
+   ],
+   "cited_title": "The Diviner — Black-box Inference of Server-side Data Flow",
+   "content_gap": "",
+   "content_sha256": "b551c375866cf9147189605836a88923567685a78cd6da23dec1ea1794d65adb",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-11",
+    "by": "webseclist-review/1",
+    "of": "b551c375866cf9147189605836a88923567685a78cd6da23dec1ea1794d65adb",
+    "tags": [
+     "tooling",
+     "dynamic-analysis",
+     "proxy"
+    ],
+    "text": "A ZAP extension varies inputs, request history, authentication and sessions, then follows effects across pages. Repeating a scenario without its input step distinguishes session-scoped from persistent effects. It turns observations into data-flow maps and hypothetical code to guide manual testing."
+   },
+   "first_seen_utc": "2026-09-11T20:34:44+00:00",
+   "grade": "research",
+   "images": {
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg95W_W2CLZ8FUA6qLUZqJ3BjHxHounKjFzaJ50YH3_H75eAzm8G20JDWznWRu4a-x2fa7MO-BVY_oQYbETBi1MpdOViS7l8BzOxKqLfeu_z2GsIvD8YK48Uot7TFkuw920VTs-FwmY0UA/s320/DivinerLogo.png": {
+     "bytes": 12516,
+     "height": 315,
+     "sha256": "5f186a7da6a597ec086cab09f3c676f0ee5a59c9247dc0e1e0fbf0d5c67b1e4d",
+     "width": 320
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVLjFP1e1cwWVhmP9_xVsh-xoQ-KUWnow6DwyR2wWY-tGhga01mbDIOLqZYhlW809S3-pVdq7-W_IOrlLz-JxTVTteNwdqzMb2OgPyb_L0N1yZWUkZmJYhwb6Ld1VbeA777g-IkM6-GZc/s640/diviner-poc-server-memory-divination-and-leads-for-cross-page-peristent-attacks.png": {
+     "bytes": 48277,
+     "height": 388,
+     "sha256": "dcf217b2886aea1c888ba24de0a547a6593ce9faf8c96bbf080c8df026c3cfad",
+     "width": 640
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi-MkqoQS6UdBiUhDaSTOn2ffnup1P66PxxA8jPbbok3qzYUE8-DJWQ-tE36dHoEjg_LXuqNWA_cZEKE1y357hO0P-_eJGGIe4WZkPyyC379np4SuhQDyvhpluQPbtesDDwueRIfdH54k/s640/diviner-poc-server-memory-divination-and-leads-for-cross-page-attacks.png": {
+     "bytes": 41676,
+     "height": 388,
+     "sha256": "8289fb11bcad9ea051727139ec39bb5a7ca339306f13c623f8ec8ad63c0cfc4c",
+     "width": 640
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0Ev1O95Esl14hr_OGqgoTqJI2LHwURsIfcqubZEowPGj-7UwKhjwcWe8SupBkXPb7knHkcnkmvWG8ap0X9KcGOhFn4SWhlCoewXZzZ-ND-CPD5ltDMtiWWIKl6rq_12wpC3YgxdIuZ4/s400/zap-history.png": {
+     "bytes": 19405,
+     "height": 113,
+     "review_note": "Manually verified research screenshot; small dimensions are content, not page furniture. Decoded and re-encoded as a fresh JPEG; no global image policy changed.",
+     "sha256": "b8ed2d893af543b43957699d6a498569e8201e6129ece3416205245926f73cae",
+     "width": 396
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYtnnSrkZquV2UIV0g0dbQ57lEDY-rUjhQxu7BgqALqWd89XL0V-Ko69bP8uTd0LEVZSAvyOFx-fzQVU9B7OKrQM8Ae1V8Y4ZjPcHNiq1sMCM3Xvq-mPvriWt5_RlbKNQmoOLh8-pMnqk/s640/diviner-poc-server-source-code-divination-clairvoyance-feature.png": {
+     "bytes": 34460,
+     "height": 454,
+     "sha256": "69c265a61f589033b6bc1992d13ad18785f299ea5c7f952c09e97c9894061eb1",
+     "width": 640
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6QxPCkyGtOYKsYHrcH2c2859MWUoV_-db3sJSFnOrVwfv4vMnN2Vszks9K6bjgRxJdPooxGzbzCHpXQG6-0kx1WN6f8nBRjyGgoOgsQTLPOq3c3D7EjDBH41J9bv-mDcq_RfS8a4Mw-Q/s640/ExploringBehaviors.png": {
+     "bytes": 32382,
+     "height": 389,
+     "sha256": "e3d8da99f367721db97a347eef15a9a19a0694e2db375c4e20eec67e96a15b5e",
+     "width": 640
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2012-07-30",
+   "publisher": "Security Tools Benchmarking",
+   "raw_sha256": "4cd29657bb203215aa327e347d1e5e01b899cf167047471571c4c3a5e0f1983e",
+   "slug": "hacktics-advanced-security-center-ernst-young-diviner-black-box-inference-flow",
+   "spellings": [
+    "https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "b551c375866cf9147189605836a88923567685a78cd6da23dec1ea1794d65adb",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 29592,
+        "code_blocks": 0,
+        "headings": 0,
+        "images": 7,
+        "links": 24,
+        "name": "precision",
+        "tables": 0,
+        "words": 3922
+       },
+       {
+        "chars": 30021,
+        "code_blocks": 0,
+        "headings": 1,
+        "images": 7,
+        "links": 28,
+        "name": "recall",
+        "tables": 0,
+        "words": 3941
+       },
+       {
+        "chars": 30102,
+        "code_blocks": 0,
+        "headings": 1,
+        "images": 7,
+        "links": 28,
+        "name": "raw",
+        "tables": 0,
+        "words": 3952
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "4cd29657bb203215aa327e347d1e5e01b899cf167047471571c4c3a5e0f1983e",
+     "reason": "",
+     "result": "stored",
+     "slug": "hacktics-advanced-security-center-ernst-young-diviner-black-box-inference-flow",
+     "utc": "2026-09-11T20:35:46+00:00"
+    },
+    "image-review": {
+     "reason": "Manually verified research screenshot; small dimensions are content, not page furniture. Decoded and re-encoded as a fresh JPEG; no global image policy changed.",
+     "result": "preserved",
+     "sha256": "b8ed2d893af543b43957699d6a498569e8201e6129ece3416205245926f73cae",
+     "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk0Ev1O95Esl14hr_OGqgoTqJI2LHwURsIfcqubZEowPGj-7UwKhjwcWe8SupBkXPb7knHkcnkmvWG8ap0X9KcGOhFn4SWhlCoewXZzZ-ND-CPD5ltDMtiWWIKl6rq_12wpC3YgxdIuZ4/s400/zap-history.png",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "images": {
+     "bytes": 169311,
+     "reason": "5 of 6 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-11T20:38:14+00:00"
+    },
+    "metadata-review": {
+     "authors": [
+      "Shay Chen",
+      "Eran Tamari"
+     ],
+     "published": "2012-07-30",
+     "reason": "Original cover/date header and dated publication evidence reviewed in ai-evaluation; no modern uptake used for scoring.",
+     "result": "verified",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "pdf": {
+     "bytes": 379455,
+     "file": "archived-references/pdf/2012/hacktics-advanced-security-center-ernst-young-diviner-black-box-inference-flow.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-11T20:50:40+00:00"
+    },
+    "render": {
+     "chars": 31929,
+     "depth": "full",
+     "file": "archived-references/md/2012/hacktics-advanced-security-center-ernst-young-diviner-black-box-inference-flow.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T20:35:46+00:00"
+    }
+   },
+   "title": "The Diviner — Black-box Inference of Server-side Data Flow"
+  },
+  "https://sectooladdict.blogspot.com/2014/12/el-30-injection-java-is-getting-hacker.html": {
+   "also_at": [],
+   "authors": [
+    "Shay Chen"
+   ],
+   "cited_by": [
+    "2014.md:82"
+   ],
+   "cited_title": "EL 3.0/Lambda Injection: Hacker Friendly Java",
+   "content_gap": "",
+   "content_sha256": "5d15039d4cff1348cb9f0f4eaf5f7b02964ce34dcb65f9b41cdf2139f0d5b9b8",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-11",
+    "by": "webseclist-review/1",
+    "of": "5d15039d4cff1348cb9f0f4eaf5f7b02964ce34dcb65f9b41cdf2139f0d5b9b8",
+    "tags": [
+     "injection",
+     "java",
+     "rce",
+     "info-leak"
+    ],
+    "text": "Java EL3 implicitly exposes java.lang classes, allowing injected expressions to access system properties or execute commands without custom imports. Its semicolon operator chains expressions, extending exploitation to partially controlled expressions. The post gives servlet examples and identifies ELProcessor evaluation as a review target."
+   },
+   "first_seen_utc": "2026-09-11T20:34:44+00:00",
+   "grade": "research",
+   "images": {
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0rzWOvRzByi4ZvN-qICesecxHC-8YdILOrUUo1lGQB-mJzy5HbpS1RzW0VToqJJsQS1IOhUhxfKbkqdbf3gBNW8mjm6TjIlUjEoNE99EuuTBRwMxsOP54YQ0xuCDc8e6vMlyYP7zf6U8/s1600/javaBlindRCE-Mkdir.png": {
+     "bytes": 17635,
+     "height": 142,
+     "review_note": "Manually verified research screenshot; small dimensions are content, not page furniture. Decoded and re-encoded as a fresh JPEG; no global image policy changed.",
+     "sha256": "a9861d8db17445ab36f56b48531a8a647bb6c64c93f93598ef4d4ab750af4d96",
+     "width": 540
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFIqqZVL38FOYvQOOmTBCNZi3aHvPYqBqhuLDnXxgnR8i3hXXYovtuIHy6W_zvacUe5nuv1yvyLr4emaB8Wv2Hj54ciz7MLAsoHLBT6Ag7oqlM_m1z0hj6FZBKJbYO0ATi25y6VNcsoQE/s1600/javaprocnumber.png": {
+     "bytes": 3044,
+     "height": 31,
+     "review_note": "Manually verified research screenshot; small dimensions are content, not page furniture. Decoded and re-encoded as a fresh JPEG; no global image policy changed.",
+     "sha256": "63041309a0753e72a233f4e574114e6fee0669cb83e23cd8a7f93679a9c1da0e",
+     "width": 227
+    },
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJY__qkHtlGi8YY-DrjbHrLGr4F7fsiY6q0-8bKpGkSoVm86Ua5SGz0Sn_BN-qa6CJz0A46-LrbTEcRvxuTwyTqOLLWhQyhKbLioB2jtNiwvJad7Zd9ui-9uRL8kfPXDtrjGIZCxL8Lmo/s1600/JavaSystemInfo.png": {
+     "bytes": 39721,
+     "height": 121,
+     "review_note": "Manually verified research screenshot; small dimensions are content, not page furniture. Decoded and re-encoded as a fresh JPEG; no global image policy changed.",
+     "sha256": "8ee786df515a5aa8fa9cfe5b4a901141ff7d336ebf406819fa45dc3e81011621",
+     "width": 545
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2014-12-17",
+   "publisher": "Security Tools Benchmarking",
+   "raw_sha256": "450599008eacff425ae50a4398619881872b7ed2bf82e77b126574c4afb35274",
+   "slug": "hacktics-advanced-security-center-ernst-young-el-3-0-lambda-injection-java",
+   "spellings": [
+    "https://sectooladdict.blogspot.com/2014/12/el-30-injection-java-is-getting-hacker.html"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "5d15039d4cff1348cb9f0f4eaf5f7b02964ce34dcb65f9b41cdf2139f0d5b9b8",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 12187,
+        "code_blocks": 0,
+        "headings": 0,
+        "images": 3,
+        "links": 14,
+        "name": "precision",
+        "tables": 0,
+        "words": 1406
+       },
+       {
+        "chars": 12606,
+        "code_blocks": 0,
+        "headings": 1,
+        "images": 3,
+        "links": 18,
+        "name": "recall",
+        "tables": 0,
+        "words": 1423
+       },
+       {
+        "chars": 12682,
+        "code_blocks": 0,
+        "headings": 1,
+        "images": 3,
+        "links": 18,
+        "name": "raw",
+        "tables": 0,
+        "words": 1432
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "450599008eacff425ae50a4398619881872b7ed2bf82e77b126574c4afb35274",
+     "reason": "",
+     "result": "stored",
+     "slug": "hacktics-advanced-security-center-ernst-young-el-3-0-lambda-injection-java",
+     "utc": "2026-09-11T20:35:56+00:00"
+    },
+    "image-review": {
+     "reason": "Manually verified research screenshot; small dimensions are content, not page furniture. Decoded and re-encoded as a fresh JPEG; no global image policy changed.",
+     "result": "preserved",
+     "sha256": "8ee786df515a5aa8fa9cfe5b4a901141ff7d336ebf406819fa45dc3e81011621",
+     "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJY__qkHtlGi8YY-DrjbHrLGr4F7fsiY6q0-8bKpGkSoVm86Ua5SGz0Sn_BN-qa6CJz0A46-LrbTEcRvxuTwyTqOLLWhQyhKbLioB2jtNiwvJad7Zd9ui-9uRL8kfPXDtrjGIZCxL8Lmo/s1600/JavaSystemInfo.png",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "images": {
+     "bytes": 0,
+     "reason": "0 of 3 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-11T20:38:21+00:00"
+    },
+    "metadata-review": {
+     "authors": [
+      "Shay Chen"
+     ],
+     "published": "2014-12-17",
+     "reason": "Original cover/date header and dated publication evidence reviewed in ai-evaluation; no modern uptake used for scoring.",
+     "result": "verified",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "pdf": {
+     "bytes": 198035,
+     "file": "archived-references/pdf/2014/hacktics-advanced-security-center-ernst-young-el-3-0-lambda-injection-java.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-11T20:50:48+00:00"
+    },
+    "render": {
+     "chars": 14088,
+     "depth": "full",
+     "file": "archived-references/md/2014/hacktics-advanced-security-center-ernst-young-el-3-0-lambda-injection-java.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T20:35:56+00:00"
+    }
+   },
+   "title": "EL 3.0/Lambda Injection: Hacker Friendly Java"
   },
   "https://secunia.com/advisories/22477": {
    "also_at": [],
@@ -232665,6 +233168,184 @@
     }
    },
    "title": "Stealing Messenger.com Login Nonces"
+  },
+  "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/AJAX%20Hammer%20-%20Harnessing%20AJAX%20for%20%28Direct%29%20Dynamic%20CSRF.pdf": {
+   "also_at": [],
+   "authors": [
+    "Oren Ofer"
+   ],
+   "cited_by": [
+    "2012.md:92"
+   ],
+   "cited_title": "AJAX Hammer — Harnessing AJAX for Dynamic CSRF",
+   "content_gap": "",
+   "content_sha256": "eb55d5da99ec89dc70d05ba111939aa68da991409eafaf06637eec6d002a80e5",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-11",
+    "by": "webseclist-review/1",
+    "of": "eb55d5da99ec89dc70d05ba111939aa68da991409eafaf06637eec6d002a80e5",
+    "tags": [
+     "csrf",
+     "sop-bypass",
+     "javascript"
+    ],
+    "text": "An intranet-classified page uses permissive browser zones and user-approved cross-domain XMLHttpRequest to read authenticated responses. It can extract CSRF tokens and ViewState, adapt subsequent requests, and send custom headers or JSON bodies. Requires matching scheme and port and the victim’s confirmation."
+   },
+   "first_seen_utc": "2026-09-11T20:34:44+00:00",
+   "grade": "research",
+   "kind": "whitepaper",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2012-01-09",
+   "publisher": "Hacktics Advanced Security Center, Ernst & Young",
+   "raw_sha256": "a6204cc245faee71a85eacdfdab30e5d2d6c13bb9a7e1b3585783d1edc32d221",
+   "slug": "hacktics-advanced-security-center-ernst-young-ajax-hammer-harnessing-ajax-csrf",
+   "spellings": [
+    "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/AJAX%20Hammer%20-%20Harnessing%20AJAX%20for%20%28Direct%29%20Dynamic%20CSRF.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "eb55d5da99ec89dc70d05ba111939aa68da991409eafaf06637eec6d002a80e5",
+     "extraction": null,
+     "raw_sha256": "a6204cc245faee71a85eacdfdab30e5d2d6c13bb9a7e1b3585783d1edc32d221",
+     "reason": "",
+     "result": "stored",
+     "slug": "hacktics-advanced-security-center-ernst-young-ajax-hammer-harnessing-ajax-csrf",
+     "utc": "2026-09-11T20:35:41+00:00"
+    },
+    "metadata-review": {
+     "authors": [
+      "Oren Ofer"
+     ],
+     "published": "2012-01-09",
+     "reason": "Original cover/date header and dated publication evidence reviewed in ai-evaluation; no modern uptake used for scoring.",
+     "result": "verified",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "pdf": {
+     "bytes": 1486957,
+     "file": "archived-references/pdf/2012/hacktics-advanced-security-center-ernst-young-ajax-hammer-harnessing-ajax-csrf.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-11T20:47:42+00:00"
+    },
+    "render": {
+     "chars": 38727,
+     "depth": "full",
+     "file": "archived-references/md/2012/hacktics-advanced-security-center-ernst-young-ajax-hammer-harnessing-ajax-csrf.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T20:35:42+00:00"
+    }
+   },
+   "title": "AJAX Hammer — Harnessing AJAX for Dynamic CSRF"
+  },
+  "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/DotNetHavoc%20-%2044Con2013.pptx": {
+   "also_at": [
+    "https://www.slideshare.net/slideshow/44con-2013-net-havoc-manipulating-properties-of-dormant-server-side-web-controls-shay-chen/29359614"
+   ],
+   "authors": [
+    "Shay Chen"
+   ],
+   "cited_by": [
+    "2013.md:67"
+   ],
+   "cited_title": ".NET Havoc (Slides)",
+   "content_gap": "",
+   "content_sha256": "514c975c2239b9eb91c7aab508f179ef2c6f82caaa446723ea4bc9893653a186",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-11",
+    "by": "webseclist-review/1",
+    "of": "514c975c2239b9eb91c7aab508f179ef2c6f82caaa446723ea4bc9893653a186",
+    "tags": [
+     "auth-bypass",
+     "aspnet",
+     "dotnet",
+     "tooling"
+    ],
+    "text": "ASP.NET control properties stored in ViewState expose another input surface. The slides demonstrate control fingerprinting, property overrides, dormant event execution, and reuse of cached state, distinguishing unsigned modifications from replay of valid signed values. SCIP automates parts of discovery and testing."
+   },
+   "first_seen_utc": "2026-09-11T20:34:44+00:00",
+   "grade": "research",
+   "kind": "slides",
+   "language": "en",
+   "licence": "unknown",
+   "paper": {
+    "bytes": 10768580,
+    "kind": "manual-slide-render",
+    "note": "Archive-assembled visual PDF: 65 conference-published SlideShare pages plus the three image-only screenshots from original PPTX slides 22, 24, 26, inserted at their original positions; 68 pages total. Images decoded and re-encoded. Original PPTX remains raw_sha256. This is not a publisher-supplied PDF.",
+    "retrieved_utc": "2026-09-11T20:43:21+00:00",
+    "sha256": "dd2fbb7a2bf95cd9d522dd2e71d87973f92a20d8fc8eefcde9a9929a4c832328",
+    "url": "https://www.slideshare.net/slideshow/44con-2013-net-havoc-manipulating-properties-of-dormant-server-side-web-controls-shay-chen/29359614"
+   },
+   "published": "2013-09-12",
+   "publisher": "Hacktics Advanced Security Center, Ernst & Young",
+   "raw_sha256": "0798560c8a3913a8d346b6997bc856f97a2b8b6e37389d7badb54eafb4c84dfc",
+   "slug": "hacktics-advanced-security-center-ernst-young-net-havoc-manipulating-slides",
+   "spellings": [
+    "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/DotNetHavoc%20-%2044Con2013.pptx"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "514c975c2239b9eb91c7aab508f179ef2c6f82caaa446723ea4bc9893653a186",
+     "extraction": null,
+     "raw_sha256": "0798560c8a3913a8d346b6997bc856f97a2b8b6e37389d7badb54eafb4c84dfc",
+     "reason": "",
+     "result": "stored",
+     "slug": "hacktics-advanced-security-center-ernst-young-net-havoc-manipulating-slides",
+     "utc": "2026-09-11T20:36:01+00:00"
+    },
+    "manual-render": {
+     "pages": 68,
+     "reason": "Archive-assembled visual PDF: 65 conference-published SlideShare pages plus the three image-only screenshots from original PPTX slides 22, 24, 26, inserted at their original positions; 68 pages total. Images decoded and re-encoded. Original PPTX remains raw_sha256. This is not a publisher-supplied PDF.",
+     "result": "stored",
+     "sha256": "dd2fbb7a2bf95cd9d522dd2e71d87973f92a20d8fc8eefcde9a9929a4c832328",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "metadata-review": {
+     "authors": [
+      "Shay Chen"
+     ],
+     "published": "2013-09-12",
+     "reason": "Original cover/date header and dated publication evidence reviewed in ai-evaluation; no modern uptake used for scoring.",
+     "result": "verified",
+     "utc": "2026-09-11T20:43:21+00:00"
+    },
+    "pdf": {
+     "bytes": 10768580,
+     "file": "archived-references/pdf/2013/hacktics-advanced-security-center-ernst-young-net-havoc-manipulating-slides.pdf",
+     "result": "copied",
+     "source": "linked-paper",
+     "utc": "2026-09-11T20:47:45+00:00"
+    },
+    "render": {
+     "chars": 17520,
+     "depth": "full",
+     "file": "archived-references/md/2013/hacktics-advanced-security-center-ernst-young-net-havoc-manipulating-slides.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T20:36:01+00:00"
+    }
+   },
+   "title": ".NET Havoc — Manipulating Properties of Dormant Server Side Web Controls (Slides)"
   },
   "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf": {
    "also_at": [],

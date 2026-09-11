@@ -145,3 +145,12 @@ This concludes the discovery handoff above. 0 new full judgements completed; 0 q
 No new technique cleared the source, calendar-year and distinct-contribution prescreen. Zero full new judgements and zero additions is the final outcome; source-recovery holds remain listed.
 
 These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+
+## TECAPI follow-up — 11 September 2026
+
+The [full source review](2026-09-11-tecapi.md) applies the current **55-point plus qualifying-novelty gate**. Decisions below supersede only these candidates; earlier audit counts above describe their dated runs. Full scorecards are also integrated into [the current ledger](judgements.md).
+
+| Score | Decision | Verdict | Candidate |
+|---:|---|---|---|
+| 60.3 | Added | Meaningful combination or adaptation | [AJAX Hammer — Harnessing AJAX for Dynamic CSRF](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/AJAX%20Hammer%20-%20Harnessing%20AJAX%20for%20%28Direct%29%20Dynamic%20CSRF.pdf) |
+| 62.2 | Added | Tooling or methodology contribution | [The Diviner — Black-box Inference of Server-side Data Flow](https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html) |

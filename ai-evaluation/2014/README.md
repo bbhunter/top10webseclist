@@ -119,3 +119,13 @@ This concludes the discovery handoff above. 1 new full judgement completed; 1 qu
 | [Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On](https://arxiv.org/pdf/1412.1623v1) | 66.8 | Meaningful extension; added — [full card](judgements.md) |
 
 These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+
+## TECAPI follow-up — 11 September 2026
+
+The [full source review](2026-09-11-tecapi.md) applies the current **55-point plus qualifying-novelty gate**. Decisions below supersede only these candidates; earlier audit counts above describe their dated runs. Full scorecards are also integrated into [the current ledger](judgements.md).
+
+| Score | Decision | Verdict | Candidate |
+|---:|---|---|---|
+| 62.3 | Added | Meaningful extension | [EL 3.0/Lambda Injection: Hacker Friendly Java](https://sectooladdict.blogspot.com/2014/12/el-30-injection-java-is-getting-hacker.html) |
+| 55.0 | Not added | Useful application or case study | [SpoofedMe — Social Login Impersonation Attack](https://www.slideshare.net/slideshow/spoofed-me-socialloginattack/42313457) |
+| 46.9 | Not added | Useful application or case study | [Remote Code Execution .. by design](https://blog.h3xstream.com/2014/11/remote-code-execution-by-design.html) |

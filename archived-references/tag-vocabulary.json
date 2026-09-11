@@ -172,13 +172,13 @@
    "documents": 2
   },
   "aspnet": {
-   "documents": 47
+   "documents": 49
   },
   "attack-chain": {
    "documents": 189
   },
   "auth-bypass": {
-   "documents": 309
+   "documents": 311
   },
   "autofill": {
    "documents": 1
@@ -259,7 +259,7 @@
    "documents": 65
   },
   "csrf": {
-   "documents": 146
+   "documents": 148
   },
   "css": {
    "documents": 72
@@ -322,13 +322,13 @@
    "documents": 107
   },
   "dotnet": {
-   "documents": 68
+   "documents": 70
   },
   "drupal": {
    "documents": 4
   },
   "dynamic-analysis": {
-   "documents": 81
+   "documents": 82
   },
   "elasticsearch": {
    "documents": 3
@@ -349,7 +349,7 @@
    "documents": 8
   },
   "file-upload": {
-   "documents": 88
+   "documents": 89
   },
   "file-write": {
    "documents": 1
@@ -358,7 +358,7 @@
    "documents": 306
   },
   "flash": {
-   "documents": 56
+   "documents": 57
   },
   "flask": {
    "documents": 5
@@ -424,10 +424,10 @@
    "documents": 140
   },
   "info-leak": {
-   "documents": 614
+   "documents": 615
   },
   "injection": {
-   "documents": 125
+   "documents": 126
   },
   "ios": {
    "documents": 16
@@ -436,10 +436,10 @@
    "documents": 4
   },
   "java": {
-   "documents": 122
+   "documents": 123
   },
   "javascript": {
-   "documents": 381
+   "documents": 382
   },
   "javascript-runtime": {
    "documents": 20
@@ -532,7 +532,7 @@
    "documents": 67
   },
   "pdf": {
-   "documents": 25
+   "documents": 26
   },
   "perl": {
    "documents": 4
@@ -565,7 +565,7 @@
    "documents": 22
   },
   "proxy": {
-   "documents": 83
+   "documents": 84
   },
   "python": {
    "documents": 36
@@ -580,7 +580,7 @@
    "documents": 17
   },
   "rce": {
-   "documents": 279
+   "documents": 280
   },
   "react": {
    "documents": 6
@@ -646,7 +646,7 @@
    "documents": 13
   },
   "sop-bypass": {
-   "documents": 197
+   "documents": 199
   },
   "spring": {
    "documents": 13
@@ -691,7 +691,7 @@
    "documents": 16
   },
   "tooling": {
-   "documents": 309
+   "documents": 312
   },
   "type-confusion": {
    "documents": 1
@@ -751,5 +751,5 @@
    "documents": 33
   }
  },
- "updated": "2026-09-10T15:56:53+00:00"
+ "updated": "2026-09-11T20:50:52+00:00"
 }

@@ -91,3 +91,7 @@ This concludes the discovery handoff above. 2 new full judgements completed; 2 q
 The two DNS disclosures form one comparison cluster. Klein’s Windows predictor is the retained contribution, with browser/CNAME delivery treated as earlier work. Historical threshold-reconciliation notes above are superseded by the current scorecard/history/list audit; they do not denote extra discoveries in this run.
 
 These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+
+## TECAPI screening — 11 September 2026
+
+[Reflection Injection](https://thewasps.blogspot.com/2007/12/reflection-injection.html), 8 December 2007, summarizes and explicitly attributes existing OWASP examples. It asks about an already known attack rather than disclosing an original technique. Screened as duplicate/insufficient new contribution; no numeric score or list addition. See the [source audit](../source-audits/2026-09-11-tecapi.md).

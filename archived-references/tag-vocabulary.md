@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-201 tags, across 1739 documents that carry a digest.
+201 tags, across 1745 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -75,9 +75,9 @@ JSON.
 | `android` | 33 | — |
 | `angular` | 3 | — |
 | `argument-injection` | 2 | A03:2021 |
-| `aspnet` | 47 | — |
+| `aspnet` | 49 | — |
 | `attack-chain` | 189 | — |
-| `auth-bypass` | 309 | A01:2021 |
+| `auth-bypass` | 311 | A01:2021 |
 | `autofill` | 1 | — |
 | `aws` | 30 | — |
 | `azure` | 11 | — |
@@ -104,7 +104,7 @@ JSON.
 | `cors` | 29 | A01:2021 |
 | `crypto` | 9 | A02:2021 |
 | `csp` | 65 | A05:2021 |
-| `csrf` | 146 | A01:2021 |
+| `csrf` | 148 | A01:2021 |
 | `css` | 72 | — |
 | `css-injection` | 29 | A03:2021 |
 | `csti` | 4 | A03:2021 |
@@ -125,19 +125,19 @@ JSON.
 | `dom-clobbering` | 14 | A08:2021 |
 | `domain-takeover` | 2 | — |
 | `dos` | 107 | — |
-| `dotnet` | 68 | — |
+| `dotnet` | 70 | — |
 | `drupal` | 4 | — |
-| `dynamic-analysis` | 81 | — |
+| `dynamic-analysis` | 82 | — |
 | `elasticsearch` | 3 | — |
 | `electron` | 10 | — |
 | `email` | 50 | — |
 | `embedded-device` | 7 | — |
 | `encoding` | 83 | — |
 | `express` | 8 | — |
-| `file-upload` | 88 | — |
+| `file-upload` | 89 | — |
 | `file-write` | 1 | — |
 | `filter-bypass` | 306 | A05:2021 |
-| `flash` | 56 | — |
+| `flash` | 57 | — |
 | `flask` | 5 | — |
 | `formal-analysis` | 36 | — |
 | `ftp` | 10 | — |
@@ -159,12 +159,12 @@ JSON.
 | `identity` | 8 | A07:2021 |
 | `idor` | 27 | A01:2021 |
 | `iframe` | 140 | — |
-| `info-leak` | 614 | — |
-| `injection` | 125 | A03:2021 |
+| `info-leak` | 615 | — |
+| `injection` | 126 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 4 | — |
-| `java` | 122 | — |
-| `javascript` | 381 | — |
+| `java` | 123 | — |
+| `javascript` | 382 | — |
 | `javascript-runtime` | 20 | — |
 | `jenkins` | 2 | — |
 | `joomla` | 6 | — |
@@ -195,7 +195,7 @@ JSON.
 | `passkeys` | 10 | A07:2021 |
 | `password-manager` | 1 | — |
 | `path-traversal` | 67 | A01:2021 |
-| `pdf` | 25 | — |
+| `pdf` | 26 | — |
 | `perl` | 4 | — |
 | `phishing` | 40 | A04:2021 |
 | `php` | 124 | — |
@@ -206,12 +206,12 @@ JSON.
 | `privilege-escalation` | 107 | A01:2021 |
 | `prompt-injection` | 41 | A03:2021 |
 | `prototype-pollution` | 22 | A08:2021 |
-| `proxy` | 83 | — |
+| `proxy` | 84 | — |
 | `python` | 36 | — |
 | `race-condition` | 29 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 279 | — |
+| `rce` | 280 | — |
 | `react` | 6 | — |
 | `redis` | 3 | — |
 | `redos` | 3 | — |
@@ -233,7 +233,7 @@ JSON.
 | `smuggling` | 15 | — |
 | `snmp` | 2 | — |
 | `soap` | 13 | — |
-| `sop-bypass` | 197 | A01:2021 |
+| `sop-bypass` | 199 | A01:2021 |
 | `spring` | 13 | — |
 | `sqli` | 66 | A03:2021 |
 | `sso` | 66 | A07:2021 |
@@ -248,7 +248,7 @@ JSON.
 | `timing-attack` | 94 | — |
 | `tls` | 112 | A02:2021 |
 | `toctou` | 16 | A04:2021 |
-| `tooling` | 309 | — |
+| `tooling` | 312 | — |
 | `type-confusion` | 1 | — |
 | `typosquatting` | 9 | A06:2021 |
 | `ui-redress` | 72 | A04:2021 |

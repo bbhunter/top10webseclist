@@ -44,8 +44,8 @@ Security's blog (home of the 2011–2015 lists) is already gone. This repository
 the whole thing in one durable, greppable place:
 
 - **One Markdown file per year** with *every* nominated technique — all **1,136**
-  of them, plus **351** later audit finds the nomination rounds missed, for
-  **1,487 techniques** spanning two decades of web security research.
+  of them, plus **419** later audit finds the nomination rounds missed, for
+  **1,555 techniques** spanning two decades of web security research.
 - **PDF snapshots** of the original nominee and winner announcement pages, captured with
   reproducible tooling and recorded provenance.
 
@@ -136,28 +136,28 @@ separate under `## Missed from the original list`.
 
 | Year | Nominated | Audit | Total | 🏆 #1 technique | Archived PDFs | Original post |
 |---|---:|---:|---:|---|---|---|
-| [2025](2025.md) | 67 | 13 | 80 | Successful Errors | [nominees](original-listings/2025-nominees.pdf) · [top 10](original-listings/2025-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2025) |
-| [2024](2024.md) | 119 | 21 | 140 | Confusion Attacks | [nominees](original-listings/2024-nominees.pdf) · [top 10](original-listings/2024-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2024) |
-| [2023](2023.md) | 68 | 16 | 84 | Smashing the State Machine | [nominees](original-listings/2023-nominees.pdf) · [top 10](original-listings/2023-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2023) |
-| [2022](2022.md) | 46 | 23 | 69 | Dirty Dancing in Sign-in OAuth Flows | [nominees](original-listings/2022-nominees.pdf) · [top 10](original-listings/2022-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2022) |
-| [2021](2021.md) | 40 | 13 | 53 | Dependency Confusion | [nominees](original-listings/2021-nominees.pdf) · [top 10](original-listings/2021-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2021) |
-| [2020](2020.md) | 54 | 12 | 66 | H2C Smuggling | [nominees](original-listings/2020-nominees.pdf) · [top 10](original-listings/2020-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2020) |
-| [2019](2019.md) | 50 | 16 | 66 | Cached and Confused | [nominees](original-listings/2019-nominees.pdf) · [top 10](original-listings/2019-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2019) |
-| [2018](2018.md) | 54 | 22 | 76 | Breaking Parser Logic | [nominees](original-listings/2018-nominees.pdf) · [top 10](original-listings/2018-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2018) |
-| [2016/17](2016-17.md) | 39 | 56 | 95 | A New Era of SSRF | [nominees](original-listings/2016-17-nominees.pdf) · [top 10](original-listings/2016-17-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017) |
-| [2015](2015.md) | 39 | 29 | 68 | FREAK | [combined](original-listings/2015-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2015/) † |
-| [2014](2014.md) | 46 | 20 | 66 | Heartbleed | [combined](original-listings/2014-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20160319055228/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2014/) † |
-| [2013](2013.md) | 32 | 19 | 51 | Mutation XSS | [combined](original-listings/2013-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20160312115418/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-2013/) † |
-| [2012](2012.md) | 56 | 20 | 76 | CRIME | [combined](original-listings/2012-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/top-ten-web-hacking-techniques-of-2012/) † |
-| [2011](2011.md) | 51 | 16 | 67 | BEAST | [nominees](original-listings/2011-nominees.pdf) · [top 10](original-listings/2011-top10.pdf) | [Wayback](https://web.archive.org/web/20150109120123/https://www.whitehatsec.com/resource/grossmanarchives/12grossmanarchives/022112topten2011.html) † |
-| [2010](2010.md) | 69 | 19 | 88 | 'Padding Oracle' Crypto Attack | [nominees](original-listings/2010-nominees.pdf) · [top 10](original-listings/2010-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2011/01/top-ten-web-hacking-techniques-of-2010.html) |
-| [2009](2009.md) | 83 | 11 | 94 | Creating a Rogue CA Certificate | [nominees](original-listings/2009-nominees.pdf) · [top 10](original-listings/2009-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2010/01/top-ten-web-hacking-techniques-of-2009.html) |
-| [2008](2008.md) | 70 | 10 | 80 | GIFAR | [nominees](original-listings/2008-nominees.pdf) · [top 10](original-listings/2008-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2009/02/top-ten-web-hacking-techniques-of-2008.html) |
-| [2007](2007.md) | 83 | 9 | 92 | XSS in Common Shockwave Flash Files | [nominees](original-listings/2007-nominees.pdf) · [top 10](original-listings/2007-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2008/01/top-ten-web-hacks-of-2007-official.html) |
-| [2006](2006.md) | 70 | 6 | 76 | Web Browser Intranet Hacking / Port Scanning | [combined](original-listings/2006-nominees-and-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2006/12/top-10-web-hacks-of-2006.html) |
-| **Total** | **1,136** | **351** | **1,487** | | | |
+| [2025](2025.md) | 67 | 24 | 91 | Successful Errors | [nominees](original-listings/2025-nominees.pdf) · [top 10](original-listings/2025-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2025) |
+| [2024](2024.md) | 119 | 27 | 146 | Confusion Attacks | [nominees](original-listings/2024-nominees.pdf) · [top 10](original-listings/2024-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2024) |
+| [2023](2023.md) | 68 | 21 | 89 | Smashing the State Machine | [nominees](original-listings/2023-nominees.pdf) · [top 10](original-listings/2023-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2023) |
+| [2022](2022.md) | 46 | 29 | 75 | Dirty Dancing in Sign-in OAuth Flows | [nominees](original-listings/2022-nominees.pdf) · [top 10](original-listings/2022-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2022) |
+| [2021](2021.md) | 40 | 15 | 55 | Dependency Confusion | [nominees](original-listings/2021-nominees.pdf) · [top 10](original-listings/2021-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2021) |
+| [2020](2020.md) | 54 | 15 | 69 | H2C Smuggling | [nominees](original-listings/2020-nominees.pdf) · [top 10](original-listings/2020-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2020) |
+| [2019](2019.md) | 50 | 19 | 69 | Cached and Confused | [nominees](original-listings/2019-nominees.pdf) · [top 10](original-listings/2019-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2019) |
+| [2018](2018.md) | 54 | 25 | 79 | Breaking Parser Logic | [nominees](original-listings/2018-nominees.pdf) · [top 10](original-listings/2018-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2018) |
+| [2016/17](2016-17.md) | 39 | 65 | 104 | A New Era of SSRF | [nominees](original-listings/2016-17-nominees.pdf) · [top 10](original-listings/2016-17-top10.pdf) | [PortSwigger](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017) |
+| [2015](2015.md) | 39 | 32 | 71 | FREAK | [combined](original-listings/2015-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2015/) † |
+| [2014](2014.md) | 46 | 22 | 68 | Heartbleed | [combined](original-listings/2014-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20160319055228/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2014/) † |
+| [2013](2013.md) | 32 | 21 | 53 | Mutation XSS | [combined](original-listings/2013-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20160312115418/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-2013/) † |
+| [2012](2012.md) | 56 | 23 | 79 | CRIME | [combined](original-listings/2012-nominees-and-top10.pdf) | [Wayback](https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/top-ten-web-hacking-techniques-of-2012/) † |
+| [2011](2011.md) | 51 | 17 | 68 | BEAST | [nominees](original-listings/2011-nominees.pdf) · [top 10](original-listings/2011-top10.pdf) | [Wayback](https://web.archive.org/web/20150109120123/https://www.whitehatsec.com/resource/grossmanarchives/12grossmanarchives/022112topten2011.html) † |
+| [2010](2010.md) | 69 | 22 | 91 | 'Padding Oracle' Crypto Attack | [nominees](original-listings/2010-nominees.pdf) · [top 10](original-listings/2010-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2011/01/top-ten-web-hacking-techniques-of-2010.html) |
+| [2009](2009.md) | 83 | 13 | 96 | Creating a Rogue CA Certificate | [nominees](original-listings/2009-nominees.pdf) · [top 10](original-listings/2009-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2010/01/top-ten-web-hacking-techniques-of-2009.html) |
+| [2008](2008.md) | 70 | 11 | 81 | GIFAR | [nominees](original-listings/2008-nominees.pdf) · [top 10](original-listings/2008-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2009/02/top-ten-web-hacking-techniques-of-2008.html) |
+| [2007](2007.md) | 83 | 11 | 94 | XSS in Common Shockwave Flash Files | [nominees](original-listings/2007-nominees.pdf) · [top 10](original-listings/2007-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2008/01/top-ten-web-hacks-of-2007-official.html) |
+| [2006](2006.md) | 70 | 7 | 77 | Web Browser Intranet Hacking / Port Scanning | [combined](original-listings/2006-nominees-and-top10.pdf) | [Jeremiah's blog](https://blog.jeremiahgrossman.com/2006/12/top-10-web-hacks-of-2006.html) |
+| **Total** | **1,136** | **419** | **1,555** | | | |
 
-A further **47** AI-collected leads for 2026 sit in [`2026-ai.md`](2026-ai.md), unranked,
+A further **103** AI-collected leads for 2026 sit in [`2026-ai.md`](2026-ai.md), unranked,
 incomplete and not community-vetted, deliberately kept apart from the curated lists above.
 
 † The WhiteHat Security blog is offline; these links go to the Wayback Machine —
@@ -206,10 +206,9 @@ See [tools/README.md](tools/README.md) for the full usage and design notes, and
 > [!NOTE]
 > **The articles themselves are preserved too.** The announcement pages are only half the
 > story, so each cited research article is kept as its own Markdown + PDF copy under
-> [`archived-references/`](archived-references/) — **1,531 of the 1,534 cited sources**
-> today. **419** of them had to be recovered from the Wayback Machine because the original
-> page no longer answers, and **25** non-English sources are kept in the original with an
-> English translation beside them.
+> [`archived-references/`](archived-references/) — with current coverage and recovery counts in its [generated index](archived-references/README.md).
+> Sources recovered from the Wayback Machine retain their provenance, and non-English
+> sources are kept in the original with an English translation beside them.
 
 ### Keeping the web apps in sync
 

@@ -6564,6 +6564,68 @@
    "published": "2010-09-01",
    "publisher": "Xakep",
    "title_english": "Taking a Hammer to Bitrix: Finding 0day Vulnerabilities in a Popular CMS"
+  },
+  "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/AJAX%20Hammer%20-%20Harnessing%20AJAX%20for%20%28Direct%29%20Dynamic%20CSRF.pdf": {
+   "title": "AJAX Hammer — Harnessing AJAX for Dynamic CSRF",
+   "authors": [
+    "Oren Ofer"
+   ],
+   "publisher": "Hacktics Advanced Security Center, Ernst & Young",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+  },
+  "https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html": {
+   "title": "The Diviner — Black-box Inference of Server-side Data Flow",
+   "authors": [
+    "Shay Chen",
+    "Eran Tamari"
+   ],
+   "publisher": "Security Tools Benchmarking",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+  },
+  "https://media.blackhat.com/eu-13/briefings/Chen/bh-eu-13-invisibility-purge-chen-slides.pdf": {
+   "title": "Invisibility Purge (Slides)",
+   "authors": [
+    "Shay Chen",
+    "Niv Sela"
+   ],
+   "publisher": "Hacktics Advanced Security Center, Ernst & Young",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+  },
+  "https://sectooladdict.blogspot.com/2014/12/el-30-injection-java-is-getting-hacker.html": {
+   "title": "EL 3.0/Lambda Injection: Hacker Friendly Java",
+   "authors": [
+    "Shay Chen"
+   ],
+   "publisher": "Security Tools Benchmarking",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+  },
+  "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/DotNetHavoc%20-%2044Con2013.pptx": {
+   "title": ".NET Havoc — Manipulating Properties of Dormant Server Side Web Controls (Slides)",
+   "authors": [
+    "Shay Chen"
+   ],
+   "publisher": "Hacktics Advanced Security Center, Ernst & Young",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+  },
+  "https://seclists.org/fulldisclosure/2010/Aug/236": {
+   "title": "SDRF vulnerability in web-applications and browsers (Whitepaper)",
+   "authors": [
+    "Vladimir Vorontsov"
+   ],
+   "publisher": "ONsec",
+   "outcome": "archive",
+   "class": "research",
+   "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
   }
  },
  "mirror_sources": [],

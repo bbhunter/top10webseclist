@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1785 reference(s) archived across 20 year list(s). 1691 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1791 reference(s) archived across 20 year list(s). 1697 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -1118,7 +1118,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Vetting SSL Usage in Applications with SSLINT](md/2015/vetting-ssl-usage-applications-sslint.md) | whitepaper |  |  | research | 1 |
 | [Web Timing Attacks Made Practical (Whitepaper)](md/2015/publisher-not-separately-stated-manuscript-prepared-for-blackhat-usa-whitepaper.md) | whitepaper | Black Hat | 2015 | research | 1 |
 
-## 2014 (71)
+## 2014 (72)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -1142,6 +1142,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Effective Attacks and Provable Defenses for Website Fingerprinting](md/2014/usenix-org-effective-attacks-provable-defenses-website-fingerprinting.md) | article | usenix.org |  | research | 1 |
 | [Egor Homakov: How I hacked Github again.](md/2014/homakov-blogspot-com-egor-homakov-how-i-hacked-github-again.md) | article | homakov.blogspot.com |  | research | 1 |
 | [Egor Homakov: The No CAPTCHA problem](md/2014/homakov-blogspot-com-egor-homakov-no-captcha-problem.md) | article | homakov.blogspot.com |  | research | 1 |
+| [EL 3.0/Lambda Injection: Hacker Friendly Java](md/2014/hacktics-advanced-security-center-ernst-young-el-3-0-lambda-injection-java.md) | article | Security Tools Benchmarking | 2014 | research | 1 |
 | [From 0-day to exploit – Buffer overflow in Belkin N750 (CVE-2014-1635)](md/2014/labs-integrity-pt-0-day-exploit-buffer-overflow-belkin-n750-cve-2014-1635.md) | article | labs.integrity.pt |  | research | 1 |
 | [HackerOne disclosed on HackerOne: File Name Enumeration](md/2014/hackerone-hackerone-disclosed-hackerone-file-name-enumeration.md) | article | HackerOne |  | research | 1 |
 | [Heartbleed Bug](md/2014/heartbleed-com-heartbleed-bug.md) | article | heartbleed.com |  | research | 1 |
@@ -1194,7 +1195,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations](md/2014/using-frankencerts-automated-adversarial-testing-certificate-implementations.md) | whitepaper |  |  | research | 1 |
 | [Virtual Host Confusion: Weaknesses and Exploits](md/2014/virtual-host-confusion-weaknesses-exploits.md) | whitepaper |  |  | research | 1 |
 
-## 2013 (53)
+## 2013 (55)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -1239,6 +1240,8 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Verizon Wireless Customer Portal Exposed Text Message History](md/2013/2013-the-state-of-security-verizon-wireless-customer-portal-exposed-history.md) | article | The State of Security | 2013 | research | 1 |
 | [Why you should not use autocomplete • Yoast](md/2013/2013-yoast-why-you-should-not-use-autocomplete-yoast.md) | article | Yoast | 2013 | records | 1 |
 | [mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations (Paper)](md/2013/acm-mxss-attacks-attacking-well-secured-web-applications-using-innerhtml-paper.md) | paper | ACM |  | research | 1 |
+| [.NET Havoc — Manipulating Properties of Dormant Server Side Web Controls (Slides)](md/2013/hacktics-advanced-security-center-ernst-young-net-havoc-manipulating-slides.md) | slides | Hacktics Advanced Security Center, Ernst & Young | 2013 | research | 1 |
+| [Invisibility Purge (Slides)](md/2013/hacktics-advanced-security-center-ernst-young-invisibility-purge-slides.md) | slides | Hacktics Advanced Security Center, Ernst & Young | 2013 | research | 1 |
 | [Million Browser Botnet](md/2013/million-browser-botnet.md) | slides | WhiteHat Security |  | research | 1 |
 | [Million Browser Botnet](md/2013/slideshare-net-million-browser-botnet.md) | slides | slideshare.net |  | research | 1 |
 | [XML Out-Of-Band Data Retrieval](md/2013/xml-out-band-data-retrieval.md) | slides |  |  | research | 1 |
@@ -1252,7 +1255,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [What You Didn't Know About XML External Entity Attacks](md/2013/what-you-didn-t-know-about-xml-external-entity-attacks.md) | whitepaper |  |  | research | 1 |
 | [When Tolerance Causes Weakness: The Case of Injection-Friendly Browsers](md/2013/when-tolerance-causes-weakness-case-injection-friendly-browsers.md) | whitepaper |  |  | research | 1 |
 
-## 2012 (91)
+## 2012 (93)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -1313,6 +1316,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [SkullSecurity » Blog Archive » Stuffing Javascript into DNS names](md/2012/skullsecurity-org-skullsecurity-blog-archive-stuffing-javascript-dns-names.md) | article | skullsecurity.org |  | research | 1 |
 | [SMBRelay Bible 7: SSRF + Java + Windows = Love](md/2012/erpscan-com-smbrelay-bible-7-ssrf-java-windows-love.md) | article | erpscan.com |  | research | 1 |
 | [SSRF via WS-Adressing](md/2012/2012-erpscan-ssrf-ws-adressing.md) | article | ERPScan | 2012 | research | 1 |
+| [The Diviner — Black-box Inference of Server-side Data Flow](md/2012/hacktics-advanced-security-center-ernst-young-diviner-black-box-inference-flow.md) | article | Security Tools Benchmarking | 2012 | research | 1 |
 | [Top-Level Universal XSS](md/2012/superevr-top-level-universal-xss.md) | article | Superevr |  | research | 1 |
 | [UI Redressing Mayhem: Firefox 0day and the LeakedIn affair](md/2012/blog-nibblesec-org-ui-redressing-mayhem-firefox-0day-leakedin-affair.md) | article | blog.nibblesec.org |  | research | 1 |
 | [UI Redressing Mayhem: HttpOnly bypass PayPwn style](md/2012/blog-nibblesec-org-ui-redressing-mayhem-httponly-bypass-paypwn-style.md) | article | blog.nibblesec.org |  | research | 1 |
@@ -1331,6 +1335,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [No locked doors, no windows barred: hacking OpenAM infrastructure](md/2012/slideshare-net-no-locked-doors-no-windows-barred-hacking-openam-infrastructure.md) | slides | slideshare.net |  | research | 1 |
 | [SSRF attacks and sockets: smorgasbord of vulnerabilities](md/2012/slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities.md) | slides | ONsec / ZeroNights | 2012 | research | 1 |
 | [A Pentester’s Guide to Hacking OData (Whitepaper)](md/2012/mcafee-foundstone-professional-services-pentesters-guide-hacking-whitepaper.md) | whitepaper | McAfee Foundstone Professional Services |  | research | 1 |
+| [AJAX Hammer — Harnessing AJAX for Dynamic CSRF](md/2012/hacktics-advanced-security-center-ernst-young-ajax-hammer-harnessing-ajax-csrf.md) | whitepaper | Hacktics Advanced Security Center, Ernst & Young | 2012 | research | 1 |
 | [Are You My Type? Breaking .NET Through Serialization](md/2012/you-my-type-breaking-net-through-serialization.md) | whitepaper | Context Information Security |  | research | 1 |
 | [Are You My Type? Breaking .NET Through Serialization - Slides](md/2012/context-information-security-you-my-type-breaking-net-through-slides.md) | whitepaper | Context Information Security |  | research | 1 |
 | [Attacking CAPTCHAs for Fun and Profit](md/2012/attacking-captchas-fun-profit.md) | whitepaper |  |  | research | 1 |
@@ -1422,7 +1427,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [WAPTEC: Whitebox Analysis of Web Applications for Parameter Tampering Exploit Construction](md/2011/waptec-whitebox-analysis-web-applications-parameter-tampering-construction.md) | whitepaper |  |  | research | 1 |
 | [“You Might Also Like:” Privacy Risks of Collaborative Filtering](md/2011/you-might-also-like-privacy-risks-collaborative-filtering.md) | whitepaper |  |  | research | 1 |
 
-## 2010 (94)
+## 2010 (95)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -1518,6 +1523,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Practical Padding Oracle Attacks](md/2010/practical-padding-oracle-attacks.md) | whitepaper |  | 2010 | research | 1 |
 | [Protecting Browsers from Cross-Origin CSS Attacks](md/2010/protecting-browsers-cross-origin-css-attacks.md) | whitepaper |  |  | research | 1 |
 | [Regular Expressions Considered Harmful in Client-Side XSS Filters](md/2010/regular-expressions-considered-harmful-client-side-xss-filters.md) | whitepaper |  |  | research | 1 |
+| [SDRF vulnerability in web-applications and browsers (Whitepaper)](md/2010/onsec-sdrf-vulnerability-web-applications-browsers-whitepaper.md) | whitepaper | ONsec | 2010 | research | 1 |
 | [State of the Art: Automated Black-Box Web Application Vulnerability Testing](md/2010/state-art-automated-black-box-web-application-vulnerability-testing.md) | whitepaper |  |  | research | 1 |
 | [The Emperor's New APIs: On the (In)Secure Usage of New Client-side Primitives](md/2010/emperor-s-new-apis-secure-usage-new-client-side-primitives.md) | whitepaper |  |  | research | 1 |
 
