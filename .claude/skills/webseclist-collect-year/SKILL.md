@@ -9,6 +9,14 @@ You are building `<YEAR>-ai.md`: a machine-assembled, unranked, explicitly
 provisional collection of candidate research published in one calendar year.
 It sits beside the hand-curated year lists and never replaces them.
 
+Keep judging marks out of the published Markdown and website: no scores,
+scorecards, score cutoffs or verdict labels, including in watchlists and exclusion
+notes. They can put pressure on researchers and judges. Keep detailed scoring in
+gitignored `.local/ai-evaluation/`. Public
+`ai-evaluation/` records contain only candidate identity, links and Added / Not
+added, with dates and merit-revision identifiers in decision history. Publish titles, source links, author credits and factual
+notes about dates, scope, source availability or prior research.
+
 Two failure modes make a run worthless, and both are easy to fall into:
 
 1. **Citing the wrong thing.** A news article about research is not the
@@ -35,7 +43,8 @@ and prints every URL already recorded, normalised so that trailing slashes,
 `www.`, http-vs-https, tracking parameters and Wayback wrappers do not produce
 false "new" finds.
 
-Read the existing `<YEAR>-ai.md` if there is one. Its **Watchlist** and
+Read the private `.local/ai-evaluation/<YEAR>/` notes and the public outcome
+index before repeating research. Read the existing `<YEAR>-ai.md` if there is one. Its **Watchlist** and
 **Explicitly excluded** sections are the previous run's notes to you: they say
 which artifacts had not been published yet and which candidates were already
 chased down and rejected, with reasons. Start from those rather than
@@ -99,38 +108,26 @@ primitive that reshapes a class. Score the contribution, not the headline. You
 do not need a full scorecard for every candidate at this stage; use the criteria
 as a filter, and reach for the full skill when a call is genuinely close.
 
-- **Keep-cut: score 55 or above.** A candidate stays in `<YEAR>-ai.md` only if a
-  full `webseclist-judge-reference` scorecard puts it at **≥ 55/100** with a
-  non-duplicate verdict; below 55 it is recorded in the evaluation folder but its
-  link is removed from the displayed list. This cut is above the judge skill's
-  general ≥ 50 supporting-reference bar and below its ≥ 70 core-technique label.
-  Both provisional lists and the separately review-gated historical missed-item
-  path use ≥ 55, while the historical path additionally requires publication-year
-  verification and proof that the work was never nominated. Out-of-window work is
-  excluded regardless of score.
+- **Selection merit:** a candidate is included only after a full private
+  `webseclist-judge-reference` evaluation passes that skill's current
+  **Repository collection merit**. Read it for every run; do not duplicate its
+  numerical cutoff here. Scope, first-publication year and non-duplication still
+  apply. Criteria may change, so an earlier outcome is not a permanent judgement.
 
-### 4. Preserve every lead and judgement
+### 4. Preserve leads privately and publish outcomes
 
-Never erase a discovered candidate merely because it missed the display cut.
-Maintain `ai-evaluation/<YEAR>/` as three complementary records:
+Keep all scoring, reasons, search coverage and unresolved evidence in gitignored
+`.local/ai-evaluation/<YEAR>/`. Never erase a discovered candidate merely because
+it was not selected. Publish `ai-evaluation/<YEAR>/README.md` with candidate
+identity, source links and Added / Not added only. A lead awaiting evaluation
+is Not added, but that does not mean it received a completed rejection.
 
-- `README.md` indexes every credible lead and URL, including screened-out,
-  out-of-window, removed and still-unavailable candidates;
-- `judgements.md` holds every completed scorecard, whether kept or removed;
-- `history.jsonl` is append-only and records each initial or changed judgement.
-
-After changing `judgements.md`, append only changed scorecards to history:
-
-```bash
-python .claude/skills/webseclist-judge-reference/scripts/history.py \
-  import-markdown --year <YEAR> --file ai-evaluation/<YEAR>/judgements.md \
-  --event-type judgement
-python .claude/skills/webseclist-judge-reference/scripts/history.py verify
-```
-
-Use `--event-type rejudgement` when the run deliberately revisits existing
-evidence. Never edit or sort `history.jsonl` by hand; an unchanged import is a
-no-op and a changed candidate links to its previous event with `supersedes`.
+For completed evaluations, use the judging skill's `history.py record` workflow,
+then `history.py render --year <YEAR>` and `history.py verify`. Public
+`judgements.md` contains completed inclusion outcomes; append-only `history.jsonl`
+contains decision dates and merit-revision fingerprints, never scores. Use
+`--event-type rejudgement` after reassessment. A changed merit revision may justify
+reassessment; it must not silently rewrite earlier decisions or re-publish scores.
 
 ### 5. Verify the links
 
@@ -177,11 +174,8 @@ arriving from a search engine cannot mistake this for the curated list.
 > <state whether the year's voting round has happened; give the exact date
 > window covered; say it is unranked and incomplete.>
 >
-> **Judge it yourself.** Do not take inclusion here as endorsement. Use the
-> `webseclist-judge-reference` skill to score any entry on its own evidence —
-> original contribution, transferability, lasting value, technical soundness,
-> practical usability, and clarity — and to check the prior art before treating
-> something as new.
+> Inclusion is not endorsement. Read the original evidence and check prior
+> research before treating a claim as new.
 >
 > Links point at the **original source**, not at news coverage of it. Where one
 > piece of work has several artifacts, they are grouped on a single line.
@@ -243,11 +237,11 @@ drop it and do not quietly add it to a curated list.
 - Record it in the **Explicitly excluded** section with its actual publication
   date, so the next run does not re-chase it.
 - If it looks genuinely significant *and* is missing from that year's list, run
-  the full `webseclist-judge-reference` skill on it. Only if it scores **≥ 55**
-  with a non-duplicate verdict is it a candidate for the curated `<YEAR>.md`,
+  the full `webseclist-judge-reference` skill on it privately. Only if it passes
+  the current Repository collection merit is it a candidate for `<YEAR>.md`,
   and then it is added as a single reviewed line under "Other nominations" with
-  the score noted in the collecting file. Below 55, it stays excluded but the
-  source and judgement remain in `ai-evaluation/<YEAR>/` for audit history.
+  public Added / Not added outcome under `ai-evaluation/<YEAR>/`. Keep the
+  scorecard and reasons privately under `.local/ai-evaluation/<YEAR>/`.
 
 This is the **only** circumstance in which this workflow touches a curated year
 list. Never bulk-add to one.

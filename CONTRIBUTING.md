@@ -36,8 +36,8 @@ are what the submission form is for.
 
 A submission is judged as a **technique**, on the evidence, against six weighted
 categories — novelty, evidence, impact, durability, reproducibility and clarity. It is
-added only if it scores **55 or above** and comes back with a verified **non-duplicate**
-verdict. In practice that means:
+added only if it passes the judging skill’s current Repository collection merit
+and the source, year and non-duplication checks. The merit criteria may change. In practice that means:
 
 - **It is a method, not an incident.** A reusable technique other researchers can apply,
   rather than one site's bug report, a product launch, or a CVE with no new method behind
@@ -60,9 +60,11 @@ Submitting your own research is welcome and is judged no differently. Say so on 
 2. **Judgement.** The submission is scored in full, with every result re-verified against
    the primary source rather than taken from the write-up, and checked against prior art
    and against the existing entries for the surrounding years.
-3. **The record.** Accepted *and* rejected judgements are kept under
-   [`ai-evaluation/<year>/`](ai-evaluation/) with their scorecard, so a "no" is
-   auditable and a later submission of the same work does not start from nothing.
+3. **The record.** Public [`ai-evaluation/<year>/`](ai-evaluation/) records show
+   candidate links and **Added / Not added**, with decision dates and merit
+   revisions in history. Full scores, verdicts and reasons stay in gitignored
+   local notes to avoid putting pressure on researchers and judges. A lead
+   awaiting review is not added, but has not necessarily failed evaluation.
 4. **Addition.** Anything that clears the bar joins its year under
    **"Missed from the original list"** — a section kept visibly separate from the
    original nominations, because the archive never blurs what was nominated with what was

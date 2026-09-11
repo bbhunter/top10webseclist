@@ -1,42 +1,48 @@
-# AI evaluation records
+# AI inclusion decisions
 
-This directory keeps the evidence and decision history for AI-assisted candidate
-reviews. It is separate from the finalized year lists: finding or judging a lead
-does not make it part of a historical Top 10.
+Research is still scored in full with the
+[judging skill](../.claude/skills/webseclist-judge-reference/SKILL.md). Scores,
+scorecards, per-candidate verdicts and calibration results stay in gitignored
+`.local/ai-evaluation/`. They are not published in this directory or in other
+tracked exports.
 
-Each evaluated year uses:
+The public year records contain:
+
+- `README.md`: candidate identity, source links and **Added / Not added**.
+- `judgements.md`: completed inclusion decisions, with the same two outcomes.
+- `history.jsonl`: those decisions, dates and merit-revision fingerprints.
+
+“Added” includes retained entries. “Not added” in a lead index may include a
+candidate awaiting review; it is not evidence of a completed rejection or a
+permanent assessment of research quality. No candidate is newly added without
+passing the judging skill's current Repository collection merit and the source,
+year and non-duplication checks.
+
+The merit criteria may change. Reassess privately before recording a new
+outcome; public history preserves decision changes and the applicable revision,
+not numerical results. Legacy decisions whose exact criteria revision was not
+recorded use `legacy-unspecified` rather than claiming today's rule applied.
+
+To record a completed decision and regenerate its readable record:
 
 ```text
-ai-evaluation/<year>/
-  README.md       searchable candidate index, including rejected and screened leads
-  judgements.md   complete human-readable scorecards
-  history.jsonl   append-only machine-readable judgement events
-```
-
-`history.jsonl` never replaces an earlier decision. Re-judging the same primary
-URL appends an event whose `supersedes` field points to that candidate's previous
-event. An initial import of an existing `judgements.md` is labelled
-`baseline-import`, because its recording time is known but its original decision
-time may not be.
-
-Record all credible discovered leads in the yearly index, even when they are not
-kept. Record every completed scorecard in `judgements.md`, then append changed
-decisions to history:
-
-```text
-python .claude/skills/webseclist-judge-reference/scripts/history.py \
-  import-markdown --year <year> --file ai-evaluation/<year>/judgements.md \
-  --event-type judgement
-
+python .claude/skills/webseclist-judge-reference/scripts/history.py record \
+  --year <YEAR> --title '<Title>' --url '<primary URL>' --decision added
+python .claude/skills/webseclist-judge-reference/scripts/history.py render --year <YEAR>
 python .claude/skills/webseclist-judge-reference/scripts/history.py verify
+python .claude/skills/webseclist-find-missed/scripts/audit.py
 ```
 
-The historical missed-item gate is **55 or above plus a qualifying non-duplicate
-verdict**. A past curated list also requires a verified publication year and
-evidence that the technique was never nominated. Provisional `YEAR-ai.md`
-collections follow their own collection workflow. Falling below an addition
-threshold is never permission to erase the candidate or its judgement.
+Use `--decision not-added` for a completed review without addition and
+`--event-type rejudgement` for a deliberate reassessment. Update the lead index
+at the same time. Keep detailed reasoning and unresolved evidence in the private
+notes. Never force-add those notes to Git.
 
-The [10 September 2026 all-years audit](2026-09-10-all-years.md) records 41 new
-qualifying techniques from independent 2006–2025 searches and selected research
-citation tracing, with each year's lead ledger, full scores and unresolved work.
+The 11 September 2026 migration removed numerical evaluations from current
+published files, including Markdown, JSON/JSONL and CSV. Scores in older Git
+commits are not removed by this migration. Decision histories are append-only
+from this migration onward.
+
+`archive-reviews/` and the archive reviews under `source-audits/` document capture
+integrity and preservation work, not research merit. Their technical verification
+records are retained separately from candidate outcomes.

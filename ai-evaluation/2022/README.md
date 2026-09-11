@@ -1,195 +1,77 @@
-# 2022 missed-technique audit
+# 2022 candidate outcomes
 
-This folder records the fresh 2026-08-09 audit for web-security research first
-published in 2022 but absent from the original 2022 nomination round. The
-exclusion set contained 50 distinct URLs from [`2022.md`](../../2022.md),
-including one retrospective entry from an earlier audit. Exact URL filtering
-was followed by semantic comparison against every listed mechanism and backward
-checks through the 2006–2021 lists.
+This index publishes only whether a candidate is included in the year list.
+“Added” includes entries already present; “Not added” can include leads awaiting review.
+It is not a permanent merit judgement. New additions require a full private evaluation
+under the judging skill’s current selection criteria, which may change.
 
-The current historical-list gate is **55 or above plus a qualifying non-duplicate
-verdict**. A score alone cannot rescue prior disclosure, an original nominee
-under another URL, or work first published in a different year. All credible
-screened leads are retained below, including leads excluded on date or scope.
-The original August audit used a 60-point gate; its dated results remain below.
+See [completed inclusion decisions](judgements.md) and [decision history](history.jsonl).
 
-## Threshold reconciliation — 9 September 2026
-
-All 25 completed scorecards were checked against the original nominations and
-the current missed section. All 24 cards with qualifying novelty verdicts
-(72.6–88.8) are already represented once; no stronger qualifying card is missing.
-The only remaining card is **The Perils of Expired Domains — We're Reading Your
-Email**, **57.0**, with a **Useful application or case study** verdict. It clears
-the numeric threshold but not the historical workflow's novelty-verdict gate,
-so it remains excluded. No new entry or source URL was added.
-
-The [watchTowr original](https://labs.watchtowr.com/the-perils-of-expired-domains-were-reading-your-email/)
-was reopened and confirms Benjamin Harris and 23 August 2022. Its own prior-art
-link leads to Joshua Avery Reed's [25 July 2020 DNS Institute paper](https://dnsinstitute.com/research/dangling-mx/dangling-mx-202007.pdf),
-which describes purchasing dangling MX targets and receiving their mail. This
-supports retaining the existing case-study classification rather than promoting
-it solely because the threshold changed.
-
-`score.py` reproduced all 25 existing totals. Numeric scores and verdicts are
-unchanged; this was a bounded reconciliation of completed judgements, not a new
-research sweep or a reassessment of every earlier screening decision. The
-additional gate/evidence note is preserved in the append-only history. No archive
-capture was inspected or changed, and no capture fault was found in this pass.
-
-## Coverage
-
-- Primary programs and papers from IEEE S&P, USENIX Security, NDSS, ACM CCS
-  and AsiaCCS, including author pages, artifacts and first-publication checks.
-- PortSwigger Research's complete 2022 archive plus primary project and
-  disclosure pages for browser, HTTP and testing-methodology work.
-- Browser origin, rendering, cache, CPU-port and GPU side channels; extension
-  and risk-based-authentication fingerprinting; WebView identity boundaries.
-- HTTP/2 and HTTP/3 connection state, censorship evasion, ReDoS, Node.js
-  analysis, prototype pollution, CI workflows and collaboration-app access.
-- Web privacy and policy consistency, form-data exfiltration, account creation,
-  malware obfuscation and static/dynamic testing blind spots.
-- Backward mechanism searches through the local 2006–2021 lists and archive.
-  Candidate names were not treated as proof that the underlying idea was new.
-- A non-US sweep through European and Asian institutions represented in the
-  major programs and AsiaCCS. No additional non-English primary source cleared
-  the date, scope, novelty and evidence gates.
-
-No archive capture was opened, validated or changed during this audit.
-
-## Results
-
-- 38 credible leads retained.
-- 23 candidates received full scorecards and appear in the missed section.
-- 22 are fresh additions; the existing Pre-hijacked Accounts entry was
-  reassessed, retained once, and given a durable scorecard/history event.
-- 15 additional leads were resolved during screening as prior-year disclosure,
-  defensive/measurement-only work, scope mismatch or same-mechanism overlap.
-- No qualifying 2022 candidate landed in the 60–69.9 band; the lower gate was
-  nevertheless applied to every retained lead.
-
-| Score | Decision | Verdict | Candidate |
-|---:|---|---|---|
-| 88.8 | added | Original technique | [Hertzbleed](https://www.usenix.org/conference/usenixsecurity22/presentation/wang-yingchen) |
-| 88.0 | added | Tooling or methodology contribution | [FuzzOrigin](https://www.usenix.org/conference/usenixsecurity22/presentation/kim) |
-| 87.6 | added | Original technique | [Rendering Contention Channel](https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang) |
-| 87.0 | added | Meaningful combination or adaptation | [Targeted Deanonymization via the Cache Side Channel](https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri) |
-| 86.7 | added | Meaningful extension | [DRAWN APART](https://orenlab.cis.bgu.ac.il/p/DrawnApart) |
-| 86.3 | added | Meaningful combination or adaptation | [Phish in Sheep's Clothing](https://www.usenix.org/conference/usenixsecurity22/presentation/lin-xu) |
-| 86.0 | added | Original technique | [Port Contention Goes Portable](https://thomasrokicki.github.io/publications/wpc.pdf) |
-| 85.8 | added | Original technique | [Identity Confusion in WebView-based App-in-app Ecosystems](https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei) |
-| 85.3 | added | Meaningful combination or adaptation | [HTTP/3 connection contamination](https://portswigger.net/research/http-3-connection-contamination) |
-| 84.4 | added | Meaningful extension | [Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation](https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/) |
-| 83.6 | added | Meaningful extension | [The Dangers of Human Touch](https://www.usenix.org/conference/usenixsecurity22/presentation/solomos) |
-| 83.2 | added | Tooling or methodology contribution | [Probe the Proto](https://www.ndss-symposium.org/ndss-paper/auto-draft-207/) |
-| 83.0 | added | Original technique | [Wobfuscator](https://doi.org/10.1109/SP46214.2022.00064) |
-| 83.0 | added | Tooling or methodology contribution | [GET /out](https://www.usenix.org/conference/usenixsecurity22/presentation/harrity) |
-| 82.9 | added | Meaningful extension | [Counting in Regexes Considered Harmful](https://www.usenix.org/conference/usenixsecurity22/presentation/turonova) |
-| 82.2 | added | Tooling or methodology contribution | [Mining Node.js Vulnerabilities via Object Dependence Graph](https://www.usenix.org/conference/usenixsecurity22/presentation/li-song) |
-| 81.7 | added | Original technique | [Silent Spring](https://arxiv.org/abs/2207.11171) |
-| 80.3 | retained | Meaningful extension | [Pre-hijacked Accounts](https://arxiv.org/abs/2205.10174) |
-| 80.2 | added | Tooling or methodology contribution | [Testability Tarpits](https://www.ndss-symposium.org/ndss-paper/auto-draft-206/) |
-| 79.8 | added | Meaningful extension | [Security of Business Collaboration Platform Apps](https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental) |
-| 79.2 | added | Tooling or methodology contribution | [The Security Lottery](https://www.usenix.org/conference/usenixsecurity22/presentation/roth) |
-| 76.9 | added | Tooling or methodology contribution | [Security of GitHub CI Workflows](https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev) |
-| 75.3 | added | Tooling or methodology contribution | [Leaky Forms](https://www.usenix.org/conference/usenixsecurity22/presentation/senol) |
-
-## Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [Awakening the Web's Sleeper Agents](https://www.ndss-symposium.org/ndss-paper/awakening-the-webs-sleeper-agents-misusing-service-workers-for-privacy-leakage/) | wrong year | The primary NDSS paper and repository record are from 2021. |
-| [Remote Memory-Deduplication Attacks](https://arxiv.org/abs/2111.08553) | wrong year | The primary preprint was public on 16 November 2021. |
-| Cross-Origin State Inference (COSI) Attacks | wrong year | The primary preprint was public in August 2019; its later venue cannot reset first disclosure. |
-| Detecting web-message misconfigurations for credential theft | already represented / tooling companion | It automates the URL-token `postMessage` weakness used by the #1 Dirty Dancing OAuth entry rather than adding a separate mechanism. |
-| Hijacking service workers via DOM Clobbering | original nominee | Already present in `2022.md`; it cannot be re-added through a differently described candidate. |
-| How to turn security research into profit: a CL.0 case study | already represented | A scanner/permutation follow-up to the original year's browser-powered desync and HTTP conversion work. |
-| Hunting evasive vulnerabilities | survey / synthesis | Valuable research advice, but it synthesises earlier cases rather than introducing one auditable mechanism. |
-| Bypassing CSP with dangling iframes / Framing without iframes | narrow payload variants | Useful payloads, but not sufficiently distinct from established dangling-markup, CSP and framing primitives. |
-| [XDRI Attacks](https://www.usenix.org/conference/usenixsecurity22/presentation/jeitner) | adjacent-network overlap | Special-character DNS injection and router cache weaknesses overlap the year's nominated DNS cache-poisoning research and do not add a clearer web primitive. |
-| Time Does Not Heal All Wounds | defensive measurement | Measures mobile-browser policy support and vulnerable windows rather than introducing an offensive technique. |
-| SWAPP | defensive framework | Uses service workers to deploy client-side defenses; no new attack contribution. |
-| ScriptChecker | defensive framework | Enforces task capabilities on third-party scripts rather than introducing an offensive technique. |
-| SKYPORT | defensive framework | Backports injection patches to legacy web applications; it is remediation methodology. |
-| WtaGraph / Surakav | defensive systems | Detect web tracking or generate traces for a fingerprinting defense, without a distinct offensive primitive. |
-| New XSS vectors / Firefox Sanitizer API bypass | narrow case studies | Individual parser and payload cases do not clear the marginal-originality gate against the year's existing XSS and WAF-bypass nominations. |
-
-## Notes on the gate
-
-The 2022 pass produced no 60–69.9 recovery. The lowest qualifying result was the
-75.3 Leaky Forms methodology; narrower case studies were screened instead of
-inflating originality to force inclusion. A later cross-year check promoted
-Silent Spring from the generic prototype-pollution screening row after confirming
-that its 2022 server-side universal-gadget method is distinct from Probe the Proto.
-This audit did not run the reference archiver or refresh either web application.
-
-## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
-
-A later, separate pass from the audit above. Rather than sweeping the year, it
-swept one external corpus: the 26,422-line acquisition log
-(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
-deserialization reference archive. That log resolves to 519 distinct documents;
-16 were already recorded in this repository, and the remaining 503 were filtered
-to 274 research-grade articles, whitepapers, slide decks and talks, then
-title-matched against the year lists and the reference manifest to remove eight
-mirrors of entries already present. The residue was pre-screened against the
-judge rubric; product advisories, vendor knowledge-base articles, news coverage,
-threat-intelligence reports, framework documentation, CTF and HTB writeups, and
-duplicate recordings of already-listed talks were resolved during screening
-rather than scored.
-
-**One addition.** Scorecard in [judgements.md](judgements.md).
-
-| Score | Verdict | List decision | Candidate |
-|---:|---|---|---|
-| 72.6 | Tooling or methodology contribution | added | [.NET Remoting Revisited](https://code-white.com/blog/2022-01-dotnet-remoting-revisited/) |
-
-Not a duplicate of the 2022 nomination "Bypassing .NET Serialization Binders",
-which is a different Code White post about binder implementations rather than the
-Remoting channel. Transferability was cut to 60 because most of the post covers
-the TCP and IPC transports; the HTTP channel, which IIS exposes by default
-through the `.rem` and `.soap` handler mappings, is the web-relevant part.
-
-### Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [Exploiting .NET Remoting with TypeFilterLevel Low and no MarshalByRef interfaces](https://gmo-cybersecurity.com/blog/net-remoting-english/) | already represented | The same TypeFilterLevel material covered by the added Code White post published five months earlier. |
-| [New Wine in Old Bottle: SharePoint Post-Auth Deserialization RCE (CVE-2022-29108)](https://starlabs.sg/blog/2022/05/new-wine-in-old-bottle-microsoft-sharepoint-post-auth-deserialization-rce-cve-2022-29108/) | product advisory | One SharePoint CVE reached through an already-known sink. |
-| [Searching for Deserialization Protection Bypasses in Microsoft Exchange (CVE-2022-21969)](https://medium.com/@frycos/searching-for-deserialization-protection-bypasses-in-microsoft-exchange-cve-2022-21969-bfa38f63a62d) | already represented | A blocklist bypass in one product; the general result is the 2023 number-two entry. |
-| [Yet Another Telerik UI Revisit](https://blog.blacklanternsecurity.com/p/yet-another-telerik-ui-revisit) | already represented | Re-exploitation of the 2017 and 2019 Telerik issues already on the lists. |
-| [OWASSRF: CrowdStrike Identifies New Exploit Method for Exchange](https://www.crowdstrike.com/en-us/blog/owassrf-exploit-analysis-and-recommendations/) | already represented | The OWASSRF and TabShell chain is already a 2022 nomination through the Viettel writeup. |
-
-## 2026-09-10 — Citation tracing and independent missing-reference sweep
-
-See [the detailed sweep ledger](2026-09-10-sweep.md) for exclusions, exact search
-coverage, primary-source digests, skeptical prior-art comparisons and limitations.
-The pass inspected the 2,168-occurrence outbound-link inventory alongside broad
-mechanism searches. Five leads reach main adjudication: Hand Sanitizers in the
-Wild / SemAttack (draft 75.2), WebSpec (74.5),
-click-free dangling iframes (71.0), the XS-Leaks component model and server
-request-count sketches (66.0), and Shared Storage's k-anonymity fallback oracle
-(64.1). These are draft scores, not final additions. The SoK's earliest online
-day remains unresolved; its 2022 proceedings and substantive source are verified.
-The older dangling-iframe prescreen is reopened on the specific no-click
-increment over the fully read 2018 predecessor. No archive fault was established.
-
-The sanitizer paper used a modified browser with URL auto-encoding disabled;
-its 40 validated vulnerabilities include four requiring manual correction.
-Three late academic leads remain explicitly held for full-source comparison,
-including Accept All Exploits and Server-Side Browsers.
-
-## Final all-years adjudication — 2026-09-10
-
-This concludes the discovery handoff above. 5 new full judgements completed; 5 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
-
-| Research | Final score | Final verdict / disposition |
-|---|---:|---|
-| [WebSpec](https://arxiv.org/pdf/2201.01649v1.pdf) | 74.5 | Tooling or methodology contribution; added — [full card](judgements.md) |
-| [Bypassing CSP with dangling iframes](https://portswigger.net/research/bypassing-csp-with-dangling-iframes) | 71.0 | Meaningful combination or adaptation; added — [full card](judgements.md) |
-| [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf) | 66.0 | Tooling or methodology contribution; added — [full card](judgements.md) |
-| [Problem with Shared Storage’s described use of k-anonymity](https://github.com/WICG/shared-storage/issues/39) | 64.1 | Meaningful extension; added — [full card](judgements.md) |
-| [Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions](https://swag.cispa.saarland/papers/klein2022hand.pdf) | 72.7 | Tooling or methodology contribution; added — [full card](judgements.md) |
-
-Hand Sanitizers was lowered from the draft 75.2 to **72.7** after complete earlier client-side extraction/automata work was recovered. Generic extraction, pre-images and witness replay are prior art; the final card credits DOM boundary selection and specific browser/JavaScript semantic integration. Shared Storage issue39 is the 2022 disclosure, separately from later timing and queue variants.
-
-These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+| Candidate | Outcome |
+|---|---|
+| [.NET Remoting Revisited](<https://code-white.com/blog/2022-01-dotnet-remoting-revisited/>) | Added |
+| [Accept All Exploits](<https://www.ias.tu-bs.de/publications/accept_all_exploits.pdf>) | Not added |
+| [Awakening the Web's Sleeper Agents](<https://www.ndss-symposium.org/ndss-paper/awakening-the-webs-sleeper-agents-misusing-service-workers-for-privacy-leakage/>) | Not added |
+| [Bypassing CSP with dangling iframes](<https://portswigger.net/research/bypassing-csp-with-dangling-iframes>) | Added |
+| Bypassing CSP with dangling iframes / Framing without iframes | Not added |
+| [Characterizing the Security of GitHub CI Workflows](<https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev>) | Added |
+| [Counting in Regexes Considered Harmful](<https://www.usenix.org/conference/usenixsecurity22/presentation/turonova>) | Added |
+| Cross-Origin State Inference (COSI) Attacks | Not added |
+| Detecting web-message misconfigurations for credential theft | Not added |
+| [Diving Into Electron Web API Permissions](<https://blog.doyensec.com/2022/09/27/electron-api-default-permissions.html>) | Not added |
+| [DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting](<https://orenlab.cis.bgu.ac.il/p/DrawnApart>) | Added |
+| [Experimental Security Analysis of the App Model in Business Collaboration Platforms](<https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental>) | Added |
+| [Exploiting .NET Remoting with TypeFilterLevel Low and no MarshalByRef interfaces](<https://gmo-cybersecurity.com/blog/net-remoting-english/>) | Not added |
+| [Flatt 2022 archive](<https://blog.flatt.tech/archive/2022>) | Not added |
+| [Framing without iframes](<https://portswigger.net/research/framing-without-iframes>) | Not added |
+| [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing](<https://www.usenix.org/conference/usenixsecurity22/presentation/kim>) | Added |
+| [GET /out: Automated Discovery of Application-Layer Censorship Evasion Strategies](<https://www.usenix.org/conference/usenixsecurity22/presentation/harrity>) | Added |
+| [Hacktive companion](<https://blog.hacktivesecurity.com/index.php/2022/09/17/http/>) | Not added |
+| [Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions](<https://swag.cispa.saarland/papers/klein2022hand.pdf>) | Added |
+| [Hertzbleed: Turning Power Side-Channel Attacks Into Remote Timing Attacks on x86](<https://www.usenix.org/conference/usenixsecurity22/presentation/wang-yingchen>) | Added |
+| [Hidden Properties, Black Hat 2020](<https://i.blackhat.com/USA-20/Wednesday/us-20-Xiao-Discovering-Hidden-Properties-To-Attack-Nodejs-Ecosystem.pdf>) | Not added |
+| Hijacking service workers via DOM Clobbering | Not added |
+| How to turn security research into profit: a CL.0 case study | Not added |
+| [HTTP/3 connection contamination: an upcoming threat?](<https://portswigger.net/research/http-3-connection-contamination>) | Added |
+| Hunting evasive vulnerabilities | Not added |
+| [Hunting evasive vulnerabilities](<https://portswigger.net/research/hunting-evasive-vulnerabilities>) | Not added |
+| [Identity Confusion in WebView-based Mobile App-in-app Ecosystems](<https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei>) | Added |
+| [Leaky Forms](<https://www.usenix.org/conference/usenixsecurity22/presentation/senol>) | Added |
+| [Mining Node.js Vulnerabilities via Object Dependence Graph and Query](<https://www.usenix.org/conference/usenixsecurity22/presentation/li-song>) | Added |
+| [New Wine in Old Bottle: SharePoint Post-Auth Deserialization RCE (CVE-2022-29108)](<https://starlabs.sg/blog/2022/05/new-wine-in-old-bottle-microsoft-sharepoint-post-auth-deserialization-rce-cve-2022-29108/>) | Not added |
+| New XSS vectors / Firefox Sanitizer API bypass | Not added |
+| [No Keys to the Kingdom Required](<https://doi.org/10.1145/3517745.3561446>) | Not added |
+| [OWASSRF: CrowdStrike Identifies New Exploit Method for Exchange](<https://www.crowdstrike.com/en-us/blog/owassrf-exploit-analysis-and-recommendations/>) | Not added |
+| [Phish in Sheep's Clothing](<https://www.usenix.org/conference/usenixsecurity22/presentation/lin-xu>) | Added |
+| [Port Contention Goes Portable](<https://thomasrokicki.github.io/publications/wpc.pdf>) | Added |
+| [Pre-hijacked Accounts](<https://arxiv.org/abs/2205.10174>) | Added |
+| [Probe the Proto](<https://www.ndss-symposium.org/ndss-paper/auto-draft-207/>) | Added |
+| [Problem with Shared Storage’s described use of k-anonymity](<https://github.com/WICG/shared-storage/issues/39>) | Added |
+| [PRSSI](<https://portswigger.net/research/detecting-and-exploiting-path-relative-stylesheet-import-prssi-vulnerabilities>) | Not added |
+| [Remote Memory-Deduplication Attacks](<https://arxiv.org/abs/2111.08553>) | Not added |
+| [Rendering Contention Channel Made Practical in Web Browsers](<https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang>) | Added |
+| ScriptChecker | Not added |
+| [Searching for Deserialization Protection Bypasses in Microsoft Exchange (CVE-2022-21969)](<https://medium.com/@frycos/searching-for-deserialization-protection-bypasses-in-microsoft-exchange-cve-2022-21969-bfa38f63a62d>) | Not added |
+| [Server-Side Browsers](<https://doi.org/10.1145/3488932.3517414>) | Not added |
+| [Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js](<https://arxiv.org/abs/2207.11171>) | Added |
+| SKYPORT | Not added |
+| [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](<https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf>) | Added |
+| SWAPP | Not added |
+| [Talking About My Generation](<https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf>) | Not added |
+| [Targeted Deanonymization via the Cache Side Channel](<https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri>) | Added |
+| [Testability Tarpits](<https://www.ndss-symposium.org/ndss-paper/auto-draft-206/>) | Added |
+| [The Dangers of Human Touch](<https://www.usenix.org/conference/usenixsecurity22/presentation/solomos>) | Added |
+| [The Perils of Expired Domains - We're Reading Your Email](<https://labs.watchtowr.com/the-perils-of-expired-domains-were-reading-your-email/>) | Not added |
+| [The Security Lottery](<https://www.usenix.org/conference/usenixsecurity22/presentation/roth>) | Added |
+| [The State of the SameSite](<https://publications.cispa.saarland/3504/>) | Not added |
+| Time Does Not Heal All Wounds | Not added |
+| [Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation](<https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/>) | Added |
+| USENIX abstract pages → final/fall/slides PDFs; Silent Spring → 2023 proceedings | Not added |
+| Vue script gadgets / PayPal DOM-clobbering polyglots returned in 2022 searches | Not added |
+| [WebSpec](<https://arxiv.org/abs/2201.01649v1>) | Not added |
+| [WebSpec](<https://arxiv.org/pdf/2201.01649v1.pdf>) | Added |
+| [White-Box and Black-Box Fuzzing for GraphQL APIs](<https://arxiv.org/abs/2209.05833>) | Not added |
+| [Wobfuscator](<https://doi.org/10.1109/SP46214.2022.00064>) | Added |
+| WtaGraph / Surakav | Not added |
+| [XDRI Attacks](<https://www.usenix.org/conference/usenixsecurity22/presentation/jeitner>) | Not added |
+| [Yet Another Telerik UI Revisit](<https://blog.blacklanternsecurity.com/p/yet-another-telerik-ui-revisit>) | Not added |

@@ -1,116 +1,38 @@
 [
   {
     "year": 2024,
-    "rank": 1,
     "title": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
     "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en/",
-    "cutoff": "Individual advisory components: 2024-07-01 onward; integrated semantic-confusion model and full chains: 2024-08-08.",
-    "scores": {
-      "original": 84,
-      "transferability": 79,
-      "lasting": 87,
-      "technical": 89,
-      "practical": 76,
-      "clarity": 88
-    },
-    "total": 83.9,
-    "verdict": "Meaningful extension",
-    "confidence": "High",
-    "evidence_gaps": "No independent recreation of every configuration or chain; exact July disclosure dates differ between component issues."
+    "decision": "added"
   },
   {
     "year": 2024,
-    "rank": 2,
     "title": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level",
     "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
-    "cutoff": "pgx length-wrap primitive: 2024-03-04; distinct talk extensions: 2024-08-10–2024-08-12 (presentation/snapshot interval).",
-    "scores": {
-      "original": 75,
-      "transferability": 78,
-      "lasting": 82,
-      "technical": 82,
-      "practical": 52,
-      "clarity": 78
-    },
-    "total": 76.0,
-    "verdict": "Meaningful combination or adaptation",
-    "confidence": "Medium",
-    "evidence_gaps": "Exact public order of all MongoDB details versus the August talk remains unresolved; no independent multi-gigabyte execution. Presentation/snapshot interval is two days."
+    "decision": "added"
   },
   {
     "year": 2024,
-    "rank": 3,
     "title": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
     "url": "https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/",
-    "cutoff": "2024-07-17 public technical article; earlier private reports do not establish public precedence.",
-    "scores": {
-      "original": 43,
-      "transferability": 55,
-      "lasting": 60,
-      "technical": 70,
-      "practical": 72,
-      "clarity": 74
-    },
-    "total": 58.9,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": "Backend implementation and independent reproduction unavailable. No exact earlier TE.0/OPTIONS example found; that absence is not proof of first discovery."
+    "decision": "added"
   },
   {
     "year": 2025,
-    "rank": 1,
     "title": "Blind SSTI",
     "url": "https://github.com/vladko312/Research_Successful_Errors",
-    "cutoff": "2025-08-19 for the error-oracle methods demonstrated in SSTImap v1.3; later distinct talk-only details are unverified, and 2026 revisions are excluded.",
-    "scores": {
-      "original": 68,
-      "transferability": 80,
-      "lasting": 80,
-      "technical": 78,
-      "practical": 82,
-      "clarity": 85
-    },
-    "total": 77.4,
-    "verdict": "Tooling or methodology contribution",
-    "confidence": "Medium",
-    "evidence_gaps": "No complete original talk transcript verified; any distinct talk-only extension remains outside the scored set. No independent engine-matrix/false-positive measurements; later report improvements excluded."
+    "decision": "added"
   },
   {
     "year": 2025,
-    "rank": 2,
-    "title": "ORM Leaking More Than You Joined For",
-    "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
-    "cutoff": "December 2025, no later than 2025-12-18; article-specific additions 2025-12-18. Exact briefing/component overlap unresolved.",
-    "scores": {
-      "original": 53,
-      "transferability": 74,
-      "lasting": 72,
-      "technical": 85,
-      "practical": 80,
-      "clarity": 88
-    },
-    "total": 72.0,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": "Exact original briefing date/content overlap unverified; historical Semgrep rule implementation was not established and earns no implementation credit."
-  },
-  {
-    "year": 2025,
-    "rank": 3,
     "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
     "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/",
-    "cutoff": "2025-06-23 original technical article.",
-    "scores": {
-      "original": 64,
-      "transferability": 48,
-      "lasting": 61,
-      "technical": 47,
-      "practical": 62,
-      "clarity": 56
-    },
-    "total": 56.6,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": "Unnamed target and wrapper version; no controlled status/count ablation or independent reproduction. Failure to find an exact predecessor does not establish novelty."
+    "decision": "added"
+  },
+  {
+    "year": 2025,
+    "title": "ORM Leaking More Than You Joined For",
+    "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
+    "decision": "added"
   }
 ]

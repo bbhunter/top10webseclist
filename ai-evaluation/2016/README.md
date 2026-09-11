@@ -1,141 +1,74 @@
-# 2016 missed-technique audit
+# 2016 candidate outcomes
 
-This folder records the fresh 2026-08-08 audit for web-security research first
-published in 2016 but absent from the original combined 2016/2017 nomination
-round. The exclusion set contained 43 distinct URLs from
-[`2016-17.md`](../../2016-17.md). Exact URL filtering was followed by a semantic
-comparison with every mechanism already represented in that shared file.
+This index publishes only whether a candidate is included in the year list.
+“Added” includes entries already present; “Not added” can include leads awaiting review.
+It is not a permanent merit judgement. New additions require a full private evaluation
+under the judging skill’s current selection criteria, which may change.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
-verdict**. A score alone cannot rescue prior disclosure, an original nominee
-under another URL, or work first published in a different year. Every credible
-lead is retained below, including those resolved during screening.
+See [completed inclusion decisions](judgements.md) and [decision history](history.jsonl).
 
-## Coverage
-
-- NDSS, USENIX Security, IEEE S&P, ACM CCS and the principal 2016 Web,
-  browser, TLS, DNS, CDN and authentication papers and programs.
-- Black Hat USA, Europe and Asia, DEF CON, OWASP AppSec, PortSwigger and
-  surviving researcher papers, slides, tools and disclosure posts.
-- Cross-origin policy, browser storage and timing, encrypted-resource size,
-  XS-search, CSP, browser fingerprinting, motion sensors and extension reuse.
-- TLS interception, transcript collisions, SSLv2 cross-protocol oracles,
-  64-bit block-cipher collisions, compression side channels, PAC/WPAD and
-  partial-HTTPS cookie exposure.
-- Multi-party Web workflows, OAuth, mobile-service APIs, embedded Web
-  interfaces, sanitizer/WAF model learning, CAPTCHA automation, JNDI/LDAP and
-  dangling or expired DNS resources.
-- Backward searches through the 2006–2015 lists and local reference archive,
-  then bibliography and primary-source checks for the closest earlier
-  mechanisms. Candidate dates are first public dates, not later presentation
-  or proceedings dates.
-- A non-US sweep through European and Asian researchers and venues, including
-  KU Leuven, INRIA, Ruhr, Tsinghua, Xidian, Zhejiang, Black Hat Europe/Asia and
-  author-hosted papers. No additional non-English primary source cleared the
-  gate.
-- Bug-bounty, CTF and practitioner disclosures were checked independently.
-  The strongest PortSwigger work not already named in the combined list was the
-  CORS research; product-only incidents and routine bounties did not clear the
-  novelty gate.
-
-Some old conference artifact URLs are now backed by migrated PDF locations or
-conference index pages. This audit did not change or validate archive captures.
-
-## Results
-
-- 43 credible leads retained.
-- 29 candidates received full scorecards and meet the numeric and verdict gate:
-  1 existing missed entry was reassessed and 28 references were added.
-- 14 additional leads were resolved during screening as prior art, wrong-year
-  work, already represented, defensive/measurement-only work, a scope mismatch,
-  or a same-mechanism companion.
-- 8 newly added references are in the 60–69 band and would have been lost under
-  the previous above-70 rule.
-
-| Score | Decision | Verdict | Candidate |
-|---:|---|---|---|
-| 93.2 | added | Original technique | [JNDI/LDAP Manipulation to RCE](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf) |
-| 92.4 | added | Original technique | [DROWN](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram) |
-| 90.4 | added | Original technique | [All Your DNS Records Point to Us](https://scholarworks.wm.edu/aspubs/823/) |
-| 89.4 | added | Original technique | [Forwarding-Loop Attacks in CDNs](https://www.ndss-symposium.org/wp-content/uploads/2017/09/forwarding-loop-attacks-content-delivery-networks.pdf) |
-| 87.3 | added | Original technique | [Transcript Collision Attacks](https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf) |
-| 87.3 | added | Meaningful extension | [Exploiting CORS Misconfigurations](https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties) |
-| 87.0 | added | Tooling or methodology contribution | [Back in Black](https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf) |
-| 86.8 | added | Original technique | [Trusted Browsers for Uncertain Times](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner) |
-| 85.7 | added | Tooling or methodology contribution | [Formal Analysis of OAuth 2.0](https://arxiv.org/abs/1601.01229) |
-| 85.6 | added | Tooling or methodology contribution | [Attack Patterns for Multi-Party Web Applications](https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf) |
-| 85.4 | added | Tooling or methodology contribution | [FIRMADYNE](https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf) |
-| 84.9 | added | Tooling or methodology contribution | [AUTOFORGE](https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf) |
-| 84.8 | added | Meaningful extension | [SWEET32](https://sweet32.info/) |
-| 84.7 | added | Original technique | [Request and Conquer](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem) |
-| 84.5 | added | Meaningful extension | [Advanced Cross-Site Search Attacks](https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf) |
-| 84.0 | added | Meaningful extension | [CSP Is Dead, Long Live CSP!](https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/) |
-| 82.9 | added | Meaningful extension | [MitM Attack by Name Collision](https://www.ieee-security.org/TC/SP2016/papers/0824a675.pdf) |
-| 82.8 | added | Original technique | [CrossFire](https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf) |
-| 82.0 | added | Meaningful extension | [Tracking Mobile Web Users Through Motion Sensors](https://www.ndss-symposium.org/wp-content/uploads/2017/09/tracking-mobile-web-users-through-motion-sensors-attacks-defenses.pdf) |
-| 80.9 | added | Original technique | [Crippling HTTPS with Unholy PAC](https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac) |
-| 73.1 | already present; retained | Meaningful extension | [HEIST](https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf) |
-| 69.3 | added | Meaningful extension | [Practical New Developments in BREACH](https://www.blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf) |
-| 69.1 | added | Tooling or methodology contribution | [A Simple Generic Attack on Text Captchas](https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf) |
-| 69.1 | added | Tooling or methodology contribution | [Killed by Proxy](https://www.ndss-symposium.org/wp-content/uploads/2017/09/killed-proxy-analyzing-client-end-tls-interception-software.pdf) |
-| 69.0 | added | Meaningful extension | [The Cracked Cookie Jar](https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf) |
-| 68.3 | added | Meaningful extension | [Domain-Z](https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf) |
-| 68.0 | added | Meaningful extension | [Website Fingerprinting at Internet Scale](https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf) |
-| 66.2 | added | Meaningful extension | [Beauty and the Beast](https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf) |
-| 65.5 | added | Meaningful extension | [I Know What You Saw Last Minute](https://arxiv.org/abs/1602.00490) |
-
-## Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [httpoxy](https://httpoxy.org/) | prior art / rediscovery | The 2016 campaign coordinated fixes and naming, but CGI-to-`HTTP_PROXY` poisoning had public reports dating to 2001; the mechanism was not first disclosed in 2016. |
-| On the Security of Modern Single Sign-On Protocols: Second-Order Vulnerabilities in OpenID Connect | wrong year | The NDSS 2016 presentation followed an author preprint first published in August 2015, so it belongs to the 2015 audit. |
-| 1000 Ways to Die in Mobile OAuth | wrong year / repeat | The Black Hat 2016 talk presents the authors' OAuth study published at ACM CCS in 2014 rather than a new 2016 contribution. |
-| [Cracking the Lens](https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden-attack-surface) | already represented | The combined file already records it as excluded from the competition; it cannot also be a missed entry. |
-| [XSS without HTML](https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs) | already represented | The combined file already records it as excluded from the competition. |
-| [Binary Webshell Through OPcache](https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/) | already nominated | It is the original combined list's #10 entry. |
-| Bypassing Browser Security Policies for Fun and Profit | target-specific bundle | Useful mobile-browser test cases and implementation bugs, but no single transferable mechanism beyond the separately judged browser-policy work. |
-| Web Application Firewalls: Analysis of Detection Logic | same-mechanism companion | Regex review and fuzzing are useful, but Back in Black supplies the stronger formal black-box learning method and reproducible contribution. |
-| Are These Ads Safe? | defensive / measurement methodology | Automates discovery and provenance of malicious app-to-Web destinations; it does not contribute an offensive Web-testing primitive. |
-| Over the Edge: Silently Owning Windows 10's Secure Browser | scope mismatch | A strong deduplication and Rowhammer exploit chain whose reusable core is local memory/hardware exploitation, not Web, HTTP or application testing. |
-| ImageTragick | target-specific vulnerability | High-impact product flaws and payloads, but no sufficiently distinct reusable technique beyond established command injection and parser abuse. |
-| Verena: End-to-End Integrity Protection for Web Applications | defensive architecture | Provides verifiable Web-query integrity without adding an offensive technique. |
-| Cloak of Visibility | defensive detection | Detects cloaking against security crawlers; it is not an offensive vulnerability-discovery or exploitation method. |
-| TLS in the Wild | measurement study | Valuable Internet-wide deployment evidence, but it does not introduce an attack primitive or offensive testing method. |
-
-## Notes on the gate
-
-The eight additions below 70 are deliberately visible rather than rounded up.
-Their contribution scores account for substantial prior art: CAPTCHA breaking,
-website and browser fingerprinting, TLS proxy failures, cookie hijacking,
-BREACH, expired-domain abuse and encrypted-stream classification all predate
-2016. What qualifies is the distinct generic method, new attack adaptation or
-systematic testing contribution documented in each scorecard. This audit did
-not run the reference archiver or refresh either web application.
-
-## Follow-up sweep — 2026-09-10
-
-The [dated evidence ledger](2026-09-10-sweep.md) records fresh mechanism searches,
-non-English coverage and tracing of research citations in the shared 2016/2017
-archive. It uses the current **55** gate, superseding this older audit's threshold
-for the new sweep. Six distinct contribution leads advance for full judgement
-with publication-time evidence digests and independent draft category scores;
-five additional leads remain held for missing evidence. These drafts do not
-constitute curated additions or replace the earlier scorecards.
-
-## Final all-years adjudication — 2026-09-10
-
-This concludes the discovery handoff above. 6 new full judgements completed; 6 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
-
-| Research | Final score | Final verdict / disposition |
-|---|---:|---|
-| [Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization](https://bugs.php.net/bug.php?id=72663) | 72.8 | Meaningful extension; added — [full card](judgements.md) |
-| [JSON hijacking for the modern web](https://portswigger.net/research/json-hijacking-for-the-modern-web) | 68.0 | Meaningful extension; added — [full card](judgements.md) |
-| [.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/) | 66.8 | Meaningful combination or adaptation; added — [full card](judgements.md) |
-| [Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)](https://www.sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf) | 60.8 | Tooling or methodology contribution; added — [full card](judgements.md) |
-| [HTTP/2: In-depth analysis of the top four flaws](https://www.imperva.com/docs/imperva_hii_http2.pdf) | 65.2 | Meaningful combination or adaptation; added — [full card](judgements.md) |
-| [On the Content Security Policy Violations due to the Same-Origin Policy](https://arxiv.org/pdf/1611.02875v1.pdf) | 66.3 | Tooling or methodology contribution; added — [full card](judgements.md) |
-
-The shared 2016–17 list receives six 2016 additions. HTTP/2 work is narrowly credited: Bossert for comparative state-machine testing and Imperva for the repeated-index HPACK construction. Existing RFC warnings and old compression bombs receive no new originality credit.
-
-These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+| Candidate | Outcome |
+|---|---|
+| [.NET serialiception](<https://blog.scrt.ch/2016/05/12/net-serialiception/>) | Added |
+| 1000 Ways to Die in Mobile OAuth | Not added |
+| [A Comprehensive Formal Security Analysis of OAuth 2.0](<https://arxiv.org/abs/1601.01229>) | Added |
+| [A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land](<https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf>) | Added |
+| [A Simple Generic Attack on Text CAPTCHAs](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf>) | Added |
+| [Abusing Bleeding Edge Web Standards, BH2016](<https://blackhat.com/docs/us-16/materials/us-16-Zadegan-Abusing-Bleeding-Edge-Web-Standards-For-AppSec-Glory.pdf>) | Not added |
+| [All Your DNS Records Point to Us](<https://scholarworks.wm.edu/aspubs/823/>) | Added |
+| Are These Ads Safe? | Not added |
+| [Attack Patterns for Black-Box Security Testing of Multi-Party Web Applications](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf>) | Added |
+| [AUTOFORGE: Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf>) | Added |
+| [Back in Black: Towards Formal, Black Box Analysis of Sanitizers and Filters](<https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf>) | Added |
+| [Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints](<https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf>) | Added |
+| [Binary Webshell Through OPcache](<https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/>) | Added |
+| Blind detection of path traversal-vulnerable file uploads, Horoszkiewicz | Not added |
+| Bypassing Browser Security Policies for Fun and Profit | Not added |
+| Cache poisoning beat | Not added |
+| [Chinese PHP treatment, Oct29](<https://blog.lyle.ac.cn/2016/10/29/php-unserialize/>) | Not added |
+| Cloak of Visibility | Not added |
+| [Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)](<https://www.sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf>) | Added |
+| [Cracking the Lens](<https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden-attack-surface>) | Added |
+| [Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization](<https://bugs.php.net/bug.php?id=72663>) | Added |
+| [Crippling HTTPS with Unholy PAC](<https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac>) | Added |
+| [CrossFire: An Analysis of Firefox Extension-Reuse Vulnerabilities](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf>) | Added |
+| [CSP Is Dead, Long Live CSP! On the Insecurity of Whitelists and the Future of Content Security Policy](<https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/>) | Added |
+| CSP2015 / innerht.ml | Not added |
+| [Domain-Z: 28 Registrations Later; Measuring the Exploitation of Residual Trust in Domains](<https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf>) | Added |
+| [DROWN: Breaking TLS Using SSLv2](<https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram>) | Added |
+| [Exploiting CORS Misconfigurations for Bitcoins and Bounties](<https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties>) | Added |
+| [Finite State Machine Based Pattern Generator, NTU thesis](<https://scholars.lib.ntu.edu.tw/entities/publication/584c45a3-5efd-42f4-8db6-19ac53a2fd74>) | Not added |
+| [Forwarding-Loop Attacks in Content Delivery Networks](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/forwarding-loop-attacks-content-delivery-networks.pdf>) | Added |
+| [HEIST: HTTP Encrypted Information Can Be Stolen Through TCP-Windows](<https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf>) | Added |
+| [HTTP/2: In-depth analysis of the top four flaws](<https://www.imperva.com/docs/imperva_hii_http2.pdf>) | Added |
+| HTTP2 & QUIC: Teaching Good Protocols To Do Bad Things | Not added |
+| [httpoxy](<https://httpoxy.org/>) | Not added |
+| I Came to Drop Bombs: Auditing the Compression Algorithm Weapon of Choice | Not added |
+| [I Know What You Saw Last Minute: Encrypted HTTP Adaptive Video Streaming Title Classification](<https://arxiv.org/abs/1602.00490>) | Added |
+| ImageTragick | Not added |
+| ImageTragick; httpoxy | Not added |
+| [JSON hijacking for the modern web](<https://portswigger.net/research/json-hijacking-for-the-modern-web>) | Added |
+| [Killed by Proxy: Analyzing Client-end TLS Interception Software](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/killed-proxy-analyzing-client-end-tls-interception-software.pdf>) | Added |
+| [New gTLD Name Collisions and the WPAD Attack](<https://www.ieee-security.org/TC/SP2016/papers/0824a675.pdf>) | Added |
+| [Node.js response splitting, Klein, Feb9](<https://seclists.org/bugtraq/2016/Feb/67>) | Not added |
+| [On the Content Security Policy Violations due to the Same-Origin Policy](<https://arxiv.org/pdf/1611.02875v1.pdf>) | Added |
+| On the Security of Modern Single Sign-On Protocols: Second-Order Vulnerabilities in OpenID Connect | Not added |
+| Over the Edge: Silently Owning Windows 10's Secure Browser | Not added |
+| [PostMessage XSS on a million sites, Dec15](<https://labs.detectify.com/writeups/postmessage-xss-on-a-million-sites/>) [Related source](<https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/>) | Not added |
+| [Practical New Developments in the BREACH Attack](<https://www.blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf>) | Added |
+| [Request and Conquer: Exposing Cross-Origin Resource Size](<https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem>) | Added |
+| [Return of the Rhino, May4](<https://code-white.com/blog/2016-05-return-of-rhino-old-gadget-revisited/>) | Not added |
+| RFC memory warnings and nghttp2 cycle | Not added |
+| Service worker attack beat | Not added |
+| [SWEET32: Birthday Attacks on 64-bit Block Ciphers in TLS and OpenVPN](<https://sweet32.info/>) | Added |
+| [The Cracked Cookie Jar: HTTP Cookie Hijacking and the Exposure of Private Information](<https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf>) | Added |
+| [Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks](<https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf>) | Added |
+| TLS in the Wild | Not added |
+| [Towards Automated Dynamic Analysis for Linux-based Embedded Firmware](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf>) | Added |
+| [Tracking Mobile Web Users Through Motion Sensors: Attacks and Defenses](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/tracking-mobile-web-users-through-motion-sensors-attacks-defenses.pdf>) | Added |
+| [Transcript Collision Attacks](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf>) | Added |
+| [Trusted Browsers for Uncertain Times](<https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner>) | Added |
+| Verena: End-to-End Integrity Protection for Web Applications | Not added |
+| Web Application Firewalls: Analysis of Detection Logic | Not added |
+| [Website Fingerprinting at Internet Scale](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf>) | Added |
+| [XSS without HTML](<https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs>) | Added |

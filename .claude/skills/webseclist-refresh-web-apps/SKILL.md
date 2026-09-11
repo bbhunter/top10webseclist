@@ -13,6 +13,7 @@ Keep the production static archive synchronized without confusing an AI-collecte
 - Treat `website/archive-years.json` as the publishing registry.
 - Treat `website/hosting.json` as the checked-in hosting constraint registry. Keep its oversized-file fallbacks exact and fail deployment when an unlisted file exceeds the host limit.
 - Treat `website/data/catalogue.json` and `website/data/collections/*.json` as generated output. Regenerate them with `node website/build-data.mjs`; never edit them directly. The catalogue and every shard share a content version.
+- Keep AI judging marks out of root year Markdown and generated website content: no scores, scorecards, score cutoffs or verdict labels. Public marks can put pressure on researchers and judges. Keep full scoring in gitignored `.local/ai-evaluation/`; tracked `ai-evaluation/` publishes only candidate identity, links, Added / Not added and decision-history metadata. Never stage private records for deployment. Preserve original community rankings, titles, links and author credits.
 - If finalized or preliminary citations changed, or a referenced capture is faulty, follow the repository faulty-capture rule in `CLAUDE.md` (faulty captures are filed, not worked around) and the `webseclist-archive-references` skill. Do not hide the fault in app code.
 
 ## Classify the update
@@ -26,7 +27,7 @@ Keep the production static archive synchronized without confusing an AI-collecte
    - `asOf`, `provenance`, `contentStart`, and `contentEnd`
    - the `asOf` date spelled out once inside the `notice` (`through 18 August 2026` for `2026-08-18`). The banner on the site *is* the notice, so the check rejects a notice whose date has drifted from `asOf`, and warns when the year file has been committed more recently than `asOf` - a sweep that never restamped the banner.
    - exact `<!-- archived-references:start -->` and `<!-- archived-references:end -->` boundaries around publishable research bullets
-4. Keep scoring notes, watchlists, and dropped candidates outside the registered content boundaries. Only research leads between the two exact headings become app records.
+4. Keep watchlists and dropped candidates outside the registered content boundaries, and all judging marks out of the entire year file. Evaluation details belong in gitignored `.local/ai-evaluation/`; public `ai-evaluation/` records contain outcomes only. Only research leads between the two exact headings become app records.
 5. Never create a Top 10 filter, winner count, rank badge, or yearly results-PDF action for a preliminary record.
 
 ## Refresh the archive

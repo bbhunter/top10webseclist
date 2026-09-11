@@ -1,198 +1,56 @@
 [
   {
     "year": 2021,
-    "rank": 1,
-    "title": "Dependency Confusion",
-    "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
-    "cutoff": "2021-02-09",
-    "scores": {
-      "original": 50,
-      "transferability": 65,
-      "lasting": 65,
-      "technical": 72,
-      "practical": 75,
-      "clarity": 75
-    },
-    "total": 64.3,
-    "verdict": "Tooling or methodology contribution",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Original build configuration and root cause are not disclosed for several claimed affected organizations.",
-      "Archive publication metadata conflicts with the live original date; the document itself is substantive."
-    ]
-  },
-  {
-    "year": 2021,
-    "rank": 2,
-    "title": "HTTP/2: The Sequel is Always Worse",
-    "url": "https://portswigger.net/research/http2",
-    "cutoff": "2021-03-09 (H2.CL vendor technical disclosure; possible earlier January code); 2021-08-05 (broader extensions)",
-    "scores": {
-      "original": 70,
-      "transferability": 85,
-      "lasting": 85,
-      "technical": 85,
-      "practical": 80,
-      "clarity": 85
-    },
-    "total": 80.8,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Exact earliest code-level H2.CL disclosure and attribution through the vendor chain are not fully established.",
-      "Historical exploits were assessed from original evidence rather than run against live services."
-    ]
-  },
-  {
-    "year": 2021,
-    "rank": 3,
     "title": "A New Attack Surface on MS Exchange - ProxyLogon",
     "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/",
-    "cutoff": "2021-08-05/2021-08-06 (author technical architecture account)",
-    "scores": {
-      "original": 45,
-      "transferability": 55,
-      "lasting": 60,
-      "technical": 85,
-      "practical": 65,
-      "clarity": 80
-    },
-    "total": 61.5,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Earliest sufficient candidate-side technical disclosure remains less certain than discovery attribution; an earlier coordinated technical artifact could materially change this score.",
-      "Praetorian withheld part of ECP authentication, so it does not establish that every August detail was already public."
-    ]
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "Dependency Confusion",
+    "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "HTTP/2: The Sequel is Always Worse",
+    "url": "https://portswigger.net/research/http2",
+    "decision": "added"
   },
   {
     "year": 2022,
-    "rank": 1,
     "title": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
     "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/",
-    "cutoff": "2022-07-06",
-    "scores": {
-      "original": 70,
-      "transferability": 80,
-      "lasting": 80,
-      "technical": 80,
-      "practical": 70,
-      "clarity": 80
-    },
-    "total": 76.5,
-    "verdict": "Meaningful combination or adaptation",
-    "confidence": "High",
-    "evidence_gaps": [
-      "Production targets are genericized; no independent runtime replication performed.",
-      "The author’s credited May 2022 third-party sandbox antecedent could not be independently retrieved, so no priority claim is made for that component."
-    ]
+    "decision": "added"
   },
   {
     "year": 2022,
-    "rank": 2,
     "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
     "url": "https://portswigger.net/research/browser-powered-desync-attacks",
-    "cutoff": "2022-08-10",
-    "scores": {
-      "original": 75,
-      "transferability": 85,
-      "lasting": 85,
-      "technical": 85,
-      "practical": 70,
-      "clarity": 90
-    },
-    "total": 81.5,
-    "verdict": "Meaningful extension",
-    "confidence": "High",
-    "evidence_gaps": [
-      "Historical browser/network demonstrations were assessed from the original paper, not rerun."
-    ]
+    "decision": "added"
   },
   {
     "year": 2022,
-    "rank": 3,
     "title": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
     "url": "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/",
-    "cutoff": "2022-06-14",
-    "scores": {
-      "original": 60,
-      "transferability": 65,
-      "lasting": 70,
-      "technical": 80,
-      "practical": 65,
-      "clarity": 75
-    },
-    "total": 68.0,
-    "verdict": "Meaningful combination or adaptation",
-    "confidence": "High",
-    "evidence_gaps": [
-      "No independent vulnerable Zimbra lab execution; exact preconditions are inferred from the supplied implementation analysis and diagrams."
-    ]
+    "decision": "added"
   },
   {
     "year": 2023,
-    "rank": 1,
-    "title": "Smashing the state machine: the true potential of web race conditions",
-    "url": "https://portswigger.net/research/smashing-the-state-machine",
-    "cutoff": "2023-08-09",
-    "scores": {
-      "original": 65,
-      "transferability": 85,
-      "lasting": 85,
-      "technical": 85,
-      "practical": 85,
-      "clarity": 90
-    },
-    "total": 80.5,
-    "verdict": "Tooling or methodology contribution",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "The full Papli thesis could not be fetched in the final recheck; dated university records and its stated HTTP/2 methods establish a predecessor, but detailed algorithm-by-algorithm priority remains uncertain.",
-      "Original benchmark code was inspected through the paper’s description, not rerun."
-    ]
-  },
-  {
-    "year": 2023,
-    "rank": 2,
     "title": "Exploiting Hardened .NET Deserialization",
     "url": "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf",
-    "cutoff": "2023-09-21 (SolarWinds cases); 2023-09-27/2023-10-14 (remaining paper contributions; exact public upload uncertain)",
-    "scores": {
-      "original": 75,
-      "transferability": 75,
-      "lasting": 80,
-      "technical": 90,
-      "practical": 70,
-      "clarity": 90
-    },
-    "total": 79.2,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "First public upload dates of individual new gadget contributions are not fully established; September–October ordering is bounded rather than asserted precisely.",
-      "No independent execution of the complete gadget matrix."
-    ]
+    "decision": "added"
   },
   {
     "year": 2023,
-    "rank": 3,
+    "title": "Smashing the state machine: the true potential of web race conditions",
+    "url": "https://portswigger.net/research/smashing-the-state-machine",
+    "decision": "added"
+  },
+  {
+    "year": 2023,
     "title": "SMTP Smuggling - Spoofing E-Mails Worldwide",
     "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/",
-    "cutoff": "2023-12-18",
-    "scores": {
-      "original": 75,
-      "transferability": 75,
-      "lasting": 80,
-      "technical": 80,
-      "practical": 60,
-      "clarity": 75
-    },
-    "total": 75.2,
-    "verdict": "Meaningful combination or adaptation",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "No independent reproduction on historical relay pairs.",
-      "Search did not establish an exhaustive history of old SMTP end-marker discrepancies; first-invention certainty is limited."
-    ]
+    "decision": "added"
   }
 ]

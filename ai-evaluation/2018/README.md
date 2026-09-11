@@ -1,117 +1,64 @@
-# 2018 missed-technique audit
+# 2018 candidate outcomes
 
-This folder records the fresh 2026-08-08 audit for web-security research first
-published in 2018 but absent from the original 2018 nomination round. The
-exclusion set contained 57 distinct URLs from [`2018.md`](../../2018.md). Exact
-URL filtering was followed by semantic comparison against every mechanism in
-that file and backward checks through the 2006–2017 lists.
+This index publishes only whether a candidate is included in the year list.
+“Added” includes entries already present; “Not added” can include leads awaiting review.
+It is not a permanent merit judgement. New additions require a full private evaluation
+under the judging skill’s current selection criteria, which may change.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
-verdict**. A score alone cannot rescue prior disclosure, an original nominee
-under another URL, or work first published in a different year. All credible
-screened leads are retained below, including leads excluded on date or scope.
+See [completed inclusion decisions](judgements.md) and [decision history](history.jsonl).
 
-## Coverage
-
-- Full programs and primary papers from IEEE S&P, ACM CCS, NDSS, USENIX
-  Security, IEEE EuroS&P and WOOT.
-- Black Hat USA, PortSwigger Research and Google Project Zero's 2018 archive,
-  plus author-hosted papers, tools and disclosure posts.
-- Browser state and history, fingerprinting, JavaScript and Node.js,
-  DOM-XSS, extensions, WebGL/GPU and speculative-execution side channels.
-- OAuth, SAML, SSO SDKs, eIDAS, domain validation, BGP, cloud address reuse,
-  Web PKI and certificate linting.
-- Hybrid WebView bridges, `postMessage`, mobile-backed HTTP APIs, event-driven
-  exploit generation, WebRTC/video calling and browser-accessible media stacks.
-- Server request sequences, ReDoS, event-loop exhaustion, asynchronous-server
-  memory sharing, proxy behavior, service workers and web attack forensics.
-- Backward mechanism searches through the local 2006–2017 lists and archive,
-  followed by primary-paper related-work and first-publication checks.
-- A non-US sweep through EuroS&P, European research groups, Asian institutions
-  represented in the major programs and international eID deployments. No
-  additional non-English primary source cleared all gates.
-
-No archive capture was opened, validated or changed during this audit.
-
-## Results
-
-- 40 credible leads retained.
-- 22 candidates received full scorecards and were added to the missed section.
-- 18 additional leads were resolved during screening as prior-year disclosure,
-  defensive/measurement-only work, scope mismatch, prior art or a narrower
-  same-mechanism companion.
-- 1 addition is in the 60–69.9 band and would have been lost under the former
-  above-70 rule.
-
-| Score | Decision | Verdict | Candidate |
-|---:|---|---|---|
-| 94.2 | added | Original technique | [Spectre](https://spectreattack.com/spectre.pdf) |
-| 88.0 | added | Meaningful extension | [Browser history re:visited](https://www.usenix.org/conference/woot18/presentation/smith) |
-| 87.9 | added | Meaningful extension | [Bamboozling Certificate Authorities with BGP](https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee) |
-| 87.6 | added | Original technique | [Origin Stripping Vulnerabilities](https://ieeexplore.ieee.org/document/8418635/) |
-| 86.8 | added | Meaningful extension | [Grand Pwning Unit](https://download.vusec.net/papers/glitch_sp18.pdf) |
-| 86.7 | added | Meaningful extension | [Cloud Strife](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf) |
-| 86.7 | added | Tooling or methodology contribution | [WARDroid](https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf) |
-| 86.6 | added | Tooling or methodology contribution | [SYNODE](https://www.software-lab.org/publications/ndss2018.pdf) |
-| 86.5 | added | Tooling or methodology contribution | [NAVEX](https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018/) |
-| 86.5 | added | Tooling or methodology contribution | [WPSE](https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara) |
-| 85.0 | added | Original technique | [Clock Around the Clock](https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf) |
-| 85.0 | added | Tooling or methodology contribution | [S3KVetter](https://www.usenix.org/conference/usenixsecurity18/presentation/yang) |
-| 84.6 | added | Meaningful extension | [Deep Fingerprinting](https://arxiv.org/abs/1801.02265) |
-| 84.5 | added | Meaningful extension | [O Single Sign-Off](https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif) |
-| 84.0 | added | Tooling or methodology contribution | [Adventures in Video Conferencing](https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html) |
-| 83.9 | added | Meaningful extension | [A Sense of Time for JavaScript and Node.js](https://www.usenix.org/conference/usenixsecurity18/presentation/davis) |
-| 83.3 | added | Tooling or methodology contribution | [Mystique](https://www.kapravelos.com/publications/mystique-CCS18.pdf) |
-| 82.7 | added | Tooling or methodology contribution | [Event-Oriented Exploits in Android Hybrid Apps](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_04B-3_Yang_paper.pdf) |
-| 82.6 | added | Tooling or methodology contribution | [Riding out DOMsday](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf) |
-| 82.4 | added | Tooling or methodology contribution | [Freezing the Web](https://www.usenix.org/conference/usenixsecurity18/presentation/staicu) |
-| 82.1 | added | Meaningful combination or adaptation | [Security Risks in Asynchronous Web Servers](https://fabianmonrose.github.io/papers/morton18.pdf) |
-| 64.5 | added | Tooling or methodology contribution | [Security Analysis of eIDAS](https://www.usenix.org/conference/woot18/workshop-program) |
-
-## Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [FP-STALKER](https://hal.inria.fr/hal-01652021) | wrong year | The primary HAL record was public on 2 December 2017; the 2018 conference appearance cannot reset first publication. |
-| [Automated Website Fingerprinting through Deep Learning](https://arxiv.org/abs/1708.06376) | wrong year | The primary preprint was public on 21 August 2017. |
-| [I Spy with My Little Eye](https://arxiv.org/abs/1612.00766) | wrong year | The primary preprint was public in December 2016, despite its EuroS&P 2018 appearance. |
-| Rendered Insecure: GPU Side Channel Attacks are Practical | scope mismatch / companion | Requires a co-resident native OpenGL or CUDA spy; Grand Pwning Unit supplies the stronger remotely delivered browser/GPU mechanism. |
-| [An Empirical Study of Web Resource Manipulation](https://www.usenix.org/conference/usenixsecurity18/presentation/zhang-xiaohan) | measurement of known mechanism | XPMChecker measures previously described host-app manipulation of WebView resources; it does not introduce a distinct offensive primitive. |
-| Tracking Certificate Misissuance in the Wild / ZLint | defensive validation | Strong standards linting and ecosystem measurement, but not an offensive web technique. |
-| JSgraph | forensic methodology | Reconstructs already-executed JavaScript attacks for investigation rather than finding or performing a new attack. |
-| [Rampart](https://www.usenix.org/conference/usenixsecurity18/presentation/meng) | defensive system | Profiles PHP functions and blocks CPU-exhaustion attacks; the distinct offensive models are captured by Event Handler Poisoning and Freezing the Web. |
-| JavaScript Zero | defensive architecture | Removes or mediates JavaScript timing sources; no separate attack contribution. |
-| Veil | defensive architecture | Provides private-browsing semantics without browser changes rather than a new web attack. |
-| [Fp-Scanner](https://www.usenix.org/conference/usenixsecurity18/presentation/vastel) | privacy analysis / defensive detection | Detects inconsistent or randomized browser fingerprints and sometimes recovers attributes; it does not define a sufficiently distinct attack beyond the scored fingerprint work. |
-| Static Evaluation of Noninterference using Approximate Model Counting | general analysis | The method includes web examples but its core contribution is general quantitative information-flow analysis, outside the list's offensive web focus. |
-| A Formal Treatment of Accountable Proxying over TLS | defensive protocol design | Exposes ambiguity in prior accountable-TLS designs but principally proposes and proves a replacement protocol. |
-| A Large-scale Analysis of Content Modification by Open HTTP Proxies | measurement study | Measures known proxy injection and manipulation behavior without a new reusable attack method. |
-| [Hackability Inspector](https://portswigger.net/research/hackability-inspector) | below originality gate | Useful runtime enumeration of JavaScript objects and events, but too narrow an adaptation of established devtools inspection to qualify independently. |
-| Zip Slip | prior art | The 2018 branding and ecosystem study cover path traversal during archive extraction, a long-established mechanism. |
-| ROBOT | wrong year | The primary Return Of Bleichenbacher's Oracle Threat disclosure was public in December 2017. |
-| ClickShield | defensive system | Detects and prevents Android clickjacking; the offensive clickjacking primitive long predates 2018. |
-
-## Notes on the gate
-
-The eIDAS study is the only 60–69.9 addition. Its 64.5 score deliberately gives
-low originality credit because XXE, SSRF and SAML attacks were established. It
-qualifies narrowly for the reusable Burp testing extension and the systematic
-cross-implementation workflow. This audit did not run the reference archiver
-or refresh either web application.
-
-
-## Additional sweep — 2026-09-10
-
-[Detailed dated evidence](2026-09-10-sweep.md) records 11 lead groups: one survivor for final judgement (PWA offline-cache history and push-fed persistent mining), four prescreen-held groups, and six screened groups. The citation inventory contained 2,403 outbound occurrences / 1,824 unique raw URLs across 73 documents; only selected promising references were traced. The substantive PWA disclosure was verified in a 22 August SIGPL deck, earlier than its October CCS paper. Its earliest-artifact draft is 62.3/100, with the October evidence kept separate; this is not a final scorecard or an addition.
-
-## Final all-years adjudication — 2026-09-10
-
-This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
-
-| Research | Final score | Final verdict / disposition |
-|---|---:|---|
-| [Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications](https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf) | 62.3 | Meaningful combination or adaptation; added — [full card](judgements.md) |
-
-The PWA judgement uses the substantive 22 August 2018 SIGPL deck as its cutoff. The later CCS paper is preserved as the expanded account; its additional evidence was not backdated into the score.
-
-These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+| Candidate | Outcome |
+|---|---|
+| A Formal Treatment of Accountable Proxying over TLS | Not added |
+| A Large-scale Analysis of Content Modification by Open HTTP Proxies | Not added |
+| [A Sense of Time for JavaScript and Node.js: First-Class Timeouts as a Cure for Event Handler Poisoning](<https://www.usenix.org/conference/usenixsecurity18/presentation/davis>) | Added |
+| [Adventures in Video Conferencing Part 1: The Wild World of WebRTC](<https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html>) | Added |
+| [An Empirical Study of Web Resource Manipulation](<https://www.usenix.org/conference/usenixsecurity18/presentation/zhang-xiaohan>) | Not added |
+| [Automated Generation of Event-Oriented Exploits in Android Hybrid Apps](<https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_04B-3_Yang_paper.pdf>) | Added |
+| [Automated Website Fingerprinting through Deep Learning](<https://arxiv.org/abs/1708.06376>) | Not added |
+| [Bamboozling Certificate Authorities with BGP](<https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee>) | Added |
+| [Browser history re:visited](<https://www.usenix.org/conference/woot18/presentation/smith>) | Added |
+| [Chaitin technical column 2018 annual collection](<https://images.seebug.org/archive/%E9%95%BF%E4%BA%AD%E6%8A%80%E6%9C%AF%E4%B8%93%E6%A0%8F2018%E5%B9%B4%E5%BA%A6%E6%96%87%E9%9B%86.pdf>) | Not added |
+| ClickShield | Not added |
+| [Clock Around the Clock: Time-Based Device Fingerprinting](<https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf>) | Added |
+| [Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates](<https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf>) | Added |
+| [Cross-site request forgery defense based on randomization of parameter name](<https://www.ecice06.com/CN/10.19678/j.issn.1000-3428.0048368>) | Not added |
+| [Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning](<https://arxiv.org/abs/1801.02265>) | Added |
+| [EFAIL](<https://efail.de/>) | Not added |
+| [Fp-Scanner](<https://www.usenix.org/conference/usenixsecurity18/presentation/vastel>) | Not added |
+| [FP-STALKER](<https://hal.inria.fr/hal-01652021>) | Not added |
+| [Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers](<https://www.usenix.org/conference/usenixsecurity18/presentation/staicu>) | Added |
+| [French Pound smuggling translation](<https://www.makina-corpus.com/blog/metier/2018/contrebande-de-http-smuggling-load-balancer-apsis-pound>) [Related source](<https://spyclub.tech/2018/ssrf-through-gopher/>) | Not added |
+| [Fuzzing Ruby C Extensions](<https://schd.ws/hosted_files/bsidessf2018/de/Fuzzing_Ruby_C_Extensions.pdf>) [Related source](<https://medium.com/fuzzstation/breaking-rubys-unmarshal-with-afl-fuzz-6b5f72b581d5>) | Not added |
+| [Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU](<https://download.vusec.net/papers/glitch_sp18.pdf>) | Added |
+| [GraphQL abuse: Bypass account level permissions through parameter smuggling](<https://labs.detectify.com/crowdsource-community/graphql-abuse-bypass-account-level-permissions-through-parameter-smuggling/>) | Not added |
+| [GraphQL – Security Overview and Testing Tips](<https://blog.doyensec.com/2018/05/17/graphql-security-overview.html>) | Not added |
+| [Hackability Inspector](<https://portswigger.net/research/hackability-inspector>) | Not added |
+| [I Spy with My Little Eye](<https://arxiv.org/abs/1612.00766>) | Not added |
+| JavaScript Zero | Not added |
+| JSgraph | Not added |
+| [Mobile Application Web API Reconnaissance: Web-to-Mobile Inconsistencies & Vulnerabilities](<https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf>) | Added |
+| [Mystique: Uncovering Information Leakage from Browser Extensions](<https://www.kapravelos.com/publications/mystique-CCS18.pdf>) | Added |
+| [NAVEX: Precise and Scalable Exploit Generation for Dynamic Web Applications](<https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018/>) | Added |
+| [O Single Sign-Off, Where Art Thou? An Empirical Analysis of Single Sign-On Account Hijacking and Session Management on the Web](<https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif>) | Added |
+| [Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications](<https://wsp-lab.github.io/papers/son-ppp-ccs18.pdf>) [Related source](<https://sigpl.or.kr/school/2018s/slides/0822-SooelSon.pdf>) | Added |
+| [Rampart](<https://www.usenix.org/conference/usenixsecurity18/presentation/meng>) | Not added |
+| [Remote Code Execution in Web Applications](<https://www.amrita.edu/publication/remote-code-execution-in-web-applications/>) | Not added |
+| Rendered Insecure: GPU Side Channel Attacks are Practical | Not added |
+| [Riding out DOMsday: Towards Detecting and Preventing DOM Cross-Site Scripting](<https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf>) | Added |
+| ROBOT | Not added |
+| [Ruby 2.x Universal RCE Deserialization Gadget Chain](<https://www.elttam.com/blog/ruby-deserialization>) | Added |
+| [Save your cloud: DoS VMs in OpenNebula 4.6.1](<https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html>) [Related source](<https://www.nds.rub.de/research/publications/PrivateCloudCCSW15/>) [Related source](<https://doi.org/10.1145/2808425.2808432>) | Added |
+| [Security Analysis of eIDAS — The Cross-Country Authentication Scheme in Europe](<https://www.usenix.org/conference/woot18/workshop-program>) | Added |
+| [Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks](<https://fabianmonrose.github.io/papers/morton18.pdf>) | Added |
+| [SMB hash hijacking & user tracking in MS Outlook](<https://soroush.me/downloadable/outlook_smb_hash_hijacking.pdf>) | Added |
+| [Spectre Attacks: Exploiting Speculative Execution](<https://spectreattack.com/spectre.pdf>) | Added |
+| Static Evaluation of Noninterference using Approximate Model Counting | Not added |
+| [Stealing Data With CSS: Attack and Defense](<https://www.mike-gualtieri.com/posts/stealing-data-with-css-attack-and-defense/>) | Not added |
+| [Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications](<https://ieeexplore.ieee.org/document/8418635/>) | Added |
+| [SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js](<https://www.software-lab.org/publications/ndss2018.pdf>) | Added |
+| Tracking Certificate Misissuance in the Wild / ZLint | Not added |
+| Veil | Not added |
+| [Vetting Single Sign-On SDK Implementations via Symbolic Reasoning](<https://www.usenix.org/conference/usenixsecurity18/presentation/yang>) | Added |
+| [WPSE: Fortifying Web Protocols via Browser-Side Security Monitoring](<https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara>) | Added |
+| Zip Slip | Not added |

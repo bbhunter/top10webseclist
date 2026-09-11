@@ -1,149 +1,61 @@
-# 2019 missed-technique audit
+# 2019 candidate outcomes
 
-This folder records the fresh 2026-08-09 audit for web-security research first
-published in 2019 but absent from the original 2019 nomination round. The
-exclusion set contained 54 distinct URLs from [`2019.md`](../../2019.md). Exact
-URL filtering was followed by semantic comparison against every mechanism in
-that file and backward checks through the 2006–2018 lists.
+This index publishes only whether a candidate is included in the year list.
+“Added” includes entries already present; “Not added” can include leads awaiting review.
+It is not a permanent merit judgement. New additions require a full private evaluation
+under the judging skill’s current selection criteria, which may change.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
-verdict**. A score alone cannot rescue prior disclosure, an original nominee
-under another URL, or work first published in a different year. All credible
-screened leads are retained below, including leads excluded on date or scope.
+See [completed inclusion decisions](judgements.md) and [decision history](history.jsonl).
 
-## Coverage
-
-- Primary programs and papers from IEEE S&P, ACM CCS, NDSS/MADWeb and USENIX
-  Security, including related-work and first-publication checks.
-- PortSwigger Research's 2019 archive and primary author, project and tool
-  pages for browser, HTTP and testing-methodology work.
-- Cross-origin state, browser and extension fingerprinting, WebView context,
-  autocomplete traffic analysis, click interception, CSP and cache behaviour.
-- Phishing-evasion measurement, search poisoning, TLS oracle scanning, cloud
-  backend discovery, JavaScript fuzzing and targeted exploit preparation.
-- Backward mechanism searches through the local 2006–2018 lists and archive;
-  renamed variants of the 54 known 2019 references were excluded semantically.
-- A non-US sweep through European and international authors represented in the
-  major programs and MADWeb. No additional non-English primary source cleared
-  the date, scope, novelty and evidence gates.
-
-No archive capture was opened, validated or changed during this audit.
-
-## Results
-
-- 30 credible leads retained.
-- 16 candidates received full scorecards and were added to the missed section.
-- 14 additional leads were resolved during screening as prior-year disclosure,
-  scope mismatch, defensive/measurement-only work or same-mechanism overlap.
-- No qualifying 2019 candidate landed in the 60–69.9 band; the lower gate was
-  nevertheless applied to every retained lead.
-
-| Score | Decision | Verdict | Candidate |
-|---:|---|---|---|
-| 89.2 | added | Tooling or methodology contribution | [Turbo Intruder](https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack) |
-| 88.9 | added | Tooling or methodology contribution | [Cross-Origin State Inference attacks](https://arxiv.org/abs/1908.02204) |
-| 87.3 | added | Original technique | [Differential Context Vulnerabilities in mobile WebViews](https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang) |
-| 86.5 | added | Meaningful combination or adaptation | [Leaky Images](https://www.usenix.org/conference/usenixsecurity19/presentation/staicu) |
-| 83.8 | added | Meaningful extension | [CSP policy injection](https://portswigger.net/research/bypassing-csp-with-policy-injection) |
-| 83.5 | added | Tooling or methodology contribution | [JavaScript Template Attacks](https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-4_Schwarz_paper.pdf) |
-| 83.2 | added | Meaningful combination or adaptation | [Remote keylogging through search autocomplete](https://www.usenix.org/conference/usenixsecurity19/presentation/monaco) |
-| 82.6 | added | Meaningful combination or adaptation | [Cross-Site Challenge-Response Attacks](https://madweb.work/papers/2019/paper4.pdf) |
-| 81.5 | added | Tooling or methodology contribution | [PhishFarm](https://doi.org/10.1109/SP.2019.00049) |
-| 80.7 | added | Tooling or methodology contribution | [Click interception on the web](https://www.usenix.org/conference/usenixsecurity19/presentation/zhang) |
-| 79.9 | added | Meaningful extension | [Latex Gloves](https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf) |
-| 79.9 | added | Tooling or methodology contribution | [Scalable TLS padding-oracle scanning](https://www.usenix.org/conference/usenixsecurity19/presentation/merget) |
-| 79.2 | added | Tooling or methodology contribution | [Postcards from the Post-HTTP World](https://ieeexplore.ieee.org/document/8835223) |
-| 79.1 | added | Tooling or methodology contribution | [The Betrayal at Cloud City](https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi) |
-| 74.6 | added | Tooling or methodology contribution | [Behavioural browser fuzzing](https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing) |
-| 72.0 | added | Meaningful extension | [Search poisoning of linguistic collisions](https://doi.org/10.1109/SP.2019.00025) |
-
-## Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [Don't Trust The Locals](https://www.ndss-symposium.org/ndss-paper/dont-trust-the-locals-investigating-the-prevalence-of-persistent-client-side-cross-site-scripting-in-the-wild/) | wrong year | The CISPA record was public on 9 November 2018 and the work was presented at German OWASP Day 2018. |
-| [Master of Web Puppets](https://arxiv.org/abs/1810.00464) | wrong year | The primary preprint was public on 30 September 2018. |
-| [Robust Website Fingerprinting Through the Cache Occupancy Channel](https://arxiv.org/abs/1811.07153) | wrong year | The primary preprint was public on 17 November 2018. |
-| CodeAlchemist | wrong year | The public project repository was created in November 2018; the 2019 venue does not reset first disclosure. |
-| The 9 Lives of Bleichenbacher's CAT | wrong year | The cache-oracle result and prepublication reporting were public in December 2018. |
-| Unveiling Your Keystrokes | scope mismatch | Its spy is a co-resident native process probing shared graphics libraries, not a browser-delivered or web-adjacent technique. |
-| Responsible denial of service with web cache poisoning | already represented | The 2019 nominations already contain CPDoS and cache-poisoning work with the same persistent cached-error outcome. |
-| Abusing jQuery for CSS-powered timing attacks | prior art / same mechanism | The post explicitly extends the CSS timing technique already retained in the 2018 list; the new library targets do not create a distinct primitive. |
-| Portal and focus/window-name XS-Leaks | already represented | These are constituent 2019 cross-site leak oracles; the original list already includes the broader Cross-Site Leaks entry. |
-| HideNoSeek | scope mismatch | Obfuscating malicious JavaScript is an evasion study, not a distinct web exploitation primitive. |
-| DorkPot | measurement system | The search-engine honeypot measures malicious search traffic rather than introducing an offensive technique. |
-| Page Cache Attacks | scope mismatch | The demonstrated attacker is a local native process and the contribution is an operating-system memory side channel. |
-| A Large-Scale Study on Risks of HTML5 WebAPI for Mobile Sensor-Based Attacks | measurement of known mechanisms | It systematises browser-sensor exposure and known sensor attacks without a distinct new offensive primitive. |
-| Small World with High Risks / Anything to Hide? | measurement studies | The npm-ecosystem and minified-code studies quantify risk but do not add a reusable attack mechanism. |
-
-## Notes on the gate
-
-The 2019 pass produced no 60–69.9 recovery. The closest qualifying result was
-the 72.0 linguistic-collision search-poisoning extension; narrower target-only
-adaptations were screened instead of inflating originality to force inclusion.
-This audit did not run the reference archiver or refresh either web application.
-
-## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
-
-A later, separate pass from the audit above. Rather than sweeping the year, it
-swept one external corpus: the 26,422-line acquisition log
-(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
-deserialization reference archive. That log resolves to 519 distinct documents;
-16 were already recorded in this repository, and the remaining 503 were filtered
-to 274 research-grade articles, whitepapers, slide decks and talks, then
-title-matched against the year lists and the reference manifest to remove eight
-mirrors of entries already present. The residue was pre-screened against the
-judge rubric; product advisories, vendor knowledge-base articles, news coverage,
-threat-intelligence reports, framework documentation, CTF and HTB writeups, and
-duplicate recordings of already-listed talks were resolved during screening
-rather than scored.
-
-**Two additions.** Scorecards in [judgements.md](judgements.md).
-
-| Score | Verdict | List decision | Candidate |
-|---:|---|---|---|
-| 74.1 | Meaningful combination or adaptation | added | [Telerik Revisited](https://code-white.com/blog/2019-02-telerik-revisited/) |
-| 73.1 | Meaningful extension | added | [Re-Animating ActivitySurrogateSelector](https://www.netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector/) |
-
-Neither duplicates the Telerik or ViewState entries already nominated for 2019.
-The Bishop Fox nomination is CVE-2019-18935, a different bug from the 2017 issues
-Code White revisits, and the 2019 ViewState entry uses ActivitySurrogateSelector
-without describing the .NET 4.8 type-check bypass.
-
-### Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [Unauthenticated Remote Code Execution in Kentico CMS](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/unauthenticated-remote-code-execution-in-kentico-cms/) | product advisory | A single-product deserialization RCE disclosure with no reusable primitive beyond the known SoapFormatter sink. |
-| [Deep Dive into .NET ViewState deserialization and its exploitation](https://swapneildash.medium.com/deep-dive-into-net-viewstate-deserialization-and-its-exploitation-54bf5b788817) | already represented | A tutorial restatement of the ViewState technique nominated for 2019. |
-| [RCEvil.net (BSides Iowa)](https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf) | already represented | Payload generation for ViewState with a known machine key; the technique is the 2019 nomination. |
-| [Bypassing Low Type Filter in .NET Remoting](https://www.tiraniddo.dev/2019/10/bypassing-low-type-filter-in-net.html) | scope mismatch | Concerns the TCP and IPC transports; the HTTP-channel work is nominated separately. |
-| [Analysis and exploitation of CVE-2019-10068, Kentico CMS](https://dreadlocked.github.io/2019/10/25/kentico-cms-rce/) | product advisory | Independent analysis of one product CVE; no distinct primitive. |
-
-## Supplemental sweep — 10 September 2026
-
-The [dated evidence handoff](2026-09-10-sweep.md) records a bounded mechanism and
-archived-citation sweep against 72 known URLs and 3,058 outbound inventory rows.
-It retains **13 credible candidate groups: 1 survivor, 6 held pre-screen and 6
-screened**. PDFex has a full-source evidence digest, fresh pre-cutoff comparison
-against EFAIL, and a helper-verified **draft 74.8/100** (Meaningful
-combination/adaptation). This is not a final judgement or list addition.
-
-Held leads are generated .NET machine-key persistence, Netflix/Google HTTP/2
-resource-exhaustion variants, PDF signature spoofing, Shadow Workers, Jenkins
-Part 1 dynamic routing, and Covert Content Attacks on encrypted email. Each hold
-states its missing source, chronology, scope or novelty evidence. The note also
-records citation-derived wrong-year and already-covered results, exact searches,
-weak non-English coverage and retrieval limitations. No new confirmed faulty
-archive capture was found; curated files and score/history records were not
-changed by this worker.
-
-## Final all-years adjudication — 2026-09-10
-
-This concludes the discovery handoff above. 1 new full judgement completed; 1 qualifying technique added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
-
-| Research | Final score | Final verdict / disposition |
-|---|---:|---|
-| [Practical Decryption exFiltration: Breaking PDF Encryption](https://www.pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf) | 74.8 | Meaningful combination or adaptation; added — [full card](judgements.md) |
-
-These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+| Candidate | Outcome |
+|---|---|
+| A Large-Scale Study on Risks of HTML5 WebAPI for Mobile Sensor-Based Attacks | Not added |
+| Abusing jQuery for CSS-powered timing attacks | Not added |
+| [Adobe Reader PDF — Client Side Request Injection](<https://insert-script.blogspot.de/2018/05/adobe-reader-pdf-client-side-request.html>) | Not added |
+| [All Your Clicks Belong to Me](<https://www.usenix.org/conference/usenixsecurity19/presentation/zhang>) | Added |
+| [Analysis and exploitation of CVE-2019-10068, Kentico CMS](<https://dreadlocked.github.io/2019/10/25/kentico-cms-rce/>) | Not added |
+| [AWS Cognito reset-code brute force](<https://www.pentagrid.ch/en/blog/password-reset-code-brute-force-vulnerability-in-AWS-Cognito/>) | Not added |
+| [Bypassing CSP with policy injection](<https://portswigger.net/research/bypassing-csp-with-policy-injection>) | Added |
+| [Bypassing Low Type Filter in .NET Remoting](<https://www.tiraniddo.dev/2019/10/bypassing-low-type-filter-in-net.html>) | Not added |
+| CodeAlchemist | Not added |
+| [Cross-Origin State Inference (COSI) Attacks](<https://arxiv.org/abs/1908.02204>) | Added |
+| [Cross-Site Challenge-Response Attacks](<https://madweb.work/papers/2019/paper4.pdf>) | Added |
+| [Danger of Stealing Auto Generated .NET Machine Keys](<https://soroush.me/blog/danger-of-stealing-auto-generated-net-machine-keys>) | Not added |
+| [Deep Dive into .NET ViewState deserialization and its exploitation](<https://swapneildash.medium.com/deep-dive-into-net-viewstate-deserialization-and-its-exploitation-54bf5b788817>) | Not added |
+| [Don't Trust The Locals](<https://www.ndss-symposium.org/ndss-paper/dont-trust-the-locals-investigating-the-prevalence-of-persistent-client-side-cross-site-scripting-in-the-wild/>) | Not added |
+| DorkPot | Not added |
+| [Hacking Jenkins Part 1: Play with Dynamic Routing](<https://blog.orange.tw/2019/01/hacking-jenkins-part-1-play-with-dynamic-routing.html>) | Not added |
+| HideNoSeek | Not added |
+| [How To Spoof PDF Signatures](<https://web-in-security.blogspot.com/2019/02/how-to-spoof-pdf-signatures.html>) | Not added |
+| [HTTP/2 Denial of Service Advisory](<https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-002.md>) | Not added |
+| [Iframes/Popups Are Dangerous in Mobile WebView](<https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang>) | Added |
+| [JavaScript Template Attacks](<https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-4_Schwarz_paper.pdf>) | Added |
+| [Latex Gloves](<https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf>) | Added |
+| [Leaky Images: Targeted Privacy Attacks in the Web](<https://www.usenix.org/conference/usenixsecurity19/presentation/staicu>) | Added |
+| [Lodash prototype pollution](<https://snyk.io/blog/snyk-research-team-discovers-severe-prototype-pollution-security-vulnerabilities-affecting-all-versions-of-lodash/>) [Related source](<https://snyk.io/blog/after-three-years-of-silence-a-new-jquery-prototype-pollution-vulnerability-emerges-once-again/>) | Not added |
+| [Master of Web Puppets](<https://arxiv.org/abs/1810.00464>) | Not added |
+| [Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions](<https://doi.org/10.1109/SP.2019.00025>) | Added |
+| Page Cache Attacks | Not added |
+| [Patch-gapping Google Chrome](<https://blog.exodusintel.com/2019/09/09/patch-gapping-chrome/>) | Not added |
+| [PhishFarm](<https://doi.org/10.1109/SP.2019.00049>) | Added |
+| Portal and focus/window-name XS-Leaks | Not added |
+| [Postcards from the Post-HTTP World](<https://ieeexplore.ieee.org/document/8835223>) | Added |
+| [Practical Decryption exFiltration: Breaking PDF Encryption](<https://www.pdf-insecurity.org/download/paper-pdf_encryption-ccs2019.pdf>) | Added |
+| [Provoking browser quirks with behavioural fuzzing](<https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing>) | Added |
+| [RCEvil.net (BSides Iowa)](<https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf>) | Not added |
+| [Re-Animating ActivitySurrogateSelector](<https://www.netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector/>) | Added |
+| [Re: What's Up Johnny? — Covert Content Attacks on Email End-to-End Encryption](<https://arxiv.org/abs/1904.07550>) | Not added |
+| Responsible denial of service with web cache poisoning | Not added |
+| [Responsible denial of service with web cache poisoning](<https://portswigger.net/research/responsible-denial-of-service-with-web-cache-poisoning>) [Related source](<https://nathandavison.com/blog/corsing-a-denial-of-service-via-cache-poisoning>) [Related source](<https://nathandavison.com/blog/cache-poisoning-dos-in-cloudfoundry-gorouter>) | Not added |
+| [Robust Website Fingerprinting Through the Cache Occupancy Channel](<https://arxiv.org/abs/1811.07153>) | Not added |
+| [Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities](<https://www.usenix.org/conference/usenixsecurity19/presentation/merget>) | Added |
+| [Shadow Workers](<https://github.com/shadow-workers/shadow-workers>) | Not added |
+| Small World with High Risks / Anything to Hide? | Not added |
+| [Solr local-parameters injection](<https://javahacker.com/abusing-the-solr-local-parameters-feature-localparams-injection/>) [Related source](<https://www.agarri.fr/blog/archives/2013/11/27/compromising_an_unreachable_solr_server_with_cve-2013-6397/index.html>) | Not added |
+| [Telerik Revisited](<https://code-white.com/blog/2019-02-telerik-revisited/>) | Added |
+| The 9 Lives of Bleichenbacher's CAT | Not added |
+| [The Betrayal at Cloud City](<https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi>) | Added |
+| [Turbo Intruder: Embracing the billion-request attack](<https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack>) | Added |
+| [Unauthenticated Remote Code Execution in Kentico CMS](<https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/unauthenticated-remote-code-execution-in-kentico-cms/>) | Not added |
+| Unveiling Your Keystrokes | Not added |
+| [What Are You Searching For? A Remote Keylogging Attack on Search Engine Autocomplete](<https://www.usenix.org/conference/usenixsecurity19/presentation/monaco>) | Added |

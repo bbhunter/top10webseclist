@@ -1,99 +1,94 @@
-"""Tests for the append-only judgement history."""
-
+"""Checks for score-free decision publication and changing merit criteria."""
 import importlib.util
 import json
 import tempfile
 import unittest
 from pathlib import Path
 
-
-MODULE_PATH = Path(__file__).with_name("history.py")
-SPEC = importlib.util.spec_from_file_location("judgement_history", MODULE_PATH)
-history = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(history)
-
-
-SAMPLE = """# Per-entry judgements
-
-## 67.5 — [A finding](https://example.test/finding/) [Paper](<https://example.test/paper(v1).pdf>) — A. Researcher
-
-**KEPT** · Meaningful extension · confidence Medium-High
-
-**What is new.** A useful contribution.
-
----
-
-## 42.0 — [Known work](https://example.test/known) — B. Researcher
-
-**REMOVED** · Duplicate / already known · confidence High
-
-**What was already known.** Everything.
-"""
+SCRIPT = Path(__file__).with_name('history.py')
+spec = importlib.util.spec_from_file_location('history', SCRIPT)
+history = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(history)
 
 
-class HistoryTests(unittest.TestCase):
+class DecisionHistoryTests(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory()
-        self.root = Path(self.temp.name)
-        self.source = self.root / "judgements.md"
-        self.output = self.root / "history.jsonl"
-        self.source.write_text(SAMPLE, encoding="utf-8")
+        self.directory = tempfile.TemporaryDirectory()
+        self.addCleanup(self.directory.cleanup)
+        self.path = Path(self.directory.name) / 'history.jsonl'
+        self.values = dict(year=2026, title='Candidate [with brackets]',
+            primary_url='https://example.org/research', related_urls=[],
+            decision='added', merit_revision='sha256:' + '1' * 64,
+            recorded_at='2026-09-11T12:00:00+00:00', event_type='judgement')
 
-    def tearDown(self):
-        self.temp.cleanup()
+    def test_unchanged_decision_is_idempotent(self):
+        self.assertTrue(history.append_decision(self.path, **self.values))
+        self.assertFalse(history.append_decision(self.path, **self.values))
+        self.assertEqual(len(history.read_history(self.path)), 1)
 
-    def import_once(self, event_type="baseline-import"):
-        args = type("Args", (), {
-            "year": 2026,
-            "file": str(self.source),
-            "history": str(self.output),
-            "recorded_at": "2026-08-08T12:00:00+00:00",
-            "event_type": event_type,
-        })()
-        return history.command_import(args)
+    def test_merit_change_keeps_history_without_changing_outcome(self):
+        history.append_decision(self.path, **self.values)
+        changed = dict(self.values, merit_revision='sha256:' + '2' * 64,
+                       event_type='rejudgement')
+        self.assertTrue(history.append_decision(self.path, **changed))
+        events = history.read_history(self.path)
+        self.assertEqual(events[1]['supersedes'], events[0]['event_id'])
+        self.assertEqual([event['decision'] for event in events], ['added', 'added'])
 
-    def events(self):
-        return [json.loads(line) for line in self.output.read_text(encoding="utf-8").splitlines()]
+    def test_reassessment_can_change_outcome(self):
+        history.append_decision(self.path, **self.values)
+        history.append_decision(self.path, **dict(self.values, decision='not-added',
+                                                  event_type='rejudgement'))
+        rendered = history.render_markdown(2026, history.read_history(self.path))
+        self.assertIn('| Not added |', rendered)
+        self.assertNotIn('| Added |', rendered)
+        self.assertIn(r'Candidate \[with brackets\]', rendered)
 
-    def test_parser_keeps_primary_and_related_links(self):
-        parsed = history.parse_markdown(self.source)
-        self.assertEqual(len(parsed), 2)
-        self.assertEqual(parsed[0]["primary_url"], "https://example.test/finding/")
-        self.assertEqual(parsed[0]["related_urls"], ["https://example.test/paper(v1).pdf"])
-        self.assertEqual(parsed[0]["confidence"], "Medium-High")
+    def test_score_or_assessment_fields_are_rejected_even_with_valid_hash(self):
+        for field in ('score', 'scores', 'verdict', 'confidence', 'note', 'snapshot_sha256'):
+            with self.subTest(field=field):
+                event = history.make_event(**self.values)
+                event[field] = 'private assessment'
+                event['event_id'] = history.event_id(event)
+                with self.assertRaises(history.HistoryError):
+                    history.validate_event(event)
 
-    def test_import_is_idempotent(self):
-        self.import_once()
-        self.import_once()
-        self.assertEqual(len(self.events()), 2)
-
-    def test_changed_judgement_appends_and_supersedes(self):
-        self.import_once()
-        self.source.write_text(SAMPLE.replace("67.5", "68.0", 1), encoding="utf-8")
-        self.import_once("rejudgement")
-        events = self.events()
-        self.assertEqual(len(events), 3)
-        self.assertEqual(events[-1]["score"], 68.0)
-        self.assertEqual(events[-1]["supersedes"], events[0]["event_id"])
-
-    def test_verify_accepts_a_valid_chain(self):
-        self.import_once()
-        args = type("Args", (), {"history": str(self.output)})()
-        self.assertEqual(history.command_verify(args), 0)
+    def test_modified_and_broken_chains_are_rejected(self):
+        history.append_decision(self.path, **self.values)
+        event = json.loads(self.path.read_text())
+        event['decision'] = 'not-added'
+        self.path.write_text(json.dumps(event) + '\n')
+        with self.assertRaises(history.HistoryError):
+            history.read_history(self.path)
+        event['supersedes'] = 'sha256:' + '3' * 64
+        event['event_id'] = history.event_id(event)
+        self.path.write_text(json.dumps(event) + '\n')
+        with self.assertRaises(history.HistoryError):
+            history.read_history(self.path)
 
     def test_invalid_json_is_rejected(self):
-        self.output.write_text("{broken\n", encoding="utf-8")
+        self.path.write_text('{broken\n')
         with self.assertRaises(history.HistoryError):
-            history.read_history(self.output)
+            history.read_history(self.path)
 
-    def test_changed_event_content_is_rejected(self):
-        self.import_once()
-        events = self.events()
-        events[0]["score"] = 99.0
-        self.output.write_text(json.dumps(events[0]) + "\n", encoding="utf-8")
-        with self.assertRaises(history.HistoryError):
-            history.read_history(self.output)
+    def test_related_source_urls_are_preserved(self):
+        values = dict(self.values, related_urls=['https://example.org/paper(v1).pdf'])
+        history.append_decision(self.path, **values)
+        events = history.read_history(self.path)
+        self.assertEqual(events[0]['related_urls'], values['related_urls'])
+        self.assertIn('(<https://example.org/paper(v1).pdf>)', history.render_markdown(2026, events))
+
+    def test_current_merit_fingerprint_tracks_rubric_edits(self):
+        root = Path(self.directory.name)
+        skill = root / '.claude/skills/webseclist-judge-reference'
+        for name in ('SKILL.md', 'references/scoring-rubric.md', 'scripts/score.py'):
+            path = skill / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(name)
+        before = history.merit_revision(root)
+        (skill / 'references/scoring-rubric.md').write_text('new criteria')
+        self.assertNotEqual(before, history.merit_revision(root))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

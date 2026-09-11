@@ -1,128 +1,38 @@
 [
   {
     "year": 2014,
-    "rank": 1,
     "title": "Heartbleed",
     "url": "https://web.archive.org/web/20160403035045/http://heartbleed.com/",
-    "cutoff": "2014-04-07",
-    "scores": {
-      "original": 40,
-      "transferability": 55,
-      "lasting": 55,
-      "technical": 85,
-      "practical": 80,
-      "clarity": 70
-    },
-    "total": 59.8,
-    "exact_total": 59.75,
-    "verdict": "Useful application or case study",
-    "archive_decision": "Include as a supporting reference",
-    "confidence": "Medium",
-    "evidence_gaps": "The precise day-one version of every Heartbleed-site paragraph was not recovered. Secret-extraction breadth and day-one reproduction completeness are therefore not inferred from the updated site."
+    "decision": "added"
   },
   {
     "year": 2014,
-    "rank": 2,
-    "title": "ShellShock",
-    "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
-    "cutoff": "2014-09-24",
-    "scores": {
-      "original": 78,
-      "transferability": 80,
-      "lasting": 82,
-      "technical": 88,
-      "practical": 85,
-      "clarity": 90
-    },
-    "total": 82.6,
-    "exact_total": 82.6,
-    "verdict": "Original technique",
-    "archive_decision": "Include as a core technique",
-    "confidence": "Medium",
-    "evidence_gaps": "Search does not exhaust all pre-2014 mailing lists or unpublished knowledge. Only the original Shellshock mechanism is scored, not subsequent bypasses."
-  },
-  {
-    "year": 2014,
-    "rank": 3,
     "title": "Poodle",
     "url": "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf",
-    "cutoff": "2014-10-14 public disclosure; manuscript labelled September 2014",
-    "scores": {
-      "original": 75,
-      "transferability": 78,
-      "lasting": 85,
-      "technical": 92,
-      "practical": 65,
-      "clarity": 86
-    },
-    "total": 80.2,
-    "exact_total": 80.25,
-    "verdict": "Meaningful combination or adaptation",
-    "archive_decision": "Include as a core technique",
-    "confidence": "Medium",
-    "evidence_gaps": "The older Möller TLS-CBC note could not be fetched directly; it remains a bibliography lead, not a independently verified equivalent. No exploit harness was run."
+    "decision": "added"
+  },
+  {
+    "year": 2014,
+    "title": "ShellShock",
+    "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+    "decision": "added"
   },
   {
     "year": 2015,
-    "rank": 1,
     "title": "FREAK (Factoring Attack on RSA-Export Keys)",
     "url": "https://www.freakattack.com/",
-    "cutoff": "2015-01-08 client acceptance defect; 2015-03-03 complete public FREAK combination",
-    "scores": {
-      "original": 72,
-      "transferability": 80,
-      "lasting": 82,
-      "technical": 86,
-      "practical": 65,
-      "clarity": 78
-    },
-    "total": 77.6,
-    "exact_total": 77.6,
-    "verdict": "Meaningful combination or adaptation",
-    "archive_decision": "Include as a core technique",
-    "confidence": "Medium",
-    "evidence_gaps": "The original smacktls project site was unavailable. The precise first public day of every auxiliary artifact is unresolved; no later tooling is assumed available in March."
+    "decision": "added"
   },
   {
     "year": 2015,
-    "rank": 2,
     "title": "LogJam",
     "url": "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html",
-    "cutoff": "2015-05-19–20; original author announcement and coordinated 20 May publication",
-    "scores": {
-      "original": 85,
-      "transferability": 90,
-      "lasting": 92,
-      "technical": 90,
-      "practical": 65,
-      "clarity": 85
-    },
-    "total": 86.2,
-    "exact_total": 86.15,
-    "verdict": "Meaningful combination or adaptation",
-    "archive_decision": "Include as a core technique",
-    "confidence": "Medium",
-    "evidence_gaps": "An exact May snapshot of the complete PDF was not recovered; later-only experiments are excluded. The one-day announcement interval is unresolved, so sources within it are treated as coordinated/contemporaneous rather than prior art."
+    "decision": "added"
   },
   {
     "year": 2015,
-    "rank": 3,
     "title": "Web Timing Attacks Made Practical",
     "url": "https://www.youtube.com/watch?v=KirTCSAvt9M",
-    "cutoff": "2015-08-03–06; whitepaper dated 3 August, Black Hat USA publication week",
-    "scores": {
-      "original": 72,
-      "transferability": 85,
-      "lasting": 85,
-      "technical": 88,
-      "practical": 78,
-      "clarity": 90
-    },
-    "total": 82.0,
-    "exact_total": 82.0,
-    "verdict": "Tooling or methodology contribution",
-    "archive_decision": "Include as a core technique",
-    "confidence": "Medium",
-    "evidence_gaps": "No Nanown experiment was rerun. Exact upload day and full original release packaging were not independently established; the dated whitepaper provides the scored technical evidence."
+    "decision": "added"
   }
 ]

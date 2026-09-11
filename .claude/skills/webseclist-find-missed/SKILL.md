@@ -1,6 +1,6 @@
 ---
 name: webseclist-find-missed
-description: Finds web hacking techniques published in a past year (2006..2025) but never nominated in that year's Top 10 Web Hacking Techniques round, records every credible lead and judgement under ai-evaluation/YEAR, and adds only review-gated finds scoring 55 or above with a non-duplicate verdict under "Missed from the original list." Use when asked to find, recover, backfill, catch up on, or audit missed research for one year, a range, or all historical years. Use webseclist-collect-year for the current year, webseclist-judge-reference to score one reference without editing a list, and the archive skills to preserve sources or announcement pages.
+description: Finds web hacking techniques published in a past year (2006..2025) but never nominated in that year's Top 10 Web Hacking Techniques round, records every credible lead and judgement under ai-evaluation/YEAR, and adds only finds that pass the judging skill’s current repository collection merit under "Missed from the original list." Use when asked to find, recover, backfill, catch up on, or audit missed research for one year, a range, or all historical years. Use webseclist-collect-year for the current year, webseclist-judge-reference to score one reference without editing a list, and the archive skills to preserve sources or announcement pages.
 ---
 
 # Find techniques the original nomination round missed
@@ -9,9 +9,10 @@ You are auditing one or more **past** years of the Top 10 Web Hacking Techniques
 list for research that was published that year, qualifies as a web hacking
 technique, was **never nominated**, and is strong enough to belong in the record.
 The bar is deliberately evidence-based: a find is added to a curated year list only when a
-**full `webseclist-judge-reference` evaluation scores it at least 55** with a
-qualifying non-duplicate verdict, including supporting research. Everything weaker is
-recorded under `ai-evaluation/<YEAR>/`, not added and never silently discarded.
+**full private `webseclist-judge-reference` evaluation passes its current
+Repository collection merit**, including the evidence and non-duplication checks.
+Publish only Added / Not added outcomes under `ai-evaluation/<YEAR>/`; keep
+scorecards and reasons in gitignored `.local/ai-evaluation/<YEAR>/`.
 
 This is the one workflow whose whole purpose is to make a **review-gated edit to a
 curated year list** (`2006.md` .. `2025.md`). Treat that responsibility seriously:
@@ -118,12 +119,10 @@ cat candidates.txt | python .claude/skills/webseclist-collect-year/scripts/known
   trusting a feed or search snippet. Presented-this-year but disclosed-last-year
   belongs to last year.
 - **Not already recorded** — survived the exclusion filter in step 3.
-- **Plausibly 55 or above** — use the judge's rubric as a pre-screen. This is
-  also the finalized-list addition gate; fully judging the 55–70 band preserves
-  useful supporting research and makes close historical calls
-  reviewable. Impact is not novelty; a scary CVE on a big target usually is not
-  a missed *technique*. Record credible leads screened below 55 in the yearly
-  evaluation index with the original URL and screening reason.
+- **Plausibly meets the judging skill’s current merit** — use its Repository
+  collection merit as the pre-screen, without duplicating its numerical cutoff.
+  Record every credible lead even when it is not advanced to full evaluation;
+  publish only its identity, links and Added / Not added outcome.
 
 ### 5. Judge each survivor in full
 
@@ -138,44 +137,30 @@ python .claude/skills/webseclist-judge-reference/scripts/score.py \
   --technical N --practical N --clarity N
 ```
 
-Keep the full scorecard and verdict for each — you will cite the number, and the
-rejected ones are recorded so a re-run does not re-chase them.
+Keep full scorecards, verdicts, evidence and follow-up notes privately under
+`.local/ai-evaluation/<YEAR>/`. Do not publish them in any file format.
 
-Persist the sweep under `ai-evaluation/<YEAR>/`: `README.md` indexes every
-credible lead (including candidates never advanced to a full scorecard), while
-`judgements.md` contains every completed kept or rejected scorecard. Then append
-the current state to the immutable history:
+Publish the lead index in `ai-evaluation/<YEAR>/README.md` with only candidate
+identity, links and Added / Not added. For completed reviews, follow the judging
+skill's decision-history workflow (`history.py record`, `render`, `verify`).
+The public history stores outcomes and the applicable merit revision, never scores.
+A lead still awaiting review is not a completed rejection.
 
-```bash
-python .claude/skills/webseclist-judge-reference/scripts/history.py \
-  import-markdown --year <YEAR> --file ai-evaluation/<YEAR>/judgements.md \
-  --event-type judgement
-python .claude/skills/webseclist-judge-reference/scripts/history.py verify
-```
-
-For an explicit repeat audit, use `--event-type rejudgement`. Never rewrite or
-sort `history.jsonl`; unchanged scorecards add nothing, and changed ones append
-with a `supersedes` link.
-
-After a range or all-years run, audit score arithmetic, latest history state,
-the 55-point gate, and the projection into every curated missed section:
+After a range or all-years run, audit public decision schemas, history chains,
+and their projection into the curated missed sections:
 
 ```bash
 python .claude/skills/webseclist-find-missed/scripts/audit.py
 ```
 
-The audit is read-only. Fix any reported mismatch in the readable scorecard and
-curated entry, then re-import the corrected card as `rejudgement` so history
-records the change instead of hiding it.
+The public audit does not recompute merit from unpublished scores. Verify score
+arithmetic and evidence privately before each addition. When the criteria change,
+reassess privately and append a decision with the applicable merit revision.
 
-**Addition gate:** add to the year file only if **final score >= 55** *and* the
-verdict is a novelty verdict (Original technique, Meaningful extension, Meaningful
-combination/adaptation, or Tooling/methodology). A score below 55,
-or a Duplicate / Independent-rediscovery / Insufficient-evidence verdict, does
-**not** qualify — record it as a rejected lead instead. The historical
-missed-technique workflow deliberately uses a broader gate than the judge
-skill's general ≥70 default while still requiring a full scorecard and a
-non-duplicate verdict for every list addition.
+**Addition gate:** apply the judging skill's current **Repository collection
+merit** in full. Do not add a candidate that fails it or lower the bar to obtain
+more additions. The skill owns the mutable rule; this workflow owns first-year
+and original-nomination checks and the resulting list edit.
 
 ### 6. Add the passers to the end of the year file
 
@@ -187,12 +172,9 @@ end of the file, after `## Other nominations`:
 ## Missed from the original list
 
 > These techniques were **not** part of this year's original nomination round.
-> Each was found in a later audit, evaluated in full with the
-> `webseclist-judge-reference` skill, and scored **55 or above** (qualifying
-> material) with a non-duplicate verdict before being added here. The judge score
-> and verdict are noted per entry. Added <YYYY-MM-DD>.
+> They were found and reviewed in a later audit. Added <YYYY-MM-DD>.
 
--   [Title](url) [Slides](url) — **judge NN/100**, <verdict> — Author, org
+-   [Title](url) [Slides](url) — Author, org
 ```
 
 Rules for the entries, matching the house style of the year files:
@@ -207,19 +189,22 @@ Rules for the entries, matching the house style of the year files:
   the original-language title in parentheses if useful), so the list stays
   readable. The English gloss in the list is not a substitute for the archive's
   full translation — see the Downstream note below.
-- State the judge score and the one-line verdict for each entry — this is what
-  distinguishes a review-gated addition from an ordinary nomination.
+- Keep scores, score cutoffs and verdict labels out of the year file, including
+  its introduction. Public marks can put pressure on researchers and judges.
+  Keep detailed evaluations in gitignored `.local/ai-evaluation/`; publish only
+  Added / Not added in `ai-evaluation/`. The section heading distinguishes later
+  additions from original nominations.
 - If the section already exists from a previous run, **merge** into it (add new
   bullets, keep the date line as the earliest run and note the new date if you
   like) rather than creating a second section.
-- If a year yields nothing at or above 55, **add nothing** and say so in the report.
+- If no candidate passes the current merit criteria, **add nothing** and say so in the report.
   An empty result is the correct and common outcome for a well-curated year.
 
 ### 7. Report
 
 For each year, report: how many candidates were swept, how many were judged in
-full, each judged candidate's score and verdict, what was added, and what was
-rejected and why. Be honest about coverage gaps — an unswept beat is a lead for
+full, and which candidates were Added or Not added. Keep scores and reasons
+private; publish only outcomes. Be honest about coverage gaps — an unswept beat is a lead for
 next time, not a silent omission. Do not inflate the yield; most years will
 add zero or one.
 
@@ -256,5 +241,5 @@ to a curated list. It does **not** collect the current year into `YEAR-ai.md`
 (that is `webseclist-collect-year`), does not re-rank or re-vote a year, does not
 touch 2026, does not fetch or convert sources into `archived-references/` (that is
 `webseclist-archive-references`), and does not snapshot announcement pages (that
-is `webseclist-archive-listings`). A below-55 result is a recommendation to leave
+is `webseclist-archive-listings`). A result that fails the current merit criteria means leaving
 the list unchanged, not a licence to lower the bar.

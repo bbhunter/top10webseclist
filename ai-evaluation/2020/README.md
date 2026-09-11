@@ -1,131 +1,57 @@
-# 2020 missed-technique audit
+# 2020 candidate outcomes
 
-This folder records the bounded 2026-08-09 audit for web-security research first
-published in 2020 but absent from the original 2020 nomination round. The
-exclusion set contained 63 distinct URLs from [`2020.md`](../../2020.md). Exact
-URL filtering was followed by semantic comparison against that file and
-backward mechanism checks through the 2006–2019 lists and local reference text.
+This index publishes only whether a candidate is included in the year list.
+“Added” includes entries already present; “Not added” can include leads awaiting review.
+It is not a permanent merit judgement. New additions require a full private evaluation
+under the judging skill’s current selection criteria, which may change.
 
-The historical-list gate is **60 or above plus a qualifying non-duplicate
-verdict**. A score alone cannot rescue prior disclosure, an existing nomination
-under another URL, or work outside offensive web scope. The five entries found
-by the earlier audit were retained and reassessed alongside the fresh leads.
+See [completed inclusion decisions](judgements.md) and [decision history](history.jsonl).
 
-## Coverage
-
-- Primary programs and papers from NDSS, IEEE S&P, ACM CCS and USENIX Security.
-- PortSwigger Research, Black Hat materials, Project Zero and researcher-hosted
-  2020 publications already represented in the year list.
-- Browser messaging, framing policy, extension fingerprinting, link previews,
-  cookies, upload handling, cache behavior, timing, origins and CDN forwarding.
-- Backward searches for `postMessage`, file uploads, clickjacking, extension and
-  website fingerprinting, cookie hijacking, cache deception, DOM clobbering,
-  prototype pollution, sender authentication and origin rehosting.
-- Strict first-publication checks: a 2020 venue appearance did not override an
-  earlier public preprint or an earlier-year nomination.
-
-No archive capture was opened, validated or changed during this audit.
-
-## Results
-
-- 23 credible leads were retained.
-- 12 candidates received full scorecards: five already-present missed entries
-  were reassessed and seven fresh qualifying techniques were added.
-- 11 other leads were resolved during screening as wrong-year, already covered,
-  measurement/defensive work, scope-adjacent research or a same-mechanism
-  companion.
-- No full scorecard fell below 60; the screened table preserves the rejected
-  leads so a later run need not rediscover them.
-
-| Score | Decision | Verdict | Candidate |
-|---:|---|---|---|
-| 86.7 | retained; reassessed | Original technique | [Timeless Timing Attacks](https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem) |
-| 84.7 | retained; reassessed | Original technique | [Composition Kills](https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun) |
-| 82.2 | retained; reassessed | Original technique | [Prototype Pollution and client-side sanitizer bypasses](https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html) |
-| 81.5 | added | Tooling or methodology contribution | [PMForce](https://publications.cispa.saarland/3164/) |
-| 80.2 | added | Meaningful extension | [Carnus](https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/) |
-| 78.9 | added | Original technique | [CDN Judo](https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/) |
-| 78.8 | added | Tooling or methodology contribution | [FUSE](https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/) |
-| 77.2 | added | Tooling or methodology contribution | [The Cookie Hunter](https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf) |
-| 75.0 | added | Tooling or methodology contribution | [A Tale of Two Headers](https://www.usenix.org/conference/usenixsecurity20/presentation/calzavara) |
-| 73.5 | retained; reassessed | Original technique | [Melting Pot of Origins](https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/) |
-| 72.0 | retained; reassessed | Meaningful extension | [DOM Clobbering strikes back](https://portswigger.net/research/dom-clobbering-strikes-back) |
-| 71.7 | added | Meaningful extension | [Deceptive Previews](https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/) |
-
-## Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [Cached and Confused](https://www.usenix.org/conference/usenixsecurity20/presentation/mirheidari) | already recorded / wrong target year | The work was already nominated as 2019's #1 through its author-hosted paper; the 2020 venue page does not make it a missed 2020 technique. |
-| [JIT Leaks](https://sites.cs.ucsb.edu/~rosner/papers/JITleaks-TechReport2018.pdf) | wrong year | The primary technical report is explicitly dated 2018, before the IEEE S&P 2020 appearance. |
-| [Cross-Origin State Inference Attacks](https://arxiv.org/abs/1908.02204) | wrong year | The primary preprint was public on 6 August 2019. |
-| [On Using Application-Layer Middlebox Protocols for Peeking Behind NAT Gateways](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/) | same mechanism / existing nominee | NAT-ALG traversal is represented by NAT Slipstreaming in the original 2020 Top 10; this paper is a parallel systematic treatment, not a separate missed class. |
-| [Meddling Middlemen](https://seclab.bu.edu/papers/proxy_browsers-oakland20.pdf) | measurement of known mechanisms | Measures TLS, proxy and header failures in data-saving browsers; it does not introduce a distinct offensive primitive. |
-| [High Precision Open-World Website Fingerprinting](https://www.cs.sfu.ca/~taowang/wf/Wa-open.pdf) | scope-adjacent extension | Precision optimization materially improves an established network-traffic fingerprinting line, but is not sufficiently web-mechanism-specific for this list. |
-| Complex Security Policy? A Longitudinal Analysis of Deployed CSP | measurement | Longitudinal CSP deployment analysis informs defenses without adding a reusable attack method. |
-| Shim Shimmeny: Evaluating the Security and Privacy Contributions of Link Shimming in the Modern Web | measurement / defensive | Studies tracking and protection behavior around link shims rather than introducing a hacking technique. |
-| You’ve Changed: Detecting Malicious Browser Extensions through Update Deltas | defensive | Detects malicious extension updates; no separate offensive contribution. |
-| Zero-delay defenses for timing attacks during web authentication | defensive | Mitigates timing attacks; Timeless Timing Attacks captures the distinct offensive contribution. |
-| NoJITsu / Slimium / browser-renderer isolation work | defensive | These systems reduce browser attack surfaces without defining an offensive web mechanism. |
-
-## Gate note
-
-All seven fresh additions are above 70, but this audit applies the repository's
-current **60-or-above** historical gate. The wording in `2020.md` was corrected
-accordingly. This pass did not run the reference archiver or refresh either web
-application.
-
-## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
-
-A later, separate pass from the audit above. Rather than sweeping the year, it
-swept one external corpus: the 26,422-line acquisition log
-(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
-deserialization reference archive. That log resolves to 519 distinct documents;
-16 were already recorded in this repository, and the remaining 503 were filtered
-to 274 research-grade articles, whitepapers, slide decks and talks, then
-title-matched against the year lists and the reference manifest to remove eight
-mirrors of entries already present. The residue was pre-screened against the
-judge rubric; product advisories, vendor knowledge-base articles, news coverage,
-threat-intelligence reports, framework documentation, CTF and HTB writeups, and
-duplicate recordings of already-listed talks were resolved during screening
-rather than scored.
-
-**Nothing was added.** Two candidates were scored. Scorecards in
-[judgements.md](judgements.md).
-
-| Score | Verdict | List decision | Candidate |
-|---:|---|---|---|
-| 56.7 | Useful application or case study | below gate | [SharePoint and Pwn: RCE Against SharePoint Server Abusing DataSet](https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html) |
-| 51.8 | Useful application or case study | below gate | [CVE-2020-0688: Losing the keys to your kingdom](https://securitylab.github.com/research/exchange-rce-CVE-2020-0688/) |
-
-Both are secondary analyses. The DataSet primitive belongs to Mirosh, Wulftange
-and Birch, whose own "Room for Escape" is already a 2020 nomination; the
-CVE-2020-0688 post postdates and defers to the ZDI analysis it discusses.
-
-### Screened leads
-
-| Candidate | Outcome | Screening evidence |
-|---|---|---|
-| [Analysis of CVE-2020-0605: Code Execution using XPS Files in .NET](https://www.mdsec.co.uk/2020/05/analysis-of-cve-2020-0605-code-execution-using-xps-files-in-net/) | scope mismatch | XPS document handling in desktop .NET, with no web delivery path. |
-| [Umbraco LFI Exploitation since 2015](https://medium.com/@qazbnm456/umbraco-lfi-exploitation-d32803661fa3) | product advisory | One CMS file-inclusion chain; no primitive beyond known LFI-to-machine-key exposure. |
-| [How to exploit the DotNetNuke Cookie Deserialization](https://pentest-tools.com/blog/exploit-dotnetnuke-cookie-deserialization) | product advisory | Exploitation guide for a 2017 CVE, restating a known sink. |
-| [Introducing YSoSerial.Net April 2020 Improvements](https://www.mdsec.co.uk/2020/04/introducing-ysoserial-net-april-2020-improvements/) | tooling release note | A changelog for the payload generator; the techniques it packages are nominated elsewhere. |
-
-
-## Additional sweep — 2026-09-10
-
-[Detailed dated evidence](2026-09-10-sweep.md) records 17 lead groups: three survivors for final judgement, four prescreen-held and ten screened. Survivors are the original SecWeb 2020 Cache API study (draft 66.6), ACSAC SW-XSS/scanner (68.3), and the January ITP report’s detailed extensions beyond December 2019 disclosure (71.0). Draft scores include fresh earlier-source comparisons and material qualifications; no final scorecards or list additions are claimed. The outbound inventory contains 2,458 occurrences / 1,871 raw URLs across 71 documents; selected research citations were traced.
-
-## Final all-years adjudication — 2026-09-10
-
-This concludes the discovery handoff above. 3 new full judgements completed; 3 qualifying techniques added. The current addition gate is **55 plus a qualifying novelty verdict**. The [dated lead ledger](2026-09-10-sweep.md) retains the screened and held sources; the [all-years report](../2026-09-10-all-years.md) records coverage and archive outcomes.
-
-| Research | Final score | Final verdict / disposition |
-|---|---:|---|
-| [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](https://secweb.work/papers/some2020remote.pdf) | 66.6 | Tooling or methodology contribution; added — [full card](judgements.md) |
-| [Security Study of Service Worker Cross-Site Scripting](https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf) | 68.3 | Tooling or methodology contribution; added — [full card](judgements.md) |
-| [Information Leaks via Safari’s Intelligent Tracking Prevention](https://arxiv.org/pdf/2001.07421v1) | 71.0 | Meaningful extension; added — [full card](judgements.md) |
-
-SW-XSS is retained for its scanner/injection method, with the already-fixed import-cache persistence excluded. The January ITP report is scored for its incremental detail beyond December 2019 disclosure.
-
-These final cards and additions supersede provisional scores and advance/hold states for the named survivors only. Other credible leads remain prescreens, with no invented numerical scores or completed rejection verdicts.
+| Candidate | Outcome |
+|---|---|
+| [A Tale of Two Headers: A Formal Analysis of Inconsistent Click-Jacking Protection on the Web](<https://www.usenix.org/conference/usenixsecurity20/presentation/calzavara>) | Added |
+| [Abusing the Service Workers API](<https://www.akamai.com/blog/security/abusing-the-service-workers-api>) | Not added |
+| [Analysis of CVE-2020-0605: Code Execution using XPS Files in .NET](<https://www.mdsec.co.uk/2020/05/analysis-of-cve-2020-0605-code-execution-using-xps-files-in-net/>) | Not added |
+| [Awakening the Web’s Sleeper Agents](<https://www.cs.uic.edu/~polakis/papers/karami-ndss21.pdf>) | Not added |
+| [Cached and Confused](<https://www.usenix.org/conference/usenixsecurity20/presentation/mirheidari>) | Not added |
+| [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](<https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/>) | Added |
+| [CDN Judo: Breaking the CDN DoS Protection with Itself](<https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/>) | Added |
+| [Challenge Write-up: Subresource Integrity in Service Workers](<https://frederikbraun.de/sw-sri-challenge.html>) | Not added |
+| [CNCERT 2020 security situation summary](<https://www.cac.gov.cn/2021-05/26/c_1623610314656045.htm>) [Related source](<https://www.h3c.com/cn/d_202104/1423200_30003_0.htm>) | Not added |
+| Complex Security Policy? A Longitudinal Analysis of Deployed CSP | Not added |
+| [Composition Kills: 18 Attacks on Email Sender Authentication](<https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun>) [Related source](<https://github.com/chenjj/espoofer>) | Added |
+| [Copy/Pest](<https://insomnihackdotme.files.wordpress.com/2015/03/copypest.pdf>) | Not added |
+| [Cross-Origin State Inference Attacks](<https://arxiv.org/abs/1908.02204>) | Not added |
+| [CVE-2020-0688: Losing the keys to your kingdom](<https://securitylab.github.com/research/exchange-rce-CVE-2020-0688/>) | Not added |
+| [Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms](<https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/>) | Added |
+| [DOM Clobbering strikes back](<https://portswigger.net/research/dom-clobbering-strikes-back>) | Added |
+| [FUSE: Finding File Upload Bugs via Penetration Testing](<https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/>) | Added |
+| GraphQL batching material returned as OWASP Web Security Testing Guide v4.2 | Not added |
+| [High Precision Open-World Website Fingerprinting](<https://www.cs.sfu.ca/~taowang/wf/Wa-open.pdf>) | Not added |
+| [How to exploit the DotNetNuke Cookie Deserialization](<https://pentest-tools.com/blog/exploit-dotnetnuke-cookie-deserialization>) | Not added |
+| [HTML sanitization bypass in Ruby Sanitize <5.2.1](<https://research.securitum.com/html-sanitization-bypass-in-ruby-sanitize-5-2-1/>) | Not added |
+| [Information Leaks via Safari’s Intelligent Tracking Prevention](<https://arxiv.org/abs/2001.07421>) | Not added |
+| [Information Leaks via Safari’s Intelligent Tracking Prevention](<https://arxiv.org/pdf/2001.07421v1>) | Added |
+| [Internet-scale analysis of AWS Cognito security](<https://andresriancho.com/wp-content/uploads/2019/06/whitepaper-internet-scale-analysis-of-aws-cognito-security.pdf>) | Not added |
+| [Introducing YSoSerial.Net April 2020 Improvements](<https://www.mdsec.co.uk/2020/04/introducing-ysoserial-net-april-2020-improvements/>) | Not added |
+| [JIT Leaks](<https://sites.cs.ucsb.edu/~rosner/papers/JITleaks-TechReport2018.pdf>) | Not added |
+| [Meddling Middlemen](<https://seclab.bu.edu/papers/proxy_browsers-oakland20.pdf>) | Not added |
+| [Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites](<https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/>) | Added |
+| NoJITsu / Slimium / browser-renderer isolation work | Not added |
+| [On Using Application-Layer Middlebox Protocols for Peeking Behind NAT Gateways](<https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/>) | Not added |
+| [PMForce: Systematically Analyzing PostMessage Handlers at Scale](<https://publications.cispa.saarland/3164/>) | Added |
+| [Prototype Pollution and bypassing client-side HTML sanitizers](<https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html>) | Added |
+| [Security Study of Service Worker Cross-Site Scripting](<https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf>) | Added |
+| [Service Workers: New APIs = New Vulns = Fun++](<https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html>) | Not added |
+| [SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet](<https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html>) | Not added |
+| Shim Shimmeny: Evaluating the Security and Privacy Contributions of Link Shimming in the Modern Web | Not added |
+| SVG animate → PortSwigger SVG animate vector; MobileIron → Chinese DEVCORE post/HITCON slides and Check Point MDM companion; cache poisoning → Black Hat/whitepaper/advisory links | Not added |
+| [The Case of the Missing Cache Keys](<https://enumerated.wordpress.com/2020/08/05/the-case-of-the-missing-cache-keys/>) | Not added |
+| [The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws](<https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf>) [Related source](<https://gitlab.com/kostasdrk/xdriver3-open>) | Added |
+| [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](<https://secweb.work/papers/some2020remote.pdf>) | Added |
+| [Timeless Timing Attacks: Exploiting Concurrency to Leak Secrets over Remote Connections](<https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem>) | Added |
+| [Umbraco LFI Exploitation since 2015](<https://medium.com/@qazbnm456/umbraco-lfi-exploitation-d32803661fa3>) | Not added |
+| [Unix-style approach to web application testing / Piper](<https://blog.silentsignal.eu/2020/03/27/unix-style-approach-to-web-application-testing/>) | Not added |
+| [Vulnerability trends in web servers and browsers](<https://www.nist.gov/publications/vulnerability-trends-web-servers-and-browsers>) | Not added |
+| You’ve Changed: Detecting Malicious Browser Extensions through Update Deltas | Not added |
+| Zero-delay defenses for timing attacks during web authentication | Not added |

@@ -15,7 +15,8 @@ evidence-based and consistent, so that two different candidates get compared on
 the same axis rather than on whichever one had the scarier impact or the more
 famous author.
 
-The output is a structured report. The hard part is not the template — it is
+The working output is a private structured report; the public repository records
+only Added / Not added. The hard part is not the template — it is
 doing the prior-art search honestly and separating the *underlying idea* from the
 *target it happened to hit*.
 
@@ -277,9 +278,10 @@ the score stops meaning anything.
 - Attribute **first publication, independent discovery, extension, popularisation,
   and tooling separately** when more than one party is involved.
 
-## Required output
+## Required private output
 
-Produce exactly this structure. Keep it concise and free of promotional language.
+Produce this scorecard privately. Never publish it in tracked evaluation records;
+use the decision-only workflow below for those. Keep it concise and free of promotional language.
 Cite sources (with links and dates) for every material prior-art or historical
 claim, and keep verified facts, author claims, and your own inference distinguishable.
 
@@ -376,24 +378,68 @@ score and the evidence pull against each other, say so in the reasoning rather t
 letting the number decide alone. When evidence is thin, lower confidence rather than
 forcing a decisive verdict.
 
-## Persist repository judgement history
+## Repository collection merit
 
-When this evaluation belongs to a repository year sweep, keep the readable
-scorecard in `ai-evaluation/<YEAR>/judgements.md` whether the candidate is kept
-or removed. Record the initial or changed state in the append-only history:
+For additions to historical missed-work sections and provisional `YEAR-ai.md`
+collections, the current minimum is **55/100**, with an Original technique,
+Meaningful extension, Meaningful combination or adaptation, or Tooling or
+methodology contribution verdict. Also verify scope, first-publication year,
+source evidence and non-duplication; historical additions must never have been
+nominated in that year. This collection rule is distinct from the general
+core/supporting archive recommendation above.
+
+This section is the single source of the collection merit rule. It may change
+with maintainer instructions. Collecting and missed-work skills must read it
+instead of keeping their own numeric cutoffs. A changed rule requires a private
+reassessment before recording a new decision; do not recalculate past outcomes
+from a public record, which deliberately contains no scores.
+
+## Keep scoring private and publish decisions
+
+Continue the complete six-category scoring, prior-art search and skeptical
+reverification described above. The scorecard/report template is **private working
+material**, saved only under `.local/ai-evaluation/<YEAR>/` (gitignored), or kept
+in the private task conversation. This includes calibration runs and numerical
+exports. Never commit scores, per-candidate verdicts, confidence ratings, or
+ranking by AI score; never copy them into public issues, PRs or website data.
+Do not force-add private files.
+
+When resuming a review, also read any historical notes in
+`.local/ai-evaluation/original-published-records/<YEAR>/`. This local migration
+snapshot preserves earlier evidence and scores; its old publishing commands are
+historical text, not current instructions. Follow the decision-only workflow below.
+
+`ai-evaluation/<YEAR>/` contains only public candidate identity, links and
+**Added / Not added** outcomes. Its `README.md` indexes every credible lead;
+`judgements.md` shows completed decisions; `history.jsonl` preserves decision
+changes with dates and a fingerprint of the applicable judging skill/rubric.
+“Not added” in the lead index may mean awaiting review, so do not manufacture a
+completed rejection for an unjudged lead. Keep reasons and follow-up evidence
+in the private notes. Archive capture reviews are not research-merit assessments.
+
+After privately completing a review and reconciling the actual list addition,
+record only its outcome (use `not-added` for a candidate that was not added):
 
 ```bash
-python .claude/skills/webseclist-judge-reference/scripts/history.py \
-  import-markdown --year <YEAR> --file ai-evaluation/<YEAR>/judgements.md \
-  --event-type judgement
+python .claude/skills/webseclist-judge-reference/scripts/history.py record \
+  --year <YEAR> --title '<Title>' --url '<primary URL>' --decision added
+python .claude/skills/webseclist-judge-reference/scripts/history.py render --year <YEAR>
 python .claude/skills/webseclist-judge-reference/scripts/history.py verify
 ```
 
-Use `--event-type rejudgement` for a deliberate reassessment. The importer is
-idempotent: it skips an unchanged scorecard and appends a changed scorecard with
-`supersedes` pointing to that candidate's prior event. Never edit, reorder or
-compact `history.jsonl` by hand. Standalone judgements outside a repository year
-sweep are not written into this repository unless the user asks to retain them.
+Add `--related-url '<URL>'` for companion artifacts. The recorder fingerprints
+this skill, its rubric and its scoring helper by default. Use `--merit-revision`
+with the fingerprint captured at evaluation time if those files changed before
+recording. Use `--event-type rejudgement` for a deliberate reassessment. An
+unchanged decision under the same merit revision is a no-op; a changed revision
+or outcome appends an event with `supersedes`. The public schema rejects extra
+fields, including scores. Do not import full scorecards into public history.
+
+The 2026-09-11 migration removed scores from current tracked files and retained
+decision changes. Older events use `legacy-unspecified` because their exact
+merit revision was not recorded; do not assign today's rule retrospectively.
+Git revisions predating that migration can still contain scores. New public
+history is append-only and must never restore that material.
 
 ## What this skill does not do
 

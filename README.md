@@ -55,8 +55,8 @@ the whole thing in one durable, greppable place:
 > of work that should have been on a year's list, open an issue or PR — anything that
 > qualifies as a web hacking technique nominee for that year will be reviewed and,
 > if it fits, added to its relevant year. Later audit additions are visibly separated
-> from the original nominations, require a score of **55 or above** plus a verified
-> non-duplicate verdict, and retain both accepted and rejected evidence under
+> from the original nominations, require a full private evaluation under the
+> judging skill’s current merit criteria, and record Added / Not added under
 > [`ai-evaluation/`](ai-evaluation/).
 
 > [!TIP]
@@ -70,7 +70,7 @@ the whole thing in one durable, greppable place:
 webhacklist/
 ├── 2006.md … 2025.md         ← the lists — every nominated technique, one file per year
 ├── <year>-ai.md              ← AI-collected candidates for a year with no vote yet — machine-assembled, unreviewed, kept deliberately separate from the curated lists above
-├── ai-evaluation/<year>/     ← all AI-reviewed leads, readable scorecards, and append-only judgement history
+├── ai-evaluation/<year>/     ← candidate links, Added / Not added, and decision history
 ├── original-listings/        ← PDF snapshots of the original announcement posts
 │   ├── <year>-nominees.pdf   ←   the full nominee list for that year
 │   ├── <year>-top10.pdf      ←   the post naming the winning ten
@@ -239,50 +239,18 @@ falls back to them transparently when a document is too large to serve from the 
 host. See [website/README.md](website/README.md) for DNS, cache, full-screen and mobile
 deployment details.
 
-## ⚖️ Face the Judge
+## ⚖️ Research evaluation
 
-**So you think your research is Top 10 material? Prove it.**
+The [judging skill](.claude/skills/webseclist-judge-reference/SKILL.md) evaluates
+research using six weighted categories, checks primary evidence and prior art,
+and reverifies its conclusion. Scoring continues privately. The skill's current
+Repository collection merit governs additions and may change over time.
 
-Twenty years of this list have made one thing clear: the work that lasts is rarely the
-work with the scariest headline. So this repo ships a **research evaluator** — a Claude
-Code skill, [**Judgy McJudgerson**](.claude/skills/webseclist-judge-reference/SKILL.md)
-(`webseclist-judge-reference`),
-that reads a writeup, hunts for prior art across **both** the 1,500+ references archived
-here **and** the wider web, and hands down a verdict: *original technique*, *meaningful
-extension*, *clever combination*, *nice case study* … or the dreaded **"already known."**
-
-It is a fair judge, and a merciless one. It does **not** care about your CVE number, your
-bounty, your severity rating, your employer, or your follower count — none of those
-measure whether you actually taught the field something new. A find that hands you
-domain-admin on a bank can score *low* if the trick is textbook; an obscure parser quirk
-that births a whole new primitive can score *high*. **Impact ≠ novelty.** That's the
-entire point.
-
-Every candidate is scored 0–100 across six weighted axes:
-
-| Axis | Weight | It's really asking… |
-|---|---:|---|
-| 🧠 Original contribution | 25% | Did this teach the field something genuinely new? |
-| 🌍 Transferability | 20% | Does the idea travel beyond the one target you hit? |
-| ⏳ Lasting value | 20% | Will people still build on this in a few years? |
-| 🔬 Technical soundness | 15% | Does the evidence actually back the claims? |
-| 🛠️ Practical usability | 10% | Can others pick it up and use it? |
-| 📆 Clarity & reproducibility | 10% | Is there enough here to follow and verify? |
-
-Bands run **0–19** barely-there · **20–39** limited · **40–59** moderate · **60–79**
-strong · **80–100** exceptional — and **50 is an honest middle, not a fail**. The weighted
-total then maps to a verdict: **≥ 70** with a novelty verdict is *core-technique* material,
-**≥ 50** earns *keep it as a supporting reference*, and below that it's *already covered*.
-
-> [!TIP]
-> **Brave enough?** In Claude Code, point it at your latest post:
-> ```text
-> /webseclist-judge-reference https://your-blog.example/your-shiny-new-technique
-> ```
-> No Claude Code? The rubric stands on its own — grade yourself by hand against
-> [the scoring anchors and worked examples](.claude/skills/webseclist-judge-reference/references/scoring-rubric.md)
-> before you hit publish. Best case, you find out you're sitting on something special.
-> Worst case, you find the prior art before a reviewer does.
+Published [evaluation records](ai-evaluation/) show candidate links and whether
+research was Added or Not added. They do not publish scores, scorecards, verdict
+labels or rankings by AI score, to avoid putting pressure on researchers and
+judges. Detailed notes and calibration results belong in gitignored
+`.local/ai-evaluation/`. Original community rankings are preserved.
 
 ## 💛 Support this archive
 

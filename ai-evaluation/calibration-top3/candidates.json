@@ -1,573 +1,182 @@
 [
   {
     "year": 2014,
-    "rank": 1,
     "title": "Heartbleed",
     "url": "https://web.archive.org/web/20160403035045/http://heartbleed.com/",
-    "mdPath": "archived-references/md/2014/heartbleed-com-heartbleed-bug.md",
-    "links": [
-      {
-        "label": "Heartbleed",
-        "url": "https://web.archive.org/web/20160403035045/http://heartbleed.com/",
-        "mdPath": "archived-references/md/2014/heartbleed-com-heartbleed-bug.md",
-        "pdfPath": "archived-references/pdf/2014/heartbleed-com-heartbleed-bug.pdf"
-      }
-    ],
-    "authors": [
-      "Codenomicon Ltd. http://www.codenomicon.com/"
-    ]
+    "decision": "added"
   },
   {
     "year": 2014,
-    "rank": 2,
-    "title": "ShellShock",
-    "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
-    "mdPath": "archived-references/md/2014/cve-mitre-org-cve-cve-2014-6271.md",
-    "links": [
-      {
-        "label": "ShellShock",
-        "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
-        "mdPath": "archived-references/md/2014/cve-mitre-org-cve-cve-2014-6271.md",
-        "pdfPath": "archived-references/pdf/2014/cve-mitre-org-cve-cve-2014-6271.pdf"
-      }
-    ],
-    "authors": null
-  },
-  {
-    "year": 2014,
-    "rank": 3,
     "title": "Poodle",
     "url": "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf",
-    "mdPath": "archived-references/md/2014/poodle.md",
-    "links": [
-      {
-        "label": "Poodle",
-        "url": "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf",
-        "mdPath": "archived-references/md/2014/poodle.md",
-        "pdfPath": "archived-references/pdf/2014/poodle.pdf"
-      }
-    ],
-    "authors": [
-      "Bodo Möller",
-      "Thai Duong",
-      "Krzysztof Kotowicz"
-    ]
+    "decision": "added"
+  },
+  {
+    "year": 2014,
+    "title": "ShellShock",
+    "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+    "decision": "added"
   },
   {
     "year": 2015,
-    "rank": 1,
     "title": "FREAK (Factoring Attack on RSA-Export Keys)",
     "url": "https://www.freakattack.com/",
-    "mdPath": "archived-references/md/2015/freakattack-com-tracking-freak-attack.md",
-    "links": [
-      {
-        "label": "FREAK (Factoring Attack on RSA-Export Keys)",
-        "url": "https://www.freakattack.com/",
-        "mdPath": "archived-references/md/2015/freakattack-com-tracking-freak-attack.md",
-        "pdfPath": "archived-references/pdf/2015/freakattack-com-tracking-freak-attack.pdf"
-      }
-    ],
-    "authors": [
-      "Zakir Durumeric",
-      "David Adrian",
-      "Ariana Mirian",
-      "Michael Bailey",
-      "J. Alex Halderman"
-    ]
+    "decision": "added"
   },
   {
     "year": 2015,
-    "rank": 2,
     "title": "LogJam",
     "url": "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html",
-    "mdPath": "archived-references/md/2015/schneier-com-logjam-another-vulnerability-against-diffie-hellman-key-exchange.md",
-    "links": [
-      {
-        "label": "LogJam",
-        "url": "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html",
-        "mdPath": "archived-references/md/2015/schneier-com-logjam-another-vulnerability-against-diffie-hellman-key-exchange.md",
-        "pdfPath": "archived-references/pdf/2015/schneier-com-logjam-another-vulnerability-against-diffie-hellman-key-exchange.pdf"
-      }
-    ],
-    "authors": null
+    "decision": "added"
   },
   {
     "year": 2015,
-    "rank": 3,
     "title": "Web Timing Attacks Made Practical",
     "url": "https://www.youtube.com/watch?v=KirTCSAvt9M",
-    "mdPath": "archived-references/md/2015/web-timing-attacks-made-practical.md",
-    "links": [
-      {
-        "label": "Web Timing Attacks Made Practical",
-        "url": "https://www.youtube.com/watch?v=KirTCSAvt9M",
-        "mdPath": "",
-        "pdfPath": ""
-      },
-      {
-        "label": "Whitepaper",
-        "url": "https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf",
-        "mdPath": "archived-references/md/2015/web-timing-attacks-made-practical.md",
-        "pdfPath": "archived-references/pdf/2015/web-timing-attacks-made-practical.pdf"
-      }
-    ],
-    "authors": [
-      "Timothy D. Morgan",
-      "Jason W. Morgan"
-    ]
+    "decision": "added"
   },
   {
     "year": 2018,
-    "rank": 1,
-    "title": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
-    "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
-    "mdPath": "archived-references/md/2018/breaking-parser-logic-take-your-path-normalization-off-pop-0days-out.md",
-    "links": [
-      {
-        "label": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
-        "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
-        "mdPath": "archived-references/md/2018/breaking-parser-logic-take-your-path-normalization-off-pop-0days-out.md",
-        "pdfPath": "archived-references/pdf/2018/breaking-parser-logic-take-your-path-normalization-off-pop-0days-out.pdf"
-      }
-    ],
-    "authors": [
-      "Orange Tsai"
-    ]
-  },
-  {
-    "year": 2018,
-    "rank": 2,
-    "title": "Practical Web Cache Poisoning",
-    "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
-    "mdPath": "archived-references/md/2018/2018-portswigger-research-practical-web-cache-poisoning.md",
-    "links": [
-      {
-        "label": "Practical Web Cache Poisoning",
-        "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
-        "mdPath": "archived-references/md/2018/2018-portswigger-research-practical-web-cache-poisoning.md",
-        "pdfPath": "archived-references/pdf/2018/2018-portswigger-research-practical-web-cache-poisoning.pdf"
-      }
-    ],
-    "authors": [
-      "James Kettle"
-    ]
-  },
-  {
-    "year": 2018,
-    "rank": 3,
     "title": "Beyond XSS: Edge Side Include Injection",
     "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/",
-    "mdPath": "archived-references/md/2018/2018-gosecure-beyond-xss-edge-side-include-injection.md",
-    "links": [
-      {
-        "label": "Beyond XSS: Edge Side Include Injection",
-        "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/",
-        "mdPath": "archived-references/md/2018/2018-gosecure-beyond-xss-edge-side-include-injection.md",
-        "pdfPath": "archived-references/pdf/2018/2018-gosecure-beyond-xss-edge-side-include-injection.pdf"
-      }
-    ],
-    "authors": [
-      "Louis Dion-Marcil"
-    ]
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
+    "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Practical Web Cache Poisoning",
+    "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
+    "decision": "added"
   },
   {
     "year": 2019,
-    "rank": 1,
     "title": "Cached and Confused: Web Cache Deception in the Wild",
     "url": "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf",
-    "mdPath": "archived-references/md/2019/cached-confused-web-cache-deception-wild.md",
-    "links": [
-      {
-        "label": "Cached and Confused: Web Cache Deception in the Wild",
-        "url": "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf",
-        "mdPath": "archived-references/md/2019/cached-confused-web-cache-deception-wild.md",
-        "pdfPath": "archived-references/pdf/2019/cached-confused-web-cache-deception-wild.pdf"
-      }
-    ],
-    "authors": [
-      "Seyed Ali Mirheidari",
-      "Sajjad Arshad",
-      "Kaan Onarlioglu",
-      "Bruno Crispo",
-      "Engin Kirda",
-      "William Robertson"
-    ]
+    "decision": "added"
   },
   {
     "year": 2019,
-    "rank": 2,
     "title": "Cross-Site Leaks",
     "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
-    "mdPath": "archived-references/md/2019/sirdarckcat-blogspot-com-http-cache-cross-site-leaks.md",
-    "links": [
-      {
-        "label": "Cross-Site Leaks",
-        "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
-        "mdPath": "archived-references/md/2019/sirdarckcat-blogspot-com-http-cache-cross-site-leaks.md",
-        "pdfPath": "archived-references/pdf/2019/sirdarckcat-blogspot-com-http-cache-cross-site-leaks.pdf"
-      }
-    ],
-    "authors": [
-      "@sirdarckcat"
-    ]
+    "decision": "added"
   },
   {
     "year": 2019,
-    "rank": 3,
     "title": "Owning The Clout Through Server Side Request Forgery",
     "url": "https://www.youtube.com/watch?v=o-tL9ULF0KI",
-    "mdPath": "archived-references/md/2019/defcon-27-ben-sadeghipour-owning-clout-through-ssrf-pdf-generators.md",
-    "links": [
-      {
-        "label": "Owning The Clout Through Server Side Request Forgery",
-        "url": "https://www.youtube.com/watch?v=o-tL9ULF0KI",
-        "mdPath": "",
-        "pdfPath": ""
-      },
-      {
-        "label": "Slides",
-        "url": "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf",
-        "mdPath": "archived-references/md/2019/defcon-27-ben-sadeghipour-owning-clout-through-ssrf-pdf-generators.md",
-        "pdfPath": "archived-references/pdf/2019/defcon-27-ben-sadeghipour-owning-clout-through-ssrf-pdf-generators.pdf"
-      }
-    ],
-    "authors": [
-      "Ben Sadeghipour",
-      "Cody Brocious"
-    ]
+    "decision": "added"
   },
   {
     "year": 2020,
-    "rank": 1,
-    "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
-    "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
-    "mdPath": "archived-references/md/2020/labs-bishopfox-com-h2c-smuggling-request-smuggling-http-2-cleartext-h2c.md",
-    "links": [
-      {
-        "label": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
-        "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
-        "mdPath": "archived-references/md/2020/labs-bishopfox-com-h2c-smuggling-request-smuggling-http-2-cleartext-h2c.md",
-        "pdfPath": "archived-references/pdf/2020/labs-bishopfox-com-h2c-smuggling-request-smuggling-http-2-cleartext-h2c.pdf"
-      }
-    ],
-    "authors": [
-      "Jake Miller",
-      "@theBumbleSec"
-    ]
-  },
-  {
-    "year": 2020,
-    "rank": 2,
-    "title": "Portable Data exFiltration: XSS for PDFs",
-    "url": "https://portswigger.net/research/portable-data-exfiltration",
-    "mdPath": "archived-references/md/2020/2020-portswigger-research-portable-data-exfiltration-xss-pdfs.md",
-    "links": [
-      {
-        "label": "Portable Data exFiltration: XSS for PDFs",
-        "url": "https://portswigger.net/research/portable-data-exfiltration",
-        "mdPath": "archived-references/md/2020/2020-portswigger-research-portable-data-exfiltration-xss-pdfs.md",
-        "pdfPath": "archived-references/pdf/2020/2020-portswigger-research-portable-data-exfiltration-xss-pdfs.pdf"
-      }
-    ],
-    "authors": [
-      "Gareth Heyes"
-    ]
-  },
-  {
-    "year": 2020,
-    "rank": 3,
     "title": "Attacking Secondary Contexts in Web Applications",
     "url": "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p",
-    "mdPath": "archived-references/md/2020/attacking-secondary-contexts-web-applications.md",
-    "links": [
-      {
-        "label": "Attacking Secondary Contexts in Web Applications",
-        "url": "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p",
-        "mdPath": "archived-references/md/2020/attacking-secondary-contexts-web-applications.md",
-        "pdfPath": "archived-references/pdf/2020/attacking-secondary-contexts-web-applications.pdf"
-      }
-    ],
-    "authors": [
-      "Sam Curry"
-    ]
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
+    "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "Portable Data exFiltration: XSS for PDFs",
+    "url": "https://portswigger.net/research/portable-data-exfiltration",
+    "decision": "added"
   },
   {
     "year": 2021,
-    "rank": 1,
-    "title": "Dependency Confusion",
-    "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
-    "mdPath": "archived-references/md/2021/2023-medium-dependency-confusion-how-i-hacked-apple-microsoft-dozens-companies.md",
-    "links": [
-      {
-        "label": "Dependency Confusion",
-        "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
-        "mdPath": "archived-references/md/2021/2023-medium-dependency-confusion-how-i-hacked-apple-microsoft-dozens-companies.md",
-        "pdfPath": "archived-references/pdf/2021/2023-medium-dependency-confusion-how-i-hacked-apple-microsoft-dozens-companies.pdf"
-      }
-    ],
-    "authors": [
-      "Alex Birsan",
-      "@alxbrsn"
-    ]
-  },
-  {
-    "year": 2021,
-    "rank": 2,
-    "title": "HTTP/2: The Sequel is Always Worse",
-    "url": "https://portswigger.net/research/http2",
-    "mdPath": "archived-references/md/2021/2021-portswigger-research-http-2-sequel-always-worse.md",
-    "links": [
-      {
-        "label": "HTTP/2: The Sequel is Always Worse",
-        "url": "https://portswigger.net/research/http2",
-        "mdPath": "archived-references/md/2021/2021-portswigger-research-http-2-sequel-always-worse.md",
-        "pdfPath": "archived-references/pdf/2021/2021-portswigger-research-http-2-sequel-always-worse.pdf"
-      }
-    ],
-    "authors": [
-      "James Kettle"
-    ]
-  },
-  {
-    "year": 2021,
-    "rank": 3,
     "title": "A New Attack Surface on MS Exchange - ProxyLogon",
     "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/",
-    "mdPath": "archived-references/md/2021/2021-orange-tsai-new-attack-surface-ms-exchange-part-1.md",
-    "links": [
-      {
-        "label": "A New Attack Surface on MS Exchange - ProxyLogon",
-        "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/",
-        "mdPath": "archived-references/md/2021/2021-orange-tsai-new-attack-surface-ms-exchange-part-1.md",
-        "pdfPath": "archived-references/pdf/2021/2021-orange-tsai-new-attack-surface-ms-exchange-part-1.pdf"
-      }
-    ],
-    "authors": [
-      "Orange Tsai"
-    ]
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "Dependency Confusion",
+    "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "HTTP/2: The Sequel is Always Worse",
+    "url": "https://portswigger.net/research/http2",
+    "decision": "added"
   },
   {
     "year": 2022,
-    "rank": 1,
     "title": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
     "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/",
-    "mdPath": "archived-references/md/2022/2022-labs-detectify-account-hijacking-using-dirty-dancing-sign-oauth-flows.md",
-    "links": [
-      {
-        "label": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
-        "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/",
-        "mdPath": "archived-references/md/2022/2022-labs-detectify-account-hijacking-using-dirty-dancing-sign-oauth-flows.md",
-        "pdfPath": "archived-references/pdf/2022/2022-labs-detectify-account-hijacking-using-dirty-dancing-sign-oauth-flows.pdf"
-      }
-    ],
-    "authors": [
-      "Frans Rosén"
-    ]
+    "decision": "added"
   },
   {
     "year": 2022,
-    "rank": 2,
     "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
     "url": "https://portswigger.net/research/browser-powered-desync-attacks",
-    "mdPath": "archived-references/md/2022/2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling.md",
-    "links": [
-      {
-        "label": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
-        "url": "https://portswigger.net/research/browser-powered-desync-attacks",
-        "mdPath": "archived-references/md/2022/2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling.md",
-        "pdfPath": "archived-references/pdf/2022/2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling.pdf"
-      }
-    ],
-    "authors": [
-      "James Kettle"
-    ]
+    "decision": "added"
   },
   {
     "year": 2022,
-    "rank": 3,
     "title": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
     "url": "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/",
-    "mdPath": "archived-references/md/2022/2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection.md",
-    "links": [
-      {
-        "label": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
-        "url": "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/",
-        "mdPath": "archived-references/md/2022/2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection.md",
-        "pdfPath": "archived-references/pdf/2022/2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection.pdf"
-      }
-    ],
-    "authors": [
-      "Simon Scannell"
-    ]
+    "decision": "added"
   },
   {
     "year": 2023,
-    "rank": 1,
-    "title": "Smashing the state machine: the true potential of web race conditions",
-    "url": "https://portswigger.net/research/smashing-the-state-machine",
-    "mdPath": "archived-references/md/2023/2023-portswigger-research-smashing-state-machine-true-potential-web-conditions.md",
-    "links": [
-      {
-        "label": "Smashing the state machine: the true potential of web race conditions",
-        "url": "https://portswigger.net/research/smashing-the-state-machine",
-        "mdPath": "archived-references/md/2023/2023-portswigger-research-smashing-state-machine-true-potential-web-conditions.md",
-        "pdfPath": "archived-references/pdf/2023/2023-portswigger-research-smashing-state-machine-true-potential-web-conditions.pdf"
-      }
-    ],
-    "authors": [
-      "James Kettle"
-    ]
-  },
-  {
-    "year": 2023,
-    "rank": 2,
     "title": "Exploiting Hardened .NET Deserialization",
     "url": "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf",
-    "mdPath": "archived-references/md/2023/exploiting-hardened-net-deserialization.md",
-    "links": [
-      {
-        "label": "Exploiting Hardened .NET Deserialization",
-        "url": "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf",
-        "mdPath": "archived-references/md/2023/exploiting-hardened-net-deserialization.md",
-        "pdfPath": "archived-references/pdf/2023/exploiting-hardened-net-deserialization.pdf"
-      }
-    ],
-    "authors": [
-      "Piotr Bazydło"
-    ]
+    "decision": "added"
   },
   {
     "year": 2023,
-    "rank": 3,
+    "title": "Smashing the state machine: the true potential of web race conditions",
+    "url": "https://portswigger.net/research/smashing-the-state-machine",
+    "decision": "added"
+  },
+  {
+    "year": 2023,
     "title": "SMTP Smuggling - Spoofing E-Mails Worldwide",
     "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/",
-    "mdPath": "archived-references/md/2023/sec-consult-smtp-smuggling-spoofing-e-mails-worldwide.md",
-    "links": [
-      {
-        "label": "SMTP Smuggling - Spoofing E-Mails Worldwide",
-        "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/",
-        "mdPath": "archived-references/md/2023/sec-consult-smtp-smuggling-spoofing-e-mails-worldwide.md",
-        "pdfPath": "archived-references/pdf/2023/sec-consult-smtp-smuggling-spoofing-e-mails-worldwide.pdf"
-      }
-    ],
-    "authors": [
-      "Timo Longin"
-    ]
+    "decision": "added"
   },
   {
     "year": 2024,
-    "rank": 1,
     "title": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
     "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en/",
-    "mdPath": "archived-references/md/2024/2024-orange-tsai-confusion-attacks-exploiting-hidden-semantic-ambiguity-server.md",
-    "links": [
-      {
-        "label": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
-        "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en/",
-        "mdPath": "archived-references/md/2024/2024-orange-tsai-confusion-attacks-exploiting-hidden-semantic-ambiguity-server.md",
-        "pdfPath": "archived-references/pdf/2024/2024-orange-tsai-confusion-attacks-exploiting-hidden-semantic-ambiguity-server.pdf"
-      }
-    ],
-    "authors": [
-      "Orange Tsai"
-    ]
+    "decision": "added"
   },
   {
     "year": 2024,
-    "rank": 2,
     "title": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level",
     "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
-    "mdPath": "archived-references/md/2024/def-con-32-sql-injection-isn-t-dead-smuggling-queries-protocol-level.md",
-    "links": [
-      {
-        "label": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level",
-        "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
-        "mdPath": "archived-references/md/2024/def-con-32-sql-injection-isn-t-dead-smuggling-queries-protocol-level.md",
-        "pdfPath": "archived-references/pdf/2024/def-con-32-sql-injection-isn-t-dead-smuggling-queries-protocol-level.pdf"
-      },
-      {
-        "label": "Video",
-        "url": "https://www.youtube.com/watch?v=Tfg1B8u1yvE",
-        "mdPath": "",
-        "pdfPath": ""
-      }
-    ],
-    "authors": [
-      "Paul Gerste"
-    ]
+    "decision": "added"
   },
   {
     "year": 2024,
-    "rank": 3,
     "title": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
     "url": "https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/",
-    "mdPath": "archived-references/md/2024/2024-bugcrowd-unveiling-te-0-http-request-smuggling-discovering-websites.md",
-    "links": [
-      {
-        "label": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
-        "url": "https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/",
-        "mdPath": "archived-references/md/2024/2024-bugcrowd-unveiling-te-0-http-request-smuggling-discovering-websites.md",
-        "pdfPath": "archived-references/pdf/2024/2024-bugcrowd-unveiling-te-0-http-request-smuggling-discovering-websites.pdf"
-      }
-    ],
-    "authors": [
-      "Paolo Arnolfo",
-      "Guillermo Gregorio"
-    ]
+    "decision": "added"
   },
   {
     "year": 2025,
-    "rank": 1,
     "title": "Blind SSTI",
     "url": "https://github.com/vladko312/Research_Successful_Errors",
-    "mdPath": "archived-references/md/2025/github-vladko312-research-successful-errors.md",
-    "links": [
-      {
-        "label": "Blind SSTI",
-        "url": "https://github.com/vladko312/Research_Successful_Errors",
-        "mdPath": "archived-references/md/2025/github-vladko312-research-successful-errors.md",
-        "pdfPath": "archived-references/pdf/2025/github-vladko312-research-successful-errors.pdf"
-      }
-    ],
-    "authors": [
-      "Vladislav Korchagin"
-    ]
+    "decision": "added"
   },
   {
     "year": 2025,
-    "rank": 2,
-    "title": "ORM Leaking More Than You Joined For",
-    "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
-    "mdPath": "archived-references/md/2025/elttam-com-orm-leaking-more-than-you-joined.md",
-    "links": [
-      {
-        "label": "ORM Leaking More Than You Joined For",
-        "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
-        "mdPath": "archived-references/md/2025/elttam-com-orm-leaking-more-than-you-joined.md",
-        "pdfPath": "archived-references/pdf/2025/elttam-com-orm-leaking-more-than-you-joined.pdf"
-      }
-    ],
-    "authors": [
-      "Alex Brown"
-    ]
-  },
-  {
-    "year": 2025,
-    "rank": 3,
     "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
     "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/",
-    "mdPath": "archived-references/md/2025/2025-searchlight-cyber-novel-ssrf-technique-involving-http-redirect-loops.md",
-    "links": [
-      {
-        "label": "Novel SSRF Technique Involving HTTP Redirect Loops",
-        "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/",
-        "mdPath": "archived-references/md/2025/2025-searchlight-cyber-novel-ssrf-technique-involving-http-redirect-loops.md",
-        "pdfPath": "archived-references/pdf/2025/2025-searchlight-cyber-novel-ssrf-technique-involving-http-redirect-loops.pdf"
-      }
-    ],
-    "authors": [
-      "Shubham Shah",
-      "@searchlightsec"
-    ]
+    "decision": "added"
+  },
+  {
+    "year": 2025,
+    "title": "ORM Leaking More Than You Joined For",
+    "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
+    "decision": "added"
   }
 ]

@@ -1,208 +1,56 @@
 [
   {
     "year": 2018,
-    "rank": 1,
-    "title": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
-    "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
-    "cutoff": "2018-08-08 (integrated method and chains; constituent advisories earlier in 2018)",
-    "scores": {
-      "original": 67,
-      "transferability": 86,
-      "lasting": 85,
-      "technical": 84,
-      "practical": 80,
-      "clarity": 81
-    },
-    "total": 79.7,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Exact first public technical date of each bundled 2018 case is unresolved; no separate novelty credit was assigned merely for those CVEs.",
-      "Historical configurations were read, not executed in this review."
-    ],
-    "archive_decision": "Include as a core technique"
-  },
-  {
-    "year": 2018,
-    "rank": 2,
-    "title": "Practical Web Cache Poisoning",
-    "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
-    "cutoff": "2018-08-09 (paper/method; constituent routing-header disclosure may precede it)",
-    "scores": {
-      "original": 65,
-      "transferability": 88,
-      "lasting": 87,
-      "technical": 85,
-      "practical": 86,
-      "clarity": 88
-    },
-    "total": 81.4,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "An exact earliest public date for every bundled subcase was not established.",
-      "Historical live targets and tool versions were not rerun."
-    ],
-    "archive_decision": "Include as a core technique"
-  },
-  {
-    "year": 2018,
-    "rank": 3,
     "title": "Beyond XSS: Edge Side Include Injection",
     "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/",
-    "cutoff": "2018-04-03",
-    "scores": {
-      "original": 76,
-      "transferability": 76,
-      "lasting": 78,
-      "technical": 82,
-      "practical": 69,
-      "clarity": 82
-    },
-    "total": 77.2,
-    "verdict": "Meaningful combination or adaptation",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "No exact pre-cutoff exploit predecessor was verified; historical priority is not certain.",
-      "The Akamai demonstration does not establish exploitability of its production CDN."
-    ],
-    "archive_decision": "Include as a core technique"
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
+    "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Practical Web Cache Poisoning",
+    "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
+    "decision": "added"
   },
   {
     "year": 2019,
-    "rank": 1,
     "title": "Cached and Confused: Web Cache Deception in the Wild",
     "url": "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf",
-    "cutoff": "2019-12-21 (arXiv v1)",
-    "scores": {
-      "original": 65,
-      "transferability": 78,
-      "lasting": 80,
-      "technical": 80,
-      "practical": 67,
-      "clarity": 80
-    },
-    "total": 74.5,
-    "verdict": "Tooling or methodology contribution",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "No independent rerun of the historical dataset or crawler.",
-      "The v1 sampling process limits population-wide prevalence inference."
-    ],
-    "archive_decision": "Include as a core technique"
+    "decision": "added"
   },
   {
     "year": 2019,
-    "rank": 2,
     "title": "Cross-Site Leaks",
     "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
-    "cutoff": "2019-02-11–2019-03-19 (repository primitive, then explanatory article)",
-    "scores": {
-      "original": 65,
-      "transferability": 79,
-      "lasting": 80,
-      "technical": 78,
-      "practical": 68,
-      "clarity": 77
-    },
-    "total": 74.2,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Initial commit date does not independently establish when the repository became public.",
-      "Illustrative application scenarios are not verified end-to-end production exploits."
-    ],
-    "archive_decision": "Include as a core technique"
+    "decision": "added"
   },
   {
     "year": 2019,
-    "rank": 3,
     "title": "Owning The Clout Through Server Side Request Forgery",
     "url": "https://www.youtube.com/watch?v=o-tL9ULF0KI",
-    "cutoff": "2019-08-08–2019-08-11 (DEF CON 27 disclosure)",
-    "scores": {
-      "original": 58,
-      "transferability": 72,
-      "lasting": 73,
-      "technical": 75,
-      "practical": 80,
-      "clarity": 73
-    },
-    "total": 70.0,
-    "verdict": "Meaningful combination or adaptation",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Exact session date within DEF CON 27 was not established from the primary artifact.",
-      "Broad renderer prevalence claims are not supported by a systematic sample."
-    ],
-    "archive_decision": "Include as a core technique"
+    "decision": "added"
   },
   {
     "year": 2020,
-    "rank": 1,
-    "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
-    "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
-    "cutoff": "2020-09-08",
-    "scores": {
-      "original": 70,
-      "transferability": 78,
-      "lasting": 80,
-      "technical": 86,
-      "practical": 78,
-      "clarity": 87
-    },
-    "total": 78.5,
-    "verdict": "Meaningful extension",
-    "confidence": "High",
-    "evidence_gaps": [
-      "Historical environments were not executed; verification is of the original published evidence."
-    ],
-    "archive_decision": "Include as a core technique"
-  },
-  {
-    "year": 2020,
-    "rank": 2,
-    "title": "Portable Data exFiltration: XSS for PDFs",
-    "url": "https://portswigger.net/research/portable-data-exfiltration",
-    "cutoff": "2020-11-24–2020-12-10 (initial examples; original paper/talk on December 10)",
-    "scores": {
-      "original": 75,
-      "transferability": 72,
-      "lasting": 80,
-      "technical": 83,
-      "practical": 74,
-      "clarity": 86
-    },
-    "total": 77.6,
-    "verdict": "Meaningful extension",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Commit timestamps alone do not prove the initial examples were public in November.",
-      "Only the primary PDFex abstract was available for comparison; it does not permit exhaustive payload equivalence analysis."
-    ],
-    "archive_decision": "Include as a core technique"
-  },
-  {
-    "year": 2020,
-    "rank": 3,
     "title": "Attacking Secondary Contexts in Web Applications",
     "url": "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p",
-    "cutoff": "2020-03 (Kernelcon; reported session 2020-03-28)",
-    "scores": {
-      "original": 42,
-      "transferability": 74,
-      "lasting": 73,
-      "technical": 72,
-      "practical": 78,
-      "clarity": 76
-    },
-    "total": 66.1,
-    "verdict": "Tooling or methodology contribution",
-    "confidence": "Medium",
-    "evidence_gaps": [
-      "Exact public timestamp of the conference deck is unavailable; March 2020 is the defensible boundary.",
-      "Several application cases are redacted and have no complete standalone reproduction lab."
-    ],
-    "archive_decision": "Include as a supporting reference"
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
+    "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "Portable Data exFiltration: XSS for PDFs",
+    "url": "https://portswigger.net/research/portable-data-exfiltration",
+    "decision": "added"
   }
 ]

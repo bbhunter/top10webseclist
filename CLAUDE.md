@@ -1,5 +1,23 @@
 # Repository rules
 
+- **Score privately; publish inclusion outcomes only.** Continue the full
+  `webseclist-judge-reference` evaluation, including category scores and
+  reverification. Keep scorecards, numerical results, verdicts, ranking by AI
+  score and calibration exports in `.local/ai-evaluation/` (gitignored), never
+  in tracked Markdown, JSON/JSONL, CSV, website data, issues or PR descriptions.
+  `ai-evaluation/` is public: it may record candidate identity, source links and
+  **Added / Not added**, plus decision dates and merit-revision identifiers.
+  A lead awaiting review is not added, but that does not establish failed merit.
+  Archive capture/validation reports are separate from research merit decisions.
+  Public marks can put pressure on researchers and judges. Preserve original
+  community rankings, source documents, citations and credits.
+  Read the judging skill's current **Repository collection merit** before each
+  review; do not duplicate its numerical cutoff in other skills or public lists.
+  Merit criteria can change: reassess privately, then append a decision event
+  with the applicable revision rather than treating an old result as permanent.
+  Never restore scores to public history. Regenerate website data when year
+  lists change, and apply this rule to all skill templates and exports.
+
 - **Faulty captures are filed, not worked around.** If any work in this
   repository — app development, data rebuilds, list edits, anything — finds an
   archived reference that needs recapturing (a file the manifest advertises but

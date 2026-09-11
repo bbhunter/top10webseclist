@@ -64,9 +64,9 @@ article text and output screenshots together.
 
 ## Checks
 
-- Full source and prior-art scorecards: eight candidates; two further screening
+- Private source and prior-art evaluations: eight candidates; two further screening
   decisions. The four affected years pass the missed-list audit: 91 current
-  scorecards, 88 kept. Immutable judgement history validates.
+  completed decisions, 88 added. Decision history validates.
 - All six new files pass title/byline/date checks against their manifest records,
   digest content-hash checks, raw/content-store existence checks, PDF signature
   checks and original-PDF hash comparisons where applicable.

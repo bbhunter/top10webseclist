@@ -1,784 +1,182 @@
-{
-  "evaluation_date": "2026-09-09",
-  "selection_years": [
-    2014,
-    2015,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025
-  ],
-  "weights": {
-    "original": 25,
-    "transferability": 20,
-    "lasting": 20,
-    "technical": 15,
-    "practical": 10,
-    "clarity": 10
+[
+  {
+    "year": 2014,
+    "title": "Heartbleed",
+    "url": "https://web.archive.org/web/20160403035045/http://heartbleed.com/",
+    "decision": "added"
   },
-  "statistics": {
-    "count": 30,
-    "mean": 74.67,
-    "median": 77.30000000000001,
-    "minimum": 56.65,
-    "maximum": 86.15,
-    "above_80": 9,
-    "at_least": {
-      "50": 30,
-      "55": 30,
-      "60": 27,
-      "70": 23,
-      "80": 9,
-      "90": 0
-    },
-    "category_means": {
-      "original": 65.9,
-      "transferability": 75.16666666666667,
-      "lasting": 77.63333333333334,
-      "technical": 81.56666666666666,
-      "practical": 72.73333333333333,
-      "clarity": 81.26666666666667
-    }
+  {
+    "year": 2014,
+    "title": "Poodle",
+    "url": "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf",
+    "decision": "added"
   },
-  "results": [
-    {
-      "year": 2014,
-      "rank": 1,
-      "title": "Heartbleed",
-      "url": "https://web.archive.org/web/20160403035045/http://heartbleed.com/",
-      "cutoff": "2014-04-07",
-      "scores": {
-        "original": 40,
-        "transferability": 55,
-        "lasting": 55,
-        "technical": 85,
-        "practical": 80,
-        "clarity": 70
-      },
-      "total": 59.8,
-      "exact_total": 59.75,
-      "verdict": "Useful application or case study",
-      "archive_decision": "Include as a supporting reference",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "The precise day-one version of every Heartbleed-site paragraph was not recovered. Secret-extraction breadth and day-one reproduction completeness are therefore not inferred from the updated site."
-      ],
-      "report": "2014-2015.md#2014-1"
-    },
-    {
-      "year": 2014,
-      "rank": 2,
-      "title": "ShellShock",
-      "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
-      "cutoff": "2014-09-24",
-      "scores": {
-        "original": 78,
-        "transferability": 80,
-        "lasting": 82,
-        "technical": 88,
-        "practical": 85,
-        "clarity": 90
-      },
-      "total": 82.6,
-      "exact_total": 82.6,
-      "verdict": "Original technique",
-      "archive_decision": "Include as a core technique",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Search does not exhaust all pre-2014 mailing lists or unpublished knowledge. Only the original Shellshock mechanism is scored, not subsequent bypasses."
-      ],
-      "report": "2014-2015.md#2014-2"
-    },
-    {
-      "year": 2014,
-      "rank": 3,
-      "title": "Poodle",
-      "url": "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf",
-      "cutoff": "2014-10-14 public disclosure; manuscript labelled September 2014",
-      "scores": {
-        "original": 75,
-        "transferability": 78,
-        "lasting": 85,
-        "technical": 92,
-        "practical": 65,
-        "clarity": 86
-      },
-      "total": 80.2,
-      "exact_total": 80.25,
-      "verdict": "Meaningful combination or adaptation",
-      "archive_decision": "Include as a core technique",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "The older Möller TLS-CBC note could not be fetched directly; it remains a bibliography lead, not a independently verified equivalent. No exploit harness was run."
-      ],
-      "report": "2014-2015.md#2014-3"
-    },
-    {
-      "year": 2015,
-      "rank": 1,
-      "title": "FREAK (Factoring Attack on RSA-Export Keys)",
-      "url": "https://www.freakattack.com/",
-      "cutoff": "2015-01-08 client acceptance defect; 2015-03-03 complete public FREAK combination",
-      "scores": {
-        "original": 72,
-        "transferability": 80,
-        "lasting": 82,
-        "technical": 86,
-        "practical": 65,
-        "clarity": 78
-      },
-      "total": 77.6,
-      "exact_total": 77.6,
-      "verdict": "Meaningful combination or adaptation",
-      "archive_decision": "Include as a core technique",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "The original smacktls project site was unavailable. The precise first public day of every auxiliary artifact is unresolved; no later tooling is assumed available in March."
-      ],
-      "report": "2014-2015.md#2015-1"
-    },
-    {
-      "year": 2015,
-      "rank": 2,
-      "title": "LogJam",
-      "url": "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html",
-      "cutoff": "2015-05-19–20; original author announcement and coordinated 20 May publication",
-      "scores": {
-        "original": 85,
-        "transferability": 90,
-        "lasting": 92,
-        "technical": 90,
-        "practical": 65,
-        "clarity": 85
-      },
-      "total": 86.2,
-      "exact_total": 86.15,
-      "verdict": "Meaningful combination or adaptation",
-      "archive_decision": "Include as a core technique",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "An exact May snapshot of the complete PDF was not recovered; later-only experiments are excluded. The one-day announcement interval is unresolved, so sources within it are treated as coordinated/contemporaneous rather than prior art."
-      ],
-      "report": "2014-2015.md#2015-2"
-    },
-    {
-      "year": 2015,
-      "rank": 3,
-      "title": "Web Timing Attacks Made Practical",
-      "url": "https://www.youtube.com/watch?v=KirTCSAvt9M",
-      "cutoff": "2015-08-03–06; whitepaper dated 3 August, Black Hat USA publication week",
-      "scores": {
-        "original": 72,
-        "transferability": 85,
-        "lasting": 85,
-        "technical": 88,
-        "practical": 78,
-        "clarity": 90
-      },
-      "total": 82.0,
-      "exact_total": 82.0,
-      "verdict": "Tooling or methodology contribution",
-      "archive_decision": "Include as a core technique",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "No Nanown experiment was rerun. Exact upload day and full original release packaging were not independently established; the dated whitepaper provides the scored technical evidence."
-      ],
-      "report": "2014-2015.md#2015-3"
-    },
-    {
-      "year": 2018,
-      "rank": 1,
-      "title": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
-      "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
-      "cutoff": "2018-08-08 (integrated method and chains; constituent advisories earlier in 2018)",
-      "scores": {
-        "original": 67,
-        "transferability": 86,
-        "lasting": 85,
-        "technical": 84,
-        "practical": 80,
-        "clarity": 81
-      },
-      "total": 79.7,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Exact first public technical date of each bundled 2018 case is unresolved; no separate novelty credit was assigned merely for those CVEs.",
-        "Historical configurations were read, not executed in this review."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 79.65,
-      "report": "2018-2020.md#2018-1"
-    },
-    {
-      "year": 2018,
-      "rank": 2,
-      "title": "Practical Web Cache Poisoning",
-      "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
-      "cutoff": "2018-08-09 (paper/method; constituent routing-header disclosure may precede it)",
-      "scores": {
-        "original": 65,
-        "transferability": 88,
-        "lasting": 87,
-        "technical": 85,
-        "practical": 86,
-        "clarity": 88
-      },
-      "total": 81.4,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "An exact earliest public date for every bundled subcase was not established.",
-        "Historical live targets and tool versions were not rerun."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 81.4,
-      "report": "2018-2020.md#2018-2"
-    },
-    {
-      "year": 2018,
-      "rank": 3,
-      "title": "Beyond XSS: Edge Side Include Injection",
-      "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/",
-      "cutoff": "2018-04-03",
-      "scores": {
-        "original": 76,
-        "transferability": 76,
-        "lasting": 78,
-        "technical": 82,
-        "practical": 69,
-        "clarity": 82
-      },
-      "total": 77.2,
-      "verdict": "Meaningful combination or adaptation",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "No exact pre-cutoff exploit predecessor was verified; historical priority is not certain.",
-        "The Akamai demonstration does not establish exploitability of its production CDN."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 77.2,
-      "report": "2018-2020.md#2018-3"
-    },
-    {
-      "year": 2019,
-      "rank": 1,
-      "title": "Cached and Confused: Web Cache Deception in the Wild",
-      "url": "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf",
-      "cutoff": "2019-12-21 (arXiv v1)",
-      "scores": {
-        "original": 65,
-        "transferability": 78,
-        "lasting": 80,
-        "technical": 80,
-        "practical": 67,
-        "clarity": 80
-      },
-      "total": 74.5,
-      "verdict": "Tooling or methodology contribution",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "No independent rerun of the historical dataset or crawler.",
-        "The v1 sampling process limits population-wide prevalence inference."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 74.55,
-      "report": "2018-2020.md#2019-1"
-    },
-    {
-      "year": 2019,
-      "rank": 2,
-      "title": "Cross-Site Leaks",
-      "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
-      "cutoff": "2019-02-11–2019-03-19 (repository primitive, then explanatory article)",
-      "scores": {
-        "original": 65,
-        "transferability": 79,
-        "lasting": 80,
-        "technical": 78,
-        "practical": 68,
-        "clarity": 77
-      },
-      "total": 74.2,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Initial commit date does not independently establish when the repository became public.",
-        "Illustrative application scenarios are not verified end-to-end production exploits."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 74.25,
-      "report": "2018-2020.md#2019-2"
-    },
-    {
-      "year": 2019,
-      "rank": 3,
-      "title": "Owning The Clout Through Server Side Request Forgery",
-      "url": "https://www.youtube.com/watch?v=o-tL9ULF0KI",
-      "cutoff": "2019-08-08–2019-08-11 (DEF CON 27 disclosure)",
-      "scores": {
-        "original": 58,
-        "transferability": 72,
-        "lasting": 73,
-        "technical": 75,
-        "practical": 80,
-        "clarity": 73
-      },
-      "total": 70.0,
-      "verdict": "Meaningful combination or adaptation",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Exact session date within DEF CON 27 was not established from the primary artifact.",
-        "Broad renderer prevalence claims are not supported by a systematic sample."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 70.05,
-      "report": "2018-2020.md#2019-3"
-    },
-    {
-      "year": 2020,
-      "rank": 1,
-      "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
-      "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
-      "cutoff": "2020-09-08",
-      "scores": {
-        "original": 70,
-        "transferability": 78,
-        "lasting": 80,
-        "technical": 86,
-        "practical": 78,
-        "clarity": 87
-      },
-      "total": 78.5,
-      "verdict": "Meaningful extension",
-      "confidence": "High",
-      "evidence_gaps": [
-        "Historical environments were not executed; verification is of the original published evidence."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 78.5,
-      "report": "2018-2020.md#2020-1"
-    },
-    {
-      "year": 2020,
-      "rank": 2,
-      "title": "Portable Data exFiltration: XSS for PDFs",
-      "url": "https://portswigger.net/research/portable-data-exfiltration",
-      "cutoff": "2020-11-24–2020-12-10 (initial examples; original paper/talk on December 10)",
-      "scores": {
-        "original": 75,
-        "transferability": 72,
-        "lasting": 80,
-        "technical": 83,
-        "practical": 74,
-        "clarity": 86
-      },
-      "total": 77.6,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Commit timestamps alone do not prove the initial examples were public in November.",
-        "Only the primary PDFex abstract was available for comparison; it does not permit exhaustive payload equivalence analysis."
-      ],
-      "archive_decision": "Include as a core technique",
-      "exact_total": 77.6,
-      "report": "2018-2020.md#2020-2"
-    },
-    {
-      "year": 2020,
-      "rank": 3,
-      "title": "Attacking Secondary Contexts in Web Applications",
-      "url": "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p",
-      "cutoff": "2020-03 (Kernelcon; reported session 2020-03-28)",
-      "scores": {
-        "original": 42,
-        "transferability": 74,
-        "lasting": 73,
-        "technical": 72,
-        "practical": 78,
-        "clarity": 76
-      },
-      "total": 66.1,
-      "verdict": "Tooling or methodology contribution",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Exact public timestamp of the conference deck is unavailable; March 2020 is the defensible boundary.",
-        "Several application cases are redacted and have no complete standalone reproduction lab."
-      ],
-      "archive_decision": "Include as a supporting reference",
-      "exact_total": 66.1,
-      "report": "2018-2020.md#2020-3"
-    },
-    {
-      "year": 2021,
-      "rank": 1,
-      "title": "Dependency Confusion",
-      "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
-      "cutoff": "2021-02-09",
-      "scores": {
-        "original": 50,
-        "transferability": 65,
-        "lasting": 65,
-        "technical": 72,
-        "practical": 75,
-        "clarity": 75
-      },
-      "total": 64.3,
-      "verdict": "Tooling or methodology contribution",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Original build configuration and root cause are not disclosed for several claimed affected organizations.",
-        "Archive publication metadata conflicts with the live original date; the document itself is substantive."
-      ],
-      "exact_total": 64.3,
-      "archive_decision": "Include as a supporting reference",
-      "report": "2021-2023.md#2021-1"
-    },
-    {
-      "year": 2021,
-      "rank": 2,
-      "title": "HTTP/2: The Sequel is Always Worse",
-      "url": "https://portswigger.net/research/http2",
-      "cutoff": "2021-03-09 (H2.CL vendor technical disclosure; possible earlier January code); 2021-08-05 (broader extensions)",
-      "scores": {
-        "original": 70,
-        "transferability": 85,
-        "lasting": 85,
-        "technical": 85,
-        "practical": 80,
-        "clarity": 85
-      },
-      "total": 80.8,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Exact earliest code-level H2.CL disclosure and attribution through the vendor chain are not fully established.",
-        "Historical exploits were assessed from original evidence rather than run against live services."
-      ],
-      "exact_total": 80.75,
-      "archive_decision": "Include as a core technique",
-      "report": "2021-2023.md#2021-2"
-    },
-    {
-      "year": 2021,
-      "rank": 3,
-      "title": "A New Attack Surface on MS Exchange - ProxyLogon",
-      "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/",
-      "cutoff": "2021-08-05/2021-08-06 (author technical architecture account)",
-      "scores": {
-        "original": 45,
-        "transferability": 55,
-        "lasting": 60,
-        "technical": 85,
-        "practical": 65,
-        "clarity": 80
-      },
-      "total": 61.5,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Earliest sufficient candidate-side technical disclosure remains less certain than discovery attribution; an earlier coordinated technical artifact could materially change this score.",
-        "Praetorian withheld part of ECP authentication, so it does not establish that every August detail was already public."
-      ],
-      "exact_total": 61.5,
-      "archive_decision": "Include as a supporting reference",
-      "report": "2021-2023.md#2021-3"
-    },
-    {
-      "year": 2022,
-      "rank": 1,
-      "title": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
-      "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/",
-      "cutoff": "2022-07-06",
-      "scores": {
-        "original": 70,
-        "transferability": 80,
-        "lasting": 80,
-        "technical": 80,
-        "practical": 70,
-        "clarity": 80
-      },
-      "total": 76.5,
-      "verdict": "Meaningful combination or adaptation",
-      "confidence": "High",
-      "evidence_gaps": [
-        "Production targets are genericized; no independent runtime replication performed.",
-        "The author’s credited May 2022 third-party sandbox antecedent could not be independently retrieved, so no priority claim is made for that component."
-      ],
-      "exact_total": 76.5,
-      "archive_decision": "Include as a core technique",
-      "report": "2021-2023.md#2022-1"
-    },
-    {
-      "year": 2022,
-      "rank": 2,
-      "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
-      "url": "https://portswigger.net/research/browser-powered-desync-attacks",
-      "cutoff": "2022-08-10",
-      "scores": {
-        "original": 75,
-        "transferability": 85,
-        "lasting": 85,
-        "technical": 85,
-        "practical": 70,
-        "clarity": 90
-      },
-      "total": 81.5,
-      "verdict": "Meaningful extension",
-      "confidence": "High",
-      "evidence_gaps": [
-        "Historical browser/network demonstrations were assessed from the original paper, not rerun."
-      ],
-      "exact_total": 81.5,
-      "archive_decision": "Include as a core technique",
-      "report": "2021-2023.md#2022-2"
-    },
-    {
-      "year": 2022,
-      "rank": 3,
-      "title": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
-      "url": "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/",
-      "cutoff": "2022-06-14",
-      "scores": {
-        "original": 60,
-        "transferability": 65,
-        "lasting": 70,
-        "technical": 80,
-        "practical": 65,
-        "clarity": 75
-      },
-      "total": 68.0,
-      "verdict": "Meaningful combination or adaptation",
-      "confidence": "High",
-      "evidence_gaps": [
-        "No independent vulnerable Zimbra lab execution; exact preconditions are inferred from the supplied implementation analysis and diagrams."
-      ],
-      "exact_total": 68.0,
-      "archive_decision": "Include as a supporting reference",
-      "report": "2021-2023.md#2022-3"
-    },
-    {
-      "year": 2023,
-      "rank": 1,
-      "title": "Smashing the state machine: the true potential of web race conditions",
-      "url": "https://portswigger.net/research/smashing-the-state-machine",
-      "cutoff": "2023-08-09",
-      "scores": {
-        "original": 65,
-        "transferability": 85,
-        "lasting": 85,
-        "technical": 85,
-        "practical": 85,
-        "clarity": 90
-      },
-      "total": 80.5,
-      "verdict": "Tooling or methodology contribution",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "The full Papli thesis could not be fetched in the final recheck; dated university records and its stated HTTP/2 methods establish a predecessor, but detailed algorithm-by-algorithm priority remains uncertain.",
-        "Original benchmark code was inspected through the paper’s description, not rerun."
-      ],
-      "exact_total": 80.5,
-      "archive_decision": "Include as a core technique",
-      "report": "2021-2023.md#2023-1"
-    },
-    {
-      "year": 2023,
-      "rank": 2,
-      "title": "Exploiting Hardened .NET Deserialization",
-      "url": "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf",
-      "cutoff": "2023-09-21 (SolarWinds cases); 2023-09-27/2023-10-14 (remaining paper contributions; exact public upload uncertain)",
-      "scores": {
-        "original": 75,
-        "transferability": 75,
-        "lasting": 80,
-        "technical": 90,
-        "practical": 70,
-        "clarity": 90
-      },
-      "total": 79.2,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "First public upload dates of individual new gadget contributions are not fully established; September–October ordering is bounded rather than asserted precisely.",
-        "No independent execution of the complete gadget matrix."
-      ],
-      "exact_total": 79.25,
-      "archive_decision": "Include as a core technique",
-      "report": "2021-2023.md#2023-2"
-    },
-    {
-      "year": 2023,
-      "rank": 3,
-      "title": "SMTP Smuggling - Spoofing E-Mails Worldwide",
-      "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/",
-      "cutoff": "2023-12-18",
-      "scores": {
-        "original": 75,
-        "transferability": 75,
-        "lasting": 80,
-        "technical": 80,
-        "practical": 60,
-        "clarity": 75
-      },
-      "total": 75.2,
-      "verdict": "Meaningful combination or adaptation",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "No independent reproduction on historical relay pairs.",
-        "Search did not establish an exhaustive history of old SMTP end-marker discrepancies; first-invention certainty is limited."
-      ],
-      "exact_total": 75.25,
-      "archive_decision": "Include as a core technique",
-      "report": "2021-2023.md#2023-3"
-    },
-    {
-      "year": 2024,
-      "rank": 1,
-      "title": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
-      "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en/",
-      "cutoff": "Individual advisory components: 2024-07-01 onward; integrated semantic-confusion model and full chains: 2024-08-08.",
-      "scores": {
-        "original": 84,
-        "transferability": 79,
-        "lasting": 87,
-        "technical": 89,
-        "practical": 76,
-        "clarity": 88
-      },
-      "total": 83.9,
-      "verdict": "Meaningful extension",
-      "confidence": "High",
-      "evidence_gaps": [
-        "No independent recreation of every configuration or chain; exact July disclosure dates differ between component issues."
-      ],
-      "exact_total": 83.95,
-      "archive_decision": "Include as a core technique",
-      "report": "2024-2025.md#2024-1"
-    },
-    {
-      "year": 2024,
-      "rank": 2,
-      "title": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level",
-      "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
-      "cutoff": "pgx length-wrap primitive: 2024-03-04; distinct talk extensions: 2024-08-10–2024-08-12 (presentation/snapshot interval).",
-      "scores": {
-        "original": 75,
-        "transferability": 78,
-        "lasting": 82,
-        "technical": 82,
-        "practical": 52,
-        "clarity": 78
-      },
-      "total": 76.0,
-      "verdict": "Meaningful combination or adaptation",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Exact public order of all MongoDB details versus the August talk remains unresolved; no independent multi-gigabyte execution. Presentation/snapshot interval is two days."
-      ],
-      "exact_total": 76.05,
-      "archive_decision": "Include as a core technique",
-      "report": "2024-2025.md#2024-2"
-    },
-    {
-      "year": 2024,
-      "rank": 3,
-      "title": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
-      "url": "https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/",
-      "cutoff": "2024-07-17 public technical article; earlier private reports do not establish public precedence.",
-      "scores": {
-        "original": 43,
-        "transferability": 55,
-        "lasting": 60,
-        "technical": 70,
-        "practical": 72,
-        "clarity": 74
-      },
-      "total": 58.9,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Backend implementation and independent reproduction unavailable. No exact earlier TE.0/OPTIONS example found; that absence is not proof of first discovery."
-      ],
-      "exact_total": 58.85,
-      "archive_decision": "Include as a supporting reference",
-      "report": "2024-2025.md#2024-3"
-    },
-    {
-      "year": 2025,
-      "rank": 1,
-      "title": "Blind SSTI",
-      "url": "https://github.com/vladko312/Research_Successful_Errors",
-      "cutoff": "2025-08-19 for the error-oracle methods demonstrated in SSTImap v1.3; later distinct talk-only details are unverified, and 2026 revisions are excluded.",
-      "scores": {
-        "original": 68,
-        "transferability": 80,
-        "lasting": 80,
-        "technical": 78,
-        "practical": 82,
-        "clarity": 85
-      },
-      "total": 77.4,
-      "verdict": "Tooling or methodology contribution",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "No complete original talk transcript verified; any distinct talk-only extension remains outside the scored set. No independent engine-matrix/false-positive measurements; later report improvements excluded."
-      ],
-      "exact_total": 77.4,
-      "archive_decision": "Include as a core technique",
-      "report": "2024-2025.md#2025-1"
-    },
-    {
-      "year": 2025,
-      "rank": 2,
-      "title": "ORM Leaking More Than You Joined For",
-      "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
-      "cutoff": "December 2025, no later than 2025-12-18; article-specific additions 2025-12-18. Exact briefing/component overlap unresolved.",
-      "scores": {
-        "original": 53,
-        "transferability": 74,
-        "lasting": 72,
-        "technical": 85,
-        "practical": 80,
-        "clarity": 88
-      },
-      "total": 72.0,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Exact original briefing date/content overlap unverified; historical Semgrep rule implementation was not established and earns no implementation credit."
-      ],
-      "exact_total": 72.0,
-      "archive_decision": "Include as a core technique",
-      "report": "2024-2025.md#2025-2"
-    },
-    {
-      "year": 2025,
-      "rank": 3,
-      "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
-      "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/",
-      "cutoff": "2025-06-23 original technical article.",
-      "scores": {
-        "original": 64,
-        "transferability": 48,
-        "lasting": 61,
-        "technical": 47,
-        "practical": 62,
-        "clarity": 56
-      },
-      "total": 56.6,
-      "verdict": "Meaningful extension",
-      "confidence": "Medium",
-      "evidence_gaps": [
-        "Unnamed target and wrapper version; no controlled status/count ablation or independent reproduction. Failure to find an exact predecessor does not establish novelty."
-      ],
-      "exact_total": 56.65,
-      "archive_decision": "Include as a supporting reference",
-      "report": "2024-2025.md#2025-3"
-    }
-  ]
-}
+  {
+    "year": 2014,
+    "title": "ShellShock",
+    "url": "https://web.archive.org/web/20160403035045/https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271",
+    "decision": "added"
+  },
+  {
+    "year": 2015,
+    "title": "FREAK (Factoring Attack on RSA-Export Keys)",
+    "url": "https://www.freakattack.com/",
+    "decision": "added"
+  },
+  {
+    "year": 2015,
+    "title": "LogJam",
+    "url": "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html",
+    "decision": "added"
+  },
+  {
+    "year": 2015,
+    "title": "Web Timing Attacks Made Practical",
+    "url": "https://www.youtube.com/watch?v=KirTCSAvt9M",
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Beyond XSS: Edge Side Include Injection",
+    "url": "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/",
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out",
+    "url": "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf",
+    "decision": "added"
+  },
+  {
+    "year": 2018,
+    "title": "Practical Web Cache Poisoning",
+    "url": "https://portswigger.net/blog/practical-web-cache-poisoning",
+    "decision": "added"
+  },
+  {
+    "year": 2019,
+    "title": "Cached and Confused: Web Cache Deception in the Wild",
+    "url": "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf",
+    "decision": "added"
+  },
+  {
+    "year": 2019,
+    "title": "Cross-Site Leaks",
+    "url": "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html",
+    "decision": "added"
+  },
+  {
+    "year": 2019,
+    "title": "Owning The Clout Through Server Side Request Forgery",
+    "url": "https://www.youtube.com/watch?v=o-tL9ULF0KI",
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "Attacking Secondary Contexts in Web Applications",
+    "url": "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p",
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)",
+    "url": "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c",
+    "decision": "added"
+  },
+  {
+    "year": 2020,
+    "title": "Portable Data exFiltration: XSS for PDFs",
+    "url": "https://portswigger.net/research/portable-data-exfiltration",
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "A New Attack Surface on MS Exchange - ProxyLogon",
+    "url": "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/",
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "Dependency Confusion",
+    "url": "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610",
+    "decision": "added"
+  },
+  {
+    "year": 2021,
+    "title": "HTTP/2: The Sequel is Always Worse",
+    "url": "https://portswigger.net/research/http2",
+    "decision": "added"
+  },
+  {
+    "year": 2022,
+    "title": "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows",
+    "url": "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/",
+    "decision": "added"
+  },
+  {
+    "year": 2022,
+    "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
+    "url": "https://portswigger.net/research/browser-powered-desync-attacks",
+    "decision": "added"
+  },
+  {
+    "year": 2022,
+    "title": "Zimbra Email - Stealing Clear-Text Credentials via Memcache injection",
+    "url": "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/",
+    "decision": "added"
+  },
+  {
+    "year": 2023,
+    "title": "Exploiting Hardened .NET Deserialization",
+    "url": "https://github.com/thezdi/presentations/blob/main/2023_Hexacon/whitepaper-net-deser.pdf",
+    "decision": "added"
+  },
+  {
+    "year": 2023,
+    "title": "Smashing the state machine: the true potential of web race conditions",
+    "url": "https://portswigger.net/research/smashing-the-state-machine",
+    "decision": "added"
+  },
+  {
+    "year": 2023,
+    "title": "SMTP Smuggling - Spoofing E-Mails Worldwide",
+    "url": "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/",
+    "decision": "added"
+  },
+  {
+    "year": 2024,
+    "title": "Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!",
+    "url": "https://blog.orange.tw/posts/2024-08-confusion-attacks-en/",
+    "decision": "added"
+  },
+  {
+    "year": 2024,
+    "title": "SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level",
+    "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
+    "decision": "added"
+  },
+  {
+    "year": 2024,
+    "title": "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites",
+    "url": "https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/",
+    "decision": "added"
+  },
+  {
+    "year": 2025,
+    "title": "Blind SSTI",
+    "url": "https://github.com/vladko312/Research_Successful_Errors",
+    "decision": "added"
+  },
+  {
+    "year": 2025,
+    "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
+    "url": "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/",
+    "decision": "added"
+  },
+  {
+    "year": 2025,
+    "title": "ORM Leaking More Than You Joined For",
+    "url": "https://www.elttam.com/blog/leaking-more-than-you-joined-for/",
+    "decision": "added"
+  }
+]
