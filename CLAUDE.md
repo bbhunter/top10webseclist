@@ -7,16 +7,21 @@
   Include the disclosure in each comment's body, even when posting through a
   human account; an account profile or an earlier comment is not sufficient.
 
-- **Explain submission decisions briefly.** In research issue and PR comments,
-  give a short, friendly, evidence-based reason when work is not added: name the
-  decisive overlap, scope issue or evidence gap, and link the relevant source
-  when making a comparison. An outcome alone or a generic merit statement is
-  insufficient. Keep scores and full evaluations private.
-  When the submitter identifies as an author or co-author, ask any unresolved
-  questions that could change the decision before closing. Check available
-  sources first; a short answer or existing link should suffice. Keep the issue
-  or PR open while awaiting clarification, then reconsider the answer using the
-  same merit criteria. Do not require questions when nothing material is unclear.
+- **Give authors actionable review feedback.** Use this clarification process
+  only when the submitter selected **I am the author or a co-author** (ignore
+  surrounding whitespace), through the website checkbox or GitHub relationship
+  field, including a PR's linked submission. Do not infer this selection from
+  names or account ownership. When the review indicates work may not meet the
+  collection merit, explain each material concern: the specific claim or section,
+  the supporting evidence or dated prior-art comparison, why it affects inclusion,
+  and the question or evidence that could resolve it. Be friendly and focused,
+  but do not omit necessary context to meet a sentence limit. Check available
+  sources first and distinguish uncertainty from established findings. Leave the
+  issue or PR open for answers to material questions, then reassess against the
+  same criteria. Do not invent questions when nothing material is unclear.
+  Without that selection, use the usual concise per-item Added / Not added
+  summary; this detailed feedback and clarification process is not required.
+  Keep numerical scores and full scorecards private in both cases.
 
 - **Score privately; keep public evaluation records outcome-only.** Continue the full
   `webseclist-judge-reference` evaluation, including category scores and

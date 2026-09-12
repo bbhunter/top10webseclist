@@ -206,8 +206,9 @@ Rules for the entries, matching the house style of the year files:
 
 For each year, report: how many candidates were swept, how many were judged in
 full, and which candidates were Added or Not added. Keep scores and detailed reviews
-private; public evaluation records contain outcomes only. Explain issue/PR decisions
-briefly under the judging skill's submission guidance. Be honest about coverage gaps — an unswept beat is a lead for
+private; public evaluation records contain outcomes only. For issue/PR replies, use
+the judging skill's author-selection gate: actionable concerns for authors whose
+work may not qualify, concise outcomes otherwise. Be honest about coverage gaps — an unswept beat is a lead for
 next time, not a silent omission. Do not inflate the yield; most years will
 add zero or one.
 

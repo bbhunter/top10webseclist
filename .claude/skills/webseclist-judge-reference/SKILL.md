@@ -16,7 +16,7 @@ the same axis rather than on whichever one had the scarier impact or the more
 famous author.
 
 The working output is a private structured report; public evaluation records show
-only Added / Not added. Issue and PR replies briefly explain decisions using the
+only Added / Not added. Issue and PR replies follow the author-specific
 submission guidance below. The hard part is not the template — it is
 doing the prior-art search honestly and separating the *underlying idea* from the
 *target it happened to hit*.
@@ -399,29 +399,49 @@ from a public record, which deliberately contains no scores.
 
 ### Author clarification and submission replies
 
-For research issues and PRs, read the submitter's stated connection, including
-the website authorship checkbox or GitHub relationship field. Authorship changes
-neither the merit criteria nor the credit due to earlier work.
+Apply the constructive feedback process below **only** when the submitter selected
+**I am the author or a co-author**, ignoring surrounding whitespace. Read the
+website checkbox's carried answer or GitHub relationship field; for a PR, also
+check its linked submission. A missing or different answer does not activate this
+process. Do not infer selection from the submitter's name, account or affiliation.
+Authorship changes neither the merit criteria nor the credit due to earlier work.
 
-Before closing an author's submission, check available sources and ask only
-unresolved questions whose answers could change inclusion, attribution or year.
-Keep the request short: prefer one focused question and accept a brief answer or
-existing link; do not demand new experiments or a formal rebuttal. If no material
-question remains, do not invent one. When clarification is needed, leave the issue
+If the private review indicates an author's work may not meet collection merit,
+explain the substantive reasons before closure. Give the author enough information
+to address **each material concern** that could prevent inclusion, not just the
+overall outcome or a request to explain what is new. For each concern:
+
+- Identify the specific claim, section or contribution being questioned.
+- Explain the evidence and why it affects inclusion. For overlap, link and date
+  the relevant earlier source, compare the actual mechanisms or capabilities,
+  and credit the author's own earlier work separately from later extensions.
+- Distinguish a demonstrated limitation from missing or uncertain evidence.
+  Where clarification could change the decision, ask a concrete question and
+  say what explanation, existing source, result or artifact would resolve it.
+
+Check the supplied and available sources first. Do not ask for information already
+provided or shift the prior-art search onto the author. Group related concerns
+into a readable reply; include all decision-relevant doubts together rather than
+raising unexplained new hurdles after each answer. Be friendly, direct and
+constructive. Keep background brief, but use as much detail as the concerns need:
+there is no fixed sentence or question limit. Prefer existing evidence and accept
+a short answer when sufficient; do not demand a formal rebuttal or new experiments.
+
+When clarification could change inclusion, attribution or year, leave the issue
 or PR open and record the pending questions privately. Do not report the review as
-complete or record a new final decision while awaiting the answer. Reassess the
-reply against the same criteria; reopening does not itself change an earlier
-historical decision or guarantee inclusion.
+complete or record a new final decision while awaiting the answer. Address the
+author's answers in the reassessment and explain any remaining material concern.
+If no material question remains, explain the reason without inventing questions.
+Reopening does not itself change a historical decision or guarantee inclusion.
 
-For any Not added issue or PR reply, briefly acknowledge the submission and give
-the decisive, source-supported reason in plain language. Identify the specific
-overlap, scope issue or missing evidence; link the comparison when relevant and
-distinguish uncertainty from an established finding. Credit the author's earlier
-work separately from a later extension. Avoid bare outcomes, generic merit claims,
-scores, verdict labels and long critiques. Usually two to four short sentences
-plus any essential clarification question are enough. Include the AI disclosure
-required by `CLAUDE.md` in every public comment. Follow the session's authorization
-for posting and closing; these instructions do not authorize external writes.
+For submissions **without that selection**, retain the usual concise per-item
+**Added / Not added** summary. Detailed concerns and the author clarification
+process are not required. Author submissions that pass can also receive a concise
+outcome summary. Keep numerical scores, scorecards, rankings and private verdict
+labels out of all public replies; constructive qualitative explanations are allowed
+under the author process above. Include the AI disclosure required by `CLAUDE.md`
+in every public comment. Follow the session's authorization for posting and closing;
+these instructions do not authorize external writes.
 
 ### Private report and public record
 
@@ -444,7 +464,7 @@ historical text, not current instructions. Follow the decision-only workflow bel
 changes with dates and a fingerprint of the applicable judging skill/rubric.
 “Not added” in the lead index may mean awaiting review, so do not manufacture a
 completed rejection for an unjudged lead. Keep detailed reasons and follow-up evidence
-in private notes; concise issue/PR explanations follow the guidance above.
+in private notes; author-facing explanations follow the guidance above.
 Archive capture reviews are not research-merit assessments.
 
 After privately completing a review and reconciling the actual list addition,

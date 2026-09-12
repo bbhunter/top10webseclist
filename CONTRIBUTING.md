@@ -61,12 +61,14 @@ box on the website or select your connection on GitHub so we can ask you if need
 2. **Judgement.** The submission is scored in full, with every result re-verified against
    the primary source rather than taken from the write-up, and checked against prior art
    and against the existing entries for the surrounding years.
-   If you are an author and a material point is unclear, we ask before closing and
-   keep the submission open for your reply. A short answer or existing link is enough.
+   If you selected **I am the author or a co-author** and the work may not qualify,
+   we explain the specific concerns, relevant evidence and what would clarify them.
+   We keep the submission open for answers to material questions before deciding.
+   An explanation or existing link is welcome; no formal rebuttal is needed.
 3. **The record.** Public [`ai-evaluation/<year>/`](ai-evaluation/) records show
    candidate links and **Added / Not added**, with decision dates and merit
-   revisions in history. Issue and PR replies briefly explain why work is not added,
-   with a relevant source where needed. Full evaluations and scores stay in private
+   revisions in history. Without the author selection, issue and PR replies give a
+   concise outcome for each submission. Full evaluations and scores stay in private
    local notes. A lead
    awaiting review is not added, but has not necessarily failed evaluation.
 4. **Addition.** Anything that clears the bar joins its year under
