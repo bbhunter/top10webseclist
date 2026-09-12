@@ -165,6 +165,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Proto6: The Schema Was Not Supposed to Run](<https://www.cyera.com/research/proto6-the-schema-was-not-supposed-to-run>) | Not added |
 | [Pwning Agentic Browsers with PleaseFix](<https://zenity.io/research/pleasefix-vulnerabilities>) | Not added |
 | [Pwning Claude Code in 8 Different Ways](<https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/>) | Added |
+| [QUIC-er Races: HTTP/3 won’t save you from TOCTOU vulnerabilities](<https://link.springer.com/article/10.1007/s10207-026-01258-6>) [Related source](<https://github.com/nxenon/H3SpaceX>) [Related source](<https://github.com/nxenon/H2SpaceX>) | Not added |
 | [Race Against The Patch: Four Exploit Chains in LiteLLM](<https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/>) | Added |
 | [Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js](<https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs>) | Not added |
 | [Recovering Encrypted LLM Reasoning Traces](<https://arxiv.org/abs/2608.09867>) [Related source](<https://embracethered.com/blog/posts/2026/recovering-encrypted-llm-thoughts/>) | Added |
