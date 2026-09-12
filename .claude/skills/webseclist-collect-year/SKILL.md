@@ -16,6 +16,8 @@ gitignored `.local/ai-evaluation/`. Public
 `ai-evaluation/` records contain only candidate identity, links and Added / Not
 added, with dates and merit-revision identifiers in decision history. Publish titles, source links, author credits and factual
 notes about dates, scope, source availability or prior research.
+For submissions, follow the judging skill's **Author clarification and submission
+replies** before responding to or closing an issue or PR.
 
 Two failure modes make a run worthless, and both are easy to fall into:
 
@@ -116,7 +118,7 @@ as a filter, and reach for the full skill when a call is genuinely close.
 
 ### 4. Preserve leads privately and publish outcomes
 
-Keep all scoring, reasons, search coverage and unresolved evidence in gitignored
+Keep all scoring, detailed reasons, search coverage and unresolved evidence in gitignored
 `.local/ai-evaluation/<YEAR>/`. Never erase a discovered candidate merely because
 it was not selected. Publish `ai-evaluation/<YEAR>/README.md` with candidate
 identity, source links and Added / Not added only. A lead awaiting evaluation

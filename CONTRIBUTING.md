@@ -35,7 +35,8 @@ are what the submission form is for.
 ### The bar
 
 A submission is judged as a **technique**, on the evidence, against six weighted
-categories — novelty, evidence, impact, durability, reproducibility and clarity. It is
+categories — originality, transferability, lasting value, technical soundness,
+practical usability and clarity/reproducibility. It is
 added only if it passes the judging skill’s current Repository collection merit
 and the source, year and non-duplication checks. The merit criteria may change. In practice that means:
 
@@ -50,8 +51,8 @@ and the source, year and non-duplication checks. The merit criteria may change. 
   else.
 - **It belongs to the year it was published**, whatever year you found it.
 
-Submitting your own research is welcome and is judged no differently. Say so on the form
-— the disclosure exists so the record is honest, not to weigh against you.
+Submitting your own research is welcome and uses the same criteria. Tick the author
+box on the website or select your connection on GitHub so we can ask you if needed.
 
 ### What happens after you file
 
@@ -60,10 +61,13 @@ Submitting your own research is welcome and is judged no differently. Say so on 
 2. **Judgement.** The submission is scored in full, with every result re-verified against
    the primary source rather than taken from the write-up, and checked against prior art
    and against the existing entries for the surrounding years.
+   If you are an author and a material point is unclear, we ask before closing and
+   keep the submission open for your reply. A short answer or existing link is enough.
 3. **The record.** Public [`ai-evaluation/<year>/`](ai-evaluation/) records show
    candidate links and **Added / Not added**, with decision dates and merit
-   revisions in history. Full scores, verdicts and reasons stay in gitignored
-   local notes to avoid putting pressure on researchers and judges. A lead
+   revisions in history. Issue and PR replies briefly explain why work is not added,
+   with a relevant source where needed. Full evaluations and scores stay in private
+   local notes. A lead
    awaiting review is not added, but has not necessarily failed evaluation.
 4. **Addition.** Anything that clears the bar joins its year under
    **"Missed from the original list"** — a section kept visibly separate from the

@@ -1081,6 +1081,9 @@ function wireShell() {
   }));
   ["#contribute-url", "#contribute-research-title", "#contribute-year", "#contribute-authors", "#contribute-why"]
     .forEach((selector) => $(selector).addEventListener("input", scheduleSubmissionCheck));
+  $("#contribute-is-author").addEventListener("change", () => {
+    $("#contribute-issue").href = submissionIssueUrl(submissionDraft());
+  });
   $("#contribute-check").addEventListener("click", (event) => {
     const target = event.target.closest("[data-artifact]");
     if (!target) return;
@@ -4077,6 +4080,7 @@ function submissionDraft() {
     title: $("#contribute-research-title").value.trim(),
     year: $("#contribute-year").value,
     researchers: $("#contribute-authors").value.trim(),
+    isAuthor: $("#contribute-is-author").checked,
     whatsNew: $("#contribute-why").value.trim()
   };
 }
@@ -4084,6 +4088,7 @@ function submissionDraft() {
 function submissionIssueUrl(draft) {
   const heading = compact(draft.title || hostOf(draft.url)).slice(0, 120);
   return issueUrl("research", {
+    relationship: draft.isAuthor ? "I am the author or a co-author" : "",
     title: heading ? `[Research] ${heading}` : "",
     "research-url": draft.url,
     "research-title": draft.title,
@@ -4102,6 +4107,7 @@ function submissionMarkdown(draft) {
     draft.url ? `Source: ${draft.url}` : "",
     draft.year ? `Year published: ${draft.year}` : "",
     draft.researchers ? `Researcher(s): ${draft.researchers}` : "",
+    draft.isAuthor ? "Your connection to this research: I am the author or a co-author" : "",
     draft.whatsNew ? `\nWhat is new about it:\n${draft.whatsNew}` : ""
   ].filter(Boolean).join("\n");
 }

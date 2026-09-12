@@ -12,7 +12,9 @@ The bar is deliberately evidence-based: a find is added to a curated year list o
 **full private `webseclist-judge-reference` evaluation passes its current
 Repository collection merit**, including the evidence and non-duplication checks.
 Publish only Added / Not added outcomes under `ai-evaluation/<YEAR>/`; keep
-scorecards and reasons in gitignored `.local/ai-evaluation/<YEAR>/`.
+scorecards and detailed reasons in gitignored `.local/ai-evaluation/<YEAR>/`.
+For submissions, follow the judging skill's **Author clarification and submission
+replies** before responding to or closing an issue or PR.
 
 This is the one workflow whose whole purpose is to make a **review-gated edit to a
 curated year list** (`2006.md` .. `2025.md`). Treat that responsibility seriously:
@@ -203,8 +205,9 @@ Rules for the entries, matching the house style of the year files:
 ### 7. Report
 
 For each year, report: how many candidates were swept, how many were judged in
-full, and which candidates were Added or Not added. Keep scores and reasons
-private; publish only outcomes. Be honest about coverage gaps — an unswept beat is a lead for
+full, and which candidates were Added or Not added. Keep scores and detailed reviews
+private; public evaluation records contain outcomes only. Explain issue/PR decisions
+briefly under the judging skill's submission guidance. Be honest about coverage gaps — an unswept beat is a lead for
 next time, not a silent omission. Do not inflate the yield; most years will
 add zero or one.
 

@@ -7,7 +7,18 @@
   Include the disclosure in each comment's body, even when posting through a
   human account; an account profile or an earlier comment is not sufficient.
 
-- **Score privately; publish inclusion outcomes only.** Continue the full
+- **Explain submission decisions briefly.** In research issue and PR comments,
+  give a short, friendly, evidence-based reason when work is not added: name the
+  decisive overlap, scope issue or evidence gap, and link the relevant source
+  when making a comparison. An outcome alone or a generic merit statement is
+  insufficient. Keep scores and full evaluations private.
+  When the submitter identifies as an author or co-author, ask any unresolved
+  questions that could change the decision before closing. Check available
+  sources first; a short answer or existing link should suffice. Keep the issue
+  or PR open while awaiting clarification, then reconsider the answer using the
+  same merit criteria. Do not require questions when nothing material is unclear.
+
+- **Score privately; keep public evaluation records outcome-only.** Continue the full
   `webseclist-judge-reference` evaluation, including category scores and
   reverification. Keep scorecards, numerical results, verdicts, ranking by AI
   score and calibration exports in `.local/ai-evaluation/` (gitignored), never

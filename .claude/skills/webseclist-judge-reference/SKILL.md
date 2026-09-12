@@ -15,8 +15,9 @@ evidence-based and consistent, so that two different candidates get compared on
 the same axis rather than on whichever one had the scarier impact or the more
 famous author.
 
-The working output is a private structured report; the public repository records
-only Added / Not added. The hard part is not the template — it is
+The working output is a private structured report; public evaluation records show
+only Added / Not added. Issue and PR replies briefly explain decisions using the
+submission guidance below. The hard part is not the template — it is
 doing the prior-art search honestly and separating the *underlying idea* from the
 *target it happened to hit*.
 
@@ -396,6 +397,34 @@ from a public record, which deliberately contains no scores.
 
 ## Keep scoring private and publish decisions
 
+### Author clarification and submission replies
+
+For research issues and PRs, read the submitter's stated connection, including
+the website authorship checkbox or GitHub relationship field. Authorship changes
+neither the merit criteria nor the credit due to earlier work.
+
+Before closing an author's submission, check available sources and ask only
+unresolved questions whose answers could change inclusion, attribution or year.
+Keep the request short: prefer one focused question and accept a brief answer or
+existing link; do not demand new experiments or a formal rebuttal. If no material
+question remains, do not invent one. When clarification is needed, leave the issue
+or PR open and record the pending questions privately. Do not report the review as
+complete or record a new final decision while awaiting the answer. Reassess the
+reply against the same criteria; reopening does not itself change an earlier
+historical decision or guarantee inclusion.
+
+For any Not added issue or PR reply, briefly acknowledge the submission and give
+the decisive, source-supported reason in plain language. Identify the specific
+overlap, scope issue or missing evidence; link the comparison when relevant and
+distinguish uncertainty from an established finding. Credit the author's earlier
+work separately from a later extension. Avoid bare outcomes, generic merit claims,
+scores, verdict labels and long critiques. Usually two to four short sentences
+plus any essential clarification question are enough. Include the AI disclosure
+required by `CLAUDE.md` in every public comment. Follow the session's authorization
+for posting and closing; these instructions do not authorize external writes.
+
+### Private report and public record
+
 Continue the complete six-category scoring, prior-art search and skeptical
 reverification described above. The scorecard/report template is **private working
 material**, saved only under `.local/ai-evaluation/<YEAR>/` (gitignored), or kept
@@ -414,8 +443,9 @@ historical text, not current instructions. Follow the decision-only workflow bel
 `judgements.md` shows completed decisions; `history.jsonl` preserves decision
 changes with dates and a fingerprint of the applicable judging skill/rubric.
 “Not added” in the lead index may mean awaiting review, so do not manufacture a
-completed rejection for an unjudged lead. Keep reasons and follow-up evidence
-in the private notes. Archive capture reviews are not research-merit assessments.
+completed rejection for an unjudged lead. Keep detailed reasons and follow-up evidence
+in private notes; concise issue/PR explanations follow the guidance above.
+Archive capture reviews are not research-merit assessments.
 
 After privately completing a review and reconciling the actual list addition,
 record only its outcome (use `not-added` for a candidate that was not added):

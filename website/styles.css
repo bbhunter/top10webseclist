@@ -689,6 +689,8 @@
   .contribute-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 13px; }
   .contribute-field { display: grid; gap: 6px; grid-column: 1 / -1; }
   .contribute-field.is-half { grid-column: auto; }
+  .contribute-authorship { display: flex; align-items: center; gap: 10px; grid-column: 1 / -1; min-height: 44px; color: var(--ink); font: .7rem/1.5 var(--mono); cursor: pointer; }
+  .contribute-authorship input { flex: 0 0 auto; width: 18px; height: 18px; accent-color: var(--mint); }
   .contribute-field > span { display: flex; align-items: center; gap: 8px; color: var(--muted); font: 650 .58rem var(--mono); letter-spacing: .06em; text-transform: uppercase; }
   .contribute-field > span b { color: var(--mint); font: 650 .52rem var(--mono); letter-spacing: .08em; }
   .contribute-field small { color: var(--faint); font: .58rem/1.5 var(--mono); }
