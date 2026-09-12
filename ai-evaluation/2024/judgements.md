@@ -16,6 +16,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Concealing payloads in URL credentials](<https://portswigger.net/research/concealing-payloads-in-url-credentials>) | Added |
 | [CVE-2024-4577 - Yet Another PHP RCE: Make PHP-CGI Argument Injection Great Again!](<https://blog.orange.tw/posts/2024-06-cve-2024-4577-yet-another-php-rce/>) | Added |
 | [Drilling the redirect_uri in OAuth](<https://blog.voorivex.team/drilling-the-redirecturi-in-oauth>) | Not added |
+| [Exploiting Client-Side Path Traversal to Perform Cross-Site Request Forgery - Introducing CSPT2CSRF](<https://blog.doyensec.com/2024/07/02/cspt2csrf.html>) | Added |
 | [Fickle PDFs: exploiting browser rendering discrepancies](<https://portswigger.net/research/fickle-pdfs-exploiting-browser-rendering-discrepancies>) | Added |
 | [FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache](<https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf>) | Added |
 | [Generic and Automated Drive-by GPU Cache Attacks from the Browser](<https://www.rolandczerny.com/publications/2024-webgpu/>) | Added |
@@ -27,6 +28,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Limitations are just an illusion – advanced server-side template exploitation with RCE everywhere](<https://www.yeswehack.com/learn-bug-bounty/server-side-template-injection-exploitation>) [Related source](<https://brum3ns.github.io/payloads/>) [Related source](<https://www.youtube.com/watch?v=QoP4Ip_zM74>) | Added |
 | [Peeking through the window: Fingerprinting Browser Extensions through Page-Visible Execution Traces and Interactions](<https://doi.org/10.1145/3658644.3670339>) | Added |
 | [Pixel Thief: Exploiting SVG Filter Leakage in Firefox and Chrome](<https://www.usenix.org/conference/usenixsecurity24/presentation/oconnell>) | Added |
+| [plORMbing your Prisma ORM with Time-based Attacks](<https://www.elttam.com/blog/plorming-your-primsa-orm/>) | Added |
 | [ReactAppScan: Mining React Application Vulnerabilities via Component Graph](<https://www.yinzhicao.org/reactappscan/reactappscan.pdf>) | Added |
 | [Rise of Inspectron: Automated Black-box Auditing of Cross-platform Electron Apps](<https://www.usenix.org/conference/usenixsecurity24/presentation/ali>) | Added |
 | [Shared Storage worklet queue and termination channels](<https://github.com/WICG/shared-storage/issues/136>) | Added |

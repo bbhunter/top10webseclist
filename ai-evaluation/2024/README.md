@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Exploiting Client-Side Path Traversal to Perform Cross-Site Request Forgery - Introducing CSPT2CSRF](<https://blog.doyensec.com/2024/07/02/cspt2csrf.html>) | Added |
+| [plORMbing your Prisma ORM with Time-based Attacks](<https://www.elttam.com/blog/plorming-your-primsa-orm/>) | Added |
 | [$20,300 Bounties from a 200 Hour Hacking Challenge](<https://blog.voorivex.team/20300-bounties-from-a-200-hour-hacking-challenge>) | Not added |
 | [A Flushing Attack on the DNS Cache](<https://www.usenix.org/conference/usenixsecurity24/presentation/afek>) | Added |
 | A Security and Usability Analysis of Local Attacks Against FIDO2 | Not added |

@@ -13,7 +13,9 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [CVE-2020-0688: Losing the keys to your kingdom](<https://securitylab.github.com/research/exchange-rce-CVE-2020-0688/>) | Not added |
 | [Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms](<https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/>) | Added |
 | [DOM Clobbering strikes back](<https://portswigger.net/research/dom-clobbering-strikes-back>) | Added |
+| [DoS - Mr. Pixel Flood](<https://shahjerry33.medium.com/dos-mr-pixel-flood-27605add29f2>) | Not added |
 | [FUSE: Finding File Upload Bugs via Penetration Testing](<https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/>) | Added |
+| [How Secure Are Your Universally Unique IDentifiers (UUIDs)?](<https://versprite.com/resources/blog/universally-unique-identifiers/>) | Added |
 | [Information Leaks via Safari’s Intelligent Tracking Prevention](<https://arxiv.org/pdf/2001.07421v1>) | Added |
 | [Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites](<https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/>) | Added |
 | [PMForce: Systematically Analyzing PostMessage Handlers at Scale](<https://publications.cispa.saarland/3164/>) | Added |

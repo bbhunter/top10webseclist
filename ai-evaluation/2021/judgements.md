@@ -11,9 +11,13 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [DNS Cache Poisoning Attack: Resurrections with Side Channels](<https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf>) | Added |
 | [Fingerprinting in Style: Detecting Browser Extensions via Injected Style Sheets](<https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix>) | Added |
 | [Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques](<https://arxiv.org/abs/2110.10129>) | Added |
+| [Improper Spring @Query Usage Allows N1QL Injection](<https://www.gremwell.com/spring-n1ql-injection>) | Not added |
 | [JAW: Studying Client-side CSRF with Hybrid Property Graphs and Declarative Traversals](<https://www.usenix.org/conference/usenixsecurity21/presentation/khodayari>) | Added |
+| [Leveraging the Spring Expression Language injection vulnerability to get RCE](<https://xen0vas.github.io/Leveraging-the-SpEL-Injection-Vulnerability-to-get-RCE/>) | Not added |
+| [PageTableInjection](<https://github.com/kkent030315/PageTableInjection>) [Related source](<https://securityonline.info/pagetableinjection-code-injection-inject-malicious-payload/>) | Not added |
 | [Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses](<https://arxiv.org/abs/2103.04952>) | Added |
 | [Processing Dangerous Paths: On Security and Privacy of the Portable Document Format](<https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/>) | Added |
+| [Python NaN Injection](<https://www.tenable.com/blog/python-nan-injection>) [Related source](<https://blog.bitdiscovery.com/2021/12/python-nan-injection/>) [Related source](<https://github.com/ProZachJ/ducktales>) | Not added |
 | [Revealer: Detecting and Exploiting Regular Expression Denial-of-Service Vulnerabilities](<https://research.cuhk.edu.hk/en/publications/revealer-detecting-and-exploiting-regular-expression-denial-of-se-2/>) | Added |
 | [SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web](<https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/>) | Added |
 | [Spook.js: Attacking Chrome Strict Site Isolation via Speculative Execution](<https://www.spookjs.com/>) | Added |

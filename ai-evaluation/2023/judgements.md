@@ -6,6 +6,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 
 | Candidate | Outcome |
 |---|---|
+| [A Deep Dive into Server-Side JavaScript Injection (SSJI) Vulnerabilities](<https://secops.group/a-deep-dive-into-server-side-javascript-injection-ssji-vulnerabilities/>) [Related source](<https://web.archive.org/web/20240614082626/https://secops.group/a-deep-dive-into-server-side-javascript-injection-ssji-vulnerabilities/>) | Not added |
 | [A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities](<https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/>) | Added |
 | [Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol](<https://www.usenix.org/conference/usenixsecurity23/presentation/kwong>) | Added |
 | [CoCo: Efficient Browser Extension Vulnerability Detection via Coverage-guided, Concurrent Abstract Interpretation](<https://yinzhicao.org/CoCo/CoCo.pdf>) | Added |
@@ -22,6 +23,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [It's (DOM) Clobbering Time: Attack Techniques, Prevalence, and Defenses](<https://trouge.net/publication/domclob-sp-2023/>) | Added |
 | [Leaking more than log₂ of the URL count with the selectURL gate](<https://github.com/WICG/shared-storage/issues/86>) | Added |
 | [Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors](<https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/>) | Added |
+| [Prototype Pollution in Python](<https://blog.abdulrah33m.com/prototype-pollution-in-python/>) | Added |
 | [PwnAssistant - Controlling /home's via a Home Assistant RCE](<https://www.elttam.com/blog/pwnassistant>) | Not added |
 | [QUICforge: Client-side Request Forgery in QUIC](<https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/>) | Added |
 | [RøB: Ransomware over Modern Web Browsers](<https://www.usenix.org/conference/usenixsecurity23/presentation/oz>) | Added |
@@ -32,3 +34,4 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web](<https://trouge.net/papers/xsleaks_sp2023.pdf>) | Added |
 | [Uncovering a Command Injection, $2400 Bounty](<https://blog.voorivex.team/uncovering-a-command-injection-2400-bounty>) | Not added |
 | [Uncovering and Exploiting Hidden APIs in Mobile Super Apps](<https://arxiv.org/abs/2306.08134>) | Added |
+| [Understanding and Preventing JS Template Literal Injection Attacks](<https://r1cs3c.medium.com/understanding-and-preventing-js-template-literal-injection-attacks-cf0e7c799cde>) [Related source](<https://www.galahcyber.com.au/practical-cybersecurity-insights/understanding-and-preventing-js-template-literal-injection-attacks/>) | Not added |

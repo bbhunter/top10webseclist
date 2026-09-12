@@ -9,6 +9,9 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Prototype Pollution in Python](<https://blog.abdulrah33m.com/prototype-pollution-in-python/>) | Added |
+| [Understanding and Preventing JS Template Literal Injection Attacks](<https://r1cs3c.medium.com/understanding-and-preventing-js-template-literal-injection-attacks-cf0e7c799cde>) [Related source](<https://www.galahcyber.com.au/practical-cybersecurity-insights/understanding-and-preventing-js-template-literal-injection-attacks/>) | Not added |
+| [A Deep Dive into Server-Side JavaScript Injection (SSJI) Vulnerabilities](<https://secops.group/a-deep-dive-into-server-side-javascript-injection-ssji-vulnerabilities/>) [Related source](<https://web.archive.org/web/20240614082626/https://secops.group/a-deep-dive-into-server-side-javascript-injection-ssji-vulnerabilities/>) | Not added |
 | [$7000 Bounty on a Single Web Application](<https://blog.voorivex.team/7000-bounty-on-a-single-web-application>) | Not added |
 | [$9240 Bounty in 30 days Hunt Challenge](<https://blog.voorivex.team/9240-bounty-in-30-days-hunt-challenge>) | Not added |
 | [2022 Microsoft Teams RCE](<https://blog.pksecurity.io/2023/01/16/2022-microsoft-teams-rce.html>) | Not added |

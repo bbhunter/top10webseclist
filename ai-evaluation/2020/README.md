@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [DoS - Mr. Pixel Flood](<https://shahjerry33.medium.com/dos-mr-pixel-flood-27605add29f2>) | Not added |
+| [How Secure Are Your Universally Unique IDentifiers (UUIDs)?](<https://versprite.com/resources/blog/universally-unique-identifiers/>) | Added |
 | [A Tale of Two Headers: A Formal Analysis of Inconsistent Click-Jacking Protection on the Web](<https://www.usenix.org/conference/usenixsecurity20/presentation/calzavara>) | Added |
 | [Abusing the Service Workers API](<https://www.akamai.com/blog/security/abusing-the-service-workers-api>) | Not added |
 | [Analysis of CVE-2020-0605: Code Execution using XPS Files in .NET](<https://www.mdsec.co.uk/2020/05/analysis-of-cve-2020-0605-code-execution-using-xps-files-in-net/>) | Not added |

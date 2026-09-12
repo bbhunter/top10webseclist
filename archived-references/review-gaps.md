@@ -5,6 +5,19 @@
 
 # References that are archived but unjudged
 
+## References added from issue 11 — 12 September 2026
+
+These six sources have preserved text, source-supported credits and digests.
+A dedicated semantic capture-validation pass remains pending. This queue concerns
+capture integrity, not the separately completed research inclusion decision.
+
+- [Measuring and Mitigating the Risk of IP Reuse on Public Clouds](md/2022/arxiv-measuring-mitigating-risk-ip-reuse-public-clouds.md)
+- [Cypher Injection Playground](md/2022/moonactive-cypher-injection-playground.md)
+- [Cypher Query Injection: The New SQL Injection We Are Not Aware Of (Slides)](md/2022/moonactive-cypher-query-injection-new-sql-injection-we-not-aware-slides.md)
+- [Securing Cloud Services against Squatting Attacks](md/2022/eric-pauley-securing-cloud-services-against-squatting-attacks.md)
+- [Finding client-side prototype pollution with DOM Invader](md/2022/2022-portswigger-finding-client-side-prototype-pollution-dom-invader.md)
+- [How Secure Are Your Universally Unique IDentifiers (UUIDs)?](md/2020/versprite-how-secure-your-universally-unique-identifiers-uuids.md)
+
 ## AQL research added from issue 9 — 12 September 2026
 
 The three sources below have Markdown and PDF copies, source-supported credits,

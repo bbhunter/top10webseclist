@@ -44,7 +44,9 @@ def audit_year(year):
         source = ROOT / f'{year}-ai.md'
         text = source.read_text().split('<!-- archived-references:start -->', 1)[1].split('<!-- archived-references:end -->', 1)[0]
     else:
-        text = source.read_text().split('## Missed from the original list', 1)[1]
+        # Added also covers retained community nominations. The private review
+        # gates new missed-work additions; this audit checks public inclusion.
+        text = source.read_text()
     urls = {known.normalise(url) for url in known.extract_urls(text)}
     index = (directory / 'README.md').read_text()
     latest = history.latest_by_candidate(events)

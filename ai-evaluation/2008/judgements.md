@@ -12,6 +12,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [CookieMonster: Fully Automated Active HTTPS Cookie Hijacking](<https://fscked.org/projects/cookiemonster>) | Added |
 | [Creating a Rogue CA Certificate](<http://www.phreedom.org/research/rogue-ca/>) | Added |
 | [Exploitable Redirects on the Web: Identification, Prevalence, and Defense](<https://www.usenix.org/event/woot08/tech/full_papers/shue/shue.pdf>) | Added |
+| [File Download Injection](<https://dl.packetstormsecurity.net/papers/attack/Aspect_File_Download_Injection.pdf>) | Added |
 | [ForceHTTPS: Protecting High-Security Web Sites from Network Attacks](<https://archives.iw3c2.org/www2008/papers/pdf/p525-jacksonA.pdf>) | Added |
 | [Increased DNS Forgery Resistance Through 0x20-Bit Encoding](<https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/>) | Added |
 | [Lateral SQL Injection](<https://www.davidlitchfield.com/lateral-sql-injection.pdf>) | Added |

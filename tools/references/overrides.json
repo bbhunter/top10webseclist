@@ -6648,6 +6648,59 @@
    ],
    "publisher": "Anvil Secure",
    "title": "aqlmap"
+  },
+  "https://arxiv.org/abs/2204.05122": {
+   "authors": [
+    "Eric Pauley",
+    "Ryan Sheatsley",
+    "Blaine Hoak",
+    "Quinn Burke",
+    "Yohan Beugin",
+    "Patrick McDaniel"
+   ],
+   "publisher": "arXiv",
+   "title": "Measuring and Mitigating the Risk of IP Reuse on Public Clouds"
+  },
+  "https://pauley.me/post/2022/secure-cloud-decomissioning/": {
+   "authors": [
+    "Eric Pauley",
+    "Patrick McDaniel"
+   ],
+   "publisher": "Eric Pauley",
+   "title": "Securing Cloud Services against Squatting Attacks"
+  },
+  "https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "publisher": "PortSwigger",
+   "title": "Finding client-side prototype pollution with DOM Invader"
+  },
+  "https://versprite.com/resources/blog/universally-unique-identifiers/": {
+   "authors": [
+    "Matias Choren"
+   ],
+   "publisher": "VerSprite",
+   "title": "How Secure Are Your Universally Unique IDentifiers (UUIDs)?"
+  },
+  "https://github.com/noypearl/cypher-playground/blob/main/slides/BsidesTLV_2022_Presentation.pdf": {
+   "title": "Cypher Query Injection: The New SQL Injection We Are Not Aware Of (Slides)",
+   "authors": [
+    "Noy Pearl"
+   ],
+   "publisher": "MoonActive"
+  },
+  "https://github.com/noypearl/cypher-playground": {
+   "title": "Cypher Injection Playground",
+   "authors": [
+    "Noy Pearl"
+   ],
+   "publisher": "MoonActive"
+  },
+  "https://www.youtube.com/watch?v=SIqKo7xiPVA": {
+   "outcome": "skip",
+   "class": "derivative",
+   "reason": "Recording of Noy Pearl’s Cypher Query Injection talk; the original BSidesTLV 2022 slides and companion playground are preserved on the same citation line."
   }
  },
  "mirror_sources": [],

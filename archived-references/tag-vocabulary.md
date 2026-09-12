@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-201 tags, across 1748 documents that carry a digest.
+201 tags, across 1754 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -77,13 +77,13 @@ JSON.
 | `argument-injection` | 2 | A03:2021 |
 | `aspnet` | 49 | — |
 | `attack-chain` | 189 | — |
-| `auth-bypass` | 311 | A01:2021 |
+| `auth-bypass` | 312 | A01:2021 |
 | `autofill` | 1 | — |
-| `aws` | 30 | — |
+| `aws` | 32 | — |
 | `azure` | 11 | — |
 | `blind-xss` | 1 | A03:2021 |
 | `blockchain` | 8 | — |
-| `browser-extension` | 76 | — |
+| `browser-extension` | 77 | — |
 | `browser-fingerprinting` | 25 | — |
 | `bug-bounty` | 165 | — |
 | `cache` | 75 | — |
@@ -110,18 +110,18 @@ JSON.
 | `csti` | 4 | A03:2021 |
 | `cve` | 252 | — |
 | `data-breach` | 5 | — |
-| `database` | 65 | — |
+| `database` | 67 | — |
 | `deanonymization` | 20 | — |
 | `defence` | 60 | — |
 | `dependency-confusion` | 1 | A06:2021 |
 | `deserialization` | 81 | A08:2021 |
 | `desync` | 36 | — |
-| `detection` | 127 | A09:2021 |
+| `detection` | 128 | A09:2021 |
 | `django` | 11 | — |
-| `dns` | 89 | — |
+| `dns` | 90 | — |
 | `dns-rebinding` | 31 | A10:2021 |
 | `docker` | 5 | A05:2021 |
-| `dom` | 143 | — |
+| `dom` | 144 | — |
 | `dom-clobbering` | 14 | A08:2021 |
 | `domain-takeover` | 2 | — |
 | `dos` | 107 | — |
@@ -159,7 +159,7 @@ JSON.
 | `identity` | 8 | A07:2021 |
 | `idor` | 27 | A01:2021 |
 | `iframe` | 140 | — |
-| `info-leak` | 617 | — |
+| `info-leak` | 620 | — |
 | `injection` | 128 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 4 | — |
@@ -176,17 +176,17 @@ JSON.
 | `llm` | 48 | — |
 | `load-balancer` | 16 | — |
 | `mass-assignment` | 11 | A01:2021 |
-| `measurement-study` | 239 | — |
+| `measurement-study` | 240 | — |
 | `memory-corruption` | 5 | — |
 | `mime` | 42 | A05:2021 |
-| `mitigation` | 174 | — |
+| `mitigation` | 176 | — |
 | `mongodb` | 6 | — |
 | `mssql` | 11 | — |
 | `mutation-xss` | 12 | A03:2021 |
 | `mysql` | 23 | — |
 | `nextjs` | 11 | — |
 | `nodejs` | 69 | — |
-| `nosqli` | 6 | A03:2021 |
+| `nosqli` | 8 | A03:2021 |
 | `ntlm` | 2 | — |
 | `oauth` | 63 | A07:2021 |
 | `open-redirect` | 63 | A04:2021 |
@@ -201,11 +201,11 @@ JSON.
 | `php` | 124 | — |
 | `postgres` | 8 | — |
 | `postmessage` | 34 | — |
-| `predictable-token` | 6 | A02:2021 |
+| `predictable-token` | 7 | A02:2021 |
 | `prior-art-extension` | 58 | — |
 | `privilege-escalation` | 109 | A01:2021 |
 | `prompt-injection` | 41 | A03:2021 |
-| `prototype-pollution` | 22 | A08:2021 |
+| `prototype-pollution` | 23 | A08:2021 |
 | `proxy` | 84 | — |
 | `python` | 36 | — |
 | `race-condition` | 29 | A04:2021 |
@@ -213,7 +213,7 @@ JSON.
 | `rails` | 17 | — |
 | `rce` | 280 | — |
 | `react` | 6 | — |
-| `redis` | 3 | — |
+| `redis` | 5 | — |
 | `redos` | 3 | — |
 | `request-smuggling` | 50 | — |
 | `response-splitting` | 19 | A03:2021 |
@@ -237,7 +237,7 @@ JSON.
 | `spring` | 13 | — |
 | `sqli` | 66 | A03:2021 |
 | `sso` | 66 | A07:2021 |
-| `ssrf` | 96 | A10:2021 |
+| `ssrf` | 97 | A10:2021 |
 | `ssti` | 20 | A03:2021 |
 | `static-analysis` | 75 | — |
 | `struts` | 4 | — |
@@ -266,7 +266,7 @@ JSON.
 | `websocket` | 8 | — |
 | `wordpress` | 21 | — |
 | `xsleak` | 76 | — |
-| `xss` | 396 | A03:2021 |
+| `xss` | 397 | A03:2021 |
 | `xxe` | 33 | A03:2021 |
 
 ### Never published

@@ -9,6 +9,10 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Python NaN Injection](<https://www.tenable.com/blog/python-nan-injection>) [Related source](<https://blog.bitdiscovery.com/2021/12/python-nan-injection/>) [Related source](<https://github.com/ProZachJ/ducktales>) | Not added |
+| [Leveraging the Spring Expression Language injection vulnerability to get RCE](<https://xen0vas.github.io/Leveraging-the-SpEL-Injection-Vulnerability-to-get-RCE/>) | Not added |
+| [Improper Spring @Query Usage Allows N1QL Injection](<https://www.gremwell.com/spring-n1ql-injection>) | Not added |
+| [PageTableInjection](<https://github.com/kkent030315/PageTableInjection>) [Related source](<https://securityonline.info/pagetableinjection-code-injection-inject-malicious-payload/>) | Not added |
 | [Abusing Hidden Properties to Attack the Node.js Ecosystem](<https://www.usenix.org/conference/usenixsecurity21/presentation/xiao>) | Added |
 | [alert() is dead, long live print()](<https://portswigger.net/research/alert-is-dead-long-live-print>) | Not added |
 | [ALPACA: Application Layer Protocol Confusion — Analyzing and Mitigating Cracks in TLS Authentication](<https://alpaca-attack.com/>) | Added |

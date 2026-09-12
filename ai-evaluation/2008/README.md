@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [File Download Injection](<https://dl.packetstormsecurity.net/papers/attack/Aspect_File_Download_Injection.pdf>) | Added |
 | Algorithm, goals and experiments are detailed. | Not added |
 | [All Your iFRAMEs Point to Us](<https://www.usenix.org/legacy/event/sec08/tech/full_papers/provos/provos_html/index.html>) | Not added |
 | [Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking](<https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html>) | Added |

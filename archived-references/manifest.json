@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-12T00:02:57+00:00",
+ "updated": "2026-09-12T15:01:25+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -10840,6 +10840,109 @@
     }
    },
    "title": "[2110.10129] Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques"
+  },
+  "https://arxiv.org/abs/2204.05122": {
+   "also_at": [
+    "https://arxiv.org/pdf/2204.05122v1"
+   ],
+   "authors": [
+    "Eric Pauley",
+    "Ryan Sheatsley",
+    "Blaine Hoak",
+    "Quinn Burke",
+    "Yohan Beugin",
+    "Patrick McDaniel"
+   ],
+   "cited_by": [
+    "2022.md:90"
+   ],
+   "cited_title": "Measuring and Mitigating the Risk of IP Reuse on Public Clouds",
+   "content_gap": "",
+   "content_sha256": "eb8acba3f4ab5c99e661c08bb55823f533c6a504599068154436759c6fb96666",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "eb8acba3f4ab5c99e661c08bb55823f533c6a504599068154436759c6fb96666",
+    "tags": [
+     "aws",
+     "info-leak",
+     "measurement-study",
+     "mitigation"
+    ],
+    "text": "Measures how reassigned public-cloud IP addresses receive traffic from residual configurations, including cloud services and applications beyond DNS. The study analyses observed traffic and evaluates IP-allocation policies intended to reduce cross-tenant exposure."
+   },
+   "first_seen_utc": "2026-09-12T14:45:57+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://arxiv.org/abs/2204.05122",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 5502,
+    "title": "[2204.05122] Measuring and Mitigating the Risk of IP Reuse on Public Clouds"
+   },
+   "kind": "article",
+   "licence": "unknown",
+   "linked_document_sha256": "51713376f118ef704007f082bea7eb560f7576d5038f56c8f3886bb65413f0a9",
+   "linked_document_url": "https://arxiv.org/pdf/2204.05122v1",
+   "publisher": "arXiv",
+   "raw_sha256": "51713376f118ef704007f082bea7eb560f7576d5038f56c8f3886bb65413f0a9",
+   "slug": "arxiv-measuring-mitigating-risk-ip-reuse-public-clouds",
+   "spellings": [
+    "https://arxiv.org/abs/2204.05122"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "eb8acba3f4ab5c99e661c08bb55823f533c6a504599068154436759c6fb96666",
+     "extraction": null,
+     "raw_sha256": "51713376f118ef704007f082bea7eb560f7576d5038f56c8f3886bb65413f0a9",
+     "reason": "",
+     "result": "stored",
+     "slug": "arxiv-measuring-mitigating-risk-ip-reuse-public-clouds",
+     "utc": "2026-09-12T14:50:10+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://arxiv.org/abs/2204.05122",
+     "http": 200,
+     "kind": "article",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 5502,
+     "title": "[2204.05122] Measuring and Mitigating the Risk of IP Reuse on Public Clouds",
+     "utc": "2026-09-12T14:45:57+00:00"
+    },
+    "pdf": {
+     "bytes": 861262,
+     "file": "archived-references/pdf/2022/arxiv-measuring-mitigating-risk-ip-reuse-public-clouds.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-12T15:01:22+00:00"
+    },
+    "render": {
+     "chars": 142905,
+     "depth": "full",
+     "file": "archived-references/md/2022/arxiv-measuring-mitigating-risk-ip-reuse-public-clouds.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-12T14:50:10+00:00"
+    }
+   },
+   "title": "Measuring and Mitigating the Risk of IP Reuse on Public Clouds"
   },
   "https://arxiv.org/abs/2205.10174": {
    "also_at": [
@@ -85143,6 +85246,225 @@
     }
    },
    "title": "http-garden: Differential fuzzing REPL for HTTP implementations."
+  },
+  "https://github.com/noypearl/cypher-playground": {
+   "also_at": [],
+   "authors": [
+    "Noy Pearl"
+   ],
+   "cited_by": [
+    "2022.md:91"
+   ],
+   "cited_title": "Playground",
+   "commit": "06756dacd39c2b1b50993e3e988b7d51d825eaad",
+   "content_gap": "",
+   "content_sha256": "6d295cb92dfcf2659ada0c90224321c22cc400c9bca2b5e373d7f095d795dd29",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "6d295cb92dfcf2659ada0c90224321c22cc400c9bca2b5e373d7f095d795dd29",
+    "tags": [
+     "nosqli",
+     "database",
+     "redis"
+    ],
+    "text": "Documents a deliberately vulnerable, SpongeBob-themed Cypher injection playground for Neo4j and RedisGraph. The README describes its API endpoints, setup and troubleshooting, and links the accompanying BSidesTLV 2022 slides."
+   },
+   "first_seen_utc": "2026-09-12T14:49:56+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://github.com/noypearl/cypher-playground",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 5683,
+    "title": "GitHub - noypearl/cypher-playground: Spongebob-themed cypher injection playground · GitHub"
+   },
+   "images": {
+    "/screenshots/404.png?raw=true": {
+     "bytes": 78879,
+     "height": 577,
+     "sha256": "0a36cf88b1b403dd2d03cce3b7cc6bf3fdc6b412d6e9220fd7f77cc6839a418c",
+     "width": 1100
+    },
+    "/screenshots/homepage.png?raw=true": {
+     "bytes": 87365,
+     "height": 586,
+     "sha256": "c94290cb432dabd0a571a18cc5cce091e5d04d97902356d5931ac6b10d1ed26f",
+     "width": 1100
+    },
+    "/screenshots/swagger.png?raw=true": {
+     "bytes": 94908,
+     "height": 924,
+     "sha256": "a32289e658629b6702a2e48fc0778ddd6bcc91711348d601cd725027ac7a3d3b",
+     "width": 1100
+    }
+   },
+   "kind": "repo",
+   "licence": "see the repository",
+   "publisher": "MoonActive",
+   "slug": "moonactive-cypher-injection-playground",
+   "spellings": [
+    "https://github.com/noypearl/cypher-playground"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "6d295cb92dfcf2659ada0c90224321c22cc400c9bca2b5e373d7f095d795dd29",
+     "extraction": null,
+     "raw_sha256": "",
+     "reason": "",
+     "result": "stored",
+     "slug": "moonactive-cypher-injection-playground",
+     "utc": "2026-09-12T14:50:26+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://github.com/noypearl/cypher-playground",
+     "http": 200,
+     "kind": "repo",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 5683,
+     "title": "GitHub - noypearl/cypher-playground: Spongebob-themed cypher injection playground · GitHub",
+     "utc": "2026-09-12T14:49:57+00:00"
+    },
+    "images": {
+     "bytes": 261152,
+     "reason": "3 of 3 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-12T15:01:03+00:00"
+    },
+    "pdf": {
+     "bytes": 470626,
+     "file": "archived-references/pdf/2022/moonactive-cypher-injection-playground.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-12T15:01:25+00:00"
+    },
+    "render": {
+     "chars": 40341,
+     "depth": "full",
+     "file": "archived-references/md/2022/moonactive-cypher-injection-playground.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-12T14:50:26+00:00"
+    }
+   },
+   "title": "Cypher Injection Playground"
+  },
+  "https://github.com/noypearl/cypher-playground/blob/main/slides/BsidesTLV_2022_Presentation.pdf": {
+   "also_at": [
+    "https://raw.githubusercontent.com/noypearl/cypher-playground/4070d9a8a1819dc8fc15a121c2397d57b0df1b6f/slides/BsidesTLV_2022_Presentation.pdf"
+   ],
+   "authors": [
+    "Noy Pearl"
+   ],
+   "cited_by": [
+    "2022.md:91"
+   ],
+   "cited_title": "Slides",
+   "content_gap": "",
+   "content_sha256": "f2b70e7de8fbb014c7d32b3db2eaa8c4901d5389905b152883852fa5037cc19f",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "f2b70e7de8fbb014c7d32b3db2eaa8c4901d5389905b152883852fa5037cc19f",
+    "tags": [
+     "nosqli",
+     "database",
+     "ssrf",
+     "info-leak",
+     "redis"
+    ],
+    "text": "Explains Cypher injection in graph databases, including blind extraction, chained LOAD CSV requests that send internal response data to an external endpoint, and APOC procedures. The slides cover Neo4j and RedisGraph behavior and recommend parameterized queries and restricted privileges."
+   },
+   "first_seen_utc": "2026-09-12T14:49:55+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://github.com/noypearl/cypher-playground/blob/main/slides/BsidesTLV_2022_Presentation.pdf",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 2675,
+    "title": "cypher-playground/slides/BsidesTLV_2022_Presentation.pdf at main · noypearl/cypher-playground · GitHub"
+   },
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "linked_document_sha256": "85df4ed5edd323fe4a5f1f11e91f0ec44eaedb060eaa92726794df077dde2ff5",
+   "linked_document_url": "https://raw.githubusercontent.com/noypearl/cypher-playground/4070d9a8a1819dc8fc15a121c2397d57b0df1b6f/slides/BsidesTLV_2022_Presentation.pdf",
+   "publisher": "MoonActive",
+   "raw_sha256": "85df4ed5edd323fe4a5f1f11e91f0ec44eaedb060eaa92726794df077dde2ff5",
+   "slug": "moonactive-cypher-query-injection-new-sql-injection-we-not-aware-slides",
+   "spellings": [
+    "https://github.com/noypearl/cypher-playground/blob/main/slides/BsidesTLV_2022_Presentation.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "f2b70e7de8fbb014c7d32b3db2eaa8c4901d5389905b152883852fa5037cc19f",
+     "extraction": null,
+     "raw_sha256": "85df4ed5edd323fe4a5f1f11e91f0ec44eaedb060eaa92726794df077dde2ff5",
+     "reason": "",
+     "result": "stored",
+     "slug": "moonactive-cypher-query-injection-new-sql-injection-we-not-aware-slides",
+     "utc": "2026-09-12T14:52:26+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://github.com/noypearl/cypher-playground/blob/main/slides/BsidesTLV_2022_Presentation.pdf",
+     "http": 200,
+     "kind": "whitepaper",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 2675,
+     "title": "cypher-playground/slides/BsidesTLV_2022_Presentation.pdf at main · noypearl/cypher-playground · GitHub",
+     "utc": "2026-09-12T14:49:56+00:00"
+    },
+    "pdf": {
+     "bytes": 7138466,
+     "file": "archived-references/pdf/2022/moonactive-cypher-query-injection-new-sql-injection-we-not-aware-slides.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-12T15:01:25+00:00"
+    },
+    "render": {
+     "chars": 10964,
+     "depth": "full",
+     "file": "archived-references/md/2022/moonactive-cypher-query-injection-new-sql-injection-we-not-aware-slides.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-12T14:52:26+00:00"
+    }
+   },
+   "title": "Cypher Query Injection: The New SQL Injection We Are Not Aware Of (Slides)"
   },
   "https://github.com/podiumdesu/wallet-privacy-threats": {
    "also_at": [],
@@ -174691,6 +175013,138 @@
    },
    "title": "PaulDotCom: Archives"
   },
+  "https://pauley.me/post/2022/secure-cloud-decomissioning": {
+   "also_at": [],
+   "authors": [
+    "Eric Pauley",
+    "Patrick McDaniel"
+   ],
+   "cited_by": [
+    "2022.md:90"
+   ],
+   "cited_title": "Practitioner guide",
+   "content_gap": "",
+   "content_sha256": "b39f2fe1f39952e79c62172517e8fdf5d86d070a0ac78a798978235ca3723bfd",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "b39f2fe1f39952e79c62172517e8fdf5d86d070a0ac78a798978235ca3723bfd",
+    "tags": [
+     "aws",
+     "dns",
+     "info-leak",
+     "mitigation"
+    ],
+    "text": "Describes cloud squatting caused by IP reuse and stale service configuration. It examines DNS records, subscriptions and application references, then sets out inventory, monitoring and decommissioning practices to prevent traffic and data reaching a later tenant."
+   },
+   "first_seen_utc": "2026-09-12T14:45:59+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://pauley.me/post/2022/secure-cloud-decomissioning/",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 18491,
+    "title": "Securing Cloud Services against Squatting Attacks | Eric Pauley"
+   },
+   "kind": "article",
+   "language": "en-us",
+   "licence": "unknown",
+   "publisher": "Eric Pauley",
+   "raw_sha256": "1fa8b8734576bf61998297e6813cc1f013e0bdd00d352b84e3876df9bf88e419",
+   "slug": "eric-pauley-securing-cloud-services-against-squatting-attacks",
+   "spellings": [
+    "https://pauley.me/post/2022/secure-cloud-decomissioning/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "b39f2fe1f39952e79c62172517e8fdf5d86d070a0ac78a798978235ca3723bfd",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 19936,
+        "code_blocks": 0,
+        "headings": 15,
+        "images": 0,
+        "links": 20,
+        "name": "precision",
+        "tables": 5,
+        "words": 2849
+       },
+       {
+        "chars": 19936,
+        "code_blocks": 0,
+        "headings": 15,
+        "images": 0,
+        "links": 20,
+        "name": "recall",
+        "tables": 5,
+        "words": 2849
+       },
+       {
+        "chars": 20001,
+        "code_blocks": 0,
+        "headings": 15,
+        "images": 0,
+        "links": 20,
+        "name": "raw",
+        "tables": 5,
+        "words": 2858
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "1fa8b8734576bf61998297e6813cc1f013e0bdd00d352b84e3876df9bf88e419",
+     "reason": "",
+     "result": "stored",
+     "slug": "eric-pauley-securing-cloud-services-against-squatting-attacks",
+     "utc": "2026-09-12T14:50:06+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://pauley.me/post/2022/secure-cloud-decomissioning/",
+     "http": 200,
+     "kind": "article",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 18491,
+     "title": "Securing Cloud Services against Squatting Attacks | Eric Pauley",
+     "utc": "2026-09-12T14:45:58+00:00"
+    },
+    "pdf": {
+     "bytes": 103818,
+     "file": "archived-references/pdf/2022/eric-pauley-securing-cloud-services-against-squatting-attacks.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-12T15:01:20+00:00"
+    },
+    "render": {
+     "chars": 22034,
+     "depth": "full",
+     "file": "archived-references/md/2022/eric-pauley-securing-cloud-services-against-squatting-attacks.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-12T14:50:06+00:00"
+    }
+   },
+   "title": "Securing Cloud Services against Squatting Attacks"
+  },
   "https://paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html": {
    "also_at": [],
    "authors": [],
@@ -178266,6 +178720,187 @@
     }
    },
    "title": "Exposing Intranets with reliable Browser-based Port scanning"
+  },
+  "https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader": {
+   "also_at": [],
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "cited_by": [
+    "2022.md:89"
+   ],
+   "cited_title": "Finding client-side prototype pollution with DOM Invader",
+   "content_gap": "",
+   "content_sha256": "f085bf3a16b6df615416a000c6936ffd79777ab9a6ca9c8b133248451406a54c",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "f085bf3a16b6df615416a000c6936ffd79777ab9a6ca9c8b133248451406a54c",
+    "tags": [
+     "prototype-pollution",
+     "dom",
+     "xss",
+     "detection",
+     "browser-extension"
+    ],
+    "text": "Introduces DOM Invader support for finding client-side prototype pollution sources and exploitable gadgets in Burp Suite 2022.6. It scans query, fragment and message inputs, traces polluted values into dangerous sinks, and supports custom source and sink callbacks."
+   },
+   "first_seen_utc": "2026-09-12T14:45:54+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 10286,
+    "title": "Finding client-side prototype pollution with DOM Invader | Blog - PortSwigger"
+   },
+   "images": {
+    "https://portswigger.net/cms/images/67/55/7d83-article-dom_invader_prototype_pollution_article.jpg": {
+     "bytes": 70165,
+     "height": 471,
+     "sha256": "5d8c10715e71e8da61ff5eb5a09d7a75c98b89a833e7ab10281fc4a28375fdf1",
+     "width": 940
+    },
+    "https://portswigger.net/cms/images/7a/c1/679d-article-screenshot-showing-switching-on-prototype-pollution.png": {
+     "bytes": 24687,
+     "height": 495,
+     "sha256": "470659ca7404ce9060c17c0ab3b6d04905dd0103f7a0c3190e1f2b8cbfef3d37",
+     "width": 498
+    },
+    "https://portswigger.net/cms/images/85/f4/87df-article-screenshot-scan-for-gadgets.png": {
+     "bytes": 25787,
+     "height": 268,
+     "sha256": "119456a9e17d316191ef0d38fcba20956b4684bc6b20d5257b22b3bb66d8774c",
+     "width": 1032
+    },
+    "https://portswigger.net/cms/images/86/ba/73db-article-screenshot-showing-sources-found.png": {
+     "bytes": 37399,
+     "height": 382,
+     "sha256": "49e55e2aa8200fe24b02f5091d07d5fa1a0d2ede4371ae270c4ee6557828f8fe",
+     "width": 1032
+    },
+    "https://portswigger.net/cms/images/b4/fa/5850-article-screenshot-protoype-pollution-settings.png": {
+     "bytes": 23609,
+     "height": 391,
+     "sha256": "c594d8199a1fecc06cdafcdf336be3a2e37aa1b9ae04930dee53cab0d61a0adf",
+     "width": 496
+    },
+    "https://portswigger.net/cms/images/c9/c7/f1f4-article-screenshot-scan-for-gadgets-automatically.png": {
+     "bytes": 33161,
+     "height": 493,
+     "sha256": "516e98c51e92edf96f786febb725c5fef5629a9c64b4e99adc4b6ce5d1a91d80",
+     "width": 498
+    },
+    "https://portswigger.net/cms/images/f9/f4/472f-article-screenshot-sink-callback-code.png": {
+     "bytes": 26528,
+     "height": 496,
+     "sha256": "6bf93045c27301892351368f62f917f1ad521dff41f14e8425eec0e50c665ba5",
+     "width": 501
+    },
+    "https://portswigger.net/cms/images/fa/5c/441d-article-screenshot-sinks-callback.png": {
+     "bytes": 33461,
+     "height": 497,
+     "sha256": "e97ada246dfe21658406cf51be0ee0c6ab146cb5a4c9b79300e0fce45d09bf3d",
+     "width": 498
+    },
+    "https://portswigger.net/cms/profiles/gareth-heyes.png": {
+     "reason": "150x150 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2022-06-20",
+   "publisher": "PortSwigger",
+   "raw_sha256": "db55da909741992bd3e5320cbd930ad6d942f5d24bbebf16cb7817eb31740c57",
+   "slug": "2022-portswigger-finding-client-side-prototype-pollution-dom-invader",
+   "spellings": [
+    "https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "f085bf3a16b6df615416a000c6936ffd79777ab9a6ca9c8b133248451406a54c",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 10862,
+        "code_blocks": 0,
+        "headings": 6,
+        "images": 9,
+        "links": 37,
+        "name": "recall",
+        "tables": 0,
+        "words": 1361
+       },
+       {
+        "chars": 10941,
+        "code_blocks": 0,
+        "headings": 6,
+        "images": 9,
+        "links": 37,
+        "name": "raw",
+        "tables": 0,
+        "words": 1372
+       }
+      ],
+      "chosen": "raw",
+      "why": "raw kept the most code blocks and text"
+     },
+     "raw_sha256": "db55da909741992bd3e5320cbd930ad6d942f5d24bbebf16cb7817eb31740c57",
+     "reason": "",
+     "result": "stored",
+     "slug": "2022-portswigger-finding-client-side-prototype-pollution-dom-invader",
+     "utc": "2026-09-12T14:50:02+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader",
+     "http": 200,
+     "kind": "article",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 10286,
+     "title": "Finding client-side prototype pollution with DOM Invader | Blog - PortSwigger",
+     "utc": "2026-09-12T14:45:54+00:00"
+    },
+    "images": {
+     "bytes": 274797,
+     "reason": "8 of 9 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-12T15:01:01+00:00"
+    },
+    "pdf": {
+     "bytes": 376098,
+     "file": "archived-references/pdf/2022/2022-portswigger-finding-client-side-prototype-pollution-dom-invader.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-12T15:01:17+00:00"
+    },
+    "render": {
+     "chars": 13217,
+     "depth": "full",
+     "file": "archived-references/md/2022/2022-portswigger-finding-client-side-prototype-pollution-dom-invader.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-12T14:50:02+00:00"
+    }
+   },
+   "title": "Finding client-side prototype pollution with DOM Invader"
   },
   "https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn": {
    "also_at": [
@@ -269596,6 +270231,149 @@
    },
    "title": "Exploiting Spring Boot Actuators"
   },
+  "https://versprite.com/resources/blog/universally-unique-identifiers": {
+   "also_at": [
+    "https://web.archive.org/web/20201029204356id_/https://versprite.com/blog/universally-unique-identifiers/"
+   ],
+   "authors": [
+    "Matias Choren"
+   ],
+   "cited_by": [
+    "2020.md:83"
+   ],
+   "cited_title": "How Secure Are Your Universally Unique IDentifiers (UUIDs)?",
+   "content_gap": "",
+   "content_sha256": "176fd7c721ca888134cee4cce52a3c59d8d7446f8488bb7eda06d9bba9f0f013",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "176fd7c721ca888134cee4cce52a3c59d8d7446f8488bb7eda06d9bba9f0f013",
+    "tags": [
+     "predictable-token",
+     "auth-bypass"
+    ],
+    "text": "Explains UUID layouts and the risks of using predictable identifiers as security tokens. A worked UUIDv1 example brackets a hidden password-reset token between two observable tokens and enumerates the timestamp interval, with caveats about rate limits, delays and multiple backends."
+   },
+   "first_seen_utc": "2026-09-12T14:45:51+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://versprite.com/resources/blog/universally-unique-identifiers/",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 14665,
+    "title": "UUID Security Risks: Are Your Identifiers Secure?"
+   },
+   "images": {
+    "https://versprite.com/wp-content/themes/versprite/assets/img/arrow-right-lightblue.png": {
+     "reason": "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7f7ef6a79f80>"
+    },
+    "https://versprite.com/wp-content/themes/versprite/assets/img/img-we-are-international.png": {
+     "reason": "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7f7ef6a7a610>"
+    },
+    "https://versprite.com/wp-content/uploads/2013/06/4.png": {
+     "bytes": 89543,
+     "height": 512,
+     "sha256": "c67a00f72544b943ca18bac94f4606f8932e5ff2d35d2d5690a743d0cc396d69",
+     "width": 1024
+    },
+    "https://versprite.com/wp-content/uploads/2020/03/software-development-1024x465.jpg": {
+     "bytes": 51202,
+     "height": 465,
+     "sha256": "3990f100f99681b27e603f7fa4673742b9d55076845bf3d0bb21f6c30294e550",
+     "width": 1024
+    },
+    "https://versprite.com/wp-content/uploads/2020/05/17-4-1024x465.jpg": {
+     "bytes": 33108,
+     "height": 465,
+     "sha256": "4b41a7bcff2343fcafce9db47667d447808a9d94e3a1f7e01037c9393af6ff0f",
+     "width": 1024
+    }
+   },
+   "kind": "article",
+   "original_url": "https://versprite.com/resources/blog/universally-unique-identifiers/",
+   "published": "2020-03-04",
+   "publisher": "VerSprite",
+   "raw_sha256": "c4043c707e7bf729c6b2edc44a6663e92304aa3aaf284cb6aa6c0ac567d3fa6d",
+   "retrieved_from": "https://web.archive.org/web/20201029204356id_/https://versprite.com/blog/universally-unique-identifiers/",
+   "retrieved_kind": "manual-import",
+   "retrieved_utc": "2026-09-12T14:54:18+00:00",
+   "slug": "versprite-how-secure-your-universally-unique-identifiers-uuids",
+   "snapshot": "20201029204356",
+   "spellings": [
+    "https://versprite.com/resources/blog/universally-unique-identifiers/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "176fd7c721ca888134cee4cce52a3c59d8d7446f8488bb7eda06d9bba9f0f013",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-12T14:54:18+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://versprite.com/resources/blog/universally-unique-identifiers/",
+     "http": 200,
+     "kind": "article",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 14665,
+     "title": "UUID Security Risks: Are Your Identifiers Secure?",
+     "utc": "2026-09-12T14:45:52+00:00"
+    },
+    "images": {
+     "bytes": 173853,
+     "reason": "3 of 5 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-12T15:00:55+00:00"
+    },
+    "import": {
+     "chars": 15071,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "176fd7c721ca888134cee4cce52a3c59d8d7446f8488bb7eda06d9bba9f0f013",
+     "utc": "2026-09-12T14:54:18+00:00"
+    },
+    "manual-source": {
+     "raw_sha256": "c4043c707e7bf729c6b2edc44a6663e92304aa3aaf284cb6aa6c0ac567d3fa6d",
+     "reason": "Original 2020 article recovered from its former publisher path; later live revision uses a 2023 date.",
+     "result": "stored",
+     "retrieved_from": "https://web.archive.org/web/20201029204356id_/https://versprite.com/blog/universally-unique-identifiers/",
+     "snapshot": "20201029204356",
+     "utc": "2026-09-12T14:59:15+00:00"
+    },
+    "pdf": {
+     "bytes": 339854,
+     "file": "archived-references/pdf/2020/versprite-how-secure-your-universally-unique-identifiers-uuids.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-12T15:01:15+00:00"
+    },
+    "render": {
+     "chars": 15071,
+     "depth": "full",
+     "file": "archived-references/md/2020/versprite-how-secure-your-universally-unique-identifiers-uuids.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-12T14:59:15+00:00"
+    }
+   },
+   "title": "How Secure Are Your Universally Unique IDentifiers (UUIDs)?"
+  },
   "https://vimeo.com/ondemand/44conlondon2015/142249673": {
    "also_at": [],
    "cited_by": [
@@ -284377,6 +285155,57 @@
     }
    },
    "title": "Clickjacking Rootkits for Android"
+  },
+  "https://youtube.com/watch?v=SIqKo7xiPVA": {
+   "also_at": [],
+   "cited_by": [
+    "2022.md:91"
+   ],
+   "cited_title": "Cypher Query Injection: The New “SQL Injection” We Aren't Aware Of",
+   "decision": {
+    "at": "2026-09-12",
+    "by": "maintainer",
+    "class": "derivative",
+    "outcome": "skip",
+    "reason": "Recording of Noy Pearl’s Cypher Query Injection talk; the original BSidesTLV 2022 slides and companion playground are preserved on the same citation line."
+   },
+   "first_seen_utc": "2026-09-12T14:49:59+00:00",
+   "grade": null,
+   "health": {
+    "evidence": "200 with 133 chars of text and no noscript fallback",
+    "final_url": "https://www.youtube.com/watch?v=SIqKo7xiPVA",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "js-rendered",
+    "text_length": 133,
+    "title": "Cypher Query Injection - the new \"SQL Injection\" we aren't aware of by Noy Pearl - YouTube"
+   },
+   "kind": "video",
+   "spellings": [
+    "https://www.youtube.com/watch?v=SIqKo7xiPVA"
+   ],
+   "steps": {
+    "acquire": {
+     "reason": "Recording of Noy Pearl’s Cypher Query Injection talk; the original BSidesTLV 2022 slides and companion playground are preserved on the same citation line.",
+     "result": "excluded",
+     "utc": "2026-09-12T15:00:07+00:00"
+    },
+    "check": {
+     "evidence": "200 with 133 chars of text and no noscript fallback",
+     "final_url": "https://www.youtube.com/watch?v=SIqKo7xiPVA",
+     "http": 200,
+     "kind": "video",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "js-rendered",
+     "text_length": 133,
+     "title": "Cypher Query Injection - the new \"SQL Injection\" we aren't aware of by Noy Pearl - YouTube",
+     "utc": "2026-09-12T14:50:00+00:00"
+    }
+   }
   },
   "https://youtube.com/watch?v=Sm4G6cAHjWM&feature=youtu.be": {
    "also_at": [],

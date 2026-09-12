@@ -178,13 +178,13 @@
    "documents": 189
   },
   "auth-bypass": {
-   "documents": 311
+   "documents": 312
   },
   "autofill": {
    "documents": 1
   },
   "aws": {
-   "documents": 30
+   "documents": 32
   },
   "azure": {
    "documents": 11
@@ -196,7 +196,7 @@
    "documents": 8
   },
   "browser-extension": {
-   "documents": 76
+   "documents": 77
   },
   "browser-fingerprinting": {
    "documents": 25
@@ -277,7 +277,7 @@
    "documents": 5
   },
   "database": {
-   "documents": 65
+   "documents": 67
   },
   "deanonymization": {
    "documents": 20
@@ -295,13 +295,13 @@
    "documents": 36
   },
   "detection": {
-   "documents": 127
+   "documents": 128
   },
   "django": {
    "documents": 11
   },
   "dns": {
-   "documents": 89
+   "documents": 90
   },
   "dns-rebinding": {
    "documents": 31
@@ -310,7 +310,7 @@
    "documents": 5
   },
   "dom": {
-   "documents": 143
+   "documents": 144
   },
   "dom-clobbering": {
    "documents": 14
@@ -424,7 +424,7 @@
    "documents": 140
   },
   "info-leak": {
-   "documents": 617
+   "documents": 620
   },
   "injection": {
    "documents": 128
@@ -475,7 +475,7 @@
    "documents": 11
   },
   "measurement-study": {
-   "documents": 239
+   "documents": 240
   },
   "memory-corruption": {
    "documents": 5
@@ -484,7 +484,7 @@
    "documents": 42
   },
   "mitigation": {
-   "documents": 174
+   "documents": 176
   },
   "mongodb": {
    "documents": 6
@@ -505,7 +505,7 @@
    "documents": 69
   },
   "nosqli": {
-   "documents": 6
+   "documents": 8
   },
   "ntlm": {
    "documents": 2
@@ -550,7 +550,7 @@
    "documents": 34
   },
   "predictable-token": {
-   "documents": 6
+   "documents": 7
   },
   "prior-art-extension": {
    "documents": 58
@@ -562,7 +562,7 @@
    "documents": 41
   },
   "prototype-pollution": {
-   "documents": 22
+   "documents": 23
   },
   "proxy": {
    "documents": 84
@@ -586,7 +586,7 @@
    "documents": 6
   },
   "redis": {
-   "documents": 3
+   "documents": 5
   },
   "redos": {
    "documents": 3
@@ -658,7 +658,7 @@
    "documents": 66
   },
   "ssrf": {
-   "documents": 96
+   "documents": 97
   },
   "ssti": {
    "documents": 20
@@ -745,11 +745,11 @@
    "documents": 76
   },
   "xss": {
-   "documents": 396
+   "documents": 397
   },
   "xxe": {
    "documents": 33
   }
  },
- "updated": "2026-09-12T00:01:27+00:00"
+ "updated": "2026-09-12T15:01:11+00:00"
 }

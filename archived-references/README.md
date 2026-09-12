@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1794 reference(s) archived across 20 year list(s). 1700 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1800 reference(s) archived across 20 year list(s). 1706 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -555,7 +555,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web](md/2023/leaky-web-automated-discovery-cross-site-information-leaks-browsers-web.md) | whitepaper |  |  | research | 1 |
 | [Three New Attacks Against JSON Web Tokens](md/2023/three-new-attacks-against-json-web-tokens.md) | whitepaper |  |  | research | 1 |
 
-## 2022 (76)
+## 2022 (81)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -583,6 +583,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Exploiting Static Site Generators: When Static Is Not Actually Static](md/2022/assetnote-io-exploiting-static-site-generators-when-static-not-actually-static.md) | article | assetnote.io |  | research | 1 |
 | [Exploiting Web3's Hidden Attack Surface: Universal XSS on Netlify's Next.js Library](md/2022/2022-samcurry-net-exploiting-web3-s-hidden-attack-surface-universal-xss-library.md) | article | samcurry.net | 2022 | research | 1 |
 | [Exploring the World of ESI Injection](md/2022/2023-medium-exploring-world-esi-injection.md) | article | Medium | 2023 | research | 1 |
+| [Finding client-side prototype pollution with DOM Invader](md/2022/2022-portswigger-finding-client-side-prototype-pollution-dom-invader.md) | article | PortSwigger | 2022 | research | 1 |
 | [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing](md/2022/usenix-org-fuzzorigin-detecting-uxss-vulnerabilities-browsers-through-fuzzing.md) | article | usenix.org |  | research | 1 |
 | [GET /out: Automated Discovery of Application-Layer Censorship Evasion Strategies](md/2022/usenix-org-get-out-automated-discovery-application-layer-censorship-strategies.md) | article | usenix.org |  | research | 1 |
 | [Gregor Samsa: Exploiting Java's XML Signature Verification](md/2022/projectzero-google-gregor-samsa-exploiting-java-s-xml-signature-verification.md) | article | projectzero.google |  | research | 1 |
@@ -596,6 +597,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Leaky Forms: A Study of Email and Password Exfiltration Before Form Submission](md/2022/usenix-org-leaky-forms-study-email-password-exfiltration-before-form-submission.md) | article | usenix.org |  | research | 1 |
 | [Let's Dance in the Cache - Destabilizing Hash Table on Microsoft IIS!](md/2022/2022-orange-tsai-let-s-dance-cache-destabilizing-hash-table-microsoft-iis.md) | article | Orange Tsai | 2022 | research | 1 |
 | [Making HTTP header injection critical via response queue poisoning](md/2022/2022-portswigger-research-making-http-header-injection-critical-poisoning.md) | article | PortSwigger Research | 2022 | research | 1 |
+| [Measuring and Mitigating the Risk of IP Reuse on Public Clouds](md/2022/arxiv-measuring-mitigating-risk-ip-reuse-public-clouds.md) | article | arXiv |  | research | 1 |
 | [Melting the DNS Iceberg: Taking over your infrastructure Kaminsky style](md/2022/sec-consult-melting-dns-iceberg-taking-over-your-infrastructure-kaminsky-style.md) | article | SEC Consult |  | research | 1 |
 | [Mining Node.js Vulnerabilities via Object Dependence Graph and Query](md/2022/usenix-org-mining-node-js-vulnerabilities-object-dependence-graph-query.md) | article | usenix.org |  | research | 1 |
 | [Miracle - One Vulnerability To Rule Them All](md/2022/2022-medium-miracle-one-vulnerability-rule-them-all.md) | article | Medium | 2022 | research | 1 |
@@ -607,6 +609,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites](md/2022/ndss-symposium-probe-proto-measuring-client-side-prototype-pollution-websites.md) | article | NDSS Symposium |  | research | 1 |
 | [Problem with sharedStorage's described use of k-anonymity](md/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.md) | article | GitHub | 2022 | research | 1 |
 | [Rendering Contention Channel Made Practical in Web Browsers](md/2022/usenix-org-rendering-contention-channel-made-practical-web-browsers.md) | article | usenix.org |  | research | 1 |
+| [Securing Cloud Services against Squatting Attacks](md/2022/eric-pauley-securing-cloud-services-against-squatting-attacks.md) | article | Eric Pauley |  | research | 1 |
 | [Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js](md/2022/arxiv-org-silent-spring-prototype-pollution-leads-remote-code-execution-node-js.md) | article | arXiv.org |  | research | 1 |
 | [SSRF vulnerabilities caused by SNI proxy misconfigurations](md/2022/invicti-com-ssrf-vulnerabilities-caused-sni-proxy-misconfigurations.md) | article | invicti.com |  | research | 1 |
 | [Targeted Deanonymization via the Cache Side Channel: Attacks and Defenses](md/2022/usenix-org-targeted-deanonymization-cache-side-channel-attacks-defenses.md) | article | usenix.org |  | research | 1 |
@@ -626,8 +629,10 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Worldwide Server-side Cache Poisoning on All Akamai Edge Nodes ($50K+ Bounty Earned)](md/2022/2023-medium-worldwide-server-side-cache-poisoning-all-akamai-edge-nodes-earned.md) | article | Medium | 2023 | research | 1 |
 | [Zimbra Email - Stealing Clear-Text Credentials via Memcache injection](md/2022/2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection.md) | article | Sonar | 2022 | research | 1 |
 | [{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF](md/2022/2022-claroty-js-security-off-abusing-json-based-sql-bypass-waf.md) | article | Claroty | 2022 | research | 1 |
+| [Cypher Injection Playground](md/2022/moonactive-cypher-injection-playground.md) | repo | MoonActive |  | research | 1 |
 | [Hacking the Cloud With SAML](md/2022/hacking-cloud-saml.md) | slides | Hexacon 2022 | 2022 | research | 1 |
 | [DEF CON 30 - Dongsung Kim - CSRF Resurrections  Starring the Unholy Trinity](md/2022/2022-youtube-def-con-30-dongsung-kim-csrf-resurrections-starring-unholy-trinity.md) | video | YouTube | 2022 | research | 1 |
+| [Cypher Query Injection: The New SQL Injection We Are Not Aware Of (Slides)](md/2022/moonactive-cypher-query-injection-new-sql-injection-we-not-aware-slides.md) | whitepaper | MoonActive |  | research | 1 |
 | [ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron (Slides)](md/2022/electrovolt-pwning-popular-desktop-apps-while-uncovering-new-attack-slides.md) | whitepaper |  |  | research | 1 |
 | [Exploiting Inter-Process Communication in SAP's HTTP Server](md/2022/exploiting-inter-process-communication-sap-s-http-server.md) | whitepaper |  |  | research | 1 |
 | [FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies](md/2022/frameshifter-security-implications-http-2-http-1-conversion-anomalies.md) | whitepaper |  |  | research | 1 |
@@ -696,7 +701,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning](md/2021/towards-lightweight-hybrid-approach-detecting-dom-xss-vulnerabilities-learning.md) | whitepaper | ACM |  | research | 1 |
 | [Web Cache Deception Escalates!](md/2021/web-cache-deception-escalates.md) | whitepaper |  |  | research | 1 |
 
-## 2020 (74)
+## 2020 (75)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -726,6 +731,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)](md/2020/labs-bishopfox-com-h2c-smuggling-request-smuggling-http-2-cleartext-h2c.md) | article | labs.bishopfox.com |  | research | 1 |
 | [Hacking AWS Cognito Misconfigurations](md/2020/2020-notsosecure-hacking-aws-cognito-misconfigurations.md) | article | NotSoSecure | 2020 | research | 1 |
 | [How I Hacked Facebook Again! Unauthenticated RCE on MobileIron MDM](md/2020/2020-orange-tsai-how-i-hacked-facebook-again-unauthenticated-rce-mobileiron-mdm.md) | article | Orange Tsai | 2020 | research | 1 |
+| [How Secure Are Your Universally Unique IDentifiers (UUIDs)?](md/2020/versprite-how-secure-your-universally-unique-identifiers-uuids.md) | article | VerSprite | 2020 | research | 1 |
 | [ImageMagick - Shell injection via PDF password](md/2020/insert-script-blogspot-com-imagemagick-shell-injection-pdf-password.md) | article | insert-script.blogspot.com |  | research | 1 |
 | [Information Leaks via Safari’s Intelligent Tracking Prevention](md/2020/information-leaks-safaris-intelligent-tracking-prevention.md) | article | Google |  | research | 1 |
 | [Kostas Drakonakis / xdriver3-open](md/2020/gitlab-kostas-drakonakis-xdriver3-open.md) | article | GitLab |  | research | 1 |
@@ -1939,6 +1945,7 @@ each one is re-runnable.
 | <https://www.sensepost.com/research/reDuh/SensePost_2008.tgz> | The TGZ is the companion reDuh tool package retained in the 2008 list. The author-hosted reDuh research page is independently cited and archived, so the package is not treated as a missing article. |
 | <https://www.usenix.org/system/files/usenixsecurity26-erinola.pdf> | Complete original paper is preserved together with its full Markdown under https://usenix.org/conference/usenixsecurity26/presentation/erinola. |
 | <https://www.usenix.org/system/files/usenixsecurity26-xiao.pdf> | The complete original paper and full transcription are archived under https://usenix.org/conference/usenixsecurity26/presentation/xiao. |
+| <https://www.youtube.com/watch?v=SIqKo7xiPVA> | Recording of Noy Pearl’s Cypher Query Injection talk; the original BSidesTLV 2022 slides and companion playground are preserved on the same citation line. |
 | <https://www.youtube.com/watch?v=Xfbu-pQ1tIc> | The Black Hat USA 2012 conference recording is retained in the 2012 list, but James Forshaw's own research is archived from the whitepaper at https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf and the slide deck at https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf, both cited on the same line. |
 | <https://www.youtube.com/watch?v=v0fraChyonQ> | The DEF CON 31 conference recording is retained in the 2023 list, but Jonathan Birch's own research is archived from the whitepaper at https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf and the slide deck at https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET.pdf, both cited on the same line. |
 | <https://zenodo.org/records/17822391> | http 403 on acquisition |
