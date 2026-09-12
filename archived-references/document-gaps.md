@@ -3407,7 +3407,7 @@ or fix the route and re-run.
 ## https://zenodo.org/records/17822391
 
 - Outcome: `failed` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: http 403 on acquisition
 - What would fix it: The fetch was refused. Try the browser ladder, or a capture.
 - Cited at: `2025.md:103`
@@ -3415,7 +3415,7 @@ or fix the route and re-run.
 ## https://zenodo.org/records/20280317
 
 - Outcome: `failed` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: http 403 on acquisition
 - What would fix it: The fetch was refused. Try the browser ladder, or a capture.
 - Cited at: `2026-ai.md:31`

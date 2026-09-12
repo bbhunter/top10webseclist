@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-11T20:52:00+00:00",
+ "updated": "2026-09-12T00:02:57+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -6989,6 +6989,236 @@
    },
    "title": "SpyTunes"
   },
+  "https://anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html": {
+   "also_at": [],
+   "authors": [
+    "Daniel Kachakil"
+   ],
+   "cited_by": [
+    "2026-ai.md:68"
+   ],
+   "cited_title": "Exploiting AQL Injection Vulnerabilities in ArangoDB",
+   "content_gap": "",
+   "content_sha256": "d7706256faaeee9904813b1bb8fe901fbdf0075f17ce24d44116841ce65ad821",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "d7706256faaeee9904813b1bb8fe901fbdf0075f17ce24d44116841ce65ad821",
+    "tags": [
+     "nosqli",
+     "injection",
+     "database",
+     "javascript",
+     "info-leak",
+     "privilege-escalation"
+    ],
+    "text": "Explains AQL injection in collection and filter positions, including error-based, reflected, blind and timed extraction. Shows data modification and creation of JavaScript UDFs through system-collection writes, with filesystem access under permissive configurations. Includes the aqlmap tool."
+   },
+   "first_seen_utc": "2026-09-11T23:57:53+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 35310,
+    "title": "Exploiting AQL Injection Vulnerabilities in ArangoDB - Anvil Secure"
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-03-25",
+   "publisher": "Anvil Secure",
+   "raw_sha256": "54d6cbbe706c134678dcd960fb900f333ab9cefa036226cc1052de9718f34d23",
+   "slug": "2026-anvil-secure-exploiting-aql-injection-vulnerabilities-arangodb",
+   "spellings": [
+    "https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "d7706256faaeee9904813b1bb8fe901fbdf0075f17ce24d44116841ce65ad821",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 35316,
+        "code_blocks": 37,
+        "headings": 28,
+        "images": 0,
+        "links": 35,
+        "name": "precision",
+        "tables": 18,
+        "words": 5117
+       },
+       {
+        "chars": 35320,
+        "code_blocks": 37,
+        "headings": 28,
+        "images": 0,
+        "links": 35,
+        "name": "recall",
+        "tables": 18,
+        "words": 5118
+       },
+       {
+        "chars": 35392,
+        "code_blocks": 37,
+        "headings": 28,
+        "images": 0,
+        "links": 35,
+        "name": "raw",
+        "tables": 18,
+        "words": 5127
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "54d6cbbe706c134678dcd960fb900f333ab9cefa036226cc1052de9718f34d23",
+     "reason": "",
+     "result": "stored",
+     "slug": "2026-anvil-secure-exploiting-aql-injection-vulnerabilities-arangodb",
+     "utc": "2026-09-11T23:58:28+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html",
+     "http": 200,
+     "kind": "article",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 35310,
+     "title": "Exploiting AQL Injection Vulnerabilities in ArangoDB - Anvil Secure",
+     "utc": "2026-09-11T23:57:54+00:00"
+    },
+    "pdf": {
+     "bytes": 332774,
+     "file": "archived-references/pdf/2026-ai/2026-anvil-secure-exploiting-aql-injection-vulnerabilities-arangodb.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-12T00:02:56+00:00"
+    },
+    "render": {
+     "chars": 37624,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-anvil-secure-exploiting-aql-injection-vulnerabilities-arangodb.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T23:58:28+00:00"
+    }
+   },
+   "title": "Exploiting AQL Injection Vulnerabilities in ArangoDB"
+  },
+  "https://anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf": {
+   "also_at": [],
+   "authors": [
+    "Daniel Kachakil",
+    "Tao Sauvage"
+   ],
+   "cited_by": [
+    "2026-ai.md:68"
+   ],
+   "cited_title": "Security advisory",
+   "content_gap": "",
+   "content_sha256": "1df7b738b8999c9599ee0c78d75442effb05112b95b4f56b222debef776ff136",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "1df7b738b8999c9599ee0c78d75442effb05112b95b4f56b222debef776ff136",
+    "tags": [
+     "nosqli",
+     "database",
+     "javascript",
+     "info-leak",
+     "privilege-escalation"
+    ],
+    "text": "Documents creation of ArangoDB JavaScript UDFs through direct AQL writes, exposed native modules, and global native references. Demonstrates filesystem and environment access from a separate database user in a permissively configured Docker deployment."
+   },
+   "first_seen_utc": "2026-09-11T23:57:54+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 0,
+    "title": ""
+   },
+   "kind": "whitepaper",
+   "licence": "unknown",
+   "publisher": "Anvil Secure",
+   "raw_sha256": "df97fe9077e38dbe67111779bd77645c90b9d687db0db8f22e58caa785f7d158",
+   "slug": "anvil-secure-arangodb-udf-security-advisory",
+   "spellings": [
+    "https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "1df7b738b8999c9599ee0c78d75442effb05112b95b4f56b222debef776ff136",
+     "extraction": null,
+     "raw_sha256": "df97fe9077e38dbe67111779bd77645c90b9d687db0db8f22e58caa785f7d158",
+     "reason": "",
+     "result": "stored",
+     "slug": "anvil-secure-arangodb-udf-security-advisory",
+     "utc": "2026-09-11T23:58:31+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf",
+     "http": 200,
+     "kind": "whitepaper",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 0,
+     "title": "",
+     "utc": "2026-09-11T23:57:56+00:00"
+    },
+    "pdf": {
+     "bytes": 310933,
+     "file": "archived-references/pdf/2026-ai/anvil-secure-arangodb-udf-security-advisory.pdf",
+     "result": "copied",
+     "source": "original-pdf",
+     "utc": "2026-09-12T00:02:56+00:00"
+    },
+    "render": {
+     "chars": 27595,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/anvil-secure-arangodb-udf-security-advisory.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T23:58:31+00:00"
+    }
+   },
+   "title": "ArangoDB UDF Security Advisory"
+  },
   "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd": {
    "also_at": [],
    "authors": [
@@ -12585,6 +12815,7 @@
    },
    "first_seen_utc": "2026-09-10T14:26:09+00:00",
    "grade": "research",
+   "kind": "article",
    "raw_sha256": "ffdbf2aefd52071375445310a038624bfc4d0feb25f014ef6cdce90bde7ebfc7",
    "slug": "do-not-trust-me-using-malicious-idps-analyzing-attacking-single-sign",
    "spellings": [
@@ -12670,6 +12901,7 @@
    },
    "first_seen_utc": "2026-09-10T15:28:46+00:00",
    "grade": "research",
+   "kind": "article",
    "publisher": "arXiv",
    "raw_sha256": "91057d02910fb1fdb907e10a2c7a722026a1679e947699d64ba40d580d58e1b9",
    "slug": "security-modern-single-sign-protocols-openid-connect-1-0",
@@ -12852,6 +13084,7 @@
    },
    "first_seen_utc": "2026-09-10T15:28:46+00:00",
    "grade": "research",
+   "kind": "article",
    "publisher": "Google",
    "raw_sha256": "60a5137cf49680c260f1e1efc55af7090ed9c4e0252e9fea9957cedcfa5c58ae",
    "slug": "information-leaks-safaris-intelligent-tracking-prevention",
@@ -13019,6 +13252,7 @@
    },
    "first_seen_utc": "2026-09-09T22:03:58+00:00",
    "grade": null,
+   "kind": "article",
    "spellings": [
     "https://arxiv.org/pdf/2508.20282v1"
    ],
@@ -64447,6 +64681,7 @@
    },
    "first_seen_utc": "2026-09-10T13:59:08+00:00",
    "grade": "research",
+   "kind": "whitepaper",
    "publisher": "NGSSoftware",
    "raw_sha256": "0db673b33010a9aa5626bc5198e1ef07be87e36a1d9a04d25e9c098c2c211bbe",
    "slug": "lateral-sql-injection",
@@ -82713,6 +82948,101 @@
     }
    },
    "title": "KV Cache Hijack"
+  },
+  "https://github.com/anvilsecure/aqlmap": {
+   "also_at": [],
+   "authors": [
+    "Daniel Kachakil"
+   ],
+   "cited_by": [
+    "2026-ai.md:68"
+   ],
+   "cited_title": "Tool",
+   "commit": "8c6a58f356f3d41e7cca7e1dbec87bc4d743b8cd",
+   "content_gap": "",
+   "content_sha256": "1fad6fb00a7c0c4f4ef45ede058ec8b56a89b884a07dd77abd953dd06d9f38dd",
+   "decision": {
+    "at": "2026-09-11",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-12",
+    "by": "webseclist-review/1",
+    "of": "1fad6fb00a7c0c4f4ef45ede058ec8b56a89b884a07dd77abd953dd06d9f38dd",
+    "tags": [
+     "nosqli",
+     "injection",
+     "database",
+     "tooling"
+    ],
+    "text": "Documents aqlmap at a pinned commit: HTTP request-file handling, collection enumeration and extraction through error, reflected, boolean and timing channels. Includes a vulnerable sample application and example requests for local testing."
+   },
+   "first_seen_utc": "2026-09-11T23:57:56+00:00",
+   "grade": "research",
+   "health": {
+    "evidence": "http 200",
+    "final_url": "https://github.com/anvilsecure/aqlmap",
+    "http": 200,
+    "redirect_chain": [],
+    "snapshot": "",
+    "source": "probe",
+    "status": "ok",
+    "text_length": 10174,
+    "title": "GitHub - anvilsecure/aqlmap: A tool to extract information from ArangoDB through AQL injection · GitHub"
+   },
+   "kind": "repo",
+   "licence": "see the repository",
+   "publisher": "Anvil Secure",
+   "slug": "anvil-secure-aqlmap",
+   "spellings": [
+    "https://github.com/anvilsecure/aqlmap"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "1fad6fb00a7c0c4f4ef45ede058ec8b56a89b884a07dd77abd953dd06d9f38dd",
+     "extraction": null,
+     "raw_sha256": "",
+     "reason": "",
+     "result": "stored",
+     "slug": "anvil-secure-aqlmap",
+     "utc": "2026-09-11T23:58:34+00:00"
+    },
+    "check": {
+     "evidence": "http 200",
+     "final_url": "https://github.com/anvilsecure/aqlmap",
+     "http": 200,
+     "kind": "repo",
+     "redirect_chain": [],
+     "snapshot": "",
+     "source": "probe",
+     "status": "ok",
+     "text_length": 10174,
+     "title": "GitHub - anvilsecure/aqlmap: A tool to extract information from ArangoDB through AQL injection · GitHub",
+     "utc": "2026-09-11T23:57:57+00:00"
+    },
+    "pdf": {
+     "bytes": 334157,
+     "file": "archived-references/pdf/2026-ai/anvil-secure-aqlmap.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-12T00:02:57+00:00"
+    },
+    "render": {
+     "chars": 49419,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/anvil-secure-aqlmap.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-11T23:58:35+00:00"
+    }
+   },
+   "title": "aqlmap"
   },
   "https://github.com/atredispartners/llmchainhunter": {
    "also_at": [],
@@ -230860,6 +231190,7 @@
    },
    "first_seen_utc": "2026-09-09T22:53:39+00:00",
    "grade": null,
+   "kind": "whitepaper",
    "spellings": [
     "https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf"
    ],
@@ -268186,6 +268517,7 @@
    },
    "first_seen_utc": "2026-09-09T23:05:08+00:00",
    "grade": null,
+   "kind": "whitepaper",
    "spellings": [
     "https://www.usenix.org/system/files/usenixsecurity26-erinola.pdf"
    ],
@@ -268565,6 +268897,7 @@
    },
    "first_seen_utc": "2026-09-09T23:08:12+00:00",
    "grade": null,
+   "kind": "whitepaper",
    "spellings": [
     "https://www.usenix.org/system/files/usenixsecurity26-xiao.pdf"
    ],
@@ -277737,6 +278070,7 @@
    },
    "first_seen_utc": "2026-09-10T15:14:56+00:00",
    "grade": "research",
+   "kind": "whitepaper",
    "publisher": "University of California, Berkeley",
    "raw_sha256": "0fe0f7acbcd939a789a3c2cccc5b73047b944a4f40a419f2766bdaeaf8ff21c1",
    "retrieved_from": "https://web.archive.org/web/20231205190204id_/https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-11.pdf",
@@ -286830,6 +287164,7 @@
    "cited_title": "TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction",
    "decision": null,
    "first_seen_utc": "2026-09-09T23:35:42+00:00",
+   "kind": "article",
    "spellings": [
     "https://zenodo.org/records/17822391"
    ],
@@ -286850,6 +287185,7 @@
    "cited_title": "Artifact v1",
    "decision": null,
    "first_seen_utc": "2026-09-09T23:05:08+00:00",
+   "kind": "article",
    "spellings": [
     "https://zenodo.org/records/20280317"
    ],

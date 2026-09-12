@@ -6626,6 +6626,28 @@
    "outcome": "archive",
    "class": "research",
    "reason": "Accepted by the 2026-09-11 TECAPI source audit; authors read from the source cover, byline or research credit."
+  },
+  "https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html": {
+   "authors": [
+    "Daniel Kachakil"
+   ],
+   "publisher": "Anvil Secure",
+   "title": "Exploiting AQL Injection Vulnerabilities in ArangoDB"
+  },
+  "https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf": {
+   "authors": [
+    "Daniel Kachakil",
+    "Tao Sauvage"
+   ],
+   "publisher": "Anvil Secure",
+   "title": "ArangoDB UDF Security Advisory"
+  },
+  "https://github.com/anvilsecure/aqlmap": {
+   "authors": [
+    "Daniel Kachakil"
+   ],
+   "publisher": "Anvil Secure",
+   "title": "aqlmap"
   }
  },
  "mirror_sources": [],

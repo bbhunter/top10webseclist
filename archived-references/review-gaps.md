@@ -5,6 +5,19 @@
 
 # References that are archived but unjudged
 
+## AQL research added from issue 9 — 12 September 2026
+
+The three sources below have Markdown and PDF copies, source-supported credits,
+and digests. Acquisition and PDF generation completed; a dedicated semantic
+capture-validation pass remains pending. This queue concerns capture integrity,
+not the separately completed research inclusion decision.
+
+- [Article](md/2026-ai/2026-anvil-secure-exploiting-aql-injection-vulnerabilities-arangodb.md)
+- [UDF security advisory](md/2026-ai/anvil-secure-arangodb-udf-security-advisory.md)
+- [aqlmap documentation](md/2026-ai/anvil-secure-aqlmap.md)
+
+## Existing review backlog
+
 **Nothing here is known to be wrong, and nothing here is missing.** Every
 reference below HAS its document. What it does not have is anybody's judgement
 that the document came out right - the work a sweep could verify MECHANICALLY but

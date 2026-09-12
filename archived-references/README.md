@@ -18,11 +18,11 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1791 reference(s) archived across 20 year list(s). 1697 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1794 reference(s) archived across 20 year list(s). 1700 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (176)
+## 2026-ai (179)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -63,6 +63,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [DOMPurify ≤3.2.6 bypass via SMIL animateTransform on Safari. Tags:Article - Article - Web](md/2026-ai/mizu-re-dompurify-3-2-6-bypass-smil-animatetransform-safari-tags-article-web.md) | article | mizu.re |  | research | 1 |
 | [ELF in the Pixels: Building Shared Object–Image Polyglots](md/2026-ai/2026-babelo-elf-pixels-building-shared-objectimage-polyglots.md) | article | babelo | 2026 | research | 1 |
 | [Exploit brokers pay $500,000 for a WordPress RCE. I found one with GPT5.6 Sol Ultra and $25](md/2026-ai/2026-searchlight-cyber-exploit-brokers-pay-500-000-wordpress-rce-i-found-one-25.md) | article | Searchlight Cyber | 2026 | research | 1 |
+| [Exploiting AQL Injection Vulnerabilities in ArangoDB](md/2026-ai/2026-anvil-secure-exploiting-aql-injection-vulnerabilities-arangodb.md) | article | Anvil Secure | 2026 | research | 1 |
 | [FCSC 2026 Writeups. Tags:Writeup - Writeup - FCSC2026](md/2026-ai/mizu-re-fcsc-2026-writeups.md) | article | mizu.re |  | research | 1 |
 | [Finding Gadgets Like it’s 2026](md/2026-ai/atredis-partners-finding-gadgets-like-its-2026.md) | article | Atredis Partners |  | research | 1 |
 | [Grand Theft Atlas](md/2026-ai/2026-zenity-labs-grand-theft-atlas.md) | article | Zenity Labs | 2026 | research | 1 |
@@ -129,6 +130,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers](md/2026-ai/2026-iacr-cryptology-eprint-archive-zero-knowledge-about-encryption-managers.md) | article | IACR Cryptology ePrint Archive | 2026 | research | 1 |
 | [Zero-Click RCE in Figma Desktop](md/2026-ai/2026-critical-thinking-zero-click-rce-figma-desktop.md) | article | Critical Thinking | 2026 | research | 1 |
 | [zkLogin: when ZKP is not enough](md/2026-ai/2026-brave-zklogin-when-zkp-not-enough.md) | article | Brave | 2026 | research | 1 |
+| [aqlmap](md/2026-ai/anvil-secure-aqlmap.md) | repo | Anvil Secure |  | research | 1 |
 | [AutoFail: Breaking Web Boundaries using Android's Autofill Framework](md/2026-ai/github-secpriv-autofail.md) | repo | GitHub |  | research | 1 |
 | [BUIzz](md/2026-ai/github-websec-lab-buizz.md) | repo | GitHub |  | research | 1 |
 | [Cacheract](md/2026-ai/github-adnanekhan-cacheract.md) | repo | GitHub |  | research | 1 |
@@ -158,6 +160,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [A Formal Analysis of Agent Payment Protocols](md/2026-ai/formal-analysis-agent-payment-protocols.md) | whitepaper | arXiv | 2026 | research | 1 |
 | [Agentic Browsers and the Same-Origin Policy (Paper)](md/2026-ai/agentic-browsers-same-origin-policy-paper.md) | whitepaper |  |  | research | 1 |
 | [Analyzing the WebRTC Ecosystem and Breaking Authentication in DTLS-SRTP (Paper)](md/2026-ai/analyzing-webrtc-ecosystem-breaking-authentication-dtls-srtp-paper.md) | whitepaper |  |  | research | 1 |
+| [ArangoDB UDF Security Advisory](md/2026-ai/anvil-secure-arangodb-udf-security-advisory.md) | whitepaper | Anvil Secure |  | research | 1 |
 | [Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations](md/2026-ai/your-sites-truly-isolated-automatically-detecting-logic-bugs-implementations.md) | whitepaper |  |  | research | 1 |
 | [Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations (Slides)](md/2026-ai/your-sites-truly-isolated-automatically-detecting-logic-bugs-site-slides.md) | whitepaper |  |  | research | 1 |
 | [BadTemplate: A Training-Free Backdoor Attack via Chat Template Against Large Language Models](md/2026-ai/arxiv-badtemplate-training-free-backdoor-attack-chat-template-against-models.md) | whitepaper | arXiv | 2026 | research | 1 |
@@ -1361,7 +1364,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [28C3: Effective Denial of Service attacks against web application platforms](md/2011/2012-fahrplan-events-ccc-de-28c3-effective-denial-service-attacks-platforms.md) | article | fahrplan.events.ccc.de | 2012 | records | 1 |
 | [[WEB SECURITY] CSRF: Flash + 307 redirect = Game Over](md/2011/lists-webappsec-org-web-security-csrf-flash-307-redirect-game-over.md) | article | Web Application Security Consortium | 2011 | research | 1 |
 | [Abusing HTTP Status Codes to Expose Private Information](md/2011/2011-grepular-com-abusing-http-status-codes-expose-private-information.md) | article | grepular.com | 2011 | research | 1 |
-| [An Empirical Analysis of XSS Sanitization in Web Application Frameworks](md/2011/empirical-analysis-xss-sanitization-web-application-frameworks.md) | article | University of California, Berkeley |  | research | 1 |
 | [Autocomplete..again?!](md/2011/blog-mindedsecurity-com-autocomplete-again.md) | article | blog.mindedsecurity.com |  | research | 1 |
 | [Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications](md/2011/cs-virginia-edu-automated-black-box-detection-side-channel-applications.md) | article | cs.virginia.edu |  | research | 1 |
 | [Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications](md/2011/ndss-symposium-automated-discovery-parameter-pollution-applications.md) | article | NDSS Symposium |  | research | 1 |
@@ -1412,6 +1414,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [» The Hidden XSS Attacking the Desktop & Mobile Platforms](md/2011/kyleosborn-org-hidden-xss-attacking-desktop-mobile-platforms.md) | article | kyleosborn.org |  | research | 1 |
 | [Temporal Session Race Conditions (TSRC) Sept 2011 Presentation](md/2011/temporal-session-race-conditions-tsrc-sept-2011-presentation.md) | slides |  |  | research | 1 |
 | [All Your Clouds Are Belong to Us: Security Analysis of Cloud Management Interfaces](md/2011/all-your-clouds-belong-us-security-analysis-cloud-management-interfaces.md) | whitepaper |  |  | research | 1 |
+| [An Empirical Analysis of XSS Sanitization in Web Application Frameworks](md/2011/empirical-analysis-xss-sanitization-web-application-frameworks.md) | whitepaper | University of California, Berkeley |  | research | 1 |
 | [Bit-squatting: DNS Hijacking Without Exploitation](md/2011/bit-squatting-dns-hijacking-without-exploitation.md) | whitepaper |  |  | research | 1 |
 | [Biting the hand that serves you: A closer look at client-side Flash proxies for cross-domain requests](md/2011/biting-hand-that-serves-you-closer-look-client-side-flash-proxies-requests.md) | whitepaper |  |  | research | 1 |
 | [Cookiejacking](md/2011/cookiejacking.md) | whitepaper |  |  | research | 1 |
@@ -1679,7 +1682,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory](md/2008/blog-watchfire-com-ibm-application-security-insider-javascript-code-advisory.md) | article | blog.watchfire.com |  | research | 1 |
 | [Increased DNS Forgery Resistance Through 0x20-Bit Encoding](md/2008/astrolavos-lab-increased-dns-forgery-resistance-through-0x20-bit-encoding.md) | article | Astrolavos Lab |  | research | 1 |
 | [JavaScript Global Namespace Pollution](md/2008/gnucitizen-org-javascript-global-namespace-pollution.md) | article | gnucitizen.org |  | research | 1 |
-| [Lateral SQL Injection](md/2008/lateral-sql-injection.md) | article | NGSSoftware |  | research | 1 |
 | [Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'](md/2008/wired-com-man-allegedly-bilks-e-trade-schwab-50-000-collecting-lots-deposits.md) | article | blog.wired.com |  | research | 1 |
 | [Mike On Ads » Blog Archive » Using your browser URL history to estimate gender](md/2008/mikeonads-com-mike-ads-blog-archive-using-your-browser-url-history-gender.md) | article | mikeonads.com |  | research | 1 |
 | [MySQL and SQL Column Truncation Vulnerabilities](md/2008/suspekt-org-mysql-sql-column-truncation-vulnerabilities.md) | article | suspekt.org |  | research | 1 |
@@ -1716,6 +1718,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Exploitable Redirects on the Web: Identification, Prevalence, and Defense](md/2008/exploitable-redirects-web-identification-prevalence-defense.md) | whitepaper |  |  | research | 1 |
 | [File Download Injection](md/2008/file-download-injection.md) | whitepaper |  |  | research | 1 |
 | [ForceHTTPS: Protecting High-Security Web Sites from Network Attacks](md/2008/forcehttps-protecting-high-security-web-sites-network-attacks.md) | whitepaper |  |  | research | 1 |
+| [Lateral SQL Injection](md/2008/lateral-sql-injection.md) | whitepaper | NGSSoftware |  | research | 1 |
 | [On Race Vulnerabilities in Web Applications](md/2008/race-vulnerabilities-web-applications.md) | whitepaper |  |  | research | 1 |
 | [Pulling system32 out over blind SQL Injection](md/2008/pulling-system32-out-over-blind-sql-injection.md) | whitepaper | blueinfy.com |  | research | 1 |
 | [Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)](md/2008/robust-defenses-cross-site-request-forgery-login-csrf-origin-header.md) | whitepaper |  |  | research | 1 |

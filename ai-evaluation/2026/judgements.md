@@ -80,6 +80,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Duplicate chunked `Transfer-Encoding` smuggles a response across reused proxy connections in curl](<https://hackerone.com/reports/3795615>) [Related source](<https://hackerone.com/reports/3785919>) | Not added |
 | [Elasticsearch Painless execution via a pass-through `sort_query` GraphQL argument](<https://hackerone.com/reports/3694007>) | Not added |
 | [ELF in the Pixels: Building Shared Object–Image Polyglots](<https://blog.babelo.xyz/posts/elf-in-the-pixels/>) | Added |
+| [Exploiting AQL Injection Vulnerabilities in ArangoDB](<https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html>) [Related source](<https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf>) [Related source](<https://github.com/anvilsecure/aqlmap>) | Added |
 | [Exploiting Auth0 Defaults in XSS Attacks](<https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks/>) | Not added |
 | [FCSC 2026 "Aquarium": escaping the Node.js Permission Model via `data:` URL import and `SIGUSR1` inspector activation](<https://worty.fr/post/writeups/fcsc2026/fcsc_aquarium/>) | Not added |
 | [FCSC 2026 writeups: Firefox `execCommand` ICU-vs-JS case-folding differential, Gunicorn `HEAd` smuggling, libmagic polyglots](<https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups>) | Added |

@@ -277,7 +277,7 @@
    "documents": 5
   },
   "database": {
-   "documents": 62
+   "documents": 65
   },
   "deanonymization": {
    "documents": 20
@@ -424,10 +424,10 @@
    "documents": 140
   },
   "info-leak": {
-   "documents": 615
+   "documents": 617
   },
   "injection": {
-   "documents": 126
+   "documents": 128
   },
   "ios": {
    "documents": 16
@@ -439,7 +439,7 @@
    "documents": 123
   },
   "javascript": {
-   "documents": 382
+   "documents": 384
   },
   "javascript-runtime": {
    "documents": 20
@@ -505,7 +505,7 @@
    "documents": 69
   },
   "nosqli": {
-   "documents": 3
+   "documents": 6
   },
   "ntlm": {
    "documents": 2
@@ -556,7 +556,7 @@
    "documents": 58
   },
   "privilege-escalation": {
-   "documents": 107
+   "documents": 109
   },
   "prompt-injection": {
    "documents": 41
@@ -691,7 +691,7 @@
    "documents": 16
   },
   "tooling": {
-   "documents": 312
+   "documents": 313
   },
   "type-confusion": {
    "documents": 1
@@ -751,5 +751,5 @@
    "documents": 33
   }
  },
- "updated": "2026-09-11T20:50:52+00:00"
+ "updated": "2026-09-12T00:01:27+00:00"
 }

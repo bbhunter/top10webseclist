@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-201 tags, across 1745 documents that carry a digest.
+201 tags, across 1748 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -110,7 +110,7 @@ JSON.
 | `csti` | 4 | A03:2021 |
 | `cve` | 252 | — |
 | `data-breach` | 5 | — |
-| `database` | 62 | — |
+| `database` | 65 | — |
 | `deanonymization` | 20 | — |
 | `defence` | 60 | — |
 | `dependency-confusion` | 1 | A06:2021 |
@@ -159,12 +159,12 @@ JSON.
 | `identity` | 8 | A07:2021 |
 | `idor` | 27 | A01:2021 |
 | `iframe` | 140 | — |
-| `info-leak` | 615 | — |
-| `injection` | 126 | A03:2021 |
+| `info-leak` | 617 | — |
+| `injection` | 128 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 4 | — |
 | `java` | 123 | — |
-| `javascript` | 382 | — |
+| `javascript` | 384 | — |
 | `javascript-runtime` | 20 | — |
 | `jenkins` | 2 | — |
 | `joomla` | 6 | — |
@@ -186,7 +186,7 @@ JSON.
 | `mysql` | 23 | — |
 | `nextjs` | 11 | — |
 | `nodejs` | 69 | — |
-| `nosqli` | 3 | A03:2021 |
+| `nosqli` | 6 | A03:2021 |
 | `ntlm` | 2 | — |
 | `oauth` | 63 | A07:2021 |
 | `open-redirect` | 63 | A04:2021 |
@@ -203,7 +203,7 @@ JSON.
 | `postmessage` | 34 | — |
 | `predictable-token` | 6 | A02:2021 |
 | `prior-art-extension` | 58 | — |
-| `privilege-escalation` | 107 | A01:2021 |
+| `privilege-escalation` | 109 | A01:2021 |
 | `prompt-injection` | 41 | A03:2021 |
 | `prototype-pollution` | 22 | A08:2021 |
 | `proxy` | 84 | — |
@@ -248,7 +248,7 @@ JSON.
 | `timing-attack` | 94 | — |
 | `tls` | 112 | A02:2021 |
 | `toctou` | 16 | A04:2021 |
-| `tooling` | 312 | — |
+| `tooling` | 313 | — |
 | `type-confusion` | 1 | — |
 | `typosquatting` | 9 | A06:2021 |
 | `ui-redress` | 72 | A04:2021 |
