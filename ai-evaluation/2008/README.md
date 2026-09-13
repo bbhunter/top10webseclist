@@ -16,7 +16,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Black Ops 2008: It's The End Of The Cache As We Know It](<https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf>) | Added |
 | [Clickjacking details](<http://ha.ckers.org/blog/20081007/clickjacking-details/>) [Related source](<http://blog.guya.net/2008/10/07/malicious-camera-spying-using-clickjacking/>) | Not added |
 | [Client-side SQL Injection Attacks](<https://www.gnucitizen.org/blog/client-side-sql-injection-attacks/>) | Not added |
-| [Cookie forcing](<https://scarybeastsecurity.blogspot.com/2008/11/cookie-forcing.html>) | Not added |
+| [Cookie forcing](<https://scarybeastsecurity.blogspot.com/2008/11/cookie-forcing.html>) | Added |
 | [CookieMonster: Fully Automated Active HTTPS Cookie Hijacking](<https://fscked.org/projects/cookiemonster>) | Added |
 | [Corrupted DNS Resolution Paths](<https://research.google/pubs/corrupted-dns-resolution-paths-the-rise-of-a-malicious-resolution-authority/>) | Not added |
 | [Creating a Rogue CA Certificate](<http://www.phreedom.org/research/rogue-ca/>) | Added |

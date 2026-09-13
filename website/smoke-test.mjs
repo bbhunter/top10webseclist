@@ -3,6 +3,7 @@ import { constants } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import vm from "node:vm";
+import assert from "node:assert/strict";
 import "./pdf-reader-polyfills-test.mjs";
 import { safePdfUrl as safePdfReaderUrl } from "./pdf-reader-url.mjs";
 
@@ -179,6 +180,21 @@ const clientContext = vm.createContext({
 vm.runInContext(discoverySource, clientContext);
 vm.runInContext(appSource.replace(/\nloadArchive\(\);\s*$/, ""), clientContext);
 const clientEval = (expression) => vm.runInContext(expression, clientContext);
+const linkFixture = {
+  title: "Research", originalUrl: "https://research.example/article",
+  mdPath: "archived-references/md/2026-ai/article_translate.md",
+  pdfPath: "archived-references/pdf/2026-ai/article_translate.pdf",
+  links: [
+    { label: "Research", url: "https://research.example/article", mdPath: "archived-references/md/2026-ai/article_translate.md", pdfPath: "archived-references/pdf/2026-ai/article_translate.pdf" },
+    { label: "Original-language paper", url: "https://research.example/paper", pdfPath: "archived-references/pdf/2026-ai/article.pdf" },
+    { label: "Unarchived companion", url: "https://research.example/companion" }
+  ]
+};
+clientContext.__linkFixture = linkFixture;
+assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(compactArchiveItem(__linkFixture)))")), linkFixture);
+assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(__linkFixture))")), linkFixture);
+assert.ok(progressiveShard.items.some((item) => item.links.some((link) => link.fromItem?.length)), "Generated shards should share repeated link fields");
+assert.throws(() => clientEval('expandArchiveItem({links:[{fromItem:["__proto__"]}]})'), /Invalid shared archive link field/);
 let progressiveRequestUrl = "";
 clientContext.__progressiveCatalogue = progressiveCatalogue;
 clientContext.__progressiveShard = progressiveShard;
@@ -199,10 +215,12 @@ const progressiveLoad = JSON.parse(await clientEval(`
     readKey: items[0]?.readKey,
     favouriteKey: items[0]?.favouriteKey,
     originalUrl: items[0]?.originalUrl,
+    firstSourceUrl: items[0]?.links[0]?.url,
     read: items[0]?.read,
     favourite: items[0]?.favourite
   }))
 `));
+assert.equal(progressiveLoad.firstSourceUrl, progressiveLoad.originalUrl, "Loaded shared source links must retain their URL");
 const newestFirstYearIds = JSON.parse(clientEval(`JSON.stringify(newestFirstYearRecords().map((record) => record.id))`));
 const newestFirstYearPillIds = [...clientEval(`yearPills("2025")`).matchAll(/data-year="([^"]+)"/g)].map((match) => match[1]);
 const hostileMarkdown = [

@@ -17,14 +17,14 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Extending a Hand to Attackers: Browser Privilege Escalation Attacks via Extensions](<https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min>) | Added |
 | [Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses](<https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf>) | Added |
 | [Finding All Cross-Site Needles in the DOM Stack](<https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers>) | Added |
-| [Generating deserialization payloads for MessagePack C#'s Typeless mode](<https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) | Not added |
-| [Hijacking OAuth Code via Reverse Proxy for Account Takeover](<https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover>) | Not added |
+| [Generating deserialization payloads for MessagePack C#'s Typeless mode](<https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) [Related source](<https://netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) [Related source](<https://github.com/pwntester/ysoserial.net/pull/146>) | Added |
+| [Hijacking OAuth Code via Reverse Proxy for Account Takeover](<https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover>) | Added |
 | [Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser](<https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings>) | Added |
 | [It's (DOM) Clobbering Time: Attack Techniques, Prevalence, and Defenses](<https://trouge.net/publication/domclob-sp-2023/>) | Added |
 | [Leaking more than log₂ of the URL count with the selectURL gate](<https://github.com/WICG/shared-storage/issues/86>) | Added |
 | [Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors](<https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/>) | Added |
 | [Prototype Pollution in Python](<https://blog.abdulrah33m.com/prototype-pollution-in-python/>) | Added |
-| [PwnAssistant - Controlling /home's via a Home Assistant RCE](<https://www.elttam.com/blog/pwnassistant>) | Not added |
+| [PwnAssistant - Controlling /home's via a Home Assistant RCE](<https://www.elttam.com/blog/pwnassistant>) [Related source](<https://github.com/elttam/publications/blob/master/writeups/home-assistant/supervisor-authentication-bypass-advisory.md>) | Added |
 | [QUICforge: Client-side Request Forgery in QUIC](<https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/>) | Added |
 | [RøB: Ransomware over Modern Web Browsers](<https://www.usenix.org/conference/usenixsecurity23/presentation/oz>) | Added |
 | [Scaling JavaScript Abstract Interpretation to Detect and Exploit Node.js Taint-style Vulnerability](<https://www.yinzhicao.org/FAST/ODGen-FAST.pdf>) | Added |

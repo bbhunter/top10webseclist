@@ -22,7 +22,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Revisiting SSL/TLS Implementations: New Bleichenbacher Side Channels and Attacks](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/meyer>) | Added |
 | [S3: A Symbolic String Solver for Vulnerability Detection in Web Applications](<https://trinhmt.github.io/home/S3/ccs14-trinh.pdf>) | Added |
 | [Same Origin Method Execution (SOME)](<http://www.benhayak.com/2015/06/same-origin-method-execution-some.html>) [Related source](<https://www.blackhat.com/docs/eu-14/materials/eu-14-Hayak-Same-Origin-Method-Execution-Exploiting-A-Callback-For-Same-Origin-Policy-Bypass-wp.pdf>) | Added |
-| [SpoofedMe — Social Login Impersonation Attack](<https://www.slideshare.net/slideshow/spoofed-me-socialloginattack/42313457>) | Not added |
+| [SpoofedMe — Social Login Impersonation Attack](<https://www.slideshare.net/slideshow/spoofed-me-socialloginattack/42313457>) [Related source](<https://seclists.org/fulldisclosure/2014/Dec/22>) | Added |
 | [SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou>) | Added |
 | [Static Detection of Second-Order Vulnerabilities in Web Applications](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse>) | Added |
 | [The Emperor's New Password Manager: Security Analysis of Web-based Password Managers](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei>) | Added |

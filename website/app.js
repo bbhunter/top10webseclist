@@ -833,7 +833,42 @@ function collectionUrl(year) {
   return `data/collections/${record.id}.json?v=${version}`;
 }
 
+const ARCHIVE_LINK_ITEM_FIELDS = Object.freeze({
+  label: "title", url: "originalUrl", mdPath: "mdPath", pdfPath: "pdfPath"
+});
+
+function compactArchiveItem(item) {
+  return { ...item, links: (item.links || []).map((link) => {
+    const compact = { ...link };
+    const fromItem = Object.entries(ARCHIVE_LINK_ITEM_FIELDS)
+      .filter(([field, itemField]) => typeof link[field] === "string" && link[field] === item[itemField])
+      .map(([field]) => field);
+    if (fromItem.length) {
+      fromItem.forEach((field) => { delete compact[field]; });
+      compact.fromItem = fromItem;
+    }
+    return compact;
+  }) };
+}
+
+function expandArchiveItem(item) {
+  return { ...item, links: (item.links || []).map((link) => {
+    if (!Array.isArray(link.fromItem)) return link;
+    const expanded = { ...link };
+    for (const field of link.fromItem) {
+      if (!Object.hasOwn(ARCHIVE_LINK_ITEM_FIELDS, field)
+          || typeof item[ARCHIVE_LINK_ITEM_FIELDS[field]] !== "string") {
+        throw new Error("Invalid shared archive link field");
+      }
+      expanded[field] = item[ARCHIVE_LINK_ITEM_FIELDS[field]];
+    }
+    delete expanded.fromItem;
+    return expanded;
+  }) };
+}
+
 function applyStoredState(item) {
+  item = expandArchiveItem(item);
   // The keys are deterministic, so reconstruct them instead of repeating them
   // (and two default-false flags) in every generated collection record.
   const lookupKey = normalizeUrl(item.originalUrl);

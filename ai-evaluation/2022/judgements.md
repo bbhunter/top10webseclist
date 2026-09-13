@@ -15,7 +15,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Dependency Confusion Attack and its Mitigation](<https://redfoxsec.com/blog/dependency-confusion-attacks/>) | Not added |
 | [DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting](<https://orenlab.cis.bgu.ac.il/p/DrawnApart>) | Added |
 | [Experimental Security Analysis of the App Model in Business Collaboration Platforms](<https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental>) | Added |
-| [Exploring Prompt Injection Attacks](<https://www.nccgroup.com/research/exploring-prompt-injection-attacks/>) [Related source](<https://research.nccgroup.com/2022/12/05/exploring-prompt-injection-attacks/>) | Not added |
+| [Exploring Prompt Injection Attacks](<https://www.nccgroup.com/research/exploring-prompt-injection-attacks/>) [Related source](<https://research.nccgroup.com/2022/12/05/exploring-prompt-injection-attacks/>) | Added |
 | [Finding client-side prototype pollution with DOM Invader](<https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader>) | Added |
 | [FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing](<https://www.usenix.org/conference/usenixsecurity22/presentation/kim>) | Added |
 | [GET /out: Automated Discovery of Application-Layer Censorship Evasion Strategies](<https://www.usenix.org/conference/usenixsecurity22/presentation/harrity>) | Added |
@@ -30,7 +30,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Mining Node.js Vulnerabilities via Object Dependence Graph and Query](<https://www.usenix.org/conference/usenixsecurity22/presentation/li-song>) | Added |
 | [Phish in Sheep's Clothing](<https://www.usenix.org/conference/usenixsecurity22/presentation/lin-xu>) | Added |
 | [Port Contention Goes Portable](<https://thomasrokicki.github.io/publications/wpc.pdf>) | Added |
-| [PPE - Poisoned Pipeline Execution](<https://medium.com/cider-sec/ppe-poisoned-pipeline-execution-34f4e8d0d4e9>) [Related source](<https://portswigger.net/daily-swig/poisoned-pipelines-security-researcher-explores-attack-methods-in-ci-environments>) | Not added |
+| [PPE - Poisoned Pipeline Execution](<https://medium.com/cider-sec/ppe-poisoned-pipeline-execution-34f4e8d0d4e9>) [Related source](<https://portswigger.net/daily-swig/poisoned-pipelines-security-researcher-explores-attack-methods-in-ci-environments>) | Added |
 | [Pre-hijacked Accounts](<https://arxiv.org/abs/2205.10174>) | Added |
 | [Probe the Proto](<https://www.ndss-symposium.org/ndss-paper/auto-draft-207/>) | Added |
 | [Problem with Shared Storage’s described use of k-anonymity](<https://github.com/WICG/shared-storage/issues/39>) | Added |

@@ -41,10 +41,10 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Finding All Cross-Site Needles in the DOM Stack](<https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers>) | Added |
 | [Finding Deserialization Bugs in the SolarWinds Platform](<https://www.thezdi.com/blog/2023/9/21/finding-deserialization-bugs-in-the-solarwind-platform>) | Not added |
 | [Flatt Security BtoB SaaS top ten](<https://blog.flatt.tech/entry/btob_saas_top10_2023>) | Not added |
-| [Generating deserialization payloads for MessagePack C#'s Typeless mode](<https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) | Not added |
+| [Generating deserialization payloads for MessagePack C#'s Typeless mode](<https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) | Added |
 | [HEXACON2023 recording of Exploiting Hardened .NET Deserialization](<https://www.youtube.com/watch?v=_CJmUh0_uOM>) | Not added |
 | [hidden-note, SECCON 2023 Quals](<https://blog.arkark.dev/2023/09/21/seccon-quals>) | Not added |
-| [Hijacking OAuth Code via Reverse Proxy for Account Takeover](<https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover>) | Not added |
+| [Hijacking OAuth Code via Reverse Proxy for Account Takeover](<https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover>) | Added |
 | [Introducing Badsecrets](<https://blog.blacklanternsecurity.com/p/introducing-badsecrets>) | Not added |
 | [Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser](<https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings>) | Added |
 | [It's (DOM) Clobbering Time: Attack Techniques, Prevalence, and Defenses](<https://trouge.net/publication/domclob-sp-2023/>) | Added |
@@ -54,7 +54,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [PanoptiChrome original patch](<https://github.com/therahulkanyal/PanoptiChrome/blob/d0725658093811a5ed67dd73bc20f946443c0c11/panoptichrome_patches.diff>) | Not added |
 | [Pool-Party](<https://arxiv.org/abs/2112.06324>) | Not added |
 | [Programming with XAML: Assembly.Load for .NET deserialization](<https://russtone.io/2023/05/30/programming-with-xaml/>) | Not added |
-| [PwnAssistant - Controlling /home's via a Home Assistant RCE](<https://www.elttam.com/blog/pwnassistant>) | Not added |
+| [PwnAssistant - Controlling /home's via a Home Assistant RCE](<https://www.elttam.com/blog/pwnassistant>) | Added |
 | [QUICforge: Client-side Request Forgery in QUIC](<https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/>) | Added |
 | Robust Multi-tab Website Fingerprinting Attacks in the Wild | Not added |
 | [RøB: Ransomware over Modern Web Browsers](<https://www.usenix.org/conference/usenixsecurity23/presentation/oz>) | Added |

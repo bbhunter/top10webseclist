@@ -12,7 +12,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Automated Website Fingerprinting through Deep Learning](<https://arxiv.org/abs/1708.06376>) | Added |
 | [Beauty and the Burst: Remote Identification of Encrypted Video Streams](<https://beautyburst.github.io/>) | Added |
 | [Breaking Out HSTS (and HPKP) on Firefox, IE/Edge and (Possibly) Chrome](<https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts>) | Added |
-| [Dangerous Contents: Securing .NET Deserialization](<https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352>) | Not added |
+| [Dangerous Contents: Securing .NET Deserialization](<https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352>) | Added |
 | [Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs](<https://acmccs.github.io/papers/p1757-pellegrinoA.pdf>) | Added |
 | [Extension Breakdown: Security Analysis of Browsers Extension Resources Control Policies](<https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/sanchez-rola>) | Added |
 | [Fake Co-visitation Injection Attacks to Recommender Systems](<https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/>) | Added |

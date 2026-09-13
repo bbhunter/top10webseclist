@@ -13,7 +13,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [PHP mail() Command Injection to Remote Code Execution (RCE)](<https://nullsecurityx.medium.com/php-mail-command-injection-to-remote-code-execution-rce-b2991e929ca3>) | Not added |
 | [QUIC-er Races: HTTP/3 won’t save you from TOCTOU vulnerabilities](<https://link.springer.com/article/10.1007/s10207-026-01258-6>) [Tool](<https://github.com/nxenon/H3SpaceX>) | Not added |
 | [Exploiting AQL Injection Vulnerabilities in ArangoDB](<https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html>) [Security advisory](<https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf>) [Tool](<https://github.com/anvilsecure/aqlmap>) | Added |
-| [8 Out of 10 Banks in Belgium HATE This One Weird eID RCE](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20James%20Arnott%20-%208%20Out%20of%2010%20Banks%20in%20Belgium%20HATE%20This%20One%20Weird%20eID%20RCE%20-%20MEDIA%20SERVER%20Belgi.pdf>) | Not added |
+| [8 Out of 10 Banks in Belgium HATE This One Weird eID RCE](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20James%20Arnott%20-%208%20Out%20of%2010%20Banks%20in%20Belgium%20HATE%20This%20One%20Weird%20eID%20RCE%20-%20MEDIA%20SERVER%20Belgi.pdf>) | Added |
 | [A Billion-User Blast Radius: Owning ChatGPT's Secure Sandbox](<https://appsecvillage.com/events/dc-2026/a-billion-user-blast-radius-owning-chatgpt-s-secure-sandbox-1248604>) | Not added |
 | [A First Measurement Study on Authentication Security in Real-World Remote MCP Servers](<https://arxiv.org/abs/2605.22333>) | Added |
 | [A Formal Analysis of Agent Payment Protocols](<https://arxiv.org/abs/2609.00060>) | Added |
@@ -28,9 +28,9 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Analyzing the WebRTC Ecosystem and Breaking Authentication in DTLS-SRTP](<https://www.usenix.org/conference/usenixsecurity26/presentation/bach>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-bach.pdf>) | Added |
 | [Angular compromise through dev infra: GitHub Actions cache poisoning as a vulnerability class](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra>) [Related source](<https://adnanthekhan.com/posts/clinejection/>) [Related source](<https://adnanthekhan.com/posts/copilot-or-co-conspirator/>) [Related source](<https://github.com/AdnaneKhan/Cacheract>) | Added |
 | [Apache httpd HTTP/2 Memory Exhaustion (CVE-2025-53020)](<https://galbarnahum.com/posts/apache-httpd-cve-2025-53020>) | Not added |
-| [API Keys Leaking in PNG Metadata of AI Images](<https://trufflesecurity.com/blog/api-keys-leaking-in-png-metadata-of-ai-images>) | Not added |
+| [API Keys Leaking in PNG Metadata of AI Images](<https://trufflesecurity.com/blog/api-keys-leaking-in-png-metadata-of-ai-images>) | Added |
 | [Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations](<https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf>) [Related source](<https://www.ndss-symposium.org/wp-content/uploads/f0902-drescher-slides.pdf>) | Added |
-| [Astro Full-Read SSRF via Host Header Injection](<https://www.aikido.dev/blog/astro-full-read-ssrf-via-host-header-injection>) | Not added |
+| [Astro Full-Read SSRF via Host Header Injection](<https://www.aikido.dev/blog/astro-full-read-ssrf-via-host-header-injection>) | Added |
 | [Attacking and Defending AI Browsers](<https://i.blackhat.com/BH-USA-26/Presentations/US-26-Chaikin-Attacking-Defending-AI-Browsers.pdf>) [Related source](<https://brave.com/blog/indirect-prompt-injection/>) | Not added |
 | [Authorization Bypass in Quarkus via matrix parameters](<https://securitylab.github.com/advisories/GHSL-2026-099_Quarkus/>) | Not added |
 | AutoFail (TU Wien, code artifact released 2026-07-22) | Not added |
@@ -38,13 +38,13 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](<https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit>) | Added |
 | Bad Vibes — Pwning Coding Agents 70 Times (CyberArk, Black Hat Asia 2026) | Not added |
 | [Bandwidth amplification with a factor of x783 caused by HTTP/2 → HTTP/1.1 translation in Cloudflare](<https://habr.com/ru/articles/1063428/>) | Not added |
-| [Before the first prompt: Code execution paths in trusted coding-agent projects](<https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt/>) | Not added |
-| [Beyond Normalization: The Expanding Unicode Attack Surface](<https://i.blackhat.com/BH-USA-26/Presentations/BHUSA26-Barnett-Beyond-Normalization-Slides.pdf>) | Not added |
-| [Beyond the Ceremony: The 2026 Passkey Attack Surface](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Matteo%20Giordano%20-%20Beyond%20the%20Ceremony%20The%202026%20Passkey%20Attack%20Surface%20-%20v2.pdf>) | Not added |
+| [Before the first prompt: Code execution paths in trusted coding-agent projects](<https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt/>) | Added |
+| [Beyond Normalization: The Expanding Unicode Attack Surface](<https://i.blackhat.com/BH-USA-26/Presentations/BHUSA26-Barnett-Beyond-Normalization-Slides.pdf>) | Added |
+| [Beyond the Ceremony: The 2026 Passkey Attack Surface](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Matteo%20Giordano%20-%20Beyond%20the%20Ceremony%20The%202026%20Passkey%20Attack%20Surface%20-%20v2.pdf>) | Added |
 | [Beyond the Limits of Site Isolation](<https://www.youtube.com/watch?v=d3nfJL86jrc>) | Not added |
 | [BioShocking AI: "Gaming" the AI Browser and Escaping its Guardrails](<https://layerxsecurity.com/blog/bioshocking-ai-gaming-the-ai-browser-and-escaping-its-guardrails/>) | Not added |
-| [Blind enumeration of unreadable records via a sort oracle in Trello](<https://bugcrowd.com/disclosures/0ecb51a3-2064-4f9d-aa19-aa7b6ae21812/blind-enumeration-of-private-card-names-via-sort-oracle-and-id-discovery>) | Not added |
-| [BodySnatcher: agentic hijacking in ServiceNow](<https://appomni.com/ao-labs/bodysnatcher-agentic-ai-security-vulnerability-in-servicenow/>) | Not added |
+| [Blind enumeration of unreadable records via a sort oracle in Trello](<https://bugcrowd.com/disclosures/0ecb51a3-2064-4f9d-aa19-aa7b6ae21812/blind-enumeration-of-private-card-names-via-sort-oracle-and-id-discovery>) | Added |
+| [BodySnatcher: agentic hijacking in ServiceNow](<https://appomni.com/ao-labs/bodysnatcher-agentic-ai-security-vulnerability-in-servicenow/>) | Added |
 | [Borrowing Windows Hello Keys for Authentication and Persistence](<https://dirkjanm.io/borrowing-windows-hello-keys/>) | Added |
 | Breaking and Fixing Third-Party Online Payments | Not added |
 | [Breaking Claude Code Opus 5 Auto Mode](<https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/>) | Not added |
@@ -55,36 +55,36 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | BUIzz | Not added |
 | [BUIzz: Finding Policy Enforcement Bugs via Interaction Simulation on the Browser User Interface](<https://www.usenix.org/conference/usenixsecurity26/presentation/jung>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-jung.pdf>) [Related source](<https://github.com/WebSec-Lab/BUIzz>) | Added |
 | [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof-of-Concept Exploits](<https://www.ndss-symposium.org/ndss-paper/bullseye-detecting-prototype-pollution-in-npm-packages-with-proof-of-concept-exploits/>) [Related source](<https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf>) | Not added |
-| [Burp Suite Professional: browser-powered crawl writes attacker-controlled files](<https://hackerone.com/reports/3712279>) | Not added |
+| [Burp Suite Professional: browser-powered crawl writes attacker-controlled files](<https://hackerone.com/reports/3712279>) | Added |
 | Cache Me, Catch You (Wu et al., Black Hat Asia 2026 / NDSS 2026) | Not added |
 | [Cache Me, Catch You: Exploiting LLM Caching Layers in vLLM, GPTCache & Friends](<https://i.blackhat.com/Asia-26/Presentations/BHAS26-Wu-Cache-Me-Catch-You.pdf>) [Related source](<https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/>) [Related source](<https://github.com/XingTuLab/Cache_Me_Catch_You>) | Added |
 | [Can a Predicted `window.open` Target Really Be That Impactful?](<https://lab.ctbb.show/research/can-a-predicted-window-open-target-really-be-that-impactful>) | Not added |
 | [Can AI do novel security research? Meet the HTTP Terminator](<https://portswigger.net/research/can-ai-do-novel-security-research>) [Related source](<https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf>) [Related source](<https://github.com/portswigger/http-terminator>) | Added |
-| [CargoWise WebTracker — The Keys Were in the Cargo](<https://slcyber.io/research-center/cargowise-webtracker-the-keys-were-in-the-cargo/>) | Not added |
+| [CargoWise WebTracker — The Keys Were in the Cargo](<https://slcyber.io/research-center/cargowise-webtracker-the-keys-were-in-the-cargo/>) | Added |
 | [Cast Attack: A New Threat Posed by Ghost Bits in Java](<https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf>) | Added |
 | [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](<https://www.synacktiv.com/en/publications/caught-in-the-octopus-trap-unauthenticated-rce-in-argo-cd-with-codeql>) | Added |
-| [CDN Tsunami: Exploiting HTTP/3-HTTP/1.1 Conversion for DoS Attacks](<https://arxiv.org/abs/2607.26589>) | Not added |
+| [CDN Tsunami: Exploiting HTTP/3-HTTP/1.1 Conversion for DoS Attacks](<https://arxiv.org/abs/2607.26589>) | Added |
 | [Chaos by Design: The Death of Stochastic Race Conditions in HTTP/3](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Chatzoglou-Chaos-by-Design-Slides.pdf>) [Related source](<https://github.com/efchatz/timeorch>) | Not added |
-| [Charting your way in: Helm template injection](<https://www.synacktiv.com/en/publications/charting-your-way-in-helm-template-injection>) | Not added |
+| [Charting your way in: Helm template injection](<https://www.synacktiv.com/en/publications/charting-your-way-in-helm-template-injection>) | Added |
 | [Chat-template backdoors: systematic evaluation and agentic impact](<https://arxiv.org/abs/2602.04653>) [Related source](<https://arxiv.org/abs/2602.05401>) | Added |
 | ChatMate (Rubrik Zero Labs, Black Hat USA 2026) | Not added |
 | [ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf>) | Added |
 | [Claude in Chrome: from alert(1) to full account takeover](<https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover>) [Related source](<https://labs.zenity.io/post/account-takeover-via-claude-in-chrome-a-technical-deep-dive>) [Related source](<https://labs.zenity.io/post/claude-in-chrome-breaking-down-the-injection>) | Added |
-| [Cline Kanban WebSocket Hijack](<https://www.oasis.security/blog/cline-kanban-websocket-hijack>) [Related source](<https://www.oasis.security/blog/paperclip-agent-vulnerabilities>) | Not added |
+| [Cline Kanban WebSocket Hijack](<https://www.oasis.security/blog/cline-kanban-websocket-hijack>) [Related source](<https://www.oasis.security/blog/paperclip-agent-vulnerabilities>) | Added |
 | [Codex Discovered a Hidden HTTP/2 Bomb](<https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb>) | Added |
 | [Computer-Use and TOCTOU: What You Click Is Not What You Get!](<https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/>) | Added |
-| [Content-Type Override to Stored XSS on public objects](<https://blog.voorivex.team/content-type-override-to-stored-xss-on-public-objects>) | Not added |
-| [CosmosEscape: Taking Over Every Database in Azure Cosmos DB](<https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db>) | Not added |
-| [Critical Flaws in Anthropic, Google and OpenAI's Coding Agents: the trust-handoff primitive](<https://novee.security/blog/critical-flaws-in-anthropic-google-and-openais-coding-agents/>) [Related source](<https://novee.security/blog/gemini-cli-cvss-10-rce-novee-security/>) | Not added |
+| [Content-Type Override to Stored XSS on public objects](<https://blog.voorivex.team/content-type-override-to-stored-xss-on-public-objects>) | Added |
+| [CosmosEscape: Taking Over Every Database in Azure Cosmos DB](<https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db>) | Added |
+| [Critical Flaws in Anthropic, Google and OpenAI's Coding Agents: the trust-handoff primitive](<https://novee.security/blog/critical-flaws-in-anthropic-google-and-openais-coding-agents/>) [Related source](<https://novee.security/blog/gemini-cli-cvss-10-rce-novee-security/>) | Added |
 | [CRLF-Powered Desync Attacks: Beheading HTTP Streams](<https://portswigger.net/research/crlf-powered-desync-attacks>) [Related source](<https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf>) [Related source](<https://github.com/t0xodile/crlf-powered-desync-scanner>) | Added |
 | [Cruising for Shells in Flowise](<https://www.elttam.com/blog/cruising-for-shells-in-flowise>) | Added |
 | [CSS: the bomb inside your inbox](<https://portswigger.net/research/css-the-bomb-inside-your-inbox>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf>) [Related source](<https://github.com/portswigger/css-the-bomb-inside-your-inbox>) | Added |
 | [curl HTTP/2 server push accepts a non-authoritative `:scheme=https` over cleartext h2c](<https://hackerone.com/reports/3630310>) [Related source](<https://hackerone.com/reports/3674275>) | Not added |
-| [CVE-2026-21876: bypassing OWASP CRS by overwriting the multipart charset in a later segment](<https://habr.com/ru/articles/984632/>) | Not added |
-| [CVE-2026-41238: How Prototype Pollution Turns DOMPurify Into an XSS Gadget](<https://labs.trace37.com/blog/dompurify-pp-ceh-bypass/>) [Related source](<https://github.com/advisories/GHSA-v9jr-rg53-9pgp>) | Not added |
+| [CVE-2026-21876: bypassing OWASP CRS by overwriting the multipart charset in a later segment](<https://habr.com/ru/articles/984632/>) | Added |
+| [CVE-2026-41238: How Prototype Pollution Turns DOMPurify Into an XSS Gadget](<https://labs.trace37.com/blog/dompurify-pp-ceh-bypass/>) [Related source](<https://github.com/advisories/GHSA-v9jr-rg53-9pgp>) | Added |
 | CVE-2026-62899 .NET HttpListener smuggling | Not added |
 | [CVE-2026-62899: .NET `System.Net.HttpListener` security-feature bypass via HTTP request/response smuggling](<https://github.com/dotnet/announcements/issues/427>) [Related source](<https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62899>) | Not added |
-| [Demystifying the (In)Security of OAuth-based Account Linking in Connector Ecosystems](<https://sp2026.ieee-security.org/accepted-papers.html>) | Not added |
+| [Demystifying the (In)Security of OAuth-based Account Linking in Connector Ecosystems](<https://sp2026.ieee-security.org/accepted-papers.html>) | Added |
 | [Deployment Poisoning: A(nother) Novel Attack Vector for GitHub Actions](<https://labs.boostsecurity.io/articles/deployment_poisoning>) | Added |
 | Discovering React2Shell (Carapace, Black Hat Asia 2026) | Not added |
 | DNS Cache Poisoning Like it's 2006 | Not added |
@@ -95,38 +95,38 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [DOMPurify bypass via SMIL animateTransform on Safari](<https://mizu.re/post/dompurify-bypass-smil-animatetransform-safari>) | Added |
 | [DOMPurify mXSS via Re-Contextualization (CVE-2026-0540)](<https://fluidattacks.com/advisories/daft>) | Not added |
 | [DOMPurify XSS via `<selectedcontent>` re-clone](<https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx>) | Added |
-| [Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning](<https://www.cyera.com/research/nemoclaw-one-website-visit-to-hijack-your-ai-agent>) | Not added |
-| [Drupal PostgreSQL SQL Injection: From SELECT-Only to RCE](<https://blog.lexfo.fr/drupal-postgresql-sqli-to-rce.html>) | Not added |
+| [Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning](<https://www.cyera.com/research/nemoclaw-one-website-visit-to-hijack-your-ai-agent>) | Added |
+| [Drupal PostgreSQL SQL Injection: From SELECT-Only to RCE](<https://blog.lexfo.fr/drupal-postgresql-sqli-to-rce.html>) | Added |
 | [Duplicate chunked `Transfer-Encoding` smuggles a response across reused proxy connections in curl](<https://hackerone.com/reports/3795615>) [Related source](<https://hackerone.com/reports/3785919>) | Not added |
 | [Elasticsearch Painless execution via a pass-through `sort_query` GraphQL argument](<https://hackerone.com/reports/3694007>) | Not added |
 | [ELF in the Pixels: Building Shared Object–Image Polyglots](<https://blog.babelo.xyz/posts/elf-in-the-pixels/>) | Added |
-| [Exploiting Auth0 Defaults in XSS Attacks](<https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks/>) | Not added |
-| [FCSC 2026 "Aquarium": escaping the Node.js Permission Model via `data:` URL import and `SIGUSR1` inspector activation](<https://worty.fr/post/writeups/fcsc2026/fcsc_aquarium/>) | Not added |
+| [Exploiting Auth0 Defaults in XSS Attacks](<https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks/>) | Added |
+| [FCSC 2026 "Aquarium": escaping the Node.js Permission Model via `data:` URL import and `SIGUSR1` inspector activation](<https://worty.fr/post/writeups/fcsc2026/fcsc_aquarium/>) | Added |
 | [FCSC 2026 writeups: Firefox `execCommand` ICU-vs-JS case-folding differential, Gunicorn `HEAd` smuggling, libmagic polyglots](<https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups>) | Added |
 | [Finding Gadgets Like it's 2026](<https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026>) [Related source](<https://github.com/atredispartners/llmchainhunter>) | Added |
-| [Finding XSS on Shazzer (literally)](<https://jorianwoltjer.com/blog/p/stories/finding-xss-on-shazzer>) | Not added |
+| [Finding XSS on Shazzer (literally)](<https://jorianwoltjer.com/blog/p/stories/finding-xss-on-shazzer>) | Added |
 | [FirefUXSS: universal XSS in Firefox Focus/Klar for iOS](<https://github.com/v12-security/pocs/tree/main/firefox>) | Not added |
 | [Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild](<https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/>) | Not added |
 | [From Length to Content: Token-Length Side-Channel Attacks on LLM API Merged Outputs](<https://www.usenix.org/conference/usenixsecurity26/presentation/li-sijia>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-li-sijia.pdf>) | Not added |
 | [Get Set, Exploit! Unveiling Python Class Pollution In-the-Wild](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gavin%20Zhong%2C%20Zhengyu%20Liu%2C%20Jianjia%20Yu%20-%20Get%20Set%2C%20Exploit%20Unveiling%20Python%20Class%20Pollution%20In-the-Wild%20-%20P.pdf>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gavin%20Zhong%2C%20Zhengyu%20Liu%2C%20Jianjia%20Yu%20-%20Get%20Set%2C%20Exploit%20Unveiling%20Python%20Class%20Pollution%20In-the-Wild%20-%20P.pdf>) | Added |
 | [Ghost Dependency: version ghosts and name ghosts as supply-chain primitives under agentic coding](<https://xlab.tencent.com/cn/2026/02/28/ghost-dependency-agentic-coding-supply-chain-threat/>) | Not added |
-| [Ghosts of Encryption Past: Salesforce Marketing Cloud / ExactTarget](<https://slcyber.io/research-center/ghosts-of-encryption-past-salesforce-exacttarget/>) | Not added |
+| [Ghosts of Encryption Past: Salesforce Marketing Cloud / ExactTarget](<https://slcyber.io/research-center/ghosts-of-encryption-past-salesforce-exacttarget/>) | Added |
 | [GHSL-2024-198 / GHSL-2024-199: Zero-click RCE in Uptrain](<https://securitylab.github.com/advisories/GHSL-2024-198_GHSL-2024-199_Uptrain/>) | Not added |
-| [GitHub RCE Vulnerability: CVE-2026-3854](<https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854>) | Not added |
+| [GitHub RCE Vulnerability: CVE-2026-3854](<https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854>) | Added |
 | [GitHub scoped user-to-server tokens can escape their installation](<https://hackerone.com/reports/3638909>) [Related source](<https://hackerone.com/reports/3641229>) | Not added |
-| [Golang code review notes II](<https://www.elttam.com/blog/golang-code-review-notes-ii>) | Not added |
-| [Gotta Phish 'Em All! Novel Attack Techniques via Persistent Browser-in-the-Middle](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Giacomo%20Lenzini%20-%20Gotta%20Phish%20%27Em%20All%20Novel%20Attack%20Techniques%20via%20Persistent%20Browser-in-the-Middle%20-%20v2.pdf>) | Not added |
+| [Golang code review notes II](<https://www.elttam.com/blog/golang-code-review-notes-ii>) | Added |
+| [Gotta Phish 'Em All! Novel Attack Techniques via Persistent Browser-in-the-Middle](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Giacomo%20Lenzini%20-%20Gotta%20Phish%20%27Em%20All%20Novel%20Attack%20Techniques%20via%20Persistent%20Browser-in-the-Middle%20-%20v2.pdf>) | Added |
 | [Grand Theft Atlas (PleaseFix + Intent Collision)](<https://labs.zenity.io/post/grand-theft-atlas>) [Related source](<https://labs.zenity.io/p/perplexedbrowser-perplexity-s-agent-browser-can-leak-your-personal-pc-local-files>) [Related source](<https://zenity.io/research/pleasefix-vulnerabilities>) | Added |
-| [H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs](<https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang>) | Not added |
-| [Hack the Elephant One Bite at a Time: NUL byte SQL Injection in pdo\\_firebird](<https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-nul-byte-sql-injection-in-pdo_firebird-and-null-pointer-dereference-in-pdo-pgsql/>) [Related source](<https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-jpeg-related-memory-safety-bugs-in-php/>) | Not added |
+| [H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs](<https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang>) | Added |
+| [Hack the Elephant One Bite at a Time: NUL byte SQL Injection in pdo\\_firebird](<https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-nul-byte-sql-injection-in-pdo_firebird-and-null-pointer-dereference-in-pdo-pgsql/>) [Related source](<https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-jpeg-related-memory-safety-bugs-in-php/>) | Added |
 | [Hack the Source, Of the Source](<https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf>) | Added |
 | [Hacking AI customer service agents](<https://www.intigriti.com/researchers/blog/hacking-tools/hacking-ai-customer-service-agents>) [Related source](<https://drive.google.com/file/d/1e7deupIiaOVN_DPPz4YAs68wRi0QpqUC/view>) | Added |
 | [Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf>) | Added |
 | [HAE-GEO](<https://arxiv.org/abs/2609.06027>) | Not added |
 | Handle With Care: Azure Automation cross-tenant (Microsoft, Black Hat USA 2026) | Not added |
 | [HashDoS in V8's array-index string hash, and a seeded but invertible permutation as the fix](<https://hackerone.com/reports/3511792>) [Related source](<https://nodejs.org/en/blog/vulnerability/march-2026-hashdos>) | Added |
-| [HermeticReader: turning Adobe's 300M-install extension into a WhatsApp takeover](<https://guard.io/labs/hermeticreader---the-vulnerability-that-turned-adobe-300m-install-extension-into-a-full-whatsapp-takeover>) | Not added |
-| [Hidden security risks in Jupyter notebooks](<https://www.sonarsource.com/blog/hidden-security-risks-in-jupyter-notebooks/>) | Not added |
+| [HermeticReader: turning Adobe's 300M-install extension into a WhatsApp takeover](<https://guard.io/labs/hermeticreader---the-vulnerability-that-turned-adobe-300m-install-extension-into-a-full-whatsapp-takeover>) | Added |
+| [Hidden security risks in Jupyter notebooks](<https://www.sonarsource.com/blog/hidden-security-risks-in-jupyter-notebooks/>) | Added |
 | HijackKV | Not added |
 | [HijackKV: New Threat in Position-Independent KV Cache Reuse](<https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-yichi>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-zhang-yichi.pdf>) [Related source](<https://arxiv.org/abs/2607.19957>) [Related source](<https://github.com/YichiCS/KV-Cache-Hijack>) | Added |
 | [HookPry](<https://arxiv.org/abs/2609.03884>) | Not added |
@@ -134,47 +134,47 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [HTTP Response Queue Poisoning via TOCTOU race in the Node.js HTTP agent](<https://hackerone.com/reports/3582376>) [Related source](<https://nodejs.org/en/blog/vulnerability/june-2026-security-releases>) [Related source](<https://adventures.nodeland.dev/archive/cve-2026-48931-shouldnt-have-been-a-cve/>) | Not added |
 | [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](<https://lab.ctbb.show/research/h2-WAF-Bypasses>) | Not added |
 | [Identifying Logical Vulnerabilities in QUIC Implementations](<https://www.ndss-symposium.org/wp-content/uploads/2026-s1777-paper.pdf>) | Not added |
-| [iframe sandbox bypass, cross-origin drag-and-drop, unvalidated postMessage origin, cookie bomb to account takeover](<https://medium.com/@renwa/iframe-sandbox-bypass-cross-origin-drag-drop-unvalidated-postmessage-origin-cookie-bomb-to-21357a4d94f5>) | Not added |
+| [iframe sandbox bypass, cross-origin drag-and-drop, unvalidated postMessage origin, cookie bomb to account takeover](<https://medium.com/@renwa/iframe-sandbox-bypass-cross-origin-drag-drop-unvalidated-postmessage-origin-cookie-bomb-to-21357a4d94f5>) | Added |
 | [Indirect Prompt Injection remains a fundamental security challenge for AI](<https://brave.com/blog/indirect-prompt-injection/>) | Not added |
 | [Install Me Maybe: Turning Claimable VS Code Extension IDs into Supply-Chain Attacks](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Raphael%20Silva%20-%20Install%20Me%20Maybe%20Turning%20Claimable%20VS%20Code%20Extension%20IDs%20into%20Supply-Chain%20Attacks%20-%20v1.pdf>) | Not added |
 | JavaScript Functions Overload Confusion | Not added |
 | [JavaScript Functions Overload Confusion](<https://blog.voorivex.team/javascript-functions-overload-confusion>) | Added |
 | [JFrog advisory index](<https://docs.jfrog.com/releases/docs/jfrog-security-advisories>) [Related source](<https://github.com/advisories/ghsa-cqxf-f7w8-7gff>) | Not added |
-| [Jupyter Enterprise Gateway: SSTI and YAML break-out to cluster takeover](<https://www.elttam.com/blog/jupyter-enterprise-gateway>) | Not added |
-| [Keys to the Kingdom: Anonymous SQL Injection in Drupal Core (CVE-2026-9082)](<https://slcyber.io/research-center/keys-to-the-kingdom-anonymous-sql-injection-in-drupal-core-cve-2026-9082/>) | Not added |
+| [Jupyter Enterprise Gateway: SSTI and YAML break-out to cluster takeover](<https://www.elttam.com/blog/jupyter-enterprise-gateway>) | Added |
+| [Keys to the Kingdom: Anonymous SQL Injection in Drupal Core (CVE-2026-9082)](<https://slcyber.io/research-center/keys-to-the-kingdom-anonymous-sql-injection-in-drupal-core-cve-2026-9082/>) | Added |
 | [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](<https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails>) [Related source](<https://abdelmounaim.xyz/posts/leaky-avatar/>) [Related source](<https://github.com/rails/rails-forensics-CVE-2026-66066>) | Added |
-| [KYC: Bypass age verification using generative video models](<https://www.synacktiv.com/en/publications/kyc-bypass-age-verification-using-generative-video-models>) | Not added |
-| [L3akCTF 2026 "Squid": racing `/proc/self/fd` symlinks against Flask `send_file`'s stat/open TOCTOU to read zero-length files](<https://jorianwoltjer.com/blog/p/ctf/l3akctf-2026-squid>) | Not added |
+| [KYC: Bypass age verification using generative video models](<https://www.synacktiv.com/en/publications/kyc-bypass-age-verification-using-generative-video-models>) | Added |
+| [L3akCTF 2026 "Squid": racing `/proc/self/fd` symlinks against Flask `send_file`'s stat/open TOCTOU to read zero-length files](<https://jorianwoltjer.com/blog/p/ctf/l3akctf-2026-squid>) | Added |
 | LeakyLinks | Not added |
 | [LeakyLinks: Measuring the Security and Privacy Risks of URL Scanning Services](<https://swag.cispa.saarland/papers/mustafa2026leakylinks.pdf>) [Related source](<https://github.com/cispa/leakylinks>) | Added |
 | [LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails.pdf>) | Added |
 | [LiteLLM Security: SSTI RCE and Unicode Sandbox Bypass](<https://fortbridge.co.uk/research/litellm-critical-vulnerabilities-ssti-unicode-bypass/>) | Not added |
 | [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](<https://labs.boostsecurity.io/articles/introducing-smokedmeat/>) [Related source](<https://github.com/boostsecurityio/smokedmeat>) | Added |
 | LLM Heist: Hijacking LiteLLM (Rehberger, 2026-08-03) | Not added |
-| [LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection](<https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit/>) | Not added |
+| [LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection](<https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit/>) | Added |
 | [MCP-2026-008: public cacheScope](<https://github.com/modelcontextprotocol/modelcontextprotocol/issues/3207>) | Not added |
 | Melting the Flesh of PHP's Memory Hardening | Not added |
 | [Melting the Flesh of PHP's Memory Hardening](<https://www.usenix.org/conference/usenixsecurity26/presentation/wu-yifan>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-wu-yifan.pdf>) | Added |
 | [Mini Shai-Hulud Returns: 42 Malicious npm Packages Fake Sigstore Badges](<https://www.endorlabs.com/learn/mini-shai-hulud-returns-42-malicious-npm-packages-fake-sigstore-badges-in-antv-ecosystem-attack>) | Not added |
 | MUZZLE | Not added |
 | [MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection](<https://www.usenix.org/conference/usenixsecurity26/presentation/syros>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-syros.pdf>) [Related source](<https://arxiv.org/abs/2602.09222>) | Added |
-| [My First RCE by Reverse Engineering an EXE File With the Help of AI](<https://blog.voorivex.team/first-rce-via-reverse-engineering-with-ai>) | Not added |
+| [My First RCE by Reverse Engineering an EXE File With the Help of AI](<https://blog.voorivex.team/first-rce-via-reverse-engineering-with-ai>) | Added |
 | My First RCE by Reverse Engineering an EXE With AI | Not added |
 | [My Road to Black-Box RCE in LLM Products: `postinstall` in AI preview builders, weakest-model-wins guardrail bypass, and DLP evasion by channel choice](<https://mp.weixin.qq.com/s/whv4LzJTiJt-i2zHzdG8Eg>) | Not added |
-| [Navigating Lax Load Balancers: When an Intersection Gets You Inside](<https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html>) | Not added |
-| [Nested APP Authentication — Undocumented Risk and Conditional Access Bypass](<https://troopers.de/troopers26/talks/ezcteq/>) | Not added |
+| [Navigating Lax Load Balancers: When an Intersection Gets You Inside](<https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html>) | Added |
+| [Nested APP Authentication — Undocumented Risk and Conditional Access Bypass](<https://troopers.de/troopers26/talks/ezcteq/>) | Added |
 | Network-Level Prompt and Trait Leakage in Local Research Agents | Not added |
 | [Network-Level Prompt and Trait Leakage in Local Research Agents](<https://www.usenix.org/conference/usenixsecurity26/presentation/jeong>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-jeong.pdf>) [Related source](<https://arxiv.org/abs/2508.20282>) [Related source](<https://github.com/umass-aisec/wra>) | Not added |
-| [Never Trust the Output: Data Pollution in AI Agents and MCP](<https://blog.slonser.info/posts/smugglle-ai-ouputs/>) | Not added |
-| [New Age of Collisions: Pre-Auth Arbitrary File Read as root in cPanel](<https://slcyber.io/research-center/new-age-of-collisions-reading-arbitrary-files-pre-auth-as-root-in-cpanel-cve-2026-29205/>) | Not added |
+| [Never Trust the Output: Data Pollution in AI Agents and MCP](<https://blog.slonser.info/posts/smugglle-ai-ouputs/>) | Added |
+| [New Age of Collisions: Pre-Auth Arbitrary File Read as root in cPanel](<https://slcyber.io/research-center/new-age-of-collisions-reading-arbitrary-files-pre-auth-as-root-in-cpanel-cve-2026-29205/>) | Added |
 | New Hope for SSRF (Cloud Village) | Not added |
 | [New Hope for SSRF: Exploiting Credential Relay from APIM to AI Foundry](<https://www.cloud-village.org/dc34>) | Not added |
-| [No Socket, No Privs, No Problem: Weaponizing OCI Registries for SSRF, Credential Theft, and Container Escapes](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20David%20Rochester%2C%20Nicholas%20Gould%20-%20No%20Socket%2C%20No%20Privs%2C%20No%20Problem%20Weaponizing%20OCI%20Registries%20for%20SSRF%2C%20Credential%20Theft%2C%20and%20Container%20E.pdf>) | Not added |
+| [No Socket, No Privs, No Problem: Weaponizing OCI Registries for SSRF, Credential Theft, and Container Escapes](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20David%20Rochester%2C%20Nicholas%20Gould%20-%20No%20Socket%2C%20No%20Privs%2C%20No%20Problem%20Weaponizing%20OCI%20Registries%20for%20SSRF%2C%20Credential%20Theft%2C%20and%20Container%20E.pdf>) | Added |
 | [No Tools Required: Post-Injection Exploitation Across AI Agent Frameworks](<https://i.blackhat.com/BH-USA-26/Presentations/BHUSA26-Porat-No-Tools-Required-REV01.pdf>) | Added |
-| [Node.js TLS hostname-normalisation differentials: Unicode dot separators defeat wildcard depth](<https://hackerone.com/reports/3688064>) [Related source](<https://hackerone.com/reports/3656716>) [Related source](<https://hackerone.com/reports/3649802>) [Related source](<https://github.com/nodejs/node/commit/1efb4ff51a>) | Not added |
+| [Node.js TLS hostname-normalisation differentials: Unicode dot separators defeat wildcard depth](<https://hackerone.com/reports/3688064>) [Related source](<https://hackerone.com/reports/3656716>) [Related source](<https://hackerone.com/reports/3649802>) [Related source](<https://github.com/nodejs/node/commit/1efb4ff51a>) | Added |
 | [npx confusion and npxconfuse](<https://lab.ctbb.show/research/from-defcon-research-to-automated-supply-chain-defense-with-npxconfuse>) [Related source](<https://github.com/cybershaykh/npxconfuse>) | Not added |
-| [OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration](<https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy>) | Not added |
-| [OffGuard: Breaking the Most Popular AI Gateway (LiteLLM) from Auth Bypass to Cloud Compromise](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf>) | Not added |
+| [OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration](<https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy>) | Added |
+| [OffGuard: Breaking the Most Popular AI Gateway (LiteLLM) from Auth Bypass to Cloud Compromise](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf>) | Added |
 | [One Chain to Own Them All: Breaking AI Infrastructures](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>) | Added |
 | One Char to Rule Them All / SHAR (Tsinghua, Black Hat Asia 2026 / S&P 2026) | Not added |
 | [One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution](<https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf>) | Added |
@@ -186,7 +186,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | PANGOLIN (USENIX Security '26) | Not added |
 | [PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis](<https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng>) | Not added |
 | [Parse and Parse: MIME Validation Bypass to XSS via Parser Differential](<https://lab.ctbb.show/research/parse-and-parse-mime-validation-bypass-to-xss-via-parser-differential>) | Added |
-| [Pass the Passkey: A Novel Attack Surface in Passwordless Authentication](<https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/>) | Not added |
+| [Pass the Passkey: A Novel Attack Surface in Passwordless Authentication](<https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/>) | Added |
 | [Pass-the-Passkey Family of Attacks](<https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-Slides.pdf>) | Added |
 | [Patch-Guided Vulnerability Detection: Extracting Java API Security Rules via Attack–Defense Cross-Analysis (VulGenie)](<https://www.usenix.org/conference/usenixsecurity26/presentation/chen-bofei>) [Related source](<https://zenodo.org/records/18039660>) | Not added |
 | [Path traversal in signed URLs — present even in the official AWS SDKs](<https://blog.flatt.tech/entry/signed_url_path_traversal>) | Added |
@@ -194,19 +194,19 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Pattern, Graph, Prompt: What Happens When You Layer Three Analysis Paradigms on the Same Codebase](<https://appsecvillage.com/events/dc-2026/pattern-graph-prompt-what-happens-when-you-layer-three-analysis-paradigms-on-the-same-codebase-1223399>) | Not added |
 | [Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector](<https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/>) | Not added |
 | PleaseFix (Zenity Labs, published 2026-08-05) | Not added |
-| [Poisoned by the Host: Large-Scale Measurement of Host Name Poisoning in Web Applications](<https://www.iamruiyang.me/papers/sp26-HNP.pdf>) | Not added |
+| [Poisoned by the Host: Large-Scale Measurement of Host Name Poisoning in Web Applications](<https://www.iamruiyang.me/papers/sp26-HNP.pdf>) | Added |
 | [Poisoning Claude Code: One GitHub Issue to Break the Supply Chain](<https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/>) | Added |
 | [postMessage targetOrigin bypass via IP normalization](<https://lab.ctbb.show/research/postmessage-targetorigin-bypass-via-ip-normalization>) | Not added |
 | Pre-auth RCE in Enterprise Java (Novee, Black Hat USA 2026) | Not added |
 | [Privacy risks of agentic oversharing on the Web (SPILLAGE)](<https://brave.com/blog/agentic-oversharing/>) | Added |
 | [Privilege escalation via authorization bypass in graphql-ruby](<https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/>) | Not added |
 | [Prompt Injection as Role Confusion (CoT Forgery)](<https://role-confusion.github.io/>) [Related source](<https://arxiv.org/abs/2603.12277>) | Added |
-| [Proto6: The Schema Was Not Supposed to Run](<https://www.cyera.com/research/proto6-the-schema-was-not-supposed-to-run>) | Not added |
+| [Proto6: The Schema Was Not Supposed to Run](<https://www.cyera.com/research/proto6-the-schema-was-not-supposed-to-run>) | Added |
 | [Pwning Agentic Browsers with PleaseFix](<https://zenity.io/research/pleasefix-vulnerabilities>) | Not added |
 | Pwning Claude Code in 8 Different Ways | Not added |
 | [Pwning Claude Code in 8 Different Ways](<https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/>) | Added |
 | [Race Against The Patch: Four Exploit Chains in LiteLLM](<https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/>) | Added |
-| [Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js](<https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs>) | Not added |
+| [Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js](<https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs>) | Added |
 | RebirthDay Attack (Nankai / Tsinghua, Black Hat Asia 2026) | Not added |
 | Recovering Encrypted LLM Reasoning Traces | Not added |
 | [Recovering Encrypted LLM Reasoning Traces](<https://arxiv.org/abs/2608.09867>) [Related source](<https://embracethered.com/blog/posts/2026/recovering-encrypted-llm-thoughts/>) | Added |
@@ -214,24 +214,24 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | Regular Expression Denial of Service Induced by Backreferences | Not added |
 | [Regular Expression Denial of Service Induced by Backreferences](<https://www.usenix.org/conference/usenixsecurity26/presentation/liu-yichen>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-liu-yichen.pdf>) [Related source](<https://arxiv.org/abs/2602.21459>) [Related source](<https://zenodo.org/records/20762298>) | Added |
 | [Remote Command Execution in Google Cloud with Single Directory Deletion](<https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/>) | Added |
-| [Remote-content-blocking and CSS-sanitizer bypasses in Roundcube's washtml via SVG `feImage` and SMIL animation attributes](<https://hackerone.com/reports/3486747>) [Related source](<https://hackerone.com/reports/3590576>) [Related source](<https://hackerone.com/reports/3590583>) [Related source](<https://hackerone.com/reports/3590586>) [Related source](<https://nullcathedral.com/posts/2026-02-08-roundcube-webmail-svg-feimage/>) [Related source](<https://nullcathedral.com/posts/2026-03-18-roundcube-round-two-three-more-sanitizer-bypasses/>) | Not added |
-| [ROP for the Web: Smuggling XSS, SQLi and Web Shells Past Every WAF Using Compression Dictionaries](<https://appsecvillage.com/events/dc-2026/rop-for-the-web-smuggling-xss-sqli-and-web-shells-past-every-waf-using-compression-dictionaries-1250560>) | Not added |
+| [Remote-content-blocking and CSS-sanitizer bypasses in Roundcube's washtml via SVG `feImage` and SMIL animation attributes](<https://hackerone.com/reports/3486747>) [Related source](<https://hackerone.com/reports/3590576>) [Related source](<https://hackerone.com/reports/3590583>) [Related source](<https://hackerone.com/reports/3590586>) [Related source](<https://nullcathedral.com/posts/2026-02-08-roundcube-webmail-svg-feimage/>) [Related source](<https://nullcathedral.com/posts/2026-03-18-roundcube-round-two-three-more-sanitizer-bypasses/>) | Added |
+| [ROP for the Web: Smuggling XSS, SQLi and Web Shells Past Every WAF Using Compression Dictionaries](<https://appsecvillage.com/events/dc-2026/rop-for-the-web-smuggling-xss-sqli-and-web-shells-past-every-waf-using-compression-dictionaries-1250560>) | Added |
 | [Roundcube XSS chained with cookie tossing for full inbox access](<https://www.aikido.dev/blog/roundcube-xss-cookie-tossing>) [Related source](<https://hackerone.com/reports/3594137>) | Not added |
 | [Roundcube: IMAP Command Injection and SSRF via CSS Proxying](<https://blog.ostorlab.co/roundcube-imap-injection-ssrf-ove-2026.html>) | Not added |
 | [Ruby 4.0 Universal RCE Deserialization Gadget Chain](<https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain>) | Added |
 | Salesforce Apex Predator (Reco, DEF CON 34 workshop) | Not added |
-| [Salesforce Apex Predator: Breaking Salesforce Sites](<https://dcworkshop.reco.ai/>) [Related source](<https://www.reco.ai/blog/salesforce-experience-site-pentest-apex-predator>) [Related source](<https://github.com/nitay-bachrach/lwred>) | Not added |
-| [Same-site DOM XSS using cookie injection via the TikTok analytics pixel](<https://medium.com/@renwa/site-dom-xss-using-cookie-injection-the-ai-hackers-are-coming-faster-than-you-think-3ef82f2a991d>) | Not added |
-| [Sandcastles, Not Sandboxes: `ctypes.CDLL(None)` reaches Emscripten exports to escape Pyodide into the host JS runtime](<https://www.cyera.com/research/sandcastles-not-sandboxes-how-one-architectural-flaw-exposed-seven-products>) [Related source](<https://www.cyera.com/research/cellbreak-grists-pyodide-sandbox-escape-and-the-data-at-risk-blast-radius>) | Not added |
+| [Salesforce Apex Predator: Breaking Salesforce Sites](<https://dcworkshop.reco.ai/>) [Related source](<https://www.reco.ai/blog/salesforce-experience-site-pentest-apex-predator>) [Related source](<https://github.com/nitay-bachrach/lwred>) | Added |
+| [Same-site DOM XSS using cookie injection via the TikTok analytics pixel](<https://medium.com/@renwa/site-dom-xss-using-cookie-injection-the-ai-hackers-are-coming-faster-than-you-think-3ef82f2a991d>) | Added |
+| [Sandcastles, Not Sandboxes: `ctypes.CDLL(None)` reaches Emscripten exports to escape Pyodide into the host JS runtime](<https://www.cyera.com/research/sandcastles-not-sandboxes-how-one-architectural-flaw-exposed-seven-products>) [Related source](<https://www.cyera.com/research/cellbreak-grists-pyodide-sandbox-escape-and-the-data-at-risk-blast-radius>) | Added |
 | [Scanning the Scanners: Turning Security Vendors Into Supply Chain Weapons](<https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf>) [Related source](<https://github.com/rek7/build-canaries>) [Related source](<https://github.com/rek7/DVASP>) | Added |
 | [SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot](<https://www.varonis.com/blog/searchleak>) [Related source](<https://www.varonis.com/blog/reprompt>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Dolev%20Taler%2C%20Mark%20Vaitsman%20-%20Data%20Tomb%20Raider%20Raiding%20Modern%20AI%20Vaults%20with%20Legacy%20Flaws%20for%20Treasure%20Stealing%20-%20v1.pdf>) | Added |
-| [SECCON CTF 14 Finals: Shadow CSS and friends](<https://blog.arkark.dev/2026/03/08/seccon-finals/>) [Related source](<https://nanimokangaeteinai.hateblo.jp/entry/2026/03/02/235931>) | Not added |
-| [Securing the Supply Chain: Cache Vulnerability in RubyGems](<https://trufflesecurity.com/blog/rubygems-cache-vulnerability>) | Not added |
+| [SECCON CTF 14 Finals: Shadow CSS and friends](<https://blog.arkark.dev/2026/03/08/seccon-finals/>) [Related source](<https://nanimokangaeteinai.hateblo.jp/entry/2026/03/02/235931>) | Added |
+| [Securing the Supply Chain: Cache Vulnerability in RubyGems](<https://trufflesecurity.com/blog/rubygems-cache-vulnerability>) | Added |
 | [Security Considerations on Namespace-Based Multi-Tenancy (Istio VirtualService MITM)](<https://istio.io/latest/blog/2026/security-considerations-on-namespace-based-multi-tenancy/>) [Related source](<https://insinuator.net/2026/05/cve-2026-47237-overly-permissive-istio-permissions-allow-kubeflow-authorization-token-stealing/>) | Added |
-| [SekaiCTF 2026 "Filtered Reality": invalid Signed HTTP Exchange fallback navigation as a redirect and CSP-nonce escape primitive](<https://github.com/project-sekai-ctf/sekaictf-2026/blob/main/web/filtered-reality/solution/writeup.md>) | Not added |
+| [SekaiCTF 2026 "Filtered Reality": invalid Signed HTTP Exchange fallback navigation as a redirect and CSP-nonce escape primitive](<https://github.com/project-sekai-ctf/sekaictf-2026/blob/main/web/filtered-reality/solution/writeup.md>) | Added |
 | Semantic Cache Poisoning | Not added |
 | Shaking the MCP Tree | Not added |
-| [Shaking the MCP Tree: a security deep dive](<https://blog.voorivex.team/shaking-the-mcp-tree>) | Not added |
+| [Shaking the MCP Tree: a security deep dive](<https://blog.voorivex.team/shaking-the-mcp-tree>) | Added |
 | Site Isolation is Dead | Not added |
 | [Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions](<https://wsp-lab.github.io/papers/lee-sp26.pdf>) [Related source](<https://github.com/WSP-LAB/Site-Isolation-Is-Dead>) | Added |
 | Slop Spotting (Paxton-Fear & vonBlankenburg) | Not added |
@@ -245,17 +245,17 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | Story of Abusing a Fully Secured redirect_uri | Not added |
 | [Story of Abusing a Fully Secured redirect_uri in an OAuth Flow](<https://blog.voorivex.team/story-of-abusing-a-fully-secured-redirect-uri-in-an-oauth-flow>) | Not added |
 | [Sub:jugation — Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers](<https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/>) [Related source](<https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim>) | Added |
-| [SvelteSpill: A Cache Deception Bug in SvelteKit + Vercel](<https://www.aikido.dev/blog/sveltespill-cache-deception-sveltekit-vercel>) | Not added |
+| [SvelteSpill: A Cache Deception Bug in SvelteKit + Vercel](<https://www.aikido.dev/blog/sveltespill-cache-deception-sveltekit-vercel>) | Added |
 | Testing API Business Logic With AI Agents | Not added |
 | The API Made Me Do It | Not added |
-| [The API Made Me Do It: Do Bad APIs Lead AI to Generate Vulnerable Code?](<https://appsecvillage.com/events/dc-2026/the-api-made-me-do-it-do-bad-apis-lead-ai-to-generate-vulnerable-code-1248780>) | Not added |
+| [The API Made Me Do It: Do Bad APIs Lead AI to Generate Vulnerable Code?](<https://appsecvillage.com/events/dc-2026/the-api-made-me-do-it-do-bad-apis-lead-ai-to-generate-vulnerable-code-1248780>) | Added |
 | The Click that shouldn't have worked | Not added |
 | [The Click that shouldn't have worked: RCE via clickjacking in Internet Explorer](<https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/>) | Added |
 | The CoreBreak Attack (Ingber & Ivgi, Black Hat USA 2026) | Not added |
 | [The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors](<https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf>) | Added |
 | [The CSRF-token leak both Claude Code and Codex Security missed (SAML IdP form helpers)](<https://gmo-cybersecurity.com/blog/claude-codex-missed-csrf-token-leak/>) | Not added |
 | [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](<https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you>) [Related source](<https://github.com/xssdoctor/cspt_research>) | Added |
-| [The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting](<https://r3verii.github.io/cve/2026/02/27/nodejs-toctou.html>) | Not added |
+| [The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting](<https://r3verii.github.io/cve/2026/02/27/nodejs-toctou.html>) | Added |
 | [The Hidden Cost of Sanitization: How Secure Parsing Can Introduce New XSS Attack Surfaces](<https://nullcon.net/talk/the-hidden-cost-of-sanitization-how-secure-parsing-can-introduce-new-xss-attack-surfaces/>) [Related source](<https://www.youtube.com/watch?v=BJCgSLGq308>) | Not added |
 | The Masks We (Think We) Wear | Not added |
 | [The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem](<https://petsymposium.org/popets/2026/popets-2026-0094.pdf>) [Related source](<https://arxiv.org/abs/2607.06141>) [Related source](<https://github.com/podiumdesu/wallet-privacy-threats>) | Added |
@@ -278,14 +278,14 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Transformers: Dark Side of the Type — Weaponizing the Conversion Layer](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf>) [Related source](<https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf>) | Added |
 | TranSPArent | Not added |
 | [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction](<https://www.ndss-symposium.org/wp-content/uploads/2026-f1721-paper.pdf>) [Related source](<https://yinzhicao.org/reactappscan/TranSPArent.pdf>) [Related source](<https://zenodo.org/records/17822391>) | Not added |
-| [Trust Transitions in Email: When Sanitizers and CSS Engines Disagree](<https://labs.trace37.com/blog/css-email-trust-transitions/>) | Not added |
-| [Trusted Publishing, Untrusted Branch: Inside the Red Hat npm Compromise](<https://labs.boostsecurity.io/articles/trusted-publishing-untrusted-branch-red-hat-npm>) | Not added |
+| [Trust Transitions in Email: When Sanitizers and CSS Engines Disagree](<https://labs.trace37.com/blog/css-email-trust-transitions/>) | Added |
+| [Trusted Publishing, Untrusted Branch: Inside the Red Hat npm Compromise](<https://labs.boostsecurity.io/articles/trusted-publishing-untrusted-branch-red-hat-npm>) | Added |
 | [Two Bypasses for Chrome's Sanitizer API](<https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/>) | Added |
 | Two cPanel Zero Day Vulnerabilities | Not added |
 | [Two cPanel Zero Day Vulnerabilities](<https://blog.voorivex.team/two-cpanel-zero-day-vulnerabilities>) | Not added |
 | [UI consent bypass via comma injection in Burp's MCP `addAutoApproveTarget`](<https://hackerone.com/reports/3717354>) | Not added |
-| [Unauthenticated RCE in Taskcluster via a GraphQL filter reaching sift's `$where`](<https://hackerone.com/reports/3782701>) | Not added |
-| [uXSS on Samsung Browser (CVE-2025-58485 · SVE-2025-1879)](<https://blog.voorivex.team/uxss-on-samsung-browser-cve-2025-58485-sve-2025-1879>) | Not added |
+| [Unauthenticated RCE in Taskcluster via a GraphQL filter reaching sift's `$where`](<https://hackerone.com/reports/3782701>) | Added |
+| [uXSS on Samsung Browser (CVE-2025-58485 · SVE-2025-1879)](<https://blog.voorivex.team/uxss-on-samsung-browser-cve-2025-58485-sve-2025-1879>) | Added |
 | uXSS on Samsung Browser (CVE-2025-58485) | Not added |
 | [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](<https://www.ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf>) [Related source](<https://zenodo.org/records/16996391>) | Not added |
 | VulGenie (Fudan / EPFL, USENIX Security '26) | Not added |
@@ -299,13 +299,13 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [When Authorization Loses Its Meaning: Breaking and Fixing Third-Party Online Payments](<https://www.usenix.org/conference/usenixsecurity26/presentation/xiao>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-xiao.pdf>) [Related source](<https://doi.org/10.5281/zenodo.20303820>) | Added |
 | [When Cache Poisoning Meets LLM Systems: Semantic Cache Poisoning](<https://www.ndss-symposium.org/ndss-paper/when-cache-poisoning-meets-llm-systems-semantic-cache-poisoning-and-its-countermeasures/>) [Related source](<https://www.ndss-symposium.org/wp-content/uploads/2026-f200-paper.pdf>) [Related source](<https://github.com/dequeueing/SemanticCache_Poisoning>) | Added |
 | [When Context Gets Root: Privilege Escalation in LLM Harnesses](<https://arxiv.org/abs/2608.27299>) | Not added |
-| [When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax](<https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html>) | Not added |
+| [When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax](<https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html>) | Added |
 | When HTTP 402 Meets the Blockchain / x402 (Zhejiang / EPFL, USENIX Security '26) | Not added |
 | [When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments](<https://www.usenix.org/conference/usenixsecurity26/presentation/wang-qinying>) [Related source](<https://arxiv.org/abs/2607.19545>) [Related source](<https://github.com/HexHive/x402scope>) | Added |
 | When Two Parsers Disagree | Not added |
-| [When Two Parsers Disagree: Exploiting Query String Differentials for XSS](<https://blog.voorivex.team/when-two-parsers-disagree-exploiting-query-string-differentials-for-xss>) | Not added |
+| [When Two Parsers Disagree: Exploiting Query String Differentials for XSS](<https://blog.voorivex.team/when-two-parsers-disagree-exploiting-query-string-differentials-for-xss>) | Added |
 | [wp2shell: Pre-Authentication RCE in WordPress Core](<https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/>) [Related source](<https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/>) [Related source](<https://blog.calif.io/p/the-wordpress-chain-massacre>) | Added |
-| [Wrestling with a Python: Escaping Copilot Studio's AI-Guarded Sandbox](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ryan%20Hausknecht%2C%20Simon%20Maxwell-Stewart%20-%20Wrestling%20with%20a%20Python%20Escaping%20Copilot%20Studio%27s%20AI-Guarded%20Sandbox%20-%20DEFCON2026%20embargo.pptx>) | Not added |
+| [Wrestling with a Python: Escaping Copilot Studio's AI-Guarded Sandbox](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ryan%20Hausknecht%2C%20Simon%20Maxwell-Stewart%20-%20Wrestling%20with%20a%20Python%20Escaping%20Copilot%20Studio%27s%20AI-Guarded%20Sandbox%20-%20DEFCON2026%20embargo.pptx>) | Added |
 | Write Once, Shell Everywhere (Ethiack, published 2026-08-07) | Not added |
 | [Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE](<https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce>) | Added |
 | [Xianzhi 92692 — CFITSIO EFS filename attack surface](<https://xz.aliyun.com/news/92692>) | Not added |
@@ -314,7 +314,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Xianzhi 92743 — Agentic RAG in-band smuggling](<https://xz.aliyun.com/news/92743>) | Not added |
 | [Xianzhi 92754 — FreeMarker/Aviator sandbox bridge](<https://xz.aliyun.com/news/92754>) | Not added |
 | [Xianzhi 92789 — JimuReport 2.5.1 signing key/Aviator chain](<https://xz.aliyun.com/news/92789>) | Not added |
-| [XSS via i18n translation-template injection in NodeBB](<https://www.aikido.dev/blog/eight-high-severity-vulnerabilities-nodebb>) | Not added |
+| [XSS via i18n translation-template injection in NodeBB](<https://www.aikido.dev/blog/eight-high-severity-vulnerabilities-nodebb>) | Added |
 | XSS2Shell | Not added |
 | [XSS2Shell: WordPress Pre-Auth XSS to RCE](<https://pwn.ai/blog/xss2shell>) | Added |
 | [Your House Has an FFmpeg Problem](<https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem>) | Added |

@@ -11,7 +11,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [DNS Cache Poisoning Attack: Resurrections with Side Channels](<https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf>) | Added |
 | [Fingerprinting in Style: Detecting Browser Extensions via Injected Style Sheets](<https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix>) | Added |
 | [Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques](<https://arxiv.org/abs/2110.10129>) | Added |
-| [Improper Spring @Query Usage Allows N1QL Injection](<https://www.gremwell.com/spring-n1ql-injection>) | Not added |
+| [Improper Spring @Query Usage Allows N1QL Injection](<https://www.gremwell.com/spring-n1ql-injection>) | Added |
 | [JAW: Studying Client-side CSRF with Hybrid Property Graphs and Declarative Traversals](<https://www.usenix.org/conference/usenixsecurity21/presentation/khodayari>) | Added |
 | [Leveraging the Spring Expression Language injection vulnerability to get RCE](<https://xen0vas.github.io/Leveraging-the-SpEL-Injection-Vulnerability-to-get-RCE/>) | Not added |
 | [PageTableInjection](<https://github.com/kkent030315/PageTableInjection>) [Related source](<https://securityonline.info/pagetableinjection-code-injection-inject-malicious-payload/>) | Not added |

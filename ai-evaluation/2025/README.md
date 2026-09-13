@@ -16,16 +16,16 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications](<https://racerz-fighting.github.io/paper/uabscan-ccs25.pdf>) | Added |
 | Broad non-code-execution endpoint classification, complementary static analysis, and searching for an actual markup injection alongside the gadget. The 2025 related-work sentence characterizing previous detection as manual is contradicted by §5 of this primary paper. Inclusion of XHR in the old detector alone does not establish that it already measured non-XSS request abuse. | Not added |
 | [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits](<https://spectrum.library.concordia.ca/id/eprint/996198/>) [Related source](<https://spectrum.library.concordia.ca/id/eprint/996198/2/Houis_MASc_F2025.pdf>) | Added |
-| [By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam Backup and Replication (CVE-2025-23120)](<https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/>) | Not added |
-| [Bypassing Authentication Like It's The '90s: Pre-Auth RCE Chain(s) in Kentico Xperience CMS](<https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms/>) | Not added |
-| [Cache Me If You Can: Sitecore Experience Platform Cache Poisoning to RCE](<https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/>) | Not added |
+| [By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam Backup and Replication (CVE-2025-23120)](<https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/>) | Added |
+| [Bypassing Authentication Like It's The '90s: Pre-Auth RCE Chain(s) in Kentico Xperience CMS](<https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms/>) | Added |
+| [Cache Me If You Can: Sitecore Experience Platform Cache Poisoning to RCE](<https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/>) | Added |
 | Candidate Attack 3 repurposes that behavior to satisfy first-match DOM selection despite a later injection. Different security purpose matters: prior parser knowledge alone is not proof of the same selector-order exploitation. This bounded search did not find an earlier exact attack. | Not added |
 | Candidate Attack 4 applies body removal to eliminate earlier selector competitors. This is an exploitation adaptation, not new parser behavior. No earlier exact selector-gadget application was verified. The candidate supplies only a short conceptual explanation, without a complete per-technique exploitation evaluation. | Not added |
 | [Cascading Spy Sheets: Exploiting the Complexity of Modern CSS for Email and Browser Fingerprinting](<https://www.ndss-symposium.org/ndss-paper/cascading-spy-sheets-exploiting-the-complexity-of-modern-css-for-email-and-browser-fingerprinting/>) | Added |
 | [Cloudflare Image Proxy as a CSPT Gadget: A Cross-Origin CSPT Exploit](<https://blog.voorivex.team/cloudflare-image-proxy-as-a-cspt-gadget-a-cross-origin-cspt-exploit>) | Added |
 | [Code injection attacks using publicly disclosed ASP.NET machine keys](<https://www.microsoft.com/en-us/security/blog/2025/02/06/code-injection-attacks-using-publicly-disclosed-asp-net-machine-keys/>) | Not added |
 | [Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange](<https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/>) | Added |
-| [CSS Data Exfiltration to Steal OAuth Token](<https://blog.voorivex.team/css-data-exfiltration-to-steal-oauth-token>) | Not added |
+| [CSS Data Exfiltration to Steal OAuth Token](<https://blog.voorivex.team/css-data-exfiltration-to-steal-oauth-token>) | Added |
 | Detecting Taint-Style Vulnerabilities in Microservice-Structured Web Applications | Not added |
 | [Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection](<https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/>) | Added |
 | [DOM XSS to Account Takeover: not-so-dirty dancing in a GIS SDK](<https://blog.voorivex.team/not-so-dirty-dancing-in-gis-sdk>) | Not added |
@@ -35,14 +35,14 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Exploiting the Shared Storage API](<https://doi.org/10.1145/3719027.3744848>) | Not added |
 | Follow My Flow | Not added |
 | [GoldMelody Hidden Chords: in-memory IIS modules](<https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/>) | Not added |
-| [Gotchas in Email Parsing - Lessons From Jakarta Mail](<https://www.elttam.com/blog/jakarta-mail-primitives>) | Not added |
+| [Gotchas in Email Parsing - Lessons From Jakarta Mail](<https://www.elttam.com/blog/jakarta-mail-primitives>) | Added |
 | [Hacking Veeam: Several CVEs and $30k Bounties](<https://blog.voorivex.team/hacking-veeam-several-cves-and-30k-bounties>) | Not added |
 | Here inputs are URL, window name, referrer and postMessage, rather than selector/property reads over attacker-injected markup. The 2025 bridge from markup injection through explicit DOM reads to these known sensitive sinks is a real extension in systematic coverage. The request sink/impact taxonomy and marker-verification pattern are preexisting. | Not added |
 | HyTrack | Not added |
 | [In the DOM We Trust](<https://doi.org/10.1145/3719027.3765117>) | Not added |
 | [In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web](<https://trouge.net/papers/in_the_dom_we_trust_ccs25.pdf>) | Added |
 | MOCGuard | Not added |
-| [More Than DoS: Progress Telerik UI for ASP.NET AJAX Unsafe Reflection (CVE-2025-3600)](<https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600/>) | Not added |
+| [More Than DoS: Progress Telerik UI for ASP.NET AJAX Unsafe Reflection (CVE-2025-3600)](<https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600/>) | Added |
 | [My ZIP isn't your ZIP: Identifying and Exploiting Semantic Gaps Between ZIP Parsers](<https://www.usenix.org/conference/usenixsecurity25/presentation/you>) | Added |
 | [Network-Level Prompt and Trait Leakage in Local Research Agents](<https://arxiv.org/abs/2508.20282v1>) | Added |
 | New DOM-source semantics and gadget/injection analysis layered on the existing machinery. Do not credit the combination of JAW and Foxhound itself as new in 2025. Local evidence: /tmp/websec-sweep-2024/jaw-oct2023-graphbuilder.js and jaw-2023-readme.md. | Not added |
@@ -53,13 +53,13 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Phishing Attacks against Password Manager Browser Extensions](<https://www.usenix.org/conference/usenixsecurity25/presentation/anliker>) | Added |
 | [Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands](<https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder>) | Added |
 | Predator: Directed Web Application Fuzzing | Not added |
-| [Puny-Code, 0-Click Account Takeover](<https://blog.voorivex.team/puny-code-0-click-account-takeover>) | Not added |
+| [Puny-Code, 0-Click Account Takeover](<https://blog.voorivex.team/puny-code-0-click-account-takeover>) | Added |
 | [RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications](<https://doi.org/10.1109/SP61157.2025.00029>) | Added |
-| [RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox](<https://doi.org/10.1145/3719027.3744832>) | Not added |
+| [RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox](<https://doi.org/10.1145/3719027.3744832>) | Added |
 | [SAML roulette: the hacker always wins](<https://portswigger.net/research/saml-roulette-the-hacker-always-wins>) | Added |
 | [SharePoint Unknown CVE Unveiled: RCE via WebPart Properties Deserialization](<https://blog.viettelcybersecurity.com/sharepoint_properties_deser/>) | Not added |
 | [SOAPwn whitepaper and slides (Black Hat EU 2025)](<https://i.blackhat.com/BH-EU-25/eu-25-Bazydlo-SOAPwn-wp.pdf>) | Not added |
-| [Stealing oAuth Token via Referrer Policy Override](<https://blog.voorivex.team/leaking-oauth-token-via-referrer-leakage>) | Not added |
+| [Stealing oAuth Token via Referrer Policy Override](<https://blog.voorivex.team/leaking-oauth-token-via-referrer-leakage>) | Added |
 | [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok>) | Added |
 | [Styled to Steal: The Overlooked Attack Surface in Email Clients](<https://doi.org/10.1145/3719027.3765189>) [Related source](<https://github.com/cispa/stylemail>) | Added |
 | The DOMino Effect | Not added |
@@ -72,3 +72,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [ViewState Deserialization Zero-Day in Sitecore (CVE-2025-53690)](<https://cloud.google.com/blog/topics/threat-intelligence/viewstate-deserialization-zero-day-vulnerability/>) | Not added |
 | XSSky | Not added |
 | [YuraScanner](<https://www.ndss-symposium.org/ndss-paper/yurascanner-leveraging-llms-for-task-driven-web-app-scanning/>) | Not added |
+| [PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis](<https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng>) [Related source](<https://doi.org/10.6084/m9.figshare.30904379.v1>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-jia-zhipeng.pdf>) | Added |
+| [Identifying Logical Vulnerabilities in QUIC Implementations](<https://www.ndss-symposium.org/wp-content/uploads/2026-s1777-paper.pdf>) [Related source](<https://zenodo.org/records/17015304>) [Related source](<https://github.com/k4ra5u/MerCuriuzz>) | Added |
+| [Apache httpd HTTP/2 Memory Exhaustion (CVE-2025-53020)](<https://galbarnahum.com/posts/apache-httpd-cve-2025-53020>) [Related source](<https://eissing.org/icing/posts/hpack-bombing-apache/>) [Related source](<https://github.com/galbarnahum/CVE-2025-53020-PoC>) | Added |
+| [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](<https://www.ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf>) [Related source](<https://zenodo.org/records/16996391>) | Added |

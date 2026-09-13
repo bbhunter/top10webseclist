@@ -19,7 +19,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | CCSP: Controlled Relaxation of Content Security Policies | Not added |
 | Code-reuse Attacks for the Web / Script Gadgets | Not added |
 | CORS original talk/slides linked from PortSwigger's archived article | Not added |
-| [Dangerous Contents: Securing .NET Deserialization](<https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352>) | Not added |
+| [Dangerous Contents: Securing .NET Deserialization](<https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352>) | Added |
 | [Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs](<https://acmccs.github.io/papers/p1757-pellegrinoA.pdf>) | Added |
 | [DEF CON 25 and AppSecUSA recordings of Friday the 13th: JSON Attacks](<https://www.youtube.com/watch?v=ZBfBYoK_Wr0>) | Not added |
 | Deterministic Browser / DeterFox | Not added |

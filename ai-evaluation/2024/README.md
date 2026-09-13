@@ -15,7 +15,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [A Flushing Attack on the DNS Cache](<https://www.usenix.org/conference/usenixsecurity24/presentation/afek>) | Added |
 | A Security and Usability Analysis of Local Attacks Against FIDO2 | Not added |
 | [A Weird CSP Bypass led to $3.5k Bounty](<https://blog.voorivex.team/a-weird-csp-bypass-led-to-35k-bounty>) | Not added |
-| [Account Takeover due to DNS Rebinding](<https://blog.voorivex.team/account-takeover-due-to-dns-rebinding>) | Not added |
+| [Account Takeover due to DNS Rebinding](<https://blog.voorivex.team/account-takeover-due-to-dns-rebinding>) | Added |
 | [Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content](<https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge>) | Added |
 | [Argus: All your (PHP) Injection-sinks are belong to us](<https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi>) | Added |
 | Atropos | Not added |

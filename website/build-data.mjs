@@ -170,7 +170,7 @@ async function main() {
     }
     diagrams[diagram.source] = diagram.path;
   }
-  const contentFingerprint = stableJson({ parsed: parsed.map(({ record, items }) => ({ record, items })), hosting, diagrams });
+  const contentFingerprint = stableJson({ linkEncoding: "item-fields-v1", parsed: parsed.map(({ record, items }) => ({ record, items })), hosting, diagrams });
   const version = hash(contentFingerprint).slice(0, 20);
   const manifestCount = Object.keys(manifest?.urls || {}).length;
   const generated = new Date().toISOString();
@@ -178,12 +178,16 @@ async function main() {
   const expectedFiles = new Set();
   const shardBodies = new Map();
   for (const collection of parsed) {
+    context.__items = collection.items;
+    const compactItems = JSON.parse(vm.runInContext(
+      "JSON.stringify(__items.map(compactArchiveItem))", context
+    ));
     const shard = {
       schema: 1,
       version,
       collection: collection.record,
       count: collection.items.length,
-      items: collection.items
+      items: compactItems
     };
     const body = `${stableJson(shard)}\n`;
     const filename = `${collection.record.id}.json`;

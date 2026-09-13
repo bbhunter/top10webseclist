@@ -43,7 +43,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | Session Identifiers Are for Now, Passwords Are Forever | Not added |
 | Simulation of Built-in PHP Features for Precise Static Code Analysis | Not added |
 | SpoofedMe | Not added |
-| [SpoofedMe — Social Login Impersonation Attack](<https://www.slideshare.net/slideshow/spoofed-me-socialloginattack/42313457>) | Not added |
+| [SpoofedMe — Social Login Impersonation Attack](<https://www.slideshare.net/slideshow/spoofed-me-socialloginattack/42313457>) | Added |
 | [SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou>) | Added |
 | [Static Detection of Second-Order Vulnerabilities in Web Applications](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse>) | Added |
 | [Stealing Webpages Rendered on Your Browser by Exploiting GPU Vulnerabilities](<https://www.ieee-security.org/TC/SP2014/papers/StealingWebpagesRenderedonYourBrowserbyExploitingGPUVulnerabilities.pdf>) | Not added |

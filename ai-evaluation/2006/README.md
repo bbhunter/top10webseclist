@@ -21,7 +21,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [BrowserShield](<https://www.microsoft.com/en-us/research/publication/browsershield-vulnerability-driven-filtering-of-dynamic-html/>) | Not added |
 | [Cross Context Scripting with Sage — David Kierznowski and pdp](<https://www.gnucitizen.org/blog/cross-context-scripting-with-sage/>) | Not added |
 | [Cross-Site Cooking](<https://lcamtuf.coredump.cx/cross_site_cooking.txt>) [Related source](<https://seclists.org/fulldisclosure/2006/Jan/943>) | Added |
-| [Google Search API Worms](<https://www.gnucitizen.org/blog/google-search-api-worms/>) | Not added |
+| [Google Search API Worms](<https://www.gnucitizen.org/blog/google-search-api-worms/>) | Added |
 | [Hacking Intranets Via Brute Force](<http://ha.ckers.org/blog/20061228/hacking-intranets-via-brute-force/>) | Not added |
 | [HTTP Response Smuggling](<https://seclists.org/bugtraq/2006/Feb/364>) | Added |
 | [Invasive Browser Sniffing and Countermeasures](<https://dl.acm.org/doi/10.1145/1135777.1135834>) | Not added |

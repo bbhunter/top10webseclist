@@ -21,7 +21,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [PMForce: Systematically Analyzing PostMessage Handlers at Scale](<https://publications.cispa.saarland/3164/>) | Added |
 | [Prototype Pollution and bypassing client-side HTML sanitizers](<https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html>) | Added |
 | [Security Study of Service Worker Cross-Site Scripting](<https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf>) | Added |
-| [SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet](<https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html>) | Not added |
+| [SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet](<https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html>) | Added |
 | [The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws](<https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf>) [Related source](<https://gitlab.com/kostasdrk/xdriver3-open>) | Added |
 | [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](<https://secweb.work/papers/some2020remote.pdf>) | Added |
 | [Timeless Timing Attacks: Exploiting Concurrency to Leak Secrets over Remote Connections](<https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem>) | Added |

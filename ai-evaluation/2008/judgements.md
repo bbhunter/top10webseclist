@@ -8,7 +8,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 |---|---|
 | [Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking](<https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html>) | Added |
 | [Black Ops 2008: It's The End Of The Cache As We Know It](<https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf>) | Added |
-| [Cookie forcing](<https://scarybeastsecurity.blogspot.com/2008/11/cookie-forcing.html>) | Not added |
+| [Cookie forcing](<https://scarybeastsecurity.blogspot.com/2008/11/cookie-forcing.html>) | Added |
 | [CookieMonster: Fully Automated Active HTTPS Cookie Hijacking](<https://fscked.org/projects/cookiemonster>) | Added |
 | [Creating a Rogue CA Certificate](<http://www.phreedom.org/research/rogue-ca/>) | Added |
 | [Exploitable Redirects on the Web: Identification, Prevalence, and Defense](<https://www.usenix.org/event/woot08/tech/full_papers/shue/shue.pdf>) | Added |

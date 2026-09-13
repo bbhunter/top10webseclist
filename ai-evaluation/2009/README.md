@@ -12,7 +12,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [A Multi-Perspective View of PHP Remote File Include Attacks](<https://www.sans.org/white-papers/33229>) | Not added |
 | [A Wolf in Sheep's Clothing](<https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf>) | Added |
 | [Attacks on JavaScript Mashup Communication](<https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf>) | Added |
-| [Breaking the Security Myths of Extended Validation SSL](<https://www.blackhat.com/presentations/bh-usa-09/SOTIROV/BHUSA09-Sotirov-AttackExtSSL-SLIDES.pdf>) | Not added |
+| [Breaking the Security Myths of Extended Validation SSL](<https://www.blackhat.com/presentations/bh-usa-09/SOTIROV/BHUSA09-Sotirov-AttackExtSSL-SLIDES.pdf>) | Added |
 | [Characterizing JavaScript execution and security](<https://www.usenix.org/conference/usenixsecurity09>) | Not added |
 | [Code-Injection Attacks in Browsers Supporting Policies](<https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf>) | Added |
 | [Cross Site Scripting Anonymous Browser](<https://www.blackhat.com/presentations/bh-dc-09/Flick/BlackHat-DC-09-Flick-XAB-wp.pdf>) | Not added |
@@ -38,5 +38,5 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [TLS Renegotiation Authentication Gap](<https://www.kb.cert.org/vuls/id/120541/>) | Added |
 | [Unraveling Unicode: A Bag of Tricks for Bug Hunting](<https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf>) | Added |
 | [Using denial of service for hacking](<http://ha.ckers.org/blog/20090504/using-denial-of-service-for-hacking/>) | Not added |
-| [Weaponizing the Web / MonkeyFist](<https://www.blackhat.com/presentations/bh-usa-09/HAMIEL/BHUSA09-Hamiel-WeaponizingWeb-SLIDES.pdf>) | Not added |
+| [Weaponizing the Web / MonkeyFist](<https://www.blackhat.com/presentations/bh-usa-09/HAMIEL/BHUSA09-Hamiel-WeaponizingWeb-SLIDES.pdf>) | Added |
 | [Web 2.0 Cryptology, A Study in Failure](<http://www.subspacefield.org/security/web_20_crypto.pdf>) | Not added |

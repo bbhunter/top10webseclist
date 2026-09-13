@@ -11,7 +11,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [BeEF: The Browser Exploitation Framework](<https://github.com/beefproject/beef>) [Related source](<https://beefproject.com/>) | Not added |
 | [Breaking AJAX Web Applications: Vulns 2.0 in Web 2.0](<https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf>) | Added |
 | [Cross-Site Cooking](<https://lcamtuf.coredump.cx/cross_site_cooking.txt>) [Related source](<https://seclists.org/fulldisclosure/2006/Jan/943>) | Added |
-| [Google Search API Worms](<https://www.gnucitizen.org/blog/google-search-api-worms/>) | Not added |
+| [Google Search API Worms](<https://www.gnucitizen.org/blog/google-search-api-worms/>) | Added |
 | [Hacking Intranets Via Brute Force](<http://ha.ckers.org/blog/20061228/hacking-intranets-via-brute-force/>) | Not added |
 | [HTTP Response Smuggling](<https://seclists.org/bugtraq/2006/Feb/364>) | Added |
 | [Self-contained XSS Attacks](<https://www.gnucitizen.org/blog/self-contained-xss-attacks/>) | Added |

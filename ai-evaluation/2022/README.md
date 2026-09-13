@@ -13,8 +13,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Measuring and Mitigating the Risk of IP Reuse on Public Clouds](<https://arxiv.org/abs/2204.05122>) [Related source](<https://pauley.me/post/2022/secure-cloud-decomissioning/>) | Added |
 | [Finding client-side prototype pollution with DOM Invader](<https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader>) | Added |
 | [Cypher Query Injection: The New SQL Injection We Aren't Aware Of](<https://www.youtube.com/watch?v=SIqKo7xiPVA>) [Related source](<https://github.com/noypearl/cypher-playground/blob/main/slides/BsidesTLV_2022_Presentation.pdf>) [Related source](<https://github.com/noypearl/cypher-playground>) | Added |
-| [PPE - Poisoned Pipeline Execution](<https://medium.com/cider-sec/ppe-poisoned-pipeline-execution-34f4e8d0d4e9>) [Related source](<https://portswigger.net/daily-swig/poisoned-pipelines-security-researcher-explores-attack-methods-in-ci-environments>) | Not added |
-| [Exploring Prompt Injection Attacks](<https://www.nccgroup.com/research/exploring-prompt-injection-attacks/>) [Related source](<https://research.nccgroup.com/2022/12/05/exploring-prompt-injection-attacks/>) | Not added |
+| [PPE - Poisoned Pipeline Execution](<https://medium.com/cider-sec/ppe-poisoned-pipeline-execution-34f4e8d0d4e9>) [Related source](<https://portswigger.net/daily-swig/poisoned-pipelines-security-researcher-explores-attack-methods-in-ci-environments>) | Added |
+| [Exploring Prompt Injection Attacks](<https://www.nccgroup.com/research/exploring-prompt-injection-attacks/>) [Related source](<https://research.nccgroup.com/2022/12/05/exploring-prompt-injection-attacks/>) | Added |
 | [Markdown injection testing tip](<https://twitter.com/h4x0r_dz/status/1599836651098079233>) | Not added |
 | [Dependency Confusion Attack and its Mitigation](<https://redfoxsec.com/blog/dependency-confusion-attacks/>) | Not added |
 | [JNDI Injection Series: RMI Vector - Fundamentals](<https://infosecwriteups.com/jndi-injection-series-rmi-vector-1-31044f782daa>) | Not added |

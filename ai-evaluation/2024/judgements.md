@@ -8,7 +8,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 |---|---|
 | [A Flushing Attack on the DNS Cache](<https://www.usenix.org/conference/usenixsecurity24/presentation/afek>) | Added |
 | [A Weird CSP Bypass led to $3.5k Bounty](<https://blog.voorivex.team/a-weird-csp-bypass-led-to-35k-bounty>) | Not added |
-| [Account Takeover due to DNS Rebinding](<https://blog.voorivex.team/account-takeover-due-to-dns-rebinding>) | Not added |
+| [Account Takeover due to DNS Rebinding](<https://blog.voorivex.team/account-takeover-due-to-dns-rebinding>) [Related source](<https://gist.github.com/Voorivex/2e1ead0c0c898be1cb24b5f873216249>) | Added |
 | [Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content](<https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge>) | Added |
 | [Argus: All your (PHP) Injection-sinks are belong to us](<https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi>) | Added |
 | [AuthSaber: Automated Safety Verification of OpenID Connect Programs](<https://ucla-sec-lab.netlify.app/publication/2024-authsaber/>) | Added |

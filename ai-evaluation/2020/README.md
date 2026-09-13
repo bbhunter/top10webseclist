@@ -45,7 +45,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Prototype Pollution and bypassing client-side HTML sanitizers](<https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html>) | Added |
 | [Security Study of Service Worker Cross-Site Scripting](<https://success.cse.tamu.edu/wp-content/uploads/sites/197/2020/07/SW-XSS_ACSAC20.pdf>) | Added |
 | [Service Workers: New APIs = New Vulns = Fun++](<https://sirdarckcat.blogspot.com/2015/05/service-workers-new-apis-new-vulns-fun.html>) | Not added |
-| [SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet](<https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html>) | Not added |
+| [SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet](<https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html>) | Added |
 | Shim Shimmeny: Evaluating the Security and Privacy Contributions of Link Shimming in the Modern Web | Not added |
 | SVG animate → PortSwigger SVG animate vector; MobileIron → Chinese DEVCORE post/HITCON slides and Check Point MDM companion; cache poisoning → Black Hat/whitepaper/advisory links | Not added |
 | [The Case of the Missing Cache Keys](<https://enumerated.wordpress.com/2020/08/05/the-case-of-the-missing-cache-keys/>) | Not added |

@@ -38,6 +38,1023 @@
  "author_copies": [],
  "canonical_sources": [],
  "decisions": {
+  "https://appomni.com/ao-labs/bodysnatcher-agentic-ai-security-vulnerability-in-servicenow": {
+   "title": "BodySnatcher: agentic hijacking in ServiceNow",
+   "authors": [
+    "Aaron Costello"
+   ],
+   "publisher": "AppOmni"
+  },
+  "https://appsecvillage.com/events/dc-2026/rop-for-the-web-smuggling-xss-sqli-and-web-shells-past-every-waf-using-compression-dictionaries-1250560": {
+   "title": "ROP for the Web: Smuggling XSS, SQLi and Web Shells Past Every WAF Using Compression Dictionaries",
+   "authors": [
+    "Lenin Alevski"
+   ],
+   "publisher": "AppSec Village"
+  },
+  "https://arxiv.org/abs/2607.26589": {
+   "title": "CDN Tsunami: Exploiting HTTP/3-HTTP/1.1 Conversion for DoS Attacks",
+   "authors": [
+    "Ziyu Lin",
+    "Tianlong Su",
+    "Yingjie Lin",
+    "Prosanta Gope",
+    "Yinzhi Cao",
+    "Ximeng Liu",
+    "Biplab Sikdar"
+   ],
+   "publisher": "arXiv"
+  },
+  "https://blackhat.com/presentations/bh-usa-07/Hill/Whitepaper/bh-usa-07-hill-WP.pdf": {
+   "title": "A Taxonomy of Attacks against XML Digital Signatures & Encryption",
+   "authors": [
+    "Brad Hill"
+   ],
+   "publisher": "Black Hat USA"
+  },
+  "https://blog.arkark.dev/2026/03/08/seccon-finals": {
+   "title": "SECCON CTF 14 Finals: Author Writeups",
+   "authors": [
+    "arkark"
+   ],
+   "publisher": "arkark"
+  },
+  "https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html": {
+   "title": "When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax",
+   "authors": [
+    "Adrian Denkiewicz"
+   ],
+   "publisher": "Doyensec"
+  },
+  "https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html": {
+   "title": "Navigating Lax Load Balancers: When an Intersection Gets You Inside",
+   "authors": [
+    "Francesco Lacerenza",
+    "Mohamed Ouad"
+   ],
+   "publisher": "Doyensec"
+  },
+  "https://blog.lexfo.fr/drupal-postgresql-sqli-to-rce.html": {
+   "title": "Drupal PostgreSQL SQL Injection: From SELECT-Only to RCE",
+   "authors": [
+    "N. Maccary"
+   ],
+   "publisher": "Lexfo / Ambionics"
+  },
+  "https://blog.slonser.info/posts/smugglle-ai-ouputs": {
+   "title": "Never Trust the Output: Data Pollution in AI Agents and MCP",
+   "authors": [
+    "Slonser"
+   ],
+   "publisher": "Slonser"
+  },
+  "https://blog.voorivex.team/account-takeover-due-to-dns-rebinding": {
+   "title": "Account Takeover due to DNS Rebinding",
+   "authors": [
+    "Yashar Shahinzadeh"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/content-type-override-to-stored-xss-on-public-objects": {
+   "title": "Content-Type Override to Stored XSS on public objects",
+   "authors": [
+    "Amirmohammad Safari"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/css-data-exfiltration-to-steal-oauth-token": {
+   "title": "CSS Data Exfiltration to Steal OAuth Token",
+   "authors": [
+    "Amirmohammad Safari",
+    "Yashar Shahinzadeh"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/first-rce-via-reverse-engineering-with-ai": {
+   "title": "My First RCE by Reverse Engineering an EXE File With the Help of AI",
+   "authors": [
+    "Yashar Shahinzadeh"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover": {
+   "title": "Hijacking OAuth Code via Reverse Proxy for Account Takeover",
+   "authors": [
+    "Omid Rezaei"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/leaking-oauth-token-via-referrer-leakage": {
+   "title": "Stealing oAuth Token via Referrer Policy Override",
+   "authors": [
+    "Omid Rezaei"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/puny-code-0-click-account-takeover": {
+   "title": "Puny-Code, 0-Click Account Takeover",
+   "authors": [
+    "Yashar Shahinzadeh",
+    "Amirmohammad Safari"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/shaking-the-mcp-tree": {
+   "title": "Shaking the MCP Tree: A Security Deep Dive",
+   "authors": [
+    "Amirmohammad Safari"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/uxss-on-samsung-browser-cve-2025-58485-sve-2025-1879": {
+   "title": "uXSS on Samsung Browser (CVE-2025-58485 · SVE-2025-1879)",
+   "authors": [
+    "Omid Rezaei",
+    "Yashar Shahinzadeh"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://blog.voorivex.team/when-two-parsers-disagree-exploiting-query-string-differentials-for-xss": {
+   "title": "When Two Parsers Disagree: Exploiting Query String Differentials for XSS",
+   "authors": [
+    "Amirmohammad Safari"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://bugcrowd.com/disclosures/0ecb51a3-2064-4f9d-aa19-aa7b6ae21812/blind-enumeration-of-private-card-names-via-sort-oracle-and-id-discovery": {
+   "title": "Blind Enumeration of Private Card Names via Sort Oracle and ID Discovery",
+   "authors": [
+    "BobAshEf"
+   ],
+   "publisher": "Bugcrowd"
+  },
+  "https://dcworkshop.reco.ai/": {
+   "title": "Salesforce Apex Predator: Breaking Salesforce Sites",
+   "authors": [
+    "Nitay Bachrach",
+    "Cynthia Ardman"
+   ],
+   "publisher": "Reco"
+  },
+  "https://doi.org/10.1145/3719027.3744832": {
+   "title": "RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox",
+   "authors": [
+    "Xiang Li",
+    "Mingming Zhang",
+    "Zuyao Xu",
+    "Fasheng Miao",
+    "Yuqi Qiu",
+    "Baojun Liu",
+    "Jia Zhang",
+    "Xiaofeng Zheng",
+    "Haixin Duan",
+    "Zheli Liu",
+    "Yunhai Zhang",
+    "Dunqiu Fan"
+   ],
+   "publisher": "ACM"
+  },
+  "https://doi.org/10.6084/m9.figshare.30904379.v1": {
+   "title": "PANGOLIN publicly available permanent version",
+   "authors": [
+    "Zhipeng Jia",
+    "Xiaokang Yin",
+    "Shuitao Gan",
+    "Chao Zhang",
+    "Hangtian Liu",
+    "Jiangan Ji",
+    "Enzhou Song",
+    "Ruijie Cai",
+    "Jinglei Tan",
+    "Shengli Liu"
+   ],
+   "publisher": "Figshare"
+  },
+  "https://eissing.org/icing/posts/hpack-bombing-apache": {
+   "title": "HPACK Bombing Apache",
+   "authors": [
+    "Stefan Eissing"
+   ],
+   "publisher": "icing’s blog"
+  },
+  "https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit": {
+   "title": "LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection",
+   "authors": [
+    "Johann Rehberger"
+   ],
+   "publisher": "Embrace The Red"
+  },
+  "https://galbarnahum.com/posts/apache-httpd-cve-2025-53020": {
+   "title": "Apache httpd HTTP/2 Memory Exhaustion (CVE-2025-53020)",
+   "authors": [
+    "Gal Bar Nahum"
+   ],
+   "publisher": "Gal Bar Nahum"
+  },
+  "https://gist.github.com/Voorivex/2e1ead0c0c898be1cb24b5f873216249": {
+   "title": "DNS-Switching Helper for Custom-Domain Authentication Testing",
+   "authors": [],
+   "publisher": "Voorivex"
+  },
+  "https://github.com/Alevsk/compression-dictionary-transport/tree/1938adc4faf858a2e61ee9232a35afe028cd726c": {
+   "title": "ROP for the Web — Compression Dictionary Transport Research Labs",
+   "authors": [
+    "Lenin Alevski"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://github.com/SecureFromScratch/BusyBee_generation_test_55terra_owasp_untrust": {
+   "title": "BusyBee Generation Test — OWASP Untrust Constrained Application",
+   "authors": [
+    "Yariv Tal"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://github.com/SecureFromScratch/BusyBee_generation_test_55terra_plain": {
+   "title": "BusyBee Generation Test — Plain Control Application",
+   "authors": [
+    "Yariv Tal"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://github.com/VoorivexTeam/CSS-Exfiltration/tree/06e8e661d0598781ac954aedf028c55c1b6ce0c5": {
+   "title": "CSS-Exfiltration",
+   "authors": [],
+   "publisher": "Voorivex"
+  },
+  "https://github.com/VoorivexTeam/white-box-challenges/tree/4824536ed0db7f747f9c1b2a311a3f9e22e719c4/punycode": {
+   "title": "Punycode Email Identity-Confusion Testbed",
+   "authors": [],
+   "publisher": "Voorivex"
+  },
+  "https://github.com/VoorivexTeam/white-box-challenges/tree/bfda4647384e6590c9da4b76d21da3cc2eda638e/referer-override": {
+   "title": "OAuth Token Leak via Referer Policy Override Demo",
+   "authors": [
+    "Amirmohammad Safari"
+   ],
+   "publisher": "Voorivex"
+  },
+  "https://github.com/doyensec/elbaph": {
+   "title": "ELBaph: AWS Load Balancer Attack-Path Analysis",
+   "authors": [
+    "Francesco Lacerenza",
+    "Mohamed Ouad"
+   ],
+   "publisher": "Doyensec"
+  },
+  "https://github.com/elttam/publications/blob/0e3ffd59d37b2a92884baa835f61ff26c7643a83/slides/Primitives%20for%20Security%20Audits%20-%20Lessons%20from%20Jakarta%20Mail%20-%20For%20Dist.pdf": {
+   "title": "Primitives for Security Audits: Lessons from Jakarta Mail",
+   "authors": [
+    "Jia Hao Poh"
+   ],
+   "publisher": "elttam"
+  },
+  "https://github.com/elttam/publications/blob/master/writeups/home-assistant/supervisor-authentication-bypass-advisory.md": {
+   "title": "Home Assistant Supervisor Authentication Bypass Advisory",
+   "authors": [
+    "Joseph Surin",
+    "Victor Kahan"
+   ],
+   "publisher": "elttam"
+  },
+  "https://github.com/galbarnahum/CVE-2025-53020-PoC": {
+   "title": "CVE-2025-53020 Proof of Concept",
+   "authors": [
+    "Gal Bar Nahum"
+   ],
+   "publisher": "Gal Bar Nahum"
+  },
+  "https://github.com/nitay-bachrach/lwred/tree/9ad0c3f66dc41c1772349b64381da1332ffa7083": {
+   "title": "LWRed — Salesforce LWR Reconnaissance Tool",
+   "authors": [
+    "Nitay Bachrach"
+   ],
+   "publisher": "GitHub"
+  },
+  "https://github.com/nodejs/node/commit/1efb4ff51a": {
+   "title": "Fix Unicode-Dot Hostname Normalization in TLS Verification",
+   "authors": [],
+   "publisher": "Node.js project"
+  },
+  "https://github.com/project-sekai-ctf/sekaictf-2026/blob/main/web/filtered-reality/solution/writeup.md": {
+   "title": "SekaiCTF 2026: Filtered Reality — Solution",
+   "authors": [
+    "dimasma0305"
+   ],
+   "publisher": "Project Sekai"
+  },
+  "https://github.com/pwntester/ysoserial.net/pull/146": {
+   "title": "Added ObjectDataProvider gadget generation for MessagePack (Typeless)",
+   "authors": [
+    "Dane Evans (nines-nine)"
+   ],
+   "publisher": "ysoserial.net project"
+  },
+  "https://guard.io/labs/hermeticreader---the-vulnerability-that-turned-adobe-300m-install-extension-into-a-full-whatsapp-takeover": {
+   "title": "HermeticReader: turning Adobe's 300M-install extension into a WhatsApp takeover",
+   "authors": [
+    "Shaked Biner"
+   ],
+   "publisher": "Guardio Labs"
+  },
+  "https://habr.com/ru/articles/984632": {
+   "title": "CVE-2026-21876: Multipart Charset Validation Bypass in OWASP CRS",
+   "authors": [
+    "daytriftnewgen (some0ne)"
+   ],
+   "publisher": "Habr"
+  },
+  "https://hackerone.com/reports/3688064": {
+   "title": "Node.js TLS Wildcard Validation Bypass via Unicode Dot Separators",
+   "authors": [
+    "tmeletlidis"
+   ],
+   "publisher": "HackerOne"
+  },
+  "https://hackerone.com/reports/3782701": {
+   "title": "Unauthenticated RCE in Taskcluster web-server via GraphQL filter argument (sift $where)",
+   "authors": [
+    "griffinf"
+   ],
+   "publisher": "HackerOne"
+  },
+  "https://i.blackhat.com/BH-USA-26/Presentations/BHUSA26-Barnett-Beyond-Normalization-Slides.pdf": {
+   "title": "Beyond Normalization: The Expanding Unicode Attack Surface",
+   "authors": [
+    "Ryan Barnett",
+    "Isabella Barnett"
+   ],
+   "publisher": "Black Hat USA"
+  },
+  "https://jorianwoltjer.com/blog/p/ctf/l3akctf-2026-squid": {
+   "title": "L3akCTF 2026: Squid",
+   "authors": [
+    "Jorian Woltjer"
+   ],
+   "publisher": "Jorian Woltjer"
+  },
+  "https://jorianwoltjer.com/blog/p/stories/finding-xss-on-shazzer": {
+   "title": "Finding XSS on Shazzer (literally)",
+   "authors": [
+    "Jorian Woltjer"
+   ],
+   "publisher": "Jorian Woltjer"
+  },
+  "https://labs.boostsecurity.io/articles/trusted-publishing-untrusted-branch-red-hat-npm": {
+   "title": "Trusted Publishing, Untrusted Branch: Inside the Red Hat npm Compromise",
+   "authors": [
+    "François Proulx"
+   ],
+   "publisher": "Boost Security Labs"
+  },
+  "https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120": {
+   "title": "By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam Backup and Replication (CVE-2025-23120)",
+   "authors": [
+    "Piotr Bazydlo",
+    "Sina Kheirkhah"
+   ],
+   "publisher": "watchTowr"
+  },
+  "https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms": {
+   "title": "Bypassing Authentication Like It's The '90s: Pre-Auth RCE Chain(s) in Kentico Xperience CMS",
+   "authors": [
+    "Piotr Bazydlo"
+   ],
+   "publisher": "watchTowr"
+  },
+  "https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce": {
+   "title": "Cache Me If You Can: Sitecore Experience Platform Cache Poisoning to RCE",
+   "authors": [
+    "Piotr Bazydlo"
+   ],
+   "publisher": "watchTowr"
+  },
+  "https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600": {
+   "title": "More Than DoS: Progress Telerik UI for ASP.NET AJAX Unsafe Reflection (CVE-2025-3600)",
+   "authors": [
+    "Piotr Bazydlo"
+   ],
+   "publisher": "watchTowr"
+  },
+  "https://lixiang521.com/publication/ccs25/ccs2025-rebirthday-li.pdf": {
+   "title": "RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox",
+   "authors": [
+    "Xiang Li",
+    "Mingming Zhang",
+    "Zuyao Xu",
+    "Fasheng Miao",
+    "Yuqi Qiu",
+    "Baojun Liu",
+    "Jia Zhang",
+    "Xiaofeng Zheng",
+    "Haixin Duan",
+    "Zheli Liu",
+    "Yunhai Zhang",
+    "Dunqiu Fan"
+   ],
+   "publisher": "ACM"
+  },
+  "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20David%20Rochester%2C%20Nicholas%20Gould%20-%20No%20Socket%2C%20No%20Privs%2C%20No%20Problem%20Weaponizing%20OCI%20Registries%20for%20SSRF%2C%20Credential%20Theft%2C%20and%20Container%20E.pdf": {
+   "title": "No Socket, No Privs, No Problem: Weaponizing OCI Registries for SSRF, Credential Theft, and Container Escapes",
+   "authors": [
+    "David Rochester",
+    "Nicholas Gould"
+   ],
+   "publisher": "DEF CON"
+  },
+  "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Giacomo%20Lenzini%20-%20Gotta%20Phish%20%27Em%20All%20Novel%20Attack%20Techniques%20via%20Persistent%20Browser-in-the-Middle%20-%20v2.pdf": {
+   "title": "Gotta Phish ’Em All! Novel Attack Techniques via Persistent Browser-in-the-Middle",
+   "authors": [
+    "Giacomo Lenzini"
+   ],
+   "publisher": "DEF CON"
+  },
+  "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20James%20Arnott%20-%208%20Out%20of%2010%20Banks%20in%20Belgium%20HATE%20This%20One%20Weird%20eID%20RCE%20-%20MEDIA%20SERVER%20Belgi.pdf": {
+   "title": "8 Out of 10 Banks in Belgium HATE This One Weird eID RCE",
+   "authors": [
+    "James Arnott"
+   ],
+   "publisher": "DEF CON"
+  },
+  "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Matteo%20Giordano%20-%20Beyond%20the%20Ceremony%20The%202026%20Passkey%20Attack%20Surface%20-%20v2.pdf": {
+   "title": "Beyond the Ceremony: The 2026 Passkey Attack Surface",
+   "authors": [
+    "Matteo Giordano"
+   ],
+   "publisher": "Anvil Secure"
+  },
+  "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf": {
+   "title": "OffGuard: Breaking the Most Popular AI Gateway from Auth Bypass to Cloud Compromise",
+   "authors": [
+    "Yaara Shriki"
+   ],
+   "publisher": "Wiz Research"
+  },
+  "https://medium.com/@renwa/site-dom-xss-using-cookie-injection-the-ai-hackers-are-coming-faster-than-you-think-3ef82f2a991d": {
+   "title": "Site-DOM-XSS using Cookie Injection: The AI Hackers are Coming Faster than You Think",
+   "authors": [
+    "Renwa"
+   ],
+   "publisher": "Renwa"
+  },
+  "https://medium.com/cider-sec/ppe-poisoned-pipeline-execution-34f4e8d0d4e9": {
+   "title": "PPE - Poisoned Pipeline Execution",
+   "authors": [
+    "Omer Gil",
+    "Daniel Krivelevich"
+   ],
+   "publisher": "Cider Security"
+  },
+  "https://mobitec.ie.cuhk.edu.hk/connector-oauth-security": {
+   "title": "Demystifying the (In)Security of OAuth-based Account Linking in Connector Ecosystems",
+   "authors": [
+    "Kaixuan Luo",
+    "Xianbo Wang",
+    "Pui Ho Adonis Fung",
+    "Wing Cheong Lau"
+   ],
+   "publisher": "The Chinese University of Hong Kong"
+  },
+  "https://mobitec.ie.cuhk.edu.hk/connector-oauth-security/paper.pdf": {
+   "title": "Demystifying the (In)Security of OAuth-based Account Linking in Connector Ecosystems",
+   "authors": [
+    "Kaixuan Luo",
+    "Xianbo Wang",
+    "Pui Ho Adonis Fung",
+    "Wing Cheong Lau"
+   ],
+   "publisher": "IEEE Symposium on Security and Privacy"
+  },
+  "https://netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode": {
+   "title": "Generating deserialization payloads for MessagePack C#'s Typeless mode",
+   "authors": [
+    "Dane Evans"
+   ],
+   "publisher": "Netwrix"
+  },
+  "https://novee.security/blog/critical-flaws-in-anthropic-google-and-openais-coding-agents": {
+   "title": "Critical Flaws in Anthropic, Google and OpenAI’s Coding Agents",
+   "authors": [
+    "Elad Meged"
+   ],
+   "publisher": "Novee Security"
+  },
+  "https://nullcathedral.com/posts/2026-02-08-roundcube-svg-feimage-remote-image-bypass": {
+   "title": "Roundcube SVG feImage Remote Image Bypass",
+   "authors": [
+    "nullcathedral"
+   ],
+   "publisher": "nullcathedral"
+  },
+  "https://nullcathedral.com/posts/2026-03-18-roundcube-round-two-three-more-sanitizer-bypasses": {
+   "title": "Roundcube Round Two: Three More Sanitizer Bypasses",
+   "authors": [
+    "nullcathedral"
+   ],
+   "publisher": "nullcathedral"
+  },
+  "https://r3verii.github.io/cve/2026/02/27/nodejs-toctou.html": {
+   "title": "The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting",
+   "authors": [
+    "Martino Spagnuolo"
+   ],
+   "publisher": "Martino Spagnuolo"
+  },
+  "https://scarybeastsecurity.blogspot.com/2008/11/cookie-forcing.html": {
+   "title": "Cookie forcing",
+   "authors": [
+    "Chris Evans"
+   ],
+   "publisher": "Scarybeast Security"
+  },
+  "https://securefromscratch.com/the-api-made-me-do-it": {
+   "title": "The API Made Me Do It: Do Bad APIs Lead AI to Generate Vulnerable Code?",
+   "authors": [
+    "Yariv Tal"
+   ],
+   "publisher": "Secure From Scratch"
+  },
+  "https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt": {
+   "title": "Before the first prompt: Code execution paths in trusted coding-agent projects",
+   "authors": [
+    "Nick Frichette"
+   ],
+   "publisher": "Datadog Security Labs"
+  },
+  "https://slcyber.io/research-center/cargowise-webtracker-the-keys-were-in-the-cargo": {
+   "title": "CargoWise WebTracker — The Keys Were in the Cargo",
+   "authors": [
+    "Patrik Grobshäuser",
+    "Shubham Shah",
+    "Adam Kues",
+    "Dylan Pindur"
+   ],
+   "publisher": "Searchlight Cyber"
+  },
+  "https://slcyber.io/research-center/ghosts-of-encryption-past-salesforce-exacttarget": {
+   "title": "Ghosts of Encryption Past: Salesforce Marketing Cloud / ExactTarget",
+   "authors": [
+    "Dylan Pindur",
+    "Shubham Shah",
+    "Adam Kues"
+   ],
+   "publisher": "Searchlight Cyber"
+  },
+  "https://slcyber.io/research-center/new-age-of-collisions-reading-arbitrary-files-pre-auth-as-root-in-cpanel-cve-2026-29205": {
+   "title": "New Age of Collisions: Reading Arbitrary Files Pre-Auth as Root in cPanel (CVE-2026-29205)",
+   "authors": [
+    "Shubham Shah",
+    "Adam Kues"
+   ],
+   "publisher": "Searchlight Cyber"
+  },
+  "https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html": {
+   "title": "SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet",
+   "authors": [
+    "Steven Seeley"
+   ],
+   "publisher": "Source Incite"
+  },
+  "https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-nul-byte-sql-injection-in-pdo_firebird-and-null-pointer-dereference-in-pdo-pgsql": {
+   "title": "Hack the Elephant One Bite at a Time: NUL Byte SQL Injection in pdo_firebird and Null Pointer Dereference in pdo_pgsql",
+   "authors": [
+    "Aleksey Solovev",
+    "Nikita Sveshnikov"
+   ],
+   "publisher": "PT SWARM"
+  },
+  "https://troopers.de/downloads/troopers26/TR26_Nested_APP_Authentication_EZCTEQ.pdf": {
+   "title": "Nested APP Authentication — Undocumented Risk and Conditional Access Bypass (Slides)",
+   "authors": [
+    "Shang-De Jiang",
+    "Jun Sheng Shi"
+   ],
+   "publisher": "TROOPERS"
+  },
+  "https://troopers.de/troopers26/talks/ezcteq": {
+   "title": "Nested APP Authentication — Undocumented Risk and Conditional Access Bypass (Talk-page copy)",
+   "authors": [
+    "Shang-De Jiang",
+    "Jun Sheng Shi"
+   ],
+   "publisher": "TROOPERS"
+  },
+  "https://trufflesecurity.com/blog/rubygems-cache-vulnerability": {
+   "title": "Securing the Supply Chain: Cache Vulnerability in RubyGems",
+   "authors": [
+    "Luke Marshall"
+   ],
+   "publisher": "Truffle Security"
+  },
+  "https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks": {
+   "title": "Pass the Passkey: A Novel Attack Surface in Passwordless Authentication",
+   "authors": [
+    "Arie Olshtein"
+   ],
+   "publisher": "Palo Alto Networks Unit 42"
+  },
+  "https://worty.fr/post/writeups/fcsc2026/fcsc_aquarium": {
+   "title": "FCSC 2026: Aquarium",
+   "authors": [
+    "_Worty"
+   ],
+   "publisher": "_Worty"
+  },
+  "https://zenodo.org/records/17015304": {
+   "title": "MerCuriuzz: a novel black-box fuzzing framework designed to automatically uncover logical vulnerabilities in QUIC implementations",
+   "authors": [
+    "Kaihua Wang"
+   ],
+   "publisher": "Zenodo"
+  },
+  "https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs": {
+   "title": "Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js",
+   "authors": [
+    "Rachid Allam (zhero;)",
+    "inzo_"
+   ],
+   "publisher": "zhero-web-sec"
+  },
+  "https://aikido.dev/blog/astro-full-read-ssrf-via-host-header-injection": {
+   "title": "Astro Full-Read SSRF via Host Header Injection",
+   "authors": [
+    "Jorian Woltjer"
+   ],
+   "publisher": "Aikido Security"
+  },
+  "https://aikido.dev/blog/eight-high-severity-vulnerabilities-nodebb": {
+   "title": "Eight High-Severity Vulnerabilities in NodeBB",
+   "authors": [
+    "Jorian Woltjer"
+   ],
+   "publisher": "Aikido Security"
+  },
+  "https://beyondtrust.com/blog/entry/copilot-studio-sandbox-escape": {
+   "title": "How We Got Admin Access to Every Copilot Studio Agent Sandbox on Earth",
+   "authors": [
+    "Simon Maxwell-Stewart",
+    "Ryan Hausknecht",
+    "Phantom Labs®"
+   ],
+   "publisher": "BeyondTrust"
+  },
+  "https://blackhat.com/presentations/bh-usa-07/Hoffman_and_Terrill/Whitepaper/bh-usa-07-hoffman_and_terrill-WP.pdf": {
+   "title": "The Little Hybrid Web Worm that Could",
+   "authors": [
+    "Billy Hoffman",
+    "John Terrill"
+   ],
+   "publisher": "Black Hat USA"
+  },
+  "https://blackhat.com/presentations/bh-usa-09/HAMIEL/BHUSA09-Hamiel-WeaponizingWeb-SLIDES.pdf": {
+   "title": "Weaponizing the Web: More Attacks on User Generated Content",
+   "authors": [
+    "Nathan Hamiel",
+    "Shawn Moyer"
+   ],
+   "publisher": "Black Hat USA"
+  },
+  "https://blackhat.com/presentations/bh-usa-09/SOTIROV/BHUSA09-Sotirov-AttackExtSSL-SLIDES.pdf": {
+   "title": "Breaking the Security Myths of Extended Validation SSL Certificates",
+   "authors": [
+    "Alexander Sotirov",
+    "Mike Zusman"
+   ],
+   "publisher": "Black Hat USA"
+  },
+  "https://cyera.com/research/nemoclaw-one-website-visit-to-hijack-your-ai-agent": {
+   "title": "Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning",
+   "authors": [
+    "Elad Luz",
+    "Ofek Itach"
+   ],
+   "publisher": "Cyera Research"
+  },
+  "https://cyera.com/research/proto6-the-schema-was-not-supposed-to-run": {
+   "title": "Proto6: The Schema Was Not Supposed to Run",
+   "authors": [
+    "Vladimir Tokarev"
+   ],
+   "publisher": "Cyera Research"
+  },
+  "https://cyera.com/research/sandcastles-not-sandboxes-how-one-architectural-flaw-exposed-seven-products": {
+   "title": "Sandcastles, Not Sandboxes: How One Architectural Flaw Exposed Seven Products",
+   "authors": [
+    "Vladimir Tokarev",
+    "Saar Pearl"
+   ],
+   "publisher": "Cyera Research"
+  },
+  "https://elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks": {
+   "title": "Exploiting Auth0 Defaults in XSS Attacks",
+   "authors": [
+    "Alex Brown"
+   ],
+   "publisher": "elttam"
+  },
+  "https://elttam.com/blog/golang-code-review-notes-ii": {
+   "title": "Golang code review notes II",
+   "authors": [
+    "Zoltan Madarassy",
+    "Alex Brown"
+   ],
+   "publisher": "elttam"
+  },
+  "https://elttam.com/blog/jupyter-enterprise-gateway": {
+   "title": "Jupyter Enterprise Gateway - From Notebook to Kubernetes Cluster Admin",
+   "authors": [
+    "Ben Cambourne"
+   ],
+   "publisher": "elttam"
+  },
+  "https://elttam.com/blog/pwnassistant": {
+   "title": "PwnAssistant - Controlling /home's via a Home Assistant RCE",
+   "authors": [
+    "Joseph Surin",
+    "Victor Kahan"
+   ],
+   "publisher": "elttam"
+  },
+  "https://gnucitizen.org/blog/google-search-api-worms": {
+   "title": "Google Search API Worms",
+   "authors": [
+    "pdp (Petko D. Petkov)"
+   ],
+   "publisher": "GNUCITIZEN"
+  },
+  "https://gremwell.com/spring-n1ql-injection": {
+   "title": "Improper Spring @Query Usage Allows N1QL Injection",
+   "authors": [
+    "pavel"
+   ],
+   "publisher": "Gremwell"
+  },
+  "https://nccgroup.com/research/exploring-prompt-injection-attacks": {
+   "title": "Exploring Prompt Injection Attacks",
+   "authors": [
+    "Jose Selvi"
+   ],
+   "publisher": "NCC Group"
+  },
+  "https://ndss-symposium.org/wp-content/uploads/2026-s1777-paper.pdf": {
+   "title": "Identifying Logical Vulnerabilities in QUIC Implementations",
+   "authors": [
+    "Kaihua Wang",
+    "Jianjun Chen",
+    "Pinji Chen",
+    "Jianwei Zhuge",
+    "Jiaju Bai",
+    "Haixin Duan"
+   ],
+   "publisher": "NDSS Symposium"
+  },
+  "https://oasis.security/blog/cline-kanban-websocket-hijack": {
+   "title": "Cline Kanban WebSocket Hijack",
+   "authors": [
+    "Sagi Layani"
+   ],
+   "publisher": "Oasis Security"
+  },
+  "https://oasis.security/blog/paperclip-agent-vulnerabilities": {
+   "title": "Breaking the Paperclip: When Agent Configuration Becomes a Vulnerability",
+   "authors": [
+    "Sagi Layani"
+   ],
+   "publisher": "Oasis Security"
+  },
+  "https://proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy": {
+   "title": "OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration",
+   "authors": [
+    "Rachel Rabin"
+   ],
+   "publisher": "Proofpoint"
+  },
+  "https://slcyber.io/research/keys-to-the-kingdom-anonymous-sql-injection-in-drupal-core-cve-2026-9082": {
+   "title": "Keys to the Kingdom: Anonymous SQL Injection in Drupal Core (CVE-2026-9082)",
+   "authors": [
+    "Patrik Grobshäuser",
+    "Kevin Gervot",
+    "Tomais Williamson"
+   ],
+   "publisher": "Searchlight Cyber"
+  },
+  "https://slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352": {
+   "title": "Dangerous Contents: Securing .NET Deserialization",
+   "authors": [
+    "Jonathan Birch"
+   ],
+   "publisher": "Microsoft"
+  },
+  "https://slideshare.net/slideshow/spoofed-me-socialloginattack/42313457": {
+   "title": "SpoofedMe: Intruding Accounts using Social Login Providers",
+   "authors": [
+    "Or Peles",
+    "Roee Hay"
+   ],
+   "publisher": "IBM Security Systems"
+  },
+  "https://sonarsource.com/blog/hidden-security-risks-in-jupyter-notebooks": {
+   "title": "Hidden security risks in Jupyter notebooks",
+   "authors": [
+    "Yaniv Nizry"
+   ],
+   "publisher": "Sonar"
+  },
+  "https://synacktiv.com/en/publications/charting-your-way-in-helm-template-injection": {
+   "title": "Charting your way in: Helm template injection",
+   "authors": [
+    "Paul Barbé"
+   ],
+   "publisher": "Synacktiv"
+  },
+  "https://synacktiv.com/en/publications/kyc-bypass-age-verification-using-generative-video-models": {
+   "title": "KYC: Bypass age verification using generative video models",
+   "authors": [
+    "Kevin Tellier",
+    "Léo Desmonts"
+   ],
+   "publisher": "Synacktiv"
+  },
+  "https://usenix.org/conference/usenixsecurity26/presentation/peng-qihang": {
+   "title": "H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs (Conference copy)",
+   "authors": [
+    "Qihang Peng",
+    "Siyuan Tian",
+    "Yongxin Qiu",
+    "Jinyang Huang",
+    "Yaru Yang",
+    "Xiang Li",
+    "Jia Zhang",
+    "Yiming Zhang",
+    "Haixin Duan",
+    "Yunsenxiao Lin",
+    "Shugen Chen",
+    "Liqun Yang"
+   ],
+   "publisher": "USENIX"
+  },
+  "https://usenix.org/system/files/usenixsecurity26-jia-zhipeng.pdf": {
+   "title": "PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis",
+   "authors": [
+    "Zhipeng Jia",
+    "Xiaokang Yin",
+    "Shuitao Gan",
+    "Chao Zhang",
+    "Hangtian Liu",
+    "Jiangan Ji",
+    "Enzhou Song",
+    "Ruijie Cai",
+    "Jinglei Tan",
+    "Shengli Liu"
+   ],
+   "publisher": "USENIX Security"
+  },
+  "https://usenix.org/system/files/usenixsecurity26-peng-qihang.pdf": {
+   "title": "H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs (Paper)",
+   "authors": [
+    "Qihang Peng",
+    "Siyuan Tian",
+    "Yongxin Qiu",
+    "Jinyang Huang",
+    "Yaru Yang",
+    "Xiang Li",
+    "Jia Zhang",
+    "Yiming Zhang",
+    "Haixin Duan",
+    "Yunsenxiao Lin",
+    "Shugen Chen",
+    "Liqun Yang"
+   ],
+   "publisher": "USENIX"
+  },
+  "https://wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db": {
+   "title": "CosmosEscape: Taking Over Every Database in Azure Cosmos DB",
+   "authors": [
+    "Yuval Avrahami",
+    "Lior Maman"
+   ],
+   "publisher": "Wiz Research"
+  },
+  "https://wiz.io/blog/github-rce-vulnerability-cve-2026-3854": {
+   "title": "GitHub RCE Vulnerability: CVE-2026-3854",
+   "authors": [
+    "Sagi Tzadik"
+   ],
+   "publisher": "Wiz Research"
+  },
+  "https://zenodo.org/records/16996391": {
+   "title": "[Artifact] Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments",
+   "authors": [
+    "Andrea Infantino",
+    "Mir Masood Ali",
+    "Kostas Solomos",
+    "Jason Polakis"
+   ],
+   "publisher": "University of Illinois Chicago / Zenodo"
+  },
+  "https://labs.trace37.com/blog/css-email-trust-transitions": {
+   "title": "Trust Transitions in Email: When Sanitizers and CSS Engines Disagree",
+   "authors": [
+    "Paul Reed"
+   ],
+   "publisher": "trace37"
+  },
+  "https://hackerone.com/reports/3712279": {
+   "title": "Burp Suite Professional: browser-powered crawl can write attacker-controlled files through file input handling",
+   "authors": [
+    "Masahiro Kawada (kawakatz)"
+   ],
+   "publisher": "HackerOne"
+  },
+  "https://iamruiyang.me/papers/sp26-HNP.pdf": {
+   "title": "Poisoned by the Host: Large-Scale Measurement of Host Name Poisoning in Web Applications",
+   "authors": [
+    "Rui Yang",
+    "Haoyu Wang",
+    "Zhicheng Sun",
+    "Zhengyu Liu",
+    "Yinzhi Cao"
+   ],
+   "publisher": "IEEE Symposium on Security and Privacy"
+  },
+  "https://labs.trace37.com/blog/dompurify-pp-ceh-bypass": {
+   "title": "CVE-2026-41238: How Prototype Pollution Turns DOMPurify Into an XSS Gadget",
+   "authors": [
+    "Paul Reed"
+   ],
+   "publisher": "trace37"
+  },
+  "https://medium.com/@renwa/iframe-sandbox-bypass-cross-origin-drag-drop-unvalidated-postmessage-origin-cookie-bomb-to-21357a4d94f5": {
+   "title": "iframe sandbox bypass, cross-origin drag-and-drop, unvalidated postMessage origin, cookie bomb to account takeover",
+   "authors": [
+    "Renwa"
+   ],
+   "publisher": "Medium"
+  },
+  "https://trufflesecurity.com/blog/api-keys-leaking-in-png-metadata-of-ai-images": {
+   "title": "API Keys Leaking in PNG Metadata of AI Images",
+   "authors": [
+    "Luke Marshall"
+   ],
+   "publisher": "Truffle Security"
+  },
+  "https://aikido.dev/blog/sveltespill-cache-deception-sveltekit-vercel": {
+   "title": "SvelteSpill: A Cache Deception Bug in SvelteKit + Vercel",
+   "authors": [
+    "Jorian Woltjer"
+   ],
+   "publisher": "Aikido Security"
+  },
+  "https://ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf": {
+   "title": "Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments",
+   "authors": [
+    "Andrea Infantino",
+    "Mir Masood Ali",
+    "Kostas Solomos",
+    "Jason Polakis"
+   ],
+   "publisher": "NDSS Symposium"
+  },
+  "https://portswigger.net/burp/releases/professional-community-2026-4-3": {
+   "title": "Burp Suite Professional / Community 2026.4.3",
+   "authors": [
+    "PortSwigger"
+   ],
+   "publisher": "PortSwigger"
+  },
+  "https://github.com/advisories/GHSA-v9jr-rg53-9pgp": {
+   "title": "DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback",
+   "authors": [],
+   "publisher": "DOMPurify / GitHub Security Advisories"
+  },
+  "https://gist.github.com/RenwaX23/fadb7ae19b8fca7232cf689b4543b8d1": {
+   "title": "full_poc.php",
+   "authors": [
+    "Renwa"
+   ],
+   "publisher": "GitHub Gist"
+  },
+  "https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-75px-5xx7-5xc7": {
+   "title": "Code generation gadget after prototype pollution",
+   "authors": [
+    "dcodeIO"
+   ],
+   "publisher": "protobuf.js"
+  },
+  "https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-6r35-46g8-jcw9": {
+   "title": "Code injection in pbjs static output from crafted schema names",
+   "authors": [
+    "dcodeIO"
+   ],
+   "publisher": "protobuf.js"
+  },
+  "https://github.com/protobufjs/protobuf.js/pull/2163": {
+   "title": "Fix: Harden input handling (protobuf.js)",
+   "authors": [
+    "dcodeIO"
+   ],
+   "publisher": "protobuf.js"
+  },
   "https://codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack": {
    "title": "Please use hasOwnProperty: short story of a hack",
    "authors": ["Aviv Ben-Yosef"],
@@ -1383,7 +2400,9 @@
    ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Jia Hao Poh\" / \"November 17, 2025\". Extraction recorded no author because the byline is not an anchor."
+   "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Jia Hao Poh\" / \"November 17, 2025\". Extraction recorded no author because the byline is not an anchor.",
+   "title": "Gotchas in Email Parsing - Lessons From Jakarta Mail",
+   "publisher": "elttam"
   },
   "https://elttam.com/blog/rails-sqlite-gadget-rce": {
    "authors": [
