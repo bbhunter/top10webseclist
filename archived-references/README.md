@@ -18,16 +18,17 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1800 reference(s) archived across 20 year list(s). 1706 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1802 reference(s) archived across 20 year list(s). 1708 carry technique and 94 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (179)
+## 2026-ai (181)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
 | [CVE-2025-40780: Cache poisoning due to weak PRNG](md/2026-ai/kb-isc-org-cve-2025-40780-cache-poisoning-due-weak-prng.md) | advisory | kb.isc.org |  | research | 1 |
 | [DOMPurify XSS via `<selectedcontent>` re-clone](md/2026-ai/2026-cure53-dompurify-xss-selectedcontent-re-clone.md) | advisory | Cure53 | 2026 | research | 1 |
+| [$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain](md/2026-ai/whoareme-com-15k-cspt-full-account-takeover-then-2fa-bypass-prototype-chain.md) | article | whoareme.com | 2026 | research | 1 |
 | [1-Click GitHub Token Stealing via a VSCode Bug](md/2026-ai/ammar-s-blog-1-click-github-token-stealing-vscode-bug.md) | article | Ammar's Blog |  | research | 1 |
 | [[2603.12277] Prompt Injection as Role Confusion](md/2026-ai/arxiv-org-prompt-injection-as-role-confusion.md) | article | arXiv.org |  | research | 1 |
 | [[2605.22333] A First Measurement Study on Authentication Security in Real-World Remote MCP Servers](md/2026-ai/arxiv-org-first-measurement-study-authentication-security-real-world-servers.md) | article | arXiv.org |  | research | 1 |
@@ -86,6 +87,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild for LLM Systems](md/2026-ai/overcoming-retrieval-barrier-indirect-prompt-injection-wild-llm-systems.md) | article |  |  | research | 1 |
 | [Parse and Parse: MIME Validation Bypass to XSS via Parser Differential](md/2026-ai/2026-critical-thinking-bug-bounty-podcast-parse-parse-mime-differential.md) | article | Critical Thinking - Bug Bounty Podcast | 2026 | research | 1 |
 | [Passkeys.Tools](md/2026-ai/passkeys-tools-passkeys-tools.md) | article | Ruhr University Bochum (RUB-NDS) |  | research | 1 |
+| [Please use hasOwnProperty: short story of a hack](md/2026-ai/codelord-net-please-use-hasownproperty-short-story-hack.md) | article | codelord.net | 2014 | research | 1 |
 | [Poisoning Claude Code: One GitHub Issue to Break the Supply Chain](md/2026-ai/2026-gmo-flatt-security-research-poisoning-claude-code-one-github-issue-chain.md) | article | GMO Flatt Security Research | 2026 | research | 1 |
 | [Privacy risks of agentic oversharing on the Web](md/2026-ai/2026-brave-privacy-risks-agentic-oversharing-web.md) | article | Brave | 2026 | research | 1 |
 | [Prompt Injection as Role Confusion](md/2026-ai/role-confusion-github-io-prompt-injection-as-role-confusion.md) | article | role-confusion.github.io |  | research | 1 |

@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-201 tags, across 1754 documents that carry a digest.
+201 tags, across 1756 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -76,8 +76,8 @@ JSON.
 | `angular` | 3 | — |
 | `argument-injection` | 2 | A03:2021 |
 | `aspnet` | 49 | — |
-| `attack-chain` | 189 | — |
-| `auth-bypass` | 312 | A01:2021 |
+| `attack-chain` | 190 | — |
+| `auth-bypass` | 314 | A01:2021 |
 | `autofill` | 1 | — |
 | `aws` | 32 | — |
 | `azure` | 11 | — |
@@ -104,7 +104,7 @@ JSON.
 | `cors` | 29 | A01:2021 |
 | `crypto` | 9 | A02:2021 |
 | `csp` | 65 | A05:2021 |
-| `csrf` | 148 | A01:2021 |
+| `csrf` | 149 | A01:2021 |
 | `css` | 72 | — |
 | `css-injection` | 29 | A03:2021 |
 | `csti` | 4 | A03:2021 |
@@ -164,7 +164,7 @@ JSON.
 | `ios` | 16 | — |
 | `jailbreak` | 4 | — |
 | `java` | 123 | — |
-| `javascript` | 384 | — |
+| `javascript` | 386 | — |
 | `javascript-runtime` | 20 | — |
 | `jenkins` | 2 | — |
 | `joomla` | 6 | — |
@@ -179,7 +179,7 @@ JSON.
 | `measurement-study` | 240 | — |
 | `memory-corruption` | 5 | — |
 | `mime` | 42 | A05:2021 |
-| `mitigation` | 176 | — |
+| `mitigation` | 178 | — |
 | `mongodb` | 6 | — |
 | `mssql` | 11 | — |
 | `mutation-xss` | 12 | A03:2021 |
@@ -194,7 +194,7 @@ JSON.
 | `parser-differential` | 172 | — |
 | `passkeys` | 10 | A07:2021 |
 | `password-manager` | 1 | — |
-| `path-traversal` | 67 | A01:2021 |
+| `path-traversal` | 68 | A01:2021 |
 | `pdf` | 26 | — |
 | `perl` | 4 | — |
 | `phishing` | 40 | A04:2021 |

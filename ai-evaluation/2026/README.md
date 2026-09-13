@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain](<https://whoareme.com/blog/cspt-account-takeover-2fa-bypass/>) [Earlier authentication-key example (2014)](<https://www.codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack/>) | Added |
+| [PHP mail() Command Injection to Remote Code Execution (RCE)](<https://nullsecurityx.medium.com/php-mail-command-injection-to-remote-code-execution-rce-b2991e929ca3>) | Not added |
 | [QUIC-er Races: HTTP/3 won’t save you from TOCTOU vulnerabilities](<https://link.springer.com/article/10.1007/s10207-026-01258-6>) [Tool](<https://github.com/nxenon/H3SpaceX>) | Not added |
 | [Exploiting AQL Injection Vulnerabilities in ArangoDB](<https://www.anvilsecure.com/blog/exploiting-aql-injection-vulnerabilities-in-arangodb.html>) [Security advisory](<https://www.anvilsecure.com/wp-content/uploads/2026/03/Anvil-Secure-ArangoDB-UDF-Security-Advisory.pdf>) [Tool](<https://github.com/anvilsecure/aqlmap>) | Added |
 | [8 Out of 10 Banks in Belgium HATE This One Weird eID RCE](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20James%20Arnott%20-%208%20Out%20of%2010%20Banks%20in%20Belgium%20HATE%20This%20One%20Weird%20eID%20RCE%20-%20MEDIA%20SERVER%20Belgi.pdf>) | Not added |

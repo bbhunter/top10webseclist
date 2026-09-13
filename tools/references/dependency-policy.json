@@ -13,7 +13,24 @@
     "from this file, so an undeclared dependency cannot creep in."
   ],
 
-  "admitted": [],
+  "admitted": [
+    {
+      "name": "Pillow",
+      "version": "12.3.0",
+      "purpose": "Decode and re-encode archived research figures using the existing images pipeline",
+      "upstream": "https://pypi.org/project/pillow/",
+      "release_date": "2026-07-01",
+      "licence": "MIT-CMU",
+      "dependencies": [],
+      "note": "No extras selected; all declared dependencies are optional extras. Verified against the official PyPI release metadata on 2026-09-13.",
+      "artifacts": [
+        {
+          "filename": "pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "f0606c8bf2cdefea14a43530f7657cbbb7ecf1c4222512492ef4a4434a9501ec"
+        }
+      ]
+    }
+  ],
 
   "candidates": [
     {

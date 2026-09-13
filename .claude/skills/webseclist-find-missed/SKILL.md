@@ -112,8 +112,9 @@ cat candidates.txt | python .claude/skills/webseclist-collect-year/scripts/known
 
 - **Original source only** — the researcher's own post, whitepaper, slides, talk,
   or disclosed report. News coverage is a way to *find* work, never the citation.
-- **A web hacking technique** — an attack class, primitive, or meaningful
-  extension with a credible connection to web/HTTP/API/browser security (the
+- **A web hacking contribution** — an attack class, primitive, meaningful
+  extension or substantive practical explanation of earlier work with a credible
+  connection to web/HTTP/API/browser security (the
   `webseclist-judge-reference` scope section governs this). Not a vendor patch
   note, a plain CVE disclosure with no analysis, a routine bounty writeup, or a
   product roundup.

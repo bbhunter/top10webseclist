@@ -86,8 +86,10 @@ committed and published with the list. Pass this rule to every subagent.
   (BleepingComputer, The Hacker News, SecurityWeek, DarkReading), never Reddit,
   Hacker News or an X thread, never a newsletter. Those are fine to *find*
   things through — chase the link back and cite the original.
-- **A new technique**, attack class, primitive, or a meaningful extension of
-  one. Exclude vendor patch announcements, plain CVE disclosures with no
+- **A research contribution** under the judging skill's current Repository
+  collection merit, including substantive practical explanations of earlier work.
+  A new technique, attack class, primitive or meaningful extension can qualify,
+  but new primitive discovery is not the only route. Exclude vendor patch announcements, plain CVE disclosures with no
   analysis, routine bug bounty writeups, product marketing, and roundups.
 - **In the date window.** Verify by fetching the page; do not trust a feed's
   `<updated>` timestamp, a sitemap `lastmod`, or a search result snippet, all of

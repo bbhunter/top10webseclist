@@ -6,6 +6,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 
 | Candidate | Outcome |
 |---|---|
+| [$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain](<https://whoareme.com/blog/cspt-account-takeover-2fa-bypass/>) [Related source](<https://www.codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack/>) | Added |
 | [8 Out of 10 Banks in Belgium HATE This One Weird eID RCE](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20James%20Arnott%20-%208%20Out%20of%2010%20Banks%20in%20Belgium%20HATE%20This%20One%20Weird%20eID%20RCE%20-%20MEDIA%20SERVER%20Belgi.pdf>) | Not added |
 | [A Billion-User Blast Radius: Owning ChatGPT's Secure Sandbox](<https://appsecvillage.com/events/dc-2026/a-billion-user-blast-radius-owning-chatgpt-s-secure-sandbox-1248604>) | Not added |
 | [A First Measurement Study on Authentication Security in Real-World Remote MCP Servers](<https://arxiv.org/abs/2605.22333>) | Added |
@@ -156,6 +157,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Path traversal in signed URLs — present even in the official AWS SDKs](<https://blog.flatt.tech/entry/signed_url_path_traversal>) | Added |
 | [Pattern, Graph, Prompt: What Happens When You Layer Three Analysis Paradigms on the Same Codebase](<https://appsecvillage.com/events/dc-2026/pattern-graph-prompt-what-happens-when-you-layer-three-analysis-paradigms-on-the-same-codebase-1223399>) | Not added |
 | [Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector](<https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/>) | Not added |
+| [PHP mail() Command Injection to Remote Code Execution (RCE)](<https://nullsecurityx.medium.com/php-mail-command-injection-to-remote-code-execution-rce-b2991e929ca3>) | Not added |
 | [Poisoned by the Host: Large-Scale Measurement of Host Name Poisoning in Web Applications](<https://www.iamruiyang.me/papers/sp26-HNP.pdf>) | Not added |
 | [Poisoning Claude Code: One GitHub Issue to Break the Supply Chain](<https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/>) | Added |
 | [postMessage targetOrigin bypass via IP normalization](<https://lab.ctbb.show/research/postmessage-targetorigin-bypass-via-ip-normalization>) | Not added |

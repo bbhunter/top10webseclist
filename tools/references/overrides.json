@@ -38,6 +38,16 @@
  "author_copies": [],
  "canonical_sources": [],
  "decisions": {
+  "https://codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack": {
+   "title": "Please use hasOwnProperty: short story of a hack",
+   "authors": ["Aviv Ben-Yosef"],
+   "publisher": "codelord.net"
+  },
+  "https://whoareme.com/blog/cspt-account-takeover-2fa-bypass": {
+   "title": "$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain",
+   "authors": ["whoareme"],
+   "publisher": "whoareme.com"
+  },
   "http://lcamtuf.coredump.cx/cachetime/": {
    "class": "derivative",
    "outcome": "skip",

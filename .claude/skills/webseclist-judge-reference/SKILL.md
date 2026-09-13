@@ -150,6 +150,16 @@ Classify the relationship (these map to the verdicts at the end):
   public before the cutoff.
 - **Duplicate** — the same contribution was already public before the cutoff.
 
+**Making earlier work usable can be a contribution.** A substantive explanation,
+synthesis or case study may make a previously terse or overlooked technique useful
+for testing: identify the added vulnerable contexts, preconditions, diagnostic
+methods, failure modes or mitigations against what earlier sources actually taught.
+Credit that added understanding in the relevant categories without inventing
+priority for the underlying mechanism. Mere repetition, publicity or absence from
+this repository is not evidence of such value or of historical neglect. Preserve
+the earlier source's credit and date; a clearly labelled companion link can help
+readers follow the lineage.
+
 A new target, payload, affected version, or product count does **not** by itself
 make a new technique. Ask whether the underlying contribution is distinct.
 
@@ -384,7 +394,10 @@ forcing a decisive verdict.
 For additions to historical missed-work sections and provisional `YEAR-ai.md`
 collections, the current minimum is **55/100**, with an Original technique,
 Meaningful extension, Meaningful combination or adaptation, or Tooling or
-methodology contribution verdict. Also verify scope, first-publication year,
+methodology contribution verdict. A Useful application or case study verdict also
+qualifies when it meets the same minimum and supplies substantive practical
+understanding of earlier work as described above; a new primitive is not required.
+Also verify scope, first-publication year,
 source evidence and non-duplication; historical additions must never have been
 nominated in that year. This collection rule is distinct from the general
 core/supporting archive recommendation above.

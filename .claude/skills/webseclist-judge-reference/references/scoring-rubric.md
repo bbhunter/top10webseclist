@@ -181,6 +181,17 @@ still gets a "duplicate" verdict.
 
 ---
 
+### Substantive explanations of earlier work
+
+Score added practical understanding independently from priority. A detailed
+explanation of a terse earlier technique can earn strong Transferability, Lasting
+value or Practical usability scores when it shows readers where to test, what
+conditions matter and which fixes fail. Compare that instructional contribution
+with available pre-cutoff explanations; do not award it merely for longer prose,
+more attention or an example missing from this archive. Keep Original contribution
+grounded in what is actually new, and keep unverified examples separate from
+demonstrated results. Repository collection eligibility is defined in SKILL.md.
+
 ## Worked mini-examples
 
 These illustrate the impact-vs-novelty split; they are calibration aids, not quotas.

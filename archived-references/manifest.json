@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-12T15:01:25+00:00",
+ "updated": "2026-09-13T19:26:11+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -58375,6 +58375,83 @@
     }
    },
    "title": "CVE-2024-4367 - Arbitrary JavaScript execution in PDF.js"
+  },
+  "https://codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack": {
+   "also_at": [],
+   "authors": [
+    "Aviv Ben-Yosef"
+   ],
+   "cited_by": [
+    "2026-ai.md:97"
+   ],
+   "cited_title": "Earlier authentication-key example (2014)",
+   "content_gap": "",
+   "content_sha256": "273bcbb5ce141025ae70ead2fb367a6950bb052aee12e0f295b47d3840bfd494",
+   "decision": {
+    "at": "2026-09-13",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-13",
+    "by": "webseclist-review/1",
+    "of": "273bcbb5ce141025ae70ead2fb367a6950bb052aee12e0f295b47d3840bfd494",
+    "tags": [
+     "auth-bypass",
+     "javascript",
+     "mitigation"
+    ],
+    "text": "A Node.js authentication cache uses a plain object and accepts a request key when its lookup is truthy. Supplying toString resolves to an inherited function and bypasses the check; testing ownership with hasOwnProperty prevents that lookup from authenticating the request."
+   },
+   "first_seen_utc": "2026-09-13T19:11:37+00:00",
+   "grade": "research",
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2014-03-14",
+   "publisher": "codelord.net",
+   "raw_sha256": "a7d6ef853d26758ed9af99c805e4d0f72850cdfd9333d40e375c02b1dfac7f3a",
+   "slug": "codelord-net-please-use-hasownproperty-short-story-hack",
+   "spellings": [
+    "https://www.codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "273bcbb5ce141025ae70ead2fb367a6950bb052aee12e0f295b47d3840bfd494",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-13T19:16:18+00:00"
+    },
+    "import": {
+     "chars": 1550,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "273bcbb5ce141025ae70ead2fb367a6950bb052aee12e0f295b47d3840bfd494",
+     "utc": "2026-09-13T19:16:18+00:00"
+    },
+    "pdf": {
+     "bytes": 73245,
+     "file": "archived-references/pdf/2026-ai/codelord-net-please-use-hasownproperty-short-story-hack.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-13T19:26:11+00:00"
+    },
+    "render": {
+     "chars": 1550,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/codelord-net-please-use-hasownproperty-short-story-hack.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-13T19:16:18+00:00"
+    }
+   },
+   "title": "Please use hasOwnProperty: short story of a hack"
   },
   "https://codesent.io/blog/code-sentinels-1/discovering-rhinos-blind-spot-1": {
    "also_at": [],
@@ -277105,6 +277182,154 @@
     }
    },
    "title": "Hacking Intranet Websites from the Outside"
+  },
+  "https://whoareme.com/blog/cspt-account-takeover-2fa-bypass": {
+   "also_at": [],
+   "authors": [
+    "whoareme"
+   ],
+   "cited_by": [
+    "2026-ai.md:97"
+   ],
+   "cited_title": "$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain",
+   "content_gap": "",
+   "content_sha256": "d3d07f5d7e51785576b961455a6f0e326819df3747112bcd11340047f60ade92",
+   "decision": {
+    "at": "2026-09-13",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-13",
+    "by": "webseclist-review/1",
+    "of": "d3d07f5d7e51785576b961455a6f0e326819df3747112bcd11340047f60ade92",
+    "tags": [
+     "path-traversal",
+     "csrf",
+     "auth-bypass",
+     "javascript",
+     "attack-chain",
+     "mitigation"
+    ],
+    "text": "Client-side path traversal reroutes an authenticated invite request to change an account email, enabling password reset. The author then reports a 2FA bypass using __proto__ as the code and explains a possible inherited-property lookup cause, related lookup patterns and repairs."
+   },
+   "first_seen_utc": "2026-09-13T19:11:37+00:00",
+   "grade": "research",
+   "images": {
+    "https://whoareme.com/_astro/2fa-bypass.Dy_Ip4H-_cXYrz.webp": {
+     "bytes": 80321,
+     "height": 623,
+     "sha256": "164245c46fec676db23b82d6fbf8c14866f91188a42603ba4ce403f2861e4ce2",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/2fa-invalid.BaTjkGi4_Z2vpURl.webp": {
+     "bytes": 81784,
+     "height": 622,
+     "sha256": "103a5688a4e500943799c8c2151124275ffcfb31664c55622000a352607c3066",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/2fa-meme.0TGAbwu4_1waB01.webp": {
+     "bytes": 39833,
+     "height": 618,
+     "sha256": "f6cace81795de1ef9517bc6dd3ae47acf8ef477245cf9fb53acc09ecf86febf5",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/handleTeamInvite.B8sJhqL0_I1hF6.webp": {
+     "bytes": 71231,
+     "height": 718,
+     "sha256": "59c0ca5d122ea73d43805418e3bb62c7f2d4311e15db1e0778a31dd257651500",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/initial-url.BrrvaSp-_Z2kHywl.webp": {
+     "bytes": 44378,
+     "height": 513,
+     "sha256": "f5f1586f5499e84fe53e62ad8d046ffe368a47257951570b274da0b6d05f4c6c",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/injection-place.BJA7oxKi_Zi6IGB.webp": {
+     "bytes": 70408,
+     "height": 646,
+     "sha256": "f2a021c90715c761e3959132b94ae016b3d59014e442752872c367e4fe3417d5",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/ordinary-get-ecmascript.Cw5kY5s-_1GePL5.webp": {
+     "bytes": 71773,
+     "height": 540,
+     "sha256": "f076d3d9ec2dae69c09e38d7c844f87d571ea2913d7ee60e3cbc896c62d88ca3",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/ordinary-has-property.9UOlLLzI_Z1dO3zW.webp": {
+     "bytes": 50127,
+     "height": 416,
+     "sha256": "13160013d640503e75cb209431fc2f34abec9cfc236e4e5e20cd9c934d869304",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/successful-poc.BJnjHlOD_LIppk.webp": {
+     "bytes": 47934,
+     "height": 513,
+     "sha256": "57ca1f6190eac1b580278bba15a759153dec57772ccc8c85211c26e7b0ee9cab",
+     "width": 1100
+    },
+    "https://whoareme.com/_astro/teams-callstack.BWh0gEZp_Z1ndTvC.webp": {
+     "bytes": 58009,
+     "height": 627,
+     "sha256": "0610294aedf48c2857384d69599b8d19349973a83e8c06638aefeb6231afd15f",
+     "width": 1100
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-04-16",
+   "publisher": "whoareme.com",
+   "raw_sha256": "334287abcc8dc76d8641e54331ac5f0aa7d53b11bbeceb7c31de3d2eb08421b9",
+   "slug": "whoareme-com-15k-cspt-full-account-takeover-then-2fa-bypass-prototype-chain",
+   "spellings": [
+    "https://whoareme.com/blog/cspt-account-takeover-2fa-bypass/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "d3d07f5d7e51785576b961455a6f0e326819df3747112bcd11340047f60ade92",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-13T19:16:29+00:00"
+    },
+    "images": {
+     "bytes": 615798,
+     "reason": "10 of 10 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-13T19:25:09+00:00"
+    },
+    "import": {
+     "chars": 15030,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "d3d07f5d7e51785576b961455a6f0e326819df3747112bcd11340047f60ade92",
+     "utc": "2026-09-13T19:16:29+00:00"
+    },
+    "pdf": {
+     "bytes": 873205,
+     "file": "archived-references/pdf/2026-ai/whoareme-com-15k-cspt-full-account-takeover-then-2fa-bypass-prototype-chain.pdf",
+     "renderer": 3,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-13T19:26:09+00:00"
+    },
+    "render": {
+     "chars": 15030,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/whoareme-com-15k-cspt-full-account-takeover-then-2fa-bypass-prototype-chain.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-13T19:16:29+00:00"
+    }
+   },
+   "title": "$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain"
   },
   "https://wisec.it/sectou.php?id=4698ebdc59d15": {
    "also_at": [],
