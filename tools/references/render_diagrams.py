@@ -15,7 +15,7 @@ import tempfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from refslib import toolbox
+from refslib import toolbox, isolation
 
 BUNDLE_SHA = "74d7c46dabca328c2294733910a8aa1ed0c37451776e8d5295da38a2b758fb9b"
 ROOT = Path(__file__).resolve().parents[2]
@@ -23,30 +23,8 @@ FENCE = re.compile(r"^```mermaid\s*\n(.*?)^```\s*$", re.M | re.S)
 
 
 def checked_svg(value):
-    # Chromium expands local marker URLs to its temporary document URL.
-    # Restore fragment-only references before validating the standalone SVG.
-    value = value.replace("file:///out/index.html#", "#")
-    root = ET.fromstring(value)
-    if root.tag != "{http://www.w3.org/2000/svg}svg":
-        raise ValueError("renderer did not produce SVG")
-    styles = []
-    for node in root.iter():
-        if node.tag.split("}")[-1].lower() == "style":
-            styles.append(node.text or "")
-        if node.tag.split("}")[-1].lower() in {"script", "foreignobject", "iframe", "image", "use"}:
-            raise ValueError("active or externally referenced SVG element")
-        for key, val in node.attrib.items():
-            styles.append(val)
-            name = key.split("}")[-1].lower()
-            if name.startswith("on") or (name in {"href", "src"} and not val.startswith("#")):
-                raise ValueError("active or external SVG attribute")
-    style_text = "\n".join(styles)
-    if re.search(r"@import", style_text, re.I) or any(
-        not target.strip().strip("\"'").startswith("#")
-        for target in re.findall(r"url\((.*?)\)", style_text, re.I)
-    ):
-        raise ValueError("external SVG stylesheet reference")
-    return value
+    from refslib import isolation
+    return isolation.call("svg.checked_svg", value)
 
 
 def render(sources, bundle):
@@ -69,10 +47,19 @@ mermaid.initialize({startOnLoad:false,securityLevel:'strict',htmlLabels:false,
         command = ["docker", "run"] + args + ["-v", toolbox._mount(folder) + ":/out:ro", toolbox.IMAGE, "chromium-browser"]
         command += list(toolbox.CHROMIUM_ARGS) + ["--user-data-dir=/tmp/chromium", "--virtual-time-budget=20000", "file:///out/index.html"]
         done = toolbox._run_container(command, timeout=90)
-        match = re.search(r'<textarea id="result">(.*?)</textarea>', done.stdout.decode("utf-8", "replace"), re.S)
-        if done.returncode or not match or not match[1]:
-            raise RuntimeError("diagram container failed: " + done.stderr.decode("utf-8", "replace")[-500:])
-        return json.loads(html.unescape(match[1]))
+        if done.returncode:
+            raise RuntimeError("diagram container failed")
+        expected = {row[0] for row in sources}
+        rows = isolation.call("svg.parse_rendered", done.stdout, sorted(expected))
+        # The worker's response is untrusted too. Validate controller-held IDs
+        # again before any of them can become a host output filename.
+        if not isinstance(rows, list) or any(not isinstance(row, list) or len(row) not in (2, 3)
+                or not isinstance(row[0], str) or not re.fullmatch(r"[a-f0-9]{64}", row[0])
+                or row[0] not in expected for row in rows):
+            raise ValueError("unexpected diagram output identity")
+        if len(rows) != len(expected) or {row[0] for row in rows} != expected:
+            raise ValueError("missing or duplicate diagram output")
+        return rows
 
 
 def main():
@@ -84,13 +71,31 @@ def main():
     archive = ROOT / "archived-references"
     manifest = json.loads((archive / "manifest.json").read_text())
     sources = {}
+    batch, batch_bytes = [], 0
+    def collect():
+        for source in isolation.call("svg.find_mermaid", batch):
+            sources[hashlib.sha256(source.encode()).hexdigest()] = source
+        batch.clear()
     for entry in manifest["urls"].values():
         filename = entry.get("steps", {}).get("render", {}).get("file")
-        if not filename or not (ROOT / filename).is_file():
+        if not filename:
             continue
-        for match in FENCE.finditer((ROOT / filename).read_text()):
-            source = match[1].strip()
-            sources[hashlib.sha256(source.encode()).hexdigest()] = source
+        path = ROOT / filename
+        if path.is_symlink() or not path.resolve().is_relative_to((archive / "md").resolve()):
+            raise ValueError("invalid archived diagram source path")
+        if not path.is_file():
+            continue
+        with path.open("rb") as handle:
+            data = handle.read(4 * 1024 * 1024 + 1)
+        if len(data) > 4 * 1024 * 1024:
+            raise ValueError("diagram source exceeds the 4 MiB bound")
+        batch.append(data)
+        batch_bytes += len(data)
+        if batch_bytes >= 8 * 1024 * 1024:
+            collect()
+            batch_bytes = 0
+    if batch:
+        collect()
     output = archive / "diagrams"
     output.mkdir(exist_ok=True)
     pending = [(digest, source) for digest, source in sorted(sources.items()) if not (output / (digest + ".svg")).is_file()]
@@ -100,13 +105,13 @@ def main():
         for row in render(pending[start:start + 12], args.bundle):
             digest, svg = row[:2]
             if svg is None:
-                errors.append({"sha256": digest, "source": sources[digest], "error": row[2]})
+                errors.append({"sha256": digest, "error": str(row[2])[:200]})
                 continue
             (output / (digest + ".svg")).write_text(checked_svg(svg) + "\n")
         print("rendered batch", start // 12 + 1, flush=True)
     if errors:
         print(json.dumps(errors, indent=2))
-        raise SystemExit("invalid Mermaid diagrams; fix source fences and rerun")
+        raise SystemExit("invalid Mermaid diagrams; file the capture gap and review the source in isolation")
     records = []
     for digest, source in sorted(sources.items()):
         path = output / (digest + ".svg")

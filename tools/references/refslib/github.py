@@ -213,7 +213,13 @@ def _file(url, fetcher):
     if line:
         lines.append("")
         lines.append("The citation points at line %s." % line.group(1))
-    lines += ["", "```%s" % _language(name), text.rstrip("\n"), "```"]
+    lines = ["> **Repository reading copy.** Created from [%s](%s)." % (name, url), ""] + lines
+    if name.lower().endswith((".md", ".markdown")):
+        from . import repo as repo_module
+        lines += ["", repo_module.document_links(text.rstrip("\n"), owner + "/" + repo, ref, path)]
+    else:
+        fence = "`" * max(3, 1 + max((len(m.group()) for m in re.finditer(r"`+", text)), default=0))
+        lines += ["", fence + _language(name), text.rstrip("\n"), fence]
     return "\n".join(lines) + "\n", {"title": "%s/%s: %s" % (owner, repo, path),
                                      "publisher": "GitHub", "published": "",
                                      "authors": [owner]}

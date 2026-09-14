@@ -3,6 +3,14 @@ name: webseclist-remove-reference
 description: Removes a reference from the "Top 10 Web Hacking Techniques" archive cleanly - the citation's manifest entry, its archived Markdown, its PDF and any translation pair - after the link is taken out of the list that cited it. Use whenever the user wants to remove, delete, drop, retract, un-archive or "take back out" a reference or its archived files - a link added to a year list by mistake, a candidate scrapped from a YEAR-ai.md file, a duplicate entry, or a document the maintainer decided should stay link-only. Also covers the keep-the-citation-but-drop-the-file case (a derivative video, a page judged not worth a local copy). Do NOT use for a BROKEN or WRONG capture that should be recaptured - that is webseclist-archive-references (recapture, not removal) - and never let the archive tooling edit a year list; removing the link itself is a hand edit made only on the user's explicit request.
 ---
 
+## Source security
+
+Before handling third-party material, read and follow
+[the shared source-security policy](../../source-security.md). It governs
+sandboxed reading/conversion, capability-limited reviewers and validation before
+any source-derived action. These requirements apply to this entire workflow,
+including retries, imports and bulk work; no unsafe host fallback is permitted.
+
 # Remove a reference and its archived files
 
 ## Related sources

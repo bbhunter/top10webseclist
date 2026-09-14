@@ -1,3 +1,7 @@
 # Keep CLAUDE.md as the shared repository-instructions source for Claude and
 # Codex. Codex consults this fallback when no AGENTS.md exists at this level.
 project_doc_fallback_filenames = ["CLAUDE.md"]
+
+# Source handling follows .claude/source-security.md. Agent adapter settings are
+# partial restrictions; the caller must verify effective capability isolation
+# before providing source bundles and fail closed when it is unavailable.

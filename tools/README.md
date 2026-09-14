@@ -46,19 +46,15 @@ fields, but [portable uploads accept only the shared fields](https://code.claude
 
 ### Setup
 
-- **Python 3.9+**
-- **Chrome, Chromium or Edge** — auto-detected on Windows, Linux and macOS.
-  Override with `WEBSEC_REFS_BROWSER=/path/to/browser`.
-- **`pypdf`**, optional but wanted: it is what reads a finished PDF back, so
-  `verify` can count pages and assert the expected text is really there.
+- **Python 3.10+** and **Docker**.
+- The approved toolbox supplies Chromium, Poppler and the document parsers.
+  No host browser, browser profile or host `pypdf` is used for source material.
 
 ```bash
-pip install -r tools/requirements.txt
 python tools/capture_pdf.py doctor --smoke
 ```
 
-`doctor` reports the browser it found, whether `pypdf` is present, how many
-manifest entries exist and how many are already captured. `--smoke` additionally
+`doctor` reports container availability and archive counts. `--smoke` additionally
 captures `example.com`, which proves the whole path works before you blame a
 source page.
 
@@ -158,10 +154,12 @@ Pages are printed to A4 at `scale: 0.7`. That is deliberate rather than cosmetic
 and a mobile breakpoint. At 0.7 it lays out at ~1100 px and renders that at 70% —
 a desktop layout at a readable size.
 
-The browser itself gets a throwaway profile per capture, no extensions, downloads
-denied, and is closed over CDP rather than by killing the launcher (which strands
-the real browser process). Chrome's sandbox stays on unless you explicitly set
-`WEBSEC_REFS_NO_SANDBOX=1`, which containers and most CI images need.
+The browser gets a throwaway profile inside a non-root, read-only container.
+Direct networking is disabled; public requests use the separate destination-
+checking broker in `references/refslib/gateway.py`. Offline PDF reading has no
+network route. The host owns durable publication and removes exact container IDs
+on completion or timeout. Source handling and semantic review follow
+[the shared security policy](../.claude/source-security.md).
 
 ### Provenance
 

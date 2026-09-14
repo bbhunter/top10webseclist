@@ -82,7 +82,7 @@ class TestWhatTheContainerIsGiven(unittest.TestCase):
     def test_a_timed_out_container_is_force_removed_by_its_exact_id(self):
         identifier = "a" * 64
 
-        def run(command, **_kwargs):
+        def run(command, *_args, **_kwargs):
             if command[:2] == ["docker", "run"]:
                 cidfile = command[command.index("--cidfile") + 1]
                 with open(cidfile, "w", encoding="ascii") as handle:
@@ -90,7 +90,8 @@ class TestWhatTheContainerIsGiven(unittest.TestCase):
                 raise subprocess.TimeoutExpired(command, 1)
             return subprocess.CompletedProcess(command, 0)
 
-        with mock.patch.object(toolbox.subprocess, "run", side_effect=run) as called:
+        with mock.patch.object(toolbox.subprocess, "run", side_effect=run) as called, \
+                mock.patch.object(toolbox, "_bounded_run", side_effect=run):
             with self.assertRaises(subprocess.TimeoutExpired):
                 toolbox._run_container(["docker", "run", "image"], timeout=1)
         cleanup = called.call_args_list[-1].args[0]

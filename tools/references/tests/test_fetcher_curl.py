@@ -43,25 +43,22 @@ class TestToolboxCurlBytes(unittest.TestCase):
 
     def test_public_fetch_unwraps_a_gzip_body(self):
         page = b"<html>research</html>"
-        with mock.patch.object(toolbox, "ensure_image"), \
-             mock.patch.object(toolbox, "_run_container") as run, \
-             mock.patch("refslib.toolbox.tempfile.mkdtemp", return_value="."), \
-             mock.patch("refslib.toolbox.shutil.rmtree"), \
-             mock.patch("refslib.toolbox.os.path.exists", return_value=True), \
-             mock.patch("builtins.open", mock.mock_open(read_data=gzip.compress(page))):
-            run.return_value = mock.Mock(returncode=0, stdout=b"")
+        compressed = gzip.compress(page)
+        def worker(operation, *args, **kwargs):
+            if operation == "curl_bytes":
+                return compressed
+            self.assertEqual(operation, "fetcher.decompress")
+            self.assertEqual(args[0], compressed)
+            return fetcher.decompress(args[0])  # trusted fixture, no source bytes
+        with mock.patch("refslib.isolation.call", side_effect=worker) as called:
             self.assertEqual(toolbox.fetch_public("https://web.archive.org/x"), page)
+        self.assertEqual([c.args[0] for c in called.call_args_list], ["curl_bytes", "fetcher.decompress"])
 
     def test_a_body_that_is_not_gzip_is_untouched(self):
         page = b"<html>plain</html>"
-        with mock.patch.object(toolbox, "ensure_image"), \
-             mock.patch.object(toolbox, "_run_container") as run, \
-             mock.patch("refslib.toolbox.tempfile.mkdtemp", return_value="."), \
-             mock.patch("refslib.toolbox.shutil.rmtree"), \
-             mock.patch("refslib.toolbox.os.path.exists", return_value=True), \
-             mock.patch("builtins.open", mock.mock_open(read_data=page)):
-            run.return_value = mock.Mock(returncode=0, stdout=b"")
+        with mock.patch("refslib.isolation.call", side_effect=[page, page]) as called:
             self.assertEqual(toolbox.fetch_public("https://web.archive.org/x"), page)
+        self.assertEqual(called.call_args_list[-1].args, ("fetcher.decompress", page))
 
 
 if __name__ == "__main__":

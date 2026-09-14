@@ -916,7 +916,7 @@ def command_acquire(args):
                 entry["decision"] = dict(judged, by="maintainer", at=manifest_utc()[:10])
             previous_raw = entry.get("raw_sha256") or ""
             for field in ("raw_sha256", "content_sha256", "licence", "publisher",
-                          "published", "authors", "language", "commit"):
+                          "published", "authors", "language", "commit", "repository_capture"):
                 if record.get(field):
                     entry[field] = record[field]
             entry["content_gap"] = _gap_after_acquire(entry, record, previous_raw)
@@ -4334,6 +4334,8 @@ def build_parser():
 
 
 def main(argv=None):
+    from refslib import isolation
+    isolation.install()
     parser = build_parser()
     args = parser.parse_args(argv)
     if not getattr(args, "handler", None):

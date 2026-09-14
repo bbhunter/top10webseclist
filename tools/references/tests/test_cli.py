@@ -783,7 +783,11 @@ class PreservedDiagramTests(unittest.TestCase):
             (root / "archived-references/diagram-assets.json").write_text(json.dumps({
                 "diagrams": [{"source": source, "path": path_override or relative,
                               "sha256": hashlib.sha256(svg).hexdigest()}]}))
-            with patch.object(refs.paths, "repo_root", return_value=root):
+            # This test supplies its own synthetic SVG. Exercise the validator
+            # directly; production isolation is covered by WorkerBoundary.
+            from refslib.svg import checked_svg
+            with patch.object(refs.paths, "repo_root", return_value=root), \
+                    patch("render_diagrams.checked_svg", side_effect=checked_svg):
                 return refs._image_source({}, _Store())("mermaid:" + digest)
 
     def test_verified_local_svg_is_available_without_source_images(self):

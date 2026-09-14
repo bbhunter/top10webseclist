@@ -10,6 +10,7 @@ _site/
 # Private scoring notes and calibration results; publish decisions only.
 .local/ai-evaluation/
 .local/related-sources/
+.local/security-hardening/
 
 # Workspace copy of the reference content store. The durable store lives at
 # WEBSEC_REFS_STORE; this folder is a convenience copy and is re-derivable.

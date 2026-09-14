@@ -3,6 +3,14 @@ name: webseclist-find-missed
 description: Finds web hacking techniques published in a past year (2006..2025) but never nominated in that year's Top 10 Web Hacking Techniques round, records every credible lead and judgement under ai-evaluation/YEAR, and adds only finds that pass the judging skill’s current repository collection merit under "Missed from the original list." Use when asked to find, recover, backfill, catch up on, or audit missed research for one year, a range, or all historical years. Use webseclist-collect-year for the current year, webseclist-judge-reference to score one reference without editing a list, and the archive skills to preserve sources or announcement pages.
 ---
 
+## Source security
+
+Before handling third-party material, read and follow
+[the shared source-security policy](../../source-security.md). It governs
+sandboxed reading/conversion, capability-limited reviewers and validation before
+any source-derived action. These requirements apply to this entire workflow,
+including retries, imports and bulk work; no unsafe host fallback is permitted.
+
 # Find techniques the original nomination round missed
 
 ## Related sources
@@ -60,13 +68,14 @@ to 2006..2025.
 
 ## Process
 
-Run the years **independently**. For a range or `all`, sweep the years in
-parallel as subagents (one year per subagent) — a single context cannot hold
-twenty years of research, and the years share nothing. Give each subagent the
-year, the exclusion set for that year, the sweep beats, and the candidate rules
-below, and have it return structured candidate lines plus the sources it swept
-that produced nothing. Then judge the survivors and edit the files yourself, in
-the main context, so the review-gated edits are made in one place.
+Run the years independently. For a range or `all`, parallelize approved retrieval
+and bounded restricted reading by year where supported. Controllers validate
+links and provide inert source bundles; semantic readers cannot fetch, execute
+or access arbitrary files. Give each reader the year, exclusions, sweep beats
+and candidate rules, and require structured findings with explicit coverage gaps.
+Do not substitute general-purpose source-reading agents if enforcement is
+unavailable. Judge the returned evidence against the existing merit criteria;
+the main controller validates findings and owns all publication changes.
 
 ### 1. Resolve the targets
 

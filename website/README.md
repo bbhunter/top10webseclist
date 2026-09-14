@@ -26,11 +26,7 @@ decisions, listed companions and confirmed recordings. `build-data.mjs` generate
 collection shards retain document links for use if metadata loading fails. The
 smoke test checks source matching, checksums, public field allowlisting, and budgets
 of 500 KB per source shard and 4 MB in total. Scores and private review data are
-never included. Run the companion navigation checks against the local preview:
-
-```bash
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/sources-test.mjs
-```
+never included. The isolated regression runner below includes companion navigation checks.
 
 ## Run it
 
@@ -46,8 +42,9 @@ the served preview copies; the production files and reader restrictions stay
 intact. Only website assets and published archive paths are served. Set
 `WEBSEC_PREVIEW_PORT` and `WEBSEC_READER_PORT` to choose different ports.
 
-With this preview running, its actual PDF flow can be checked with
-`PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/preview-test.mjs`.
+The isolated regression runner checks the complete PDF flow using its own preview.
+Automated agents must use that container route when inspecting archived content;
+the preview commands here are for ordinary interactive website development.
 
 Serve the repository root (not this directory) so the mockup can load the archive:
 
@@ -66,27 +63,22 @@ node website/smoke-test.mjs
 ```
 
 Browser theme checks cover all nine views at desktop and phone widths, keyboard
-focus after filtering, motion preferences, and reader contrast. With the server
-above running, install the optional test dependency outside the repository:
+focus after filtering, motion preferences, and reader contrast. Keep the approved
+Playwright, playwright-core and axe-core packages in a directory outside the
+repository. Run the complete test matrix with:
 
 ```bash
-npm install --prefix /tmp/websec-browser-tests playwright@1.55.0
-/tmp/websec-browser-tests/node_modules/.bin/playwright install chromium
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/theme-test.mjs
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/discovery-test.mjs
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/interface-test.mjs
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs WEBSEC_TEST_URL=http://127.0.0.1:4173/ node website/dialog-test.mjs
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs WEBSEC_TEST_URL=http://127.0.0.1:4173/ node website/article-scroll-test.mjs
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/mobile-test.mjs
+python3 website/container-tests.py --node-modules /tmp/websec-browser-tests/node_modules
 ```
 
-For the automated accessibility checks, also install `axe-core` in that same
-temporary directory, then run:
-
-```bash
-npm install --prefix /tmp/websec-browser-tests axe-core
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs AXE_SOURCE=/tmp/websec-browser-tests/node_modules/axe-core/axe.min.js node website/accessibility-test.mjs
-```
+The runner starts its own preview and Chromium inside Docker. It mounts staged
+public website/test files, published archive files and those three dependency
+packages read-only. It has no network, credentials, repository checkout, Docker
+socket or writable host output mount. Browser output is bounded and temporary
+files stay in capped container storage. No host browser installation is needed.
+Do not replace this route with a host Playwright process for archive inspection.
+Dependency installation remains subject to the repository's dependency policy;
+source content cannot select packages or installation commands.
 
 `interface-test.mjs` checks the requested navigation order, consecutive indices and
 identical sidebar positions, row heights and font sizes across every theme at four
@@ -116,12 +108,8 @@ still needs no JavaScript dependencies.
 
 ### Regression coverage for future website changes
 
-With `node website/preview.mjs` running and the optional Playwright/axe dependencies
-installed as above, run all ten suites with one command:
-
-```bash
-PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs AXE_SOURCE=/tmp/websec-browser-tests/node_modules/axe-core/axe.min.js node website/regression-test.mjs
-```
+Use the Docker command above to run all ten suites. The underlying
+`regression-test.mjs` entrypoint runs inside that container.
 
 The runner uses the complete preview at port 4173 for every suite, includes Terminal
 accessibility checks, and fails on the first failed suite. It clears the focused

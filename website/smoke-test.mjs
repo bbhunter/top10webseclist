@@ -519,6 +519,7 @@ const activeClientSecurityChecks = [
   clientEval(`parseQuery("__proto__:x constructor:y").every((term) => term.pick === null)`) === true,
   clientEval(`highlightCode("<img src=x>", "constructor")`) === "&lt;img src=x&gt;",
   clientEval(`highlightCode("<img src=x>", "__proto__")`) === "&lt;img src=x&gt;",
+  clientEval(`(() => { const q = String.fromCharCode(96); const md = q.repeat(4) + "md\\n" + q.repeat(3) + "\\n[example](https://example.com)\\n" + q.repeat(3) + "\\n" + q.repeat(4); const html = markdownDocument(md).html; return (html.match(/<pre>/g) || []).length === 1 && !html.includes('href="https://example.com"'); })()`) === true,
   clientEval(`issueUrl("__proto__", { title: "x" })`) === "https://github.com/irsdl/webhacklist/issues/new/choose",
   clientEval(`(() => { try { markdownDocument("x".repeat(MAX_MARKDOWN_BYTES + 1)); return false; } catch (error) { return error.message.includes("size limit"); } })()`) === true,
   clientEval(`(() => { try { markdownDocument("x\\n".repeat(MAX_MARKDOWN_LINES + 1)); return false; } catch (error) { return error.message.includes("line limit"); } })()`) === true,

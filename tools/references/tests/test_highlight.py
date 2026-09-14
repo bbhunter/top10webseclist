@@ -62,8 +62,9 @@ class TestNothingIsChanged(unittest.TestCase):
             for name in sorted(files)[:40]:
                 if not name.endswith(".md"):
                     continue
-                text = io.open(os.path.join(directory, name),
-                               encoding="utf-8", errors="replace").read()
+                with io.open(os.path.join(directory, name),
+                             encoding="utf-8", errors="replace") as handle:
+                    text = handle.read()
                 for fence in re.finditer(r"^```([a-z0-9#+-]*)\n(.*?)^```",
                                          text, re.M | re.S):
                     language, code = fence.group(1), fence.group(2)

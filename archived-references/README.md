@@ -404,11 +404,11 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [OAuth Token Leak via Referer Policy Override Demo](md/2025/voorivex-oauth-token-leak-referer-policy-override-demo.md) | code | Voorivex |  | research | 1 |
 | [PermissionJacking: How a Subtle Bug in Safari Could Lead to Camera Hijacking](md/2025/github-permissionjacking-how-subtle-bug-safari-could-lead-camera-hijacking.md) | code | GitHub |  | research | 1 |
 | [Punycode Email Identity-Confusion Testbed](md/2025/voorivex-punycode-email-identity-confusion-testbed.md) | code | Voorivex |  | research | 1 |
-| [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction (Source code)](md/2025/github-transparent-taint-style-vulnerability-detection-generic-single-page-code.md) | code | GitHub |  | research | 1 |
 | [Artifact](md/2025/github-cispa-stylemail.md) | repo | GitHub |  | research | 1 |
 | [CVE-2025-53020 Proof of Concept](md/2025/gal-bar-nahum-cve-2025-53020-proof-concept.md) | repo | Gal Bar Nahum |  | research | 1 |
 | [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases (Source code)](md/2025/github-one-email-many-faces-deep-dive-identity-confusion-email-aliases-code.md) | repo | GitHub |  | research | 1 |
 | [PoC](md/2025/github-lachlan2k-react2shell-cve-2025-55182-original-poc.md) | repo | GitHub |  | research | 1 |
+| [TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction (Source code)](md/2025/github-transparent-taint-style-vulnerability-detection-generic-single-page-code.md) | repo | GitHub |  | research | 1 |
 | [Lost in Translation: Exploiting Unicode Normalization (Slides)](md/2025/black-hat-lost-translation-exploiting-unicode-normalization-slides.md) | slides | Black Hat | 2025 | research | 1 |
 | [Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications](md/2025/be-aware-what-you-let-pass-demystifying-url-based-authentication-applications.md) | whitepaper | ACM CCS |  | research | 1 |
 | [Discovering React2Shell](md/2025/discovering-react2shell.md) | whitepaper |  |  | research | 1 |

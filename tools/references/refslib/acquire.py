@@ -67,8 +67,8 @@ MAX_PAGE_BYTES = 16 * 1024 * 1024
 # conference decks. A 4.3 MiB Black Hat paper spent minutes inside one regex.
 # Poppler in the locked-down toolbox container read the same file in seconds.
 # Route large PDFs there before entering the unbounded parser; the ordinary
-# extractor remains the no-Docker path for small files and as a fallback when
-# the toolbox is unavailable.
+# extractor remains an alternative for small files. The production CLI runs
+# it in the offline worker too; missing Docker never enables a host fallback.
 LARGE_PDF_POPPLER_BYTES = 2 * 1024 * 1024
 
 # What lets an extraction past the loss guard on ratio alone. Two fenced blocks
@@ -198,8 +198,9 @@ def acquire(key, entry, store, fetcher, config, taken_slugs=(), refetch=False,
         return _link_only(key, url, entry, kind, taken_slugs,
                           "media policy: %s is read at its own URL, not mirrored" % kind)
 
-    if kind == "repo":
-        return _repository(key, url, entry, store, taken_slugs, override=override)
+    from . import repo as repo_module
+    if kind == "repo" or (repo_module.target(url) and not github.route(url)):
+        return _repository(key, url, entry, store, taken_slugs, override=override, refetch=refetch)
 
     # A GitHub advisory, file or issue page is a JavaScript shell: these were
     # reaching the extractor as 139 to 264 characters and failing the content
@@ -568,12 +569,19 @@ def _github(key, url, entry, kind, store, fetcher, taken_slugs, override=None):
     })
 
 
-def _repository(key, url, entry, store, taken_slugs, override=None):
+def _repository(key, url, entry, store, taken_slugs, override=None, refetch=False):
     """A repository is a package: pinned commit, documentation only, no execution."""
     from . import repo as repo_module
+    from . import isolation
+    import json
 
     try:
-        package = repo_module.acquire(url, store.root)
+        raw_sha = entry.get("raw_sha256")
+        if entry.get("repository_capture") == 1 and raw_sha and store.has(raw_sha) and not refetch:
+            package = isolation.call("repository_package", store.get(raw_sha), url)
+        else:
+            package = repo_module.acquire(url, store.root)
+            raw_sha = store.put_text(json.dumps(isolation.encode(package), ensure_ascii=True))
     except Exception as error:
         return Acquired(key, "failed",
                         reason="repository: %s" % str(error)[:160])
@@ -591,12 +599,12 @@ def _repository(key, url, entry, store, taken_slugs, override=None):
     content_sha = store.put_text(cleaned.text)
     health = entry.get("health") or {}
     title = slugs.readable_title(
-        entry.get("cited_title") or health.get("title") or package.full_name, url)
+        entry.get("title") or entry.get("cited_title") or health.get("title") or package.full_name, url)
     return Acquired(key, "stored", {
         "slug": slugs.pinned(entry.get("slug")) or slugs.build(package.full_name, "github", "",
                                                  taken=taken_slugs),
         "title": title,
-        "authors": [package.owner],
+        "authors": entry.get("authors") or [package.owner],
         "publisher": "GitHub",
         "published": "",
         "licence": "see the repository",
@@ -604,10 +612,12 @@ def _repository(key, url, entry, store, taken_slugs, override=None):
         "original_url": url,
         "canonical_url": "",
         "also_at": entry.get("also_at") or [],
-        "retrieved_kind": "git",
+        "retrieved_kind": "github-repository-api",
         "retrieved_from": url,
         "snapshot": "",
         "commit": package.commit,
+        "raw_sha256": raw_sha,
+        "repository_capture": 1,
         "content_sha256": content_sha,
         "cited_by": entry.get("cited_by") or [],
         "quality": {"chars": len(cleaned.text), "documents": len(package.materials)},

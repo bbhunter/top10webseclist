@@ -36,6 +36,7 @@ PROMPT_VERSION = 1
 # bury an injection past the point of attention, or run up unbounded cost.
 HEAD_CHARS = 6000
 TAIL_CHARS = 2000
+MAX_PROMPT_CHARS = 24000
 
 
 def new_nonce():
@@ -51,7 +52,12 @@ def bound(text):
         return text
     blocks = re.findall(r"^```.*?^```", text, re.MULTILINE | re.DOTALL)
     kept = [text[:HEAD_CHARS], "\n\n[... middle omitted for length ...]\n\n"]
-    kept.extend(blocks[:20])
+    budget = MAX_PROMPT_CHARS - HEAD_CHARS - TAIL_CHARS - 200
+    for block in blocks[:20]:
+        if budget <= 0:
+            break
+        kept.append(block[:budget])
+        budget -= min(len(block), budget)
     kept.append("\n\n" + text[-TAIL_CHARS:])
     return "".join(kept)
 
@@ -81,6 +87,8 @@ def parse_verdict(raw, content_sha256="", model=""):
     import json
 
     try:
+        if not isinstance(raw, str) or len(raw) > 16000:
+            raise ValueError("oversized or non-text verdict")
         data = json.loads(_strip_fence(raw))
         if not isinstance(data, dict):
             raise ValueError("not an object")
@@ -93,6 +101,12 @@ def parse_verdict(raw, content_sha256="", model=""):
     if verdict is None or action is None:
         return _fallback("verdict or recommended_action was outside the closed set",
                          content_sha256, model)
+    if type(data.get("is_same_document")) is not bool:
+        return _fallback("is_same_document must be a JSON boolean", content_sha256, model)
+    if verdict == "valid" and (not data["is_same_document"] or action != "accept"
+                                or data.get("supports_citation") != "yes"
+                                or data.get("topic_match") not in ("high", "medium")):
+        return _fallback("contradictory acceptance fields", content_sha256, model)
 
     return {
         "verdict": verdict,

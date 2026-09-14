@@ -32,7 +32,12 @@ REPO = os.path.dirname(HERE)
 # refslib owns the browser: one hardened profile per capture, closed over CDP.
 sys.path.insert(0, os.path.join(HERE, "references"))
 
-from refslib.browser import BROWSER_ENV, Ladder, find_browser  # noqa: E402
+from refslib import isolation, toolbox  # noqa: E402
+
+
+class Ladder:
+    def render_url_pdf(self, url, **kwargs):
+        return isolation.call("listing_pdf", url, **kwargs)
 
 DEFAULT_MANIFEST = os.path.join(HERE, "sources.json")
 DEFAULT_OUTDIR = os.path.join(REPO, "original-listings")
@@ -226,12 +231,9 @@ def now_utc():
 
 
 def pdf_text(path):
-    """(page_count, text) for a PDF, or raise ImportError without pypdf."""
-    from pypdf import PdfReader
-
-    reader = PdfReader(path)
-    return len(reader.pages), "\n".join(
-        (page.extract_text() or "") for page in reader.pages)
+    """(page_count, text) for a PDF, from the offline sandbox."""
+    with open(path, "rb") as handle:
+        return isolation.call("pdf_info", handle.read(64 * 1024 * 1024 + 1))
 
 
 def norm(text):
@@ -248,7 +250,7 @@ def pdf_info(path, expect=()):
     try:
         pages, text = pdf_text(path)
     except ImportError:
-        return {"pages": None, "text": None, "note": "pypdf not installed"}
+        return {"pages": None, "text": None, "note": "sandbox unavailable"}
     except Exception as error:  # a damaged PDF must not stop a batch
         return {"pages": None, "text": None, "note": "unreadable: %s" % error}
     haystack = norm(text)
@@ -258,12 +260,8 @@ def pdf_info(path, expect=()):
     return info
 
 
-def have_pypdf():
-    try:
-        import pypdf  # noqa: F401
-        return True
-    except ImportError:
-        return False
+def have_pdf_reader():
+    return toolbox.available()
 
 
 # --- capture ----------------------------------------------------------------
@@ -305,12 +303,8 @@ def write_pdf(dest, payload):
 
 
 def require_browser():
-    browser = find_browser()
-    if not browser:
-        die("no Chrome, Chromium or Edge found. Install one, or set %s to its "
-            "path. `python tools/capture_pdf.py doctor` shows what was checked."
-            % BROWSER_ENV)
-    return Ladder(browser=browser)
+    toolbox.ensure_image()
+    return Ladder()
 
 
 def load_report():
@@ -411,10 +405,9 @@ def cmd_url(args):
 
 def cmd_verify(args):
     manifest = load_manifest(args.manifest)
-    if not have_pypdf():
-        print("note: pypdf is not installed, so page counts and content "
-              "assertions are skipped.\n      pip install -r "
-              "tools/requirements.txt\n")
+    if not have_pdf_reader():
+        print("note: the sandbox is unavailable, so page counts and content "
+              "assertions cannot run. Start Docker and retry.\n")
     problems = 0
     print("%-30s %9s %6s %8s  status" % ("file", "bytes", "pages", "text"))
     for entry in select(manifest["entries"], args.only, args.kind):
@@ -429,7 +422,7 @@ def cmd_verify(args):
         found = []
         if size < 20000:
             found.append("tiny-file")
-        # Only judge text when pypdf could actually read it.
+        # Only judge text when the sandbox could actually read it.
         if info["text"] is not None and info["text"] < 800:
             found.append("little-text")
         if info.get("expect_missing"):
@@ -444,7 +437,7 @@ def cmd_verify(args):
 
 
 def cmd_text(args):
-    if not have_pypdf():
+    if not have_pdf_reader():
         die("pypdf is required to read a PDF back: "
             "pip install -r tools/requirements.txt")
     pages, text = pdf_text(os.path.abspath(args.pdf))
@@ -473,19 +466,11 @@ def cmd_list(args):
 def cmd_doctor(args):
     """Say whether this machine can run a capture, and what it would use."""
     ok = True
-    browser = find_browser()
-    override = os.environ.get(BROWSER_ENV)
-    print("browser  : %s" % (browser or "NOT FOUND"))
-    if override:
-        print("           (from %s=%s)" % (BROWSER_ENV, override))
+    browser = toolbox.available()
+    print("container: %s" % ("available" if browser else "NOT AVAILABLE"))
     if not browser:
         ok = False
-        print("           install Chrome, Chromium or Edge, or set %s"
-              % BROWSER_ENV)
-
-    print("pypdf    : %s" % ("installed" if have_pypdf() else
-                             "missing (verify/text degrade; "
-                             "pip install -r tools/requirements.txt)"))
+        print("           Docker is required; no host browser/parser fallback")
     print("python   : %s" % sys.version.split()[0])
 
     try:
@@ -510,7 +495,7 @@ def cmd_doctor(args):
         dest = os.path.join(tempfile.mkdtemp(prefix="capture-smoke-"),
                             "smoke.pdf")
         print("\nsmoke    : capturing https://example.com ...")
-        stats = capture_one(Ladder(browser=browser), "https://example.com", dest,
+        stats = capture_one(Ladder(), "https://example.com", dest,
                             scale=0.7, settle=1.0, retries=1)
         if os.path.exists(dest):
             print("smoke    : OK %s bytes, http %s -> %s"

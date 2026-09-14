@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-14T09:33:11+00:00",
+ "updated": "2026-09-14T11:53:53+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -96141,10 +96141,11 @@
     "2025.md:102"
    ],
    "cited_title": "Source code",
+   "commit": "8b81a0ed6282c35ec55bb03c373a058af7684df2",
    "content_gap": "",
-   "content_sha256": "c6c12a4f4baed7791a851d872e1a1460431864e55fd30f89686d7320897a938a",
+   "content_sha256": "b6efac9009854b4f06124da9fc614bd937b45836c75e55b654a83bc3abdfbffa",
    "decision": {
-    "at": "2026-09-09",
+    "at": "2026-09-14",
     "authors": [
      "Senapati Diwangkara",
      "Yinzhi Cao"
@@ -96159,75 +96160,41 @@
    "depth_reason": "default",
    "first_seen_utc": "2026-09-09T23:35:42+00:00",
    "grade": "research",
-   "kind": "code",
+   "kind": "repo",
    "language": "en",
-   "licence": "unknown",
+   "licence": "see the repository",
    "publisher": "GitHub",
-   "raw_sha256": "6c5d27915fe6d9827c64251ecf71683bf9c7fd34dae323b2a4f3dd4fd1c13155",
+   "raw_sha256": "16d802d11a9d3bbd17adaa3934a5863ab726fb10f3e9bdc143c768404ed4537a",
+   "repository_capture": 1,
    "slug": "github-transparent-taint-style-vulnerability-detection-generic-single-page-code",
    "spellings": [
     "https://github.com/diwangs/transparent-ae/tree/v1.0.0"
    ],
    "steps": {
     "acquire": {
-     "content_sha256": "c6c12a4f4baed7791a851d872e1a1460431864e55fd30f89686d7320897a938a",
-     "extraction": {
-      "candidates": [
-       {
-        "chars": 5294,
-        "code_blocks": 0,
-        "headings": 10,
-        "images": 0,
-        "links": 25,
-        "name": "precision",
-        "tables": 0,
-        "words": 551
-       },
-       {
-        "chars": 5294,
-        "code_blocks": 0,
-        "headings": 10,
-        "images": 0,
-        "links": 25,
-        "name": "recall",
-        "tables": 0,
-        "words": 551
-       },
-       {
-        "chars": 5346,
-        "code_blocks": 0,
-        "headings": 10,
-        "images": 0,
-        "links": 25,
-        "name": "raw",
-        "tables": 0,
-        "words": 558
-       }
-      ],
-      "chosen": "precision",
-      "why": "precision kept the code blocks and most of the text"
-     },
-     "raw_sha256": "6c5d27915fe6d9827c64251ecf71683bf9c7fd34dae323b2a4f3dd4fd1c13155",
+     "content_sha256": "b6efac9009854b4f06124da9fc614bd937b45836c75e55b654a83bc3abdfbffa",
+     "extraction": null,
+     "raw_sha256": "16d802d11a9d3bbd17adaa3934a5863ab726fb10f3e9bdc143c768404ed4537a",
      "reason": "",
      "result": "stored",
      "slug": "github-transparent-taint-style-vulnerability-detection-generic-single-page-code",
-     "utc": "2026-09-09T23:35:51+00:00"
+     "utc": "2026-09-14T11:52:47+00:00"
     },
     "pdf": {
-     "bytes": 100232,
+     "bytes": 85820,
      "file": "archived-references/pdf/2025/github-transparent-taint-style-vulnerability-detection-generic-single-page-code.pdf",
      "renderer": 3,
      "result": "rendered",
      "source": "markdown",
-     "utc": "2026-09-09T23:35:56+00:00"
+     "utc": "2026-09-14T11:53:53+00:00"
     },
     "render": {
-     "chars": 7557,
+     "chars": 6713,
      "depth": "full",
      "file": "archived-references/md/2025/github-transparent-taint-style-vulnerability-detection-generic-single-page-code.md",
      "result": "ok",
      "translation_file": "",
-     "utc": "2026-09-09T23:35:51+00:00"
+     "utc": "2026-09-14T11:52:48+00:00"
     }
    },
    "title": "TranSPArent: Taint-style Vulnerability Detection in Generic Single Page Applications through Automated Framework Abstraction (Source code)"

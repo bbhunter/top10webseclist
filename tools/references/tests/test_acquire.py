@@ -120,7 +120,12 @@ class TestDocumentConversion(unittest.TestCase):
         """A scan carries pictures of words. Inventing text for it would be
         worse than reporting it, so it goes on the list the maintainer reads."""
         fetcher = FakeFetcher(body=b"%PDF-1.4\nno streams here\n%%EOF")
-        result = acquire.acquire("k", self.entry("whitepaper"), self.store, fetcher, CONFIG)
+        # A malformed fixture alone cannot establish that a real PDF is a scan.
+        # Exercise the branch where Poppler confirms the text layer is absent.
+        from unittest import mock
+        from refslib import toolbox
+        with mock.patch.object(toolbox, "pdf_text", side_effect=toolbox.Unavailable("pdftotext produced no text")):
+            result = acquire.acquire("k", self.entry("whitepaper"), self.store, fetcher, CONFIG)
         self.assertEqual(result.status, "failed")
         self.assertIn("image-only", result.reason)
         self.assertIn("OCR", result.reason)

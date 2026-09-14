@@ -4097,12 +4097,18 @@ function markdownDocument(markdown) {
   for (let index = 0; index < lines.length; index++) {
     const line = lines[index];
     const next = lines[index + 1] || "";
-    if (/^```/.test(line.trim())) {
+    const openingFence = line.trim().match(/^(`{3,}|~{3,})(.*)$/);
+    if (openingFence) {
       flushParagraph();
-      const language = line.trim().slice(3).replace(/[^a-z0-9_-]/gi, "");
+      const fence = openingFence[1];
+      const language = openingFence[2].replace(/[^a-z0-9_-]/gi, "");
       const code = [];
       index++;
-      while (index < lines.length && !/^```/.test(lines[index].trim())) code.push(lines[index++]);
+      while (index < lines.length) {
+        const closing = lines[index].trim().match(/^(`+|~+)$/);
+        if (closing && closing[1][0] === fence[0] && closing[1].length >= fence.length) break;
+        code.push(lines[index++]);
+      }
       const source = code.join("\n");
       const diagrams = ARCHIVE_DIAGRAMS;
       const diagramPath = language === "mermaid" && Object.hasOwn(diagrams, source.trim())

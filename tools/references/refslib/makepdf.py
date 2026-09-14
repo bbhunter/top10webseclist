@@ -101,7 +101,7 @@ img { display: block; max-width: 100%; margin: .8em auto; page-break-inside: avo
 .src-note { color: #666; font-size: 9pt; margin-top: 2em; border-top: 1px solid #eee; padding-top: .6em; }
 """
 
-_FENCE = re.compile(r"^\s*```")
+_FENCE = re.compile(r"^\s*(`{3,}|~{3,})(.*)$")
 _ATX = re.compile(r"^(#{1,6})\s+(.*?)\s*#*\s*$")
 _HR = re.compile(r"^\s*([-*_])(?:\s*\1){2,}\s*$")
 _UL = re.compile(r"^(\s*)[-*+]\s+(.*)$")
@@ -223,13 +223,15 @@ def markdown_to_html_body(md_text, image_source=None):
         line = lines[index]
 
         # Fenced code block.
-        if _FENCE.match(line):
-            fence = line.strip()[:3]
+        opening = _FENCE.match(line)
+        if opening:
+            fence = opening.group(1)
             # The fence's own label, which is the only hint about the language.
-            language = line.strip()[3:].strip()
+            language = opening.group(2).strip()
             body = []
             index += 1
-            while index < total and not lines[index].strip().startswith(fence):
+            closing = re.compile(r"^\s*" + re.escape(fence[0]) + r"{%d,}\s*$" % len(fence))
+            while index < total and not closing.match(lines[index]):
                 body.append(lines[index])
                 index += 1
             index += 1  # consume the closing fence (or run off the end)

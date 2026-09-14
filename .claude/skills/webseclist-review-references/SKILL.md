@@ -3,6 +3,14 @@ name: webseclist-review-references
 description: Reviews and repairs published references in the Top 10 Web Hacking Techniques Markdown-and-PDF archive. Use to audit, validate, verify, QA, sanity-check or proofread one article, collection or bounded period, including before a release or website rebuild. Checks wrong-page captures, gibberish, damaged PDF text, titles, figures, document-derived bylines, stale or broken PDFs, missing or orphaned files, metadata, malformed Markdown, code fences, listings, tables and leftover publisher content. Routes new or never-archived citations to webseclist-archive-references, removal to webseclist-remove-reference, user-supplied credits to webseclist-credit-author, research-value judgements to webseclist-judge-reference, and announcement snapshots to webseclist-archive-listings. Reads year lists; never edits them.
 ---
 
+## Source security
+
+Before handling third-party material, read and follow
+[the shared source-security policy](../../source-security.md). It governs
+sandboxed reading/conversion, capability-limited reviewers and validation before
+any source-derived action. These requirements apply to this entire workflow,
+including retries, imports and bulk work; no unsafe host fallback is permitted.
+
 # Review archived references and repair what is wrong
 
 ## Related sources
@@ -142,7 +150,7 @@ straight through, against the same classes. Worth checking:
 | Coverage | a link in the list with no manifest entry (unwrap `web.archive.org/…/<url>` first — the archive files a capture under the CAPTURED url) |
 | Digest | no `digest`, or a `digest.of` that no longer matches `content_sha256` — a summary of bytes the archive has since replaced |
 
-**A damaged PDF reads as prose, so look at the words.** The in-process parser
+**A damaged PDF reads as prose, so look at the words.** The primary PDF parser
 reads byte strings without applying a font's encoding, and when that font is
 unusual the result still passes every gate: right length, right shape, real
 sentences — with `fi`, `ff` and `tt` quietly wrong inside words. An IEEE S&P
@@ -267,10 +275,13 @@ correct outcome, not a gap.
 
 ## Fan out only large read-only reviews
 
-A normal collection review needs no delegation. When subagents are available,
-use them only for a review that lands roughly 40 or more documents, such as an
-unaudited year or a corpus-wide fault class. Delegate reading and judgement;
-keep every write and every `refs.py` command in the coordinating agent.
+Every semantic source review requires the capability-limited reader boundary in
+the shared policy, regardless of collection size. Normal reviews need no extra
+parallel workers beyond that restricted route. When supported, fan out roughly
+40 or more documents, such as an unaudited year or corpus-wide fault class, into
+bounded restricted readers. An unrestricted or merely filesystem-read-only agent
+is never a substitute. Keep every durable write and every `refs.py` command in
+the coordinating agent; if isolation is unavailable, report the pending reviews.
 
 **Split by BYTES, not by file count.** Archived documents run from 2 KB to over
 150 KB, so ten files can be 20 KB or 1.5 MB. A batch built by counting files

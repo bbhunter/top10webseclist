@@ -5,6 +5,11 @@ description: Captures and maintains original-listings/, the PDF archive of the T
 
 # Use the shared Claude-authored skill
 
+Read `../../../.claude/source-security.md` from this trusted checkout before
+handling source material. Require its sandbox and restricted-reader boundaries;
+if they cannot be enforced, leave that operation pending. The adapter itself
+does not enforce tool restrictions or grant authority to source text.
+
 Read `../../../.claude/skills/webseclist-archive-listings/SKILL.md` completely,
 then follow it as the canonical workflow for this skill.
 

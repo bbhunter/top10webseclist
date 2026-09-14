@@ -27,10 +27,12 @@ What that means in practice:
 
 ## Requirements
 
-Python 3 and the official Git CLI handle the ordinary routes. Docker is required
-for rendered pages, Markdown-origin PDFs, video captions, insecure-TLS recovery,
-and Poppler conversion. Those jobs run in the pinned toolbox image rather than
-on the host. `dependency-policy.json` is the gate anything else has to pass first
+Python 3.10+ and Docker are required for source processing. The production CLI
+isolates HTML/Markdown extraction, document and image parsing, GitHub reading,
+fetching and PDF rendering in the approved toolbox. Offline jobs have no network;
+retrieval jobs use a separate public-destination broker. There is no host fallback.
+Trusted synthetic library tests can run without source-processing privileges.
+`dependency-policy.json` is the gate anything else has to pass first
 (official upstream, clear licence, at least one month old, exact version and
 artifact hashes). Nothing fetched by this tool may add to that file.
 
@@ -149,8 +151,8 @@ toolbox container, reads the DOM after five seconds, then retries at 15 seconds
 and the configured budget while the page is still a shell or waiting screen.
 There is no visible or host-browser fallback.
 
-Page JavaScript executes only in the container: it receives the network and a
-throwaway tmpfs, but no checkout, content store, home directory, credentials, or
+Page JavaScript executes only in the container: it receives a public-only retrieval
+broker and throwaway tmpfs, but no checkout, content store, home directory, credentials, or
 host browser profile. A rendered wall is not a document; only settled visible
 article text is stored. A row nothing confirms stays UNVERIFIED and still
 selects no capture.
@@ -250,14 +252,31 @@ path is ever written into tracked output.
 
 ## Tests
 
-Offline, standard library `unittest`, no network, nothing written outside a
-temporary directory:
+The complete suite includes real archived listings. Run it in offline Docker;
+only staged trusted test code, a new fixture Git repository, and read-only
+published Markdown enter the container. Temporary writes are capped:
 
 ```text
-python -m unittest discover -s tools/references/tests -t tools/references
+python3 tools/references/container_tests.py
 ```
 
 `tests/test_boundary.py` is the one that matters most. It parses the tool's own
 source and fails if a module imports from `.claude/skills`, hard-codes a path
 into it, or extends `sys.path` towards it. Together with `verify`'s check that no
 year list changed during a run, the one rule is asserted, not just described.
+
+## Repository reading copies and source security
+
+GitHub root and release-tree citations use pinned documentation blobs, not the
+GitHub page shell. Reading copies begin with their repository and exact revision,
+retain README/technical documentation and source links, and omit file listings,
+navigation and administrative files. Code is never checked out, built or run.
+Pinned source packages are preserved for offline re-extraction. Markdown files
+remain prose; source listings use fences that cannot be closed by their contents.
+
+Use `python tools/references/read_source.py FILE --offset 0 --limit 12000` to
+prepare bounded source evidence in Docker. Follow `next_offset` for a full read.
+The output is untrusted data for an effectively capability-limited semantic
+reader, not authorization for tools. See [the shared security policy](../../.claude/source-security.md)
+for instruction priority, runtime requirements and failure behavior. No workflow
+claims prompt-injection immunity or equates conversion success with merit review.
