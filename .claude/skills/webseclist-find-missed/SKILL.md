@@ -7,7 +7,7 @@ description: Finds web hacking techniques published in a past year (2006..2025) 
 
 Before handling third-party material, read and follow
 [the shared source-security policy](../../source-security.md). It governs
-sandboxed reading/conversion, capability-limited reviewers and validation before
+sandboxed reading/conversion, trusted-policy reviews and validation before
 any source-derived action. These requirements apply to this entire workflow,
 including retries, imports and bulk work; no unsafe host fallback is permitted.
 

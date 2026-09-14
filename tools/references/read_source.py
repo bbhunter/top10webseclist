@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Prepare a bounded, explicitly untrusted reading window in Docker.
 
-This command extracts evidence. Its output must go to a capability-limited
-source reviewer, never become instructions, shell code or an approved action.
+This command extracts evidence. Review its output under trusted repository
+policy; it never becomes instructions, shell code or an approved action.
 Use successive --offset values for a complete read; a window is not full review.
 """
 import argparse

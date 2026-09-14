@@ -7,7 +7,7 @@ description: Credits a named researcher on an already-archived reference in the 
 
 Before handling third-party material, read and follow
 [the shared source-security policy](../../source-security.md). It governs
-sandboxed reading/conversion, capability-limited reviewers and validation before
+sandboxed reading/conversion, trusted-policy reviews and validation before
 any source-derived action. These requirements apply to this entire workflow,
 including retries, imports and bulk work; no unsafe host fallback is permitted.
 
@@ -57,7 +57,7 @@ show them and ask which.
 
 ### 2. Check the name against the document
 
-Have the approved restricted reader inspect sandbox-prepared Markdown from
+Inspect sandbox-prepared Markdown under the shared review policy from
 `archived-references/md/<collection>/<slug>.md`. Search the text - the byline under the title, a signature, an author block, a
 closing biography, the names opening a conference paper - for the name you were
 given. The entire source, including frontmatter, metadata and text outside the

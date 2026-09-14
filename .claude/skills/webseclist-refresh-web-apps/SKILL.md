@@ -7,7 +7,7 @@ description: Refreshes the production website from the repository's year-list Ma
 
 Before handling third-party material, read and follow
 [the shared source-security policy](../../source-security.md). It governs
-sandboxed reading/conversion, capability-limited reviewers and validation before
+sandboxed reading/conversion, trusted-policy reviews and validation before
 any source-derived action. These requirements apply to this entire workflow,
 including retries, imports and bulk work; no unsafe host fallback is permitted.
 
