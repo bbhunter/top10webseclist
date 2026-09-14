@@ -4,6 +4,34 @@
 Hacking Techniques archive. Generated collection shards keep it synchronized with the
 repository's real year lists, preliminary collection registry, and reference manifest.
 
+One list bullet represents one research contribution. Its first link establishes
+the story identity; a reviewed source policy can choose a fuller main reading
+source. Additional labelled sources are companions (for example, an advisory,
+independent analysis, slides or a follow-up). Prefer the fullest reliable account
+as the main source, preserve each author's credit, and describe what each companion
+adds. Sharing a product or vulnerability name alone does not make distinct research
+contributions duplicates.
+
+Every theme's record panel includes **Sources and further reading**, with each
+source's own summary, author, publisher, publication date, topics, original link
+and available Markdown/PDF copies. Reader and PDF toolbars return to these details.
+Companion document share links retain the selected source. Research Desk and Time
+Machine also expose a **Sources & details** action on each record.
+
+`tools/references/related-sources.json` maintains source relationships without
+rewriting historical lists. `python3 tools/references/related_sources.py build`
+generates complete `archived-references/source-groups.json` coverage from those
+decisions, listed companions and confirmed recordings. `build-data.mjs` generates
+`data/sources/<collection>.json` from these groups and public archive metadata. These versioned shards load only when details are requested; the main
+collection shards retain document links for use if metadata loading fails. The
+smoke test checks source matching, checksums, public field allowlisting, and budgets
+of 500 KB per source shard and 4 MB in total. Scores and private review data are
+never included. Run the companion navigation checks against the local preview:
+
+```bash
+PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs node website/sources-test.mjs
+```
+
 ## Run it
 
 For a complete local preview, including the phone PDF viewer:
@@ -89,7 +117,7 @@ still needs no JavaScript dependencies.
 ### Regression coverage for future website changes
 
 With `node website/preview.mjs` running and the optional Playwright/axe dependencies
-installed as above, run all nine suites with one command:
+installed as above, run all ten suites with one command:
 
 ```bash
 PLAYWRIGHT_MODULE=/tmp/websec-browser-tests/node_modules/playwright/index.mjs AXE_SOURCE=/tmp/websec-browser-tests/node_modules/axe-core/axe.min.js node website/regression-test.mjs
@@ -142,6 +170,7 @@ The generated `data/diagrams.json` index loads only when opening Markdown with a
 Regenerate or check the progressive data with:
 
 ```bash
+python3 tools/references/related_sources.py build
 node website/build-data.mjs
 node website/build-data.mjs --check
 ```

@@ -5,6 +5,28 @@
 
 # References that are archived but unjudged
 
+## Related-source capture repairs — 14 September 2026
+
+Both documents received full Markdown reviews, source-supported attribution and
+digests. The reported conversion faults were repaired: AutoFail now includes all
+21 original page images alongside searchable text, and the project overview has
+a reconstructed attack table with named vendor columns. The AutoFail PDF remains
+the publisher's original. A final independent review of the repaired editions,
+including all rendered pages, remains pending.
+
+- [AutoFail paper](md/2026-ai/autofail-breaking-web-boundaries-using-androids-autofill-framework.md)
+- [Zero Knowledge (About) Encryption project](md/2026-ai/zkae-io-zero-knowledge-about-encryption.md)
+
+## wp2shell citation refresh — 13 September 2026
+
+The current technical article and updated companion page have preserved text,
+source-supported credits and digests. A dedicated semantic capture-validation pass
+remains pending; the research inclusion review is complete. The article’s SVG
+diagrams remain outbound links under the archive’s image policy.
+
+- [Full technical article](md/2026-ai/searchlight-cyber-exploit-brokers-pay-500-000-wordpress-rce-i-found-one-gpt5-25.md)
+- [Checker and mitigations](md/2026-ai/searchlight-cyber-wp2shell-pre-authentication-rce-wordpress-core.md)
+
 ## References added from issue 11 — 12 September 2026
 
 These six sources have preserved text, source-supported credits and digests.

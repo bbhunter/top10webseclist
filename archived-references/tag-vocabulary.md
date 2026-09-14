@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-202 tags, across 1885 documents that carry a digest.
+202 tags, across 1888 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -72,13 +72,13 @@ JSON.
 | `activex` | 13 | — |
 | `ai-agent` | 60 | — |
 | `algorithmic-complexity` | 36 | A04:2021 |
-| `android` | 34 | — |
+| `android` | 35 | — |
 | `angular` | 3 | — |
 | `argument-injection` | 2 | A03:2021 |
 | `aspnet` | 52 | — |
-| `attack-chain` | 221 | — |
+| `attack-chain` | 222 | — |
 | `auth-bypass` | 341 | A01:2021 |
-| `autofill` | 3 | — |
+| `autofill` | 4 | — |
 | `aws` | 36 | — |
 | `azure` | 14 | — |
 | `blind-xss` | 1 | A03:2021 |
@@ -103,7 +103,7 @@ JSON.
 | `content-type` | 42 | A05:2021 |
 | `cookie` | 156 | A07:2021 |
 | `cors` | 29 | A01:2021 |
-| `crypto` | 13 | A02:2021 |
+| `crypto` | 14 | A02:2021 |
 | `csp` | 68 | A05:2021 |
 | `csrf` | 152 | A01:2021 |
 | `css` | 74 | — |
@@ -180,7 +180,7 @@ JSON.
 | `measurement-study` | 248 | — |
 | `memory-corruption` | 5 | — |
 | `mime` | 42 | A05:2021 |
-| `mitigation` | 181 | — |
+| `mitigation` | 182 | — |
 | `mongodb` | 6 | — |
 | `mssql` | 11 | — |
 | `mutation-xss` | 12 | A03:2021 |
@@ -194,7 +194,7 @@ JSON.
 | `openid` | 34 | A07:2021 |
 | `parser-differential` | 198 | — |
 | `passkeys` | 12 | A07:2021 |
-| `password-manager` | 3 | — |
+| `password-manager` | 5 | — |
 | `path-traversal` | 75 | A01:2021 |
 | `pdf` | 26 | — |
 | `perl` | 4 | — |
@@ -212,29 +212,29 @@ JSON.
 | `race-condition` | 30 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 303 | — |
+| `rce` | 304 | — |
 | `react` | 6 | — |
 | `redis` | 5 | — |
 | `redos` | 3 | — |
 | `request-smuggling` | 51 | — |
 | `response-splitting` | 19 | A03:2021 |
-| `rest-api` | 52 | — |
+| `rest-api` | 53 | — |
 | `reverse-proxy` | 62 | — |
 | `ruby` | 35 | — |
 | `rust` | 3 | — |
-| `same-origin-policy` | 187 | A01:2021 |
+| `same-origin-policy` | 188 | A01:2021 |
 | `saml` | 18 | A07:2021 |
 | `sandbox-escape` | 78 | — |
 | `sanitizer-bypass` | 89 | A05:2021 |
 | `service-worker` | 14 | — |
 | `session-fixation` | 39 | A07:2021 |
-| `side-channel` | 218 | — |
+| `side-channel` | 219 | — |
 | `smb` | 1 | — |
 | `smtp` | 19 | — |
 | `smuggling` | 15 | — |
 | `snmp` | 2 | — |
 | `soap` | 14 | — |
-| `sop-bypass` | 200 | A01:2021 |
+| `sop-bypass` | 201 | A01:2021 |
 | `spring` | 18 | — |
 | `sqli` | 70 | A03:2021 |
 | `sso` | 69 | A07:2021 |
@@ -265,7 +265,7 @@ JSON.
 | `webauthn` | 13 | A07:2021 |
 | `webrtc` | 11 | — |
 | `websocket` | 12 | — |
-| `wordpress` | 21 | — |
+| `wordpress` | 22 | — |
 | `xsleak` | 76 | — |
 | `xss` | 415 | A03:2021 |
 | `xxe` | 34 | A03:2021 |

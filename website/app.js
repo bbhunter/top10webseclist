@@ -442,6 +442,7 @@ function documentShareUrl(item, format = "artifact") {
   url.search = "";
   if (format === "reader" && item?.id) url.searchParams.set("reader", item.id);
   if (format === "pdf" && item?.id) url.searchParams.set("pdf", item.id);
+  if (["reader", "pdf"].includes(format) && (item?.sourceId || Number.isInteger(item?.sourceIndex))) url.searchParams.set("source", item.sourceId || String(item.sourceIndex));
   if (format === "results") {
     const year = /^original-listings\/([0-9-]+)-(?:top10|nominees-and-top10)\.pdf$/i.exec(state.pdfPath)?.[1];
     if (year) url.searchParams.set("results", year);
@@ -458,7 +459,7 @@ function syncDocumentUrl(item, format) {
 
 function clearDocumentUrl() {
   const url = new URL(location.href);
-  ["reader", "pdf", "results", "theme"].forEach((key) => url.searchParams.delete(key));
+  ["reader", "pdf", "results", "theme", "source"].forEach((key) => url.searchParams.delete(key));
   history.replaceState(history.state, "", url.href);
 }
 
@@ -614,7 +615,7 @@ function archivePathsFor(record) {
   };
 }
 
-function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecordFor(year)) {
+function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecordFor(year), sourceGroups = {}) {
   const preliminary = yearRecord.status === "preliminary";
   let section = preliminary ? "candidate" : "other";
   let position = 0;
@@ -666,6 +667,21 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
 
     const lead = compact(body.slice(0, firstIndex)).replace(/^[-* ]+|[-*: ]+$/g, "");
     const title = lead.length >= 4 ? lead : links[0].label;
+    const group = sourceGroups[`${year}.md:${lineIndex + 1}`];
+    if (group) {
+      const listed = new Set(links.map(link => normalizeUrl(link.url)));
+      const members = [...group.sources].sort((a, b) => Number(b.id === group.main) - Number(a.id === group.main));
+      links.length = 0;
+      for (const source of members) {
+        const url = safeExternalUrl(source.url);
+        if (!url) continue;
+        const record = recordLookup.get(normalizeUrl(url));
+        const preserve = source.preservation !== "link-only";
+        links.push({ label: source.label, url, record,
+          ...archivePathsFor(preserve ? record : null), source,
+          listed: listed.has(normalizeUrl(url)) || source.id === group.main });
+      }
+    }
     const originalUrl = links[0].url;
     const excluded = /excluded|held out/i.test(note) || /excluded|held out/i.test(body.slice(firstIndex));
     const record = links[0].record || links.find((link) => link.record)?.record;
@@ -699,11 +715,11 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
     // tell them apart they render as three identical buttons, so only the best
     // is carried. They arrive ranked, so the best is the first.
     const anyConfirmed = links.some((link) =>
-      (link.record?.videos || []).some((video) => video.confidence === "confirmed"));
+      (link.record?.videos || []).some((video) => video.confidence === "confirmed" && !video.date_note));
     for (const link of links) {
       for (const video of link.record?.videos || []) {
         const url = safeExternalUrl(video.url);
-        if (!url || seenVideos.has(url)) continue;
+        if (!url || seenVideos.has(url) || video.date_note) continue;
         if (video.confidence !== "confirmed" && (anyConfirmed || videos.length)) continue;
         seenVideos.add(url);
         videos.push({
@@ -728,6 +744,7 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       line: lineIndex + 1,
       title,
       originalUrl,
+      ...(group && normalizeUrl(group.identity) !== normalizeUrl(originalUrl) ? { identityUrl: group.identity } : {}),
       // An explicit allowlist: `record` is the whole manifest entry and must not
       // reach the shard. Translation keys are emitted only where they apply, so
       // the 72 translated references cost payload and the other 1,600 do not.
@@ -736,8 +753,12 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
         url: link.url,
         mdPath: link.mdPath,
         pdfPath: link.pdfPath,
+        details: sourceDetailsFor(link.record, link.source),
+        ...(link.source ? { sourceId: link.source.id, main: link.source.id === group.main, listed: link.listed } : {}),
+        ...(link.mdVersion ? { mdVersion: link.mdVersion } : {}),
+        ...(link.pdfVersion ? { pdfVersion: link.pdfVersion } : {}),
         ...(link.translated
-          ? { originalMdPath: link.originalMdPath, originalPdfPath: link.originalPdfPath, translated: true }
+          ? { originalMdPath: link.originalMdPath, originalPdfPath: link.originalPdfPath, originalPdfVersion: link.originalPdfVersion, translated: true }
           : {})
       })),
       note,
@@ -801,7 +822,7 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       // re-encoded copies they are printed into the PDF, so a picture the
       // reader cannot load has somewhere to send them. Emitted only where true,
       // for the same payload reason as the translation keys.
-      ...(pdfLink.record?.steps?.images?.result === "stored" ? { figuresInPdf: true } : {}),
+      ...(pdfLink.record?.steps?.images?.bytes > 0 ? { figuresInPdf: true } : {}),
       ...(originalMdPath || originalPdfPath
         ? { originalMdPath, originalPdfPath, originalPdfVersion, translated: true }
         : {}),
@@ -811,6 +832,101 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
   }
 
   return items;
+}
+
+// Public reading metadata only. Never serialize the manifest's evaluation or
+// acquisition internals into a source detail response.
+function sourceDetailsFor(record, source) {
+  if (!record && !source) return {};
+  record = record || {};
+  const details = {};
+  for (const key of ["title", "publisher", "published", "kind", "language"]) {
+    if (typeof record[key] === "string" && record[key]) details[key] = record[key];
+  }
+  if (record.authors?.length) details.authors = creditList(record.authors);
+  if (record.digest?.text) details.summary = record.digest.text;
+  if (record.digest?.tags?.length) details.tags = withOwaspCategories(record.digest.tags);
+  if (record.steps?.render?.utc) details.updated = record.steps.render.utc;
+  const alsoAt = (record.also_at || []).map(safeExternalUrl).filter(Boolean);
+  if (alsoAt.length) details.alsoAt = [...new Set(alsoAt)];
+  if (source) {
+    for (const key of ["title", "authors", "publisher", "published", "summary"]) {
+      if (!details[key] && source[key]) details[key] = source[key];
+    }
+    details.relationship = source.relation;
+    details.sourceKind = source.kind;
+    details.preservation = source.preservation;
+    if (source.reason) details.context = source.reason;
+    if (source.sequence) details.sequence = source.sequence;
+    if (source.channel) details.channel = source.channel;
+    if (source.seconds) details.minutes = Math.round(source.seconds / 60);
+  }
+  return details;
+}
+
+const sourceDetailRequests = new Map();
+const loadedSourceDetails = new Set();
+
+async function ensureSourceDetails(year) {
+  if (loadedSourceDetails.has(year)) return;
+  if (sourceDetailRequests.has(year)) return sourceDetailRequests.get(year);
+  const record = collectionSummaryFor(year);
+  if (!record?.sources || record.sources.file !== `data/sources/${year}.json`) return;
+  const request = (async () => {
+    await ensureCollection(year);
+    const response = await fetch(`${record.sources.file}?v=${encodeURIComponent(ARCHIVE_CATALOGUE.version)}`, { credentials: "same-origin", cache: "default" });
+    if (!response.ok) throw new Error(`Source details returned ${response.status}`);
+    const shard = await response.json();
+    const items = itemsForYear(year);
+    if (shard.schema !== 1 || shard.version !== ARCHIVE_CATALOGUE.version || shard.year !== year || !shard.items || typeof shard.items !== "object") throw new Error("Source details do not match this catalogue");
+    // Validate the whole response before applying any part of it.
+    for (const item of items) {
+      const sources = shard.items[item.id];
+      if (!Array.isArray(sources) || !sources.length || sources.length !== (item.sourceCount || item.links.length)
+        || sources.some(source => !safeExternalUrl(source?.url) || !/^source-[a-f0-9]{20}$/.test(source.sourceId) || !source.details || typeof source.details !== "object" || Array.isArray(source.details))
+        || new Set(sources.map(source => source.sourceId)).size !== sources.length
+        || sources.filter(source => source.main).length !== 1
+        || item.links.some(link => !sources.some(source => source.url === link.url))) throw new Error("Source details do not match this record");
+    }
+    for (const item of items) item.links = shard.items[item.id].map(source => ({
+      url: source.url, label: source.label, details: source.details,
+      sourceId: source.sourceId, main: source.main,
+      mdPath: safeArchivePath(source.mdPath, "md"), pdfPath: safeArchivePath(source.pdfPath, "pdf"),
+      mdVersion: source.mdVersion || "", pdfVersion: source.pdfVersion || "",
+      originalMdPath: safeArchivePath(source.originalMdPath, "md"), originalPdfPath: safeArchivePath(source.originalPdfPath, "pdf"),
+      originalPdfVersion: source.originalPdfVersion || "", translated: Boolean(source.translated)
+    })).sort((left, right) => Number(Boolean(right.main)) - Number(Boolean(left.main)));
+    loadedSourceDetails.add(year);
+  })();
+  sourceDetailRequests.set(year, request);
+  try { await request; } finally { sourceDetailRequests.delete(year); }
+}
+
+function sourceItemFor(item, index) {
+  if (!Number.isInteger(index) || index < 0 || !item?.links?.[index]) return null;
+  const link = item.links[index];
+  const details = link.details || {};
+  // Keep the research's identity/read state, but every document field belongs
+  // to the selected source. A PDF-only companion must never borrow its sibling's MD.
+  return {
+    ...item, sourceIndex: index, sourceId: link.sourceId, title: details.title || link.label,
+    originalUrl: link.url, authors: details.authors || [], publisher: details.publisher || hostOf(link.url),
+    summary: details.summary || "", tags: details.tags || [], kind: details.kind || "link", language: details.language || "",
+    mdPath: safeArchivePath(link.mdPath, "md"), pdfPath: safeArchivePath(link.pdfPath, "pdf"),
+    mdVersion: link.mdVersion || (link.mdPath === item.mdPath ? item.mdVersion : ""),
+    pdfVersion: link.pdfVersion || (link.pdfPath === item.pdfPath ? item.pdfVersion : ""),
+    originalMdPath: safeArchivePath(link.originalMdPath, "md"), originalPdfPath: safeArchivePath(link.originalPdfPath, "pdf"),
+    originalPdfVersion: link.originalPdfVersion || "", translated: Boolean(link.translated), links: [link]
+  };
+}
+
+async function requestedSource(item, params) {
+  if (!item || !params.has("source")) return item;
+  const value = params.get("source");
+  if (!/^(?:source-[a-f0-9]{20}|0|[1-9]\d*)$/.test(value)) return null;
+  try { await ensureSourceDetails(item.year); } catch { /* Copies still open without optional metadata. */ }
+  const index = value.startsWith("source-") ? item.links.findIndex(link => link.sourceId === value) : Number(value);
+  return sourceItemFor(item, index);
 }
 
 function collectionSummaryFor(year) {
@@ -871,7 +987,7 @@ function applyStoredState(item) {
   item = expandArchiveItem(item);
   // The keys are deterministic, so reconstruct them instead of repeating them
   // (and two default-false flags) in every generated collection record.
-  const lookupKey = normalizeUrl(item.originalUrl);
+  const lookupKey = normalizeUrl(item.identityUrl || item.originalUrl);
   item.readKey = lookupKey;
   item.favouriteKey = lookupKey;
   item.read = state.readKeys.has(lookupKey);
@@ -1003,11 +1119,11 @@ async function loadArchive() {
     if (hashView === "submit") requestAnimationFrame(() => openSubmissionDialog());
     if (sharedArtifact) requestAnimationFrame(() => openArtifact(sharedArtifact));
     if (readerId) {
-      const readerItem = await ensureItemLoaded(readerId);
+      const readerItem = await requestedSource(await ensureItemLoaded(readerId), requestedDocument);
       if (readerItem?.mdPath) requestAnimationFrame(() => openReader(readerItem));
     }
     if (pdfId && !readerId) {
-      const pdfItem = await ensureItemLoaded(pdfId);
+      const pdfItem = await requestedSource(await ensureItemLoaded(pdfId), requestedDocument);
       if (pdfItem?.pdfPath) requestAnimationFrame(() => openPdfViewer(pdfItem));
     }
     const resultsYear = requestedDocument.get("results");
@@ -1259,6 +1375,9 @@ function wireShell() {
     if (!item?.mdPath) return;
     $("#pdf-dialog").close();
     openReader(item);
+  });
+  $("#pdf-sources").addEventListener("click", async () => {
+    if (state.pdfItem) await openSourceDetails(state.pdfItem);
   });
   $("#pdf-theme-toggle").addEventListener("click", toggleReadingTheme);
   $("#pdf-share").addEventListener("click", () => shareDocument(state.pdfItem, state.pdfKind === "listingPdf" ? "results" : "pdf"));
@@ -1836,8 +1955,9 @@ function queryItems(items, query = state.query) {
   });
 }
 
-function setReadState(item, nextState = !item.read) {
+function setReadState(item, nextState = !state.readKeys.has(item?.readKey)) {
   if (!item) return;
+  item.read = nextState;
   if (nextState) state.readKeys.add(item.readKey);
   else state.readKeys.delete(item.readKey);
   state.items.forEach((entry) => {
@@ -1862,8 +1982,9 @@ function setReadState(item, nextState = !item.read) {
   toast(nextState ? "Marked as read" : "Marked as unread");
 }
 
-function setFavouriteState(item, nextState = !item.favourite) {
+function setFavouriteState(item, nextState = !state.favouriteKeys.has(item?.favouriteKey)) {
   if (!item) return;
+  item.favourite = nextState;
   if (nextState) state.favouriteKeys.add(item.favouriteKey);
   else state.favouriteKeys.delete(item.favouriteKey);
   const related = state.items.filter((entry) => entry.favouriteKey === item.favouriteKey);
@@ -3220,6 +3341,84 @@ function annualPdfPath(year) {
   return `original-listings/${file}`;
 }
 
+function sourcePanelMarkup(item) {
+  const relations = { "same-work": "Same research", part: "Series part", "follow-up": "Follow-up", analysis: "Additional analysis", reproduction: "Reproduction", background: "Earlier or background research", translation: "Translation", alternate: "Alternate edition", related: "Related source" };
+  return `<h3 id="artifact-sources-title">Sources and further reading <span>${item.links.length}</span></h3>
+    <p class="source-intro">Read the main source, follow the series, or explore related explanations and recordings. Each source has its own credit and available copies.</p>
+    <div class="source-list">${item.links.map((link, index) => {
+      const details = link.details || {};
+      const title = details.title || link.label;
+      const byline = [...new Set([...(details.authors || []), details.publisher || hostOf(link.url)])].filter(Boolean).join(" · ");
+      const original = safeExternalUrl(link.url);
+      const md = safeArchivePath(link.mdPath, "md"), pdf = safeArchivePath(link.pdfPath, "pdf");
+      const facts = [["Relationship", relations[details.relationship]], ["Part", details.sequence], ["Published", details.published], ["Source type", details.sourceKind || details.kind], ["Language", details.language], ["Channel", details.channel], ["Duration", details.minutes ? `${details.minutes} minutes` : ""], ["Archive updated", details.updated?.slice(0, 10)]].filter(([, value]) => value);
+      const alternates = (details.alsoAt || []).map(safeExternalUrl).filter((url) => url && url !== original);
+      return `<details class="source-card" data-source-index="${index}">
+        <summary><span class="source-role">${link.main || index === 0 ? "Main source" : h(link.label === title ? relations[details.relationship] || "Related source" : link.label)}${details.sourceKind ? ` · ${h(details.sourceKind)}` : ""}</span><strong>${h(title)}</strong><span class="source-byline">${h(byline)}${details.published ? ` · ${h(details.published)}` : ""}</span></summary>
+        <div class="source-body">
+          ${details.context ? `<p class="source-context">${h(details.context)}</p>` : ""}
+          ${details.summary ? `<p class="source-summary">${h(details.summary)}</p>` : ""}
+          ${facts.length ? `<dl class="source-facts">${facts.map(([label, value]) => `<div><dt>${h(label)}</dt><dd>${h(value)}</dd></div>`).join("")}</dl>` : ""}
+          ${details.tags?.length ? `<p class="source-topics"><b>Topics:</b> ${details.tags.map(h).join(", ")}</p>` : ""}
+          <div class="source-actions">
+            ${md ? `<button type="button" data-source-read="${index}">Read Markdown</button>` : ""}
+            ${pdf ? `<button type="button" data-source-pdf="${index}">View PDF</button>` : ""}
+            ${original ? `<a href="${h(original)}" target="_blank" rel="noopener noreferrer">${details.sourceKind === "video" ? "Watch video" : details.sourceKind === "audio" ? "Listen" : "Original source"} ↗</a>` : ""}
+          </div>
+          ${!md && !pdf ? `<p class="source-note">${details.preservation === "link-only" ? "External resource · kept as a link." : "No preserved copy is available for this source."}</p>` : ""}
+          ${alternates.length ? `<p class="source-alternates">Also available at: ${alternates.map((url) => `<a href="${h(url)}" target="_blank" rel="noopener noreferrer">${h(hostOf(url))} ↗</a>`).join(" · ")}</p>` : ""}
+        </div>
+      </details>`;
+    }).join("")}</div>`;
+}
+
+function renderArtifactSources(item, error = "") {
+  const panel = $("#artifact-sources");
+  const focused = panel.contains(document.activeElement) ? document.activeElement : null;
+  const focusedIndex = focused?.closest("details")?.dataset.sourceIndex;
+  const focusSelector = focused?.id === "artifact-sources-title" ? "#artifact-sources-title"
+    : focused?.hasAttribute("data-source-read") ? `[data-source-read="${focusedIndex}"]`
+    : focused?.hasAttribute("data-source-pdf") ? `[data-source-pdf="${focusedIndex}"]`
+    : focused?.tagName === "SUMMARY" ? `[data-source-index="${focusedIndex}"] summary` : "";
+  const expanded = new Set(panel.dataset.item === item.id ? $$("details[open]", panel).map((node) => node.dataset.sourceIndex) : []);
+  panel.dataset.item = item.id;
+  panel.innerHTML = sourcePanelMarkup(item) + (error ? `<p class="source-note" role="status">Additional details could not be loaded. Source links and available copies still work. <button type="button" data-source-retry>Retry</button></p>` : "");
+  $$("details", panel).forEach((node) => { node.open = expanded.has(node.dataset.sourceIndex); });
+  if (focusSelector) {
+    const replacement = $(focusSelector, panel);
+    if (replacement) { if (replacement.tagName === "H3") replacement.tabIndex = -1; replacement.focus({ preventScroll: true }); }
+  }
+  panel.onclick = (event) => {
+    const read = event.target.closest("[data-source-read]"), pdf = event.target.closest("[data-source-pdf]");
+    if (read || pdf) {
+      const source = sourceItemFor(item, Number(read ? read.dataset.sourceRead : pdf.dataset.sourcePdf));
+      if (source) read ? openReader(source) : openPdfViewer(source);
+    }
+    if (event.target.closest("[data-source-retry]")) refreshSourcePanel(item);
+  };
+}
+
+async function refreshSourcePanel(item) {
+  let error = "";
+  try { await ensureSourceDetails(item.year); } catch (failure) { error = failure.message; }
+  if ($("#artifact-dialog").open && $("#artifact-sources").dataset.item === item.id) renderArtifactSources(item, error);
+}
+
+function focusArtifactSources() {
+  const heading = $("#artifact-sources-title");
+  heading.tabIndex = -1;
+  heading.focus({ preventScroll: true });
+  heading.scrollIntoView({ block: "start", behavior: "instant" });
+}
+
+async function openSourceDetails(item) {
+  // Return to the record even when it is already open below a document pane.
+  $("#reader-dialog").close();
+  $("#pdf-dialog").close();
+  await openArtifact(item.id);
+  focusArtifactSources();
+}
+
 async function openArtifact(id) {
   const item = await ensureItemLoaded(id);
   if (!item) return;
@@ -3264,6 +3463,7 @@ async function openArtifact(id) {
   $("#artifact-facts").innerHTML = `
     ${credited ? `<div><dt>Author</dt><dd title="${h(credited)}">${h(credited)}</dd></div>` : ""}
     <div><dt>Publisher</dt><dd title="${h(item.publisher)}">${h(item.publisher || "Unknown")}</dd></div>
+    ${item.published ? `<div><dt>Published</dt><dd>${h(item.published)}</dd></div>` : ""}
     <div><dt>Source type</dt><dd>${h(item.kind)}</dd></div>
     <div><dt>Preservation</dt><dd>${h(item.archiveStatus)}</dd></div>
     <div><dt>List citation</dt><dd>${h(`${item.year}.md:${item.line}`)}</dd></div>`;
@@ -3320,10 +3520,7 @@ async function openArtifact(id) {
   actions.push(originalUrl
     ? `<a class="secondary" href="${h(originalUrl)}" target="_blank" rel="noopener noreferrer">↗ Original source</a>`
     : `<span class="disabled">Original source blocked</span>`);
-  (item.links || []).slice(1).forEach((link) => {
-    const href = safeExternalUrl(link.url);
-    if (href) actions.push(`<a class="secondary" href="${h(href)}" target="_blank" rel="noopener noreferrer">↗ ${h(short(link.label, 42))}</a>`);
-  });
+  actions.push(`<button class="secondary" id="open-artifact-sources" type="button" aria-controls="artifact-sources">Sources &amp; details (${item.sourceCount || item.links.length})</button>`);
   const resultsPdf = annualPdfPath(item.year);
   if (resultsPdf) actions.push(`<button class="secondary" id="open-results-pdf" type="button">◇ ${h(item.year)} results</button>`);
   actions.push(`<button class="secondary read-toggle" id="artifact-read-toggle" type="button" aria-pressed="${item.read}">${item.read ? "✓ Read" : "○ Mark as read"}</button>`);
@@ -3334,6 +3531,8 @@ async function openArtifact(id) {
   // reader scanning for somewhere to read is made to step over a complaint form.
   actions.push(`<button class="secondary" id="report-inaccuracy" type="button">⚑ Report an inaccuracy</button>`);
   $("#artifact-actions").innerHTML = actions.join("");
+  renderArtifactSources(item);
+  $("#open-artifact-sources").addEventListener("click", focusArtifactSources);
 
   $("#open-reader")?.addEventListener("click", () => openReader(item));
   $("#open-pdf-reader")?.addEventListener("click", () => openPdfViewer(item));
@@ -3357,6 +3556,7 @@ async function openArtifact(id) {
   // leaves its previous scroll offset intact. Reset after opening and focus,
   // instantly, so every record starts at its heading in every theme.
   dialog.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  refreshSourcePanel(item);
 }
 
 function showPdfFallback(message = "The preserved file is still available using the Open PDF or Download controls above.") {
@@ -3555,6 +3755,7 @@ function openPdfViewer(item, options = {}) {
     favouriteButton.textContent = item.favourite ? "★ Favourite" : "☆ Add favourite";
   }
   $("#pdf-open-markdown").hidden = !item?.mdPath;
+  $("#pdf-sources").hidden = !item;
   state.pdfOriginal = Boolean(options.original);
   $("#pdf-links-toggle").hidden = !item?.mdPath;
   togglePdfLinks(false);
@@ -4037,6 +4238,7 @@ async function openReader(item, options = {}) {
   // moves between Markdown and PDF.
   $("#reader-actions").innerHTML = `
     ${item.pdfPath ? `<button id="reader-open-pdf" type="button">▧ PDF</button>` : ""}
+    <button id="reader-sources" type="button">Sources &amp; details</button>
     <button class="reading-theme-toggle" id="reader-theme-toggle" type="button" aria-label="Switch to light reading theme">☀ Light</button>
     <button id="reader-share" type="button" title="Share this exact Markdown view">⌁ Share</button>
     <button id="reader-read-toggle" type="button" aria-pressed="${item.read}">${item.read ? "✓ Read" : "○ Mark as read"}</button>
@@ -4045,6 +4247,7 @@ async function openReader(item, options = {}) {
     ${item.originalMdPath ? `<button id="reader-language-toggle" type="button">${showOriginal ? "⇄ English" : `⇄ ${h(item.language ? item.language.toUpperCase() : "Original language")}`}</button>` : ""}
     ${originalUrl ? `<a href="${h(originalUrl)}" target="_blank" rel="noopener noreferrer">Original ↗</a>` : `<span class="disabled">Original blocked</span>`}`;
   $("#reader-theme-toggle").addEventListener("click", toggleReadingTheme);
+  $("#reader-sources").addEventListener("click", () => openSourceDetails(item));
   $("#reader-share").addEventListener("click", () => shareDocument(item, "reader"));
   $("#reader-read-toggle").addEventListener("click", () => setReadState(item));
   $("#reader-favourite-toggle").addEventListener("click", () => setFavouriteState(item));

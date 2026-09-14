@@ -131,6 +131,11 @@ async function main() {
       throw new Error(`${year.file} does not match catalogue ${catalogue.version}`);
     }
     archivePaths(shard.items).forEach((archivePath) => archive.add(archivePath));
+    const sources = await readJson(path.join(APP_DIR, validateRelative(year.sources.file)));
+    if (sources?.version !== catalogue.version || sources?.year !== year.id || !sources.items) {
+      throw new Error(`${year.sources.file} does not match catalogue ${catalogue.version}`);
+    }
+    archivePaths(Object.values(sources.items).flat()).forEach((archivePath) => archive.add(archivePath));
   }
 
   for (const file of [...archive].filter((file) => file.endsWith(".md"))) {

@@ -5,6 +5,17 @@ description: Refreshes the production website from the repository's year-list Ma
 
 # Refresh Web Apps
 
+## Related sources
+
+When researching, adding, updating or reviewing a reference, apply the shared
+[research-story and related-source workflow](../webseclist-archive-references/references/related-sources.md).
+Inspect companion papers, series parts, slides, recordings, code, substantive
+analysis and reproductions. Maintain their relationships and separate credits;
+keep link-only media accessible. Preserve existing nominations and capture each
+written source separately. Removing an entry also requires checking its group
+and shared sources before pruning.
+
+
 Keep the production static archive synchronized without confusing an AI-collected snapshot with a community-ranked Top 10.
 
 ## Preserve the data boundaries

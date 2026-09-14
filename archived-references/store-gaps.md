@@ -129,7 +129,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/> | article | `landing_sha256` | `2010.md:92` |
 | <https://www.slideshare.net/neexemil/hotpics-2021> | slides | `raw_sha256` | `2021.md:41` |
 | <https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions> | slides | `raw_sha256` | `2021.md:13` |
-| <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu> | article | `raw_sha256` | `2023.md:59` |
+| <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu> | article | `raw_sha256` | `2023.md:59`, `2023.md:42` |
 | <https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization> | article | `raw_sha256` | `2024.md:73` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html> | article | `raw_sha256` | `2008.md:86` |
 | <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html> | article | `raw_sha256` | `2008.md:91` |

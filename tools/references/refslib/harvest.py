@@ -177,4 +177,14 @@ def run(root=None, config=None, classifier=None, files=None):
                     result.excluded.append((occurrence, rule))
                     continue
                 result.add(occurrence)
+    # Maintainer-reviewed companions inherit the research bullet's citation.
+    # Discovery queues and arbitrary URLs in JSON never enter this inventory.
+    if (root / "tools/references/related-sources.json").is_file() and (root / "website/archive-years.json").is_file():
+        from .related_sources import archive_occurrences
+        for occurrence in archive_occurrences(root, config):
+            rule = classifier.excluded_by(occurrence.url)
+            if rule is not None:
+                result.excluded.append((occurrence, rule))
+            else:
+                result.add(occurrence)
     return result

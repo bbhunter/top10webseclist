@@ -20,6 +20,7 @@ const MANIFEST_PATH = path.join(REPO, "archived-references", "manifest.json");
 const VOCABULARY_PATH = path.join(REPO, "archived-references", "tag-vocabulary.json");
 const OUTPUT_DIR = path.join(APP_DIR, "data");
 const COLLECTIONS_DIR = path.join(OUTPUT_DIR, "collections");
+const SOURCES_DIR = path.join(OUTPUT_DIR, "sources");
 const ID_PATTERN = /^\d{4}(?:-\d{2}|-ai)?$/;
 
 function stableJson(value) {
@@ -93,7 +94,13 @@ function parserContext(appSource, discoverySource, registry, manifest, owasp) {
       const alsoAt = Array.isArray(record.also_at) ? record.also_at : [];
       const aliases = [url, ...spellings, record.health?.final_url, ...alsoAt]
         .map(safeExternalUrl).filter(Boolean);
-      aliases.forEach((alias) => __recordLookup.set(normalizeUrl(alias), record));
+      aliases.forEach((alias) => {
+        const key = normalizeUrl(alias);
+        if (!__recordLookup.has(key) || record.content_sha256 || !__recordLookup.get(key).content_sha256) __recordLookup.set(key, record);
+      });
+    });
+    Object.entries(__manifest.urls || {}).forEach(([url, record]) => {
+      if (record && typeof record === "object" && (record.content_sha256 || !__recordLookup.has(normalizeUrl(url)))) __recordLookup.set(normalizeUrl(url), record);
     });
   `, context, { filename: "build-data-bootstrap.js" });
   return context;
@@ -118,14 +125,20 @@ async function main() {
   const checkOnly = process.argv.slice(2).includes("--check");
   const unknownArgs = process.argv.slice(2).filter((argument) => argument !== "--check");
   if (unknownArgs.length) throw new Error(`unknown argument(s): ${unknownArgs.join(", ")}`);
-  const [registry, hosting, manifest, appSource, vocabulary, discoverySource] = await Promise.all([
+  const [registry, hosting, manifest, appSource, vocabulary, discoverySource, sourceGroups] = await Promise.all([
     readJson(REGISTRY_PATH),
     readJson(HOSTING_PATH),
     readJson(MANIFEST_PATH),
     fs.readFile(path.join(APP_DIR, "app.js"), "utf8"),
     readJson(VOCABULARY_PATH),
-    fs.readFile(path.join(APP_DIR, "discovery.js"), "utf8")
+    fs.readFile(path.join(APP_DIR, "discovery.js"), "utf8"),
+    readJson(path.join(REPO, "archived-references/source-groups.json"))
   ]);
+  if (sourceGroups.schema !== 1 || !sourceGroups.groups || !sourceGroups.inputs) throw new Error("Missing source groups; run python3 tools/references/related_sources.py build");
+  for (const [filename, expected] of Object.entries(sourceGroups.inputs)) {
+    if (!/^(?:20\d\d(?:-\d\d|-ai)?\.md|website\/archive-years\.json|archived-references\/manifest\.json|tools\/references\/related-sources\.json)$/.test(filename)
+      || hash(await fs.readFile(path.join(REPO, filename))) !== expected) throw new Error("Source groups are stale; run python3 tools/references/related_sources.py build");
+  }
   if (registry?.schema !== 1 || !Array.isArray(registry.years) || !registry.years.length) {
     throw new Error("archive-years.json must contain a non-empty schema-1 years array");
   }
@@ -143,17 +156,30 @@ async function main() {
   }
 
   const context = parserContext(appSource, discoverySource, registry, manifest, owaspMap(vocabulary));
+  context.__sourceGroups = Object.fromEntries(Object.values(sourceGroups.groups).flatMap(group => group.citations.map(citation => [citation, group])));
   const parsed = [];
   for (const record of registry.years) {
     context.__year = record.id;
     context.__markdown = await fs.readFile(path.join(REPO, `${record.id}.md`), "utf8");
     const items = vm.runInContext(
-      "parseYearMarkdown(__markdown, __year, __recordLookup, yearRecordFor(__year))",
+      "parseYearMarkdown(__markdown, __year, __recordLookup, yearRecordFor(__year), __sourceGroups)",
       context,
       { filename: `${record.id}.md.parser.js` }
     );
     const portableItems = JSON.parse(JSON.stringify(items));
-    parsed.push({ record, items: portableItems, summary: collectionSummary(record, portableItems) });
+    const sources = Object.fromEntries(portableItems.map((item) => [item.id, item.links.map((link) => {
+      const { listed, ...source } = link;
+      return source;
+    })]));
+    for (const item of portableItems) {
+      const count = item.links.length;
+      item.links = item.links.filter(link => link.listed !== false).map(link => {
+        const { details, listed, mdVersion, pdfVersion, originalPdfVersion, main, ...lite } = link;
+        return lite;
+      });
+      if (count !== item.links.length) item.sourceCount = count;
+    }
+    parsed.push({ record, items: portableItems, sources, summary: collectionSummary(record, portableItems) });
   }
 
   const diagrams = Object.create(null);
@@ -170,13 +196,14 @@ async function main() {
     }
     diagrams[diagram.source] = diagram.path;
   }
-  const contentFingerprint = stableJson({ linkEncoding: "item-fields-v1", parsed: parsed.map(({ record, items }) => ({ record, items })), hosting, diagrams });
+  const contentFingerprint = stableJson({ linkEncoding: "item-fields-v1", parsed: parsed.map(({ record, items, sources }) => ({ record, items, sources })), hosting, diagrams });
   const version = hash(contentFingerprint).slice(0, 20);
   const manifestCount = Object.keys(manifest?.urls || {}).length;
   const generated = new Date().toISOString();
 
   const expectedFiles = new Set();
   const shardBodies = new Map();
+  const sourceBodies = new Map();
   for (const collection of parsed) {
     context.__items = collection.items;
     const compactItems = JSON.parse(vm.runInContext(
@@ -195,6 +222,9 @@ async function main() {
     shardBodies.set(filename, body);
     collection.summary.bytes = Buffer.byteLength(body);
     collection.summary.sha256 = hash(body);
+    const sourceBody = `${stableJson({ schema: 1, version, year: collection.record.id, items: collection.sources })}\n`;
+    sourceBodies.set(filename, sourceBody);
+    collection.summary.sources = { file: `data/sources/${filename}`, bytes: Buffer.byteLength(sourceBody), sha256: hash(sourceBody) };
   }
 
   const diagramBody = `${stableJson({ schema: 1, version, diagrams })}\n`;
@@ -232,9 +262,16 @@ async function main() {
         throw new Error(`${filename} is stale; run node website/build-data.mjs`);
       }
     }
+    const sourceFiles = (await fs.readdir(SOURCES_DIR)).filter((name) => name.endsWith(".json"));
+    if (sourceFiles.length !== expectedFiles.size || sourceFiles.some((name) => !expectedFiles.has(name))) throw new Error("source detail file set is stale");
+    for (const [filename, body] of sourceBodies) {
+      if (await fs.readFile(path.join(SOURCES_DIR, filename), "utf8") !== body) throw new Error(`${filename} source details are stale`);
+    }
   } else {
     await fs.mkdir(COLLECTIONS_DIR, { recursive: true });
+    await fs.mkdir(SOURCES_DIR, { recursive: true });
     for (const [filename, body] of shardBodies) await atomicWrite(path.join(COLLECTIONS_DIR, filename), body);
+    for (const [filename, body] of sourceBodies) await atomicWrite(path.join(SOURCES_DIR, filename), body);
 
     // Collection files are generated output. Prune only stale JSON shards inside
     // this dedicated directory when a registry entry is deliberately removed.
@@ -242,6 +279,9 @@ async function main() {
       if (entry.isFile() && entry.name.endsWith(".json") && !expectedFiles.has(entry.name)) {
         await fs.unlink(path.join(COLLECTIONS_DIR, entry.name));
       }
+    }
+    for (const entry of await fs.readdir(SOURCES_DIR, { withFileTypes: true })) {
+      if (entry.isFile() && entry.name.endsWith(".json") && !expectedFiles.has(entry.name)) await fs.unlink(path.join(SOURCES_DIR, entry.name));
     }
     await atomicWrite(path.join(OUTPUT_DIR, "diagrams.json"), diagramBody);
     await atomicWrite(path.join(OUTPUT_DIR, "catalogue.json"), catalogueBody);

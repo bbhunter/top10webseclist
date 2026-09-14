@@ -5,6 +5,17 @@ description: Credits a named researcher on an already-archived reference in the 
 
 # Credit a researcher on an archived reference
 
+## Related sources
+
+When researching, adding, updating or reviewing a reference, apply the shared
+[research-story and related-source workflow](../webseclist-archive-references/references/related-sources.md).
+Inspect companion papers, series parts, slides, recordings, code, substantive
+analysis and reproductions. Maintain their relationships and separate credits;
+keep link-only media accessible. Preserve existing nominations and capture each
+written source separately. Removing an entry also requires checking its group
+and shared sources before pruning.
+
+
 Someone has told you who wrote a document the archive already holds. Your job is
 to check that claim against the document, record it, and carry it into the
 published files - or, when the document cannot confirm it, to stop and ask.

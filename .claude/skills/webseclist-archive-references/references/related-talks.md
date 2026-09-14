@@ -1,5 +1,11 @@
 # The talk behind the research
 
+These rules identify the author's conference talk. For the broader source
+collection, follow [Research stories and related sources](related-sources.md):
+keep an explicitly supported short demonstration as a separate video source,
+and label another author's substantive video as analysis or reproduction.
+Choosing the full talk for the player does not remove those companion links.
+
 A citation says where research was published. It never says whether the same
 work was also given as a talk, which is the question a reader asks the moment
 they finish a paper. 297 references now answer it from a `videos` array on their
@@ -83,4 +89,3 @@ the fields exactly as above - the website reads them by name, and a row missing
 `confidence` is treated as a guess. **The year lists are never touched**: a
 recording belongs on the reference, not in the curated list, and
 `website/build-data.mjs` is what carries it onto the site.
-

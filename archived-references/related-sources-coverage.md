@@ -1,0 +1,51 @@
+# Related-source coverage
+
+Reviewed on 14 September 2026, after the concurrent article-judging update.
+
+All 1,763 entries across the 20 published collections have a source group. There
+are 1,755 distinct groups because some research appears in more than one year;
+746 groups currently have multiple sources. Historical nominations and rankings
+remain intact. Each group has one main reading source and separately identified
+companions, with their own credits and available Markdown/PDF copies.
+
+The maintained policy records 810 additional source relationships. Together with
+existing citations and confirmed recordings, the published groups contain 3,130
+source memberships representing 3,066 distinct source URLs. A source shared by
+several stories remains one document with separately recorded relationships.
+
+## What was inspected
+
+The initial pass scanned archived prose for all 1,664 then-current entries,
+producing 3,071 candidate links. Review covered all 660 groups with candidates,
+plus a separately identified blog-fragment entry. After the judging update, all
+99 newly added groups were reviewed, including a further 360 candidate links and
+checks of source text for companions missed by Markdown-link extraction. Existing
+confirmed recording metadata and explicit same-line citations were retained.
+
+This was a corpus-wide relationship review using available archived material,
+with selected live checks. It was not an exhaustive search of the live web, and
+most companion destinations have not received a fresh availability check.
+Unresolved identities and unsupported topic-only associations were not admitted.
+Ten relationship leads remain unresolved in the private review records. Finding
+no supported companion in inspected material does not establish that none exists.
+
+## Preservation and remaining work
+
+Videos, audio, code and downloads may intentionally remain external links.
+Written companions request separate preservation through the archive pipeline;
+343 distinct approved written-source URLs currently lack a Markdown capture.
+They remain accessible by their original links and are included in the generated
+[document acquisition queue](document-gaps.md). This is a source-discovery and
+organisation backfill, not a claim that every new companion has been preserved.
+
+The WP2Shell technical article and updated checker, AutoFail's full paper, and
+the Zero Knowledge (About) Encryption project overview have preserved copies.
+AutoFail includes all original page images to retain the tables and symbols that
+text extraction lost. Independent capture-review work remains listed in
+[review-gaps.md](review-gaps.md); missing original store bytes are tracked
+separately in [store-gaps.md](store-gaps.md).
+
+Future research, additions, updates and reviews follow the shared
+[related-source workflow](../.claude/skills/webseclist-archive-references/references/related-sources.md).
+The generated [source groups](source-groups.json) and on-demand website metadata
+cover every entry, including entries with only one currently known source.

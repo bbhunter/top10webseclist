@@ -5,6 +5,17 @@ description: Evaluates web-security research for originality and potential futur
 
 # Judgy McJudgerson
 
+## Related sources
+
+When researching, adding, updating or reviewing a reference, apply the shared
+[research-story and related-source workflow](../webseclist-archive-references/references/related-sources.md).
+Inspect companion papers, series parts, slides, recordings, code, substantive
+analysis and reproductions. Maintain their relationships and separate credits;
+keep link-only media accessible. Preserve existing nominations and capture each
+written source separately. Removing an entry also requires checking its group
+and shared sources before pruning.
+
+
 Evaluate web-security research for novelty and lasting value. The skill's
 invocation remains `/webseclist-judge-reference`.
 

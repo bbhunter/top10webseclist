@@ -11,7 +11,7 @@ const errors = [];
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
 const page = await context.newPage();
 page.on("pageerror", (error) => errors.push(error.message));
-page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
+page.on("console", (message) => { if (message.type() === "error") errors.push(`${message.text()} (${message.location().url})`); });
 const action = (name, value) => `[data-discovery-action="${name}"]${value === undefined ? "" : `[data-discovery-value="${value}"]`}`;
 async function go(view) {
   await page.goto(`${url}#${view}`);
@@ -187,7 +187,7 @@ try {
   });
   const mobile = await offline.newPage();
   mobile.on("pageerror", (error) => errors.push(error.message));
-  mobile.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
+  mobile.on("console", (message) => { if (message.type() === "error") errors.push(`${message.text()} (${message.location().url})`); });
   await mobile.goto("https://webhacklist.com/#desk");
   await mobile.waitForSelector(".discovery-record");
   const candidates = await mobile.evaluate(() => state.items.filter((item) => item.pdfPath && item.mdPath).map((item) => ({id:item.id,pdfPath:item.pdfPath})));

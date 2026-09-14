@@ -610,6 +610,30 @@
   .artifact-facts div:nth-child(5):last-child { grid-column: 1 / -1; }
   .artifact-facts dt { margin-bottom: 6px; color: var(--dialog-muted,var(--faint)); font: .6rem var(--mono); text-transform: uppercase; }
   .artifact-facts dd { overflow: hidden; color: var(--ink); font: .74rem var(--mono); text-overflow: ellipsis; white-space: nowrap; }
+  .artifact-sources { margin: 28px 0; }
+  .artifact-sources h3 { margin: 0 0 10px; color: var(--dialog-color,var(--mint)); font: 700 .85rem var(--sans); scroll-margin-top: 48px; }
+  .artifact-sources h3 span { margin-left: 5px; color: var(--dialog-muted); font: .75rem var(--mono); }
+  .source-intro, .source-note { color: var(--dialog-muted); font-size: .78rem; line-height: 1.6; }
+  .source-list { display: grid; gap: 10px; }
+  .source-card { min-width: 0; border: 1px solid var(--dialog-border); border-radius: 8px; background: var(--dialog-panel); overflow-wrap: anywhere; }
+  .source-card summary { padding: 14px 16px; cursor: pointer; color: var(--ink); }
+  .source-card summary::marker { color: var(--dialog-color,var(--mint)); }
+  .source-card summary:focus-visible { outline: 2px solid var(--dialog-color,var(--mint)); outline-offset: 2px; }
+  .source-role { color: var(--dialog-muted); font: 650 .65rem var(--mono); }
+  .source-card:first-child .source-role { color: var(--dialog-color,var(--mint)); }
+  .source-card summary strong { display: block; margin: 8px 0 6px; font-size: .9rem; line-height: 1.45; }
+  .source-byline { display: block; color: var(--dialog-muted); font-size: .75rem; line-height: 1.5; }
+  .source-body { padding: 0 16px 16px; }
+  .source-summary { margin: 0 0 16px; font-size: .85rem; line-height: 1.7; }
+  .source-facts { display: flex; flex-wrap: wrap; gap: 14px 24px; margin: 0 0 14px; }
+  .source-facts div { min-width: 0; }
+  .source-facts dt { color: var(--dialog-muted); font-size: .65rem; }
+  .source-facts dd { margin: 4px 0 0; font: .72rem var(--mono); }
+  .source-topics, .source-alternates { color: var(--dialog-muted); font-size: .72rem; line-height: 1.6; }
+  .source-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .source-actions :is(a,button), .source-note button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 9px 12px; color: var(--ink); border: 1px solid var(--dialog-border); border-radius: 4px; background: transparent; text-decoration: none; font: 650 .72rem var(--sans); cursor: pointer; }
+  .source-actions :is(a,button):hover { background: var(--dialog-soft); }
+  .source-alternates a { color: var(--dialog-color,var(--mint)); }
   .artifact-actions { display: flex; flex-wrap: wrap; gap: 10px; }
   .artifact-actions a, .artifact-actions button { display: inline-flex; min-height: 42px; align-items: center; gap: 8px; padding: 12px 15px; color: var(--dialog-action-ink,var(--accent-ink)); background: var(--dialog-action,var(--accent)); border: 1px solid var(--dialog-action,var(--accent)); border-radius: 4px; font: 750 .7rem var(--mono); text-decoration: none; cursor: pointer; }
   .artifact-actions .secondary { color: var(--ink); background: transparent; border-color: var(--dialog-border,var(--line-strong)); }
@@ -740,9 +764,9 @@
   .contribute-dialog .artifact-actions a, .contribute-dialog .artifact-actions button { color: #041a10; background: var(--mint); border-color: var(--mint); }
   .contribute-dialog .artifact-actions .secondary { color: var(--ink); background: transparent; border-color: var(--line-strong); }
   .contribute-note { margin: 18px 0 0; color: var(--faint); font: .6rem/1.7 var(--mono); }
-  .contribute-routes { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--faint); font: .6rem var(--mono); }
+  .contribute-routes { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--faint); font: .6rem var(--mono); }
   .contribute-routes b { color: var(--muted); font-weight: 650; }
-  .contribute-routes a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+  .contribute-routes a { display: inline-flex; align-items: center; min-height: 24px; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
   .contribute-routes a:hover { color: var(--mint); }
 
   /* Reporting an inaccuracy borrows the contribution form's LAYOUT and none of

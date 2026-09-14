@@ -14,7 +14,7 @@ const origin = `http://127.0.0.1:${port}`;
 const readerOrigin = `http://127.0.0.1:${readerPort}`;
 const appAssets = new Set(["index.html", "404.html", "app.js", "discovery.js", "constellation.js", "styles.css", "discovery.css", "brand-mark.svg", "site.webmanifest", "archive-years.json"]);
 const readerAssets = new Set(["pdf-reader.html", "pdf-reader.css", "pdf-reader.mjs", "pdf-reader-polyfills.mjs", "pdf-reader-url.mjs", "pdf-worker.mjs"]);
-const mime = { ".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8", ".mjs":"text/javascript; charset=utf-8", ".css":"text/css; charset=utf-8", ".json":"application/json", ".webmanifest":"application/manifest+json", ".svg":"image/svg+xml", ".pdf":"application/pdf", ".md":"text/plain; charset=utf-8", ".wasm":"application/wasm", ".ttf":"font/ttf" };
+const mime = { ".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8", ".mjs":"text/javascript; charset=utf-8", ".css":"text/css; charset=utf-8", ".json":"application/json", ".webmanifest":"application/manifest+json", ".svg":"image/svg+xml", ".pdf":"application/pdf", ".md":"text/plain; charset=utf-8", ".png":"image/png", ".wasm":"application/wasm", ".ttf":"font/ttf" };
 const servers = [];
 
 function localize(source) {
@@ -26,8 +26,10 @@ function fileFor(pathname, reader) {
   if (!relative) relative = "index.html";
   const archivePdf = /^(?:archived-references\/pdf\/[a-z0-9-]+\/[a-z0-9._-]+|original-listings\/[0-9-]+-(?:top10|nominees-and-top10))\.pdf$/i.test(relative);
   const archiveMd = /^archived-references\/md\/[a-z0-9-]+\/[a-z0-9._-]+\.md$/i.test(relative);
-  if (archivePdf || (!reader && archiveMd)) return path.join(root, relative);
-  const data = /^data\/(?:catalogue\.json|collections\/[a-z0-9-]+\.json)$/.test(relative);
+  const archiveFigure = /^archived-references\/figures\/[a-z0-9-]+\/[a-z0-9._-]+\/[a-z0-9_-][a-z0-9._-]*\.png$/i.test(relative);
+  const archiveDiagram = /^archived-references\/diagrams\/[a-f0-9]{64}\.svg$/.test(relative);
+  if (archivePdf || (!reader && (archiveMd || archiveFigure || archiveDiagram))) return path.join(root, relative);
+  const data = /^data\/(?:(?:catalogue|diagrams)\.json|(?:collections|sources)\/[a-z0-9-]+\.json)$/.test(relative);
   const vendor = /^vendor\/pdfjs\/[a-z0-9_./-]+$/i.test(relative) && !relative.split("/").includes("..");
   if ((reader && (readerAssets.has(relative) || vendor)) || (!reader && (appAssets.has(relative) || data))) return path.join(root, "website", relative);
   return null;

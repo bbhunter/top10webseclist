@@ -38,6 +38,49 @@
  "author_copies": [],
  "canonical_sources": [],
  "decisions": {
+  "https://slcyber.io/research/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6": {
+   "authors": [
+    "Adam Kues"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "publisher": "Searchlight Cyber",
+   "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\".",
+   "title": "Exploit brokers pay $500,000 for a WordPress RCE. I found one with GPT5.6 Sol Ultra and $25"
+  },
+  "https://usenix.org/system/files/usenixsecurity26-lamarca.pdf": {
+   "authors": [
+    "Riccardo Lamarca",
+    "Philipp Beer",
+    "Marco Squarcina"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "publisher": "USENIX Association",
+   "reason": "Document byline: Riccardo Lamarca, Philipp Beer, and Marco Squarcina, TU Wien"
+  },
+  "https://wp2shell.com/": {
+   "authors": [
+    "Adam Kues"
+   ],
+   "class": "records",
+   "outcome": "archive",
+   "publisher": "Searchlight Cyber",
+   "reason": "Companion advisory, affected versions, mitigations and checker; the full technical research is cited separately on the same list line.",
+   "title": "wp2shell: Pre Authentication RCE in WordPress Core"
+  },
+  "https://zkae.io/": {
+   "authors": [
+    "Matteo Scarlata",
+    "Giovanni Torrisi",
+    "Matilda Backendal",
+    "Kenneth G. Paterson"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "publisher": "ETH Zurich and Università della Svizzera italiana",
+   "reason": "Document byline: Matteo Scarlata – ETH Zurich; Giovanni Torrisi – Università della Svizzera italiana (USI); Matilda Backendal – Università della Svizzera italiana (USI); Kenneth G. Paterson – ETH Zurich"
+  },
   "https://appomni.com/ao-labs/bodysnatcher-agentic-ai-security-vulnerability-in-servicenow": {
    "title": "BodySnatcher: agentic hijacking in ServiceNow",
    "authors": [

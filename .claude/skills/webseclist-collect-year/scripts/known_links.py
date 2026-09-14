@@ -196,6 +196,17 @@ def main() -> int:
         for raw in extract(path):
             known.setdefault(normalise(raw), (raw, path.name))
 
+    # Reviewed companions are already part of a research story even when the
+    # historical year bullet has not been rewritten to repeat them.
+    policy = repo / "tools/references/related-sources.json"
+    if policy.exists():
+        import json
+        for primary, group in json.loads(policy.read_text()).get("groups", {}).items():
+            if normalise(primary) in known:
+                for source in group.get("sources", []):
+                    raw = source["url"]
+                    known.setdefault(normalise(raw), (raw, "tools/references/related-sources.json"))
+
     if args.filter:
         kept = 0
         dropped = 0

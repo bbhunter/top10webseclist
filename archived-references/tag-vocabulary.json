@@ -163,7 +163,7 @@
    "documents": 36
   },
   "android": {
-   "documents": 34
+   "documents": 35
   },
   "angular": {
    "documents": 3
@@ -175,13 +175,13 @@
    "documents": 52
   },
   "attack-chain": {
-   "documents": 221
+   "documents": 222
   },
   "auth-bypass": {
    "documents": 341
   },
   "autofill": {
-   "documents": 3
+   "documents": 4
   },
   "aws": {
    "documents": 36
@@ -256,7 +256,7 @@
    "documents": 29
   },
   "crypto": {
-   "documents": 13
+   "documents": 14
   },
   "csp": {
    "documents": 68
@@ -487,7 +487,7 @@
    "documents": 42
   },
   "mitigation": {
-   "documents": 181
+   "documents": 182
   },
   "mongodb": {
    "documents": 6
@@ -529,7 +529,7 @@
    "documents": 12
   },
   "password-manager": {
-   "documents": 3
+   "documents": 5
   },
   "path-traversal": {
    "documents": 75
@@ -583,7 +583,7 @@
    "documents": 17
   },
   "rce": {
-   "documents": 303
+   "documents": 304
   },
   "react": {
    "documents": 6
@@ -601,7 +601,7 @@
    "documents": 19
   },
   "rest-api": {
-   "documents": 52
+   "documents": 53
   },
   "reverse-proxy": {
    "documents": 62
@@ -613,7 +613,7 @@
    "documents": 3
   },
   "same-origin-policy": {
-   "documents": 187
+   "documents": 188
   },
   "saml": {
    "documents": 18
@@ -631,7 +631,7 @@
    "documents": 39
   },
   "side-channel": {
-   "documents": 218
+   "documents": 219
   },
   "smb": {
    "documents": 1
@@ -649,7 +649,7 @@
    "documents": 14
   },
   "sop-bypass": {
-   "documents": 200
+   "documents": 201
   },
   "spring": {
    "documents": 18
@@ -742,7 +742,7 @@
    "documents": 12
   },
   "wordpress": {
-   "documents": 21
+   "documents": 22
   },
   "xsleak": {
    "documents": 76
@@ -754,5 +754,5 @@
    "documents": 34
   }
  },
- "updated": "2026-09-13T23:06:54+00:00"
+ "updated": "2026-09-14T07:04:32+00:00"
 }

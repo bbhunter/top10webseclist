@@ -5,6 +5,13 @@ description: Builds or refreshes the Markdown-plus-PDF archive of resources cite
 
 # Archive the cited resources as Markdown and PDF
 
+## Related sources
+
+Apply [research stories and related sources](references/related-sources.md) whenever
+researching, adding, updating, archiving or reviewing a reference. It defines the
+maintained relationship registry, source roles, per-source preservation, linked
+media and corpus migration.
+
 ## What this is
 
 This repository is a reading list: finalized Markdown files (`2006.md` through
@@ -275,8 +282,9 @@ working any reference the ordinary HTTP route does not deliver cleanly:
 - a dead URL, or a citation pinned to a wall or shell capture -> a better
   Wayback snapshot (`wayback`), nearest its date; use `--replay-url` when known
 - a live landing page with a paper, code and slides -> preserve the full paper
-  with `acquire --linked-document-url` and record every verified sibling with
-  repeatable `--also-at`; the cited landing URL remains the identity. An
+  with `acquire --linked-document-url`; keep distinct sibling sources in the
+  related-source registry. Use `--also-at` only for another location of the SAME
+  document. The cited landing URL remains the identity. An
   ABSTRACT page needs this too and nothing will ask for it: it extracts well
   over the content floor and grades as research, so acquisition succeeds and
   the archive publishes the abstract
@@ -325,22 +333,11 @@ they stay here:
   the year lists or on the browsing apps that stumbles over a bad capture files
   it here too.
 
-- **Links that belong together go on ONE list line.** A paper and its blog
-  series, a technique and its demo clips, a deck and its whitepaper: the list's
-  own idiom is a titled link followed by numbered siblings, and the parts stay
-  on that single line item.
-
-  ```text
-  -   [Session Puzzling](<project>) [Whitepaper](<pdf>) Video [1](<v1>), [2](<v2>)
-  -   [Security and Privacy of Social Logins](<thesis>) Blog [1](<p1>), [2](<p2>), [3](<p3>)
-  ```
-
-  Each written URL that remains an archive target gets its own Markdown and PDF
-  - they are separate documents and a reader wants them separately - and every
-  sibling records the SAME `cited_by` line. A companion video marked derivative
-  remains cited and recorded in the manifest but has no local file. Thus
-  `2020.md:59` on several records is what says they are one citation; the line
-  number already carries the pairing.
+- **One research story can have several separately credited sources.** Existing
+  same-line companions establish membership. Additional papers, parts, recordings
+  and analyses belong in the maintained related-source registry described above;
+  they inherit the story’s citation without rewriting historical year lists.
+  Each written source has its own archive record and available copies.
 
 ## Importing documents obtained by hand
 

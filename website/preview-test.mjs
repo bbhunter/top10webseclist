@@ -37,6 +37,14 @@ try {
   const partial = await fetch(new URL(pdfPath, base), {headers:{Range:"bytes=0-15"}});
   assert.equal(partial.status, 206);
   assert.equal((await partial.arrayBuffer()).byteLength, 16);
+  const diagramResponse = await fetch(new URL("data/diagrams.json", base));
+  assert.equal(diagramResponse.status, 200);
+  const diagramIndex = await diagramResponse.json();
+  const diagramPath = Object.values(diagramIndex.diagrams)[0];
+  assert.ok(diagramPath, "Preserved diagram fixture is available");
+  const diagram = await fetch(new URL(diagramPath, base));
+  assert.equal(diagram.status, 200);
+  assert.match(diagram.headers.get("content-type"), /image\/svg\+xml/);
   assert.deepEqual(errors, []);
   console.log("Local preview: both palettes, fullscreen controls, isolated PDF rendering, theme messages, Markdown switching and PDF range requests pass");
 } finally { await browser.close(); }

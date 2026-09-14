@@ -18,6 +18,7 @@ const suites = [
   "discovery-test.mjs",
   "interface-test.mjs",
   "dialog-test.mjs",
+  "sources-test.mjs",
   "article-scroll-test.mjs",
   "mobile-test.mjs",
   "accessibility-test.mjs",

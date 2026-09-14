@@ -4,6 +4,7 @@ import path from "node:path";
 import process from "node:process";
 import vm from "node:vm";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import "./pdf-reader-polyfills-test.mjs";
 import { safePdfUrl as safePdfReaderUrl } from "./pdf-reader-url.mjs";
 
@@ -57,7 +58,10 @@ function archivePathsFor(record) {
 
 for (const [url, record] of Object.entries(manifest.urls || {})) {
   const aliases = [url, ...(record.spellings || []), record.health?.final_url, ...(record.also_at || [])].filter(Boolean);
-  for (const alias of aliases) lookup.set(normalizeUrl(alias), record);
+  for (const alias of aliases) {
+    const key = normalizeUrl(alias);
+    if (!lookup.has(key) || record.content_sha256 || !lookup.get(key).content_sha256) lookup.set(key, record);
+  }
   const { md: mdPath, pdf: pdfPath, translatedMd, translatedPdf } = archivePathsFor(record);
   for (const candidate of [mdPath, translatedMd]) {
     if (candidate && !/^archived-references\/md\/[a-z0-9-]+\/[a-z0-9._-]+\.md$/i.test(candidate)) unsafeManifestPaths.push(candidate);
@@ -65,6 +69,10 @@ for (const [url, record] of Object.entries(manifest.urls || {})) {
   for (const candidate of [pdfPath, translatedPdf]) {
     if (candidate && !/^archived-references\/pdf\/[a-z0-9-]+\/[a-z0-9._-]+\.pdf$/i.test(candidate)) unsafeManifestPaths.push(candidate);
   }
+}
+
+for (const [url, record] of Object.entries(manifest.urls || {})) {
+  if (record.content_sha256 || !lookup.has(normalizeUrl(url))) lookup.set(normalizeUrl(url), record);
 }
 
 // One bullet is one research, however many links it carries - the same grouping
@@ -160,16 +168,6 @@ const pdfWorkerSource = await readFile(path.join(root, "website/pdf-worker.mjs")
 const buildSiteSource = await readFile(path.join(root, "website/build-site.mjs"), "utf8");
 const headersSource = await readFile(path.join(root, "website/_headers"), "utf8");
 const notFoundSource = await readFile(path.join(root, "website/404.html"), "utf8");
-const progressiveCatalogue = JSON.parse(await readFile(path.join(root, "website/data/catalogue.json"), "utf8"));
-const progressiveRecord = [...progressiveCatalogue.years].reverse().find((record) => record.status === "final") || progressiveCatalogue.years.at(-1);
-const progressiveShard = JSON.parse(await readFile(path.join(root, `website/data/collections/${progressiveRecord.id}.json`), "utf8"));
-const progressiveWireKeysAbsent = ["readKey", "read", "favouriteKey", "favourite"].every((key) => !Object.hasOwn(progressiveShard.items[0], key));
-const sourceBundle = `${indexSource}\n${appSource}\n${discoverySource}`;
-const unsafeBlankTargets = sourceBundle.match(/<a\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/gi) || [];
-
-// Exercise the actual URL and Markdown renderers without a browser. All source
-// content begins as untrusted text; only the allowlisted tags emitted by the
-// renderer may reach an innerHTML sink.
 const clientContext = vm.createContext({
   URL,
   location: { href: "https://archive.example/website/#museum" },
@@ -180,6 +178,48 @@ const clientContext = vm.createContext({
 vm.runInContext(discoverySource, clientContext);
 vm.runInContext(appSource.replace(/\nloadArchive\(\);\s*$/, ""), clientContext);
 const clientEval = (expression) => vm.runInContext(expression, clientContext);
+const progressiveCatalogue = JSON.parse(await readFile(path.join(root, "website/data/catalogue.json"), "utf8"));
+// Companion metadata is optional at runtime, but every published shard must
+// match its collection and expose only the public reading fields.
+const sourceFields = new Set(["title", "publisher", "published", "kind", "language", "authors", "summary", "tags", "updated", "alsoAt", "relationship", "sourceKind", "preservation", "context", "sequence", "channel", "minutes"]);
+let sourceBytes = 0;
+for (const record of progressiveCatalogue.years) {
+  assert.equal(record.sources.file, `data/sources/${record.id}.json`);
+  const body = await readFile(path.join(root, "website", record.sources.file));
+  sourceBytes += body.length;
+  assert.equal(body.length, record.sources.bytes);
+  assert.ok(body.length <= 500000, `${record.id}: source shard exceeds 500 KB`);
+  assert.equal(createHash("sha256").update(body).digest("hex"), record.sources.sha256);
+  const sources = JSON.parse(body);
+  const collection = JSON.parse(await readFile(path.join(root, `website/data/collections/${record.id}.json`), "utf8"));
+  assert.equal(sources.schema, 1);
+  assert.equal(sources.version, progressiveCatalogue.version);
+  assert.equal(sources.year, record.id);
+  assert.deepEqual(Object.keys(sources.items).sort(), collection.items.map(item => item.id).sort());
+  for (const wireItem of collection.items) {
+    clientContext.__wireItem = wireItem;
+    const item = JSON.parse(clientEval("JSON.stringify(expandArchiveItem(__wireItem))"));
+    assert.equal(sources.items[item.id].length, item.sourceCount || item.links.length);
+    assert.ok(item.links.every(link => sources.items[item.id].some(source => source.url === link.url)));
+    assert.equal(sources.items[item.id].filter(source => source.main).length, 1);
+    for (const source of sources.items[item.id]) {
+      assert.ok(Object.keys(source.details).every(key => sourceFields.has(key)), "Source metadata must not contain evaluation or acquisition internals");
+      assert.match(source.sourceId, /^source-[a-f0-9]{20}$/);
+      if (source.details.preservation === "link-only") assert.ok(!source.mdPath && !source.pdfPath, "Media/downloads must not borrow a document capture");
+    }
+    assert.ok(item.links.every(link => !Object.hasOwn(link, "details")), "Details must remain outside initial collection loads");
+  }
+}
+assert.ok(sourceBytes <= 4000000, "Source metadata exceeds its 4 MB total budget");
+const progressiveRecord = [...progressiveCatalogue.years].reverse().find((record) => record.status === "final") || progressiveCatalogue.years.at(-1);
+const progressiveShard = JSON.parse(await readFile(path.join(root, `website/data/collections/${progressiveRecord.id}.json`), "utf8"));
+const progressiveWireKeysAbsent = ["readKey", "read", "favouriteKey", "favourite"].every((key) => !Object.hasOwn(progressiveShard.items[0], key));
+const sourceBundle = `${indexSource}\n${appSource}\n${discoverySource}`;
+const unsafeBlankTargets = sourceBundle.match(/<a\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/gi) || [];
+
+// Exercise the actual URL and Markdown renderers without a browser. All source
+// content begins as untrusted text; only the allowlisted tags emitted by the
+// renderer may reach an innerHTML sink.
 const linkFixture = {
   title: "Research", originalUrl: "https://research.example/article",
   mdPath: "archived-references/md/2026-ai/article_translate.md",
@@ -936,8 +976,9 @@ const contributionChecks = [
 // that make an off-site link safe to offer and an uncertain one honest.
 // Expected independently of app.js: a bullet earns a talk control when ANY of
 // its links names a reference the archive gave a video to.
-const expectedVideoRecords = artifacts.filter((artifact) =>
-  artifact.links.some((link) => link.record?.videos?.length)).length;
+const sourceGroups = JSON.parse(await readFile(path.join(root, "archived-references/source-groups.json"), "utf8"));
+const expectedVideoRecords = Object.values(sourceGroups.groups).reduce((count, group) => count +
+  (group.sources.some(source => lookup.get(normalizeUrl(source.url))?.videos?.some(video => !video.date_note)) ? group.citations.length : 0), 0);
 const shardVideoRows = [];
 for (const record of yearRecords) {
   const shard = JSON.parse(await readFile(path.join(root, `website/data/collections/${record.id}.json`), "utf8"));

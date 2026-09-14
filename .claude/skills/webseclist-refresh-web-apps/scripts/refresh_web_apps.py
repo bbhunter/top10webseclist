@@ -232,6 +232,7 @@ def main() -> int:
     if args.check_only:
         run(node, "website/build-data.mjs", "--check")
     else:
+        run(sys.executable, "tools/references/related_sources.py", "build")
         run(node, "website/build-data.mjs")
 
     total, catalogue_bytes, shard_bytes = validate_progressive_data()
