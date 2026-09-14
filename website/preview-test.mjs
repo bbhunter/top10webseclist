@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
-const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
+import {launchBrowser} from "./browser-test.mjs";
 const base = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:4173/";
-const browser = await chromium.launch({headless:true});
+const browser = await launchBrowser();
 const page = await browser.newPage({viewport:{width:390,height:844}});
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
@@ -45,6 +45,21 @@ try {
   const diagram = await fetch(new URL(diagramPath, base));
   assert.equal(diagram.status, 200);
   assert.match(diagram.headers.get("content-type"), /image\/svg\+xml/);
+  // Browsers can deny dedicated workers. PDF.js must still render within the
+  // isolated reader frame, using the handler exported by our worker wrapper.
+  const fallback = await browser.newContext({viewport:{width:390,height:844}});
+  await fallback.addInitScript(() => {
+    window.Worker = class { constructor() { throw new Error("Dedicated worker disabled by regression test"); } };
+  });
+  const fallbackPage = await fallback.newPage();
+  fallbackPage.on("pageerror", error => errors.push(error.message));
+  await fallbackPage.goto(`${base}#desk`);
+  await fallbackPage.waitForSelector(".discovery-record");
+  await fallbackPage.evaluate(id => openPdfViewer(state.items.find(item => item.id === id)), id);
+  const fallbackFrame = fallbackPage.frameLocator("#pdf-frame");
+  await fallbackFrame.locator("canvas").first().waitFor({state:"visible"});
+  assert.equal(await fallbackFrame.locator("#reader-error").isVisible(), false);
+  await fallback.close();
   assert.deepEqual(errors, []);
-  console.log("Local preview: both palettes, fullscreen controls, isolated PDF rendering, theme messages, Markdown switching and PDF range requests pass");
+  console.log("Local preview: both palettes, fullscreen controls, isolated PDF rendering (including unavailable workers), theme messages, Markdown switching and PDF range requests pass");
 } finally { await browser.close(); }

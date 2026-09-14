@@ -1,7 +1,7 @@
 // A new record starts at its heading while the page behind it keeps its place.
 import assert from "node:assert/strict";
-const {chromium} = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
-const browser = await chromium.launch({headless:true});
+import {launchBrowser, mobileEmulation} from "./browser-test.mjs";
+const browser = await launchBrowser();
 const base = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:4173/";
 const views = ["evidence","museum","library","time","signals","constellation","terminal","desk","favourites"];
 const errors = [];
@@ -9,7 +9,7 @@ let checks = 0;
 try {
   for (const viewport of [{width:1440,height:900},{width:390,height:844},{width:320,height:568}]) {
     const touch = viewport.width < 820;
-    const context = await browser.newContext({viewport,hasTouch:touch,isMobile:touch});
+    const context = await browser.newContext({viewport,hasTouch:touch,isMobile:touch && mobileEmulation});
     // Exercise the real play button and iframe lifecycle without requesting a
     // third-party video. Playback by YouTube itself is outside this regression.
     await context.route("https://www.youtube-nocookie.com/embed/**", route => route.fulfill({
@@ -35,6 +35,9 @@ try {
       await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     }
     async function atTop(label) {
+      if (process.env.WEBSEC_TEST_DEBUG) console.log(label, await page.evaluate(() => ({
+        top:document.querySelector("#artifact-dialog").scrollTop, focus:document.activeElement?.id
+      })));
       assert.equal(await dialog.evaluate(el => el.scrollTop), 0, `${label}: article starts at the top`);
       assert.ok(await page.locator("#artifact-title").evaluate(title => {
         const heading = title.getBoundingClientRect(), pane = title.closest("dialog").getBoundingClientRect();
@@ -57,13 +60,18 @@ try {
     }
     for (const view of views) {
       await page.evaluate(view => setView(view),view);
+      // Board layout and mobile scrolling can settle on later rendering frames.
+      // Capture the user's starting position after those updates, not mid-layout.
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       for (const appearance of (["desk","time"].includes(view) ? ["dark","light"] : ["dark"])) {
         if (["desk","time"].includes(view)) await page.locator(`[data-discovery-value="${appearance}"]`).click();
         for (const play of [false,true]) {
           const label = `${view}/${appearance}/${viewport.width}/${play ? "played" : "scrolled"}`;
           await page.evaluate(() => scrollTo({top:400,behavior:"instant"}));
+          await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
           const pageScroll = await page.evaluate(() => scrollY);
           await open(fixtures.recorded[0]);
+          assert.equal(await page.evaluate(() => lockedDialogScrollY), pageScroll, `${label}: opening preserves the pre-dialog page offset`);
           await atTop(label);
           await scrollDown();
           let player;
@@ -78,7 +86,8 @@ try {
             assert.equal(await player.evaluate(el => el.isConnected),false,"Closing removes the previous player");
             await player.dispose();
           }
-          assert.ok(Math.abs(await page.evaluate(() => scrollY) - pageScroll) < 2, "Background page retains its scroll position");
+          const restoredScroll = await page.evaluate(() => scrollY);
+          assert.ok(Math.abs(restoredScroll - pageScroll) < 2, `${label}: background scroll ${restoredScroll} matches ${pageScroll}`);
           await open(fixtures.recorded[1]);
           await atTop(label);
           assert.equal(await page.locator("#artifact-talk iframe").count(),0,"The next recording waits for the user to press play");

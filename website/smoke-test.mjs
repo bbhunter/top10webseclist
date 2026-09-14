@@ -178,11 +178,21 @@ const clientContext = vm.createContext({
 vm.runInContext(discoverySource, clientContext);
 vm.runInContext(appSource.replace(/\nloadArchive\(\);\s*$/, ""), clientContext);
 const clientEval = (expression) => vm.runInContext(expression, clientContext);
+assert.equal(clientEval('JSON.stringify(sourceDetailsFor({authors: []}, {authors: ["Withdrawn credit"]}).authors || [])'), "[]",
+  "An explicit withdrawal must not fall back to companion credits");
+assert.equal(clientEval('JSON.stringify(sourceDetailsFor({}, {authors: ["Alice", "Bob"]}).authors)'), '["Alice","Bob"]',
+  "Missing archive metadata may use a separately credited companion's full byline");
+assert.equal(clientEval('JSON.stringify(sourceDetailsFor({authors: ["Alice", "Bob"]}, {authors: ["Other"]}).authors)'), '["Alice","Bob"]',
+  "The document's full byline takes precedence over companion metadata");
+clientContext.__longByline = Array.from({ length: 15 }, (_, i) => `Researcher ${i + 1}`);
+assert.deepEqual(JSON.parse(clientEval('JSON.stringify(sourceDetailsFor({authors: __longByline}).authors)')), clientContext.__longByline,
+  "All authors must survive publication, including names beyond the eighth");
 const progressiveCatalogue = JSON.parse(await readFile(path.join(root, "website/data/catalogue.json"), "utf8"));
 // Companion metadata is optional at runtime, but every published shard must
 // match its collection and expose only the public reading fields.
 const sourceFields = new Set(["title", "publisher", "published", "kind", "language", "authors", "summary", "tags", "updated", "alsoAt", "relationship", "sourceKind", "preservation", "context", "sequence", "channel", "minutes"]);
 let sourceBytes = 0;
+const sourceCredits = new Map();
 for (const record of progressiveCatalogue.years) {
   assert.equal(record.sources.file, `data/sources/${record.id}.json`);
   const body = await readFile(path.join(root, "website", record.sources.file));
@@ -205,8 +215,22 @@ for (const record of progressiveCatalogue.years) {
     for (const source of sources.items[item.id]) {
       assert.ok(Object.keys(source.details).every(key => sourceFields.has(key)), "Source metadata must not contain evaluation or acquisition internals");
       assert.match(source.sourceId, /^source-[a-f0-9]{20}$/);
+      const archiveRecord = lookup.get(normalizeUrl(source.url));
+      if (archiveRecord && Object.hasOwn(archiveRecord, "authors")) {
+        assert.deepEqual(source.details.authors || [], archiveRecord.authors,
+          `${source.url}: publish every recorded author in order`);
+      }
+      if (sourceCredits.has(source.sourceId)) {
+        assert.deepEqual(source.details.authors || [], sourceCredits.get(source.sourceId),
+          `${source.url}: the same source must have consistent credits across stories`);
+      }
+      sourceCredits.set(source.sourceId, source.details.authors || []);
       if (source.details.preservation === "link-only") assert.ok(!source.mdPath && !source.pdfPath, "Media/downloads must not borrow a document capture");
     }
+    const readingSource = sources.items[item.id].find(source => item.mdPath && source.mdPath === item.mdPath)
+      || sources.items[item.id].find(source => item.pdfPath && source.pdfPath === item.pdfPath);
+    if (readingSource) assert.deepEqual(item.authors || [], readingSource.details.authors || [],
+      `${item.id}: the article card and its reading source must show the same authors`);
     assert.ok(item.links.every(link => !Object.hasOwn(link, "details")), "Details must remain outside initial collection loads");
   }
 }

@@ -1,8 +1,7 @@
 // Touch navigation and compact-header regressions against the local website.
 import assert from "node:assert/strict";
-const playwright = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
-const browserName = process.env.WEBSEC_TEST_BROWSER || "chromium";
-const browser = await playwright[browserName].launch({headless:true});
+import {launchBrowser, browserName, mobileEmulation} from "./browser-test.mjs";
+const browser = await launchBrowser();
 const base = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:8000/website/";
 const views = ["desk", "time", "museum", "library", "signals", "constellation", "terminal", "evidence", "favourites"];
 const errors = [];
@@ -20,7 +19,7 @@ async function fits(page, selector, label) {
 }
 try {
   for (const viewport of screens) {
-    const context = await browser.newContext({viewport,hasTouch:true,isMobile:true,deviceScaleFactor:1});
+    const context = await browser.newContext({viewport,hasTouch:true,isMobile:mobileEmulation,deviceScaleFactor:1});
     const page = await context.newPage();
     page.on("pageerror", (error) => errors.push(error.message));
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
@@ -42,6 +41,9 @@ try {
       assert.ok(await page.evaluate(() => scrollY < 2), `${view} opens at its top after mobile navigation`);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${view}/${viewport.width} has no page overflow`);
       assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), "dark");
+      const smallFields = await page.locator('input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):visible,select:visible,textarea:visible').evaluateAll(elements =>
+        elements.filter(element => parseFloat(getComputedStyle(element).fontSize) < 16).map(element => element.id));
+      assert.deepEqual(smallFields, [], `${view} phone fields avoid iOS focus zoom`);
       if (["desk","time"].includes(view)) {
         assert.equal(await page.locator(".discovery-lead").count(),0);
         const control = view === "desk" ? "#desk-query" : "#time-topic";
@@ -79,19 +81,31 @@ try {
     await ready(page,"desk");
     assert.equal(await page.locator("html").getAttribute("data-discovery-theme"), "light");
     await page.locator('[data-discovery-value="dark"]').tap();
-    await page.setViewportSize({width:844,height:390});
-    await fits(page,"#main-content","landscape layout");
-    assert.equal(await page.locator("#concept-sidebar").getAttribute("inert"), null);
-    await page.setViewportSize(viewport);
-    await page.locator("#mobile-menu").tap();
-    await page.locator("#close-mobile-menu").tap();
-    assert.equal(await page.locator("#mobile-menu").getAttribute("aria-expanded"), "false");
+    // GTK WebKit's isMobile emulation retains its initial visual viewport when
+    // resized (320px even when innerWidth becomes 844px). Test live breakpoint
+    // changes in a touch context; the portrait checks above keep isMobile on.
+    const rotationContext = browserName === "webkit" ? await browser.newContext({viewport,hasTouch:true}) : null;
+    const rotation = rotationContext ? await rotationContext.newPage() : page;
+    if (rotationContext) {
+      await rotation.goto(`${base}#desk`);
+      await ready(rotation,"desk");
+      await rotation.waitForFunction(() => !document.querySelector("#boot-screen"));
+    }
+    await rotation.setViewportSize({width:844,height:390});
+    await fits(rotation,"#main-content","landscape layout");
+    await rotation.waitForSelector("#concept-sidebar:not([inert])");
+    await rotation.setViewportSize(viewport);
+    await rotation.waitForSelector("#concept-sidebar[inert]",{state:"attached"});
+    await rotation.locator("#mobile-menu").tap();
+    await rotation.locator("#close-mobile-menu").tap();
+    assert.equal(await rotation.locator("#mobile-menu").getAttribute("aria-expanded"), "false");
+    await rotationContext?.close();
     await context.close();
     console.log(`Mobile ${browserName}: all 9 themes at ${viewport.width}px; touch navigation, direct links, popups, dark default, saved appearance and rotation pass`);
   }
   // Exercise the CSS fullscreen fallback used when element fullscreen is
   // unavailable, including a short landscape phone where Exit must stay visible.
-  const fallback = await browser.newContext({viewport:{width:667,height:375},hasTouch:true,isMobile:true});
+  const fallback = await browser.newContext({viewport:{width:667,height:375},hasTouch:true,isMobile:mobileEmulation});
   await fallback.addInitScript(() => {
     Object.defineProperty(Element.prototype,"requestFullscreen",{value:undefined,configurable:true});
     Object.defineProperty(Element.prototype,"webkitRequestFullscreen",{value:undefined,configurable:true});

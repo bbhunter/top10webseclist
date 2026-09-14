@@ -1,8 +1,8 @@
 // Shared popup contract: genuine outside clicks dismiss the topmost pane;
 // inside clicks, selection drags and nested panes keep the right dialog open.
 import assert from "node:assert/strict";
-const {chromium} = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
-const browser = await chromium.launch({headless:true});
+import {launchBrowser, mobileEmulation} from "./browser-test.mjs";
+const browser = await launchBrowser();
 const base = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:4173/";
 const views = ["evidence","museum","library","time","signals","constellation","terminal","desk","favourites"];
 const errors = [];
@@ -29,6 +29,7 @@ async function centered(page, selector) {
   assert.ok(error.x<=0.5 && error.y<=0.5 && error.width===18 && error.height===18, `${selector} icon is centered: ${JSON.stringify(error)}`);
 }
 async function exercise(page,id,closeSelector,touch,underlying="") {
+  if (process.env.WEBSEC_TEST_DEBUG) console.log(`Popup: ${id}`);
   const pane=page.locator(`#${id}`);
   await pane.waitFor({state:"visible"});
   await centered(page,closeSelector);
@@ -65,7 +66,7 @@ try {
   for(const viewport of [{width:1440,height:1000},{width:390,height:844},{width:320,height:568}]) {
     if(process.env.WEBSEC_DIALOG_WIDTH && viewport.width !== Number(process.env.WEBSEC_DIALOG_WIDTH)) continue;
     const touch=viewport.width<820;
-    const context=await browser.newContext({viewport,hasTouch:touch,isMobile:touch});
+    const context=await browser.newContext({viewport,hasTouch:touch,isMobile:touch && mobileEmulation});
     const page=await context.newPage();
     page.on("pageerror",e=>errors.push(e.message));
     page.on("console",m=>{if(m.type()==="error") errors.push(m.text());});
@@ -87,6 +88,7 @@ try {
       await page.locator("#global-search").fill("");
       await page.locator("#global-search").blur();
       for(const appearance of (["desk","time"].includes(view)?["dark","light"]:["dark"])) {
+        if (process.env.WEBSEC_TEST_DEBUG) console.log(`Dialogs: ${view}/${appearance} at ${viewport.width}px`);
         if(["desk","time"].includes(view)) await page.locator(`[data-discovery-value="${appearance}"]`).click();
         await page.evaluate(()=>scrollTo({top:180,behavior:"instant"}));
         const startScroll=await page.evaluate(()=>scrollY);
@@ -108,9 +110,15 @@ try {
         if(await page.evaluate(()=>state.pdfUsesInSiteReader)) {
           await page.frameLocator("#pdf-frame").locator("canvas").first().waitFor({state:"visible"});
         } else {
-          // Headless Chromium has no native PDF plugin. Its deliberate Open PDF
-          // fallback is still a pane governed by exactly the same dismissal rule.
-          assert.ok(await page.evaluate(()=>state.pdfVerified && (!document.querySelector("#pdf-frame").hidden || navigator.pdfViewerEnabled === false)));
+          // Browser-test builds may lack a working native PDF plugin, even
+          // when pdfViewerEnabled is true. Check the actual verified-document
+          // state: either the frame or its explicit Open PDF fallback is shown.
+          assert.ok(await page.evaluate(()=>state.pdfVerified && (
+            !document.querySelector("#pdf-frame").hidden || (
+              !document.querySelector("#pdf-fallback").hidden &&
+              document.querySelector("#pdf-fallback-open").href === document.querySelector("#pdf-new-tab").href
+            )
+          )), "The verified PDF has a visible viewer or matching Open PDF action");
         }
         await page.locator("#pdf-theme-toggle").click();
         await page.locator("#pdf-links-toggle").click();

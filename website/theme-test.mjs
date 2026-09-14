@@ -1,7 +1,7 @@
 // Optional browser regression checks; see README.md for the isolated setup.
 import assert from "node:assert/strict";
-const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
-const browser = await chromium.launch({ headless: true });
+import {launchBrowser} from "./browser-test.mjs";
+const browser = await launchBrowser();
 const baseUrl = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:8000/website/";
 const views = ["museum", "library", "signals", "constellation", "terminal", "evidence", "favourites", "desk", "time"];
 const errors = [];
@@ -22,6 +22,7 @@ try {
   for (const width of [1440, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const view of views) {
+      if (process.env.WEBSEC_TEST_DEBUG) console.log(`Layout: ${view} at ${width}px`);
       await page.evaluate((view) => setView(view), view);
       const layout = await page.evaluate(() => ({
         overflow: document.documentElement.scrollWidth > innerWidth,
@@ -34,6 +35,7 @@ try {
       assert.ok(layout.heading);
       assert.equal(layout.scheme, "dark");
     }
+    console.log(`Layouts: all 9 views fit at ${width}px`);
   }
   console.log("Layouts: 9 views at 4 viewport widths passed");
   await page.evaluate(async () => {
@@ -90,6 +92,12 @@ try {
     await page.evaluate((view) => setView(view), view);
     await page.evaluate(() => openReader(state.items.find((item) => item.mdPath)));
     await page.waitForSelector("#reader-content a");
+    if (view === "constellation") {
+      const frame = await page.evaluate(() => ({yaw:constellationExperience.camera.yaw,time:constellationExperience.visualTime}));
+      await page.waitForTimeout(150);
+      assert.deepEqual(await page.evaluate(() => ({yaw:constellationExperience.camera.yaw,time:constellationExperience.visualTime})), frame,
+        "Opening a reader pauses the background map instead of repainting under its blur");
+    }
     for (const theme of ["light", "dark"]) {
       await page.evaluate((theme) => { state.readingTheme = theme; applyReadingTheme(); }, theme);
       const contrast = await page.evaluate(() => {

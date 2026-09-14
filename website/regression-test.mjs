@@ -12,7 +12,7 @@ try {
   throw Error("Install the optional browser-test dependencies and set AXE_SOURCE as documented in website/README.md.");
 }
 
-const suites = [
+const allSuites = [
   "smoke-test.mjs",
   "theme-test.mjs",
   "discovery-test.mjs",
@@ -24,6 +24,10 @@ const suites = [
   "accessibility-test.mjs",
   "preview-test.mjs"
 ];
+const suites = process.env.WEBSEC_TEST_SUITES?.split(",") || allSuites;
+for (const suite of suites) {
+  if (!allSuites.includes(suite)) throw Error(`Unknown regression suite: ${suite}`);
+}
 
 for (const suite of suites) {
   console.log(`\nRegression suite: ${suite}`);

@@ -3,8 +3,8 @@
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
-const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
-const browser = await chromium.launch({ headless: true });
+import {launchBrowser} from "./browser-test.mjs";
+const browser = await launchBrowser();
 const url = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:8000/website/";
 const views = ["desk", "time"];
 const errors = [];
@@ -83,7 +83,9 @@ try {
   await page.locator(action("desk-reset")).click();
   await page.selectOption("#desk-sort", "title");
   const titles = await page.locator(".discovery-record h3").allTextContents();
-  assert.deepEqual(titles, [...titles].sort((a, b) => a.localeCompare(b)));
+  // ICU versions collate punctuation differently. Compare with the reader's
+  // browser locale, rather than Node's separate collation implementation.
+  assert.deepEqual(titles, await page.evaluate(titles => [...titles].sort((a, b) => a.localeCompare(b)), titles));
   await page.locator(action("desk-compact")).click();
   assert.equal(await page.locator(".discovery-summary:visible").count(), 0);
   const savedId = (await displayedItems())[0].id;

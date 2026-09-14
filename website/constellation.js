@@ -1468,6 +1468,13 @@
 
     loop(time) {
       try {
+        // The modal backdrop already covers the map. Redrawing its stars under
+        // a blur every frame wastes CPU, especially in software-rendered WebKit.
+        if (document.body.classList.contains("document-dialog-open")) {
+          this.lastTime = time;
+          this.frame = requestAnimationFrame((nextTime) => this.loop(nextTime));
+          return;
+        }
         const delta = this.lastTime ? Math.min(40, time - this.lastTime) : 16;
         this.lastTime = time;
         this.update(delta, time);

@@ -71,7 +71,26 @@ repository. Run the complete test matrix with:
 python3 website/container-tests.py --node-modules /tmp/websec-browser-tests/node_modules
 ```
 
-The runner starts its own preview and Chromium inside Docker. It mounts staged
+The runner starts its own preview and Chromium inside Docker. To run the same
+contracts in Chromium, Google Chrome, Microsoft Edge, Firefox and WebKit:
+
+```bash
+python3 website/container-tests.py --node-modules /tmp/websec-browser-tests/node_modules --browsers all
+```
+
+The cross-browser image requires Playwright and playwright-core **1.55.0**, matching
+its pinned official Playwright base image. It installs Chrome and Edge stable when
+first built; each suite prints the actual browser version. Rebuild
+`webseclist-browser-tests:cross-browser-1.55.0` to refresh those stable channels.
+Use `--browsers firefox webkit` for selected engines and, for example,
+`--suites theme-test.mjs mobile-test.mjs dialog-test.mjs` for a focused run.
+Missing browsers and failed suites fail the command; they are never silently skipped.
+Add `--debug` for browser-process and per-layout diagnostics. Each container has
+256 MB of shared memory for composited layers, within its 2 GB memory limit.
+WebKit uses its GTK backend in an isolated Xvfb display to avoid WPE headless
+animation-frame stalls during repeated viewport changes; no host display is mounted.
+
+Both runners mount staged
 public website/test files, published archive files and those three dependency
 packages read-only. It has no network, credentials, repository checkout, Docker
 socket or writable host output mount. Browser output is bounded and temporary
@@ -126,11 +145,19 @@ These are shared interface contracts: preserve them when adding or changing them
 | Theme colours in records, forms, search and readers; readable light/dark contrast | `discovery-test.mjs`, `theme-test.mjs`, `accessibility-test.mjs` |
 | Outside click/tap closes only the topmost popup in every view; inside clicks and selection drags keep it open; close icons stay centred | `dialog-test.mjs` |
 | New/reopened articles start at the heading after scrolling or opening a video; previous video frame is removed; background page position is preserved | `article-scroll-test.mjs` |
-| Mobile PDFs render through the isolated local reader; viewer switching and theme changes work | `preview-test.mjs`, `discovery-test.mjs`, `dialog-test.mjs` |
+| Mobile PDFs render through the isolated local reader, including when dedicated workers are unavailable; viewer switching and theme changes work | `preview-test.mjs`, `discovery-test.mjs`, `dialog-test.mjs` |
 
-Browser coverage uses Chromium with desktop and touch/mobile emulation. The video
-scroll regression substitutes a local iframe response; it checks the app's player
-lifecycle, not playback on YouTube. Native Safari/device checks remain manual.
+The browser matrix covers desktop and touch layouts at phone and tablet widths,
+plus portrait/landscape changes. Firefox supports touch and viewport resizing but
+not Playwright's `isMobile` emulation, so its narrow-screen runs use the former.
+WebKit phone navigation uses `isMobile`; its live rotation checks use a separate
+touch context because GTK mobile emulation retains the initial visual viewport
+after a resize. Landscape fullscreen is also checked in a fresh mobile context.
+WebKit provides Safari engine coverage, not a native Safari or physical iPhone test;
+those checks remain manual. See [Playwright's browser support](https://playwright.dev/docs/browsers).
+The video scroll regression substitutes a local iframe response; it checks the
+app's player lifecycle, not playback on YouTube. Phone field-size assertions guard
+against iOS focus zoom; pinch zoom remains enabled.
 
 ### Preserved research diagrams and figures
 
@@ -322,6 +349,8 @@ Light readers use darker variants of each archive view's accent for readable
 links, labels and focus indicators. The ambient-motion control remembers your
 choice and pauses constellation drift and animated navigation; a system request
 for reduced motion takes precedence and updates immediately.
+Ambient effects also pause behind open dialogs, avoiding continuous redraws under
+their blurred backdrops while a document is being read.
 For PDFs the theme changes the viewer controls and surrounding stage while the
 browser-native document keeps its original page colours.
 

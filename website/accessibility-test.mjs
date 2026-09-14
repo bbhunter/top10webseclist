@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
+import {launchBrowser} from "./browser-test.mjs";
 const axeSource = await readFile(process.env.AXE_SOURCE || fileURLToPath(import.meta.resolve("axe-core/axe.min.js")), "utf8");
-const browser = await chromium.launch({ headless: true });
+const browser = await launchBrowser();
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 const url = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:8000/website/";
 const violations = [];
@@ -50,6 +50,6 @@ try {
     await page.locator("#close-mobile-menu").click();
     await page.setViewportSize({ width: 1440, height: 1000 });
   }
-  assert.deepEqual(violations, []);
+  assert.deepEqual(violations.map(({label,id,nodes}) => ({label,id,count:nodes.length,examples:nodes.slice(0,2)})), []);
   console.log(`Accessibility: ${checks} page, popup and mobile checks passed (zero automated WCAG A/AA violations)`);
 } finally { await browser.close(); }

@@ -1,7 +1,7 @@
 // Per-source attribution, document selection and progressive loading across views.
 import assert from "node:assert/strict";
-const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
-const browser = await chromium.launch({ headless: true });
+import {launchBrowser} from "./browser-test.mjs";
+const browser = await launchBrowser();
 const base = process.env.WEBSEC_TEST_URL || "http://127.0.0.1:4173/";
 const views = ["evidence", "museum", "library", "time", "signals", "constellation", "terminal", "desk", "favourites"];
 const errors = [];

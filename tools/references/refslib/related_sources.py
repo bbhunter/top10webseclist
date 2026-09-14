@@ -72,6 +72,11 @@ def load_policy(root):
             for field in ("title", "label", "publisher", "published", "summary"):
                 if field in source and not isinstance(source[field], str):
                     raise ValueError("Source metadata must be text: " + field)
+            # Labels describe the companion's role. A second handwritten byline
+            # can contradict its document credit (including a later correction).
+            # Historical citation text and actual publication titles are retained.
+            if re.search(r"(?:^|\s)by\s+\S", source.get("label", ""), re.I):
+                raise ValueError("Keep bylines out of source labels; use a role label and evidence-backed authors: " + key)
             if "authors" in source and (not isinstance(source["authors"], list) or any(not isinstance(author, str) for author in source["authors"])):
                 raise ValueError("Source authors must be a list of names")
             for evidence in source["evidence"]:
@@ -187,6 +192,10 @@ def build(root, policy=None, manifest=None):
         group["sources"] = [source for source in group["sources"] if identity(source["url"]) not in excluded]
         for extra in decision.get("sources", []):
             sid = stable_id(extra["url"])
+            record = lookup.get(identity(extra["url"]), {})
+            if "authors" in extra and "authors" in record:
+                if [name.strip() for name in extra["authors"]] != [name.strip() for name in record["authors"]]:
+                    raise ValueError("Companion authors conflict with the archive attribution: " + extra["url"])
             existing = next((s for s in group["sources"] if s["id"] == sid), None)
             row = {"id": sid, "label": extra.get("label") or extra.get("title") or "Related source", "preservation": "archive", **extra, "basis": "reviewed-relationship"}
             detected_kind = inferred_kind(row["url"], "", {})

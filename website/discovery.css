@@ -56,10 +56,11 @@
 .discovery-view :is(button,input,select) { font:inherit; }
 .discovery-view button { cursor:pointer; }
 .discovery-view :is(h2,h3) { line-height:1.2; text-wrap:pretty; }
-.discovery-view button:not([data-artifact]), .discovery-appearance button {
+.discovery-view button:not([data-artifact]), .discovery-record-actions button, .discovery-appearance button {
+  -webkit-appearance:none; appearance:none;
   min-height:42px; padding:8px 13px; color:var(--view-accent); background:var(--panel); border:1px solid var(--line-strong); border-radius:6px; font-size:.82rem; font-weight:650;
 }
-.discovery-view button:not([data-artifact]):hover { background:var(--panel-2); }
+.discovery-view button:not([data-artifact]):hover, .discovery-record-actions button:hover { background:var(--panel-2); }
 :is(.discovery-view,.discovery-appearance) button[aria-pressed="true"] { color:var(--accent-ink); background:var(--view-accent); border-color:var(--view-accent); }
 :is(.discovery-view,.discovery-appearance) button[aria-pressed="true"]:hover { color:var(--accent-ink); background:var(--view-accent); }
 .discovery-appearance { display:flex; align-items:center; gap:6px; }
@@ -177,3 +178,8 @@
 
 .discovery-video { display:inline-flex; align-items:center; gap:7px; }
 .discovery-video .record-video { --record-color:var(--view-accent); --record-ink:var(--accent-ink); font-size:.75rem; }
+
+/* Discovery styles are unlayered, so keep the shared phone input size here too. */
+@media (max-width:820px), (hover:none) and (pointer:coarse) {
+  :root[data-discovery-theme] :is(.global-search input,.discovery-field input,.discovery-field select,.contribute-field input,.contribute-field select,.contribute-field textarea) { font-size:16px; }
+}

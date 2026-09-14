@@ -526,16 +526,10 @@ function briefCreditOf(item) {
   return (item.authors || []).join(", ") || item.publisher || "";
 }
 
-// The credit the shard carries. A cap keeps the payload bounded, but a cap that
-// stops mid-list is the same failure this field exists to fix: the archive's
-// longest byline is four names today and a conference paper carries more, so
-// the eighth name is followed by the words that say there were others rather
-// than by silence.
-const CREDIT_LIMIT = 8;
+// Preserve every recorded author, in source order, in the published data.
+// Compact card layouts may clip visually; source details retain the full credit.
 function creditList(authors) {
-  return authors.length > CREDIT_LIMIT
-    ? [...authors.slice(0, CREDIT_LIMIT), "et al."]
-    : [...authors];
+  return [...authors];
 }
 
 /**
@@ -851,6 +845,9 @@ function sourceDetailsFor(record, source) {
   if (alsoAt.length) details.alsoAt = [...new Set(alsoAt)];
   if (source) {
     for (const key of ["title", "authors", "publisher", "published", "summary"]) {
+      // An explicit empty author list withdraws a credit. Companion metadata
+      // must not resurrect it; only a missing field permits the fallback.
+      if (key === "authors" && Object.hasOwn(record, "authors")) continue;
       if (!details[key] && source[key]) details[key] = source[key];
     }
     details.relationship = source.relation;
@@ -3555,7 +3552,10 @@ async function openArtifact(id) {
   // A closed dialog has no layout box, so resetting it before showModal()
   // leaves its previous scroll offset intact. Reset after opening and focus,
   // instantly, so every record starts at its heading in every theme.
-  dialog.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  // Assign the offsets directly: WebKit can ignore scrollTo() when reopening
+  // the same dialog content after an earlier programmatic scroll.
+  dialog.scrollTop = 0;
+  dialog.scrollLeft = 0;
   refreshSourcePanel(item);
 }
 

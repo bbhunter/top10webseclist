@@ -72,6 +72,14 @@ this adds. Record the source URLs providing evidence in `evidence`. Attribution
 belongs to each source: never copy the main article's authors onto a companion.
 No score or research-merit verdict belongs in these fields.
 
+Keep manually maintained labels about the source's role (for example, `Part 1`
+or `Follow-up analysis`), with no `by ...` clause. Display credit from the source's
+structured attribution, not a second handwritten byline in its label. Preserve
+historical citation text and original publication titles. Never infer an author
+from a domain, site banner or a researcher mentioned in another article.
+When optional companion `authors` are supplied, they must agree with an existing
+archive attribution, including an explicitly empty list that withdraws a credit.
+
 Example policy (keys are the original year-bullet URL, not positional item IDs):
 
 ```json

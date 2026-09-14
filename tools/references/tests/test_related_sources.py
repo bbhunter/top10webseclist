@@ -90,6 +90,37 @@ class TestRelatedSources(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     related.load_policy(self.root)
 
+    def test_companion_labels_cannot_carry_a_second_byline(self):
+        self.extra["label"] = "Part 1 by Someone Else"
+        self.save_policy()
+        with self.assertRaisesRegex(ValueError, "Keep bylines out"):
+            self.group()
+        self.extra["label"] = "Part 1"
+        self.extra["title"] = "Secure by Design"
+        self.save_policy()
+        self.assertEqual(self.group()["sources"][-1]["title"], "Secure by Design")
+
+    def test_companion_credits_must_match_all_archive_authors(self):
+        self.manifest["urls"][self.paper] = {"authors": ["Alice", "Bob"]}
+        support.write(self.root, "archived-references/manifest.json", json.dumps(self.manifest))
+        for authors in (["Someone Else"], ["Alice"], []):
+            with self.subTest(authors=authors):
+                self.extra["authors"] = authors
+                self.save_policy()
+                with self.assertRaisesRegex(ValueError, "authors conflict"):
+                    self.group()
+        self.extra["authors"] = ["Alice", "Bob"]
+        self.save_policy()
+        self.assertEqual(self.group()["sources"][-1]["authors"], ["Alice", "Bob"])
+
+    def test_withdrawn_archive_credit_cannot_return_from_companion_metadata(self):
+        self.manifest["urls"][self.paper] = {"authors": []}
+        support.write(self.root, "archived-references/manifest.json", json.dumps(self.manifest))
+        self.extra["authors"] = ["Former credit"]
+        self.save_policy()
+        with self.assertRaisesRegex(ValueError, "authors conflict"):
+            self.group()
+
     def test_orphan_and_missing_main_fail_instead_of_silently_disappearing(self):
         self.policy["groups"][self.main]["main"] = "https://example.org/not-a-member"
         self.save_policy()

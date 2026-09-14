@@ -1,0 +1,9 @@
+# Match the approved external Playwright packages passed to container-tests.py.
+FROM mcr.microsoft.com/playwright:v1.55.0-noble
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends python3 \
+ && npm install --prefix /opt/browser-tests playwright@1.55.0 \
+ && node /opt/browser-tests/node_modules/playwright/cli.js install chrome msedge \
+ && rm -rf /var/lib/apt/lists/* /root/.npm
+ENV HOME=/tmp
+USER pwuser

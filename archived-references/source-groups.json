@@ -21,8 +21,8 @@
     "2024.md": "49fcf6df7e94c825984a7426d5d80cc7dede007cdfa44642a0ef21a4f833a510",
     "2025.md": "eb8999591f2aab36c02f098873fad224d2e7a10d66c7943fb3bc40439e2498f1",
     "2026-ai.md": "e2feb6fc0bcf337703af125ff14212aba94a595932a79514f7d1244096f5f83b",
-    "archived-references/manifest.json": "949f61751dc0beb65be6a957e7e535e17bc71b636d3b947da6df8a66704b2dd2",
-    "tools/references/related-sources.json": "e42606e8542d178b45a90c39dfa3b453ed4315f38171e88b1fe77a6548e0291a",
+    "archived-references/manifest.json": "0bc42f8bfb00bda04557278666e7bc319cc1e961deef47e274f7276ac4ec3f6c",
+    "tools/references/related-sources.json": "20c38f1596cd514d55a13304aab08f2b49409c053a7a1aeda0bd2d9c6e2e90c9",
     "website/archive-years.json": "4b266ede6cc26aff143cbafb532aad67864a95649fe844a435421322b0869877"
   },
   "groups": {
@@ -1596,7 +1596,7 @@
         },
         {
           "id": "source-7466ddf949f7b8ef59f2",
-          "label": "Part 1 by Michael Daw",
+          "label": "Part 1",
           "preservation": "archive",
           "url": "http://michaeldaw.org/md-hacks/csrf-with-msword/",
           "title": "CSRF with MS Word",

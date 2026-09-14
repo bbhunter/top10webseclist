@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-14T11:53:53+00:00",
+ "updated": "2026-09-14T14:25:51+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -320481,6 +320481,10 @@
   },
   "https://zenodo.org/records/17822391": {
    "also_at": [],
+   "authors": [
+    "Senapati Diwangkara",
+    "Yinzhi Cao"
+   ],
    "cited_by": [
     "2025.md:102"
    ],
@@ -320497,11 +320501,27 @@
      "reason": "http 403 on acquisition",
      "result": "failed",
      "utc": "2026-09-09T23:35:44+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Senapati Diwangkara",
+      "Yinzhi Cao"
+     ],
+     "publisher": "",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-14T14:25:51+00:00"
     }
    }
   },
   "https://zenodo.org/records/20280317": {
    "also_at": [],
+   "authors": [
+    "Nurullah Erinola",
+    "Marcel Maehren",
+    "Marcus Brinkmann",
+    "Jörg Schwenk"
+   ],
    "cited_by": [
     "2026-ai.md:31"
    ],
@@ -320509,6 +320529,7 @@
    "decision": null,
    "first_seen_utc": "2026-09-09T23:05:08+00:00",
    "kind": "article",
+   "publisher": "Zenodo",
    "spellings": [
     "https://zenodo.org/records/20280317"
    ],
@@ -320518,6 +320539,18 @@
      "reason": "http 403 on acquisition",
      "result": "failed",
      "utc": "2026-09-09T23:08:28+00:00"
+    },
+    "attribution": {
+     "authors": [
+      "Nurullah Erinola",
+      "Marcel Maehren",
+      "Marcus Brinkmann",
+      "Jörg Schwenk"
+     ],
+     "publisher": "Zenodo",
+     "reason": "maintainer-stated attribution from overrides.json",
+     "result": "applied",
+     "utc": "2026-09-14T14:25:51+00:00"
     }
    }
   },
