@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:28"
 commit: ""
-content_sha256: 2df44cef23967ab32199ac80be0e906926ab1af46c78bd9953846267216405ec
+content_sha256: afcbefac53480146132f931f8719e922e63c2d6c04e86a627dfe596f54246ccb
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-wit
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: 58639d2fa29fba08a07a5705ce871abad6e6ae8dc3946ad1411fdf5a7352afb0
-retrieved_from: "http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:45+00:00"
+raw_sha256: 5db23fe7c522890609c5c2adb2538f96b85e33e9091431656f3fff58ea4c28bf
+retrieved_from: "https://web.archive.org/web/20080304012412id_/http://ha.ckers.org:80/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T06:33:41+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-res-timing-0
-snapshot: 20080415153937
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/>
-- Preserved from: http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/ (stored) on 2026-08-09
-- Capture timestamp: 20080415153937
+- Preserved from: https://web.archive.org/web/20080304012412id_/http://ha.ckers.org:80/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/ (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -77,3 +76,7 @@ I’ve been meaning to post this since Blackhat last year, but I just finally go
 In other news, I should also mention that I got back from [the Minnesota OWASP meeting](http://www.owasp.org/index.php/Minneapolis_St_Paul). I was really surprised to see how many people came out to see me (probably 75 or so). All really nice people and I was impressed by Kuai and the entire setup. Very nicely done. I think my slides will be posted today or tomorrow. I guess Bruce Schneier spoke there the month before I did, so these guys definitely have got their eye on the heavy hitters for those of you on the speaking circuit. I also spoke on [Minnesota Public Radio as well](http://www.publicradio.org/columns/futuretense/2008/02/11.shtml), which was kinda fun. I hope it continues to grow!
 
 I missed Schmoocon and DC Blackhat but here is the unofficial list of my upcoming cons: [Source Boston](http://www.sourceboston.com/) (leading a panel), [RSACon 2008](http://www.rsaconference.com/2008/US/Home.aspx) (just visiting), [TRISC](http://www.trisc.org/) (speaking), [Secure360](http://www.secure360.org/) (speaking - unconfirmed), Super Secret SANS Conference to be talked about at a later date (speaking), OWASP Denver (speaking - unconfirmed), [World OWASP NYC 2008](http://www.owasp.org/index.php/OWASP_NYC_AppSec_2008_Conference) (speaking). So yah, busy busy busy…
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `58639d2fa29fba08a07a5705ce871abad6e6ae8dc3946ad1411fdf5a7352afb0`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `5db23fe7c522890609c5c2adb2538f96b85e33e9091431656f3fff58ea4c28bf`). The retained article text was checked against this replacement capture. All retained text agrees: combining res://timing with META-refresh blocking, IE7 demo,5–15second timing gap and practical limitations. Conference paragraph also agrees. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

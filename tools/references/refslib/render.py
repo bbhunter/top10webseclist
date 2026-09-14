@@ -37,8 +37,8 @@ BANNER = (
 )
 
 RIGHTS = ("Rights remain with the original author and publisher. This is a research\n"
-          "archive of a source from the Web Hacking Techniques Index collections, kept so the\n"
-          "page going offline. To read the original, follow the link above.")
+          "archive of a source from the Web Hacking Techniques Index collections, kept so\n"
+          "it remains readable if the page goes offline. To read the original, follow the link above.")
 
 
 class MissingAttribution(Exception):

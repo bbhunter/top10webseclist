@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:13"
 commit: ""
-content_sha256: adceef21c2ff74f15a8a5521cfa526357e68ee5d064fc0fda6445923231d7890
+content_sha256: cdd87994a139ee14866b363f35712a9daf94ce65d65ebc1c2c839fbabbd3af48
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-mac
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: 4341fcba21876ec3d366d09ffcb3da1feb3ed0138da0eec1265d458470b6ff77
-retrieved_from: "http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:25:38+00:00"
+raw_sha256: 8d71af25bcb8dffd6990cb72cc825350e04d121f338564b01f94b4101706570c
+retrieved_from: "https://web.archive.org/web/20070704183844id_/http://ha.ckers.org:80/blog/20070103/pdf-xss-can-compromise-your-machine/"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-09T04:54:12+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-pdf-xss-machine
-snapshot: 20070324040105
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/>
-- Preserved from: http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/ (stored) on 2026-08-09
-- Capture timestamp: 20070324040105
+- Preserved from: https://web.archive.org/web/20070704183844id_/http://ha.ckers.org:80/blog/20070103/pdf-xss-can-compromise-your-machine/ (wayback) on 2026-08-09
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -76,3 +75,7 @@ file:///C:/Program%20Files/Adobe/Acrobat%207.0/Resource/ENUtxt.pdf#blah=javascri
 Hmmm… It would appear that Adobe Acrobat has now created a local JavaScript issue for Firefox and Opera users. I’m sure there are other default locations for other versions of Adobe Acrobat. Very scary stuff.
 
   This entry was posted on Wednesday, January 3rd, 2007 at 8:08 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/trackback/) from your own site.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `4341fcba21876ec3d366d09ffcb3da1feb3ed0138da0eec1265d458470b6ff77`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-09 (SHA-256 `8d71af25bcb8dffd6990cb72cc825350e04d121f338564b01f94b4101706570c`). The retained article text was checked against this replacement capture. Complete retained post agrees, including Acrobat7 ENUtxt.pdf location and literal #blah=javascript fragment demonstration. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

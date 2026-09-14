@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:43"
 commit: ""
-content_sha256: ff99a493919e0a98b373041c34f1e34b5c7cbdcb6cb445032b2e3bd79c10c076
+content_sha256: a9e550276fb568836d24a1c1de62dc3a68d28b95484340345abcca54f9c9a88b
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://0x999.net/blog/exploring-javascript-events-bypassing-wafs
 published: 2024-11-18
 publisher: 0x999
 publisher_english: ""
-raw_sha256: 20ba3729c39040fc655fd47300ae30a2b7160020aa430e096e20673aa54ccc48
+raw_sha256: af5a97ce9e758345d20d83c1e38bf644b3b98875f8fef157f03485383367a8f8
 retrieved_from: "https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:16+00:00"
+retrieved_utc: "2026-08-17T10:28:11+00:00"
 slug: 2024-0x999-exploring-javascript-events-bypassing-wafs-character-normalization
 snapshot: ""
 title_english: ""
@@ -50,12 +50,12 @@ translation_of: ""
 
 - Published: 2024-11-18
 - Original: <https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization>
-- Preserved from: https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization (browser) on 2026-08-09
+- Preserved from: https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization (browser) on 2026-08-17
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -428,3 +428,7 @@ The first part of the payload `/*` is treated as a string, followed by the OR co
 It can also be used for XSS: `//akamai.com/?x=/*<input/autofocus/onfocus=a=self;a'ale'%2b'rt'>*%2f`.
 
 Thank you for reading & Many thanks to [@garethheyes ](https://x.com/garethheyes), [@terjanq ](https://x.com/terjanq) & [@0xEdra ](https://x.com/0xEdra)
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `20ba3729c39040fc655fd47300ae30a2b7160020aa430e096e20673aa54ccc48`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-17 (SHA-256 `af5a97ce9e758345d20d83c1e38bf644b3b98875f8fef157f03485383367a8f8`). The retained article text was checked against this replacement capture. All retained technique-bearing discussion, WAF normalization matrix and inline examples are supported. Two retained img examples contain injected style/chrome attributes instead of their event handlers; source contains the real onerror handlers. Remaining unmatched paragraph is Markdown-link parsing noise. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

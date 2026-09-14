@@ -26,7 +26,7 @@ canonical_url: "http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attack
 cited_by:
   - "2014.md:18"
 commit: ""
-content_sha256: b85e8079a2cf7d41a3aa44536ac8147b96aefc095e5405f071f44de68961d251
+content_sha256: c6b286b8e3f60d2c7efe4149bd796b4864b9f92033208bb8c125921c1d2e0eb8
 depth: full
 depth_reason: default
 kind: article
@@ -36,12 +36,12 @@ original_url: "https://web.archive.org/web/20160403035045/http://threatpost.com/
 published: 2014-06-11
 publisher: Threatpost - English - Global - threatpost.com
 publisher_english: ""
-raw_sha256: a12f8179194b4b7fbebddfcad0da4ca7641f10f50350e775c6c6923c5113b525
-retrieved_from: "http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
+raw_sha256: 08027eac63b3c57efb50366bdb90bde5119c98727053633f1c0e55cca0bd4c34
+retrieved_from: "https://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:25:45+00:00"
+retrieved_utc: "2026-08-06T15:39:23+00:00"
 slug: threatpost-com-tweetdeck-taken-down-wake-xss-attacks-threatpost
-snapshot: 20141024063136
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -54,13 +54,12 @@ translation_of: ""
 - Published: 2014-06-11
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks>
 - Current location: <http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks>
-- Preserved from: http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks (stored) on 2026-08-09
-- Capture timestamp: 20141024063136
+- Preserved from: https://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -93,3 +92,7 @@ In the case of the TweetDeck exploit, an attacker could take over a user’s acc
 Ford compared it to the Samy Worm that hit MySpace eight years ago, but points out that the TweetDeck worm does not force an account to follow the attacker.
 
 Twitter acquired TweetDeck in 2011 for upwards of $50 million. TweetDeck provides users with a dashboard view of multiple accounts. Tweet timelines, notifications and direct messages appear in customizable streaming columns.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `a12f8179194b4b7fbebddfcad0da4ca7641f10f50350e775c6c6923c5113b525`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `08027eac63b3c57efb50366bdb90bde5119c98727053633f1c0e55cca0bd4c34`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

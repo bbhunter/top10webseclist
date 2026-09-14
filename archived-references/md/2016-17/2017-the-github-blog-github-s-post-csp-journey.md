@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:24"
 commit: ""
-content_sha256: 0fb9c27f603a7371de2e749253a94c430353a282c9bcc74bde55ea1d8a1c03a8
+content_sha256: cbdcbf2896f93396e24c3dcba2836fa3a2ef135a286243269e5572e174c9ceb3
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://githubengineering.com/githubs-post-csp-journey/"
 published: 2017-01-19
 publisher: The GitHub Blog
 publisher_english: ""
-raw_sha256: 8140dc90d5912f96f8a1829c4dcf60d9f0c0abc8bf812045cb8eef139f47c220
-retrieved_from: "https://githubengineering.com/githubs-post-csp-journey/"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:25+00:00"
+raw_sha256: 620ba7b2f939e4eaedaafff6ff76474529227b56ed9d9b2fb8a90f4b41d325de
+retrieved_from: "https://githubengineering.com/githubs-post-csp-journey"
+retrieved_kind: stored
+retrieved_utc: "2026-08-06T08:39:57+00:00"
 slug: 2017-the-github-blog-github-s-post-csp-journey
 snapshot: ""
 title_english: ""
@@ -49,12 +49,12 @@ translation_of: ""
 
 - Published: 2017-01-19
 - Original: <https://githubengineering.com/githubs-post-csp-journey/>
-- Preserved from: https://githubengineering.com/githubs-post-csp-journey/ (browser) on 2026-08-09
+- Preserved from: https://githubengineering.com/githubs-post-csp-journey (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -395,3 +395,7 @@ How a branch-free loop and byte-space arithmetic let GitHub case-fold every byte
 ###  [ Tame Dependabot: Group your updates, slow the cadence, keep security fast ](https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/)
 
 Dependabot keeps your dependencies current, but its defaults can flood your repository with pull requests. Here’s how grouping updates, slowing the cadence, and keeping security fixes fast cut the noise on a Microsoft open source project.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `8140dc90d5912f96f8a1829c4dcf60d9f0c0abc8bf812045cb8eef139f47c220`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `620ba7b2f939e4eaedaafff6ff76474529227b56ed9d9b2fb8a90f4b41d325de`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

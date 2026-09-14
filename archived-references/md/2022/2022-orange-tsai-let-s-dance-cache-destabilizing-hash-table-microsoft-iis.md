@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:24"
 commit: ""
-content_sha256: b9fc06688f03826b2e5c50a6dd453b8ef669dc734036a266b4df337f2fd6b849
+content_sha256: b1671af4eedb55e1e725ab6424203414d7400b0da10cc20ac350a47d54368403
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "http://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizi
 published: 2022-08-17
 publisher: Orange Tsai
 publisher_english: ""
-raw_sha256: 02353ae0860d6d7ce62de5fb2abd12479be5bfc6dc0305993d3f7602261760ae
-retrieved_from: "http://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html"
+raw_sha256: 50648c6e2c792e9d4ab5ffef5481fc30d2cb0387d7251e51bb34d50a3e845d43
+retrieved_from: "https://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:19+00:00"
+retrieved_utc: "2026-08-06T02:31:45+00:00"
 slug: 2022-orange-tsai-let-s-dance-cache-destabilizing-hash-table-microsoft-iis
 snapshot: ""
 title_english: ""
@@ -49,12 +49,12 @@ translation_of: ""
 
 - Published: 2022-08-17
 - Original: <http://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html>
-- Preserved from: http://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html (browser) on 2026-08-09
+- Preserved from: https://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html (browser) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -249,3 +249,7 @@ We have also proved this attack works naturally on Microsoft Exchange Server. By
 - Apr 09, 2022 - We reported the IIS Hash-Flooding DoS to Microsoft through the MSRC portal.
 - Apr 10, 2022 - We reported the IIS Authentication Bypass to Microsoft through the MSRC portal.
 - Jul 12, 2022 - Microsoft fixed everything at July’s Patch Tuesday.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `02353ae0860d6d7ce62de5fb2abd12479be5bfc6dc0305993d3f7602261760ae`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `50648c6e2c792e9d4ab5ffef5481fc30d2cb0387d7251e51bb34d50a3e845d43`). The retained article text was checked against this replacement capture. Every retained prose/code line is supported, including hash-flooding, duplicate-query cache keys, TokenCacheModule comparison and HashString collision example. Source additionally contains command lines stripped from publication. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

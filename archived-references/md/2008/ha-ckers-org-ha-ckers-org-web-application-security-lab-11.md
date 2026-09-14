@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:36"
 commit: ""
-content_sha256: f20891ddd23da21ef880b005a420689bdf6fbf830a090474baa695c611cb738e
+content_sha256: 6259b6d0cc259e28147b85164c48097c4ce6cf425a2a7403d7e479d7aeca3422
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/"
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: c8b339658ea84b63bee6671e8ce29f18640ec11cb43d193e0eb970b48b404861
-retrieved_from: "http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:45+00:00"
+raw_sha256: b05a554e2185cb4180dd8b33399aecdc0d0b5146c5599c5f56ede90fb839cb2c
+retrieved_from: "https://web.archive.org/web/20080513231621id_/http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T06:33:41+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-11
-snapshot: 20080611145514
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/>
-- Preserved from: http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/ (stored) on 2026-08-09
-- Capture timestamp: 20080611145514
+- Preserved from: https://web.archive.org/web/20080513231621id_/http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/ (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -75,3 +74,7 @@ Okay, I waited long enough to tell this story, but it’s funny enough that it�
 Then we got to talking and laughing and ultimately came up with a CSRF joke of all time. We could get tens of thousands, maybe hundreds of thousands, or even millions of people to join through CSRF via images to forms on MySpace, or what have you. You see, there is a bit of a bug in the acceptance program of Kraynackism. You don’t have to necessarily “say” that Mark is your God it turns out, you just have to somehow indicate it to him, either intentionally or inadvertantly as we saw with his friend. We could turn Kraynackism into the fastest growing religion the world has ever seen! You could be a member right now and you wouldn’t even know it!
 
 It’s funny but it’s less funny when you talk about getting people [arrested in China](http://itgossips.com/featured/open-a-page-go-to-jail-2-735.it) as we talked about [a long time ago](http://ha.ckers.org/blog/20060614/using-xss-to-dos-china/) or of course [going to jail for child porn](http://ha.ckers.org/blog/20080320/click-a-link-go-to-jail/), etc… Funny and scary all at the same time.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `c8b339658ea84b63bee6671e8ce29f18640ec11cb43d193e0eb970b48b404861`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `b05a554e2185cb4180dd8b33399aecdc0d0b5146c5599c5f56ede90fb839cb2c`). The retained article text was checked against this replacement capture. Full retained CSRF example and surrounding account agree, including image-to-form triggers and unintended acceptance. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

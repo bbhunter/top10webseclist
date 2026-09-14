@@ -22,20 +22,20 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:9"
 commit: ""
-content_sha256: f31ba8bb276d9a3ed0c91b4fd1c85e4a1cb80c042bc2a5254492cb2a3664bbd9
+content_sha256: 9e0deca2d55ce5d481fa79338678440b936cfadd10227d5d51d92d2021dce850
 depth: full
 depth_reason: default
 kind: article
 language: en
 licence: unknown
 original_url: "https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c"
-published: 2017-09-29
+published: 2017-09-10
 publisher: Medium
 publisher_english: ""
-raw_sha256: 6e611edadf6a603cba9941d59cbff9c9469cf92ef4354692201f82dfb03cbac0
+raw_sha256: 8fafffd91973d923406bd8a90178cc40a32c20263ea78d4e50eb715a628c04ba
 retrieved_from: "https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-06T08:50:14+00:00"
 slug: 2017-medium-how-i-hacked-hundreds-companies-through-their-helpdesk
 snapshot: ""
 title_english: ""
@@ -47,14 +47,14 @@ translation_of: ""
 
 **How I hacked hundreds of companies through their helpdesk** - Inti De Ceukelaire, Medium.
 
-- Published: 2017-09-29
+- Published: 2017-09-10
 - Original: <https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c>
-- Preserved from: https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c (live) on 2026-08-09
+- Preserved from: https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -211,3 +211,7 @@ I [hijacked a Trump tweet](http://www.theverge.com/2017/2/3/14495978/belgian-hac
 **FOLLOW ME ON TWITTER FOR MORE: **[https://twitter.com/securinti](https://twitter.com/securinti/)
 
 *I’d like to thank the amazing *[*Pete *Yaworski* *](https://twitter.com/yaworsk)*for proofreading and fixing my English. Also a shout out to Arne, Preben and Jerome from #teambelgium as a thank you for keeping their mouths shut. Thanks to Slack, Gitlab, *[censored*]* and Zendesk for their cooperation and approval of my blogpost.*
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `6e611edadf6a603cba9941d59cbff9c9469cf92ef4354692201f82dfb03cbac0`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `8fafffd91973d923406bd8a90178cc40a32c20263ea78d4e50eb715a628c04ba`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

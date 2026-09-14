@@ -26,7 +26,7 @@ canonical_url: "https://web.archive.org/web/20160425113158/https://threatpost.co
 cited_by:
   - "2014.md:27"
 commit: ""
-content_sha256: 37cc3b84dd824eda5c8dcb810bd4dff37c5868cbe15d97f982513809b18414d0
+content_sha256: bbb41324c3fd3473bc17961bdc367dae47078196204034cb9e0f68af951dbfc3
 depth: full
 depth_reason: default
 kind: article
@@ -36,12 +36,12 @@ original_url: "https://web.archive.org/web/20160403035045/http://threatpost.com/
 published: 2014-04-04
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: b480ea3ef7023a8423b279e8755e0fa31db53e7c4a47276f3596616dc31d88a1
-retrieved_from: "https://web.archive.org/web/20160425113158/https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:17+00:00"
+raw_sha256: 16445aa2bcc6d434ced295a82ee32baad7c7f658673824d18c80c7dc7c02827a
+retrieved_from: "https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250"
+retrieved_kind: stored
+retrieved_utc: "2026-08-06T15:39:22+00:00"
 slug: 2014-threatpost-the-first-stop-for-security-news-researchers-uncover-botnet
-snapshot: 20160403035045
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -54,13 +54,12 @@ translation_of: ""
 - Published: 2014-04-04
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250>
 - Current location: <https://web.archive.org/web/20160425113158/https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250/>
-- Preserved from: https://web.archive.org/web/20160425113158/https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250/ (live) on 2026-08-09
-- Capture timestamp: 20160403035045
+- Preserved from: https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250 (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -85,3 +84,7 @@ Despite that success, Atia said that the attacker behind the DDoS has replaced t
 “This leads us to believe that what we saw yesterday was a sort of POC test run. The current code is not only much more sophisticated, but it is also built for keeping track of the attack, for what seems like billing purposes. From the looks of it, someone is now using this Alexa Top 50 website to set up a chain of botnets for hire,” he said.
 
 That attack Incapsula uncovered shares some characteristics with some research that [Jeremiah Grossman and Matt Johansen of WhiteHat Security](https://web.archive.org/web/20160425113158/https://threatpost.com/buy-an-ad-own-a-browser-botnet/101550) presented at Black Hat last year. In their example, an attacker could inject malicious Javascript into ads that are distributed via an ad network and force the user’s browsers to perform an operation, whether it’s launching a DDoS attack on a target server or something else.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `b480ea3ef7023a8423b279e8755e0fa31db53e7c4a47276f3596616dc31d88a1`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `16445aa2bcc6d434ced295a82ee32baad7c7f658673824d18c80c7dc7c02827a`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

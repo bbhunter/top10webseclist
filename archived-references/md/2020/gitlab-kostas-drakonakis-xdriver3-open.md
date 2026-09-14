@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:78"
 commit: ""
-content_sha256: f15926c7e3dba15eca658533372c4b6f245218f3d4d0208fbdf4129f71bb3d46
+content_sha256: 5d37c60a15d825753e387e3990e1d86ec29adfcc2618205a735d106a5d058240
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://gitlab.com/kostasdrk/xdriver3-open"
 published: ""
 publisher: GitLab
 publisher_english: ""
-raw_sha256: 7bfdf6ee34d8ea77bb1f25bdb0708f657fcdbf728ced0f7894a800e635c48ec6
+raw_sha256: 97087f7716fa0a58a825610495b6e48d90c6ebf27b9751ea1e134e9d6749effb
 retrieved_from: "https://gitlab.com/kostasdrk/xdriver3-open"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:25+00:00"
+retrieved_utc: "2026-09-14T09:16:31+00:00"
 slug: gitlab-kostas-drakonakis-xdriver3-open
 snapshot: ""
 title_english: ""
@@ -46,12 +46,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://gitlab.com/kostasdrk/xdriver3-open>
-- Preserved from: https://gitlab.com/kostasdrk/xdriver3-open (browser) on 2026-08-09
+- Preserved from: https://gitlab.com/kostasdrk/xdriver3-open (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -199,3 +199,7 @@ Implemented and tested on Ubuntu 16.04 and 20.04 with python3.8. Should work on 
 - When prompted, download the webdriver binaries you need and place them under `./browsers/config/webdrivers`. If you want to do this at a later time, place them at that location in the install directory (e.g. `/usr/local/lib/python3.8/dist-packages/xdriver`)
 - Make sure the webdrivers' versions are compatible with the corresponding browsers' version
 - Run `./xutils/proxy/mitm/mitmdump` to create the `~/.mitmproxy` dir and add the generated mitmproxy certificate in the browsers' trust stores
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `7bfdf6ee34d8ea77bb1f25bdb0708f657fcdbf728ced0f7894a800e635c48ec6`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `97087f7716fa0a58a825610495b6e48d90c6ebf27b9751ea1e134e9d6749effb`). The retained article text was checked against this replacement capture. Fresh rendered DOM contains complete retained README and file listing: Cookie Hunter identity, configuration/robustness features, force-cookie proxy function, experimental security-policy caveat and installation commands. Retained commit e3d1f865 and September23,2021date match; two automatic unmatched lines are nested-Markdown/avatar parsing artifacts. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

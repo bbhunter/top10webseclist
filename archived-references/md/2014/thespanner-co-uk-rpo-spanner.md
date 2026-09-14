@@ -24,7 +24,7 @@ cited_by:
   - "2014.md:64"
   - "2015.md:43"
 commit: ""
-content_sha256: 94e3b5a8ae780e17886d1323d618ad4c02e16fa7272d103cfaeaa13996683f11
+content_sha256: 8174e6f81cfaec088171653e7649b8db2fc1aa41b51a531c324931276fe8c497
 depth: full
 depth_reason: default
 kind: article
@@ -34,12 +34,12 @@ original_url: "http://www.thespanner.co.uk/2014/03/21/rpo/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: f8e7ea57cbe153f05076fde09c91b5df321346071d8c7a7e4fcc890e10a61964
-retrieved_from: "http://www.thespanner.co.uk/2014/03/21/rpo/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:26:41+00:00"
+raw_sha256: f651a90ff79197d6dafeda9ddb44dbf3b02c2dd837e06ffbda36b4325d80dc7c
+retrieved_from: "https://thespanner.co.uk/2014/03/21/rpo"
+retrieved_kind: browser
+retrieved_utc: "2026-08-06T07:09:00+00:00"
 slug: thespanner-co-uk-rpo-spanner
-snapshot: 20140427001031
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -51,13 +51,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2014/03/21/rpo/>
-- Preserved from: http://www.thespanner.co.uk/2014/03/21/rpo/ (stored) on 2026-08-09
-- Capture timestamp: 20140427001031
+- Preserved from: https://thespanner.co.uk/2014/03/21/rpo (browser) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -218,3 +217,7 @@ I consider relative URLs harmful since you cannot rely on the browser to correct
 It’s worth noting that a relative root url isn’t vulnerable to this sort of attack since the directory is take from the highest point in the structure and I think can’t be influenced the way a normal relative url can.
 
  The entry '[RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)' was posted on March 21st, 2014 at 9:09 pm and last modified on March 24th, 2014 at 9:01 pm, and is filed under [Uncategorized](http://www.thespanner.co.uk/category/uncategorized/). You can follow any responses to this entry through the [RSS 2.0](http://www.thespanner.co.uk/2014/03/21/rpo/feed/) feed. Both comments and pings are currently closed.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `f8e7ea57cbe153f05076fde09c91b5df321346071d8c7a7e4fcc890e10a61964`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `f651a90ff79197d6dafeda9ddb44dbf3b02c2dd837e06ffbda36b4325d80dc7c`). The retained article text was checked against this replacement capture. All retained RPO mechanism and code examples agree, including stylesheet self-reference, IE expressions, fake directories, non-IE CSS/doctype constraint and PHP_SELF/PATH_INFO reflected variant. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

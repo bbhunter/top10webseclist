@@ -23,7 +23,7 @@ canonical_url: "http://www.scatmania.org/2012/04/24/visitor-tracking-without-coo
 cited_by:
   - "2012.md:22"
 commit: ""
-content_sha256: 28ccbe74219498b4be4c61cef952b12d39458d2dd64ab863819f2a32daae0a28
+content_sha256: fd1f65e00e9a4433418127e6a0f9c5b3216e016136807803704dd00c9cddb67e
 depth: full
 depth_reason: default
 kind: article
@@ -33,12 +33,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://www.scatmania.o
 published: ""
 publisher: scatmania.org
 publisher_english: ""
-raw_sha256: 33d4cda6ba3497d405c74b95eaf1c0f305c72612a3dba554f98d0e188effd59a
-retrieved_from: "http://www.scatmania.org/2012/04/24/visitor-tracking-without-cookies/"
+raw_sha256: ee5011d4eb71917165ee1f09e87b9152170110320e4d62c05bac9f0f3ee20b03
+retrieved_from: "https://scatmania.org/2012/04/24/visitor-tracking-without-cookies"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:21:47+00:00"
+retrieved_utc: "2026-08-06T15:39:07+00:00"
 slug: scatmania-org-visitor-tracking-without-cookies-how-abuse-http-301s
-snapshot: 20120428083711
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -51,13 +51,12 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.scatmania.org/2012/04/24/visitor-tracking-without-cookies/>
 - Current location: <http://www.scatmania.org/2012/04/24/visitor-tracking-without-cookies/>
-- Preserved from: http://www.scatmania.org/2012/04/24/visitor-tracking-without-cookies/ (stored) on 2026-08-09
-- Capture timestamp: 20120428083711
+- Preserved from: https://scatmania.org/2012/04/24/visitor-tracking-without-cookies (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -106,3 +105,7 @@ Moreover, this technique falls into a slight legal grey area. It would certainly
  Please try out the demo, or download the source code ([Ruby](http://www.ruby-lang.org/)/[Sinatra](http://www.sinatrarb.com/)) and see for yourself how this technique works.
 
 Note that **I am not a lawyer**, so I can’t make a statement about the legality (or not) of this approach to tracking. I would suspect that if you were somehow caught doing it without the consent of your users, you’d be just as guilty as if you used a conventional approach. However, it’s certainly a technically-interesting approach that might have applications in areas of legitimate tracking, too.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `33d4cda6ba3497d405c74b95eaf1c0f305c72612a3dba554f98d0e188effd59a`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `ee5011d4eb71917165ee1f09e87b9152170110320e4d62c05bac9f0f3ee20b03`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

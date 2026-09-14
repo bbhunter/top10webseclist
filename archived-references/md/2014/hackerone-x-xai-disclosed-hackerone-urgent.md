@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2014.md:49"
 commit: ""
-content_sha256: 11b3156b2c838fb13304cce0a9f219f2c5e301b8851f5073e610f315aed6dd86
+content_sha256: 2a524f8acc40cabe273d57eb24b59d182b65867556204e97bf1a3e7eea1f884a
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackerone.com/reports/32825"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 3a4ff071c043cd39676aceb47f41e7262bf9ed8b29103aa0c79f25abce5f9c22
+raw_sha256: a059b286a5f6adcd5abcedd0f94f2d12492f3df7a7278490263f1d2c1279efe5
 retrieved_from: "https://hackerone.com/reports/32825"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:31+00:00"
+retrieved_utc: "2026-08-07T12:12:34+00:00"
 slug: hackerone-x-xai-disclosed-hackerone-urgent
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/32825>
-- Preserved from: https://hackerone.com/reports/32825 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/32825 (browser) on 2026-08-07
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -202,3 +202,7 @@ Sure! Btw, thanks alot!
 This report has been disclosed.
 
 November 3, 2014, 11:37pm UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `3a4ff071c043cd39676aceb47f41e7262bf9ed8b29103aa0c79f25abce5f9c22`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-07 (SHA-256 `a059b286a5f6adcd5abcedd0f94f2d12492f3df7a7278490263f1d2c1279efe5`). The retained article text was checked against this replacement capture. All retained report and timeline text matches, including S3 bucket/CNAME mismatch, region caveat, triage, confirmed DNS removal and disclosure. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

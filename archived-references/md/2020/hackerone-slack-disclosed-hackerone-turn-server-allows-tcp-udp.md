@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:41"
 commit: ""
-content_sha256: 154a91d8283c5e39dbc4a6dbcbdff60174f231077898ad9e3e22b2a629164224
+content_sha256: 0cef50993d07c086de6ff8f7d8a2211d66cb7d6c44b528cf674c645f3a36dd2f
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://hackerone.com/reports/333419"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 42b45c2c6ca8ab1abad58b4d9bad9480d8c2eaf302724788f926e5fadfee8587
+raw_sha256: 3c7247f33f3f7f0a82f3a7052723c122fc4d5d664b5d753655ba5d320adbf429
 retrieved_from: "https://hackerone.com/reports/333419"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:31+00:00"
+retrieved_utc: "2026-09-14T09:15:03+00:00"
 slug: hackerone-slack-disclosed-hackerone-turn-server-allows-tcp-udp
 snapshot: ""
 title_english: ""
@@ -46,12 +46,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/333419>
-- Preserved from: https://hackerone.com/reports/333419 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/333419 (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -119,6 +119,8 @@ F281910: [report.md](https://hackerone-us-west-2-production-attachments.s3.us-we
 
 F281911: [turn_udp(53)_proxy_response.pcapng](https://hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com/000/281/911/a9efd5adface6b8b48ecf74e21e7087cbd66b999/turn_udp%2853%29_proxy_response.pcapng?response-content-disposition=attachment%3B%20filename%3D%22turn_udp%252853%2529_proxy_response.pcapng%22%3B%20filename%2A%3DUTF-8%27%27turn_udp%252853%2529_proxy_response.pcapng&response-content-type=application%2Foctet-stream&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQGK6FURQQ6YGLTAV%2F20260809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260809T021434Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFX8wVma0%2FdTIYqayh76Zdf%2FfaxEW74RT7%2B6D%2FIPBHU5AiAcXGD7n9mOEkFFU%2BxdDNsweU5qpeypgImESiXVSPs%2FRiqyBQh7EAMaDDAxMzYxOTI3NDg0OSIMUT8ot565G9201nGwKo8FMPGiUzBB31fdeHBenh0R2lnJnYIt0Lkh8xOAeGVJd8yuhWbLGcFf1Fie3dLYHXkBm7xbnqrIwWHyeZp0reyx1k%2FdiZXJoq%2BU0SLVuAfxgAtFA2KPCRJBMaGO43n7sgOPElf0Rm9ryw7g0myB8tOIawGKano9wcDonpvgbaNyjr%2FXRN67slQcDPeL9NIA6NpuglmQ5AZcETW2pvDysNbeL1FVSD1%2BFsZCfaQBokjx5s4oSqqSwUD4dRGj7XIJkSIdcbA2vigjF0fGB75PUBiWCgs4s0qT865X7aoSwkFOJOqx%2FVZEGN358hHLElYHVgNEz9T%2BH8UfjBbLuhU0omk4x4aL%2B2bcZVbMHcl%2FNewQ4e2y55snhSo3Y9umg7Sp%2BcAnKR3DHaSOqoFhJM%2BH2Jw6l12UPW%2Br5pkfLZv6bin%2FxL9FXn%2Fxn5cC2j3MzQlDX91y%2F3HnCaqbJQJ0DLc33Eo7NbO3e47MF%2FEsDeMEXoaFqsB0121YiGF06AIuOHezGVVdNiMq3EfZ90dvZQKoz6AJ7Nabi7wbO%2Bbmr61avwV3C8EiHdEqr9yPBJFtsg7HLLQziUiT27k7zncWF8fXA49oHFa0fQQT3d3ji967cx38SwmLNonlutpUEl3ff8VW1VNvyTAqCIAfMBeMR%2F7%2BsRQd7F2XYuA59%2FR3khOL7jkdoZj3Zh7zsvHfJBNrRS8GXn0efoM27%2BDag6snwC8uN6bgR74jXrHTd14ZAsYuLx7NcWk%2FWw35QmgGx80y7PjsJcChhvsHSuNEazfCmIXqOSxpCl32Q6kAen7RJmLWnHqmXEjSb74Y9O3r3ZtT8M9GndVxUBpnsJ6K5Kne68s4lnTtE0cvpCM1Hp0Cot9basbXtTD9sd%2FTBjqyAdxerespQm3bubuW6QjgLjKJbelErBLUeTgr2DevPHjylY6LXrLu3h4Q%2BLQZzib2hNQV05lNiCK38Xztd4S7MOPuCAkCGM4LruR%2F0VRqB29crWWwUtK%2B0msWSKXy4wEqQkLsx2vXMtwelrcGjdxCh4oviPICjoH0%2BH7XiHGu9ji1lUYDwMFWCWu0B5R5JFdU4vlQfmzYYr56DxBbFqoRvKuSPORpX2gxVVswmwbycoQhK6Y%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a93e6d4d3d355cc9dc8f50b6903caa25d9eea484724577cffd794666c9e9629e)
 
+Show older activities
+
 [![Sandro Gauci](https://profile-photos.hackerone-user-content.com/variants/h1r9ltrlx7r5drucw3cbori5g2mx/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/sandrogauci)
 
 [sandrogauci](https://hackerone.com/sandrogauci)
@@ -149,23 +151,246 @@ When I run our reconnaissance tool on the live environment, I see the following 
 
 **Code**•5.91 KiB
 
-1stunner recon --username '1524160678:U3VE3T72Q' --password 'HrVL1a/ZswyyLH52nW6xql0/CTo=' --server udp://slack-calls-orca-bru-qxb0.slack-core.com:22466 2 3 4stunner v0.1 5Started on 2018-04-18T19:59:57+02:00 6 7stunner/proto> udp connection to slack-calls-orca-bru-qxb0.slack-core.com:22466 successful 8stunner/proto> tcp connection to slack-calls-orca-bru-qxb0.slack-core.com:22466 successful 9stunner/banners> Software banner: None 10stunner/banners> Realm: slack.com 11stunner/allocate> udp allocate (invalid auth) successful 12stunner/allocate> tcp allocate (invalid auth) successful 13stunner/allocate> udp recon long term creds authentication successful 14stunner/allocate> udp reflexive transport address 91.64.185.21:40097 15stunner/allocate> tcp recon long term creds authentication failed 16stunner/allocate> udp recon short term creds authentication failed 17stunner/allocate> tcp recon short term creds authentication failed 18stunner/binding> udp recon binding successful 19stunner/binding> reflexive transport address 91.64.185.21:58566 20stunner/binding> tcp recon binding successful 21stunner/binding> reflexive transport address 91.64.185.21:37588 22stunner/channelbind> udp recon ChannelBind 8.8.8.8:80 successful 23stunner/channelbind> tcp recon ChannelBind 8.8.8.8:80 failed 24stunner/channelbind> udp recon ChannelBind 169.254.169.254:80 successful 25stunner/channelbind> tcp recon ChannelBind 169.254.169.254:80 failed 26stunner/channelbind> udp recon ChannelBind 127.0.0.1:80 successful 27stunner/channelbind> tcp recon ChannelBind 127.0.0.1:80 failed 28stunner/channelbind> udp recon ChannelBind 0.0.0.0:80 successful 29stunner/channelbind> tcp recon ChannelBind 0.0.0.0:80 failed 30stunner/channelbind> udp recon ChannelBind 10.0.0.1:80 successful 31stunner/channelbind> tcp recon ChannelBind 10.0.0.1:80 failed 32stunner/channelbind> udp recon ChannelBind 100.64.0.0:80 successful 33stunner/channelbind> tcp recon ChannelBind 100.64.0.0:80 failed 34stunner/channelbind> udp recon ChannelBind 169.254.0.1:80 successful 35stunner/channelbind> tcp recon ChannelBind 169.254.0.1:80 failed 36stunner/channelbind> udp recon ChannelBind 192.0.0.1:80 successful 37stunner/channelbind> tcp recon ChannelBind 192.0.0.1:80 failed 38stunner/channelbind> udp recon ChannelBind 192.0.2.1:80 successful 39stunner/channelbind> tcp recon ChannelBind 192.0.2.1:80 failed 40stunner/channelbind> udp recon ChannelBind 192.88.99.1:80 successful 41stunner/channelbind> tcp recon ChannelBind 192.88.99.1:80 failed 42stunner/channelbind> udp recon ChannelBind 192.168.0.1:80 successful 43stunner/channelbind> tcp recon ChannelBind 192.168.0.1:80 failed 44stunner/channelbind> udp recon ChannelBind 198.18.0.1:80 successful 45stunner/channelbind> tcp recon ChannelBind 198.18.0.1:80 failed 46stunner/channelbind> udp recon ChannelBind 198.51.100.1:80 successful 47stunner/channelbind> tcp recon ChannelBind 198.51.100.1:80 failed 48stunner/channelbind> udp recon ChannelBind 203.0.113.1:80 successful 49stunner/channelbind> tcp recon ChannelBind 203.0.113.1:80 failed 50stunner/channelbind> udp recon ChannelBind 224.0.0.1:80 successful 51stunner/channelbind> tcp recon ChannelBind 224.0.0.1:80 failed 52stunner/channelbind> udp recon ChannelBind 240.0.0.1:80 successful 53stunner/channelbind> tcp recon ChannelBind 240.0.0.1:80 failed 54stunner/channelbind> udp recon ChannelBind 255.255.255.255:80 successful 55stunner/channelbind> tcp recon ChannelBind 255.255.255.255:80 failed 56stunner/createpermission> udp recon CreatePermission 8.8.8.8:80 successful 57stunner/createpermission> tcp recon CreatePermission 8.8.8.8:80 failed 58stunner/createpermission> udp recon CreatePermission 169.254.169.254:80 successful 59stunner/createpermission> tcp recon CreatePermission 169.254.169.254:80 failed 60stunner/createpermission> udp recon CreatePermission 127.0.0.1:80 successful 61stunner/createpermission> tcp recon CreatePermission 127.0.0.1:80 failed 62stunner/createpermission> udp recon CreatePermission 0.0.0.0:80 successful 63stunner/createpermission> tcp recon CreatePermission 0.0.0.0:80 failed 64stunner/createpermission> udp recon CreatePermission 10.0.0.1:80 successful 65stunner/createpermission> tcp recon CreatePermission 10.0.0.1:80 failed 66stunner/createpermission> udp recon CreatePermission 100.64.0.0:80 successful 67stunner/createpermission> tcp recon CreatePermission 100.64.0.0:80 failed 68stunner/createpermission> udp recon CreatePermission 169.254.0.1:80 successful 69stunner/createpermission> tcp recon CreatePermission 169.254.0.1:80 failed 70stunner/createpermission> udp recon CreatePermission 192.0.0.1:80 successful 71stunner/createpermission> tcp recon CreatePermission 192.0.0.1:80 failed 72stunner/createpermission> udp recon CreatePermission 192.0.2.1:80 successful 73stunner/createpermission> tcp recon CreatePermission 192.0.2.1:80 failed 74stunner/createpermission> udp recon CreatePermission 192.88.99.1:80 successful 75stunner/createpermission> tcp recon CreatePermission 192.88.99.1:80 failed 76stunner/createpermission> udp recon CreatePermission 192.168.0.1:80 successful 77stunner/createpermission> tcp recon CreatePermission 192.168.0.1:80 failed 78stunner/createpermission> udp recon CreatePermission 198.18.0.1:80 successful 79stunner/createpermission> tcp recon CreatePermission 198.18.0.1:80 failed 80stunner/createpermission> udp recon CreatePermission 198.51.100.1:80 successful 81stunner/createpermission> tcp recon CreatePermission 198.51.100.1:80 failed 82stunner/createpermission> udp recon CreatePermission 203.0.113.1:80 successful 83stunner/createpermission> tcp recon CreatePermission 203.0.113.1:80 failed 84stunner/createpermission> udp recon CreatePermission 224.0.0.1:80 successful 85stunner/createpermission> tcp recon CreatePermission 224.0.0.1:80 failed 86stunner/createpermission> udp recon CreatePermission 240.0.0.1:80 successful 87stunner/createpermission> tcp recon CreatePermission 240.0.0.1:80 failed 88stunner/createpermission> udp recon CreatePermission 255.255.255.255:80 successful 89stunner/createpermission> tcp recon CreatePermission 255.255.255.255:80 failed
+```
+stunner recon --username '1524160678:U3VE3T72Q' --password 'HrVL1a/ZswyyLH52nW6xql0/CTo=' --server udp://slack-calls-orca-bru-qxb0.slack-core.com:22466                                                                                   
+
+
+stunner v0.1
+Started on 2018-04-18T19:59:57+02:00
+
+stunner/proto> udp connection to slack-calls-orca-bru-qxb0.slack-core.com:22466 successful
+stunner/proto> tcp connection to slack-calls-orca-bru-qxb0.slack-core.com:22466 successful
+stunner/banners> Software banner: None
+stunner/banners> Realm: slack.com
+stunner/allocate> udp allocate (invalid auth) successful
+stunner/allocate> tcp allocate (invalid auth) successful
+stunner/allocate> udp recon long term creds authentication successful
+stunner/allocate> udp reflexive transport address 91.64.185.21:40097
+stunner/allocate> tcp recon long term creds authentication failed
+stunner/allocate> udp recon short term creds authentication failed
+stunner/allocate> tcp recon short term creds authentication failed
+stunner/binding> udp recon binding successful
+stunner/binding> reflexive transport address 91.64.185.21:58566
+stunner/binding> tcp recon binding successful
+stunner/binding> reflexive transport address 91.64.185.21:37588
+stunner/channelbind> udp recon ChannelBind 8.8.8.8:80 successful
+stunner/channelbind> tcp recon ChannelBind 8.8.8.8:80 failed
+stunner/channelbind> udp recon ChannelBind 169.254.169.254:80 successful
+stunner/channelbind> tcp recon ChannelBind 169.254.169.254:80 failed
+stunner/channelbind> udp recon ChannelBind 127.0.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 127.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 0.0.0.0:80 successful
+stunner/channelbind> tcp recon ChannelBind 0.0.0.0:80 failed
+stunner/channelbind> udp recon ChannelBind 10.0.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 10.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 100.64.0.0:80 successful
+stunner/channelbind> tcp recon ChannelBind 100.64.0.0:80 failed
+stunner/channelbind> udp recon ChannelBind 169.254.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 169.254.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.0.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 192.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.0.2.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 192.0.2.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.88.99.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 192.88.99.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.168.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 192.168.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 198.18.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 198.18.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 198.51.100.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 198.51.100.1:80 failed
+stunner/channelbind> udp recon ChannelBind 203.0.113.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 203.0.113.1:80 failed
+stunner/channelbind> udp recon ChannelBind 224.0.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 224.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 240.0.0.1:80 successful
+stunner/channelbind> tcp recon ChannelBind 240.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 255.255.255.255:80 successful
+stunner/channelbind> tcp recon ChannelBind 255.255.255.255:80 failed
+stunner/createpermission> udp recon CreatePermission 8.8.8.8:80 successful
+stunner/createpermission> tcp recon CreatePermission 8.8.8.8:80 failed
+stunner/createpermission> udp recon CreatePermission 169.254.169.254:80 successful
+stunner/createpermission> tcp recon CreatePermission 169.254.169.254:80 failed
+stunner/createpermission> udp recon CreatePermission 127.0.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 127.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 0.0.0.0:80 successful
+stunner/createpermission> tcp recon CreatePermission 0.0.0.0:80 failed
+stunner/createpermission> udp recon CreatePermission 10.0.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 10.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 100.64.0.0:80 successful
+stunner/createpermission> tcp recon CreatePermission 100.64.0.0:80 failed
+stunner/createpermission> udp recon CreatePermission 169.254.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 169.254.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.0.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 192.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.0.2.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 192.0.2.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.88.99.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 192.88.99.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.168.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 192.168.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 198.18.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 198.18.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 198.51.100.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 198.51.100.1:80 failed
+stunner/createpermission> udp recon CreatePermission 203.0.113.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 203.0.113.1:80 failed
+stunner/createpermission> udp recon CreatePermission 224.0.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 224.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 240.0.0.1:80 successful
+stunner/createpermission> tcp recon CreatePermission 240.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 255.255.255.255:80 successful
+stunner/createpermission> tcp recon CreatePermission 255.255.255.255:80 failed
+```
 
 This means that the TURN `CreatePermission` command is allowed on UDP for all the special addresses. TCP has been disabled since our initial report and therefore we get failure for all instances. To prove that this is still indeed a potential security problem, we ran a port 53 DNS scan as follows:
 
 **Code**•1.03 KiB
 
-1stunner turn peer scan --username '1524195624:U3VE3T72Q' --password 'R0vf5RdFuqHO/isgt/uA7oLcNdw=' --server udp://slack-calls-orca-bru-qxb0.slack-core.com:22466 --scan-port-range 53 2 3 4stunner v0.1 5Started on 2018-04-19T10:40:32+02:00 6 7stunner> Scanning 127.0.0.1/32 for 53 8 9Result from 127.0.0.1:53 10([]uint8) (len=128 cap=1000) { 11 00000000 40 b3 81 80 00 01 00 06 00 00 00 00 03 77 77 77 |@............www| 12 00000010 06 67 6f 6f 67 6c 65 03 63 6f 6d 00 00 01 00 01 |.google.com.....| 13 00000020 c0 0c 00 01 00 01 00 00 00 7f 00 04 4a 7d ce 93 |............J}..| 14 00000030 c0 0c 00 01 00 01 00 00 00 7f 00 04 4a 7d ce 63 |............J}.c| 15 00000040 c0 0c 00 01 00 01 00 00 00 7f 00 04 4a 7d ce 67 |............J}.g| 16 00000050 c0 0c 00 01 00 01 00 00 00 7f 00 04 4a 7d ce 6a |............J}.j| 17 00000060 c0 0c 00 01 00 01 00 00 00 7f 00 04 4a 7d ce 69 |............J}.i| 18 00000070 c0 0c 00 01 00 01 00 00 00 7f 00 04 4a 7d ce 68 |............J}.h| 19} 20 21stunner [info]> 1 payloads sent 221 seconds remaining until shutdown % 23
+```
+stunner turn peer scan  --username '1524195624:U3VE3T72Q' --password 'R0vf5RdFuqHO/isgt/uA7oLcNdw=' --server udp://slack-calls-orca-bru-qxb0.slack-core.com:22466 --scan-port-range 53 
+
+
+stunner v0.1
+Started on 2018-04-19T10:40:32+02:00
+
+stunner> Scanning 127.0.0.1/32 for 53
+
+Result from 127.0.0.1:53
+([]uint8) (len=128 cap=1000) {
+ 00000000  40 b3 81 80 00 01 00 06  00 00 00 00 03 77 77 77  |@............www|
+ 00000010  06 67 6f 6f 67 6c 65 03  63 6f 6d 00 00 01 00 01  |.google.com.....|
+ 00000020  c0 0c 00 01 00 01 00 00  00 7f 00 04 4a 7d ce 93  |............J}..|
+ 00000030  c0 0c 00 01 00 01 00 00  00 7f 00 04 4a 7d ce 63  |............J}.c|
+ 00000040  c0 0c 00 01 00 01 00 00  00 7f 00 04 4a 7d ce 67  |............J}.g|
+ 00000050  c0 0c 00 01 00 01 00 00  00 7f 00 04 4a 7d ce 6a  |............J}.j|
+ 00000060  c0 0c 00 01 00 01 00 00  00 7f 00 04 4a 7d ce 69  |............J}.i|
+ 00000070  c0 0c 00 01 00 01 00 00  00 7f 00 04 4a 7d ce 68  |............J}.h|
+}
+
+stunner [info]> 1 payloads sent
+1 seconds remaining until shutdown %               
+```
 
 **Code**•1.01 KiB
 
-1stunner turn peer scan --username '1524195624:U3VE3T72Q' --password 'R0vf5RdFuqHO/isgt/uA7oLcNdw=' --server udp://slack-calls-orca-bru-qxb0.slack-core.com:22466 --scan-port-range 53 --scan-ip-range 10.33.0.96 2 3 4stunner v0.1 5Started on 2018-04-19T10:58:15+02:00 6 7stunner> Scanning 10.33.0.96 for 53 8 9stunner [info]> 1 payloads sent 10Result from 10.33.0.96:53 11([]uint8) (len=128 cap=1000) { 12 00000000 40 b3 81 80 00 01 00 06 00 00 00 00 03 77 77 77 |@............www| 13 00000010 06 67 6f 6f 67 6c 65 03 63 6f 6d 00 00 01 00 01 |.google.com.....| 14 00000020 c0 0c 00 01 00 01 00 00 00 12 00 04 4a 7d ce 68 |............J}.h| 15 00000030 c0 0c 00 01 00 01 00 00 00 12 00 04 4a 7d ce 69 |............J}.i| 16 00000040 c0 0c 00 01 00 01 00 00 00 12 00 04 4a 7d ce 93 |............J}..| 17 00000050 c0 0c 00 01 00 01 00 00 00 12 00 04 4a 7d ce 67 |............J}.g| 18 00000060 c0 0c 00 01 00 01 00 00 00 12 00 04 4a 7d ce 6a |............J}.j| 19 00000070 c0 0c 00 01 00 01 00 00 00 12 00 04 4a 7d ce 63 |............J}.c| 20}
+```
+stunner turn peer scan  --username '1524195624:U3VE3T72Q' --password 'R0vf5RdFuqHO/isgt/uA7oLcNdw=' --server udp://slack-calls-orca-bru-qxb0.slack-core.com:22466 --scan-port-range 53 --scan-ip-range 10.33.0.96
+
+
+stunner v0.1
+Started on 2018-04-19T10:58:15+02:00
+
+stunner> Scanning 10.33.0.96 for 53
+
+stunner [info]> 1 payloads sent
+Result from 10.33.0.96:53
+([]uint8) (len=128 cap=1000) {
+ 00000000  40 b3 81 80 00 01 00 06  00 00 00 00 03 77 77 77  |@............www|
+ 00000010  06 67 6f 6f 67 6c 65 03  63 6f 6d 00 00 01 00 01  |.google.com.....|
+ 00000020  c0 0c 00 01 00 01 00 00  00 12 00 04 4a 7d ce 68  |............J}.h|
+ 00000030  c0 0c 00 01 00 01 00 00  00 12 00 04 4a 7d ce 69  |............J}.i|
+ 00000040  c0 0c 00 01 00 01 00 00  00 12 00 04 4a 7d ce 93  |............J}..|
+ 00000050  c0 0c 00 01 00 01 00 00  00 12 00 04 4a 7d ce 67  |............J}.g|
+ 00000060  c0 0c 00 01 00 01 00 00  00 12 00 04 4a 7d ce 6a  |............J}.j|
+ 00000070  c0 0c 00 01 00 01 00 00  00 12 00 04 4a 7d ce 63  |............J}.c|
+}
+```
 
 The reconnaissance tool was also run on your dev environment and it gave the below output indicating that all traffic is being blocked, including traffic meant to go to an internet IP address such as Google's `8.8.8.8`. Log below:
 
 **Code**•5.73 KiB
 
-1stunner recon --username '1524195624:U3VE3T72Q' --password 'R0vf5RdFuqHO/isgt/uA7oLcNdw=' --server udp://z-slack-calls-orca-research1.slack-core.com:22466 2 3stunner v0.1 4Started on 2018-04-19T10:37:18+02:00 5 6stunner/proto> udp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful 7stunner/proto> tcp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful 8stunner/banners> Software banner: None 9stunner/banners> Realm: slack.com 10stunner/allocate> udp allocate (invalid auth) successful 11stunner/allocate> tcp allocate (invalid auth) successful 12stunner/allocate> udp recon long term creds authentication successful 13stunner/allocate> udp reflexive transport address 91.64.185.21:38635 14stunner/allocate> tcp recon long term creds authentication failed 15stunner/allocate> udp recon short term creds authentication failed 16stunner/allocate> tcp recon short term creds authentication failed 17stunner/binding> udp recon binding successful 18stunner/binding> reflexive transport address 91.64.185.21:51750 19stunner/binding> tcp recon binding successful 20stunner/binding> reflexive transport address 91.64.185.21:32972 21stunner/channelbind> udp recon ChannelBind 8.8.8.8:80 failed 22stunner/channelbind> tcp recon ChannelBind 8.8.8.8:80 failed 23stunner/channelbind> udp recon ChannelBind 169.254.169.254:80 failed 24stunner/channelbind> tcp recon ChannelBind 169.254.169.254:80 failed 25stunner/channelbind> udp recon ChannelBind 127.0.0.1:80 failed 26stunner/channelbind> tcp recon ChannelBind 127.0.0.1:80 failed 27stunner/channelbind> udp recon ChannelBind 0.0.0.0:80 failed 28stunner/channelbind> tcp recon ChannelBind 0.0.0.0:80 failed 29stunner/channelbind> udp recon ChannelBind 10.0.0.1:80 failed 30stunner/channelbind> tcp recon ChannelBind 10.0.0.1:80 failed 31stunner/channelbind> udp recon ChannelBind 100.64.0.0:80 failed 32stunner/channelbind> tcp recon ChannelBind 100.64.0.0:80 failed 33stunner/channelbind> udp recon ChannelBind 169.254.0.1:80 failed 34stunner/channelbind> tcp recon ChannelBind 169.254.0.1:80 failed 35stunner/channelbind> udp recon ChannelBind 192.0.0.1:80 failed 36stunner/channelbind> tcp recon ChannelBind 192.0.0.1:80 failed 37stunner/channelbind> udp recon ChannelBind 192.0.2.1:80 failed 38stunner/channelbind> tcp recon ChannelBind 192.0.2.1:80 failed 39stunner/channelbind> udp recon ChannelBind 192.88.99.1:80 failed 40stunner/channelbind> tcp recon ChannelBind 192.88.99.1:80 failed 41stunner/channelbind> udp recon ChannelBind 192.168.0.1:80 failed 42stunner/channelbind> tcp recon ChannelBind 192.168.0.1:80 failed 43stunner/channelbind> udp recon ChannelBind 198.18.0.1:80 failed 44stunner/channelbind> tcp recon ChannelBind 198.18.0.1:80 failed 45stunner/channelbind> udp recon ChannelBind 198.51.100.1:80 failed 46stunner/channelbind> tcp recon ChannelBind 198.51.100.1:80 failed 47stunner/channelbind> udp recon ChannelBind 203.0.113.1:80 failed 48stunner/channelbind> tcp recon ChannelBind 203.0.113.1:80 failed 49stunner/channelbind> udp recon ChannelBind 224.0.0.1:80 failed 50stunner/channelbind> tcp recon ChannelBind 224.0.0.1:80 failed 51stunner/channelbind> udp recon ChannelBind 240.0.0.1:80 failed 52stunner/channelbind> udp recon ChannelBind 255.255.255.255:80 failed 53stunner/channelbind> tcp recon ChannelBind 255.255.255.255:80 failed 54stunner/createpermission> udp recon CreatePermission 8.8.8.8:80 failed 55stunner/createpermission> tcp recon CreatePermission 8.8.8.8:80 failed 56stunner/createpermission> udp recon CreatePermission 169.254.169.254:80 failed 57stunner/createpermission> tcp recon CreatePermission 169.254.169.254:80 failed 58stunner/createpermission> udp recon CreatePermission 127.0.0.1:80 failed 59stunner/createpermission> tcp recon CreatePermission 127.0.0.1:80 failed 60stunner/createpermission> udp recon CreatePermission 0.0.0.0:80 failed 61stunner/createpermission> tcp recon CreatePermission 0.0.0.0:80 failed 62stunner/createpermission> udp recon CreatePermission 10.0.0.1:80 failed 63stunner/createpermission> tcp recon CreatePermission 10.0.0.1:80 failed 64stunner/createpermission> udp recon CreatePermission 100.64.0.0:80 failed 65stunner/createpermission> tcp recon CreatePermission 100.64.0.0:80 failed 66stunner/createpermission> udp recon CreatePermission 169.254.0.1:80 failed 67stunner/createpermission> tcp recon CreatePermission 169.254.0.1:80 failed 68stunner/createpermission> udp recon CreatePermission 192.0.0.1:80 failed 69stunner/createpermission> tcp recon CreatePermission 192.0.0.1:80 failed 70stunner/createpermission> udp recon CreatePermission 192.0.2.1:80 failed 71stunner/createpermission> tcp recon CreatePermission 192.0.2.1:80 failed 72stunner/createpermission> udp recon CreatePermission 192.88.99.1:80 failed 73stunner/createpermission> tcp recon CreatePermission 192.88.99.1:80 failed 74stunner/createpermission> udp recon CreatePermission 192.168.0.1:80 failed 75stunner/createpermission> tcp recon CreatePermission 192.168.0.1:80 failed 76stunner/createpermission> udp recon CreatePermission 198.18.0.1:80 failed 77stunner/createpermission> tcp recon CreatePermission 198.18.0.1:80 failed 78stunner/createpermission> udp recon CreatePermission 198.51.100.1:80 failed 79stunner/createpermission> tcp recon CreatePermission 198.51.100.1:80 failed 80stunner/createpermission> udp recon CreatePermission 203.0.113.1:80 failed 81stunner/createpermission> tcp recon CreatePermission 203.0.113.1:80 failed 82stunner/createpermission> udp recon CreatePermission 224.0.0.1:80 failed 83stunner/createpermission> tcp recon CreatePermission 224.0.0.1:80 failed 84stunner/createpermission> udp recon CreatePermission 240.0.0.1:80 failed 85stunner/createpermission> tcp recon CreatePermission 240.0.0.1:80 failed 86stunner/createpermission> udp recon CreatePermission 255.255.255.255:80 failed 87stunner/createpermission> tcp recon CreatePermission 255.255.255.255:80 failed 881 seconds remaining until shutdown %
+```
+stunner recon --username '1524195624:U3VE3T72Q' --password 'R0vf5RdFuqHO/isgt/uA7oLcNdw=' --server udp://z-slack-calls-orca-research1.slack-core.com:22466
+
+stunner v0.1
+Started on 2018-04-19T10:37:18+02:00
+
+stunner/proto> udp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful
+stunner/proto> tcp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful
+stunner/banners> Software banner: None
+stunner/banners> Realm: slack.com
+stunner/allocate> udp allocate (invalid auth) successful
+stunner/allocate> tcp allocate (invalid auth) successful
+stunner/allocate> udp recon long term creds authentication successful
+stunner/allocate> udp reflexive transport address 91.64.185.21:38635
+stunner/allocate> tcp recon long term creds authentication failed
+stunner/allocate> udp recon short term creds authentication failed
+stunner/allocate> tcp recon short term creds authentication failed
+stunner/binding> udp recon binding successful
+stunner/binding> reflexive transport address 91.64.185.21:51750
+stunner/binding> tcp recon binding successful
+stunner/binding> reflexive transport address 91.64.185.21:32972
+stunner/channelbind> udp recon ChannelBind 8.8.8.8:80 failed
+stunner/channelbind> tcp recon ChannelBind 8.8.8.8:80 failed
+stunner/channelbind> udp recon ChannelBind 169.254.169.254:80 failed
+stunner/channelbind> tcp recon ChannelBind 169.254.169.254:80 failed
+stunner/channelbind> udp recon ChannelBind 127.0.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 127.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 0.0.0.0:80 failed
+stunner/channelbind> tcp recon ChannelBind 0.0.0.0:80 failed
+stunner/channelbind> udp recon ChannelBind 10.0.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 10.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 100.64.0.0:80 failed
+stunner/channelbind> tcp recon ChannelBind 100.64.0.0:80 failed
+stunner/channelbind> udp recon ChannelBind 169.254.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 169.254.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.0.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 192.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.0.2.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 192.0.2.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.88.99.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 192.88.99.1:80 failed
+stunner/channelbind> udp recon ChannelBind 192.168.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 192.168.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 198.18.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 198.18.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 198.51.100.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 198.51.100.1:80 failed
+stunner/channelbind> udp recon ChannelBind 203.0.113.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 203.0.113.1:80 failed
+stunner/channelbind> udp recon ChannelBind 224.0.0.1:80 failed
+stunner/channelbind> tcp recon ChannelBind 224.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 240.0.0.1:80 failed
+stunner/channelbind> udp recon ChannelBind 255.255.255.255:80 failed
+stunner/channelbind> tcp recon ChannelBind 255.255.255.255:80 failed
+stunner/createpermission> udp recon CreatePermission 8.8.8.8:80 failed
+stunner/createpermission> tcp recon CreatePermission 8.8.8.8:80 failed
+stunner/createpermission> udp recon CreatePermission 169.254.169.254:80 failed
+stunner/createpermission> tcp recon CreatePermission 169.254.169.254:80 failed
+stunner/createpermission> udp recon CreatePermission 127.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 127.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 0.0.0.0:80 failed
+stunner/createpermission> tcp recon CreatePermission 0.0.0.0:80 failed
+stunner/createpermission> udp recon CreatePermission 10.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 10.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 100.64.0.0:80 failed
+stunner/createpermission> tcp recon CreatePermission 100.64.0.0:80 failed
+stunner/createpermission> udp recon CreatePermission 169.254.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 169.254.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.0.2.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.0.2.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.88.99.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.88.99.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.168.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.168.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 198.18.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 198.18.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 198.51.100.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 198.51.100.1:80 failed
+stunner/createpermission> udp recon CreatePermission 203.0.113.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 203.0.113.1:80 failed
+stunner/createpermission> udp recon CreatePermission 224.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 224.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 240.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 240.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 255.255.255.255:80 failed
+stunner/createpermission> tcp recon CreatePermission 255.255.255.255:80 failed
+1 seconds remaining until shutdown %                                              
+```
 
 Attached you will find two pcaps. One showing the DNS responses received from `127.0.0.1` and `10.33.0.96` on the live environment. Note that further research could indicate sensitive or vulnerable services on UDP so this is why I think its not just TCP that should be blocked for internal or special IP addresses.
 
@@ -222,7 +447,51 @@ lines of interest from my test log:
 
 **Code**•2.97 KiB
 
-1stunner/proto> udp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful 2stunner/proto> tcp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful 3stunner/banners> Software banner: None 4stunner/banners> Realm: slack.com 5stunner/allocate> udp allocate (invalid auth) successful 6stunner/allocate> tcp allocate (invalid auth) successful 7stunner/allocate> udp recon long term creds authentication successful 8stunner/allocate> udp reflexive transport address 91.64.185.21:38458 9... 10stunner/createpermission> udp recon CreatePermission 8.8.8.8:80 successful 11stunner/createpermission> tcp recon CreatePermission 8.8.8.8:80 failed 12stunner/createpermission> udp recon CreatePermission 169.254.169.254:80 failed 13stunner/createpermission> tcp recon CreatePermission 169.254.169.254:80 failed 14stunner/createpermission> udp recon CreatePermission 127.0.0.1:80 failed 15stunner/createpermission> tcp recon CreatePermission 127.0.0.1:80 failed 16stunner/createpermission> udp recon CreatePermission 0.0.0.0:80 failed 17stunner/createpermission> tcp recon CreatePermission 0.0.0.0:80 failed 18stunner/createpermission> udp recon CreatePermission 10.0.0.1:80 failed 19stunner/createpermission> tcp recon CreatePermission 10.0.0.1:80 failed 20stunner/createpermission> udp recon CreatePermission 100.64.0.0:80 failed 21stunner/createpermission> tcp recon CreatePermission 100.64.0.0:80 failed 22stunner/createpermission> udp recon CreatePermission 169.254.0.1:80 failed 23stunner/createpermission> tcp recon CreatePermission 169.254.0.1:80 failed 24stunner/createpermission> udp recon CreatePermission 192.0.0.1:80 failed 25stunner/createpermission> tcp recon CreatePermission 192.0.0.1:80 failed 26stunner/createpermission> udp recon CreatePermission 192.0.2.1:80 failed 27stunner/createpermission> tcp recon CreatePermission 192.0.2.1:80 failed 28stunner/createpermission> udp recon CreatePermission 192.88.99.1:80 failed 29stunner/createpermission> tcp recon CreatePermission 192.88.99.1:80 failed 30stunner/createpermission> udp recon CreatePermission 192.168.0.1:80 failed 31stunner/createpermission> tcp recon CreatePermission 192.168.0.1:80 failed 32stunner/createpermission> udp recon CreatePermission 198.18.0.1:80 failed 33stunner/createpermission> tcp recon CreatePermission 198.18.0.1:80 failed 34stunner/createpermission> udp recon CreatePermission 198.51.100.1:80 failed 35stunner/createpermission> tcp recon CreatePermission 198.51.100.1:80 failed 36stunner/createpermission> udp recon CreatePermission 203.0.113.1:80 failed 37stunner/createpermission> tcp recon CreatePermission 203.0.113.1:80 failed 38stunner/createpermission> udp recon CreatePermission 224.0.0.1:80 failed 39stunner/createpermission> tcp recon CreatePermission 224.0.0.1:80 failed 40stunner/createpermission> udp recon CreatePermission 240.0.0.1:80 failed 41stunner/createpermission> tcp recon CreatePermission 240.0.0.1:80 failed 42stunner/createpermission> udp recon CreatePermission 255.255.255.255:80 failed 43stunner/createpermission> tcp recon CreatePermission 255.255.255.255:80 failed
+```
+stunner/proto> udp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful
+stunner/proto> tcp connection to z-slack-calls-orca-research1.slack-core.com:22466 successful
+stunner/banners> Software banner: None
+stunner/banners> Realm: slack.com
+stunner/allocate> udp allocate (invalid auth) successful
+stunner/allocate> tcp allocate (invalid auth) successful
+stunner/allocate> udp recon long term creds authentication successful
+stunner/allocate> udp reflexive transport address 91.64.185.21:38458
+...
+stunner/createpermission> udp recon CreatePermission 8.8.8.8:80 successful
+stunner/createpermission> tcp recon CreatePermission 8.8.8.8:80 failed
+stunner/createpermission> udp recon CreatePermission 169.254.169.254:80 failed
+stunner/createpermission> tcp recon CreatePermission 169.254.169.254:80 failed
+stunner/createpermission> udp recon CreatePermission 127.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 127.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 0.0.0.0:80 failed
+stunner/createpermission> tcp recon CreatePermission 0.0.0.0:80 failed
+stunner/createpermission> udp recon CreatePermission 10.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 10.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 100.64.0.0:80 failed
+stunner/createpermission> tcp recon CreatePermission 100.64.0.0:80 failed
+stunner/createpermission> udp recon CreatePermission 169.254.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 169.254.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.0.2.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.0.2.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.88.99.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.88.99.1:80 failed
+stunner/createpermission> udp recon CreatePermission 192.168.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 192.168.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 198.18.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 198.18.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 198.51.100.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 198.51.100.1:80 failed
+stunner/createpermission> udp recon CreatePermission 203.0.113.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 203.0.113.1:80 failed
+stunner/createpermission> udp recon CreatePermission 224.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 224.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 240.0.0.1:80 failed
+stunner/createpermission> tcp recon CreatePermission 240.0.0.1:80 failed
+stunner/createpermission> udp recon CreatePermission 255.255.255.255:80 failed
+stunner/createpermission> tcp recon CreatePermission 255.255.255.255:80 failed
+```
 
 [![fyunaz](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)](https://hackerone.com/fyunaz)
 
@@ -437,3 +706,7 @@ We should be good to go with disclosure now. Sorry about the delay and thank you
 This report has been disclosed.
 
 March 12, 2020, 12:15am UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `42b45c2c6ca8ab1abad58b4d9bad9480d8c2eaf302724788f926e5fadfee8587`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `3c7247f33f3f7f0a82f3a7052723c122fc4d5d664b5d753655ba5d320adbf429`). All exposed report prose and discussion were checked against this fresh capture. Five code examples retain their exact characters and line breaks in fenced blocks. The source still offers older activities that are absent from this capture; that incomplete discussion remains recorded as a recovery gap. The missing earlier capture remains documented in the archive history.

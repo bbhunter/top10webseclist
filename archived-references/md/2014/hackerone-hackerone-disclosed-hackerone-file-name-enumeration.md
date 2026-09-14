@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2014.md:50"
 commit: ""
-content_sha256: 06b29aa765f4ad7db1103e4d8fe60b28925aa3537726aab6d8682adde272be08
+content_sha256: f60ccb86c2f386000edae4ef7934ddb00049ee61d8e0f13a2be49eeac216eeb4
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://hackerone.com/reports/33935"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 3d5cb46080b29d77573cc3b1572fc0232abe80ce314607e415c95cd64bc41ba1
+raw_sha256: 828d551ec7742b976eeba3431c5fbd165b78627cf4fdf235f06a05a9cda77bd6
 retrieved_from: "https://hackerone.com/reports/33935"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-07T12:13:20+00:00"
 slug: hackerone-hackerone-disclosed-hackerone-file-name-enumeration
 snapshot: ""
 title_english: ""
@@ -46,12 +46,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/33935>
-- Preserved from: https://hackerone.com/reports/33935 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/33935 (stored) on 2026-08-07
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -236,3 +236,7 @@ November 17, 2014, 10:28pm UTC
 This report has been disclosed.
 
 November 17, 2014, 10:28pm UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `3d5cb46080b29d77573cc3b1572fc0232abe80ce314607e415c95cd64bc41ba1`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-07 (SHA-256 `828d551ec7742b976eeba3431c5fbd165b78627cf4fdf235f06a05a9cda77bd6`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

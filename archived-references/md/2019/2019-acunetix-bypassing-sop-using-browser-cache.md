@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:57"
 commit: ""
-content_sha256: 57eb1f8d53fb9831dce3023d435fa9e7de3675222660dd86ef42e5af7d71ce04
+content_sha256: 31365f6e7b53bd1aeb71d1949cc9384de96503ab4adff1901f0625bee9460e2b
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-sec
 published: 2019-04-30
 publisher: Acunetix
 publisher_english: ""
-raw_sha256: 1ed281c85b326d4fe12a699c7a79e191e760662303cde32e2f293f4fe715c5fe
-retrieved_from: "https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/"
+raw_sha256: b4f82054e792c355bda35bfde0e846167a0c5882349ab8740966855ea4118bb9
+retrieved_from: "https://portswigger-labs.net/fmnt.php?x=acunetix.com%2Fblog%2Fweb-security-zone%2Fbypassing-sop-using-the-browser-cache%2F"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:37+00:00"
+retrieved_utc: "2026-08-06T07:06:45+00:00"
 slug: 2019-acunetix-bypassing-sop-using-browser-cache
 snapshot: ""
 title_english: ""
@@ -49,12 +49,12 @@ translation_of: ""
 
 - Published: 2019-04-30
 - Original: <https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/>
-- Preserved from: https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/ (browser) on 2026-08-09
+- Preserved from: https://portswigger-labs.net/fmnt.php?x=acunetix.com%2Fblog%2Fweb-security-zone%2Fbypassing-sop-using-the-browser-cache%2F (browser) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -119,3 +119,7 @@ The described SOP bypass vulnerability is caused by misconfiguration. In the cas
 Browser vendors are now considering or implementing a stricter approach to caching. Hopefully, this change will prevent such cross-origin leaks.
 
 **Note** – The tricks invented for the purposes of this article were inspired by the HTTP Cache Cross-Site Leaks article by Eduardo Vela.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `1ed281c85b326d4fe12a699c7a79e191e760662303cde32e2f293f4fe715c5fe`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `b4f82054e792c355bda35bfde0e846167a0c5882349ab8740966855ea4118bb9`). The retained article text was checked against this replacement capture. Full retained JSONP Referer-validation cache-bypass sequence, CORS custom-header variant and mitigation text agrees. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

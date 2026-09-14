@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:39"
 commit: ""
-content_sha256: cdc95d6634a3c6d4e69b5c8f50c49f024d673a6e868fa388b3394b4e27ab9db1
+content_sha256: 26315f3696f845349d0311317bc1dbba930067fe2f51e1fb84a2579e498ad89b
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/"
 published: ""
 publisher: hackademix.net
 publisher_english: ""
-raw_sha256: 3b51a5c166bbe5d2fadb1f85160abe9481a77cc5ebddb7cddf404831d7d57b44
-retrieved_from: "https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:29+00:00"
+raw_sha256: bfe34622607cf69891170ba1e66b188d75028007a79a4cf809504295d91d77e0
+retrieved_from: "https://web.archive.org/web/20071224034338id_/http://hackademix.net:80/2007/09/26/cross-browser-proxy-unmasking/#comments"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T14:22:19+00:00"
 slug: hackademix-net-hackademix-net-cross-browser-proxy-unmasking
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/>
-- Preserved from: https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/ (browser) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20071224034338id_/http://hackademix.net:80/2007/09/26/cross-browser-proxy-unmasking/#comments (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -98,3 +98,7 @@ I’ve just learned that [some months ago](http://ha.ckers.org/blog/20070406/iph
  Hacker, atheist, humanist, dad, mozillian, security breaker and builder, creator of NoScript, casting spells at the Tor Browser. He/him.
 
  [View all of ma1's posts.](https://hackademix.net/author/ma1/)
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `3b51a5c166bbe5d2fadb1f85160abe9481a77cc5ebddb7cddf404831d7d57b44`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `bfe34622607cf69891170ba1e66b188d75028007a79a4cf809504295d91d77e0`). The retained article text was checked against this replacement capture. All retained technical prose, demo identities and October27update agree. Source additionally expands the two code widgets into full ActionScript XMLSocket and Perl socket-server listings. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

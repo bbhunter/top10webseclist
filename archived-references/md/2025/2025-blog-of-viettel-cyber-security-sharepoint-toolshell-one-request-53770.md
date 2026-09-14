@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:46"
 commit: ""
-content_sha256: 3c50c7f9b053a671edc124ffd5395a11b9db6d5cffc6fecf7428b10407cb4daf
+content_sha256: 8dd2944d0aedbdd3372b35e897885d1f2d7eb878f05432fb52518863d3e6c6bc
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://blog.viettelcybersecurity.com/sharepoint-toolshell/"
 published: 2025-07-24
 publisher: Blog of Viettel Cyber Security
 publisher_english: ""
-raw_sha256: e3d857dcfa802477edd4afd7f6969c53cdddb74bd498d98361b7f938e13ca2bc
-retrieved_from: "https://blog.viettelcybersecurity.com/sharepoint-toolshell/"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:21+00:00"
+raw_sha256: dc86e52f8e4b23bf6813eb72c3461eb1ab6960887f8e54be837ce1e0a1310672
+retrieved_from: "https://blog.viettelcybersecurity.com/sharepoint-toolshell"
+retrieved_kind: stored
+retrieved_utc: "2026-08-06T08:37:55+00:00"
 slug: 2025-blog-of-viettel-cyber-security-sharepoint-toolshell-one-request-53770
 snapshot: ""
 title_english: ""
@@ -50,12 +50,12 @@ translation_of: ""
 
 - Published: 2025-07-24
 - Original: <https://blog.viettelcybersecurity.com/sharepoint-toolshell/>
-- Preserved from: https://blog.viettelcybersecurity.com/sharepoint-toolshell/ (browser) on 2026-08-09
+- Preserved from: https://blog.viettelcybersecurity.com/sharepoint-toolshell (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -870,3 +870,7 @@ Thanks ZDI for hosting great contest and thanks Microsoft for building a great p
 Kudos to my teammate [@pivik_](https://x.com/pivik_/) for demonstrating this exploit.
 
 That’s the end of this blog, thank you for reading!
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `e3d857dcfa802477edd4afd7f6969c53cdddb74bd498d98361b7f938e13ca2bc`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `dc86e52f8e4b23bf6813eb72c3461eb1ab6960887f8e54be837ce1e0a1310672`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

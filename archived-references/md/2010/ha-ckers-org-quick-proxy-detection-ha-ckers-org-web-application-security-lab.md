@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:26"
 commit: ""
-content_sha256: d1c2e13dc094423bf064fe40d7af623995f9d52aa444a0ef6371b88a8e3597e9
+content_sha256: 25fdfacc1b2eb94c36e75a0bd4fe20797750775f5dc64ee9c204d0ff4b65339f
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20100820/quick-proxy-detection/"
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: 53c233157a436fb64b05e247682f59d795fce291b92fb098dcd8a1342f5f1aad
-retrieved_from: "http://ha.ckers.org/blog/20100820/quick-proxy-detection/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:11:24+00:00"
+raw_sha256: a62af2f54b7085aa7ee6191c48d625bb24fcce6491ae969afc57ab27abfc4097
+retrieved_from: "https://web.archive.org/web/20101217062358id_/http://ha.ckers.org:80/blog/20100820/quick-proxy-detection"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T06:34:23+00:00"
 slug: ha-ckers-org-quick-proxy-detection-ha-ckers-org-web-application-security-lab
-snapshot: 20101225134658
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20100820/quick-proxy-detection/>
-- Preserved from: http://ha.ckers.org/blog/20100820/quick-proxy-detection/ (stored) on 2026-08-09
-- Capture timestamp: 20101225134658
+- Preserved from: https://web.archive.org/web/20101217062358id_/http://ha.ckers.org:80/blog/20100820/quick-proxy-detection (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -87,3 +86,7 @@ Something as simple as http://[123.123.123.123]/img.jpg?unique_id embedded into 
  URL
 
 ---
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `53c233157a436fb64b05e247682f59d795fce291b92fb098dcd8a1342f5f1aad`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `a62af2f54b7085aa7ee6191c48d625bb24fcce6491ae969afc57ab27abfc4097`). The retained article text was checked against this replacement capture. Complete retained bracketed-IPv4 image URL proxy-detection example and false-positive caveats agree. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:37"
 commit: ""
-content_sha256: 76a956015a975db1051fdd0ab51cd3ac2c77eb423fd6cb3251c96db7a32a69a6
+content_sha256: 66e0fcc394e9cfa7f914aa6ba1b14003e83e6d409fcb0a5b36c061a0da0c53b0
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://blog.viettelcybersecurity.com/deep-understand-aspx-file-h
 published: 2022-07-25
 publisher: Blog of Viettel Cyber Security
 publisher_english: ""
-raw_sha256: 66e20b8f86726200c13c3ff7ee13db98e3bdc8081a70cc4ad19fcba1d7334efa
-retrieved_from: "https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:20+00:00"
+raw_sha256: 67a736494e13beb673a1abc99033abf9de9829c9f1614d6a079d4c45bfc41388
+retrieved_from: "https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector"
+retrieved_kind: stored
+retrieved_utc: "2026-08-06T08:37:55+00:00"
 slug: 2022-blog-of-viettel-cyber-security-deep-understand-aspx-file-handling-vectors
 snapshot: ""
 title_english: ""
@@ -50,12 +50,12 @@ translation_of: ""
 
 - Published: 2022-07-25
 - Original: <https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/>
-- Preserved from: https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/ (browser) on 2026-08-09
+- Preserved from: https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -270,3 +270,7 @@ If some WAF block you at /admin/index.aspx, you can access at /a583524842/index.
 However, this attack vector didn't work anymore because Microsoft patched it in [CVE-2020-1476](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1476)
 
 Here is the advisory: [https://lab.viettelcybersecurity.com/advisories/VCSA-12](https://lab.viettelcybersecurity.com/advisories/VCSA-12)
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `66e20b8f86726200c13c3ff7ee13db98e3bdc8081a70cc4ad19fcba1d7334efa`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `67a736494e13beb673a1abc99033abf9de9829c9f1614d6a079d4c45bfc41388`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.

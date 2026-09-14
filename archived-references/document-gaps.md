@@ -42,12 +42,12 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-768 reference(s) unresolved. 397 of them already have their raw bytes stored.
+768 reference(s) unresolved. 422 of them already have their raw bytes stored.
 
 ## http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:59`
@@ -55,7 +55,7 @@ or fix the route and re-run.
 ## http://0me.me/demo/XSUH/XSUH_FF_1.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:58`
@@ -63,7 +63,7 @@ or fix the route and re-run.
 ## http://amolnaik4.blogspot.in/2011/12/presentation-make-profit-with-ui.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2011.md:49`
@@ -71,7 +71,7 @@ or fix the route and re-run.
 ## http://blackhat.com/html/bh-eu-10/bh-eu-10-archives.html#Saindane
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:38`
@@ -79,7 +79,7 @@ or fix the route and re-run.
 ## http://blog.7elements.co.uk/2013/01/cell-injection.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:32`
@@ -87,7 +87,7 @@ or fix the route and re-run.
 ## http://blog.detectify.com/post/100600514143/hostile-subdomain-takeover-using-heroku-github-desk
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:49`
@@ -95,7 +95,7 @@ or fix the route and re-run.
 ## http://blog.ncircle.com/blogs/vert/miXSS%20Whitepaper.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:32`
@@ -103,7 +103,7 @@ or fix the route and re-run.
 ## http://blog.quaji.com/2009/08/facebook-csrf-attack-full-disclosure.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:77`
@@ -111,7 +111,7 @@ or fix the route and re-run.
 ## http://blog.watchfire.com/AMitM.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:76`
@@ -119,7 +119,7 @@ or fix the route and re-run.
 ## http://blog.watchfire.com/AMitM.ppt
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:76`
@@ -127,7 +127,7 @@ or fix the route and re-run.
 ## http://blog.watchfire.com/FPI.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:14`
@@ -135,7 +135,7 @@ or fix the route and re-run.
 ## http://blog.watchfire.com/FPI.ppt
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:14`
@@ -143,7 +143,7 @@ or fix the route and re-run.
 ## http://conference.hitb.org/hitbsecconf2015ams/wp-content/uploads/2014/12/D1T1-Alfonso-De-Gregorio-illusoryTLS.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:10`
@@ -151,7 +151,7 @@ or fix the route and re-run.
 ## http://conference.hitb.org/hitbsecconf2015ams/wp-content/uploads/2014/12/WHITEPAPER-The-illusoryTLS-Asymmetric-Backdoor.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:10`
@@ -159,7 +159,7 @@ or fix the route and re-run.
 ## http://enablesecurity.com/2008/08/11/surf-jack-https-will-not-save-you/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:92`
@@ -167,7 +167,7 @@ or fix the route and re-run.
 ## http://files.benhayak.com/Same_Origin_Method_Execution__paper.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:76`
@@ -175,7 +175,7 @@ or fix the route and re-run.
 ## http://ha.ckers.org/xss-worms/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:26`
@@ -183,7 +183,7 @@ or fix the route and re-run.
 ## http://i.blackhat.com/BH-EU-25/eu-25-Fedotkin-TheFragileLock.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:25`
@@ -191,7 +191,7 @@ or fix the route and re-run.
 ## http://i.blackhat.com/BH-US-24/Presentations/US24-Heyes-Splitting-the-Email-Atom-Exploiting-Parsers-to-Bypass-Access-Controls-Wednesday.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:21`
@@ -199,7 +199,7 @@ or fix the route and re-run.
 ## http://larholm.com/2007/07/10/internet-explorer-0day-exploit/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2007.md:10`
@@ -207,7 +207,7 @@ or fix the route and re-run.
 ## http://medium.com/@renwa/copy-drag-paste-drop-2fd4613ad1d1
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:223`
@@ -215,7 +215,7 @@ or fix the route and re-run.
 ## http://mis.fortunecook.ie/misfortune-cookie-tr069-protection-whitepaper.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:48`
@@ -223,7 +223,7 @@ or fix the route and re-run.
 ## http://nat.sakimura.org/2012/04/27/comments-on-wang-chen-wang-paper/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:82`
@@ -231,7 +231,7 @@ or fix the route and re-run.
 ## http://puzzlemall.googlecode.com/files/Temporal%20Session%20Race%20Conditions%20(TSRC)%20-%20Sept%202011%20-%20Presentation.pptx
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:92`
@@ -239,7 +239,7 @@ or fix the route and re-run.
 ## http://scarybeastsecurity.blogspot.com/2008/11/pacsec-presentation.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:53`
@@ -247,7 +247,7 @@ or fix the route and re-run.
 ## http://seriot.ch/parsing_json.php
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:11`
@@ -255,7 +255,7 @@ or fix the route and re-run.
 ## http://skeptikal.org/repository/one_in_every_family.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:33`
@@ -263,7 +263,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160507162422/http://internetcensus2012.bitbucket.org/paper.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:37`
@@ -271,7 +271,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160520151330/http://cr.yp.to/talks/2013.03.12/slides.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:9`
@@ -279,7 +279,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/RC4biases.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:9`
@@ -287,7 +287,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/biases.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:9`
@@ -295,7 +295,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/tkip_biases.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:9`
@@ -303,7 +303,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/usenix-presentation.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:9`
@@ -311,7 +311,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160520151330/https://www.usenix.org/conference/usenixsecurity13/security-rc4-tls
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:9`
@@ -319,7 +319,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/%7Ekp/dtls.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:8`
@@ -327,7 +327,7 @@ or fix the route and re-run.
 ## http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:8`
@@ -335,7 +335,7 @@ or fix the route and re-run.
 ## http://www.adambarth.com/papers/2008/barth-jackson-mitchell-b.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:95`
@@ -343,7 +343,7 @@ or fix the route and re-run.
 ## http://www.dc949.org/projects/stiltwalker/LayerOne-Stiltwalker.odp
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:44`
@@ -351,7 +351,7 @@ or fix the route and re-run.
 ## http://www.dc949.org/projects/stiltwalker/Stiltwalker2.odp
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:44`
@@ -359,7 +359,7 @@ or fix the route and re-run.
 ## http://www.gnucitizen.org/blog/myspace-quicktime-worm-follow-up
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2007.md:89`
@@ -367,7 +367,7 @@ or fix the route and re-run.
 ## http://www.iacr.org/archive/eurocrypt2002/23320530/cbc02_e02d.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:44`
@@ -375,7 +375,7 @@ or fix the route and re-run.
 ## http://www.iacr.org/cryptodb/archive/2002/FSE/3091/3091.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:5`
@@ -383,7 +383,7 @@ or fix the route and re-run.
 ## http://www.informatics.indiana.edu/xw7/WebAppSideChannel-final.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:29`
@@ -391,7 +391,7 @@ or fix the route and re-run.
 ## http://www.mbsd.jp/Whitepaper/xssi.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:116`
@@ -399,7 +399,7 @@ or fix the route and re-run.
 ## http://www.ngssoftware.com/research/papers/InterProtocolExploitation.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2007.md:70`
@@ -407,7 +407,7 @@ or fix the route and re-run.
 ## http://www.owasp.org/images/b/ba/AppsecEU09_CarettoniDiPaola_v0.8.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:6`
@@ -415,7 +415,7 @@ or fix the route and re-run.
 ## http://www.phreedom.org/research/rogue-ca/md5-collisions-1.0.ppt
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:85`, `2009.md:5`
@@ -423,7 +423,7 @@ or fix the route and re-run.
 ## http://www.remote.org/jochen/sec/hfpa/hfpa.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:58`
@@ -431,7 +431,7 @@ or fix the route and re-run.
 ## http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-2.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:10`
@@ -439,7 +439,7 @@ or fix the route and re-run.
 ## http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-3.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:10`
@@ -447,7 +447,7 @@ or fix the route and re-run.
 ## http://www.security-assessment.com/files/documents/presentations/window_shopping_browser_bug_hunting_in_2012_roberto_suggi_liverani_scott_bell.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:62`
@@ -455,7 +455,7 @@ or fix the route and re-run.
 ## http://www.sensepost.com/research/squeeza/dc-15-meer_and_slaviero-WP.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2007.md:43`
@@ -463,7 +463,7 @@ or fix the route and re-run.
 ## http://www.sensepost.com/research/squeeza/vegas_2007_timing.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2007.md:43`
@@ -471,7 +471,7 @@ or fix the route and re-run.
 ## http://www.slideshare.net/Wisec/http-parameter-pollution-a-new-category-of-web-attacks
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:6`
@@ -479,7 +479,7 @@ or fix the route and re-run.
 ## http://www.slideshare.net/a001/illusorytls-nobody-but-us-impersonate-tamper-exploit
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:10`
@@ -487,7 +487,7 @@ or fix the route and re-run.
 ## http://www.slideshare.net/a001/illusorytls-nobody-but-us-impersonate-tamper-exploit-deepsec-2015
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:10`
@@ -495,7 +495,7 @@ or fix the route and re-run.
 ## http://www.slideshare.net/frohoff1/appseccali-2015-marshalling-pickles
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:18`
@@ -503,7 +503,7 @@ or fix the route and re-run.
 ## http://www.slideshare.net/jeremiahgrossman/breaking-browsers-hacking-autocomplete-blackhat-usa-2010
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:7`
@@ -511,7 +511,7 @@ or fix the route and re-run.
 ## http://www.tetraph.com/blog/covert-redirect/githubs-oauth-2-0-covert-redirect-vulnerability/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:31`
@@ -519,7 +519,7 @@ or fix the route and re-run.
 ## http://www.thespanner.co.uk/2008/09/18/javascript-protocol-fuzzer-and-opera/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:42`
@@ -527,7 +527,7 @@ or fix the route and re-run.
 ## http://www.thespanner.co.uk/2008/10/20/bluehat/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2009.md:48`
@@ -535,7 +535,7 @@ or fix the route and re-run.
 ## http://www.xs-sniper.com/nmcfeters/URI_Use_and_Abuse.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2007.md:51`
@@ -543,7 +543,7 @@ or fix the route and re-run.
 ## https://about.gitlab.com/releases/2024/09/17/patch-release-gitlab-17-3-3-released/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:74`
@@ -551,7 +551,7 @@ or fix the route and re-run.
 ## https://adnanthekhan.com/2024/05/06/the-monsters-in-your-build-cache-github-actions-cache-poisoning/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:148`
@@ -559,7 +559,7 @@ or fix the route and re-run.
 ## https://alex.kaskaso.li/post/terraform-plan-rce
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:93`
@@ -567,7 +567,7 @@ or fix the route and re-run.
 ## https://arxiv.org/abs/2302.12173
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:53`
@@ -575,7 +575,7 @@ or fix the route and re-run.
 ## https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:53`
@@ -583,7 +583,7 @@ or fix the route and re-run.
 ## https://aws.amazon.com/security/security-bulletins/AWS-2025-006/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:43`
@@ -591,7 +591,7 @@ or fix the route and re-run.
 ## https://bit.ly/Singularity_Defcon27
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:54`
@@ -599,7 +599,7 @@ or fix the route and re-run.
 ## https://blackhat.com/eu-25/briefings/schedule/#ormageddon-leaking-more-than-you-joined-for-49161
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:6`
@@ -607,7 +607,7 @@ or fix the route and re-run.
 ## https://blackhat.com/us-26/briefings/schedule/index.html#one-key-to-rule-them-all-taking-over-a-flagship-cloud-service-53889
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:187`
@@ -615,7 +615,7 @@ or fix the route and re-run.
 ## https://blog.amiunique.org/an-explicative-article-on-drawnapart-a-gpu-fingerprinting-technique/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:64`
@@ -623,7 +623,7 @@ or fix the route and re-run.
 ## https://blog.detectify.com/2017/07/13/aws-s3-misconfiguration-explained-fix/?utm_source=labs&utm_campaign=s3_buckets
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:13`
@@ -631,7 +631,7 @@ or fix the route and re-run.
 ## https://blog.flatt.tech/entry/kindarails2shell_rails
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:70`
@@ -639,7 +639,7 @@ or fix the route and re-run.
 ## https://blog.orange.tw/2019/01/hacking-jenkins-part-1-play-with-dynamic-routing.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:8`
@@ -647,7 +647,7 @@ or fix the route and re-run.
 ## https://blog.orange.tw/2021/08/proxyoracle-a-new-attack-surface-on-ms-exchange-part-2.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:7`
@@ -655,7 +655,7 @@ or fix the route and re-run.
 ## https://blog.orange.tw/2021/08/proxyshell-a-new-attack-surface-on-ms-exchange-part-3.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:7`
@@ -663,7 +663,7 @@ or fix the route and re-run.
 ## https://blog.orange.tw/2022/10/proxyrelay-a-new-attack-surface-on-ms-exchange-part-4.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:7`
@@ -671,7 +671,7 @@ or fix the route and re-run.
 ## https://blog.raphael.karger.is/articles/2026-08/bh-2026
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:145`
@@ -679,7 +679,7 @@ or fix the route and re-run.
 ## https://blog.rubygems.org/2026/07/22/security-advisory-legacy-api-key-leak.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:192`
@@ -687,7 +687,7 @@ or fix the route and re-run.
 ## https://blogs.akamai.com/2020/08/black-hat-presentation---web-cache-entanglement.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:21`
@@ -695,7 +695,7 @@ or fix the route and re-run.
 ## https://bugs.php.net/bug.php?id=78599
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:56`
@@ -703,7 +703,7 @@ or fix the route and re-run.
 ## https://bugzilla.mozilla.org/show_bug.cgi?id=665814
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2011.md:5`
@@ -711,7 +711,7 @@ or fix the route and re-run.
 ## https://chromium-poc-53c4.xssam.workers.dev/?id=../../redirect/?url=https://chromium-poc-cors-dd35.xssam.workers.dev/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:96`
@@ -719,7 +719,7 @@ or fix the route and re-run.
 ## https://cloud.google.com/support/bulletins/index#gcp-2025-013
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:43`
@@ -727,7 +727,7 @@ or fix the route and re-run.
 ## https://cm2.pw/poc/chrome/xssi.php
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:33`
@@ -735,7 +735,7 @@ or fix the route and re-run.
 ## https://cpdos.org/paper/Your_Cache_Has_Fallen__Cache_Poisoned_Denial_of_Service_Attack__Preprint_.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:28`
@@ -743,7 +743,7 @@ or fix the route and re-run.
 ## https://datatracker.ietf.org/meeting/105/materials/slides-105-oauth-sessa-oauth-security-topics-00.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:48`
@@ -751,7 +751,7 @@ or fix the route and re-run.
 ## https://defcon.org/html/defcon-29/dc-29-speakers.html#kettle
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:6`
@@ -759,7 +759,7 @@ or fix the route and re-run.
 ## https://demo.ripstech.com/projects/shopware_5.3.3
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:45`
@@ -767,7 +767,7 @@ or fix the route and re-run.
 ## https://demo.vwzq.net/cloudflare/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:42`
@@ -775,7 +775,7 @@ or fix the route and re-run.
 ## https://devco.re/blog/2019/02/19/hacking-Jenkins-part2-abusing-meta-programming-for-unauthenticated-RCE/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:8`
@@ -783,7 +783,7 @@ or fix the route and re-run.
 ## https://diary.shift-js.info/blind-regular-expression-injection/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:32`
@@ -791,7 +791,7 @@ or fix the route and re-run.
 ## https://docs.google.com/presentation/d/10LlimFowOJ_noDrJsv4CnRgU8XoUKRAa6YjTeJFrs70/edit
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:92`
@@ -799,7 +799,7 @@ or fix the route and re-run.
 ## https://docs.google.com/presentation/d/1raF7g-RJKcOgNYusBIWLfOAUvUZhsmSn4XHDe1b5a7A/present?slide=id.g50b75dafb_3_58
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:84`
@@ -807,7 +807,7 @@ or fix the route and re-run.
 ## https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:36`
@@ -815,7 +815,7 @@ or fix the route and re-run.
 ## https://drive.google.com/file/d/0B0KLoHg_gR_XQnV4RVhlNl96MHM/view
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:47`
@@ -823,7 +823,7 @@ or fix the route and re-run.
 ## https://expo.dev/changelog/mitigating-critical-security-vulnerability-in-react-server-components
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:74`
@@ -831,7 +831,7 @@ or fix the route and re-run.
 ## https://fahrplan.events.ccc.de/congress/2011/Fahrplan/attachments/2007_28C3_Effective_DoS_on_web_application_platforms.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2011.md:58`
@@ -839,7 +839,7 @@ or fix the route and re-run.
 ## https://frederik-braun.com/firefox-ui-xss-leading-to-rce.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:44`
@@ -847,7 +847,7 @@ or fix the route and re-run.
 ## https://fscked.org/blog/why-full-disclosure
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:92`
@@ -855,7 +855,7 @@ or fix the route and re-run.
 ## https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:72`
@@ -863,7 +863,7 @@ or fix the route and re-run.
 ## https://gist.github.com/loknop/b27422d355ea1fd0d90d6dbc1e278d4d
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:19`, `2023.md:35`
@@ -871,7 +871,7 @@ or fix the route and re-run.
 ## https://gist.github.com/tomnomnom/6727d7d3fabf5a4ab20703121a9090da
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2018.md:47`
@@ -879,7 +879,7 @@ or fix the route and re-run.
 ## https://github.blog/changelog/2026-04-23-immutable-subject-claims-for-github-actions-oidc-tokens/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:99`
@@ -887,7 +887,7 @@ or fix the route and re-run.
 ## https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:154`
@@ -895,7 +895,7 @@ or fix the route and re-run.
 ## https://github.blog/security/sign-in-as-anyone-bypassing-saml-sso-authentication-with-parser-differentials/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:89`
@@ -903,7 +903,7 @@ or fix the route and re-run.
 ## https://github.com/0xacb/recollapse/blob/main/slides/bsideslisbon_2022_till_recollapse.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:32`
@@ -911,7 +911,7 @@ or fix the route and re-run.
 ## https://github.com/0xacb/recollapse/blob/main/slides/nahamcon_2022_eu_till_recollapse.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:32`
@@ -919,7 +919,7 @@ or fix the route and re-run.
 ## https://github.com/Alevsk/compression-dictionary-transport/blob/1938adc4faf858a2e61ee9232a35afe028cd726c/docs/BLOGPOST.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:206`
@@ -927,7 +927,7 @@ or fix the route and re-run.
 ## https://github.com/Alevsk/compression-dictionary-transport/blob/1938adc4faf858a2e61ee9232a35afe028cd726c/docs/RESEARCH-LOG.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:206`
@@ -935,7 +935,7 @@ or fix the route and re-run.
 ## https://github.com/Alevsk/compression-dictionary-transport/blob/1938adc4faf858a2e61ee9232a35afe028cd726c/docs/ROP%20for%20the%20Web.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:206`
@@ -943,7 +943,7 @@ or fix the route and re-run.
 ## https://github.com/Alevsk/compression-dictionary-transport/blob/1938adc4faf858a2e61ee9232a35afe028cd726c/docs/TRAINER-RUNBOOK.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:206`
@@ -951,7 +951,7 @@ or fix the route and re-run.
 ## https://github.com/BlackFan/content-type-research/blob/master/XSS.md#response-content-type-tricks
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:57`
@@ -959,7 +959,7 @@ or fix the route and re-run.
 ## https://github.com/FirebirdSQL/firebird/security/advisories/GHSA-mfpr-9886-xjhg
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:176`
@@ -967,7 +967,7 @@ or fix the route and re-run.
 ## https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-3hjv-c53m-58jj
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:72`
@@ -975,7 +975,7 @@ or fix the route and re-run.
 ## https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-5w3r-f6gm-c25w
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:72`
@@ -983,7 +983,7 @@ or fix the route and re-run.
 ## https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-cvrr-qhgw-2mm6
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:72`
@@ -991,7 +991,7 @@ or fix the route and re-run.
 ## https://github.com/ImageMagick/ImageMagick/discussions/2779
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:12`
@@ -999,7 +999,7 @@ or fix the route and re-run.
 ## https://github.com/SAML-Toolkits/ruby-saml/issues/783
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:25`
@@ -1007,7 +1007,7 @@ or fix the route and re-run.
 ## https://github.com/SAML-Toolkits/ruby-saml/security/advisories/GHSA-jw9c-mfg7-9rx2
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:74`
@@ -1015,7 +1015,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-8mvj-3j78-4qmw
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:49`
@@ -1023,7 +1023,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-c65p-x677-fgj6
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:121`
@@ -1031,7 +1031,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-c95f-27gx-6vq9?ref=labs.watchtowr.com
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:158`
@@ -1039,7 +1039,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-p26g-97m4-6q7c
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:22`
@@ -1047,7 +1047,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-rm76-4mrf-v9r8
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:121`
@@ -1055,7 +1055,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-w532-jxjh-hjhj
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:49`
@@ -1063,7 +1063,7 @@ or fix the route and re-run.
 ## https://github.com/advisories/GHSA-wpqr-jcpx-745r
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:160`
@@ -1071,7 +1071,7 @@ or fix the route and re-run.
 ## https://github.com/aio-libs/aiohttp/security/advisories/GHSA-9548-qrrj-x5pj
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:29`
@@ -1079,7 +1079,7 @@ or fix the route and re-run.
 ## https://github.com/alibaba/fastjson/wiki/security_update_20200601
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:19`
@@ -1087,7 +1087,7 @@ or fix the route and re-run.
 ## https://github.com/apache/logging-log4net/issues/154
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:79`
@@ -1095,7 +1095,7 @@ or fix the route and re-run.
 ## https://github.com/argoproj/argo-helm/security/advisories/GHSA-47m3-95c7-g2g8
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:146`
@@ -1103,7 +1103,7 @@ or fix the route and re-run.
 ## https://github.com/assembler/attachinary/issues/172
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:61`
@@ -1111,7 +1111,7 @@ or fix the route and re-run.
 ## https://github.com/boostsecurityio/smokedmeat/blob/main/TUTORIAL.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:147`
@@ -1119,7 +1119,7 @@ or fix the route and re-run.
 ## https://github.com/califio/publications/blob/main/MADBugs/wp2root/writeups/FULL_CHAIN_WRITEUP.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:85`
@@ -1127,7 +1127,7 @@ or fix the route and re-run.
 ## https://github.com/califio/publications/blob/main/MADBugs/wp2root/writeups/WP2SHELL_WRITEUP.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:85`
@@ -1135,7 +1135,7 @@ or fix the route and re-run.
 ## https://github.com/codevise/pageflow/security/advisories/GHSA-wrrw-crp8-979q
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:18`
@@ -1143,7 +1143,7 @@ or fix the route and re-run.
 ## https://github.com/coreruleset/coreruleset/security/advisories/GHSA-36fv-25j3-r2c5
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:183`
@@ -1151,7 +1151,7 @@ or fix the route and re-run.
 ## https://github.com/craftcms/cms/security/advisories/GHSA-2p6p-9rc9-62j9
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:121`
@@ -1159,7 +1159,7 @@ or fix the route and re-run.
 ## https://github.com/cure53/DOMPurify/security/advisories/GHSA-v9jr-rg53-9pgp
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:222`
@@ -1167,7 +1167,7 @@ or fix the route and re-run.
 ## https://github.com/cure53/XSSChallengeWiki/wiki/CNY-Challenge-2018
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:25`, `2018.md:38`
@@ -1175,7 +1175,7 @@ or fix the route and re-run.
 ## https://github.com/dompdf/dompdf/security/advisories/GHSA-cx96-42px-69fm
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:49`
@@ -1183,7 +1183,7 @@ or fix the route and re-run.
 ## https://github.com/elttam/publications/blob/master/slides/Primitives%20for%20Security%20Audits%20-%20Lessons%20from%20Jakarta%20Mail%20-%20For%20Dist.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:115`
@@ -1191,7 +1191,7 @@ or fix the route and re-run.
 ## https://github.com/elttam/publications/blob/master/writeups/ffmpeg-arbitrary-file-read-advisory.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:87`
@@ -1199,7 +1199,7 @@ or fix the route and re-run.
 ## https://github.com/elttam/publications/blob/master/writeups/home-assistant/media-source-arbitrary-file-write-advisory.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:105`
@@ -1207,7 +1207,7 @@ or fix the route and re-run.
 ## https://github.com/elttam/publications/blob/master/writeups/home-assistant/signed-url-param-tampering-advisory.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:105`
@@ -1215,7 +1215,7 @@ or fix the route and re-run.
 ## https://github.com/elttam/rsu-cracker/issues/1
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:100`
@@ -1223,7 +1223,7 @@ or fix the route and re-run.
 ## https://github.com/envoyproxy/envoy/security/advisories/GHSA-22m2-hvr2-xqc8
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:39`
@@ -1231,7 +1231,7 @@ or fix the route and re-run.
 ## https://github.com/eventlet/eventlet/security/advisories/GHSA-hw6f-rjfj-j7j7
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:75`
@@ -1239,7 +1239,7 @@ or fix the route and re-run.
 ## https://github.com/excalidraw/excalidraw/security/advisories/GHSA-m64q-4jqh-f72f
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:89`
@@ -1247,7 +1247,7 @@ or fix the route and re-run.
 ## https://github.com/facebook/react/security/advisories/GHSA-fv66-9v8q-g76r
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:74`
@@ -1255,7 +1255,7 @@ or fix the route and re-run.
 ## https://github.com/fail2ban/fail2ban/security/advisories/GHSA-m985-3f3v-cwmm?ref=labs.watchtowr.com
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:158`
@@ -1263,7 +1263,7 @@ or fix the route and re-run.
 ## https://github.com/google-github-actions/run-gemini-cli/security/advisories/GHSA-wpqr-6v78-jr5g
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:165`
@@ -1271,7 +1271,7 @@ or fix the route and re-run.
 ## https://github.com/google/security-research/security/advisories/GHSA-mp56-7vrw-qxvf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:117`
@@ -1279,7 +1279,7 @@ or fix the route and re-run.
 ## https://github.com/h2o/h2o/security/advisories/GHSA-f9xw-j925-m4m4
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:25`
@@ -1287,7 +1287,7 @@ or fix the route and re-run.
 ## https://github.com/haileys/old-website/blob/master/posts/rails-3.2.10-remote-code-execution.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:99`
@@ -1295,7 +1295,7 @@ or fix the route and re-run.
 ## https://github.com/haskell/security-advisories/blob/0ca84023348231a44fac0ee943cca5437ef711a5/advisories/hackage/process/HSEC-2024-0003.md
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:99`
@@ -1303,7 +1303,7 @@ or fix the route and re-run.
 ## https://github.com/home-assistant/core/security/advisories/GHSA-2j8f-h4mr-qr25
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:105`
@@ -1311,7 +1311,7 @@ or fix the route and re-run.
 ## https://github.com/http4s/http4s/security/advisories/GHSA-wcwh-7gfw-5wrr
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:75`
@@ -1319,7 +1319,7 @@ or fix the route and re-run.
 ## https://github.com/irsdl/IIS-ShortName-Scanner/blob/master/presentation/Steelcon-2023-Beyond_Microsoft_IIS_Short_File_Name_Disclosure.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:56`
@@ -1327,7 +1327,7 @@ or fix the route and re-run.
 ## https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-cfw7-6c5v-2wjq
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:190`
@@ -1335,7 +1335,7 @@ or fix the route and re-run.
 ## https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-chq7-94j8-cj28
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:190`
@@ -1343,7 +1343,7 @@ or fix the route and re-run.
 ## https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-f49j-v924-fx9w
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:190`
@@ -1351,7 +1351,7 @@ or fix the route and re-run.
 ## https://github.com/libevent/libevent/security/advisories/GHSA-2gmv-p5m7-98p6
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:75`
@@ -1359,7 +1359,7 @@ or fix the route and re-run.
 ## https://github.com/mattiasgrenfeldt/bachelors-thesis-http-request-smuggling
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: repo
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:28`
@@ -1367,7 +1367,7 @@ or fix the route and re-run.
 ## https://github.com/microsoft/vscode/issues/319593
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:55`
@@ -1375,7 +1375,7 @@ or fix the route and re-run.
 ## https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:72`
@@ -1383,7 +1383,7 @@ or fix the route and re-run.
 ## https://github.com/mozilla/pdf.js/pull/18015#issuecomment-2124596367
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:11`
@@ -1391,7 +1391,7 @@ or fix the route and re-run.
 ## https://github.com/mybb/mybb/security/advisories/GHSA-pr74-wvp3-q6f5
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:40`
@@ -1399,7 +1399,7 @@ or fix the route and re-run.
 ## https://github.com/netlify/netlify-ipx/security/advisories/GHSA-9jjv-524m-jm98
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:14`
@@ -1407,7 +1407,7 @@ or fix the route and re-run.
 ## https://github.com/netty/netty/pull/3748
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:83`
@@ -1415,7 +1415,7 @@ or fix the route and re-run.
 ## https://github.com/netty/netty/security/advisories/GHSA-wm47-8v5p-wjpj
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:6`
@@ -1423,7 +1423,7 @@ or fix the route and re-run.
 ## https://github.com/openSUSE/travel-support-program/security/advisories/GHSA-2wwv-c6xh-cf68
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:18`
@@ -1431,7 +1431,7 @@ or fix the route and re-run.
 ## https://github.com/owasp-modsecurity/ModSecurity/issues/2514
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:5`
@@ -1439,7 +1439,7 @@ or fix the route and re-run.
 ## https://github.com/patriksimek/vm2/security/advisories/GHSA-99p7-6v5w-7xg8
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:72`
@@ -1447,7 +1447,7 @@ or fix the route and re-run.
 ## https://github.com/php/php-src/security/advisories/GHSA-3qgc-jrrr-25jv
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:8`, `2024.md:157`
@@ -1455,7 +1455,7 @@ or fix the route and re-run.
 ## https://github.com/php/php-src/security/advisories/GHSA-8xr5-qppj-gvwj
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:176`
@@ -1463,7 +1463,7 @@ or fix the route and re-run.
 ## https://github.com/php/php-src/security/advisories/GHSA-pc52-254m-w9w7
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:99`
@@ -1471,7 +1471,7 @@ or fix the route and re-run.
 ## https://github.com/php/php-src/security/advisories/GHSA-w476-322c-wpvm
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:176`
@@ -1479,7 +1479,7 @@ or fix the route and re-run.
 ## https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-2pr8-phx7-x9h3
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:173`
@@ -1487,7 +1487,7 @@ or fix the route and re-run.
 ## https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-685m-2w69-288q
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:173`
@@ -1495,7 +1495,7 @@ or fix the route and re-run.
 ## https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-fx83-v9x8-x52w
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:173`
@@ -1503,7 +1503,7 @@ or fix the route and re-run.
 ## https://github.com/protobufjs/protobuf.js/security/advisories/GHSA-jvwf-75h9-cwgg
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:173`
@@ -1511,7 +1511,7 @@ or fix the route and re-run.
 ## https://github.com/quantizor/markdown-to-jsx/issues/630
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:38`
@@ -1519,7 +1519,7 @@ or fix the route and re-run.
 ## https://github.com/rails/rails/security/advisories/GHSA-xr9x-r78c-5hrm
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:70`
@@ -1527,7 +1527,7 @@ or fix the route and re-run.
 ## https://github.com/rapid7/metasploit-framework/issues/8977
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:26`
@@ -1535,7 +1535,7 @@ or fix the route and re-run.
 ## https://github.com/request/request/issues/3442
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:36`
@@ -1543,7 +1543,7 @@ or fix the route and re-run.
 ## https://github.com/rubygems/rubygems.org/security/advisories/GHSA-9j48-x3c3-mrp2
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:192`
@@ -1551,7 +1551,7 @@ or fix the route and re-run.
 ## https://github.com/rust-lang/rust/security/advisories/GHSA-q455-m56c-85mh
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:99`
@@ -1559,7 +1559,7 @@ or fix the route and re-run.
 ## https://github.com/secYOUre/illusoryTLS/blob/master/doc/adg-illusoryTLS-design.txt
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:10`
@@ -1567,7 +1567,7 @@ or fix the route and re-run.
 ## https://github.com/simplesamlphp/simplesamlphp/security/advisories/GHSA-j5g2-q29x-cw3h
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:50`
@@ -1575,7 +1575,7 @@ or fix the route and re-run.
 ## https://github.com/spring-projects/spring-data-couchbase/issues/564
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:69`
@@ -1583,7 +1583,7 @@ or fix the route and re-run.
 ## https://github.com/straightblast/UnRadAsyncUpload/wiki
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: code
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:47`, `2019.md:82`
@@ -1591,7 +1591,7 @@ or fix the route and re-run.
 ## https://github.com/sveltejs/kit/security/advisories/GHSA-9pq4-5hcf-288c
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:225`
@@ -1599,7 +1599,7 @@ or fix the route and re-run.
 ## https://github.com/sveltejs/kit/security/advisories/GHSA-j62c-4x62-9r35
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:74`
@@ -1607,7 +1607,7 @@ or fix the route and re-run.
 ## https://github.com/thezdi/presentations/blob/main/2024_OffensiveCon/Exchange_OffensiveCon24.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:106`
@@ -1615,7 +1615,7 @@ or fix the route and re-run.
 ## https://github.com/uBlockOrigin/uBlock-issues/issues/1794
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -1623,7 +1623,7 @@ or fix the route and re-run.
 ## https://github.com/uBlockOrigin/uBlock-issues/issues/1797
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -1631,7 +1631,7 @@ or fix the route and re-run.
 ## https://github.com/vercel/next.js/security/advisories/GHSA-4342-x723-ch2f
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:157`
@@ -1639,7 +1639,7 @@ or fix the route and re-run.
 ## https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:74`
@@ -1647,7 +1647,7 @@ or fix the route and re-run.
 ## https://github.com/vercel/next.js/security/advisories/GHSA-gp8f-8m3g-qvj9
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:11`, `2025.md:21`
@@ -1655,7 +1655,7 @@ or fix the route and re-run.
 ## https://github.com/vercel/next.js/security/advisories/GHSA-qpjv-v59x-3qc4
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:21`
@@ -1663,7 +1663,7 @@ or fix the route and re-run.
 ## https://github.com/vllm-project/vllm/security/advisories/GHSA-8jr5-v98p-w75m
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:121`
@@ -1671,7 +1671,7 @@ or fix the route and re-run.
 ## https://github.com/wakujs/waku/discussions/1823
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:74`
@@ -1679,7 +1679,7 @@ or fix the route and re-run.
 ## https://github.com/weizman/Realms-Initialization-Control
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: repo
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:38`
@@ -1687,7 +1687,7 @@ or fix the route and re-run.
 ## https://github.com/withastro/astro/security/advisories/GHSA-5ff5-9fcw-vg88
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:65`
@@ -1695,7 +1695,7 @@ or fix the route and re-run.
 ## https://github.com/withastro/astro/security/advisories/GHSA-hr2q-hp5q-x767
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:65`
@@ -1703,7 +1703,7 @@ or fix the route and re-run.
 ## https://github.com/withastro/astro/security/advisories/GHSA-qq67-mvv5-fw3g
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:216`
@@ -1711,7 +1711,7 @@ or fix the route and re-run.
 ## https://github.com/wojtekmaj/react-pdf/discussions/1786
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:11`
@@ -1719,7 +1719,7 @@ or fix the route and re-run.
 ## https://github.com/xmldom/xmldom/security/advisories/GHSA-h6q6-9hqw-rwfv
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:40`
@@ -1727,7 +1727,7 @@ or fix the route and re-run.
 ## https://github.com/yhirose/cpp-httplib/security/advisories/GHSA-j6p8-779x-p5pw
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:75`
@@ -1735,7 +1735,7 @@ or fix the route and re-run.
 ## https://githubengineering.com/githubs-csp-journey/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:24`
@@ -1743,7 +1743,7 @@ or fix the route and re-run.
 ## https://greshake.github.io/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:53`
@@ -1751,7 +1751,7 @@ or fix the route and re-run.
 ## https://habr.com/ru/articles/880544/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:48`
@@ -1759,7 +1759,7 @@ or fix the route and re-run.
 ## https://hitcon.org/2020/slides/How%20I%20Hacked%20Facebook%20Again!.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:11`
@@ -1767,7 +1767,7 @@ or fix the route and re-run.
 ## https://hitcon.org/2024/CMT/agenda/eff94e55-3f1d-4229-a65a-65ade9524421/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:5`
@@ -1775,7 +1775,7 @@ or fix the route and re-run.
 ## https://http1mustdie.com/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:20`
@@ -1783,7 +1783,7 @@ or fix the route and re-run.
 ## https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf?ref=labs.watchtowr.com
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:111`
@@ -1791,7 +1791,7 @@ or fix the route and re-run.
 ## https://i.blackhat.com/USA-22/Wednesday/US-22-Tsai-Lets-Dance-in-the-Cache-Destabilizing-Hash-Table-on-Microsoft-IIS.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:24`
@@ -1799,7 +1799,7 @@ or fix the route and re-run.
 ## https://i.broke.the.internet.and.all.i.got.was.this.t-shirt.phreedom.org/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2008.md:85`, `2009.md:5`
@@ -1807,7 +1807,7 @@ or fix the route and re-run.
 ## https://issues.chromium.org/issues/373263969
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:110`
@@ -1815,7 +1815,7 @@ or fix the route and re-run.
 ## https://jub0bs.github.io/samesitedemo-attacker-foiled
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:29`
@@ -1823,7 +1823,7 @@ or fix the route and re-run.
 ## https://kubernetes.io/blog/2025/03/24/ingress-nginx-CVE-2025-1974
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:43`
@@ -1831,7 +1831,7 @@ or fix the route and re-run.
 ## https://labs.trace37.com/blog/dompurify-evolutionary-fuzzer-part1/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:222`
@@ -1839,7 +1839,7 @@ or fix the route and re-run.
 ## https://labs.watchtowr.com/is-b-for-backdoor-pre-auth-rce-chain-in-sitecore-experience-platform/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:113`
@@ -1847,7 +1847,7 @@ or fix the route and re-run.
 ## https://lbherrera.github.io/lab/impossible-lab/1c3e9d37.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:23`
@@ -1855,7 +1855,7 @@ or fix the route and re-run.
 ## https://lbherrera.github.io/lab/impossible-lab/3c7d4e13.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:23`
@@ -1863,7 +1863,7 @@ or fix the route and re-run.
 ## https://marektoth.com/presentations/DEFCON33_MarekToth.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:34`
@@ -1871,7 +1871,7 @@ or fix the route and re-run.
 ## https://mattermost.com/blog/coordinated-disclosure-go-xml-vulnerabilities/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:40`
@@ -1879,7 +1879,7 @@ or fix the route and re-run.
 ## https://mbechler.github.io/2018/01/20/Java-CVE-2018-2633/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:19`
@@ -1887,7 +1887,7 @@ or fix the route and re-run.
 ## https://mizu.re/post/exploring-the-dompurify-library-hunting-for-misconfigurations
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:9`
@@ -1895,7 +1895,7 @@ or fix the route and re-run.
 ## https://molnarg.github.io/cve-2014-0521/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:38`
@@ -1903,7 +1903,7 @@ or fix the route and re-run.
 ## https://mthbernardes.github.io/rce/2018/03/14/abusing-h2-database-alias.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:30`
@@ -1911,7 +1911,7 @@ or fix the route and re-run.
 ## https://nabla-c0d3.github.io/blog/2017/12/17/sslyze-robot-scan/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:109`
@@ -1919,7 +1919,7 @@ or fix the route and re-run.
 ## https://nastystereo.com/security/cross-site-post-without-content-type.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:58`
@@ -1927,7 +1927,7 @@ or fix the route and re-run.
 ## https://noahblog-360-cn.translate.goog/xalan-j-integer-truncation-reproduce-cve-2022-34169/?_x_tr_sch=http&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:33`
@@ -1935,7 +1935,7 @@ or fix the route and re-run.
 ## https://nodejs.org/en/blog/vulnerability/april-2024-security-releases-2
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:99`
@@ -1943,7 +1943,7 @@ or fix the route and re-run.
 ## https://nullcon.net/goa-2023/speaker-smashing-the-state-machine-the-true-potential-of-web-race-conditions
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:5`
@@ -1951,7 +1951,7 @@ or fix the route and re-run.
 ## https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-2/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:12`
@@ -1959,7 +1959,7 @@ or fix the route and re-run.
 ## https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-3/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:12`
@@ -1967,7 +1967,7 @@ or fix the route and re-run.
 ## https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:12`
@@ -1975,7 +1975,7 @@ or fix the route and re-run.
 ## https://opnsec.com/2017/09/advanced-flash-vulnerabilities-in-youtube-part-4/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:12`
@@ -1983,7 +1983,7 @@ or fix the route and re-run.
 ## https://owasp.org/www-chapter-london/assets/slides/OWASPLondon_PostMessage_Security_in_Chrome_Extensions.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:95`
@@ -1991,7 +1991,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/bypassing-csp-with-dangling-iframes/attacker.php
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:85`
@@ -1999,7 +1999,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/css-exfiltration-38654E0E45/steal-attribute-values-checkboxes/test.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -2007,7 +2007,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/css-exfiltration-38654E0E45/steal-first-line-safari/test.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -2015,7 +2015,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/css-exfiltration-38654E0E45/steal-n-characters-firefox/test.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -2023,7 +2023,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/css-exfiltration-38654E0E45/steal-reversed-firefox/test.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -2031,7 +2031,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/css-exfiltration-38654E0E45/steal-script-contents/test.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -2039,7 +2039,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/css-exfiltration-38654E0E45/test.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:25`
@@ -2047,7 +2047,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/inline-style-exfiltration-ff1072wu/test.php
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:76`
@@ -2055,7 +2055,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/xss/xss.php?x=%3Cscript%20src%3D%22https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Fdompurify%2F3.1.0%2Fpurify.min.js%22%3E%3C%2Fscript%3E%0A%3Cscript%3E%0Avar%20n%20%3D%20505%3B%0Avar%20dirty%20%3D%20%60%0A%24%7B%22%3Cform%3E%3Ch1%3E%3C%2Fform%3E%3Ctable%3E%3Cform%3E%3C%2Fform%3E%3C%2Ftable%3E%3C%2Fform%3E%3C%2Ftable%3E%3C%2Fh1%3E%3C%2Fform%3E%5Cn%22.repeat%28n%29%7D%0A%3Ca%3E%0A%20%20%3Csvg%3E%0A%20%20%20%20%3Cimage%3E%0A%20%20%20%20%20%20%3Ca%3E%0A%20%20%20%20%20%20%20%20%3Cdesc%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimage%3E%3C%2Fimage%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdesc%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fimage%3E%0A%20%20%20%20%3Cstyle%3E%3Ca%20id%3D%22%3C%2Fstyle%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%22%3E%3C%2Fa%3E%3C%2Fstyle%3E%0A%20%20%3C%2Fsvg%3E%0A%3C%2Fa%3E%0A%60%3B%0Avar%20step1%20%3D%20DOMPurify.sanitize%28dirty%29%3B%0Adocument.body.innerHTML%20%3D%20DOMPurify.sanitize%28step1%29%3B%0A%3C%2Fscript%3E&context=html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:9`
@@ -2063,7 +2063,7 @@ or fix the route and re-run.
 ## https://portswigger-labs.net/xss/xss.php?x=%3Cscript%20src%3D%22https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Fdompurify%2F3.1.2%2Fpurify.min.js%22%20integrity%3D%22sha512-Qv%2FFE%2F4VEODlbctXAQe4OHnXmoHiiMitTJv6D%2F80eCQRviSGZENG4bSOSZ0eE%2B%2BlRkyuxMxID0Dh90gPkq39Pg%3D%3D%22%20crossorigin%3D%22anonymous%22%20referrerpolicy%3D%22no-referrer%22%3E%3C%2Fscript%3E%0A%3Cscript%3E%0Avar%20n%20%3D%20510%3B%0Avar%20payload%20%3D%20%60%0A%24%7B%22%3Cform%3E%3Ch1%3E%3C%2Fform%3E%3Ctable%3E%3Cform%3E%3C%2Fform%3E%3C%2Ftable%3E%3C%2Fform%3E%3C%2Ftable%3E%3C%2Fh1%3E%3C%2Fform%3E%22.repeat%28n%29%7D%0A%3Cmath%3E%0A%20%20%20%20%3Cmi%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%3E%3C%21--%3C%2Fstyle%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20id%3D%22--%3E%3C%2Fstyle%3E%3C%2Fmi%3E%3C%2Fmath%3E%3Cimg%20src%3D%27x%27%20onerror%3D%27alert%281%29%27%3E%22%3E%3C%2Fstyle%3E%0A%20%20%20%20%3C%2Fmi%3E%0A%3C%2Fmath%3E%0A%60%3B%0Adocument.body.innerHTML%20%3D%20DOMPurify.sanitize%28payload%29%0Adocument.body.innerHTML%20%3D%20document.body.innerHTML%3B%0A%3C%2Fscript%3E&context=html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:9`
@@ -2071,7 +2071,7 @@ or fix the route and re-run.
 ## https://portswigger.net/kb/papers/blind-css-exfiltration-exfiltrate-unknown-web-pages-slides.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:26`
@@ -2079,7 +2079,7 @@ or fix the route and re-run.
 ## https://portswigger.net/kb/papers/dzmxreq/http1-must-die-slides.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:20`
@@ -2087,7 +2087,7 @@ or fix the route and re-run.
 ## https://portswigger.net/kb/papers/firuaml/browser-powered-desync-attacks-slides.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:6`
@@ -2095,7 +2095,7 @@ or fix the route and re-run.
 ## https://portswigger.net/kb/papers/firuaml/server-side-prototype-pollution.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:27`
@@ -2103,7 +2103,7 @@ or fix the route and re-run.
 ## https://portswigger.net/kb/papers/z7ow0oy8/http-desync-attacks-slides.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:20`
@@ -2111,7 +2111,7 @@ or fix the route and re-run.
 ## https://portswigger.net/knowledgebase/papers/exploitingcorsmisconfigurations.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:63`
@@ -2119,7 +2119,7 @@ or fix the route and re-run.
 ## https://portswigger.net/knowledgebase/papers/huntingasynchronousvulnerabilities.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:14`, `2015.md:46`
@@ -2127,7 +2127,7 @@ or fix the route and re-run.
 ## https://portswigger.net/web-security/prototype-pollution/server-side
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:27`
@@ -2135,7 +2135,7 @@ or fix the route and re-run.
 ## https://portswigger.net/web-security/request-smuggling
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:20`
@@ -2143,7 +2143,7 @@ or fix the route and re-run.
 ## https://pretalx.com/bsidesluxembourg-2026/talk/WDFHHV/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:177`
@@ -2151,7 +2151,7 @@ or fix the route and re-run.
 ## https://ptswarm.com/blog/attack-arithmetic-how-an-integer-overflow-in-postgresql-libpq-leads-to-denial-of-service/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:176`
@@ -2159,7 +2159,7 @@ or fix the route and re-run.
 ## https://pulsesecurity.co.nz/articles/mssql-unicode-collation-bugs?ref=decrypt.lol
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:69`
@@ -2167,7 +2167,7 @@ or fix the route and re-run.
 ## https://qiita.com/tournip/items/90da8ff66d2113c08ce8
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:45`
@@ -2175,7 +2175,7 @@ or fix the route and re-run.
 ## https://raw.githubusercontent.com/irsdl/IIS-ShortName-Scanner/master/presentation/Steelcon-2023-Beyond_Microsoft_IIS_Short_File_Name_Disclosure.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:28`
@@ -2183,7 +2183,7 @@ or fix the route and re-run.
 ## https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:74`
@@ -2191,7 +2191,7 @@ or fix the route and re-run.
 ## https://renwax23.github.io/X/csrf-samesite/solution.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:43`
@@ -2199,7 +2199,7 @@ or fix the route and re-run.
 ## https://research.nccgroup.com/2020/03/30/impact-of-dns-over-https-doh-on-dns-rebinding-attacks/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:54`
@@ -2207,7 +2207,7 @@ or fix the route and re-run.
 ## https://sec-consult.com/vulnerability-lab/advisory/multiple-critical-vulnerabilities-in-apache-struts2/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2011.md:6`
@@ -2215,7 +2215,7 @@ or fix the route and re-run.
 ## https://seclab.cs.ucsb.edu/files/publications/Nikiforakis2013Cookieless_monster.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:56`
@@ -2223,7 +2223,7 @@ or fix the route and re-run.
 ## https://securitymb.github.io/xss/1/?xss=
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:25`
@@ -2231,7 +2231,7 @@ or fix the route and re-run.
 ## https://securitymb.github.io/xss/3/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:38`
@@ -2239,7 +2239,7 @@ or fix the route and re-run.
 ## https://securitymb.github.io/xss/4/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:69`
@@ -2247,7 +2247,7 @@ or fix the route and re-run.
 ## https://simonwillison.net/2022/Sep/12/prompt-injection/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2255,7 +2255,7 @@ or fix the route and re-run.
 ## https://simonwillison.net/2022/Sep/16/prompt-injection-solutions/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2263,7 +2263,7 @@ or fix the route and re-run.
 ## https://slides.com/securitymb/prototype-pollution-in-kibana
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:35`
@@ -2271,7 +2271,7 @@ or fix the route and re-run.
 ## https://soroush.me/blog/2023/08/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:28`
@@ -2279,7 +2279,7 @@ or fix the route and re-run.
 ## https://soroush.me/downloadable/microsoft_iis_tilde_character_vulnerability_feature.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:56`
@@ -2287,7 +2287,7 @@ or fix the route and re-run.
 ## https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers?slide=26
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:30`
@@ -2295,7 +2295,7 @@ or fix the route and re-run.
 ## https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-13?slide=41
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:200`
@@ -2303,7 +2303,7 @@ or fix the route and re-run.
 ## https://sqli.blog-demo.flatt.training/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:26`
@@ -2311,7 +2311,7 @@ or fix the route and re-run.
 ## https://systemsecurity.com/blog/forging_ciphertexts_under_Galois_Counter_Mode_for_the_Node_js_crypto_module/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:37`
@@ -2319,7 +2319,7 @@ or fix the route and re-run.
 ## https://t.co/S4VUf3k1Zq
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2019.md:8`
@@ -2327,7 +2327,7 @@ or fix the route and re-run.
 ## https://thehackerblog.com/zenmate-vpn-browser-extension-deanonymization-hijacking-vulnerability-3-5-million-affected-users/index.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2018.md:19`
@@ -2335,7 +2335,7 @@ or fix the route and re-run.
 ## https://troopers.de/troopers24/talks/r3hxdq/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:33`
@@ -2343,7 +2343,7 @@ or fix the route and re-run.
 ## https://trufflesecurity.com/blog/trufflehog-now-finds-all-deleted-and-private-commits-on-github
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:116`
@@ -2351,7 +2351,7 @@ or fix the route and re-run.
 ## https://turtlesec.io/blog/posts/crlf-powered-desync-attacks/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:38`
@@ -2359,7 +2359,7 @@ or fix the route and re-run.
 ## https://twitter.com/goodside/status/1569128808308957185
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2367,7 +2367,7 @@ or fix the route and re-run.
 ## https://twitter.com/mkualquiera/status/1570546998104948736
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2375,7 +2375,7 @@ or fix the route and re-run.
 ## https://twitter.com/simonw/status/1569452541842460672
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2383,7 +2383,7 @@ or fix the route and re-run.
 ## https://twitter.com/yoheinakajima/status/1582844144640471040
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2391,7 +2391,7 @@ or fix the route and re-run.
 ## https://unit42.paloaltonetworks.com/passwordless-authentication/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:156`
@@ -2399,7 +2399,7 @@ or fix the route and re-run.
 ## https://vwzq.net/slides/2019-s3_css_injection_attacks.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:26`, `2026-ai.md:56`
@@ -2407,7 +2407,7 @@ or fix the route and re-run.
 ## https://w4ke.info/2025/06/18/funky-chunks
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:29`
@@ -2415,7 +2415,7 @@ or fix the route and re-run.
 ## https://watchtowr.com/wp-content/uploads/SOAPwnwatchtowr_soappwn-research-whitepaper_10-12-2025.pdf?ref=labs.watchtowr.com
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2025.md:9`
@@ -2423,7 +2423,7 @@ or fix the route and re-run.
 ## https://weakdh.org/imperfect-forward-secrecy.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:6`
@@ -2431,7 +2431,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20070101051946/http://michaeldaw.org/news/news-151206-0/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2006.md:24`
@@ -2439,7 +2439,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20151222203351/https://miki.it/RosettaFlash/RosettaFlash.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:8`
@@ -2447,7 +2447,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20151222203351/https://miki.it/RosettaFlash/RosettaFlash_paper.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:8`
@@ -2455,7 +2455,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20160317195528/https://www.drupal.org/PSA-2014-003
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:46`
@@ -2463,7 +2463,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20160402192125/https://foxitsecurity.files.wordpress.com/2014/11/cryptophp-whitepaper-foxsrt-v4.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:44`
@@ -2471,7 +2471,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20170611133815/http://www.cs.berkeley.edu/~dawnsong/papers/2010%20emperors%20new%20api.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:11`
@@ -2479,7 +2479,7 @@ or fix the route and re-run.
 ## https://web.archive.org/web/20170629134123/http://www.scribd.com/doc/101185061
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2012.md:9`
@@ -2487,7 +2487,7 @@ or fix the route and re-run.
 ## https://websec.wordpress.com/wp-content/uploads/2010/11/sqli2.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:74`
@@ -2495,7 +2495,7 @@ or fix the route and re-run.
 ## https://worst.fit/assets/EU-24-Tsai-WorstFit-Unveiling-Hidden-Transformers-in-Windows-ANSI.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:8`
@@ -2503,7 +2503,7 @@ or fix the route and re-run.
 ## https://www.ambionics.io/blog/iconv-cve-2024-2961-p1
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:62`
@@ -2511,7 +2511,7 @@ or fix the route and re-run.
 ## https://www.blackhat.com/asia-23/briefings/schedule/#stealing-with-style-using-css-to-exploit-protonmail--friends-31697
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:59`
@@ -2519,7 +2519,7 @@ or fix the route and re-run.
 ## https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Hasegawa/BlackHat-japan-08-Hasegawa-Char-Encoding.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:8`
@@ -2527,7 +2527,7 @@ or fix the route and re-run.
 ## https://www.blackhat.com/us-23/briefings/schedule/index.html#smashing-the-state-machine-the-true-potential-of-web-race-conditions-31712
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:5`
@@ -2535,7 +2535,7 @@ or fix the route and re-run.
 ## https://www.blackhat.com/us-24/briefings/schedule/index.html#confusion-attacks-exploiting-hidden-semantic-ambiguity-in-apache-http-server-pre-recorded-40227
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:5`
@@ -2543,7 +2543,7 @@ or fix the route and re-run.
 ## https://www.brokenbrowser.com/uxss-ie-htmlfile/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:44`
@@ -2551,7 +2551,7 @@ or fix the route and re-run.
 ## https://www.contextis.com/blog/comma-separated-vulnerabilities
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:32`
@@ -2559,7 +2559,7 @@ or fix the route and re-run.
 ## https://www.cs.virginia.edu/~evans/pubs/usenix2013/explicating.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2013.md:50`
@@ -2567,7 +2567,7 @@ or fix the route and re-run.
 ## https://www.cyberark.com/resources/threat-research-blog/the-art-of-the-invisible-key-passkey-global-breakthrough
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:156`
@@ -2575,7 +2575,7 @@ or fix the route and re-run.
 ## https://www.doyensec.com/resources/BSides-Luxembourg-2026-CFITSIO-EFS.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:177`
@@ -2583,7 +2583,7 @@ or fix the route and re-run.
 ## https://www.doyensec.com/resources/Doyensec_CSPT2CSRF_OWASP_Appsec_Lisbon.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:50`
@@ -2591,7 +2591,7 @@ or fix the route and re-run.
 ## https://www.doyensec.com/resources/Global_AppSec_Lisbon_A_Race_To_The_Bottom.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:34`
@@ -2599,7 +2599,7 @@ or fix the route and re-run.
 ## https://www.elttam.com/blog/golang-codereview
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:172`
@@ -2607,7 +2607,7 @@ or fix the route and re-run.
 ## https://www.jianjunchen.com/publication/composition-kills-a-case-study-of-email-sender-authentication/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2020.md:71`
@@ -2615,7 +2615,7 @@ or fix the route and re-run.
 ## https://www.leavesongs.com/PENETRATION/docker-php-include-getshell.html
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:5`
@@ -2623,7 +2623,7 @@ or fix the route and re-run.
 ## https://www.nds.rub.de/research/publications/PrivateCloudCCSW15/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2018.md:46`
@@ -2631,7 +2631,7 @@ or fix the route and re-run.
 ## https://www.oasis.security/resources/reports/cline-kanban-websocket-hijack-technical-report
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:204`
@@ -2639,7 +2639,7 @@ or fix the route and re-run.
 ## https://www.owasp.org/images/6/6a/OWASPLondon20161124_JSON_Hijacking_Gareth_Heyes.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:116`
@@ -2647,7 +2647,7 @@ or fix the route and re-run.
 ## https://www.playframework.com/security/vulnerability/CVE-2015-2156-HttpOnlyBypass
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2015.md:83`
@@ -2655,7 +2655,7 @@ or fix the route and re-run.
 ## https://www.preamble.com/prompt-injection-a-critical-vulnerability-in-the-gpt-3-transformer-and-how-we-can-begin-to-solve-it
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2022.md:92`
@@ -2663,7 +2663,7 @@ or fix the route and re-run.
 ## https://www.rolandczerny.com/papers/asiaccs_24.pdf
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: whitepaper
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:136`
@@ -2671,7 +2671,7 @@ or fix the route and re-run.
 ## https://www.slideshare.net/BenHayak/blackhat-eu-same-origin-method-execution
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2014.md:76`
@@ -2679,7 +2679,7 @@ or fix the route and re-run.
 ## https://www.synacktiv.com/en/publications/github-actions-exploitation-introduction
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:83`
@@ -2687,7 +2687,7 @@ or fix the route and re-run.
 ## https://www.synacktiv.com/en/publications/php-filter-chains-file-read-from-error-based-oracle
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:31`
@@ -2695,7 +2695,7 @@ or fix the route and re-run.
 ## https://www.synacktiv.com/en/publications/php-filters-chain-what-is-it-and-how-to-use-it
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2023.md:35`
@@ -2703,7 +2703,7 @@ or fix the route and re-run.
 ## https://www.truesec.com/hub/blog/how-to-break-out-of-hyper-v-and-compromise-your-admins
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:73`
@@ -2711,7 +2711,7 @@ or fix the route and re-run.
 ## https://www.usenix.org/conference/usenixsecurity18/presentation/bock
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2016-17.md:109`
@@ -2719,7 +2719,7 @@ or fix the route and re-run.
 ## https://www.usenix.org/conference/usenixsecurity21/presentation/brinkmann
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:61`
@@ -2727,7 +2727,7 @@ or fix the route and re-run.
 ## https://www.zerodayinitiative.com/blog/2022/11/14/control-your-types-or-get-pwned-remote-code-execution-in-exchange-powershell-backend
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:127`
@@ -2735,7 +2735,7 @@ or fix the route and re-run.
 ## https://www.zerodayinitiative.com/blog/2024/9/11/exploiting-exchange-powershell-after-proxynotshell-part-2-approvedapplicationcollection
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:106`
@@ -2743,7 +2743,7 @@ or fix the route and re-run.
 ## https://www.zerodayinitiative.com/blog/2024/9/18/exploiting-exchange-powershell-after-proxynotshell-part-3-dll-loading-chain-for-rce
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:106`
@@ -2751,7 +2751,7 @@ or fix the route and re-run.
 ## https://www.zerodayinitiative.com/blog/2024/9/25/exploiting-exchange-powershell-after-proxynotshell-part-4-no-argument-constructor
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: advisory
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:106`
@@ -2759,7 +2759,7 @@ or fix the route and re-run.
 ## https://x.com/AmirMSafari/status/2020569860472750512
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:209`
@@ -2767,7 +2767,7 @@ or fix the route and re-run.
 ## https://xs-sniper.com/blog/Blended-Threats/Will-It-Blend.pptx
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: slides
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2010.md:67`
@@ -2775,7 +2775,7 @@ or fix the route and re-run.
 ## https://youst.in/posts/cache-key-normalization-denial-of-service/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2021.md:10`
@@ -2783,7 +2783,7 @@ or fix the route and re-run.
 ## https://zhero-web-sec.github.io/ctf-intigriti-0825/
 
 - Outcome: `?` (no bytes stored)
-- Kind: unknown
+- Kind: article
 - Reason: not yet acquired
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2026-ai.md:157`
@@ -3182,7 +3182,7 @@ or fix the route and re-run.
 
 ## http://ha.ckers.org/blog/20070216/embeding-svg-that-contains-xss-using-base64-encoding-in-firefox/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the recorded title carries the site masthead and an Archive breadcrumb ahead of the document's own title, "Embeding SVG That Contains XSS Using Base64 Encoding in Firefox" - the misspelling is the source's own and is correctly preserved. COVERAGE NOTE: the post never inlines its vector, linking instead to a cheat-sheet anchor that is now dead, so the payload was never in this document and the citation rests on prose describing it. 149 characters of furniture remain at the end; the posted-on line above it is the ONLY place the date appears: Friday, February 16th, 2007. The raw object is absent from the store and correctly recorded on store-gaps (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3294,7 +3294,7 @@ or fix the route and re-run.
 
 ## http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: The recorded title is site chrome in both frontmatter and body H1, where the document's own title - recoverable with certainty from its own bookmark heading, still present in the body, and matching the year list's citation - is "Paper on Hacking Intranets Using Websites (Not Web Browsers)"; the recorded string is the masthead plus an Archive breadcrumb. COVERAGE GAP: this is a genuine pointer page and the paper it points at is not archived anywhere in the manifest, so the archive holds the announcement and not the research. 629 characters of furniture remain at the end, and that block is the ONLY place the date appears: Monday, August 27th, 2007 at 2:48 pm. The raw object is absent from the store and correctly recorded on store-gaps (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3310,7 +3310,7 @@ or fix the route and re-run.
 
 ## http://ha.ckers.org/blog/20080227/res-timing-file-enumeration-without-javascript-in-ie70/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the recorded title takes the WHOLE breadcrumb - "ha.ckers.org web application security lab - Archive > Res Timing File Enumeration Without JavaScript in IE7.0" - where the document's own title is the last part alone. 149 characters of comment-form furniture remain at the end, and published is empty although the body states Wednesday, February 27th, 2008. Both published images are dead site chrome. Note the raw object is absent from the store, and that the names in the body, David Byrne for the res:// timing trick and Jeremiah Grossman for META-refresh blocking, are PRIOR-ART credits and must not be taken as this post's byline (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3318,7 +3318,7 @@ or fix the route and re-run.
 
 ## http://ha.ckers.org/blog/20080520/http-proxies-bypass-firewalls/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: THE POST'S ONE FIGURE IS LOST AND THE PROSE POINTS AT IT. The body ends a paragraph with "Here's a diagram of what I'm talking about:" and the diagram, the inward-pointing-proxy illustration, recorded an empty response; it and the two chrome images resolve against the DEAD host rather than the Wayback replay the text came from, which was the recovery route not taken. The recorded title is the site masthead alone, with no topic in it, in frontmatter, body H1 and the PDF title, where the post's own heading is "HTTP Proxies Bypass Firewalls". 149 characters of comment-form furniture remain at the end, and published is empty although the body states Tuesday, May 20th, 2008 (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3422,7 +3422,7 @@ or fix the route and re-run.
 
 ## http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the recorded title runs the site masthead onto the document's own title with no separator, in both frontmatter and body H1, where the post's own heading is just 'Side Channel Attacks in SSL'. Head chrome is retained - masthead line, an advertising banner, the literal words 'Paid Advertising' and the site logo - and publisher furniture remains at the end, 301 characters of post-meta, a discuss link and comment-form labels. Both images are site chrome, unpreserved and dead. The manifest raw_sha256 is absent from the store, so do not re-render (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3446,7 +3446,7 @@ or fix the route and re-run.
 
 ## http://ha.ckers.org/blog/20100820/quick-proxy-detection/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the recorded title concatenates the blog masthead onto the document's own title with no separator, in the frontmatter, the body H1 and the slug. Head chrome remains in the body - a paid advertising image, the literal words "Paid Advertising", the site logo and a posts-remaining widget - and the extraction note records that the raw candidate was chosen for keeping the most text, which is that chrome. Publisher furniture remains at the end including a comment form, 304 characters, and both images are dead and unarchived. Note the body cannot be fully verified: the raw bytes are gone from the store (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3750,7 +3750,7 @@ or fix the route and re-run.
 
 ## http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: slides
 - Reason: faulty capture: THE TRANSCRIPT IS TRUNCATED. The published body stops at slide 9 and ends on a bare list bullet, while the stored source object carries transcript entries for slides 1 to 32 and thumbnails up to slide 50. About 23 slides are missing - Intranet Hacking, Auto-XSS, drive-by, distributed hash cracking, application-level DDoS, the connection-limit bypass, the ad-network buy and the live demo. Separately, 49 of the 55 image targets point at the HTML page rather than an image file (the manifest records UnidentifiedImageError for exactly that URL), and 26 alt texts contain raw newlines so those constructs will not parse as images at all. Proven against the store, so recoverable offline (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -3758,7 +3758,7 @@ or fix the route and re-run.
 
 ## http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the proof of concept was UNESCAPED into live markup. The source holds escaped text meant to be read - blockquote paragraphs containing &lt;script&gt; and the XHR lines - and the archived Markdown has a live script element at column 0 with the JavaScript as loose paragraphs and a closing tag further down, so in CommonMark the whole PoC becomes markup rather than displayed code. Two stray lone > lines also remain where the converter emitted each blockquote opener but dropped the > prefix from its contents, so each renders as an empty quote box followed by unquoted body (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -4014,7 +4014,7 @@ or fix the route and re-run.
 
 ## http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: slides
 - Reason: faulty capture: 2,615 characters of SlideShare thumbnail-navigation chrome are retained at the head of the content, twenty numbered slide links plus three "Most read" labels. Six of the 31 slide images have no stored bytes, so a quarter of a deck whose text lives entirely in image alt attributes is unpreserved. authors also records only "Bernardo Damele A. G.", which is SlideShare's abbreviation rather than the document's own spelling, and the deck's "Who we are" slide names a SECOND author, Guido Landi. Note the manifest raw_sha256 is absent from the store while the file's is present (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -4214,7 +4214,7 @@ or fix the route and re-run.
 
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: of 12 fenced blocks only 4 hold code - three are empty and four hold nothing but the widget's language label - and one holds the control "Show 10 more lines", showing the fuzzer listing is truncated; the surviving listings also carry the line-number gutter fused into each line; re-extract (reported 2026-08-15) RECOVERY ATTEMPTED 2026-08-17: browser-DOM captured and re-extracted; the fenced fuzzer listing still comes through as empty code blocks (the syntax-highlight widget and its 'Show N more lines' control are not populated into extractable text even in the headless DOM), and re-extraction additionally orphaned the digest and tags. Reverted. Fix is extractor support for the code widget, not a re-fetch.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -4251,14 +4251,6 @@ or fix the route and re-run.
 - Reason: faulty capture: 250 ligature glyphs read as U+FFFD inside words ("Certi<?>cate", "Cloud<?>are", "WHOIS<?>eld"); the 2026-08-14 poppler re-read recovered 59KB of previously missing text but maps this font's fi/ff ligature to a replacement character; needs a different extractor or OCR (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:87`
-
-## https://amolnaik4.blogspot.com/2011/03/exploitation-of-self-only-cross-site.html
-
-- Outcome: `broken-capture` (no bytes stored)
-- Kind: article
-- Reason: faulty capture: BOTH RESEARCH PAYLOADS WERE DELETED, and the article is 7.4 percent of the file. The stored source holds two ondragstart handlers; the published file holds zero. The climax payload - a div whose ondragstart sets the drag data to a script tag posting document.cookie to the attacker - publishes as <div draggable="true" ><h3>DRAG ME!!</h3></div>, with the telltale stray space before the closing bracket, so the sentence "By changing the Evil Data ... pointed to the attacker cookie grabbing script" is followed by a tag with nothing in it. The first payload additionally merged into a following Blogger separator div and lost its heading. Escaped markup was unescaped into live HTML and nothing is fenced, leaving unbalanced script tags. Separately the capture is CONTAMINATED: the Blogger Dynamic Views theme loads the whole blog into the DOM, so 17 unrelated posts came in - 7,652 characters of cited article inside a 102,872-character body - including a 2016 CTF walkthrough that dumps a wp-config.php with live salts. steps.wayback already holds a SINGLE-POST capture, so the remedy is available offline (reported 2026-08-15) RECOVERY ATTEMPTED 2026-08-17: a live refetch returns only a 78-character Blogger JS shell (the post now renders client-side), so a plain re-fetch cannot reach the article; the manifest entry was restored. The route is the stored Wayback capture (archive.org was returning 498/503 this session), then acquire --force offline.
-- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2011.md:49`
 
 ## https://archives.iw3c2.org/www2007/papers/paper555.pdf
 
@@ -4484,17 +4476,9 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:52`
 
-## https://bugs.webkit.org/show_bug.cgi?id=15936
-
-- Outcome: `broken-capture` (no bytes stored)
-- Kind: article
-- Reason: faulty capture: THE BUG REPORT AND ITS ENTIRE COMMENT THREAD ARE ABSENT - the disclosure the year list cites. All three extraction candidates were tiny, the best being 55 words, and what survived is the header strip and an attachment table; a bug page whose extraction yields 55 words has failed. THIS ENTRY HAS NO HEALTH BLOCK AND NO CHECK STEP AT ALL, so nothing in the record evidences the document's identity. The attachment table is exploded - a separator row with no cells and rows breaking across lines - so it renders as neither table nor prose. The byline is empty although the captured fragment itself names the patch author; the reviewer named beside him must not be credited. The frontmatter's cited_by line number is stale and disagrees with the manifest. Note the raw object is absent from the store, so a --force would go to the network (reported 2026-08-15) RECOVERY ATTEMPTED 2026-08-17: the page is alive and was refetched, and a container-browser DOM was captured, but extraction still keeps under a third of the 9,230 probed characters - the extractor does not handle the Bugzilla comment-thread page shape, so nothing was published and the old capture stands. The fix is extractor support for Bugzilla threads, not another fetch.
-- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2007.md:100`
-
 ## https://bugzilla.mozilla.org/show_bug.cgi?id=370445
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: THE BUG'S DISCUSSION IS ABSENT - THE CAPTURE IS CHANGE HISTORY AND ATTACHMENT METADATA ONLY. There is no Comment 0, no description and no thread; the body opens mid-attachment-table and consists of update entries, flag changes, summary renames and one patch block, so the technique is inferable only from the title and the diff. THIS IS THE SAME FAULT ALREADY FILED AGAINST ITS SIBLING BUG, where Bugzilla loads comments through a dynamic modal the extractor cannot see - but here content_gap was empty and no fault-report existed, so nothing reached any gap report. The credit that should be recoverable, the researcher named in the bug's own title, is recoverable only by fixing the capture; the names the document does carry are the assignee and reviewers, which correctly do not count. published is empty and the archived text states no date either - every timestamp renders as a relative phrase. Note the raw object is absent from the store, which is a store gap rather than a document gap (reported 2026-08-15) RECOVERY ATTEMPTED 2026-08-17: the page is alive and was refetched (30,774 characters probed), but extraction keeps under a third - the same Bugzilla page-shape limitation proven on the WebKit sibling, so nothing was published and the old capture stands. The fix is extractor support for Bugzilla threads, not another fetch.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -4502,7 +4486,7 @@ or fix the route and re-run.
 
 ## https://code.google.com/p/puzzlemall/downloads/list
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the title is generic SITE CHROME - "Google Code Archive - Long-term storage for Google Code Project Hosting." is identical for every project on that host and is carried by both the frontmatter and the body H1, with no retitle step on this entry although its sibling got one. Three of the ten link destinations are also broken Markdown, containing literal spaces so a parser truncates at the first one - and those three are exactly the research artefacts (the TSRC presentation, the Session Puzzles whitepaper and its presentation). The year list itself uses the percent-encoded forms (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -4694,15 +4678,31 @@ or fix the route and re-run.
 
 ## https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: BOTH CODE LISTINGS ARE MISSING AND THE LEAD-INS DANGLE. The lines "Here's the ActionScript code:" and "And here's the Perl server:" are each followed by an UNEXPANDED WORDPRESS SHORTCODE rather than the code - the plugin that rendered them is gone from the live site, so the capture preserved the shortcode text. The two resources are pbp.as and pbp.pl on the author's demo host, and the stored Wayback replay recorded in the wayback step predates the plugin's removal, which is the obvious recovery route. The byline is empty although THE PUBLISHED DOCUMENT ITSELF states "By ma1" with a link to that author's posts - a handle, which counts. The body also carries mojibake: two registered-trademark signs publish as a stray capital A-circumflex pair, while other special characters on the same page are correct, so the decode is partial. Note the raw object is absent from the store, which is a store gap rather than a document gap (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2007.md:39`
 
+## https://hackerone.com/reports/309531
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the disclosed Rockstar report preserves two researcher summaries, but the original report and timeline comments remain empty activity entries in the fresh source. Eight literal-entity changes and two U+2329 character changes in those summaries are repaired by this candidate; capture the undisplayed original report and comments without reconstructing them from the summaries (reported 2026-09-14).
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:35`
+
+## https://hackerone.com/reports/333419
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the disclosed Slack TURN report omits older activities between the original April 4, 2018 submission and the April 19 reply. The fresh source still displays Show older activities there; this candidate restores that literal indicator and five exact fenced code blocks but does not supply omitted activities. Capture those older activities before declaring the thread complete (reported 2026-09-14).
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:41`
+
 ## https://hackerone.com/reports/3511792
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: the report's comment thread - which is the document for a disclosed HackerOne report - came through as empty entries (a reporter link followed by a lone "."), leaving about 700 characters of technique; recapture (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -5182,7 +5182,7 @@ or fix the route and re-run.
 
 ## https://speakerdeck.com/shhnjk/piloting-edge-copilot
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: slides
 - Reason: faulty capture: 6,926 characters - 28 percent of the file - are two Speaker Deck carousels advertising other people's decks, sitting between the header and the transcript; re-extract without the recommendation rails (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -5246,7 +5246,7 @@ or fix the route and re-run.
 
 ## https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: advisory
 - Reason: faulty capture: THE EXPLOIT IS INERT. The stored source has the proof of concept as <input type=button value="Launch" onclick="DoIt()">; the published file has <input type=button value="Launch" > - one event handler in the source listing, zero published, with the documented stray space before the bracket. The consequence is that function DoIt() is defined and then NEVER INVOKED anywhere in the published PoC, while the prose still tells the reader "you can run or launch anything you can access by using the method in the html provided below". The method is gone. Mechanism confirmed: the author escaped the whole PoC inside a pre block, extraction decoded the entities into live markup and the handler was deleted - and the damage is already baked into the stored CONTENT object, so a plain re-render reproduces it. The byline was dropped too, although the body states "Found By: Aaron Sigel" and the source carries a Blogger byline naming aaron (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -5310,7 +5310,7 @@ or fix the route and re-run.
 
 ## https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: THE TITLE IS MOJIBAKE AND THE CREDIT NAMES THE WRONG PERSON. The source declares charset=windows-1251 and the title bytes were decoded as latin-1, so the frontmatter, the body H1, the manifest title and the sources title all read "Uvedomlenie o bezopasnosti" as the byte soup "Óâåäîìëåíèå î áåçîïàñíîñòè"; the same wrong decode runs through the body sidebar and the date line. Even decoded correctly that prefix is the site's SECTION LABEL, not a title - the document's own title, in its own Subject row, is "New vulnerabilities in CapCC for WordPress". Attribution: authors records 3APA3A, who is the list moderator and site owner and appears only in a site-wide meta Author tag and the footer copyright, while the document names the researcher twice in its own words - a From row reading MustLive and the signature "Best wishes and regards, MustLive, Administrator of Websecurity web site". Same shape as the 2009 fault where a vendor spokesperson was credited over the researcher. 786 characters of site furniture remain at the end, and published is empty although the document states its date. Note the slug names nothing in this document and looks inherited from a redirect page, and the manifest raw_sha256 is absent from the store, so this must not be re-rendered with --force (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -5350,7 +5350,7 @@ or fix the route and re-run.
 
 ## https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: one image target is the HTML ARTICLE PAGE ITSELF rather than an image file, which the manifest confirms with UnidentifiedImageError for that exact URL, and 0 of 13 images were preserved. 67 percent of the file (10,734 of 15,952 characters) is publisher furniture - categories, tags, a gravatar author box, and 14 related-post teaser cards - leaving roughly 1,400 characters of actual article (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -5406,7 +5406,7 @@ or fix the route and re-run.
 
 ## https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: slides
 - Reason: faulty capture: 21 of the 23 image targets point at the deck's HTML PAGE rather than an image file, which the manifest confirms with UnidentifiedImageError; only one real slide JPEG survives. 21 lines also begin with an orphan bold opener. Separately the manifest raw_sha256 is absent from the store while the object the file was built from is present, so a --force re-render would go back to the network (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -5878,7 +5878,7 @@ or fix the route and re-run.
 
 ## https://www.kb.cert.org/vuls/id/120541/
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: THE 111-VENDOR STATUS TABLE IS MISSING AND THE CVSS SCORE IS PLACEHOLDER DATA. The Vendor Information section publishes only the filter widget - the note number, Filter by status, Filter by content, Sort by, Expand all, View all 111 vendors - with ZERO vendor rows, because the JavaScript-loaded table did not survive the browser capture; an equivalent capture in the store proves the substance exists, carrying 3com, Cryptlib, Debian, GnuTLS and IBM rows with their statuses and notification dates. The CVSS table publishes Base 0 with AV:--/AC:--/Au:--/C:--/I:--/A:-- in every field. The recorded title, in frontmatter and body H1, is the note's type label and number with its subject dropped: the page's own title is "VU#120541 - SSL and TLS protocols renegotiation vulnerability". 288 characters of site furniture remain at the end, a PGP key download and an SEI research link, and the second body H1 is the Software Engineering Institute masthead rather than a heading. The manifest raw_sha256 is absent from the store (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -6078,7 +6078,7 @@ or fix the route and re-run.
 
 ## https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: authors is empty although the paper's own cover block names Michael Martin and Monica S. Lam of Stanford, both under their own headings - a paper cover page, which counts unambiguously. Six blockquotes are broken: a bare marker alone, then a blank line, then a rule with the quoted figure at column 0, so each renders as an empty quote wrapped in horizontal rules. 103 characters of converter credit remain at the end. The author e-mail addresses were lost to Cloudflare obfuscation, an artefact of fetching the page live in 2026 rather than a capture fault. Note the manifest raw_sha256 is ABSENT from the store while the frontmatter hash resolves and is the better render - the manifest's copy is full of empty links - so this must not be re-rendered with --force. Two apparent text faults were checked and are SOURCE-INHERENT, carried by the publisher's own HEVEA output: the en-dashes in the commented-out markup, and the dropped word in "programmable systems like , PQL, and QED" (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -6094,7 +6094,7 @@ or fix the route and re-run.
 
 ## https://www.wiz.io/blog/ingress-nginx-kubernetes-vulnerabilities
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: every figure is missing while the prose keeps handing off to one ("the process would look like this:" and "as you see from the above screenshot" with nothing after them); the argument is carried by diagrams and screenshots that did not come through, so re-acquire with an extraction that keeps them (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
@@ -6134,7 +6134,7 @@ or fix the route and re-run.
 
 ## https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: article
 - Reason: faulty capture: A PAYLOAD URI WAS REWRITTEN TO # INSIDE A QUOTED VENDOR REPLY. The source reads iframe src="javascript:alert(document.domain)" and the published file src="#", and the line sits inside the Chrome team's own argument that the two constructs behave similarly - which now reads as nonsense. A closing param tag was deleted as well. The byline and date were dropped although the stored source carries a post-author vcard naming Aditya K Sood and a published timestamp of 2009-12-27. The image policy also inverted the two figures: browser_check.jpg, the comparison table the prose introduces with "is presented below", was rejected as furniture on its 320x94 size while the decorative Chrome logo was the one preserved. Bookkeeping: the manifest raw_sha256 is absent from the store while the file's is present, so the store-gaps row for this entry is chasing a stale hash (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.

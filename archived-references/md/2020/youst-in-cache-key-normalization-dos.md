@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:60"
 commit: ""
-content_sha256: 0509f240e30f50f9ad431cd69742106b12ff351ad527f8c52e70587273d840a9
+content_sha256: 90e76d5fc5d87ad0696cbba8472042921318c588b0c6d0ac9542ab1e26f62916
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Serv
 published: ""
 publisher: iustin24.github.io
 publisher_english: ""
-raw_sha256: b3cfa43eba44b9087620cea80bcc1aac24206084a54540ca0723bf15304c143e
-retrieved_from: "https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/"
+raw_sha256: c1730730b028fa6416018f670a42e232e9e385fbb68b81fe18618a51bb6c6039
+retrieved_from: "https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:33+00:00"
+retrieved_utc: "2026-08-06T02:45:14+00:00"
 slug: youst-in-cache-key-normalization-dos
 snapshot: ""
 title_english: ""
@@ -46,12 +46,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/>
-- Preserved from: https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/ (browser) on 2026-08-09
+- Preserved from: https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service (browser) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -126,3 +126,7 @@ Yet again, while trying to increase the cache-hit ratio, developers did not take
 When looking for cache poisoning DoS vulnerabilities, it's trivial to identify if the cache might be running a custom configuration meant to increase the hit-ratio, by normalizing parts of the uri. I have yet to research how often lowercase normalization is implemented on paths / parameters, so there's potentially more to be played with regarding uri normalization and caches.
 
 Lastly, I'd like to thank [James Kettle](https://skeletonscribe.net), [0xatul](https://twitter.com/atul_hax) and [d0nut](https://twitter.com/d0nutptr) who have inspired / helped me through out my research.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `b3cfa43eba44b9087620cea80bcc1aac24206084a54540ca0723bf15304c143e`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `c1730730b028fa6416018f670a42e232e9e385fbb68b81fe18618a51bb6c6039`). The retained article text was checked against this replacement capture. All retained prose agrees across Fastify Accept-Version, Host lowercase versus backend case sensitivity, and path normalization/encoded traversal examples and limits. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

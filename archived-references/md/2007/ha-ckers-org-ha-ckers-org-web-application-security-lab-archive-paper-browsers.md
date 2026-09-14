@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:48"
 commit: ""
-content_sha256: dc0b66d4af2a93dafe70efd1feb6633a3ce763bcf3f5937bc6e3e876e9f7c269
+content_sha256: 8894fd8ab2f51cab79710eec629ece34ba644865c8f7039d83dcb93f3c3c3710
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-usin
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: e5c1346a6ba4cd33ccc3f904b0f385b4dc37d683b9a9ba8f89cdb038143b87aa
-retrieved_from: "http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:25:41+00:00"
+raw_sha256: f0db084f287895112e574d8f9da15102a6c58ca1b6966f3a919ea0f2f70b3f69
+retrieved_from: "https://web.archive.org/web/20071225075003id_/http://ha.ckers.org:80/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T14:22:18+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-paper-browsers
-snapshot: 20071124185926
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/>
-- Preserved from: http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/ (stored) on 2026-08-09
-- Capture timestamp: 20071124185926
+- Preserved from: https://web.archive.org/web/20071225075003id_/http://ha.ckers.org:80/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/ (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -75,3 +74,7 @@ This paper is a long time in coming, and I apologize for not getting it out soon
 If you recall all our intranet-hacking-with-browsers conversations over the last two years, this will look really familiar, because it’s using all the same tactics, except instead it’s the webserver doing the attacking, rather than the web-browser. The paper draws on techniques and tactics we’ve all know and love so there shouldn’t be anything surprising in here. So the next question is how prevalent is this stuff? Well, I’ve seen it exactly one time. But I’ve only tried it a handful, so it’s really hard for me to estimate how often it happens. My guess is that it is somewhat rare, but using Google dorks to identify potentially vulnerable sites would prove to speed up non targeted attacks. Kinda nasty.
 
   This entry was posted on Monday, August 27th, 2007 at 2:48 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/trackback/) from your own site.
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `e5c1346a6ba4cd33ccc3f904b0f385b4dc37d683b9a9ba8f89cdb038143b87aa`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `f0db084f287895112e574d8f9da15102a6c58ca1b6966f3a919ea0f2f70b3f69`). The retained article text was checked against this replacement capture. Both retained paragraphs agree: using web servers to perform intranet attacks and pointer to SecTheory intranet-hacking.htm. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

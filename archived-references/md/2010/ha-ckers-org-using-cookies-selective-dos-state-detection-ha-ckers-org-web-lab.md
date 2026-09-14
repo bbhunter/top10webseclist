@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:25"
 commit: ""
-content_sha256: 4b343c381756ac88b8bfc70e9e58556357da52edf8122c97386059caa81fa72e
+content_sha256: f13c340a615b2c2474b857e81bb709594284c1638ee981eba0245b96295726ed
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: a7d7cde8fd01302cffe04613ed275de92799a196568bffc64fe24568cb9e8166
-retrieved_from: "http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:11:28+00:00"
+raw_sha256: bffc8f8d05afca8978317339f8f2298dcf6dbd4b708a52ad1841bbe15afa8b59
+retrieved_from: "https://web.archive.org/web/20100927020610id_/http://ha.ckers.org:80/blog/20100822/using-cookies-for-selective-dos-and-state-detection"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T06:34:23+00:00"
 slug: ha-ckers-org-using-cookies-selective-dos-state-detection-ha-ckers-org-web-lab
-snapshot: 20100826083541
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/>
-- Preserved from: http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/ (stored) on 2026-08-09
-- Capture timestamp: 20100826083541
+- Preserved from: https://web.archive.org/web/20100927020610id_/http://ha.ckers.org:80/blog/20100822/using-cookies-for-selective-dos-and-state-detection (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -87,3 +86,7 @@ By combining the over-long cookie (minus 50 bytes) a logged in state will cause 
  URL
 
 ---
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `a7d7cde8fd01302cffe04613ed275de92799a196568bffc64fe24568cb9e8166`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `bffc8f8d05afca8978317339f8f2298dcf6dbd4b708a52ad1841bbe15afa8b59`). The retained article text was checked against this replacement capture. Complete retained variable-width-cookie state-detection explanation agrees, including200/50byte cookies, path-scoped oversized cookie and image onerror. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

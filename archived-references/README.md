@@ -1517,7 +1517,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [dominator - Community version of the DOMinator for Firefox](md/2011/code-google-com-dominator-community-version-dominator-firefox.md) | article | Google Code |  | research | 1 |
 | [Double eval() for DOM based XSS](md/2011/shreeraj-blogspot-com-double-eval-dom-based-xss.md) | article | shreeraj.blogspot.com |  | research | 1 |
 | [Drag and Drop XSS in Firefox by HTML5 (Cross Domain in frames)](md/2011/soroush-me-drag-drop-xss-firefox-html5-cross-domain-frames.md) | article | soroush.me |  | research | 1 |
-| [Exploitation of “Self-Only” Cross-Site Scripting in Google Code](md/2011/amolnaik4-blogspot-com-secure-belief-exploitation-self-only-cross-site-code.md) | article | amolnaik4.blogspot.com |  | research | 1 |
+| [Exploitation of “Self-Only” Cross-Site Scripting in Google Code](md/2011/amolnaik4-blogspot-com-secure-belief-exploitation-self-only-cross-site-code.md) | article | amolnaik4.blogspot.com | 2011 | research | 1 |
 | [Exploiting the unexploitable XSS with clickjacking](md/2011/blog-kotowicz-net-exploiting-unexploitable-xss-clickjacking.md) | article | blog.kotowicz.net |  | research | 1 |
 | [Fast and Precise Sanitizer Analysis with BEK](md/2011/usenix-org-fast-precise-sanitizer-analysis-bek.md) | article | usenix.org |  | research | 1 |
 | [Filejacking: How to make a file server from your browser (with HTML5 of course)](md/2011/blog-kotowicz-net-filejacking-how-make-file-server-your-browser-html5-course.md) | article | blog.kotowicz.net |  | research | 1 |
@@ -1868,7 +1868,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 |---|---|---|---|---|---|
 | [(Non-Persistent) Untraceable XSS Attacks](md/2007/kuza55-blogspot-com-non-persistent-untraceable-xss-attacks.md) | article | kuza55.blogspot.com |  | research | 1 |
 | [0DAY: QuickTime pwns Firefox](md/2007/gnucitizen-org-0day-quicktime-pwns-firefox.md) | article | gnucitizen.org |  | research | 1 |
-| [15936 – Overly permissive frame navigation allows password theft](md/2007/webkit-bugzilla-15936-overly-permissive-frame-navigation-allows-password-theft.md) | article | WebKit Bugzilla |  | research | 1 |
+| [15936 – Overly permissive frame navigation allows password theft](md/2007/webkit-bugzilla-15936-overly-permissive-frame-navigation-allows-password-theft.md) | article | WebKit Bugzilla | 2007 | research | 1 |
 | [370445 - (CVE-2007-0981) embedded nulls in location.hostname confuse same-origin checks (Zalewski XSS vulnerability)](md/2007/bugzilla-mozilla-org-370445-cve-2007-0981-embedded-nulls-location-vulnerability.md) | article | bugzilla.mozilla.org |  | research | 1 |
 | [[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities](md/2007/archives-neohapsis-com-full-disclosure-adobe-acrobat-reader-vulnerabilities.md) | article | Full Disclosure / Neohapsis | 2007 | research | 1 |
 | [A Remote Vulnerability in Firefox Extensions](md/2007/paranoia-dubfire-net-remote-vulnerability-firefox-extensions.md) | article | paranoia.dubfire.net |  | research | 1 |

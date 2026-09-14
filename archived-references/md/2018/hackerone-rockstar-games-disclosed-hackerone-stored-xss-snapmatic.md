@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:35"
 commit: ""
-content_sha256: d6e90d18ba043dc65eb2a746cd77de810d8a61e77f5ab06fa56141e42e82e4a4
+content_sha256: ad031c78e89a6dcfffb1cf559d1edec0e3d1eaf76f2733597c31dfd62a6778a5
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackerone.com/reports/309531"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: 98d0deda23369bd40f13201e8115bc802d5b2ec5948b766fd782a7143339af9c
+raw_sha256: f14fbe267fe7ed3feb73470db772f1927fcd13d9ac4b8f367062e12905c84550
 retrieved_from: "https://hackerone.com/reports/309531"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:30+00:00"
+retrieved_utc: "2026-09-14T09:15:30+00:00"
 slug: hackerone-rockstar-games-disclosed-hackerone-stored-xss-snapmatic
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/309531>
-- Preserved from: https://hackerone.com/reports/309531 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/309531 (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -91,7 +91,19 @@ Two weeks after the fix, I ended up discovering what would soon become a “head
 
 The original payload was complex and confusing, and it led me to the wrong conclusion that [over-consumption flaws](https://hackerone.com/redirect?signature=e9fdfe4ae08f06fd697d9820b6472cbc3aceb3a2&url=https%3A%2F%2Fwebsec.github.io%2Funicode-security-guide%2Fcharacter-transformations%2F%23overconsumption) were to blame, but as analysis proceeded, it was finally discovered that the culprit was the **simple, single** `%`.
 
-The final payload `<%<script/src=//...?` produced an output of `<%<script/src="//..." <="" p="">` from the back-end.
+The final payload 
+
+```
+<%&lt;script/src=//...?
+```
+
+ produced an output of 
+
+```
+&lt;%<script/src="//..." <="" p="">
+```
+
+ from the back-end.
 
 A fix was deployed and the WAF rules were made more strict, defeating all attempts with a 302 redirect to an error page.
 
@@ -99,7 +111,13 @@ A fix was deployed and the WAF rules were made more strict, defeating all attemp
 
 Two months after the last fix, I discovered how the WAF wouldn't account for [Full-Width](https://hackerone.com/redirect?signature=94c9f9639fb2c55281d3c1e2820f40ecadc45807&url=https%3A%2F%2Fwww.compart.com%2Fen%2Funicode%2Fblock%2FU%2BFF00) and [Small-Forms](https://hackerone.com/redirect?signature=e823898824394a9c0700e14806b23d9982e8d57a&url=https%3A%2F%2Fwww.compart.com%2Fen%2Funicode%2Fblock%2FU%2BFE50) variants which, chained with the `%` confusion from the second report would again trick the back-end into producing a valid output: indeed, giving **`U+FF1C`** or **`U+FE64`** as the input would pass the WAF and the back-end would transform both into `<`. This is called a [best-fit match flaw](https://hackerone.com/redirect?signature=bc75d2374467e877b490cd0801b7c340ad395857&url=https%3A%2F%2Fwebsec.github.io%2Funicode-security-guide%2Fcharacter-transformations%2F%23best-fit) and it usually happens on Windows-powered technology stacks, where one of the processing layers fails to properly account for missing characters in destination codepages.
 
-The payload `\uFE64%\uFF1Cscript/src=//...?`, evaded the WAF and produced `<%<script/src="//...?" class="badLink"` in the HTML page.
+The payload `\uFE64%\uFF1Cscript/src=//...?`, evaded the WAF and produced 
+
+```
+&lt;%<script/src="//...?" class="badLink"
+```
+
+ in the HTML page.
 
 A first fix was deployed preventing both script injections and DOM events manipulation, both of which I was able to bypass after a few days using a combination of **control chars, percentages, breaks, and exotic function invokation**. The payload `\uFF1C%\uFE64input/autofocus onfocus\b='[1].find(alert)'` successfully bypassed the new filters and popped an alert before the report was closed as resolved, allowing the team to look for a better solution in time. A second, stronger fix was deployed and the WAF rules were made even stricter prohibiting any combination of direct or indirect forms of `<` and `%` in suspicious contextes, plus any shape or form of `onXXX` DOM events.
 
@@ -118,13 +136,19 @@ After weeks of tests, in a few hours I was able to chain ***eight* different tec
 - using an innocuos `href=#` to make everything following the payload clickable
 - using a **fake URL** enclosed in `[]` to exploit a flaw in the rendering engine in the back-end that would cause it to move the payload outside of the "badUrl" element and place it where we could use it
 
-The final payload was `&<>lt;%&<>lt;m\bath xml:base=\"j<>avascript:alert(document.domain)//\" href=#\"[bad.url.pls]` which produced `<%<math xml:base="javascript:alert(document.domain)//" href="#" x="" class="badLink">[bad.url.pls]`
+The final payload was `&<>lt;%&<>lt;m\bath xml:base=\"j<>avascript:alert(document.domain)//\" href=#\"[bad.url.pls]` which produced 
+
+```
+&lt%<math xml:base="javascript:alert(document.domain)//" href="#" x="" class="badLink">[bad.url.pls]
+```
+
+
 
 As a bonus note, this led to the discovery of a particular payload that would render a newsfeed comment **un-repliable and un-deletable**. Both flaws were fixed with better rules, and by preventing the back-end from stripping “*conveniently-placed*” tags and control characters.
 
 ### Report [#5](https://hackerone.com/reports/5)
 
-Somewhat less-related to the SocialClub per sé, this was a variation on **report [#3](https://hackerone.com/reports/3)** where it was discovered that Snapmatic and R★ Editor comments would go a different validation flow than any other entry, and the [best-fit matchings](https://hackerone.com/redirect?signature=bc75d2374467e877b490cd0801b7c340ad395857&url=https%3A%2F%2Fwebsec.github.io%2Funicode-security-guide%2Fcharacter-transformations%2F%23best-fit) would once again act up but on a different codepage this time, when using **Left-Angle brackets** `U+3008 "〈"` from the [Cjk Symbols and Punctuation block](https://hackerone.com/redirect?signature=73b9a54dadbf0c72c2d6cba07cdf52f97d13da52&url=https%3A%2F%2Fwww.compart.com%2Fen%2Funicode%2Fblock%2FU%2B3000), and **Left-pointing Angle brackets** `U+2329 "〈"` from the [Miscellaneus Technical block](https://hackerone.com/redirect?signature=12de40484af21138b7e46413f2fa9bc6eaff769e&url=https%3A%2F%2Fwww.compart.com%2Fen%2Funicode%2Fblock%2FU%2B2300).
+Somewhat less-related to the SocialClub per sé, this was a variation on **report [#3](https://hackerone.com/reports/3)** where it was discovered that Snapmatic and R★ Editor comments would go a different validation flow than any other entry, and the [best-fit matchings](https://hackerone.com/redirect?signature=bc75d2374467e877b490cd0801b7c340ad395857&url=https%3A%2F%2Fwebsec.github.io%2Funicode-security-guide%2Fcharacter-transformations%2F%23best-fit) would once again act up but on a different codepage this time, when using **Left-Angle brackets** `U+3008 "〈"` from the [Cjk Symbols and Punctuation block](https://hackerone.com/redirect?signature=73b9a54dadbf0c72c2d6cba07cdf52f97d13da52&url=https%3A%2F%2Fwww.compart.com%2Fen%2Funicode%2Fblock%2FU%2B3000), and **Left-pointing Angle brackets** `U+2329 "〈"` from the [Miscellaneus Technical block](https://hackerone.com/redirect?signature=12de40484af21138b7e46413f2fa9bc6eaff769e&url=https%3A%2F%2Fwww.compart.com%2Fen%2Funicode%2Fblock%2FU%2B2300).
 
 While the Snapmatic/R★ Editor back-end would block `U+FF1C` and `U+FE64`, the other two would go through and get "matched" to `<` somewhere in the web technology stack. My last payload was `〈script/src=//...?` and it was promptly fixed in both its variations.
 
@@ -155,7 +179,19 @@ A fix was deployed to **remove anything following a `<`**.
 Two weeks after the fix, I ended up discovering what would soon become a “head-scratching” mystery: injecting a **single `%`** in the payload would bypass the filter entirely and force the back-end to somehow produce an unescaped `<` along with the escaped one.
  The original payload was complex and confusing, and it led me to the wrong conclusion that [over-consumption flaws](https://websec.github.io/unicode-security-guide/character-transformations/#overconsumption) were to blame, but as analysis proceeded, it was finally discovered that the culprit was the **simple, single `%`**.
 
-The final payload `<%<script/src=//...?` produced an output of `<%<script/src="//..." <="" p="">` from the back-end.
+The final payload 
+
+```
+<%&lt;script/src=//...?
+```
+
+ produced an output of 
+
+```
+&lt;%<script/src="//..." <="" p="">
+```
+
+ from the back-end.
 
 A fix was deployed and the WAF rules were made more strict, defeating all attempts with a 302 redirect to an error page.
 
@@ -163,7 +199,13 @@ A fix was deployed and the WAF rules were made more strict, defeating all attemp
 
 Two months after the last fix, I discovered how the WAF wouldn't account for [**Full-Width**](https://www.compart.com/en/unicode/block/U+FF00) and [**Small-Forms**](https://www.compart.com/en/unicode/block/U+FE50) variants which, chained with the `%` confusion from the second report would again trick the back-end into producing a valid output: indeed, giving **`U+FF1C` or `U+FE64`** as the input would pass the WAF and the back-end would transform both into `<`. This is called a [best-fit match flaw](https://websec.github.io/unicode-security-guide/character-transformations/#best-fit) and it usually happens on Windows-powered technology stacks, where one of the processing layers fails to properly account for missing characters in destination codepages.
 
-The payload `\uFE64%\uFF1Cscript/src=//...?`, evaded the WAF and produced `<%<script/src="//...?" class="badLink"` in the HTML page.
+The payload `\uFE64%\uFF1Cscript/src=//...?`, evaded the WAF and produced 
+
+```
+&lt;%<script/src="//...?" class="badLink"
+```
+
+ in the HTML page.
 
 A first fix was deployed preventing both script injections and DOM events manipulation, both of which I was able to bypass after a few days using a combination of **control chars, percentages, breaks, and exotic function invokation**. The payload `\uFF1C%\uFE64input/autofocus onfocus\b='[1].find(alert)'` successfully bypassed the new filters and popped an alert before the report was closed as resolved, allowing the team to look for a better solution in time. A second, stronger fix was deployed and the WAF rules were made even stricter prohibiting any combination of direct or indirect forms of `<` and `%` in suspicious contextes, plus any shape or form of `onXXX` DOM events.
 
@@ -182,13 +224,19 @@ After weeks of tests, in a few hours I was able to chain ***eight* different tec
 - using an innocuos `href=#` to make everything following the payload clickable
 - using a **fake URL** enclosed in `[]` to exploit a flaw in the rendering engine in the back-end that would cause it to move the payload *outside* of the "badUrl" element and place it where we could use it
 
-The final payload was `&<>lt;%&<>lt;m\bath xml:base=\"j<>avascript:alert(document.domain)//\" href=#\"[bad.url.pls]` which produced `<%<math xml:base="javascript:alert(document.domain)//" href="#" x="" class="badLink">[bad.url.pls]`
+The final payload was `&<>lt;%&<>lt;m\bath xml:base=\"j<>avascript:alert(document.domain)//\" href=#\"[bad.url.pls]` which produced 
+
+```
+&lt%<math xml:base="javascript:alert(document.domain)//" href="#" x="" class="badLink">[bad.url.pls]
+```
+
+
 
 As a bonus note, this led to the discovery of a particular payload that would render a newsfeed comment **un-repliable and un-deletable**. Both flaws were fixed with better rules, and by preventing the back-end from stripping *“conveniently-placed”* tags and control characters.
 
 ### Report [#5](https://hackerone.com/reports/5)
 
-Somewhat *less-related* to the SocialClub per sé, this was a variation on **report [#3](https://hackerone.com/reports/3)** where it was discovered that Snapmatic and R★ Editor comments would go a different validation flow than any other entry, and the [best-fit matchings](https://websec.github.io/unicode-security-guide/character-transformations/#best-fit) would once again act up but on a different codepage this time, when using **Left-Angle brackets** `U+3008 "〈"` from the [Cjk Symbols and Punctuation block](https://www.compart.com/en/unicode/block/U+3000), and **Left-pointing Angle brackets** `U+2329 "〈"` from the [Miscellaneus Technical block](https://www.compart.com/en/unicode/block/U+2300).
+Somewhat *less-related* to the SocialClub per sé, this was a variation on **report [#3](https://hackerone.com/reports/3)** where it was discovered that Snapmatic and R★ Editor comments would go a different validation flow than any other entry, and the [best-fit matchings](https://websec.github.io/unicode-security-guide/character-transformations/#best-fit) would once again act up but on a different codepage this time, when using **Left-Angle brackets** `U+3008 "〈"` from the [Cjk Symbols and Punctuation block](https://www.compart.com/en/unicode/block/U+3000), and **Left-pointing Angle brackets** `U+2329 "〈"` from the [Miscellaneus Technical block](https://www.compart.com/en/unicode/block/U+2300).
 
 While the Snapmatic/R★ Editor back-end would block `U+FF1C` and `U+FE64`, the other two would go through and get "matched" to `<` somewhere in the web technology stack. My last payload was `〈script/src=//...?` and it was promptly fixed in both its variations.
 
@@ -322,3 +370,7 @@ April 19, 2018, 10:14pm UTC
 This report has been disclosed.
 
 April 19, 2018, 10:14pm UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `98d0deda23369bd40f13201e8115bc802d5b2ec5948b766fd782a7143339af9c`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `f14fbe267fe7ed3feb73470db772f1927fcd13d9ac4b8f367062e12905c84550`). The exposed summaries were checked against this fresh capture. Altered HTML entities and Unicode characters have been restored exactly, and payload examples are preserved as inert code. The report and comment bodies remain unavailable in the public page, so this is still a partial capture. The missing earlier capture remains documented in the archive history.

@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:29"
 commit: ""
-content_sha256: 7fee1277e4068a1aeb4f282a1adcf631fdebf098bacf8e356ebe6c7c6295e22c
+content_sha256: efd5abe4033fbcc1a0e4d2b9983561b1468a8b2bf99e7a1dbe9b834662d64397
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +31,12 @@ original_url: "http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/"
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: 013a4f1a5fac1da62de002981122293be76c5ac3f5035372b04856250e2466d2
-retrieved_from: "http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:11:19+00:00"
+raw_sha256: f75923179720935477cf50451764689e18c374420fed5b3a17a08679f4eab55e
+retrieved_from: "https://web.archive.org/web/20100730012521id_/http://ha.ckers.org:80/blog/20100621/side-channel-attacks-in-ssl"
+retrieved_kind: wayback
+retrieved_utc: "2026-08-06T06:34:23+00:00"
 slug: ha-ckers-org-side-channel-attacks-ssl-ha-ckers-org-web-application-security-lab
-snapshot: 20100627063049
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,13 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/>
-- Preserved from: http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/ (stored) on 2026-08-09
-- Capture timestamp: 20100627063049
+- Preserved from: https://web.archive.org/web/20100730012521id_/http://ha.ckers.org:80/blog/20100621/side-channel-attacks-in-ssl (wayback) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -89,3 +88,7 @@ But when you’re talking about HTML, you have a lot of things that sort of act 
  URL
 
 ---
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `013a4f1a5fac1da62de002981122293be76c5ac3f5035372b04856250e2466d2`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `f75923179720935477cf50451764689e18c374420fed5b3a17a08679f4eab55e`). The retained article text was checked against this replacement capture. Complete retained encrypted-traffic/dependency-chain explanation and paper/talk discussion agree. Existing capture-quality limitations remain recorded separately. The missing earlier capture remains documented in the archive history.

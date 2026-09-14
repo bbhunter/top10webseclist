@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2026-ai.md:78"
 commit: ""
-content_sha256: 96867e3142ab37bf8fdbb8b52c3f7233a8b28f0d1ddbbd8f21a97e56e2002244
+content_sha256: 86a2a18da6ada4dbce71c8ed2018c61c8af284769d04639bf925f932aefbcd25
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://hackerone.com/reports/3511792"
 published: ""
 publisher: HackerOne
 publisher_english: ""
-raw_sha256: b53712abd3667d06376a1f46f99823248eee4e8db36ffec57cab64afab57858c
+raw_sha256: e80b5d596fe6b97dd51e88600a24a76fae60be203b40366ef75a0e5c2b61196d
 retrieved_from: "https://hackerone.com/reports/3511792"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:32+00:00"
+retrieved_utc: "2026-09-14T09:11:38+00:00"
 slug: hackerone-node-js-disclosed-hackerone-hashdos-v8
 snapshot: ""
 title_english: ""
@@ -48,12 +48,12 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/3511792>
-- Preserved from: https://hackerone.com/reports/3511792 (browser) on 2026-08-09
+- Preserved from: https://hackerone.com/reports/3511792 (browser) on 2026-09-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -152,3 +152,7 @@ March 24, 2026, 10:21pm UTC
 disclosed this report.
 
 March 30, 2026, 4:44pm UTC
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `b53712abd3667d06376a1f46f99823248eee4e8db36ffec57cab64afab57858c`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-09-14 (SHA-256 `e80b5d596fe6b97dd51e88600a24a76fae60be203b40366ef75a0e5c2b61196d`). The retained public summary and timeline agree with this capture. The report and comment bodies are still unavailable in the public page; this remains a partial capture with a recorded recovery gap. The missing earlier capture remains documented in the archive history.

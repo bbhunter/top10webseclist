@@ -24,7 +24,7 @@ canonical_url: "https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams
 cited_by:
   - "2025.md:36"
 commit: ""
-content_sha256: 58d83d2a2029f9f3c289feb0f95eff6ba3682ae56f70a83b5999a892343576fa
+content_sha256: 89a5f49234dcb579cce0cc8a0af6c0cbb5ceb4c542d3db0cb261f7aec9d2b7d5
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-
 published: 2025-11-06
 publisher: Medium
 publisher_english: ""
-raw_sha256: 9e63451d0c87f95149f482b264c16b25926711c244fba3296d87b99302a9962e
-retrieved_from: "https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7?gi=dda24e3479af"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:01+00:00"
+raw_sha256: ba9df6b34eeb776894a839da23e60f7cbc11d1ada3445300c1e66ace75a6d2fc
+retrieved_from: "https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7"
+retrieved_kind: stored
+retrieved_utc: "2026-08-06T08:47:00+00:00"
 slug: 2025-medium-how-i-accessed-1-800-company-livestreams-uncovered-new-web-rre
 snapshot: ""
 title_english: ""
@@ -52,12 +52,12 @@ translation_of: ""
 - Published: 2025-11-06
 - Original: <https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7>
 - Current location: <https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7?gi=dda24e3479af>
-- Preserved from: https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7?gi=dda24e3479af (live) on 2026-08-09
+- Preserved from: https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7 (stored) on 2026-08-06
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Web Hacking Techniques Index collections, kept so the
-page going offline. To read the original, follow the link above.
+archive of a source from the Web Hacking Techniques Index collections, kept so
+it remains readable if the page goes offline. To read the original, follow the link above.
 
 ## Content
 
@@ -203,3 +203,7 @@ The full DEFCON 33 video for ”Paywall Optional: Stream for Free with a New Tec
 **— Farzan (jumpycastle)**
 
 **Repo:** [https://github.com/jumpycastle/rre-burp](https://github.com/jumpycastle/rre-burp)
+
+## Recovery notes
+
+Source evidence recovered on 2026-09-14. The earlier source capture (SHA-256 `9e63451d0c87f95149f482b264c16b25926711c244fba3296d87b99302a9962e`) is no longer available. This publication uses a separately preserved capture of the same document recorded on 2026-08-06 (SHA-256 `ba9df6b34eeb776894a839da23e60f7cbc11d1ada3445300c1e66ace75a6d2fc`). The existing article text is retained. The archive journal ties this replacement source to the same extracted content; differences in the published copy are documented formatting and footer cleanup. The missing earlier capture remains documented in the archive history.
