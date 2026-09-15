@@ -1085,7 +1085,7 @@ const videoChecks = [
   // actually stops it, and it has to be wired to the dialog's own close event.
   appSource.includes("function stopTalkPlayback"),
   /function stopTalkPlayback\(\)[\s\S]*?panel\.innerHTML = "";/.test(appSource),
-  appSource.includes('$("#artifact-dialog").addEventListener("close", stopTalkPlayback)'),
+  /\$\("#artifact-dialog"\)\.addEventListener\("close", \(\) => \{\s*if \(!\$\("#artifact-dialog"\)\.open\) stopTalkPlayback\(\);\s*\}\)/.test(appSource),
   // THE MARK, drawn once and shown in every room. A record with a recording
   // should be visible as such while scanning any view, not only after opening
   // it — and the mark keeps the confidence distinction the record dialog makes

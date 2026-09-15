@@ -111,6 +111,12 @@ and phone widths, including both discovery appearances. Genuine backdrop clicks
 close only the topmost pane; interior clicks and drags across its edge keep it
 open. It also checks SVG close-icon centring, scroll restoration and reader cleanup.
 
+`history-test.mjs` checks Back/Forward in all nine views at desktop and phone
+widths. Opening an article, Markdown or PDF creates one popup history entry;
+switching format or source replaces that entry. Back closes the popup, Forward
+restores it, and X/Escape/backdrop dismissal returns to the underlying view without
+leaving an extra Back step. Direct share links also have a local view to return to.
+
 `article-scroll-test.mjs` checks that new and reopened records start at their heading
 after scrolling another record or opening its video player, across all nine views
 at desktop and phone widths. It verifies player teardown and preservation of the
@@ -127,7 +133,7 @@ still needs no JavaScript dependencies.
 
 ### Regression coverage for future website changes
 
-Use the Docker command above to run all ten suites. The underlying
+Use the Docker command above to run all eleven suites. The underlying
 `regression-test.mjs` entrypoint runs inside that container.
 
 The runner uses the complete preview at port 4173 for every suite, includes Terminal
@@ -144,6 +150,7 @@ These are shared interface contracts: preserve them when adding or changing them
 | Terminal caret, Run/help/search controls, keyboard history, completion without a Tab trap, retained drafts and safe route changes during pending commands | `interface-test.mjs` |
 | Theme colours in records, forms, search and readers; readable light/dark contrast | `discovery-test.mjs`, `theme-test.mjs`, `accessibility-test.mjs` |
 | Outside click/tap closes only the topmost popup in every view; inside clicks and selection drags keep it open; close icons stay centred | `dialog-test.mjs` |
+| Article Back/Forward, format switches, explicit dismissal and shared-link reloads | `history-test.mjs` |
 | New/reopened articles start at the heading after scrolling or opening a video; previous video frame is removed; background page position is preserved | `article-scroll-test.mjs` |
 | Mobile PDFs render through the isolated local reader, including when dedicated workers are unavailable; viewer switching and theme changes work | `preview-test.mjs`, `discovery-test.mjs`, `dialog-test.mjs` |
 
@@ -268,6 +275,11 @@ custom domain to Cloudflare Pages, not to this backup deployment. The workflow m
 be started manually.
 
 ## Mobile and full-screen use
+
+The sticky mobile header includes a labelled **Themes** chooser, the eight-theme
+count and the current view. Its drawer puts themes before project links, keeps
+Favourites & Read alongside them, and supports keyboard focus containment and
+Escape dismissal. Search stays on its own row with a usable input width.
 
 All archive routes support 320 px-wide screens. The Investigation Board becomes a
 single-column tap list on narrow phones; the Terminal, Constellation, readers and PDF

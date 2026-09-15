@@ -43,8 +43,8 @@
   <link rel="icon" href="brand-mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="brand-mark.svg">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=20260910.1">
-  <link rel="stylesheet" href="discovery.css?v=20260910.1">
+  <link rel="stylesheet" href="styles.css?v=20260915.1">
+  <link rel="stylesheet" href="discovery.css?v=20260915.1">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to archive</a>
@@ -59,8 +59,8 @@
   </div>
 
   <div class="app-shell" id="app-shell" hidden>
-    <aside class="sidebar" id="concept-sidebar" aria-label="Archive experiences">
-      <button class="mobile-menu-close" id="close-mobile-menu" type="button" aria-label="Close concept menu">×</button>
+    <aside class="sidebar" id="concept-sidebar" aria-label="Choose an archive theme">
+      <button class="mobile-menu-close" id="close-mobile-menu" type="button" aria-label="Close themes menu">×</button>
       <!-- The archive's name is the page's one h1. It lives in the masthead
            rather than over the reading area: the heading above the records
            names the mode being read, and a search engine reads an h1 as a
@@ -71,16 +71,8 @@
       </a>
       <p class="brand-edition"><span>2006—NOW</span> Research record</p>
 
-      <nav class="sidebar-project-links" aria-label="Project links">
-        <button class="contribute-launch" data-contribute type="button"><span aria-hidden="true">✍</span> Submit research</button>
-        <a href="https://github.com/irsdl/webhacklist" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">GH</span> GitHub</a>
-        <a href="https://github.com/irsdl/webhacklist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md" target="_blank" rel="noopener noreferrer" title="Use the judging workflow with your own AI"><span aria-hidden="true">AI</span> Judge your research</a>
-        <a href="https://x.com/irsdl" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">X</span> @irsdl</a>
-        <a href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer" title="Sponsor the preservation work"><span aria-hidden="true">♥</span> Sponsor</a>
-      </nav>
-
-      <nav class="concept-nav">
-        <p class="nav-label"><span>Ways into the archive</span><b>09</b></p>
+      <nav class="concept-nav" aria-label="Archive themes and saved research">
+        <p class="nav-label"><span>8 themes · one archive</span><b>↓</b></p>
         <button class="nav-item active" data-view="evidence" aria-current="page">
           <span class="nav-index">01</span><span class="nav-copy"><strong>Investigation Board</strong><em>Casework surface</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
         </button>
@@ -106,6 +98,14 @@
         </button>
       </nav>
 
+      <nav class="sidebar-project-links" aria-label="Project links">
+        <button class="contribute-launch" data-contribute type="button"><span aria-hidden="true">✍</span> Submit research</button>
+        <a href="https://github.com/irsdl/webhacklist" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">GH</span> GitHub</a>
+        <a href="https://github.com/irsdl/webhacklist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md" target="_blank" rel="noopener noreferrer" title="Use the judging workflow with your own AI"><span aria-hidden="true">AI</span> Judge your research</a>
+        <a href="https://x.com/irsdl" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">X</span> @irsdl</a>
+        <a href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer" title="Sponsor the preservation work"><span aria-hidden="true">♥</span> Sponsor</a>
+      </nav>
+
       <div class="sidebar-foot">
         <div class="reading-meter">
           <div><span>Research trail</span><strong id="reading-progress-label">0 / 0</strong></div>
@@ -117,11 +117,14 @@
       </div>
     </aside>
 
-    <button class="mobile-menu-backdrop" id="mobile-menu-backdrop" type="button" aria-label="Close concept menu" aria-controls="concept-sidebar"></button>
+    <button class="mobile-menu-backdrop" id="mobile-menu-backdrop" type="button" aria-label="Close themes menu" aria-controls="concept-sidebar"></button>
 
     <div class="workspace">
       <header class="topbar">
-        <button class="mobile-menu" id="mobile-menu" aria-label="Open concept menu" aria-controls="concept-sidebar" aria-expanded="false">☰</button>
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Choose from 8 archive themes" aria-controls="concept-sidebar" aria-expanded="false">
+          <span class="mobile-theme-label"><span aria-hidden="true">☰</span> Themes <b>8</b></span>
+          <span id="mobile-current-theme">Investigation Board</span><span aria-hidden="true">⌄</span>
+        </button>
         <label class="global-search">
           <span aria-hidden="true">⌕</span>
           <input id="global-search" type="search" aria-label="Search the research archive" placeholder="Find a technique, researcher or topic… try tag:xss" autocomplete="off">
@@ -393,8 +396,8 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="constellation.js?v=20260910.1"></script>
-  <script src="discovery.js?v=20260910.1"></script>
-  <script src="app.js?v=20260910.1"></script>
+  <script src="constellation.js?v=20260915.1"></script>
+  <script src="discovery.js?v=20260915.1"></script>
+  <script src="app.js?v=20260915.1"></script>
 </body>
 </html>

@@ -307,6 +307,11 @@ function syncDialogScrollLock() {
   dialogUnlockFrame = requestAnimationFrame(() => {
     dialogUnlockFrame = null;
     if ($$('dialog[open]').length || lockedDialogScrollY === null) return;
+    dismissDocumentHistory();
+    if (documentDismissal) {
+      documentDismissal.then(syncDialogScrollLock);
+      return;
+    }
     const restoreY = lockedDialogScrollY;
     lockedDialogScrollY = null;
     document.body.classList.remove("document-dialog-open");
@@ -453,14 +458,82 @@ function documentShareUrl(item, format = "artifact") {
   return url.href;
 }
 
-function syncDocumentUrl(item, format) {
-  history.replaceState(history.state, "", documentShareUrl(item, format));
-}
+let activeDocumentUrl = "";
+let handledRouteUrl = "";
+let routeRevision = 0;
+let restoringRoute = 0;
+let documentDismissal = null;
+let finishDocumentDismissal = null;
 
-function clearDocumentUrl() {
+function archiveViewUrl() {
   const url = new URL(location.href);
   ["reader", "pdf", "results", "theme", "source"].forEach((key) => url.searchParams.delete(key));
-  history.replaceState(history.state, "", url.href);
+  url.hash = viewHash();
+  return url.href;
+}
+
+function syncDocumentUrl(item, format) {
+  const url = documentShareUrl(item, format);
+  if (!history.state?.archiveDocument) {
+    // Also give a directly opened share link a local view to return to.
+    const base = archiveViewUrl();
+    if (location.href !== base) history.replaceState(history.state, "", base);
+    history.pushState({ archiveDocument: true }, "", url);
+  } else if (location.href !== url) {
+    // Formats and companion sources share one popup visit: Back closes it.
+    // Skip unchanged URLs, especially during Forward: WebKit rate-limits writes.
+    history.replaceState(history.state, "", url);
+  }
+  activeDocumentUrl = handledRouteUrl = location.href;
+}
+
+function dismissDocumentHistory() {
+  if (documentDialogOpen() || restoringRoute || documentDismissal || !history.state?.archiveDocument || location.href !== activeDocumentUrl) return;
+  documentDismissal = new Promise((resolve) => { finishDocumentDismissal = resolve; });
+  history.back();
+}
+
+function closeDocumentDialogs() {
+  ["#report-dialog", "#artifact-dialog", "#reader-dialog", "#pdf-dialog"].forEach((id) => $(id).close());
+}
+
+async function restoreArchiveRoute() {
+  if (handledRouteUrl === location.href) return;
+  handledRouteUrl = location.href;
+  const revision = ++routeRevision;
+  restoringRoute = revision;
+  try {
+    const params = new URLSearchParams(location.search);
+    const [next, sharedArtifact] = location.hash.slice(1).split("/");
+    closeDocumentDialogs();
+    setMobileMenuOpen(false);
+    if (next === "submit") return openSubmissionDialog();
+    const requested = resolveViewHash(next) || { view: state.view };
+    const previousMode = state.savedMode;
+    if (requested.savedMode) state.savedMode = requested.savedMode;
+    else if (requested.view === "favourites") state.savedMode = "favourites";
+    if (requested.view !== state.view) await setView(requested.view, false);
+    else if (state.savedMode !== previousMode) render();
+    const theme = params.get("theme");
+    if (["light", "dark"].includes(theme)) { state.readingTheme = theme; applyReadingTheme(); }
+    const readerId = params.get("reader"), pdfId = params.get("pdf");
+    const id = readerId || pdfId || sharedArtifact;
+    if (id) {
+      const item = await requestedSource(await ensureItemLoaded(id), params);
+      if (revision !== routeRevision || !item) return;
+      if (readerId && item.mdPath) { openReader(item); return; }
+      if (pdfId && item.pdfPath) return openPdfViewer(item);
+      return await openArtifact(item.id);
+    }
+    const year = params.get("results");
+    const path = year && annualPdfPath(year);
+    if (path && revision === routeRevision) return openPdfViewer(null, {
+      path, kind: "listingPdf", title: `${year} Top 10 results`, kicker: `Official archive listing / ${year}`
+    });
+  } finally {
+    if (restoringRoute === revision) restoringRoute = 0;
+    syncDialogScrollLock();
+  }
 }
 
 function fallbackCopy(value) {
@@ -1113,26 +1186,7 @@ async function loadArchive() {
     applyReadingTheme();
     render();
     $("#app-shell").hidden = false;
-    if (hashView === "submit") requestAnimationFrame(() => openSubmissionDialog());
-    if (sharedArtifact) requestAnimationFrame(() => openArtifact(sharedArtifact));
-    if (readerId) {
-      const readerItem = await requestedSource(await ensureItemLoaded(readerId), requestedDocument);
-      if (readerItem?.mdPath) requestAnimationFrame(() => openReader(readerItem));
-    }
-    if (pdfId && !readerId) {
-      const pdfItem = await requestedSource(await ensureItemLoaded(pdfId), requestedDocument);
-      if (pdfItem?.pdfPath) requestAnimationFrame(() => openPdfViewer(pdfItem));
-    }
-    const resultsYear = requestedDocument.get("results");
-    if (resultsYear && !readerId && !pdfId) {
-      const resultsPath = annualPdfPath(resultsYear);
-      if (resultsPath) requestAnimationFrame(() => openPdfViewer(null, {
-        path: resultsPath,
-        kind: "listingPdf",
-        title: `${resultsYear} Top 10 results`,
-        kicker: `Official archive listing / ${resultsYear}`
-      }));
-    }
+    await restoreArchiveRoute();
     requestAnimationFrame(() => $("#boot-screen").classList.add("done"));
     setTimeout(() => $("#boot-screen").remove(), 700);
     scheduleArchivePrefetch();
@@ -1149,11 +1203,27 @@ function setMobileMenuOpen(open) {
   const trigger = $("#mobile-menu");
   $("#concept-sidebar").toggleAttribute("inert", compact && !isOpen);
   trigger.setAttribute("aria-expanded", String(isOpen));
-  trigger.setAttribute("aria-label", isOpen ? "Close concept menu" : "Open concept menu");
-  if (isOpen && !$("#global-results").hidden) closeGlobalSearch();
+  trigger.setAttribute("aria-label", isOpen ? "Close themes menu" : "Choose from 8 archive themes");
+  $(".workspace").inert = isOpen;
+  const sidebar = $("#concept-sidebar");
+  if (isOpen) {
+    sidebar.setAttribute("role", "dialog");
+    sidebar.setAttribute("aria-modal", "true");
+    if (!$("#global-results").hidden) closeGlobalSearch();
+    focusWithoutScroll($(".nav-item.active"));
+    sidebar.scrollTop = 0;
+  } else {
+    sidebar.removeAttribute("role");
+    sidebar.removeAttribute("aria-modal");
+  }
 }
 
 function wireShell() {
+  // Theme fonts, safe-area insets and the mobile chooser all affect this height.
+  // Keep search results and sticky filters below the actual header.
+  new ResizeObserver(([entry]) => {
+    document.documentElement.style.setProperty("--topbar-height", `${entry.target.getBoundingClientRect().height}px`);
+  }).observe($(".topbar"));
   $("#discovery-appearance").addEventListener("click", handleDiscoveryClick);
   $$(".nav-item").forEach((button) => button.addEventListener("click", () => setView(button.dataset.view)));
 
@@ -1171,6 +1241,13 @@ function wireShell() {
   });
   // Every actionable route in the shared drawer dismisses it, including the
   // project links and Resume button that do not go through setView().
+  $("#concept-sidebar").addEventListener("keydown", (event) => {
+    if (event.key !== "Tab" || !document.body.classList.contains("menu-open")) return;
+    const controls = $$("#concept-sidebar a, #concept-sidebar button").filter((el) => el.getClientRects().length && !el.disabled);
+    const first = controls[0], last = controls.at(-1);
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
   $("#concept-sidebar").addEventListener("click", (event) => {
     if (event.target.closest("a, button")) setMobileMenuOpen(false);
   });
@@ -1267,27 +1344,13 @@ function wireShell() {
     } else if (event.key === "Escape" && !$("#global-results").hidden) closeGlobalSearch();
   });
 
-  window.addEventListener("hashchange", async () => {
-    const [next, sharedArtifact] = location.hash.replace("#", "").split("/");
-    // A route that opens the submission form rather than a room, so a post, a
-    // talk slide or CONTRIBUTING.md can send someone straight to it.
-    if (next === "submit") {
-      openSubmissionDialog();
-      return;
-    }
-    const requested = resolveViewHash(next);
-    if (requested) {
-      const previousMode = state.savedMode;
-      if (requested.savedMode) state.savedMode = requested.savedMode;
-      else if (requested.view === "favourites") state.savedMode = "favourites";
-      if (requested.view !== state.view) setView(requested.view, false);
-      else if (state.savedMode !== previousMode) render();
-    }
-    if (sharedArtifact) {
-      await ensureItemLoaded(sharedArtifact);
-      requestAnimationFrame(() => openArtifact(sharedArtifact));
-    }
-  });
+  const navigate = () => {
+    finishDocumentDismissal?.();
+    documentDismissal = finishDocumentDismissal = null;
+    restoreArchiveRoute().catch((error) => toast(`The shared document could not be opened: ${error.message}`));
+  };
+  window.addEventListener("popstate", navigate);
+  window.addEventListener("hashchange", navigate);
 
   $("#view-root").addEventListener("click", handleViewClick);
   $("#view-root").addEventListener("input", handleDiscoveryInput);
@@ -1320,9 +1383,9 @@ function wireShell() {
     if (target) $("#reader-content").querySelector(`#${CSS.escape(target.dataset.readerTarget)}`)?.scrollIntoView({ behavior: state.motionReduced ? "instant" : "smooth", block: "start" });
   });
   $("#reader-dialog").addEventListener("close", () => {
+    if ($("#reader-dialog").open) return;
     readerRequestToken++;
     state.readerItem = null;
-    if (!$("#pdf-dialog").open) clearDocumentUrl();
   });
 
   // The report form opens from ON TOP of the record dialog, so closing it must
@@ -1332,13 +1395,17 @@ function wireShell() {
     wireDialogDismissal($(id));
     $(id).addEventListener("close", () => {
       syncDialogScrollLock();
+      // Finish iframe/player cleanup before requesting a history traversal.
+      if (["#artifact-dialog", "#reader-dialog", "#pdf-dialog"].includes(id)) queueMicrotask(dismissDocumentHistory);
       if (id !== "#contribute-dialog" && id !== "#report-dialog") requestAnimationFrame(restoreGlobalSearch);
     });
   });
   // Dismissing a modal only hides it. An iframe inside a hidden dialog keeps
   // running, so closing a record with the talk playing left the reader with no
   // picture, no controls and the sound still going.
-  $("#artifact-dialog").addEventListener("close", stopTalkPlayback);
+  $("#artifact-dialog").addEventListener("close", () => {
+    if (!$("#artifact-dialog").open) stopTalkPlayback();
+  });
 
   window.addEventListener("message", (event) => {
     const frame = $("#pdf-frame");
@@ -1564,6 +1631,8 @@ function setSavedMode(mode) {
 
 async function setView(view, updateHash = true) {
   if (!isViewName(view)) return;
+  if (documentDismissal) await documentDismissal;
+  if (updateHash) { ++routeRevision; restoringRoute = 0; closeDocumentDialogs(); }
   if (constellationExperience) {
     constellationExperience.destroy();
     constellationExperience = null;
@@ -1571,7 +1640,10 @@ async function setView(view, updateHash = true) {
   destroyInvestigationLayout();
   state.view = view;
   setMobileMenuOpen(false);
-  if (updateHash) history.pushState(null, "", `#${viewHash(view)}`);
+  if (updateHash) {
+    history.pushState(null, "", archiveViewUrl());
+    handledRouteUrl = location.href;
+  }
   render();
   if (updateHash) {
     // A selected route starts at its controls, even after reading far down
@@ -1737,6 +1809,8 @@ function render() {
     if (active) button.setAttribute("aria-current", "page");
     else button.removeAttribute("aria-current");
   });
+
+  $("#mobile-current-theme").textContent = $(".nav-item.active strong").textContent;
 
   const renderers = {
     desk: renderDiscovery,
@@ -3409,16 +3483,17 @@ function focusArtifactSources() {
 }
 
 async function openSourceDetails(item) {
-  // Return to the record even when it is already open below a document pane.
-  $("#reader-dialog").close();
-  $("#pdf-dialog").close();
   await openArtifact(item.id);
   focusArtifactSources();
 }
 
 async function openArtifact(id) {
+  if (documentDismissal) await documentDismissal;
+  const revision = routeRevision;
   const item = await ensureItemLoaded(id);
-  if (!item) return;
+  if (!item || revision !== routeRevision) return;
+  $("#reader-dialog").close();
+  $("#pdf-dialog").close();
   const dialog = $("#artifact-dialog");
   // The room owns the panel surface; the research topic still owns the narrow
   // record accent. Keeping those as separate signals stops a Museum record from
@@ -3548,6 +3623,7 @@ async function openArtifact(id) {
 
   $("#share-artifact").addEventListener("click", () => shareDocument(item));
 
+  syncDocumentUrl(item, "artifact");
   showLockedModal(dialog);
   // A closed dialog has no layout box, so resetting it before showModal()
   // leaves its previous scroll offset intact. Reset after opening and focus,
@@ -3712,7 +3788,8 @@ function setPdfView(mode) {
   pdfLoadTimer = setTimeout(showPdfFallback, pdfLoadTimeout(9000));
 }
 
-function openPdfViewer(item, options = {}) {
+async function openPdfViewer(item, options = {}) {
+  if (documentDismissal) await documentDismissal;
   const kind = options.kind === "listingPdf" ? "listingPdf" : "pdf";
   const path = safeArchivePath(options.path || item?.pdfPath, kind);
   // An annual results PDF is not a preserved reference and carries no token.
@@ -3890,6 +3967,7 @@ function closePdfLinksAndRestoreFocus() {
 }
 
 function clearPdfViewer() {
+  if ($("#pdf-dialog").open) return;
   clearTimeout(pdfLoadTimer);
   pdfVerifyToken++;
   pdfLoadTimer = null;
@@ -3900,11 +3978,15 @@ function clearPdfViewer() {
   state.pdfBytes = 0;
   state.pdfFrameUrl = "";
   state.pdfUsesInSiteReader = false;
-  if (!$("#reader-dialog").open) clearDocumentUrl();
-  const frame = $("#pdf-frame");
+  // Removing src from a live iframe navigates it to about:blank and can add a
+  // joint browser-history entry just as the user goes Back. Discard its browsing
+  // context instead, so a closed PDF cannot insert another navigation.
+  const current = $("#pdf-frame");
+  const frame = current.cloneNode(false);
   frame.hidden = true;
   frame.removeAttribute("src");
   frame.removeAttribute("sandbox");
+  current.replaceWith(frame);
   $("#pdf-loading").hidden = true;
   $("#pdf-fallback").hidden = true;
   $("#pdf-links").hidden = true;
@@ -4218,6 +4300,7 @@ function markdownDocument(markdown) {
 // Everything else about the view is identical - it is the same preserved
 // document, in the words the author wrote it in.
 async function openReader(item, options = {}) {
+  if (documentDismissal) await documentDismissal;
   const showOriginal = Boolean(options.original && item?.originalMdPath);
   const readerPath = showOriginal ? item.originalMdPath : item?.mdPath;
   if (!readerPath) return;

@@ -29,13 +29,31 @@ try {
     assert.equal(await page.locator("html").getAttribute("data-discovery-theme"), "dark");
     assert.equal(await page.locator(".nav-item").count(), 9);
     assert.equal(await page.locator('.nav-item[data-view="guide"],.nav-item[data-view="gazette"]').count(), 0);
+    await page.locator("#global-search").fill("HTTP");
+    await page.waitForSelector("#global-results:not([hidden])");
+    assert.ok(await page.evaluate(() => {
+      const results = document.querySelector("#global-results").getBoundingClientRect();
+      const header = document.querySelector(".topbar").getBoundingClientRect();
+      return results.top >= header.bottom - 1 && results.bottom <= innerHeight;
+    }), "Search results stay below the theme chooser and inside the viewport");
+    await page.locator("#close-global-results").tap();
+    await page.locator("#global-search").fill("");
+    await page.locator("#global-search").blur();
     // Give the personal collection a record, through the actual Save control.
     await page.locator(".discovery-record [data-favourite]").first().tap();
     for (const view of views) {
       await page.evaluate(() => scrollTo({top:600,behavior:"instant"}));
+      assert.ok(await page.locator("#mobile-menu").isVisible());
+      assert.ok((await page.locator("#mobile-menu").innerText()).includes("Themes"));
+      assert.equal(await page.locator(".mobile-theme-label b").innerText(), "8");
+      assert.ok((await page.locator("#mobile-menu").boundingBox()).height >= 44);
       await page.locator("#mobile-menu").tap();
+      assert.equal(await page.locator("#concept-sidebar").getAttribute("aria-modal"), "true");
+      assert.ok(await page.evaluate(() => document.activeElement.matches(".nav-item.active")));
+      assert.ok(await page.evaluate(() => document.querySelector(".concept-nav").getBoundingClientRect().top < document.querySelector(".sidebar-project-links").getBoundingClientRect().top));
       await page.locator(`.nav-item[data-view="${view}"]`).tap();
       await ready(page,view);
+      assert.equal(await page.locator("#mobile-current-theme").innerText(), await page.locator(".nav-item.active strong").innerText());
       assert.equal(await page.locator("#mobile-menu").getAttribute("aria-expanded"), "false");
       assert.equal(await page.locator("#concept-sidebar").getAttribute("inert"), "");
       assert.ok(await page.evaluate(() => scrollY < 2), `${view} opens at its top after mobile navigation`);
@@ -57,6 +75,7 @@ try {
         await fits(page,"#artifact-dialog",`${view} record popup`);
         await page.locator("#artifact-dialog .dialog-close").tap();
         await page.waitForSelector("#artifact-dialog[open]",{state:"hidden"});
+        await page.waitForFunction(() => !documentDismissal && !document.body.classList.contains("document-dialog-open"));
       }
       if (view === "constellation") {
         const before = await page.evaluate(() => constellationExperience.camera.distance);

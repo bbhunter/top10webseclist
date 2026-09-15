@@ -156,8 +156,9 @@
   .discovery-record { padding:20px; }
 }
 @media (max-width:600px) {
-  :root[data-discovery-theme] .view-intro { display:block; margin-bottom:16px; }
-  :root[data-discovery-theme] .view-intro-tools { margin-top:12px; justify-content:space-between; }
+  :root[data-discovery-theme] main { padding-top:12px; }
+  :root[data-discovery-theme] .view-intro { display:block; margin-bottom:12px; }
+  :root[data-discovery-theme] .view-intro-tools { margin-top:8px; justify-content:space-between; }
   :root[data-discovery-theme] .view-intro .discovery-appearance > span { display:inline; }
   .desk-filters { padding:16px; gap:12px; }
   .discovery-grid,.time-comparison { grid-template-columns:minmax(0,1fr); }
