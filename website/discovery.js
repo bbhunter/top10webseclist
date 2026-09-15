@@ -10,7 +10,7 @@ function storedDiscoveryTheme() {
 const discoveryState = {
   theme: storedDiscoveryTheme(), busy: false, error: "",
   deskQuery: "", deskAuthor: "", deskYear: "all", deskTopic: "all", deskStanding: "all", deskRead: "all", deskSort: "newest", deskVideo: "all", deskCompact: false, deskPage: 1,
-  timeTopic: "all", timeOrder: "oldest", timeExpanded: new Set()
+  timeTopic: "all", timeOrder: "oldest", timeYear: "all", timeExpanded: new Set()
 };
 function discoveryAppearance() {
   return `<div class="discovery-appearance" role="group" aria-label="Page appearance"><span>Appearance</span>${["light", "dark"].map((mode) => `<button type="button" data-discovery-action="theme" data-discovery-value="${mode}" aria-pressed="${discoveryState.theme === mode}">${mode === "light" ? "Light" : "Dark"}</button>`).join("")}</div>`;
@@ -106,7 +106,7 @@ function renderTimeMachine() {
   const last = discoverySorted(chronological.filter((item) => item.year === lastYear))[0];
   setMetric(items.length, "records across the years");
   $("#view-root").innerHTML = `<section class="discovery-view time-machine">
-    <div class="discovery-toolbar">${discoverySelect("time-topic", "Follow a subject", discoveryState.timeTopic, discoveryTopics())}${discoverySelect("time-order", "Travel direction", discoveryState.timeOrder, [["oldest", "Earlier to later"], ["newest", "Later to earlier"]])}${discoverySelect("time-jump", "Jump to a collection", "", [["", "Choose a year…"], ...discoveryYears().slice(1)])}</div>
+    <div class="discovery-toolbar">${discoverySelect("time-topic", "Follow a subject", discoveryState.timeTopic, discoveryTopics())}${discoverySelect("time-order", "Travel direction", discoveryState.timeOrder, [["oldest", "Earlier to later"], ["newest", "Later to earlier"]])}${discoverySelect("time-jump", "Jump to a collection", discoveryState.timeYear === "all" ? "" : discoveryState.timeYear, [["", "Choose a year…"], ...discoveryYears().slice(1)])}</div>
     <p class="discovery-note">Dates below are collection years, not necessarily publication dates. Comparisons show archive appearances and do not imply that one paper builds on another.</p>
     ${first && last && first.year !== last.year ? `<section class="time-comparison" aria-label="Earlier and later research"><div><p class="eyebrow">Earlier in the archive</p>${discoveryRecord(first)}</div><div><p class="eyebrow">Later in the archive</p>${discoveryRecord(last)}</div></section>` : ""}
     <div class="time-spine">${records.map((record) => {
@@ -158,6 +158,8 @@ function handleDiscoveryClick(event) {
     $$("[data-discovery-action='theme']").forEach((control) => control.setAttribute("aria-pressed", String(control.dataset.discoveryValue === value)));
     return true;
   } else if (action === "desk-reset") {
+    // Capture the previous year before Reset clears the other desk filters.
+    selectArchiveYear("all");
     Object.assign(discoveryState, { deskQuery: "", deskAuthor: "", deskYear: "all", deskTopic: "all", deskStanding: "all", deskRead: "all", deskSort: "newest", deskVideo: "all", deskPage: 1 });
   } else if (action === "desk-compact") discoveryState.deskCompact = !discoveryState.deskCompact;
   else if (action === "desk-next") discoveryState.deskPage++;
@@ -168,7 +170,8 @@ function handleDiscoveryClick(event) {
 }
 function handleDiscoveryInput(event) {
   const mapping = { "desk-query": "deskQuery", "desk-author": "deskAuthor", "desk-year": "deskYear", "desk-topic": "deskTopic", "desk-standing": "deskStanding", "desk-read": "deskRead", "desk-sort": "deskSort", "desk-video": "deskVideo", "time-topic": "timeTopic", "time-order": "timeOrder" };
-  if (event.target.id === "time-jump") { discoveryJump(`time-${event.target.value}`); return; }
+  if (event.target.id === "time-jump") { selectArchiveYear(event.target.value || "all"); return; }
+  if (event.target.id === "desk-year") { selectArchiveYear(event.target.value); return; }
   const key = mapping[event.target.id];
   if (!key) return;
   discoveryState[key] = event.target.value;

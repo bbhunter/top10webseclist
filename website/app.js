@@ -444,7 +444,9 @@ function archiveUrl(path, kind, version = "") {
 
 function documentShareUrl(item, format = "artifact") {
   const url = new URL(location.href);
+  const selectedYear = url.searchParams.get("year");
   url.search = "";
+  if (selectedYear) url.searchParams.set("year", selectedYear);
   if (format === "reader" && item?.id) url.searchParams.set("reader", item.id);
   if (format === "pdf" && item?.id) url.searchParams.set("pdf", item.id);
   if (["reader", "pdf"].includes(format) && (item?.sourceId || Number.isInteger(item?.sourceIndex))) url.searchParams.set("source", item.sourceId || String(item.sourceIndex));
@@ -465,6 +467,57 @@ let restoringRoute = 0;
 let documentDismissal = null;
 let finishDocumentDismissal = null;
 
+const YEAR_VIEW_FIELDS = { evidence: "year", museum: "year", library: "year", constellation: "starYear", signals: "signalYear" };
+
+function selectedArchiveYear(view = state.view) {
+  if (Object.hasOwn(YEAR_VIEW_FIELDS, view)) return state[YEAR_VIEW_FIELDS[view]];
+  if (view === "desk") return discoveryState.deskYear;
+  if (view === "time") return discoveryState.timeYear || "all";
+  if (view === "terminal") return state.terminalBrowse || "all";
+  return [...state.savedYears].sort().join(",") || "all";
+}
+
+function validArchiveYear(value, view = state.view) {
+  if (value === "all" && !Object.hasOwn(YEAR_VIEW_FIELDS, view)) return value;
+  const years = typeof value === "string" ? value.split(",") : [];
+  return years.length && (view === "favourites" || years.length === 1) && years.every(year => YEAR_FILES.includes(year))
+    ? [...new Set(years)].sort().join(",") : "";
+}
+
+function rememberArchiveYear() {
+  const year = selectedArchiveYear();
+  if (history.state?.archiveYear !== year) history.replaceState({ ...history.state, archiveYear: year }, "", location.href);
+}
+
+function applyArchiveYear(view, year) {
+  if (Object.hasOwn(YEAR_VIEW_FIELDS, view)) state[YEAR_VIEW_FIELDS[view]] = year;
+  else if (view === "desk") { discoveryState.deskYear = year; discoveryState.deskPage = 1; }
+  else if (view === "time") discoveryState.timeYear = year;
+  else if (view === "terminal") state.terminalBrowse = year === "all" ? "" : year;
+  else state.savedYears = new Set(year === "all" ? [] : year.split(","));
+  if (view === "signals") { state.signalStatus = "all"; state.signalVisibleCount = 12; }
+}
+
+async function selectArchiveYear(value) {
+  if (documentDismissal) await documentDismissal;
+  const view = state.view, year = validArchiveYear(value, view), startUrl = location.href;
+  if (!year || year === selectedArchiveYear()) return;
+  const revision = ++routeRevision;
+  if (year !== "all") await Promise.all(year.split(",").map(ensureCollection));
+  if (revision !== routeRevision || view !== state.view || location.href !== startUrl) return;
+  rememberArchiveYear();
+  applyArchiveYear(view, year);
+  const url = new URL(archiveViewUrl());
+  if (year === "all") url.searchParams.delete("year");
+  else url.searchParams.set("year", year);
+  history.pushState({ archiveYear: year }, "", url.href);
+  handledRouteUrl = location.href;
+  if (view === "terminal") await runTerminalCommand(`ls /${year === "all" ? "" : year}`);
+  else if (isDiscoveryView()) discoveryRefresh();
+  else render();
+  if (view === "time") discoveryJump(year === "all" ? "main-content" : `time-${year}`);
+}
+
 function archiveViewUrl() {
   const url = new URL(location.href);
   ["reader", "pdf", "results", "theme", "source"].forEach((key) => url.searchParams.delete(key));
@@ -475,10 +528,11 @@ function archiveViewUrl() {
 function syncDocumentUrl(item, format) {
   const url = documentShareUrl(item, format);
   if (!history.state?.archiveDocument) {
+    rememberArchiveYear();
     // Also give a directly opened share link a local view to return to.
     const base = archiveViewUrl();
     if (location.href !== base) history.replaceState(history.state, "", base);
-    history.pushState({ archiveDocument: true }, "", url);
+    history.pushState({ ...history.state, archiveDocument: true }, "", url);
   } else if (location.href !== url) {
     // Formats and companion sources share one popup visit: Back closes it.
     // Skip unchanged URLs, especially during Forward: WebKit rate-limits writes.
@@ -509,11 +563,27 @@ async function restoreArchiveRoute() {
     setMobileMenuOpen(false);
     if (next === "submit") return openSubmissionDialog();
     const requested = resolveViewHash(next) || { view: state.view };
+    const year = validArchiveYear(params.get("year"), requested.view)
+      || validArchiveYear(history.state?.archiveYear, requested.view);
+    const yearChanged = Boolean(year && year !== selectedArchiveYear(requested.view));
+    const viewChanged = requested.view !== state.view;
+    if (year && year !== "all") await Promise.all(year.split(",").map(ensureCollection));
+    if (requested.view === "time" && year && year !== "all") await ensureAllCollections();
+    if (revision !== routeRevision) return;
+    if (yearChanged) {
+      applyArchiveYear(requested.view, year);
+      if (requested.view === "terminal") {
+        state.terminalLines.push(year === "all" ? terminalRootListing()
+          : `<p class="term-bright">== ${h(yearLabel(year))} ==</p>${terminalRows(itemsForYear(year).sort(byRankThenTitle))}`);
+        state.terminalLines = state.terminalLines.slice(-260);
+      }
+    }
     const previousMode = state.savedMode;
     if (requested.savedMode) state.savedMode = requested.savedMode;
     else if (requested.view === "favourites") state.savedMode = "favourites";
-    if (requested.view !== state.view) await setView(requested.view, false);
-    else if (state.savedMode !== previousMode) render();
+    if (viewChanged) await setView(requested.view, false);
+    else if (yearChanged || state.savedMode !== previousMode) render();
+    if (requested.view === "time" && (yearChanged || viewChanged) && year) discoveryJump(year === "all" ? "main-content" : `time-${year}`);
     const theme = params.get("theme");
     if (["light", "dark"].includes(theme)) { state.readingTheme = theme; applyReadingTheme(); }
     const readerId = params.get("reader"), pdfId = params.get("pdf");
@@ -525,10 +595,10 @@ async function restoreArchiveRoute() {
       if (pdfId && item.pdfPath) return openPdfViewer(item);
       return await openArtifact(item.id);
     }
-    const year = params.get("results");
-    const path = year && annualPdfPath(year);
+    const resultsYear = params.get("results");
+    const path = resultsYear && annualPdfPath(resultsYear);
     if (path && revision === routeRevision) return openPdfViewer(null, {
-      path, kind: "listingPdf", title: `${year} Top 10 results`, kicker: `Official archive listing / ${year}`
+      path, kind: "listingPdf", title: `${resultsYear} Top 10 results`, kicker: `Official archive listing / ${resultsYear}`
     });
   } finally {
     if (restoringRoute === revision) restoringRoute = 0;
@@ -1487,11 +1557,7 @@ async function handleViewClick(event) {
 
   const yearTarget = event.target.closest("[data-year]");
   if (yearTarget) {
-    const year = yearTarget.dataset.year;
-    await ensureCollection(year);
-    if (state.view === "constellation") state.starYear = year;
-    else state.year = year;
-    render();
+    await selectArchiveYear(yearTarget.dataset.year);
     return;
   }
 
@@ -1530,11 +1596,7 @@ async function handleViewClick(event) {
 
   const signalYearTarget = event.target.closest("[data-signal-year]");
   if (signalYearTarget && YEAR_FILES.includes(signalYearTarget.dataset.signalYear)) {
-    await ensureCollection(signalYearTarget.dataset.signalYear);
-    state.signalYear = signalYearTarget.dataset.signalYear;
-    state.signalStatus = "all";
-    state.signalVisibleCount = 12;
-    render();
+    await selectArchiveYear(signalYearTarget.dataset.signalYear);
     return;
   }
 
@@ -1572,9 +1634,10 @@ async function handleViewClick(event) {
   const savedYearTarget = event.target.closest("[data-saved-year]");
   if (savedYearTarget) {
     const year = savedYearTarget.dataset.savedYear;
-    if (year === "all") state.savedYears.clear();
-    else if (YEAR_FILES.includes(year)) toggleInSet(state.savedYears, year);
-    render();
+    const years = new Set(state.savedYears);
+    if (year === "all") years.clear();
+    else if (YEAR_FILES.includes(year)) toggleInSet(years, year);
+    await selectArchiveYear([...years].sort().join(",") || "all");
     return;
   }
 
@@ -1588,7 +1651,7 @@ async function handleViewClick(event) {
   }
 
   if (event.target.closest("[data-saved-clear]")) {
-    state.savedYears.clear();
+    await selectArchiveYear("all");
     state.savedTopics.clear();
     render();
     return;
@@ -1624,15 +1687,17 @@ function viewCopy(view = state.view) {
 
 function setSavedMode(mode) {
   if (!SAVED_MODES.includes(mode) || mode === state.savedMode) return;
+  rememberArchiveYear();
   state.savedMode = mode;
-  history.replaceState(history.state, "", `#${viewHash("favourites")}`);
+  history.pushState({ archiveYear: selectedArchiveYear() }, "", archiveViewUrl());
+  handledRouteUrl = location.href;
   render();
 }
 
 async function setView(view, updateHash = true) {
   if (!isViewName(view)) return;
   if (documentDismissal) await documentDismissal;
-  if (updateHash) { ++routeRevision; restoringRoute = 0; closeDocumentDialogs(); }
+  if (updateHash) { rememberArchiveYear(); ++routeRevision; restoringRoute = 0; closeDocumentDialogs(); }
   if (constellationExperience) {
     constellationExperience.destroy();
     constellationExperience = null;
@@ -1641,7 +1706,9 @@ async function setView(view, updateHash = true) {
   state.view = view;
   setMobileMenuOpen(false);
   if (updateHash) {
-    history.pushState(null, "", archiveViewUrl());
+    const url = new URL(archiveViewUrl());
+    url.searchParams.delete("year");
+    history.pushState({ archiveYear: selectedArchiveYear() }, "", url.href);
     handledRouteUrl = location.href;
   }
   render();
@@ -2563,8 +2630,7 @@ function renderTerminal() {
   input.addEventListener("input", rememberDraft);
   $("#terminal-collection").addEventListener("change", (event) => {
     if (!event.target.value) return;
-    state.terminalBrowse = event.target.value;
-    runTerminalCommand(`ls /${event.target.value}`);
+    selectArchiveYear(event.target.value);
   });
   $("[data-term-fill]").addEventListener("click", () => {
     input.value = "grep ";

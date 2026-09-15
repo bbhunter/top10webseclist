@@ -19,6 +19,7 @@ const allSuites = [
   "interface-test.mjs",
   "dialog-test.mjs",
   "history-test.mjs",
+  "year-history-test.mjs",
   "sources-test.mjs",
   "article-scroll-test.mjs",
   "mobile-test.mjs",

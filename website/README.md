@@ -117,6 +117,12 @@ switching format or source replaces that entry. Back closes the popup, Forward
 restores it, and X/Escape/backdrop dismissal returns to the underlying view without
 leaving an extra Back step. Direct share links also have a local view to return to.
 
+`year-history-test.mjs` checks year tabs and collection selectors in all nine
+views at desktop and phone widths. Year choices create history entries, retain
+`?year=` in shared article links, and survive Back/Forward and reload. It also
+checks return from another theme, multi-year saved filters, and delayed loads
+that finish after navigation has moved elsewhere.
+
 `article-scroll-test.mjs` checks that new and reopened records start at their heading
 after scrolling another record or opening its video player, across all nine views
 at desktop and phone widths. It verifies player teardown and preservation of the
@@ -133,7 +139,7 @@ still needs no JavaScript dependencies.
 
 ### Regression coverage for future website changes
 
-Use the Docker command above to run all eleven suites. The underlying
+Use the Docker command above to run all twelve suites. The underlying
 `regression-test.mjs` entrypoint runs inside that container.
 
 The runner uses the complete preview at port 4173 for every suite, includes Terminal
@@ -150,6 +156,7 @@ These are shared interface contracts: preserve them when adding or changing them
 | Terminal caret, Run/help/search controls, keyboard history, completion without a Tab trap, retained drafts and safe route changes during pending commands | `interface-test.mjs` |
 | Theme colours in records, forms, search and readers; readable light/dark contrast | `discovery-test.mjs`, `theme-test.mjs`, `accessibility-test.mjs` |
 | Outside click/tap closes only the topmost popup in every view; inside clicks and selection drags keep it open; close icons stay centred | `dialog-test.mjs` |
+| Year tabs and collection selection support Back/Forward, article return and reload | `year-history-test.mjs` |
 | Article Back/Forward, format switches, explicit dismissal and shared-link reloads | `history-test.mjs` |
 | New/reopened articles start at the heading after scrolling or opening a video; previous video frame is removed; background page position is preserved | `article-scroll-test.mjs` |
 | Mobile PDFs render through the isolated local reader, including when dedicated workers are unavailable; viewer switching and theme changes work | `preview-test.mjs`, `discovery-test.mjs`, `dialog-test.mjs` |
