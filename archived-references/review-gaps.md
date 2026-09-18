@@ -5,6 +5,62 @@
 
 # References that are archived but unjudged
 
+## Researcher/company sweep — 18 September 2026
+
+Primary-source text was reviewed for research selection. Complete visual inspection
+of the preserved PDFs and figures remains pending for this batch. Several small
+watchTowr screenshots were excluded by the image-size filter. Ruby's image URL
+needs inspection; the Telerik SVG diagrams remain outbound links. Capture defects
+identified in the text are filed separately in the generated document-gap report.
+The two Oasis technical reports retain their original PDFs.
+
+- [Three Bugs Walk Into a PDF](md/2026-ai/star-labs-three-bugs-walk-pdf-prototype-pollution-served-cold.md) — four figures preserved; full visual review pending.
+- [EXPMON original Adobe Reader disclosure](md/2026-ai/justhaifei1-blogspot-com-expmon-detected-sophisticated-zero-day-users.md) — eight of eleven images preserved; review excluded images and page boundaries.
+- [ThreatLocker earlier Adobe Reader analysis](md/2026-ai/threatlocker-com-adobe-acrobat-reader-cve-active-exploitation-pollution.md) — twelve of thirteen images preserved; full visual review pending.
+- [Ruby Marshal Kick-off Gadgets](md/2026-ai/elttam-com-ruby-marshal-kick-off-gadgets.md)
+- [The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940)](md/2026-ai/2026-watchtowr-labs-internet-falling-down-falling-down-falling-down-41940.md)
+- [Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)](md/2026-ai/2026-watchtowr-labs-why-use-app-level-auth-when-every-database-has-auth-rce.md)
+- [You’re Not Supposed To ShareFile With Everyone (Progress ShareFile Pre-Auth RCE Chain CVE-2026-2699 & CVE-2026-2701)](md/2026-ai/2026-watchtowr-labs-youre-not-supposed-sharefile-everyone-progress-2701.md)
+- [Claude Desktop Vulnerability: One-Click Prompt Injection](md/2026-ai/2026-oasis-security-claude-desktop-vulnerability-one-click-prompt-injection.md)
+- [One-Click Attack on VS Code Exposes Developer Machines](md/2026-ai/2026-oasis-security-one-click-attack-vs-code-exposes-developer-machines.md)
+- [Envade: A Hidden env Becomes a One-Click Remote Code Execution in VS Code (Technical Report)](md/2026-ai/envade-hidden-env-becomes-one-click-remote-code-execution-vs-code-report.md)
+- [PromptFiction: Hijacking Claude Desktop Through the claude:// URL Scheme (Technical Report)](md/2026-ai/promptfiction-hijacking-claude-desktop-through-claude-url-scheme-report.md)
+- [From Padding Oracle to Shell: Unauthenticated RCE in Telerik UI for ASP.NET AJAX](md/2026-ai/2026-tanto-security-padding-oracle-shell-unauthenticated-rce-telerik-ui-ajax.md)
+- [Breaking LiteLLM: From Auth Bypass to Cloud Compromise](md/2026-ai/2026-wiz-io-breaking-litellm-auth-bypass-cloud-compromise.md)
+- [Cache key injection: Smuggling poison through the door](md/2026-ai/2026-yeswehack-cache-key-injection-smuggling-poison-through-door.md)
+
+## James Kettle portfolio additions — 16 September 2026
+
+All 18 documents below received complete text reviews, source-supported author
+credits and digests. The two conference decks are classified as slides. Original
+conference PDFs are preserved. Final visual inspection of figures and PDF layout
+remains pending; text validation does not establish visual fidelity.
+
+The original CSV article retains five image links; four small screenshots were
+excluded from embedded PDF images by the archive's size filter. The responsible
+denial-of-service article's source contains a video element without a media URL.
+Its missing video cannot be recovered from that capture. The Backslash article's
+embedded recording is retained as an outbound link, with venue/date unconfirmed.
+
+- [X-Frame-Options gotcha](md/2012/skeletonscribe-net-x-frame-options-gotcha.md)
+- [Comma Separated Vulnerabilities](md/2014/context-information-security-comma-separated-vulnerabilities.md)
+- [ActiveScan++ slides](md/2013/owasp-appsec-europe-activescan-augmenting-manual-testing-attack-proxy-slides.md)
+- [OpenOffice advisory](md/2014/seclists-org-bugtraq-cve-2014-3524-apache-openoffice-calc-command-vulnerability.md)
+- [PRSSI](md/2014/2015-portswigger-research-detecting-exploiting-path-relative-vulnerabilities.md)
+- [Backslash Powered Scanning article](md/2016-17/2016-portswigger-research-backslash-powered-scanning-hunting-unknown-classes.md)
+- [Backslash Powered Scanning whitepaper](md/2016-17/black-hat-europe-backslash-powered-scanning-hunting-unknown-whitepaper.md)
+- [Backslash Powered Scanning slides](md/2016-17/black-hat-europe-backslash-powered-scanning-hunting-unknown-slides.md)
+- [When security features collide](md/2016-17/2017-portswigger-research-when-security-features-collide.md)
+- [How I accidentally framed myself](md/2016-17/2017-portswigger-research-how-i-accidentally-framed-myself-hacking-frenzy.md)
+- [Finding that one weird endpoint](md/2016-17/2023-portswigger-research-finding-that-one-weird-endpoint-bambdas.md)
+- [Bypassing Web Cache Poisoning Countermeasures](md/2018/2018-portswigger-research-bypassing-web-cache-poisoning-countermeasures.md)
+- [Responsible denial of service](md/2018/2019-portswigger-research-responsible-denial-service-web-cache-poisoning.md)
+- [HTTP Desync Attacks: what happened next](md/2019/2019-portswigger-research-http-desync-attacks-what-happened-next.md)
+- [Breaking the chains on HTTP Request Smuggler](md/2019/2019-portswigger-research-breaking-chains-http-request-smuggler.md)
+- [Cracking reCAPTCHA](md/2019/2019-portswigger-research-cracking-recaptcha-turbo-intruder-style.md)
+- [The single-packet attack](md/2023/2023-portswigger-research-single-packet-attack-making-remote-race-local.md)
+- [Building custom scanners](md/2023/2023-portswigger-research-how-build-custom-scanners-web-security-automation.md)
+
 ## Related-source capture repairs — 14 September 2026
 
 Both documents received full Markdown reviews, source-supported attribution and
@@ -571,3 +627,22 @@ WebSpec is omitted from this pack because its known remaining figure-icon fault 
 - [Pride and Prejudice in Progressive Web Apps: Abusing Native App-like Features in Web Applications](md/2018/pride-prejudice-progressive-web-apps-abusing-native-app-like-applications.md)
 - [An Empirical Analysis of XSS Sanitization in Web Application Frameworks](md/2011/empirical-analysis-xss-sanitization-web-application-frameworks.md)
 - [Молотком по Битриксу: Выявляем 0day-уязвимости популярной CMS](md/2010/xakep-ru-0day-cms.md)
+
+## lcamtuf site audit — 15 September 2026
+
+The two research articles and two author announcements have source-supported
+credits and digests. The coordinator reviewed their extracted prose; independent
+capture validation remains pending because the validator invocations did not
+receive their source-body windows. No `verified` claim has been recorded.
+The CSS article's static copies retain the explanation and code, while its
+interactive CSS displays remain on the original page.
+
+- [Postcards from the post-XSS world](md/2011/michal-zalewski-postcards-post-xss-world.md)
+- [Notes about the post-XSS world](md/2011/michal-zalewski-notes-about-post-xss-world.md)
+- [History theft with CSS Boolean algebra](md/2014/michal-zalewski-history-theft-css-boolean-algebra.md)
+- [Boolean algebra with CSS announcement](md/2014/michal-zalewski-boolean-algebra-css-when-you-can-only-set-colors.md)
+
+The CSS article’s six missing table-header separators were repaired through a
+scoped manual import, preserving its source text and original HTML bytes. Its
+PDF was regenerated; the visible archive note explains the blank interactive
+output cells. Independent review remains pending.

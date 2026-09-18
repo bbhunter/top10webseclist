@@ -11,7 +11,7 @@ import tempfile
 from refslib import toolbox
 
 ROOT = Path(__file__).resolve().parents[2]
-IMAGE = "webseclist-reference-tests:source-workers-3"
+IMAGE = "webseclist-reference-tests:source-workers-4"
 
 
 def main():

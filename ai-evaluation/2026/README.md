@@ -326,3 +326,50 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | Zero-click RCE in Uptrain (GitHub Security Lab) | Not added |
 | zkLogin: when ZKP is not enough | Not added |
 | [zkLogin: when ZKP is not enough](<https://brave.com/blog/zklogin/>) [Related source](<https://eprint.iacr.org/2026/227>) | Added |
+
+## Researcher and company sweep — 18 September 2026
+
+| Candidate | Outcome |
+|---|---|
+| [Cache key injection: Smuggling poison through the door](<https://www.yeswehack.com/lab/research-cache-key-injection>) | Added |
+| [Ruby Marshal Kick-off Gadgets](<https://www.elttam.com/blog/ruby-marshal-kick-off-gadgets>) | Added |
+| [Casse-Spip - From an Unauthenticated SQL Injection to Remote Command Execution](<https://blog.lexfo.fr/casse-spip-sqli-to-rce.html>) | Added |
+| [The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940)](<https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/>) | Added |
+| [Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)](<https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/>) | Added |
+| [You're Not Supposed To ShareFile With Everyone (Progress ShareFile Pre-Auth RCE Chain CVE-2026-2699 & CVE-2026-2701)](<https://labs.watchtowr.com/youre-not-supposed-to-sharefile-with-everyone-progress-sharefile-pre-auth-rce-chain-cve-2026-2699-cve-2026-2701/>) | Added |
+| [Stealing Passwords via HTML Injection Under a Strict CSP](<https://afine.com/blogs/stealing-passwords-via-html-injection-under-a-strict-csp>) | Not added |
+| [Envade: One Click in VS Code, Full Shell for the Attacker](<https://www.oasis.security/blog/envade-vscode-mcp-vulnerability>) | Added |
+| [PromptFiction: a one-click flaw that made Claude Desktop act without consent](<https://www.oasis.security/blog/claude-desktop-vulnerability>) | Added |
+| [From Padding Oracle to Shell: Unauthenticated RCE in Telerik UI for ASP.NET AJAX](<https://tantosec.com/blog/2026/09/telerik-padding-oracle-to-shell/>) | Added |
+| [Compromising Cleo Harmony: A SAML Bypass Chain to Arbitrary Code Execution](<https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution>) | Added |
+| [OffGuard: expanded written account](<https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise>) | Added |
+| [PostGREShell](<https://www.cyera.com/research/postgreshell-the-database-powering-much-of-the-internet-had-an-open-door-for-12-years>) | Not added |
+| [Breaking Local AI Runtimes](<https://www.cyera.com/research/breaking-local-ai-runtimes-10-vulnerabilities-in-the-engine-behind-your-open-source-models>) | Not added |
+| [Chamilo LMS: It's raining 0days](<https://blog.quarkslab.com/chamilo-lms-its-raining-0days-hallelujah-its-raining-0days.html>) | Not added |
+| [Joomla Content Editor RCE](<https://www.yeswehack.com/news/rce-joomla-content-editor-extension>) | Not added |
+| [CVE-2023-54391: Silent patches](<https://www.yeswehack.com/lab/cve-2023-54391-silent-patches>) | Not added |
+| [Reddit spam internals](<https://lyra.horse/blog/2026/06/reddit-spam-internals/>) | Not added |
+| [Frontgate](<https://ian.sh/frontgate>) | Not added |
+| [Tivio Studio paid videos](<https://marektoth.com/blog/tivio-studio-paid-content-videos-for-free/>) | Not added |
+| [Snyk CTF 2026](<https://adragos.ro/snyk-ctf-2026/>) | Not added |
+| [Three Bugs Walk Into a PDF](<https://starlabs.sg/blog/2026/04-three-bugs-walk-into-a-pdf-prototype-pollution-served-cold/>) | Added |
+| [Check Removed, Context Confused, Checkmate Achieved](<https://starlabs.sg/blog/2026/04-check-removed-context-confused-checkmate-achieved/>) | Not added |
+| [Pickling the Mailbox](<https://starlabs.sg/blog/2026/02-pickling-the-mailbox-a-deep-dive-into-cve-2025-20393/>) | Not added |
+| [Ivanti Sentry CVE-2026-10520](<https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/>) | Not added |
+| [Citrix NetScaler CVE-2026-8452](<https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/>) | Not added |
+| [CitrixBleed CVE-2026-8451](<https://labs.watchtowr.com/citrixbleed-to-infinity-and-beyond-citrix-netscaler-pre-auth-memory-overread-cve-2026-8451/>) | Not added |
+| [Citrix NetScaler CVE-2026-3055 part 2](<https://labs.watchtowr.com/please-we-beg-just-one-weekend-free-of-appliances-citrix-netscaler-cve-2026-3055-memory-overread-part-2/>) | Not added |
+| [Kemp LoadMaster CVE-2026-8037](<https://labs.watchtowr.com/enterprise-tech-in-shell-out-progress-kemp-loadmaster-uninitialized-heap-to-pre-auth-rce-cve-2026-8037/>) | Not added |
+| [Rogue AI Agents Swarm: Encoded URL Messages Laundering](<https://labs.zenity.io/post/rogue-ai-agents-swarm-encoded-url-messages-laundering>) | Not added |
+| [Admin API Escalation in LiteLLM](<https://labs.zenity.io/post/admin-api-escalation-litellm>) | Not added |
+| [Cortex security audit](<https://blog.quarkslab.com/cortex-security-audit.html>) | Not added |
+| [From Prompt to Pwned](<https://blog.quarkslab.com/from-prompt-to-pwned-chaining-llm-and-web-bugs-to-admin.html>) | Not added |
+| [Escaping Google Cloud Application Integration Sandbox](<https://nopnop.pro/2026/08/26/escaping-google-cloud-application-integration-sandbox/>) | Not added |
+| [When it Snows it Pours](<https://www.mdsec.co.uk/2026/08/when-it-snows-it-pours-anatomy-of-a-servicenow-red-team/>) | Not added |
+| [SSRFinder](<https://www.sciencedirect.com/science/article/pii/S0957417426016386>) | Not added |
+| [I accidentally turned LLM memory into program analysis](<https://pwning.systems/posts/llm-memory-program-analysis/>) | Not added |
+| [Gemstuffer](<https://research.jfrog.com/post/gemstuffer-openai-rubygems/>) | Not added |
+| [MLflow webhook SSRF advisory](<https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j>) | Not added |
+| [Metabase password-reset SQL injection advisory](<https://github.com/metabase/metabase/security/advisories/GHSA-vwf4-m7j8-wcjf>) | Not added |
+| [Keycloak CVE-2026-18963](<https://access.redhat.com/security/cve/cve-2026-18963>) | Not added |
+| [N-central CVE-2026-18577 hotfix](<https://status.n-able.com/2026/08/06/n-central-2026-3-hotfix-2-additional-mitigation-for-cve-2026-18577/>) | Not added |

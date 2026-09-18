@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools/references"))
 from refslib import toolbox
 
-IMAGE = "webseclist-browser-tests:source-workers-3"
+IMAGE = "webseclist-browser-tests:source-workers-4"
 CROSS_IMAGE = "webseclist-browser-tests:cross-browser-1.55.0"
 BROWSERS = ("chromium", "chrome", "msedge", "firefox", "webkit")
 SUITES = ("smoke-test.mjs", "theme-test.mjs", "discovery-test.mjs", "interface-test.mjs",

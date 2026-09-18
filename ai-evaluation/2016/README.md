@@ -72,3 +72,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | Web Application Firewalls: Analysis of Detection Logic | Not added |
 | [Website Fingerprinting at Internet Scale](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf>) | Added |
 | [XSS without HTML](<https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs>) | Added |
+| [Backslash Powered Scanning: hunting unknown vulnerability classes](<https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes>) | Added |

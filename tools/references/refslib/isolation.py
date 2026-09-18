@@ -105,6 +105,11 @@ def call(operation, *args, **kwargs):
     """Invoke a fixed operation; failures stop this conversion, never run locally."""
     if not allowed(operation):
         raise ValueError("operation is not admitted: " + str(operation))
+    if operation in ("render.render", "render.render_translation"):
+        # The controller supplies trusted configuration as data. The worker
+        # cannot discover a checkout or read its vocabulary from the host.
+        from . import tags
+        kwargs["vocabulary"] = tags.current()
     payload = json.dumps({"operation": operation, "args": encode(args),
                           "kwargs": encode(kwargs)}, ensure_ascii=True).encode()
     if len(payload) > LIMIT:

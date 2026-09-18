@@ -1,6 +1,141 @@
 {
   "schema": 1,
   "groups": {
+    "https://tantosec.com/blog/2026/09/telerik-padding-oracle-to-shell/": {
+      "sources": [
+        {
+          "url": "https://blog.teddykatz.com/2019/11/23/json-padding-oracles.html",
+          "title": "Exploiting padding oracles with fixed IVs",
+          "label": "Earlier fixed-IV research (2019)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier fixed-IV JSON forgery explains the established cryptographic component.",
+          "evidence": [
+            "https://blog.teddykatz.com/2019/11/23/json-padding-oracles.html",
+            "https://tantosec.com/blog/2026/09/telerik-padding-oracle-to-shell/"
+          ]
+        },
+        {
+          "url": "https://github.com/tantosec/telerik_research",
+          "title": "Telerik research artifacts",
+          "label": "Research code",
+          "relation": "same-work",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "Author-linked research repository; retain as a link.",
+          "evidence": [
+            "https://tantosec.com/blog/2026/09/telerik-padding-oracle-to-shell/"
+          ]
+        }
+      ]
+    },
+    "https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain": {
+      "sources": [
+        {
+          "url": "https://www.elttam.com/blog/ruby-marshal-kick-off-gadgets",
+          "title": "Ruby Marshal Kick-off Gadgets",
+          "label": "Kick-off gadget follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Explains the reconstruction entry points discussed after the Ruby 4.0 chain.",
+          "evidence": [
+            "https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain",
+            "https://www.elttam.com/blog/ruby-marshal-kick-off-gadgets"
+          ],
+          "authors": [
+            "Luke Jahnke"
+          ],
+          "publisher": "elttam",
+          "published": "2026-08-26"
+        }
+      ]
+    },
+    "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf": {
+      "main": "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise",
+      "sources": [
+        {
+          "url": "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise",
+          "title": "OffGuard: Breaking LiteLLM from Authentication Bypass to Cloud Compromise",
+          "label": "Expanded written account",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "The article identifies the DEF CON 34 presentation and expands the same research.",
+          "evidence": [
+            "https://www.wiz.io/blog/off-guard-breaking-litellm-from-authentication-bypass-to-cloud-compromise"
+          ],
+          "authors": [
+            "Amitai Cohen",
+            "Yaara Shriki"
+          ],
+          "publisher": "Wiz",
+          "published": "2026-09-09"
+        }
+      ]
+    },
+    "https://www.oasis.security/blog/envade-vscode-mcp-vulnerability": {
+      "main": "https://pages.oasis.security/rs/106-PZV-596/images/envade-technical-report.pdf",
+      "sources": [
+        {
+          "url": "https://pages.oasis.security/rs/106-PZV-596/images/envade-technical-report.pdf",
+          "title": "Envade: A Hidden env Becomes a One-Click Remote Code Execution in VS Code (Technical Report)",
+          "label": "Full technical report",
+          "relation": "same-work",
+          "kind": "paper",
+          "preservation": "archive",
+          "reason": "The report contains the field comparison and runtime analysis accompanying the announcement.",
+          "evidence": [
+            "https://www.oasis.security/blog/envade-vscode-mcp-vulnerability"
+          ],
+          "authors": [
+            "Elad Luz"
+          ],
+          "publisher": "Oasis Security",
+          "published": "2026-05-21"
+        }
+      ]
+    },
+    "https://www.oasis.security/blog/claude-desktop-vulnerability": {
+      "main": "https://pages.oasis.security/rs/106-PZV-596/images/promptfiction-claude-desktop-technical-report.pdf",
+      "sources": [
+        {
+          "url": "https://pages.oasis.security/rs/106-PZV-596/images/promptfiction-claude-desktop-technical-report.pdf",
+          "title": "PromptFiction: Hijacking Claude Desktop Through the claude:// URL Scheme (Technical Report)",
+          "label": "Full technical report",
+          "relation": "same-work",
+          "kind": "paper",
+          "preservation": "archive",
+          "reason": "The report separates automatic submission from later filesystem operations and acknowledges an independent report.",
+          "evidence": [
+            "https://www.oasis.security/blog/claude-desktop-vulnerability"
+          ],
+          "authors": [
+            "Elad Luz"
+          ],
+          "publisher": "Oasis Security",
+          "published": "2026-07-15"
+        }
+      ]
+    },
+    "https://www.yeswehack.com/lab/research-cache-key-injection": {
+      "sources": [
+        {
+          "url": "https://portswigger.net/research/web-cache-entanglement",
+          "title": "Web Cache Entanglement",
+          "label": "Earlier cache-key research (2020)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier cache-key delimiter research provides background to the Nginx case studies.",
+          "evidence": [
+            "https://www.yeswehack.com/lab/research-cache-key-injection",
+            "https://portswigger.net/research/web-cache-entanglement"
+          ]
+        }
+      ]
+    },
     "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack": {
       "sources": [
         {
@@ -14,11 +149,41 @@
           "evidence": [
             "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
           ]
+        },
+        {
+          "url": "https://portswigger.net/research/cracking-recaptcha-turbo-intruder-style",
+          "title": "Cracking reCAPTCHA, Turbo Intruder style",
+          "label": "Synchronization follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2019-11-20",
+          "reason": "Adds synchronization benchmarks and a case study of third-party token validation.",
+          "evidence": [
+            "https://portswigger.net/research/cracking-recaptcha-turbo-intruder-style",
+            "https://jameskettle.com/"
+          ]
+        },
+        {
+          "url": "https://portswigger.net/cms/videos/c1/a3/0582f9074a0b-recaptcha-reddit-2.mp4",
+          "title": "Cracking reCAPTCHA, Turbo Intruder style (demonstration)",
+          "label": "Demonstration video",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Demonstration embedded in the reCAPTCHA companion article; source URL verified from preserved HTML.",
+          "evidence": [
+            "https://portswigger.net/research/cracking-recaptcha-turbo-intruder-style"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-16",
+        "scope": "Primary follow-up article reviewed against the existing tool publication."
       }
     },
     "https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609/": {
@@ -319,11 +484,47 @@
           "evidence": [
             "https://portswigger.net/blog/practical-web-cache-poisoning"
           ]
+        },
+        {
+          "url": "https://portswigger.net/research/bypassing-web-cache-poisoning-countermeasures",
+          "title": "Bypassing Web Cache Poisoning Countermeasures",
+          "label": "Mitigation follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2018-10-05",
+          "reason": "Analyzes defenses introduced after the original cache-poisoning research.",
+          "evidence": [
+            "https://portswigger.net/research/bypassing-web-cache-poisoning-countermeasures",
+            "https://jameskettle.com/"
+          ]
+        },
+        {
+          "url": "https://portswigger.net/research/responsible-denial-of-service-with-web-cache-poisoning",
+          "title": "Responsible denial of service with web cache poisoning",
+          "label": "Availability follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2019-10-24",
+          "reason": "Adds availability case studies and discussion of responsible validation.",
+          "evidence": [
+            "https://portswigger.net/research/responsible-denial-of-service-with-web-cache-poisoning",
+            "https://jameskettle.com/"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-16",
+        "scope": "Selected primary articles linked from the author portfolio; article relationships reviewed; not an exhaustive web search."
       }
     },
     "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries": {
@@ -449,16 +650,22 @@
     "http://georgemauer.net/2017/10/07/csv-injection.html": {
       "sources": [
         {
-          "url": "https://www.contextis.com/blog/comma-separated-vulnerabilities",
+          "url": "https://web.archive.org/web/20140904012959/http://contextis.co.uk/blog/comma-separated-vulnerabilities",
           "title": "Comma Separated Vulnerabilities",
           "label": "Earlier research (2014)",
           "relation": "background",
           "kind": "article",
           "preservation": "archive",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "Original 2014 edition of the earlier research cited by Mauer; later remediation updates are excluded.",
           "evidence": [
-            "http://georgemauer.net/2017/10/07/csv-injection.html"
-          ]
+            "http://georgemauer.net/2017/10/07/csv-injection.html",
+            "https://web.archive.org/web/20140904012959/http://contextis.co.uk/blog/comma-separated-vulnerabilities"
+          ],
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "Context Information Security",
+          "published": "2014-08-29"
         },
         {
           "url": "http://blog.7elements.co.uk/2013/01/cell-injection.html",
@@ -799,11 +1006,47 @@
           "evidence": [
             "https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden-attack-surface"
           ]
+        },
+        {
+          "url": "https://portswigger.net/research/how-i-accidentally-framed-myself-for-a-hacking-frenzy",
+          "title": "How I accidentally framed myself for a hacking frenzy",
+          "label": "Attribution side effects",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2017-08-21",
+          "reason": "Explains attribution side effects of the companion research extension.",
+          "evidence": [
+            "https://portswigger.net/research/how-i-accidentally-framed-myself-for-a-hacking-frenzy",
+            "https://jameskettle.com/"
+          ]
+        },
+        {
+          "url": "https://portswigger.net/research/finding-that-one-weird-endpoint-with-bambdas",
+          "title": "Finding that one weird endpoint, with Bambdas",
+          "label": "Endpoint-analysis follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle",
+            "Gareth Heyes"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2023-12-12",
+          "reason": "Develops the endpoint-analysis workflow using a corpus explicitly linked to Cracking the Lens.",
+          "evidence": [
+            "https://portswigger.net/research/finding-that-one-weird-endpoint-with-bambdas"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-16",
+        "scope": "Selected primary portfolio articles and the original 2014 conference deck; complete text review."
       }
     },
     "https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties": {
@@ -2001,11 +2244,28 @@
           "evidence": [
             "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html"
           ]
+        },
+        {
+          "url": "https://2014.appsec.eu/wp-content/uploads/2014/07/James.Kettle-ActiveScan%2B%2B-Augmenting-manual-testing-with-attack-proxy-plugins.pdf",
+          "title": "ActiveScan++: Augmenting manual testing with attack proxy plugins (Slides)",
+          "label": "Detection methodology (2014)",
+          "relation": "follow-up",
+          "kind": "slides",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "OWASP AppSec Europe",
+          "published": "2014",
+          "reason": "The original deck explicitly discusses automating detection of this research.",
+          "evidence": [
+            "https://2014.appsec.eu/wp-content/uploads/2014/07/James.Kettle-ActiveScan%2B%2B-Augmenting-manual-testing-with-attack-proxy-plugins.pdf"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-16",
+        "scope": "Selected primary portfolio articles and the original 2014 conference deck; complete text review."
       }
     },
     "https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html": {
@@ -5304,11 +5564,46 @@
           "evidence": [
             "https://portswigger.net/research/smashing-the-state-machine"
           ]
+        },
+        {
+          "url": "https://portswigger.net/research/the-single-packet-attack-making-remote-race-conditions-local",
+          "title": "The single-packet attack: making remote race-conditions 'local'",
+          "label": "Protocol analysis follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2023-10-18",
+          "reason": "Analyzes protocol applicability and separates proposed adaptations from proven results.",
+          "evidence": [
+            "https://portswigger.net/research/the-single-packet-attack-making-remote-race-conditions-local",
+            "https://jameskettle.com/"
+          ]
+        },
+        {
+          "url": "https://portswigger.net/research/how-to-build-custom-scanners-for-web-security-research-automation",
+          "title": "How to build custom scanners for web security research automation",
+          "label": "Scanner methodology follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2023-10-03",
+          "reason": "Explains the custom research checks following the state-machine research.",
+          "evidence": [
+            "https://portswigger.net/research/how-to-build-custom-scanners-for-web-security-research-automation"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-16",
+        "scope": "Selected primary portfolio articles and the original 2014 conference deck; complete text review."
       }
     },
     "https://positive.security/blog/ransack-data-exfiltration": {
@@ -8107,11 +8402,47 @@
           "evidence": [
             "https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn"
           ]
+        },
+        {
+          "url": "https://portswigger.net/research/http-desync-attacks-what-happened-next",
+          "title": "HTTP Desync Attacks: what happened next",
+          "label": "Research follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2019-10-03",
+          "reason": "Reports later findings and limitations of the original methodology.",
+          "evidence": [
+            "https://portswigger.net/research/http-desync-attacks-what-happened-next",
+            "https://jameskettle.com/"
+          ]
+        },
+        {
+          "url": "https://portswigger.net/research/breaking-the-chains-on-http-request-smuggler",
+          "title": "Breaking the chains on HTTP Request Smuggler",
+          "label": "Tooling follow-up",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2019-12-09",
+          "reason": "Documents subsequent tool changes and detection limitations.",
+          "evidence": [
+            "https://portswigger.net/research/breaking-the-chains-on-http-request-smuggler",
+            "https://jameskettle.com/"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-16",
+        "scope": "Selected primary articles linked from the author portfolio; article relationships reviewed; not an exhaustive web search."
       }
     },
     "https://blog.cm2.pw/exploiting-post-based-xssi/": {
@@ -13409,6 +13740,247 @@
         "checked": "2026-09-14",
         "scope": "relationship evidence in archived prose; selected live checks; not exhaustive web search"
       }
+    },
+    "https://lcamtuf.coredump.cx/postxss/": {
+      "sources": [
+        {
+          "url": "https://lcamtuf.blogspot.com/2011/12/notes-about-post-xss-world.html",
+          "title": "Notes about the post-XSS world",
+          "label": "Author announcement",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "The author introduces and directly links the full technical article.",
+          "evidence": [
+            "https://lcamtuf.blogspot.com/2011/12/notes-about-post-xss-world.html",
+            "https://lcamtuf.coredump.cx/postxss/"
+          ],
+          "authors": [
+            "Michal Zalewski"
+          ],
+          "published": "2011-12-19"
+        }
+      ],
+      "review": {
+        "checked": "2026-09-15",
+        "scope": "Full main article and dated author announcement; linked research and demonstration leads checked; not an exhaustive author bibliography."
+      }
+    },
+    "https://lcamtuf.coredump.cx/css_calc/": {
+      "sources": [
+        {
+          "url": "https://lcamtuf.blogspot.com/2014/06/boolean-algebra-with-css-when-you-can.html",
+          "title": "Boolean algebra with CSS (when you can only set colors)",
+          "label": "Author announcement",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "The dated author announcement describes the same CSS color-only Boolean construction. Its original css_algebra link now returns 404; the current article is at css_calc.",
+          "evidence": [
+            "https://lcamtuf.blogspot.com/2014/06/boolean-algebra-with-css-when-you-can.html",
+            "https://lcamtuf.coredump.cx/css_calc/"
+          ],
+          "authors": [
+            "Michal Zalewski"
+          ],
+          "published": "2014-06-22"
+        }
+      ],
+      "review": {
+        "checked": "2026-09-15",
+        "scope": "Full main article and dated author announcement; linked research and demonstration leads checked; not an exhaustive author bibliography."
+      }
+    },
+    "http://www.thespanner.co.uk/2014/03/21/rpo/": {
+      "sources": [
+        {
+          "url": "https://portswigger.net/research/detecting-and-exploiting-path-relative-stylesheet-import-prssi-vulnerabilities",
+          "title": "Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities",
+          "label": "Practical follow-up (2015)",
+          "relation": "follow-up",
+          "kind": "article",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "PortSwigger",
+          "published": "2015-02-17",
+          "reason": "Credits the original RPO research and supplies additional diagnosis, conditions and mitigation analysis.",
+          "evidence": [
+            "https://portswigger.net/research/detecting-and-exploiting-path-relative-stylesheet-import-prssi-vulnerabilities",
+            "https://jameskettle.com/"
+          ]
+        },
+        {
+          "url": "https://2014.appsec.eu/wp-content/uploads/2014/07/James.Kettle-ActiveScan%2B%2B-Augmenting-manual-testing-with-attack-proxy-plugins.pdf",
+          "title": "ActiveScan++: Augmenting manual testing with attack proxy plugins (Slides)",
+          "label": "Detection methodology (2014)",
+          "relation": "follow-up",
+          "kind": "slides",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "OWASP AppSec Europe",
+          "published": "2014",
+          "reason": "The original deck explicitly discusses automating detection of this research.",
+          "evidence": [
+            "https://2014.appsec.eu/wp-content/uploads/2014/07/James.Kettle-ActiveScan%2B%2B-Augmenting-manual-testing-with-attack-proxy-plugins.pdf"
+          ]
+        }
+      ],
+      "review": {
+        "checked": "2026-09-16",
+        "scope": "Selected primary portfolio articles and the original 2014 conference deck; complete text review."
+      }
+    },
+    "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes": {
+      "sources": [
+        {
+          "url": "https://www.blackhat.com/docs/eu-16/materials/eu-16-Kettle-Backslash-Powered%20Scanning-Hunting-Unknown-Vulnerability-Classes-wp.pdf",
+          "title": "Backslash Powered Scanning: hunting unknown vulnerability classes (Whitepaper)",
+          "label": "Original paper",
+          "relation": "same-work",
+          "kind": "paper",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "Black Hat Europe",
+          "published": "2016",
+          "reason": "Conference artifact accompanying the original research.",
+          "evidence": [
+            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes"
+          ]
+        },
+        {
+          "url": "https://www.blackhat.com/docs/eu-16/materials/eu-16-Kettle-Backslash-Powered%20Scanning-Hunting-Unknown-Vulnerability-Classes.pdf",
+          "title": "Backslash Powered Scanning: hunting unknown vulnerability classes (Slides)",
+          "label": "Original slides",
+          "relation": "same-work",
+          "kind": "slides",
+          "preservation": "archive",
+          "authors": [
+            "James Kettle"
+          ],
+          "publisher": "Black Hat Europe",
+          "published": "2016",
+          "reason": "Conference artifact accompanying the original research.",
+          "evidence": [
+            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes"
+          ]
+        },
+        {
+          "url": "https://github.com/PortSwigger/backslash-powered-scanner",
+          "title": "Backslash Powered Scanner",
+          "label": "Research tool",
+          "relation": "same-work",
+          "kind": "tool",
+          "preservation": "link-only",
+          "reason": "Research implementation linked from the article.",
+          "evidence": [
+            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes"
+          ]
+        },
+        {
+          "url": "https://github.com/PortSwigger/distribute-damage",
+          "title": "Distribute Damage",
+          "label": "Research tool",
+          "relation": "same-work",
+          "kind": "tool",
+          "preservation": "link-only",
+          "reason": "Research implementation linked from the article.",
+          "evidence": [
+            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes"
+          ]
+        },
+        {
+          "url": "https://github.com/albinowax/ActiveScanPlusPlus",
+          "title": "ActiveScan++",
+          "label": "Earlier research tool",
+          "relation": "background",
+          "kind": "tool",
+          "preservation": "link-only",
+          "reason": "Earlier tool discussed in the original scanner-methodology lineage.",
+          "evidence": [
+            "https://2014.appsec.eu/wp-content/uploads/2014/07/James.Kettle-ActiveScan%2B%2B-Augmenting-manual-testing-with-attack-proxy-plugins.pdf"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EPmjl7q1-n4",
+          "title": "Backslash Powered Scanning (embedded video)",
+          "label": "Embedded video",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The research article embeds this YouTube video; recording venue and date have not been independently confirmed.",
+          "evidence": [
+            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes"
+          ]
+        }
+      ],
+      "review": {
+        "checked": "2026-09-16",
+        "scope": "Primary article and original conference artifacts; recording not independently verified."
+      }
+    },
+    "https://web.archive.org/web/20140904012959/http://contextis.co.uk/blog/comma-separated-vulnerabilities": {
+      "sources": [
+        {
+          "url": "https://seclists.org/bugtraq/2014/Aug/115",
+          "title": "CVE-2014-3524: Apache OpenOffice Calc Command Injection Vulnerability",
+          "label": "Vendor advisory",
+          "relation": "same-work",
+          "kind": "advisory",
+          "preservation": "archive",
+          "reason": "Vendor disclosure credits James Kettle and Rohan Durve for the spreadsheet issue discussed in the article.",
+          "evidence": [
+            "https://web.archive.org/web/20140904012959/http://contextis.co.uk/blog/comma-separated-vulnerabilities",
+            "https://seclists.org/bugtraq/2014/Aug/115"
+          ]
+        }
+      ],
+      "review": {
+        "checked": "2026-09-16",
+        "scope": "Recovered original 2014 article and vendor disclosure; later article updates excluded."
+      }
+    },
+    "https://starlabs.sg/blog/2026/04-three-bugs-walk-into-a-pdf-prototype-pollution-served-cold/": {
+      "main": "https://starlabs.sg/blog/2026/04-three-bugs-walk-into-a-pdf-prototype-pollution-served-cold/",
+      "sources": [
+        {
+          "url": "https://justhaifei1.blogspot.com/2026/04/expmon-detected-sophisticated-zero-day-adobe-reader.html",
+          "title": "EXPMON detected sophisticated zero-day fingerprinting attack targeting Adobe Reader users",
+          "label": "Original disclosure",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier public discovery documents privileged API access and distinguishes it from a possible subsequent native exploit.",
+          "evidence": [
+            "https://starlabs.sg/blog/2026/04-three-bugs-walk-into-a-pdf-prototype-pollution-served-cold/"
+          ],
+          "authors": [
+            "Haifei"
+          ],
+          "published": "2026-04-07"
+        },
+        {
+          "url": "https://www.threatlocker.com/blog/adobe-acrobat-reader-cve-2026-34621-active-exploitation-via-prototype-pollution",
+          "title": "Adobe Acrobat Reader CVE: Active exploitation via prototype pollution",
+          "label": "Earlier analysis",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier analysis explains the trusted-function and prototype chain examined in the later patch comparison.",
+          "evidence": [
+            "https://starlabs.sg/blog/2026/04-three-bugs-walk-into-a-pdf-prototype-pollution-served-cold/"
+          ],
+          "authors": [
+            "Alex Aguiar"
+          ],
+          "published": "2026-04-23"
+        }
+      ]
     }
   }
 }

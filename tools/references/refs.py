@@ -3779,6 +3779,10 @@ def command_import(args):
                 print("  renamed    %s -> %s" % (renamed_from, record["slug"]))
         entry["content_sha256"] = content_sha
 
+        _carry_preserved_facts(record, entry)
+        for field in ("why", "summary"):
+            if entry.get(field):
+                record[field] = entry[field]
         text_out = render_module.render(record, cleaned.text, "full")
         path = archive_dir / collections_module.md_relpath(entry, config,
                                                            record["slug"])

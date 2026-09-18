@@ -12,10 +12,34 @@ import unittest
 import tempfile
 from unittest.mock import patch
 
-from refslib import gateway, github, isolation, makepdf, repo, svg, toolbox, validate, worker_jobs
+from refslib import gateway, github, isolation, makepdf, repo, svg, tags, toolbox, validate, worker_jobs
 
 
 class WorkerBoundary(unittest.TestCase):
+    def test_digest_render_receives_controller_vocabulary_without_checkout_access(self):
+        vocabulary = tags.default_vocabulary()
+        record = {"title": "Synthetic article", "authors": ["Test Author"],
+                  "publisher": "Fixture", "published": "2014-06-22",
+                  "retrieved_utc": "2026-09-15T12:00:00+00:00", "retrieved_kind": "live",
+                  "licence": "unknown", "original_url": "https://example.org/article",
+                  "digest": {"text": "A fixture summary.", "tags": ["csp"]}}
+
+        def run(command, **kwargs):
+            mounts = [command[n + 1] for n, x in enumerate(command) if x == "-v"]
+            source = next(x.split(":/input.json")[0] for x in mounts if ":/input.json:" in x)
+            request = json.loads(Path(source).read_text())
+            arguments = isolation.decode(request["kwargs"])
+            self.assertEqual(arguments["vocabulary"], vocabulary)
+            with patch.object(tags, "current", side_effect=AssertionError("worker accessed checkout")):
+                rendered = isolation.dispatch(request["operation"], isolation.decode(request["args"]), arguments)
+            kwargs["stdout"].write(json.dumps({"result": rendered}).encode())
+            return subprocess.CompletedProcess(command, 0)
+
+        with patch.object(tags, "current", return_value=vocabulary), patch.object(toolbox, "ensure_image", return_value=toolbox.IMAGE), patch.object(toolbox, "_run_container", side_effect=run):
+            rendered = isolation.call("render.render", record, "Inert fixture body.", vocabulary={"untrusted": True})
+        self.assertIn("description: A fixture summary.", rendered)
+        self.assertIn("owasp-a05-2021", rendered)
+
     def test_only_admitted_operations_and_data_types_cross_the_boundary(self):
         for operation in ("os.system", "eval", "__import__", "../../write"):
             with self.assertRaises(ValueError):

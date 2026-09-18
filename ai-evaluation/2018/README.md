@@ -62,3 +62,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Vetting Single Sign-On SDK Implementations via Symbolic Reasoning](<https://www.usenix.org/conference/usenixsecurity18/presentation/yang>) | Added |
 | [WPSE: Fortifying Web Protocols via Browser-Side Security Monitoring](<https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara>) | Added |
 | Zip Slip | Not added |
+| [Bypassing Web Cache Poisoning Countermeasures](<https://portswigger.net/research/bypassing-web-cache-poisoning-countermeasures>) | Added |

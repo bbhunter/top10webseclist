@@ -37,3 +37,4 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [The Wolf of Name Street: Hijacking Domains Through Their Nameservers](<https://acmccs.github.io/papers/p957-vissersA.pdf>) | Added |
 | [Unleashing the Walking Dead: Understanding Cross-App Remote Infections on Mobile WebViews](<https://acmccs.github.io/papers/p829-liA.pdf>) | Added |
 | [Well, That Escalated Quickly! How Abusing Docker API Led to Remote Code Execution, Same Origin Bypass and Persistence in the Hypervisor via Shadow Containers](<https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf>) | Added |
+| [When security features collide](<https://portswigger.net/research/when-security-features-collide>) | Added |

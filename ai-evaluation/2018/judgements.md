@@ -11,6 +11,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Automated Generation of Event-Oriented Exploits in Android Hybrid Apps](<https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_04B-3_Yang_paper.pdf>) | Added |
 | [Bamboozling Certificate Authorities with BGP](<https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee>) | Added |
 | [Browser history re:visited](<https://www.usenix.org/conference/woot18/presentation/smith>) | Added |
+| [Bypassing Web Cache Poisoning Countermeasures](<https://portswigger.net/research/bypassing-web-cache-poisoning-countermeasures>) | Added |
 | [Clock Around the Clock: Time-Based Device Fingerprinting](<https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf>) | Added |
 | [Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates](<https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf>) | Added |
 | [Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning](<https://arxiv.org/abs/1801.02265>) | Added |

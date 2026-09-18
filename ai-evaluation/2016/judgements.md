@@ -14,6 +14,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Attack Patterns for Black-Box Security Testing of Multi-Party Web Applications](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf>) | Added |
 | [AUTOFORGE: Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services](<https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf>) | Added |
 | [Back in Black: Towards Formal, Black Box Analysis of Sanitizers and Filters](<https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf>) | Added |
+| [Backslash Powered Scanning: hunting unknown vulnerability classes](<https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes>) | Added |
 | [Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints](<https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf>) | Added |
 | [Comparisons and attacks on HTTP2 (Comparaisons et attaques sur HTTP2)](<https://www.sstic.org/media/SSTIC2016/SSTIC-actes/comparaisons_attaques_http2/SSTIC2016-Slides-comparaisons_attaques_http2-bossert.pdf>) | Added |
 | [Create an Unexpected Object and Don't Invoke __wakeup() in Deserialization](<https://bugs.php.net/bug.php?id=72663>) | Added |

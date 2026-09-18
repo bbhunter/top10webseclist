@@ -133,6 +133,8 @@ checks direct-link reloads, popup bounds, default and saved appearance, rotation
 and entering/exiting fullscreen in landscape without the native Fullscreen API.
 It also checks that switching views resets the reading position and that the two
 compact views expose their primary filter near the top of the screen.
+Scrolling checks keep content (including elevated Investigation Board cards)
+behind the whole top menu, search results and theme chooser in every view.
 
 Set `WEBSEC_TEST_URL` to use a different local preview URL. The production website
 still needs no JavaScript dependencies.

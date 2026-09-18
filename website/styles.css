@@ -298,7 +298,10 @@
   .mobile-menu { display: none; }
   .mobile-menu-backdrop { display: none; }
 
-  main { padding: clamp(24px, 3vw, 42px) clamp(22px, 4vw, 64px) 76px; }
+  /* Keep each theme's cards, strings and interaction layers below the shared
+     header, search results and menu. Overflow clipping alone does not contain
+     z-index, including hover states retained by touch browsers after a tap. */
+  main { isolation: isolate; padding: clamp(24px, 3vw, 42px) clamp(22px, 4vw, 64px) 76px; }
   .site-footer { display: grid; grid-template-columns: minmax(100px, .25fr) minmax(0, 1fr); gap: 22px; margin: 0 clamp(22px,4vw,64px); padding: 24px 0 max(30px,env(safe-area-inset-bottom)); color: var(--faint); border-top: 1px solid var(--line); }
   .credit-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 28px; font: .64rem/1.55 var(--mono); }
   .credit-list a { color: var(--muted); text-underline-offset: 3px; }

@@ -18,6 +18,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [How to Break XML Encryption](<https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf>) | Added |
 | [How to Shop for Free Online](<https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf>) | Added |
 | [I Still Know What You Visited Last Summer](<https://research.owlfolio.org/pubs/2011-i-still-know.pdf>) | Added |
+| [Postcards from the post-XSS world](<https://lcamtuf.coredump.cx/postxss/>) [Related source](<https://lcamtuf.blogspot.com/2011/12/notes-about-post-xss-world.html>) | Added |
 | [Server-Side JavaScript Injection](<https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf>) [Related source](<https://blackhat.com/html/bh-us-11/bh-us-11-archives.html>) | Added |
 | [Sour Pickles](<https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf>) [Related source](<https://blackhat.com/html/bh-us-11/bh-us-11-archives.html>) | Added |
 | [Static Detection of Access Control Vulnerabilities in Web Applications](<https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications>) [Related source](<http://www.usenix.org/events/sec11/tech/full_papers/Sun.pdf>) | Added |

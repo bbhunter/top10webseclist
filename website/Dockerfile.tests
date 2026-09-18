@@ -1,4 +1,4 @@
-FROM webseclist-refs-toolbox:2026.07.04-source-workers-3
+FROM webseclist-refs-toolbox:2026.07.04-source-workers-4
 USER root
 RUN apk add --no-cache nodejs
 USER fetcher

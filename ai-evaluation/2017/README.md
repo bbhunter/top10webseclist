@@ -69,3 +69,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | WordPress 4.8.2/4.8.3 SQL preparation advisories and source references | Not added |
 | [Xudong Zheng, Phishing with Unicode Domains](<https://www.xudongz.com/blog/2017/idn-phishing/>) | Not added |
 | [你的Web App能弹计算器吗？ / Can your Web App pop Calculator?](<https://blog.zsxsoft.com/post/32>) | Not added |
+| [When security features collide](<https://portswigger.net/research/when-security-features-collide>) | Added |

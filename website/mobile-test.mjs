@@ -17,6 +17,47 @@ async function fits(page, selector, label) {
     return rect.left >= -1 && rect.right <= innerWidth + 1 && rect.width > 0;
   }), `${label} fits the viewport`);
 }
+async function headerStaysAboveContent(page, view) {
+  // Include the board's elevated interaction state: touch browsers can retain
+  // hover after a tap, and dragging uses an even higher content layer.
+  const target = page.locator(view === "evidence"
+    ? ".investigation-card.top-evidence" : "#view-root button:visible").first();
+  if (view === "evidence") await target.evaluate(element => element.classList.add("dragging"));
+  try {
+    for (const offset of [12, 65]) {
+      await target.evaluate((element, offset) => {
+        scrollTo({top:scrollY + element.getBoundingClientRect().top - offset,behavior:"instant"});
+      }, offset);
+      await page.evaluate(() => new Promise(requestAnimationFrame));
+      const covered = await page.locator(".topbar").evaluate(header => {
+        const rect = header.getBoundingClientRect();
+        const failures = [];
+        for (let y = rect.top + 5; y < rect.bottom; y += 12) {
+          for (let x = 5; x < innerWidth; x += 20) {
+            const hit = document.elementFromPoint(x, y);
+            if (!header.contains(hit)) failures.push(hit?.className || hit?.tagName);
+          }
+        }
+        return [...new Set(failures)];
+      });
+      assert.deepEqual(covered, [], `${view}: scrolling content stays behind the entire top menu at ${offset}px`);
+    }
+    await page.locator("#global-search").fill("HTTP");
+    await page.waitForSelector("#global-results:not([hidden])");
+    assert.ok(await page.locator("#global-results").evaluate(results => {
+      const rect = results.getBoundingClientRect();
+      return results.contains(document.elementFromPoint(rect.left + rect.width / 2, rect.top + 20));
+    }), `${view}: search results stay above scrolling content`);
+    await page.locator("#close-global-results").tap();
+    await page.locator("#global-search").fill("");
+    await page.locator("#global-search").blur();
+    await page.locator("#mobile-menu").tap();
+    await page.locator("#close-mobile-menu").tap();
+  } finally {
+    if (view === "evidence") await target.evaluate(element => element.classList.remove("dragging"));
+    await page.evaluate(() => scrollTo({top:0,behavior:"instant"}));
+  }
+}
 try {
   for (const viewport of screens) {
     const context = await browser.newContext({viewport,hasTouch:true,isMobile:mobileEmulation,deviceScaleFactor:1});
@@ -87,6 +128,7 @@ try {
         await page.locator("#terminal-command").press("Enter");
         await page.waitForFunction(() => document.querySelector("#terminal-output").textContent.includes("Available commands"));
       }
+      await headerStaysAboveContent(page, view);
       // Direct-link refresh must reopen the same route on a phone.
       await page.reload();
       await ready(page,view);

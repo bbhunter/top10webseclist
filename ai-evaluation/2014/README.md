@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [American fuzzy lop technical details — Michal Zalewski](<https://lcamtuf.coredump.cx/afl/technical_details.txt>) [Related source](<https://lcamtuf.blogspot.com/2014/08/a-bit-more-about-american-fuzzy-lop.html>) | Not added |
+| [History theft with CSS Boolean algebra](<https://lcamtuf.coredump.cx/css_calc/>) [Related source](<https://lcamtuf.blogspot.com/2014/06/boolean-algebra-with-css-when-you-can.html>) | Added |
 | A Large-Scale Analysis of the Security of Embedded Firmwares | Not added |
 | [A Web Traffic Analysis Attack Using Only Timing Information](<https://arxiv.org/abs/1410.2087>) | Added |
 | [All Your Screens Are Belong to Us: Attacks Exploiting the HTML5 Screen Sharing API](<https://www.ieee-security.org/TC/SP2014/papers/AllYourScreensareBelongtoUs_c_AttacksExploitingtheHTML5ScreenSharingAPI.pdf>) | Added |
@@ -62,3 +64,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [XXE in OpenID: one bug to rule them all](<https://www.ubercomp.com/posts/2014-01-16_facebook_remote_code_execution>) | Not added |
 | [Your Software at My Service: Security Analysis of SaaS Single Sign-On Solutions in the Cloud](<https://doi.org/10.1145/2664168.2664172>) | Not added |
 | “SSRF Bible” / ONsec 2014 | Not added |
+| [Comma Separated Vulnerabilities](<https://web.archive.org/web/20140904012959/http://contextis.co.uk/blog/comma-separated-vulnerabilities>) | Added |

@@ -1596,6 +1596,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://elttam.com/blog/ruby-marshal-kick-off-gadgets": {
+      "authors": [
+        "Luke Jahnke"
+      ],
+      "evidence": "By\n\nLuke Jahnke",
+      "confidence": "high",
+      "reviewed_utc": "2026-09-18T11:08:18+00:00"
+    },
     "https://elttam.com/blog/your-house-has-an-ffmpeg-problem": {
       "authors": [
         "Jia Hao Poh"
@@ -4027,6 +4035,22 @@
       "evidence": "Tomer Laor, Naif Mehanna, Vitaly Dyadyuk, Antonin Durey, Pierre Laperdrix, Clémentine Maurice, Yossi Oren, Romain Rouvoy, Walter Rudametkin",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://pages.oasis.security/rs/106-PZV-596/images/envade-technical-report.pdf": {
+      "authors": [
+        "Elad Luz"
+      ],
+      "evidence": "Elad Luz",
+      "confidence": "high",
+      "reviewed_utc": "2026-09-18T11:08:18+00:00"
+    },
+    "https://pages.oasis.security/rs/106-PZV-596/images/promptfiction-claude-desktop-technical-report.pdf": {
+      "authors": [
+        "Elad Luz"
+      ],
+      "evidence": "Elad Luz, Research Lead at Oasis Security, LinkedIn",
+      "confidence": "high",
+      "reviewed_utc": "2026-09-18T11:08:18+00:00"
     },
     "https://pentest.blog/advisory-netmodule-router-software-race-condition-leads-to-remote-code-execution": {
       "authors": [

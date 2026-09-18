@@ -27,5 +27,6 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [WAFFle: Fingerprinting Filter Rules of Web Application Firewalls](<https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt>) | Added |
 | [Web-based Attacks on Host-Proof Encrypted Storage](<https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan>) | Added |
 | [Why Eve and Mallory Love Android: An Analysis of Android SSL (In)Security](<https://teamusec.de/publications/conf-ccs-fahlhmsbf12/>) | Added |
+| [X-Frame-Options gotcha](<https://www.skeletonscribe.net/2012/06/x-frame-options-sameorigin-warning.html>) | Added |
 | [XSS-FP: Browser Fingerprinting using HTML Parser Quirks](<https://arxiv.org/abs/1211.4812>) | Added |
 | [You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions](<https://www.securitee.org/files/jsinclusions_ccs2012.pdf>) | Added |

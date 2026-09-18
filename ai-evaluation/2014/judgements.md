@@ -11,10 +11,12 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [An Expressive Model for the Web Infrastructure: Definition and Application to the BrowserID SSO System](<https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf>) | Added |
 | [Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks](<https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks/>) | Added |
 | [Bypassing HTTP Strict Transport Security](<https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf>) | Added |
+| [Comma Separated Vulnerabilities](<https://web.archive.org/web/20140904012959/http://contextis.co.uk/blog/comma-separated-vulnerabilities>) | Added |
 | [Detecting Logic Vulnerabilities in E-Commerce Applications](<https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/detecting-logic-vulnerabilities-e-commerce-applications/>) | Added |
 | [Do not trust me: Using malicious IdPs for analyzing and attacking Single Sign-On](<https://arxiv.org/pdf/1412.1623v1>) | Added |
 | [Effective Attacks and Provable Defenses for Website Fingerprinting](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao>) | Added |
 | [EL 3.0/Lambda Injection: Hacker Friendly Java](<https://sectooladdict.blogspot.com/2014/12/el-30-injection-java-is-getting-hacker.html>) | Added |
+| [History theft with CSS Boolean algebra](<https://lcamtuf.coredump.cx/css_calc/>) [Related source](<https://lcamtuf.blogspot.com/2014/06/boolean-algebra-with-css-when-you-can.html>) | Added |
 | [MACE: Detecting Privilege Escalation Vulnerabilities in Web Applications](<https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications>) | Added |
 | [Password Managers: Attacks and Defenses](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver>) | Added |
 | [Relative Path Overwrite](<http://www.thespanner.co.uk/2014/03/21/rpo/>) | Added |

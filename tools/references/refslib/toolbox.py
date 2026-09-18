@@ -28,7 +28,7 @@ BASE_IMAGE = ("python:3.12-alpine@sha256:"
               "6d43704baacd1bfbe7c295d7f13079d5d8104ed33568873133f8fc69980419df")
 YT_DLP = "2026.07.04"
 WAYMORE = "8.9"
-IMAGE = "webseclist-refs-toolbox:" + YT_DLP + "-source-workers-3"
+IMAGE = "webseclist-refs-toolbox:" + YT_DLP + "-source-workers-4"
 
 # `curl` for the certificate exception, `poppler-utils` for `pdftoppm`, and
 # Chromium for rendered DOM collection. Their
@@ -47,7 +47,7 @@ IMAGE = "webseclist-refs-toolbox:" + YT_DLP + "-source-workers-3"
 # by hand from renders that had already thrown the text away. With the pack the
 # same file extracts cleanly and needs no transcription at all.
 DOCKERFILE = """FROM %s
-RUN apk add --no-cache chromium curl poppler-utils poppler-data \\
+RUN apk add --no-cache chromium curl poppler-utils poppler-data font-dejavu \\
  && pip install --no-cache-dir "yt-dlp==%s" "waymore==%s" \\
  && printf 'Pillow==12.3.0 --hash=sha256:0dd2064cbc55aaec028ef5fbb60fa47bb6c3e7918e07ff17935284b227a9d2df\\n' > /tmp/pillow.txt \\
  && pip install --no-cache-dir --only-binary=:all: --require-hashes -r /tmp/pillow.txt \\

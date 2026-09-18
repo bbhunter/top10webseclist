@@ -259,6 +259,18 @@ assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(compact
 assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(__linkFixture))")), linkFixture);
 assert.ok(progressiveShard.items.some((item) => item.links.some((link) => link.fromItem?.length)), "Generated shards should share repeated link fields");
 assert.throws(() => clientEval('expandArchiveItem({links:[{fromItem:["__proto__"]}]})'), /Invalid shared archive link field/);
+for (const defaults of [
+  { note: "", rank: null, excluded: false, kind: "article", language: "", published: "", grade: "research", depth: "full", health: "unknown", archiveStatus: "preserved", archived: true },
+  { note: "A distinct note", rank: 1, excluded: true, kind: "paper", language: "en", archived: false }
+]) {
+  clientContext.__defaultFixture = { ...linkFixture, ...defaults };
+  assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(compactArchiveItem(__defaultFixture)))")), clientContext.__defaultFixture);
+}
+for (const defaults of [-1, 0, 2048, 1.5, "1"]) {
+  clientContext.__invalidDefaults = defaults;
+  assert.throws(() => clientEval("expandArchiveItem({defaults:__invalidDefaults})"), /Invalid archive item defaults/);
+}
+assert.throws(() => clientEval('expandArchiveItem({defaults:1,note:"override"})'), /Conflicting archive item default/);
 let progressiveRequestUrl = "";
 clientContext.__progressiveCatalogue = progressiveCatalogue;
 clientContext.__progressiveShard = progressiveShard;

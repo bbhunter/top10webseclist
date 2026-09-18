@@ -1092,9 +1092,16 @@ function collectionUrl(year) {
 const ARCHIVE_LINK_ITEM_FIELDS = Object.freeze({
   label: "title", url: "originalUrl", mdPath: "mdPath", pdfPath: "pdfPath"
 });
+// Field order defines the wire bit positions. Append fields; keep existing
+// positions stable so already cached collection shards still decode correctly.
+const ARCHIVE_ITEM_DEFAULTS = Object.freeze({
+  note: "", rank: null, excluded: false, kind: "article", language: "",
+  published: "", grade: "research", depth: "full", health: "unknown",
+  archiveStatus: "preserved", archived: true
+});
 
 function compactArchiveItem(item) {
-  return { ...item, links: (item.links || []).map((link) => {
+  const result = { ...item, links: (item.links || []).map((link) => {
     const compact = { ...link };
     const fromItem = Object.entries(ARCHIVE_LINK_ITEM_FIELDS)
       .filter(([field, itemField]) => typeof link[field] === "string" && link[field] === item[itemField])
@@ -1105,9 +1112,33 @@ function compactArchiveItem(item) {
     }
     return compact;
   }) };
+  let defaults = 0;
+  Object.entries(ARCHIVE_ITEM_DEFAULTS).forEach(([field, value], index) => {
+    if (Object.hasOwn(item, field) && item[field] === value) {
+      delete result[field];
+      defaults |= 1 << index;
+    }
+  });
+  if (defaults) result.defaults = defaults;
+  return result;
 }
 
 function expandArchiveItem(item) {
+  if (Object.hasOwn(item, "defaults")) {
+    const values = Object.entries(ARCHIVE_ITEM_DEFAULTS);
+    if (!Number.isInteger(item.defaults) || item.defaults < 1 || item.defaults >= 2 ** values.length) {
+      throw new Error("Invalid archive item defaults");
+    }
+    const expanded = { ...item };
+    values.forEach(([field, value], index) => {
+      if (item.defaults & (1 << index)) {
+        if (Object.hasOwn(item, field)) throw new Error("Conflicting archive item default");
+        expanded[field] = value;
+      }
+    });
+    delete expanded.defaults;
+    item = expanded;
+  }
   return { ...item, links: (item.links || []).map((link) => {
     if (!Array.isArray(link.fromItem)) return link;
     const expanded = { ...link };

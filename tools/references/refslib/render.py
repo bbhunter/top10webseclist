@@ -49,7 +49,7 @@ def required_attribution():
     return REQUIRED
 
 
-def render(record, content="", depth="full"):
+def render(record, content="", depth="full", vocabulary=None):
     """The complete Markdown for one reference.
 
     `record` is the manifest entry plus the agent-written sections. Nothing here
@@ -65,7 +65,7 @@ def render(record, content="", depth="full"):
             "source" % (record.get("slug") or "this reference", ", ".join(missing)))
 
     lines = []
-    lines.append(_frontmatter(record, depth))
+    lines.append(_frontmatter(record, depth, vocabulary))
     lines.append("")
     # THE HEADING IS FOR THE READER, THE CITATION IS FOR THE SOURCE. A title in
     # a language the reader cannot follow tells them nothing about whether the
@@ -128,7 +128,7 @@ def _original_name(record):
     return (record.get("slug") or "reference") + ".md"
 
 
-def render_translation(record, translation, depth="full"):
+def render_translation(record, translation, depth="full", vocabulary=None):
     """The English translation of one reference, as a document of its own.
 
     Same artifact as the original: same manifest entry, same slug, same folder,
@@ -153,7 +153,7 @@ def render_translation(record, translation, depth="full"):
     translated.pop("translation", None)
 
     lines = []
-    lines.append(_frontmatter(translated, depth))
+    lines.append(_frontmatter(translated, depth, vocabulary))
     lines.append("")
     lines.append("# " + _plain(record.get("title_english") or record["title"])
                  + " (English translation)")
@@ -339,7 +339,7 @@ def _okf_sources(record):
     return sources
 
 
-def _frontmatter(record, depth):
+def _frontmatter(record, depth, vocabulary=None):
     """OKF v0.2 fields first, then the archive's own.
 
     The specification permits custom keys and requires consumers to preserve
@@ -379,7 +379,8 @@ def _frontmatter(record, depth):
     # which category a technique belongs to.
     if research_tags:
         from refslib import tags as tags_module
-        vocabulary = tags_module.current()
+        if vocabulary is None:
+            vocabulary = tags_module.current()
         tags.extend(tags_module.owasp_tag(identifier) for identifier
                     in tags_module.owasp_categories(research_tags, vocabulary))
     lines.append("tags: [%s]" % ", ".join(dict.fromkeys(tags)))

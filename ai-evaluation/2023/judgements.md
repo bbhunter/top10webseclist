@@ -31,6 +31,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET](<https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf>) | Added |
 | [Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js](<https://arxiv.org/abs/2207.11171>) | Not added |
 | [SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications](<https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/>) | Added |
+| [The curl quirk that exposed Burp Suite & Google Chrome](<https://portswigger.net/research/the-curl-quirk-that-exposed-burp-suite-amp-google-chrome>) | Not added |
 | [The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web](<https://trouge.net/papers/xsleaks_sp2023.pdf>) | Added |
 | [Uncovering a Command Injection, $2400 Bounty](<https://blog.voorivex.team/uncovering-a-command-injection-2400-bounty>) | Not added |
 | [Uncovering and Exploiting Hidden APIs in Mobile Super Apps](<https://arxiv.org/abs/2306.08134>) | Added |

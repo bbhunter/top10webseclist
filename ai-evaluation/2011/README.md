@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [cross_fuzz — Michal Zalewski](<https://lcamtuf.coredump.cx/cross_fuzz/>) [Related source](<https://lcamtuf.blogspot.com/2011/01/announcing-crossfuzz-potential-0-day-in.html>) | Not added |
+| [Postcards from the post-XSS world](<https://lcamtuf.coredump.cx/postxss/>) [Related source](<https://lcamtuf.blogspot.com/2011/12/notes-about-post-xss-world.html>) | Added |
 | [A Systematic Analysis of XSS Sanitization in Web Application Frameworks](<https://mfinifter.github.io/papers/esorics2011.pdf>) | Not added |
 | [All Your Clouds Are Belong to Us](<https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf>) [Related source](<https://www.nds.rub.de/research/publications/amazon-hacking/>) | Added |
 | [Amberate](<https://www.jstage.jst.go.jp/article/jssst/28/4/28_4_4_175/_article/-char/en>) | Not added |

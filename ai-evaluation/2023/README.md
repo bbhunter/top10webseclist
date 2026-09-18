@@ -75,3 +75,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Uncovering a Command Injection, $2400 Bounty](<https://blog.voorivex.team/uncovering-a-command-injection-2400-bounty>) | Not added |
 | [Uncovering and Exploiting Hidden APIs in Mobile Super Apps](<https://arxiv.org/abs/2306.08134>) | Added |
 | [WebSpec](<https://arxiv.org/abs/2201.01649>) | Not added |
+| [The curl quirk that exposed Burp Suite & Google Chrome](<https://portswigger.net/research/the-curl-quirk-that-exposed-burp-suite-amp-google-chrome>) | Not added |

@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [p0f v3 documentation — Michal Zalewski](<https://lcamtuf.coredump.cx/p0f3/README>) [Related source](<https://lcamtuf.blogspot.com/2012/01/p0f-is-back.html>) | Not added |
 | ["match" in Rails and CSRF](<https://homakov.blogspot.com/2012/04/whitelist-your-routes-match-is-evil.html>) | Not added |
 | [A Security Analysis of Emerging Web Standards](<https://www.scitepress.org/papers/2012/40495/index.html>) | Not added |
 | Abusing Cloud Browsers for Fun and Profit | Not added |
@@ -66,3 +67,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [XSS-FP: Browser Fingerprinting using HTML Parser Quirks](<https://arxiv.org/abs/1211.4812>) | Added |
 | [You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions](<https://www.securitee.org/files/jsinclusions_ccs2012.pdf>) | Added |
 | [You Are What You Like!](<https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/you-are-what-you-information-leakage-through-users-interests/>) | Not added |
+| [X-Frame-Options gotcha](<https://www.skeletonscribe.net/2012/06/x-frame-options-sameorigin-warning.html>) | Added |
