@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-18T11:38:11+00:00",
+ "updated": "2026-09-18T16:04:41+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -38208,13 +38208,40 @@
   },
   "https://blog.lexfo.fr/casse-spip-sqli-to-rce.html": {
    "also_at": [],
+   "authors": [
+    "Franck Chevalier"
+   ],
    "browser_dom_sha256": "aaf9f0f50400271ede5669480dff20c85befb15ef2ba1f343473d63c7609f9d4",
    "cited_by": [
     "2026-ai.md:71"
    ],
    "cited_title": "Casse-Spip - From an Unauthenticated SQL Injection to Remote Command Execution",
-   "decision": null,
+   "content_gap": "",
+   "content_sha256": "34df87e01dfd65a01603598391ee0da09151199e70cebc14eeba5d552f058076",
+   "decision": {
+    "at": "2026-09-18",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-18",
+    "by": "codex-archive-repair",
+    "of": "34df87e01dfd65a01603598391ee0da09151199e70cebc14eeba5d552f058076",
+    "tags": [
+     "sqli",
+     "auth-bypass",
+     "mass-assignment",
+     "rce",
+     "php"
+    ],
+    "text": "SPIP vulnerabilities combine an unauthenticated SQL injection, missing action authorization and mass assignment. The article explains how these flaws enable administrator account takeover or command execution through the job queue, and records the fixes in SPIP 4.4.18."
+   },
    "first_seen_utc": "2026-09-18T10:40:59+00:00",
+   "grade": "research",
    "health": {
     "evidence": "confirmed alive by the browser ladder (docker-headless-5s rung)",
     "final_url": "https://blog.lexfo.fr/casse-spip-sqli-to-rce.html",
@@ -38226,17 +38253,232 @@
     "text_length": 30200,
     "title": "Lexfo's security blog - Casse-Spip - From an Unauthenticated SQL Injection to Remote Command Execution"
    },
+   "images": {
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/actions-forged-hash.png": {
+     "bytes": 32919,
+     "height": 522,
+     "sha256": "022ddfaae31da5f04b00de7d9279874b92dfb2b28d7e2a68b24a664bf7652218",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/actions-invalid-hash.png": {
+     "bytes": 62475,
+     "height": 522,
+     "sha256": "6f40cef6c5ccfbcb702b94b94e404433d4554892508aca4d375c347b4cd1624f",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/actions-nonce-parts.png": {
+     "bytes": 31039,
+     "height": 417,
+     "sha256": "775af3caf21cab9c6824152126d6e9517da116dea0dc277cbf4601c14a8ca061",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-dashboard.png": {
+     "bytes": 32830,
+     "height": 544,
+     "sha256": "04b894806d3895441754da65012bb03a9a162004b6fd2354f175ad2d7db95e19",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-login.png": {
+     "bytes": 76838,
+     "height": 501,
+     "sha256": "abb7a96b84a48fa4e26bfa0719b699f799d5216291af643378a5c8467da9153d",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-meme.jpg": {
+     "bytes": 23345,
+     "height": 600,
+     "sha256": "19c4414212bd7f1d8092a422dcfa77d8aaab158a6c7eda61b82258361b90e9fd",
+     "width": 800
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-plugin-enable.png": {
+     "bytes": 47149,
+     "height": 584,
+     "sha256": "bfd678eea5301443f6e5115d712a99bb98d727b2497991e3ab8acfe3d5b6bd1a",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-plugin-upload.png": {
+     "bytes": 40597,
+     "height": 481,
+     "sha256": "b718b6c3856f37a639a9e43181884346e0d57e9399373a307b8897df48dee98f",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-rce.png": {
+     "bytes": 11033,
+     "height": 164,
+     "sha256": "8704181db625057e2ffe369ed23df7174974de27b4b19637346035e2de9e9ffb",
+     "width": 604
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain1-reset-pass.png": {
+     "bytes": 33524,
+     "height": 502,
+     "sha256": "253ebe19489c239a802b59cc78668db75b4b6b9f12a6172b4b3e80798aba3421",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain2-full-chain.gif": {
+     "bytes": 7168,
+     "height": 216,
+     "sha256": "1087af8423bfc5e7784e2c270de7a030e01a46c11d8b8a021ef6a0d257661f14",
+     "width": 800
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain2-inject-jobs.png": {
+     "bytes": 43221,
+     "height": 148,
+     "sha256": "c5bd3167f9a3366b54e6e1baf9a8ed22143a88b1b7aa19496a6b51216773643f",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain2-inject-req.png": {
+     "bytes": 36471,
+     "height": 522,
+     "sha256": "45f197f1f91e86804c255262b124d208606dc7e282509482409ea0db71ce5f5d",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain2-jobs-schema.png": {
+     "bytes": 42648,
+     "height": 238,
+     "sha256": "bc2fd88c3669314cead6f67c5c07c265127efcc13378203ece62948fb0537900",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain2-rce.png": {
+     "bytes": 29248,
+     "height": 506,
+     "sha256": "38c581171da91daf8c7410c95fc759a820d6fe54a8de002a5290ffbdaa43dbbd",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/chain2-reach-action.png": {
+     "bytes": 34869,
+     "height": 525,
+     "sha256": "d237a4b7af70a62e2f3bbff3b532ff9d1a0c472edd1b2cdb4694a34c37ecd3b6",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/internals-compiled-criteria.png": {
+     "bytes": 20088,
+     "height": 236,
+     "sha256": "04bfcd9bccfa28c172fb905127ae921e19476e94296ea6e4233b9de6fed71fb7",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/internals-escapers.png": {
+     "bytes": 41883,
+     "height": 520,
+     "sha256": "6318746ad3a2e1ae3eea6521bcc521e00918e92be782fce283f9ed6be96f7015",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/internals-optional-criteria.png": {
+     "bytes": 20387,
+     "height": 319,
+     "sha256": "cfa5af6c660119ea7111a94bf8154fad6889e90dfb31a4ec2aec52564009e37e",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/internals-template-structure.png": {
+     "bytes": 23821,
+     "height": 331,
+     "sha256": "b3002e30c90637dc48333ef3b8841f7235b8ea2b232cd3e40a3e21c8a9d939e3",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/intro-cheers.jpg": {
+     "bytes": 25349,
+     "height": 400,
+     "sha256": "8af104712f4504809c77bc83968604a3eeb4765ca6e42119f5dacd3b353ad6ba",
+     "width": 600
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/intro-two-chains.png": {
+     "bytes": 53607,
+     "height": 1100,
+     "sha256": "ce2042e323f8abe41ddc7494cb8d6b6f37007aeba97bbdda570539921314bfaf",
+     "width": 567
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/setup-install.png": {
+     "bytes": 33159,
+     "height": 670,
+     "sha256": "ccfc34c48a6f19b0cca79bf34ede80d335ca1a9d005e62f9c3fc752b33de6056",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/sqli-annee-exists.png": {
+     "bytes": 45930,
+     "height": 523,
+     "sha256": "f71adda7c4c5b064003ea28e4785c6ff99c26a2011e1341806e3f814059bde9d",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/sqli-annee-not-exists.png": {
+     "bytes": 41725,
+     "height": 522,
+     "sha256": "3db0ccbe5c0313e335954b9471e8552308583a6f6411174cc7e1df2d04fdca41",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/sqli-compiled-schema.png": {
+     "bytes": 66656,
+     "height": 1100,
+     "sha256": "e20ab17bff35fbc85f23efdf8d96b74b7c6941285212504960e9776c80f0893c",
+     "width": 1023
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/sqli-leak-alea.gif": {
+     "reason": "800x149 is furniture rather than a figure"
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/sqli-now-template.png": {
+     "bytes": 20785,
+     "height": 321,
+     "sha256": "b4fada13486f0ef06f60ba7a1795c1c3d7eeaa633814cd73bdc29c2b5f5bc38b",
+     "width": 1100
+    },
+    "https://blog.lexfo.fr/images/casse-spip-sqli-to-rce/sqli-time-based.png": {
+     "bytes": 41364,
+     "height": 523,
+     "sha256": "e2429acc247e421f2239241deb3ee8aa6c513160935ab25e1d7b20dae38ccaab",
+     "width": 1100
+    }
+   },
    "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "publisher": "blog.lexfo.fr",
    "raw_sha256": "aaf9f0f50400271ede5669480dff20c85befb15ef2ba1f343473d63c7609f9d4",
+   "slug": "blog-lexfo-fr-casse-spip-unauthenticated-sql-injection-remote-command-execution",
    "spellings": [
     "https://blog.lexfo.fr/casse-spip-sqli-to-rce.html"
    ],
    "steps": {
     "acquire": {
+     "content_sha256": "34df87e01dfd65a01603598391ee0da09151199e70cebc14eeba5d552f058076",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 35576,
+        "code_blocks": 51,
+        "headings": 35,
+        "images": 29,
+        "links": 26,
+        "name": "precision",
+        "tables": 0,
+        "words": 4173
+       },
+       {
+        "chars": 35576,
+        "code_blocks": 51,
+        "headings": 35,
+        "images": 29,
+        "links": 26,
+        "name": "recall",
+        "tables": 0,
+        "words": 4173
+       },
+       {
+        "chars": 35680,
+        "code_blocks": 51,
+        "headings": 35,
+        "images": 29,
+        "links": 26,
+        "name": "raw",
+        "tables": 0,
+        "words": 4188
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
      "raw_sha256": "aaf9f0f50400271ede5669480dff20c85befb15ef2ba1f343473d63c7609f9d4",
-     "reason": "extraction produced 102 characters, below the floor",
-     "result": "failed",
-     "utc": "2026-09-18T10:55:40+00:00"
+     "reason": "",
+     "result": "stored",
+     "slug": "blog-lexfo-fr-casse-spip-unauthenticated-sql-injection-remote-command-execution",
+     "utc": "2026-09-18T16:00:15+00:00"
     },
     "check": {
      "evidence": "http 200",
@@ -38260,8 +38502,31 @@
      "sha256": "aaf9f0f50400271ede5669480dff20c85befb15ef2ba1f343473d63c7609f9d4",
      "utc": "2026-09-18T10:55:26+00:00",
      "wall_seen": false
+    },
+    "images": {
+     "bytes": 1020128,
+     "reason": "28 of 29 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-18T15:57:59+00:00"
+    },
+    "pdf": {
+     "bytes": 1519231,
+     "file": "archived-references/pdf/2026-ai/blog-lexfo-fr-casse-spip-unauthenticated-sql-injection-remote-command-execution.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-18T16:04:41+00:00"
+    },
+    "render": {
+     "chars": 37816,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/blog-lexfo-fr-casse-spip-unauthenticated-sql-injection-remote-command-execution.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-18T16:00:16+00:00"
     }
-   }
+   },
+   "title": "Casse-Spip - From an Unauthenticated SQL Injection to Remote Command Execution"
   },
   "https://blog.lexfo.fr/drupal-postgresql-sqli-to-rce.html": {
    "also_at": [],

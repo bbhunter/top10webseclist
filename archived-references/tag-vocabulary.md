@@ -63,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-207 tags, across 1924 documents that carry a digest.
+207 tags, across 1925 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -77,7 +77,7 @@ JSON.
 | `argument-injection` | 3 | A03:2021 |
 | `aspnet` | 54 | — |
 | `attack-chain` | 224 | — |
-| `auth-bypass` | 345 | A01:2021 |
+| `auth-bypass` | 346 | A01:2021 |
 | `autofill` | 4 | — |
 | `aws` | 36 | — |
 | `azure` | 14 | — |
@@ -178,7 +178,7 @@ JSON.
 | `lfi` | 33 | A01:2021, A03:2021 |
 | `llm` | 58 | — |
 | `load-balancer` | 18 | — |
-| `mass-assignment` | 11 | A01:2021 |
+| `mass-assignment` | 12 | A01:2021 |
 | `mcp` | 4 | — |
 | `measurement-study` | 248 | — |
 | `memory-corruption` | 5 | — |
@@ -203,7 +203,7 @@ JSON.
 | `pdf` | 29 | — |
 | `perl` | 4 | — |
 | `phishing` | 41 | A04:2021 |
-| `php` | 125 | — |
+| `php` | 126 | — |
 | `postgres` | 10 | — |
 | `postmessage` | 38 | — |
 | `predictable-token` | 7 | A02:2021 |
@@ -216,7 +216,7 @@ JSON.
 | `race-condition` | 33 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 305 | — |
+| `rce` | 306 | — |
 | `react` | 6 | — |
 | `redis` | 5 | — |
 | `redos` | 3 | — |
@@ -240,7 +240,7 @@ JSON.
 | `soap` | 14 | — |
 | `sop-bypass` | 201 | A01:2021 |
 | `spring` | 18 | — |
-| `sqli` | 71 | A03:2021 |
+| `sqli` | 72 | A03:2021 |
 | `sso` | 69 | A07:2021 |
 | `ssrf` | 103 | A10:2021 |
 | `ssti` | 24 | A03:2021 |

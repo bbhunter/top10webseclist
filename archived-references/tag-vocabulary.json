@@ -178,7 +178,7 @@
    "documents": 224
   },
   "auth-bypass": {
-   "documents": 345
+   "documents": 346
   },
   "autofill": {
    "documents": 4
@@ -481,7 +481,7 @@
    "documents": 18
   },
   "mass-assignment": {
-   "documents": 11
+   "documents": 12
   },
   "mcp": {
    "documents": 4
@@ -556,7 +556,7 @@
    "documents": 41
   },
   "php": {
-   "documents": 125
+   "documents": 126
   },
   "postgres": {
    "documents": 10
@@ -595,7 +595,7 @@
    "documents": 17
   },
   "rce": {
-   "documents": 305
+   "documents": 306
   },
   "react": {
    "documents": 6
@@ -667,7 +667,7 @@
    "documents": 18
   },
   "sqli": {
-   "documents": 71
+   "documents": 72
   },
   "sso": {
    "documents": 69
@@ -769,5 +769,5 @@
    "documents": 34
   }
  },
- "updated": "2026-09-18T11:38:12+00:00"
+ "updated": "2026-09-18T16:02:05+00:00"
 }

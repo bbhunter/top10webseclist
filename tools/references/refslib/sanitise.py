@@ -153,6 +153,18 @@ def sanitise_html(markup):
             removed.append(element)
 
     for element in DROPPED_ELEMENTS:
+        if element == "embed":
+            # HTML embed is a void element: it has no closing tag or children.
+            # Treating a site's embedded logo as an unclosed container discarded
+            # the entire article following it (including on Lexfo's blog).
+            before = text
+            text = _TAG.sub(
+                lambda match: " " if re.match(r"<embed(?=[\s/>])", match.group(0), re.I)
+                else match.group(0), text)
+            text = re.sub(r"</embed\s*>", " ", text, flags=re.IGNORECASE)
+            if text != before:
+                removed.append(element)
+            continue
         pattern = re.compile(r"<%s\b.*?</%s\s*>" % (element, element), re.IGNORECASE | re.DOTALL)
         before = text
         text = pattern.sub(" ", text)

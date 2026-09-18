@@ -18,11 +18,11 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1970 reference(s) archived across 20 year list(s). 1871 carry technique and 99 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1971 reference(s) archived across 20 year list(s). 1872 carry technique and 99 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (285)
+## 2026-ai (286)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -63,6 +63,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks](md/2026-ai/ndss-symposium-cache-me-catch-you-cache-related-security-threats-llm-frameworks.md) | article | NDSS Symposium |  | research | 1 |
 | [Can AI do novel security research? Meet the HTTP Terminator](md/2026-ai/2026-portswigger-research-can-ai-do-novel-security-research-meet-http-terminator.md) | article | PortSwigger Research | 2026 | research | 1 |
 | [CargoWise WebTracker — The Keys Were in the Cargo](md/2026-ai/searchlight-cyber-cargowise-webtracker-keys-cargo.md) | article | Searchlight Cyber |  | research | 1 |
+| [Casse-Spip - From an Unauthenticated SQL Injection to Remote Command Execution](md/2026-ai/blog-lexfo-fr-casse-spip-unauthenticated-sql-injection-remote-command-execution.md) | article | blog.lexfo.fr |  | research | 1 |
 | [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](md/2026-ai/synacktiv-caught-octopus-trap-unauthenticated-rce-argo-cd.md) | article | Synacktiv |  | research | 1 |
 | [CDN Tsunami: Exploiting HTTP/3-HTTP/1.1 Conversion for DoS Attacks](md/2026-ai/arxiv-cdn-tsunami-exploiting-http-3-http-1-1-conversion-dos-attacks.md) | article | arXiv |  | research | 1 |
 | [Charting your way in: Helm template injection](md/2026-ai/synacktiv-charting-your-way-helm-template-injection.md) | article | Synacktiv |  | research | 1 |
@@ -2180,7 +2181,6 @@ each one is re-runnable.
 | <https://blog.amiunique.org/an-explicative-article-on-drawnapart-a-gpu-fingerprinting-technique/> | not yet acquired |
 | <https://blog.detectify.com/2017/07/13/aws-s3-misconfiguration-explained-fix/?utm_source=labs&utm_campaign=s3_buckets> | not yet acquired |
 | <https://blog.flatt.tech/entry/kindarails2shell_rails> | not yet acquired |
-| <https://blog.lexfo.fr/casse-spip-sqli-to-rce.html> | extraction produced 102 characters, below the floor |
 | <https://blog.orange.tw/2019/01/hacking-jenkins-part-1-play-with-dynamic-routing.html> | not yet acquired |
 | <https://blog.orange.tw/2021/08/proxyoracle-a-new-attack-surface-on-ms-exchange-part-2.html> | not yet acquired |
 | <https://blog.orange.tw/2021/08/proxyshell-a-new-attack-surface-on-ms-exchange-part-3.html> | not yet acquired |

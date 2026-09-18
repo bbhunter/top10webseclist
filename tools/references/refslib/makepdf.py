@@ -37,6 +37,7 @@ from . import highlight
 #
 # 3: fenced listings coloured by `highlight.py`, and the print stylesheet given
 #    token colours chosen for print on white and for colour blindness.
+# 4: long code lines wrap instead of being clipped behind printed scrollbars.
 #
 # THE HEADING CAP DID NOT EARN A VERSION OF ITS OWN, and the reasoning is worth
 # keeping: a bump reprints every rendered document, each comes out byte-different
@@ -44,7 +45,7 @@ from . import highlight
 # for 3, which changes almost every document that carries code; it was not worth
 # it for 30 lines across 13 documents, which were reprinted by name instead.
 # Bump for a change that alters output BROADLY; name the documents otherwise.
-RENDERER = 3
+RENDERER = 4
 
 # A print stylesheet, inlined so the document owes nothing to the network. A4
 # with comfortable margins; the browser's `preferCSSPageSize` honours the @page.
@@ -74,7 +75,8 @@ code {
 }
 pre {
   background: #f6f8fa; border: 1px solid #e3e3e3; border-radius: 5px;
-  padding: .7em .9em; overflow-x: auto; page-break-inside: avoid;
+  padding: .7em .9em; white-space: pre-wrap; overflow-wrap: anywhere;
+  page-break-inside: avoid;
 }
 pre code { background: none; padding: 0; font-size: 9pt; line-height: 1.4; }
 /* SYNTAX COLOUR, from `highlight.py`. The source articles colour their listings

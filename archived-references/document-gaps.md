@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-773 reference(s) unresolved. 426 of them already have their raw bytes stored.
+772 reference(s) unresolved. 425 of them already have their raw bytes stored.
 
 ## http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf
 
@@ -6187,14 +6187,6 @@ or fix the route and re-run.
 - Reason: faulty capture: the body ends on a dangling lead-in - the last line is "The video is embedded below" with nothing after it - and the stored source shows the YouTube embed that followed, whose id r1KuE2th_EY is recoverable. The byline was dropped although the source carries "Posted by Aditya K Sood". Note also a metadata inconsistency worth reconciling before its store-gaps row is trusted: the manifest raw_sha256 is absent from the store while the hash the PUBLISHED FILE names is present, so the reference is listed as a store gap on the strength of the wrong value (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2010.md:61`
-
-## https://blog.lexfo.fr/casse-spip-sqli-to-rce.html
-
-- Outcome: `failed`
-- Kind: article
-- Reason: extraction produced 102 characters, below the floor
-- What would fix it: The page is built by JavaScript and the browser ladder could not settle it. Try saving the page by hand and importing it.
-- Cited at: `2026-ai.md:71`
 
 ## https://zenodo.org/records/17822391
 
