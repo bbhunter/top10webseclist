@@ -1,5 +1,32 @@
 # Related-source coverage
 
+## Recording revalidation — 18 September 2026
+
+Reviewed all 416 stored recording associations across 298 source records, plus
+all 66 manually added media companions. The generated relationship check covers
+all 1,780 entries in 20 collections. Historical video citations remain intact.
+
+The recording audit distinguished 376 same-work associations, 10 related works,
+12 mistaken source associations and 18 unresolved matches. Same-work does not
+automatically mean a full talk: demonstrations and separate Q&A remain labelled
+source links. One valid talk was reassociated from a mismatched Vimeo URL to its
+correct research article. Existing confidence and date restrictions still apply.
+
+Unrelated recordings have been detached, useful analyses and earlier/later work
+have explicit source relationships, and unresolved matches are withheld from
+talk controls. The reCAPTCHA demonstration is a follow-up to the Turbo Intruder
+launch article. Background-source recordings no longer create players, badges or
+recording-filter matches for the paper citing them.
+
+This review used identifying paper/talk metadata, author and conference context,
+archived source prose and targeted live primary-source checks. It was not a
+complete playback of every video or a fresh availability check of every URL.
+The individual decisions and remaining evidence gaps are retained in the private
+recording-audit report. The earlier discovery and preservation coverage below
+describes its stated review date.
+
+## Earlier discovery coverage
+
 Reviewed on 14 September 2026, after the concurrent article-judging update.
 
 All 1,763 entries across the 20 published collections have a source group. There

@@ -53,6 +53,21 @@ try {
       }
     }
     assert.equal(requests.length, 1, "A collection's details are fetched once across themes");
+    const cacheInjection = await page.evaluate(() => state.items.find(item => item.links.some(link => link.url === "https://www.yeswehack.com/lab/research-cache-key-injection"))?.id);
+    assert.ok(cacheInjection, "Cache key injection regression fixture exists");
+    for (const view of views) {
+      await page.evaluate(view => setView(view), view);
+      await page.evaluate(id => openArtifact(id), cacheInjection);
+      assert.ok(await page.locator("#artifact-talk").isHidden(), `${view}/${width}: background paper does not lend its talk player`);
+      assert.equal(await page.locator("#artifact-actions .video-action").count(), 0);
+      assert.ok(await page.evaluate(id => {
+        const item = state.items.find(item => item.id === id);
+        return !item.videos?.length && !videoMark(item) && !videoLabel(item);
+      }, cacheInjection), "Background talk does not create a recording badge or filter match");
+      await page.locator("#open-artifact-sources").click();
+      assert.match(await page.locator("#artifact-sources").innerText(), /Web Cache Entanglement/);
+      await page.locator("#artifact-dialog .dialog-close").click();
+    }
     if (width === 1440) {
       await page.evaluate(id => openArtifact(id), id);
       await page.locator('[data-source-index="2"] summary').click();

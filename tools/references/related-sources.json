@@ -171,13 +171,14 @@
         {
           "url": "https://portswigger.net/cms/videos/c1/a3/0582f9074a0b-recaptcha-reddit-2.mp4",
           "title": "Cracking reCAPTCHA, Turbo Intruder style (demonstration)",
-          "label": "Demonstration video",
+          "label": "Follow-up reCAPTCHA demonstration",
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Demonstration embedded in the reCAPTCHA companion article; source URL verified from preserved HTML.",
+          "reason": "This is the Reddit proof-of-concept video in the separate Cracking reCAPTCHA, Turbo Intruder style article. That article introduces the later case study; the Turbo Intruder launch article separately identifies its own LevelUp #03 presentation. Label this as a follow-up demonstration, not a recording of the launch research.",
           "evidence": [
-            "https://portswigger.net/research/cracking-recaptcha-turbo-intruder-style"
+            "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack",
+            "https://portswigger.net/cms/videos/c1/a3/0582f9074a0b-recaptcha-reddit-2.mp4"
           ]
         }
       ],
@@ -199,6 +200,21 @@
           "evidence": [
             "https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609/"
           ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KVDOIFeRaPQ",
+          "title": "Very creative way to turn Prototype Pollution into RCE in kibana - Bug Bounty Reports Explained",
+          "label": "Independent video analysis",
+          "relation": "analysis",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The video description explicitly explains SecurityMB research and links the original post. It is narrated by Bug Bounty Reports Explained / gregxsunday, not by the researcher. Retain only as analysis.",
+          "evidence": [
+            "https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609",
+            "https://www.youtube.com/watch?v=KVDOIFeRaPQ"
+          ],
+          "publisher": "Bug Bounty Reports Explained",
+          "published": "2020-12-05"
         }
       ],
       "review": {
@@ -308,9 +324,10 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "Part 2 explicitly identifies Louis Dion-Marcil's August 2018 DEF CON presentation of the earlier ESI discovery before introducing its subsequent implementation-specific work.",
           "evidence": [
-            "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations"
+            "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations",
+            "https://www.youtube.com/watch?v=VUZGZnpSg8I"
           ]
         }
       ],
@@ -536,9 +553,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The Speaker Deck description explicitly states this talk was presented at bugSWAT and supplies this exact URL as the video of the talk.",
           "evidence": [
-            "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries"
+            "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries",
+            "https://youtu.be/B5ZyYTKp4gc"
           ]
         }
       ],
@@ -694,9 +712,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The Autobinding article introduction explicitly offers this Defcon Russia Group meeting 29 video in Russian as the alternative to reading the article.",
           "evidence": [
-            "https://agrrrdog.blogspot.com/2017/03/autobinding-vulns-and-spring-mvc.html"
+            "https://agrrrdog.blogspot.com/2017/03/autobinding-vulns-and-spring-mvc.html",
+            "https://www.youtube.com/watch?v=l5hU1Hq-gsA"
           ]
         },
         {
@@ -1218,9 +1237,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The ROBOT project News section explicitly says the authors gave presentations about ROBOT and labels this exact link RuhrSec 2018.",
           "evidence": [
-            "https://robotattack.org/"
+            "https://robotattack.org/",
+            "https://www.youtube.com/watch?v=n_8MOf0Jx4s"
           ]
         },
         {
@@ -1230,9 +1250,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The ROBOT project News section explicitly says the authors gave presentations about ROBOT and labels this exact link BornHack 2018.",
           "evidence": [
-            "https://robotattack.org/"
+            "https://robotattack.org/",
+            "https://www.youtube.com/watch?v=Cpt3Na0Kqr4"
           ]
         },
         {
@@ -1242,9 +1263,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The ROBOT project News section explicitly says the authors gave presentations about ROBOT and labels this exact link USENIX Security 2018.",
           "evidence": [
-            "https://robotattack.org/"
+            "https://robotattack.org/",
+            "https://www.youtube.com/watch?v=037D7YZCpSM"
           ]
         },
         {
@@ -1330,9 +1352,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The Zombie Alert article links this exact video after asking whether its just-described persistence bug combines with the earlier UXSS; the author identifies it as a teasing demonstration for Eric, not a stage talk.",
           "evidence": [
-            "https://www.brokenbrowser.com/zombie-alert/"
+            "https://www.brokenbrowser.com/zombie-alert/",
+            "https://www.youtube.com/watch?v=QJeiuDzCJjM"
           ]
         }
       ],
@@ -1422,9 +1445,10 @@
           "relation": "analysis",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A related explanation or case study linked by the source.",
+          "reason": "Foxglove explicitly credits Matthias Kaiser's talk as a more detailed explanation of deserialization, then distinguishes the current article's applicability focus. Preserve independent analysis status.",
           "evidence": [
-            "http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#thevulnerability"
+            "http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#thevulnerability",
+            "https://www.youtube.com/watch?v=VviY3O-euVQ"
           ]
         },
         {
@@ -1611,6 +1635,22 @@
           "evidence": [
             "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html"
           ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mS8gm-_rJgM",
+          "title": "J. Alex Halderman, Nadia Heninger: Logjam: Diffie-Hellman, discrete logs, the NSA, and you",
+          "label": "Earlier research recording",
+          "relation": "background",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Schneier article is commentary on Logjam; the recording is by underlying researchers J. Alex Halderman and Nadia Heninger, not the article author. Keep as background/original research presentation rather than an author talk for this commentary.",
+          "evidence": [
+            "https://schneier.com/blog/archives/2015/05/the_logjam_and_.html",
+            "https://www.youtube.com/watch?v=mS8gm-_rJgM",
+            "https://www.schneier.com/blog/archives/2015/05/the_logjam_and_.html"
+          ],
+          "publisher": "media.ccc.de",
+          "published": "2015-12-28"
         }
       ],
       "review": {
@@ -2156,9 +2196,10 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The Linksys follow-up opens by naming the author's 2012 Blended Threats and JavaScript presentation and says nearly a year has passed. It identifies the earlier talk's WRT54GL example before discussing later patch status and additional router issues.",
           "evidence": [
-            "http://web.archive.org/web/20160507023636/https://superevr.com/blog/2013/dont-use-linksys-routers/"
+            "http://web.archive.org/web/20160507023636/https://superevr.com/blog/2013/dont-use-linksys-routers/",
+            "http://web.archive.org/web/20150328011721/http://videos.2012.appsecusa.org/video/54209282"
           ]
         }
       ],
@@ -2236,13 +2277,14 @@
         {
           "url": "https://www.youtube.com/watch?v=dxo6-niEtyE",
           "title": "ActiveScan++: Augmenting manual testing with attack proxy plugins",
-          "label": "Tool explanation and cache-poisoning demo",
+          "label": "Presentation including the Typo3 demonstration",
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The Host-header article specifically directs readers to this broader ActiveScan++ talk for discussion of the extension and a demonstration of the article's Typo3 cache-poisoning case. Retain a narrowly labelled tool explanation/cache-poisoning demo source link; do not present the entire broader talk as the article recording.",
           "evidence": [
-            "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html"
+            "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html",
+            "https://www.youtube.com/watch?v=dxo6-niEtyE"
           ]
         },
         {
@@ -2277,9 +2319,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The Diviner article's Demonstration Videos section names Source Code Divination and links this exact recording alongside its own tool documentation.",
           "evidence": [
-            "https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html"
+            "https://sectooladdict.blogspot.com/2012/07/the-diviner-clairvoyance-in-digital.html",
+            "https://www.youtube.com/watch?v=RmxiUL8ImkA&feature=plcp"
           ]
         },
         {
@@ -2609,9 +2652,10 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The article explicitly describes Artur Janc's talk from the preceding December as earlier coverage of persistent client-side attacks. Preserve background status.",
           "evidence": [
-            "https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
+            "https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website",
+            "https://web.archive.org/web/20170611133815/http://www.youtube.com/watch?v=ppFcSP2HWdE"
           ]
         },
         {
@@ -2759,9 +2803,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The author announces the Black Hat USA 2012 Blended Threats and JavaScript talk, its slides and demonstration code, then provides this exact YouTube link in the same announcement.",
           "evidence": [
-            "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/blended-threats-and-javascript/"
+            "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/blended-threats-and-javascript/",
+            "https://www.youtube.com/watch?v=Yo338bn69AA"
           ]
         }
       ],
@@ -2779,9 +2824,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Update 1 of the Top-Level Universal XSS article introduces this exact link as a video demonstration of the attack.",
           "evidence": [
-            "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/"
+            "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/",
+            "https://web.archive.org/web/20170715021134/http://www.youtube.com/watch?v=AaPl1DGuZZc"
           ]
         }
       ],
@@ -3079,6 +3125,21 @@
           "evidence": [
             "https://www.feross.org/webcam-spy/"
           ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-LbvglVj8Ho",
+          "title": "HOW TO: Spy on the Webcams of Your Website Visitors",
+          "label": "Demonstration video",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Exact article title, Feross author channel and contemporary date establish the same finding. This five-minute artifact is a demonstration/explanation video; label it as a demonstration rather than a conference talk.",
+          "evidence": [
+            "https://feross.org/webcam-spy",
+            "https://www.youtube.com/watch?v=-LbvglVj8Ho"
+          ],
+          "publisher": "Feross",
+          "published": "2011-10-18"
         }
       ],
       "review": {
@@ -3171,9 +3232,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The article concludes by linking this exact video so readers can see the described auto-complete attack in action.",
           "evidence": [
-            "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html"
+            "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html",
+            "http://www.youtube.com/watch?v=1Vc0GMDX52w"
           ]
         }
       ],
@@ -3359,9 +3421,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Rios states he created this linked video to demonstrate the chain from his Will It Blend talk for people who could not attend. It is the companion demo, not the complete talk.",
           "evidence": [
-            "http://xs-sniper.com/blog/2010/12/17/will-it-blend/"
+            "http://xs-sniper.com/blog/2010/12/17/will-it-blend/",
+            "http://www.youtube.com/watch?v=fMFVVNE8ytQ"
           ]
         }
       ],
@@ -3691,9 +3754,10 @@
           "relation": "follow-up",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A follow-up that develops this research further.",
+          "reason": "The November session-fixation article comment dated December 1 links this video as the author's explanation answering a reader's confusion. It is a later explanation in the cookie/DNS-rebinding research line, not a conference recording of either article.",
           "evidence": [
-            "http://ha.ckers.org/blog/20091116/session-fixation-via-dns-rebinding/"
+            "http://ha.ckers.org/blog/20090120/persistent-cookies-and-dns-rebinding-redux/",
+            "http://ha.ckers.org/blog/20091201/dns-rebinding-video/"
           ]
         }
       ],
@@ -3731,9 +3795,10 @@
           "relation": "follow-up",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A follow-up that develops this research further.",
+          "reason": "The November session-fixation article comment dated December 1 links this video as the author's explanation answering a reader's confusion. It is a later explanation in the cookie/DNS-rebinding research line, not a conference recording of either article.",
           "evidence": [
-            "http://ha.ckers.org/blog/20091116/session-fixation-via-dns-rebinding/"
+            "http://ha.ckers.org/blog/20091116/session-fixation-via-dns-rebinding/",
+            "http://ha.ckers.org/blog/20091201/dns-rebinding-video/"
           ]
         }
       ],
@@ -4132,9 +4197,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The GIFAR article explicitly introduces the linked video as demonstrating the just-described technique.",
           "evidence": [
-            "http://riosec.com/how-to-create-a-gifar"
+            "http://riosec.com/how-to-create-a-gifar",
+            "https://www.youtube.com/watch?v=5TgfKKX7uSQ"
           ]
         }
       ],
@@ -4216,9 +4282,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Grossman says he recorded this clickjacking demo, describes its motion-detection feature, and repeats the exact Vimeo URL in his October 8 comment.",
           "evidence": [
-            "https://jeremiahgrossman.blogspot.com/2008/10/clickjacking-web-pages-can-see-and-hear.html"
+            "https://jeremiahgrossman.blogspot.com/2008/10/clickjacking-web-pages-can-see-and-hear.html",
+            "https://vimeo.com/1912736"
           ]
         }
       ],
@@ -4883,9 +4950,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The introduction explicitly says this blog post’s content was presented at TROOPERS24 and links the exact From ASCII to UTF-16 recording.",
           "evidence": [
-            "https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/"
+            "https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/",
+            "https://troopers.de/troopers24/talks/r3hxdq/"
           ]
         },
         {
@@ -4987,7 +5055,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Brumens’s Research roadmap paragraph links this exact video with an explicit statement that it is his presentation of this research at Ekoparty 2024. This corroborates the different YouTube upload from the manifest’s Ekoparty-channel version.",
           "evidence": [
             "https://www.yeswehack.com/learn-bug-bounty/server-side-template-injection-exploitation"
           ]
@@ -5023,11 +5091,11 @@
         {
           "url": "https://www.youtube.com/watch?v=AxNO2iA2fAg",
           "title": "Half Measures and Full Compromise: Exploiting Microsoft Exchange PowerShell Remoting",
-          "label": "OffensiveCon 2024 recording",
+          "label": "Presentation of the Exchange research series",
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Piotr Bazydlo says the four-part blog series supplements this exact OffensiveCon 2024 talk, and explicitly maps Part 1 to 12:05–18:10. Keep the series talk with a label indicating it includes this part.",
           "evidence": [
             "https://www.zerodayinitiative.com/blog/2024/9/4/exploiting-exchange-powershell-after-proxynotshell-part-1-multivaluedproperty"
           ]
@@ -5671,7 +5739,7 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The 2023 article expressly says four years have elapsed since their 2019 DEF CON 27 State of DNS Rebinding presentation and links this exact URL. The present article is an update, so the earlier talk remains background.",
           "evidence": [
             "https://research.nccgroup.com/2023/04/27/state-of-dns-rebinding-in-2023/"
           ]
@@ -6023,7 +6091,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The Proof of Concept Video section links this exact MP4 and describes its demonstration of the F5 case. Retain as a demonstration, not a conference talk.",
           "evidence": [
             "https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/"
           ]
@@ -6043,7 +6111,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The author’s deck explicitly prints this exact YouTube URL as DEMO on slide 55 after its Teams case study. This is a same-work demonstration, not a conference talk.",
           "evidence": [
             "https://speakerdeck.com/masatokinugawa/how-i-hacked-microsoft-teams-and-got-150000-dollars-in-pwn2own"
           ]
@@ -6084,13 +6152,14 @@
         {
           "url": "https://www.youtube.com/watch?v=pnbZMvCPqSc",
           "title": "Talk recording",
-          "label": "Talk recording",
+          "label": "Presentation of the email-security research series",
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Paul Gerste’s introduction explicitly says the three-post Proton Mail, Skiff and Tutanota series was presented at Black Hat Asia 2023 and links this exact recording. This is the series talk Stealing with Style: Using CSS to Exploit ProtonMail & Friends, directly including this article, not a merely similar mail-security talk.",
           "evidence": [
-            "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu"
+            "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu",
+            "https://www.blackhat.com/asia-23/briefings/schedule/#stealing-with-style-using-css-to-exploit-protonmail--friends-31697"
           ]
         }
       ],
@@ -6117,13 +6186,14 @@
         {
           "url": "https://www.youtube.com/watch?v=pnbZMvCPqSc",
           "title": "Talk recording",
-          "label": "Talk recording",
+          "label": "Presentation of the email-security research series",
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Paul Gerste’s introduction explicitly says the three-post Proton Mail, Skiff and Tutanota series was presented at Black Hat Asia 2023 and links this exact recording. This is the series talk Stealing with Style: Using CSS to Exploit ProtonMail & Friends, directly including this article, not a merely similar mail-security talk.",
           "evidence": [
-            "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/"
+            "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/",
+            "https://www.blackhat.com/asia-23/briefings/schedule/#stealing-with-style-using-css-to-exploit-protonmail--friends-31697"
           ]
         },
         {
@@ -6405,7 +6475,7 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The article’s October 1 update explicitly credits Martin Doyhenard’s DEF CON 29 Response Smuggling presentation as earlier use of their payload. It is prior work, not this Akamai research recording.",
           "evidence": [
             "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b"
           ]
@@ -6417,9 +6487,11 @@
           "relation": "analysis",
           "kind": "audio",
           "preservation": "link-only",
-          "reason": "A related explanation or case study linked by the source.",
+          "reason": "Security Now episode 891 is hosted by Steve Gibson and Leo Laporte. Its official transcript explicitly discusses Jacopo Tediosi and Francesco Mariani’s 2022 Akamai discovery and reads the Medium account. This is independent coverage, not the researchers’ talk.",
           "evidence": [
-            "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b"
+            "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b",
+            "https://twit.tv/posts/transcripts/security-now-episode-891-transcript",
+            "https://www.grc.com/sn/sn-891-notes.pdf"
           ]
         }
       ],
@@ -6665,9 +6737,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The author’s Video section identifies this exact anchor as the full SEC-T community-night talk; the official 2022 schedule lists Christoffer Jerkeby and Anton Linné presenting JavaScript Prototype Poisoning on September 14. Relationship supported, although the legacy /talks/ destination was unavailable during live retrieval.",
           "evidence": [
-            "https://www.jerkeby.se/newsletter/posts/prototype-poisoning/"
+            "https://www.jerkeby.se/newsletter/posts/prototype-poisoning/",
+            "https://sec-t.org/2022/schedule/"
           ]
         }
       ],
@@ -6733,6 +6806,22 @@
           "evidence": [
             "https://www.synacktiv.com/publications/php-filters-chain-what-is-it-and-how-to-use-it.html"
           ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zUfMka3C58s",
+          "title": "Hack.lu 2023: PHP Filter Chains: How To Use It - Rémi Matasse (@_remsio_)",
+          "label": "Follow-up recording",
+          "relation": "follow-up",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The Hack.lu 2023 programme explicitly combines the earlier PHP filter-chain generation work with later error-based oracle work and two tools. Treat the broader later presentation as a follow-up companion to the 2022 article, not an exact-paper talk.",
+          "evidence": [
+            "https://synacktiv.com/publications/php-filters-chain-what-is-it-and-how-to-use-it.html",
+            "https://www.youtube.com/watch?v=zUfMka3C58s",
+            "https://pretalx.com/hack-lu-2023/talk/PL3P7Y/"
+          ],
+          "publisher": "Cooper",
+          "published": "2023-10-18"
         }
       ],
       "review": {
@@ -6912,7 +7001,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The author’s Part 1 article links this exact video immediately after describing the completed ProxyLogon chain and calls it a demonstration video.",
           "evidence": [
             "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/"
           ]
@@ -7305,7 +7394,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The article update explicitly identifies the exact timestamped URL as the talk presented at GreHack 2021, immediately after its WebKit vulnerability timeline. Preserve the 19302-second start time; this URL is a conference stream segment.",
           "evidence": [
             "https://threatnix.io/blog/exploiting-csp-in-webkit-to-break-authentication-authorization/"
           ]
@@ -7517,9 +7606,10 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The TLS Poison project README starts with this exact link labelled YouTube link to presentation, before explaining the project and its original presentation venue. This is a project-authored presentation association.",
           "evidence": [
-            "https://github.com/jmdx/TLS-poison/"
+            "https://github.com/jmdx/TLS-poison/",
+            "https://youtube.com/watch?v=qGpAJxfADjo"
           ]
         }
       ],
@@ -7609,9 +7699,10 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The article explicitly attributes its explanatory screenshots to Grzegorz Niedziela's Slack/Zomato video and recommends viewing it. This earlier independent case study is background, not the current article's author talk.",
           "evidence": [
-            "https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142"
+            "https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142",
+            "https://www.youtube.com/watch?v=gzM4wWA7RFo"
           ]
         }
       ],
@@ -8270,10 +8361,11 @@
           "relation": "same-work",
           "kind": "video",
           "evidence": [
-            "https://cpdos.org/"
+            "https://cpdos.org/",
+            "https://cpdos.org/videos/HHO.mp4"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "The CPDoS article's HHO section introduces its video as a demonstration of HHO CPDoS against an example CloudFront application. This named HHO asset is the demonstration, not a talk."
         },
         {
           "url": "https://cpdos.org/videos/HMO.mp4",
@@ -8282,10 +8374,11 @@
           "relation": "same-work",
           "kind": "video",
           "evidence": [
-            "https://cpdos.org/"
+            "https://cpdos.org/",
+            "https://cpdos.org/videos/HMO.mp4"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "The CPDoS article's HMO section says the video below demonstrates an HMO attack. This named HMO asset is the corresponding demonstration, not a talk."
         }
       ],
       "review": {
@@ -8618,7 +8711,7 @@
         {
           "url": "https://www.youtube.com/watch?v=U35VgwwKVM8",
           "title": "Agentic ProbLLMs: What I Learned Exploiting AI Computer-Use and Coding Agents",
-          "label": "Conference talk with attack demo",
+          "label": "Conference talk including the TOCTOU demonstration",
           "relation": "same-work",
           "kind": "video",
           "evidence": [
@@ -8626,7 +8719,7 @@
             "https://seclab.stanford.edu/RealWorldAIsec/program-26.html"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "Johann Rehberger explicitly states that this exact TOCTOU attack demo was included in his Real-world AI security talk. Stanford’s official programme assigns the exact video U35VgwwKVM8 to his Agentic ProbLLMs keynote. Direct coverage is supported, but the keynote is broader; label Conference talk including this TOCTOU demo, not a dedicated paper presentation."
         }
       ],
       "review": {
@@ -8804,7 +8897,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The article’s Whooli CTF section explicitly links this exact video as the three-minute Gone in 180 seconds demo. Retain as a demonstration, not a conference recording.",
           "evidence": [
             "https://labs.boostsecurity.io/articles/introducing-smokedmeat/"
           ]
@@ -9452,7 +9545,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Farzan Karimi’s article identifies this exact DEF CON 33 presentation and repeatedly maps the article’s RRE discussion and demos to timestamps in it, including 5:40–6:55 and 14:09–15:25.",
           "evidence": [
             "https://jumpycastle.dev/how-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7"
           ]
@@ -9556,7 +9649,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9568,7 +9661,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9580,7 +9673,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9592,7 +9685,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9604,7 +9697,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9616,7 +9709,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9628,7 +9721,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9640,7 +9733,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9652,7 +9745,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9664,7 +9757,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Marek Tóth’s product-by-product affected-extension section explicitly links this exact MP4 in its Videos field beside the named product and opacity variant. It demonstrates this study, and must remain a demo source rather than a conference recording.",
           "evidence": [
             "https://marektoth.com/blog/dom-based-extension-clickjacking/"
           ]
@@ -9684,7 +9777,7 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The BFF is not a cure-all section names Philippe de Ryck’s The insecurity of OAuth 2.0 in frontends, links this exact URL, and critiques its BFF recommendation at 38:22–47:18. The talk is the argument being discussed, not a recording of this author’s article.",
           "evidence": [
             "https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7"
           ]
@@ -10560,7 +10653,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The introduction and References both identify this exact NahamCon 2025 session URL as the author’s presentation of this research, with the full The minefield between syntaxes title. The registration gate limits access, not association evidence.",
           "evidence": [
             "https://www.yeswehack.com/learn-bug-bounty/syntax-confusion-ambiguous-parsing-exploits"
           ]
@@ -11364,7 +11457,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The author’s afterword identifies the BSides Tallinn talk as this research and links 2ZENE8ua_gU; its subsequent edit explicitly says the same talk was given again at Disobey and recommends 0z1My1gC5Yc. Both are directly substantiated presentations of this article.",
           "evidence": [
             "https://lyra.horse/blog/2024/09/using-youtube-to-steal-your-files/"
           ]
@@ -11376,7 +11469,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The author’s afterword identifies the BSides Tallinn talk as this research and links 2ZENE8ua_gU; its subsequent edit explicitly says the same talk was given again at Disobey and recommends 0z1My1gC5Yc. Both are directly substantiated presentations of this article.",
           "evidence": [
             "https://lyra.horse/blog/2024/09/using-youtube-to-steal-your-files/"
           ]
@@ -11745,7 +11838,7 @@
           "relation": "background",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "Earlier research cited as a basis for this technique.",
+          "reason": "The introduction names Thomas Houhou’s Area41 cookie-tossing/Self-XSS presentation and links this video, then says the authors wanted to expand on that research. It precedes and motivates the article’s OAuth case.",
           "evidence": [
             "https://snyk.io/articles/hijacking-oauth-flows-via-cookie-tossing/"
           ]
@@ -11805,7 +11898,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Jun Kokatsu’s Piloting Edge Copilot deck explicitly prints this exact URL under Demo on slide 25. Keep as a same-work demonstration, not a conference talk.",
           "evidence": [
             "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
           ]
@@ -11817,7 +11910,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Jun Kokatsu’s Piloting Edge Copilot deck explicitly prints this exact URL under Demo on slide 42. Keep as a same-work demonstration, not a conference talk.",
           "evidence": [
             "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
           ]
@@ -11829,7 +11922,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "Jun Kokatsu’s Piloting Edge Copilot deck explicitly prints this exact URL under Demo on slide 54. Keep as a same-work demonstration, not a conference talk.",
           "evidence": [
             "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
           ]
@@ -12039,7 +12132,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "The article embeds this demonstration under “Watch the full exploit chain”.",
+          "reason": "The live article places this exact youtube-nocookie embed under Watch the full exploit chain. It is the article’s demonstration and should remain a demo source, not a conference talk.",
           "evidence": [
             "https://pwn.ai/blog/xss2shell"
           ]
@@ -12683,10 +12776,12 @@
           "relation": "same-work",
           "kind": "video",
           "evidence": [
-            "https://www.youtube.com/watch?v=ppW_soCb6wM"
+            "https://www.youtube.com/watch?v=ppW_soCb6wM",
+            "https://www.youtube.com/watch?v=lfSLAhEvm6Y",
+            "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "Jun Kokatsu's companion deck identifies ppW_soCb6wM as its bugSWAT talk. Slide 73 links this exact video directly after the ChromeVox section."
         },
         {
           "url": "https://www.youtube.com/watch?v=6M6wjmB26sM",
@@ -12695,10 +12790,12 @@
           "relation": "same-work",
           "kind": "video",
           "evidence": [
-            "https://www.youtube.com/watch?v=ppW_soCb6wM"
+            "https://www.youtube.com/watch?v=ppW_soCb6wM",
+            "https://www.youtube.com/watch?v=6M6wjmB26sM",
+            "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "Jun Kokatsu's companion deck identifies ppW_soCb6wM as its bugSWAT talk. Slide 88 marks this exact video as the demo following its CSP-bypass section."
         },
         {
           "url": "https://www.youtube.com/watch?v=s1gRiyU8yqA",
@@ -12707,10 +12804,12 @@
           "relation": "same-work",
           "kind": "video",
           "evidence": [
-            "https://www.youtube.com/watch?v=ppW_soCb6wM"
+            "https://www.youtube.com/watch?v=ppW_soCb6wM",
+            "https://www.youtube.com/watch?v=s1gRiyU8yqA",
+            "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "Jun Kokatsu's companion deck identifies ppW_soCb6wM as its bugSWAT talk. Slide 104 links this exact video within the Adblock example."
         }
       ],
       "review": {
@@ -12760,10 +12859,11 @@
           "relation": "same-work",
           "kind": "video",
           "evidence": [
-            "https://web.archive.org/web/20160403035045/http://tetraph.com/covert_redirect/oauth2_openid_covert_redirect.html"
+            "https://web.archive.org/web/20160403035045/http://tetraph.com/covert_redirect/oauth2_openid_covert_redirect.html",
+            "https://www.youtube.com/watch?v=6m1CoV8JTmc"
           ],
           "preservation": "link-only",
-          "reason": "A recording or demonstration explicitly linked by the authors or their conference programme."
+          "reason": "The original Covert Redirect article places this exact video in the GitHub row of its affected-provider table under POC Video."
         }
       ],
       "review": {
@@ -13498,7 +13598,7 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "A companion recording or demonstration linked by the original source.",
+          "reason": "The public disclosure’s A full poc-video of the steps section links this exact attachment as sort-oracle-poc.mp4. This is the reported case demonstration, not a talk.",
           "evidence": [
             "https://bugcrowd.com/disclosures/0ecb51a3-2064-4f9d-aa19-aa7b6ae21812/blind-enumeration-of-private-card-names-via-sort-oracle-and-id-discovery"
           ]
@@ -13913,9 +14013,11 @@
           "relation": "same-work",
           "kind": "video",
           "preservation": "link-only",
-          "reason": "The research article embeds this YouTube video; recording venue and date have not been independently confirmed.",
+          "reason": "Beyond the embed, Kettle's author-maintained research index pairs this recording with Backslash Powered Scanner: Automating Human Intuition, and his Turbo Intruder article expressly calls this link his Backslash Powered Scanner presentation.",
           "evidence": [
-            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes"
+            "https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes",
+            "https://www.youtube.com/watch?v=EPmjl7q1-n4",
+            "https://github.com/albinowax/albinowax.github.io/blob/master/index.html"
           ]
         }
       ],
@@ -13979,6 +14081,218 @@
             "Alex Aguiar"
           ],
           "published": "2026-04-23"
+        }
+      ]
+    },
+    "https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=D1uByxwAW44",
+          "title": "Chaining Three Bugs to Access All Your ServiceNow Data (Live Q&A) - Surfacing Security Ep 1",
+          "label": "Questions and answers",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Company recording repeats exact article title and expressly identifies Live Q&A / Surfacing Security Ep 1. Same-work discussion is supported; do not label as a conference talk.",
+          "evidence": [
+            "https://assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data",
+            "https://www.youtube.com/watch?v=D1uByxwAW44"
+          ],
+          "publisher": "Assetnote",
+          "published": "2024-08-07"
+        }
+      ]
+    },
+    "https://dl.acm.org/doi/10.1145/2810103.2813688": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=vzp7JdezZRU",
+          "title": "Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks",
+          "label": "Follow-up recording",
+          "relation": "follow-up",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "follow-up: The 2016 Advanced Cross-Site Search talk explicitly compares its new browser-based and second-order developments against Gelernter and Herzberg CCS 2015 original XS-Search. It is an extension, not a recording of that 2015 paper.",
+          "evidence": [
+            "https://dl.acm.org/doi/10.1145/2810103.2813688",
+            "https://www.youtube.com/watch?v=vzp7JdezZRU",
+            "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
+          ],
+          "publisher": "Black Hat",
+          "published": "2016-11-22"
+        }
+      ]
+    },
+    "https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways/": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=SEgUNWHXxrM",
+          "title": "Research Review #14: Pwning Claude Code in 8 Different Ways (RyotaK)",
+          "label": "Independent video analysis",
+          "relation": "analysis",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "analysis: The 7urb0 Research Review explicitly names this RyotaK article. It is independent commentary, not RyotaK presenting his own research. Retain only as clearly attributed analysis; source metadata identifies article coverage but no conference stage.",
+          "evidence": [
+            "https://flatt.tech/research/posts/pwning-claude-code-in-8-different-ways",
+            "https://www.youtube.com/watch?v=SEgUNWHXxrM"
+          ],
+          "publisher": "7urb0",
+          "published": "2026-06-30"
+        }
+      ]
+    },
+    "https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=-L60zSztdCU",
+          "title": "Research Review #10: RCE in Google Cloud with Single Directory Deletion (RyotaK)",
+          "label": "Independent video analysis",
+          "relation": "analysis",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "analysis: The 7urb0 Research Review explicitly names this RyotaK article. The existing by=author field contradicts the recorded channel and review title. It must not be the article author talk; independent analysis is the appropriate relationship.",
+          "evidence": [
+            "https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion",
+            "https://www.youtube.com/watch?v=-L60zSztdCU"
+          ],
+          "publisher": "7urb0",
+          "published": "2026-06-02"
+        }
+      ]
+    },
+    "https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=iZEsCedn304",
+          "title": "ChatGPT Account Takeover: Wildcard Cache Deception",
+          "label": "Independent video analysis",
+          "relation": "analysis",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Independent explanation by sublimetechie, not the original researcher. Its description identifies Harel and accurately ties the video to this specific wildcard-cache article. Retain only as analysis, never as the author talk.",
+          "evidence": [
+            "https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html",
+            "https://www.youtube.com/watch?v=iZEsCedn304"
+          ],
+          "publisher": "sublimetechie",
+          "published": "2025-03-13"
+        }
+      ]
+    },
+    "https://sweet32.info/": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=xNDSv3eJJHI",
+          "title": "tl;dr of sweet32: On the Practical (In-)Security of 64-bit Block Ciphers",
+          "label": "Independent video analysis",
+          "relation": "analysis",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "David Wong describes this as his summary of the SWEET32 paper; he is not one of its authors. Retain only as independent analysis.",
+          "evidence": [
+            "https://sweet32.info/",
+            "https://www.youtube.com/watch?v=xNDSv3eJJHI",
+            "https://cryptologie.net/posts/tldr-of-the-sweet32-attack-on-the-practical-in-security-of-64-bit-block-ciphers/"
+          ],
+          "publisher": "David Wong",
+          "published": "2016-09-21"
+        }
+      ]
+    },
+    "https://www.usenix.org/conference/usenixsecurity22/presentation/senol": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=saca8JzZOa0",
+          "title": "CIF Seminar - Q&A \"Leaky Forms: A Study of Email and Password Exfiltration Before...\" (Asuman Senol)",
+          "label": "Questions and answers",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The named paper, presenting author Asuman Senol, COSIC seminar and date match the immediately preceding full talk, but this is a separate question-and-answer segment. Keep labelled Q&A as a companion, not the full talk player.",
+          "evidence": [
+            "https://usenix.org/conference/usenixsecurity22/presentation/senol",
+            "https://www.youtube.com/watch?v=saca8JzZOa0"
+          ],
+          "publisher": "COSIC - Computer Security and Industrial Cryptography",
+          "published": "2022-11-29"
+        }
+      ]
+    },
+    "https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=nyx8FnhCq7g",
+          "title": "Truncating TLS connections to steal Hotmail accounts",
+          "label": "Demonstration video",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The WOOT paper explicitly cites the authors’ Hotmail and GMail demonstration videos in references 21–22. These are same-work demonstrations, not conference talks; retain labelled demo links rather than a talk player.",
+          "evidence": [
+            "https://usenix.org/conference/woot13/workshop-program/presentation/smyth",
+            "https://www.youtube.com/watch?v=nyx8FnhCq7g",
+            "https://www.usenix.org/system/files/conference/woot13/woot13-smyth.pdf#page=9"
+          ],
+          "publisher": "Ben Smyth",
+          "published": "2013-08-16"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ux_gE_6RuvU",
+          "title": "Truncating TLS connections to access GMail accounts",
+          "label": "Demonstration video",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The WOOT paper explicitly cites the authors’ Hotmail and GMail demonstration videos in references 21–22. These are same-work demonstrations, not conference talks; retain labelled demo links rather than a talk player.",
+          "evidence": [
+            "https://usenix.org/conference/woot13/workshop-program/presentation/smyth",
+            "https://www.youtube.com/watch?v=Ux_gE_6RuvU",
+            "https://www.usenix.org/system/files/conference/woot13/woot13-smyth.pdf#page=9"
+          ],
+          "publisher": "Ben Smyth",
+          "published": "2013-08-16"
+        }
+      ]
+    },
+    "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=_iys-lco2Ug",
+          "title": "USENIX Security '20 - Cached and Confused: Web Cache Deception in the Wild",
+          "label": "Earlier research recording",
+          "relation": "background",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The Escalates paper explicitly calls Cached and Confused its previous 2020 research and describes changed methodology and a new measurement study. The 2020 talk belongs under earlier research, not as this paper’s recording.",
+          "evidence": [
+            "https://usenix.org/system/files/sec22summer_mirheidari.pdf",
+            "https://www.youtube.com/watch?v=_iys-lco2Ug",
+            "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf#page=1",
+            "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf#page=2"
+          ],
+          "publisher": "USENIX",
+          "published": "2020-09-14"
+        }
+      ]
+    },
+    "https://www.youtube.com/watch?v=gVrdE6g_fa8": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=lG7U3fuNw3A",
+          "title": "XSS on Google Search - Sanitizing HTML in The Client?",
+          "label": "Independent video analysis",
+          "relation": "analysis",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The March 31 video by LiveOverflow explains Masato Kinugawa’s actual Google Search XSS; the cited April 7 video discusses how Masato found that same flaw. It is substantive earlier companion analysis, not a conference talk or the identical video.",
+          "evidence": [
+            "https://youtube.com/watch?v=gVrdE6g_fa8",
+            "https://www.youtube.com/watch?v=lG7U3fuNw3A",
+            "https://www.youtube.com/watch?v=gVrdE6g_fa8"
+          ],
+          "publisher": "LiveOverflow",
+          "published": "2019-03-31"
         }
       ]
     }

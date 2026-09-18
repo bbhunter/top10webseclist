@@ -838,38 +838,26 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
     const pdfVersion = pdfLink.pdfVersion || "";
     const originalPdfVersion = pdfLink.originalPdfVersion || "";
 
-    // TALK RECORDINGS, gathered across every link on the bullet. The video is
-    // recorded against the reference it belongs to, and that is not always the
-    // link the reader opens: a paper's recording is regularly found through the
-    // slides beside it. Confidence rides along because the archive is not
-    // equally sure of all of them - a video embedded in the cited page is that
-    // research by construction, a search result is a judgement.
+    // Recordings are admitted for this story by the relationship builder.
+    // Never inherit a background paper's talk or promote an embedded video
+    // merely because its author, subject or page matches.
     const videos = [];
     const seenVideos = new Set();
-    // Several CONFIRMED recordings are several real talks - Orange Tsai gave
-    // that one at three conferences - and each is worth offering by name. Several
-    // unconfirmed ones are the same guess made three times: without a venue to
-    // tell them apart they render as three identical buttons, so only the best
-    // is carried. They arrive ranked, so the best is the first.
-    const anyConfirmed = links.some((link) =>
-      (link.record?.videos || []).some((video) => video.confidence === "confirmed" && !video.date_note));
     for (const link of links) {
-      for (const video of link.record?.videos || []) {
-        const url = safeExternalUrl(video.url);
-        if (!url || seenVideos.has(url) || video.date_note) continue;
-        if (video.confidence !== "confirmed" && (anyConfirmed || videos.length)) continue;
-        seenVideos.add(url);
-        videos.push({
-          url,
-          confidence: video.confidence || "possible",
-          // Minutes, not seconds: the reader is deciding whether to spend the
-          // next half hour, and the shard carries this 400+ times.
-          ...(video.seconds ? { minutes: Math.round(video.seconds / 60) } : {}),
-          ...(video.title ? { videoTitle: video.title } : {}),
-          ...(video.channel ? { channel: video.channel } : {}),
-          ...(video.conference ? { conference: video.conference } : {})
-        });
-      }
+      const video = link.source?.recording;
+      if (link.source?.relation !== "same-work" || link.source?.kind !== "video" || video?.confidence !== "confirmed") continue;
+      const url = safeExternalUrl(link.url);
+      if (!url || seenVideos.has(url)) continue;
+      seenVideos.add(url);
+      videos.push({
+        url,
+        confidence: "confirmed",
+        // Minutes are enough to show the reading-time commitment.
+        ...(video.seconds ? { minutes: Math.round(video.seconds / 60) } : {}),
+        ...(video.title ? { videoTitle: video.title } : {}),
+        ...(video.channel ? { channel: video.channel } : {}),
+        ...(video.conference ? { conference: video.conference } : {})
+      });
     }
 
     items.push({
@@ -4715,11 +4703,21 @@ function youtubeId(url) {
   return match ? match[1] : "";
 }
 
-// Only a confirmed match earns a player. An uncertain one stays a link: giving
-// a guess the same frame as the real talk states it more strongly than the
-// archive can support.
+// The collection builder admits only reviewed same-work talks. Keep the
+// confidence check here as well so other callers cannot embed guesses.
 function playableTalk(item) {
   return (item.videos || []).find((video) => video.confidence === "confirmed" && youtubeId(video.url));
+}
+
+function youtubeStartSeconds(url) {
+  try {
+    const parsed = new URL(url);
+    const value = parsed.searchParams.get("start") || parsed.searchParams.get("t") || parsed.hash.match(/^#t=(.+)$/)?.[1] || "";
+    const match = /^(?:(\d{1,5})h)?(?:(\d{1,5})m)?(?:(\d{1,6})s)?$/.exec(value);
+    const seconds = /^\d{1,6}$/.test(value) ? Number(value)
+      : match ? Number(match[1] || 0) * 3600 + Number(match[2] || 0) * 60 + Number(match[3] || 0) : 0;
+    return seconds <= 86400 ? seconds : 0;
+  } catch { return 0; }
 }
 
 // Tearing the iframe out is what actually stops the audio. Pausing through the
@@ -4764,9 +4762,9 @@ function renderTalkPanel(item) {
 
   panel.querySelector(".talk-play-action").addEventListener("click", () => {
     const frame = document.createElement("iframe");
-    // `-nocookie` and no parameters beyond the one that starts it: the reader
-    // asked for this video, not for a related-video rail afterwards.
-    frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtubeId(talk.url))}?autoplay=1&rel=0`;
+    // Preserve a reviewed segment's start time in a longer conference stream.
+    const start = youtubeStartSeconds(talk.url);
+    frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtubeId(talk.url))}?autoplay=1&rel=0${start ? `&start=${start}` : ""}`;
     frame.title = talk.videoTitle || `Recording: ${item.title}`;
     frame.loading = "lazy";
     frame.referrerPolicy = "strict-origin-when-cross-origin";

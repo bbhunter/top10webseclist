@@ -20,6 +20,14 @@ manifest entry, and the site plays the confirmed ones inside the record.
  {
   "url": "https://www.youtube.com/watch?v=nb91qhj5cOE",
   "confidence": "confirmed",
+  "relation": "same-work",
+  "role": "talk",
+  "review": {
+    "checked": "2026-09-18",
+    "decision": "same-work",
+    "reason": "The named researcher presents the same REcollapse work at BSides Lisbon.",
+    "evidence": ["https://0xacb.com/2022/11/21/recollapse", "https://www.youtube.com/watch?v=nb91qhj5cOE"]
+  },
   "found": "raw-embed",
   "by": "conference stage",
   "conference": "BSides",
@@ -40,7 +48,15 @@ omitted where the archive cannot name a venue, because the site prints it as a
 fact. A `steps.videos` row is recorded beside the array, the same as any other
 stage: `{"result": "recorded", "best": "confirmed", "count": 2, "rule": …}`.
 
-**THREE RULES DECIDE ADMISSION, and they are what the band means.** A recording
+**Research identity is required before confidence.** Revalidate the specific
+paper or disclosure, its authors and the recording's content or identifying
+conference metadata. Shared topics, authors, products, similar titles or an
+embed on a page do not establish the same work. Conference programme pages can
+embed several unrelated talks. Record `relation: "same-work"`, `role: "talk"`
+and a dated `review` with the reason and evidence only after this check.
+Unresolved associations use `relation: "unresolved"` and stay unpublished.
+
+**THREE FURTHER RULES DECIDE ADMISSION.** A recording
 is `confirmed` only when all three hold:
 
 1. **It is the author's, or their company's, or the conference's stage.** A
@@ -57,13 +73,18 @@ thing: it matched a Hairspray soundtrack to "I know where you've been", a DEF
 CON 32 talk to a 2008 finding, and a Node.js talk to a Python paper. The rules
 are the whole record.
 
-**Below `confirmed` the archive is guessing, and the site says so.** A confirmed
-match with a YouTube id gets a player inside the record. Everything else is one
-button reading `Potential related video`, which never names a venue - "DEF CON
-talk" is a claim, the same link without the claim is what lets a reader judge
-it. Only one such guess is offered per record, and none at all where a confirmed
-one exists. Downgrading a wrong match to `possible` is not a fix; a video that
-is not the author's, or not this research, is REMOVED.
+**Only confirmed same-work talks get recording controls.** A confirmed match
+with a YouTube id gets a player inside the record. Guesses stay unpublished.
+Downgrading a wrong match to `possible` is not a fix: remove the mistaken
+association. Useful background, follow-up or independent analysis belongs in
+the related-source registry with its actual relationship and separate credit.
+Same-work demonstrations and Q&A remain labelled source links, with roles
+`demonstration` and `q-and-a`, rather than full-talk controls.
+
+Story relationships take precedence over a source's recording metadata. Never
+inherit a background or analysis source's talk into the citing paper's player,
+recording badge or filter. Apply explicit related-source overrides and exclusions
+before generating recording membership; every website theme uses that result.
 
 **Look in the content store before searching anywhere.** Sanitisation strips
 `<iframe>` from a published document by design, so an embedded talk is invisible

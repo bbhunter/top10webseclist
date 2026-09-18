@@ -21,7 +21,8 @@ class TestRelatedSources(unittest.TestCase):
         support.write(self.root, "2024.md", f"- [Research]({self.main})\n")
         support.write(self.root, "2025.md", f"- [Research revisited]({self.main})\n")
         self.manifest = {"urls": {self.main: {"videos": [
-            {"url": "https://youtube.com/watch?v=confirmed", "confidence": "confirmed"},
+            {"url": "https://youtube.com/watch?v=confirmed", "confidence": "confirmed", "relation": "same-work", "role": "talk",
+             "review": {"decision": "same-work", "checked": "2026-09-18", "reason": "The author identifies this as the paper's talk.", "evidence": [self.main]}},
             {"url": "https://youtube.com/watch?v=guess", "confidence": "possible"},
             {"url": "https://youtube.com/watch?v=date-conflict", "confidence": "confirmed", "date_note": "Needs review"},
         ]}}}
@@ -45,6 +46,43 @@ class TestRelatedSources(unittest.TestCase):
         video = next(source for source in group["sources"] if source["kind"] == "video")
         self.assertEqual(video["preservation"], "link-only")
         self.assertIn("confirmed", video["url"])
+        self.assertEqual(video["recording"]["confidence"], "confirmed")
+
+    def test_background_paper_does_not_lend_its_recording_to_another_story(self):
+        self.manifest["urls"][self.paper] = self.manifest["urls"].pop(self.main)
+        support.write(self.root, "archived-references/manifest.json", json.dumps(self.manifest))
+        self.extra["relation"] = "background"
+        self.save_policy()
+        self.assertFalse(any(s.get("recording") for s in self.group()["sources"]))
+        self.extra["relation"] = "same-work"
+        self.save_policy()
+        self.assertTrue(any(s.get("recording") for s in self.group()["sources"]))
+
+    def test_reviewed_video_relation_and_exclusion_override_source_recording(self):
+        video_url = self.manifest["urls"][self.main]["videos"][0]["url"]
+        self.policy["groups"][self.main]["sources"].append({**self.extra,
+            "url": video_url, "kind": "video", "relation": "analysis"})
+        self.save_policy()
+        self.assertFalse(any(s.get("recording") for s in self.group()["sources"]))
+        self.policy["groups"][self.main]["sources"].pop()
+        self.policy["groups"][self.main]["exclude"] = [video_url]
+        self.save_policy()
+        self.assertFalse(any(s["url"] == video_url for s in self.group()["sources"]))
+
+    def test_old_confidence_without_same_work_review_cannot_publish_a_talk(self):
+        del self.manifest["urls"][self.main]["videos"][0]["relation"]
+        support.write(self.root, "archived-references/manifest.json", json.dumps(self.manifest))
+        self.assertFalse(any(s.get("recording") for s in self.group()["sources"]))
+
+    def test_same_work_demo_is_not_a_full_talk(self):
+        self.manifest["urls"][self.main]["videos"][0]["role"] = "demonstration"
+        support.write(self.root, "archived-references/manifest.json", json.dumps(self.manifest))
+        self.assertFalse(any(s.get("recording") for s in self.group()["sources"]))
+
+    def test_same_work_label_requires_recorded_review_evidence(self):
+        self.manifest["urls"][self.main]["videos"][0].pop("review")
+        support.write(self.root, "archived-references/manifest.json", json.dumps(self.manifest))
+        self.assertFalse(any(s.get("recording") for s in self.group()["sources"]))
 
     def test_primary_change_and_reordering_keep_story_and_source_ids(self):
         before = self.group()
@@ -98,7 +136,7 @@ class TestRelatedSources(unittest.TestCase):
         self.extra["label"] = "Part 1"
         self.extra["title"] = "Secure by Design"
         self.save_policy()
-        self.assertEqual(self.group()["sources"][-1]["title"], "Secure by Design")
+        self.assertEqual(next(s for s in self.group()["sources"] if s["url"] == self.paper)["title"], "Secure by Design")
 
     def test_companion_credits_must_match_all_archive_authors(self):
         self.manifest["urls"][self.paper] = {"authors": ["Alice", "Bob"]}
@@ -111,7 +149,7 @@ class TestRelatedSources(unittest.TestCase):
                     self.group()
         self.extra["authors"] = ["Alice", "Bob"]
         self.save_policy()
-        self.assertEqual(self.group()["sources"][-1]["authors"], ["Alice", "Bob"])
+        self.assertEqual(next(s for s in self.group()["sources"] if s["url"] == self.paper)["authors"], ["Alice", "Bob"])
 
     def test_withdrawn_archive_credit_cannot_return_from_companion_metadata(self):
         self.manifest["urls"][self.paper] = {"authors": []}

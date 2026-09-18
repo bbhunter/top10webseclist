@@ -171,23 +171,6 @@ def build(root, policy=None, manifest=None):
             known[sid] = source
     for group in groups.values():
         decision = decisions.pop(identity(group["identity"]), {})
-        # Confirmed recordings keep their existing evidence; candidates/date
-        # conflicts never become confirmed just because they were migrated.
-        known = {source["id"] for source in group["sources"]}
-        for linked in list(group["sources"]):
-            record = lookup.get(identity(linked["url"]), {})
-            for video in record.get("videos", []):
-                if video.get("confidence") != "confirmed" or video.get("date_note"):
-                    continue
-                sid = stable_id(video["url"])
-                if sid in known:
-                    continue
-                source = {"id": sid, "url": video["url"], "label": "Talk recording", "relation": "same-work", "kind": "video", "preservation": "link-only", "basis": "confirmed-recording", "evidence": [linked["url"]]}
-                for key in ("title", "published", "channel", "conference", "seconds"):
-                    if video.get(key):
-                        source[key] = video[key]
-                group["sources"].append(source)
-                known.add(sid)
         excluded = {identity(url) for url in decision.get("exclude", [])}
         group["sources"] = [source for source in group["sources"] if identity(source["url"]) not in excluded]
         for extra in decision.get("sources", []):
@@ -207,6 +190,40 @@ def build(root, policy=None, manifest=None):
                 existing.update(row)
             else:
                 group["sources"].append(row)
+        # Resolve story relationships before attaching recordings. A background
+        # paper's valid talk is not a talk for the paper that cites it.
+        known = {source["id"]: source for source in group["sources"]}
+        for linked in list(group["sources"]):
+            if linked["relation"] not in {"same-work", "part", "alternate"}:
+                continue
+            record = lookup.get(identity(linked["url"]), {})
+            for video in record.get("videos", []):
+                review = video.get("review") or {}
+                if (video.get("confidence") != "confirmed" or video.get("date_note")
+                        or video.get("relation") != "same-work"
+                        or video.get("role") != "talk"
+                        or review.get("decision") != "same-work"
+                        or not review.get("checked") or not review.get("reason") or not review.get("evidence")
+                        or identity(video["url"]) in excluded):
+                    continue
+                sid = stable_id(video["url"])
+                source = known.get(sid)
+                if source:
+                    # A reviewed background/analysis relationship wins over a
+                    # recording attached to another member of this story.
+                    if source["relation"] == "related" and source["basis"] == "list-citation":
+                        source["relation"] = "same-work"
+                    if source["relation"] != "same-work":
+                        continue
+                else:
+                    source = {"id": sid, "url": video["url"], "label": "Talk recording", "relation": "same-work", "kind": "video", "preservation": "link-only", "basis": "confirmed-recording", "evidence": [linked["url"]]}
+                    group["sources"].append(source)
+                    known[sid] = source
+                source["recording"] = {key: video[key] for key in
+                    ("confidence", "title", "published", "channel", "conference", "seconds") if video.get(key)}
+                for key in ("title", "published", "channel", "conference", "seconds"):
+                    if video.get(key):
+                        source.setdefault(key, video[key])
         if decision.get("main"):
             group["main"] = stable_id(decision["main"])
         if group["main"] not in {s["id"] for s in group["sources"]}:

@@ -1011,11 +1011,44 @@ const contributionChecks = [
 // so the two ways it can silently disappear are the shard dropping the field and
 // the dialog dropping the control. Both are asserted, along with the two rules
 // that make an off-site link safe to offer and an uncertain one honest.
-// Expected independently of app.js: a bullet earns a talk control when ANY of
-// its links names a reference the archive gave a video to.
+// A talk belongs to this story only when its reviewed media source says so.
 const sourceGroups = JSON.parse(await readFile(path.join(root, "archived-references/source-groups.json"), "utf8"));
+// Regression: even a confirmed recording on a background paper must not
+// create a talk player, badge or filter match for the article citing it.
+const recordingIsolation = clientEval(`(() => {
+  const article = "https://example.org/article";
+  const background = "https://example.org/earlier-paper";
+  const video = "https://www.youtube.com/watch?v=abcdefghijk";
+  const lookup = new Map([[normalizeUrl(background), {videos: [{url: video, confidence: "confirmed"}]}]]);
+  const base = {id: "article", url: article, label: "Article", relation: "same-work", kind: "article"};
+  const prior = {id: "prior", url: background, label: "Earlier work", relation: "background", kind: "paper"};
+  const clip = {id: "clip", url: video, label: "Related recording", relation: "background", kind: "video", recording: {confidence: "confirmed"}};
+  const group = {main: "article", sources: [base, prior, clip]};
+  const parse = () => parseYearMarkdown("- [Article](" + article + ")", "2024", lookup, {status: "final"}, {"2024.md:1": group})[0];
+  const backgroundItem = parse();
+  clip.relation = "same-work";
+  const sameWorkItem = parse();
+  delete clip.recording;
+  const demoItem = parse();
+  return {
+    background: backgroundItem.videos?.length || 0,
+    backgroundPlayer: Boolean(playableTalk(backgroundItem)),
+    backgroundBadge: videoMark(backgroundItem),
+    sameWork: sameWorkItem.videos?.length || 0,
+    demo: demoItem.videos?.length || 0,
+    companionRetained: backgroundItem.links.some(link => link.url === video)
+  };
+})()`);
+assert.deepEqual(JSON.parse(JSON.stringify(recordingIsolation)), {
+  background: 0, backgroundPlayer: false, backgroundBadge: "", sameWork: 1,
+  demo: 0, companionRetained: true
+});
+assert.equal(clientEval('youtubeStartSeconds("https://youtu.be/abcdefghijk?t=1516")'), 1516);
+assert.equal(clientEval('youtubeStartSeconds("https://youtu.be/abcdefghijk?t=1h2m3s")'), 3723);
+assert.equal(clientEval('youtubeStartSeconds("https://youtu.be/abcdefghijk?t=999999")'), 0);
+assert.equal(clientEval('youtubeStartSeconds("https://youtu.be/abcdefghijk?t=bad")'), 0);
 const expectedVideoRecords = Object.values(sourceGroups.groups).reduce((count, group) => count +
-  (group.sources.some(source => lookup.get(normalizeUrl(source.url))?.videos?.some(video => !video.date_note)) ? group.citations.length : 0), 0);
+  (group.sources.some(source => source.kind === "video" && source.relation === "same-work" && source.recording?.confidence === "confirmed") ? group.citations.length : 0), 0);
 const shardVideoRows = [];
 for (const record of yearRecords) {
   const shard = JSON.parse(await readFile(path.join(root, `website/data/collections/${record.id}.json`), "utf8"));
@@ -1046,7 +1079,7 @@ const videoChecks = [
   // dropped allowlist key would show up here and nowhere else.
   shardVideoRecords.size === expectedVideoRecords,
   shardVideoRows.every((video) => /^https:\/\//.test(video.url)),
-  shardVideoRows.every((video) => ["confirmed", "likely", "possible"].includes(video.confidence)),
+  shardVideoRows.every((video) => video.confidence === "confirmed"),
   // Every video the page offers is one the archive actually recorded.
   shardVideoRows.every((video) => manifestVideoUrls.has(video.url)),
   // A channel is not a venue, and these buckets were judging aids, not names.
