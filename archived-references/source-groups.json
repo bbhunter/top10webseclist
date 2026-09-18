@@ -22,7 +22,7 @@
     "2025.md": "eb8999591f2aab36c02f098873fad224d2e7a10d66c7943fb3bc40439e2498f1",
     "2026-ai.md": "dc64f2f2c219d932d73f1d22cd416f14caf6a6c6a71174792346e2659cd885ad",
     "archived-references/manifest.json": "58960660ba7da6f61857aa4c7decd40602ee6b1d6e561a50772214039058d3ee",
-    "tools/references/related-sources.json": "1b4d17c4bf29abd8801ca7d0a06bc5e2b400341e0182342088f6f3248a0cc372",
+    "tools/references/related-sources.json": "948bd852674c4eeed3d2a379d9ac6b5c15a43139c217a6ac97281ed62f451fb3",
     "website/archive-years.json": "5745f4e15da525f730aa53b6e1ee9062ad57b190834f54bb34a2756a4986f800"
   },
   "groups": {
@@ -20858,34 +20858,25 @@
     "research-1e4c55973991f4ddc49c": {
       "id": "research-1e4c55973991f4ddc49c",
       "identity": "https://vimeo.com/ondemand/44conlondon2015/142249673",
-      "main": "source-1e4c55973991f4ddc49c",
+      "main": "source-61f12be9bf99f9b447e4",
       "citations": [
         "2015.md:14"
       ],
       "sources": [
         {
-          "id": "source-1e4c55973991f4ddc49c",
-          "label": "Hunting ASynchronous Vulnerabilities",
-          "url": "https://vimeo.com/ondemand/44conlondon2015/142249673",
-          "relation": "same-work",
-          "kind": "video",
-          "preservation": "link-only",
-          "basis": "list-citation",
-          "evidence": [
-            "2015.md:14"
-          ]
-        },
-        {
           "id": "source-61f12be9bf99f9b447e4",
-          "label": "Research",
+          "label": "Full research article",
           "url": "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
-          "relation": "related",
+          "relation": "same-work",
           "kind": "article",
           "preservation": "archive",
-          "basis": "list-citation",
+          "basis": "reviewed-relationship",
           "evidence": [
-            "2015.md:14"
-          ]
+            "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+            "https://vimeo.com/ondemand/44conlondon2015/142249673"
+          ],
+          "title": "Hunting Asynchronous Vulnerabilities",
+          "reason": "The historical nomination labels this as Hunting Asynchronous Vulnerabilities and links this matching James Kettle research article. Its original Vimeo URL now identifies a different presentation."
         },
         {
           "id": "source-b11df7e04ef59967e7b0",
@@ -20900,11 +20891,39 @@
             "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
           ],
           "basis": "reviewed-relationship"
+        },
+        {
+          "id": "source-9a5e4a192a1b3a1f63a8",
+          "label": "BSides Manchester recording",
+          "preservation": "link-only",
+          "url": "https://www.youtube.com/watch?v=ha6LD1-RiJU",
+          "title": "2016 - James Kettle - Hunting Asynchronous Vulnerabilities",
+          "relation": "same-work",
+          "kind": "video",
+          "publisher": "BSides Manchester",
+          "reason": "The conference recording names James Kettle and the same Hunting Asynchronous Vulnerabilities research. Keep it with the matching article rather than the Vimeo URL that now identifies Smart Muttering.",
+          "evidence": [
+            "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+            "https://www.youtube.com/watch?v=ha6LD1-RiJU"
+          ],
+          "basis": "reviewed-relationship",
+          "recording": {
+            "confidence": "confirmed",
+            "title": "2016 - James Kettle - Hunting Asynchronous Vulnerabilities",
+            "published": "2016-09-26",
+            "channel": "BSides Manchester",
+            "conference": "BSides",
+            "seconds": 2390
+          },
+          "published": "2016-09-26",
+          "channel": "BSides Manchester",
+          "conference": "BSides",
+          "seconds": 2390
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
+        "checked": "2026-09-18",
+        "scope": "Recording identity revalidation; mismatched original Vimeo source excluded from the active source view while preserving the historical citation."
       }
     },
     "research-7207f6a00cd1cd328279": {

@@ -1013,6 +1013,13 @@ const contributionChecks = [
 // that make an off-site link safe to offer and an uncertain one honest.
 // A talk belongs to this story only when its reviewed media source says so.
 const sourceGroups = JSON.parse(await readFile(path.join(root, "archived-references/source-groups.json"), "utf8"));
+const oldVimeoUrl = "https://vimeo.com/ondemand/44conlondon2015/142249673";
+const asyncResearch = Object.values(sourceGroups.groups).find(group => group.identity === oldVimeoUrl);
+assert.ok(asyncResearch, "Historical asynchronous research identity is preserved");
+assert.equal(asyncResearch.sources.find(source => source.id === asyncResearch.main)?.url,
+  "https://portswigger.net/research/hunting-asynchronous-vulnerabilities");
+assert.ok(!asyncResearch.sources.some(source => source.url === oldVimeoUrl), "Mismatched Vimeo presentation must not remain an active research source");
+assert.ok(asyncResearch.sources.some(source => source.url === "https://www.youtube.com/watch?v=ha6LD1-RiJU" && source.relation === "same-work"));
 // Regression: even a confirmed recording on a background paper must not
 // create a talk player, badge or filter match for the article citing it.
 const recordingIsolation = clientEval(`(() => {

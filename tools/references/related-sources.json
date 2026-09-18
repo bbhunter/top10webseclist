@@ -1595,12 +1595,43 @@
           "evidence": [
             "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
           ]
+        },
+        {
+          "url": "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+          "label": "Full research article",
+          "title": "Hunting Asynchronous Vulnerabilities",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "The historical nomination labels this as Hunting Asynchronous Vulnerabilities and links this matching James Kettle research article. Its original Vimeo URL now identifies a different presentation.",
+          "evidence": [
+            "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+            "https://vimeo.com/ondemand/44conlondon2015/142249673"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ha6LD1-RiJU",
+          "label": "BSides Manchester recording",
+          "title": "2016 - James Kettle - Hunting Asynchronous Vulnerabilities",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "publisher": "BSides Manchester",
+          "reason": "The conference recording names James Kettle and the same Hunting Asynchronous Vulnerabilities research. Keep it with the matching article rather than the Vimeo URL that now identifies Smart Muttering.",
+          "evidence": [
+            "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+            "https://www.youtube.com/watch?v=ha6LD1-RiJU"
+          ]
         }
       ],
       "review": {
-        "checked": "2026-09-14",
-        "scope": "relationship evidence in archived source prose; selected live checks; not an exhaustive web search"
-      }
+        "checked": "2026-09-18",
+        "scope": "Recording identity revalidation; mismatched original Vimeo source excluded from the active source view while preserving the historical citation."
+      },
+      "main": "https://portswigger.net/research/hunting-asynchronous-vulnerabilities",
+      "exclude": [
+        "https://vimeo.com/ondemand/44conlondon2015/142249673"
+      ]
     },
     "https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html": {
       "sources": [
