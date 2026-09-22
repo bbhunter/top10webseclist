@@ -2433,7 +2433,7 @@ each one is re-runnable.
 | <https://websec.wordpress.com/wp-content/uploads/2010/11/sqli2.pdf> | not yet acquired |
 | <https://worst.fit/assets/EU-24-Tsai-WorstFit-Unveiling-Hidden-Transformers-in-Windows-ANSI.pdf> | not yet acquired |
 | <https://www.ambionics.io/blog/iconv-cve-2024-2961-p1> | not yet acquired |
-| <https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution> | not yet acquired |
+| <https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution> | unreadable over plain HTTP and no browser DOM stored |
 | <https://www.blackhat.com/asia-23/briefings/schedule/#stealing-with-style-using-css-to-exploit-protonmail--friends-31697> | not yet acquired |
 | <https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Hasegawa/BlackHat-japan-08-Hasegawa-Char-Encoding.pdf> | not yet acquired |
 | <https://www.blackhat.com/us-23/briefings/schedule/index.html#smashing-the-state-machine-the-true-potential-of-web-race-conditions-31712> | not yet acquired |

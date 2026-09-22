@@ -2508,14 +2508,6 @@ or fix the route and re-run.
 - What would fix it: Unknown cause. Read the reason and decide.
 - Cited at: `2024.md:62`
 
-## https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution
-
-- Outcome: `?` (no bytes stored)
-- Kind: article
-- Reason: not yet acquired
-- What would fix it: Unknown cause. Read the reason and decide.
-- Cited at: `2026-ai.md:71`
-
 ## https://www.blackhat.com/asia-23/briefings/schedule/#stealing-with-style-using-css-to-exploit-protonmail--friends-31697
 
 - Outcome: `?` (no bytes stored)
@@ -6211,6 +6203,14 @@ or fix the route and re-run.
 - Reason: extraction produced 34 characters, below the floor
 - What would fix it: The page is built by JavaScript and the browser ladder could not settle it. Try saving the page by hand and importing it.
 - Cited at: `2026-ai.md:96`
+
+## https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution
+
+- Outcome: `skipped` (no bytes stored)
+- Kind: article
+- Reason: Live source confirmed by maintainer and independent web reader on 2026-09-22; archive capture blocked by bot protection (HTTP 403). Full Markdown and PDF capture remains pending.
+- What would fix it: Unknown cause. Read the reason and decide.
+- Cited at: `2026-ai.md:71`
 
 ## https://www.usenix.org/conference/hotbots-07/ghost-browser-analysis-web-based-malware
 

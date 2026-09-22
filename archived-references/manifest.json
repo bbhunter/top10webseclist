@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-22T09:39:11+00:00",
+ "updated": "2026-09-22T10:13:05+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -9890,23 +9890,31 @@
     "2026-ai.md:71"
    ],
    "cited_title": "Compromising Cleo Harmony: A SAML Bypass Chain to Arbitrary Code Execution",
+   "content_gap": "Live source confirmed by maintainer and independent web reader on 2026-09-22; archive capture blocked by bot protection (HTTP 403). Full Markdown and PDF capture remains pending.",
+   "decision": null,
    "first_seen_utc": "2026-09-18T11:05:13+00:00",
    "health": {
-    "evidence": "bot wall: Just a moment... | browser ladder could not confirm: the rendered page is a refusal, not the document (matched 'ray id:' in 719 characters of visible text)",
+    "evidence": "The maintainer confirmed the original article is readable on 2026-09-22. An independent web reader also returned the publisher article, including its title, byline and full section structure (indexed copy crawled two days before this review). The archive HTTP probe and sandbox browser still encounter bot protection; those failures remain in their own steps. This confirms source availability, not a successful archival capture.",
     "final_url": "https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution",
-    "http": 403,
+    "http": 0,
     "redirect_chain": [],
     "snapshot": "",
-    "source": "probe",
-    "status": "blocked",
+    "source": "manual-review",
+    "status": "ok",
     "text_length": 0,
-    "title": "Just a moment..."
+    "title": "Compromising Cleo Harmony: A SAML Bypass Chain to Arbitrary Code Execution"
    },
    "kind": "article",
    "spellings": [
     "https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution"
    ],
    "steps": {
+    "acquire": {
+     "raw_sha256": "",
+     "reason": "unreadable over plain HTTP and no browser DOM stored",
+     "result": "skipped",
+     "utc": "2026-09-22T10:03:18+00:00"
+    },
     "check": {
      "evidence": "bot wall: Just a moment...",
      "final_url": "https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution",
@@ -9918,14 +9926,21 @@
      "status": "blocked",
      "text_length": 0,
      "title": "Just a moment...",
-     "utc": "2026-09-18T11:05:18+00:00"
+     "utc": "2026-09-22T10:03:16+00:00"
     },
     "check-browser": {
      "attempts": 3,
      "error": "the rendered page is a refusal, not the document (matched 'ray id:' in 719 characters of visible text)",
      "result": "unconfirmed",
-     "utc": "2026-09-18T11:06:26+00:00",
+     "utc": "2026-09-22T10:04:31+00:00",
      "wall_seen": false
+    },
+    "check-manual": {
+     "capture": "pending",
+     "evidence": "The maintainer confirmed the original article is readable on 2026-09-22. An independent web reader also returned the publisher article, including its title, byline and full section structure (indexed copy crawled two days before this review). The archive HTTP probe and sandbox browser still encounter bot protection; those failures remain in their own steps. This confirms source availability, not a successful archival capture.",
+     "result": "live",
+     "source_url": "https://www.armadin.com/blog-posts/compromising-cleo-harmony-a-saml-bypass-chain-to-arbitrary-code-execution",
+     "utc": "2026-09-22T10:13:05+00:00"
     }
    }
   },
