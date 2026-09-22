@@ -32,7 +32,11 @@
 :root[data-discovery-theme] .topbar { box-shadow:0 1px 0 var(--line); }
 :root[data-discovery-theme] .global-search input { color:var(--ink); font-size:.85rem; }
 :root[data-discovery-theme] .global-search input::placeholder { color:var(--faint); }
-:root[data-discovery-theme] :is(.global-search kbd,.sidebar-project-links a span,.project-links a span) { color:var(--view-accent); background:var(--view-soft); border-color:var(--line); }
+:root[data-discovery-theme] :is(.global-search kbd,.sidebar-project-links a span) { color:var(--view-accent); background:var(--view-soft); border-color:var(--line); }
+:root[data-discovery-theme] :is(.project-links a,.quiet-button,.sound-button,.view-fullscreen):hover { color:var(--ink); background:var(--panel-2); border-color:var(--line-strong); }
+:root[data-discovery-theme] .quiet-button.contribute-launch { color:var(--accent-ink); background:var(--view-accent); border-color:var(--view-accent); }
+:root[data-discovery-theme] .quiet-button.contribute-launch:hover { color:var(--accent-ink); background:color-mix(in srgb,var(--view-accent) 88%,var(--ink)); }
+:root[data-discovery-theme] :is(.sound-button,.site-fullscreen)[aria-pressed="true"] { color:var(--accent-ink); background:var(--view-accent); border-color:var(--view-accent); }
 :root[data-discovery-theme] :is(.site-footer,.support-action) { color:var(--muted); background:var(--panel); border-color:var(--line); }
 :root[data-discovery-theme] .support-action strong { color:var(--ink); }
 :root[data-discovery-theme] .sponsor-link > b { color:var(--view-accent); }
@@ -42,7 +46,7 @@
 :root[data-discovery-theme] .view-metric { display:none; }
 :root[data-discovery-theme] .view-intro .view-mode { margin:0 0 6px; }
 :root[data-discovery-theme] .view-intro-tools { display:flex; align-items:center; gap:12px; }
-:root[data-discovery-theme] .view-intro .view-fullscreen { min-height:42px; }
+:root[data-discovery-theme] .view-intro .view-fullscreen { min-height:var(--control-height); }
 :root[data-discovery-theme] .view-intro .discovery-appearance > span { display:none; }
 :root[data-discovery-theme] .view-intro .view-mode { font-weight:650; }
 :root[data-discovery-theme] .global-results { background:var(--panel); color:var(--ink); border-color:var(--line-strong); }

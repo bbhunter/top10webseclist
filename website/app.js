@@ -1766,8 +1766,8 @@ function updateFullscreenButton(button, active, title) {
   if (!button) return;
   button.setAttribute("aria-pressed", String(active));
   button.innerHTML = active
-    ? '<span aria-hidden="true">×</span> Exit full screen'
-    : '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg> Full screen';
+    ? '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M3 8h5V3m8 0v5h5M8 21v-5H3m18 0h-5v5"/></svg><span class="action-label">Exit full screen</span>'
+    : '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg><span class="action-label">Full screen</span>';
   button.title = active ? "Exit full screen" : title;
 }
 

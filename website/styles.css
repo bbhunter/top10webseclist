@@ -29,6 +29,8 @@
     --coral: #ff8e73;
     --violet: #bda7ff;
     --radius: 18px;
+    --control-height: 44px;
+    --control-radius: 8px;
     --mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --view-accent: #7899ff;
@@ -236,65 +238,63 @@
     display: flex;
     min-height: 75px;
     align-items: center;
-    gap: 18px;
-    padding: 13px clamp(22px, 4vw, 64px);
+    gap: 12px;
+    padding: 14px clamp(22px, 3vw, 48px);
     background: rgba(12, 14, 21, .86);
     border-bottom: 1px solid var(--line);
     -webkit-backdrop-filter: blur(22px); backdrop-filter: blur(22px);
   }
   .global-search {
     display: flex;
-    width: min(580px, 55vw);
+    flex: 1 1 260px;
+    min-width: 160px;
+    height: var(--control-height);
     align-items: center;
     gap: 10px;
     padding: 0 14px;
     color: var(--faint);
     background: rgba(20, 24, 36, .82);
     border: 1px solid var(--line);
-    border-radius: 3px;
+    border-radius: var(--control-radius);
   }
   .global-search > span { color: var(--view-accent); }
   .global-search:focus-within { border-color: color-mix(in srgb,var(--view-accent) 62%,transparent); box-shadow: 0 0 0 3px var(--view-soft); }
-  .global-search input { width: 100%; padding: 10px 0; color: var(--ink); background: transparent; border: 0; outline: 0; font-size: .82rem; }
+  .global-search input { width: 100%; min-width: 0; padding: 10px 0; color: var(--ink); background: transparent; border: 0; outline: 0; font-size: .82rem; }
   .global-search input::placeholder { color: var(--faint); }
   kbd { padding: 3px 6px; color: var(--faint); background: #07100e; border: 1px solid var(--line); border-radius: 5px; font: .6rem var(--mono); }
-  .project-links { display: flex; align-items: center; gap: 5px; margin-left: auto; }
-  .project-links a {
+  .project-links { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; }
+  /* One control shape throughout the shared toolbar. Labels never wrap and
+     icons cannot shrink when space becomes tight. */
+  .project-links a, .quiet-button, .sound-button, .mobile-menu, .view-fullscreen {
     display: inline-flex;
-    min-height: 38px;
+    flex: 0 0 auto;
+    min-height: var(--control-height);
     align-items: center;
-    gap: 7px;
-    padding: 7px 9px;
-    color: var(--muted);
-    border: 1px solid transparent;
-    border-radius: 3px;
-    font: 650 .57rem var(--mono);
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  .project-links a:hover { color: var(--ink); background: rgba(120,153,255,.07); border-color: var(--line); }
-  .project-links a span { display: grid; width: 24px; height: 24px; place-items: center; color: var(--accent); background: rgba(255,180,84,.08); border: 1px solid rgba(255,180,84,.18); font-size: .51rem; letter-spacing: .03em; }
-  .project-links a:nth-child(2) span { color: var(--mint); background: rgba(130,245,178,.07); border-color: rgba(130,245,178,.16); }
-  .project-links a:nth-child(3) span { color: var(--signal); background: rgba(120,153,255,.08); border-color: rgba(120,153,255,.18); }
-  .project-links a.sponsor-link { color: var(--coral); }
-  .project-links a.sponsor-link span { color: var(--coral); background: rgba(255,142,115,.09); border-color: rgba(255,142,115,.22); }
-  .project-links a.sponsor-link:hover { color: var(--ink); background: rgba(255,142,115,.09); border-color: rgba(255,142,115,.28); }
-  .top-actions { display: flex; align-items: center; gap: 8px; }
-  .quiet-button, .sound-button, .mobile-menu {
+    justify-content: center;
+    gap: 8px;
     padding: 10px 13px;
     color: var(--muted);
-    background: transparent;
+    background: var(--panel);
     border: 1px solid var(--line);
-    border-radius: 3px;
-    font: 650 .62rem var(--mono);
-    letter-spacing: .02em;
+    border-radius: var(--control-radius);
+    font: 600 .75rem/1.25 var(--sans);
+    text-decoration: none;
+    white-space: nowrap;
     cursor: pointer;
+    /* Switch text and fill together so theme changes preserve contrast. */
+    transition: border-color .16s ease, box-shadow .16s ease;
   }
-  .quiet-button:hover, .sound-button:hover { color: var(--ink); border-color: var(--line-strong); }
+  .project-links a:hover, .quiet-button:hover, .sound-button:hover, .view-fullscreen:hover { color: var(--ink); background: var(--panel-2); border-color: var(--line-strong); }
+  .project-links a:active, .quiet-button:active, .sound-button:active { box-shadow: inset 0 1px 3px #0002; }
+  :is(.quiet-button,.sound-button,.view-fullscreen):disabled { opacity: .55; cursor: default; }
+  .project-links a span { display: grid; flex: 0 0 18px; width: 18px; height: 18px; place-items: center; color: currentColor; font: 700 .62rem/1 var(--mono); }
+  .project-links a b { font-weight: inherit; }
+  .top-actions { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; }
+  :is(.quiet-button,.sound-button,.view-fullscreen) svg { flex: 0 0 16px; }
   .site-fullscreen[hidden] { display: none; }
   .site-fullscreen[aria-pressed="true"] { color: var(--accent-ink); background: var(--accent); border-color: var(--accent); }
-  .sound-button { width: 38px; color: var(--accent); font-weight: 900; }
-  .sound-button[aria-pressed="true"] { color: var(--faint); text-decoration: line-through; }
+  .sound-button { width: var(--control-height); padding: 0; }
+  .sound-button[aria-pressed="true"] { color: var(--ink); background: var(--panel-2); border-color: var(--line-strong); }
   .mobile-menu { display: none; }
   .mobile-menu-backdrop { display: none; }
 
@@ -341,8 +341,6 @@
   .view-metric { min-width: 150px; padding-left: 20px; border-left: 1px solid var(--line-strong); }
   .view-metric span { display: block; color: var(--view-accent); font: 300 clamp(1.8rem, 3vw, 3rem) var(--mono); letter-spacing: -.07em; }
   .view-metric small { color: var(--faint); font: .61rem/1.45 var(--mono); text-transform: uppercase; }
-  .view-fullscreen { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 38px; padding: 8px 12px; color: var(--muted); background: rgba(20,24,36,.76); border: 1px solid var(--line); border-radius: 3px; font: 650 .58rem var(--mono); cursor: pointer; }
-  .view-fullscreen:hover { color: var(--ink); border-color: var(--line-strong); }
   .view-fullscreen[hidden] { display: none; }
   .view-root { min-height: 600px; }
 
@@ -694,8 +692,8 @@
   /* The same action wears three shapes - a toolbar button, a menu tile and a
      footer card - so the launcher class carries only the colour, and each host
      keeps its own layout. */
-  .quiet-button.contribute-launch { display: inline-flex; align-items: center; gap: 7px; color: var(--mint); border-color: rgba(130,245,178,.3); }
-  .quiet-button.contribute-launch:hover { color: #041a10; background: var(--mint); border-color: var(--mint); }
+  .quiet-button.contribute-launch { color: #041a10; background: var(--mint); border-color: var(--mint); }
+  .quiet-button.contribute-launch:hover { color: #041a10; background: color-mix(in srgb,var(--mint) 82%,white); border-color: var(--mint); }
   .quiet-button.contribute-launch b { font-weight: 650; }
   .support-action.is-contribute { text-align: left; font: inherit; background: transparent; cursor: pointer; }
   .support-action.is-contribute span { color: var(--mint); background: rgba(130,245,178,.08); border-color: rgba(130,245,178,.22); }
@@ -2002,18 +2000,22 @@
     .view-intro { margin-bottom: 24px; padding-top: 14px; }
   }
 
-  /* The search field is what the top bar is for, and every button beside it is
-     taken out of its width. Below a wide desktop the submission button keeps
-     its glyph and gives the words back - it is still named for a screen reader
-     by its aria-label, and by its tooltip for everyone else. */
+  /* Compact secondary actions first, preserving the search and primary action.
+     Visually hidden labels still name the controls for assistive technology. */
+  @media (max-width: 1600px) {
+    .project-links a b { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .project-links a { width: var(--control-height); padding-inline: 0; }
+  }
   @media (max-width: 1400px) {
-    .quiet-button.contribute-launch b { display: none; }
-    .quiet-button.contribute-launch { padding-inline: 12px; font-size: .82rem; }
+    .top-actions .action-label { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .top-actions :is(#random-artifact,.site-fullscreen) { width: var(--control-height); padding-inline: 0; }
   }
 
   @media (max-width: 1100px) {
-    .project-links a b { display: none; }
-    .project-links a { padding-inline: 6px; }
+    .quiet-button.contribute-launch b { display: none; }
+    .quiet-button.contribute-launch { width: var(--control-height); padding-inline: 0; }
+    .topbar { flex-wrap: wrap; }
+    .global-search { flex-basis: 180px; }
     .winner-plinths { grid-template-columns: repeat(3, minmax(150px, 1fr)); }
     .winner-plinths .artifact-card:first-child { grid-column: span 2; }
     .artifact-facts { grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -2022,6 +2024,11 @@
     .signal-console { grid-template-columns: 72px minmax(0,1fr); }
     .signal-console > dl { grid-column: 1 / 3; }
     .signal-focus-grid { grid-template-columns: 280px minmax(0,1fr); }
+  }
+
+  @media (min-width: 821px) and (max-width: 1000px) {
+    .global-search { flex-basis: 100%; }
+    .top-actions { margin-left: auto; }
   }
 
   @media (max-width: 820px) {
@@ -2068,7 +2075,7 @@
     .global-search kbd, .quiet-button { display: none; }
     /* The one quiet button that stays on a phone: it is the only one that is
        not a shortcut to something already reachable. */
-    .quiet-button.contribute-launch { display: inline-flex; padding-inline: 11px; }
+    .quiet-button.contribute-launch { display: inline-flex; }
     .contribute-grid { grid-template-columns: 1fr; }
     .contribute-field.is-half { grid-column: 1 / -1; }
     .artifact-dialog, .contribute-dialog { max-height: calc(100dvh - 12px); overscroll-behavior: contain; }
@@ -2154,8 +2161,8 @@
     main { padding: 20px 14px max(58px, env(safe-area-inset-bottom)); }
     .view-intro { gap: 12px; margin-bottom: 20px; padding-top: 14px; }
     .view-intro-tools { align-self: start; }
-    .view-fullscreen { width: 42px; min-height: 42px; padding: 0; font-size: 0; }
-    .view-fullscreen span { font-size: 1rem; }
+    .view-fullscreen { width: var(--control-height); min-height: var(--control-height); padding: 0; font-size: 0; }
+    .view-fullscreen .action-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
     .preliminary-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
     /* Filter chips are targets on a phone, not a printed legend: give them a
        thumb-sized height, and let the count line take a row of its own rather
