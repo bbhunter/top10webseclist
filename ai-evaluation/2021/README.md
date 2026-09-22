@@ -53,3 +53,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [VMware Carbon Black / vRealize bugs](<https://swarm.ptsecurity.com/catching-bugs-in-vmware-carbon-black-cloud-workload-appliance-and-vrealize-operations-manager/>) | Not added |
 | [When Security Features Collide](<https://portswigger.net/research/when-security-features-collide>) | Not added |
 | Who's Hosting the Block Party? | Not added |
+| [Finding 0day to hack Apple](<https://httpvoid.com/Apple-RCE.md>) | Added |

@@ -76,3 +76,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Identifying Logical Vulnerabilities in QUIC Implementations](<https://www.ndss-symposium.org/wp-content/uploads/2026-s1777-paper.pdf>) [Related source](<https://zenodo.org/records/17015304>) [Related source](<https://github.com/k4ra5u/MerCuriuzz>) | Added |
 | [Apache httpd HTTP/2 Memory Exhaustion (CVE-2025-53020)](<https://galbarnahum.com/posts/apache-httpd-cve-2025-53020>) [Related source](<https://eissing.org/icing/posts/hpack-bombing-apache/>) [Related source](<https://github.com/galbarnahum/CVE-2025-53020-PoC>) | Added |
 | [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](<https://www.ndss-symposium.org/wp-content/uploads/2026-s1067-paper.pdf>) [Related source](<https://zenodo.org/records/16996391>) | Added |
+| [SupaPwn: Hacking Our Way into Lovable's Office and Helping Secure Supabase](<https://www.hacktron.ai/blog/supapwn>) | Added |
+| [Windsurf: DNS rebinding against a local AI coding service](<https://www.youtube.com/watch?v=23Mz7qcRz50>) | Added |
+| [Perplexity Comet UXSS](<https://www.hacktron.ai/blog/perplexity-comet-uxss>) | Added |
+| [Pwning OpenAI Atlas Through Exposed Browser Internals](<https://www.hacktron.ai/blog/hacking-openai-atlas-browser>) | Added |
+| [Discourse Backup Disclosure: A Rails send_file Quirk](<https://projectdiscovery.io/blog/discourse-backup-disclosure-rails-send_file-quirk>) | Added |

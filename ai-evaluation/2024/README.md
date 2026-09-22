@@ -67,3 +67,5 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | WEBRR | Not added |
 | [WhatsUp Gold Pre-Auth RCE: GetFileWithoutZip and WriteDataFile primitives](<https://summoning.team/blog/progress-whatsup-gold-rce-cve-2024-4885/>) | Not added |
 | [ZDI: Exploiting Exchange PowerShell After ProxyNotShell, Parts 1-3](<https://www.thezdi.com/blog/2024/9/4/exploiting-exchange-powershell-after-proxynotshell-part-1-multivaluedproperty>) | Not added |
+| [Hacking Apple with SQL Injection](<https://projectdiscovery.io/blog/hacking-apple-with-sql-injection>) | Added |
+| [GitHub Enterprise SAML Authentication Bypass](<https://projectdiscovery.io/blog/github-enterprise-saml-authentication-bypass>) | Added |

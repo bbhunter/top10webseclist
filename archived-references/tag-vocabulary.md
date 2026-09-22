@@ -63,11 +63,11 @@ JSON.
 
 ## The vocabulary
 
-207 tags, across 1925 documents that carry a digest.
+207 tags, across 1938 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
-| `abuse-of-functionality` | 74 | A04:2021 |
+| `abuse-of-functionality` | 75 | A04:2021 |
 | `active-directory` | 1 | — |
 | `activex` | 13 | — |
 | `ai-agent` | 65 | — |
@@ -77,13 +77,13 @@ JSON.
 | `argument-injection` | 3 | A03:2021 |
 | `aspnet` | 54 | — |
 | `attack-chain` | 224 | — |
-| `auth-bypass` | 346 | A01:2021 |
+| `auth-bypass` | 351 | A01:2021 |
 | `autofill` | 4 | — |
 | `aws` | 36 | — |
 | `azure` | 14 | — |
 | `blind-xss` | 1 | A03:2021 |
 | `blockchain` | 8 | — |
-| `browser-extension` | 80 | — |
+| `browser-extension` | 82 | — |
 | `browser-fingerprinting` | 25 | — |
 | `browser-history` | 2 | — |
 | `bug-bounty` | 168 | — |
@@ -104,9 +104,9 @@ JSON.
 | `content-type` | 43 | A05:2021 |
 | `cookie` | 156 | A07:2021 |
 | `cors` | 29 | A01:2021 |
-| `crypto` | 15 | A02:2021 |
+| `crypto` | 17 | A02:2021 |
 | `csp` | 71 | A05:2021 |
-| `csrf` | 152 | A01:2021 |
+| `csrf` | 153 | A01:2021 |
 | `css` | 77 | — |
 | `css-injection` | 34 | A03:2021 |
 | `csti` | 5 | A03:2021 |
@@ -116,7 +116,7 @@ JSON.
 | `deanonymization` | 20 | — |
 | `defence` | 62 | — |
 | `dependency-confusion` | 1 | A06:2021 |
-| `deserialization` | 89 | A08:2021 |
+| `deserialization` | 91 | A08:2021 |
 | `desync` | 38 | — |
 | `detection` | 139 | A09:2021 |
 | `django` | 11 | — |
@@ -131,14 +131,14 @@ JSON.
 | `drupal` | 6 | — |
 | `dynamic-analysis` | 92 | — |
 | `elasticsearch` | 3 | — |
-| `electron` | 11 | — |
+| `electron` | 12 | — |
 | `email` | 58 | — |
 | `embedded-device` | 9 | — |
 | `encoding` | 87 | — |
 | `express` | 9 | — |
-| `file-upload` | 95 | — |
-| `file-write` | 4 | — |
-| `filter-bypass` | 315 | A05:2021 |
+| `file-upload` | 96 | — |
+| `file-write` | 5 | — |
+| `filter-bypass` | 316 | A05:2021 |
 | `flash` | 57 | — |
 | `flask` | 6 | — |
 | `formal-analysis` | 36 | — |
@@ -162,7 +162,7 @@ JSON.
 | `identity` | 27 | A07:2021 |
 | `idor` | 27 | A01:2021 |
 | `iframe` | 140 | — |
-| `info-leak` | 655 | — |
+| `info-leak` | 658 | — |
 | `injection` | 140 | A03:2021 |
 | `ios` | 16 | — |
 | `jailbreak` | 4 | — |
@@ -171,7 +171,7 @@ JSON.
 | `javascript-runtime` | 22 | — |
 | `jenkins` | 2 | — |
 | `joomla` | 6 | — |
-| `jwt` | 22 | A07:2021 |
+| `jwt` | 23 | A07:2021 |
 | `kubernetes` | 6 | A05:2021 |
 | `laravel` | 2 | — |
 | `large-scale-scan` | 133 | — |
@@ -193,10 +193,10 @@ JSON.
 | `nodejs` | 75 | — |
 | `nosqli` | 10 | A03:2021 |
 | `ntlm` | 2 | — |
-| `oauth` | 80 | A07:2021 |
+| `oauth` | 81 | A07:2021 |
 | `open-redirect` | 66 | A04:2021 |
 | `openid` | 34 | A07:2021 |
-| `parser-differential` | 203 | — |
+| `parser-differential` | 204 | — |
 | `passkeys` | 12 | A07:2021 |
 | `password-manager` | 5 | — |
 | `path-traversal` | 75 | A01:2021 |
@@ -204,11 +204,11 @@ JSON.
 | `perl` | 4 | — |
 | `phishing` | 41 | A04:2021 |
 | `php` | 126 | — |
-| `postgres` | 10 | — |
+| `postgres` | 11 | — |
 | `postmessage` | 38 | — |
 | `predictable-token` | 7 | A02:2021 |
 | `prior-art-extension` | 58 | — |
-| `privilege-escalation` | 115 | A01:2021 |
+| `privilege-escalation` | 116 | A01:2021 |
 | `prompt-injection` | 47 | A03:2021 |
 | `prototype-pollution` | 29 | A08:2021 |
 | `proxy` | 85 | — |
@@ -216,19 +216,19 @@ JSON.
 | `race-condition` | 33 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 306 | — |
+| `rce` | 309 | — |
 | `react` | 6 | — |
 | `redis` | 5 | — |
 | `redos` | 3 | — |
 | `request-smuggling` | 53 | — |
 | `response-splitting` | 19 | A03:2021 |
 | `rest-api` | 53 | — |
-| `reverse-proxy` | 62 | — |
-| `ruby` | 36 | — |
+| `reverse-proxy` | 63 | — |
+| `ruby` | 37 | — |
 | `rust` | 3 | — |
 | `same-origin-policy` | 188 | A01:2021 |
-| `saml` | 18 | A07:2021 |
-| `sandbox-escape` | 79 | — |
+| `saml` | 19 | A07:2021 |
+| `sandbox-escape` | 80 | — |
 | `sanitizer-bypass` | 89 | A05:2021 |
 | `service-worker` | 14 | — |
 | `session-fixation` | 42 | A07:2021 |
@@ -238,13 +238,13 @@ JSON.
 | `smuggling` | 15 | — |
 | `snmp` | 2 | — |
 | `soap` | 14 | — |
-| `sop-bypass` | 201 | A01:2021 |
+| `sop-bypass` | 202 | A01:2021 |
 | `spring` | 18 | — |
-| `sqli` | 72 | A03:2021 |
+| `sqli` | 73 | A03:2021 |
 | `sso` | 69 | A07:2021 |
 | `ssrf` | 103 | A10:2021 |
 | `ssti` | 24 | A03:2021 |
-| `static-analysis` | 85 | — |
+| `static-analysis` | 86 | — |
 | `struts` | 4 | — |
 | `subdomain-takeover` | 1 | — |
 | `supply-chain` | 62 | A06:2021 |
@@ -265,14 +265,14 @@ JSON.
 | `vendor-advisory` | 57 | — |
 | `vue` | 1 | — |
 | `waf` | 17 | A05:2021 |
-| `waf-bypass` | 77 | A05:2021 |
+| `waf-bypass` | 78 | A05:2021 |
 | `webassembly` | 4 | — |
 | `webauthn` | 13 | A07:2021 |
 | `webrtc` | 11 | — |
 | `websocket` | 12 | — |
 | `wordpress` | 22 | — |
 | `xsleak` | 76 | — |
-| `xss` | 416 | A03:2021 |
+| `xss` | 419 | A03:2021 |
 | `xxe` | 34 | A03:2021 |
 
 ### Never published

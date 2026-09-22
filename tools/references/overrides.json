@@ -7977,6 +7977,85 @@
       "authors": [
         "Alex Aguiar"
       ]
+    },
+    "https://httpvoid.com/Apple-RCE.md": {
+      "authors": [
+        "Harsh Jaiswal",
+        "Rahul Maini"
+      ]
+    },
+    "https://projectdiscovery.io/blog/adobe-coldfusion-rce": {
+      "authors": [
+        "Harsh Jaiswal",
+        "Rahul Maini"
+      ]
+    },
+    "https://projectdiscovery.io/blog/hacking-apple-with-sql-injection": {
+      "authors": [
+        "Harsh Jaiswal",
+        "Rahul Maini"
+      ]
+    },
+    "https://projectdiscovery.io/blog/github-enterprise-saml-authentication-bypass": {
+      "authors": [
+        "Harsh Jaiswal",
+        "Rahul Maini"
+      ]
+    },
+    "https://hacktron.ai/blog/supapwn": {
+      "authors": [
+        "s1r1us",
+        "rootxharsh",
+        "zayne",
+        "LiveOverflow"
+      ]
+    },
+    "https://youtube.com/watch?v=23Mz7qcRz50": {
+      "authors": [
+        "s1r1us"
+      ],
+      "outcome": "skip",
+      "class": "video",
+      "reason": "External recording retained as a link. The metadata-only capture has no transcript and is not a preserved research document."
+    },
+    "https://hacktron.ai/blog/perplexity-comet-uxss": {
+      "authors": [
+        "s1r1us",
+        "sudi"
+      ]
+    },
+    "https://hacktron.ai/blog/hacking-openai-atlas-browser": {
+      "authors": [
+        "s1r1us",
+        "sudi"
+      ]
+    },
+    "https://projectdiscovery.io/blog/discourse-backup-disclosure-rails-send_file-quirk": {
+      "authors": [
+        "Harsh Jaiswal",
+        "Rahul Maini"
+      ]
+    },
+    "https://hacktron.ai/blog/react2shell-vercel-waf-bypass": {
+      "authors": [
+        "ginoah",
+        "s1r1us"
+      ]
+    },
+    "https://hacktron.ai/blog/cve-2026-0265-panos-globalprotect-cas-auth-bypass": {
+      "authors": [
+        "rootxharsh"
+      ]
+    },
+    "https://hacktron.ai/blog/hacking-google-antigravity": {
+      "authors": [
+        "sudi"
+      ]
+    },
+    "https://hacktron.ai/blog/discord-rce": {
+      "authors": [
+        "s1r1us"
+      ]
     }
   },
   "mirror_sources": [],

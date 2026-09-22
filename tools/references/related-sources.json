@@ -14326,6 +14326,92 @@
           "published": "2019-03-31"
         }
       ]
+    },
+    "https://www.youtube.com/watch?v=Olq6XnZ4Pwo": {
+      "sources": [
+        {
+          "url": "https://www.hacktron.ai/blog/discord-rce",
+          "title": "Remote code execution on Discord Desktop",
+          "label": "Discord case study",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Written account of the Discord chain presented in ElectroVolt.",
+          "evidence": [
+            "https://www.hacktron.ai/blog/discord-rce"
+          ],
+          "authors": [
+            "s1r1us"
+          ],
+          "published": "2022-07-29"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=R3SE4VKj678",
+          "title": "Hacking Discord for $5000 Bounty",
+          "label": "Discord walkthrough (2024)",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Later walkthrough of the same Discord chain.",
+          "evidence": [
+            "https://www.youtube.com/watch?v=R3SE4VKj678"
+          ],
+          "authors": [
+            "s1r1us"
+          ],
+          "published": "2024-12-14"
+        },
+        {
+          "url": "https://media.defcon.org/DEF%20CON%2030/DEF%20CON%2030%20presentations/Aaditya%20Purani%20-%20ElectroVolt%20Pwning%20popular%20desktop%20apps%20while%20uncovering%20new%20attack%20surface%20on%20Electron.pdf",
+          "title": "ElectroVolt: Pwning popular desktop apps while uncovering new attack surface on Electron",
+          "label": "DEF CON presentation",
+          "relation": "alternate",
+          "kind": "slides",
+          "preservation": "link-only",
+          "reason": "Alternate conference presentation retained as an outbound link; the Black Hat deck is archived.",
+          "evidence": [
+            "https://media.defcon.org/DEF%20CON%2030/DEF%20CON%2030%20presentations/Aaditya%20Purani%20-%20ElectroVolt%20Pwning%20popular%20desktop%20apps%20while%20uncovering%20new%20attack%20surface%20on%20Electron.pdf"
+          ]
+        }
+      ]
+    },
+    "https://www.hacktron.ai/blog/react2shell-vercel-waf-bypass": {
+      "sources": [
+        {
+          "url": "https://conf.devco.re/2026/keynote/%5BRelease%5D%20Playing%20Cat%20and%20Mouse%20with%20WAF.pdf",
+          "title": "Playing Cat and Mouse with WAF: The React2Shell Vercel CTF",
+          "label": "Earlier DEVCORE presentation",
+          "relation": "same-work",
+          "kind": "slides",
+          "preservation": "link-only",
+          "reason": "March presentation covering the same bypasses; retained outbound in its original language.",
+          "evidence": [
+            "https://conf.devco.re/2026/keynote/%5BRelease%5D%20Playing%20Cat%20and%20Mouse%20with%20WAF.pdf"
+          ],
+          "authors": [
+            "maple3142",
+            "Ginoah"
+          ],
+          "published": "2026-03-14"
+        }
+      ]
+    },
+    "https://projectdiscovery.io/blog/discourse-backup-disclosure-rails-send_file-quirk": {
+      "sources": [
+        {
+          "url": "https://github.com/discourse/discourse/security/advisories/GHSA-567m-82f6-56rv",
+          "title": "Anonymous users can download backups",
+          "label": "Earlier advisory (2024)",
+          "relation": "background",
+          "kind": "advisory",
+          "preservation": "archive",
+          "reason": "The December 2024 disclosure precedes this March 2025 technical analysis.",
+          "evidence": [
+            "https://github.com/discourse/discourse/security/advisories/GHSA-567m-82f6-56rv"
+          ],
+          "published": "2024-12-19"
+        }
+      ]
     }
   }
 }

@@ -18,11 +18,11 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1971 reference(s) archived across 20 year list(s). 1872 carry technique and 99 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1984 reference(s) archived across 20 year list(s). 1884 carry technique and 100 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (286)
+## 2026-ai (289)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -32,7 +32,9 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [DOMPurify XSS via `<selectedcontent>` re-clone](md/2026-ai/2026-cure53-dompurify-xss-selectedcontent-re-clone.md) | advisory | Cure53 | 2026 | research | 1 |
 | [DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback](md/2026-ai/2026-dompurify-github-security-advisories-dompurify-prototype-fallback.md) | advisory | DOMPurify / GitHub Security Advisories | 2026 | records | 1 |
 | [The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting](md/2026-ai/2026-martino-spagnuolo-forgotten-bug-how-node-js-core-design-flaw-splitting.md) | advisory | Martino Spagnuolo | 2026 | research | 1 |
+| [When Your VPN Opens Your Private Network to the Public](md/2026-ai/2026-hacktron-ai-when-your-vpn-opens-your-private-network-public.md) | advisory | Hacktron AI | 2026 | research | 1 |
 | [$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain](md/2026-ai/whoareme-com-15k-cspt-full-account-takeover-then-2fa-bypass-prototype-chain.md) | article | whoareme.com | 2026 | research | 1 |
+| [$170k in Bypasses: The Vercel React2Shell Challenge](md/2026-ai/2026-hacktron-ai-170k-bypasses-vercel-react2shell-challenge.md) | article | Hacktron AI | 2026 | research | 1 |
 | [1-Click GitHub Token Stealing via a VSCode Bug](md/2026-ai/ammar-s-blog-1-click-github-token-stealing-vscode-bug.md) | article | Ammar's Blog |  | research | 1 |
 | [[2603.12277] Prompt Injection as Role Confusion](md/2026-ai/arxiv-org-prompt-injection-as-role-confusion.md) | article | arXiv.org |  | research | 1 |
 | [[2605.22333] A First Measurement Study on Authentication Security in Real-World Remote MCP Servers](md/2026-ai/arxiv-org-first-measurement-study-authentication-security-real-world-servers.md) | article | arXiv.org |  | research | 1 |
@@ -153,6 +155,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Proto6: The Schema Was Not Supposed to Run](md/2026-ai/2026-cyera-research-proto6-schema-not-supposed-run.md) | article | Cyera Research | 2026 | research | 1 |
 | [Pwning Claude Code in 8 Different Ways](md/2026-ai/2026-gmo-flatt-security-research-pwning-claude-code-8-different-ways.md) | article | GMO Flatt Security Research | 2026 | research | 1 |
 | [Race Against The Patch: Four Exploit Chains in LiteLLM](md/2026-ai/star-labs-race-against-patch-four-exploit-chains-litellm.md) | article | STAR Labs |  | research | 1 |
+| [RCE in Google's AI code editor Antigravity](md/2026-ai/2026-hacktron-ai-rce-google-s-ai-code-editor-antigravity.md) | article | Hacktron AI | 2026 | research | 1 |
 | [Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js](md/2026-ai/2026-zhero-web-sec-re-cache-excessive-reflection-type-confusion-0-click-sxss-js.md) | article | zhero-web-sec | 2026 | research | 1 |
 | [Recovering Encrypted LLM Reasoning Traces](md/2026-ai/2026-embrace-the-red-recovering-encrypted-llm-reasoning-traces.md) | article | Embrace The Red | 2026 | research | 1 |
 | [Regular Expression Denial of Service Induced by Backreferences](md/2026-ai/arxiv-org-regular-expression-denial-service-induced-backreferences.md) | article | arXiv.org |  | research | 1 |
@@ -313,11 +316,12 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [When Cache Poisoning Meets LLM Systems: Semantic Cache Poisoning and Its Countermeasures (Paper)](md/2026-ai/when-cache-poisoning-meets-llm-systems-semantic-cache-poisoning-its-paper.md) | whitepaper |  |  | research | 1 |
 | [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](md/2026-ai/your-waf-blocked-us-that-exploit-remote-agent-takeover-cloudflare-sentry-day.md) | whitepaper |  |  | research | 1 |
 
-## 2025 (119)
+## 2025 (124)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
 | [CVE-2025-26788: Passkey Authentication Bypass in StrongKey FIDO Server](md/2025/2025-securing-cve-2025-26788-passkey-authentication-bypass-strongkey-fido-server.md) | advisory | Securing | 2025 | research | 1 |
+| [Potential Backup file leaked via Nginx](md/2025/2024-github-advisory-database-potential-backup-file-leaked-nginx.md) | advisory | GitHub Advisory Database | 2024 | records | 1 |
 | [Vega CVE-2025-59840 - Unusual XSS Technique toString gadget chains](md/2025/2025-critical-thinking-bug-bounty-podcast-vega-cve-2025-59840-unusual-chains.md) | advisory | Critical Thinking - Bug Bounty Podcast | 2025 | research | 1 |
 | [8 Million Requests Later, We Made The SolarWinds Supply Chain Attack Look Amateur](md/2025/2025-watchtowr-labs-8-million-requests-later-we-made-solarwinds-supply-amateur.md) | article | watchTowr | 2025 | research | 1 |
 | [[Artifact] Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](md/2025/university-of-illinois-chicago-zenodo-artifact-vault-raider-environments.md) | article | University of Illinois Chicago / Zenodo |  | research | 1 |
@@ -340,6 +344,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Cross-Site ETag Length Leak](md/2025/2025-blog-arkark-dev-cross-site-etag-length-leak.md) | article | blog.arkark.dev | 2025 | research | 1 |
 | [Cross-Site WebSocket Hijacking Exploitation in 2025](md/2025/2025-include-security-research-blog-cross-site-websocket-hijacking-2025.md) | article | Include Security Research Blog | 2025 | research | 1 |
 | [CSS Data Exfiltration to Steal OAuth Token](md/2025/2025-voorivex-css-data-exfiltration-steal-oauth-token.md) | article | Voorivex | 2025 | research | 1 |
+| [CVE-2024-53991 - Discourse Backup Disclosure: Rails send_file Quirk — ProjectDiscovery Blog](md/2025/projectdiscovery-cve-2024-53991-discourse-backup-disclosure-rails-send-blog.md) | article | ProjectDiscovery |  | research | 1 |
 | [CVE-2025-1974: The IngressNightmare in Kubernetes](md/2025/2025-wiz-io-cve-2025-1974-ingressnightmare-kubernetes.md) | article | wiz.io | 2025 | research | 1 |
 | [Detecting Prototype Pollution in NPM Packages with Proof of Concept Exploits](md/2025/concordia-university-detecting-prototype-pollution-npm-packages-proof-exploits.md) | article | Concordia University |  | research | 1 |
 | [Disguises Zip Past Path Traversal](md/2025/2025-blog-isec-pl-disguises-zip-past-path-traversal.md) | article | blog.isec.pl | 2025 | research | 1 |
@@ -388,6 +393,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Prepared Statements? Prepared to Be Vulnerable.](md/2025/blog-mantrainfosec-com-prepared-statements-prepared-be-vulnerable.md) | article | blog.mantrainfosec.com |  | research | 1 |
 | [Prompt Injection Inside GitHub Actions: The New Frontier of Supply Chain Attacks](md/2025/aikido-security-prompt-injection-inside-github-actions-new-frontier-attacks.md) | article | Aikido Security |  | research | 1 |
 | [Puny-Code, 0-Click Account Takeover](md/2025/2025-voorivex-puny-code-0-click-account-takeover.md) | article | Voorivex | 2025 | research | 1 |
+| [Pwning OpenAI Atlas Through Exposed Browser Internals](md/2025/2025-hacktron-ai-pwning-openai-atlas-through-exposed-browser-internals.md) | article | Hacktron AI | 2025 | research | 1 |
 | [Python Dirty Arbitrary File Write to RCE via Writing Shared Object Files Or Overwriting Bytecode Files](md/2025/2025-siunam-s-website-python-dirty-arbitrary-file-write-rce-writing-files.md) | article | siunam's Website | 2025 | research | 1 |
 | [RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications](md/2025/doi-org-racedb-detecting-request-race-vulnerabilities-database-applications.md) | article | doi.org |  | research | 1 |
 | [Racing and Fuzzing HTTP/3: Open-sourcing QuicDraw(H3)](md/2025/cyberark-racing-fuzzing-http-3-open-sourcing-quicdraw-h3.md) | article | CyberArk |  | research | 1 |
@@ -396,12 +402,14 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [ReDisclosure: New technique for exploiting Full-Text Search in MySQL (myBB case study)](md/2025/2025-exploit-azerbaijan-redisclosure-new-technique-exploiting-full-text-study.md) | article | Exploit Azerbaijan | 2025 | research | 1 |
 | [Ruby Array Pack Bleed](md/2025/nastystereo-com-ruby-array-pack-bleed.md) | article | nastystereo.com |  | research | 1 |
 | [SAML roulette: the hacker always wins](md/2025/2025-portswigger-research-saml-roulette-hacker-always-wins.md) | article | PortSwigger Research | 2025 | research | 1 |
+| [Securing Perplexity’s AI Browser from a One-Click UXSS](md/2025/2025-hacktron-ai-securing-perplexitys-ai-browser-one-click-uxss.md) | article | Hacktron AI | 2025 | research | 1 |
 | [SharePoint ToolShell – One Request PreAuth RCE chain CVE-2025-53770](md/2025/2025-blog-of-viettel-cyber-security-sharepoint-toolshell-one-request-53770.md) | article | Blog of Viettel Cyber Security | 2025 | research | 1 |
 | [SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL](md/2025/2025-watchtowr-labs-soapwn-pwning-net-framework-applications-through-http-wsdl.md) | article | watchTowr Labs | 2025 | research | 1 |
 | [Stealing oAuth Token via Referrer Policy Override](md/2025/2025-voorivex-stealing-oauth-token-referrer-policy-override.md) | article | Voorivex | 2025 | research | 1 |
 | [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](md/2025/usenix-org-stek-sharing-not-caring-bypassing-tls-authentication-web-tickets.md) | article | usenix.org |  | research | 1 |
 | [Stopping Redirects](md/2025/2025-critical-thinking-bug-bounty-podcast-stopping-redirects.md) | article | Critical Thinking - Bug Bounty Podcast | 2025 | research | 1 |
 | [Styled to Steal: The Overlooked Attack Surface in Email Clients](md/2025/styled-steal-overlooked-attack-surface-email-clients.md) | article |  |  | research | 1 |
+| [SupaPwn: Hacking Our Way into Lovable's Office and Helping Secure Supabase](md/2025/2025-hacktron-ai-supapwn-hacking-our-way-lovable-s-office-helping-supabase.md) | article | Hacktron AI | 2025 | research | 1 |
 | [SVG clickjacking](md/2025/2025-lyra-s-epic-blog-svg-clickjacking.md) | article | lyra's epic blog | 2025 | research | 1 |
 | [Temenos OFS Field Injection: Revealing a Hidden Financial Attack Vector](md/2025/2025-medium-temenos-ofs-field-injection-revealing-hidden-financial-attack-vector.md) | article | Medium | 2025 | research | 1 |
 | [The Fragile Lock: Novel Bypasses For SAML Authentication](md/2025/2025-portswigger-research-fragile-lock-novel-bypasses-saml-authentication.md) | article | PortSwigger Research | 2025 | research | 1 |
@@ -437,7 +445,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives](md/2025/power-never-be-wrong-evasions-anachronistic-attacks-against-web-archives.md) | whitepaper | ACM CCS |  | research | 1 |
 | [Vault Raider: Stealthy UI-based Attacks Against Password Managers in Desktop Environments](md/2025/ndss-symposium-vault-raider-stealthy-ui-based-attacks-against-environments.md) | whitepaper | NDSS Symposium |  | research | 1 |
 
-## 2024 (149)
+## 2024 (151)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -508,8 +516,10 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Generic and Automated Drive-by GPU Cache Attacks from the Browser](md/2024/rolandczerny-com-generic-automated-drive-gpu-cache-attacks-browser.md) | article | rolandczerny.com |  | research | 1 |
 | [GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes](md/2024/usenix-org-ghunter-universal-prototype-pollution-gadgets-javascript-runtimes.md) | article | usenix.org |  | research | 1 |
 | [GitHub Actions exploitation: untrusted input](md/2024/synacktiv-github-actions-exploitation-untrusted-input.md) · [English](md/2024/synacktiv-github-actions-exploitation-untrusted-input_translate.md) | article | Synacktiv |  | research | 1 |
+| [GitHub Enterprise SAML Authentication Bypass (CVE-2024-4985 / CVE-2024-9487) — ProjectDiscovery Blog](md/2024/projectdiscovery-github-enterprise-saml-authentication-bypass-cve-2024-blog.md) | article | ProjectDiscovery |  | research | 1 |
 | [Go Go XSS Gadgets: Chaining a DOM Clobbering Exploit in the Wild](md/2024/buer-haus-go-go-xss-gadgets-chaining-dom-clobbering-exploit-wild.md) | article | buer.haus |  | research | 1 |
 | [Gotta cache 'em all: bending the rules of web cache exploitation](md/2024/2024-portswigger-research-gotta-cache-em-all-bending-rules-web-exploitation.md) | article | PortSwigger Research | 2024 | research | 1 |
+| [Hacking Apple - SQL Injection to Remote Code Execution — ProjectDiscovery Blog](md/2024/projectdiscovery-hacking-apple-sql-injection-remote-code-execution-blog.md) | article | ProjectDiscovery |  | research | 1 |
 | [Hacking Kia: Remotely Controlling Cars With Just a License Plate](md/2024/2024-samcurry-net-hacking-kia-remotely-controlling-cars-just-license-plate.md) | article | samcurry.net | 2024 | research | 1 |
 | [Hacking Millions of Modems (and Investigating Who Hacked My Modem)](md/2024/2024-samcurry-net-hacking-millions-modems-investigating-who-hacked-my-modem.md) | article | samcurry.net | 2024 | research | 1 |
 | [Half Measures and Full Compromise: Exploiting Microsoft Exchange PowerShell Remoting](md/2024/piotr-bazydo-chudy-half-measures-full-compromise-exploiting-microsoft-remoting.md) | article | Piotr Bazydło (chudy) |  | records | 1 |
@@ -591,7 +601,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Secret web hacking knowledge](md/2024/secret-web-hacking-knowledge.md) | whitepaper |  |  | research | 1 |
 | [Undefined-oriented Programming: Detecting and Chaining Prototype Pollution Gadgets in Node.js Template Engines for Malicious Consequences](md/2024/undefined-oriented-programming-detecting-chaining-prototype-consequences.md) | whitepaper |  |  | research | 1 |
 
-## 2023 (98)
+## 2023 (99)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -602,6 +612,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [A New Vector For “Dirty” Arbitrary File Write to RCE](md/2023/blog-doyensec-com-new-vector-dirty-arbitrary-file-write-rce.md) | article | blog.doyensec.com |  | research | 1 |
 | [A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities](md/2023/ndss-symposium-security-study-about-electron-applications-functionalities.md) | article | NDSS Symposium |  | research | 1 |
 | [Added ObjectDataProvider gadget generation for MessagePack (Typeless)](md/2023/2023-ysoserial-net-project-added-objectdataprovider-gadget-generation-typeless.md) | article | ysoserial.net project | 2023 | research | 2 |
+| [Adobe ColdFusion Pre-Auth RCE(s) — ProjectDiscovery Blog](md/2023/projectdiscovery-adobe-coldfusion-pre-auth-rce-s-projectdiscovery-blog.md) | article | ProjectDiscovery |  | research | 1 |
 | [AWS WAF Bypass: invalid JSON object and unicode escape sequences](md/2023/2023-sicuranext-blog-aws-waf-bypass-invalid-json-object-unicode-escape-sequences.md) | article | Sicuranext Blog | 2023 | research | 1 |
 | [AWS WAF Clients Left Vulnerable to SQL Injection Due to Unorthodox MSSQL Design Choice](md/2023/2023-gosecure-aws-waf-clients-left-vulnerable-sql-injection-due-choice.md) | article | GoSecure | 2023 | research | 1 |
 | [BingBang: AAD misconfiguration led to Bing.com results manipulation and account takeover](md/2023/2023-wiz-io-bingbang-aad-misconfiguration-led-bing-com-results-takeover.md) | article | wiz.io | 2023 | research | 1 |
@@ -694,7 +705,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web](md/2023/leaky-web-automated-discovery-cross-site-information-leaks-browsers-web.md) | whitepaper |  |  | research | 1 |
 | [Three New Attacks Against JSON Web Tokens](md/2023/three-new-attacks-against-json-web-tokens.md) | whitepaper |  |  | research | 1 |
 
-## 2022 (83)
+## 2022 (84)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -749,6 +760,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Practical Client Side Path Traversal Attacks](md/2022/mr-medi-github-io-practical-client-side-path-traversal-attacks.md) | article | mr-medi.github.io |  | research | 1 |
 | [Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites](md/2022/ndss-symposium-probe-proto-measuring-client-side-prototype-pollution-websites.md) | article | NDSS Symposium |  | research | 1 |
 | [Problem with sharedStorage's described use of k-anonymity](md/2022/2022-github-problem-sharedstorage-s-described-use-k-anonymity.md) | article | GitHub | 2022 | research | 1 |
+| [Remote code execution on Discord Desktop](md/2022/2022-hacktron-ai-remote-code-execution-discord-desktop.md) | article | Hacktron AI | 2022 | research | 1 |
 | [Rendering Contention Channel Made Practical in Web Browsers](md/2022/usenix-org-rendering-contention-channel-made-practical-web-browsers.md) | article | usenix.org |  | research | 1 |
 | [Securing Cloud Services against Squatting Attacks](md/2022/eric-pauley-securing-cloud-services-against-squatting-attacks.md) | article | Eric Pauley |  | research | 1 |
 | [Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js](md/2022/arxiv-org-silent-spring-prototype-pollution-leads-remote-code-execution-node-js.md) | article | arXiv.org |  | research | 1 |
@@ -782,7 +794,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](md/2022/sok-exploring-current-future-research-directions-xs-leaks-through-model.md) | whitepaper | ACM |  | research | 1 |
 | [WebSpec](md/2022/webspec.md) | whitepaper | arXiv |  | research | 1 |
 
-## 2021 (56)
+## 2021 (57)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -802,6 +814,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Critical Vulnerability in HAProxy (CVE-2021-40346): Integer Overflow Enables HTTP Smuggling](md/2021/2021-jfrog-critical-vulnerability-haproxy-cve-2021-40346-integer-smuggling.md) | article | JFrog | 2021 | research | 1 |
 | [Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies](md/2021/2023-medium-dependency-confusion-how-i-hacked-apple-microsoft-dozens-companies.md) | article | Medium | 2023 | research | 1 |
 | [Exploiting CSP in Webkit to Break Authentication & Authorization](md/2021/2021-threatnix-io-exploiting-csp-webkit-break-authentication-authorization.md) | article | threatnix.io | 2021 | research | 1 |
+| [Finding 0day to hack Apple](md/2021/2021-httpvoid-research-finding-0day-hack-apple.md) | article | HTTPVoid Research | 2021 | research | 1 |
 | [Fingerprinting in Style: Detecting Browser Extensions via Injected Style Sheets](md/2021/usenix-org-fingerprinting-style-detecting-browser-extensions-injected-sheets.md) | article | usenix.org |  | research | 1 |
 | [Forgot password? Taking over user accounts Kaminsky style](md/2021/sec-consult-forgot-password-taking-over-user-accounts-kaminsky-style.md) | article | SEC Consult |  | research | 2 |
 | [Fuzzing for XSS via nested parsers condition](md/2021/pt-swarm-fuzzing-xss-nested-parsers-condition.md) | article | PT SWARM |  | research | 1 |

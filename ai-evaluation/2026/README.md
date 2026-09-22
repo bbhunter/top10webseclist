@@ -373,3 +373,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Metabase password-reset SQL injection advisory](<https://github.com/metabase/metabase/security/advisories/GHSA-vwf4-m7j8-wcjf>) | Not added |
 | [Keycloak CVE-2026-18963](<https://access.redhat.com/security/cve/cve-2026-18963>) | Not added |
 | [N-central CVE-2026-18577 hotfix](<https://status.n-able.com/2026/08/06/n-central-2026-3-hotfix-2-additional-mitigation-for-cve-2026-18577/>) | Not added |
+| [$170k in Bypasses: The Vercel React2Shell Challenge](<https://www.hacktron.ai/blog/react2shell-vercel-waf-bypass>) | Added |
+| [When Your VPN Opens Your Private Network to the Public](<https://www.hacktron.ai/blog/cve-2026-0265-panos-globalprotect-cas-auth-bypass>) | Added |
+| [RCE in Google's AI code editor Antigravity - $10000 Bounty](<https://www.hacktron.ai/blog/hacking-google-antigravity>) | Added |
+| [PostHog RCE](<https://www.hacktron.ai/blog/posthog-rce>) | Not added |
+| [Hacking Cluely](<https://www.hacktron.ai/blog/hacking-cluely>) | Not added |

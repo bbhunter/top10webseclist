@@ -76,3 +76,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Uncovering and Exploiting Hidden APIs in Mobile Super Apps](<https://arxiv.org/abs/2306.08134>) | Added |
 | [WebSpec](<https://arxiv.org/abs/2201.01649>) | Not added |
 | [The curl quirk that exposed Burp Suite & Google Chrome](<https://portswigger.net/research/the-curl-quirk-that-exposed-burp-suite-amp-google-chrome>) | Not added |
+| [Adobe ColdFusion RCE](<https://projectdiscovery.io/blog/adobe-coldfusion-rce>) | Added |

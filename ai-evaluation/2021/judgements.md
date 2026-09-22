@@ -9,6 +9,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Abusing Hidden Properties to Attack the Node.js Ecosystem](<https://www.usenix.org/conference/usenixsecurity21/presentation/xiao>) | Added |
 | [ALPACA: Application Layer Protocol Confusion — Analyzing and Mitigating Cracks in TLS Authentication](<https://alpaca-attack.com/>) | Added |
 | [DNS Cache Poisoning Attack: Resurrections with Side Channels](<https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf>) | Added |
+| [Finding 0day to hack Apple](<https://httpvoid.com/Apple-RCE.md>) | Added |
 | [Fingerprinting in Style: Detecting Browser Extensions via Injected Style Sheets](<https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix>) | Added |
 | [Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques](<https://arxiv.org/abs/2110.10129>) | Added |
 | [Improper Spring @Query Usage Allows N1QL Injection](<https://www.gremwell.com/spring-n1ql-injection>) | Added |

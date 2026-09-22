@@ -8,6 +8,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 |---|---|
 | [A Deep Dive into Server-Side JavaScript Injection (SSJI) Vulnerabilities](<https://secops.group/a-deep-dive-into-server-side-javascript-injection-ssji-vulnerabilities/>) [Related source](<https://web.archive.org/web/20240614082626/https://secops.group/a-deep-dive-into-server-side-javascript-injection-ssji-vulnerabilities/>) | Not added |
 | [A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities](<https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/>) | Added |
+| [Adobe ColdFusion RCE](<https://projectdiscovery.io/blog/adobe-coldfusion-rce>) | Added |
 | [Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol](<https://www.usenix.org/conference/usenixsecurity23/presentation/kwong>) | Added |
 | [CoCo: Efficient Browser Extension Vulnerability Detection via Coverage-guided, Concurrent Abstract Interpretation](<https://yinzhicao.org/CoCo/CoCo.pdf>) | Added |
 | [Cracking the Odd Case of Randomness in Java](<https://www.elttam.com/blog/cracking-randomness-in-java>) | Added |

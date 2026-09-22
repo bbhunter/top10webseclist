@@ -21,6 +21,8 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache](<https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf>) | Added |
 | [Generic and Automated Drive-by GPU Cache Attacks from the Browser](<https://www.rolandczerny.com/publications/2024-webgpu/>) | Added |
 | [GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes](<https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen>) | Added |
+| [GitHub Enterprise SAML Authentication Bypass](<https://projectdiscovery.io/blog/github-enterprise-saml-authentication-bypass>) | Added |
+| [Hacking Apple with SQL Injection](<https://projectdiscovery.io/blog/hacking-apple-with-sql-injection>) | Added |
 | [Internet's Invisible Enemy: Detecting and Measuring Web Cache Poisoning in the Wild](<https://doi.org/10.1145/3658644.3690361>) | Added |
 | [Introducing SignSaboteur: forge signed web tokens with ease](<https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease>) | Added |
 | [Introducing the URL Validation Bypass Cheat Sheet](<https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet>) | Added |

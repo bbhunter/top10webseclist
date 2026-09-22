@@ -34,6 +34,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Pre-hijacked Accounts](<https://arxiv.org/abs/2205.10174>) | Added |
 | [Probe the Proto](<https://www.ndss-symposium.org/ndss-paper/auto-draft-207/>) | Added |
 | [Problem with Shared Storage’s described use of k-anonymity](<https://github.com/WICG/shared-storage/issues/39>) | Added |
+| [Remote code execution on Discord Desktop](<https://www.hacktron.ai/blog/discord-rce>) [Related source](<https://www.youtube.com/watch?v=Olq6XnZ4Pwo>) [Related source](<https://www.youtube.com/watch?v=R3SE4VKj678>) | Added |
 | [Rendering Contention Channel Made Practical in Web Browsers](<https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang>) | Added |
 | [Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js](<https://arxiv.org/abs/2207.11171>) | Added |
 | [SoK: Exploring Current and Future Research Directions on XS-Leaks through an Extended Formal Model](<https://www.nortonlifelock.com/content/dam/nortonlifelock/pdfs/research-papers/2022-research-papers/sanchez-rola_asiaCCS22.pdf>) | Added |

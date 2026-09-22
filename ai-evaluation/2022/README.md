@@ -85,3 +85,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | WtaGraph / Surakav | Not added |
 | [XDRI Attacks](<https://www.usenix.org/conference/usenixsecurity22/presentation/jeitner>) | Not added |
 | [Yet Another Telerik UI Revisit](<https://blog.blacklanternsecurity.com/p/yet-another-telerik-ui-revisit>) | Not added |
+| [Remote code execution on Discord Desktop](<https://www.hacktron.ai/blog/discord-rce>) | Added |
