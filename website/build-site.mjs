@@ -9,6 +9,8 @@ import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
+import { buildPages } from "./build-pages.mjs";
+
 const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.dirname(APP_DIR);
 const STATIC_FILES = [
@@ -33,9 +35,10 @@ const STATIC_FILES = [
   "pdf-worker.mjs",
   "robots.txt",
   "site.webmanifest",
-  "sitemap.xml",
   "styles.css"
 ];
+// sitemap.xml is deliberately absent above: build-pages.mjs generates it along
+// with the crawlable pages it indexes, so the two can never disagree.
 const PDF_READER_FILES = ["pdf-reader.css", "pdf-reader.html", "pdf-reader.mjs", "pdf-reader-polyfills.mjs", "pdf-reader-url.mjs", "pdf-worker.mjs"];
 const STATIC_DIRECTORIES = ["vendor/pdfjs"];
 const GITHUB_INDEX = `<!doctype html>
@@ -43,6 +46,14 @@ const GITHUB_INDEX = `<!doctype html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><title>Web Hack List file origin</title></head>
 <body><main><h1>Web Hack List file origin</h1><p>This GitHub Pages project serves only oversized preserved files for <a href="https://webhacklist.com/" rel="noreferrer">webhacklist.com</a>.</p></main></body>
 </html>
+`;
+// This origin exists to hand webhacklist.com the handful of PDFs that exceed
+// Cloudflare's per-asset limit. Indexing it would put preserved copies into
+// search results on a second domain, competing with both the researcher who
+// wrote them and the archive itself. The index page carries `noindex`; this
+// keeps a crawler away from the files too.
+const GITHUB_ROBOTS = `User-agent: *
+Disallow: /
 `;
 
 function parseArguments() {
@@ -197,9 +208,11 @@ async function main() {
   let totalBytes = 0;
   let fileCount = 0;
   if (target === "github") {
-    await fs.writeFile(path.join(output, "index.html"), GITHUB_INDEX, "utf8");
-    totalBytes += Buffer.byteLength(GITHUB_INDEX);
-    fileCount++;
+    for (const [relative, body] of [["index.html", GITHUB_INDEX], ["robots.txt", GITHUB_ROBOTS]]) {
+      await fs.writeFile(path.join(output, relative), body, "utf8");
+      totalBytes += Buffer.byteLength(body);
+      fileCount++;
+    }
   }
   for (const task of tasks) {
     validateRelative(task.relative);
@@ -228,9 +241,25 @@ async function main() {
     fileCount++;
   }
 
+  // The crawlable surface is generated straight into the staged tree rather
+  // than committed, so it is rebuilt from the same catalogue every deploy and
+  // cannot drift from the collections it indexes.
+  let pageCount = 0;
+  if (target === "cloudflare") {
+    for (const [relative, body] of await buildPages({ appDir: APP_DIR, repoDir: REPO })) {
+      validateRelative(relative);
+      const destination = path.join(output, relative);
+      await fs.mkdir(path.dirname(destination), { recursive: true });
+      await fs.writeFile(destination, body, "utf8");
+      totalBytes += Buffer.byteLength(body);
+      fileCount++;
+      pageCount++;
+    }
+  }
+
   if (target === "cloudflare" && fileCount > 20000) throw new Error(`Cloudflare free-site file limit exceeded: ${fileCount} files`);
   if (target === "github" && totalBytes >= 1_000_000_000) throw new Error(`GitHub Pages site-size limit exceeded: ${totalBytes} bytes`);
-  console.log(`${target} site staged in ${path.relative(REPO, output)}/: ${fileCount} files, ${totalBytes} bytes`);
+  console.log(`${target} site staged in ${path.relative(REPO, output)}/: ${fileCount} files, ${totalBytes} bytes${pageCount ? ` (${pageCount} generated crawlable)` : ""}`);
   if (skippedLarge.length) console.log(`large PDFs delegated to GitHub Pages: ${skippedLarge.join(", ")}`);
   if (skippedFaults.length) console.warn(`filed faulty captures omitted: ${skippedFaults.length} (${skippedFaults.join(", ")})`);
 }

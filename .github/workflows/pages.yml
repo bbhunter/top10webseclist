@@ -40,8 +40,12 @@ jobs:
           node --check website/app.js
           node --check website/constellation.js
           node --check website/build-data.mjs
+          node --check website/build-pages.mjs
           node --check website/build-site.mjs
           node website/build-data.mjs --check
+
+      - name: Validate the generated crawlable pages and sitemap
+        run: node website/pages-test.mjs
 
       - name: Stage the site root and preserved documents
         run: |

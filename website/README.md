@@ -62,6 +62,45 @@ Run the archive/link smoke test with:
 node website/smoke-test.mjs
 ```
 
+## The crawlable surface
+
+The app renders every view from JSON behind one URL, resets `document.title` to a
+single constant, and declares one canonical URL for the whole origin. A search
+engine therefore sees exactly one page however many archive URLs it is handed —
+a sitemap of `?reader=` links would consolidate straight back into the home page.
+
+`build-pages.mjs` generates the indexable layer instead: one plain HTML document
+per preserved reference (`/reference/<slug>/`) and per collection
+(`/research/<collection>/`), plus the research hub, the security policy and the
+sitemap that indexes them. Each page has its own title, description, canonical
+URL and `schema.org` data, runs no JavaScript, and is reachable from the app's
+own footer so a crawler can walk to it rather than only be told about it.
+
+These pages carry the archive's **own** writing — the curated summary, byline,
+topic and ranking context — and never the body of the preserved article.
+Reproducing that text would put this domain into search results competing with
+the researcher who wrote it. The preserved Markdown and PDF stay one click away
+from each record and are served `X-Robots-Tag: noindex` (see `_headers`), as are
+the original listings. The GitHub file origin gets `Disallow: /` for the same
+reason: it exists to serve oversized PDFs, not to be a second indexable copy.
+
+Nothing generated here is committed. `build-site.mjs` calls `buildPages()` and
+writes the result straight into the staged tree, so the crawlable surface is
+rebuilt from the same catalogue on every deploy and cannot go stale. Preview the
+output without staging the whole archive:
+
+```bash
+node website/build-pages.mjs --out /tmp/pages-preview
+```
+
+Check the contract a crawler actually acts on — one title and one `h1` per page,
+a canonical that matches the served path, valid JSON-LD, a sitemap that agrees
+with the pages, no link to an unstaged file, and an unexpired `security.txt`:
+
+```bash
+node website/pages-test.mjs
+```
+
 Browser theme checks cover all nine views at desktop and phone widths, keyboard
 focus after filtering, motion preferences, and reader contrast. Keep the approved
 Playwright, playwright-core and axe-core packages in a directory outside the

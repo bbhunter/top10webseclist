@@ -187,6 +187,17 @@
           </div>
         </div>
 
+        <!-- The archive proper is rendered from JSON and shares one URL, which
+             no search engine can index past the home page. These are the
+             generated catalogue pages (build-pages.mjs): plain HTML, one per
+             year and per preserved reference. Linking them here is what makes
+             them reachable by a crawler - a sitemap alone only suggests. -->
+        <p class="eyebrow">Index</p>
+        <div class="credit-list">
+          <p><a href="/research/">Browse every year as plain pages</a> — one catalogue record per technique, readable without JavaScript.</p>
+          <p><a href="/security/">Reporting a security issue</a> — private GitHub advisories. Open source, no bug bounty.</p>
+        </div>
+
         <p class="eyebrow">Credits</p>
         <div class="credit-list">
           <p><a href="https://twitter.com/jeremiahg" target="_blank" rel="noopener noreferrer">Jeremiah Grossman</a> — created the list and curated 2006–2015.</p>

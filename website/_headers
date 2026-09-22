@@ -92,8 +92,36 @@
 /data/sources/*
   Cache-Control: public, max-age=31536000, immutable
 
+# PRESERVED COPIES OF OTHER PEOPLE'S WORK, kept out of the index on purpose.
+# These files are the researcher's article, not this archive's writing. Letting
+# a search engine index them would put this domain into results for work
+# somebody else published, competing with their own page for their own words.
+# `noindex` costs a reader nothing - the files stay public, linkable and
+# readable - and the catalogue record generated for each one (/reference/...)
+# is what carries the archive's own summary into search instead.
 /archived-references/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  X-Robots-Tag: noindex
 
 /original-listings/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  X-Robots-Tag: noindex
+
+# Generated crawlable pages (see build-pages.mjs). They are rebuilt on every
+# deploy from the catalogue, so they revalidate like the app shell rather than
+# being cached against a version string.
+/pages.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/research/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/reference/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/security/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/.well-known/security.txt
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/plain; charset=utf-8
