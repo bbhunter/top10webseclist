@@ -14412,6 +14412,176 @@
           "published": "2024-12-19"
         }
       ]
+    },
+    "https://www.pwn.ai/blog/click2shell": {
+      "sources": [
+        {
+          "url": "https://patchstack.com/articles/click2shell-the-rce-wordpress-7-1-1-just-patched/",
+          "label": "Technical explanation",
+          "relation": "analysis",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Explains the selector mismatch and separate vulnerable-theme dependency.",
+          "evidence": [
+            "https://www.pwn.ai/blog/click2shell",
+            "https://patchstack.com/articles/click2shell-the-rce-wordpress-7-1-1-just-patched/"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uLzyPYReGJs",
+          "label": "Demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Demonstration embedded in the original article; recording not independently reviewed.",
+          "evidence": [
+            "https://www.pwn.ai/blog/click2shell"
+          ]
+        }
+      ]
+    },
+    "https://ressl.ch/blog/cve-2026-87902-wordpress/": {
+      "sources": [
+        {
+          "url": "https://github.com/ressl/cve-2026-87902-poc",
+          "label": "Research code and laboratory",
+          "relation": "same-work",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "Author-provided laboratory, prerequisites and negative controls.",
+          "evidence": [
+            "https://ressl.ch/blog/cve-2026-87902-wordpress/"
+          ]
+        },
+        {
+          "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+          "label": "Vendor advisory",
+          "relation": "same-work",
+          "kind": "advisory",
+          "preservation": "link-only",
+          "reason": "Vendor confirmation of the reported file-inclusion vulnerability.",
+          "evidence": [
+            "https://ressl.ch/blog/cve-2026-87902-wordpress/"
+          ]
+        }
+      ]
+    },
+    "https://idnsec.com/research/comment2xss-zero-click-pre-auth-xss-to-rce-in-wordpress-core/": {
+      "sources": [
+        {
+          "url": "https://patchstack.com/articles/wordpress-7-1-1-maintenance-and-security-release/",
+          "label": "Disclosure-partner technical explanation",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier account of the newline placeholder and paragraph-formatting stages, crediting Rafie Muhammad.",
+          "evidence": [
+            "https://idnsec.com/research/comment2xss-zero-click-pre-auth-xss-to-rce-in-wordpress-core/",
+            "https://patchstack.com/articles/wordpress-7-1-1-maintenance-and-security-release/"
+          ]
+        }
+      ]
+    },
+    "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent": {
+      "sources": [
+        {
+          "url": "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants",
+          "label": "Research overview",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Same-author overview with demonstration media and per-browser context.",
+          "evidence": [
+            "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent",
+            "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants"
+          ]
+        },
+        {
+          "url": "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+          "label": "Earlier Claude onboarding analysis",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier primary analysis of the same Claude onboarding-message boundary and constrained task execution.",
+          "evidence": [
+            "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent",
+            "https://www.manifold.security/blog/claude-for-chrome-extension-bypass"
+          ]
+        },
+        {
+          "url": "https://unit42.paloaltonetworks.com/gemini-live-in-chrome-hijacking/",
+          "label": "Earlier Chrome research",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "link-only",
+          "reason": "Same-author March disclosure of the Chrome component reused in the September account.",
+          "evidence": [
+            "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent",
+            "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gO6PwG7yG1s",
+          "label": "Embedded demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Embedded in the primary research; recording not independently reviewed.",
+          "evidence": [
+            "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent",
+            "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nOWigz2MWv0",
+          "label": "Embedded demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Embedded in the primary research; recording not independently reviewed.",
+          "evidence": [
+            "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent",
+            "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants"
+          ]
+        }
+      ]
+    },
+    "https://portswigger.net/research/http3-in-burp-suite": {
+      "sources": [
+        {
+          "url": "https://github.com/portswigger/turbo-intruder",
+          "label": "Turbo Intruder",
+          "relation": "same-work",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "Tool source and examples described by the article.",
+          "evidence": [
+            "https://portswigger.net/research/http3-in-burp-suite"
+          ]
+        },
+        {
+          "url": "https://github.com/t0xodile-swig/HTTP3-Adapter",
+          "label": "HTTP/3 Adapter",
+          "relation": "same-work",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "Companion bridge for testing HTTP/3 endpoints through Burp.",
+          "evidence": [
+            "https://portswigger.net/research/http3-in-burp-suite"
+          ]
+        },
+        {
+          "url": "https://portswigger.net/cms/videos/a4/aa/06fee33d9850-1-million-in-10-seconds.mp4",
+          "label": "Throughput demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Video embedded in the technical article; not downloaded or independently reviewed.",
+          "evidence": [
+            "https://portswigger.net/research/http3-in-burp-suite"
+          ]
+        }
+      ]
     }
   }
 }

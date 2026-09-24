@@ -18,17 +18,18 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1984 reference(s) archived across 20 year list(s). 1884 carry technique and 100 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1994 reference(s) archived across 20 year list(s). 1894 carry technique and 100 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (289)
+## 2026-ai (299)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
 | [Code generation gadget after prototype pollution](md/2026-ai/2026-protobuf-js-code-generation-gadget-after-prototype-pollution.md) | advisory | protobuf.js | 2026 | records | 1 |
 | [Code injection in pbjs static output from crafted schema names](md/2026-ai/2026-protobuf-js-code-injection-pbjs-static-output-crafted-schema-names.md) | advisory | protobuf.js | 2026 | records | 1 |
 | [CVE-2025-40780: Cache poisoning due to weak PRNG](md/2026-ai/kb-isc-org-cve-2025-40780-cache-poisoning-due-weak-prng.md) | advisory | kb.isc.org |  | research | 1 |
+| [CVE-2026-87902: Critical WordPress file inclusion and conditional RCE — Robert Ressl](md/2026-ai/2026-ressl-ch-cve-2026-87902-critical-wordpress-file-inclusion-ressl.md) | advisory | Robert Ressl | 2026 | research | 1 |
 | [DOMPurify XSS via `<selectedcontent>` re-clone](md/2026-ai/2026-cure53-dompurify-xss-selectedcontent-re-clone.md) | advisory | Cure53 | 2026 | research | 1 |
 | [DOMPurify: Prototype Pollution to XSS Bypass via CUSTOM_ELEMENT_HANDLING Fallback](md/2026-ai/2026-dompurify-github-security-advisories-dompurify-prototype-fallback.md) | advisory | DOMPurify / GitHub Security Advisories | 2026 | records | 1 |
 | [The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting](md/2026-ai/2026-martino-spagnuolo-forgotten-bug-how-node-js-core-design-flaw-splitting.md) | advisory | Martino Spagnuolo | 2026 | research | 1 |
@@ -55,6 +56,8 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Blind Enumeration of Private Card Names via Sort Oracle and ID Discovery](md/2026-ai/bugcrowd-blind-enumeration-private-card-names-sort-oracle-id-discovery.md) | article | Bugcrowd |  | research | 1 |
 | [BodySnatcher: agentic hijacking in ServiceNow](md/2026-ai/2026-appomni-bodysnatcher-agentic-hijacking-servicenow.md) | article | AppOmni | 2026 | research | 1 |
 | [Borrowing Windows Hello keys for authentication and persistence](md/2026-ai/2026-dirkjanm-io-borrowing-windows-hello-keys-authentication-persistence.md) | article | dirkjanm.io | 2026 | research | 1 |
+| [BragJack [Technical Overview]: How We Hijacked Top 5 Browsers' Internal Agents With Just One Single Extension](md/2026-ai/forever-bragjack-technical-overview-how-we-hijacked-top-5-browsers-extension.md) | article | Forever Security | 2026 | research | 1 |
+| [BragJack: How We Hijacked 5 Of The World's Most Popular Browsers Using Their Built-In AI Assistants](md/2026-ai/forever-bragjack-how-we-hijacked-5-world-s-most-popular-browsers-assistants.md) | article | Forever Security | 2026 | research | 1 |
 | [Breaking LiteLLM: From Auth Bypass to Cloud Compromise](md/2026-ai/2026-wiz-io-breaking-litellm-auth-bypass-cloud-compromise.md) | article | wiz.io | 2026 | research | 1 |
 | [Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker](md/2026-ai/usenix-security-2026-breaking-boundaries-analyzing-quic-frame-packet-attacker.md) | article | USENIX Security 2026 |  | research | 1 |
 | [Breaking the Paperclip: When Agent Configuration Becomes a Vulnerability](md/2026-ai/2026-oasis-security-breaking-paperclip-when-agent-configuration-vulnerability.md) | article | Oasis Security | 2026 | research | 1 |
@@ -73,9 +76,13 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Claude in Chrome: from alert(1) to full account takeover](md/2026-ai/2026-zenity-labs-claude-chrome-alert-1-full-account-takeover.md) | article | Zenity Labs | 2026 | research | 1 |
 | [Claude in Chrome: from alert(1) to full account takeover (Injection analysis)](md/2026-ai/2026-zenity-labs-claude-chrome-alert-1-full-account-takeover-injection-analysis.md) | article | Zenity Labs | 2026 | research | 1 |
 | [Claude in Chrome: from alert(1) to full account takeover (Technical deep dive)](md/2026-ai/2026-zenity-labs-claude-chrome-alert-1-full-account-takeover-technical-deep-dive.md) | article | Zenity Labs | 2026 | research | 1 |
+| [ClaudeBleed Reopened: Browser Extensions Can Still Push Claude for Chrome to Read Your Gmail](md/2026-ai/2026-manifold-claudebleed-reopened-browser-extensions-can-still-push-gmail.md) | article | Manifold Security | 2026 | research | 1 |
+| [Click2Shell: Preauth WordPress Core Theme Preview Injection to RCE Chain](md/2026-ai/2026-pwn-ai-click2shell-preauth-wordpress-core-theme-preview-injection-rce-chain.md) | article | pwn.ai | 2026 | research | 1 |
+| [Click2Shell: The RCE WordPress 7.1.1 Just Patched](md/2026-ai/2026-patchstack-click2shell-rce-wordpress-7-1-1-just-patched.md) | article | Patchstack | 2026 | research | 1 |
 | [Cline Kanban WebSocket Hijack](md/2026-ai/2026-oasis-security-cline-kanban-websocket-hijack.md) | article | Oasis Security | 2026 | research | 1 |
 | [Clinejection — Compromising Cline's Production Releases just by Prompting an Issue Triager](md/2026-ai/2026-adnan-khan-security-research-clinejection-compromising-cline-s-triager.md) | article | Adnan Khan - Security Research | 2026 | research | 1 |
 | [Codex Discovered a Hidden HTTP/2 Bomb](md/2026-ai/2026-calif-codex-discovered-hidden-http-2-bomb.md) | article | Calif | 2026 | research | 1 |
+| [Comment2XSS: Zero-Click Pre-Auth XSS to Potential RCE in WordPress Core](md/2026-ai/2026-idnsec-comment2xss-zero-click-pre-auth-xss-potential-rce-wordpress-core.md) | article | IDNSEC | 2026 | research | 1 |
 | [Computer-Use and TOCTOU: What You Click Is Not What You Get!](md/2026-ai/2026-embrace-the-red-computer-use-toctou-what-you-click-not-what-you-get.md) | article | Embrace The Red | 2026 | research | 1 |
 | [Content-Type Override to Stored XSS on public objects](md/2026-ai/2026-voorivex-content-type-override-stored-xss-public-objects.md) | article | Voorivex | 2026 | research | 1 |
 | [Copilot or Coconspirator - Tricking GitHub Copilot and Stealing all Your Secrets](md/2026-ai/2026-adnan-khan-security-research-copilot-coconspirator-tricking-github-secrets.md) | article | Adnan Khan - Security Research | 2026 | research | 1 |
@@ -104,6 +111,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Finding Gadgets Like it’s 2026](md/2026-ai/atredis-partners-finding-gadgets-like-its-2026.md) | article | Atredis Partners |  | research | 1 |
 | [Finding XSS on Shazzer (literally)](md/2026-ai/jorian-woltjer-finding-xss-shazzer-literally.md) | article | Jorian Woltjer |  | research | 1 |
 | [Fix: Harden input handling (protobuf.js)](md/2026-ai/2026-protobuf-js-fix-harden-input-handling-protobuf-js.md) | article | protobuf.js | 2026 | research | 1 |
+| [From Approval to Execution: Reconstruction-Aware Repair Analysis for LLM-Agent Software](md/2026-ai/arxiv-org-approval-execution-reconstruction-aware-repair-analysis-llm-software.md) | article | arXiv | 2026 | research | 1 |
 | [From Padding Oracle to Shell: Unauthenticated RCE in Telerik UI for ASP.NET AJAX](md/2026-ai/2026-tanto-security-padding-oracle-shell-unauthenticated-rce-telerik-ui-ajax.md) | article | Tanto Security | 2026 | research | 1 |
 | [full_poc.php](md/2026-ai/github-gist-full-poc-php.md) | article | GitHub Gist |  | research | 1 |
 | [Ghosts of Encryption Past: Salesforce Marketing Cloud / ExactTarget](md/2026-ai/searchlight-cyber-ghosts-encryption-past-salesforce-marketing-cloud-exacttarget.md) | article | Searchlight Cyber |  | research | 1 |
@@ -118,6 +126,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [HijackKV: New Threat in Position-Independent KV Cache Reuse](md/2026-ai/arxiv-org-hijackkv-new-threat-position-independent-kv-cache-reuse.md) | article | arXiv.org |  | research | 1 |
 | [HijackKV: New Threat in Position-Independent KV Cache Reuse](md/2026-ai/hijackkv-new-threat-position-independent-kv-cache-reuse.md) | article |  |  | research | 1 |
 | [How We Got Admin Access to Every Copilot Studio Agent Sandbox on Earth](md/2026-ai/beyondtrust-how-we-got-admin-access-every-copilot-studio-agent-sandbox-earth.md) | article | BeyondTrust |  | research | 1 |
+| [HTTP/3 in Burp Suite - it’s time to find a bigger wordlist](md/2026-ai/2026-portswigger-research-http-3-burp-suite-its-time-find-bigger-wordlist.md) | article | PortSwigger | 2026 | research | 1 |
 | [iframe sandbox bypass, cross-origin drag-and-drop, unvalidated postMessage origin, cookie bomb to account takeover](md/2026-ai/medium-iframe-sandbox-bypass-cross-origin-drag-drop-unvalidated-takeover.md) | article | Medium |  | research | 1 |
 | [JavaScript Functions Overload Confusion](md/2026-ai/2026-voorivex-team-javascript-functions-overload-confusion.md) | article | Voorivex Team | 2026 | research | 1 |
 | [Jupyter Enterprise Gateway - From Notebook to Kubernetes Cluster Admin](md/2026-ai/elttam-jupyter-enterprise-gateway-notebook-kubernetes-cluster-admin.md) | article | elttam |  | research | 1 |
@@ -210,6 +219,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments](md/2026-ai/usenix-org-when-http-402-meets-blockchain-risks-emerging-x402-payments.md) | article | USENIX |  | research | 1 |
 | [When Two Parsers Disagree: Exploiting Query String Differentials for XSS](md/2026-ai/2026-voorivex-when-two-parsers-disagree-exploiting-query-string-xss.md) | article | Voorivex | 2026 | research | 1 |
 | [Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)](md/2026-ai/2026-watchtowr-labs-why-use-app-level-auth-when-every-database-has-auth-rce.md) | article | watchTowr Labs | 2026 | research | 1 |
+| [WordPress 7.1.1 Maintenance and Security Release](md/2026-ai/2026-patchstack-wordpress-7-1-1-maintenance-security-release.md) | article | Patchstack | 2026 | research | 1 |
 | [wp2shell: Pre Authentication RCE in WordPress Core](md/2026-ai/slcyber-io-wp2shell-pre-authentication-rce-wordpress-core.md) | article | slcyber.io | 2026 | research | 1 |
 | [wp2shell: Pre Authentication RCE in WordPress Core](md/2026-ai/searchlight-cyber-wp2shell-pre-authentication-rce-wordpress-core.md) | article | Searchlight Cyber |  | records | 1 |
 | [Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE](md/2026-ai/ethiack-write-once-shell-everywhere-turning-arbitrary-file-writes-rce.md) | article | Ethiack |  | research | 1 |

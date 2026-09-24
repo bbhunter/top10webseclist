@@ -8056,6 +8056,70 @@
       "authors": [
         "s1r1us"
       ]
+    },
+    "https://pwn.ai/blog/click2shell": {
+      "authors": [
+        "PWNAI Research"
+      ],
+      "publisher": "pwn.ai"
+    },
+    "https://ressl.ch/blog/cve-2026-87902-wordpress": {
+      "authors": [
+        "Robert Ressl"
+      ],
+      "publisher": "Robert Ressl"
+    },
+    "https://idnsec.com/research/comment2xss-zero-click-pre-auth-xss-to-rce-in-wordpress-core": {
+      "authors": [
+        "Rafie Muhammad"
+      ],
+      "publisher": "IDNSEC"
+    },
+    "https://patchstack.com/articles/wordpress-7-1-1-maintenance-and-security-release": {
+      "authors": [
+        "Patchstack"
+      ],
+      "publisher": "Patchstack"
+    },
+    "https://patchstack.com/articles/click2shell-the-rce-wordpress-7-1-1-just-patched": {
+      "authors": [
+        "Chazz Wolcott"
+      ],
+      "publisher": "Patchstack"
+    },
+    "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent": {
+      "authors": [
+        "Gal Weizman"
+      ],
+      "publisher": "Forever Security"
+    },
+    "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants": {
+      "authors": [
+        "Gal Weizman"
+      ],
+      "publisher": "Forever Security"
+    },
+    "https://manifold.security/blog/claude-for-chrome-extension-bypass": {
+      "authors": [
+        "Ax Sharma"
+      ],
+      "publisher": "Manifold Security"
+    },
+    "https://portswigger.net/research/http3-in-burp-suite": {
+      "authors": [
+        "Tom Stacey"
+      ],
+      "publisher": "PortSwigger"
+    },
+    "https://arxiv.org/abs/2609.26529": {
+      "authors": [
+        "Junchi Zhu",
+        "Zhenguang Liu",
+        "Shaojing Fan",
+        "Jianhai Chen",
+        "Qinming He"
+      ],
+      "publisher": "arXiv"
     }
   },
   "mirror_sources": [],

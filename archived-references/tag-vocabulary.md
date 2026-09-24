@@ -63,27 +63,27 @@ JSON.
 
 ## The vocabulary
 
-207 tags, across 1938 documents that carry a digest.
+207 tags, across 1948 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
 | `abuse-of-functionality` | 75 | A04:2021 |
 | `active-directory` | 1 | — |
 | `activex` | 13 | — |
-| `ai-agent` | 65 | — |
+| `ai-agent` | 69 | — |
 | `algorithmic-complexity` | 36 | A04:2021 |
 | `android` | 35 | — |
 | `angular` | 3 | — |
 | `argument-injection` | 3 | A03:2021 |
 | `aspnet` | 54 | — |
-| `attack-chain` | 224 | — |
-| `auth-bypass` | 351 | A01:2021 |
+| `attack-chain` | 228 | — |
+| `auth-bypass` | 354 | A01:2021 |
 | `autofill` | 4 | — |
 | `aws` | 36 | — |
 | `azure` | 14 | — |
 | `blind-xss` | 1 | A03:2021 |
 | `blockchain` | 8 | — |
-| `browser-extension` | 82 | — |
+| `browser-extension` | 85 | — |
 | `browser-fingerprinting` | 25 | — |
 | `browser-history` | 2 | — |
 | `bug-bounty` | 168 | — |
@@ -105,10 +105,10 @@ JSON.
 | `cookie` | 156 | A07:2021 |
 | `cors` | 29 | A01:2021 |
 | `crypto` | 17 | A02:2021 |
-| `csp` | 71 | A05:2021 |
-| `csrf` | 153 | A01:2021 |
+| `csp` | 72 | A05:2021 |
+| `csrf` | 155 | A01:2021 |
 | `css` | 77 | — |
-| `css-injection` | 34 | A03:2021 |
+| `css-injection` | 36 | A03:2021 |
 | `csti` | 5 | A03:2021 |
 | `cve` | 252 | — |
 | `data-breach` | 5 | — |
@@ -123,7 +123,7 @@ JSON.
 | `dns` | 95 | — |
 | `dns-rebinding` | 36 | A10:2021 |
 | `docker` | 6 | A05:2021 |
-| `dom` | 148 | — |
+| `dom` | 150 | — |
 | `dom-clobbering` | 15 | A08:2021 |
 | `domain-takeover` | 2 | — |
 | `dos` | 119 | — |
@@ -134,7 +134,7 @@ JSON.
 | `electron` | 12 | — |
 | `email` | 58 | — |
 | `embedded-device` | 9 | — |
-| `encoding` | 87 | — |
+| `encoding` | 88 | — |
 | `express` | 9 | — |
 | `file-upload` | 96 | — |
 | `file-write` | 5 | — |
@@ -157,7 +157,7 @@ JSON.
 | `html5` | 1 | — |
 | `http` | 226 | — |
 | `http2` | 32 | — |
-| `http3` | 10 | — |
+| `http3` | 11 | — |
 | `https` | 105 | A02:2021 |
 | `identity` | 27 | A07:2021 |
 | `idor` | 27 | A01:2021 |
@@ -175,7 +175,7 @@ JSON.
 | `kubernetes` | 6 | A05:2021 |
 | `laravel` | 2 | — |
 | `large-scale-scan` | 133 | — |
-| `lfi` | 33 | A01:2021, A03:2021 |
+| `lfi` | 34 | A01:2021, A03:2021 |
 | `llm` | 58 | — |
 | `load-balancer` | 18 | — |
 | `mass-assignment` | 12 | A01:2021 |
@@ -196,14 +196,14 @@ JSON.
 | `oauth` | 81 | A07:2021 |
 | `open-redirect` | 66 | A04:2021 |
 | `openid` | 34 | A07:2021 |
-| `parser-differential` | 204 | — |
+| `parser-differential` | 207 | — |
 | `passkeys` | 12 | A07:2021 |
 | `password-manager` | 5 | — |
-| `path-traversal` | 75 | A01:2021 |
+| `path-traversal` | 76 | A01:2021 |
 | `pdf` | 29 | — |
 | `perl` | 4 | — |
 | `phishing` | 41 | A04:2021 |
-| `php` | 126 | — |
+| `php` | 127 | — |
 | `postgres` | 11 | — |
 | `postmessage` | 38 | — |
 | `predictable-token` | 7 | A02:2021 |
@@ -213,14 +213,14 @@ JSON.
 | `prototype-pollution` | 29 | A08:2021 |
 | `proxy` | 85 | — |
 | `python` | 40 | — |
-| `race-condition` | 33 | A04:2021 |
+| `race-condition` | 35 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 309 | — |
+| `rce` | 313 | — |
 | `react` | 6 | — |
 | `redis` | 5 | — |
 | `redos` | 3 | — |
-| `request-smuggling` | 53 | — |
+| `request-smuggling` | 54 | — |
 | `response-splitting` | 19 | A03:2021 |
 | `rest-api` | 53 | — |
 | `reverse-proxy` | 63 | — |
@@ -229,7 +229,7 @@ JSON.
 | `same-origin-policy` | 188 | A01:2021 |
 | `saml` | 19 | A07:2021 |
 | `sandbox-escape` | 80 | — |
-| `sanitizer-bypass` | 89 | A05:2021 |
+| `sanitizer-bypass` | 91 | A05:2021 |
 | `service-worker` | 14 | — |
 | `session-fixation` | 42 | A07:2021 |
 | `side-channel` | 220 | — |
@@ -244,7 +244,7 @@ JSON.
 | `sso` | 69 | A07:2021 |
 | `ssrf` | 103 | A10:2021 |
 | `ssti` | 24 | A03:2021 |
-| `static-analysis` | 86 | — |
+| `static-analysis` | 87 | — |
 | `struts` | 4 | — |
 | `subdomain-takeover` | 1 | — |
 | `supply-chain` | 62 | A06:2021 |
@@ -252,8 +252,8 @@ JSON.
 | `symfony` | 1 | — |
 | `timing-attack` | 96 | — |
 | `tls` | 115 | A02:2021 |
-| `toctou` | 17 | A04:2021 |
-| `tooling` | 342 | — |
+| `toctou` | 18 | A04:2021 |
+| `tooling` | 343 | — |
 | `type-confusion` | 1 | — |
 | `typosquatting` | 9 | A06:2021 |
 | `ui-redress` | 77 | A04:2021 |
@@ -270,9 +270,9 @@ JSON.
 | `webauthn` | 13 | A07:2021 |
 | `webrtc` | 11 | — |
 | `websocket` | 12 | — |
-| `wordpress` | 22 | — |
+| `wordpress` | 27 | — |
 | `xsleak` | 76 | — |
-| `xss` | 419 | A03:2021 |
+| `xss` | 421 | A03:2021 |
 | `xxe` | 34 | A03:2021 |
 
 ### Never published

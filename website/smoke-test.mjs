@@ -260,13 +260,14 @@ assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(__linkF
 assert.ok(progressiveShard.items.some((item) => item.links.some((link) => link.fromItem?.length)), "Generated shards should share repeated link fields");
 assert.throws(() => clientEval('expandArchiveItem({links:[{fromItem:["__proto__"]}]})'), /Invalid shared archive link field/);
 for (const defaults of [
-  { note: "", rank: null, excluded: false, kind: "article", language: "", published: "", grade: "research", depth: "full", health: "unknown", archiveStatus: "preserved", archived: true },
-  { note: "A distinct note", rank: 1, excluded: true, kind: "paper", language: "en", archived: false }
+  { note: "", rank: null, excluded: false, kind: "article", language: "", published: "", grade: "research", depth: "full", health: "unknown", archiveStatus: "preserved", archived: true, section: "candidate" },
+  { note: "A distinct note", rank: 1, excluded: true, kind: "paper", language: "en", archived: false, section: "winner" }
 ]) {
   clientContext.__defaultFixture = { ...linkFixture, ...defaults };
   assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(compactArchiveItem(__defaultFixture)))")), clientContext.__defaultFixture);
 }
-for (const defaults of [-1, 0, 2048, 1.5, "1"]) {
+assert.equal(clientEval("expandArchiveItem({defaults:2047}).section"), undefined, "Older cached masks must not gain a candidate section");
+for (const defaults of [-1, 0, 4096, 1.5, "1"]) {
   clientContext.__invalidDefaults = defaults;
   assert.throws(() => clientEval("expandArchiveItem({defaults:__invalidDefaults})"), /Invalid archive item defaults/);
 }

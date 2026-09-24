@@ -157,7 +157,7 @@
    "documents": 13
   },
   "ai-agent": {
-   "documents": 65
+   "documents": 69
   },
   "algorithmic-complexity": {
    "documents": 36
@@ -175,10 +175,10 @@
    "documents": 54
   },
   "attack-chain": {
-   "documents": 224
+   "documents": 228
   },
   "auth-bypass": {
-   "documents": 351
+   "documents": 354
   },
   "autofill": {
    "documents": 4
@@ -196,7 +196,7 @@
    "documents": 8
   },
   "browser-extension": {
-   "documents": 82
+   "documents": 85
   },
   "browser-fingerprinting": {
    "documents": 25
@@ -262,16 +262,16 @@
    "documents": 17
   },
   "csp": {
-   "documents": 71
+   "documents": 72
   },
   "csrf": {
-   "documents": 153
+   "documents": 155
   },
   "css": {
    "documents": 77
   },
   "css-injection": {
-   "documents": 34
+   "documents": 36
   },
   "csti": {
    "documents": 5
@@ -316,7 +316,7 @@
    "documents": 6
   },
   "dom": {
-   "documents": 148
+   "documents": 150
   },
   "dom-clobbering": {
    "documents": 15
@@ -349,7 +349,7 @@
    "documents": 9
   },
   "encoding": {
-   "documents": 87
+   "documents": 88
   },
   "express": {
    "documents": 9
@@ -418,7 +418,7 @@
    "documents": 32
   },
   "http3": {
-   "documents": 10
+   "documents": 11
   },
   "https": {
    "documents": 105
@@ -472,7 +472,7 @@
    "documents": 133
   },
   "lfi": {
-   "documents": 33
+   "documents": 34
   },
   "llm": {
    "documents": 58
@@ -535,7 +535,7 @@
    "documents": 34
   },
   "parser-differential": {
-   "documents": 204
+   "documents": 207
   },
   "passkeys": {
    "documents": 12
@@ -544,7 +544,7 @@
    "documents": 5
   },
   "path-traversal": {
-   "documents": 75
+   "documents": 76
   },
   "pdf": {
    "documents": 29
@@ -556,7 +556,7 @@
    "documents": 41
   },
   "php": {
-   "documents": 126
+   "documents": 127
   },
   "postgres": {
    "documents": 11
@@ -586,7 +586,7 @@
    "documents": 40
   },
   "race-condition": {
-   "documents": 33
+   "documents": 35
   },
   "rag": {
    "documents": 5
@@ -595,7 +595,7 @@
    "documents": 17
   },
   "rce": {
-   "documents": 309
+   "documents": 313
   },
   "react": {
    "documents": 6
@@ -607,7 +607,7 @@
    "documents": 3
   },
   "request-smuggling": {
-   "documents": 53
+   "documents": 54
   },
   "response-splitting": {
    "documents": 19
@@ -634,7 +634,7 @@
    "documents": 80
   },
   "sanitizer-bypass": {
-   "documents": 89
+   "documents": 91
   },
   "service-worker": {
    "documents": 14
@@ -679,7 +679,7 @@
    "documents": 24
   },
   "static-analysis": {
-   "documents": 86
+   "documents": 87
   },
   "struts": {
    "documents": 4
@@ -703,10 +703,10 @@
    "documents": 115
   },
   "toctou": {
-   "documents": 17
+   "documents": 18
   },
   "tooling": {
-   "documents": 342
+   "documents": 343
   },
   "type-confusion": {
    "documents": 1
@@ -757,17 +757,17 @@
    "documents": 12
   },
   "wordpress": {
-   "documents": 22
+   "documents": 27
   },
   "xsleak": {
    "documents": 76
   },
   "xss": {
-   "documents": 419
+   "documents": 421
   },
   "xxe": {
    "documents": 34
   }
  },
- "updated": "2026-09-22T09:39:08+00:00"
+ "updated": "2026-09-24T23:10:59+00:00"
 }

@@ -1085,7 +1085,7 @@ const ARCHIVE_LINK_ITEM_FIELDS = Object.freeze({
 const ARCHIVE_ITEM_DEFAULTS = Object.freeze({
   note: "", rank: null, excluded: false, kind: "article", language: "",
   published: "", grade: "research", depth: "full", health: "unknown",
-  archiveStatus: "preserved", archived: true
+  archiveStatus: "preserved", archived: true, section: "candidate"
 });
 
 function compactArchiveItem(item) {

@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-22T10:13:05+00:00",
+ "updated": "2026-09-24T23:13:10+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -14679,6 +14679,106 @@
     }
    },
    "title": "What's in Your Agent's Context? Context Privilege Escalation Attacks against AI Agent Harness"
+  },
+  "https://arxiv.org/abs/2609.26529": {
+   "also_at": [
+    "https://arxiv.org/html/2609.26529v1",
+    "https://arxiv.org/pdf/2609.26529v1"
+   ],
+   "authors": [
+    "Junchi Zhu",
+    "Zhenguang Liu",
+    "Shaojing Fan",
+    "Jianhai Chen",
+    "Qinming He"
+   ],
+   "cited_by": [
+    "2026-ai.md:248"
+   ],
+   "cited_title": "From Approval to Execution: Reconstruction-Aware Repair Analysis for LLM-Agent Software",
+   "content_gap": "",
+   "content_sha256": "8847b2714e38a7e6db9e405135cb58e214cf33902c58754de348ff1e6af5093a",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "8847b2714e38a7e6db9e405135cb58e214cf33902c58754de348ff1e6af5093a",
+    "tags": [
+     "ai-agent",
+     "auth-bypass",
+     "toctou",
+     "static-analysis"
+    ],
+    "text": "Analyzes whether approval still covers the action consumed after workflow reload, argument rebinding and other reconstruction. Uses object versions, grant scope and atomicity to identify incomplete repairs. Results depend on reviewed models and isolated sink experiments."
+   },
+   "first_seen_utc": "2026-09-24T22:49:47+00:00",
+   "grade": "research",
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "linked_document_sha256": "e7e3ca635da61857a2d1582985921de54a09fcc4f36d19b686313e0486824d1f",
+   "linked_document_url": "https://arxiv.org/html/2609.26529v1",
+   "paper": {
+    "bytes": 2243771,
+    "provenance": "fetched",
+    "retrieved_utc": "2026-09-24T22:52:10+00:00",
+    "sha256": "3e302119d47628b900ce56eaf602daf14e393a30b85b8504198c6b266a9cc992",
+    "url": "https://arxiv.org/pdf/2609.26529v1"
+   },
+   "published": "2026-09-22",
+   "publisher": "arXiv",
+   "raw_sha256": "e7e3ca635da61857a2d1582985921de54a09fcc4f36d19b686313e0486824d1f",
+   "slug": "arxiv-org-approval-execution-reconstruction-aware-repair-analysis-llm-software",
+   "spellings": [
+    "https://arxiv.org/abs/2609.26529"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "8847b2714e38a7e6db9e405135cb58e214cf33902c58754de348ff1e6af5093a",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T23:01:34+00:00"
+    },
+    "import": {
+     "chars": 65299,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "8847b2714e38a7e6db9e405135cb58e214cf33902c58754de348ff1e6af5093a",
+     "utc": "2026-09-24T23:01:34+00:00"
+    },
+    "paper": {
+     "bytes": 2243771,
+     "file": "",
+     "reason": "fetched: https://arxiv.org/pdf/2609.26529v1",
+     "result": "stored",
+     "utc": "2026-09-24T22:52:10+00:00"
+    },
+    "pdf": {
+     "bytes": 2243771,
+     "file": "archived-references/pdf/2026-ai/arxiv-org-approval-execution-reconstruction-aware-repair-analysis-llm-software.pdf",
+     "result": "copied",
+     "source": "linked-paper",
+     "utc": "2026-09-24T23:03:35+00:00"
+    },
+    "render": {
+     "chars": 65299,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/arxiv-org-approval-execution-reconstruction-aware-repair-analysis-llm-software.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T23:01:34+00:00"
+    }
+   },
+   "title": "From Approval to Execution: Reconstruction-Aware Repair Analysis for LLM-Agent Software"
   },
   "https://arxiv.org/pdf/1412.1623v1": {
    "also_at": [],
@@ -89728,6 +89828,300 @@
    },
    "title": "Flash Origin Policy Issues"
   },
+  "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent": {
+   "also_at": [],
+   "authors": [
+    "Gal Weizman"
+   ],
+   "cited_by": [
+    "2026-ai.md:246"
+   ],
+   "cited_title": "BragJack: extension access to privileged browser-agent channels",
+   "content_gap": "",
+   "content_sha256": "6acf7efb17e9a92abc91d22a8173212a1acff078a3eba6de38cb45397b76f3e2",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "6acf7efb17e9a92abc91d22a8173212a1acff078a3eba6de38cb45397b76f3e2",
+    "tags": [
+     "browser-extension",
+     "ai-agent",
+     "csp",
+     "race-condition"
+    ],
+    "text": "Shows how extension-controlled network rules and trusted web origins reach privileged browser-agent interfaces. Comet exposes an unprotected testing origin; Edge combines weakened framing policy, debugger-generated gestures and a tools-mode race. Includes distinct Chrome, Opera and Claude paths."
+   },
+   "first_seen_utc": "2026-09-24T22:45:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://forever.security/_astro/comet-architecture-current.YqpP89LZ_Z1hkdk2.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    },
+    "https://forever.security/_astro/dinner-serving-current.CrxU1vrL_W8mHG.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    },
+    "https://forever.security/_astro/edge-architecture-current.DtAi6Ee5_Z1hkdk2.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    },
+    "https://forever.security/_astro/glic-architecture-current.Bxvm-pBh_Z1hkdk2.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-16",
+   "publisher": "Forever Security",
+   "raw_sha256": "7a0c5a3833610d078158f255d1cc26de03f740e77370a84f86af2282c0697478",
+   "slug": "forever-bragjack-technical-overview-how-we-hijacked-top-5-browsers-extension",
+   "spellings": [
+    "https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "6acf7efb17e9a92abc91d22a8173212a1acff078a3eba6de38cb45397b76f3e2",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T23:10:35+00:00"
+    },
+    "images": {
+     "bytes": 0,
+     "reason": "0 of 4 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:54:24+00:00"
+    },
+    "import": {
+     "chars": 26482,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "6acf7efb17e9a92abc91d22a8173212a1acff078a3eba6de38cb45397b76f3e2",
+     "utc": "2026-09-24T23:10:35+00:00"
+    },
+    "pdf": {
+     "bytes": 346315,
+     "file": "archived-references/pdf/2026-ai/forever-bragjack-technical-overview-how-we-hijacked-top-5-browsers-extension.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:11:13+00:00"
+    },
+    "render": {
+     "chars": 26482,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/forever-bragjack-technical-overview-how-we-hijacked-top-5-browsers-extension.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T23:10:35+00:00"
+    }
+   },
+   "title": "BragJack [Technical Overview]: How We Hijacked Top 5 Browsers' Internal Agents With Just One Single Extension"
+  },
+  "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants": {
+   "also_at": [],
+   "authors": [
+    "Gal Weizman"
+   ],
+   "cited_by": [
+    "2026-ai.md:246"
+   ],
+   "cited_title": "Research overview",
+   "content_gap": "",
+   "content_sha256": "b8a6c309da43ef33f62ccc0eb95bcdd8d79accefb6df8f23ca28286b0f03155b",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "b8a6c309da43ef33f62ccc0eb95bcdd8d79accefb6df8f23ca28286b0f03155b",
+    "tags": [
+     "browser-extension",
+     "ai-agent",
+     "auth-bypass"
+    ],
+    "text": "Explains the BragJack research across five Chromium-based browser assistants, tracing how extension access to trusted web content can become privileged agent commands. Provides a narrative companion to the technical article, with demonstrations and a browser-by-browser impact comparison."
+   },
+   "first_seen_utc": "2026-09-24T22:45:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://forever.security/_astro/browser-and-brain-current.u9rk18AC_Z1RskX5.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    },
+    "https://forever.security/_astro/get-in-touch-current.CO4bVrZY_Za5UiF.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    },
+    "https://forever.security/_astro/image1-current.CrApZk_V_1QCeSK.webp": {
+     "bytes": 17403,
+     "height": 411,
+     "sha256": "bb5cfd1045753045d4860798f63e708593e279a7aaf7f92d9e67cd839e81bc2a",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image10-current.Dc5HRs1__1UKi0R.webp": {
+     "bytes": 28857,
+     "height": 384,
+     "sha256": "2d9066b6f94becd69fb90b5f2578c0e3f8ab215972125af610b0ac6a2d646990",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image11-current.BrAEkEoF_Z1jR262.webp": {
+     "bytes": 19584,
+     "height": 380,
+     "sha256": "b5351d0971d90e2c7cbca66eab8f954f70461cfd5f434c404166fcdf023034da",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image12-current.Bx17lhtL_Z1YUpIv.webp": {
+     "bytes": 50873,
+     "height": 590,
+     "sha256": "d122bc85365e676bf3f3bca2c9e1efec7a70dc70bb6d4b3c61ec3cef0f2a6017",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image13-current.BI1uOchO_2ndfwr.webp": {
+     "bytes": 21567,
+     "height": 281,
+     "sha256": "c86e71c5a5d24e319cc924a33d871ad7306c8b4ad4c4319e04bffd9fbba64134",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image15-current.CFBOzwoy_1gycAi.webp": {
+     "bytes": 23146,
+     "height": 587,
+     "sha256": "9e1c11c67d050d9078297dd70c6630db68272da2e8b7acf3080e4baca424439c",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image16-current.BIB-hP_r_PvYeA.webp": {
+     "bytes": 56407,
+     "height": 559,
+     "sha256": "91229e126261bc3cd96443ac2f38058d554f9a816d5621c79d0988b1d0e4b68e",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image17-current.DdyFYkEE_Z1JmdTb.webp": {
+     "bytes": 27498,
+     "height": 626,
+     "sha256": "9f3acda91c2e3c6ca47898299bf424200523e9a2bd7d2e09d6d434dd25f712cb",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image18-current._macyGvV_ZBl8b4.webp": {
+     "bytes": 39407,
+     "height": 458,
+     "sha256": "c141de806954ca640537b5fb6ea968e276b28e5be27ac1dabddf3d13736f8917",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image19-current.BIgQEzms_Z1lm0mQ.webp": {
+     "bytes": 61867,
+     "height": 874,
+     "sha256": "ee73fed02c28be877b076046cc85a090d1c8ac59d9d2af706320405de6911642",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image20-current.bpzO0Xrv_Z1kVcY1.webp": {
+     "bytes": 42022,
+     "height": 1100,
+     "sha256": "50d4346c6789835850747e382d12dd04a73e76c01ef8b9cff9f850c5c8d66cab",
+     "width": 736
+    },
+    "https://forever.security/_astro/image4-current.cTbyaRrd_Z116CpK.webp": {
+     "bytes": 30129,
+     "height": 430,
+     "sha256": "04c86ebd4c12ac53e48675162e30472e5a598dc173f508ebe2637eb45b3336ac",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image5-current.DPtE7it1_f3u1A.webp": {
+     "bytes": 108375,
+     "height": 618,
+     "sha256": "ccb6a945dda503bdc23258bff1eabede97a73ec611019cf59f279ddf961fb861",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image6-current.B313l0mx_12uL4E.webp": {
+     "bytes": 91173,
+     "height": 1100,
+     "sha256": "db3793346c96dd4752757abd821191ea62d9419ac86dbf3d8796f7b833a8c7f1",
+     "width": 1043
+    },
+    "https://forever.security/_astro/image7-current.BA0YcLKZ_ZouxlH.webp": {
+     "bytes": 24681,
+     "height": 326,
+     "sha256": "2303ed289a36811f13b4e09704ad2c0797f9e06852e8831d9342c8bf644b5121",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image8-current.BivT89cW_Z1S736P.webp": {
+     "bytes": 53859,
+     "height": 550,
+     "sha256": "63b81cc0a1a1a0d546d9183a5d79c322a9370b551049b0d882749146ff443928",
+     "width": 1100
+    },
+    "https://forever.security/_astro/image9-current.C2WzM3aR_LhbS1.webp": {
+     "bytes": 46977,
+     "height": 618,
+     "sha256": "ee5f00ae518cce3b568841b228d4b3988380e3effcf2eead3dfdddfb1545956f",
+     "width": 1100
+    },
+    "https://forever.security/_astro/prompt-to-action-current.-P-7tGcm_Z1yk9UM.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-16",
+   "publisher": "Forever Security",
+   "raw_sha256": "73815e7122d09cd3add2a650b0ea173a3eb8a77dd92338aea30a51d6820d961a",
+   "slug": "forever-bragjack-how-we-hijacked-5-world-s-most-popular-browsers-assistants",
+   "spellings": [
+    "https://forever.security/blog/bragjack-hijacking-5-browsers-via-built-in-ai-assistants"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "b8a6c309da43ef33f62ccc0eb95bcdd8d79accefb6df8f23ca28286b0f03155b",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T23:10:46+00:00"
+    },
+    "images": {
+     "bytes": 743825,
+     "reason": "17 of 20 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:56:38+00:00"
+    },
+    "import": {
+     "chars": 22048,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "b8a6c309da43ef33f62ccc0eb95bcdd8d79accefb6df8f23ca28286b0f03155b",
+     "utc": "2026-09-24T23:10:46+00:00"
+    },
+    "pdf": {
+     "bytes": 930465,
+     "file": "archived-references/pdf/2026-ai/forever-bragjack-how-we-hijacked-5-world-s-most-popular-browsers-assistants.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:11:27+00:00"
+    },
+    "render": {
+     "chars": 22048,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/forever-bragjack-how-we-hijacked-5-world-s-most-popular-browsers-assistants.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T23:10:46+00:00"
+    }
+   },
+   "title": "BragJack: How We Hijacked 5 Of The World's Most Popular Browsers Using Their Built-In AI Assistants"
+  },
   "https://fortbridge.co.uk/research/vesta-admin-takeover-exploiting-reduced-seed-entropy-in-bash-random": {
    "also_at": [],
    "authors": [
@@ -136412,6 +136806,106 @@
    },
    "title": "Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis"
   },
+  "https://idnsec.com/research/comment2xss-zero-click-pre-auth-xss-to-rce-in-wordpress-core": {
+   "also_at": [],
+   "authors": [
+    "Rafie Muhammad"
+   ],
+   "cited_by": [
+    "2026-ai.md:245"
+   ],
+   "cited_title": "Comment2XSS: chained comment-formatting transformations in WordPress",
+   "content_gap": "",
+   "content_sha256": "d45bc5526dbff23e44d30bfca641eeed4471643b9ba8e547e674d9e82471a321",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "d45bc5526dbff23e44d30bfca641eeed4471643b9ba8e547e674d9e82471a321",
+    "tags": [
+     "wordpress",
+     "xss",
+     "sanitizer-bypass",
+     "parser-differential",
+     "rce",
+     "attack-chain"
+    ],
+    "text": "A permitted comment attribute newline becomes an HTML-comment placeholder. A quote-unaware wpautop rewrite inserts markup inside it; subsequent texturization changes quoting and turns safe text into an event handler. The report covers rendering prerequisites, moderation routes and conditional administrator-session plugin-upload escalation."
+   },
+   "first_seen_utc": "2026-09-24T22:43:36+00:00",
+   "grade": "research",
+   "images": {
+    "https://idnsec.com/files/comment2shell-zero-click-pre-auth-xss-to-rce-in-wordpress-core/comment2shell-chain.svg": {
+     "reason": "SVG is a script host and is never rasterised"
+    },
+    "https://idnsec.com/files/comment2shell-zero-click-pre-auth-xss-to-rce-in-wordpress-core/comment2shell-poc-demo.gif": {
+     "reason": "Animated demonstration retained as a source link; the preserved flattened image was entirely blank."
+    },
+    "https://idnsec.com/files/comment2shell-zero-click-pre-auth-xss-to-rce-in-wordpress-core/comment2xss-thumbnail.webp": {
+     "bytes": 36591,
+     "height": 577,
+     "sha256": "905a8546262ec02404d3eeb972d141cc82a7f4d1698d12f9a388f5c1144fcef1",
+     "width": 1100
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-21",
+   "publisher": "IDNSEC",
+   "raw_sha256": "3ac9310daf072f67534c6fb89a6d2be16b268cf5e1bde0124d9278e91273a62c",
+   "slug": "2026-idnsec-comment2xss-zero-click-pre-auth-xss-potential-rce-wordpress-core",
+   "spellings": [
+    "https://idnsec.com/research/comment2xss-zero-click-pre-auth-xss-to-rce-in-wordpress-core/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "d45bc5526dbff23e44d30bfca641eeed4471643b9ba8e547e674d9e82471a321",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T23:00:06+00:00"
+    },
+    "images": {
+     "bytes": 36591,
+     "reason": "1 of 3 images preserved; SVG and animated demonstration retained as source links",
+     "result": "stored",
+     "utc": "2026-09-24T23:13:10+00:00"
+    },
+    "import": {
+     "chars": 15537,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "d45bc5526dbff23e44d30bfca641eeed4471643b9ba8e547e674d9e82471a321",
+     "utc": "2026-09-24T23:00:06+00:00"
+    },
+    "pdf": {
+     "bytes": 277562,
+     "file": "archived-references/pdf/2026-ai/2026-idnsec-comment2xss-zero-click-pre-auth-xss-potential-rce-wordpress-core.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:13:10+00:00"
+    },
+    "render": {
+     "chars": 15537,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-idnsec-comment2xss-zero-click-pre-auth-xss-potential-rce-wordpress-core.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T23:00:06+00:00"
+    }
+   },
+   "title": "Comment2XSS: Zero-Click Pre-Auth XSS to Potential RCE in WordPress Core"
+  },
   "https://ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf": {
    "also_at": [],
    "authors": [
@@ -167031,6 +167525,163 @@
     }
    },
    "title": "The War on SQLi, or What Happened in 4.8.2 and 4.8.3"
+  },
+  "https://manifold.security/blog/claude-for-chrome-extension-bypass": {
+   "also_at": [],
+   "authors": [
+    "Ax Sharma"
+   ],
+   "cited_by": [
+    "2026-ai.md:246"
+   ],
+   "cited_title": "Earlier Claude onboarding analysis",
+   "content_gap": "",
+   "content_sha256": "cce1b385dea9aab5232c852c05b766fe685fc9e2bb87161a064b6b787b7a914f",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "cce1b385dea9aab5232c852c05b766fe685fc9e2bb87161a064b6b787b7a914f",
+    "tags": [
+     "browser-extension",
+     "ai-agent",
+     "auth-bypass"
+    ],
+    "text": "Shows that synthetic clicks on Claude onboarding elements can trigger nine fixed tasks despite a prompt allowlist. Sensitive actions still require approval in default mode. Separately documents a privileged side-panel URL setting that requires same-extension access."
+   },
+   "first_seen_utc": "2026-09-24T22:45:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2F4fced1fdb9c8004dad0cd0160c5975a900ebc84f-1326x548.png%3Fw%3D1326%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 21171,
+     "height": 454,
+     "sha256": "ff522662988ae3222c42010bc7bfe469980575bb146b59bbeb65708539fd8cd1",
+     "width": 1100
+    },
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2F5a20d1c86c3481f8a4fc5f8c6da5bffb5c309d65-1480x1063.png%3Fw%3D1480%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 39617,
+     "height": 790,
+     "sha256": "d8834fbe418ec967fbd18f95b0cef90f0866aac54a2bbaf0f796f17aa30d12bb",
+     "width": 1100
+    },
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2F619e96f89e653bcd4bc263a1cf18aee9148e9265-1120x408.png%3Fw%3D1120%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 25191,
+     "height": 400,
+     "sha256": "afee5289b78359bfb974642fc7251900d51200b69b77b14bca038e86e7f5d583",
+     "width": 1100
+    },
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2F8b4a848ca1f103a76bb6be9b1306440ae76c2241-1904x905.png%3Fw%3D1600%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 60295,
+     "height": 523,
+     "sha256": "513441628c6bd6ca4ede912b3f82770335cdcc7fcdcb0e5b24bdd8be6c1a6e59",
+     "width": 1100
+    },
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2F930f15484f630cd9cc319c786809b79bd7d679c8-1232x564.png%3Fw%3D1232%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 42606,
+     "height": 503,
+     "sha256": "365055bbdaba248cfe014bdeed8ba3f129817f23895990518cc78175b6434075",
+     "width": 1100
+    },
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2Fbee592c2f4d662ff871e602aaf251948fb841f3d-1686x933.png%3Fw%3D1600%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 77030,
+     "height": 608,
+     "sha256": "99d3cbac4e1898eaf2892a9fdef4a858f8920d825fb6e47681dcd26eb09a2a5c",
+     "width": 1100
+    },
+    "https://www.manifold.security/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fphwxcc13%2Fproduction%2Ffa7be6395faa50d2398f840585f4cc893bc07eaa-555x393.png%3Fw%3D555%26auto%3Dformat&w=3840&q=75": {
+     "bytes": 21330,
+     "height": 393,
+     "sha256": "01cda440747fa900d31cc739b1f3a21376564d0fd970deec1507128136e2aa45",
+     "width": 555
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-07-14",
+   "publisher": "Manifold Security",
+   "raw_sha256": "c075102f093eec1fc4abcdd29f09163d76d43dda1629d48d9962b9971e724056",
+   "slug": "2026-manifold-claudebleed-reopened-browser-extensions-can-still-push-gmail",
+   "spellings": [
+    "https://www.manifold.security/blog/claude-for-chrome-extension-bypass"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "cce1b385dea9aab5232c852c05b766fe685fc9e2bb87161a064b6b787b7a914f",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 15216,
+        "code_blocks": 0,
+        "headings": 11,
+        "images": 13,
+        "links": 10,
+        "name": "precision",
+        "tables": 0,
+        "words": 1771
+       },
+       {
+        "chars": 15346,
+        "code_blocks": 0,
+        "headings": 11,
+        "images": 13,
+        "links": 11,
+        "name": "recall",
+        "tables": 0,
+        "words": 1783
+       },
+       {
+        "chars": 15460,
+        "code_blocks": 0,
+        "headings": 11,
+        "images": 13,
+        "links": 11,
+        "name": "raw",
+        "tables": 0,
+        "words": 1800
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "c075102f093eec1fc4abcdd29f09163d76d43dda1629d48d9962b9971e724056",
+     "reason": "",
+     "result": "stored",
+     "slug": "2026-manifold-claudebleed-reopened-browser-extensions-can-still-push-gmail",
+     "utc": "2026-09-24T22:46:33+00:00"
+    },
+    "images": {
+     "bytes": 287240,
+     "reason": "7 of 7 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:57:31+00:00"
+    },
+    "pdf": {
+     "bytes": 416665,
+     "file": "archived-references/pdf/2026-ai/2026-manifold-claudebleed-reopened-browser-extensions-can-still-push-gmail.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:04:19+00:00"
+    },
+    "render": {
+     "chars": 14996,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-manifold-claudebleed-reopened-browser-extensions-can-still-push-gmail.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T22:46:36+00:00"
+    }
+   },
+   "title": "ClaudeBleed Reopened: Browser Extensions Can Still Push Claude for Chrome to Read Your Gmail"
   },
   "https://marektoth.com/blog/dom-based-extension-clickjacking": {
    "also_at": [],
@@ -203896,6 +204547,222 @@
    },
    "title": "mario - Pastebin.com"
   },
+  "https://patchstack.com/articles/click2shell-the-rce-wordpress-7-1-1-just-patched": {
+   "also_at": [],
+   "authors": [
+    "Chazz Wolcott"
+   ],
+   "cited_by": [
+    "2026-ai.md:243"
+   ],
+   "cited_title": "Technical explanation",
+   "content_gap": "",
+   "content_sha256": "65ef9dc7dd5259686fd2e7509ee189bf84b43375e29c2dac37a28cebf0d78a83",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "65ef9dc7dd5259686fd2e7509ee189bf84b43375e29c2dac37a28cebf0d78a83",
+    "tags": [
+     "wordpress",
+     "csrf",
+     "css-injection",
+     "dom",
+     "rce",
+     "attack-chain"
+    ],
+    "text": "Companion analysis of Click2Shell explains the API/selector interpretation mismatch, inactive-theme Customizer execution and vulnerable installer chain. It clarifies that a privileged administrator must load the URL and that file-modification restrictions constrain the installation-to-RCE result."
+   },
+   "first_seen_utc": "2026-09-24T22:41:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://patchstack.com/_astro/avatar-george.r2UEeEUz_Z1fzF1K.webp": {
+     "bytes": 23955,
+     "height": 640,
+     "sha256": "1a7fdebf58ee7af4733817f82c993aa6c83ee5a1d8ca952dff319cade313f8ef",
+     "width": 640
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-18",
+   "publisher": "Patchstack",
+   "raw_sha256": "926da42a0032964f48392647523707710f5a206ce0eddda59e509d784cdbf0c6",
+   "slug": "2026-patchstack-click2shell-rce-wordpress-7-1-1-just-patched",
+   "spellings": [
+    "https://patchstack.com/articles/click2shell-the-rce-wordpress-7-1-1-just-patched/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "65ef9dc7dd5259686fd2e7509ee189bf84b43375e29c2dac37a28cebf0d78a83",
+     "extraction": {
+      "candidates": [
+       {
+        "chars": 6596,
+        "code_blocks": 0,
+        "headings": 6,
+        "images": 2,
+        "links": 11,
+        "name": "precision",
+        "tables": 0,
+        "words": 857
+       },
+       {
+        "chars": 6596,
+        "code_blocks": 0,
+        "headings": 6,
+        "images": 2,
+        "links": 11,
+        "name": "recall",
+        "tables": 0,
+        "words": 857
+       },
+       {
+        "chars": 6660,
+        "code_blocks": 0,
+        "headings": 6,
+        "images": 2,
+        "links": 11,
+        "name": "raw",
+        "tables": 0,
+        "words": 866
+       }
+      ],
+      "chosen": "precision",
+      "why": "precision kept the code blocks and most of the text"
+     },
+     "raw_sha256": "926da42a0032964f48392647523707710f5a206ce0eddda59e509d784cdbf0c6",
+     "reason": "",
+     "result": "stored",
+     "slug": "2026-patchstack-click2shell-rce-wordpress-7-1-1-just-patched",
+     "utc": "2026-09-24T22:41:45+00:00"
+    },
+    "images": {
+     "bytes": 23955,
+     "reason": "1 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:57:41+00:00"
+    },
+    "pdf": {
+     "bytes": 106712,
+     "file": "archived-references/pdf/2026-ai/2026-patchstack-click2shell-rce-wordpress-7-1-1-just-patched.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:04:30+00:00"
+    },
+    "render": {
+     "chars": 8371,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-patchstack-click2shell-rce-wordpress-7-1-1-just-patched.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T22:41:46+00:00"
+    }
+   },
+   "title": "Click2Shell: The RCE WordPress 7.1.1 Just Patched"
+  },
+  "https://patchstack.com/articles/wordpress-7-1-1-maintenance-and-security-release": {
+   "also_at": [],
+   "authors": [
+    "Patchstack"
+   ],
+   "cited_by": [
+    "2026-ai.md:245"
+   ],
+   "cited_title": "Disclosure-partner technical explanation",
+   "content_gap": "",
+   "content_sha256": "a0123160dfc9edcb4278b0c516f1b6821bb1bbcd9ca81a249ba671b24b9e1915",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "a0123160dfc9edcb4278b0c516f1b6821bb1bbcd9ca81a249ba671b24b9e1915",
+    "tags": [
+     "wordpress",
+     "xss",
+     "sanitizer-bypass",
+     "parser-differential"
+    ],
+    "text": "Companion analysis traces CVE-2026-93485 from allowed comment markup through wpautop's newline placeholder and quote-unaware blockquote regex. It explains the quote-aware fix, moderation limitations, coordinated disclosure and the other WordPress 7.1.1 security changes."
+   },
+   "first_seen_utc": "2026-09-24T22:43:36+00:00",
+   "grade": "research",
+   "images": {
+    "https://patchstack.com/_astro/avatar-george.r2UEeEUz_Z1fzF1K.webp": {
+     "bytes": 23955,
+     "height": 640,
+     "sha256": "1a7fdebf58ee7af4733817f82c993aa6c83ee5a1d8ca952dff319cade313f8ef",
+     "width": 640
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-18",
+   "publisher": "Patchstack",
+   "raw_sha256": "fcb715f21a5a9b302d93d07a1b0ddd525a0af2de842567b6146286dc2567e61f",
+   "slug": "2026-patchstack-wordpress-7-1-1-maintenance-security-release",
+   "spellings": [
+    "https://patchstack.com/articles/wordpress-7-1-1-maintenance-and-security-release/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "a0123160dfc9edcb4278b0c516f1b6821bb1bbcd9ca81a249ba671b24b9e1915",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T23:00:17+00:00"
+    },
+    "images": {
+     "bytes": 23955,
+     "reason": "1 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:57:52+00:00"
+    },
+    "import": {
+     "chars": 9254,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "a0123160dfc9edcb4278b0c516f1b6821bb1bbcd9ca81a249ba671b24b9e1915",
+     "utc": "2026-09-24T23:00:17+00:00"
+    },
+    "pdf": {
+     "bytes": 138768,
+     "file": "archived-references/pdf/2026-ai/2026-patchstack-wordpress-7-1-1-maintenance-security-release.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:04:40+00:00"
+    },
+    "render": {
+     "chars": 9254,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-patchstack-wordpress-7-1-1-maintenance-security-release.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T23:00:17+00:00"
+    }
+   },
+   "title": "WordPress 7.1.1 Maintenance and Security Release"
+  },
   "https://pauldotcom.com/2011/05/stealth-cookie-stealing-new-xs.html": {
    "also_at": [],
    "authors": [
@@ -213908,6 +214775,106 @@
     }
    ]
   },
+  "https://portswigger.net/research/http3-in-burp-suite": {
+   "also_at": [],
+   "authors": [
+    "Tom Stacey"
+   ],
+   "cited_by": [
+    "2026-ai.md:247"
+   ],
+   "cited_title": "HTTP/3 in Burp Suite: programmable HTTP/3 testing and race tooling",
+   "content_gap": "",
+   "content_sha256": "842d936cd4b1fc0ce772e0bb2c54966976e210f6505a0ec80f44959e92966031",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "842d936cd4b1fc0ce772e0bb2c54966976e210f6505a0ec80f44959e92966031",
+    "tags": [
+     "http3",
+     "race-condition",
+     "request-smuggling",
+     "tooling"
+    ],
+    "text": "Introduces HTTP/3 engines and automatic tuning in Turbo Intruder, integrates Single Datagram and QPACK blocked-stream race techniques, and shows downgrade-header testing. An HTTP/3 Adapter extends Burp testing to HTTP/3-only services. Includes configuration tables and request examples."
+   },
+   "first_seen_utc": "2026-09-24T22:49:47+00:00",
+   "grade": "research",
+   "images": {
+    "https://portswigger.net/cms/images/26/76/fe7d-article-http3_in_burp_suite_blog-article.png": {
+     "bytes": 27095,
+     "height": 461,
+     "sha256": "8d8dd44454ab5f99603ecd4bdb8a04938049a6a1490e390d9a5f5b94454c3113",
+     "width": 941
+    },
+    "https://portswigger.net/cms/images/36/10/6fb4-article-http3-adapter-settings.png": {
+     "bytes": 28485,
+     "height": 545,
+     "sha256": "5ecd1b18db221c6f33f85eebb55c5863d2d7371756db38710990f97d45d425fd",
+     "width": 753
+    },
+    "https://portswigger.net/content/images/profiles/callout_tom_stacey_114px.png": {
+     "reason": "114x114 is furniture rather than a figure"
+    }
+   },
+   "kind": "article",
+   "licence": "unknown",
+   "published": "2026-09-23",
+   "publisher": "PortSwigger",
+   "raw_sha256": "6f1651b23b5f16de092b48993bbedc21352685389de8ee7ec3155e09d752231c",
+   "slug": "2026-portswigger-research-http-3-burp-suite-its-time-find-bigger-wordlist",
+   "spellings": [
+    "https://portswigger.net/research/http3-in-burp-suite"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "842d936cd4b1fc0ce772e0bb2c54966976e210f6505a0ec80f44959e92966031",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T23:10:56+00:00"
+    },
+    "images": {
+     "bytes": 55580,
+     "reason": "2 of 3 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:58:14+00:00"
+    },
+    "import": {
+     "chars": 8816,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "842d936cd4b1fc0ce772e0bb2c54966976e210f6505a0ec80f44959e92966031",
+     "utc": "2026-09-24T23:10:56+00:00"
+    },
+    "pdf": {
+     "bytes": 206801,
+     "file": "archived-references/pdf/2026-ai/2026-portswigger-research-http-3-burp-suite-its-time-find-bigger-wordlist.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:11:41+00:00"
+    },
+    "render": {
+     "chars": 8816,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-portswigger-research-http-3-burp-suite-its-time-find-bigger-wordlist.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T23:10:56+00:00"
+    }
+   },
+   "title": "HTTP/3 in Burp Suite - it’s time to find a bigger wordlist"
+  },
   "https://portswigger.net/research/hunting-asynchronous-vulnerabilities": {
    "also_at": [],
    "authors": [
@@ -221472,6 +222439,101 @@
    ],
    "steps": {}
   },
+  "https://pwn.ai/blog/click2shell": {
+   "also_at": [],
+   "authors": [
+    "PWNAI Research"
+   ],
+   "cited_by": [
+    "2026-ai.md:243"
+   ],
+   "cited_title": "Click2Shell: theme-selector injection and preactivation code execution in WordPress",
+   "content_gap": "",
+   "content_sha256": "ccce17a01bcf32227b5e247f972144e9f4528bcdca46c800b14f46b331e83c3f",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "ccce17a01bcf32227b5e247f972144e9f4528bcdca46c800b14f46b331e83c3f",
+    "tags": [
+     "wordpress",
+     "csrf",
+     "css-injection",
+     "dom",
+     "parser-differential",
+     "rce",
+     "attack-chain"
+    ],
+    "text": "A theme slug is normalized by the catalog API but reused as selector syntax in WordPress admin JavaScript, forcing installation. Customizer loading of an inactive vulnerable catalog theme then exposes an unchecked plugin installer, enabling PHP execution after an administrator follows the crafted link."
+   },
+   "first_seen_utc": "2026-09-24T22:41:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://api.pwn.ai/api/blog/images/photo-2026-09-18-11-26-58-123b4f81cb52.jpeg": {
+     "bytes": 82737,
+     "height": 752,
+     "sha256": "91c1c1715f423b1e5654a4c2a22d0a98c1b839c141a8a2e964cfd6bba5ed9f3b",
+     "width": 1100
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-18",
+   "publisher": "pwn.ai",
+   "raw_sha256": "0820483369c4e4629359288e82a9aa909921f3a110f9365664f9c0ee4bbd3711",
+   "slug": "2026-pwn-ai-click2shell-preauth-wordpress-core-theme-preview-injection-rce-chain",
+   "spellings": [
+    "https://www.pwn.ai/blog/click2shell"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "ccce17a01bcf32227b5e247f972144e9f4528bcdca46c800b14f46b331e83c3f",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T22:59:44+00:00"
+    },
+    "images": {
+     "bytes": 82737,
+     "reason": "1 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T23:01:47+00:00"
+    },
+    "import": {
+     "chars": 18784,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "ccce17a01bcf32227b5e247f972144e9f4528bcdca46c800b14f46b331e83c3f",
+     "utc": "2026-09-24T22:59:44+00:00"
+    },
+    "pdf": {
+     "bytes": 285032,
+     "file": "archived-references/pdf/2026-ai/2026-pwn-ai-click2shell-preauth-wordpress-core-theme-preview-injection-rce-chain.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:05:02+00:00"
+    },
+    "render": {
+     "chars": 18784,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-pwn-ai-click2shell-preauth-wordpress-core-theme-preview-injection-rce-chain.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T22:59:44+00:00"
+    }
+   },
+   "title": "Click2Shell: Preauth WordPress Core Theme Preview Injection to RCE Chain"
+  },
   "https://pwn.ai/blog/xss2shell": {
    "also_at": [],
    "authors": [
@@ -226667,6 +227729,101 @@
     }
    },
    "title": "XSS in GMail's AMP4Email via DOM Clobbering"
+  },
+  "https://ressl.ch/blog/cve-2026-87902-wordpress": {
+   "also_at": [],
+   "authors": [
+    "Robert Ressl"
+   ],
+   "cited_by": [
+    "2026-ai.md:244"
+   ],
+   "cited_title": "CVE-2026-87902: WordPress file inclusion and conditional code execution",
+   "content_gap": "",
+   "content_sha256": "d5a9d35514bf0ad8a4af11acc26eb84772325bf374635dd26c02c0c56b00ce74",
+   "decision": {
+    "at": "2026-09-24",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-24",
+    "by": "webseclist-review/1",
+    "of": "d5a9d35514bf0ad8a4af11acc26eb84772325bf374635dd26c02c0c56b00ce74",
+    "tags": [
+     "wordpress",
+     "path-traversal",
+     "lfi",
+     "php",
+     "encoding",
+     "rce",
+     "attack-chain"
+    ],
+    "text": "Anonymous page queries preserve encoded traversal until template resolution, where late decoding allows local PHP inclusion outside theme roots. The demonstrated PEAR execution chain requires a suitable page-prefixed theme directory, readable PEAR files, web-runtime argv support and a writable destination; execution remains at PHP account privilege."
+   },
+   "first_seen_utc": "2026-09-24T22:41:09+00:00",
+   "grade": "research",
+   "images": {
+    "https://ressl.ch/blog/img/cve-2026-87902-wordpress.png": {
+     "bytes": 109065,
+     "height": 619,
+     "sha256": "50db4627198cfc3d6b0483683e6168ad0e765b618618ad9763d3c023ad2e628d",
+     "width": 1100
+    }
+   },
+   "kind": "advisory",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-22",
+   "publisher": "Robert Ressl",
+   "raw_sha256": "0fc9e7e0c9635adfe7fa980bd609136b8b85e536e0fcd742247af58fdc74b8a9",
+   "slug": "2026-ressl-ch-cve-2026-87902-critical-wordpress-file-inclusion-ressl",
+   "spellings": [
+    "https://ressl.ch/blog/cve-2026-87902-wordpress/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "d5a9d35514bf0ad8a4af11acc26eb84772325bf374635dd26c02c0c56b00ce74",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-24T22:59:56+00:00"
+    },
+    "images": {
+     "bytes": 109065,
+     "reason": "1 of 1 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-24T22:58:31+00:00"
+    },
+    "import": {
+     "chars": 12467,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "d5a9d35514bf0ad8a4af11acc26eb84772325bf374635dd26c02c0c56b00ce74",
+     "utc": "2026-09-24T22:59:56+00:00"
+    },
+    "pdf": {
+     "bytes": 245512,
+     "file": "archived-references/pdf/2026-ai/2026-ressl-ch-cve-2026-87902-critical-wordpress-file-inclusion-ressl.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-24T23:05:12+00:00"
+    },
+    "render": {
+     "chars": 12467,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-ressl-ch-cve-2026-87902-critical-wordpress-file-inclusion-ressl.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-24T22:59:56+00:00"
+    }
+   },
+   "title": "CVE-2026-87902: Critical WordPress file inclusion and conditional RCE — Robert Ressl"
   },
   "https://revuln.com/files/ReVuln_Steam_Browser_Protocol_Insecurity.pdf": {
    "also_at": [],
