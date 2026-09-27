@@ -84,8 +84,40 @@ try {
   }
   console.log("Constellation: rotation and animation continue after button, wheel and slider zoom");
 
+  const rotation = page.locator(".space-navigator #space-autorotate");
+  assert.equal(await rotation.count(), 1, "rotation control belongs to the navigator");
+  await page.locator("#constellation-canvas").scrollIntoViewIfNeeded();
+  const empty = await page.evaluate(() => {
+    const canvas = document.querySelector("#constellation-canvas");
+    const bounds = canvas.getBoundingClientRect();
+    for (let y = bounds.top + 120; y < Math.min(bounds.bottom - 120, innerHeight - 50); y += 25) {
+      for (let x = bounds.left + 210; x < bounds.right - 130; x += 25) {
+        if (document.elementFromPoint(x, y) === canvas && !constellationExperience.pick(x, y)) return {x, y};
+      }
+    }
+    throw Error("No unobstructed empty space for orbit drag");
+  });
+  await page.mouse.move(empty.x, empty.y);
+  await page.mouse.down();
+  await page.mouse.move(empty.x + 55, empty.y + 15, {steps: 5});
+  await page.mouse.up();
+  assert.match(await rotation.textContent(), /Play rotation/);
+  const pausedYaw = await page.evaluate(() => constellationExperience.camera.yaw);
+  await page.waitForTimeout(150);
+  assert.equal(await page.evaluate(() => constellationExperience.camera.yaw), pausedYaw);
+  await rotation.click();
+  await page.waitForFunction((before) => constellationExperience.camera.yaw > before, pausedYaw);
+  assert.match(await rotation.textContent(), /Pause rotation/);
+  await rotation.focus();
+  await page.keyboard.press("Space");
+  assert.equal(await rotation.getAttribute("aria-pressed"), "false");
+  await page.keyboard.press("Enter");
+  assert.equal(await rotation.getAttribute("aria-pressed"), "true");
+  console.log("Constellation: navigator Play resumes mouse orbit; click, Space and Enter toggle rotation");
+
   await page.locator("#motion-toggle").click();
   await page.waitForFunction(() => document.querySelector("#space-autorotate").disabled);
+  assert.equal(await rotation.textContent(), "Rotation paused");
   const yaw = await page.evaluate(() => constellationExperience.camera.yaw);
   const visualTime = await page.evaluate(() => constellationExperience.visualTime);
   await page.waitForTimeout(150);

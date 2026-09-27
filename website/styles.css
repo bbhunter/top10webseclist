@@ -1443,10 +1443,27 @@
   .nav-thrust button:last-child { top: auto; bottom: 3px; }
   .nav-sweep { position: absolute; inset: 16px; z-index: 1; pointer-events: none; border-radius: 50%; background: conic-gradient(from 0deg, transparent 0 86%, rgba(130,245,178,.14) 94%, transparent); animation: nav-scan 9s linear infinite; }
   .space-nav-hint { margin-top: 6px; color: rgba(181,218,200,.33); font: .4rem var(--mono); letter-spacing: .14em; }
+  .space-rotation {
+    width: 166px;
+    min-height: 44px;
+    margin-top: 8px;
+    padding: 8px;
+    color: var(--mint);
+    background: rgba(3,12,9,.94);
+    border: 1px solid rgba(130,245,178,.5);
+    border-radius: 8px;
+    font: 700 .65rem var(--mono);
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  .space-rotation[aria-pressed="true"] { color: #06100d; background: var(--mint); }
+  .space-rotation:hover:not(:disabled) { border-color: #edfff4; box-shadow: 0 0 14px rgba(130,245,178,.25); }
+  .space-rotation:focus-visible { outline: 2px solid #edfff4; outline-offset: 3px; }
+  .space-rotation:disabled { color: #bfdbce; border-color: rgba(166,225,192,.18); cursor: not-allowed; }
   @keyframes nav-scan { to { transform: rotate(1turn); } }
   .space-selection {
     position: absolute;
-    bottom: 258px;
+    bottom: 312px;
     left: 18px;
     z-index: 6;
     width: min(365px, calc(100% - 110px));
@@ -2102,7 +2119,7 @@
     .space-help { display: none; }
     .sky-legend { right: 58px; bottom: 12px; left: 12px; max-width: none; justify-content: start; }
     .star-rank-filter { right: 58px; bottom: 64px; }
-    .space-selection { bottom: 258px; left: 12px; }
+    .space-selection { bottom: 312px; left: 12px; }
     .space-zoom { right: 12px; }
     .space-navigator { bottom: 60px; left: 8px; }
     .castle-shell { min-height: 620px; }
@@ -2186,12 +2203,13 @@
     .space-coordinates { padding: 8px 9px; font-size: .47rem; }
     .space-toolbar { top: 56px; left: 12px; right: auto; }
     .space-toolbar button { padding: 7px; font-size: .49rem; }
-    .space-toolbar button:nth-child(4) { display: none; }
+    .space-toolbar #space-focus { display: none; }
     .space-toolbar { max-width: calc(100% - 24px); }
     .space-zoom { right: 8px; padding-inline: 4px; }
     .space-zoom-track { height: 105px; }
     .space-navigator { bottom: 64px; left: 3px; transform: scale(.8); transform-origin: left bottom; }
-    .space-selection { right: 48px; bottom: 225px; left: 8px; width: auto; padding: 13px; }
+    .space-rotation { min-height: 55px; font-size: .75rem; }
+    .space-selection { right: 48px; bottom: 275px; left: 8px; width: auto; padding: 13px; }
     .space-selection h3 { font-size: .7rem; }
     .space-selection button { padding: 7px 8px; font-size: .49rem; }
     .sky-legend { right: 44px; bottom: 8px; left: 8px; }

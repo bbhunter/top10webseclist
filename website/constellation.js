@@ -311,7 +311,11 @@
 
       this.controls.reset?.addEventListener("click", () => this.resetCamera(), options);
       this.controls.tidy?.addEventListener("click", () => this.tidyStars(), options);
-      this.controls.auto?.addEventListener("click", () => this.setAutoRotate(!this.autoRotate), options);
+      this.controls.auto?.addEventListener("click", () => {
+        if (motionReduced()) return;
+        this.stopFlight();
+        this.setAutoRotate(!this.autoRotate);
+      }, options);
       this.controls.focus?.addEventListener("click", () => this.focusSelected(), options);
       this.controls.labels?.addEventListener("click", () => {
         this.showLabels = !this.showLabels;
@@ -638,9 +642,10 @@
         const reduced = motionReduced();
         const drifting = this.autoRotate && !reduced;
         this.controls.auto.setAttribute("aria-pressed", String(drifting));
-        this.controls.auto.textContent = drifting ? "Drift on" : "Drift off";
+        this.controls.auto.setAttribute("aria-label", reduced ? "Rotation paused" : drifting ? "Pause rotation" : "Play rotation");
+        this.controls.auto.textContent = reduced ? "Rotation paused" : drifting ? "⏸ Pause rotation" : "▶ Play rotation";
         this.controls.auto.disabled = reduced;
-        this.controls.auto.title = reduced ? "Drift paused while motion is reduced" : "Toggle camera drift";
+        this.controls.auto.title = reduced ? "Rotation paused while motion is reduced" : drifting ? "Pause automatic rotation" : "Resume automatic rotation";
       }
       if (this.controls.labels) {
         this.controls.labels.setAttribute("aria-pressed", String(this.showLabels));

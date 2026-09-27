@@ -144,3 +144,53 @@ test("manual orbit still pauses drift", () => {
   assert.equal(f.scene.camera.yaw, yaw);
   f.scene.destroy();
 });
+
+
+test("navigator Play resumes rotation after a mouse drag, and Pause stops it", () => {
+  const f = fixture();
+  const button = f.controls.get("#space-autorotate");
+  fire(f.canvas, "pointerdown", pointer(1, 50, 100));
+  fire(f.canvas, "pointermove", pointer(1, 90, 100));
+  fire(f.canvas, "pointerup", pointer(1, 90, 100));
+  assert.equal(button.textContent, "▶ Play rotation");
+  assert.equal(button.getAttribute("aria-label"), "Play rotation");
+  const yaw = f.scene.camera.yaw;
+  fire(button, "click");
+  f.tick();
+  assert.ok(f.scene.camera.yaw > yaw);
+  assert.equal(button.textContent, "⏸ Pause rotation");
+  assert.equal(button.getAttribute("aria-label"), "Pause rotation");
+  fire(button, "click");
+  const paused = f.scene.camera.yaw;
+  f.tick();
+  assert.equal(f.scene.camera.yaw, paused);
+  assert.equal(button.textContent, "▶ Play rotation");
+  assert.equal(button.getAttribute("aria-label"), "Play rotation");
+  f.scene.destroy();
+});
+
+test("Play interrupts an active camera flight and starts rotation immediately", () => {
+  const f = fixture();
+  f.scene.beginFlight({x: 10, y: 0, z: 0}, 140);
+  const yaw = f.scene.camera.yaw;
+  fire(f.controls.get("#space-autorotate"), "click");
+  f.tick();
+  assert.equal(f.scene.flight, null);
+  assert.ok(f.scene.camera.yaw > yaw);
+  f.scene.destroy();
+});
+
+for (const motion of ["user", "system"]) {
+  test(`rotation control respects ${motion} reduced motion`, () => {
+    const f = fixture({motion});
+    const button = f.controls.get("#space-autorotate");
+    assert.equal(button.disabled, true);
+    assert.equal(button.textContent, "Rotation paused");
+    const yaw = f.scene.camera.yaw;
+    fire(button, "click");
+    f.tick();
+    assert.equal(f.scene.camera.yaw, yaw);
+    assert.equal(button.getAttribute("aria-pressed"), "false");
+    f.scene.destroy();
+  });
+}

@@ -122,6 +122,18 @@ try {
         const before = await page.evaluate(() => constellationExperience.camera.distance);
         await page.locator("#space-zoom-in").tap();
         assert.ok(await page.evaluate((before) => constellationExperience.camera.distance < before, before));
+        const rotation = page.locator(".space-navigator #space-autorotate");
+        await page.locator('[data-space-nav="turn-left"]').tap();
+        assert.match(await rotation.textContent(), /Play rotation/);
+        // The selected-star panel must leave the navigator control tappable.
+        await page.evaluate(() => constellationExperience.select(constellationExperience.nodes[0]));
+        await rotation.tap();
+        assert.equal(await rotation.getAttribute("aria-pressed"), "true");
+        assert.ok((await rotation.boundingBox()).height >= 44, "rotation has a full touch target");
+        const yaw = await page.evaluate(() => constellationExperience.camera.yaw);
+        await page.waitForFunction((before) => constellationExperience.camera.yaw > before, yaw);
+        await rotation.tap();
+        assert.equal(await rotation.getAttribute("aria-pressed"), "false");
       }
       if (view === "terminal") {
         await page.locator("#terminal-command").fill("help");

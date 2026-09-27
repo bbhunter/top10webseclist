@@ -3247,7 +3247,6 @@ function renderConstellation() {
       </div>
       <div class="space-toolbar">
         <button id="space-reset" type="button">Reset view <kbd>R</kbd></button>
-        <button id="space-autorotate" type="button" aria-pressed="true">Drift on</button>
         <button id="space-labels" type="button" aria-pressed="false">Titles off</button>
         <button id="space-focus" type="button" disabled>Focus star <kbd>F</kbd></button>
         <button id="space-tidy" type="button" disabled>Tidy stars</button>
@@ -3274,6 +3273,7 @@ function renderConstellation() {
           <i class="nav-sweep" aria-hidden="true"></i>
         </div>
         <small class="space-nav-hint">HOLD TO MANOEUVRE</small>
+        <button id="space-autorotate" class="space-rotation" type="button" aria-label="Pause rotation" aria-pressed="true">⏸ Pause rotation</button>
       </div>
       <aside class="space-selection" id="space-selection" hidden>
         <p class="eyebrow" id="space-selection-meta">Selected star</p>
