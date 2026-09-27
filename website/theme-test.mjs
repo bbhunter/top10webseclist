@@ -61,6 +61,29 @@ try {
   console.log("Keyboard: topic, reset and year controls retain focus");
 
   await page.evaluate(() => setView("constellation"));
+  for (const [label, zoom] of [
+    ["zoom in", () => page.locator("#space-zoom-in").click()],
+    ["zoom out", () => page.locator("#space-zoom-out").click()],
+    ["wheel", async () => {
+      await page.locator("#constellation-canvas").hover();
+      await page.mouse.wheel(0, -100);
+    }],
+    ["slider pointer", () => page.locator("#space-zoom-range").click({position: {x: 5, y: 20}})],
+    ["slider keyboard", async () => {
+      await page.locator("#space-zoom-range").focus();
+      await page.keyboard.press("ArrowDown");
+    }]
+  ]) {
+    const distance = await page.evaluate(() => constellationExperience.camera.distance);
+    await zoom();
+    await page.waitForFunction((before) => constellationExperience.camera.distance !== before, distance);
+    assert.equal(await page.locator("#space-autorotate").getAttribute("aria-pressed"), "true", `${label} preserves drift`);
+    const frame = await page.evaluate(() => ({yaw: constellationExperience.camera.yaw, time: constellationExperience.visualTime}));
+    await page.waitForFunction((before) => constellationExperience.camera.yaw > before.yaw && constellationExperience.visualTime > before.time, frame);
+    assert.equal(await page.locator("#constellation-canvas").evaluate((canvas) => canvas.closest("[data-render-error]")?.dataset.renderError || null), null);
+  }
+  console.log("Constellation: rotation and animation continue after button, wheel and slider zoom");
+
   await page.locator("#motion-toggle").click();
   await page.waitForFunction(() => document.querySelector("#space-autorotate").disabled);
   const yaw = await page.evaluate(() => constellationExperience.camera.yaw);

@@ -148,7 +148,7 @@
  "schema": 1,
  "tags": {
   "abuse-of-functionality": {
-   "documents": 75
+   "documents": 76
   },
   "active-directory": {
    "documents": 1
@@ -157,7 +157,7 @@
    "documents": 13
   },
   "ai-agent": {
-   "documents": 69
+   "documents": 70
   },
   "algorithmic-complexity": {
    "documents": 36
@@ -178,7 +178,7 @@
    "documents": 228
   },
   "auth-bypass": {
-   "documents": 354
+   "documents": 355
   },
   "autofill": {
    "documents": 4
@@ -229,7 +229,7 @@
    "documents": 40
   },
   "ci-cd": {
-   "documents": 30
+   "documents": 31
   },
   "class-pollution": {
    "documents": 5
@@ -250,7 +250,7 @@
    "documents": 58
   },
   "content-type": {
-   "documents": 43
+   "documents": 45
   },
   "cookie": {
    "documents": 156
@@ -265,7 +265,7 @@
    "documents": 72
   },
   "csrf": {
-   "documents": 155
+   "documents": 157
   },
   "css": {
    "documents": 77
@@ -343,7 +343,7 @@
    "documents": 12
   },
   "email": {
-   "documents": 58
+   "documents": 59
   },
   "embedded-device": {
    "documents": 9
@@ -358,7 +358,7 @@
    "documents": 96
   },
   "file-write": {
-   "documents": 5
+   "documents": 6
   },
   "filter-bypass": {
    "documents": 316
@@ -391,7 +391,7 @@
    "documents": 20
   },
   "gitlab": {
-   "documents": 7
+   "documents": 8
   },
   "go": {
    "documents": 16
@@ -478,7 +478,7 @@
    "documents": 58
   },
   "load-balancer": {
-   "documents": 18
+   "documents": 19
   },
   "mass-assignment": {
    "documents": 12
@@ -490,7 +490,7 @@
    "documents": 248
   },
   "memory-corruption": {
-   "documents": 5
+   "documents": 6
   },
   "mime": {
    "documents": 43
@@ -517,7 +517,7 @@
    "documents": 1
   },
   "nodejs": {
-   "documents": 75
+   "documents": 77
   },
   "nosqli": {
    "documents": 10
@@ -526,7 +526,7 @@
    "documents": 2
   },
   "oauth": {
-   "documents": 81
+   "documents": 82
   },
   "open-redirect": {
    "documents": 66
@@ -595,7 +595,7 @@
    "documents": 17
   },
   "rce": {
-   "documents": 313
+   "documents": 316
   },
   "react": {
    "documents": 6
@@ -733,7 +733,7 @@
    "documents": 9
   },
   "vendor-advisory": {
-   "documents": 57
+   "documents": 58
   },
   "vue": {
    "documents": 1
@@ -769,5 +769,5 @@
    "documents": 34
   }
  },
- "updated": "2026-09-24T23:10:59+00:00"
+ "updated": "2026-09-27T21:43:21+00:00"
 }

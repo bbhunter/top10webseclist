@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-09-24T23:13:10+00:00",
+ "updated": "2026-09-27T21:43:35+00:00",
  "urls": {
   "https://0day.click/parser-diff-talk-oc25": {
    "also_at": [],
@@ -5359,6 +5359,165 @@
      "by": "AI archive validation"
     }
    ]
+  },
+  "https://aikido.dev/blog/gitlab-email-push-to-main": {
+   "also_at": [],
+   "authors": [
+    "Joe Leon"
+   ],
+   "cited_by": [
+    "2026-ai.md:250"
+   ],
+   "cited_title": "Send GitLab an email, push to main",
+   "content_gap": "",
+   "content_sha256": "b5e65380e774bf52c4b2eaad93d59bfae70cfee6461da7a3e442afc48cc02351",
+   "decision": {
+    "at": "2026-09-27",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-27",
+    "by": "webseclist-review/1",
+    "of": "b5e65380e774bf52c4b2eaad93d59bfae70cfee6461da7a3e442afc48cc02351",
+    "tags": [
+     "email",
+     "gitlab",
+     "ci-cd",
+     "abuse-of-functionality",
+     "auth-bypass"
+    ],
+    "text": "A leaked GitLab incoming-email token can authorize patch attachments across the owner’s projects, push code and run CI jobs outside IP allowlists. Exploitation needs the owner’s permissions and target routing."
+   },
+   "first_seen_utc": "2026-09-27T21:21:22+00:00",
+   "grade": "research",
+   "images": {
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4a0_32d5fe44.png": {
+     "bytes": 49844,
+     "height": 365,
+     "sha256": "f5fca5697d020d58212d081e2599cd3cf91f6dc80758732c219a0470ec0a9a15",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4a3_b936fcbb.png": {
+     "bytes": 28895,
+     "height": 344,
+     "sha256": "bc582da9c4339af21a596028657befb0c2ccf1c64cb250168539f0b0155b22c3",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4a6_8ca864ac.png": {
+     "bytes": 39783,
+     "height": 389,
+     "sha256": "5d0fda309f252bd2f6a36b0fd846ebbc55a11181a76381f1fa99ec3863046e84",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4a9_8900344c.png": {
+     "bytes": 30751,
+     "height": 308,
+     "sha256": "a8ca436825d5e2ab753241d36e6900732a14d79ac2cd77415b716b9619cc9b10",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4ac_1aab7ffd.png": {
+     "bytes": 45433,
+     "height": 547,
+     "sha256": "4cf5ff26c8ce3b22e51cc4a3bb6232ac97fb38e6422e461e55e9139d1987251d",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4b0_c458a9db.png": {
+     "bytes": 31763,
+     "height": 533,
+     "sha256": "93504685e47504891385350ba7a31294842de1222c25218b3fcfc0d6cfa02028",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4b3_ddc36e71.jpeg": {
+     "bytes": 15592,
+     "height": 270,
+     "sha256": "7e9e930ab92475c210105f91af40a4803be5e66f8eb8991cf8cb06059b72640d",
+     "width": 1020
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4b6_88400efc.png": {
+     "bytes": 19162,
+     "height": 150,
+     "sha256": "44d5d002bf8f3949693dbd8f137b635e2db613efca67c605cefbd5f00e73a453",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4b9_3217a679.png": {
+     "bytes": 51248,
+     "height": 656,
+     "sha256": "d41853111e356fbcc3f31e9f8727ab2077fdc9887d3f5a255afaee8c8a1b5aec",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4bc_a696ffbc.png": {
+     "bytes": 23023,
+     "height": 232,
+     "sha256": "1b218aef9e8d62104f4e58843806aca348214a991740172c1281b1100c7dcb0a",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4c0_a9642d6d.png": {
+     "bytes": 26179,
+     "height": 169,
+     "sha256": "f944b3b84502f660eb08c6d0933cf678886f20f2855038c5f177e7a1000483b6",
+     "width": 1100
+    },
+    "https://cdn.prod.website-files.com/642adcaf364024654c71df23/6ab2aabd9b53a24c92bbf4c6_74ab5d8a.png": {
+     "bytes": 73977,
+     "height": 550,
+     "sha256": "ccfb2a63d83127257295700665a0b255a553a7a78388ff2683fb09cca5121f9d",
+     "width": 1100
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-23",
+   "publisher": "Aikido Security",
+   "raw_sha256": "fcb58356e1f0cd83cdbb05d74db574729d072ec084d81a9a2e2a8dccaf16a34c",
+   "slug": "aikido-security-send-gitlab-email-push-main",
+   "spellings": [
+    "https://www.aikido.dev/blog/gitlab-email-push-to-main"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "b5e65380e774bf52c4b2eaad93d59bfae70cfee6461da7a3e442afc48cc02351",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-27T21:28:21+00:00"
+    },
+    "images": {
+     "bytes": 435650,
+     "reason": "12 of 12 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-27T21:30:50+00:00"
+    },
+    "import": {
+     "chars": 16544,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "b5e65380e774bf52c4b2eaad93d59bfae70cfee6461da7a3e442afc48cc02351",
+     "utc": "2026-09-27T21:28:21+00:00"
+    },
+    "pdf": {
+     "bytes": 573405,
+     "file": "archived-references/pdf/2026-ai/aikido-security-send-gitlab-email-push-main.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-27T21:37:30+00:00"
+    },
+    "render": {
+     "chars": 16544,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/aikido-security-send-gitlab-email-push-main.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-27T21:28:21+00:00"
+    }
+   },
+   "title": "Send GitLab an email, push to main"
   },
   "https://aikido.dev/blog/promptpwnd-github-actions-ai-agents": {
    "also_at": [],
@@ -96690,6 +96849,76 @@
    ],
    "steps": {}
   },
+  "https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4": {
+   "also_at": [],
+   "cited_by": [
+    "2026-ai.md:251"
+   ],
+   "cited_title": "Cross-site OpenCode server upgrade request can install arbitrary packages for npm-based installations",
+   "content_gap": "",
+   "content_sha256": "0d58b5ef374fde493e4fa67ef8a27ad83b2d6d9e548e489da4c3318df21c0595",
+   "decision": {
+    "at": "2026-09-27",
+    "by": "rule:cve-database",
+    "class": "records",
+    "outcome": "archive",
+    "reason": "a cve database: a record about the product rather than research"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-27",
+    "by": "webseclist-review/1",
+    "of": "0d58b5ef374fde493e4fa67ef8a27ad83b2d6d9e548e489da4c3318df21c0595",
+    "tags": [
+     "vendor-advisory",
+     "csrf",
+     "content-type",
+     "rce",
+     "nodejs"
+    ],
+    "text": "The OpenCode advisory documents a cross-site upgrade request that installs attacker-controlled npm packages and runs their lifecycle scripts. It includes the text/plain JSON form, cached Basic-authentication condition, affected installation methods and the fix enforcing JSON decoding and semantic-version targets."
+   },
+   "first_seen_utc": "2026-09-27T21:21:22+00:00",
+   "grade": "records",
+   "kind": "advisory",
+   "licence": "unknown",
+   "published": "2026-09-24",
+   "publisher": "GitHub Advisory Database",
+   "raw_sha256": "0d58b5ef374fde493e4fa67ef8a27ad83b2d6d9e548e489da4c3318df21c0595",
+   "slug": "2026-github-advisory-database-cross-site-opencode-server-upgrade-installations",
+   "spellings": [
+    "https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "0d58b5ef374fde493e4fa67ef8a27ad83b2d6d9e548e489da4c3318df21c0595",
+     "extraction": null,
+     "raw_sha256": "0d58b5ef374fde493e4fa67ef8a27ad83b2d6d9e548e489da4c3318df21c0595",
+     "reason": "",
+     "result": "stored",
+     "slug": "2026-github-advisory-database-cross-site-opencode-server-upgrade-installations",
+     "utc": "2026-09-27T21:23:05+00:00"
+    },
+    "pdf": {
+     "bytes": 151826,
+     "file": "archived-references/pdf/2026-ai/2026-github-advisory-database-cross-site-opencode-server-upgrade-installations.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-27T21:35:46+00:00"
+    },
+    "render": {
+     "chars": 10566,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-github-advisory-database-cross-site-opencode-server-upgrade-installations.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-27T21:23:06+00:00"
+    }
+   },
+   "title": "Cross-site OpenCode server upgrade request can install arbitrary packages for npm-based installations"
+  },
   "https://github.com/anvilsecure/aqlmap": {
    "also_at": [],
    "authors": [
@@ -161427,6 +161656,153 @@
     "https://labs.watchtowr.com/is-b-for-backdoor-pre-auth-rce-chain-in-sitecore-experience-platform/"
    ],
    "steps": {}
+  },
+  "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127": {
+   "also_at": [],
+   "authors": [
+    "Sina Kheirkhah"
+   ],
+   "cited_by": [
+    "2026-ai.md:252"
+   ],
+   "cited_title": "F5 BIG-IP OAuth heap overflow: using a process-finish hook past SELinux execution restrictions",
+   "content_gap": "",
+   "content_sha256": "0c07cb96c5dcf87a33b69479f8020963966a03e9a4bf6b3e1f49ffd686e077c9",
+   "decision": {
+    "at": "2026-09-27",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-27",
+    "by": "webseclist-review/1",
+    "of": "0c07cb96c5dcf87a33b69479f8020963966a03e9a4bf6b3e1f49ffd686e077c9",
+    "tags": [
+     "memory-corruption",
+     "file-write",
+     "rce",
+     "oauth",
+     "load-balancer"
+    ],
+    "text": "A BIG-IP OAuth heap overflow corrupts a callback. After SELinux blocks direct execution, a ROP chain appends commands to a writable process-finish hook that runs when the process crashes."
+   },
+   "first_seen_utc": "2026-09-27T21:21:22+00:00",
+   "grade": "research",
+   "images": {
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-1.png": {
+     "bytes": 32364,
+     "height": 500,
+     "sha256": "9a3b2486a9fe5c2d6ab806838e2850293d15960c300d003d9167ff14f055b6c2",
+     "width": 500
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-2.png": {
+     "bytes": 67115,
+     "height": 609,
+     "sha256": "b049181776a9514756f18a88ab38dc1a79629f39487a2e2f46989a33ac72124b",
+     "width": 1100
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-3.png": {
+     "bytes": 4892,
+     "height": 67,
+     "sha256": "7c6fb9a731104713e9020c4f2992910f0f7d37c2a83bdd95c5ca5729aadb62bc",
+     "width": 577
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-4.png": {
+     "bytes": 6469,
+     "height": 134,
+     "sha256": "e76fb5d6930d28287335cbccf2c8c80c0cfe641ee30e589196c54376cebeb080",
+     "width": 347
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-5.png": {
+     "bytes": 3615,
+     "height": 49,
+     "sha256": "fa70ec96bd2cafcdfece4008876631fa1b92133a9b7150f4e3074aa1b3d84966",
+     "width": 281
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-6.png": {
+     "bytes": 27519,
+     "height": 396,
+     "sha256": "2996c0af2efa9b0fe3d97406336ecfac6a822d40c2e81ee90c04cefff1ea5f0a",
+     "width": 1100
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-7.png": {
+     "bytes": 46158,
+     "height": 484,
+     "sha256": "e5cd746e64283f45dfa47a7c78d11856122732923aad8a53819e22d2fd135634",
+     "width": 1100
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-8.png": {
+     "bytes": 11439,
+     "height": 126,
+     "sha256": "40930bc482a2ffb018a989e84dc9f5f16a162587879dcc7dee53279494d042d5",
+     "width": 798
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image-9.png": {
+     "bytes": 17670,
+     "height": 146,
+     "sha256": "452c6cb87151c15274cbb0279d2dce8658f53bb1d4e1d4bae3dc771649c7b443",
+     "width": 495
+    },
+    "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2026/09/image.png": {
+     "bytes": 35817,
+     "height": 668,
+     "sha256": "6c7afc00e020f4c59bb653073ed45862c99603e3d638234a4fc6dd9865a52bb9",
+     "width": 530
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-23",
+   "publisher": "watchTowr Labs",
+   "raw_sha256": "02f247ebfa2d1f73465f34b8df47e057509e58f46844c0b935a58813ced66ed8",
+   "slug": "2026-watchtowr-labs-this-joke-auth-header-f5-big-ip-unauth-heap-overflow-94127",
+   "spellings": [
+    "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "0c07cb96c5dcf87a33b69479f8020963966a03e9a4bf6b3e1f49ffd686e077c9",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-27T21:28:39+00:00"
+    },
+    "images": {
+     "bytes": 253058,
+     "reason": "10 of 10 figures preserved; five short technical screenshots reviewed and re-encoded with a scoped minimum-height exception",
+     "result": "stored",
+     "utc": "2026-09-27T21:34:27+00:00"
+    },
+    "import": {
+     "chars": 14420,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "0c07cb96c5dcf87a33b69479f8020963966a03e9a4bf6b3e1f49ffd686e077c9",
+     "utc": "2026-09-27T21:28:39+00:00"
+    },
+    "pdf": {
+     "bytes": 453351,
+     "file": "archived-references/pdf/2026-ai/2026-watchtowr-labs-this-joke-auth-header-f5-big-ip-unauth-heap-overflow-94127.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-27T21:37:48+00:00"
+    },
+    "render": {
+     "chars": 14420,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-watchtowr-labs-this-joke-auth-header-f5-big-ip-unauth-heap-overflow-94127.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-27T21:28:39+00:00"
+    }
+   },
+   "title": "Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)"
   },
   "https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600": {
    "also_at": [],
@@ -246777,6 +247153,144 @@
      "by": "AI archive validation"
     }
    ]
+  },
+  "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution": {
+   "also_at": [],
+   "authors": [
+    "Christophe Tafani-Dereeper"
+   ],
+   "cited_by": [
+    "2026-ai.md:251"
+   ],
+   "cited_title": "OpenCode upgrade RCE: text/plain JSON, top-level navigation and package-install targets",
+   "content_gap": "",
+   "content_sha256": "6f02d3a08151c6ce0ffb26907279bcade7a9b31758c5b2078c5d917c71b54688",
+   "decision": {
+    "at": "2026-09-27",
+    "by": "rule:default",
+    "class": "research",
+    "outcome": "archive",
+    "reason": "carries technique"
+   },
+   "depth": "full",
+   "depth_reason": "default",
+   "digest": {
+    "at": "2026-09-27",
+    "by": "webseclist-review/1",
+    "of": "6f02d3a08151c6ce0ffb26907279bcade7a9b31758c5b2078c5d917c71b54688",
+    "tags": [
+     "csrf",
+     "content-type",
+     "rce",
+     "ai-agent",
+     "nodejs"
+    ],
+    "text": "OpenCode parsed text/plain forms as JSON and accepted remote tarballs as upgrade targets. A top-level localhost request could run package scripts, with npm/pnpm/Bun installs and no password or cached Basic credentials."
+   },
+   "first_seen_utc": "2026-09-27T21:21:22+00:00",
+   "grade": "research",
+   "images": {
+    "https://imgix.datadoghq.com/img/blog/_authors/tafani-dereeper_christophe2.jpeg?auto=format&w=48&h=48&dpr=2&q=75": {
+     "reason": "96x96 is furniture rather than a figure"
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/chrome-cors-error.png?auto=format&w=600&dpr=1.75": {
+     "bytes": 12397,
+     "height": 166,
+     "sha256": "21a66c82a386bb51c4e2379891cb85f7023c27c5c4d34554aed6430a642e64ca",
+     "width": 1050
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/form-parameter-json-injection.png?auto=format&w=896&dpr=1.75": {
+     "bytes": 15222,
+     "height": 145,
+     "sha256": "1302fbad9b33a18b74d34c803a8581560cc2a4b0c2ec26413e964779fb96e3df",
+     "width": 1100
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/local-network-access-prompt.png?auto=format&w=500&dpr=1.75": {
+     "bytes": 24737,
+     "height": 583,
+     "sha256": "f135df2727532fa2677454c6d390bb8121d014635f690314bd9312f8e9d6da5e",
+     "width": 875
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/opencode-basic-authentication.png?auto=format&w=400&dpr=1.75": {
+     "bytes": 21348,
+     "height": 571,
+     "sha256": "dd70f58a94ede2d808f4c1a6d0a2283cf21a5b72cbc627d1c9d622aca7b03829",
+     "width": 700
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/opencode-rce-exploitation-flow.png?auto=format&w=700&dpr=1.75": {
+     "bytes": 46833,
+     "height": 735,
+     "sha256": "01381d439f98f9fd96c4f311a55047fd72df1271c85db34d511e042be7c84879",
+     "width": 1100
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/opencode-terminal-ui.png?auto=format&w=550&dpr=1.75": {
+     "bytes": 32274,
+     "height": 725,
+     "sha256": "10e5d7e16ebd81ca9076fcf69048a6adecdb37f3f5bcee088bdb898739bef272",
+     "width": 963
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/opencode-web-ui.png?auto=format&w=800&dpr=1.75": {
+     "bytes": 37476,
+     "height": 592,
+     "sha256": "dd95c0e279ace0469f9e170eb73d47a438a73c31c7f36e2e2d3d4b9ccecec79f",
+     "width": 1100
+    },
+    "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/vulnerable-opencode-downloads.png?auto=format&w=896&dpr=1.75": {
+     "bytes": 40162,
+     "height": 618,
+     "sha256": "0de19e96a0f48a403b6111fcbdf9c7b715031e3dc0a2030b33499c8495aa2f7f",
+     "width": 1100
+    }
+   },
+   "kind": "article",
+   "language": "en",
+   "licence": "unknown",
+   "published": "2026-09-24",
+   "publisher": "Datadog Security Labs",
+   "raw_sha256": "adaf5acd6064d1f9421b7c1fd869659fe550acb5ea0cac23eee20b31cc4747ca",
+   "slug": "2026-securitylabs-datadoghq-com-discovering-exploiting-remote-code-g4x4",
+   "spellings": [
+    "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+   ],
+   "steps": {
+    "acquire": {
+     "content_sha256": "6f02d3a08151c6ce0ffb26907279bcade7a9b31758c5b2078c5d917c71b54688",
+     "result": "stored",
+     "retrieved_kind": "manual-import",
+     "utc": "2026-09-27T21:43:18+00:00"
+    },
+    "images": {
+     "bytes": 230449,
+     "reason": "8 of 9 image(s) preserved",
+     "result": "stored",
+     "utc": "2026-09-27T21:31:32+00:00"
+    },
+    "import": {
+     "chars": 19856,
+     "files_joined": 1,
+     "grade": "research",
+     "result": "stored",
+     "sha256": "6f02d3a08151c6ce0ffb26907279bcade7a9b31758c5b2078c5d917c71b54688",
+     "utc": "2026-09-27T21:43:18+00:00"
+    },
+    "pdf": {
+     "bytes": 501525,
+     "file": "archived-references/pdf/2026-ai/2026-securitylabs-datadoghq-com-discovering-exploiting-remote-code-g4x4.pdf",
+     "renderer": 4,
+     "result": "rendered",
+     "source": "markdown",
+     "utc": "2026-09-27T21:43:35+00:00"
+    },
+    "render": {
+     "chars": 19856,
+     "depth": "full",
+     "file": "archived-references/md/2026-ai/2026-securitylabs-datadoghq-com-discovering-exploiting-remote-code-g4x4.md",
+     "result": "ok",
+     "translation_file": "",
+     "utc": "2026-09-27T21:43:18+00:00"
+    }
+   },
+   "title": "Discovering and exploiting a remote code execution vulnerability in OpenCode (GHSA-632h-h47v-g4x4)"
   },
   "https://securitymb.github.io/xss/1?xss=": {
    "also_at": [],

@@ -39,6 +39,7 @@ jobs:
         run: |
           node --check website/app.js
           node --check website/constellation.js
+          node --test website/constellation-test.mjs
           node --check website/build-data.mjs
           node --check website/build-pages.mjs
           node --check website/build-site.mjs

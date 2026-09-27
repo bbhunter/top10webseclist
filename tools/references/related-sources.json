@@ -14582,6 +14582,101 @@
           ]
         }
       ]
+    },
+    "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/": {
+      "sources": [
+        {
+          "url": "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
+          "title": "watchTowr F5 BIG-IP CVE-2026-94127 proof of concept",
+          "label": "Proof of concept",
+          "kind": "code",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "The watchTowr repository links the article and identifies the same OAuth-enabled BIG-IP version-specific exploit.",
+          "evidence": [
+            "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/",
+            "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127"
+          ]
+        },
+        {
+          "url": "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/media/2026/09/final11111-1.mp4",
+          "label": "Embedded demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Demonstration embedded in the primary article; retained as a link, not independently reviewed.",
+          "evidence": [
+            "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/"
+          ]
+        }
+      ]
+    },
+    "https://www.aikido.dev/blog/gitlab-email-push-to-main": {
+      "sources": [
+        {
+          "url": "https://github.com/betterleaks/betterleaks",
+          "title": "Betterleaks",
+          "label": "Secret scanner",
+          "kind": "tool",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "The author links this scanner for identifying incoming-email credential formats; it is a tool companion, not a second research article.",
+          "evidence": [
+            "https://www.aikido.dev/blog/gitlab-email-push-to-main"
+          ]
+        },
+        {
+          "url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/247431",
+          "title": "Align incoming email token capability across UI and docs",
+          "label": "Earlier documentation correction",
+          "kind": "link",
+          "relation": "background",
+          "preservation": "link-only",
+          "reason": "The article links this July 2026 documentation and UI correction as part of its disclosure history.",
+          "evidence": [
+            "https://www.aikido.dev/blog/gitlab-email-push-to-main"
+          ]
+        }
+      ]
+    },
+    "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/": {
+      "sources": [
+        {
+          "url": "https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4",
+          "title": "Cross-site OpenCode server upgrade request can install arbitrary packages for npm-based installations",
+          "label": "Security advisory",
+          "kind": "advisory",
+          "relation": "same-work",
+          "preservation": "archive",
+          "reason": "The primary article links this full advisory for the same upgrade endpoint vulnerability and reproduction.",
+          "evidence": [
+            "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ]
+        },
+        {
+          "url": "https://github.com/anomalyco/opencode/pull/44686",
+          "title": "fix(opencode): normalize upgrade endpoint",
+          "label": "August fix",
+          "kind": "code",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "The August 24 patch enforces semantic-version targets and standard request content-type decoding.",
+          "evidence": [
+            "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ]
+        },
+        {
+          "url": "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/opencode-rce-with-subtitles.mp4",
+          "label": "Embedded demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "Demonstration embedded in the primary article; retained as a link, not independently reviewed.",
+          "evidence": [
+            "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ]
+        }
+      ]
     }
   }
 }

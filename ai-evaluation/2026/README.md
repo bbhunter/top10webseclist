@@ -378,3 +378,12 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [RCE in Google's AI code editor Antigravity - $10000 Bounty](<https://www.hacktron.ai/blog/hacking-google-antigravity>) | Added |
 | [PostHog RCE](<https://www.hacktron.ai/blog/posthog-rce>) | Not added |
 | [Hacking Cluely](<https://www.hacktron.ai/blog/hacking-cluely>) | Not added |
+| [Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)](<https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/>) | Added |
+| [Send GitLab an email, push to main](<https://www.aikido.dev/blog/gitlab-email-push-to-main>) | Added |
+| [Discovering and exploiting a remote code execution vulnerability in OpenCode (GHSA-632h-h47v-g4x4)](<https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/>) | Added |
+| [How One Twitch Chat Message Became Code Execution on a Streamer’s PC](<https://blog.scrt.ch/2026/09/22/how-one-twitch-chat-message-became-code-execution-on-a-streamers-pc/>) | Not added |
+| [CVE-2026-94545: From JSX to SVG Injection](<https://checkmarx.com/zero-post/cve-2026-94545-from-jsx-to-svg-injection/>) | Not added |
+| [GHSL-2026-072: Orchard CMS encoding bypass](<https://securitylab.github.com/advisories/GHSL-2026-072_Orchard_CMS/>) | Not added |
+| [GHSL-2025-126 / GHSL-2025-127: Lobsters OAuth and authorization](<https://securitylab.github.com/advisories/GHSL-2025-126_GHSL-2025-127_Lobsters/>) | Not added |
+| [Autonomous AI agents targeting online retailers](<https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company>) | Not added |
+| [DNS-resolved private-address SSRF](<https://ilias1988.me/bug-bounty/dns-resolved-private-address-ssrf/>) | Not added |

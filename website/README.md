@@ -101,6 +101,12 @@ with the pages, no link to an unstaged file, and an unexpired `security.txt`:
 node website/pages-test.mjs
 ```
 
+Run the dependency-free constellation interaction regressions with
+`node --test website/constellation-test.mjs`. Synthetic events exercise zoom
+buttons, wheel, slider, keyboard navigation and pinch handling against the real
+animation loop, including drift preferences, reduced motion and interrupted
+camera flights. Canvas painting still requires browser validation.
+
 Browser theme checks cover all nine views at desktop and phone widths, keyboard
 focus after filtering, motion preferences, and reader contrast. Keep the approved
 Playwright, playwright-core and axe-core packages in a directory outside the

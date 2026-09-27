@@ -20,10 +20,10 @@
     "2023.md": "a90c8a3b3cfe0f32df60c03d76ba7836a52a5769769d851165d9802454072d66",
     "2024.md": "0621c3b449304d88ad527f8a3f61fa2d77f58fafc7232580d3e4b667a657d175",
     "2025.md": "28ff0e86d33d78aa51e8846ee1ff6adba4fba690a11f9821c8282d3b1799952e",
-    "2026-ai.md": "cb483ad50d0a4ba5ee13b611e1ebe6d06ede5429d585ccd7b6fbd47fc729caa4",
-    "archived-references/manifest.json": "b7111d78cbb3ca5784486e4de3b85c2a8e551b00aeb25ab46946b103760958ff",
-    "tools/references/related-sources.json": "59d24a3c03a7e46656e5311b403d82438bccd483864631b3b05c11765b9bc31b",
-    "website/archive-years.json": "27879d5e2571cd7f1ba0752e526f2eb3caca723dc3977690f9d2a4496c8d7080"
+    "2026-ai.md": "41aa454eb4231d81dc32b17edd51ab2ca49da16ac60f6cb30839715bd57fd2a9",
+    "archived-references/manifest.json": "2835d678866882b3ee5ec5d820f16136d185f836b1d53e0b1aadcb4bc42da5b8",
+    "tools/references/related-sources.json": "304ca39ecffff52610f309c1b205a1cecd988d85452fade22bb10bac56982b3e",
+    "website/archive-years.json": "1048e871af706ee0afd402ceb6575ba912395f42adf782de25ecb8aaa7ee9ef0"
   },
   "groups": {
     "research-2c0873796e82a32b0e57": {
@@ -64301,6 +64301,169 @@
           "evidence": [
             "2026-ai.md:248"
           ]
+        }
+      ]
+    },
+    "research-81c38d2a0f5e71dba3f0": {
+      "id": "research-81c38d2a0f5e71dba3f0",
+      "identity": "https://www.aikido.dev/blog/gitlab-email-push-to-main",
+      "main": "source-81c38d2a0f5e71dba3f0",
+      "citations": [
+        "2026-ai.md:250"
+      ],
+      "sources": [
+        {
+          "id": "source-81c38d2a0f5e71dba3f0",
+          "label": "Send GitLab an email, push to main",
+          "url": "https://www.aikido.dev/blog/gitlab-email-push-to-main",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "basis": "list-citation",
+          "evidence": [
+            "2026-ai.md:250"
+          ]
+        },
+        {
+          "id": "source-4fda03f3d233366b6af9",
+          "label": "Secret scanner",
+          "preservation": "link-only",
+          "url": "https://github.com/betterleaks/betterleaks",
+          "title": "Betterleaks",
+          "kind": "tool",
+          "relation": "same-work",
+          "reason": "The author links this scanner for identifying incoming-email credential formats; it is a tool companion, not a second research article.",
+          "evidence": [
+            "https://www.aikido.dev/blog/gitlab-email-push-to-main"
+          ],
+          "basis": "reviewed-relationship"
+        },
+        {
+          "id": "source-41c043bab7c9e8cbf75d",
+          "label": "Earlier documentation correction",
+          "preservation": "link-only",
+          "url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/247431",
+          "title": "Align incoming email token capability across UI and docs",
+          "kind": "link",
+          "relation": "background",
+          "reason": "The article links this July 2026 documentation and UI correction as part of its disclosure history.",
+          "evidence": [
+            "https://www.aikido.dev/blog/gitlab-email-push-to-main"
+          ],
+          "basis": "reviewed-relationship"
+        }
+      ]
+    },
+    "research-61691163e1211492f29d": {
+      "id": "research-61691163e1211492f29d",
+      "identity": "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/",
+      "main": "source-61691163e1211492f29d",
+      "citations": [
+        "2026-ai.md:251"
+      ],
+      "sources": [
+        {
+          "id": "source-61691163e1211492f29d",
+          "label": "OpenCode upgrade RCE: text/plain JSON, top-level navigation and package-install targets",
+          "url": "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "basis": "list-citation",
+          "evidence": [
+            "2026-ai.md:251"
+          ]
+        },
+        {
+          "id": "source-e3ce28c75603d3b2bb61",
+          "label": "Security advisory",
+          "preservation": "archive",
+          "url": "https://github.com/anomalyco/opencode/security/advisories/GHSA-632h-h47v-g4x4",
+          "title": "Cross-site OpenCode server upgrade request can install arbitrary packages for npm-based installations",
+          "kind": "advisory",
+          "relation": "same-work",
+          "reason": "The primary article links this full advisory for the same upgrade endpoint vulnerability and reproduction.",
+          "evidence": [
+            "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ],
+          "basis": "reviewed-relationship"
+        },
+        {
+          "id": "source-617dabcb18121c9a19e8",
+          "label": "August fix",
+          "preservation": "link-only",
+          "url": "https://github.com/anomalyco/opencode/pull/44686",
+          "title": "fix(opencode): normalize upgrade endpoint",
+          "kind": "code",
+          "relation": "same-work",
+          "reason": "The August 24 patch enforces semantic-version targets and standard request content-type decoding.",
+          "evidence": [
+            "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ],
+          "basis": "reviewed-relationship"
+        },
+        {
+          "id": "source-81032883e8aa4960c3ad",
+          "label": "Embedded demonstration",
+          "preservation": "link-only",
+          "url": "https://securitylabs.dd-static.net/img/opencode-upgrade-remote-code-execution/opencode-rce-with-subtitles.mp4",
+          "relation": "same-work",
+          "kind": "video",
+          "reason": "Demonstration embedded in the primary article; retained as a link, not independently reviewed.",
+          "evidence": [
+            "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ],
+          "basis": "reviewed-relationship"
+        }
+      ]
+    },
+    "research-6afb3d763b08af161cac": {
+      "id": "research-6afb3d763b08af161cac",
+      "identity": "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/",
+      "main": "source-6afb3d763b08af161cac",
+      "citations": [
+        "2026-ai.md:252"
+      ],
+      "sources": [
+        {
+          "id": "source-6afb3d763b08af161cac",
+          "label": "F5 BIG-IP OAuth heap overflow: using a process-finish hook past SELinux execution restrictions",
+          "url": "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "basis": "list-citation",
+          "evidence": [
+            "2026-ai.md:252"
+          ]
+        },
+        {
+          "id": "source-8863790af7340ac730a3",
+          "label": "Proof of concept",
+          "preservation": "link-only",
+          "url": "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
+          "title": "watchTowr F5 BIG-IP CVE-2026-94127 proof of concept",
+          "kind": "code",
+          "relation": "same-work",
+          "reason": "The watchTowr repository links the article and identifies the same OAuth-enabled BIG-IP version-specific exploit.",
+          "evidence": [
+            "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/",
+            "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127"
+          ],
+          "basis": "reviewed-relationship"
+        },
+        {
+          "id": "source-b6115223a1138de8ac20",
+          "label": "Embedded demonstration",
+          "preservation": "link-only",
+          "url": "https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/media/2026/09/final11111-1.mp4",
+          "relation": "same-work",
+          "kind": "video",
+          "reason": "Demonstration embedded in the primary article; retained as a link, not independently reviewed.",
+          "evidence": [
+            "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/"
+          ],
+          "basis": "reviewed-relationship"
         }
       ]
     }

@@ -63,21 +63,21 @@ JSON.
 
 ## The vocabulary
 
-207 tags, across 1948 documents that carry a digest.
+207 tags, across 1952 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
-| `abuse-of-functionality` | 75 | A04:2021 |
+| `abuse-of-functionality` | 76 | A04:2021 |
 | `active-directory` | 1 | — |
 | `activex` | 13 | — |
-| `ai-agent` | 69 | — |
+| `ai-agent` | 70 | — |
 | `algorithmic-complexity` | 36 | A04:2021 |
 | `android` | 35 | — |
 | `angular` | 3 | — |
 | `argument-injection` | 3 | A03:2021 |
 | `aspnet` | 54 | — |
 | `attack-chain` | 228 | — |
-| `auth-bypass` | 354 | A01:2021 |
+| `auth-bypass` | 355 | A01:2021 |
 | `autofill` | 4 | — |
 | `aws` | 36 | — |
 | `azure` | 14 | — |
@@ -94,19 +94,19 @@ JSON.
 | `case-study` | 300 | — |
 | `cdn` | 50 | — |
 | `charset` | 40 | A02:2021 |
-| `ci-cd` | 30 | A08:2021 |
+| `ci-cd` | 31 | A08:2021 |
 | `class-pollution` | 5 | A08:2021 |
 | `clickjacking` | 59 | A04:2021 |
 | `clipboard` | 1 | — |
 | `cloudflare` | 12 | — |
 | `code-injection` | 3 | — |
 | `command-injection` | 58 | A03:2021 |
-| `content-type` | 43 | A05:2021 |
+| `content-type` | 45 | A05:2021 |
 | `cookie` | 156 | A07:2021 |
 | `cors` | 29 | A01:2021 |
 | `crypto` | 17 | A02:2021 |
 | `csp` | 72 | A05:2021 |
-| `csrf` | 155 | A01:2021 |
+| `csrf` | 157 | A01:2021 |
 | `css` | 77 | — |
 | `css-injection` | 36 | A03:2021 |
 | `csti` | 5 | A03:2021 |
@@ -132,12 +132,12 @@ JSON.
 | `dynamic-analysis` | 92 | — |
 | `elasticsearch` | 3 | — |
 | `electron` | 12 | — |
-| `email` | 58 | — |
+| `email` | 59 | — |
 | `embedded-device` | 9 | — |
 | `encoding` | 88 | — |
 | `express` | 9 | — |
 | `file-upload` | 96 | — |
-| `file-write` | 5 | — |
+| `file-write` | 6 | — |
 | `filter-bypass` | 316 | A05:2021 |
 | `flash` | 57 | — |
 | `flask` | 6 | — |
@@ -148,7 +148,7 @@ JSON.
 | `gcp` | 11 | — |
 | `github` | 24 | — |
 | `github-actions` | 20 | A08:2021 |
-| `gitlab` | 7 | — |
+| `gitlab` | 8 | — |
 | `go` | 16 | — |
 | `graphql` | 9 | — |
 | `hash-collision` | 5 | A02:2021 |
@@ -177,11 +177,11 @@ JSON.
 | `large-scale-scan` | 133 | — |
 | `lfi` | 34 | A01:2021, A03:2021 |
 | `llm` | 58 | — |
-| `load-balancer` | 18 | — |
+| `load-balancer` | 19 | — |
 | `mass-assignment` | 12 | A01:2021 |
 | `mcp` | 4 | — |
 | `measurement-study` | 248 | — |
-| `memory-corruption` | 5 | — |
+| `memory-corruption` | 6 | — |
 | `mime` | 43 | A05:2021 |
 | `mitigation` | 184 | — |
 | `mongodb` | 6 | — |
@@ -190,10 +190,10 @@ JSON.
 | `mysql` | 23 | — |
 | `nextjs` | 12 | — |
 | `nginx` | 1 | — |
-| `nodejs` | 75 | — |
+| `nodejs` | 77 | — |
 | `nosqli` | 10 | A03:2021 |
 | `ntlm` | 2 | — |
-| `oauth` | 81 | A07:2021 |
+| `oauth` | 82 | A07:2021 |
 | `open-redirect` | 66 | A04:2021 |
 | `openid` | 34 | A07:2021 |
 | `parser-differential` | 207 | — |
@@ -216,7 +216,7 @@ JSON.
 | `race-condition` | 35 | A04:2021 |
 | `rag` | 5 | — |
 | `rails` | 17 | — |
-| `rce` | 313 | — |
+| `rce` | 316 | — |
 | `react` | 6 | — |
 | `redis` | 5 | — |
 | `redos` | 3 | — |
@@ -262,7 +262,7 @@ JSON.
 | `url-parsing` | 126 | — |
 | `url-spoofing` | 12 | — |
 | `user-enumeration` | 9 | A04:2021 |
-| `vendor-advisory` | 57 | — |
+| `vendor-advisory` | 58 | — |
 | `vue` | 1 | — |
 | `waf` | 17 | A05:2021 |
 | `waf-bypass` | 78 | A05:2021 |

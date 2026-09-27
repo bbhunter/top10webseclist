@@ -298,7 +298,6 @@
       this.canvas.addEventListener("wheel", (event) => {
         event.preventDefault();
         this.stopFlight();
-        this.setAutoRotate(false);
         this.setDistance(this.camera.distance * Math.exp(event.deltaY * 0.0011));
       }, { ...options, passive: false });
       this.canvas.addEventListener("contextmenu", (event) => event.preventDefault(), options);
@@ -320,11 +319,11 @@
         this.onToast(this.showLabels ? "Smart research titles enabled." : "Research titles return to hover mode.");
       }, options);
       this.controls.zoomIn?.addEventListener("click", () => {
-        this.setAutoRotate(false);
+        this.stopFlight();
         this.setDistance(this.camera.distance * 0.78);
       }, options);
       this.controls.zoomOut?.addEventListener("click", () => {
-        this.setAutoRotate(false);
+        this.stopFlight();
         this.setDistance(this.camera.distance * 1.28);
       }, options);
       if (this.controls.zoomRange) {
@@ -333,7 +332,6 @@
           const bounds = this.controls.zoomRange.getBoundingClientRect();
           const position = clamp((event.clientY - bounds.top) / Math.max(bounds.height, 1), 0, 1);
           this.stopFlight();
-          this.setAutoRotate(false);
           this.setDistance(120 * Math.pow(1500 / 120, position));
         };
         this.controls.zoomRange.addEventListener("pointerdown", (event) => {
@@ -366,7 +364,6 @@
           event.preventDefault();
           event.stopPropagation();
           this.stopFlight();
-          this.setAutoRotate(false);
           actions[event.key]();
         }, options);
       }
@@ -389,7 +386,7 @@
           event.preventDefault();
           this.shell.focus({ preventScroll: true });
           this.stopFlight();
-          this.setAutoRotate(false);
+          if (action !== "forward" && action !== "back") this.setAutoRotate(false);
           this.navActions.add(action);
           button.classList.add("is-active");
           button.setPointerCapture?.(event.pointerId);
@@ -409,7 +406,6 @@
       this.canvas.setPointerCapture?.(event.pointerId);
       this.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
       this.stopFlight();
-      this.setAutoRotate(false);
 
       if (this.pointers.size === 2) {
         const points = [...this.pointers.values()];
@@ -474,6 +470,10 @@
       this.drag.x = event.clientX;
       this.drag.y = event.clientY;
       if (Math.hypot(event.clientX - this.drag.startX, event.clientY - this.drag.startY) > 4) this.drag.moved = true;
+      // Wait for a deliberate one-pointer drag: a second touch may start a
+      // pinch, which should preserve the user's drift setting like other zooms.
+      if (!this.drag.moved || (!deltaX && !deltaY)) return;
+      this.setAutoRotate(false);
 
       if (this.drag.node) {
         this.tugNode(this.drag.node, deltaX, deltaY, event.timeStamp);
@@ -524,7 +524,7 @@
       if (event.code === "Enter" && this.selected?.item) return this.onArtifact(this.selected.item.id);
       if (event.code === "Escape") return this.select(null);
       this.stopFlight();
-      this.setAutoRotate(false);
+      if (!["KeyW", "KeyS", "ArrowUp", "ArrowDown"].includes(event.code)) this.setAutoRotate(false);
       this.keys.add(event.code);
     }
 

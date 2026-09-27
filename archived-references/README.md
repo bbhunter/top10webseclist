@@ -18,16 +18,17 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1994 reference(s) archived across 20 year list(s). 1894 carry technique and 100 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1998 reference(s) archived across 20 year list(s). 1897 carry technique and 101 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (299)
+## 2026-ai (303)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
 | [Code generation gadget after prototype pollution](md/2026-ai/2026-protobuf-js-code-generation-gadget-after-prototype-pollution.md) | advisory | protobuf.js | 2026 | records | 1 |
 | [Code injection in pbjs static output from crafted schema names](md/2026-ai/2026-protobuf-js-code-injection-pbjs-static-output-crafted-schema-names.md) | advisory | protobuf.js | 2026 | records | 1 |
+| [Cross-site OpenCode server upgrade request can install arbitrary packages for npm-based installations](md/2026-ai/2026-github-advisory-database-cross-site-opencode-server-upgrade-installations.md) | advisory | GitHub Advisory Database | 2026 | records | 1 |
 | [CVE-2025-40780: Cache poisoning due to weak PRNG](md/2026-ai/kb-isc-org-cve-2025-40780-cache-poisoning-due-weak-prng.md) | advisory | kb.isc.org |  | research | 1 |
 | [CVE-2026-87902: Critical WordPress file inclusion and conditional RCE — Robert Ressl](md/2026-ai/2026-ressl-ch-cve-2026-87902-critical-wordpress-file-inclusion-ressl.md) | advisory | Robert Ressl | 2026 | research | 1 |
 | [DOMPurify XSS via `<selectedcontent>` re-clone](md/2026-ai/2026-cure53-dompurify-xss-selectedcontent-re-clone.md) | advisory | Cure53 | 2026 | research | 1 |
@@ -96,6 +97,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [CVE-2026-41238: How Prototype Pollution Turns DOMPurify Into an XSS Gadget](md/2026-ai/2026-trace37-cve-2026-41238-how-prototype-pollution-turns-dompurify-xss-gadget.md) | article | trace37 | 2026 | research | 1 |
 | [Demystifying the (In)Security of OAuth-based Account Linking in Connector Ecosystems](md/2026-ai/the-chinese-university-of-hong-kong-demystifying-security-oauth-ecosystems.md) | article | The Chinese University of Hong Kong |  | research | 1 |
 | [Deployment Poisoning: A(nother) Novel Attack Vector for GitHub Actions](md/2026-ai/boost-security-labs-deployment-poisoning-nother-novel-attack-vector-actions.md) | article | Boost Security Labs |  | research | 1 |
+| [Discovering and exploiting a remote code execution vulnerability in OpenCode (GHSA-632h-h47v-g4x4)](md/2026-ai/2026-securitylabs-datadoghq-com-discovering-exploiting-remote-code-g4x4.md) | article | Datadog Security Labs | 2026 | research | 1 |
 | [DNS Cache Poisoning Like it's 2006](md/2026-ai/dns-cache-poisoning-like-it-s-2006.md) | article |  |  | research | 1 |
 | [DOMPurify ≤3.2.6 bypass via SMIL animateTransform on Safari. Tags:Article - Article - Web](md/2026-ai/mizu-re-dompurify-3-2-6-bypass-smil-animatetransform-safari-tags-article-web.md) | article | mizu.re |  | research | 1 |
 | [Drive-By Agent Hijacking: One Website Visit, Persistent Model Poisoning](md/2026-ai/2026-cyera-research-drive-agent-hijacking-one-website-visit-poisoning.md) | article | Cyera Research | 2026 | research | 1 |
@@ -128,6 +130,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [How We Got Admin Access to Every Copilot Studio Agent Sandbox on Earth](md/2026-ai/beyondtrust-how-we-got-admin-access-every-copilot-studio-agent-sandbox-earth.md) | article | BeyondTrust |  | research | 1 |
 | [HTTP/3 in Burp Suite - it’s time to find a bigger wordlist](md/2026-ai/2026-portswigger-research-http-3-burp-suite-its-time-find-bigger-wordlist.md) | article | PortSwigger | 2026 | research | 1 |
 | [iframe sandbox bypass, cross-origin drag-and-drop, unvalidated postMessage origin, cookie bomb to account takeover](md/2026-ai/medium-iframe-sandbox-bypass-cross-origin-drag-drop-unvalidated-takeover.md) | article | Medium |  | research | 1 |
+| [Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)](md/2026-ai/2026-watchtowr-labs-this-joke-auth-header-f5-big-ip-unauth-heap-overflow-94127.md) | article | watchTowr Labs | 2026 | research | 1 |
 | [JavaScript Functions Overload Confusion](md/2026-ai/2026-voorivex-team-javascript-functions-overload-confusion.md) | article | Voorivex Team | 2026 | research | 1 |
 | [Jupyter Enterprise Gateway - From Notebook to Kubernetes Cluster Admin](md/2026-ai/elttam-jupyter-enterprise-gateway-notebook-kubernetes-cluster-admin.md) | article | elttam |  | research | 1 |
 | [Keys to the Kingdom: Anonymous SQL Injection in Drupal Core (CVE-2026-9082)](md/2026-ai/searchlight-cyber-keys-kingdom-anonymous-sql-injection-drupal-core-cve-2026-9082.md) | article | Searchlight Cyber |  | research | 1 |
@@ -181,6 +184,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [SECCON CTF 14 Finals: Author Writeups](md/2026-ai/2026-arkark-seccon-ctf-14-finals-author-writeups.md) · [English](md/2026-ai/2026-arkark-seccon-ctf-14-finals-author-writeups_translate.md) | article | arkark | 2026 | research | 1 |
 | [Securing the Supply Chain: Cache Vulnerability in RubyGems](md/2026-ai/truffle-security-securing-supply-chain-cache-vulnerability-rubygems.md) | article | Truffle Security |  | research | 1 |
 | [Security Considerations on Istio’s CRDs with Namespace-based Multi-Tenancy](md/2026-ai/ernw-istio-security-considerations-istios-crds-namespace-based-multi-tenancy.md) | article | ERNW / Istio |  | research | 1 |
+| [Send GitLab an email, push to main](md/2026-ai/aikido-security-send-gitlab-email-push-main.md) | article | Aikido Security | 2026 | research | 1 |
 | [Shaking the MCP Tree: A Security Deep Dive](md/2026-ai/2026-voorivex-shaking-mcp-tree-security-deep-dive.md) | article | Voorivex | 2026 | research | 1 |
 | [Site-DOM-XSS using Cookie Injection: The AI Hackers are Coming Faster than You Think](md/2026-ai/renwa-site-dom-xss-using-cookie-injection-ai-hackers-coming-faster-than-think.md) | article | Renwa |  | research | 1 |
 | [Sleeper Squats: How a Hyphen (Almost) Unraveled GitHub's Immutable OIDC Subject Claim](md/2026-ai/boost-security-labs-sleeper-squats-how-hyphen-almost-unraveled-github-s-claim.md) | article | Boost Security Labs |  | research | 1 |

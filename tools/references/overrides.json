@@ -8120,6 +8120,20 @@
         "Qinming He"
       ],
       "publisher": "arXiv"
+    },
+    "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution": {
+      "authors": [
+        "Christophe Tafani-Dereeper"
+      ],
+      "publisher": "Datadog Security Labs",
+      "reason": "Visible article byline names Christophe Tafani-Dereeper; @datadoghq is the publisher social handle."
+    },
+    "https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127": {
+      "authors": [
+        "Sina Kheirkhah"
+      ],
+      "publisher": "watchTowr Labs",
+      "reason": "Visible byline names Sina Kheirkhah (@SinSinology); both extracted credits identify the same person."
     }
   },
   "mirror_sources": [],
