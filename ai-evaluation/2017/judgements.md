@@ -14,6 +14,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Breaking Out HSTS (and HPKP) on Firefox, IE/Edge and (Possibly) Chrome](<https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts>) | Added |
 | [Dangerous Contents: Securing .NET Deserialization](<https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352>) | Added |
 | [Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs](<https://acmccs.github.io/papers/p1757-pellegrinoA.pdf>) | Added |
+| [Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing](<https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf>) | Added |
 | [Extension Breakdown: Security Analysis of Browsers Extension Resources Control Policies](<https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/sanchez-rola>) | Added |
 | [Fake Co-visitation Injection Attacks to Recommender Systems](<https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/>) | Added |
 | [Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript](<https://misc0110.net/files/timers.pdf>) | Added |

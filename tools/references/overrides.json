@@ -38,6 +38,265 @@
   "author_copies": [],
   "canonical_sources": [],
   "decisions": {
+    "https://www.elttam.com/blog/att-cking-tacacs-to-pwn-your-network-via-a-pre-auth-rce": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Matt Jones"
+      ],
+      "publisher": "elttam",
+      "reason": "Original September 2026 technical article; credit confirmed by byline and advisory."
+    },
+    "https://github.com/elttam/publications/blob/master/writeups/elttam-tac_plus_rce_fmtstring_advisory.txt": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "tac_plus Pre-Authentication Format-String Vulnerability (Advisory)",
+      "authors": [
+        "Matt Jones"
+      ],
+      "publisher": "elttam",
+      "reason": "The same-work advisory credits Matt Jones and supplies the technical disclosure details."
+    },
+    "https://safedep.io/memtensor-sckit-worm-npm-pypi": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "SafeDep Team"
+      ],
+      "publisher": "SafeDep",
+      "reason": "Original CI release-chain analysis; the primary page credits SafeDep Team."
+    },
+    "https://safedep.io/sckit-go-implant-framework": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "SafeDep Team"
+      ],
+      "publisher": "SafeDep",
+      "reason": "Separately credited same-story analysis of the loader and implant evidence; not a separate list nomination."
+    },
+    "https://ndevtk.github.io/writeups/2024/08/01/awas": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "NDevTK"
+      ],
+      "publisher": "NDevTK",
+      "reason": "The original author article maps browser-to-app intent and WebView attack surfaces."
+    },
+    "https://infosec.zeyu2001.com/2022/http-request-smuggling-in-the-multiverse-of-parsing-flaws": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Zeyu Zhang"
+      ],
+      "publisher": "Zeyu Zhang",
+      "reason": "Original article and official BSides Singapore 2022 slides establish the author identity."
+    },
+    "https://raw.githubusercontent.com/BSidesSG/2022/main/talks/HTTP%20Request%20Smuggling%20in%20the%20Multiverse%20of%20Parsing%20Flaws%20-%20Zhang%20Zeyu.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "HTTP Request Smuggling in the Multiverse of Parsing Flaws (Slides)",
+      "authors": [
+        "Zeyu Zhang"
+      ],
+      "publisher": "BSides Singapore",
+      "reason": "The official 47-slide conference deck credits Zhang Zeyu, the same researcher as the main article."
+    },
+    "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "We Still Don't Have Secure Cross-Domain Requests: an Empirical Study of CORS (Paper)",
+      "authors": [
+        "Jianjun Chen",
+        "Jian Jiang",
+        "Haixin Duan",
+        "Tao Wan",
+        "Shuo Chen",
+        "Vern Paxson",
+        "Min Yang"
+      ],
+      "publisher": "USENIX",
+      "reason": "Original USENIX Security 2018 paper; title and seven-author byline verified from the paper."
+    },
+    "https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing (Whitepaper)",
+      "authors": [
+        "Fernando Arnaboldi"
+      ],
+      "publisher": "IOActive / Black Hat",
+      "reason": "The Black Hat Europe 2017 whitepaper credits Fernando Arnaboldi of IOActive."
+    },
+    "https://github.com/IOActive/XDiFF": {
+      "outcome": "skip",
+      "class": "tool",
+      "reason": "Research tool companion to the separately archived whitepaper; kept as an outbound code link."
+    },
+    "https://www.usenix.org/system/files/conference/woot14/woot14-ho.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Tick Tock: Building Browser Red Pills from Timing Side Channels (Paper)",
+      "authors": [
+        "Grant Ho",
+        "Dan Boneh",
+        "Lucas Ballard",
+        "Niels Provos"
+      ],
+      "publisher": "USENIX",
+      "reason": "Original WOOT 2014 paper; the first-page byline supplies the exact author spellings."
+    },
+    "https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Illuminating the Security Issues Surrounding Lights-Out Server Management (Paper)",
+      "authors": [
+        "Anthony J. Bonkoski",
+        "Russ Bielawski",
+        "J. Alex Halderman"
+      ],
+      "publisher": "USENIX",
+      "reason": "Original WOOT 2013 paper; title and author names verified against its first page and publisher record."
+    },
+    "https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final177_0.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "An Evaluation of the Google Chrome Extension Security Architecture (Paper)",
+      "authors": [
+        "Nicholas Carlini",
+        "Adrienne Porter Felt",
+        "David Wagner"
+      ],
+      "publisher": "USENIX",
+      "reason": "Original USENIX Security 2012 paper with the stated three-author byline."
+    },
+    "https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "James Fisher"
+      ],
+      "publisher": "James Fisher",
+      "reason": "The author's original 27 April 2019 article explains the mobile browser toolbar and nested-scrolling demonstration."
+    },
+    "https://xsinator.com/paper.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "XSinator.com: From a Formal Model to the Automatic Evaluation of Cross-Site Leaks in Web Browsers",
+      "authors": [
+        "Lukas Knittel",
+        "Christian Mainka",
+        "Marcus Niemietz",
+        "Dominik Trevor Noß",
+        "Jörg Schwenk"
+      ],
+      "publisher": "ACM CCS",
+      "reason": "Original 2021 research paper; all five authors are credited on the first page."
+    },
+    "https://xsinator.com": {
+      "outcome": "skip",
+      "class": "tool",
+      "reason": "Interactive research test suite; retain as a link beside its separately archived paper."
+    },
+    "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Lucas Pardue",
+        "Julien Desgats"
+      ],
+      "publisher": "Cloudflare",
+      "reason": "The original technical account credits both authors and explains request cancellation versus outstanding downstream work."
+    },
+    "https://www.usenix.org/legacy/event/leet10/tech/slides/checkoway.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Are Text-Only Data Formats Safe? (Slides)",
+      "authors": [
+        "Stephen Checkoway",
+        "Hovav Shacham",
+        "Eric Rescorla"
+      ],
+      "publisher": "USENIX",
+      "reason": "The organizer-hosted deck's opening slide credits all three authors."
+    },
+    "https://www.usenix.org/legacy/event/leet11/tech/slides/nikiforakis.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exposing the Lack of Privacy in File Hosting Services (Slides)",
+      "authors": [
+        "Nick Nikiforakis",
+        "Marco Balduzzi",
+        "Steven Van Acker",
+        "Wouter Joosen",
+        "Davide Balzarotti"
+      ],
+      "publisher": "USENIX",
+      "reason": "The organizer-hosted deck's opening slide credits the five paper authors."
+    },
+    "https://www.usenix.org/legacy/event/leet10/tech/full_papers/Checkoway.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Are Text-Only Data Formats Safe? Or, Use This LaTeX Class File to Pwn Your Computer (Paper)",
+      "authors": [
+        "Stephen Checkoway",
+        "Hovav Shacham",
+        "Eric Rescorla"
+      ],
+      "publisher": "USENIX",
+      "reason": "Original LEET 2010 paper; title and authors appear on its first page."
+    },
+    "https://www.usenix.org/legacy/event/leet11/tech/full_papers/Nikiforakis.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exposing the Lack of Privacy in File Hosting Services (Paper)",
+      "authors": [
+        "Nick Nikiforakis",
+        "Marco Balduzzi",
+        "Steven Van Acker",
+        "Wouter Joosen",
+        "Davide Balzarotti"
+      ],
+      "publisher": "USENIX",
+      "reason": "Original LEET 2011 paper; title and authors appear on its first page."
+    },
+    "https://denniskniep.github.io/posts/13-bypass-cve-2024-9956": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Dennis Kniep"
+      ],
+      "publisher": "Dennis Kniep",
+      "reason": "The author's original September 2025 article explains the Shortcuts callback bypass of Safari's FIDO URI restriction."
+    },
+    "https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "khoadha"
+      ],
+      "publisher": "Viettel Cyber Security",
+      "reason": "The original article metadata and author profile credit khoadha; no expanded name is inferred."
+    },
+    "https://xenops.ae/blog/the-last-writer-wins": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "XENOPS Research"
+      ],
+      "publisher": "XENOPS",
+      "reason": "Primary article byline names XENOPS Research; the disclosure timeline dates publication to September 4, 2026."
+    },
+    "https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Leonardo Giovannini"
+      ],
+      "publisher": "Doyensec",
+      "reason": "The article states: 24 Sep 2026 - Posted by Leonardo Giovannini."
+    },
     "https://elttam.com/blog/ruby-marshal-kick-off-gadgets": {
       "authors": [
         "Luke Jahnke"
@@ -8134,6 +8393,58 @@
       ],
       "publisher": "watchTowr Labs",
       "reason": "Visible byline names Sina Kheirkhah (@SinSinology); both extracted credits identify the same person."
+    },
+    "https://www.usenix.org/sites/default/files/conference/protected-files/security18_slides_chen_0.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "We Still Don't Have Secure Cross-Domain Requests: an Empirical Study of CORS (Slides)",
+      "authors": [
+        "Jianjun Chen",
+        "Jian Jiang",
+        "Haixin Duan",
+        "Tao Wan",
+        "Shuo Chen",
+        "Vern Paxson",
+        "Min Yang"
+      ],
+      "publisher": "USENIX",
+      "reason": "Organizer-linked original slides; cover byline and complete source verified."
+    },
+    "https://www.usenix.org/sites/default/files/conference/protected-files/woot14_slides_ho.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Tick Tock: Building Browser Red Pills from Timing Side Channels (Slides)",
+      "authors": [
+        "Grant Ho",
+        "Dan Boneh",
+        "Lucas Ballard",
+        "Niels Provos"
+      ],
+      "publisher": "USENIX",
+      "reason": "Organizer-linked original slides; cover byline and complete source verified."
+    },
+    "https://www.usenix.org/sites/default/files/conference/protected-files/bonkoski_woot13_slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Illuminating the Security Issues with Lights-Out Server Management (Slides)",
+      "authors": [
+        "Anthony J. Bonkoski",
+        "J. Alex Halderman"
+      ],
+      "publisher": "USENIX",
+      "reason": "Organizer-linked original slides; cover byline and complete source verified."
+    },
+    "https://www.usenix.org/sites/default/files/conference/protected-files/felt_usenixsecurity12_slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "An Evaluation of the Google Chrome Extension Security Architecture (Slides)",
+      "authors": [
+        "Nicholas Carlini",
+        "Adrienne Porter Felt",
+        "David Wagner"
+      ],
+      "publisher": "USENIX",
+      "reason": "Organizer-linked original slides; cover byline and complete source verified."
     }
   },
   "mirror_sources": [],

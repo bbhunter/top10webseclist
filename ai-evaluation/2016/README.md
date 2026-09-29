@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [SoK: XML Parser Vulnerabilities](<https://www.usenix.org/conference/woot16/workshop-program/presentation/spath>) [Paper](<https://www.usenix.org/system/files/conference/woot16/woot16-paper-spath.pdf>) | Not added |
+| [Internet Jones and the Raiders of the Lost Trackers: An Archaeological Study of Web Tracking from 1996 to 2016](<https://trackingexcavator.cs.washington.edu/paper.html>) | Not added |
 | [.NET serialiception](<https://blog.scrt.ch/2016/05/12/net-serialiception/>) | Added |
 | 1000 Ways to Die in Mobile OAuth | Not added |
 | [A Comprehensive Formal Security Analysis of OAuth 2.0](<https://arxiv.org/abs/1601.01229>) | Added |

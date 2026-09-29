@@ -9,6 +9,22 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Click2Shell: WordPress theme-selector injection](<https://www.pwn.ai/blog/click2shell>) | Added |
+| [CVE-2026-87902: WordPress file inclusion](<https://ressl.ch/blog/cve-2026-87902-wordpress/>) | Added |
+| [Comment2XSS](<https://idnsec.com/research/comment2xss-zero-click-pre-auth-xss-to-rce-in-wordpress-core/>) | Added |
+| [BragJack](<https://forever.security/blog/bragjack-attack-hijacks-every-browser-agent>) | Added |
+| [HTTP/3 in Burp Suite](<https://portswigger.net/research/http3-in-burp-suite>) | Added |
+| [From Approval to Execution: Reconstruction-Aware Repair Analysis for LLM-Agent Software](<https://arxiv.org/abs/2609.26529>) | Added |
+| [TrustSink: How a Rogue External MFA Provider Steals Passwords](<https://www.varonis.com/blog/trustsink>) | Not added |
+| [SharePoint CVE-2026-65660: From Anonymous Access to Pre-Auth RCE via EditingPageParser Type-Check Bypass](<https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/>) | Added |
+| [Observable ≠ Exploitable: The Problem With OAuth Security Measurements](<https://labs.apisec.ai/research/articles/oauth-observable-vs-exploitable/>) | Not added |
+| [Authlib signature-verification bypass, VU#762428](<https://kb.cert.org/vuls/id/762428>) | Not added |
+| [ATT&CKing TACACS+ to Pwn Your Network via a Pre-Auth RCE](<https://www.elttam.com/blog/att-cking-tacacs-to-pwn-your-network-via-a-pre-auth-rce>) | Added |
+| [Penpot MCP REPL incomplete fix, GHSA-852x-m8p9-558v](<https://github.com/penpot/penpot/security/advisories/GHSA-852x-m8p9-558v>) | Not added |
+| [MemTensor npm and PyPI Packages Hit by a Go Worm](<https://safedep.io/memtensor-sckit-worm-npm-pypi/>) | Added |
+| [The Last Writer Wins: A Chess.com Account Takeover via postMessage XSS](<https://xenops.ae/blog/the-last-writer-wins>) | Added |
+| [One Tap Too Far: Using Shortcuts to Bypass Chrome for iOS Call Prompts](<https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html>) | Added |
+| [The Truth about GET and HTTP Standards](<https://isc.sans.edu/diary/The%2BTruth%2Babout%2BGET%2Band%2BHTTP%2BStandards/33358/>) | Not added |
 | [$15k - CSPT to full account takeover, then 2FA bypass via the prototype chain](<https://whoareme.com/blog/cspt-account-takeover-2fa-bypass/>) [Earlier authentication-key example (2014)](<https://www.codelord.net/2014/03/14/please-use-hasownproperty-short-story-of-a-hack/>) | Added |
 | [PHP mail() Command Injection to Remote Code Execution (RCE)](<https://nullsecurityx.medium.com/php-mail-command-injection-to-remote-code-execution-rce-b2991e929ca3>) | Not added |
 | [QUIC-er Races: HTTP/3 won’t save you from TOCTOU vulnerabilities](<https://link.springer.com/article/10.1007/s10207-026-01258-6>) [Tool](<https://github.com/nxenon/H3SpaceX>) | Not added |

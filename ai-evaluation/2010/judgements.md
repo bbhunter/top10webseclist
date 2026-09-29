@@ -10,6 +10,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [A Symbolic Execution Framework for JavaScript](<https://webblaze.cs.berkeley.edu/papers/kudzu.pdf>) [Related source](<https://webblaze.cs.berkeley.edu/kudzu.html>) | Added |
 | [An Analysis of Private Browsing Modes in Modern Browsers](<https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers>) [Related source](<https://www.usenix.org/event/sec10/tech/full_papers/Aggarwal.pdf>) | Added |
 | [An Empirical Study of Privacy-Violating Information Flows in JavaScript Web Applications](<https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf>) | Added |
+| [Are Text-Only Data Formats Safe? Or, Use This LaTeX Class File to Pwn Your Computer](<https://www.usenix.org/legacy/event/leet10/tech/full_papers/Checkoway.pdf>) | Added |
 | [Busting Frame Busting: a Study of Clickjacking Vulnerabilities on Popular Sites](<https://seclab.stanford.edu/websec/framebusting/framebust.pdf>) | Added |
 | [DNS Prefetching and Its Privacy Implications: When Good Things Go Bad](<https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad>) [Related source](<https://www.usenix.org/legacy/event/leet10/tech/full_papers/Krishnan.pdf>) | Added |
 | [Fear the EAR: Execution After Redirect](<https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/>) | Added |

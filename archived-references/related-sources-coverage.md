@@ -1,5 +1,21 @@
 # Related-source coverage
 
+## New research additions — 29 September 2026
+
+Reviewed source relationships for 18 additions from a bounded search of 2026
+and each earlier year through 2006. This pass preserves 27 written sources:
+18 main publications and nine separately credited companion documents. Original
+conference PDFs remain original files; linked demonstrations, recordings and
+code remain outbound resources. Existing archived background research is shared
+through explicit relationships rather than copied into new documents.
+
+Discovery used complete research text, author and conference pages, embedded
+media metadata and targeted primary-source searches. Recording identities were
+checked from those sources; this was not a full playback or transcript review.
+Unavailable sources and uncertain publication dates remain in the private lead
+records. The pass does not establish exhaustive coverage of the live web or
+revalidate the earlier corpus-wide relationship findings below.
+
 ## Recording revalidation — 18 September 2026
 
 Reviewed all 416 stored recording associations across 298 source records, plus

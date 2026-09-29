@@ -1,6 +1,262 @@
 {
   "schema": 1,
   "groups": {
+    "https://www.elttam.com/blog/att-cking-tacacs-to-pwn-your-network-via-a-pre-auth-rce": {
+      "sources": [
+        {
+          "url": "https://github.com/elttam/publications/blob/master/writeups/elttam-tac_plus_rce_fmtstring_advisory.txt",
+          "label": "Technical advisory",
+          "relation": "same-work",
+          "kind": "advisory",
+          "preservation": "archive",
+          "reason": "The author's advisory documents the same format-string error path and disclosure timeline.",
+          "evidence": [
+            "https://www.elttam.com/blog/att-cking-tacacs-to-pwn-your-network-via-a-pre-auth-rce"
+          ]
+        }
+      ]
+    },
+    "https://safedep.io/memtensor-sckit-worm-npm-pypi/": {
+      "sources": [
+        {
+          "url": "https://safedep.io/sckit-go-implant-framework/",
+          "label": "Loader and implant analysis",
+          "relation": "same-work",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Companion analysis separates observed loader behavior from capabilities inferred from implant strings and function names.",
+          "evidence": [
+            "https://safedep.io/memtensor-sckit-worm-npm-pypi/"
+          ]
+        }
+      ]
+    },
+    "https://infosec.zeyu2001.com/2022/http-request-smuggling-in-the-multiverse-of-parsing-flaws": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/BSidesSG/2022/main/talks/HTTP%20Request%20Smuggling%20in%20the%20Multiverse%20of%20Parsing%20Flaws%20-%20Zhang%20Zeyu.pdf",
+          "label": "BSides Singapore 2022 slides",
+          "relation": "same-work",
+          "kind": "slides",
+          "preservation": "archive",
+          "reason": "The official conference deck supplies worked request examples for the article's parser comparisons.",
+          "evidence": [
+            "https://bsidessg.org/archive/bsidessg2022/",
+            "https://infosec.zeyu2001.com/2022/http-request-smuggling-in-the-multiverse-of-parsing-flaws"
+          ]
+        }
+      ]
+    },
+    "https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf": {
+      "sources": [
+        {
+          "url": "https://github.com/IOActive/XDiFF",
+          "label": "XDiFF research code",
+          "relation": "same-work",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "IOActive's project repository accompanies the differential-testing research.",
+          "evidence": [
+            "https://github.com/IOActive/XDiFF"
+          ]
+        }
+      ]
+    },
+    "https://xsinator.com/paper.pdf": {
+      "sources": [
+        {
+          "url": "https://xsinator.com/",
+          "label": "Browser test suite",
+          "relation": "same-work",
+          "kind": "tool",
+          "preservation": "link-only",
+          "reason": "The paper describes the accompanying browser evaluation suite hosted at this project site.",
+          "evidence": [
+            "https://xsinator.com/paper.pdf"
+          ]
+        }
+      ]
+    },
+    "https://denniskniep.github.io/posts/13-bypass-cve-2024-9956/": {
+      "sources": [
+        {
+          "url": "https://mastersplinter.work/research/passkey/",
+          "label": "Original FIDO navigation attack (February 2025)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "link-only",
+          "reason": "The earlier account explains direct FIDO navigation and the proximity-dependent hybrid attack whose browser block is bypassed here; retained as an outbound prior-art reading.",
+          "evidence": [
+            "https://denniskniep.github.io/posts/13-bypass-cve-2024-9956/"
+          ]
+        }
+      ]
+    },
+    "https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html": {
+      "sources": [
+        {
+          "url": "https://denniskniep.github.io/posts/13-bypass-cve-2024-9956/",
+          "label": "Earlier Shortcuts callback bypass (2025)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier disclosure uses Shortcuts error and cancellation callbacks to reach a browser-blocked FIDO handler.",
+          "evidence": [
+            "https://denniskniep.github.io/posts/13-bypass-cve-2024-9956/"
+          ]
+        },
+        {
+          "url": "https://blog.doyensec.com/public/images/ios-bypass.mp4",
+          "label": "Article demonstration",
+          "relation": "same-work",
+          "kind": "video",
+          "preservation": "link-only",
+          "reason": "The original article embeds this demonstration video.",
+          "evidence": [
+            "https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html"
+          ]
+        },
+        {
+          "url": "https://chromium.googlesource.com/chromium/src/ios/+/1d152ba4b0ca2dc3a4f0e7853e57da66f2e1ea62",
+          "label": "Chromium fix record",
+          "relation": "same-work",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "The Chromium commit records the Shortcuts and Workflow launch-prompt change.",
+          "evidence": [
+            "https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html"
+          ]
+        }
+      ]
+    },
+    "https://xenops.ae/blog/the-last-writer-wins": {
+      "sources": [
+        {
+          "url": "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/",
+          "label": "Earlier sanitizer integration case (2023)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier practical analysis explains how surrounding application transformations undermine sanitizer guarantees.",
+          "evidence": [
+            "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/"
+          ]
+        },
+        {
+          "url": "https://github.com/yahoo/serialize-javascript/commit/f21a6fb3ace2353413761e79717b2d210ba6ccbd",
+          "label": "Earlier placeholder-collision fix (2020)",
+          "relation": "background",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "The earlier serialization fix addresses attacker-controlled placeholder collisions in a different transformation pipeline.",
+          "evidence": [
+            "https://github.com/yahoo/serialize-javascript/commit/f21a6fb3ace2353413761e79717b2d210ba6ccbd"
+          ]
+        },
+        {
+          "url": "https://gist.github.com/irsdl/da6a691f45283a4987447e9efb1d434d/7393078ca021515159b3fa7f406277314ddce0a8",
+          "label": "Earlier remove-sanitize-restore example (June 2026)",
+          "relation": "background",
+          "kind": "code",
+          "preservation": "link-only",
+          "reason": "Dated example demonstrates the risks of removing content before sanitization and restoring it afterward.",
+          "evidence": [
+            "https://gist.github.com/irsdl/da6a691f45283a4987447e9efb1d434d/7393078ca021515159b3fa7f406277314ddce0a8"
+          ]
+        }
+      ]
+    },
+    "https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/": {
+      "sources": [
+        {
+          "url": "https://code-white.com/blog/exploiting-asp.net-templateparser-part-1/",
+          "label": "TemplateParser background (Part 1)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Explains the underlying ASP.NET parser attack surface and execution capabilities.",
+          "evidence": [
+            "https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/"
+          ]
+        },
+        {
+          "url": "https://code-white.com/blog/exploiting-asp.net-templateparser-part-2/",
+          "label": "TemplateParser background (Part 2)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Continues the earlier parser exploitation analysis used as background for this chain.",
+          "evidence": [
+            "https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/"
+          ]
+        },
+        {
+          "url": "https://blog.viettelcybersecurity.com/sharepoint-toolshell/",
+          "label": "Earlier SharePoint chain (2025)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "archive",
+          "reason": "Earlier SharePoint exploitation establishes the preexisting parser and authentication context.",
+          "evidence": [
+            "https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/"
+          ]
+        },
+        {
+          "url": "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf",
+          "label": "Generic XAML gadget background (August 2026)",
+          "relation": "background",
+          "kind": "paper",
+          "preservation": "archive",
+          "reason": "Section 4.2 describes the generic ExpandedWrapper and XamlServices execution path reused by this chain.",
+          "evidence": [
+            "https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/"
+          ]
+        },
+        {
+          "url": "https://vred.mbbank.com.vn/p/phan-tich-1day-sharepoint-trong-mot",
+          "label": "Earlier directive-injection analysis (May 2026, Vietnamese)",
+          "relation": "background",
+          "kind": "article",
+          "preservation": "link-only",
+          "reason": "Earlier analysis describes Src quote injection through GetHtml in an authenticated ManageLists context; retained as an outbound prior-art reading.",
+          "evidence": [
+            "https://vred.mbbank.com.vn/p/phan-tich-1day-sharepoint-trong-mot"
+          ]
+        }
+      ]
+    },
+    "https://www.usenix.org/legacy/event/leet10/tech/full_papers/Checkoway.pdf": {
+      "sources": [
+        {
+          "url": "https://www.usenix.org/legacy/event/leet10/tech/slides/checkoway.pdf",
+          "title": "Are Text-Only Data Formats Safe? (Slides)",
+          "label": "LEET 2010 slides",
+          "relation": "same-work",
+          "kind": "slides",
+          "preservation": "archive",
+          "reason": "Organizer-hosted presentation of the paper, with the same three-author byline.",
+          "evidence": [
+            "https://www.usenix.org/conference/leet-10/presentation/are-text-only-data-formats-safe-or-use-latex-class-file-pwn-your-com"
+          ]
+        }
+      ]
+    },
+    "https://www.usenix.org/legacy/event/leet11/tech/full_papers/Nikiforakis.pdf": {
+      "sources": [
+        {
+          "url": "https://www.usenix.org/legacy/event/leet11/tech/slides/nikiforakis.pdf",
+          "title": "Exposing the Lack of Privacy in File Hosting Services (Slides)",
+          "label": "LEET 2011 slides",
+          "relation": "same-work",
+          "kind": "slides",
+          "preservation": "archive",
+          "reason": "Organizer-hosted presentation of the study, with the same five-author byline.",
+          "evidence": [
+            "https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services"
+          ]
+        }
+      ]
+    },
     "https://tantosec.com/blog/2026/09/telerik-padding-oracle-to-shell/": {
       "sources": [
         {
@@ -14674,6 +14930,206 @@
           "reason": "Demonstration embedded in the primary article; retained as a link, not independently reviewed.",
           "evidence": [
             "https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/"
+          ]
+        }
+      ]
+    },
+    "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf": {
+      "sources": [
+        {
+          "url": "https://www.usenix.org/sites/default/files/conference/protected-files/security18_slides_chen_0.pdf",
+          "title": "We Still Don't Have Secure Cross-Domain Requests: an Empirical Study of CORS (Slides)",
+          "label": "Conference slides",
+          "kind": "slides",
+          "relation": "same-work",
+          "preservation": "archive",
+          "published": "2018",
+          "reason": "Original slide deck accompanying the paper; separately credited from its cover.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf",
+            "https://www.usenix.org/sites/default/files/conference/protected-files/security18_slides_chen_0.pdf"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WwTSHaRccYw",
+          "title": "Conference recording",
+          "label": "Conference recording",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf"
+          ]
+        },
+        {
+          "url": "https://youtu.be/jO6hoXyXVqk",
+          "title": "Intranet shell demonstration",
+          "label": "Intranet shell demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf"
+          ]
+        },
+        {
+          "url": "https://youtu.be/WXIy94prfvs",
+          "title": "AFP file creation demonstration",
+          "label": "AFP file creation demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf"
+          ]
+        }
+      ]
+    },
+    "https://www.usenix.org/system/files/conference/woot14/woot14-ho.pdf": {
+      "sources": [
+        {
+          "url": "https://www.usenix.org/sites/default/files/conference/protected-files/woot14_slides_ho.pdf",
+          "title": "Tick Tock: Building Browser Red Pills from Timing Side Channels (Slides)",
+          "label": "Conference slides",
+          "kind": "slides",
+          "relation": "same-work",
+          "preservation": "archive",
+          "published": "2014",
+          "reason": "Original slide deck accompanying the paper; separately credited from its cover.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/woot14/woot14-ho.pdf",
+            "https://www.usenix.org/sites/default/files/conference/protected-files/woot14_slides_ho.pdf"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=L5pWjFULhVQ",
+          "title": "Conference recording",
+          "label": "Conference recording",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/woot14/woot14-ho.pdf"
+          ]
+        }
+      ]
+    },
+    "https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf": {
+      "sources": [
+        {
+          "url": "https://www.usenix.org/sites/default/files/conference/protected-files/bonkoski_woot13_slides.pdf",
+          "title": "Illuminating the Security Issues with Lights-Out Server Management (Slides)",
+          "label": "Conference slides",
+          "kind": "slides",
+          "relation": "same-work",
+          "preservation": "archive",
+          "published": "2013",
+          "reason": "Original slide deck accompanying the paper; separately credited from its cover.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf",
+            "https://www.usenix.org/sites/default/files/conference/protected-files/bonkoski_woot13_slides.pdf"
+          ]
+        }
+      ]
+    },
+    "https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final177_0.pdf": {
+      "sources": [
+        {
+          "url": "https://www.usenix.org/sites/default/files/conference/protected-files/felt_usenixsecurity12_slides.pdf",
+          "title": "An Evaluation of the Google Chrome Extension Security Architecture (Slides)",
+          "label": "Conference slides",
+          "kind": "slides",
+          "relation": "same-work",
+          "preservation": "archive",
+          "published": "2012",
+          "reason": "Original slide deck accompanying the paper; separately credited from its cover.",
+          "evidence": [
+            "https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final177_0.pdf",
+            "https://www.usenix.org/sites/default/files/conference/protected-files/felt_usenixsecurity12_slides.pdf"
+          ]
+        }
+      ]
+    },
+    "https://ndevtk.github.io/writeups/2024/08/01/awas/": {
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=FnarD8RX4Ys",
+          "title": "Home-screen spoof demonstration",
+          "label": "Home-screen spoof demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://ndevtk.github.io/writeups/2024/08/01/awas/"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Uj84sILMoYI",
+          "title": "Clock and alarm demonstration",
+          "label": "Clock and alarm demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://ndevtk.github.io/writeups/2024/08/01/awas/"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/shorts/D_Dxmxs0fyo",
+          "title": "Intent spoof demonstration",
+          "label": "Intent spoof demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://ndevtk.github.io/writeups/2024/08/01/awas/"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tJ4N61kCrPg",
+          "title": "Browser spoof demonstration",
+          "label": "Browser spoof demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://ndevtk.github.io/writeups/2024/08/01/awas/"
+          ]
+        },
+        {
+          "url": "https://www.youtube.com/shorts/uQ6cAHarZd8",
+          "title": "Non-BROWSABLE relay demonstration",
+          "label": "Non-BROWSABLE relay demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://ndevtk.github.io/writeups/2024/08/01/awas/"
+          ]
+        }
+      ]
+    },
+    "https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/": {
+      "sources": [
+        {
+          "url": "https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/demo.webm",
+          "title": "Scrolling demonstration",
+          "label": "Scrolling demonstration",
+          "kind": "video",
+          "relation": "same-work",
+          "preservation": "link-only",
+          "reason": "Linked by the original article, deck or conference organizer; retained as media, without claiming transcript review.",
+          "evidence": [
+            "https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/"
           ]
         }
       ]

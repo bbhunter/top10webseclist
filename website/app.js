@@ -1108,10 +1108,25 @@ function compactArchiveItem(item) {
     }
   });
   if (defaults) result.defaults = defaults;
+  // Markdown and PDF copies normally share a collection and filename stem.
+  // Store that relationship once while leaving exceptional paths explicit.
+  if (/^archived-references\/md\/[a-z0-9-]+\/[a-z0-9._-]+\.md$/.test(item.mdPath || "")
+      && item.pdfPath === item.mdPath.replace("/md/", "/pdf/").replace(/\.md$/, ".pdf")) {
+    delete result.pdfPath;
+    result.pdfFromMd = true;
+  }
   return result;
 }
 
 function expandArchiveItem(item) {
+  if (Object.hasOwn(item, "pdfFromMd")) {
+    if (item.pdfFromMd !== true || Object.hasOwn(item, "pdfPath")
+        || !/^archived-references\/md\/[a-z0-9-]+\/[a-z0-9._-]+\.md$/.test(item.mdPath || "")) {
+      throw new Error("Invalid shared archive PDF path");
+    }
+    item = { ...item, pdfPath: item.mdPath.replace("/md/", "/pdf/").replace(/\.md$/, ".pdf") };
+    delete item.pdfFromMd;
+  }
   if (Object.hasOwn(item, "defaults")) {
     const values = Object.entries(ARCHIVE_ITEM_DEFAULTS);
     if (!Number.isInteger(item.defaults) || item.defaults < 1 || item.defaults >= 2 ** values.length) {

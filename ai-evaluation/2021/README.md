@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [XSinator.com: From a Formal Model to the Automatic Evaluation of Cross-Site Leaks in Web Browsers](<https://xsinator.com/paper.pdf>) | Added |
 | [Python NaN Injection](<https://www.tenable.com/blog/python-nan-injection>) [Related source](<https://blog.bitdiscovery.com/2021/12/python-nan-injection/>) [Related source](<https://github.com/ProZachJ/ducktales>) | Not added |
 | [Leveraging the Spring Expression Language injection vulnerability to get RCE](<https://xen0vas.github.io/Leveraging-the-SpEL-Injection-Vulnerability-to-get-RCE/>) | Not added |
 | [Improper Spring @Query Usage Allows N1QL Injection](<https://www.gremwell.com/spring-n1ql-injection>) | Added |

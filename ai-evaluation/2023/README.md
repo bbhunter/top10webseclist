@@ -77,3 +77,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [WebSpec](<https://arxiv.org/abs/2201.01649>) | Not added |
 | [The curl quirk that exposed Burp Suite & Google Chrome](<https://portswigger.net/research/the-curl-quirk-that-exposed-burp-suite-amp-google-chrome>) | Not added |
 | [Adobe ColdFusion RCE](<https://projectdiscovery.io/blog/adobe-coldfusion-rce>) | Added |
+| [HTTP/2 Rapid Reset: deconstructing the record-breaking attack](<https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/>) | Added |

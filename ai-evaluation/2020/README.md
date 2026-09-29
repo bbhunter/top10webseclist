@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [WebAuthn PIN bypass (hwsecurity)](<https://hwsecurity.dev/2020/08/webauthn-pin-bypass/>) | Not added |
+| [Webauthn UserVerificationPolicy Curiosities](<https://fy.blackhats.net.au/blog/2020-11-21-webauthn-userverificationpolicy-curiosities/>) | Not added |
 | [DoS - Mr. Pixel Flood](<https://shahjerry33.medium.com/dos-mr-pixel-flood-27605add29f2>) | Not added |
 | [How Secure Are Your Universally Unique IDentifiers (UUIDs)?](<https://versprite.com/resources/blog/universally-unique-identifiers/>) | Added |
 | [A Tale of Two Headers: A Formal Analysis of Inconsistent Click-Jacking Protection on the Web](<https://www.usenix.org/conference/usenixsecurity20/presentation/calzavara>) | Added |

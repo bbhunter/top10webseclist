@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [HTTP Request Smuggling in the Multiverse of Parsing Flaws](<https://infosec.zeyu2001.com/2022/http-request-smuggling-in-the-multiverse-of-parsing-flaws>) | Added |
 | [AWS Targeted by a Package Backfill Attack](<https://www.mend.io/blog/aws-targeted-by-a-package-backfill-attack/>) [Related source](<https://www.whitesourcesoftware.com/resources/blog/aws-targeted-by-a-package-backfill-attack/>) | Not added |
 | [Measuring and Mitigating the Risk of IP Reuse on Public Clouds](<https://arxiv.org/abs/2204.05122>) [Related source](<https://pauley.me/post/2022/secure-cloud-decomissioning/>) | Added |
 | [Finding client-side prototype pollution with DOM Invader](<https://portswigger.net/blog/finding-client-side-prototype-pollution-with-dom-invader>) | Added |

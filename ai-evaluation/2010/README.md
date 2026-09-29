@@ -49,3 +49,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Weaning the Web off of Session Cookies — Timothy D. Morgan](<http://www.vsecurity.com/download/papers/WeaningTheWebOffOfSessionCookies.pdf>) | Not added |
 | [xJS: Practical XSS Prevention](<https://www.usenix.org/conference/webapps-10/xjs-practical-xss-prevention-web-application-development>) | Not added |
 | [XML Signature Best Practices, 31 August 2010 draft](<https://www.w3.org/TR/2010/WD-xmldsig-bestpractices-20100831/>) | Not added |
+| [Are Text-Only Data Formats Safe? Or, Use This LaTeX Class File to Pwn Your Computer](<https://www.usenix.org/legacy/event/leet10/tech/full_papers/Checkoway.pdf>) | Added |

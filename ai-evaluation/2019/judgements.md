@@ -23,5 +23,6 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities](<https://www.usenix.org/conference/usenixsecurity19/presentation/merget>) | Added |
 | [Telerik Revisited](<https://code-white.com/blog/2019-02-telerik-revisited/>) | Added |
 | [The Betrayal at Cloud City](<https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi>) | Added |
+| [The inception bar: a new phishing method](<https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/>) | Added |
 | [Turbo Intruder: Embracing the billion-request attack](<https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack>) | Added |
 | [What Are You Searching For? A Remote Keylogging Attack on Search Engine Autocomplete](<https://www.usenix.org/conference/usenixsecurity19/presentation/monaco>) | Added |

@@ -26,3 +26,4 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Talking About My Generation: Targeted DOM-based XSS Exploit Generation using Dynamic Data Flow Analysis](<https://www.ias.cs.tu-bs.de/publications/talking_about_my_generation.pdf>) | Added |
 | [To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media](<https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/>) | Added |
 | [Towards a Lightweight, Hybrid Approach for Detecting DOM XSS Vulnerabilities with Machine Learning](<https://clementfung.me/gallery/papers/www2021-domxss-ml.pdf>) | Added |
+| [XSinator.com: From a Formal Model to the Automatic Evaluation of Cross-Site Leaks in Web Browsers](<https://xsinator.com/paper.pdf>) | Added |

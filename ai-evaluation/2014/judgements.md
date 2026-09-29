@@ -28,6 +28,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou>) | Added |
 | [Static Detection of Second-Order Vulnerabilities in Web Applications](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse>) | Added |
 | [The Emperor's New Password Manager: Security Analysis of Web-based Password Managers](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei>) | Added |
+| [Tick Tock: Building Browser Red Pills from Timing Side Channels](<https://www.usenix.org/system/files/conference/woot14/woot14-ho.pdf>) | Added |
 | [Toward Black-Box Detection of Logic Flaws in Web Applications](<https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/toward-black-box-detection-logic-flaws-web-applications/>) | Added |
 | [Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS](<https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf>) | Added |
 | [Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations](<https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf>) | Added |

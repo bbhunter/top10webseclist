@@ -10,6 +10,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Attacks on JavaScript Mashup Communication](<https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf>) | Added |
 | [Breaking the Security Myths of Extended Validation SSL](<https://www.blackhat.com/presentations/bh-usa-09/SOTIROV/BHUSA09-Sotirov-AttackExtSSL-SLIDES.pdf>) | Added |
 | [Code-Injection Attacks in Browsers Supporting Policies](<https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf>) | Added |
+| [Cross Site Scripting Anonymous Browser](<https://blackhat.com/presentations/bh-dc-09/Flick/BlackHat-DC-09-Flick-XAB-wp.pdf>) | Not added |
 | [Cross Site Scripting Anonymous Browser](<https://www.blackhat.com/presentations/bh-dc-09/Flick/BlackHat-DC-09-Flick-XAB-wp.pdf>) | Not added |
 | [Cross-Channel Scripting](<https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf>) | Added |
 | [Cross-Origin JavaScript Capability Leaks](<https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks>) | Added |

@@ -55,3 +55,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [XSS without the browser](<http://kyleosborn.org/2011/06/19/toorcon-seattle-2011-xss-without-the-browser/>) | Not added |
 | [ZOZZLE](<https://www.usenix.org/legacy/events/sec11/tech/full_papers/Curtsinger.pdf>) | Not added |
 | [“You Might Also Like:” Privacy Risks of Collaborative Filtering](<https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf>) | Added |
+| [Exposing the Lack of Privacy in File Hosting Services](<https://www.usenix.org/legacy/event/leet11/tech/full_papers/Nikiforakis.pdf>) | Added |

@@ -206,12 +206,47 @@ def sanitise_html(markup):
     if text != before:
         removed.append("inline-script-attribute")
 
-    result = sanitise_text(text)
+    result = sanitise_text(text, preserve_fenced_controls=False)
     return Sanitised(result.text, removed + result.removed, result.markers)
 
 
-def sanitise_text(text):
-    """Remove invisible channels from plain text or Markdown."""
+def _strip_controls(text):
+    return "".join(char for char in text
+                   if char in "\t\n\r" or unicodedata.category(char) != "Cc")
+
+
+def _controls_outside_fences(text):
+    """Retain protocol bytes only in bodies of closed Markdown code fences.
+
+    Split on Markdown line endings, never str.splitlines(): VT and FF can be
+    the very bytes a parsing-vulnerability listing is documenting. Recognise
+    fences on the stripped view so removing a control on a delimiter cannot
+    change the fence boundaries on the next sanitisation pass.
+    """
+    lines = re.findall(r"[^\r\n]*(?:\r\n|[\r\n]|$)", text)
+    clean = [_strip_controls(line) for line in lines]
+    opener = None
+    for index, line in enumerate(clean):
+        body = line.rstrip("\r\n")
+        if opener is None:
+            match = re.fullmatch(r" {0,3}(`{3,}|~{3,})(.*)", body)
+            if match and not (match[1][0] == "`" and "`" in match[2]):
+                opener = (index, match[1])
+        else:
+            start, delimiter = opener
+            if re.fullmatch(r" {0,3}" + re.escape(delimiter[0])
+                            + "{" + str(len(delimiter)) + r",}[ \t]*", body):
+                clean[start + 1:index] = lines[start + 1:index]
+                opener = None
+    return "".join(clean)
+
+
+def sanitise_text(text, *, preserve_fenced_controls=True):
+    """Remove invisible channels, retaining protocol controls in fenced code.
+
+    Bidi, zero-width and Unicode tag characters are removed even inside code.
+    HTML callers disable the Markdown-only exception explicitly.
+    """
     removed = []
     text = text or ""
 
@@ -227,8 +262,8 @@ def sanitise_text(text):
         removed.append("unicode-tag-block")
 
     before = text
-    text = "".join(char for char in text
-                   if char in "\t\n\r" or unicodedata.category(char) != "Cc")
+    text = (_controls_outside_fences(text) if preserve_fenced_controls
+            else _strip_controls(text))
     if text != before:
         removed.append("control-character")
 
@@ -238,7 +273,13 @@ def sanitise_text(text):
         removed.append("unicode-normalised")
         text = normalised
 
-    return Sanitised(text, removed, find_markers(text))
+    # Code remains evidence, not authority. Also inspect the stripped view so
+    # a preserved byte inserted within a marker cannot conceal that marker.
+    markers = find_markers(text)
+    stripped = _strip_controls(text)
+    if stripped != text:
+        markers.extend(marker for marker in find_markers(stripped) if marker not in markers)
+    return Sanitised(text, removed, markers)
 
 
 def find_markers(text):

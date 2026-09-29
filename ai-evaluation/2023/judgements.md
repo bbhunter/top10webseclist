@@ -20,6 +20,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Finding All Cross-Site Needles in the DOM Stack](<https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers>) | Added |
 | [Generating deserialization payloads for MessagePack C#'s Typeless mode](<https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) [Related source](<https://netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/>) [Related source](<https://github.com/pwntester/ysoserial.net/pull/146>) | Added |
 | [Hijacking OAuth Code via Reverse Proxy for Account Takeover](<https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover>) | Added |
+| [HTTP/2 Rapid Reset: deconstructing the record-breaking attack](<https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/>) | Added |
 | [Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser](<https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings>) | Added |
 | [It's (DOM) Clobbering Time: Attack Techniques, Prevalence, and Defenses](<https://trouge.net/publication/domclob-sp-2023/>) | Added |
 | [Leaking more than log₂ of the URL count with the selectURL gate](<https://github.com/WICG/shared-storage/issues/86>) | Added |

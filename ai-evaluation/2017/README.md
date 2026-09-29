@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [How the Web Tangled Itself: Uncovering the History of Client-Side Web (In)Security](<https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/stock>) | Not added |
+| [Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing](<https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf>) | Added |
 | [(Cross-)Browser Fingerprinting via OS and Hardware Level Features](<https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/cross-browser-fingerprinting-os-and-hardware-level-features/>) | Added |
 | [ASLR on the Line: Practical Cache Attacks on the MMU](<https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/>) | Added |
 | [Attacking .NET Serialization](<https://speakerdeck.com/pwntester/attacking-net-serialization>) | Not added |

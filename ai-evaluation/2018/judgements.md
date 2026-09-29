@@ -31,4 +31,5 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications](<https://ieeexplore.ieee.org/document/8418635/>) | Added |
 | [SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js](<https://www.software-lab.org/publications/ndss2018.pdf>) | Added |
 | [Vetting Single Sign-On SDK Implementations via Symbolic Reasoning](<https://www.usenix.org/conference/usenixsecurity18/presentation/yang>) | Added |
+| [We Still Don't Have Secure Cross-Domain Requests: an Empirical Study of CORS](<https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf>) | Added |
 | [WPSE: Fortifying Web Protocols via Browser-Side Security Monitoring](<https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara>) | Added |

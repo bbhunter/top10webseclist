@@ -18,6 +18,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Exploiting Innocuous Activity for Correlating Users Across Sites](<https://archives.iw3c2.org/www2013/proceedings/p447.pdf>) | Added |
 | [FireDrill: Interactive DNS Rebinding](<https://www.usenix.org/conference/woot13/workshop-program/presentation/dai>) | Added |
 | [I Know the Shortened URLs You Clicked on Twitter](<https://archives.iw3c2.org/www2013/proceedings/p1191.pdf>) | Added |
+| [Illuminating the Security Issues Surrounding Lights-Out Server Management](<https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf>) | Added |
 | [Invisibility Purge / .NET Havoc](<https://media.blackhat.com/eu-13/briefings/Chen/bh-eu-13-invisibility-purge-chen-slides.pdf>) | Added |
 | [Language-based Defenses Against Untrusted Browser Origins](<https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan>) | Added |
 | [One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography](<https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/>) | Added |

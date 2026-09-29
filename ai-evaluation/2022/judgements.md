@@ -21,6 +21,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [GET /out: Automated Discovery of Application-Layer Censorship Evasion Strategies](<https://www.usenix.org/conference/usenixsecurity22/presentation/harrity>) | Added |
 | [Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions](<https://swag.cispa.saarland/papers/klein2022hand.pdf>) | Added |
 | [Hertzbleed: Turning Power Side-Channel Attacks Into Remote Timing Attacks on x86](<https://www.usenix.org/conference/usenixsecurity22/presentation/wang-yingchen>) | Added |
+| [HTTP Request Smuggling in the Multiverse of Parsing Flaws](<https://infosec.zeyu2001.com/2022/http-request-smuggling-in-the-multiverse-of-parsing-flaws>) | Added |
 | [HTTP/3 connection contamination: an upcoming threat?](<https://portswigger.net/research/http-3-connection-contamination>) | Added |
 | [Identity Confusion in WebView-based Mobile App-in-app Ecosystems](<https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei>) | Added |
 | [JNDI Injection Series: RMI Vector - Fundamentals](<https://infosecwriteups.com/jndi-injection-series-rmi-vector-1-31044f782daa>) | Not added |

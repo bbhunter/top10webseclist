@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Android web attack surface](<https://ndevtk.github.io/writeups/2024/08/01/awas/>) | Added |
 | [Exploiting Client-Side Path Traversal to Perform Cross-Site Request Forgery - Introducing CSPT2CSRF](<https://blog.doyensec.com/2024/07/02/cspt2csrf.html>) | Added |
 | [plORMbing your Prisma ORM with Time-based Attacks](<https://www.elttam.com/blog/plorming-your-primsa-orm/>) | Added |
 | [$20,300 Bounties from a 200 Hour Hacking Challenge](<https://blog.voorivex.team/20300-bounties-from-a-200-hour-hacking-challenge>) | Not added |

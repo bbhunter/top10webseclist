@@ -272,6 +272,24 @@ for (const defaults of [-1, 0, 4096, 1.5, "1"]) {
   assert.throws(() => clientEval("expandArchiveItem({defaults:__invalidDefaults})"), /Invalid archive item defaults/);
 }
 assert.throws(() => clientEval('expandArchiveItem({defaults:1,note:"override"})'), /Conflicting archive item default/);
+const pairedPaths = {
+  mdPath: "archived-references/md/2026-ai/example.md",
+  pdfPath: "archived-references/pdf/2026-ai/example.pdf",
+  links: [{ pdfPath: "archived-references/pdf/2026-ai/example.pdf" }]
+};
+clientContext.__pairedPaths = pairedPaths;
+assert.equal(clientEval("compactArchiveItem(__pairedPaths).pdfFromMd"), true);
+assert.deepEqual(JSON.parse(clientEval("JSON.stringify(expandArchiveItem(compactArchiveItem(__pairedPaths)))")), pairedPaths);
+for (const invalid of [
+  { pdfFromMd: false, mdPath: pairedPaths.mdPath },
+  { pdfFromMd: true, mdPath: "https://example.com/article.md" },
+  { pdfFromMd: true, mdPath: "archived-references/md/../secret.md" },
+  { pdfFromMd: true, mdPath: "ARCHIVED-REFERENCES/MD/2020/a.MD" },
+  { pdfFromMd: true, mdPath: pairedPaths.mdPath, pdfPath: pairedPaths.pdfPath }
+]) {
+  clientContext.__invalidPath = invalid;
+  assert.throws(() => clientEval("expandArchiveItem(__invalidPath)"), /Invalid shared archive PDF path/);
+}
 let progressiveRequestUrl = "";
 clientContext.__progressiveCatalogue = progressiveCatalogue;
 clientContext.__progressiveShard = progressiveShard;

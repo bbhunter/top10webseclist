@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Security Implications of DTD Attacks Against a Wide Range of XML Parsers — Christopher Späth](<https://www.nds.ruhr-uni-bochum.de/media/nds/arbeiten/2015/11/04/spaeth-dtd_attacks.pdf>) | Not added |
 | [A Look into Netty’s Recent Security Update: cookie parsing and HttpOnly exfiltration](<https://security.linkedin.com/blog-archive#05152015>) | Added |
 | [A Messy State of the Union: Taming the Composite State Machines of TLS](<https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf>) | Added |
 | [A PHP SQL-injection detection algorithm based on taint-source tracking](<https://www.sicris.cn/CN/abstract/abstract32.shtml>) | Not added |

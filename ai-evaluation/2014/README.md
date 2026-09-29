@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Precise Client-side Protection against DOM-based Cross-Site Scripting](<https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/stock>) | Not added |
+| [Tick Tock: Building Browser Red Pills from Timing Side Channels](<https://www.usenix.org/system/files/conference/woot14/woot14-ho.pdf>) | Added |
 | [American fuzzy lop technical details — Michal Zalewski](<https://lcamtuf.coredump.cx/afl/technical_details.txt>) [Related source](<https://lcamtuf.blogspot.com/2014/08/a-bit-more-about-american-fuzzy-lop.html>) | Not added |
 | [History theft with CSS Boolean algebra](<https://lcamtuf.coredump.cx/css_calc/>) [Related source](<https://lcamtuf.blogspot.com/2014/06/boolean-algebra-with-css-when-you-can.html>) | Added |
 | A Large-Scale Analysis of the Security of Embedded Firmwares | Not added |

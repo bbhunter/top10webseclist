@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [FIDO cross-device phishing — Dennis Kniep](<https://denniskniep.github.io/posts/14-fido-cross-device-phishing/>) | Not added |
 | [8 Million Requests Later, We Made The SolarWinds Supply Chain Attack Look Amateur](<https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur/>) | Added |
 | [ASP.NET Cryptography for Pentesters](<https://blog.blacklanternsecurity.com/p/aspnet-cryptography-for-pentesters>) | Not added |
 | [Automatic Insecurity: Exploring Email Auto-configuration in the Wild](<https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/>) | Added |
@@ -81,3 +82,4 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 | [Perplexity Comet UXSS](<https://www.hacktron.ai/blog/perplexity-comet-uxss>) | Added |
 | [Pwning OpenAI Atlas Through Exposed Browser Internals](<https://www.hacktron.ai/blog/hacking-openai-atlas-browser>) | Added |
 | [Discourse Backup Disclosure: A Rails send_file Quirk](<https://projectdiscovery.io/blog/discourse-backup-disclosure-rails-send_file-quirk>) | Added |
+| [Bypass for CVE-2024-9956 in Safari on iOS](<https://denniskniep.github.io/posts/13-bypass-cve-2024-9956/>) | Added |

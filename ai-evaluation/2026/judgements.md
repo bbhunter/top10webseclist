@@ -25,6 +25,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [API Keys Leaking in PNG Metadata of AI Images](<https://trufflesecurity.com/blog/api-keys-leaking-in-png-metadata-of-ai-images>) | Added |
 | [Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations](<https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf>) [Related source](<https://www.ndss-symposium.org/wp-content/uploads/f0902-drescher-slides.pdf>) | Added |
 | [Astro Full-Read SSRF via Host Header Injection](<https://www.aikido.dev/blog/astro-full-read-ssrf-via-host-header-injection>) | Added |
+| [ATT&CKing TACACS+ to Pwn Your Network via a Pre-Auth RCE](<https://www.elttam.com/blog/att-cking-tacacs-to-pwn-your-network-via-a-pre-auth-rce>) | Added |
 | [Attacking and Defending AI Browsers](<https://i.blackhat.com/BH-USA-26/Presentations/US-26-Chaikin-Attacking-Defending-AI-Browsers.pdf>) | Not added |
 | [Authorization Bypass in Quarkus via matrix parameters](<https://securitylab.github.com/advisories/GHSL-2026-099_Quarkus/>) | Not added |
 | [AutoFail: Breaking Web Boundaries using Android's Autofill Framework](<https://github.com/SecPriv/autofail>) | Added |
@@ -143,6 +144,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](<https://labs.boostsecurity.io/articles/introducing-smokedmeat/>) [Related source](<https://github.com/boostsecurityio/smokedmeat>) | Added |
 | [LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection](<https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit/>) | Added |
 | [Melting the Flesh of PHP's Memory Hardening](<https://www.usenix.org/conference/usenixsecurity26/presentation/wu-yifan>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-wu-yifan.pdf>) | Added |
+| [MemTensor npm and PyPI Packages Hit by a Go Worm](<https://safedep.io/memtensor-sckit-worm-npm-pypi/>) | Added |
 | [Mini Shai-Hulud Returns: 42 Malicious npm Packages Fake Sigstore Badges](<https://www.endorlabs.com/learn/mini-shai-hulud-returns-42-malicious-npm-packages-fake-sigstore-badges-in-antv-ecosystem-attack>) | Not added |
 | [MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection](<https://www.usenix.org/conference/usenixsecurity26/presentation/syros>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-syros.pdf>) [Related source](<https://arxiv.org/abs/2602.09222>) | Added |
 | [My First RCE by Reverse Engineering an EXE File With the Help of AI](<https://blog.voorivex.team/first-rce-via-reverse-engineering-with-ai>) | Added |
@@ -158,11 +160,12 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Node.js TLS hostname-normalisation differentials: Unicode dot separators defeat wildcard depth](<https://hackerone.com/reports/3688064>) [Related source](<https://github.com/nodejs/node/commit/1efb4ff51a>) | Added |
 | [npx confusion and npxconfuse](<https://lab.ctbb.show/research/from-defcon-research-to-automated-supply-chain-defense-with-npxconfuse>) | Not added |
 | [OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration](<https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy>) | Added |
+| [Observable ≠ Exploitable: The Problem With OAuth Security Measurements](<https://labs.apisec.ai/research/articles/oauth-observable-vs-exploitable/>) | Not added |
 | [OffGuard: Breaking the Most Popular AI Gateway (LiteLLM) from Auth Bypass to Cloud Compromise](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf>) | Added |
 | [One Chain to Own Them All: Breaking AI Infrastructures](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>) [Related source](<https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>) | Added |
 | [One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution](<https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf>) | Added |
 | [One Email, Many Faces: A Deep Dive into Identity Confusion in Email Aliases](<https://www.ndss-symposium.org/wp-content/uploads/2026-s148-paper.pdf>) [Related source](<https://github.com/lab-rynth/OriginMail>) | Not added |
-| [One Tap Too Far: Using Shortcuts to Bypass Chrome for iOS Call Prompts](<https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html>) | Not added |
+| [One Tap Too Far: Using Shortcuts to Bypass Chrome for iOS Call Prompts](<https://blog.doyensec.com/2026/09/24/chrome-ios-policy-bypass.html>) | Added |
 | [One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)](<https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)>) | Added |
 | [Out of Bounds, Out of Sandbox: RCE in Go JavaScript Engine](<https://www.slcyber.io/research/out-of-bounds-out-of-sandbox-rce-goja>) | Added |
 | [Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild for LLM Systems](<https://www.usenix.org/conference/usenixsecurity26/presentation/chang-hongyan>) [Related source](<https://www.usenix.org/system/files/usenixsecurity26-chang-hongyan.pdf>) [Related source](<https://arxiv.org/abs/2601.07072>) | Added |
@@ -173,6 +176,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [Patch-Guided Vulnerability Detection: Extracting Java API Security Rules via Attack–Defense Cross-Analysis (VulGenie)](<https://www.usenix.org/conference/usenixsecurity26/presentation/chen-bofei>) [Related source](<https://zenodo.org/records/18039660>) | Not added |
 | [Path traversal in signed URLs — present even in the official AWS SDKs](<https://blog.flatt.tech/entry/signed_url_path_traversal>) | Added |
 | [Pattern, Graph, Prompt: What Happens When You Layer Three Analysis Paradigms on the Same Codebase](<https://appsecvillage.com/events/dc-2026/pattern-graph-prompt-what-happens-when-you-layer-three-analysis-paradigms-on-the-same-codebase-1223399>) | Not added |
+| [Penpot MCP REPL incomplete fix, GHSA-852x-m8p9-558v](<https://github.com/penpot/penpot/security/advisories/GHSA-852x-m8p9-558v>) | Not added |
 | [Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector](<https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/>) | Not added |
 | [PHP mail() Command Injection to Remote Code Execution (RCE)](<https://nullsecurityx.medium.com/php-mail-command-injection-to-remote-code-execution-rce-b2991e929ca3>) | Not added |
 | [Poisoned by the Host: Large-Scale Measurement of Host Name Poisoning in Web Applications](<https://www.iamruiyang.me/papers/sp26-HNP.pdf>) [Related source](<https://www.iamruiyang.me/>) | Added |
@@ -211,6 +215,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [SekaiCTF 2026 "Filtered Reality": invalid Signed HTTP Exchange fallback navigation as a redirect and CSP-nonce escape primitive](<https://github.com/project-sekai-ctf/sekaictf-2026/blob/main/web/filtered-reality/solution/writeup.md>) | Added |
 | [Send GitLab an email, push to main](<https://www.aikido.dev/blog/gitlab-email-push-to-main>) | Added |
 | [Shaking the MCP Tree: A Security Deep Dive](<https://blog.voorivex.team/shaking-the-mcp-tree>) | Added |
+| [SharePoint CVE-2026-65660: From Anonymous Access to Pre-Auth RCE via EditingPageParser Type-Check Bypass](<https://blog.viettelcybersecurity.com/sharepoint_cve-2026-65660/>) | Added |
 | [Site Isolation is Dead: How Site Isolation is Broken in Agentic Browsers and Extensions](<https://wsp-lab.github.io/papers/lee-sp26.pdf>) [Related source](<https://github.com/WSP-LAB/Site-Isolation-Is-Dead>) | Added |
 | [Slop Spotting: Using Rules to Detect AI Slop for Bug Bounty](<https://semgrep.dev/events/hsc-26-defcon-34/>) [Related source](<https://www.bugbountydefcon.com/agenda-2026>) | Not added |
 | [Smashing the ServiceNow Sandbox – Pre-Authentication RCE](<https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/>) | Added |
@@ -230,6 +235,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting](<https://r3verii.github.io/cve/2026/02/27/nodejs-toctou.html>) | Added |
 | [The Hidden Cost of Sanitization: How Secure Parsing Can Introduce New XSS Attack Surfaces](<https://nullcon.net/talk/the-hidden-cost-of-sanitization-how-secure-parsing-can-introduce-new-xss-attack-surfaces/>) [Related source](<https://www.youtube.com/watch?v=BJCgSLGq308>) | Not added |
 | [The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940)](<https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/>) | Added |
+| [The Last Writer Wins: A Chess.com Account Takeover via postMessage XSS](<https://xenops.ae/blog/the-last-writer-wins>) | Added |
 | [The Masks We (Think We) Wear: Privacy Threats of Browser-Extension Wallets in the Web3 Ecosystem](<https://petsymposium.org/popets/2026/popets-2026-0094.pdf>) [Related source](<https://arxiv.org/abs/2607.06141>) [Related source](<https://github.com/podiumdesu/wallet-privacy-threats>) | Added |
 | [The Memory Heist](<https://www.ayush.digital/blog/the-memory-heist>) | Added |
 | [The Script Tag That Isn't: Speculation Rules Injection](<https://labs.trace37.com/blog/specfetch-speculation-rules-injection/>) | Not added |

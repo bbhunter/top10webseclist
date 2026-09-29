@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [The inception bar: a new phishing method](<https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/>) | Added |
 | A Large-Scale Study on Risks of HTML5 WebAPI for Mobile Sensor-Based Attacks | Not added |
 | Abusing jQuery for CSS-powered timing attacks | Not added |
 | [Adobe Reader PDF — Client Side Request Injection](<https://insert-script.blogspot.de/2018/05/adobe-reader-pdf-client-side-request.html>) | Not added |

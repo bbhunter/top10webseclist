@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [An Evaluation of the Google Chrome Extension Security Architecture](<https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final177_0.pdf>) | Added |
 | [p0f v3 documentation — Michal Zalewski](<https://lcamtuf.coredump.cx/p0f3/README>) [Related source](<https://lcamtuf.blogspot.com/2012/01/p0f-is-back.html>) | Not added |
 | ["match" in Rails and CSRF](<https://homakov.blogspot.com/2012/04/whitelist-your-routes-match-is-evil.html>) | Not added |
 | [A Security Analysis of Emerging Web Standards](<https://www.scitepress.org/papers/2012/40495/index.html>) | Not added |

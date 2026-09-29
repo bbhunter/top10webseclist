@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [MoodleTeX file disclosure — Christian Eibl (MSA09-0009)](<https://moodle.org/security/index.php?o=3&p=68&s=10>) | Not added |
+| [Cross Site Scripting Anonymous Browser](<https://blackhat.com/presentations/bh-dc-09/Flick/BlackHat-DC-09-Flick-XAB-wp.pdf>) | Not added |
 | [A Multi-Perspective View of PHP Remote File Include Attacks](<https://www.sans.org/white-papers/33229>) | Not added |
 | [A Wolf in Sheep's Clothing](<https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf>) | Added |
 | [Attacks on JavaScript Mashup Communication](<https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf>) | Added |

@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Illuminating the Security Issues Surrounding Lights-Out Server Management](<https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf>) | Added |
 | [25 Million Flows Later](<https://doi.org/10.1145/2508859.2516703>) | Not added |
 | [A Perfect CRIME? Only TIME Will Tell](<https://media.blackhat.com/eu-13/briefings/Beery/bh-eu-13-a-perfect-crime-beery-wp.pdf>) | Added |
 | [A View to a Kill: WebView Exploitation](<https://www.usenix.org/conference/leet13/workshop-program/presentation/neugschwandtner>) | Added |

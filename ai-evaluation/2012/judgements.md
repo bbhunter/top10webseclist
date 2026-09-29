@@ -7,6 +7,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | Candidate | Outcome |
 |---|---|
 | [AJAX Hammer — Harnessing AJAX for Dynamic CSRF](<https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hasc-research/AJAX%20Hammer%20-%20Harnessing%20AJAX%20for%20%28Direct%29%20Dynamic%20CSRF.pdf>) | Added |
+| [An Evaluation of the Google Chrome Extension Security Architecture](<https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final177_0.pdf>) | Added |
 | [Are You My Type? Breaking .NET Through Serialization](<https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf>) | Added |
 | [Cruel Intentions: Violating Browser Security and Privacy Through Web Intents](<https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf>) | Added |
 | [Detecting and Defending Against Third-Party Tracking on the Web](<https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner>) | Added |

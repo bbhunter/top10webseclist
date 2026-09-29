@@ -25,3 +25,4 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws](<https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf>) [Related source](<https://gitlab.com/kostasdrk/xdriver3-open>) | Added |
 | [The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches](<https://secweb.work/papers/some2020remote.pdf>) | Added |
 | [Timeless Timing Attacks: Exploiting Concurrency to Leak Secrets over Remote Connections](<https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem>) | Added |
+| [Webauthn UserVerificationPolicy Curiosities](<https://fy.blackhats.net.au/blog/2020-11-21-webauthn-userverificationpolicy-curiosities/>) | Not added |

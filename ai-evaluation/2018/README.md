@@ -9,6 +9,8 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Who Left Open the Cookie Jar? A Comprehensive Evaluation of Third-Party Cookie Policies](<https://www.usenix.org/conference/usenixsecurity18/presentation/franken>) | Not added |
+| [We Still Don't Have Secure Cross-Domain Requests: an Empirical Study of CORS](<https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-chen.pdf>) | Added |
 | A Formal Treatment of Accountable Proxying over TLS | Not added |
 | A Large-scale Analysis of Content Modification by Open HTTP Proxies | Not added |
 | [A Sense of Time for JavaScript and Node.js: First-Class Timeouts as a Cure for Event Handler Poisoning](<https://www.usenix.org/conference/usenixsecurity18/presentation/davis>) | Added |

@@ -14,6 +14,7 @@ Older decisions with an unknown merit revision are marked `legacy-unspecified` i
 | [BLOCK: A Black-Box Approach for Detection of State Violation Attacks Towards Web Applications](<https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html>) [Related source](<https://doi.org/10.1145/2076732.2076767>) | Added |
 | [Crouching Tiger Hidden Payload](<https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf>) | Added |
 | [Dark Clouds on the Horizon](<https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and>) [Related source](<https://www.usenix.org/legacy/events/sec11/tech/full_papers/Mulazzani6-24-11.pdf>) | Added |
+| [Exposing the Lack of Privacy in File Hosting Services](<https://www.usenix.org/legacy/event/leet11/tech/full_papers/Nikiforakis.pdf>) | Added |
 | [Fast and Precise Sanitizer Analysis with BEK](<https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek>) [Related source](<https://www.usenix.org/legacy/events/sec11/tech/full_papers/Hooimeijer.pdf>) | Added |
 | [How to Break XML Encryption](<https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf>) | Added |
 | [How to Shop for Free Online](<https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf>) | Added |

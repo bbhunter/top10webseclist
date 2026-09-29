@@ -9,6 +9,7 @@ See [completed inclusion decisions](judgements.md) and [decision history](histor
 
 | Candidate | Outcome |
 |---|---|
+| [Universal website hijacking — Adrian Pastor](<https://seclists.org/bugtraq/2008/Nov/3>) [Related source](<https://www.zerodayinitiative.com/advisories/ZDI-08-070/>) | Not added |
 | [File Download Injection](<https://dl.packetstormsecurity.net/papers/attack/Aspect_File_Download_Injection.pdf>) | Added |
 | Algorithm, goals and experiments are detailed. | Not added |
 | [All Your iFRAMEs Point to Us](<https://www.usenix.org/legacy/event/sec08/tech/full_papers/provos/provos_html/index.html>) | Not added |
