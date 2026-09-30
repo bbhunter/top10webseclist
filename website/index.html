@@ -309,7 +309,14 @@
   </dialog>
 
   <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title" tabindex="-1">
-    <form method="dialog"><button class="dialog-close" aria-label="Close artifact"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
+    <header class="artifact-toolbar">
+      <nav class="artifact-navigation" aria-label="Browse articles">
+        <button id="artifact-previous" type="button" aria-label="Previous article" aria-keyshortcuts="ArrowLeft">← Previous</button>
+        <button id="artifact-next" type="button" aria-label="Next article" aria-keyshortcuts="ArrowRight">Next →</button>
+        <span id="artifact-position" role="status" aria-live="polite"></span>
+      </nav>
+      <form method="dialog"><button class="dialog-close" aria-label="Close artifact"><svg class="close-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form>
+    </header>
     <div class="artifact-glow" aria-hidden="true"></div>
     <div class="dialog-body">
       <p class="eyebrow" id="artifact-eyebrow"></p>

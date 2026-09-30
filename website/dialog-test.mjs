@@ -99,6 +99,10 @@ try {
         await record();
         await page.locator("#open-reader").click();
         await page.waitForSelector("#reader-dialog[open] .archive-warning");
+        const readerUrl = page.url();
+        await page.keyboard.press("ArrowRight");
+        await page.keyboard.press("ArrowLeft");
+        assert.equal(page.url(), readerUrl, "Arrow keys in Markdown do not change articles");
         await page.locator("#reader-theme-toggle").click();
         await exercise(page,"reader-dialog",".reader-close",touch);
         assert.equal(new URL(page.url()).searchParams.has("reader"),false);
@@ -107,6 +111,10 @@ try {
         await record();
         await page.locator("#open-pdf-reader").click();
         await page.waitForFunction(()=>document.querySelector("#pdf-dialog").open && document.querySelector("#pdf-loading").hidden);
+        const pdfUrl = page.url();
+        await page.keyboard.press("ArrowRight");
+        await page.keyboard.press("ArrowLeft");
+        assert.equal(page.url(), pdfUrl, "Arrow keys in PDF do not change articles");
         if(await page.evaluate(()=>state.pdfUsesInSiteReader)) {
           await page.frameLocator("#pdf-frame").locator("canvas").first().waitFor({state:"visible"});
         } else {

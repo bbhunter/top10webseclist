@@ -172,6 +172,12 @@ that finish after navigation has moved elsewhere.
 after scrolling another record or opening its video player, across all nine views
 at desktop and phone widths. It verifies player teardown and preservation of the
 background page position. The external video frame uses a local response fixture.
+It also checks overview navigation with Previous/Next buttons and left/right arrow
+keys, endpoint behaviour, share URLs, empty-summary spacing, and close-button
+insets before and after scrolling. Navigation follows the current results (across
+pages in Research Desk), or the record's collection for a direct link outside those
+results. It pauses during embedded video playback; Markdown/PDF readers and forms
+keep their own keyboard behaviour.
 
 `mobile-test.mjs` uses touch input to open all nine routes at 320, 390 and 768px,
 checks direct-link reloads, popup bounds, default and saved appearance, rotation,

@@ -594,6 +594,16 @@
      reach after the first screen, especially on touch devices without Escape. */
   .artifact-dialog > form:first-child, .contribute-dialog > form:first-child { position: sticky; top: 0; z-index: 5; height: 0; }
   .dialog-close { position: absolute; top: 17px; right: 17px; z-index: 2; width: 42px; height: 42px; color: var(--dialog-muted,var(--muted)); background: var(--dialog-close-surface,rgba(4,12,10,.6)); border: 1px solid var(--dialog-border,var(--line)); border-radius: 50%; font-size: 1.05rem; cursor: pointer; }
+  .artifact-toolbar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; background: var(--dialog-surface); border-bottom: 1px solid var(--dialog-border); }
+  .artifact-toolbar form { flex: none; margin: 0; }
+  .artifact-toolbar .dialog-close { position: static; }
+  .artifact-navigation { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-width: 0; }
+  .artifact-navigation button { min-height: 44px; padding: 8px 10px; color: var(--ink); background: var(--dialog-panel); border: 1px solid var(--dialog-border); border-radius: 4px; font: 650 .7rem var(--mono); cursor: pointer; }
+  .artifact-navigation button:hover:not(:disabled) { background: var(--dialog-soft); border-color: var(--dialog-theme); }
+  .artifact-navigation button:disabled { opacity: .45; cursor: default; }
+  #artifact-position { color: var(--dialog-muted); font: .65rem var(--mono); }
+  #artifact-actions { margin-top: 24px; }
+  .artifact-dialog .dialog-body { overflow-wrap: anywhere; }
   .artifact-glow { height: 9px; background: linear-gradient(90deg, var(--dialog-color, var(--mint)), transparent 70%); }
   .dialog-body { position: relative; padding: clamp(30px, 5vw, 52px); }
   .dialog-body h2 { max-width: 680px; margin: 14px 0 20px; font-size: clamp(1.85rem, 4vw, 3.2rem); line-height: 1.04; letter-spacing: -.05em; }
@@ -617,7 +627,7 @@
   .artifact-facts dt { margin-bottom: 6px; color: var(--dialog-muted,var(--faint)); font: .6rem var(--mono); text-transform: uppercase; }
   .artifact-facts dd { overflow: hidden; color: var(--ink); font: .74rem var(--mono); text-overflow: ellipsis; white-space: nowrap; }
   .artifact-sources { margin: 28px 0; }
-  .artifact-sources h3 { margin: 0 0 10px; color: var(--dialog-color,var(--mint)); font: 700 .85rem var(--sans); scroll-margin-top: 48px; }
+  .artifact-sources h3 { margin: 0 0 10px; color: var(--dialog-color,var(--mint)); font: 700 .85rem var(--sans); scroll-margin-top: 120px; }
   .artifact-sources h3 span { margin-left: 5px; color: var(--dialog-muted); font: .75rem var(--mono); }
   .source-intro, .source-note { color: var(--dialog-muted); font-size: .78rem; line-height: 1.6; }
   .source-list { display: grid; gap: 10px; }

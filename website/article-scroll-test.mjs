@@ -58,6 +58,67 @@ try {
       else await page.mouse.click(point.x,point.y);
       await page.waitForFunction(() => !document.querySelector("#artifact-dialog").open && !document.body.classList.contains("document-dialog-open"));
     }
+    async function navigation(label) {
+      const ids = await page.evaluate(fallback => {
+        const visible = [...document.querySelectorAll("#view-root [data-artifact]")]
+          .filter(el => el.getClientRects().length).map(el => el.dataset.artifact);
+        const first = state.items.find(item => item.id === visible[0]) || state.items.find(item => item.id === fallback);
+        const sequence = artifactBrowseSequence(first);
+        // Cover exactly the layout that originally left badges touching actions.
+        window.navigationFixture = {item:first, summary:first.summary, tags:first.tags, videos:first.videos};
+        Object.assign(first, {summary:"",tags:[],videos:[]});
+        return sequence;
+      }, fixtures.plain);
+      assert.ok(ids.length > 1, `${label}: multiple records to browse`);
+      await open(ids[0]);
+      const spacing = await page.evaluate(() => {
+        const badge = document.querySelector("#artifact-badges").getBoundingClientRect();
+        const actions = document.querySelector("#artifact-actions").getBoundingClientRect();
+        return actions.top - badge.bottom;
+      });
+      assert.ok(spacing >= 20, `${label}: badges have space before actions (${spacing}px)`);
+      await page.locator("#artifact-title").evaluate(el => { el.textContent = "LongUnbrokenArticleTitle".repeat(8); });
+      assert.ok(await dialog.evaluate(el => el.scrollWidth <= el.clientWidth + 1), `${label}: long titles stay within the dialog`);
+      async function insetClose() {
+        const bounds = await page.evaluate(() => {
+          const pane = document.querySelector("#artifact-dialog").getBoundingClientRect();
+          const close = document.querySelector("#artifact-dialog .dialog-close").getBoundingClientRect();
+          const toolbar = document.querySelector(".artifact-toolbar").getBoundingClientRect();
+          return {right:pane.right-close.right, top:close.top-pane.top, bottom:toolbar.bottom-close.bottom};
+        });
+        assert.ok(bounds.right >= 12 && bounds.top >= 10 && bounds.bottom >= 10, `${label}: inset close button ${JSON.stringify(bounds)}`);
+      }
+      await insetClose();
+      await scrollDown();
+      await insetClose();
+      assert.ok(await page.locator("#artifact-previous").isDisabled());
+      await page.keyboard.press("ArrowLeft");
+      assert.equal(await page.evaluate(() => artifactCurrentId), ids[0], "First record does not wrap");
+      await page.keyboard.press("Alt+ArrowRight");
+      assert.equal(await page.evaluate(() => artifactCurrentId), ids[0], "Modified arrows do not browse articles");
+      await page.keyboard.press("ArrowRight");
+      await page.waitForFunction(id => artifactCurrentId === id && !artifactNavigationBusy, ids[1]);
+      await atTop(`${label}/next`);
+      assert.ok(decodeURIComponent(new URL(page.url()).hash).endsWith(`/${ids[1]}`), "Share URL follows the selected article");
+      await page.locator("#artifact-previous").click();
+      await page.waitForFunction(id => artifactCurrentId === id && !artifactNavigationBusy, ids[0]);
+      await page.locator("#artifact-next").click();
+      await page.waitForFunction(id => artifactCurrentId === id && !artifactNavigationBusy, ids[1]);
+      await page.locator("#report-inaccuracy").click();
+      await page.keyboard.press("ArrowRight");
+      assert.equal(await page.evaluate(() => artifactCurrentId), ids[1], "Report form keeps arrow keys");
+      await page.locator("#report-dialog .dialog-close").click();
+      await page.evaluate(ids => openArtifact(ids.at(-1), {sequence:ids}), ids);
+      assert.ok(await page.locator("#artifact-next").isDisabled());
+      await page.keyboard.press("ArrowRight");
+      assert.equal(await page.evaluate(() => artifactCurrentId), ids.at(-1), "Last record does not wrap");
+      await close();
+      await page.evaluate(() => {
+        const {item,summary,tags,videos} = window.navigationFixture;
+        Object.assign(item,{summary,tags,videos});
+        delete window.navigationFixture;
+      });
+    }
     for (const view of views) {
       await page.evaluate(view => setView(view),view);
       // Board layout and mobile scrolling can settle on later rendering frames.
@@ -65,6 +126,7 @@ try {
       await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       for (const appearance of (["desk","time"].includes(view) ? ["dark","light"] : ["dark"])) {
         if (["desk","time"].includes(view)) await page.locator(`[data-discovery-value="${appearance}"]`).click();
+        await navigation(`${view}/${appearance}/${viewport.width}`);
         for (const play of [false,true]) {
           const label = `${view}/${appearance}/${viewport.width}/${play ? "played" : "scrolled"}`;
           await page.evaluate(() => scrollTo({top:400,behavior:"instant"}));
@@ -79,6 +141,9 @@ try {
             await page.locator(".talk-play-action").click();
             await page.frameLocator("#artifact-talk iframe").getByText("Video player loaded").waitFor();
             player = await page.locator("#artifact-talk iframe").elementHandle();
+            await page.keyboard.press("ArrowRight");
+            assert.equal(await page.evaluate(() => artifactCurrentId), fixtures.recorded[0], "Video playback keeps arrow keys");
+            assert.ok(await page.locator("#artifact-next").isDisabled(), "Article buttons pause during playback");
             await scrollDown();
           }
           await close();

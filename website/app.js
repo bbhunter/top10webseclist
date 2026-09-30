@@ -1380,6 +1380,16 @@ function wireShell() {
     openArtifact(target.dataset.artifact);
   });
   $("#artifact-digest").addEventListener("click", handleArtifactTagClick);
+  $("#artifact-previous").addEventListener("click", () => navigateArtifact(-1));
+  $("#artifact-next").addEventListener("click", () => navigateArtifact(1));
+  $("#artifact-dialog").addEventListener("keydown", (event) => {
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.isComposing
+      || !["ArrowLeft", "ArrowRight"].includes(event.key)
+      || event.target.closest("input, textarea, select, [contenteditable], video, audio, iframe, [role='slider'], [role='tablist']")
+      || !canNavigateArtifact()) return;
+    event.preventDefault();
+    if (!event.repeat) navigateArtifact(event.key === "ArrowLeft" ? -1 : 1);
+  });
 
   $("#random-artifact").addEventListener("click", async () => {
     let offset = Math.floor(Math.random() * Math.max(1, state.archiveTotal));
@@ -3587,11 +3597,72 @@ async function openSourceDetails(item) {
   focusArtifactSources();
 }
 
-async function openArtifact(id) {
+let artifactSequence = [];
+let artifactCurrentId = "";
+let artifactNavigationBusy = false;
+
+function artifactBrowseSequence(item) {
+  // Snapshot the originating results so marking read or saving a record does
+  // not move its neighbours during this visit. Desk navigation spans pages.
+  let ids;
+  if (state.query && (searchResumable || !$("#global-results").hidden)) {
+    ids = queryItems(state.items, state.query).map(entry => entry.id);
+  } else if (state.view === "desk") {
+    ids = deskFilteredRecords().map(entry => entry.id);
+  } else if (state.view === "constellation" && constellationExperience) {
+    ids = constellationExperience.items.map(entry => entry.id);
+  } else {
+    ids = [...$("#view-root").querySelectorAll("[data-artifact], .term-row [data-term-command]")]
+      .filter(element => element.getClientRects().length)
+      .map(element => element.dataset.artifact || element.dataset.termCommand.slice("open ".length));
+  }
+  // Shared links and random records may not belong to the visible results.
+  if (!ids.includes(item.id)) ids = itemsForYear(item.year).map(entry => entry.id);
+  return [...new Set(ids)];
+}
+
+function canNavigateArtifact() {
+  return $("#artifact-dialog").open
+    && !document.querySelector("dialog[open]:not(#artifact-dialog)")
+    && !$("#artifact-talk").classList.contains("is-playing");
+}
+
+function updateArtifactNavigation() {
+  const index = artifactSequence.indexOf(artifactCurrentId);
+  const playing = $("#artifact-talk").classList.contains("is-playing");
+  for (const [selector, offset] of [["#artifact-previous", -1], ["#artifact-next", 1]]) {
+    const button = $(selector);
+    button.disabled = artifactNavigationBusy || playing || index < 0 || !artifactSequence[index + offset];
+    button.title = playing ? "Article navigation is paused during video playback" : offset < 0 ? "Previous article (←)" : "Next article (→)";
+  }
+  $("#artifact-position").textContent = index < 0 ? "" : `${index + 1} / ${artifactSequence.length}`;
+}
+
+async function navigateArtifact(offset) {
+  if (artifactNavigationBusy || !canNavigateArtifact()) return;
+  const id = artifactSequence[artifactSequence.indexOf(artifactCurrentId) + offset];
+  if (!id) return;
+  const focused = document.activeElement;
+  artifactNavigationBusy = true;
+  updateArtifactNavigation();
+  try {
+    await openArtifact(id, { sequence: artifactSequence });
+  } catch (error) {
+    toast(`The article could not be opened: ${error.message}`);
+  } finally {
+    artifactNavigationBusy = false;
+    updateArtifactNavigation();
+    if (canNavigateArtifact() && focused?.matches(".artifact-navigation button") && !focused.disabled) focusWithoutScroll(focused);
+  }
+}
+
+async function openArtifact(id, { sequence } = {}) {
   if (documentDismissal) await documentDismissal;
   const revision = routeRevision;
   const item = await ensureItemLoaded(id);
   if (!item || revision !== routeRevision) return;
+  artifactSequence = sequence ? [...sequence] : artifactBrowseSequence(item);
+  artifactCurrentId = item.id;
   $("#reader-dialog").close();
   $("#pdf-dialog").close();
   const dialog = $("#artifact-dialog");
@@ -3717,6 +3788,7 @@ async function openArtifact(id) {
     kicker: `Official archive listing / ${item.year}`
   }));
   renderTalkPanel(item);
+  updateArtifactNavigation();
   $("#report-inaccuracy")?.addEventListener("click", () => openReportDialog(item));
   $("#artifact-read-toggle").addEventListener("click", () => setReadState(item));
   $("#artifact-favourite-toggle").addEventListener("click", () => setFavouriteState(item));
@@ -4789,6 +4861,7 @@ function renderTalkPanel(item) {
     card.innerHTML = "";
     card.append(frame);
     panel.classList.add("is-playing");
+    updateArtifactNavigation();
     // The promise has been kept; repeating it under a playing video is noise.
     panel.querySelector(".talk-note")?.remove();
   });
